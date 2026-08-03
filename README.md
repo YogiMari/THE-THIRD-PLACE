@@ -1,5 +1,5 @@
 # README  
-![THE THIRD PLACE](banner.png)  
+![THE THIRD PLACE](banner.PNG)  
   
 # 🏕️ THE THIRD PLACE  
   
