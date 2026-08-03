@@ -1,94 +1,117 @@
 # README  
-![THE THIRD PLACE](assets/banner.PNG)  
-  
 # 🏕️ THE THIRD PLACE  
   
-> **A living knowledge base for designing and evolving THE THIRD PLACE.**  
+![THE THIRD PLACE](assets/banner.PNG)  
   
-THE THIRD PLACE は、「移動するアウトドアリビング」を実現するための設計思想・装備・知識・運用ルールを体系化したナレッジベースです。  
-  
----  
-  
-# 📚 Repository Structure  
-  
-## 📜 TP — Core Documents  
-  
-| Document | Description |  
-|----------|-------------|  
-| 📖 [TP-000 Original](TP-000_Original.md) | Original Concept |  
-| 🧭 [TP-001 Constitution](TP-001_Constitution.md) | Project Constitution |  
-| 🎨 [TP-002 Design Bible](TP-002_Design_Bible.md) | Design Principles |  
-| 🏕️ [TP-003 Field Atlas](TP-003_Field_Atlas_Landscape_Framework.md) | Field Evaluation Framework |  
-| 🧰 [TP-004 Equipment Registry](TP-004_Equipment_Registry_Object_Reference.md) | Equipment Database |  
-| 💰 [TP-005 Acquisition Strategy](TP-005_Acquisition_Strategy.md) | Purchase Strategy |  
-| 🧭 [TP-006 Foundation Compass](TP-006_Foundation_Compass.md) | Decision Framework |  
-| 🏗️ [TP-007 Habitat Architecture](TP-007_Habitat_Architecture.md) | Camp Architecture |  
-| ❤️ [TP-008 Affinity Lexicon](TP-008_Affinity_Lexicon.md) | Preference Dictionary |  
-| ✨ [TP-009 Aesthetic Grammar](TP-009_Aesthetic_Grammar.md) | Design Language |  
-| 📦 [TP-010 Storage Blueprint](TP-010_Storage_Blueprint.md) | Storage System |  
+> **A Movable Outdoor Living Room**  
   
 ---  
   
-## ⚙️ PX — Project Documents  
+# 🌄 Overview  
   
-| Document | Description |  
-|----------|-------------|  
-| 📋 [PX-001 Documentation System](PX-001_Documentation_System.md) | Documentation Rules |  
-| 📝 [PX-002 Project Ledger](PX-002_Project_Ledger.md) | Conversation & Change Log |  
-| 👁️ [PX-003 Vigil Protocol](PX-003_Vigil_Protocol.md) | Monitoring Protocol |  
+THE THIRD PLACE is a long-term design project exploring a movable outdoor living room.  
+  
+Rather than documenting camping itself, the project develops a complete design system integrating philosophy, equipment, architecture, documentation, and cultural references.  
   
 ---  
   
-## 🔍 TM — Research Library  
+# 🗂 Repository Structure  
   
-| Document | Description |  
-|----------|-------------|  
-| 🏛️ [TM-001 Heritage Chronicle](TM-001_Heritage_Chronicle.md) | Brand History |  
-| 🛠️ [TM-002 Atelier Discovery](TM-002_Atelier_Discovery.md) | Garage Brand Research |  
-| 🌍 [TM-003 Beyond Journey](TM-003_Beyond_Journey.md) | Outdoor Inspirations |  
-| 🎭 [TM-004 Cultural Reference](TM-004_Cultural_Reference.md) | Design References |  
-| 🔎 [TM-005 Search Doctrine](TM-005_Search_Doctrine.md) | Research Methodology |  
+```text  
+THE-THIRD-PLACE/  
   
----  
-  
-# 🎯 Design Philosophy  
-  
-THE THIRD PLACE is guided by five principles.  
-  
-- 🎨 Design First  
-- ⚙️ Function Through Beauty  
-- 🔄 Continuous Improvement  
-- 🪵 Timeless Craftsmanship  
-- 📚 Knowledge as a Living System  
+├── assets/  
+│   └── banner.PNG  
+│  
+├── TP/  
+├── PX/  
+├── TM/  
+│  
+└── README.md  
+```  
   
 ---  
   
-# 🗂 Repository Purpose  
+# 📚 Documentation  
   
-This repository serves as the **Single Source of Truth (SSOT)** for:  
+## 🏛 TP — Foundation  
   
-- 🏕️ Design Philosophy  
-- 🧰 Equipment Registry  
-- 🏗️ Camp Architecture  
-- 📄 Documentation  
-- 💰 Acquisition Strategy  
-- 📚 Knowledge Management  
-  
----  
-  
-# 🚀 Current Status  
-  
-| Item | Version |  
-|------|---------|  
-| 🧭 Constitution | Ver.3 |  
-| 🎨 Design Bible | Ver.3 |  
-| 🧰 Equipment Registry | Ver.4 |  
-| 📄 Documentation System | Active |  
+| ID | Document |  
+|----|----------|  
+| TP-000 | Original |  
+| TP-001 | Constitution |  
+| TP-002 | Design Bible |  
+| TP-003 | Field Atlas Landscape Framework |  
+| TP-004 | Equipment Registry Object Reference |  
+| TP-005 | Acquisition Strategy |  
+| TP-006 | Foundation Compass |  
+| TP-007 | Habitat Architecture |  
+| TP-008 | Affinity Lexicon |  
+| TP-009 | Aesthetic Grammar |  
+| TP-010 | Storage Blueprint |  
   
 ---  
   
-# 🔒 License  
+## 📋 PX — Project  
   
-Private repository.  
+| ID | Document |  
+|----|----------|  
+| PX-001 | Documentation System |  
+| PX-002 | Project Ledger |  
+| PX-003 | Vigil Protocol |  
   
-All documents are maintained exclusively for the **THE THIRD PLACE** project.  
+---  
+  
+## 📖 TM — Knowledge  
+  
+| ID | Document |  
+|----|----------|  
+| TM-001 | Heritage Chronicle |  
+| TM-002 | Atelier Discovery |  
+| TM-003 | Beyond Journey |  
+| TM-004 | Cultural Reference |  
+| TM-005 | Search Doctrine |  
+  
+---  
+  
+# 🎯 Single Source of Truth (SSOT)  
+  
+This GitHub repository is the official **Single Source of Truth** for THE THIRD PLACE.  
+  
+GitHub always takes precedence over:  
+  
+- Conversation history  
+- Uploaded files  
+- Temporary working copies  
+- Local documents  
+  
+---  
+  
+# 🔄 Workflow  
+  
+```text  
+Research  
+      │  
+      ▼  
+Discussion  
+      │  
+      ▼  
+Document Revision  
+      │  
+      ▼  
+GitHub Repository (SSOT)  
+```  
+  
+---  
+  
+# 🚀 Development  
+  
+The project is continuously developed.  
+  
+Every official document is maintained within this repository.  
+  
+GitHub is the authoritative source.  
+  
+---  
+  
+# © THE THIRD PLACE  
