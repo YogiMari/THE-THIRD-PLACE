@@ -1,4 +1,6 @@
 # README  
+![THE THIRD PLACE](banner.png)  
+  
 # 🏕️ THE THIRD PLACE  
   
 > **A living knowledge base for designing and evolving THE THIRD PLACE.**  
