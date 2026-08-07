@@ -1,86 +1,151 @@
 # PX-004 Barista Codex  
 # PX-004 Barista Codex  
   
-# Coffee Equipment Decisions  
+**Document ID**  
+  
+PX-004  
+  
+**Document Title**  
+  
+Barista Codex  
+  
+**Version**  
+  
+2.0  
+  
+**Status**  
+  
+Official  
   
 ---  
   
-# Confirmed  
+# Purpose  
   
-## Espresso Machine  
+PX-004 Barista Codexは、THE THIRD PLACEにおけるCoffee Systemの意思決定を管理する正式仕様書である。  
+  
+本書では以下を管理する。  
+  
+- Official Equipment Decisions  
+- Selection Criteria  
+- Decision Reasons  
+- Workflow Decisions  
+- Brand Decisions  
+- Rejected Items  
+- Pending Items  
+- Deferred Items  
+  
+価格・購入先・輸送・関税・購入手順などの調達情報は管理対象外とし、PX-005 Acquisition Handbookで管理する。  
+  
+---  
+  
+# Relationship  
+  
+```  
+PX-004  
+Barista Codex  
+        │  
+        ▼  
+TP-004  
+Equipment Registry  
+        │  
+        ▼  
+PX-005  
+Acquisition Handbook  
+```  
+  
+---  
+  
+# Design Principles  
+  
+Coffee Equipmentは以下を満たすもののみ採用する。  
+  
+- Portable Luxury  
+- Architectural Simplicity  
+- Long-term Ownership  
+- High Reliability  
+- Workflow Optimization  
+- Repairability  
+- Functional Beauty  
+- Design Bibleとの整合  
+- Foundation Compassとの整合  
+  
+以下は評価対象としない。  
+  
+- Popularity  
+- SNS  
+- Review Count  
+- Rarity  
+- Collector Value  
+- Price  
+  
+---  
+  
+# Confirmed Equipment  
+  
+---  
+  
+# Espresso Machine  
   
 | Category | Brand | Model | Status |  
 |----------|--------|-------|--------|  
 | Espresso Machine | 9Barista | Mk.2 Pro | Confirmed |  
   
-### Decision  
+## Decision  
   
-9Barista Mk.2 ProをTHE THIRD PLACEの標準エスプレッソマシンとして採用する。  
+9Barista Mk.2 ProをTHE THIRD PLACEの標準エスプレッソマシンとして正式採用する。  
   
-### Selection Criteria  
+## Selection Criteria  
   
 - Flame Powered  
 - AC電源不要  
-- 高品質  
-- 工業デザイン  
-- 携行性  
-- Repairability  
+- Portable  
+- High Quality  
+- Industrial Design  
 - Long-term Ownership  
+- Repairability  
 - Workflow  
-- Design Bibleとの整合  
+- Design Bible  
   
-Popularity・価格・SNS・希少性は評価対象外。  
+## Reason  
   
-### Reason  
-  
-THE THIRD PLACEの思想である  
+9Barista Mk.2 Proは  
   
 - Portable Luxury  
 - Architectural Simplicity  
 - Long-term Ownership  
   
-を最も高い水準で満たす。  
+を最も高い水準で実現する。  
   
-また、  
-  
-- Magnetic Funnel  
-- Stainless Steel Basket Cap Pro  
-- Puck Screen  
-  
-など純正アクセサリーとの一貫したWorkflowを構築できる。  
+純正アクセサリーとの統一されたWorkflowを構築できることも採用理由とする。  
   
 ---  
   
-## Coffee Grinder  
+# Coffee Grinder  
   
 | Category | Brand | Model | Status |  
 |----------|--------|-------|--------|  
 | Coffee Grinder | Option-O | LAGOM Mini (USB-C PD) | Confirmed |  
   
-### Decision  
+## Decision  
   
-Option-O LAGOM Mini（USB-C PD）をTHE THIRD PLACEの標準グラインダーとして採用する。  
+Option-O LAGOM Mini（USB-C PD）を正式採用する。  
   
-### Selection Criteria  
+## Selection Criteria  
   
-- AC電源不要（必須）  
-- USB-C PD給電  
-- 電動  
+- USB-C PD  
+- AC電源不要  
 - Portable  
+- Electric  
 - Single Dose  
+- Workflow  
 - Brand Philosophy  
 - Industrial Design  
-- Long-term Quality  
-- Workflow  
 - Maintainability  
   
-Popularity・SNS・価格・希少性は評価対象外。  
-  
-### Reason  
+## Reason  
   
 比較対象  
   
-- Option-O  
 - Varia  
 - Mazzer  
 - Mahlkönig  
@@ -92,196 +157,523 @@ Popularity・SNS・価格・希少性は評価対象外。
 - Geimori  
 - Outin  
   
-を比較した結果、  
+との比較において、  
   
-Option-Oのみが  
+USB-C PD  
+Portable  
+Design Philosophy  
+Workflow  
   
-- USB-C PD  
-- Portable  
-- Brand Philosophy  
-- Design Bible  
-- Foundation Compass  
-  
-を同時に満たした。  
+を最も高いレベルで満たした。  
   
 ---  
   
-## Scale  
+# Coffee Scale  
   
 | Category | Brand | Model | Status |  
 |----------|--------|-------|--------|  
-| Scale | Acaia | Lunar | Confirmed |  
+| Coffee Scale | MantaBrew | Master Kit (Module A + Module B) | Confirmed |  
   
-### Reason  
+## Decision  
   
-ブランド格・品質・Workflow・日本国内サポートを総合評価し正式採用。  
+MantaBrew Master Kitを正式採用する。  
+  
+採用構成は  
+  
+- Module A  
+- Module B  
+  
+の両方を含む完全構成とする。  
+  
+## Selection Criteria  
+  
+- Espresso Workflow  
+- Filter Workflow  
+- Expandability  
+- Modular Design  
+- High Precision  
+- Industrial Design  
+- Workflow Optimization  
+- Premium Materials  
+  
+## Reason  
+  
+比較検討の結果、  
+  
+Module A単体  
+Module B単体  
+  
+ではなく、  
+  
+Master Kitによる完全構成が  
+  
+- 将来的な拡張性  
+- Workflow  
+- Design Philosophy  
+- Long-term Ownership  
+  
+を最も満たすため正式採用する。  
   
 ---  
   
-## Bean Storage  
+# Bean Storage  
   
 | Category | Brand | Model | Status |  
 |----------|--------|-------|--------|  
 | Bean Storage | Weber Workshops | Bean Cellar | Confirmed |  
   
-### Reason  
+## Decision  
   
-Single Dose Workflowとの整合性を評価し正式採用。  
+Bean Cellar Bulkを正式採用する。  
+  
+## Selection Criteria  
+  
+- Single Dose Workflow  
+- Airtight Storage  
+- Premium Materials  
+- Workflow Integration  
+  
+## Reason  
+  
+THE THIRD PLACEが採用するSingle Dose Workflowと完全に整合する。  
   
 ---  
   
-## Tamping Station  
+# Tamping Station  
   
 | Category | Brand | Model | Status |  
 |----------|--------|-------|--------|  
 | Tamping Station | Saint Anthony Industries | The Bloc | Confirmed |  
   
-### Reason  
+## Decision  
   
-Tamping Station・Portafilter Stand・Knock Boxを統合した思想がTHE THIRD PLACEに適合。  
+The Blocを正式採用する。  
   
----  
+## Selection Criteria  
   
-## Tamper  
+- Integrated Workflow  
+- Knock Box  
+- Tamp Station  
+- Premium Materials  
+- Industrial Design  
   
-| Category | Brand | Model | Status |  
-|----------|--------|-------|--------|  
-| Tamper | The Force Tamper | 53mm | Confirmed |  
+## Reason  
   
-### Reason  
+Tamping Station  
   
-9Baristaとの適合性・品質・長期使用性を総合評価。  
+Knock Box  
   
----  
+Portafilter Stand  
   
-## Distribution Tool  
-  
-| Category | Brand | Model | Status |  
-|----------|--------|-------|--------|  
-| Distribution Tool | Pullman | Chisel Redistribution Tool Wood（53mm Custom Order） | Confirmed |  
-  
-### Reason  
-  
-53mmへの最適化が可能であり、精度・品質・Workflow・Design Bibleとの整合性を評価し正式採用。  
+を統合した思想がTHE THIRD PLACEと最も一致する。  
   
 ---  
   
-## WDT Tool  
+# Tamper  
   
 | Category | Brand | Model | Status |  
 |----------|--------|-------|--------|  
-| WDT Tool | Normcore | Auto Spin WDT | Confirmed |  
+| Tamper | The Force Tamper | 53 mm | Confirmed |  
   
-### Reason  
+## Decision  
   
-Auto Spin方式を採用条件とし、  
+The Force Tamper 53 mmを正式採用する。  
   
-- 53mm適合  
+## Selection Criteria  
+  
+- Consistency  
+- Build Quality  
+- Ergonomics  
+- Long-term Reliability  
 - Workflow  
-- 品質  
   
-を総合評価。  
+## Reason  
+  
+抽出の再現性  
+  
+操作性  
+  
+耐久性  
+  
+9Baristaとの適合性  
+  
+を総合評価し正式採用する。  
   
 ---  
   
-## RDT Spray Bottle  
+# Distribution Tool  
+  
+| Category | Brand | Model | Status |  
+|----------|--------|-------|--------|  
+| Distribution Tool | Pullman | Chisel Redistribution Tool Wood (53 mm Custom Order) | Confirmed |  
+  
+## Decision  
+  
+Pullman Chisel Redistribution Tool Woodを正式採用する。  
+  
+53 mm Custom Order仕様とする。  
+  
+## Selection Criteria  
+  
+- Precision  
+- Workflow  
+- Material Quality  
+- Design Bible  
+- Custom Compatibility  
+  
+## Reason  
+  
+53 mmへの最適化が可能であり、  
+  
+品質  
+  
+精度  
+  
+Workflow  
+  
+Design Philosophy  
+  
+の全てで採用基準を満たす。  
+  
+---  
+  
+# WDT Tool  
+  
+| Category | Brand | Model | Status |  
+|----------|--------|-------|--------|  
+| WDT Tool | Normcore | Planetary WDT Tool | Confirmed |  
+  
+## Decision  
+  
+Normcore Planetary WDT Toolを正式採用する。  
+  
+## Selection Criteria  
+  
+- Planetary Mechanism  
+- Consistent Distribution  
+- Workflow  
+- Build Quality  
+- Ergonomics  
+  
+## Reason  
+  
+Planetary機構により、従来型WDTよりも均一なベッド形成と高い再現性を実現する。  
+  
+THE THIRD PLACEが求めるWorkflow・品質・デザインとの整合性を満たす。  
+  
+---  
+  
+# RDT Spray Bottle  
   
 | Category | Brand | Model | Status |  
 |----------|--------|-------|--------|  
 | RDT Spray Bottle | Normcore | RDT Spray Bottle | Confirmed |  
   
-### Reason  
+## Decision  
   
-エスプレッソ専用設計・工業デザイン・ブランド整合性を評価。  
+Normcore RDT Spray Bottleを正式採用する。  
+  
+## Selection Criteria  
+  
+- Fine Mist  
+- Espresso Workflow  
+- Build Quality  
+- Design Consistency  
+  
+## Reason  
+  
+Ross Droplet Technique専用設計であり、  
+  
+- 静電気低減  
+- 粉飛散防止  
+- Workflow  
+  
+を最適化できる。  
   
 ---  
   
-## Espresso Basket  
+# Espresso Basket  
   
 | Category | Brand | Model | Status |  
 |----------|--------|-------|--------|  
-| Espresso Basket | IMS | Precision Basket 53mm | Confirmed |  
+| Espresso Basket | IMS | Precision Basket 53 mm | Confirmed |  
   
-### Reason  
+## Decision  
   
-9Barista純正バスケットに加え、抽出精度向上のため正式採用。  
+IMS Precision Basket 53 mmを正式採用する。  
   
-## Basket Cap  
+## Selection Criteria  
+  
+- Extraction Precision  
+- Manufacturing Quality  
+- Compatibility  
+- Long-term Reliability  
+  
+## Reason  
+  
+9Barista純正バスケットに加え、  
+  
+抽出精度向上のため正式採用する。  
+  
+---  
+  
+# Basket Cap  
   
 | Category | Brand | Model | Status |  
 |----------|--------|-------|--------|  
 | Basket Cap | 9Barista | Stainless Steel Basket Cap Pro | Confirmed |  
   
-### Reason  
+## Decision  
   
-9Barista Mk.2 Pro付属品を正式採用。  
+9Barista Stainless Steel Basket Cap Proを正式採用する。  
   
-追加購入不要。  
+## Selection Criteria  
+  
+- Official Accessory  
+- Compatibility  
+- Workflow  
+  
+## Reason  
+  
+9Barista純正アクセサリーであり、  
+  
+最も高い適合性を持つ。  
+  
+追加購入は不要とする。  
   
 ---  
   
-## Dosing Funnel  
+# Dosing Funnel  
   
 | Category | Brand | Model | Status |  
 |----------|--------|-------|--------|  
 | Dosing Funnel | 9Barista | Magnetic Dosing Funnel | Confirmed |  
   
-### Reason  
+## Decision  
   
-純正マグネット式を正式採用。  
+9Barista Magnetic Dosing Funnelを正式採用する。  
   
-- 高い適合性  
-- Workflow最適  
-- 保持性  
-- Design統一  
+## Selection Criteria  
   
-を評価。  
+- Official Accessory  
+- Magnetic Attachment  
+- Workflow  
+- Perfect Compatibility  
+  
+## Reason  
+  
+純正アクセサリーとして  
+  
+- 保持力  
+- 適合性  
+- Workflow  
+  
+の全てで最適と判断した。  
   
 ---  
   
-## Puck Screen  
+# Puck Screen  
   
 | Category | Brand | Model | Status |  
 |----------|--------|-------|--------|  
 | Puck Screen | 9Barista | Puck Screen | Confirmed |  
   
-### Reason  
+## Decision  
   
-純正採用品とする。  
+9Barista Puck Screenを正式採用する。  
   
-抽出品質・シャワースクリーン保護・Workflowを評価。  
+## Selection Criteria  
+  
+- Official Accessory  
+- Extraction Quality  
+- Workflow  
+- Compatibility  
+  
+## Reason  
+  
+純正品として  
+  
+- 抽出品質  
+- シャワースクリーン保護  
+- Workflow  
+  
+を最適化する。  
   
 ---  
   
-## Puck Screen Stand  
+# Puck Screen Stand  
   
 | Category | Brand | Model | Status |  
 |----------|--------|-------|--------|  
 | Puck Screen Stand | Weber Workshops | Puck Screen Stand | Confirmed |  
   
-### Reason  
+## Decision  
   
-保管性・Workflow・Design Bibleとの整合性を評価。  
+Weber Workshops Puck Screen Standを正式採用する。  
+  
+## Selection Criteria  
+  
+- Storage  
+- Workflow  
+- Design Bible  
+- Material Quality  
+  
+## Reason  
+  
+保管性  
+  
+乾燥性  
+  
+Workflow  
+  
+デザインの統一性  
+  
+を評価した。  
   
 ---  
   
-# Rejected  
+# Milk Steamer  
+  
+| Category | Brand | Model | Status |  
+|----------|--------|-------|--------|  
+| Milk Steamer | ALM KOPi | Z1 Mini Steamer | Confirmed |  
+  
+## Decision  
+  
+ALM KOPi Z1 Mini Steamerを正式採用する。  
+  
+## Selection Criteria  
+  
+- Standalone  
+- Compact  
+- Microfoam Quality  
+- Workflow  
+- Design  
+  
+## Reason  
+  
+9Baristaとの組み合わせにおいて、  
+  
+独立したミルクスチーム環境を最も高い完成度で構築できる。  
   
 ---  
   
-## Category : Bean Dosing Cup  
+# Milk Pitcher  
   
-**Status**  
+| Category | Brand | Model | Status |  
+|----------|--------|-------|--------|  
+| Milk Pitcher | WPM | Handleless Pitcher Standard | Confirmed |  
+  
+## Decision  
+  
+WPM Handleless Pitcher Standardを正式採用する。  
+  
+## Selection Criteria  
+  
+- Handleless Design  
+- Balance  
+- Latte Art  
+- Workflow  
+  
+## Reason  
+  
+優れた重量バランスと操作性により、  
+  
+ミルクスチーミングおよびラテアートに最適である。  
+  
+---  
+  
+# Pitcher Sleeve  
+  
+| Category | Brand | Model | Status |  
+|----------|--------|-------|--------|  
+| Pitcher Sleeve | WPM | Pitcher Sleeve | Confirmed |  
+  
+## Decision  
+  
+WPM Pitcher Sleeveを正式採用する。  
+  
+## Selection Criteria  
+  
+- Thermal Insulation  
+- Grip  
+- Workflow  
+- Compatibility  
+  
+## Reason  
+  
+Handleless Pitcherとの組み合わせにより、  
+  
+安全性  
+  
+操作性  
+  
+保温性  
+  
+を向上させる。  
+  
+---  
+  
+# Brand Decisions  
+  
+## Grinder Brands  
+  
+### Confirmed  
+  
+- Option-O  
+  
+### Rejected  
+  
+| Brand | Reason |  
+|--------|--------|  
+| Varia | Design PhilosophyおよびWorkflowで採用基準に達しなかった。 |  
+| Mazzer | AC電源専用。Portable Luxuryに適合しない。 |  
+| Mahlkönig | AC電源専用。Portable Luxuryに適合しない。 |  
+| Ceado | AC電源専用。Portable Luxuryに適合しない。 |  
+| Fiorenzato | AC電源専用。Portable Luxuryに適合しない。 |  
+| Bentwood | AC電源専用。Portable Luxuryに適合しない。 |  
+| Titus Grinding | Portable条件を満たさない。 |  
+| Zerno | Portable条件を満たさない。 |  
+| Geimori | ブランド哲学・Workflow・長期品質でOption-Oに及ばない。 |  
+| Outin | 工業デザイン・ブランド哲学・長期運用性で採用基準に達しなかった。 |  
+  
+---  
+  
+## Scale Brands  
+  
+### Confirmed  
+  
+- MantaBrew  
+  
+### Rejected  
+  
+| Brand | Reason |  
+|--------|--------|  
+| Acaia | Workflowおよびモジュール拡張性でMantaBrewを上回らなかった。 |  
+| BOOKOO | Workflow・ブランド完成度・設計思想で採用基準に達しなかった。 |  
+| DiFluid | Workflow・ブランド完成度・設計思想で採用基準に達しなかった。 |  
+| Felicita | 長期運用性・Workflow・拡張性でMantaBrewを上回らなかった。 |  
+| MHW-3BOMBER | デザインは優秀だがWorkflow・システム性でMantaBrewを上回らなかった。 |  
+  
+---  
+  
+# Rejected Equipment  
+  
+---  
+  
+## Bean Dosing Cup  
+  
+### Status  
   
 Rejected  
   
 ### Decision  
   
-Bean Dosing Cupは採用しない。  
+採用しない。  
   
 ### Reason  
   
-Bean Cellarを採用するWorkflowでは  
+Bean Cellar採用後のWorkflowは  
   
 Bean Cellar  
   
@@ -303,149 +695,205 @@ Bean Dosing Cup
   
 Grinder  
   
-となり  
+となり、  
   
 - Workflow改善なし  
-- 管理対象増加  
 - 洗浄対象増加  
-- 保管物増加  
+- 保管対象増加  
   
 となるため採用しない。  
   
 ---  
   
-## Category : Grounds Dosing Cup  
+## Grounds Dosing Cup  
   
-**Status**  
+### Status  
   
 Rejected  
   
 ### Decision  
   
-専用Grounds Dosing Cupは採用しない。  
+採用しない。  
   
 ### Reason  
   
-Option-O LAGOM Mini付属Grounds Cupを正式採用。  
+LAGOM Mini付属Grounds Cupを正式採用する。  
   
 追加しても  
   
-- 品質向上なし  
 - Workflow改善なし  
-- 管理対象増加  
+- 品質向上なし  
+- 保管物増加  
   
 となる。  
   
 ---  
   
-## Category : Independent Knock Box  
+## Independent Knock Box  
   
-**Status**  
+### Status  
   
 Rejected  
   
 ### Decision  
   
-独立Knock Boxは採用しない。  
+採用しない。  
   
 ### Reason  
   
-Saint Anthony Industries The Blocへ統合済み。  
+The Blocへ統合済み。  
   
 追加しても  
   
 - 設置面積増加  
-- 管理対象増加  
 - Workflow改善なし  
+- 管理対象増加  
   
 となる。  
   
 ---  
   
-## Category : Third-party Dosing Funnel  
+## Third-party Dosing Funnel  
   
-**Status**  
-  
-Rejected  
-  
-### Reason  
-  
-9Barista純正Magnetic Funnelを正式採用したため。  
-  
-Workflow改善なし。  
-  
----  
-  
-## Category : Third-party Puck Screen  
-  
-**Status**  
+### Status  
   
 Rejected  
   
+### Decision  
+  
+採用しない。  
+  
 ### Reason  
   
-9Barista純正Puck Screenを正式採用したため。  
+9Barista純正Magnetic Dosing Funnelを正式採用した。  
   
-Workflow改善なし。  
+互換製品を追加しても  
+  
+- Workflow改善なし  
+- 適合性低下の可能性  
+  
+がある。  
   
 ---  
   
-## Category : Alternative Basket Cap  
+## Third-party Puck Screen  
   
-**Status**  
+### Status  
   
 Rejected  
   
+### Decision  
+  
+採用しない。  
+  
 ### Reason  
   
-9Barista Pro付属Stainless Steel Basket Cap Proを正式採用。  
+9Barista純正Puck Screenを正式採用した。  
   
-追加購入不要。  
+追加しても  
   
-# Brand Decisions  
+- Workflow改善なし  
+- 品質向上なし  
   
-## Grinder Brands  
-  
-### Confirmed  
-  
-- Option-O  
-  
-### Rejected  
-  
-| Brand | Reason |  
-|--------|--------|  
-| Varia | AC電源専用。 |  
-| Mazzer | AC電源専用。 |  
-| Mahlkönig | AC電源専用。 |  
-| Ceado | AC電源専用。 |  
-| Fiorenzato | AC電源専用。 |  
-| Bentwood | AC電源専用。 |  
-| Titus Grinding | AC電源専用。 |  
-| Zerno | AC電源専用。 |  
-| Geimori | ポータブル条件は満たすが、ブランド哲学・設計思想・長期品質でOption-Oに及ばない。 |  
-| Outin | ブランド格・工業デザイン・長期運用性で採用基準に達しない。 |  
+となる。  
   
 ---  
   
-## Scale Brands  
+## Alternative Basket Cap  
   
-### Confirmed  
+### Status  
   
-- Acaia  
+Rejected  
   
-### Rejected  
+### Decision  
   
-| Brand | Reason |  
-|--------|--------|  
-| BOOKOO | 日本国内での正規流通・サポート体制が限定的。 |  
-| DiFluid | 日本国内での正規流通・サポート体制が限定的。 |  
-| Felicita | 国内流通は限定的で、ブランド格・長期サポート・アクセサリー展開でAcaiaを上回らない。 |  
+採用しない。  
+  
+### Reason  
+  
+9Barista Stainless Steel Basket Cap Proを正式採用した。  
+  
+追加購入は不要。  
+  
+---  
+  
+## Alternative Scale Modules  
+  
+### Status  
+  
+Rejected  
+  
+### Decision  
+  
+Module Aのみ、  
+Module Bのみの構成は採用しない。  
+  
+### Reason  
+  
+THE THIRD PLACEでは  
+  
+Master Kit  
+  
+(Module A + Module B)  
+  
+による完成形を正式構成とする。  
+  
+---  
+  
+## Alternative Tamper  
+  
+### Status  
+  
+Rejected  
+  
+### Decision  
+  
+The Force Tamper以外は採用しない。  
+  
+### Reason  
+  
+比較検討の結果、  
+  
+- 再現性  
+- 操作性  
+- 品質  
+- 長期使用性  
+  
+の総合評価でThe Force Tamperを正式採用した。  
+  
+---  
+  
+## Alternative Distribution Tool  
+  
+### Status  
+  
+Rejected  
+  
+### Decision  
+  
+Pullman Chisel以外は採用しない。  
+  
+### Reason  
+  
+53 mm Custom対応、  
+  
+Workflow、  
+  
+品質、  
+  
+Design Bibleとの整合性  
+  
+を最も満たした。  
   
 ---  
   
 # Pending  
   
-## Milk Equipment  
+現時点では正式決定していない項目。  
+  
+---  
+  
+## Water Management  
   
 ### Status  
   
@@ -453,38 +901,68 @@ Pending
   
 ### Items  
   
-- Milk Pitcher（TP-004記載内容を確認後、正式反映）  
-- Milk Frother  
-- Milk Thermometer（必要性を検討）  
-- Latte Art Accessories（必要性を検討）  
+- Water Recipe  
+- Mineral Composition  
+- Espresso Water  
+- Filter Water  
+  
+### Reason  
+  
+Equipment選定を優先し、水質管理は実運用開始後に最適化する。  
+  
+---  
+  
+## Coffee Beans  
+  
+### Status  
+  
+Pending  
+  
+### Items  
+  
+- House Blend  
+- Espresso Blend  
+- Filter Beans  
+- Roaster Selection  
+  
+### Reason  
+  
+Equipment構成確定後に、Workflow全体との整合を見ながら正式決定する。  
+  
+---  
+  
+## Cups & Glassware  
+  
+### Status  
+  
+Pending  
+  
+### Items  
+  
+- Espresso Cup  
+- Cappuccino Cup  
+- Latte Cup  
+- Glassware  
+  
+### Reason  
+  
+抽出品質よりも優先順位が低く、運用開始後に選定する。  
   
 ---  
   
 # Deferred  
   
-以下は現時点では検討対象外とする。  
-  
-## Water Management System  
-  
-### Reason  
-  
-日本国内では良質な水の入手性が高く、現段階ではEquipment Decisionの優先度が低いため。  
+以下は現段階では検討対象外とする。  
   
 ---  
   
-## Water Bottle / Water Carrier  
+## Cleaning System  
   
 ### Reason  
   
-Water Management Systemと同理由。  
+運用開始後、  
   
----  
-  
-## Cleaning Tools  
-  
-### Reason  
-  
-全機材が揃い、実運用を開始してから最適化する。  
+実際のメンテナンス頻度・課題を確認した上で最適化する。  
   
 ---  
   
@@ -492,39 +970,108 @@ Water Management Systemと同理由。
   
 ### Reason  
   
-実際の機材サイズ・収納スペース・レイアウト確定後に検討する。  
+Coffee Station全体のレイアウト確定後に検討する。  
   
 ---  
   
-## Travel / Carry System  
+## Travel Carry System  
   
 ### Reason  
   
-Coffee Equipment一式が揃った後に最適化する。  
+Coffee Equipment一式が完成した後に検討する。  
   
 ---  
   
-# Document  
+## Water Bottle / Water Carrier  
   
-**Document ID**  
+### Reason  
+  
+Water Management System確定後に判断する。  
+  
+---  
+  
+## Coffee Station Furniture  
+  
+### Reason  
+  
+Equipment構成が完全確定した後に設計する。  
+  
+---  
+  
+# Decision Policy  
+  
+Equipmentの採用判断は以下を満たすこと。  
+  
+## Required  
+  
+- Workflow Improvement  
+- Functional Beauty  
+- Long-term Ownership  
+- Reliability  
+- Repairability  
+- Design Bible  
+- Foundation Compass  
+  
+## Not Evaluated  
+  
+- Popularity  
+- SNS  
+- Review Count  
+- Rarity  
+- Limited Edition  
+- Resale Value  
+- Price  
+  
+---  
+  
+# Workflow Philosophy  
+  
+THE THIRD PLACEのCoffee Workflowは  
+  
+Minimal Steps  
+  
+Minimal Objects  
+  
+Maximum Repeatability  
+  
+を目的とする。  
+  
+新たなEquipmentは、  
+  
+Workflowを改善する場合のみ採用する。  
+  
+Workflowを複雑化させるEquipmentは採用しない。  
+  
+---  
+  
+# SSOT  
+  
+Coffee Equipmentに関する正式決定は  
   
 PX-004  
   
-**Document Title**  
-  
 Barista Codex  
   
-### Purpose  
+を唯一のDecision Specificationとする。  
   
-THE THIRD PLACEにおけるCoffee Systemの  
+TP-004 Equipment Registry Object Referenceは、  
   
-- Official Equipment Decisions  
-- Brand Decisions  
-- Selection Criteria  
-- Workflow  
-- Rejected Items  
-- Decision History  
+本書でConfirmedとなったEquipmentのみをRegistryへ反映する。  
   
-を管理する唯一のSpecification Documentとする。  
+PX-005 Acquisition Handbookは、  
   
-TP-004 Equipment Registry Object Referenceは、本書を根拠として採用品のみをRegistryへ反映する。  
+Confirmed Equipmentのみを対象として購入情報を管理する。  
+  
+---  
+  
+# Revision History  
+  
+| Version | Date | Summary |  
+|---------|------|---------|  
+| 1.0 | 2026-08 | Initial official release |  
+| 2.0 | 2026-08 | Document restructured. Decision records and acquisition records separated. Coffee Scale updated to MantaBrew Master Kit (Module A + Module B). Confirmed equipment synchronized with current official decisions. |  
+  
+---  
+  
+# End of Document  
+  
