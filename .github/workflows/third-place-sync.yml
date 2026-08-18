@@ -1,0 +1,67 @@
+name: THE THIRD PLACE — SSOT Sync Validation
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "TP/**"
+      - "PX/**"
+      - "TM/**"
+      - "scripts/**"
+      - ".github/workflows/**"
+
+  pull_request:
+    paths:
+      - "TP/**"
+      - "PX/**"
+      - "TM/**"
+      - "scripts/**"
+      - ".github/workflows/**"
+
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate-ssot:
+    name: Validate TP-004 / PX-004 / PX-005
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Locate official documents
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          find_file() {
+            local id="$1"
+            local result
+            result="$(find TP PX -type f \( -iname "*${id}*" -o -iname "${id}.md" \) | head -n 1 || true)"
+
+            if [ -z "$result" ]; then
+              echo "ERROR: Could not locate $id" >&2
+              exit 2
+            fi
+
+            printf '%s' "$result"
+          }
+
+          echo "TP004=$(find_file TP-004)" >> "$GITHUB_ENV"
+          echo "PX004=$(find_file PX-004)" >> "$GITHUB_ENV"
+          echo "PX005=$(find_file PX-005)" >> "$GITHUB_ENV"
+
+      - name: Validate SSOT consistency
+        run: |
+          python scripts/third_place_sync_validator.py \
+            --tp004 "$TP004" \
+            --px004 "$PX004" \
+            --px005 "$PX005"
