@@ -3,16 +3,7 @@
 """
 THE THIRD PLACE — SSOT Sync Validator
 
-Official synchronization validation for:
-
-    TP-004 Equipment Registry Object Reference
-    PX-004 Barista Codex
-    PX-005 Acquisition Handbook
-
-SSOT relationship:
-
-    TP-004
-        Master Equipment Registry
+Document relationship:
 
     PX-004
         Coffee System Decision Authority
@@ -20,12 +11,33 @@ SSOT relationship:
     PX-005
         Acquisition / Purchase Authority
 
+    TP-004
+        Operational Equipment Registry
 
-IMPORTANT
+Important:
 
-This validator NEVER modifies source documents.
+    PX-004 and PX-005 must remain synchronized.
 
-It only reports inconsistencies.
+    TP-004 does NOT need to contain all PX-004 equipment.
+
+    TP-004 represents equipment that has already been
+    purchased, owned, and entered into operational use.
+
+Therefore:
+
+    PX-004 -> PX-005
+        REQUIRED
+
+    PX-005 -> PX-004
+        REQUIRED
+
+    PX-004 -> TP-004
+        NOT REQUIRED
+
+    TP-004 -> PX-004
+        NOT REQUIRED
+
+The validator never modifies source documents.
 
 Exit codes:
 
@@ -95,7 +107,9 @@ def normalize(value: str) -> str:
     return value.lower()
 
 
-def normalize_status(value: str | None) -> str:
+def normalize_status(
+    value: str | None
+) -> str:
 
     if not value:
         return ""
@@ -115,105 +129,6 @@ def equipment_key(
 
 
 # ============================================================
-# TP-004 Parser
-# ============================================================
-
-def parse_tp004(
-    text: str
-) -> list[Record]:
-
-    """
-    TP-004 is the Master Equipment Registry.
-
-    The validator intentionally performs only limited
-    structural parsing here.
-
-    TP-004 may contain multiple object records using the
-    same manufacturer/model combination.
-
-    Therefore:
-
-        Manufacturer + Model
-
-    is NOT considered a unique Equipment ID.
-
-    Duplicate detection is intentionally NOT performed
-    against Manufacturer + Model alone.
-    """
-
-    records: list[Record] = []
-
-    current_section = ""
-
-    # Generic extraction for common TP-004 table structures.
-    #
-    # We only use records that can be confidently identified
-    # as Brand / Model pairs.
-
-    for line in text.splitlines():
-
-        stripped = line.strip()
-
-        if stripped.startswith("#"):
-
-            current_section = (
-                stripped.lstrip("#").strip()
-            )
-
-            continue
-
-        # Markdown table
-        if "|" in stripped:
-
-            cells = [
-                cell.strip()
-                for cell
-                in stripped.strip("|").split("|")
-            ]
-
-            if len(cells) >= 3:
-
-                lowered = [
-                    normalize(cell)
-                    for cell in cells
-                ]
-
-                # Ignore header rows
-                if any(
-                    value in lowered
-                    for value in (
-                        "brand",
-                        "manufacturer",
-                    )
-                ) and any(
-                    value in lowered
-                    for value in (
-                        "model",
-                        "product",
-                    )
-                ):
-                    continue
-
-                # Conservative extraction only.
-                if (
-                    len(cells) >= 3
-                    and cells[1]
-                    and cells[2]
-                ):
-
-                    records.append(
-                        Record(
-                            document="TP-004",
-                            section=current_section,
-                            brand=cells[1],
-                            model=cells[2],
-                        )
-                    )
-
-    return records
-
-
-# ============================================================
 # PX-004 Parser
 # ============================================================
 
@@ -228,14 +143,11 @@ def parse_px004(
 
         Category    Brand    Model    Status
 
-    Example:
+    Only records with:
 
-        Espresso Machine    9Barista    Mk.2 Pro    Confirmed
+        Status = Confirmed
 
-    Only Status = Confirmed is included.
-
-    This prevents rejected / pending / deferred items
-    from becoming acquisition requirements.
+    are treated as active Coffee System decisions.
     """
 
     records: list[Record] = []
@@ -265,8 +177,7 @@ def parse_px004(
 
             cells = [
                 cell.strip()
-                for cell
-                in line.split("\t")
+                for cell in line.split("\t")
             ]
 
             if len(cells) < 4:
@@ -338,9 +249,6 @@ def parse_px004(
             ]:
                 continue
 
-            if cells[0] == "---":
-                continue
-
             category = cells[0]
             brand = cells[1]
             model = cells[2]
@@ -376,7 +284,7 @@ def parse_px005(
 ) -> list[Record]:
 
     """
-    PX-005 acquisition records are structured as:
+    PX-005 acquisition records use:
 
         ### Product Name
 
@@ -384,9 +292,7 @@ def parse_px005(
         | Model | ... |
         | Acquisition Status | ... |
 
-    All records are retained.
-
-    Acquisition Status is validated separately.
+    All acquisition records are retained.
     """
 
     records: list[Record] = []
@@ -464,8 +370,144 @@ def parse_px005(
 
 
 # ============================================================
-# Validation 1
-# PX-004 must contain records
+# TP-004 Parser
+# ============================================================
+
+def parse_tp004(
+    text: str
+) -> list[Record]:
+
+    """
+    TP-004 is an operational registry.
+
+    It represents equipment that has already been
+    purchased / owned / entered into operational use.
+
+    TP-004 is intentionally parsed only for reporting.
+
+    It is NOT compared one-to-one against PX-004.
+
+    Missing TP-004 records are NOT errors.
+    """
+
+    records: list[Record] = []
+
+    current_id = ""
+    current_section = ""
+
+    brand: str | None = None
+    model: str | None = None
+    status: str | None = None
+
+    current_field: str | None = None
+
+    def flush():
+
+        nonlocal brand
+        nonlocal model
+        nonlocal status
+
+        if brand and model:
+
+            records.append(
+                Record(
+                    document="TP-004",
+                    section=(
+                        current_id
+                        or current_section
+                    ),
+                    brand=brand,
+                    model=model,
+                    status=status,
+                )
+            )
+
+        brand = None
+        model = None
+        status = None
+
+    for line in text.splitlines():
+
+        stripped = line.strip()
+
+        # Object ID
+        match = re.match(
+            r"^##\s+([A-Z]{3}-\d{3})\s*$",
+            stripped,
+        )
+
+        if match:
+
+            flush()
+
+            current_id = match.group(1)
+
+            current_field = None
+
+            continue
+
+        if stripped.startswith("#"):
+
+            current_section = (
+                stripped.lstrip("#").strip()
+            )
+
+            current_field = None
+
+            continue
+
+        # Field labels
+        if stripped in (
+            "**Brand**",
+            "**Manufacturer**",
+        ):
+
+            current_field = "brand"
+
+            continue
+
+        if stripped in (
+            "**Product**",
+            "**Model**",
+        ):
+
+            current_field = "model"
+
+            continue
+
+        if stripped == "**Status**":
+
+            current_field = "status"
+
+            continue
+
+        if (
+            current_field
+            and stripped
+            and not stripped.startswith("**")
+        ):
+
+            if current_field == "brand":
+
+                brand = stripped
+
+            elif current_field == "model":
+
+                model = stripped
+
+            elif current_field == "status":
+
+                status = stripped
+
+            current_field = None
+
+    flush()
+
+    return records
+
+
+# ============================================================
+# Validation
 # ============================================================
 
 def check_px004_not_empty(
@@ -481,143 +523,23 @@ def check_px004_not_empty(
     return []
 
 
-# ============================================================
-# Validation 2
-# PX-004 against TP-004
-# ============================================================
-
-def check_px004_against_tp004(
-    tp004: list[Record],
-    px004: list[Record],
-) -> list[str]:
-
-    """
-    Verify that every PX-004 Confirmed Equipment can be found
-    in TP-004.
-
-    Matching:
-
-        Manufacturer + Model
-
-    is used only for cross-document confirmation.
-
-    TP-004 duplicates are NOT automatically treated as errors,
-    because TP-004 may contain multiple objects or registry
-    records with the same manufacturer/model.
-    """
-
-    errors: list[str] = []
-
-    master = {
-        equipment_key(
-            record.brand,
-            record.model,
-        )
-        for record in tp004
-    }
-
-    for record in px004:
-
-        key = equipment_key(
-            record.brand,
-            record.model,
-        )
-
-        if key not in master:
-
-            errors.append(
-                "PX-004 Confirmed Equipment "
-                "not found in TP-004: "
-                f"{record.brand} / {record.model}"
-            )
-
-    return errors
-
-
-# ============================================================
-# Validation 3
-# PX-005 against PX-004
-# ============================================================
-
-def check_px005_against_px004(
-    px004: list[Record],
-    px005: list[Record],
-) -> list[str]:
-
-    """
-    Every active PX-005 acquisition record must correspond
-    to a Confirmed Equipment in PX-004.
-
-    Active statuses:
-
-        Purchase Required
-        Included
-        Already Owned
-        To Be Confirmed
-
-    Historical / informational records should not be silently
-    treated as acquisition requirements.
-    """
-
-    errors: list[str] = []
-
-    confirmed = {
-        equipment_key(
-            record.brand,
-            record.model,
-        )
-        for record in px004
-    }
-
-    valid_statuses = {
-        "purchase required",
-        "included",
-        "already owned",
-        "to be confirmed",
-    }
-
-    for record in px005:
-
-        key = equipment_key(
-            record.brand,
-            record.model,
-        )
-
-        status = normalize_status(
-            record.status
-        )
-
-        if status not in valid_statuses:
-            continue
-
-        if key not in confirmed:
-
-            errors.append(
-                "PX-005 acquisition record has "
-                "no corresponding PX-004 Confirmed Equipment: "
-                f"{record.brand} / {record.model}"
-            )
-
-    return errors
-
-
-# ============================================================
-# Validation 4
-# PX-004 Confirmed Equipment missing from PX-005
-# ============================================================
+# ------------------------------------------------------------
+# PX-004 → PX-005
+# ------------------------------------------------------------
 
 def check_px004_missing_from_px005(
     px004: list[Record],
-    px005: list[Record],
+    px005: list[Record]
 ) -> list[str]:
 
     """
-    Every PX-004 Confirmed Equipment should have an
-    acquisition record in PX-005.
+    Every PX-004 Confirmed Equipment must exist in PX-005.
 
-    This is the critical protection against:
+    This protects against:
 
-        'Confirmed but forgotten in PX-005'
+        Confirmed decision
+            ↓
+        forgotten acquisition record
     """
 
     errors: list[str] = []
@@ -648,10 +570,75 @@ def check_px004_missing_from_px005(
     return errors
 
 
-# ============================================================
-# Validation 5
+# ------------------------------------------------------------
+# PX-005 → PX-004
+# ------------------------------------------------------------
+
+def check_px005_against_px004(
+    px004: list[Record],
+    px005: list[Record]
+) -> list[str]:
+
+    """
+    Every active PX-005 acquisition record must correspond
+    to a Confirmed Equipment in PX-004.
+
+    Valid acquisition statuses:
+
+        Purchase Required
+        Included
+        Already Owned
+        To Be Confirmed
+
+    This prevents PX-005 from silently acquiring equipment
+    that was never formally selected in PX-004.
+    """
+
+    errors: list[str] = []
+
+    confirmed = {
+        equipment_key(
+            record.brand,
+            record.model,
+        )
+        for record in px004
+    }
+
+    valid_statuses = {
+        "purchase required",
+        "included",
+        "already owned",
+        "to be confirmed",
+    }
+
+    for record in px005:
+
+        status = normalize_status(
+            record.status
+        )
+
+        if status not in valid_statuses:
+            continue
+
+        key = equipment_key(
+            record.brand,
+            record.model,
+        )
+
+        if key not in confirmed:
+
+            errors.append(
+                "PX-005 acquisition record has "
+                "no corresponding PX-004 Confirmed Equipment: "
+                f"{record.brand} / {record.model}"
+            )
+
+    return errors
+
+
+# ------------------------------------------------------------
 # PX-005 Acquisition Status
-# ============================================================
+# ------------------------------------------------------------
 
 def check_px005_status_values(
     px005: list[Record]
@@ -683,22 +670,63 @@ def check_px005_status_values(
     return errors
 
 
-# ============================================================
-# Validation 6
-# Model-name drift
-# ============================================================
+# ------------------------------------------------------------
+# Exact duplicate PX-004 rows
+# ------------------------------------------------------------
 
-def check_model_drift(
-    px004: list[Record],
-    px005: list[Record],
+def check_px004_duplicates(
+    px004: list[Record]
 ) -> list[str]:
 
     """
-    Detect obvious model-name differences.
+    Exact duplicate rows are errors.
 
-    IMPORTANT:
+    Manufacturer + Model alone is NOT considered a duplicate
+    because different Equipment objects may legitimately refer
+    to the same manufacturer/model.
+    """
 
-    This function does NOT automatically reconcile names.
+    errors: list[str] = []
+
+    seen: set[
+        tuple[str, str, str]
+    ] = set()
+
+    for record in px004:
+
+        key = (
+            normalize(record.section),
+            normalize(record.brand),
+            normalize(record.model),
+        )
+
+        if key in seen:
+
+            errors.append(
+                "Exact duplicate PX-004 Confirmed record: "
+                f"{record.section} / "
+                f"{record.brand} / "
+                f"{record.model}"
+            )
+
+        else:
+
+            seen.add(key)
+
+    return errors
+
+
+# ------------------------------------------------------------
+# Model-name drift
+# ------------------------------------------------------------
+
+def check_model_drift(
+    px004: list[Record],
+    px005: list[Record]
+) -> list[str]:
+
+    """
+    Detect obvious naming drift.
 
     Example:
 
@@ -708,12 +736,10 @@ def check_model_drift(
         PX-005:
             Bean Cellar Bulk
 
-    Result:
+    The validator does NOT decide which is correct.
 
-        FAIL
-
-    The human must decide which official name is correct,
-    then synchronize the documents.
+    It reports the difference so the SSOT can be corrected
+    deliberately.
     """
 
     errors: list[str] = []
@@ -752,7 +778,7 @@ def check_model_drift(
             record.model
         )
 
-        # Exact match = PASS
+        # Exact match
         if any(
             normalize(candidate.model)
             == model
@@ -761,7 +787,7 @@ def check_model_drift(
 
             continue
 
-        # Obvious containment = FAIL
+        # Obvious near-match
         for candidate in candidates:
 
             candidate_model = normalize(
@@ -787,55 +813,6 @@ def check_model_drift(
 
 
 # ============================================================
-# Validation 7
-# Duplicate PX-004 records
-# ============================================================
-
-def check_px004_duplicate_rows(
-    px004: list[Record]
-) -> list[str]:
-
-    """
-    Detect exact duplicate PX-004 rows only.
-
-    Manufacturer + Model + Category must all match.
-
-    This avoids the previous false positives caused by
-    identical product names belonging to separate TP-004
-    objects.
-    """
-
-    errors: list[str] = []
-
-    seen: set[
-        tuple[str, str, str]
-    ] = set()
-
-    for record in px004:
-
-        key = (
-            normalize(record.section),
-            normalize(record.brand),
-            normalize(record.model),
-        )
-
-        if key in seen:
-
-            errors.append(
-                "Exact duplicate PX-004 Confirmed row: "
-                f"{record.section} / "
-                f"{record.brand} / "
-                f"{record.model}"
-            )
-
-        else:
-
-            seen.add(key)
-
-    return errors
-
-
-# ============================================================
 # Main
 # ============================================================
 
@@ -843,7 +820,8 @@ def main() -> int:
 
     parser = argparse.ArgumentParser(
         description=(
-            "THE THIRD PLACE SSOT Sync Validator"
+            "THE THIRD PLACE "
+            "PX-004 / PX-005 Sync Validator"
         )
     )
 
@@ -890,7 +868,7 @@ def main() -> int:
     except Exception as error:
 
         print(
-            "CONFIG ERROR:"
+            "CONFIG ERROR"
         )
 
         print(
@@ -901,30 +879,15 @@ def main() -> int:
 
     errors: list[str] = []
 
-    # --------------------------------------------------------
-    # Basic parser validation
-    # --------------------------------------------------------
+    # ========================================================
+    # PX-004 / PX-005 are the mandatory synchronization pair
+    # ========================================================
 
     errors.extend(
         check_px004_not_empty(
             px004
         )
     )
-
-    # --------------------------------------------------------
-    # TP-004 → PX-004
-    # --------------------------------------------------------
-
-    errors.extend(
-        check_px004_against_tp004(
-            tp004,
-            px004,
-        )
-    )
-
-    # --------------------------------------------------------
-    # PX-004 → PX-005
-    # --------------------------------------------------------
 
     errors.extend(
         check_px004_missing_from_px005(
@@ -933,10 +896,6 @@ def main() -> int:
         )
     )
 
-    # --------------------------------------------------------
-    # PX-005 → PX-004
-    # --------------------------------------------------------
-
     errors.extend(
         check_px005_against_px004(
             px004,
@@ -944,29 +903,17 @@ def main() -> int:
         )
     )
 
-    # --------------------------------------------------------
-    # PX-005 status
-    # --------------------------------------------------------
-
     errors.extend(
         check_px005_status_values(
             px005
         )
     )
 
-    # --------------------------------------------------------
-    # PX-004 duplicate rows
-    # --------------------------------------------------------
-
     errors.extend(
-        check_px004_duplicate_rows(
+        check_px004_duplicates(
             px004
         )
     )
-
-    # --------------------------------------------------------
-    # Model drift
-    # --------------------------------------------------------
 
     errors.extend(
         check_model_drift(
@@ -976,7 +923,15 @@ def main() -> int:
     )
 
     # ========================================================
-    # Result
+    # TP-004 is operational registry only
+    #
+    # IMPORTANT:
+    #
+    # TP-004 is intentionally NOT used to determine whether
+    # PX-004 or PX-005 records are valid.
+    #
+    # Therefore a product being absent from TP-004 is NOT an
+    # error.
     # ========================================================
 
     print(
@@ -988,15 +943,36 @@ def main() -> int:
     )
 
     print(
-        f"TP-004 records: {len(tp004)}"
+        "Synchronization Authority:"
     )
 
     print(
-        f"PX-004 Confirmed records: {len(px004)}"
+        "  PX-004 <-> PX-005"
     )
 
     print(
-        f"PX-005 acquisition records: {len(px005)}"
+        "Operational Registry:"
+    )
+
+    print(
+        "  TP-004"
+    )
+
+    print()
+
+    print(
+        f"TP-004 operational records: "
+        f"{len(tp004)}"
+    )
+
+    print(
+        f"PX-004 Confirmed records: "
+        f"{len(px004)}"
+    )
+
+    print(
+        f"PX-005 acquisition records: "
+        f"{len(px005)}"
     )
 
     print()
@@ -1022,8 +998,13 @@ def main() -> int:
         return 1
 
     print(
-        "PASS — TP-004 / PX-004 / PX-005 "
-        "are structurally consistent."
+        "PASS — PX-004 and PX-005 "
+        "are synchronized."
+    )
+
+    print(
+        "TP-004 is treated as the "
+        "purchased / operational registry."
     )
 
     return 0
