@@ -1,4 +1,5 @@
-## PX-004 Barista Codex  
+**PX-004 Barista Codex**  
+  
 PX-004 Barista Codex  
   
 Document ID  
@@ -11,7 +12,7 @@ Barista Codex
   
 Version  
   
-2.2  
+2.3  
   
 Status  
   
@@ -42,12 +43,12 @@ Relationship
   
 PX-004  
 Barista Codex  
-        │  
-        ▼  
+│  
+▼  
 TP-004  
 Equipment Registry  
-        │  
-        ▼  
+│  
+▼  
 PX-005  
 Acquisition Handbook  
   
@@ -486,13 +487,13 @@ Required Workflow
 Primary Route  
   
 Option-O LAGOM Mini  
-        ↓  
+↓  
 Weber Workshops Blind Shaker Onyx  
-        ↓  
+↓  
 9Barista Magnetic Dosing Funnel  
-        ↓  
+↓  
 Pullman Chisel Redistribution Tool  
-        ↓  
+↓  
 The Force Tamper  
   
 Secondary Route  
@@ -500,11 +501,11 @@ Secondary Route
 LAGOM MiniからBlind Shakerへの直接受けが物理的に成立しない場合は、LAGOM Mini純正Ground Transfer Cupを中継する。  
   
 Option-O LAGOM Mini  
-        ↓  
+↓  
 LAGOM Mini Ground Transfer Cup  
-        ↓  
+↓  
 Weber Workshops Blind Shaker Onyx  
-        ↓  
+↓  
 9Barista Magnetic Dosing Funnel  
   
 Secondary Routeを正式に許容する。  
@@ -562,7 +563,7 @@ Weber Blind Shakerと9Barista 53 mm Magnetic Dosing Funnelを組み合わせた�
 したがって、  
   
 Weber Blind Shaker  
-        ↓  
+↓  
 9Barista 53 mm Magnetic Dosing Funnel  
   
 のWorkflowは、単なる寸法上の推測ではなく、実使用例が確認できる構成として評価した。  
@@ -595,7 +596,7 @@ LAGOM Mini純正Ground Transfer Cupについて、Option-Oは磁気式Ground Tra
 ただし、純正Cupの詳細な外径・開口径等が公式公開されていないため、  
   
 LAGOM Mini  
-        ↓  
+↓  
 Weber Blind Shaker  
   
 の直接受けについては、寸法上の完全な確証を得ていない。  
@@ -603,9 +604,9 @@ Weber Blind Shaker
 そのため、  
   
 LAGOM Mini  
-        ↓  
+↓  
 LAGOM Mini Ground Transfer Cup  
-        ↓  
+↓  
 Weber Blind Shaker Onyx  
   
 を正式な代替Workflowとして許容する。  
@@ -751,6 +752,123 @@ Handleless Pitcherとの組み合わせにより、
   
 ⸻  
   
+Water Bottle Configuration  
+  
+Coffee System Water Bottle Configuration  
+  
+Status  
+  
+Confirmed  
+  
+Decision  
+  
+1泊2日・2人でのCoffee System運用に必要な専用水の携行構成を正式採用する。  
+  
+⸻  
+  
+Operation Scenario  
+  
+設営完了後  
+  
+* Espresso ×2  
+* Latte ×2  
+  
+遅めの昼食後  
+  
+* Latte ×2  
+  
+夕食後  
+  
+* Espresso ×2  
+  
+翌朝  
+  
+* Espresso ×2  
+* Latte ×2  
+  
+合計  
+  
+* Espresso：6杯  
+* Latte：6杯  
+* 9Barista使用回数：12回  
+* ALM KOPi Z1 Mini使用セッション：3回  
+  
+⸻  
+  
+Required Water Volume  
+  
+9Barista  
+  
+* 1回あたり最大120mLとして計算  
+* 12回 × 120mL = 1,440mL  
+  
+ALM KOPi Z1 Mini  
+  
+* 1セッションあたり300mLを満水にして使用  
+* 3セッション × 300mL = 900mL  
+  
+Coffee System専用水  
+  
+* 1,440mL + 900mL = 2,340mL  
+  
+必要量に余裕を持たせ、約2.5Lを携行基準とする。  
+  
+⸻  
+  
+Official Water Bottle Configuration  
+  
+1. Snow Peak  
+    オーロラボトル 1L  
+    容量：1,000mL  
+2. YETI  
+    Yonder 1L  
+    容量：1,000mL  
+3. Snow Peak  
+    酒筒 Titanium  
+    容量：540mL  
+  
+⸻  
+  
+Total Capacity  
+  
+1,000mL  
+  
+* 1,000mL  
+* 540mL  
+    = 2,540mL  
+  
+Coffee System必要水量2,340mLに対して約200mLの余裕を確保する。  
+  
+⸻  
+  
+Use Purpose  
+  
+上記3本の水は、飲料水・調理用水には使用しない。  
+  
+用途は以下に限定する。  
+  
+* 9Barista Espresso  
+* ALM KOPi Z1 MiniによるMilk Steaming  
+  
+⸻  
+  
+Design Philosophy  
+  
+同一ボトルを複数本持つのではなく、異なるブランド・素材・設計思想を持つ3本で必要容量を確保する。  
+  
+* Snow Peak オーロラボトル  
+    → チタン製メインウォーターボトル  
+* YETI Yonder  
+    → 軽量・透明・残量確認可能な追加ウォーターボトル  
+* Snow Peak 酒筒 Titanium  
+    → 540mLの追加容量を担う独立したチタン製容器  
+  
+3本合計2.54Lにより、1泊2日・2人のCoffee Systemを現地給水なしでも成立させることを目的とする。  
+  
+Status：CONFIRMED  
+  
+⸻  
+  
 Cups & Glassware  
   
 ⸻  
@@ -862,7 +980,7 @@ Role
 Selection Rationale  
   
 * Designed specifically to alter and enhance espresso aroma and flavor through aeration  
-* Particularly well matched to 9Barista's approximately 40ml extraction  
+* Particularly well matched to 9Barista’s approximately 40ml extraction  
 * Provides a different sensory approach from KRUVE PROPEL  
   
 AERESSOは、エスプレッソのエアレーションによって香りと風味を開く、PROPELとは異なる感覚的アプローチを担う専用グラスとして採用する。  
@@ -1451,14 +1569,6 @@ Coffee Equipment一式が完成した後に検討する。
   
 ⸻  
   
-Water Bottle / Water Carrier  
-  
-Reason  
-  
-Water Management System確定後に判断する。  
-  
-⸻  
-  
 Coffee Station Furniture  
   
 Reason  
@@ -1540,8 +1650,8 @@ Version	Date	Summary
 2.0	2026-08	Document restructured. Decision records and acquisition records separated. Coffee Scale updated to MantaBrew Master Kit (Module A + Module B). Confirmed equipment synchronized with current official decisions.  
 2.1	2026-08	Weber Workshops Blind Shaker Onyx added as Confirmed Equipment. Blind Shaker workflow, selection criteria, physical compatibility requirements, and rejected alternatives added.  
 2.2	2026-08	Espresso / Latte Cup Configuration added. KRUVE PROPEL and ICOSA Brewhouse AERESSO confirmed as the two dedicated espresso sensory glasses. HILLS FIELD Glass Case Single confirmed as the shared transport case. AION Plus Seine Super Absorbent Coaster 801-BL confirmed as the protective separator. DAMNGOOD × CATAPULT FACTORY FIKA12 ×2 confirmed as the dedicated latte cup configuration.  
+2.3	2026-08	Coffee System Water Bottle Configuration added. Snow Peak オーロラボトル 1L, YETI Yonder 1L, and Snow Peak 酒筒 Titanium 540mL confirmed as the dedicated water transport configuration for the Coffee System. Water Bottle / Water Carrier removed from Deferred items.  
   
 ⸻  
   
 End of Document  
-  
