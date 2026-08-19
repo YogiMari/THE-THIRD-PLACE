@@ -8,7 +8,7 @@ PX-005
 Acquisition Handbook  
   
 **Version**    
-1.3  
+1.4  
   
 **Status**    
 Official  
@@ -151,6 +151,8 @@ All purchases shall follow these principles.
 * Bulk Version  
 * Single Dose Workflow  
 * Weber Ecosystem  
+* Bean Cellar付属漏斗を使用してBeanを移送する  
+* Bean移送用のBean Spoonは別途購入しない  
   
 ---  
   
@@ -181,6 +183,10 @@ All purchases shall follow these principles.
 * Confirmed Equipment  
 * Fine Mist  
 * Designed for RDT  
+* The Bloc側で管理  
+* RDT専用スタンドは追加購入しない  
+* The Blocの空いたTool cutoutを使用  
+* 横置きによる安全な定位置管理を正式運用とする  
   
 ---  
   
@@ -245,6 +251,8 @@ All purchases shall follow these principles.
 * Wood Handle  
 * Precision Distribution  
 * Premium Finish  
+* KNODOS Tamping Mat with Tool Organiser - Walnut 54mmで管理  
+* The Blocの常設Toolではない  
   
 ---  
   
@@ -277,6 +285,8 @@ All purchases shall follow these principles.
 * 53 mm Version  
 * Automatic Leveling  
 * Premium Tamper  
+* KNODOS Tamping Mat with Tool Organiser - Walnut 54mmで管理  
+* The Blocの常設Toolではない  
   
 ---  
   
@@ -532,6 +542,9 @@ All purchases shall follow these principles.
 * Standalone Milk Steamer  
 * Compact Design  
 * Verify Voltage before purchase  
+* Separate single burner required for operation  
+* 2人分のLatteを連続して作る  
+* 1回の運用で2杯分を必ず作る  
   
 ---  
   
@@ -599,12 +612,12 @@ All purchases shall follow these principles.
   
 ## Product 16  
   
-### Normcore Planetary WDT Tool  
+### Normcore Planetary WDT Tool 54mm  
   
 | Item | Details |  
 |---|---|  
 | Manufacturer | Normcore |  
-| Model | Planetary WDT Tool |  
+| Model | Planetary WDT Tool 54mm |  
 | Category | WDT Tool |  
 | Acquisition Status | Purchase Required |  
 | Quantity | 1 |  
@@ -625,6 +638,9 @@ All purchases shall follow these principles.
 * Planetary Motion  
 * Consistent Distribution  
 * Premium Workflow  
+* 54 mm Specification  
+* Maximum Outer Diameter: approximately 65 mm  
+* KNODOS Tamping Mat with Tool Organiser - Walnut 54mmで管理  
   
 ---  
   
@@ -659,6 +675,11 @@ All purchases shall follow these principles.
 * Portafilter Stand  
 * Walnut Components  
 * CNC Aluminum Construction  
+* Extraction Coreとして使用  
+* Normcore RDT Spray Bottleを管理  
+* Weber Workshops Blind Shaker Onyxを管理  
+* The Blocの2つのTool cutoutをRDTおよびBlind Shakerに使用  
+* Distributor / Tamper / WDTはThe Blocに常設しない  
   
 ---  
   
@@ -695,9 +716,12 @@ All purchases shall follow these principles.
   * LAGOM Mini  
   * Blind Shaker  
   * 9Barista Magnetic Dosing Funnel  
+  * Normcore Planetary WDT Tool 54mm  
   * Pullman Chisel  
   * The Force Tamper  
 * Secondary Workflow through LAGOM Mini Ground Transfer Cup is permitted  
+* The Bloc側で管理  
+* The BlocのTool cutoutを使用  
   
 ---  
   
@@ -811,7 +835,7 @@ All purchases shall follow these principles.
   
 ## Product 22  
   
-### AION Plus Seine Super Absorbent Coaster 801-BL  
+### AION Seine Super Absorbent Coaster 801-BL  
   
 | Item | Details |  
 |---|---|  
@@ -981,6 +1005,48 @@ All purchases shall follow these principles.
   
 ---  
   
+## Product 27  
+  
+### KNODOS Tamping Mat with Tool Organiser - Walnut 54mm  
+  
+| Item | Details |  
+|---|---|  
+| Manufacturer | KNODOS |  
+| Model | Tamping Mat with Tool Organiser - Walnut 54mm |  
+| Category | Coffee Tool Station |  
+| Acquisition Status | Purchase Required |  
+| Quantity | 1 |  
+| Purchase Type | To Be Confirmed |  
+| Primary Purchase Source | Manufacturer / Authorized Retailer |  
+| Purchase URL | To Be Confirmed |  
+| Japan Shipping | To Be Confirmed |  
+| Warranty | Manufacturer Policy |  
+| Product Price | To Be Confirmed |  
+| Estimated Shipping | To Be Confirmed |  
+| Estimated Total Cost | To Be Confirmed |  
+| Currency | To Be Confirmed |  
+| Purchase Priority | ★★★★★ |  
+  
+### Notes  
+  
+* Confirmed Equipment  
+* Walnut specification  
+* 54mm specification  
+* Tool Organiser integrated  
+* Tamping Mat integrated  
+* Coffee Tool Station  
+* Normcore Planetary WDT Tool 54mm  
+* Pullman Chisel Redistribution Tool Wood 53mm  
+* The Force Tamper 53mm  
+* 3 Tool Organiser positions used  
+* WDT is assigned to the larger Tool Organiser position  
+* Pullman Chisel and The Force Tamper are assigned to the remaining positions  
+* Protects the Walnut tabletop from direct contact and coffee residue  
+* The Bloc remains the Extraction Core  
+* KNODOS functions as the Tool Station  
+  
+---  
+  
 # Coffee System Water Configuration  
   
 The following three products constitute the confirmed dedicated Coffee System water configuration.  
@@ -1010,7 +1076,7 @@ The confirmed transport configuration is:
   
 * KRUVE PROPEL ×1  
 * ICOSA Brewhouse AERESSO ×1  
-* AION Plus Seine Super Absorbent Coaster 801-BL ×1 as separator  
+* AION Seine Super Absorbent Coaster 801-BL ×1 as separator  
 * HILLS FIELD Glass Case Single ×1  
   
 The two espresso glasses are transported vertically/nested inside the single HILLS FIELD case.  
@@ -1031,6 +1097,47 @@ The confirmed latte configuration is:
 * FIKA12 dedicated case ×2  
   
 FIKA12 cases are stored directly in the Bek Container.  
+  
+---  
+  
+# Coffee Tool Station Configuration  
+  
+The confirmed Tool Station configuration is:  
+  
+* KNODOS Tamping Mat with Tool Organiser - Walnut 54mm ×1  
+* Normcore Planetary WDT Tool 54mm ×1  
+* Pullman Chisel Redistribution Tool Wood 53mm ×1  
+* The Force Tamper 53mm ×1  
+  
+### Tool Placement  
+  
+| Tool | Storage |  
+|---|---|  
+| Normcore Planetary WDT Tool 54mm | KNODOS large Tool Organiser |  
+| Pullman Chisel Redistribution Tool Wood 53mm | KNODOS Tool Organiser |  
+| The Force Tamper 53mm | KNODOS Tool Organiser |  
+  
+The Bloc is not used as permanent storage for these three tools.  
+  
+---  
+  
+# Extraction Core Configuration  
+  
+The confirmed Extraction Core is:  
+  
+* Saint Anthony Industries The Bloc ×1  
+* 9Barista Mk.2 Pro ×1  
+* Weber Workshops Blind Shaker Onyx ×1  
+* Normcore RDT Spray Bottle ×1  
+  
+### The Bloc Tool Cutouts  
+  
+The two Tool cutouts are assigned to:  
+  
+1. Normcore RDT Spray Bottle  
+2. Weber Workshops Blind Shaker Onyx  
+  
+Distributor, Tamper and WDT are not stored in The Bloc.  
   
 ---  
   
@@ -1097,6 +1204,14 @@ Before stating that the Coffee System purchase list is complete, the following m
 10. Unknown purchase availability is marked `To Be Confirmed`.  
 11. No rejected equipment is added.  
 12. No alternative equipment is added.  
+13. New Confirmed Equipment introduced in PX-004 v2.5 exists in PX-005.  
+14. KNODOS Tamping Mat with Tool Organiser - Walnut 54mm is registered as Confirmed Equipment.  
+15. Normcore Planetary WDT Tool is synchronized as the 54mm specification.  
+16. Distributor, Tamper and WDT storage configuration is synchronized with PX-004.  
+17. The Bloc's role as Extraction Core is synchronized with PX-004.  
+18. The Bloc's Tool cutouts are assigned to RDT and Blind Shaker.  
+19. No separate RDT stand is added.  
+20. No separate Bean Spoon is added.  
   
 ---  
   
@@ -1119,6 +1234,9 @@ If PX-004 is revised:
 5. New Confirmed Equipment must be added.  
 6. Removed or rejected Equipment must be removed from the active acquisition registry.  
 7. Included Equipment must remain identifiable when it is required for the workflow.  
+8. Storage assignments must be synchronized where they form part of the official Workflow.  
+9. Specification changes must be synchronized.  
+10. Equipment roles must remain consistent between PX-004 and PX-005.  
   
 ---  
   
@@ -1135,6 +1253,7 @@ Before purchase:
 * Confirm applicable import tax  
 * Confirm warranty  
 * Confirm compatibility  
+* Confirm voltage where applicable  
 * Keep invoice  
 * Register warranty where applicable  
   
@@ -1147,6 +1266,7 @@ Before purchase:
 | 1.0 | 2026-08 | Initial official release |  
 | 1.2 | 2026-08 | Acquisition records updated |  
 | 1.3 | 2026-08 | PX-004 v2.3 synchronization. Confirmed Equipment registry reconstructed from PX-004. Included Equipment policy added to prevent duplicate or unnecessary purchases. Blind Shaker, espresso glass configuration, latte cup configuration, and Coffee System water configuration synchronized. |  
+| 1.4 | 2026-08 | PX-004 v2.5 synchronization. KNODOS Tamping Mat with Tool Organiser - Walnut 54mm added as Confirmed Equipment. Normcore Planetary WDT Tool synchronized to 54mm. Tool Station / Extraction Core roles synchronized. Distributor, Tamper and WDT assigned to KNODOS. RDT and Blind Shaker assigned to The Bloc Tool cutouts. Bean Spoon and dedicated RDT stand explicitly excluded from additional purchases. Coffee Workflow acquisition records updated. |  
   
 ---  
   
