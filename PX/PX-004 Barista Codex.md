@@ -1,4 +1,4 @@
-  
+PX-004 Barista Codex  
 # PX-004 Barista Codex  
   
 PX-004 Barista Codex  
@@ -13,7 +13,7 @@ Barista Codex
   
 Version  
   
-2.5  
+2.6  
   
 Status  
   
@@ -711,19 +711,25 @@ ALM KOPi Z1 Mini Steamerを正式採用する。
   
 9Barista  
 ↓  
-FIKA12  
+WPM Handleless Pitcher  
 ↓  
-Z1 Mini Steamer  
+ALM KOPi Z1 Mini Steamer  
+↓  
+FIKA12  
   
 2杯目：  
   
 9Barista  
 ↓  
-FIKA12  
+WPM Handleless Pitcher  
 ↓  
-Z1 Mini Steamer  
+ALM KOPi Z1 Mini Steamer  
+↓  
+FIKA12  
   
 2人分を必ず作る。  
+  
+1杯ずつスチームして完成させる2サイクル運用とする。  
   
 Z1 Mini Steamerは別途採用するシングルバーナー上で使用し、バーナー上でスチーム機能を使用する。  
   
@@ -733,22 +739,33 @@ Z1 Mini Steamerは別途採用するシングルバーナー上で使用し、�
   
 Category | Brand | Model | Status  
 ---|---|---|---  
-Milk Pitcher | WPM | Handleless Pitcher Standard | Confirmed  
+Milk Pitcher | WPM | Handleless Pitcher Standard 450cc / #07 Sharp Spout | Confirmed  
   
 ### Decision  
   
-WPM Handleless Pitcher Standardを正式採用する。  
+WPM Handleless Pitcher Standard 450cc / #07 Sharp Spoutを正式採用する。  
+  
+ラテアートを重視し、Round SpoutではなくSharp Spoutを選択する。  
   
 ### Selection Criteria  
   
 * Handleless Design  
 * Balance  
 * Latte Art  
+* Beginner Usability  
 * Workflow  
+* 450cc Capacity  
+* Sharp Spout Control  
   
 ### Reason  
   
-優れた重量バランスと操作性により、ミルクスチーミングおよびラテアートに最適である。  
+THE THIRD PLACEでは、エスプレッソおよびラテアートを専門としないユーザーでも、ラテアートを習得しやすいことを重視する。  
+  
+#07 Sharp Spoutは細く明確なミルクフローを作りやすく、ハート、チューリップ、ロゼッタなどのラテアートへ発展できる注ぎのコントロール性を優先して正式採用する。  
+  
+450cc仕様は1杯分のミルクを1回ずつスチームする現在のWorkflowに適合する。  
+  
+2人分を1回でスチームする必要はなく、1杯目と2杯目を分けて運用する。  
   
 ⸻  
   
@@ -768,10 +785,13 @@ WPM Pitcher Sleeveを正式採用する。
 * Grip  
 * Workflow  
 * Compatibility  
+* Handleless Pitcher Integration  
   
 ### Reason  
   
 Handleless Pitcherとの組み合わせにより、安全性、操作性、保温性を向上させる。  
+  
+ハンドルレスPitcherの操作を安定させ、ラテアート時のPitcherコントロールを補助する。  
   
 ⸻  
   
@@ -1049,19 +1069,19 @@ FIKA12 remains the dedicated shared solution for latte.
   
 ⸻  
   
-## Final Cup / Transport Configuration  
+# Final Cup / Transport Configuration  
   
-### Espresso  
+## Espresso  
   
 * 9Barista  
 * KRUVE PROPEL ×1  
 * ICOSA AERESSO ×1  
   
-### Latte  
+## Latte  
   
 * DAMNGOOD × CATAPULT FACTORY FIKA12 ×2  
   
-### Espresso Glass Transport  
+## Espresso Glass Transport  
   
 * KRUVE PROPEL ×1  
 * AERESSO ×1  
@@ -1359,7 +1379,7 @@ Pending
   
 Equipment構成確定後に、Workflow全体との整合を見ながら正式決定する。  
   
----  
+⸻  
   
 # Deferred  
   
@@ -1371,7 +1391,7 @@ Equipment構成確定後に、Workflow全体との整合を見ながら正式決
   
 運用開始後、実際のメンテナンス頻度・課題を確認した上で最適化する。  
   
----  
+⸻  
   
 ## Storage & Organization  
   
@@ -1381,7 +1401,7 @@ Coffee Station全体のレイアウト確定後に検討する。
   
 ただし、PX-004で正式採用したKNODOS Tamping Mat with Tool Organiser - Walnut 54mmは、Coffee Tool Workflowを成立させるためのEquipmentとしてConfirmedとする。  
   
----  
+⸻  
   
 ## Travel Carry System  
   
@@ -1389,7 +1409,7 @@ Coffee Station全体のレイアウト確定後に検討する。
   
 Coffee Equipment一式が完成した後に検討する。  
   
----  
+⸻  
   
 ## Coffee Station Furniture  
   
@@ -1397,7 +1417,7 @@ Coffee Equipment一式が完成した後に検討する。
   
 Equipment構成が完全確定した後に設計する。  
   
----  
+⸻  
   
 # Workflow Configuration  
   
@@ -1412,6 +1432,8 @@ Weber Workshops Bean Cellar Bulk
   
 Bean移送時にBean Spoonは使用しない。  
   
+⸻  
+  
 ### Grinding  
   
 Bean Cellar  
@@ -1422,11 +1444,15 @@ Option-O LAGOM Mini
 ↓  
 Weber Workshops Blind Shaker Onyx  
   
-LAGOM MiniからBlind Shakerへの直接受けが成立しない場合は、LAGOM Mini純正Ground Transfer Cupを中継する。  
+LAGOM MiniからBlind Shakerへの直接受けをPrimary Routeとする。  
+  
+直接受けが物理的に成立しない場合は、LAGOM Mini純正Ground Transfer Cupを中継する。  
+  
+⸻  
   
 ### Puck Preparation  
   
-Weber Workshops Blind Shaker  
+Weber Workshops Blind Shaker Onyx  
 ↓  
 9Barista Magnetic Dosing Funnel  
 ↓  
@@ -1435,6 +1461,10 @@ Normcore Planetary WDT Tool 54mm
 Pullman Chisel Redistribution Tool Wood 53mm  
 ↓  
 The Force Tamper 53mm  
+↓  
+9Barista Mk.2 Pro  
+  
+⸻  
   
 ### Extraction  
   
@@ -1444,11 +1474,33 @@ The Force Tamper 53mm
 ↓  
 KRUVE PROPEL または ICOSA Brewhouse AERESSO  
   
+2人分を必ず作る。  
+  
+1杯目を抽出・サービングした後、同一Workflowを繰り返して2杯目を抽出する。  
+  
+⸻  
+  
 ### Latte  
+  
+1杯目：  
   
 9Barista Mk.2 Pro  
 ↓  
+Espresso  
+↓  
+WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout  
+↓  
+ALM KOPi Z1 Mini Steamer  
+↓  
 FIKA12  
+  
+2杯目：  
+  
+9Barista Mk.2 Pro  
+↓  
+Espresso  
+↓  
+WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout  
 ↓  
 ALM KOPi Z1 Mini Steamer  
 ↓  
@@ -1456,24 +1508,104 @@ FIKA12
   
 2人分を必ず作る。  
   
-### Station Configuration  
+1杯ずつスチームして完成させる2サイクル運用とする。  
   
-#### KNODOS Tamping Mat with Tool Organiser - Walnut 54mm  
+WPM Handleless Pitcherは1個を2サイクルで使用する。  
+  
+⸻  
+  
+# Station Configuration  
+  
+## KNODOS Tamping Mat with Tool Organiser - Walnut 54mm  
   
 * Normcore Planetary WDT Tool 54mm  
 * Pullman Chisel Redistribution Tool Wood 53mm  
 * The Force Tamper 53mm  
   
-#### The Bloc  
+KNODOSはCoffee SystemにおけるTool Stationとして使用する。  
+  
+⸻  
+  
+## The Bloc  
   
 * Portafilter  
 * Knock Box  
 * Normcore RDT Spray Bottle  
 * Weber Workshops Blind Shaker Onyx  
   
-The Blocの2つのTool cutoutは、RDTとBlind ShakerのWorkflow上の定位置として活用する。  
+The Blocの2つのTool cutoutは、  
   
-RDTは立てて固定することを要求せず、安全な横置きを正式運用とする。  
+1. RDT  
+2. Blind Shaker  
+  
+のWorkflow上の定位置として活用する。  
+  
+RDTは専用スタンドを追加せず、The Bloc上で横置きする。  
+  
+Distributor、Tamper、WDTはThe Blocに常設しない。  
+  
+⸻  
+  
+# Coffee System Operation Principles  
+  
+## Two-Person Operation  
+  
+THE THIRD PLACEのCoffee Systemは、2人分を基本運用単位とする。  
+  
+Espressoは、  
+  
+* 1杯目  
+* 2杯目  
+  
+の2回に分けて抽出する。  
+  
+Latteは、  
+  
+* 1杯目  
+* 2杯目  
+  
+の2回に分けてミルクをスチームし、各カップを個別に完成させる。  
+  
+2人分を1回の抽出・スチームで同時処理することを要求しない。  
+  
+⸻  
+  
+## Minimal Workflow  
+  
+Coffee Workflowは、  
+  
+**Minimal Steps**  
+**Minimal Objects**  
+**Maximum Repeatability**  
+  
+を基本とする。  
+  
+単体製品として優れていても、既存Workflowに明確な改善をもたらさないEquipmentは追加しない。  
+  
+⸻  
+  
+## Tabletop Protection  
+  
+Coffee Systemでは家具レベルのウォールナット天板を使用する。  
+  
+そのため、  
+  
+* 天板を汚さない  
+* 天板を傷めない  
+* 道具を直接転がさない  
+* 道具を散乱させない  
+  
+ことをWorkflow設計に含める。  
+  
+The BlocとKNODOSをそれぞれ、  
+  
+The Bloc  
+→ Extraction Core  
+  
+KNODOS  
+→ Tool Station  
+  
+として使用することで、専用家具や追加Tool Standを増やさずにTool管理と天板保護を成立させる。  
   
 ⸻  
   
@@ -1580,6 +1712,7 @@ PX-004は、価格・購入先・輸送・関税・購入手順などの調達�
 | 2.3 | 2026-08 | Coffee System Water Bottle Configuration added. Snow Peak オーロラボトル 1L, YETI Yonder 1L, and Snow Peak 酒筒 Titanium 540mL confirmed as the dedicated water transport configuration for the Coffee System. Water Bottle / Water Carrier removed from Deferred items. |  
 | 2.4 | 2026-08 | Weber Workshops Bean Cellar Bulk and AION Seine Super Absorbent Coaster 801-BL naming synchronized with PX-005 and official product naming. Water Management confirmed as part of the official Coffee System configuration. |  
 | 2.5 | 2026-08 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm added as Confirmed Tool Station. Normcore Planetary WDT Tool fixed to 54mm. Distributor, Tamper, and WDT moved from The Bloc to KNODOS. The Bloc role redefined as Extraction Core, with Normcore RDT Spray Bottle and Weber Workshops Blind Shaker Onyx assigned to its two Tool cutouts. Confirmed Coffee Preparation Workflow updated accordingly. |  
+| 2.6 | 2026-08 | Coffee Workflow updated following physical workflow investigation. Blind Shaker Onyx remains the primary ground-transfer and homogenization vessel. LAGOM Mini Ground Transfer Cup is retained only as a secondary route if direct transfer is physically unavailable. Two-person Espresso operation is explicitly defined as two sequential extraction cycles. WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout and WPM Pitcher Sleeve confirmed for Latte workflow, with one-cup-at-a-time steaming and two sequential cycles. Latte workflow updated accordingly. |  
   
 ⸻  
   
