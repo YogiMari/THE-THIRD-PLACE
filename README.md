@@ -48,13 +48,14 @@ Core philosophy, design principles, architecture, and master databases.
 ## 📋 PX — Project
 Project management, operational rules, documentation standards, and active development records.
 
-| ID     | Document                  |
-| ------ | ------------------------- |
-| PX-001 | Documentation System      |
-| PX-002 | Project Ledger            |
-| PX-003 | Vigil Protocol            |
-| PX-004 | Coffee System             |
-| PX-005 | Coffee Equipment Registry |
+| ID     | Document             |
+| ------ | -------------------- |
+| PX-001 | Documentation System |
+| PX-002 | Project Ledger       |
+| PX-003 | Vigil Protocol       |
+| PX-004 | Barista Codex        |
+| PX-005 | Acquisition Handbook |
+| PX-006 | Brew Care            |
 
 ⸻
 
@@ -148,4 +149,3 @@ Unless otherwise stated, all original documents, designs, structures, and writte
 ⸻
 
 ## © THE THIRD PLACE
-
