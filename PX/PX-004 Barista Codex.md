@@ -1,1102 +1,1110 @@
-# PX-004 Barista Codex  
-# PX-004 Barista Codex  
-  
-# Document ID  
-  
-PX-004  
-  
-# Document Title  
-  
-Barista Codex  
-  
-# Version  
-  
-2.9  
-  
-# Status  
-  
-Official  
-  
----  
-  
-## Purpose  
-  
-PX-004 Barista Codexは、THE THIRD PLACEにおけるCoffee Systemの意思決定を管理する正式仕様書である。  
-  
-本書では以下を管理する。  
-  
-* Official Equipment Decisions  
-* Selection Criteria  
-* Decision Reasons  
-* Workflow Decisions  
-* Brand Decisions  
-* Rejected Items  
-* Pending Items  
-* Deferred Items  
-  
-価格・購入先・輸送・関税・購入手順などの調達情報は管理対象外とし、PX-005 Acquisition Handbookで管理する。  
-  
----  
-  
-## Relationship  
-  
-PX-004  
-Barista Codex  
-│  
-▼  
-TP-004  
-Equipment Registry  
-│  
-▼  
-PX-005  
-Acquisition Handbook  
-  
----  
-  
-## Design Principles  
-  
-Coffee Equipmentは以下を満たすもののみ採用する。  
-  
-* Portable Luxury  
-* Architectural Simplicity  
-* Long-term Ownership  
-* High Reliability  
-* Workflow Optimization  
-* Repairability  
-* Functional Beauty  
-* Design Bibleとの整合  
-* Foundation Compassとの整合  
-  
-以下は評価対象としない。  
-  
-* Popularity  
-* SNS  
-* Review Count  
-* Rarity  
-* Collector Value  
-* Price  
-  
----  
-  
-# Confirmed Equipment  
-  
----  
-  
-## Espresso Machine  
-  
+# PX-004 Barista Codex    
+# PX-004 Barista Codex    
+    
+# Document ID    
+    
+PX-004    
+    
+# Document Title    
+    
+Barista Codex    
+    
+# Version    
+    
+3.0    
+    
+# Status    
+    
+Official    
+    
+---    
+    
+## Purpose    
+    
+PX-004 Barista Codexは、THE THIRD PLACEにおけるCoffee Systemの意思決定を管理する正式仕様書である。    
+    
+本書では以下を管理する。    
+    
+* Official Equipment Decisions    
+* Selection Criteria    
+* Decision Reasons    
+* Workflow Decisions    
+* Brand Decisions    
+* Rejected Items    
+* Pending Items    
+* Deferred Items    
+    
+価格・購入先・輸送・関税・購入手順などの調達情報は管理対象外とし、PX-005 Acquisition Handbookで管理する。    
+    
+---    
+    
+## Relationship    
+    
+PX-004    
+Barista Codex    
+│    
+▼    
+TP-004    
+Equipment Registry    
+│    
+▼    
+PX-005    
+Acquisition Handbook    
+    
+---    
+    
+## Design Principles    
+    
+Coffee Equipmentは以下を満たすもののみ採用する。    
+    
+* Portable Luxury    
+* Architectural Simplicity    
+* Long-term Ownership    
+* High Reliability    
+* Workflow Optimization    
+* Repairability    
+* Functional Beauty    
+* Design Bibleとの整合    
+* Foundation Compassとの整合    
+    
+以下は評価対象としない。    
+    
+* Popularity    
+* SNS    
+* Review Count    
+* Rarity    
+* Collector Value    
+* Price    
+    
+---    
+    
+# Confirmed Equipment    
+    
+---    
+    
+## Espresso Machine    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Espresso Machine | 9Barista | Mk.2 Pro | Confirmed |  
-  
-### Decision  
-  
-9Barista Mk.2 ProをTHE THIRD PLACEの標準エスプレッソマシンとして正式採用する。  
-  
-### Included Components / Accessories  
-  
-9Barista Mk.2 Proの標準付属品として、以下を現行Workflowで使用する。  
-  
-* 9Barista Magnetic Dosing Funnel  
-* 9Barista Stainless Steel Basket Cap Pro  
-  
-これらは9Barista Mk.2 Proに包含される付属品であり、Coffee Systemの独立Equipmentとして管理しない。  
-  
-したがって、TP-004 Equipment RegistryおよびPX-005 Acquisition Handbookでは、これらを独立したEquipment / Acquisition Itemとして登録しない。  
-  
-単体で販売されている場合でも、現在のCoffee SystemではMk.2 Proの付属品を使用し、追加購入を必要としない。  
-  
-### Selection Criteria  
-  
-* Flame Powered  
-* AC電源不要  
-* Portable  
-* High Quality  
-* Industrial Design  
-* Long-term Ownership  
-* Repairability  
-* Workflow  
-* Design Bible  
-  
-### Reason  
-  
-9Barista Mk.2 Proは  
-  
-* Portable Luxury  
-* Architectural Simplicity  
-* Long-term Ownership  
-  
-を最も高い水準で実現する。  
-  
-純正アクセサリーとの統一されたWorkflowを構築できることも採用理由とする。  
-  
----  
-  
-## Coffee Grinder  
-  
+    
+### Decision    
+    
+9Barista Mk.2 ProをTHE THIRD PLACEの標準エスプレッソマシンとして正式採用する。    
+    
+### Included Components / Accessories    
+    
+9Barista Mk.2 Proの標準付属品として、以下を現行Workflowで使用する。    
+    
+* 9Barista Magnetic Dosing Funnel    
+* 9Barista Stainless Steel Basket Cap Pro    
+    
+これらは9Barista Mk.2 Proに包含される付属品であり、Coffee Systemの独立Equipmentとして管理しない。    
+    
+したがって、TP-004 Equipment RegistryおよびPX-005 Acquisition Handbookでは、これらを独立したEquipment / Acquisition Itemとして登録しない。    
+    
+単体で販売されている場合でも、現在のCoffee SystemではMk.2 Proの付属品を使用し、追加購入を必要としない。    
+    
+### Selection Criteria    
+    
+* Flame Powered    
+* AC電源不要    
+* Portable    
+* High Quality    
+* Industrial Design    
+* Long-term Ownership    
+* Repairability    
+* Workflow    
+* Design Bible    
+    
+### Reason    
+    
+9Barista Mk.2 Proは    
+    
+* Portable Luxury    
+* Architectural Simplicity    
+* Long-term Ownership    
+    
+を最も高い水準で実現する。    
+    
+純正アクセサリーとの統一されたWorkflowを構築できることも採用理由とする。    
+    
+---    
+    
+## Coffee Grinder    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Coffee Grinder | Option-O | LAGOM Mini (USB-C PD) | Confirmed |  
-  
-### Decision  
-  
-Option-O LAGOM Mini（USB-C PD）を正式採用する。  
-  
-### Selection Criteria  
-  
-* USB-C PD  
-* AC電源不要  
-* Portable  
-* Electric  
-* Single Dose  
-* Workflow  
-* Brand Philosophy  
-* Industrial Design  
-* Maintainability  
-  
-### Reason  
-  
-比較対象  
-  
-* Varia  
-* Mazzer  
-* Mahlkönig  
-* Ceado  
-* Fiorenzato  
-* Bentwood  
-* Titus Grinding  
-* Zerno  
-* Geimori  
-* Outin  
-  
-との比較において、  
-  
-USB-C PD  
-Portable  
-Design Philosophy  
-Workflow  
-  
-を最も高いレベルで満たした。  
-  
----  
-  
-## Coffee Scale  
-  
+    
+### Decision    
+    
+Option-O LAGOM Mini（USB-C PD）を正式採用する。    
+    
+### Selection Criteria    
+    
+* USB-C PD    
+* AC電源不要    
+* Portable    
+* Electric    
+* Single Dose    
+* Workflow    
+* Brand Philosophy    
+* Industrial Design    
+* Maintainability    
+    
+### Reason    
+    
+比較対象    
+    
+* Varia    
+* Mazzer    
+* Mahlkönig    
+* Ceado    
+* Fiorenzato    
+* Bentwood    
+* Titus Grinding    
+* Zerno    
+* Geimori    
+* Outin    
+    
+との比較において、    
+    
+USB-C PD    
+Portable    
+Design Philosophy    
+Workflow    
+    
+を最も高いレベルで満たした。    
+    
+---    
+    
+## Coffee Scale    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Coffee Scale | MantaBrew | Master Kit (Module A + Module B) | Confirmed |  
-  
-### Decision  
-  
-MantaBrew Master Kitを正式採用する。  
-  
-採用構成は  
-  
-* Module A  
-* Module B  
-  
-の両方を含む完全構成とする。  
-  
-### Selection Criteria  
-  
-* Espresso Workflow  
-* Filter Workflow  
-* Expandability  
-* Modular Design  
-* High Precision  
-* Industrial Design  
-* Workflow Optimization  
-* Premium Materials  
-  
-### Reason  
-  
-Module A単体、Module B単体ではなく、Master Kitによる完全構成が  
-  
-* 将来的な拡張性  
-* Workflow  
-* Design Philosophy  
-* Long-term Ownership  
-  
-を最も満たすため正式採用する。  
-  
----  
-  
-## Bean Storage  
-  
+    
+### Decision    
+    
+MantaBrew Master Kitを正式採用する。    
+    
+採用構成は    
+    
+* Module A    
+* Module B    
+    
+の両方を含む完全構成とする。    
+    
+### Selection Criteria    
+    
+* Espresso Workflow    
+* Filter Workflow    
+* Expandability    
+* Modular Design    
+* High Precision    
+* Industrial Design    
+* Workflow Optimization    
+* Premium Materials    
+    
+### Reason    
+    
+Module A単体、Module B単体ではなく、Master Kitによる完全構成が    
+    
+* 将来的な拡張性    
+* Workflow    
+* Design Philosophy    
+* Long-term Ownership    
+    
+を最も満たすため正式採用する。    
+    
+---    
+    
+## Bean Storage    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Bean Storage | Weber Workshops | Bean Cellar Bulk | Confirmed |  
-  
-### Decision  
-  
-Bean Cellar Bulkを正式採用する。  
-  
-### Selection Criteria  
-  
-* Single Dose Workflow  
-* Airtight Storage  
-* Premium Materials  
-* Workflow Integration  
-  
-### Reason  
-  
-THE THIRD PLACEが採用するSingle Dose Workflowと完全に整合する。  
-  
-ロースト済み豆は袋からBean Cellar付属の漏斗を使用してBean Cellarへ移す。  
-  
-Bean Cellarへの移送工程では別途Bean Spoonを使用しない。  
-  
----  
-  
-## Tamping Station  
-  
+    
+### Decision    
+    
+Bean Cellar Bulkを正式採用する。    
+    
+### Selection Criteria    
+    
+* Single Dose Workflow    
+* Airtight Storage    
+* Premium Materials    
+* Workflow Integration    
+    
+### Reason    
+    
+THE THIRD PLACEが採用するSingle Dose Workflowと完全に整合する。    
+    
+ロースト済み豆は袋からBean Cellar付属の漏斗を使用してBean Cellarへ移す。    
+    
+Bean Cellarへの移送工程では別途Bean Spoonを使用しない。    
+    
+---    
+    
+## Tamping Station    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Tamping Station | Saint Anthony Industries | The Bloc | Confirmed |  
-  
-### Decision  
-  
-The Blocを正式採用する。  
-  
-### Selection Criteria  
-  
-* Integrated Workflow  
-* Knock Box  
-* Tamp Station  
-* Premium Materials  
-* Industrial Design  
-  
-### Reason  
-  
-Tamping Station、Knock Box、Portafilter Standを統合した思想がTHE THIRD PLACEと最も一致する。  
-  
-### Confirmed Role  
-  
-The BlocはCoffee Preparation SystemにおけるExtraction Coreとして使用する。  
-  
-主な役割は以下とする。  
-  
-* Portafilterの保持  
-* Knock Box機能  
-* RDTの一時置き  
-* Weber Workshops Blind Shakerの定位置  
-* 9Barista Workflowにおける抽出側の作業基盤  
-  
-DistributorおよびTamperの常設場所はThe Blocから分離する。  
-  
----  
-  
-## Tamper  
-  
+    
+### Decision    
+    
+The Blocを正式採用する。    
+    
+### Selection Criteria    
+    
+* Integrated Workflow    
+* Knock Box    
+* Tamp Station    
+* Premium Materials    
+* Industrial Design    
+    
+### Reason    
+    
+Tamping Station、Knock Box、Portafilter Standを統合した思想がTHE THIRD PLACEと最も一致する。    
+    
+### Confirmed Role    
+    
+The BlocはCoffee Preparation SystemにおけるExtraction Coreとして使用する。    
+    
+主な役割は以下とする。    
+    
+* Portafilterの保持    
+* Knock Box機能    
+* RDTの一時置き    
+* Weber Workshops Blind Shakerの定位置    
+* 9Barista Workflowにおける抽出側の作業基盤    
+    
+DistributorおよびTamperの常設場所はThe Blocから分離する。    
+    
+---    
+    
+## Tamper    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Tamper | The Force Tamper | 53 mm | Confirmed |  
-  
-### Decision  
-  
-The Force Tamper 53 mmを正式採用する。  
-  
-### Selection Criteria  
-  
-* Consistency  
-* Build Quality  
-* Ergonomics  
-* Long-term Reliability  
-* Workflow  
-  
-### Reason  
-  
-抽出の再現性、操作性、耐久性、9Baristaとの適合性を総合評価し正式採用する。  
-  
-### Storage  
-  
-通常時はKNODOS Tamping Mat with Tool Organiser - Walnut 54mmへ移動する。  
-  
-The Blocの常設Toolではない。  
-  
----  
-  
-## Distribution Tool  
-  
+    
+### Decision    
+    
+The Force Tamper 53 mmを正式採用する。    
+    
+### Selection Criteria    
+    
+* Consistency    
+* Build Quality    
+* Ergonomics    
+* Long-term Reliability    
+* Workflow    
+    
+### Reason    
+    
+抽出の再現性、操作性、耐久性、9Baristaとの適合性を総合評価し正式採用する。    
+    
+### Storage    
+    
+通常時はKNODOS Tamping Mat with Tool Organiser - Walnut 54mmへ移動する。    
+    
+The Blocの常設Toolではない。    
+    
+---    
+    
+## Distribution Tool    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Distribution Tool | Pullman | Chisel Redistribution Tool Wood (53 mm Custom Order) | Confirmed |  
-  
-### Decision  
-  
-Pullman Chisel Redistribution Tool Woodを正式採用する。  
-  
-53 mm Custom Order仕様とする。  
-  
-### Selection Criteria  
-  
-* Precision  
-* Workflow  
-* Material Quality  
-* Design Bible  
-* Custom Compatibility  
-  
-### Reason  
-  
-53 mmへの最適化が可能であり、  
-  
-品質  
-精度  
-Workflow  
-Design Philosophy  
-  
-の全てで採用基準を満たす。  
-  
-### Storage  
-  
-通常時はKNODOS Tamping Mat with Tool Organiser - Walnut 54mmへ移動する。  
-  
-The Blocの常設Toolではない。  
-  
----  
-  
-## WDT Tool  
-  
+    
+### Decision    
+    
+Pullman Chisel Redistribution Tool Woodを正式採用する。    
+    
+53 mm Custom Order仕様とする。    
+    
+### Selection Criteria    
+    
+* Precision    
+* Workflow    
+* Material Quality    
+* Design Bible    
+* Custom Compatibility    
+    
+### Reason    
+    
+53 mmへの最適化が可能であり、    
+    
+品質    
+精度    
+Workflow    
+Design Philosophy    
+    
+の全てで採用基準を満たす。    
+    
+### Storage    
+    
+通常時はKNODOS Tamping Mat with Tool Organiser - Walnut 54mmへ移動する。    
+    
+The Blocの常設Toolではない。    
+    
+---    
+    
+## WDT Tool    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | WDT Tool | Normcore | Planetary WDT Tool 54mm | Confirmed |  
-  
-### Decision  
-  
-Normcore Planetary WDT Tool 54mmを正式採用する。  
-  
-### Selection Criteria  
-  
-* Planetary Mechanism  
-* Consistent Distribution  
-* Workflow  
-* Build Quality  
-* Ergonomics  
-* 54 mm Workflow Compatibility  
-  
-### Reason  
-  
-Planetary機構により均一なベッド形成と高い再現性を実現する。  
-  
-THE THIRD PLACEが求めるWorkflow・品質・デザインとの整合性を満たす。  
-  
-54mm仕様を正式採用する。  
-  
-### Physical Configuration  
-  
-Normcore Planetary WDT Tool 54mmの本体最大外径は約65 mm。  
-  
-### Storage  
-  
-通常時はKNODOS Tamping Mat with Tool Organiser - Walnut 54mmへ移動する。  
-  
-WDTをウォールナット天板へ直接置かず、KNODOSのTool Organiser上で管理する。  
-  
----  
-  
-## RDT Spray Bottle  
-  
+    
+### Decision    
+    
+Normcore Planetary WDT Tool 54mmを正式採用する。    
+    
+### Selection Criteria    
+    
+* Planetary Mechanism    
+* Consistent Distribution    
+* Workflow    
+* Build Quality    
+* Ergonomics    
+* 54 mm Workflow Compatibility    
+    
+### Reason    
+    
+Planetary機構により均一なベッド形成と高い再現性を実現する。    
+    
+THE THIRD PLACEが求めるWorkflow・品質・デザインとの整合性を満たす。    
+    
+54mm仕様を正式採用する。    
+    
+### Physical Configuration    
+    
+Normcore Planetary WDT Tool 54mmの本体最大外径は約65 mm。    
+    
+### Storage    
+    
+通常時はKNODOS Tamping Mat with Tool Organiser - Walnut 54mmへ移動する。    
+    
+WDTをウォールナット天板へ直接置かず、KNODOSのTool Organiser上で管理する。    
+    
+---    
+    
+## RDT Spray Bottle    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | RDT Spray Bottle | Normcore | RDT Spray Bottle | Confirmed |  
-  
-### Decision  
-  
-Normcore RDT Spray Bottleを正式採用する。  
-  
-### Selection Criteria  
-  
-* Fine Mist  
-* Espresso Workflow  
-* Build Quality  
-* Design Consistency  
-  
-### Reason  
-  
-Ross Droplet Technique専用設計であり、  
-  
-* 静電気低減  
-* 粉飛散防止  
-* Workflow  
-  
-を最適化できる。  
-  
-### Storage  
-  
-RDTはKNODOS Tamping MatではなくThe Bloc側で管理する。  
-  
-RDT専用のスタンドを追加せず、The Blocの空いたTool cutoutを利用して一時置きする。  
-  
-RDTは立てて固定することを要求せず、横置きによる安全な定位置管理を正式な運用とする。  
-  
----  
-  
-## KNODOS Tool Station  
-  
+    
+### Decision    
+    
+Normcore RDT Spray Bottleを正式採用する。    
+    
+### Selection Criteria    
+    
+* Fine Mist    
+* Espresso Workflow    
+* Build Quality    
+* Design Consistency    
+    
+### Reason    
+    
+Ross Droplet Technique専用設計であり、    
+    
+* 静電気低減    
+* 粉飛散防止    
+* Workflow    
+    
+を最適化できる。    
+    
+### Storage    
+    
+RDTはKNODOS Tamping MatではなくThe Bloc側で管理する。    
+    
+RDT専用のスタンドを追加せず、The Blocの空いたTool cutoutを利用して一時置きする。    
+    
+RDTは立てて固定することを要求せず、横置きによる安全な定位置管理を正式な運用とする。    
+    
+---    
+    
+## KNODOS Tool Station    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Tool Station | KNODOS | Tamping Mat with Tool Organiser - Walnut 54mm | Confirmed |  
-  
-### Decision  
-  
-KNODOS Tamping Mat with Tool Organiser - Walnut 54mmを、THE THIRD PLACEのCoffee Tool Stationとして正式採用する。  
-  
-### Role  
-  
-The BlocからDistributor、Tamper、WDTの常設管理を分離し、KNODOSへ集約する。  
-  
-### Confirmed Tools  
-  
-* Normcore Planetary WDT Tool 54mm  
-* Pullman Chisel Redistribution Tool Wood (53 mm Custom Order)  
-* The Force Tamper 53 mm  
-  
-### Configuration  
-  
-KNODOSの3つのTool Organiser部を使用し、上記3 Toolを定位置管理する。  
-  
-写真上確認できる大径のTool Organiser部にはNormcore Planetary WDT Tool 54mmを置く。  
-  
-通常径の2つのTool Organiser部にはPullman Chisel 53mmとThe Force Tamper 53mmを置く。  
-  
-### Selection Criteria  
-  
-* Tool-specific organisation  
-* Walnut Material  
-* Compact Footprint  
-* Workflow Separation  
-* Protection of Walnut Tabletop  
-* Design Compatibility with The Bloc  
-* Minimal Additional Equipment  
-* Functional Beauty  
-  
-### Reason  
-  
-The Blocは製品としての完成度が高く、Portafilter、Knock Boxおよび抽出側のWorkflowを担わせる。  
-  
-一方、Distributor、Tamper、WDTまでThe Blocに集中させると、The Bloc上のTool配置が過密になる。  
-  
-KNODOS Tamping Mat with Tool Organiserを追加することで、  
-  
-The Bloc  
-→ Extraction Core  
-  
-KNODOS  
-→ Tool Station  
-  
-という役割分担を成立させる。  
-  
-また、WDT使用後に針へ残った粉をウォールナット天板へ落とすことを防止する。  
-  
-KNODOSのレザー面はWDTの一時置きにも使用できる。  
-  
-### 54 mm Specification Decision  
-  
-KNODOSは54mm版を正式採用する。  
-  
-Normcore Planetary WDT Tool 54mmは最大外径約65mmであり、KNODOS写真上の大径Tool Organiser部との寸法関係が最も適切と判断した。  
-  
-Pullman ChiselおよびThe Force Tamperは53mmであり、54mm版とのサイズ関係が自然である。  
-  
-58mm版は採用しない。  
-  
----  
-  
-## Blind Shaker  
-  
+    
+### Decision    
+    
+KNODOS Tamping Mat with Tool Organiser - Walnut 54mmを、THE THIRD PLACEのCoffee Tool Stationとして正式採用する。    
+    
+### Role    
+    
+The BlocからDistributor、Tamper、WDTの常設管理を分離し、KNODOSへ集約する。    
+    
+### Confirmed Tools    
+    
+* Normcore Planetary WDT Tool 54mm    
+* Pullman Chisel Redistribution Tool Wood (53 mm Custom Order)    
+* The Force Tamper 53 mm    
+    
+### Configuration    
+    
+KNODOSの3つのTool Organiser部を使用し、上記3 Toolを定位置管理する。    
+    
+写真上確認できる大径のTool Organiser部にはNormcore Planetary WDT Tool 54mmを置く。    
+    
+通常径の2つのTool Organiser部にはPullman Chisel 53mmとThe Force Tamper 53mmを置く。    
+    
+### Selection Criteria    
+    
+* Tool-specific organisation    
+* Walnut Material    
+* Compact Footprint    
+* Workflow Separation    
+* Protection of Walnut Tabletop    
+* Design Compatibility with The Bloc    
+* Minimal Additional Equipment    
+* Functional Beauty    
+    
+### Reason    
+    
+The Blocは製品としての完成度が高く、Portafilter、Knock Boxおよび抽出側のWorkflowを担わせる。    
+    
+一方、Distributor、Tamper、WDTまでThe Blocに集中させると、The Bloc上のTool配置が過密になる。    
+    
+KNODOS Tamping Mat with Tool Organiserを追加することで、    
+    
+The Bloc    
+→ Extraction Core    
+    
+KNODOS    
+→ Tool Station    
+    
+という役割分担を成立させる。    
+    
+また、WDT使用後に針へ残った粉をウォールナット天板へ落とすことを防止する。    
+    
+KNODOSのレザー面はWDTの一時置きにも使用できる。    
+    
+### 54 mm Specification Decision    
+    
+KNODOSは54mm版を正式採用する。    
+    
+Normcore Planetary WDT Tool 54mmは最大外径約65mmであり、KNODOS写真上の大径Tool Organiser部との寸法関係が最も適切と判断した。    
+    
+Pullman ChiselおよびThe Force Tamperは53mmであり、54mm版とのサイズ関係が自然である。    
+    
+58mm版は採用しない。    
+    
+---    
+    
+## Blind Shaker    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Blind Shaker | Weber Workshops | Blind Shaker Onyx | Confirmed |  
-  
-### Decision  
-  
-Weber Workshops Blind Shaker Onyxを正式採用する。  
-  
-THE THIRD PLACEのCoffee Systemにおける標準Blind Shakerとする。  
-  
-### Selection Priority  
-  
-Blind Shakerの選定では、以下の優先順位を採用した。  
-  
-1. Size / Physical Compatibility  
-2. Brandの世界的評価 Tier A以上  
-3. Workflow  
-4. Design / Color  
-5. Material  
-  
-色味については、Tier A以上のブランドであれば多少の色調差を許容する。  
-  
-### Required Workflow  
-  
-#### Primary Route  
-  
-Option-O LAGOM Mini  
-↓  
-Weber Workshops Blind Shaker Onyx  
-↓  
-9Barista Magnetic Dosing Funnel  
-↓  
-Normcore Planetary WDT Tool 54mm  
-↓  
-Pullman Chisel Redistribution Tool Wood  
-↓  
-The Force Tamper  
-  
-#### Secondary Route  
-  
-LAGOM MiniからBlind Shakerへの直接受けが物理的に成立しない場合は、LAGOM Mini純正Ground Transfer Cupを中継する。  
-  
-Option-O LAGOM Mini  
-↓  
-LAGOM Mini Ground Transfer Cup  
-↓  
-Weber Workshops Blind Shaker Onyx  
-↓  
-9Barista Magnetic Dosing Funnel  
-  
-Secondary Routeを正式に許容する。  
-  
-### Storage  
-  
-Blind Shaker OnyxはThe Bloc側に定位置を設ける。  
-  
-The Blocの2つのTool cutoutのうち、RDTとBlind Shakerを抽出Workflowの補助Toolとして使用する。  
-  
-### Size Requirements  
-  
-#### LAGOM Mini Side  
-  
-* LAGOM Miniから粉を安全に受けられること  
-* 直接受けが成立しない場合は純正Ground Transfer Cupを使用できること  
-* 粉が受け口からはみ出さないこと  
-* 粉を無駄なく移送できること  
-  
-#### 9Barista Side  
-  
-* 9Barista 53 mm Workflowで使用できること  
-* 9Barista Magnetic Dosing Funnelへ粉を移送できること  
-* ファンネル外へ粉がはみ出さないこと  
-* 53 mmの9Barista環境で実用上問題なく使用できること  
-  
-### Selection Criteria  
-  
-* Size / Physical Compatibility  
-* Brand Tier  
-* Workflow  
-* Design  
-* Color  
-* Material  
-* 9Barista Compatibility  
-* LAGOM Mini Workflow Compatibility  
-  
-### Reason  
-  
-#### Brand Quality  
-  
-Weber Workshopsは今回設定したTier A以上というブランド条件を満たす。  
-  
-THE THIRD PLACEでは既に、  
-  
-* Bean Cellar  
-* Puck Screen Stand  
-  
-をWeber Workshops製品として採用しており、Coffee System全体のブランド整合性も高い。  
-  
-#### Blind Shakerとしての完成度  
-  
-Blind Shakerは単なるDosing Cupではなく、エスプレッソ粉をシェイクして均質化するための専用設計である。  
-  
-粉の均質化および再分配を既存のエスプレッソWorkflowに自然に組み込める。  
-  
-#### 9Baristaとの適合性  
-  
-Weber Blind Shakerと9Barista 53 mm Magnetic Dosing Funnelを組み合わせた実使用例を確認した。  
-  
-したがって、  
-  
-Weber Blind Shaker  
-↓  
-9Barista 53 mm Magnetic Dosing Funnel  
-  
-のWorkflowは実使用例が確認できる構成として評価した。  
-  
-#### Onyxを選択  
-  
-Blind ShakerにはOnyxカラーが存在することを確認した。  
-  
-Black / Onyx系の外観を優先し、Onyxを正式仕様とする。  
-  
-#### Physical Dimensions  
-  
-確認できた寸法：  
-  
-* Outer Diameter：約75 mm  
-* Height：約70–76 mm  
-* Material：Anodized Aluminum  
-* Intended Basket Size：58 mm  
-  
-Weber公式では底部の詳細な有効径・排出口径は公開されていない。  
-  
-一方、9Barista Magnetic Dosing Funnelは上部径68 mmであり、Weber Blind Shakerとの実使用例を確認している。  
-  
-したがって、Weberの最大外径75 mmと9Baristaファンネルの68 mmを単純比較して不適合とは判断しない。  
-  
----  
-  
-## Puck Screen  
-  
+    
+### Decision    
+    
+Weber Workshops Blind Shaker Onyxを正式採用する。    
+    
+THE THIRD PLACEのCoffee Systemにおける標準Blind Shakerとする。    
+    
+### Selection Priority    
+    
+Blind Shakerの選定では、以下の優先順位を採用した。    
+    
+1. Size / Physical Compatibility    
+2. Brandの世界的評価 Tier A以上    
+3. Workflow    
+4. Design / Color    
+5. Material    
+    
+色味については、Tier A以上のブランドであれば多少の色調差を許容する。    
+    
+### Required Workflow    
+    
+#### Primary Route    
+    
+Option-O LAGOM Mini    
+↓    
+Weber Workshops Blind Shaker Onyx    
+↓    
+9Barista Magnetic Dosing Funnel    
+↓    
+Normcore Planetary WDT Tool 54mm    
+↓    
+Pullman Chisel Redistribution Tool Wood    
+↓    
+The Force Tamper    
+    
+#### Secondary Route    
+    
+LAGOM MiniからBlind Shakerへの直接受けが物理的に成立しない場合は、LAGOM Mini純正Ground Transfer Cupを中継する。    
+    
+Option-O LAGOM Mini    
+↓    
+LAGOM Mini Ground Transfer Cup    
+↓    
+Weber Workshops Blind Shaker Onyx    
+↓    
+9Barista Magnetic Dosing Funnel    
+    
+Secondary Routeを正式に許容する。    
+    
+### Storage    
+    
+Blind Shaker OnyxはThe Bloc側に定位置を設ける。    
+    
+The Blocの2つのTool cutoutのうち、RDTとBlind Shakerを抽出Workflowの補助Toolとして使用する。    
+    
+### Size Requirements    
+    
+#### LAGOM Mini Side    
+    
+* LAGOM Miniから粉を安全に受けられること    
+* 直接受けが成立しない場合は純正Ground Transfer Cupを使用できること    
+* 粉が受け口からはみ出さないこと    
+* 粉を無駄なく移送できること    
+    
+#### 9Barista Side    
+    
+* 9Barista 53 mm Workflowで使用できること    
+* 9Barista Magnetic Dosing Funnelへ粉を移送できること    
+* ファンネル外へ粉がはみ出さないこと    
+* 53 mmの9Barista環境で実用上問題なく使用できること    
+    
+### Selection Criteria    
+    
+* Size / Physical Compatibility    
+* Brand Tier    
+* Workflow    
+* Design    
+* Color    
+* Material    
+* 9Barista Compatibility    
+* LAGOM Mini Workflow Compatibility    
+    
+### Reason    
+    
+#### Brand Quality    
+    
+Weber Workshopsは今回設定したTier A以上というブランド条件を満たす。    
+    
+THE THIRD PLACEでは既に、    
+    
+* Bean Cellar    
+* Puck Screen Stand    
+    
+をWeber Workshops製品として採用しており、Coffee System全体のブランド整合性も高い。    
+    
+#### Blind Shakerとしての完成度    
+    
+Blind Shakerは単なるDosing Cupではなく、エスプレッソ粉をシェイクして均質化するための専用設計である。    
+    
+粉の均質化および再分配を既存のエスプレッソWorkflowに自然に組み込める。    
+    
+#### 9Baristaとの適合性    
+    
+Weber Blind Shakerと9Barista 53 mm Magnetic Dosing Funnelを組み合わせた実使用例を確認した。    
+    
+したがって、    
+    
+Weber Blind Shaker    
+↓    
+9Barista 53 mm Magnetic Dosing Funnel    
+    
+のWorkflowは実使用例が確認できる構成として評価した。    
+    
+#### Onyxを選択    
+    
+Blind ShakerにはOnyxカラーが存在することを確認した。    
+    
+Black / Onyx系の外観を優先し、Onyxを正式仕様とする。    
+    
+#### Physical Dimensions    
+    
+確認できた寸法：    
+    
+* Outer Diameter：約75 mm    
+* Height：約70–76 mm    
+* Material：Anodized Aluminum    
+* Intended Basket Size：58 mm    
+    
+Weber公式では底部の詳細な有効径・排出口径は公開されていない。    
+    
+一方、9Barista Magnetic Dosing Funnelは上部径68 mmであり、Weber Blind Shakerとの実使用例を確認している。    
+    
+したがって、Weberの最大外径75 mmと9Baristaファンネルの68 mmを単純比較して不適合とは判断しない。    
+    
+---    
+    
+## Puck Screen    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Puck Screen | 9Barista | Puck Screen | Confirmed |  
-  
-### Decision  
-  
-9Barista Puck Screenを正式採用する。  
-  
-### Selection Criteria  
-  
-* Official Accessory  
-* Extraction Quality  
-* Workflow  
-* Compatibility  
-  
-### Reason  
-  
-純正品として、  
-  
-* 抽出品質  
-* シャワースクリーン保護  
-* Workflow  
-  
-を最適化する。  
-  
----  
-  
-## Puck Screen Stand  
-  
+    
+### Decision    
+    
+9Barista Puck Screenを正式採用する。    
+    
+### Selection Criteria    
+    
+* Official Accessory    
+* Extraction Quality    
+* Workflow    
+* Compatibility    
+    
+### Reason    
+    
+純正品として、    
+    
+* 抽出品質    
+* シャワースクリーン保護    
+* Workflow    
+    
+を最適化する。    
+    
+---    
+    
+## Puck Screen Stand    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Puck Screen Stand | Weber Workshops | Puck Screen Stand | Confirmed |  
-  
-### Decision  
-  
-Weber Workshops Puck Screen Standを正式採用する。  
-  
-### Selection Criteria  
-  
-* Storage  
-* Workflow  
-* Design Bible  
-* Material Quality  
-  
-### Reason  
-  
-保管性、乾燥性、Workflow、デザインの統一性を評価した。  
-  
----  
-  
-## Milk Steamer  
-  
+    
+### Decision    
+    
+Weber Workshops Puck Screen Standを正式採用する。    
+    
+### Selection Criteria    
+    
+* Storage    
+* Workflow    
+* Design Bible    
+* Material Quality    
+    
+### Reason    
+    
+保管性、乾燥性、Workflow、デザインの統一性を評価した。    
+    
+---    
+    
+## Milk Steamer    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Milk Steamer | ALM KOPi | Z1 Mini Steamer | Confirmed |  
-  
-### Decision  
-  
-ALM KOPi Z1 Mini Steamerを正式採用する。  
-  
-### Selection Criteria  
-  
-* Standalone  
-* Compact  
-* Microfoam Quality  
-* Workflow  
-* Design  
-  
-### Reason  
-  
-9Baristaとの組み合わせにおいて、独立したミルクスチーム環境を最も高い完成度で構築できる。  
-  
-### Workflow  
-  
-1杯目：  
-  
-9Barista  
-↓  
-WPM Handleless Pitcher  
-↓  
-ALM KOPi Z1 Mini Steamer  
-↓  
-FIKA12  
-  
-2杯目：  
-  
-9Barista  
-↓  
-WPM Handleless Pitcher  
-↓  
-ALM KOPi Z1 Mini Steamer  
-↓  
-FIKA12  
-  
-2人分を必ず作る。  
-  
-1杯ずつスチームして完成させる2サイクル運用とする。  
-  
-Z1 Mini Steamerは別途採用するシングルバーナー上で使用し、バーナー上でスチーム機能を使用する。  
-  
----  
-  
-## Milk Pitcher  
-  
+    
+### Decision    
+    
+ALM KOPi Z1 Mini Steamerを正式採用する。    
+    
+### Selection Criteria    
+    
+* Standalone    
+* Compact    
+* Microfoam Quality    
+* Workflow    
+* Design    
+    
+### Reason    
+    
+9Baristaとの組み合わせにおいて、独立したミルクスチーム環境を最も高い完成度で構築できる。    
+    
+### Workflow    
+    
+1杯目：    
+    
+9Barista    
+↓    
+WPM Handleless Pitcher    
+↓    
+ALM KOPi Z1 Mini Steamer    
+↓    
+FIKA12    
+    
+2杯目：    
+    
+9Barista    
+↓    
+WPM Handleless Pitcher    
+↓    
+ALM KOPi Z1 Mini Steamer    
+↓    
+FIKA12    
+    
+2人分を必ず作る。    
+    
+1杯ずつスチームして完成させる2サイクル運用とする。    
+    
+Z1 Mini Steamerは、既に所有しているキッチン用シングルバーナーを流用して使用する。    
+    
+Coffee System専用のシングルバーナーは新たに採用しない。    
+    
+---    
+    
+## Milk Pitcher    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Milk Pitcher | WPM | Handleless Pitcher Standard 450cc / #07 Sharp Spout | Confirmed |  
-  
-### Decision  
-  
-WPM Handleless Pitcher Standard 450cc / #07 Sharp Spoutを正式採用する。  
-  
-ラテアートを重視し、Round SpoutではなくSharp Spoutを選択する。  
-  
-### Selection Criteria  
-  
-* Handleless Design  
-* Balance  
-* Latte Art  
-* Beginner Usability  
-* Workflow  
-* 450cc Capacity  
-* Sharp Spout Control  
-  
-### Reason  
-  
-THE THIRD PLACEでは、エスプレッソおよびラテアートを専門としないユーザーでも、ラテアートを習得しやすいことを重視する。  
-  
-#07 Sharp Spoutは細く明確なミルクフローを作りやすく、ハート、チューリップ、ロゼッタなどのラテアートへ発展できる注ぎのコントロール性を優先して正式採用する。  
-  
-450cc仕様は1杯分のミルクを1回ずつスチームする現在のWorkflowに適合する。  
-  
-2人分を1回でスチームする必要はなく、1杯目と2杯目を分けて運用する。  
-  
----  
-  
-## Pitcher Sleeve  
-  
+    
+### Decision    
+    
+WPM Handleless Pitcher Standard 450cc / #07 Sharp Spoutを正式採用する。    
+    
+ラテアートを重視し、Round SpoutではなくSharp Spoutを選択する。    
+    
+### Selection Criteria    
+    
+* Handleless Design    
+* Balance    
+* Latte Art    
+* Beginner Usability    
+* Workflow    
+* 450cc Capacity    
+* Sharp Spout Control    
+    
+### Reason    
+    
+THE THIRD PLACEでは、エスプレッソおよびラテアートを専門としないユーザーでも、ラテアートを習得しやすいことを重視する。    
+    
+#07 Sharp Spoutは細く明確なミルクフローを作りやすく、ハート、チューリップ、ロゼッタなどのラテアートへ発展できる注ぎのコントロール性を優先して正式採用する。    
+    
+450cc仕様は1杯分のミルクを1回ずつスチームする現在のWorkflowに適合する。    
+    
+2人分を1回でスチームする必要はなく、1杯目と2杯目を分けて運用する。    
+    
+---    
+    
+## Pitcher Sleeve    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Pitcher Sleeve | WPM | Pitcher Sleeve | Confirmed |  
-  
-### Decision  
-  
-WPM Pitcher Sleeveを正式採用する。  
-  
-### Selection Criteria  
-  
-* Thermal Insulation  
-* Grip  
-* Workflow  
-* Compatibility  
-* Handleless Pitcher Integration  
-  
-### Reason  
-  
-Handleless Pitcherとの組み合わせにより、安全性、操作性、保温性を向上させる。  
-  
-ハンドルレスPitcherの操作を安定させ、ラテアート時のPitcherコントロールを補助する。  
-  
----  
-  
-# Water Bottle Configuration  
-  
-## Coffee System Water Bottle Configuration  
-  
-**Status**  
-  
-Confirmed  
-  
-### Decision  
-  
-1泊2日・2人でのCoffee System運用に必要な専用水の携行構成を正式採用する。  
-  
-### Operation Scenario  
-  
-設営完了後  
-  
-* Espresso ×2  
-* Latte ×2  
-  
-遅めの昼食後  
-  
-* Latte ×2  
-  
-夕食後  
-  
-* Espresso ×2  
-  
-翌朝  
-  
-* Espresso ×2  
-* Latte ×2  
-  
-合計  
-  
-* Espresso：6杯  
-* Latte：6杯  
-* 9Barista使用回数：12回  
-* ALM KOPi Z1 Mini使用セッション：3回  
-  
-### Required Water Volume  
-  
-#### 9Barista  
-  
-* 1回あたり最大120mLとして計算  
-* 12回 × 120mL = 1,440mL  
-  
-#### ALM KOPi Z1 Mini  
-  
-* 1セッションあたり300mLを満水にして使用  
-* 3セッション × 300mL = 900mL  
-  
-#### Coffee System専用水  
-  
-* 1,440mL + 900mL = 2,340mL  
-  
-必要量に余裕を持たせ、約2.5Lを携行基準とする。  
-  
-### Official Water Bottle Configuration  
-  
-1. Snow Peak  
-   オーロラボトル 1L  
-   容量：1,000mL  
-  
-2. YETI  
-   Yonder 1L  
-   容量：1,000mL  
-  
-3. Snow Peak  
-   酒筒 Titanium  
-   容量：540mL  
-  
-### Total Capacity  
-  
-2,540mL  
-  
-Coffee System必要水量2,340mLに対して約200mLの余裕を確保する。  
-  
-### Use Purpose  
-  
-上記3本の水は、飲料水・調理用水には使用しない。  
-  
-用途は以下に限定する。  
-  
-* 9Barista Espresso  
-* ALM KOPi Z1 MiniによるMilk Steaming  
-  
-### Design Philosophy  
-  
-同一ボトルを複数本持つのではなく、異なるブランド・素材・設計思想を持つ3本で必要容量を確保する。  
-  
-* Snow Peak オーロラボトル  
-  → チタン製メインウォーターボトル  
-* YETI Yonder  
-  → 軽量・透明・残量確認可能な追加ウォーターボトル  
-* Snow Peak 酒筒 Titanium  
-  → 540mLの追加容量を担う独立したチタン製容器  
-  
-3本合計2.54Lにより、1泊2日・2人のCoffee Systemを現地給水なしでも成立させることを目的とする。  
-  
-**Status：CONFIRMED**  
-  
----  
-  
-# Cups & Glassware  
-  
-## Espresso Cup Configuration  
-  
-THE THIRD PLACEでは、9BaristaによるStraight Espressoについて、同一形状のカップを2個揃えるのではなく、異なる目的を持つ2種類の専用センシンググラスを正式構成とする。  
-  
-同じ9Barista Espressoを2人で共有しながら、それぞれ異なるグラスによって異なる感覚的アプローチを体験できる構成とする。  
-  
----  
-  
-## KRUVE PROPEL  
-  
+    
+### Decision    
+    
+WPM Pitcher Sleeveを正式採用する。    
+    
+### Selection Criteria    
+    
+* Thermal Insulation    
+* Grip    
+* Workflow    
+* Compatibility    
+* Handleless Pitcher Integration    
+    
+### Reason    
+    
+Handleless Pitcherとの組み合わせにより、安全性、操作性、保温性を向上させる。    
+    
+ハンドルレスPitcherの操作を安定させ、ラテアート時のPitcherコントロールを補助する。    
+    
+---    
+    
+# Water Bottle Configuration    
+    
+## Coffee System Water Bottle Configuration    
+    
+**Status**    
+    
+Confirmed    
+    
+### Decision    
+    
+1泊2日・2人でのCoffee System運用に必要な専用水の携行構成を正式採用する。    
+    
+### Operation Scenario    
+    
+設営完了後    
+    
+* Espresso ×2    
+* Latte ×2    
+    
+遅めの昼食後    
+    
+* Latte ×2    
+    
+夕食後    
+    
+* Espresso ×2    
+    
+翌朝    
+    
+* Espresso ×2    
+* Latte ×2    
+    
+合計    
+    
+* Espresso：6杯    
+* Latte：6杯    
+* 9Barista使用回数：12回    
+* ALM KOPi Z1 Mini使用セッション：3回    
+    
+### Required Water Volume    
+    
+#### 9Barista    
+    
+* 1回あたり最大120mLとして計算    
+* 12回 × 120mL = 1,440mL    
+    
+#### ALM KOPi Z1 Mini    
+    
+* 1セッションあたり300mLを満水にして使用    
+* 3セッション × 300mL = 900mL    
+    
+#### Coffee System専用水    
+    
+* 1,440mL + 900mL = 2,340mL    
+    
+必要量に余裕を持たせ、約2.5Lを携行基準とする。    
+    
+### Official Water Bottle Configuration    
+    
+1. Snow Peak    
+   オーロラボトル 1L    
+   容量：1,000mL    
+    
+2. YETI    
+   Yonder 1L    
+   容量：1,000mL    
+    
+3. Snow Peak    
+   酒筒 Titanium    
+   容量：540mL    
+    
+### Total Capacity    
+    
+2,540mL    
+    
+Coffee System必要水量2,340mLに対して約200mLの余裕を確保する。    
+    
+### Use Purpose    
+    
+上記3本の水は、飲料水・調理用水には使用しない。    
+    
+用途は以下に限定する。    
+    
+* 9Barista Espresso    
+* ALM KOPi Z1 MiniによるMilk Steaming    
+    
+### Water Transfer    
+    
+Coffee System専用水は、専用のWater Transfer Toolを使用せず、各Water Bottleから9BaristaおよびALM KOPi Z1 Miniへ直接注ぐ。    
+    
+そのため、独立したWater Dosing Cup、Water Pouring Vessel、Water Transfer Tool等は追加採用しない。    
+    
+### Design Philosophy    
+    
+同一ボトルを複数本持つのではなく、異なるブランド・素材・設計思想を持つ3本で必要容量を確保する。    
+    
+* Snow Peak オーロラボトル    
+  → チタン製メインウォーターボトル    
+* YETI Yonder    
+  → 軽量・透明・残量確認可能な追加ウォーターボトル    
+* Snow Peak 酒筒 Titanium    
+  → 540mLの追加容量を担う独立したチタン製容器    
+    
+3本合計2.54Lにより、1泊2日・2人のCoffee Systemを現地給水なしでも成立させることを目的とする。    
+    
+**Status：CONFIRMED**    
+    
+---    
+    
+# Cups & Glassware    
+    
+## Espresso Cup Configuration    
+    
+THE THIRD PLACEでは、9BaristaによるStraight Espressoについて、同一形状のカップを2個揃えるのではなく、異なる目的を持つ2種類の専用センシンググラスを正式構成とする。    
+    
+同じ9Barista Espressoを2人で共有しながら、それぞれ異なるグラスによって異なる感覚的アプローチを体験できる構成とする。    
+    
+---    
+    
+## KRUVE PROPEL    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Espresso Glass | KRUVE | PROPEL | Confirmed |  
-  
-### Purpose  
-  
-Straight Espresso  
-  
-### Quantity  
-  
-1  
-  
-### Selection Rationale  
-  
-* Dedicated espresso sensory glass  
-* Used with 9Barista  
-* Designed specifically to improve the sensory experience of espresso  
-* Strong alignment with THE THIRD PLACE design philosophy  
-  
-PROPELは、エスプレッソの層を統合し、コントロールされた感覚的体験を提供する専用グラスとして採用する。  
-  
----  
-  
-## ICOSA Brewhouse AERESSO  
-  
+    
+### Purpose    
+    
+Straight Espresso    
+    
+### Quantity    
+    
+1    
+    
+### Selection Rationale    
+    
+* Dedicated espresso sensory glass    
+* Used with 9Barista    
+* Designed specifically to improve the sensory experience of espresso    
+* Strong alignment with THE THIRD PLACE design philosophy    
+    
+PROPELは、エスプレッソの層を統合し、コントロールされた感覚的体験を提供する専用グラスとして採用する。    
+    
+---    
+    
+## ICOSA Brewhouse AERESSO    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Espresso Glass | ICOSA Brewhouse | AERESSO | Confirmed |  
-  
-### Purpose  
-  
-Straight Espresso  
-  
-### Quantity  
-  
-1  
-  
-### Selection Rationale  
-  
-* Dedicated espresso sensory glass  
-* Used with 9Barista  
-* Designed specifically to alter and enhance espresso aroma and flavor through aeration  
-* Particularly well matched to 9Barista’s approximately 40ml extraction  
-* Provides a different sensory approach from KRUVE PROPEL  
-  
-AERESSOは、エスプレッソのエアレーションによって香りと風味を開く、PROPELとは異なる感覚的アプローチを担う専用グラスとして採用する。  
-  
----  
-  
-## HILLS FIELD Glass Case Single  
-  
+    
+### Purpose    
+    
+Straight Espresso    
+    
+### Quantity    
+    
+1    
+    
+### Selection Rationale    
+    
+* Dedicated espresso sensory glass    
+* Used with 9Barista    
+* Designed specifically to alter and enhance espresso aroma and flavor through aeration    
+* Particularly well matched to 9Barista’s approximately 40ml extraction    
+* Provides a different sensory approach from KRUVE PROPEL    
+    
+AERESSOは、エスプレッソのエアレーションによって香りと風味を開く、PROPELとは異なる感覚的アプローチを担う専用グラスとして採用する。    
+    
+---    
+    
+## HILLS FIELD Glass Case Single    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Espresso Glass Case | HILLS FIELD | Glass Case Single | Confirmed |  
-  
-### Purpose  
-  
-Protective transport case for PROPEL + AERESSO  
-  
-### Quantity  
-  
-1  
-  
-### Selection Rationale  
-  
-* Shared transport solution  
-* Protects both espresso glasses  
-* Minimal equipment  
-* No unnecessary hard case  
-  
-### Transport Policy  
-  
-* No Pelican-style hard case  
-* No second glass case  
-* The single HILLS FIELD case is the confirmed transport solution  
-  
----  
-  
-## AION Seine Super Absorbent Coaster 801-BL  
-  
+    
+### Purpose    
+    
+Protective transport case for PROPEL + AERESSO    
+    
+### Quantity    
+    
+1    
+    
+### Selection Rationale    
+    
+* Shared transport solution    
+* Protects both espresso glasses    
+* Minimal equipment    
+* No unnecessary hard case    
+    
+### Transport Policy    
+    
+* No Pelican-style hard case    
+* No second glass case    
+* The single HILLS FIELD case is the confirmed transport solution    
+    
+---    
+    
+## AION Seine Super Absorbent Coaster 801-BL    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Glass Separator | AION | Seine Super Absorbent Coaster 801-BL | Confirmed |  
-  
-### Purpose  
-  
-Protective separator between PROPEL and AERESSO  
-  
-### Quantity  
-  
-1 package  
-  
-### Diameter  
-  
-approximately 67mm  
-  
-### Thickness  
-  
-approximately 2mm  
-  
-### Material  
-  
-Polyurethane  
-  
-### Color  
-  
-Black  
-  
-### Role  
-  
-* Prevent direct glass-to-glass contact  
-* Reduce minor vibration and movement  
-* Preserve nesting depth as much as possible  
-  
-### Installation  
-  
-* One coaster placed between PROPEL and AERESSO  
-* No case modification  
-* No DIY fabrication  
-  
-The second coaster in the package is retained as a spare.  
-  
----  
-  
-## Latte Cup Configuration  
-  
+    
+### Purpose    
+    
+Protective separator between PROPEL and AERESSO    
+    
+### Quantity    
+    
+1 package    
+    
+### Diameter    
+    
+approximately 67mm    
+    
+### Thickness    
+    
+approximately 2mm    
+    
+### Material    
+    
+Polyurethane    
+    
+### Color    
+    
+Black    
+    
+### Role    
+    
+* Prevent direct glass-to-glass contact    
+* Reduce minor vibration and movement    
+* Preserve nesting depth as much as possible    
+    
+### Installation    
+    
+* One coaster placed between PROPEL and AERESSO    
+* No case modification    
+* No DIY fabrication    
+    
+The second coaster in the package is retained as a spare.    
+    
+---    
+    
+## Latte Cup Configuration    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Latte Cup | DAMNGOOD × CATAPULT FACTORY | FIKA12 ×2 | Confirmed |  
-  
-### Decision  
-  
-DAMNGOOD × CATAPULT FACTORY FIKA12を2個使用する。  
-  
-### Purpose  
-  
-Latte  
-  
-### Transport  
-  
-* FIKA12 already has its own case  
-* FIKA12 case is stored directly in the Bek Container  
-  
-FIKA12 remains the dedicated shared solution for latte.  
-  
-### Configuration Priorities  
-  
-* Purpose-designed coffee equipment  
-* Distinct functional roles  
-* Two-person operation  
-* Minimal additional equipment  
-* Safe transport  
-* No unnecessary hard cases  
-* No DIY case modification  
-  
----  
-  
-# Final Cup / Transport Configuration  
-  
-## Espresso  
-  
-* 9Barista  
-* KRUVE PROPEL ×1  
-* ICOSA AERESSO ×1  
-  
-## Latte  
-  
-* DAMNGOOD × CATAPULT FACTORY FIKA12 ×2  
-  
-## Espresso Glass Transport  
-  
-* KRUVE PROPEL ×1  
-* AERESSO ×1  
-* AION Seine Super Absorbent Coaster 801-BL ×1 as separator  
-* HILLS FIELD Glass Case Single ×1  
-  
+    
+### Decision    
+    
+DAMNGOOD × CATAPULT FACTORY FIKA12を2個使用する。    
+    
+### Purpose    
+    
+Latte    
+    
+### Transport    
+    
+* FIKA12 already has its own case    
+* FIKA12 case is stored directly in the Bek Container    
+    
+FIKA12 remains the dedicated shared solution for latte.    
+    
+### Configuration Priorities    
+    
+* Purpose-designed coffee equipment    
+* Distinct functional roles    
+* Two-person operation    
+* Minimal additional equipment    
+* Safe transport    
+* No unnecessary hard cases    
+* No DIY case modification    
+    
+---    
+    
+# Final Cup / Transport Configuration    
+    
+## Espresso    
+    
+* 9Barista    
+* KRUVE PROPEL ×1    
+* ICOSA AERESSO ×1    
+    
+## Latte    
+    
+* DAMNGOOD × CATAPULT FACTORY FIKA12 ×2    
+    
+## Espresso Glass Transport    
+    
+* KRUVE PROPEL ×1    
+* AERESSO ×1    
+* AION Seine Super Absorbent Coaster 801-BL ×1 as separator    
+* HILLS FIELD Glass Case Single ×1    
+    
 ---  
   
 # Brand Decisions  
@@ -1156,10 +1164,10 @@ Rejected
   
 Bean CellarからGrinderまでのWorkflowで完結する。  
   
-Bean Cellar  
-↓  
-Bean Dosing Cup  
-↓  
+Bean Cellar    
+↓    
+Bean Dosing Cup    
+↓    
 Grinder  
   
 となり、Workflow改善なしで工程が増加する。  
@@ -1289,9 +1297,9 @@ Rejected
   
 The Force Tamper 53 mmを正式採用した。  
   
-Consistency  
-Workflow  
-品質  
+Consistency    
+Workflow    
+品質    
 長期使用性  
   
 の総合評価でThe Force Tamperを正式採用した。  
@@ -1308,9 +1316,9 @@ Rejected
   
 Pullman Chisel Redistribution Tool Wood (53 mm Custom Order)を正式採用した。  
   
-53 mmへの適合性  
-Workflow  
-品質  
+53 mmへの適合性    
+Workflow    
+品質    
 Design Bibleとの整合性  
   
 を最も満たした。  
@@ -1438,9 +1446,9 @@ Equipment構成が完全確定した後に設計する。
   
 ### Bean Preparation  
   
-Roasted Coffee Bean Bag  
-↓  
-Weber Workshops Bean Cellar Bulk  
+Roasted Coffee Bean Bag    
+↓    
+Weber Workshops Bean Cellar Bulk    
 （Bean Cellar付属漏斗を使用）  
   
 Bean移送時にBean Spoonは使用しない。  
@@ -1449,12 +1457,12 @@ Bean移送時にBean Spoonは使用しない。
   
 ### Grinding  
   
-Bean Cellar  
-↓  
-MantaBrewで計量  
-↓  
-Option-O LAGOM Mini  
-↓  
+Bean Cellar    
+↓    
+MantaBrewで計量    
+↓    
+Option-O LAGOM Mini    
+↓    
 Weber Workshops Blind Shaker Onyx  
   
 LAGOM MiniからBlind Shakerへの直接受けをPrimary Routeとする。  
@@ -1465,28 +1473,32 @@ LAGOM MiniからBlind Shakerへの直接受けをPrimary Routeとする。
   
 ### Puck Preparation  
   
-Weber Workshops Blind Shaker Onyx  
-↓  
-9Barista Magnetic Dosing Funnel  
-↓  
-Normcore Planetary WDT Tool 54mm  
-↓  
-Pullman Chisel Redistribution Tool Wood 53mm  
-↓  
-The Force Tamper 53mm  
-↓  
+Weber Workshops Blind Shaker Onyx    
+↓    
+9Barista Magnetic Dosing Funnel    
+↓    
+Normcore Planetary WDT Tool 54mm    
+↓    
+Pullman Chisel Redistribution Tool Wood 53mm    
+↓    
+The Force Tamper 53mm    
+↓    
+9Barista Puck Screen    
+↓    
 9Barista Mk.2 Pro  
   
 9Barista Magnetic Dosing Funnelは9Barista Mk.2 Proの標準付属品であり、独立Equipmentとして管理しない。  
+  
+9Barista Puck Screenは正式採用品として使用する。  
   
 ---  
   
 ### Extraction  
   
-9Barista Mk.2 Pro  
-↓  
-抽出  
-↓  
+9Barista Mk.2 Pro    
+↓    
+抽出    
+↓    
 KRUVE PROPEL / ICOSA Brewhouse AERESSO  
   
 2人分を必ず作る。  
@@ -1499,26 +1511,26 @@ KRUVE PROPEL / ICOSA Brewhouse AERESSO
   
 1杯目：  
   
-9Barista Mk.2 Pro  
-↓  
-Espresso  
-↓  
-WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout  
-↓  
-ALM KOPi Z1 Mini Steamer  
-↓  
+9Barista Mk.2 Pro    
+↓    
+Espresso    
+↓    
+WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout    
+↓    
+ALM KOPi Z1 Mini Steamer    
+↓    
 FIKA12  
   
 2杯目：  
   
-9Barista Mk.2 Pro  
-↓  
-Espresso  
-↓  
-WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout  
-↓  
-ALM KOPi Z1 Mini Steamer  
-↓  
+9Barista Mk.2 Pro    
+↓    
+Espresso    
+↓    
+WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout    
+↓    
+ALM KOPi Z1 Mini Steamer    
+↓    
 FIKA12  
   
 2人分を必ず作る。  
@@ -1526,6 +1538,8 @@ FIKA12
 1杯ずつスチームして完成させる2サイクル運用とする。  
   
 WPM Handleless Pitcherは1個を2サイクルで使用する。  
+  
+ALM KOPi Z1 Mini Steamerは、既に所有しているキッチン用シングルバーナーを流用して使用する。  
   
 ---  
   
@@ -1589,8 +1603,8 @@ Latteは、
   
 Coffee Workflowは、  
   
-**Minimal Steps**  
-**Minimal Objects**  
+**Minimal Steps**    
+**Minimal Objects**    
 **Maximum Repeatability**  
   
 を基本とする。  
@@ -1614,10 +1628,10 @@ Coffee Systemでは家具レベルのウォールナット天板を使用する�
   
 The BlocとKNODOSをそれぞれ、  
   
-The Bloc  
+The Bloc    
 → Extraction Core  
   
-KNODOS  
+KNODOS    
 → Tool Station  
   
 として使用することで、専用家具や追加Tool Standを増やさずにTool管理と天板保護を成立させる。  
@@ -1648,7 +1662,7 @@ Equipmentの採用判断は以下を満たすこと。
 - Resale Value  
 - Price  
   
-**Workflowを改善する場合のみ採用する。  
+**Workflowを改善する場合のみ採用する。    
 Workflowを複雑化させるEquipmentは採用しない。**  
   
 ---  
@@ -1657,8 +1671,8 @@ Workflowを複雑化させるEquipmentは採用しない。**
   
 THE THIRD PLACEのCoffee Workflowは、  
   
-**Minimal Steps**  
-**Minimal Objects**  
+**Minimal Steps**    
+**Minimal Objects**    
 **Maximum Repeatability**  
   
 を基本とする。  
@@ -1667,10 +1681,10 @@ THE THIRD PLACEのCoffee Workflowは、
   
 The BlocとKNODOS Tamping Matの併用については、機能重複ではなく、  
   
-The Bloc  
+The Bloc    
 → Extraction Core  
   
-KNODOS  
+KNODOS    
 → Tool Station  
   
 という役割分離によってWorkflowを整理する。  
@@ -1704,6 +1718,12 @@ THE THIRD PLACE Coffee System専用水の携行。
   
 飲料水・調理用水には使用しない。  
   
+**Water Transfer**  
+  
+Coffee System専用水は、専用のWater Transfer Toolを使用せず、各Water Bottleから9BaristaおよびALM KOPi Z1 Miniへ直接注ぐ。  
+  
+そのため、独立したWater Dosing Cup、Water Pouring Vessel、Water Transfer Tool等は追加採用しない。  
+  
 ---  
   
 # SSOT  
@@ -1733,6 +1753,7 @@ PX-004は、価格・購入先・輸送・関税・購入手順などの調達�
 | 2.7 | 2026-08 | Coffee System baseline consolidated following current equipment decisions. |  
 | 2.8 | 2026-08 | Historical decision records added for Varia EVO Hybrid Gen 2 and Weber Workshops MOONRAKER Ultra Edition. Varia is recorded as previously considered but not selected due to insufficient alignment with THE THIRD PLACE Coffee System equipment character and design direction. MOONRAKER Ultra Edition is recorded as highly regarded but rejected for current use because it is designed for 58mm baskets while the current 9Barista workflow is 53mm. |  
 | 2.9 | 2026-08 | Standard accessories included with 9Barista Mk.2 Pro were clarified as Included Components / Accessories rather than independent Equipment. 9Barista Magnetic Dosing Funnel and 9Barista Stainless Steel Basket Cap Pro are explicitly excluded from independent TP-004 / PX-005 management. Alternative Basket Cap status clarified as Not Separately Acquired. |  
+| 3.0 | 2026-08 | Puck Screen placement added explicitly to the confirmed Puck Preparation Workflow. Water Transfer confirmed as direct pouring from the existing dedicated water bottles, with no additional transfer equipment required. ALM KOPi Z1 Mini Steamer is confirmed to use existing kitchen single burners, with no dedicated Coffee System burner required. |  
   
 ---  
   
