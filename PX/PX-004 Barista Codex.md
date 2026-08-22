@@ -1,491 +1,491 @@
-# PX-004 Barista Codex  
-# PX-004 Barista Codex  
-  
-# Document ID  
-  
-PX-004  
-  
-# Document Title  
-  
-Barista Codex  
-  
-# Version  
-  
-2.7  
-  
-# Status  
-  
-Official  
-  
----  
-  
-## Purpose  
-  
-PX-004 Barista Codexは、THE THIRD PLACEにおけるCoffee Systemの意思決定を管理する正式仕様書である。  
-  
-本書では以下を管理する。  
-  
-* Official Equipment Decisions  
-* Selection Criteria  
-* Decision Reasons  
-* Workflow Decisions  
-* Brand Decisions  
-* Rejected Items  
-* Pending Items  
-* Deferred Items  
-  
-価格・購入先・輸送・関税・購入手順などの調達情報は管理対象外とし、PX-005 Acquisition Handbookで管理する。  
-  
----  
-  
-## Relationship  
-  
+# PX-004 Barista Codex    
+# PX-004 Barista Codex    
+    
+# Document ID    
+    
 PX-004    
+    
+# Document Title    
+    
 Barista Codex    
-│    
-▼    
-TP-004    
-Equipment Registry    
-│    
-▼    
-PX-005    
-Acquisition Handbook  
-  
----  
-  
-## Design Principles  
-  
-Coffee Equipmentは以下を満たすもののみ採用する。  
-  
-* Portable Luxury  
-* Architectural Simplicity  
-* Long-term Ownership  
-* High Reliability  
-* Workflow Optimization  
-* Repairability  
-* Functional Beauty  
-* Design Bibleとの整合  
-* Foundation Compassとの整合  
-  
-以下は評価対象としない。  
-  
-* Popularity  
-* SNS  
-* Review Count  
-* Rarity  
-* Collector Value  
-* Price  
-  
----  
-  
-# Confirmed Equipment  
-  
----  
-  
-## Espresso Machine  
-  
+    
+# Version    
+    
+2.8    
+    
+# Status    
+    
+Official    
+    
+---    
+    
+## Purpose    
+    
+PX-004 Barista Codexは、THE THIRD PLACEにおけるCoffee Systemの意思決定を管理する正式仕様書である。    
+    
+本書では以下を管理する。    
+    
+* Official Equipment Decisions    
+* Selection Criteria    
+* Decision Reasons    
+* Workflow Decisions    
+* Brand Decisions    
+* Rejected Items    
+* Pending Items    
+* Deferred Items    
+    
+価格・購入先・輸送・関税・購入手順などの調達情報は管理対象外とし、PX-005 Acquisition Handbookで管理する。    
+    
+---    
+    
+## Relationship    
+    
+PX-004      
+Barista Codex      
+│      
+▼      
+TP-004      
+Equipment Registry      
+│      
+▼      
+PX-005      
+Acquisition Handbook    
+    
+---    
+    
+## Design Principles    
+    
+Coffee Equipmentは以下を満たすもののみ採用する。    
+    
+* Portable Luxury    
+* Architectural Simplicity    
+* Long-term Ownership    
+* High Reliability    
+* Workflow Optimization    
+* Repairability    
+* Functional Beauty    
+* Design Bibleとの整合    
+* Foundation Compassとの整合    
+    
+以下は評価対象としない。    
+    
+* Popularity    
+* SNS    
+* Review Count    
+* Rarity    
+* Collector Value    
+* Price    
+    
+---    
+    
+# Confirmed Equipment    
+    
+---    
+    
+## Espresso Machine    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Espresso Machine | 9Barista | Mk.2 Pro | Confirmed |  
-  
-### Decision  
-  
-9Barista Mk.2 ProをTHE THIRD PLACEの標準エスプレッソマシンとして正式採用する。  
-  
-### Selection Criteria  
-  
-* Flame Powered  
-* AC電源不要  
-* Portable  
-* High Quality  
-* Industrial Design  
-* Long-term Ownership  
-* Repairability  
-* Workflow  
-* Design Bible  
-  
-### Reason  
-  
-9Barista Mk.2 Proは  
-  
-* Portable Luxury  
-* Architectural Simplicity  
-* Long-term Ownership  
-  
-を最も高い水準で実現する。  
-  
-純正アクセサリーとの統一されたWorkflowを構築できることも採用理由とする。  
-  
----  
-  
-## Coffee Grinder  
-  
+    
+### Decision    
+    
+9Barista Mk.2 ProをTHE THIRD PLACEの標準エスプレッソマシンとして正式採用する。    
+    
+### Selection Criteria    
+    
+* Flame Powered    
+* AC電源不要    
+* Portable    
+* High Quality    
+* Industrial Design    
+* Long-term Ownership    
+* Repairability    
+* Workflow    
+* Design Bible    
+    
+### Reason    
+    
+9Barista Mk.2 Proは    
+    
+* Portable Luxury    
+* Architectural Simplicity    
+* Long-term Ownership    
+    
+を最も高い水準で実現する。    
+    
+純正アクセサリーとの統一されたWorkflowを構築できることも採用理由とする。    
+    
+---    
+    
+## Coffee Grinder    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Coffee Grinder | Option-O | LAGOM Mini (USB-C PD) | Confirmed |  
-  
-### Decision  
-  
-Option-O LAGOM Mini（USB-C PD）を正式採用する。  
-  
-### Selection Criteria  
-  
-* USB-C PD  
-* AC電源不要  
-* Portable  
-* Electric  
-* Single Dose  
-* Workflow  
-* Brand Philosophy  
-* Industrial Design  
-* Maintainability  
-  
-### Reason  
-  
-比較対象  
-  
-* Varia  
-* Mazzer  
-* Mahlkönig  
-* Ceado  
-* Fiorenzato  
-* Bentwood  
-* Titus Grinding  
-* Zerno  
-* Geimori  
-* Outin  
-  
-との比較において、  
-  
-USB-C PD    
-Portable    
-Design Philosophy    
-Workflow  
-  
-を最も高いレベルで満たした。  
-  
----  
-  
-## Coffee Scale  
-  
+    
+### Decision    
+    
+Option-O LAGOM Mini（USB-C PD）を正式採用する。    
+    
+### Selection Criteria    
+    
+* USB-C PD    
+* AC電源不要    
+* Portable    
+* Electric    
+* Single Dose    
+* Workflow    
+* Brand Philosophy    
+* Industrial Design    
+* Maintainability    
+    
+### Reason    
+    
+比較対象    
+    
+* Varia    
+* Mazzer    
+* Mahlkönig    
+* Ceado    
+* Fiorenzato    
+* Bentwood    
+* Titus Grinding    
+* Zerno    
+* Geimori    
+* Outin    
+    
+との比較において、    
+    
+USB-C PD      
+Portable      
+Design Philosophy      
+Workflow    
+    
+を最も高いレベルで満たした。    
+    
+---    
+    
+## Coffee Scale    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Coffee Scale | MantaBrew | Master Kit (Module A + Module B) | Confirmed |  
-  
-### Decision  
-  
-MantaBrew Master Kitを正式採用する。  
-  
-採用構成は  
-  
-* Module A  
-* Module B  
-  
-の両方を含む完全構成とする。  
-  
-### Selection Criteria  
-  
-* Espresso Workflow  
-* Filter Workflow  
-* Expandability  
-* Modular Design  
-* High Precision  
-* Industrial Design  
-* Workflow Optimization  
-* Premium Materials  
-  
-### Reason  
-  
-Module A単体、Module B単体ではなく、Master Kitによる完全構成が  
-  
-* 将来的な拡張性  
-* Workflow  
-* Design Philosophy  
-* Long-term Ownership  
-  
-を最も満たすため正式採用する。  
-  
----  
-  
-## Bean Storage  
-  
+    
+### Decision    
+    
+MantaBrew Master Kitを正式採用する。    
+    
+採用構成は    
+    
+* Module A    
+* Module B    
+    
+の両方を含む完全構成とする。    
+    
+### Selection Criteria    
+    
+* Espresso Workflow    
+* Filter Workflow    
+* Expandability    
+* Modular Design    
+* High Precision    
+* Industrial Design    
+* Workflow Optimization    
+* Premium Materials    
+    
+### Reason    
+    
+Module A単体、Module B単体ではなく、Master Kitによる完全構成が    
+    
+* 将来的な拡張性    
+* Workflow    
+* Design Philosophy    
+* Long-term Ownership    
+    
+を最も満たすため正式採用する。    
+    
+---    
+    
+## Bean Storage    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Bean Storage | Weber Workshops | Bean Cellar Bulk | Confirmed |  
-  
-### Decision  
-  
-Bean Cellar Bulkを正式採用する。  
-  
-### Selection Criteria  
-  
-* Single Dose Workflow  
-* Airtight Storage  
-* Premium Materials  
-* Workflow Integration  
-  
-### Reason  
-  
-THE THIRD PLACEが採用するSingle Dose Workflowと完全に整合する。  
-  
-ロースト済み豆は袋からBean Cellar付属の漏斗を使用してBean Cellarへ移す。  
-  
-Bean Cellarへの移送工程では別途Bean Spoonを使用しない。  
-  
----  
-  
-## Tamping Station  
-  
+    
+### Decision    
+    
+Bean Cellar Bulkを正式採用する。    
+    
+### Selection Criteria    
+    
+* Single Dose Workflow    
+* Airtight Storage    
+* Premium Materials    
+* Workflow Integration    
+    
+### Reason    
+    
+THE THIRD PLACEが採用するSingle Dose Workflowと完全に整合する。    
+    
+ロースト済み豆は袋からBean Cellar付属の漏斗を使用してBean Cellarへ移す。    
+    
+Bean Cellarへの移送工程では別途Bean Spoonを使用しない。    
+    
+---    
+    
+## Tamping Station    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Tamping Station | Saint Anthony Industries | The Bloc | Confirmed |  
-  
-### Decision  
-  
-The Blocを正式採用する。  
-  
-### Selection Criteria  
-  
-* Integrated Workflow  
-* Knock Box  
-* Tamp Station  
-* Premium Materials  
-* Industrial Design  
-  
-### Reason  
-  
-Tamping Station、Knock Box、Portafilter Standを統合した思想がTHE THIRD PLACEと最も一致する。  
-  
-### Confirmed Role  
-  
-The BlocはCoffee Preparation SystemにおけるExtraction Coreとして使用する。  
-  
-主な役割は以下とする。  
-  
-* Portafilterの保持  
-* Knock Box機能  
-* RDTの一時置き  
-* Weber Workshops Blind Shakerの定位置  
-* 9Barista Workflowにおける抽出側の作業基盤  
-  
-DistributorおよびTamperの常設場所はThe Blocから分離する。  
-  
----  
-  
-## Tamper  
-  
+    
+### Decision    
+    
+The Blocを正式採用する。    
+    
+### Selection Criteria    
+    
+* Integrated Workflow    
+* Knock Box    
+* Tamp Station    
+* Premium Materials    
+* Industrial Design    
+    
+### Reason    
+    
+Tamping Station、Knock Box、Portafilter Standを統合した思想がTHE THIRD PLACEと最も一致する。    
+    
+### Confirmed Role    
+    
+The BlocはCoffee Preparation SystemにおけるExtraction Coreとして使用する。    
+    
+主な役割は以下とする。    
+    
+* Portafilterの保持    
+* Knock Box機能    
+* RDTの一時置き    
+* Weber Workshops Blind Shakerの定位置    
+* 9Barista Workflowにおける抽出側の作業基盤    
+    
+DistributorおよびTamperの常設場所はThe Blocから分離する。    
+    
+---    
+    
+## Tamper    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Tamper | The Force Tamper | 53 mm | Confirmed |  
-  
-### Decision  
-  
-The Force Tamper 53 mmを正式採用する。  
-  
-### Selection Criteria  
-  
-* Consistency  
-* Build Quality  
-* Ergonomics  
-* Long-term Reliability  
-* Workflow  
-  
-### Reason  
-  
-抽出の再現性、操作性、耐久性、9Baristaとの適合性を総合評価し正式採用する。  
-  
-### Storage  
-  
-通常時はKNODOS Tamping Mat with Tool Organiser - Walnut 54mmへ移動する。  
-  
-The Blocの常設Toolではない。  
-  
----  
-  
-## Distribution Tool  
-  
+    
+### Decision    
+    
+The Force Tamper 53 mmを正式採用する。    
+    
+### Selection Criteria    
+    
+* Consistency    
+* Build Quality    
+* Ergonomics    
+* Long-term Reliability    
+* Workflow    
+    
+### Reason    
+    
+抽出の再現性、操作性、耐久性、9Baristaとの適合性を総合評価し正式採用する。    
+    
+### Storage    
+    
+通常時はKNODOS Tamping Mat with Tool Organiser - Walnut 54mmへ移動する。    
+    
+The Blocの常設Toolではない。    
+    
+---    
+    
+## Distribution Tool    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Distribution Tool | Pullman | Chisel Redistribution Tool Wood (53 mm Custom Order) | Confirmed |  
-  
-### Decision  
-  
-Pullman Chisel Redistribution Tool Woodを正式採用する。  
-  
-53 mm Custom Order仕様とする。  
-  
-### Selection Criteria  
-  
-* Precision  
-* Workflow  
-* Material Quality  
-* Design Bible  
-* Custom Compatibility  
-  
-### Reason  
-  
-53 mmへの最適化が可能であり、  
-  
-品質    
-精度    
-Workflow    
-Design Philosophy  
-  
-の全てで採用基準を満たす。  
-  
-### Storage  
-  
-通常時はKNODOS Tamping Mat with Tool Organiser - Walnut 54mmへ移動する。  
-  
-The Blocの常設Toolではない。  
-  
----  
-  
-## WDT Tool  
-  
+    
+### Decision    
+    
+Pullman Chisel Redistribution Tool Woodを正式採用する。    
+    
+53 mm Custom Order仕様とする。    
+    
+### Selection Criteria    
+    
+* Precision    
+* Workflow    
+* Material Quality    
+* Design Bible    
+* Custom Compatibility    
+    
+### Reason    
+    
+53 mmへの最適化が可能であり、    
+    
+品質      
+精度      
+Workflow      
+Design Philosophy    
+    
+の全てで採用基準を満たす。    
+    
+### Storage    
+    
+通常時はKNODOS Tamping Mat with Tool Organiser - Walnut 54mmへ移動する。    
+    
+The Blocの常設Toolではない。    
+    
+---    
+    
+## WDT Tool    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | WDT Tool | Normcore | Planetary WDT Tool 54mm | Confirmed |  
-  
-### Decision  
-  
-Normcore Planetary WDT Tool 54mmを正式採用する。  
-  
-### Selection Criteria  
-  
-* Planetary Mechanism  
-* Consistent Distribution  
-* Workflow  
-* Build Quality  
-* Ergonomics  
-* 54 mm Workflow Compatibility  
-  
-### Reason  
-  
-Planetary機構により均一なベッド形成と高い再現性を実現する。  
-  
-THE THIRD PLACEが求めるWorkflow・品質・デザインとの整合性を満たす。  
-  
-54mm仕様を正式採用する。  
-  
-### Physical Configuration  
-  
-Normcore Planetary WDT Tool 54mmの本体最大外径は約65 mm。  
-  
-### Storage  
-  
-通常時はKNODOS Tamping Mat with Tool Organiser - Walnut 54mmへ移動する。  
-  
-WDTをウォールナット天板へ直接置かず、KNODOSのTool Organiser上で管理する。  
-  
----  
-  
-## RDT Spray Bottle  
-  
+    
+### Decision    
+    
+Normcore Planetary WDT Tool 54mmを正式採用する。    
+    
+### Selection Criteria    
+    
+* Planetary Mechanism    
+* Consistent Distribution    
+* Workflow    
+* Build Quality    
+* Ergonomics    
+* 54 mm Workflow Compatibility    
+    
+### Reason    
+    
+Planetary機構により均一なベッド形成と高い再現性を実現する。    
+    
+THE THIRD PLACEが求めるWorkflow・品質・デザインとの整合性を満たす。    
+    
+54mm仕様を正式採用する。    
+    
+### Physical Configuration    
+    
+Normcore Planetary WDT Tool 54mmの本体最大外径は約65 mm。    
+    
+### Storage    
+    
+通常時はKNODOS Tamping Mat with Tool Organiser - Walnut 54mmへ移動する。    
+    
+WDTをウォールナット天板へ直接置かず、KNODOSのTool Organiser上で管理する。    
+    
+---    
+    
+## RDT Spray Bottle    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | RDT Spray Bottle | Normcore | RDT Spray Bottle | Confirmed |  
-  
-### Decision  
-  
-Normcore RDT Spray Bottleを正式採用する。  
-  
-### Selection Criteria  
-  
-* Fine Mist  
-* Espresso Workflow  
-* Build Quality  
-* Design Consistency  
-  
-### Reason  
-  
-Ross Droplet Technique専用設計であり、  
-  
-* 静電気低減  
-* 粉飛散防止  
-* Workflow  
-  
-を最適化できる。  
-  
-### Storage  
-  
-RDTはKNODOS Tamping MatではなくThe Bloc側で管理する。  
-  
-RDT専用のスタンドを追加せず、The Blocの空いたTool cutoutを利用して一時置きする。  
-  
-RDTは立てて固定することを要求せず、横置きによる安全な定位置管理を正式な運用とする。  
-  
----  
-  
-## KNODOS Tool Station  
-  
+    
+### Decision    
+    
+Normcore RDT Spray Bottleを正式採用する。    
+    
+### Selection Criteria    
+    
+* Fine Mist    
+* Espresso Workflow    
+* Build Quality    
+* Design Consistency    
+    
+### Reason    
+    
+Ross Droplet Technique専用設計であり、    
+    
+* 静電気低減    
+* 粉飛散防止    
+* Workflow    
+    
+を最適化できる。    
+    
+### Storage    
+    
+RDTはKNODOS Tamping MatではなくThe Bloc側で管理する。    
+    
+RDT専用のスタンドを追加せず、The Blocの空いたTool cutoutを利用して一時置きする。    
+    
+RDTは立てて固定することを要求せず、横置きによる安全な定位置管理を正式な運用とする。    
+    
+---    
+    
+## KNODOS Tool Station    
+    
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
 | Tool Station | KNODOS | Tamping Mat with Tool Organiser - Walnut 54mm | Confirmed |  
-  
-### Decision  
-  
-KNODOS Tamping Mat with Tool Organiser - Walnut 54mmを、THE THIRD PLACEのCoffee Tool Stationとして正式採用する。  
-  
-### Role  
-  
-The BlocからDistributor、Tamper、WDTの常設管理を分離し、KNODOSへ集約する。  
-  
-### Confirmed Tools  
-  
-* Normcore Planetary WDT Tool 54mm  
-* Pullman Chisel Redistribution Tool Wood (53 mm Custom Order)  
-* The Force Tamper 53 mm  
-  
-### Configuration  
-  
-KNODOSの3つのTool Organiser部を使用し、上記3 Toolを定位置管理する。  
-  
-写真上確認できる大径のTool Organiser部にはNormcore Planetary WDT Tool 54mmを置く。  
-  
-通常径の2つのTool Organiser部にはPullman Chisel 53mmとThe Force Tamper 53mmを置く。  
-  
-### Selection Criteria  
-  
-* Tool-specific organisation  
-* Walnut Material  
-* Compact Footprint  
-* Workflow Separation  
-* Protection of Walnut Tabletop  
-* Design Compatibility with The Bloc  
-* Minimal Additional Equipment  
-* Functional Beauty  
-  
-### Reason  
-  
-The Blocは製品としての完成度が高く、Portafilter、Knock Boxおよび抽出側のWorkflowを担わせる。  
-  
-一方、Distributor、Tamper、WDTまでThe Blocに集中させると、The Bloc上のTool配置が過密になる。  
-  
-KNODOS Tamping Mat with Tool Organiserを追加することで、  
-  
-The Bloc    
-→ Extraction Core  
-  
-KNODOS    
-→ Tool Station  
-  
-という役割分担を成立させる。  
-  
-また、WDT使用後に針へ残った粉をウォールナット天板へ落とすことを防止する。  
-  
-KNODOSのレザー面はWDTの一時置きにも使用できる。  
-  
-### 54 mm Specification Decision  
-  
-KNODOSは54mm版を正式採用する。  
-  
-Normcore Planetary WDT Tool 54mmは最大外径約65mmであり、KNODOS写真上の大径Tool Organiser部との寸法関係が最も適切と判断した。  
-  
-Pullman ChiselおよびThe Force Tamperは53mmであり、54mm版とのサイズ関係が自然である。  
-  
-58mm版は採用しない。  
-  
+    
+### Decision    
+    
+KNODOS Tamping Mat with Tool Organiser - Walnut 54mmを、THE THIRD PLACEのCoffee Tool Stationとして正式採用する。    
+    
+### Role    
+    
+The BlocからDistributor、Tamper、WDTの常設管理を分離し、KNODOSへ集約する。    
+    
+### Confirmed Tools    
+    
+* Normcore Planetary WDT Tool 54mm    
+* Pullman Chisel Redistribution Tool Wood (53 mm Custom Order)    
+* The Force Tamper 53 mm    
+    
+### Configuration    
+    
+KNODOSの3つのTool Organiser部を使用し、上記3 Toolを定位置管理する。    
+    
+写真上確認できる大径のTool Organiser部にはNormcore Planetary WDT Tool 54mmを置く。    
+    
+通常径の2つのTool Organiser部にはPullman Chisel 53mmとThe Force Tamper 53mmを置く。    
+    
+### Selection Criteria    
+    
+* Tool-specific organisation    
+* Walnut Material    
+* Compact Footprint    
+* Workflow Separation    
+* Protection of Walnut Tabletop    
+* Design Compatibility with The Bloc    
+* Minimal Additional Equipment    
+* Functional Beauty    
+    
+### Reason    
+    
+The Blocは製品としての完成度が高く、Portafilter、Knock Boxおよび抽出側のWorkflowを担わせる。    
+    
+一方、Distributor、Tamper、WDTまでThe Blocに集中させると、The Bloc上のTool配置が過密になる。    
+    
+KNODOS Tamping Mat with Tool Organiserを追加することで、    
+    
+The Bloc      
+→ Extraction Core    
+    
+KNODOS      
+→ Tool Station    
+    
+という役割分担を成立させる。    
+    
+また、WDT使用後に針へ残った粉をウォールナット天板へ落とすことを防止する。    
+    
+KNODOSのレザー面はWDTの一時置きにも使用できる。    
+    
+### 54 mm Specification Decision    
+    
+KNODOSは54mm版を正式採用する。    
+    
+Normcore Planetary WDT Tool 54mmは最大外径約65mmであり、KNODOS写真上の大径Tool Organiser部との寸法関係が最も適切と判断した。    
+    
+Pullman ChiselおよびThe Force Tamperは53mmであり、54mm版とのサイズ関係が自然である。    
+    
+58mm版は採用しない。    
+    
 ---  
   
 ## Blind Shaker  
@@ -897,8 +897,6 @@ Coffee System必要水量2,340mLに対して約200mLの余裕を確保する。
 ---  
   
 # Cups & Glassware  
-  
----  
   
 ## Espresso Cup Configuration  
   
@@ -1470,7 +1468,7 @@ The Force Tamper 53mm
 ↓    
 抽出    
 ↓    
-KRUVE PROPEL または ICOSA Brewhouse AERESSO  
+KRUVE PROPEL / ICOSA Brewhouse AERESSO  
   
 2人分を必ず作る。  
   
@@ -1711,6 +1709,8 @@ PX-004は、価格・購入先・輸送・関税・購入手順などの調達�
 | 2.4 | 2026-08 | Weber Workshops Bean Cellar Bulk and AION Seine Super Absorbent Coaster 801-BL naming synchronized with PX-005 and official product naming. Water Management confirmed as part of the official Coffee System configuration. |  
 | 2.5 | 2026-08 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm added as Confirmed Tool Station. Normcore Planetary WDT Tool fixed to 54mm. Distributor, Tamper, and WDT moved from The Bloc to KNODOS. The Bloc role redefined as Extraction Core, with Normcore RDT Spray Bottle and Weber Workshops Blind Shaker Onyx assigned to its two Tool cutouts. Confirmed Coffee Preparation Workflow updated accordingly. |  
 | 2.6 | 2026-08 | Coffee Workflow updated following physical workflow investigation. Blind Shaker Onyx remains the primary ground-transfer and homogenization vessel. LAGOM Mini Ground Transfer Cup is retained only as a secondary route if direct transfer is physically unavailable. Two-person Espresso operation is explicitly defined as two sequential extraction cycles. WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout and WPM Pitcher Sleeve confirmed for Latte workflow, with one-cup-at-a-time steaming and two sequential cycles. Latte workflow updated accordingly. |  
+| 2.7 | 2026-08 | Coffee System baseline consolidated following current equipment decisions. |  
+| 2.8 | 2026-08 | Historical decision records added for Varia EVO Hybrid Gen 2 and Weber Workshops MOONRAKER Ultra Edition. Varia is recorded as previously considered but not selected due to insufficient alignment with THE THIRD PLACE Coffee System equipment character and design direction. MOONRAKER Ultra Edition is recorded as highly regarded but rejected for current use because it is designed for 58mm baskets while the current 9Barista workflow is 53mm. |  
   
 ---  
   
