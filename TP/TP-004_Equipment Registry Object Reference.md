@@ -1,4 +1,4 @@
-# TP-004 Equipment Registry Object Reference  
+# TP-004_Equipment Registry Object Reference  
 # TP-004 Equipment Registry Object Reference  
 Version 7.0  
   
@@ -615,7 +615,7 @@ ANO D TENBAN
   
 **Status**  
   
-Wanted  
+Candidate  
   
 **Parent**  
   
@@ -2463,62 +2463,6 @@ Consumables Storage
   
 **Brand**  
   
-BONFLAG  
-  
-**Product**  
-  
-Air Sofa Storage Bag  
-  
-**Status**  
-  
-Owned  
-  
-### Color  
-  
-Black  
-  
-### Material  
-  
-Fabric  
-  
-### Industrial Attribute  
-  
-Comfort Storage  
-  
----  
-  
-## STR-022  
-  
-**Brand**  
-  
-Various Manufacturers  
-  
-**Product**  
-  
-Air Bed Storage Bag  
-  
-**Status**  
-  
-Owned  
-  
-### Color  
-  
-Black  
-  
-### Material  
-  
-Fabric  
-  
-### Industrial Attribute  
-  
-Comfort Storage  
-  
----  
-  
-## STR-023  
-  
-**Brand**  
-  
 YETI  
   
 **Product**  
@@ -2543,7 +2487,7 @@ Cooler
   
 ---  
   
-## STR-024  
+## STR-022  
   
 **Brand**  
   
