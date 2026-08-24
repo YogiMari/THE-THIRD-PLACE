@@ -1,3 +1,5 @@
+![THE THIRD PLACE](assets/banner.PNG)
+
 ## 🏕️ THE THIRD PLACE
 **A Movable Outdoor Living Room**
 
