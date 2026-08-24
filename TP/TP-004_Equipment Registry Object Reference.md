@@ -1,6 +1,5 @@
 TP-004_Equipment Registry Object Reference  
   
- TP-004 Equipment Registry Object Reference  
 # TP-004 Equipment Registry Object Reference  
 Version 7.0  
   
@@ -147,6 +146,10 @@ ROYAL BROWN
   
 Chester Field Seat  
   
+**Status**  
+  
+Owned  
+  
 **Parent**  
   
 FUR-001  
@@ -178,6 +181,10 @@ OLD MOUNTAIN
 **Product**  
   
 Brass Bolt & Plate  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
   
@@ -211,6 +218,10 @@ natural mountain monkeys
   
 NOVITA  
   
+**Status**  
+  
+Owned  
+  
 **Parent**  
   
 FUR-001  
@@ -237,11 +248,15 @@ Leg Extension
   
 **Brand**  
   
-natural mountain monkeys × DEVISE WORKS  
+DEVISE WORKS × OLD MOUNTAIN  
   
 **Product**  
   
 HIJIWARU  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
   
@@ -308,11 +323,15 @@ Organic Furniture
   
 **Brand**  
   
-PINO WORKS × DEVISE WORKS  
+DEVISE WORKS × PINO WORKS  
   
 **Product**  
   
 SANDANBARA  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
   
@@ -346,6 +365,10 @@ DEVISE WORKS × INAVANCE
   
 KURO Bolt & Plate  
   
+**Status**  
+  
+Owned  
+  
 **Parent**  
   
 FUR-006  
@@ -376,7 +399,11 @@ natural mountain monkeys
   
 **Product**  
   
-WARU NOVITA  
+DEVISE WORKS × WARU NOVITA  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
   
@@ -404,11 +431,15 @@ Leg Extension
   
 **Brand**  
   
-natural mountain monkeys × DEVISE WORKS  
+DEVISE WORKS × OLD MOUNTAIN  
   
 **Product**  
   
 HIJIWARU  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
   
@@ -472,11 +503,15 @@ Minimal Frame
   
 **Brand**  
   
-DEVISE WORKS  
+DEVISE WORKS × SOMABITO  
   
 **Product**  
   
 Silkscreen Graphic  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
   
@@ -578,13 +613,13 @@ DEVISE WORKS × ANCAM
   
 ANO D TENBAN  
   
+**Status**  
+  
+Wanted  
+  
 **Parent**  
   
 FUR-014  
-  
-### Status  
-  
-Wanted  
   
 ### Color  
   
@@ -601,6 +636,8 @@ None
 ### Industrial Attribute  
   
 Iron Top Plate  
+  
+---  
   
 ## FUR-016  
   
@@ -728,983 +765,887 @@ None
   
 Inflatable Bedding  
   
----  
   
-# Light  
   
----  
+**Light**  
   
-## LGT-001  
+**LGT-001**  
   
 **Brand**  
-  
 DEVISE WORKS × BLACK DESIGN  
   
 **Product**  
-  
 KUROshidare  
   
 **Status**  
-  
 Owned  
   
-### Color  
+**Color**  
   
 Black  
   
-### Material  
+**Material**  
   
 Oak  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
 Lantern Stand  
   
----  
+⸻  
   
-## LGT-002  
+**LGT-002**  
   
 **Brand**  
-  
 Vapourax  
   
 **Product**  
-  
 M320  
   
 **Status**  
-  
 Owned  
   
-### Color  
+**Color**  
   
 Gold  
   
-### Material  
+**Material**  
   
 Brass  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
-kerosene  
+Kerosene  
   
----  
+⸻  
   
-## LGT-003  
+**LGT-003**  
   
 **Brand**  
-  
 WANTKEY CAMP × 38Explore  
   
 **Product**  
-  
 38-kT HAUS5 WANTKEY Exclusive  
   
 **Status**  
-  
 Owned  
   
-### Child Components  
+**Child Components**  
   
-- LGT-004  
-- LGT-005  
-- LGT-006  
-- LGT-007  
-- LGT-008  
+* LGT-004  
+* LGT-005  
+* LGT-006  
+* LGT-007  
+* LGT-008  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Walnut  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
 Portable LED Lantern  
   
----  
+⸻  
   
-## LGT-004  
+**LGT-004**  
   
 **Brand**  
-  
 nodel design  
   
 **Product**  
-  
 38-kT miyabi wood (Joker)  
   
 **Parent**  
-  
 LGT-003  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Camphor Wood  
   
----  
+⸻  
   
-## LGT-005  
+**LGT-005**  
   
 **Brand**  
-  
 nodel design  
   
 **Product**  
-  
 38-kT miyabi wood (King)  
   
 **Parent**  
-  
 LGT-003  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Satin Walnut  
   
----  
+⸻  
   
-## LGT-006  
+**LGT-006**  
   
 **Brand**  
-  
 nodel design  
   
 **Product**  
-  
 38-kT miyabi wood (Queen)  
   
 **Parent**  
-  
 LGT-003  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Zebrawood  
   
----  
+⸻  
   
-## LGT-007  
+**LGT-007**  
   
 **Brand**  
-  
 nodel design  
   
 **Product**  
-  
 38-kT miyabi wood (Jack)  
   
 **Parent**  
-  
 LGT-003  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 New Guinea Walnut  
   
----  
+⸻  
   
-## LGT-008  
+**LGT-008**  
   
 **Brand**  
-  
 nodel design  
   
 **Product**  
-  
 38-kT miyabi wood (Ace)  
   
 **Parent**  
-  
 LGT-003  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Jindai Yakusugi  
   
----  
+⸻  
   
-## LGT-009  
+**LGT-009**  
   
 **Brand**  
-  
 38Explore  
   
 **Product**  
-  
 38-kT HAUS5  
   
 **Status**  
-  
 Owned  
   
-### Child Components  
+**Child Components**  
   
-- LGT-010  
-- LGT-011  
-- LGT-012  
-- LGT-013  
-- LGT-014  
-- LGT-015  
+* LGT-010  
+* LGT-011  
+* LGT-012  
+* LGT-013  
+* LGT-014  
+* LGT-015  
   
-### Color  
+**Color**  
   
 Black  
   
-### Material  
+**Material**  
   
 Steel  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
 Portable LED Lantern  
   
----  
+⸻  
   
-## LGT-010  
+**LGT-010**  
   
 **Brand**  
-  
 1/f SPACE  
   
 **Product**  
-  
 38-kT HAUS5 PANEL  
   
 **Parent**  
-  
 LGT-009  
   
-### Color  
+**Color**  
   
 Black  
   
-### Material  
+**Material**  
   
 Stainless Steel  
   
----  
+⸻  
   
-## LGT-011  
+**LGT-011**  
   
 **Brand**  
-  
 neru design works × 1/f SPACE  
   
 **Product**  
-  
 MIYABI RICH 0/f Copper Glove  
   
 **Parent**  
-  
 LGT-009  
   
-### Color  
+**Color**  
   
 Copper  
   
-### Material  
+**Material**  
   
 Copper  
   
----  
+⸻  
   
-## LGT-012  
+**LGT-012**  
   
 **Brand**  
-  
 CARMA STORE  
   
 **Product**  
-  
 THE RICH Celluloid Mother of Pearl  
   
 **Parent**  
-  
 LGT-009  
   
-### Color  
+**Color**  
   
 White  
   
-### Material  
+**Material**  
   
 Mother of Pearl  
   
----  
+⸻  
   
-## LGT-013  
+**LGT-013**  
   
 **Brand**  
-  
 CARMA STORE  
   
 **Product**  
-  
 38KT TORTOISE  
   
 **Parent**  
-  
 LGT-009  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Celluloid  
   
----  
+⸻  
   
-## LGT-014  
+**LGT-014**  
   
 **Brand**  
-  
 neru design works × LampUp  
   
 **Product**  
-  
 MIYABI RICH Amber  
   
 **Parent**  
-  
 LGT-009  
   
-### Color  
+**Color**  
   
 Multi  
   
-### Material  
+**Material**  
   
 Stained Glass  
   
----  
+⸻  
   
-## LGT-015  
+**LGT-015**  
   
 **Brand**  
-  
 neru design works × LampUp  
   
 **Product**  
-  
 MIYABI RICH Alumi Frozen  
   
 **Parent**  
-  
 LGT-009  
   
-### Status  
+**Status**  
+Essential  
   
-Wanted  
-  
-### Color  
+**Color**  
   
 Silver  
   
-### Material  
+**Material**  
   
 Aluminum  
   
-## LGT-016  
+⸻  
+  
+**LGT-016**  
   
 **Brand**  
-  
 nodel design  
   
 **Product**  
-  
 3ndelier Blade  
   
 **Status**  
-  
 Owned  
   
-### Child Components  
+**Child Components**  
   
-- LGT-017  
-- LGT-018  
-- LGT-019  
-- LGT-020  
-- LGT-021  
-- LGT-022  
-- LGT-023  
-- LGT-024  
+* LGT-017  
+* LGT-018  
+* LGT-019  
+* LGT-020  
+* LGT-021  
+* LGT-022  
+* LGT-023  
+* LGT-024  
   
-### Color  
+**Color**  
   
 Black  
   
-### Material  
+**Material**  
   
 Steel  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
 Pendant Lighting System  
   
----  
+⸻  
   
-## LGT-017  
+**LGT-017**  
   
 **Brand**  
-  
-G31  
+nodel design  
   
 **Product**  
-  
-Slider  
+G31 Slider  
   
 **Parent**  
-  
 LGT-016  
   
-### Quantity  
+**Quantity**  
   
-3  
+1  
   
-### Color  
+**Color**  
   
 Black  
   
-### Material  
+**Material**  
   
 Aluminum  
   
----  
+⸻  
   
-## LGT-018  
+**LGT-018**  
   
 **Brand**  
-  
 nodel design × solworks  
   
 **Product**  
-  
 Solol Wood (Walnut)  
   
 **Parent**  
-  
 LGT-016  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Walnut  
   
----  
+⸻  
   
-## LGT-019  
+**LGT-019**  
   
 **Brand**  
-  
 nodel design × solworks  
   
 **Product**  
-  
 Solol Wood (Hinoki)  
   
 **Parent**  
-  
 LGT-016  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Hinoki  
   
----  
+⸻  
   
-## LGT-020  
+**LGT-020**  
   
 **Brand**  
-  
 nodel design × solworks  
   
 **Product**  
-  
 Solol Wood (Pine)  
   
 **Parent**  
-  
 LGT-016  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Pine  
   
----  
+⸻  
   
-## LGT-021  
+**LGT-021**  
   
 **Brand**  
-  
 nodel design  
   
 **Product**  
-  
 38-kT miyabi Wood (Walnut)  
   
 **Parent**  
-  
 LGT-016  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Walnut  
   
----  
+⸻  
   
-## LGT-022  
+**LGT-022**  
   
 **Brand**  
-  
 nodel design  
   
 **Product**  
-  
 38-kT miyabi Wood (Hinoki)  
   
 **Parent**  
-  
 LGT-016  
   
-### Color  
+**Status**  
+Wanted  
+  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Hinoki  
   
----  
+⸻  
   
-## LGT-023  
+**LGT-023**  
   
 **Brand**  
-  
 nodel design  
   
 **Product**  
-  
 38-kT miyabi Wood (Karin)  
   
 **Parent**  
-  
 LGT-016  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Karin  
   
----  
+⸻  
   
-## LGT-024  
+**LGT-024**  
   
 **Brand**  
-  
 nodel design  
   
 **Product**  
-  
 38-kT miyabi Wood (African Wood)  
   
 **Parent**  
-  
 LGT-016  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 African Wood  
   
----  
+⸻  
   
-## LGT-025  
+**LGT-025**  
   
 **Brand**  
-  
 nodel design  
   
 **Product**  
-  
 38-kT miyabi Wood (Pine)  
   
 **Status**  
-  
 Owned  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Pine  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
 Wood Sleeve  
   
----  
+⸻  
   
-## LGT-026  
+**LGT-026**  
   
 **Brand**  
-  
 nodel design  
   
 **Product**  
-  
 38-kT miyabi Wood (Maple)  
   
 **Status**  
-  
 Owned  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Maple  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
 Wood Sleeve  
   
----  
+⸻  
   
-## LGT-027  
+**LGT-027**  
   
 **Brand**  
-  
 TARPtoTARP × LampUp  
   
 **Product**  
-  
 Glass Shade & Wood Stand Set  
   
 **Status**  
-  
 Owned  
   
-### Color  
+**Color**  
   
 Gray  
   
-### Material  
+**Material**  
   
 Glass  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
 Ambient Table Light  
   
----  
+⸻  
   
-## LGT-028  
+**LGT-028**  
   
 **Brand**  
-  
 CARMA STORE  
   
 **Product**  
-  
 MMM Pocket Shade PAJAMA MOON LIAN HOME  
   
 **Status**  
-  
 Owned  
   
-### Color  
+**Color**  
   
 Floral  
   
-### Material  
+**Material**  
   
 Fabric  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
 Fabric Shade  
   
----  
+⸻  
   
-## LGT-029  
+**LGT-029**  
   
 **Brand**  
-  
 DEVISE WORKS × WHAT WE WANT  
   
 **Product**  
-  
 デバデバの実  
   
 **Status**  
-  
 Owned  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Walnut  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
 Wood Shade  
   
----  
+⸻  
   
-## LGT-030  
+**LGT-030**  
   
 **Brand**  
-  
 WHAT WE WANT × COLONISTA  
   
 **Product**  
-  
 CONPE10_WWW  
   
 **Status**  
-  
 Owned  
   
-### Color  
+**Color**  
   
 White  
   
-### Material  
+**Material**  
   
 Fabric  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
 Textile Shade  
   
----  
+⸻  
   
-## LGT-031  
+**LGT-031**  
   
 **Brand**  
-  
 38Explore  
   
 **Product**  
-  
 38-kT THE RICH classic100  
   
 **Status**  
-  
 Owned  
   
-### Quantity  
+**Quantity**  
   
 2  
   
-### Color  
+**Color**  
   
 Black  
   
-### Material  
+**Material**  
   
 Brass  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
 Premium Lantern  
   
----  
+⸻  
   
-## LGT-032  
+**LGT-032**  
   
 **Brand**  
-  
-RT-01  
+rove troupe  
   
 **Product**  
-  
 RT-01AC01 / ECHO LAMP  
   
 **Status**  
-  
 Wanted  
   
-### Color  
+**Color**  
   
 Black  
   
-### Material  
+**Material**  
   
 Aluminum / Glass  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
 Portable Lamp  
   
----  
+⸻  
   
-## LGT-033  
+**LGT-033**  
   
 **Brand**  
-  
 KURASHI MADE  
   
 **Product**  
-  
 DOME LOOK  
   
 **Status**  
-  
 Wanted  
   
-### Color  
+**Color**  
   
 Black  
   
-### Material  
+**Material**  
   
 Aluminum / Glass  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
 Portable Lamp  
   
----  
+⸻  
   
-## LGT-034  
+**LGT-034**  
   
 **Brand**  
-  
 wildingout  
   
 **Product**  
-  
 LF1984  
   
 **Status**  
-  
 Wanted  
   
-### Color  
+**Color**  
   
 Brown  
   
-### Material  
+**Material**  
   
 Walnut  
   
-### Graphic Attribute  
+**Graphic Attribute**  
   
 None  
   
-### Industrial Attribute  
+**Industrial Attribute**  
   
 Lantern Stand  
+  
+  
+  
+  
   
 ---  
   
@@ -2125,7 +2066,7 @@ STR-008
   
 ### Status  
   
-Wanted  
+Owned  
   
 ### Color  
   
@@ -2209,7 +2150,7 @@ STR-008
   
 ### Status  
   
-Wanted  
+Candidate  
   
 ### Color  
   
@@ -2225,7 +2166,7 @@ Walnut
   
 **Brand**  
   
-BALLISTICS  
+LOCKFIELD EQUIPMENT × BALLISTIC  
   
 **Product**  
   
@@ -2237,7 +2178,7 @@ STR-008
   
 ### Status  
   
-Wanted  
+Essential  
   
 ### Color  
   
@@ -2302,7 +2243,7 @@ STR-014
   
 ### Status  
   
-Wanted  
+Essential  
   
 ### Color  
   
@@ -2330,7 +2271,7 @@ STR-014
   
 ### Status  
   
-Wanted  
+Essential  
   
 ### Color  
   
@@ -3132,6 +3073,10 @@ asigrip
   
 FIR-006  
   
+**Status**  
+  
+Owned  
+  
 ### Color  
   
 Brown  
@@ -3195,6 +3140,10 @@ asimocrafts
 **Product**  
   
 asigrip  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
   
@@ -3262,7 +3211,7 @@ asiblaster
   
 **Status**  
   
-Wanted  
+Owned  
   
 ### Color  
   
@@ -3294,7 +3243,7 @@ copper250
   
 **Status**  
   
-Wanted  
+Essential  
   
 ### Color  
   
@@ -3326,7 +3275,7 @@ FT no BARREL
   
 **Status**  
   
-Wanted  
+Candidate  
   
 ### Color  
   
