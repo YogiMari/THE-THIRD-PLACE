@@ -872,6 +872,10 @@ nodel design
 **Product**  
 38-kT miyabi wood (Joker)  
   
+**Status**  
+  
+Owned  
+  
 **Parent**  
 LGT-003  
   
@@ -892,6 +896,10 @@ nodel design
   
 **Product**  
 38-kT miyabi wood (King)  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
 LGT-003  
@@ -914,6 +922,10 @@ nodel design
 **Product**  
 38-kT miyabi wood (Queen)  
   
+**Status**  
+  
+Owned  
+  
 **Parent**  
 LGT-003  
   
@@ -935,6 +947,10 @@ nodel design
 **Product**  
 38-kT miyabi wood (Jack)  
   
+**Status**  
+  
+Owned  
+  
 **Parent**  
 LGT-003  
   
@@ -955,6 +971,10 @@ nodel design
   
 **Product**  
 38-kT miyabi wood (Ace)  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
 LGT-003  
@@ -1015,6 +1035,10 @@ Portable LED Lantern
 **Product**  
 38-kT HAUS5 PANEL  
   
+**Status**  
+  
+Owned  
+  
 **Parent**  
 LGT-009  
   
@@ -1035,6 +1059,10 @@ neru design works × 1/f SPACE
   
 **Product**  
 MIYABI RICH 0/f Copper Glove  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
 LGT-009  
@@ -1057,6 +1085,10 @@ CARMA STORE
 **Product**  
 THE RICH Celluloid Mother of Pearl  
   
+**Status**  
+  
+Owned  
+  
 **Parent**  
 LGT-009  
   
@@ -1077,6 +1109,10 @@ CARMA STORE
   
 **Product**  
 38KT TORTOISE  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
 LGT-009  
@@ -1099,6 +1135,10 @@ neru design works × LampUp
 **Product**  
 MIYABI RICH Amber  
   
+**Status**  
+  
+Owned  
+  
 **Parent**  
 LGT-009  
   
@@ -1119,6 +1159,10 @@ neru design works × LampUp
   
 **Product**  
 MIYABI RICH Alumi Frozen  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
 LGT-009  
@@ -1184,6 +1228,10 @@ nodel design
 **Product**  
 G31 Slider  
   
+**Status**  
+  
+Owned  
+  
 **Parent**  
 LGT-016  
   
@@ -1209,6 +1257,10 @@ nodel design × solworks
 **Product**  
 Solol Wood (Walnut)  
   
+**Status**  
+  
+Owned  
+  
 **Parent**  
 LGT-016  
   
@@ -1229,6 +1281,10 @@ nodel design × solworks
   
 **Product**  
 Solol Wood (Hinoki)  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
 LGT-016  
@@ -1251,6 +1307,10 @@ nodel design × solworks
 **Product**  
 Solol Wood (Pine)  
   
+**Status**  
+  
+Owned  
+  
 **Parent**  
 LGT-016  
   
@@ -1272,6 +1332,10 @@ nodel design
 **Product**  
 38-kT miyabi Wood (Walnut)  
   
+**Status**  
+  
+Owned  
+  
 **Parent**  
 LGT-016  
   
@@ -1292,6 +1356,10 @@ nodel design
   
 **Product**  
 38-kT miyabi Wood (Hinoki)  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
 LGT-016  
@@ -1317,6 +1385,10 @@ nodel design
 **Product**  
 38-kT miyabi Wood (Karin)  
   
+**Status**  
+  
+Owned  
+  
 **Parent**  
 LGT-016  
   
@@ -1337,6 +1409,10 @@ nodel design
   
 **Product**  
 38-kT miyabi Wood (African Wood)  
+  
+**Status**  
+  
+Owned  
   
 **Parent**  
 LGT-016  
