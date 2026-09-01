@@ -1,4 +1,3 @@
-# TP-004_Equipment Registry Object Reference  
 # TP-004 Equipment Registry Object Reference  
 Version 7.0  
   
@@ -765,953 +764,1057 @@ None
   
 Inflatable Bedding  
   
+# Light  
   
+---  
   
-Light  
+## LGT-001  
   
-LGT-001  
+**Brand**  
   
-Brand  
 DEVISE WORKS × BLACK DESIGN  
   
-Product  
+**Product**  
+  
 KUROshidare  
   
-Status  
+**Status**  
+  
 Owned  
   
-Color  
+### Color  
   
 Black  
   
-Material  
+### Material  
   
 Oak  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Lantern Stand  
   
-⸻  
+---  
   
-LGT-002  
+## LGT-002  
   
-Brand  
+**Brand**  
+  
 Vapourax  
   
-Product  
+**Product**  
+  
 M320  
   
-Status  
+**Status**  
+  
 Owned  
   
-Color  
+### Color  
   
 Gold  
   
-Material  
+### Material  
   
 Brass  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Kerosene  
   
-⸻  
+---  
   
-LGT-003  
+## LGT-003  
   
-Brand  
+**Brand**  
+  
 WANTKEY CAMP × 38Explore  
   
-Product  
+**Product**  
+  
 38-kT HAUS5 WANTKEY Exclusive  
   
-Status  
+**Status**  
+  
 Owned  
   
-Child Components  
+### Child Components  
   
-* LGT-004  
-* LGT-005  
-* LGT-006  
-* LGT-007  
-* LGT-008  
+- LGT-004  
+- LGT-005  
+- LGT-006  
+- LGT-007  
+- LGT-008  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Walnut  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Portable LED Lantern  
   
-⸻  
+---  
   
-LGT-004  
+## LGT-004  
   
-Brand  
+**Brand**  
+  
 nodel design  
   
-Product  
+**Product**  
+  
 38-kT miyabi wood (Joker)  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-003  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Camphor Wood  
   
-⸻  
+---  
   
-LGT-005  
+## LGT-005  
   
-Brand  
+**Brand**  
+  
 nodel design  
   
-Product  
+**Product**  
+  
 38-kT miyabi wood (King)  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-003  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Satin Walnut  
   
-⸻  
+---  
   
-LGT-006  
+## LGT-006  
   
-Brand  
+**Brand**  
+  
 nodel design  
   
-Product  
+**Product**  
+  
 38-kT miyabi wood (Queen)  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-003  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Zebrawood  
   
-⸻  
+---  
   
-LGT-007  
+## LGT-007  
   
-Brand  
+**Brand**  
+  
 nodel design  
   
-Product  
+**Product**  
+  
 38-kT miyabi wood (Jack)  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-003  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 New Guinea Walnut  
   
-⸻  
+---  
   
-LGT-008  
+## LGT-008  
   
-Brand  
+**Brand**  
+  
 nodel design  
   
-Product  
+**Product**  
+  
 38-kT miyabi wood (Ace)  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-003  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Jindai Yakusugi  
   
-⸻  
+---  
   
-LGT-009  
+## LGT-009  
   
-Brand  
+**Brand**  
+  
 38Explore  
   
-Product  
+**Product**  
+  
 38-kT HAUS5  
   
-Status  
+**Status**  
+  
 Owned  
   
-Child Components  
+### Child Components  
   
-* LGT-010  
-* LGT-011  
-* LGT-012  
-* LGT-013  
-* LGT-014  
-* LGT-015  
+- LGT-010  
+- LGT-011  
+- LGT-012  
+- LGT-013  
+- LGT-014  
+- LGT-015  
   
-Color  
+### Color  
   
 Black  
   
-Material  
+### Material  
   
 Steel  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Portable LED Lantern  
   
-⸻  
+---  
   
-LGT-010  
+## LGT-010  
   
-Brand  
+**Brand**  
+  
 1/f SPACE  
   
-Product  
+**Product**  
+  
 38-kT HAUS5 PANEL  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-009  
   
-Color  
+### Color  
   
 Black  
   
-Material  
+### Material  
   
 Stainless Steel  
   
-⸻  
+---  
   
-LGT-011  
+## LGT-011  
   
-Brand  
+**Brand**  
+  
 neru design works × 1/f SPACE  
   
-Product  
+**Product**  
+  
 MIYABI RICH 0/f Copper Glove  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-009  
   
-Color  
+### Color  
   
 Copper  
   
-Material  
+### Material  
   
 Copper  
   
-⸻  
+---  
   
-LGT-012  
+## LGT-012  
   
-Brand  
+**Brand**  
+  
 CARMA STORE  
   
-Product  
+**Product**  
+  
 THE RICH Celluloid Mother of Pearl  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-009  
   
-Color  
+### Color  
   
 White  
   
-Material  
+### Material  
   
 Mother of Pearl  
   
-⸻  
+---  
   
-LGT-013  
+## LGT-013  
   
-Brand  
+**Brand**  
+  
 CARMA STORE  
   
-Product  
+**Product**  
+  
 38KT TORTOISE  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-009  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Celluloid  
   
-⸻  
+---  
   
-LGT-014  
+## LGT-014  
   
-Brand  
+**Brand**  
+  
 neru design works × LampUp  
   
-Product  
+**Product**  
+  
 MIYABI RICH Amber  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-009  
   
-Color  
+### Color  
   
 Multi  
   
-Material  
+### Material  
   
 Stained Glass  
   
-⸻  
+---  
   
-LGT-015  
+## LGT-015  
   
-Brand  
+**Brand**  
+  
 neru design works × LampUp  
   
-Product  
+**Product**  
+  
 MIYABI RICH Alumi Frozen  
   
 **Status**  
   
 Essential  
   
-Parent  
+**Parent**  
+  
 LGT-009  
   
-Color  
+### Color  
   
 Silver  
   
-Material  
+### Material  
   
 Aluminum  
   
-⸻  
+---  
   
-LGT-016  
+## LGT-016  
   
-Brand  
+**Brand**  
+  
 nodel design  
   
-Product  
+**Product**  
+  
 3ndelier Blade  
   
-Status  
+**Status**  
+  
 Owned  
   
-Child Components  
+### Child Components  
   
-* LGT-017  
-* LGT-018  
-* LGT-019  
-* LGT-020  
-* LGT-021  
-* LGT-022  
-* LGT-023  
-* LGT-024  
+- LGT-017  
+- LGT-018  
+- LGT-019  
+- LGT-020  
+- LGT-021  
+- LGT-022  
+- LGT-023  
+- LGT-024  
   
-Color  
+### Color  
   
 Black  
   
-Material  
+### Material  
   
 Steel  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Pendant Lighting System  
   
-⸻  
+---  
   
-LGT-017  
+## LGT-017  
   
-Brand  
+**Brand**  
+  
 nodel design  
   
-Product  
+**Product**  
+  
 G31 Slider  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-016  
   
-Quantity  
+### Quantity  
   
 1  
   
-Color  
+### Color  
   
 Black  
   
-Material  
+### Material  
   
 Aluminum  
   
-⸻  
+---  
   
-LGT-018  
+## LGT-018  
   
-Brand  
+**Brand**  
+  
 nodel design × solworks  
   
-Product  
+**Product**  
+  
 Solol Wood (Walnut)  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-016  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Walnut  
   
-⸻  
+---  
   
-LGT-019  
+## LGT-019  
   
-Brand  
+**Brand**  
+  
 nodel design × solworks  
   
-Product  
+**Product**  
+  
 Solol Wood (Hinoki)  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-016  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Hinoki  
   
-⸻  
+---  
   
-LGT-020  
+## LGT-020  
   
-Brand  
+**Brand**  
+  
 nodel design × solworks  
   
-Product  
+**Product**  
+  
 Solol Wood (Pine)  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-016  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Pine  
   
-⸻  
+---  
   
-LGT-021  
+## LGT-021  
   
-Brand  
+**Brand**  
+  
 nodel design  
   
-Product  
+**Product**  
+  
 38-kT miyabi Wood (Walnut)  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-016  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Walnut  
   
-⸻  
+---  
   
-LGT-022  
+## LGT-022  
   
-Brand  
+**Brand**  
+  
 nodel design  
   
-Product  
+**Product**  
+  
 38-kT miyabi Wood (Hinoki)  
   
 **Status**  
   
 Wanted  
   
-Parent  
+**Parent**  
+  
 LGT-016  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Hinoki  
   
-⸻  
+---  
   
-LGT-023  
+## LGT-023  
   
-Brand  
+**Brand**  
+  
 nodel design  
   
-Product  
+**Product**  
+  
 38-kT miyabi Wood (Karin)  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-016  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Karin  
   
-⸻  
+---  
   
-LGT-024  
+## LGT-024  
   
-Brand  
+**Brand**  
+  
 nodel design  
   
-Product  
+**Product**  
+  
 38-kT miyabi Wood (African Wood)  
   
 **Status**  
   
 Owned  
   
-Parent  
+**Parent**  
+  
 LGT-016  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 African Wood  
   
-⸻  
+---  
   
-LGT-025  
+## LGT-025  
   
-Brand  
+**Brand**  
+  
 nodel design  
   
-Product  
+**Product**  
+  
 38-kT miyabi Wood (Pine)  
   
-Status  
+**Status**  
+  
 Owned  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Pine  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Wood Sleeve  
   
-⸻  
+---  
   
-LGT-026  
+## LGT-026  
   
-Brand  
+**Brand**  
+  
 nodel design  
   
-Product  
+**Product**  
+  
 38-kT miyabi Wood (Maple)  
   
-Status  
+**Status**  
+  
 Owned  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Maple  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Wood Sleeve  
   
-⸻  
+---  
   
-LGT-027  
+## LGT-027  
   
-Brand  
+**Brand**  
+  
 TARPtoTARP × LampUp  
   
-Product  
+**Product**  
+  
 Glass Shade & Wood Stand Set  
   
-Status  
+**Status**  
+  
 Owned  
   
-Color  
+### Color  
   
 Gray  
   
-Material  
+### Material  
   
 Glass  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Ambient Table Light  
   
-⸻  
+---  
   
-LGT-028  
+## LGT-028  
   
-Brand  
+**Brand**  
+  
 CARMA STORE  
   
-Product  
+**Product**  
+  
 MMM Pocket Shade PAJAMA MOON LIAN HOME  
   
-Status  
+**Status**  
+  
 Owned  
   
-Color  
+### Color  
   
 Floral  
   
-Material  
+### Material  
   
 Fabric  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Fabric Shade  
   
-⸻  
+---  
   
-LGT-029  
+## LGT-029  
   
-Brand  
+**Brand**  
+  
 DEVISE WORKS × WHAT WE WANT  
   
-Product  
+**Product**  
+  
 デバデバの実  
   
-Status  
+**Status**  
+  
 Owned  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Walnut  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Wood Shade  
   
-⸻  
+---  
   
-LGT-030  
+## LGT-030  
   
-Brand  
+**Brand**  
+  
 WHAT WE WANT × COLONISTA  
   
-Product  
+**Product**  
+  
 CONPE10_WWW  
   
-Status  
+**Status**  
+  
 Owned  
   
-Color  
+### Color  
   
 White  
   
-Material  
+### Material  
   
 Fabric  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Textile Shade  
   
-⸻  
+---  
   
-LGT-031  
+## LGT-031  
   
-Brand  
+**Brand**  
+  
 38Explore  
   
-Product  
+**Product**  
+  
 38-kT THE RICH classic100  
   
-Status  
+**Status**  
+  
 Owned  
   
-Quantity  
+### Quantity  
   
 2  
   
-Color  
+### Color  
   
 Black  
   
-Material  
+### Material  
   
 Brass  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Premium Lantern  
   
-⸻  
+---  
   
-LGT-032  
+## LGT-032  
   
-Brand  
+**Brand**  
+  
 rove troupe  
   
-Product  
+**Product**  
+  
 RT-01AC01 / ECHO LAMP  
   
-Status  
+**Status**  
+  
 Wanted  
   
-Color  
+### Color  
   
 Black  
   
-Material  
+### Material  
   
 Aluminum / Glass  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Portable Lamp  
   
-⸻  
+---  
   
-LGT-033  
+## LGT-033  
   
-Brand  
+**Brand**  
+  
 KURASHI MADE  
   
-Product  
+**Product**  
+  
 DOME LOOK  
   
-Status  
+**Status**  
+  
 Wanted  
   
-Color  
+### Color  
   
 Black  
   
-Material  
+### Material  
   
 Aluminum / Glass  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Portable Lamp  
   
-⸻  
+---  
   
-LGT-034  
+## LGT-034  
   
-Brand  
+**Brand**  
+  
 wildingout  
   
-Product  
+**Product**  
+  
 LF1984  
   
-Status  
+**Status**  
+  
 Wanted  
   
-Color  
+### Color  
   
 Brown  
   
-Material  
+### Material  
   
 Walnut  
   
-Graphic Attribute  
+### Graphic Attribute  
   
 None  
   
-Industrial Attribute  
+### Industrial Attribute  
   
 Lantern Stand  
+  
+---  
   
 # Aroma  
   
@@ -3566,3 +3669,17 @@ Major refactor from legacy equipment lists.
 - Separated Graphic Attribute from equipment identity.  
 - Separated Industrial Attribute from equipment identity.  
 - Established TP-004 as the Single Source of Truth for all equipment.  
+  
+---  
+  
+## Version 7.1  
+  
+Consolidated three duplicate TP-004 files into a single canonical file and repaired formatting.  
+  
+### Changes  
+  
+- Reformatted the Light Domain (LGT-001–LGT-034) into standard Markdown structure (`##` headers, `**bold**` core fields, `---` separators), replacing the previously broken plain-text formatting. No equipment data was replaced; existing field values (including Status and Quantity) were preserved as-is.  
+- Confirmed LGT-017 (G31 Slider) Quantity = 1 (one slider holding three 38-kT lanterns).  
+- Retained the current Coffee Domain frame (structure only, no product data).  
+- Removed duplicate TP-004 files: `TP-004 Equipment Registry Object Reference.md` and `TP-004_Equipment_Registry_Object_Reference.md`.  
+- Fixed duplicated title line in the document header.  
