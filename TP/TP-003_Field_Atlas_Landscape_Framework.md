@@ -1,7 +1,7 @@
 TP-003 Field Atlas Landscape Framework
 # TP-003
 # Field Atlas Landscape Framework
-## Ver.1.0
+## Ver.1.1
 
 ---
 
@@ -396,6 +396,65 @@ Identity は、
 
 ---
 
+### Visited Status（Database Table 表記）
+
+一覧表（Database）形式では、
+
+●／○ の代わりに、
+
+**訪問済みのみスコアとField名を太字表記する**。
+
+太字：訪問済み
+
+通常：未訪問
+
+Full Entry（Example形式のような単体表記）では、
+
+引き続き ●／○ を使用する。
+
+---
+
+# Field Atlas Database
+
+Field Atlas Evaluation Framework（6軸評価）に基づき、
+
+現在までに評価した全キャンプ場を記録する。
+
+スコアは100点満点換算の暫定総合評価とし、
+
+訪問後は実体験を最優先して更新する。
+
+太字の Field は訪問済み、
+
+通常表記の Field は未訪問（調査ベースの暫定評価）を示す。
+
+| Field | Identity |
+|---|---|
+| **97.8｜Render Fika（千葉県山武市） 2h 🪨** | **Design Retreat**<br>貸切露天風呂・貸切サウナ・静かな林間。クリエイターやデザイナーが自然と集う、Field Atlasのリファレンス。設備・管理品質・Identityのすべてが高水準で調和している。 |
+| **96.9｜RECAMP 富士スピードウェイ（静岡県駿東郡小山町） 3h 🌱🌲** | **Circuit Retreat**<br>世界的サーキットの中という唯一無二の非日常空間。高規格設備、広い芝サイト、管理の行き届いた高い品質の高いフィールド。 |
+| **95.8｜South One Village（千葉県館山市） 2.5h 🪨** | **Artificial Resort**<br>白い砂利と幾何学的に整えられた芝が生み出す人工リゾート。区画専用水道や高い管理品質を備え、Design Bibleとの親和性が極めて高い。 |
+| 95.2｜moss camp field（山梨県南都留郡山中湖村） 2.5h 🪨 | **Botanical Retreat**<br>植物をテーマにした静かなフィールド。美しい砂利サイトと富士山の眺望、高い管理品質への期待が大きく、現時点の最有力候補の一つ。 |
+| 94.8｜富士高原トマトフィールド（静岡県富士宮市） 3.5h 🌱 | **Creative Farm Retreat**<br>富士山と農園文化、OAKコミュニティとの結び付きが魅力。朝霧らしい開放感に加え、カルチャーとしてのIdentityが際立つ。 |
+| **94.1｜CREST northKaruizawa（群馬県吾妻郡長野原町） 4h 🌱🌲** | **Grand Lawn**<br>キャンプ場全体を覆う圧倒的な天然芝が主役。芝そのものがIdentityとなる希少なフィールドで、浅間山の景観も美しい。 |
+| **93.8｜朝霧キャンプベース そらいろ（静岡県富士宮市） 3.5h 🌱** | **Premium Mt. Fuji Camp**<br>富士山と高規格設備を高いレベルで両立。管理棟・トイレ・炊事場までデザイン性と清潔感があり、朝霧エリアの基準となる存在。 |
+| **92.9｜橘ふれあい公園キャンプ場（千葉県香取市） 1.5h 🌱** | **Luxury Layout**<br>段状レイアウトによる広い眺望と贅沢な区画が魅力。区画ごとの水道など快適性は高いが、芝の状態が惜しい。 |
+| **92.5｜RECAMP館山（千葉県館山市） 2.5h 🪨🌱** | **Coastal Resort**<br>海とヤシの木が演出するリゾート感が特徴。アクセスや買い出しの利便性も高く、デュオキャンプでも過ごしやすい。 |
+| 91.8｜オートキャンプFUJICHU（山梨県南都留郡富士河口湖町） 3.5h 🪨🌲 | **Forest Retreat**<br>静かな林間環境と高い管理品質が期待されるフィールド。現地での空間体験による評価更新が楽しみな候補。 |
+| 91.2｜CAMPGROUND BREEZE TATEYAMA（千葉県館山市） 2.5h 🪨🌱 | **Beach Family Resort**<br>海辺ならではの開放感と設備が魅力。Design Bibleとの親和性は現地で検証予定。 |
+| 90.8｜TACO GLAMP THE MEXICO（千葉県香取郡多古町） 2h 🪨🌱 | **Destination Resort**<br>メキシコをテーマにした独自の世界観を持つ滞在型フィールド。Identityの強さが評価ポイント。 |
+| **90.4｜大原布施オートキャンプ場（千葉県いすみ市） 2.5h 🌱** | **Fire Experience**<br>薪使い放題という唯一無二の体験価値を持つ。設備は標準的だが、焚き火好きには代え難い魅力がある。 |
+| 90.0｜小田原フォレストキャンプ場（神奈川県小田原市） 2.5h 🪨🌲 | **Forest Retreat**<br>林間の静けさと落ち着いた雰囲気が期待される候補。実体験によるIdentityの成熟を待ちたい。 |
+| 89.6｜JUTE CAMP FIELD（茨城県常総市） 2h 🪨 | **Industrial Camp**<br>無機質で工業的なデザインとの親和性が高そうなフィールド。今後の現地検証候補。 |
+| **89.2｜無印良品 カンパーニャ嬬恋キャンプ場（群馬県吾妻郡嬬恋村） 4.5h 🌱** | **MUJI Outdoor Life**<br>無印良品らしい思想と広大な自然環境が魅力。ただし距離が再訪性に影響する。 |
+| 88.8｜成田ゆめ牧場ファミリーオートキャンプ場（千葉県成田市） 2h 🌱 | **Family Resort**<br>高規格設備で快適性は高い。Identityは今後の検証で評価を深めたい。 |
+| 88.1｜大子広域公園オートキャンプ場グリンヴィラ（茨城県久慈郡大子町） 3h 🌱 | **Public Premium Camp**<br>公共系高規格キャンプ場の完成形。設備品質は高いが、独自性の評価は今後の課題。 |
+| 87.6｜KARUIZAWA CAMP GOLD（群馬県吾妻郡長野原町） 4h 🌱🌲 | **Highland Camp**<br>軽井沢らしい高原リゾートとして期待できる候補。現地体験による評価更新を予定。 |
+| 87.0｜ふもとっぱら（静岡県富士宮市） 3.5h 🌱 | **Sacred Camp Ground**<br>日本キャンプ文化を象徴する聖地。富士山の圧倒的な景観は魅力だが、混雑や強風、設備との総合評価は実体験後に判断したい。 |
+| 86.4｜朝霧ジャンボリーオートキャンプ場（静岡県富士宮市） 3.5h 🌱🌲 | **Mt. Fuji Classic Camp**<br>歴史ある朝霧エリアを代表するクラシックフィールド。現地体験でIdentityを見極めたい。 |
+| **84.8｜キャンプガーデン印西（千葉県印西市） 1h 🪨** | **Standard Auto Camp**<br>管理は行き届いているが、現時点ではField Atlasが求める独自性や空間価値には届いていない。 |
+
+---
+
 # Continuous Evolution
 
 Field Atlas Landscape Framework は、
@@ -448,3 +507,11 @@ THE THIRD PLACE を実現するための
 
 **「優れた Third Place は、優れたランドスケープから始まる。」**
 
+---
+
+# Revision History
+
+| Version | Date | Description |
+|---|---|---|
+| 1.0 | — | Field Atlas Landscape Framework 初版制定（6軸評価基準・表示フォーマット定義） |
+| 1.1 | 2026-09-01 | Field Atlas Database セクションを新設。評価済みキャンプ場 22件を記録。Database表記における Visited Status ルール（太字表記）を追加。 |
