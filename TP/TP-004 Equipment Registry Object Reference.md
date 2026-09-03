@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.0  
+Version 7.3  
   
 ---  
   
@@ -4750,4 +4750,4 @@ Full correction of the Furniture, Aroma, Fire, and Light Domains, plus a redefin
 
 ### General  
 
-- Document header version number left at "Version 7.0" pending the separate, consolidated version-numbering correction across the document (still planned, not yet executed).  
+- Document header version number corrected from "Version 7.0" to "Version 7.3," completing the version-numbering correction referenced above.  
