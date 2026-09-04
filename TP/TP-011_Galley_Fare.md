@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 1.7
+Version 1.8
 
 ---
 
@@ -85,6 +85,10 @@ TP-011は、キッチン機材を選んでいく過程・ストーリー自体�
 TP-004（所有物のみを記録）とは異なり、TP-011は「まだ選ばれていない候補」も、検討過程の記録として枝番付きIDで管理する。
 
 いずれか一つが購入・確定した時点でStatusをOwnedへ更新し、TP-004には登録しない（TP-011で完結）。不採用となった候補はStatusをUpgrade等に変更するか、Version Historyに不採用の経緯を記録した上で扱いを決める。
+
+## Domain Scope Note (Kitchen vs. Fire/Coffee overlap)
+
+TP-004にはFire Domain（熱源・焚き火器具）およびCoffee Domain（コーヒー器具）が既に存在するが、プロジェクトオーナーの判断により、キッチンゾーンで使用する調理用バーナー・ストーブ・コーヒー器具はTP-011（Kitchen）側で一元管理する。これはTP-004側のFire/Coffee Domain定義を変更するものではなく、TP-011のPurposeにある「調理器具・刃物・調理小物」の範囲を、キッチンゾーンの熱源・カフェツールまで含む形で運用することを明示する例外的な取り決めである。
 
 ---
 
@@ -1130,6 +1134,326 @@ Teapot Set（600ml Pot + 2× 150ml Cups, Furoshiki-Style Storage Case）
 
 ---
 
+## KIT-026
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+フラットバーナー（GS-450R）
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Stainless Steel／Brass／Aluminum／Steel／Resin
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Cartridge Gas Burner（IGT-Compatible, 270×410×110mm, 1.9kg）
+
+---
+
+## KIT-027
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+火焔ストーブ コーエン（クッカーセット）
+
+**Status**
+
+Owned
+
+### Color
+
+Red／Silver
+
+### Material
+
+Stainless Steel／Heat-Resistant Glass
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Alcohol Stove with Cooker Set（Max Φ23cm Pot Compatible, Bioethanol Fuel）
+
+---
+
+## KIT-028
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+火焔ストーブ サカン（BS-020）
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Stainless Steel／Heat-Resistant Glass
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Alcohol Stove（Tabletop, 200ml Capacity, ~70min Burn Time, Bioethanol Fuel）
+
+---
+
+## KIT-029
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+ヤエンストーブ レギ（GS-370）
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Stainless Steel／Aluminum Alloy／Brass／Rubber
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Cartridge Gas Burner（Integrated Low-Center-of-Gravity Design, 2900kcal/h）
+
+---
+
+## KIT-030
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+ヤエンストーブ ナギ（GS-360）
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Stainless Steel
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Cartridge Gas Burner（Integrated Windscreen, 2800kcal/h）
+
+---
+
+## KIT-031
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+グリルバーナー 雪峰苑（GS-355）
+
+**Status**
+
+Owned
+
+### Color
+
+Black
+
+### Material
+
+Stainless Steel／Brass／Zinc Die-Cast／Resin（Body）／Steel, Enamel Finish（Oil Pan）／Cast Iron, Silicone Heat-Resistant Coating（Griddle）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Cast Iron Griddle Grill Burner（Yakiniku-Style, 1700kcal/h, 5.0kg）
+
+---
+
+## KIT-032
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+フィールドバリスタ ミル（CS-116）
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Stainless Steel／Iron／Ceramic（Burr）／POM Resin／Natural Wood
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Manual Coffee Mill（Foldable Handle/Lid Integrated, 225g）
+
+---
+
+## KIT-033
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+フィールドバリスタケトル ブラック Online Edition
+
+**Status**
+
+Owned
+
+### Color
+
+Black
+
+### Material
+
+Stainless Steel／Brass／Natural Wood
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Pour-Over Kettle（Detachable Handle, 3-Hole Spout for Flow Control, 1.0L）
+
+---
+
+## KIT-034
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+フォールディングコーヒードリッパー「焚火台型」（CS-113）
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Stainless Steel（18-8）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Folding Coffee Dripper（Firepit-Style, Uses Standard Paper Filters, 140g）
+
+---
+
+## KIT-035
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+ホットサンドクッカー トラメジーノ（GR-009R）
+
+**Status**
+
+Owned
+
+### Color
+
+Black
+
+### Material
+
+Aluminum Die-Cast, Silicone Coating（Body）／Stainless Steel（Handle）／Bamboo Laminate（Grip）／Cotton Canvas（Storage Case）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Hot Sandwich Cooker（Dual-Sandwich, 880g）
+
+---
+
 # Single Source of Truth
 
 TP-011 Galley Fareは、キッチン機材（調理器具・刃物・調理小物）に関する唯一のMaster Databaseである。
@@ -1270,5 +1594,25 @@ Version 1.6で保留にしていた買い替え候補を調査し、枝番Candid
 - KIT-022a（新規）：サーモタンブラー470サンドの買い替え候補としてYETI Rambler 16oz（473ml）を仮登録。470mlに最も近い容量として確認。正式モデル名・色は未確認。Candidate。
 - KIT-023a（新規）：サーモタンブラー470ブラックの買い替え候補として同じくYETI Rambler 16oz。Candidate。
 - KIT-025（新規）：Snow Peak サヨウ（CS-340、2023年発売）。透明急須本体＋湯呑み2個＋風呂敷型収納ケースのセット。急須600ml、湯呑み150ml。Owned。
+
+---
+
+## Version 1.8
+
+プロジェクトオーナーの判断により、キッチンゾーンで使用するSnow Peak製バーナー・ストーブ6点、コーヒー器具3点、ホットサンドクッカー1点の計10点を、TP-004のFire/Coffee Domainとは別に、TP-011（Kitchen）側で一元管理する方針を確定。Registry Rulesに「Domain Scope Note」を新設し、この例外的な取り決めを明記した。
+
+### Changes
+
+- Registry Rulesに「Domain Scope Note (Kitchen vs. Fire/Coffee overlap)」を新設。
+- KIT-026（新規）：Snow Peak フラットバーナー（GS-450R）。IGT規格対応カートリッジガスバーナー。Owned。
+- KIT-027（新規）：Snow Peak 火焔ストーブ コーエン（クッカーセット）。バイオエタノール式アルコールストーブ、最大Φ23cm鍋対応。Owned。
+- KIT-028（新規）：Snow Peak 火焔ストーブ サカン（BS-020）。卓上型アルコールストーブ、200ml、燃焼時間約70分。Owned。
+- KIT-029（新規）：Snow Peak ヤエンストーブ レギ（GS-370）。低重心一体型カートリッジガスバーナー、2900kcal/h。Owned。
+- KIT-030（新規）：Snow Peak ヤエンストーブ ナギ（GS-360）。風防一体型カートリッジガスバーナー、2800kcal/h。Owned。
+- KIT-031（新規）：Snow Peak グリルバーナー 雪峰苑（GS-355）。鋳鉄グリドル焼肉バーナー、1700kcal/h。Owned。
+- KIT-032（新規）：Snow Peak フィールドバリスタ ミル（CS-116）。手挽きセラミック刃コーヒーミル、225g。Owned。
+- KIT-033（新規）：Snow Peak フィールドバリスタケトル ブラック Online Edition。オンライン限定黒、注ぎ口3穴構造、1.0L。Owned。
+- KIT-034（新規）：Snow Peak フォールディングコーヒードリッパー「焚火台型」（CS-113）。ステンレス18-8、市販フィルター対応、140g。Owned。
+- KIT-035（新規）：Snow Peak ホットサンドクッカー トラメジーノ（GR-009R）。アルミダイカスト、2枚同時焼成、880g。Owned。
 
 ---
