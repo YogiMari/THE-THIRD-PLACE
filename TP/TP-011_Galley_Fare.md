@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 1.2
+Version 1.3
 
 ---
 
@@ -46,6 +46,8 @@ KIT-001〜（3文字Prefix、TP-004の採番規則を継続使用）
 
 IDは欠番不可。番号は変更しない。
 
+複数の候補が同一カテゴリで併存する場合、同一メイン番号に対して枝番（a, b, c...）を付与する（例：KIT-007a, KIT-007b, KIT-007c）。
+
 ## Status
 
 | Status | Meaning |
@@ -74,7 +76,9 @@ TP-011は、キッチン機材を選んでいく過程・ストーリー自体�
 
 そのため、同一カテゴリ（同じIndustrial Attribute）に対して複数のCandidateが併存することを許容する。
 
-TP-004（所有物のみを記録）とは異なり、TP-011は「まだ選ばれていない候補」も、検討過程の記録として個別IDで管理する。
+同一カテゴリの複数候補は、同一メイン番号の枝番（a, b, c...）として記録する（例：まな板候補＝KIT-007a/007b/007c、包丁候補＝KIT-008a/008b/008c）。
+
+TP-004（所有物のみを記録）とは異なり、TP-011は「まだ選ばれていない候補」も、検討過程の記録として枝番付きIDで管理する。
 
 いずれか一つが購入・確定した時点でStatusをOwnedへ更新し、TP-004には登録しない（TP-011で完結）。不採用となった候補はStatusをUpgrade等に変更するか、Version Historyに不採用の経緯を記録した上で扱いを決める。
 
@@ -280,7 +284,7 @@ Plate / Cutting Board Dual-Use
 
 ---
 
-## KIT-007
+## KIT-007a
 
 **Brand**
 
@@ -312,7 +316,7 @@ Cutting Board（Folding, designed to store TAKAYUKI knife when opened）
 
 ---
 
-## KIT-008
+## KIT-007b
 
 **Brand**
 
@@ -336,7 +340,7 @@ Cutting Board（Handle-less, resin-partial construction desired; no specific pro
 
 ---
 
-## KIT-009
+## KIT-007c
 
 **Brand**
 
@@ -368,7 +372,7 @@ Cutting Board（Beveled edge for easy lifting）
 
 ---
 
-## KIT-010
+## KIT-008a
 
 **Brand**
 
@@ -400,7 +404,7 @@ Kitchen Knife（by knife gallery Shibata Takayuki, OLD MOUNTAIN special edition�
 
 ---
 
-## KIT-011
+## KIT-008b
 
 **Brand**
 
@@ -432,7 +436,7 @@ Kitchen Knife（Shellcon-standard grip, customizable）
 
 ---
 
-## KIT-012
+## KIT-008c
 
 **Brand**
 
@@ -525,12 +529,23 @@ KIT-006をMYプレート（TW-040）の正式登録に更新し、まな板・�
 
 - Registry Rulesに「Candidate Recording Policy」を新設：TP-011はTP-004と異なり、同一Industrial Attribute内で複数Candidateの併存を許容する旨を明記。
 - KIT-006：暫定の空枠から、Snow Peak MYプレート（TW-040、天然木オーク、180×250×15mm、500g、2枚所有）の正式Owned登録へ更新。
-- KIT-007（新規）：OLD MOUNTAIN「崇行 TO 昌平」。オリーブウッド／レジン、二つ折りでTAKAYUKI包丁を収納できる専用設計のまな板。Candidate。
-- KIT-008（新規）：レジン一部使用・取手なしのまな板候補。ブランド・製品未定。Candidate。
-- KIT-009（新規）：FEDECA「ファセットカッティングボード」。ハードメープル／ブラックウォルナット展開、縁が斜めにカットされ持ち上げやすい形状。Candidate。
-- KIT-010（新規）：OLD MOUNTAIN「TAKAYUKI」。knife gallery柴田崇行氏の名包丁のOLD MOUNTAIN特別仕様。SG2ニッケルダマスカス鋼。Candidate。
-- KIT-011（新規）：38explore×恵比寿刃-YEBISUYAIBA「Gripknife38×ASIMO（Black Dia）」。槌目×ダマスカス積層鋼、シェルコン規格グリップ対応。Candidate。
-- KIT-012（新規）：LAVA LAVA GEARCLUB「MUSASHI」。メイン包丁＋サブ包丁＋レザーシースの二刀流セット、グリップはWantkey Camp製ウォールナット。Candidate。
-- 旧KIT-006/007（暫定空枠）の内容は本バージョンで正式内容に置き換えられ、消滅した。
+- KIT-007〜012（新規）：まな板3候補・包丁3候補を個別の連番IDとして登録。
+
+---
+
+## Version 1.3
+
+採番方式を修正：同一カテゴリの複数候補は連番ではなく、同一メイン番号の枝番（a/b/c）として記録する運用へ変更。KIT-007〜012の連番だった構成を、KIT-007（まな板カテゴリ）とKIT-008（包丁カテゴリ）それぞれの枝番へ再編。
+
+### Changes
+
+- Registry Rules・Candidate Recording Policyに枝番方式（KIT-007a/007b/007c等）の記録ルールを明記。
+- 旧KIT-007（崇行 TO 昌平）→ KIT-007a
+- 旧KIT-008（レジン一部・取手なし候補）→ KIT-007b
+- 旧KIT-009（FEDECAファセットカッティングボード）→ KIT-007c
+- 旧KIT-010（OLD MOUNTAIN TAKAYUKI）→ KIT-008a
+- 旧KIT-011（38explore×恵比寿刃 Gripknife38×ASIMO）→ KIT-008b
+- 旧KIT-012（LAVA LAVA GEARCLUB MUSASHI）→ KIT-008c
+- 内容（Brand/Product/Material等）はVersion 1.2から変更なし。番号体系のみ再編。
 
 ---
