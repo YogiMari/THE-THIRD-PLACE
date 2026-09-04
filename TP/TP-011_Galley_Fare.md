@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 2.0
+Version 2.1
 
 ---
 
@@ -1665,6 +1665,102 @@ Cooking Chopsticks（Hangable, Also Usable as Skewer）
 
 ---
 
+## KIT-042
+
+**Brand**
+
+Boottonation
+
+**Product**
+
+gk series 中華鍋25cm
+
+**Status**
+
+Owned
+
+### Color
+
+Silver（Raw Iron, Unseasoned Finish）
+
+### Material
+
+Iron（Hand-Hammered by 山田工業所, 5000+ Strikes）／Wood（asimocrafts asigrip Handle, Sold Separately）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Wok（43.5cm Overall Length × 25cm Width, 790g, Requires Seasoning Before Use）
+
+---
+
+## KIT-043
+
+**Brand**
+
+Boottonation
+
+**Product**
+
+gk series オタマ
+
+**Status**
+
+Owned
+
+### Color
+
+Silver（Raw Iron, Unseasoned Finish）
+
+### Material
+
+Iron（Head, by 山田工業所）／Wood（asimocrafts asigrip Handle, Sold Separately）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Ladle（38cm Overall Length, 200g, asigrip-Compatible）
+
+---
+
+## KIT-044
+
+**Brand**
+
+DEVISE WORKS × WHAT WE WANT
+
+**Product**
+
+MONDOKORO
+
+**Status**
+
+Owned
+
+### Color
+
+Brown（Natural Wood）／Gold（Brass Parts）
+
+### Material
+
+Wood（Engraved）／Brass（4 Parts）
+
+### Graphic Attribute
+
+Engraved Design
+
+### Industrial Attribute
+
+Spice Bottle Rack（Holds 4 Spice Bottles, Used Size W140×D140×H65mm, 10mm Rod Screw Thread for Tripod Compatibility）
+
+---
+
 # Single Source of Truth
 
 TP-011 Galley Fareは、キッチン機材（調理器具・刃物・調理小物）に関する唯一のMaster Databaseである。
@@ -1852,5 +1948,17 @@ Version 1.8の「Domain Scope Note」を訂正。プロジェクトオーナー�
 - KIT-039（新規）：DEVISE WORKS「BURABURA お玉」。ハンドルはウォールナット（彫刻入り、高級外車使用材）、先端はナイロン。Owned。
 - KIT-040（新規）：DEVISE WORKS「BURABURA ターナー」。BURABURAシリーズの一つ。素材の詳細（正確な木材種・先端素材）は未確認のため、シリーズ準拠と推定する旨を注記。Owned。
 - KIT-041（新規）：DEVISE WORKS「BURABURA 菜ばし」。ハンドルはローズウッド（彫刻入り）、先端はステンレス。串としても使用可能。Owned。
+
+---
+
+## Version 2.1
+
+所有物の洗い出し（Step 1）の一環として、Boottonation gkシリーズ（asimocraftsアシグリップ対応）2点と、DEVISE WORKS×WHAT WE WANT「MONDOKORO」（スパイスボトルラック）を新規登録。
+
+### Changes
+
+- KIT-042（新規）：Boottonation gk series 中華鍋25cm。山田工業所製、5000回以上打ち出しの鉄製中華鍋、全長43.5cm×幅25cm、790g、要シーズニング。グリップはasimocraftsアシグリップ（別売）対応。Owned。
+- KIT-043（新規）：Boottonation gk series オタマ。同じく山田工業所製ヘッド、鉄製、全長38cm、200g、アシグリップ対応。Owned。
+- KIT-044（新規）：DEVISE WORKS×WHAT WE WANT「MONDOKORO」。スパイスボトル4本収納可能なスパイスラック、木製彫刻＋真鍮パーツ4点、使用時W140×D140×H65mm、10mm棒ネジで三脚対応。所有している具体的なバリエーション（ナチュラルウッド版かMONDOKORO BLACK版か）は未確認のため、基本仕様のみ登録。Owned。
 
 ---
