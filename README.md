@@ -44,6 +44,7 @@ Core philosophy, design principles, architecture, and master databases.
 | TP-008 | Affinity Lexicon                    |
 | TP-009 | Aesthetic Grammar                   |
 | TP-010 | Storage Blueprint                   |
+| TP-011 | Galley Fare                         |
 
 ⸻
 
@@ -51,13 +52,13 @@ Core philosophy, design principles, architecture, and master databases.
 Project management, operational rules, documentation standards, and active development records.
 
 | ID     | Document             |
-| ------ | -------------------- |
+| ------ | --------------------- |
 | PX-001 | Documentation System |
 | PX-002 | Project Ledger       |
-| PX-003 | Vigil Protocol       |
-| PX-004 | Barista Codex        |
-| PX-005 | Acquisition Handbook |
-| PX-006 | Brew Care            |
+| PX-003 | Vigil Protocol        |
+| PX-004 | Barista Codex         |
+| PX-005 | Acquisition Handbook  |
+| PX-006 | Brew Care             |
 
 ⸻
 
@@ -124,9 +125,10 @@ Every official decision is reflected in the relevant TP, PX, or TM document befo
 ⸻
 
 ## 🗃 Master Database
-**TP-004 Equipment Registry Object Reference** is the project’s master equipment database.
-All equipment references, additions, updates, and lifecycle management originate from TP-004.
-Other documents reference TP-004 rather than maintaining duplicate equipment data.
+**TP-004 Equipment Registry Object Reference** is the project’s master equipment database for camp equipment governed by Human Principles aesthetic alignment.
+All aesthetic-domain equipment references, additions, updates, and lifecycle management originate from TP-004.
+Kitchen cooking equipment is governed separately, under a function-first selection standard, by **TP-011 Galley Fare**.
+Other documents reference TP-004 or TP-011 rather than maintaining duplicate equipment data.
 
 ⸻
 
@@ -136,6 +138,7 @@ Current areas of development include:
 * Foundation architecture
 * Equipment registry
 * Coffee system
+* Kitchen / Galley Fare system
 * Documentation framework
 * Design language
 * Knowledge management
