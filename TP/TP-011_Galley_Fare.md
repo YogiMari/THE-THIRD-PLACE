@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 1.3
+Version 1.4
 
 ---
 
@@ -468,6 +468,326 @@ Kitchen Knife Set（Main Knife + Sub Knife + Leather Sheath, two-blade set）
 
 ---
 
+## KIT-009
+
+**Brand**
+
+FEDECA
+
+**Product**
+
+CLEVER TONG（名栗ブラック）
+
+**Status**
+
+Owned
+
+### Color
+
+Black
+
+### Material
+
+Stainless Steel（Black Oxide Finish）／Reinforced Wood（Naguri）／Brass（Screw）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Tong（Standard, 240mm）
+
+---
+
+## KIT-010
+
+**Brand**
+
+FEDECA
+
+**Product**
+
+CLEVER TONG（名栗ブラウン系、正確な色名は要確認）
+
+**Status**
+
+Owned
+
+### Color
+
+Brown
+
+### Material
+
+Stainless Steel（Black Oxide Finish）／Wood（Naguri）／Brass（Screw）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Tong（Standard, 240mm）
+
+---
+
+## KIT-011
+
+**Brand**
+
+FEDECA
+
+**Product**
+
+CLEVER TONG mini（名栗ブラック）
+
+**Status**
+
+Owned
+
+### Color
+
+Black
+
+### Material
+
+Stainless Steel（Black Oxide Finish）／Reinforced Wood（Naguri）／Brass（Screw）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Tong（Mini, 150mm）
+
+---
+
+## KIT-012
+
+**Brand**
+
+FEDECA
+
+**Product**
+
+CLEVER TONG mini（名栗ライトブラウン系、正確な色名は要確認）
+
+**Status**
+
+Owned
+
+### Color
+
+Light Brown
+
+### Material
+
+Stainless Steel（Black Oxide Finish）／Reinforced Wood（Naguri）／Brass（Screw）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Tong（Mini, 150mm）
+
+---
+
+## KIT-013
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタン先割れスプーン（SCT-004）
+
+**Status**
+
+Owned
+
+### Color
+
+Green
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Spork（Spoon/Fork Combo）
+
+---
+
+## KIT-014
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタン先割れスプーン（SCT-004）
+
+**Status**
+
+Owned
+
+### Color
+
+Purple
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Spork（Spoon/Fork Combo）
+
+---
+
+## KIT-015
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタン先割れスプーン（SCT-004）
+
+**Status**
+
+Owned
+
+### Color
+
+Blue
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Spork（Spoon/Fork Combo）
+
+---
+
+## KIT-016
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタン先細箸（SCT-115）
+
+**Status**
+
+Owned
+
+### Color
+
+Green
+
+### Material
+
+Titanium Alloy
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Chopsticks（Tapered Tip, Cold-Forged）
+
+---
+
+## KIT-017
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタン先細箸（SCT-115）
+
+**Status**
+
+Owned
+
+### Color
+
+Purple
+
+### Material
+
+Titanium Alloy
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Chopsticks（Tapered Tip, Cold-Forged）
+
+---
+
+## KIT-018
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタン先細箸（SCT-115）
+
+**Status**
+
+Owned
+
+### Color
+
+Blue
+
+### Material
+
+Titanium Alloy
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Chopsticks（Tapered Tip, Cold-Forged）
+
+---
+
 # Single Source of Truth
 
 TP-011 Galley Fareは、キッチン機材（調理器具・刃物・調理小物）に関する唯一のMaster Databaseである。
@@ -547,5 +867,21 @@ KIT-006をMYプレート（TW-040）の正式登録に更新し、まな板・�
 - 旧KIT-011（38explore×恵比寿刃 Gripknife38×ASIMO）→ KIT-008b
 - 旧KIT-012（LAVA LAVA GEARCLUB MUSASHI）→ KIT-008c
 - 内容（Brand/Product/Material等）はVersion 1.2から変更なし。番号体系のみ再編。
+
+---
+
+## Version 1.4
+
+所有物の洗い出し（Step 1）の一環として、FEDECA製トング4点、Snow Peak製カトラリー6点（先割れスプーン×3色・先細箸×3色）を新規登録。
+
+### Changes
+
+- KIT-009（新規）：FEDECA CLEVER TONG、名栗ブラック、標準サイズ（240mm）。Owned。
+- KIT-010（新規）：FEDECA CLEVER TONG、ブラウン系の名栗、標準サイズ（240mm）。正確な公式カラー名は未確認（名栗イペ等の可能性）。Owned。
+- KIT-011（新規）：FEDECA CLEVER TONG mini、名栗ブラック、150mm。Owned。
+- KIT-012（新規）：FEDECA CLEVER TONG mini、ライトブラウン系の名栗、150mm。正確な公式カラー名は未確認。Owned。
+- KIT-013〜015（新規）：Snow Peak チタン先割れスプーン（SCT-004）、オンライン限定色のグリーン・パープル・ブルーをそれぞれ個別登録。Owned。
+- KIT-016〜018（新規）：Snow Peak チタン先細箸（SCT-115）、グリーン・パープル・ブルーをそれぞれ個別登録。Owned。
+- KIT-010・KIT-012は公式カラー名が未確認のため、Product欄に「要確認」の注記を残した。正式名称が判明次第、更新する。
 
 ---
