@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 2.1
+Version 2.2
 
 ---
 
@@ -1745,15 +1745,15 @@ Owned
 
 ### Color
 
-Brown（Natural Wood）／Gold（Brass Parts）
+Brown（Natural Walnut）
 
 ### Material
 
-Wood（Engraved）／Brass（4 Parts）
+Walnut（Engraved）／Brass（4 Parts）
 
 ### Graphic Attribute
 
-Engraved Design
+Occult Emblem（Engraved, Black Ink Inlay）
 
 ### Industrial Attribute
 
@@ -1960,5 +1960,17 @@ Version 1.8の「Domain Scope Note」を訂正。プロジェクトオーナー�
 - KIT-042（新規）：Boottonation gk series 中華鍋25cm。山田工業所製、5000回以上打ち出しの鉄製中華鍋、全長43.5cm×幅25cm、790g、要シーズニング。グリップはasimocraftsアシグリップ（別売）対応。Owned。
 - KIT-043（新規）：Boottonation gk series オタマ。同じく山田工業所製ヘッド、鉄製、全長38cm、200g、アシグリップ対応。Owned。
 - KIT-044（新規）：DEVISE WORKS×WHAT WE WANT「MONDOKORO」。スパイスボトル4本収納可能なスパイスラック、木製彫刻＋真鍮パーツ4点、使用時W140×D140×H65mm、10mm棒ネジで三脚対応。所有している具体的なバリエーション（ナチュラルウッド版かMONDOKORO BLACK版か）は未確認のため、基本仕様のみ登録。Owned。
+
+---
+
+## Version 2.2
+
+KIT-044（MONDOKORO）の仕様を訂正。プロジェクトオーナーより、所有しているのはナチュラルウォールナット版で、彫刻には黒インクが刷り込まれていることが判明。彫刻モチーフは黒魔術的な紋章（Occult Emblem）であることも確認。
+
+### Changes
+
+- KIT-044：Material「Wood（Engraved）」→「Walnut（Engraved）」に訂正。
+- KIT-044：Graphic Attribute「Engraved Design」→「Occult Emblem（Engraved, Black Ink Inlay）」に訂正。
+- KIT-044：Color「Brown（Natural Wood）／Gold（Brass Parts）」→「Brown（Natural Walnut）」に整理（真鍮パーツの色はMaterial欄で扱うため、Colorからは重複記載を除去）。
 
 ---
