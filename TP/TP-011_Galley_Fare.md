@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 1.9
+Version 2.0
 
 ---
 
@@ -1461,6 +1461,210 @@ Hot Sandwich Cooker（Dual-Sandwich, 880g）
 
 ---
 
+## KIT-036
+
+**Brand**
+
+DEVISE WORKS
+
+**Product**
+
+BOXER ハーフユニット
+
+**Status**
+
+Owned
+
+### Quantity
+
+1（2個入りセット）
+
+### Color
+
+Black（Silver Print Emblem）
+
+### Material
+
+Steel（Unspecified Finish）
+
+### Graphic Attribute
+
+Emblem（Silver Print）
+
+### Industrial Attribute
+
+Storage Box（0.5 Unit Size, for Cutlery/Cookware Organization）
+
+---
+
+## KIT-037
+
+**Brand**
+
+DEVISE WORKS
+
+**Product**
+
+SPICE BOTTLE BOYS
+
+**Status**
+
+Owned
+
+### Quantity
+
+2
+
+### Color
+
+Black
+
+### Material
+
+Stainless Steel（Black-Painted Body）／Heat-Resistant Glass（Bottle）
+
+### Graphic Attribute
+
+Laser-Engraved Design（MONSHO or LOGO type, wraparound）
+
+### Industrial Attribute
+
+Spice Bottle（3-Stage Adjustable Spout, φ49×H82.5mm, Not Waterproof）
+
+---
+
+## KIT-038
+
+**Brand**
+
+DEVISE WORKS
+
+**Product**
+
+禁断コラボ スパイスボトル
+
+**Status**
+
+Owned
+
+### Quantity
+
+2
+
+### Color
+
+Black
+
+### Material
+
+Stainless Steel（Black-Painted Body）／Heat-Resistant Glass（Bottle）
+
+### Graphic Attribute
+
+Kindan Collab Graphic（Wraparound, YOKOHAMA BAYOUT vol.2 Limited）
+
+### Industrial Attribute
+
+Spice Bottle（Same Base as SPICE BOTTLE BOYS, Event-Limited Graphic Variant）
+
+---
+
+## KIT-039
+
+**Brand**
+
+DEVISE WORKS
+
+**Product**
+
+BURABURA お玉
+
+**Status**
+
+Owned
+
+### Color
+
+Brown（Walnut）
+
+### Material
+
+Walnut（Handle, Engraved）／Nylon（Tip）
+
+### Graphic Attribute
+
+Laser-Engraved Design
+
+### Industrial Attribute
+
+Ladle（Hangable, Not Fire-Safe due to Nylon Tip）
+
+---
+
+## KIT-040
+
+**Brand**
+
+DEVISE WORKS
+
+**Product**
+
+BURABURA ターナー
+
+**Status**
+
+Owned
+
+### Color
+
+Brown（Presumed, Series-Consistent）
+
+### Material
+
+Wood（Handle, Engraved, Exact Species Unconfirmed）／Unconfirmed（Tip）
+
+### Graphic Attribute
+
+Laser-Engraved Design（Presumed, Series-Consistent）
+
+### Industrial Attribute
+
+Turner（Hangable, BURABURA Series）
+
+---
+
+## KIT-041
+
+**Brand**
+
+DEVISE WORKS
+
+**Product**
+
+BURABURA 菜ばし
+
+**Status**
+
+Owned
+
+### Color
+
+Brown（Rosewood）
+
+### Material
+
+Rosewood（Handle, Engraved）／Stainless Steel（Tip）
+
+### Graphic Attribute
+
+Laser-Engraved Design
+
+### Industrial Attribute
+
+Cooking Chopsticks（Hangable, Also Usable as Skewer）
+
+---
+
 # Single Source of Truth
 
 TP-011 Galley Fareは、キッチン機材（調理器具・刃物・調理小物）に関する唯一のMaster Databaseである。
@@ -1633,5 +1837,20 @@ Version 1.8の「Domain Scope Note」を訂正。プロジェクトオーナー�
 - Registry Rulesの「Domain Scope Note」を全面的に書き直し、「プロジェクトオーナーの判断による例外」という表現を削除。区分原則を「機材の目的（暖房・鑑賞 vs. 調理）」として明記。
 - FIR-018（武井バーナー Purple Stove 501A）が灯油式でありながらFire Domainに留まる理由（暖房目的）を明記。
 - KIT-026〜035の登録内容自体に変更なし。区分原則の記述のみ訂正。
+
+---
+
+## Version 2.0
+
+所有物の洗い出し（Step 1）の一環として、DEVISE WORKS製の調味料入れ・収納ボックス・キッチンツール計6点（BOXERハーフユニット、SPICE BOTTLE BOYS×2、禁断コラボスパイスボトル×2、BURABURAシリーズ3種）を新規登録。
+
+### Changes
+
+- KIT-036（新規）：DEVISE WORKS「BOXERハーフユニット」。ユニットサイズ規格0.5サイズの黒いボックス、2個入り、カトラリー・調理器具の整理用。Owned。
+- KIT-037（新規）：DEVISE WORKS「SPICE BOTTLE BOYS」×2。ステンレス黒塗装＋耐熱ガラス、レーザー彫刻、3段階出し口調整、φ49×H82.5mm。防水性なし。Owned。
+- KIT-038（新規）：DEVISE WORKS「禁断コラボ スパイスボトル」×2。SPICE BOTTLE BOYSと同じベースに、YOKOHAMA BAYOUT vol.2限定の「禁断」コラボグラフィックを施したバージョン。Owned。
+- KIT-039（新規）：DEVISE WORKS「BURABURA お玉」。ハンドルはウォールナット（彫刻入り、高級外車使用材）、先端はナイロン。Owned。
+- KIT-040（新規）：DEVISE WORKS「BURABURA ターナー」。BURABURAシリーズの一つ。素材の詳細（正確な木材種・先端素材）は未確認のため、シリーズ準拠と推定する旨を注記。Owned。
+- KIT-041（新規）：DEVISE WORKS「BURABURA 菜ばし」。ハンドルはローズウッド（彫刻入り）、先端はステンレス。串としても使用可能。Owned。
 
 ---
