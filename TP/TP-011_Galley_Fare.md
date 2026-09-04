@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 1.1
+Version 1.2
 
 ---
 
@@ -67,6 +67,16 @@ TP-004と同一のフィールド構成を用いる。
 - Graphic Attribute
 - Industrial Attribute
 - Parent / Child relationships（該当する場合）
+
+## Candidate Recording Policy
+
+TP-011は、キッチン機材を選んでいく過程・ストーリー自体を記録対象とする。
+
+そのため、同一カテゴリ（同じIndustrial Attribute）に対して複数のCandidateが併存することを許容する。
+
+TP-004（所有物のみを記録）とは異なり、TP-011は「まだ選ばれていない候補」も、検討過程の記録として個別IDで管理する。
+
+いずれか一つが購入・確定した時点でStatusをOwnedへ更新し、TP-004には登録しない（TP-011で完結）。不採用となった候補はStatusをUpgrade等に変更するか、Version Historyに不採用の経緯を記録した上で扱いを決める。
 
 ---
 
@@ -238,7 +248,47 @@ Folding Cooking Knife
 
 **Brand**
 
+Snow Peak
+
 **Product**
+
+MYプレート（TW-040）
+
+**Status**
+
+Owned
+
+### Quantity
+
+2
+
+### Color
+
+Brown
+
+### Material
+
+Natural Wood（Oak）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Plate / Cutting Board Dual-Use
+
+---
+
+## KIT-007
+
+**Brand**
+
+OLD MOUNTAIN
+
+**Product**
+
+崇行 TO 昌平
 
 **Status**
 
@@ -246,17 +296,23 @@ Candidate
 
 ### Color
 
+Brown（Olive Wood）／Black（Resin）
+
 ### Material
+
+Olive Wood／Resin
 
 ### Graphic Attribute
 
+None
+
 ### Industrial Attribute
 
-Cutting Board（Dedicated, separate from MYプレート TW-040 plate/board dual-use）
+Cutting Board（Folding, designed to store TAKAYUKI knife when opened）
 
 ---
 
-## KIT-007
+## KIT-008
 
 **Brand**
 
@@ -270,11 +326,141 @@ Candidate
 
 ### Material
 
+Resin（Partial）／Wood
+
 ### Graphic Attribute
 
 ### Industrial Attribute
 
-Kitchen Knife
+Cutting Board（Handle-less, resin-partial construction desired; no specific product identified yet）
+
+---
+
+## KIT-009
+
+**Brand**
+
+FEDECA
+
+**Product**
+
+ファセットカッティングボード（Facet Cutting Board）
+
+**Status**
+
+Candidate
+
+### Color
+
+Brown
+
+### Material
+
+Hard Maple or Black Walnut（size/material variants available）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Cutting Board（Beveled edge for easy lifting）
+
+---
+
+## KIT-010
+
+**Brand**
+
+OLD MOUNTAIN
+
+**Product**
+
+TAKAYUKI
+
+**Status**
+
+Candidate
+
+### Color
+
+Silver
+
+### Material
+
+SG2 Nickel Damascus Steel（SPG2）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Kitchen Knife（by knife gallery Shibata Takayuki, OLD MOUNTAIN special edition）
+
+---
+
+## KIT-011
+
+**Brand**
+
+38explore × 恵比寿刃-YEBISUYAIBA
+
+**Product**
+
+Gripknife38×ASIMO（Black Dia）
+
+**Status**
+
+Candidate
+
+### Color
+
+Black（Leather Case）
+
+### Material
+
+Laminated Damascus Steel（槌目仕上げ／ダマスカス積層鋼）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Kitchen Knife（Shellcon-standard grip, customizable）
+
+---
+
+## KIT-012
+
+**Brand**
+
+LAVA LAVA GEARCLUB
+
+**Product**
+
+MUSASHI
+
+**Status**
+
+Candidate
+
+### Color
+
+Brown（Walnut Grip）
+
+### Material
+
+Steel／Walnut（Wantkey Camp製グリップ）／Leather（Sheath）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Kitchen Knife Set（Main Knife + Sub Knife + Leather Sheath, two-blade set）
 
 ---
 
@@ -326,7 +512,25 @@ Planning、調達戦略、デザイン思想、美意識、評価は、それぞ
 
 ### Changes
 
-- KIT-006（新規）：専用まな板。ブランド・製品未定、Status = Candidate。Industrial Attribute「Cutting Board」。MYプレート（TW-040、皿兼用）とは別に、まな板専用品を確保する枠。
-- KIT-007（新規）：本格包丁。ブランド・製品未定、Status = Candidate。Industrial Attribute「Kitchen Knife」。KIT-005（SPECIAL GORIMAX、折りたたみ式）とは別枠の、本格的な調理用ナイフ。
+- KIT-006（新規、暫定）：専用まな板の空枠。Status = Candidate。
+- KIT-007（新規、暫定）：本格包丁の空枠。Status = Candidate。
+
+---
+
+## Version 1.2
+
+KIT-006をMYプレート（TW-040）の正式登録に更新し、まな板・包丁それぞれの具体候補を個別IDで登録。TP-011は選定プロセスそのものを記録するドキュメントであるため、同一カテゴリ内の複数Candidateの併存を正式に許容する運用ルール（Candidate Recording Policy）を新設。
+
+### Changes
+
+- Registry Rulesに「Candidate Recording Policy」を新設：TP-011はTP-004と異なり、同一Industrial Attribute内で複数Candidateの併存を許容する旨を明記。
+- KIT-006：暫定の空枠から、Snow Peak MYプレート（TW-040、天然木オーク、180×250×15mm、500g、2枚所有）の正式Owned登録へ更新。
+- KIT-007（新規）：OLD MOUNTAIN「崇行 TO 昌平」。オリーブウッド／レジン、二つ折りでTAKAYUKI包丁を収納できる専用設計のまな板。Candidate。
+- KIT-008（新規）：レジン一部使用・取手なしのまな板候補。ブランド・製品未定。Candidate。
+- KIT-009（新規）：FEDECA「ファセットカッティングボード」。ハードメープル／ブラックウォルナット展開、縁が斜めにカットされ持ち上げやすい形状。Candidate。
+- KIT-010（新規）：OLD MOUNTAIN「TAKAYUKI」。knife gallery柴田崇行氏の名包丁のOLD MOUNTAIN特別仕様。SG2ニッケルダマスカス鋼。Candidate。
+- KIT-011（新規）：38explore×恵比寿刃-YEBISUYAIBA「Gripknife38×ASIMO（Black Dia）」。槌目×ダマスカス積層鋼、シェルコン規格グリップ対応。Candidate。
+- KIT-012（新規）：LAVA LAVA GEARCLUB「MUSASHI」。メイン包丁＋サブ包丁＋レザーシースの二刀流セット、グリップはWantkey Camp製ウォールナット。Candidate。
+- 旧KIT-006/007（暫定空枠）の内容は本バージョンで正式内容に置き換えられ、消滅した。
 
 ---
