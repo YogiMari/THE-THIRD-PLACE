@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 1.0
+Version 1.1
 
 ---
 
@@ -234,6 +234,50 @@ Folding Cooking Knife
 
 ---
 
+## KIT-006
+
+**Brand**
+
+**Product**
+
+**Status**
+
+Candidate
+
+### Color
+
+### Material
+
+### Graphic Attribute
+
+### Industrial Attribute
+
+Cutting Board（Dedicated, separate from MYプレート TW-040 plate/board dual-use）
+
+---
+
+## KIT-007
+
+**Brand**
+
+**Product**
+
+**Status**
+
+Candidate
+
+### Color
+
+### Material
+
+### Graphic Attribute
+
+### Industrial Attribute
+
+Kitchen Knife
+
+---
+
 # Single Source of Truth
 
 TP-011 Galley Fareは、キッチン機材（調理器具・刃物・調理小物）に関する唯一のMaster Databaseである。
@@ -273,5 +317,16 @@ Planning、調達戦略、デザイン思想、美意識、評価は、それぞ
 - Purpose、Relationship to TP-004、Selection Standard、Registry Rulesを新規定義
 - KIT-001〜005を初期登録（Snow Peak 和鉄ダッチオーブン26、Snow Peak コンボダッチデュオ、Snow Peak×三暁 Fukuyama Free Forged Ferrum Griddle 22、JHQ 鉄板マルチグリドル縁型33cm、DEVISE WORKS×FEDECA SPECIAL GORIMAX）
 - 全5件、Status = Owned
+
+---
+
+## Version 1.1
+
+所有ギア確認（Snow Peak MYプレート TW-040、天然木オーク、2枚所有、まな板兼皿として使用）を踏まえ、専用まな板・本格包丁の枠を仮登録。
+
+### Changes
+
+- KIT-006（新規）：専用まな板。ブランド・製品未定、Status = Candidate。Industrial Attribute「Cutting Board」。MYプレート（TW-040、皿兼用）とは別に、まな板専用品を確保する枠。
+- KIT-007（新規）：本格包丁。ブランド・製品未定、Status = Candidate。Industrial Attribute「Kitchen Knife」。KIT-005（SPECIAL GORIMAX、折りたたみ式）とは別枠の、本格的な調理用ナイフ。
 
 ---
