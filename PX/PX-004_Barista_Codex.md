@@ -11,7 +11,7 @@ Barista Codex
     
 # Version    
     
-3.0    
+3.1    
     
 # Status    
     
@@ -75,6 +75,45 @@ Coffee Equipmentは以下を満たすもののみ採用する。
 * Rarity    
 * Collector Value    
 * Price    
+    
+---    
+    
+## Coffee Zone Philosophy (Exception Clause)    
+    
+Coffee Zoneは、THE THIRD PLACE全体のBaselineに対する明示的な例外領域として扱う。    
+    
+THE THIRD PLACE全体では、Popularity・SNS・Rarity・Collector Value・Priceを評価対象とせず、Workflow最適化と機能的合理性を優先する。    
+    
+Coffee Zoneに限り、以下の独自Philosophyを正式に適用する。他ドメイン（Furniture / Light / Aroma / Storage / Fire）には適用しない。    
+    
+---    
+    
+### 1. Non-Rational Luxury Principle（無駄を選び取る審美性）    
+    
+Coffee Zoneでは、機能的合理性を上回る場合でも、素材・機構そのものの贅沢さを理由に採用することを正式に許容する。    
+    
+THE THIRD PLACE全体の原則は「無駄を削ぎ落とす」ことにあるが、Coffee Zoneにおいては「機能的に不要な贅沢を、その不要さゆえに選び取る」ことこそが最も THE THIRD PLACE的な表現となりうる。    
+    
+**Reference Case**    
+    
+WDT Toolの選定において、機能面で既存ツールを上回る優位性を持たない真鍮製ギア機構（Weber Workshops MOONRAKER Ultra Edition）を、その機能的必要性ではなく「Swiss watchmaking」という物語性・所作の贅沢さを理由に選定した判断（58mm仮説Workflow検討, 2026-09）。    
+    
+---    
+    
+### 2. Cross-Brand Curation Principle（単一ブランド一式禁止・カテゴリ別最良ブランド選定）    
+    
+Coffee Zoneでは、単一ブランドでEquipment一式を統一しない。    
+    
+各カテゴリ（Distribution Tool / Tamper / WDT Tool / Blind Shaker / Tamping Station 等）ごとに、そのカテゴリにおいて最良と判断したブランドを個別に選定し、複数ブランドを意図的に組み合わせる。    
+    
+**Exception**    
+    
+特定ブランドが、その年のコレクション／ラインとして複数カテゴリを横断する「完成されたルック」を意図的に設計・販売している場合に限り、そのセットとしての採用を許容する。    
+    
+**Origin**    
+    
+この原則は、Mari個人のファッション観（全身を単一ブランドで統一しない／その年のコレクションとして完成されたルックである場合を除き、鞄・靴等のカテゴリごとに個別ブランドを選ぶ）をCoffee Zoneに適用したものである（2026-09）。    
+    
     
 ---    
     
@@ -1754,6 +1793,7 @@ PX-004は、価格・購入先・輸送・関税・購入手順などの調達�
 | 2.8 | 2026-08 | Historical decision records added for Varia EVO Hybrid Gen 2 and Weber Workshops MOONRAKER Ultra Edition. Varia is recorded as previously considered but not selected due to insufficient alignment with THE THIRD PLACE Coffee System equipment character and design direction. MOONRAKER Ultra Edition is recorded as highly regarded but rejected for current use because it is designed for 58mm baskets while the current 9Barista workflow is 53mm. |  
 | 2.9 | 2026-08 | Standard accessories included with 9Barista Mk.2 Pro were clarified as Included Components / Accessories rather than independent Equipment. 9Barista Magnetic Dosing Funnel and 9Barista Stainless Steel Basket Cap Pro are explicitly excluded from independent TP-004 / PX-005 management. Alternative Basket Cap status clarified as Not Separately Acquired. |  
 | 3.0 | 2026-08 | Puck Screen placement added explicitly to the confirmed Puck Preparation Workflow. Water Transfer confirmed as direct pouring from the existing dedicated water bottles, with no additional transfer equipment required. ALM KOPi Z1 Mini Steamer is confirmed to use existing kitchen single burners, with no dedicated Coffee System burner required. |  
+| 3.1 | 2026-09 | Coffee Zone Philosophy (Exception Clause) added to Design Principles. Non-Rational Luxury Principle and Cross-Brand Curation Principle established as Coffee Zone-specific philosophies, distinct from and exceptional to the THE THIRD PLACE-wide Baseline. These apply exclusively to Coffee Zone and not to other domains. |  
   
 ---  
   
