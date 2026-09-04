@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 1.4
+Version 1.5
 
 ---
 
@@ -476,7 +476,7 @@ FEDECA
 
 **Product**
 
-CLEVER TONG（名栗ブラック）
+つかみのトング（名栗ブラック）
 
 **Status**
 
@@ -488,7 +488,7 @@ Black
 
 ### Material
 
-Stainless Steel（Black Oxide Finish）／Reinforced Wood（Naguri）／Brass（Screw）
+Stainless Steel（SUS821L1, Black Oxide Finish）／Reinforced Wood（Naguri）／Brass（Screw）
 
 ### Graphic Attribute
 
@@ -496,7 +496,7 @@ None
 
 ### Industrial Attribute
 
-Tong（Standard, 240mm）
+Tong（U-shaped, spring/hinge-less structure, 235mm）
 
 ---
 
@@ -508,7 +508,7 @@ FEDECA
 
 **Product**
 
-CLEVER TONG（名栗ブラウン系、正確な色名は要確認）
+CLEVER TONG（名栗ブラウン）
 
 **Status**
 
@@ -540,7 +540,7 @@ FEDECA
 
 **Product**
 
-CLEVER TONG mini（名栗ブラック）
+CLEVER TONG mini（名栗ホワイト）
 
 **Status**
 
@@ -548,7 +548,7 @@ Owned
 
 ### Color
 
-Black
+White
 
 ### Material
 
@@ -572,7 +572,7 @@ FEDECA
 
 **Product**
 
-CLEVER TONG mini（名栗ライトブラウン系、正確な色名は要確認）
+CLEVER TONG mini（名栗ブラック）
 
 **Status**
 
@@ -580,7 +580,7 @@ Owned
 
 ### Color
 
-Light Brown
+Black
 
 ### Material
 
@@ -883,5 +883,19 @@ KIT-006をMYプレート（TW-040）の正式登録に更新し、まな板・�
 - KIT-013〜015（新規）：Snow Peak チタン先割れスプーン（SCT-004）、オンライン限定色のグリーン・パープル・ブルーをそれぞれ個別登録。Owned。
 - KIT-016〜018（新規）：Snow Peak チタン先細箸（SCT-115）、グリーン・パープル・ブルーをそれぞれ個別登録。Owned。
 - KIT-010・KIT-012は公式カラー名が未確認のため、Product欄に「要確認」の注記を残した。正式名称が判明次第、更新する。
+
+---
+
+## Version 1.5
+
+Version 1.4のKIT-009〜012を訂正。「つかみのトング」がFEDECAのCLEVER TONGとは別の独立した製品ライン（2026年Makuake発、CLEVER TONGの兄弟モデル、全長235mm、U字構造でバネ・ヒンジ無し）であることが判明したため、ブランド構成を全面的に修正。
+
+### Changes
+
+- KIT-009：CLEVER TONG（誤登録）→ つかみのトング（名栗ブラック）に修正。素材・サイズ（235mm、SUS821L1）を正しい仕様へ更新。
+- KIT-010：CLEVER TONGのまま、色をブラウン系（未確認）→ 名栗ブラウン（確定）に修正。
+- KIT-011：CLEVER TONG miniのまま、色を名栗ブラック（誤り）→ 名栗ホワイトに修正。
+- KIT-012：CLEVER TONG miniのまま、色をライトブラウン系（未確認）→ 名栗ブラック（確定）に修正。
+- 「つかみのトング」公式仕様（全長約235mm、重量約105g、ステンレスSUS821L1黒酸化発色、積層強化木ハンドル、真鍮ネジ、日本製）を反映。
 
 ---
