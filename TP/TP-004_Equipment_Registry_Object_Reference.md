@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.4  
+Version 7.5  
   
 ---  
   
@@ -21,6 +21,8 @@ It is the Single Source of Truth for:
 - Ownership Status  
   
 Planning information is intentionally excluded.  
+
+TP-004 does not manage kitchen cooking equipment. Kitchen equipment is governed by TP-011 Galley Fare under a separate, function-first selection standard. See TP-011 for details.  
   
 ---  
   
@@ -4571,7 +4573,7 @@ Surface finish belongs to TP-002 Design Bible.
 
 # Single Source of Truth  
 
-TP-004 Equipment Registry is the only authoritative source for all camp equipment.  
+TP-004 Equipment Registry is the authoritative source for all camp equipment governed by Human Principles aesthetic alignment. Kitchen cooking equipment is governed separately by TP-011 Galley Fare and is not registered in TP-004.  
 
 The following information shall originate from TP-004:  
 
@@ -4602,6 +4604,7 @@ Planning, acquisition strategy, design philosophy, aesthetics, positioning, and 
 - TP-008 Affinity Lexicon  
 - TP-009 Aesthetic Grammar  
 - TP-010 Storage Blueprint  
+- TP-011 Galley Fare  
 
 ---  
 
@@ -4761,5 +4764,18 @@ File-level cleanup: corrected an inaccuracy in the Version 7.1 changelog, which 
 - Deleted `TP-004_Equipment Registry Object Reference.md` (stale Version 7.0 duplicate, superseded by this file since Version 7.1).  
 - Renamed this file from `TP-004 Equipment Registry Object Reference.md` to `TP-004_Equipment_Registry_Object_Reference.md` to match the underscore-separated naming convention used across TP, PX, and TM series documents.  
 - No equipment data, Status, or field values were changed in this revision.  
+
+---  
+
+## Version 7.5  
+
+Scope correction following direct discussion with the project owner: kitchen cooking equipment (dutch ovens, griddles, cooking knives, and similar functional cookware) is removed from TP-004's scope and placed under a new, independently governed document, TP-011 Galley Fare. Unlike TP-004, TP-011 does not require Human Principles / Design Bible aesthetic alignment as a selection condition; its standard is function-first (the equipment must make real cooking possible) rather than gesture- or brand-driven.  
+
+### Changes  
+
+- Purpose section: added a note excluding kitchen cooking equipment and pointing to TP-011.  
+- Single Source of Truth section: narrowed TP-004's authority to equipment governed by Human Principles aesthetic alignment; kitchen cooking equipment is now explicitly out of scope.  
+- Related Documents: added TP-011 Galley Fare.  
+- No Kitchen domain was added to TP-004. No KIT-series IDs are registered here; they are registered in TP-011.  
 
 ---  
