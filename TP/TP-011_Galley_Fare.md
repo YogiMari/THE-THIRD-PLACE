@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 1.5
+Version 1.6
 
 ---
 
@@ -788,6 +788,198 @@ Chopsticks（Tapered Tip, Cold-Forged）
 
 ---
 
+## KIT-019
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタンシングルマグ220
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Single-Wall Mug（Direct-Fire Safe, 220ml）
+
+---
+
+## KIT-020
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタンダブルマグ300（MG-152）
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Double-Wall Mug（300ml, stackable with MG-153）
+
+---
+
+## KIT-021
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタンダブルマグ450（MG-153）
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Double-Wall Mug（450ml, renewed model, stacks with MG-152）
+
+---
+
+## KIT-022
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+サーモタンブラー470 サンド（TW-470-SN）
+
+**Status**
+
+Owned
+
+### Color
+
+Sand
+
+### Material
+
+Stainless Steel（Interior）／Polyester-Coated Steel（Exterior）／Silicone（Bottom Cover）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Vacuum-Insulated Tumbler（470ml, φ84×150mm, 215g）
+
+---
+
+## KIT-023
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+サーモタンブラー470 ブラック（TW-470-BK）
+
+**Status**
+
+Owned
+
+### Color
+
+Black
+
+### Material
+
+Stainless Steel（Interior）／Polyester-Coated Steel（Exterior）／Silicone（Bottom Cover）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Vacuum-Insulated Tumbler（470ml, φ84×150mm, 215g）
+
+---
+
+## KIT-024
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+Snow Peak Way ECO CUP
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Stainless Steel
+
+### Graphic Attribute
+
+Snow Peak Way Event Logo（Year Edition Unspecified）
+
+### Industrial Attribute
+
+Stacking Cup（500cc, φ85×H125mm）
+
+---
+
 # Single Source of Truth
 
 TP-011 Galley Fareは、キッチン機材（調理器具・刃物・調理小物）に関する唯一のMaster Databaseである。
@@ -897,5 +1089,21 @@ Version 1.4のKIT-009〜012を訂正。「つかみのトング」がFEDECAのCL
 - KIT-011：CLEVER TONG miniのまま、色を名栗ブラック（誤り）→ 名栗ホワイトに修正。
 - KIT-012：CLEVER TONG miniのまま、色をライトブラウン系（未確認）→ 名栗ブラック（確定）に修正。
 - 「つかみのトング」公式仕様（全長約235mm、重量約105g、ステンレスSUS821L1黒酸化発色、積層強化木ハンドル、真鍮ネジ、日本製）を反映。
+
+---
+
+## Version 1.6
+
+所有物の洗い出し（Step 1）の一環として、カップ類6点（Snow Peakチタンマグ3種、サーモタンブラー2色、Way ECO CUP）を新規登録。
+
+### Changes
+
+- KIT-019（新規）：Snow Peak チタンシングルマグ220。Owned。
+- KIT-020（新規）：Snow Peak チタンダブルマグ300（MG-152）。Owned。
+- KIT-021（新規）：Snow Peak チタンダブルマグ450（MG-153）。Owned。
+- KIT-022（新規）：Snow Peak サーモタンブラー470 サンド（TW-470-SN）。Owned。
+- KIT-023（新規）：Snow Peak サーモタンブラー470 ブラック（TW-470-BK）。Owned。
+- KIT-024（新規）：Snow Peak Way ECO CUP。年度限定ロゴ入りのため、具体的な年度（何年のWayイベント配布分か）は未確認。Owned。
+- 会話内で言及された「KIT-020/021/022/023それぞれの買い替え候補（ダブル300/450の別色・限定品、または相当するシングルサイズ／YETI）」は、いずれも具体的な製品名が未確定のため、今回は正式なCandidate IDとして登録せず、口頭記録に留めた。具体化した時点でKIT-020〜023それぞれの枝番（例：KIT-022a=YETI候補）として登録する想定。
 
 ---
