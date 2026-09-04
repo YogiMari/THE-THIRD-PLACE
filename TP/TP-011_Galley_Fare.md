@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 1.6
+Version 1.7
 
 ---
 
@@ -48,6 +48,8 @@ IDは欠番不可。番号は変更しない。
 
 複数の候補が同一カテゴリで併存する場合、同一メイン番号に対して枝番（a, b, c...）を付与する（例：KIT-007a, KIT-007b, KIT-007c）。
 
+既存の所有物（Owned）に対する買い替え候補も、同様に元のIDへ枝番を付与して記録する（例：KIT-020の買い替え候補＝KIT-020a）。
+
 ## Status
 
 | Status | Meaning |
@@ -77,6 +79,8 @@ TP-011は、キッチン機材を選んでいく過程・ストーリー自体�
 そのため、同一カテゴリ（同じIndustrial Attribute）に対して複数のCandidateが併存することを許容する。
 
 同一カテゴリの複数候補は、同一メイン番号の枝番（a, b, c...）として記録する（例：まな板候補＝KIT-007a/007b/007c、包丁候補＝KIT-008a/008b/008c）。
+
+既存Owned品の買い替え候補も同じ枝番方式で記録する（例：KIT-020a＝KIT-020の買い替え候補）。
 
 TP-004（所有物のみを記録）とは異なり、TP-011は「まだ選ばれていない候補」も、検討過程の記録として枝番付きIDで管理する。
 
@@ -852,6 +856,38 @@ Double-Wall Mug（300ml, stackable with MG-153）
 
 ---
 
+## KIT-020a
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタンダブルマグ300 海外限定カラー版（正確なモデル名・色は要確認）
+
+**Status**
+
+Candidate
+
+### Color
+
+Grey／Blue／Purple／Green（いずれか、アノダイズ加工のいずれかの色を想定）
+
+### Material
+
+Titanium（Anodized Finish）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Double-Wall Mug（300ml, replacement candidate for KIT-020）
+
+---
+
 ## KIT-021
 
 **Brand**
@@ -881,6 +917,28 @@ None
 ### Industrial Attribute
 
 Double-Wall Mug（450ml, renewed model, stacks with MG-152）
+
+---
+
+## KIT-021a
+
+**Brand**
+
+**Product**
+
+**Status**
+
+Candidate
+
+### Color
+
+### Material
+
+### Graphic Attribute
+
+### Industrial Attribute
+
+Double-Wall Mug or Single-Wall Mug（450, specific product/color undecided; replacement candidate for KIT-021）
 
 ---
 
@@ -916,6 +974,36 @@ Vacuum-Insulated Tumbler（470ml, φ84×150mm, 215g）
 
 ---
 
+## KIT-022a
+
+**Brand**
+
+YETI
+
+**Product**
+
+Rambler 16oz Tumbler（正式モデル名・色は要確認、473ml、470mlに最も近い容量）
+
+**Status**
+
+Candidate
+
+### Color
+
+### Material
+
+Stainless Steel（18/8, Double-Wall Vacuum Insulated）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Vacuum-Insulated Tumbler（Replacement candidate for KIT-022）
+
+---
+
 ## KIT-023
 
 **Brand**
@@ -948,6 +1036,36 @@ Vacuum-Insulated Tumbler（470ml, φ84×150mm, 215g）
 
 ---
 
+## KIT-023a
+
+**Brand**
+
+YETI
+
+**Product**
+
+Rambler 16oz Tumbler（正式モデル名・色は要確認、473ml、470mlに最も近い容量）
+
+**Status**
+
+Candidate
+
+### Color
+
+### Material
+
+Stainless Steel（18/8, Double-Wall Vacuum Insulated）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Vacuum-Insulated Tumbler（Replacement candidate for KIT-023）
+
+---
+
 ## KIT-024
 
 **Brand**
@@ -977,6 +1095,38 @@ Snow Peak Way Event Logo（Year Edition Unspecified）
 ### Industrial Attribute
 
 Stacking Cup（500cc, φ85×H125mm）
+
+---
+
+## KIT-025
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+サヨウ（茶踊、CS-340）
+
+**Status**
+
+Owned
+
+### Color
+
+Clear／Natural Wood（Knob）
+
+### Material
+
+Saturated Polyester Resin（Pot Body / Cups）／Stainless Steel（Lid）／Natural Wood（Knob）／Silicone Rubber（Packing）／Cotton Canvas（Storage Case）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Teapot Set（600ml Pot + 2× 150ml Cups, Furoshiki-Style Storage Case）
 
 ---
 
@@ -1105,5 +1255,20 @@ Version 1.4のKIT-009〜012を訂正。「つかみのトング」がFEDECAのCL
 - KIT-023（新規）：Snow Peak サーモタンブラー470 ブラック（TW-470-BK）。Owned。
 - KIT-024（新規）：Snow Peak Way ECO CUP。年度限定ロゴ入りのため、具体的な年度（何年のWayイベント配布分か）は未確認。Owned。
 - 会話内で言及された「KIT-020/021/022/023それぞれの買い替え候補（ダブル300/450の別色・限定品、または相当するシングルサイズ／YETI）」は、いずれも具体的な製品名が未確定のため、今回は正式なCandidate IDとして登録せず、口頭記録に留めた。具体化した時点でKIT-020〜023それぞれの枝番（例：KIT-022a=YETI候補）として登録する想定。
+
+---
+
+## Version 1.7
+
+Version 1.6で保留にしていた買い替え候補を調査し、枝番Candidateとして正式登録。また、Snow Peak「サヨウ」（茶踊、CS-340）を新規登録。
+
+### Changes
+
+- Registry Rules・Candidate Recording Policyに「既存Owned品への買い替え候補も同じ枝番方式で記録する」旨を追記。
+- KIT-020a（新規）：チタンダブルマグ300の海外限定カラー版候補。グレー／ブルー／パープル／グリーンのアノダイズカラー展開が存在することを確認したが、正確なモデル名・入手経路は未確認。Candidate。
+- KIT-021a（新規）：チタンダブルマグ450の買い替え候補枠。具体的な色・製品・シングル450かどうかも含めて未確定のため、空枠として確保。Candidate。
+- KIT-022a（新規）：サーモタンブラー470サンドの買い替え候補としてYETI Rambler 16oz（473ml）を仮登録。470mlに最も近い容量として確認。正式モデル名・色は未確認。Candidate。
+- KIT-023a（新規）：サーモタンブラー470ブラックの買い替え候補として同じくYETI Rambler 16oz。Candidate。
+- KIT-025（新規）：Snow Peak サヨウ（CS-340、2023年発売）。透明急須本体＋湯呑み2個＋風呂敷型収納ケースのセット。急須600ml、湯呑み150ml。Owned。
 
 ---
