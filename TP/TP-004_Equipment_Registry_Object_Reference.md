@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.5  
+Version 7.6  
   
 ---  
   
@@ -1360,7 +1360,7 @@ Owned
 
 ### Child Components  
 
-- LGT-040  
+- LGT-042  
 
 ### Color  
 
@@ -1392,7 +1392,7 @@ Owned
 
 ### Child Components  
 
-- LGT-041  
+- LGT-043  
 
 ### Color  
 
@@ -1424,7 +1424,7 @@ Owned
 
 ### Child Components  
 
-- LGT-042  
+- LGT-044  
 
 ### Color  
 
@@ -1712,7 +1712,8 @@ Owned
 
 ### Child Components  
 
-- LGT-043  
+- LGT-030  
+- LGT-045  
 
 ### Color  
 
@@ -1736,6 +1737,42 @@ Airlight Shade
 
 **Brand**  
 
+DEVISE WORKS × WHAT WE WANT  
+
+**Product**  
+
+MITOCOLOMON  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-029  
+
+### Color  
+
+Brown（Wood）／Gold（Brass）  
+
+### Material  
+
+Wood（Engraved）／Brass（Pole）  
+
+### Graphic Attribute  
+
+Engraved Design  
+
+### Industrial Attribute  
+
+Lantern Stand（Base W160×D160×H15mm, Brass Pole H270mm, 1/4-inch screw thread, compatible with tripod series）  
+
+---  
+
+## LGT-031  
+
+**Brand**  
+
 WHAT WE WANT × COLONISTA  
 
 **Product**  
@@ -1748,7 +1785,8 @@ Owned
 
 ### Child Components  
 
-- LGT-044  
+- LGT-032  
+- LGT-046  
 
 ### Color  
 
@@ -1768,7 +1806,43 @@ Airlight Shade
 
 ---  
 
-## LGT-031  
+## LGT-032  
+
+**Brand**  
+
+DEVISE WORKS × WHAT WE WANT  
+
+**Product**  
+
+OTACHIDAI BLACK  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-031  
+
+### Color  
+
+Black（Body）／Gold（Engraving Ink Inlay, Brass Pole）  
+
+### Material  
+
+Wood, Black-Painted（Engraved with Gold Ink）／Brass（Pole）  
+
+### Graphic Attribute  
+
+Engraved Design（Gold Ink Inlay）  
+
+### Industrial Attribute  
+
+Tabletop Lantern Stand（Base W140×D150×H26mm, Brass Pole H190mm, 1/4-inch screw thread）  
+
+---  
+
+## LGT-033  
 
 **Brand**  
 
@@ -1784,7 +1858,7 @@ Owned
 
 ### Child Components  
 
-- LGT-045  
+- LGT-047  
 
 ### Color  
 
@@ -1800,7 +1874,7 @@ Airlight Shade
 
 ---  
 
-## LGT-032  
+## LGT-034  
 
 **Brand**  
 
@@ -1816,7 +1890,7 @@ Owned
 
 ### Child Components  
 
-- LGT-046  
+- LGT-048  
 
 ### Color  
 
@@ -1832,7 +1906,7 @@ Airlight Shade
 
 ---  
 
-## LGT-033  
+## LGT-035  
 
 **Brand**  
 
@@ -1848,7 +1922,7 @@ Owned
 
 ### Child Components  
 
-- LGT-047  
+- LGT-049  
 
 ### Color  
 
@@ -1864,7 +1938,7 @@ Airlight Shade
 
 ---  
 
-## LGT-034  
+## LGT-036  
 
 **Brand**  
 
@@ -1900,7 +1974,7 @@ Premium Lantern
 
 ---  
 
-## LGT-035  
+## LGT-037  
 
 **Brand**  
 
@@ -1916,7 +1990,7 @@ Essential
 
 ### Child Components  
 
-- LGT-048  
+- LGT-050  
 
 ### Color  
 
@@ -1936,7 +2010,7 @@ Airlight Shade (Hanging)
 
 ---  
 
-## LGT-036  
+## LGT-038  
 
 **Brand**  
 
@@ -1952,7 +2026,7 @@ Essential
 
 ### Child Components  
 
-- LGT-049  
+- LGT-051  
 
 ### Color  
 
@@ -1972,7 +2046,7 @@ Airlight Shade (Hanging)
 
 ---  
 
-## LGT-037  
+## LGT-039  
 
 **Brand**  
 
@@ -1988,7 +2062,7 @@ Essential
 
 ### Child Components  
 
-- LGT-050  
+- LGT-052  
 
 ### Color  
 
@@ -2008,17 +2082,17 @@ Airlight Shade (Hanging)
 
 ---  
 
-## LGT-038  
+## LGT-040  
 
 Vacant ID. Reserved for a fourth hanging-type Airlight shade, not yet identified.  
 
 ### Child Components  
 
-- LGT-051  
+- LGT-053  
 
 ---  
 
-## LGT-039  
+## LGT-041  
 
 **Brand**  
 
@@ -2050,7 +2124,7 @@ Portable LED Lantern
 
 ---  
 
-## LGT-040  
+## LGT-042  
 
 **Brand**  
 
@@ -2082,7 +2156,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-041  
+## LGT-043  
 
 **Brand**  
 
@@ -2114,7 +2188,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-042  
+## LGT-044  
 
 **Brand**  
 
@@ -2146,7 +2220,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-043  
+## LGT-045  
 
 **Brand**  
 
@@ -2178,70 +2252,6 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-044  
-
-**Brand**  
-
-CARGO CONTAINER  
-
-**Product**  
-
-AIR LIGHT  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-030  
-
-### Color  
-
-Black  
-
-### Material  
-
-Plastic  
-
-### Industrial Attribute  
-
-Airlight (Portable LED Light Body)  
-
----  
-
-## LGT-045  
-
-**Brand**  
-
-CARGO CONTAINER  
-
-**Product**  
-
-AIR LIGHT  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-031  
-
-### Color  
-
-Black  
-
-### Material  
-
-Plastic  
-
-### Industrial Attribute  
-
-Airlight (Portable LED Light Body)  
-
----  
-
 ## LGT-046  
 
 **Brand**  
@@ -2258,7 +2268,7 @@ Owned
 
 **Parent**  
 
-LGT-032  
+LGT-031  
 
 ### Color  
 
@@ -2322,7 +2332,7 @@ Owned
 
 **Parent**  
 
-LGT-035  
+LGT-034  
 
 ### Color  
 
@@ -2354,7 +2364,7 @@ Owned
 
 **Parent**  
 
-LGT-036  
+LGT-035  
 
 ### Color  
 
@@ -2418,7 +2428,71 @@ Owned
 
 **Parent**  
 
-LGT-038 (pending — parent shade not yet identified)  
+LGT-038  
+
+### Color  
+
+Black  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Airlight (Portable LED Light Body)  
+
+---  
+
+## LGT-052  
+
+**Brand**  
+
+CARGO CONTAINER  
+
+**Product**  
+
+AIR LIGHT  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-039  
+
+### Color  
+
+Black  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Airlight (Portable LED Light Body)  
+
+---  
+
+## LGT-053  
+
+**Brand**  
+
+CARGO CONTAINER  
+
+**Product**  
+
+AIR LIGHT  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-040 (pending — parent shade not yet identified)  
 
 ### Color  
 
@@ -4777,5 +4851,22 @@ Scope correction following direct discussion with the project owner: kitchen coo
 - Single Source of Truth section: narrowed TP-004's authority to equipment governed by Human Principles aesthetic alignment; kitchen cooking equipment is now explicitly out of scope.  
 - Related Documents: added TP-011 Galley Fare.  
 - No Kitchen domain was added to TP-004. No KIT-series IDs are registered here; they are registered in TP-011.  
+
+---  
+
+## Version 7.6  
+
+Light Domain update per direct instruction from the project owner: two new lantern-stand accessories (MITOCOLOMON, OTACHIDAI BLACK) are inserted as children of their respective parent shades (デバデバの実 = LGT-029, CONPE10_WWW), placed immediately after each parent in sequence. All subsequent Light Domain IDs from the old LGT-030 onward are shifted down by two (accuracy-priority exception to the "IDs never change" rule, consistent with the precedent set in Version 7.2).
+
+### Changes  
+
+- LGT-029 (デバデバの実): Child Components updated to include the new LGT-030 (MITOCOLOMON) in addition to its existing AIR LIGHT child (renumbered LGT-045, formerly LGT-043).  
+- LGT-030 (new): DEVISE WORKS × WHAT WE WANT "MITOCOLOMON." Owned. Parent = LGT-029. Engraved wood base (W160×D160×H15mm) with brass pole (H270mm); 1/4-inch screw thread compatible with tripod series. Confirmed via manufacturer's official store.  
+- LGT-031 (formerly LGT-030, CONPE10_WWW): renumbered; Child Components updated to include the new LGT-032 (OTACHIDAI BLACK) in addition to its existing AIR LIGHT child (renumbered LGT-046, formerly LGT-044).  
+- LGT-032 (new): DEVISE WORKS × WHAT WE WANT "OTACHIDAI BLACK." Owned. Parent = LGT-031. Black-painted engraved wood base with gold ink inlay (W140×D150×H26mm), brass pole (H190mm); 1/4-inch screw thread. Confirmed via manufacturer's official store.  
+- LGT-033–041 (formerly LGT-031–039): renumbered, shifted down by two; content otherwise unchanged.  
+- LGT-042–053 (formerly LGT-040–051, the twelve CARGO CONTAINER AIR LIGHT units): renumbered, shifted down by two; each unit's Parent reference updated to match its shade's new ID (LGT-018/019/020 unchanged; LGT-029→045; LGT-031→046; LGT-033→047; LGT-034→048; LGT-035→049; LGT-037→050; LGT-038→051; LGT-039→052; LGT-040→053).  
+- LGT-018/019/020 Child Components updated to reference the renumbered AIR LIGHT units (LGT-042/043/044, formerly LGT-040/041/042).  
+- Item count increased from 51 to 53 (two new items: MITOCOLOMON, OTACHIDAI BLACK).  
 
 ---  
