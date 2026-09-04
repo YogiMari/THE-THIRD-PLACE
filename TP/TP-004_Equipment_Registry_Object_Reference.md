@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.6  
+Version 7.7  
   
 ---  
   
@@ -1826,15 +1826,15 @@ LGT-031
 
 ### Color  
 
-Black（Body）／Gold（Engraving Ink Inlay, Brass Pole）  
+Black（Body）／Gold（Brass Pole）  
 
 ### Material  
 
-Wood, Black-Painted（Engraved with Gold Ink）／Brass（Pole）  
+Walnut, Black-Painted（Engraved）／Brass（Pole）  
 
 ### Graphic Attribute  
 
-Engraved Design（Gold Ink Inlay）  
+Occult Emblem（Engraved, Gold Ink Inlay）  
 
 ### Industrial Attribute  
 
@@ -4868,5 +4868,17 @@ Light Domain update per direct instruction from the project owner: two new lante
 - LGT-042–053 (formerly LGT-040–051, the twelve CARGO CONTAINER AIR LIGHT units): renumbered, shifted down by two; each unit's Parent reference updated to match its shade's new ID (LGT-018/019/020 unchanged; LGT-029→045; LGT-031→046; LGT-033→047; LGT-034→048; LGT-035→049; LGT-037→050; LGT-038→051; LGT-039→052; LGT-040→053).  
 - LGT-018/019/020 Child Components updated to reference the renumbered AIR LIGHT units (LGT-042/043/044, formerly LGT-040/041/042).  
 - Item count increased from 51 to 53 (two new items: MITOCOLOMON, OTACHIDAI BLACK).  
+
+---  
+
+## Version 7.7  
+
+LGT-032 (OTACHIDAI BLACK) specification corrected. Project owner confirmed the base is black-dyed walnut (not generic "Wood"), and the engraving motif is an occult-style emblem with gold ink inlay pressed into the engraved grooves.
+
+### Changes  
+
+- LGT-032: Material corrected from "Wood, Black-Painted (Engraved with Gold Ink) / Brass (Pole)" to "Walnut, Black-Painted (Engraved) / Brass (Pole)."  
+- LGT-032: Graphic Attribute corrected from "Engraved Design (Gold Ink Inlay)" to "Occult Emblem (Engraved, Gold Ink Inlay)," aligning with the same Graphic Attribute vocabulary used for FUR-005/010 (HIJIWARU) and FUR-013 (EXTENMON TABLE).  
+- LGT-032: Color simplified to "Black (Body) / Gold (Brass Pole)," removing the redundant "Engraving Ink Inlay" sub-note now captured under Graphic Attribute.  
 
 ---  
