@@ -2,7 +2,7 @@ TP-001 THE THIRD PLACE Constitution
   
   
 # THE THIRD PLACE Constitution  
-## Ver.4.0  
+## Ver.4.1  
   
 ---  
   
@@ -680,6 +680,7 @@ Project Ledger
   
 Master Documents  
 　・Equipment Registry  
+　・Galley Fare  
 　・Field Atlas  
 　・Habitat Architecture  
 　・Storage Blueprint  
@@ -804,11 +805,45 @@ GitHub上の最新版を、
   
 Equipment Registryは、  
   
+Human Principlesとの美意識的整合を条件とする所有物の、  
+  
 唯一のMaster Databaseである。  
+  
+調理の機能的必然性に基づくキッチン機材は、  
+  
+TP-011 Galley Fareが独立して管理する。  
   
 ---  
   
-## 13.5 Field Atlas  
+## 13.5 Galley Fare  
+  
+管理対象  
+  
+・キッチン調理器具  
+  
+・調理の機能的必然性に基づく選定基準  
+  
+Galley Fareは、  
+  
+Equipment Registryとは異なる評価軸を持つ、  
+  
+独立したMaster Databaseである。  
+  
+所作、  
+  
+デザイン、  
+  
+ブランドの格を、  
+  
+必須条件としない。  
+  
+実際に調理が成立する機能性を、  
+  
+最優先とする。  
+  
+---  
+  
+## 13.6 Field Atlas  
   
 管理対象  
   
@@ -822,7 +857,7 @@ Equipment Registryは、
   
 ---  
   
-## 13.6 Habitat Architecture  
+## 13.7 Habitat Architecture  
   
 管理対象  
   
@@ -836,7 +871,7 @@ Equipment Registryは、
   
 ---  
   
-## 13.7 Storage Blueprint  
+## 13.8 Storage Blueprint  
   
 管理対象  
   
@@ -848,7 +883,7 @@ Equipment Registryは、
   
 ---  
   
-## 13.8 Affinity Lexicon  
+## 13.9 Affinity Lexicon  
   
 管理対象  
   
@@ -900,7 +935,7 @@ Human Principlesを説明する補助資料として扱う。
   
 ---  
   
-## 13.9 Discovery  
+## 13.10 Discovery  
   
 管理対象  
   
@@ -926,7 +961,7 @@ Discoveryに記載された内容は、
   
 ---  
   
-## 13.10 Chronicle  
+## 13.11 Chronicle  
   
 管理対象  
   
@@ -944,7 +979,7 @@ Chronicleは、
   
 ---  
   
-## 13.11 Beyond Journey  
+## 13.12 Beyond Journey  
   
 管理対象  
   
@@ -1478,6 +1513,7 @@ TP/
     TP-008 Affinity Lexicon  
     TP-009 Aesthetic Grammar  
     TP-010 Storage Blueprint  
+    TP-011 Galley Fare  
   
 PX/  
     PX-001 Documentation System  
@@ -1570,6 +1606,30 @@ Project Ledgerを正式な意思決定記録として位置付け。
 Equipment Registryを唯一のMaster Databaseとして再定義。  
   
 GitHub中心の長期運用体制へ移行した。  
+  
+---  
+  
+### Ver.4.1  
+  
+Equipment Registryの管轄を、  
+  
+Human Principlesとの美意識的整合を条件とする所有物に限定。  
+  
+調理の機能的必然性に基づくキッチン機材を、  
+  
+新設のTP-011 Galley Fareへ分離。  
+  
+Galley Fareを、  
+  
+Equipment Registryと並立する独立したMaster Databaseとして正式採用。  
+  
+Information Hierarchy（§12）、  
+  
+Master Document一覧（§13.5）、  
+  
+Repository Architecture（Appendix B）を、  
+  
+それぞれ更新した。  
   
 ---  
   
