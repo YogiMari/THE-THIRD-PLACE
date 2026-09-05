@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 2.4
+Version 2.5
 
 ---
 
@@ -44,11 +44,13 @@ Popularity、SNS、レビュー、希少性は評価基準にしない。
 
 KIT-001〜（3文字Prefix、TP-004の採番規則を継続使用）
 
-IDは欠番不可。番号は変更しない。
+IDは欠番不可。番号は原則として変更しない。
 
-複数の候補が同一カテゴリで併存する場合、同一メイン番号に対して枝番（a, b, c...）を付与する（例：KIT-007a, KIT-007b, KIT-007c）。
+ただし、プロジェクトオーナーの明示的な指示による全面的な再編成（Version 2.5：用途別グルーピングによる全件再採番）は、この原則の例外として記録する。再編成の詳細な新旧対応表はVersion Historyに記載する。
 
-既存の所有物（Owned）に対する買い替え候補も、同様に元のIDへ枝番を付与して記録する（例：KIT-020の買い替え候補＝KIT-020a）。
+複数の候補が同一カテゴリで併存する場合、同一メイン番号に対して枝番（a, b, c...）を付与する（例：KIT-015a, KIT-015b, KIT-015c）。
+
+既存の所有物（Owned）に対する買い替え候補も、同様に元のIDへ枝番を付与して記録する（例：KIT-036の買い替え候補＝KIT-036a）。
 
 ## Status
 
@@ -78,13 +80,35 @@ TP-011は、キッチン機材を選んでいく過程・ストーリー自体�
 
 そのため、同一カテゴリ（同じIndustrial Attribute）に対して複数のCandidateが併存することを許容する。
 
-同一カテゴリの複数候補は、同一メイン番号の枝番（a, b, c...）として記録する（例：まな板候補＝KIT-007a/007b/007c、包丁候補＝KIT-008a/008b/008c）。
+同一カテゴリの複数候補は、同一メイン番号の枝番（a, b, c...）として記録する（例：まな板候補＝KIT-015a/015b/015c、包丁候補＝KIT-017a/017b/017c）。
 
-既存Owned品の買い替え候補も同じ枝番方式で記録する（例：KIT-020a＝KIT-020の買い替え候補）。
+既存Owned品の買い替え候補も同じ枝番方式で記録する（例：KIT-036a＝KIT-036の買い替え候補）。
 
 TP-004（所有物のみを記録）とは異なり、TP-011は「まだ選ばれていない候補」も、検討過程の記録として枝番付きIDで管理する。
 
 いずれか一つが購入・確定した時点でStatusをOwnedへ更新し、TP-004には登録しない（TP-011で完結）。不採用となった候補はStatusをUpgrade等に変更するか、Version Historyに不採用の経緯を記録した上で扱いを決める。
+
+## Category Grouping Policy（Version 2.5新設）
+
+Version 2.5より、KIT-番号は取得順の連番ではなく、用途別グループごとに連番として整理する。
+
+グループ順序は以下の通り（本書内の登場順と一致）。
+
+1. 鍋・グリドル・焚火系調理器具（KIT-001〜007）
+2. バーナー・ストーブ（KIT-008〜013）
+3. 刃物・まな板（KIT-014〜017）
+4. 汎用調理小道具（KIT-018〜025）
+5. 食事用カトラリー（KIT-026〜031）
+6. 串・耐熱グローブ（KIT-032〜034）
+7. マグ・タンブラー（KIT-035〜040）
+8. 急須（KIT-041）
+9. シェラカップ・炊飯関連（KIT-042〜059）
+10. コーヒー器具（KIT-060〜062）
+11. 鍋敷き（KIT-063）
+12. 収納・スパイス（KIT-064〜069）
+13. ゴミ処理（KIT-070）
+
+新規カテゴリの追加時は、末尾（現状KIT-070の次）に新グループとして追加するか、既存グループ内に挿入する場合は当該グループ以降の番号をすべて繰り下げる全面再採番を伴う。番号変更を伴う再編成は、その都度Version Historyに新旧対応表を記録する。
 
 ## Domain Scope Note (Kitchen vs. Fire/Coffee)
 
@@ -235,11 +259,11 @@ Multi Griddle
 
 **Brand**
 
-DEVISE WORKS × FEDECA
+Snow Peak
 
 **Product**
 
-SPECIAL GORIMAX
+ホットサンドクッカー トラメジーノ（GR-009R）
 
 **Status**
 
@@ -247,23 +271,279 @@ Owned
 
 ### Color
 
-Black／Brown（Walnut）
+Black
 
 ### Material
 
-Walnut／Stainless Steel（Blackened）／Brass
+Aluminum Die-Cast, Silicone Coating（Body）／Stainless Steel（Handle）／Bamboo Laminate（Grip）／Cotton Canvas（Storage Case）
 
 ### Graphic Attribute
 
-Graffiti-style Graphic（Engraved, Handle & Blade）
+None
 
 ### Industrial Attribute
 
-Folding Cooking Knife
+Hot Sandwich Cooker（Dual-Sandwich, 880g）
 
 ---
 
 ## KIT-006
+
+**Brand**
+
+Boottonation
+
+**Product**
+
+gk series 中華鍋25cm
+
+**Status**
+
+Owned
+
+### Color
+
+Silver（Raw Iron, Unseasoned Finish）
+
+### Material
+
+Iron（Hand-Hammered by 山田工業所, 5000+ Strikes）／Wood（asimocrafts asigrip Handle, Sold Separately）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Wok（43.5cm Overall Length × 25cm Width, 790g, Requires Seasoning Before Use）
+
+---
+
+## KIT-007
+
+**Brand**
+
+Boottonation
+
+**Product**
+
+gk series オタマ
+
+**Status**
+
+Owned
+
+### Color
+
+Silver（Raw Iron, Unseasoned Finish）
+
+### Material
+
+Iron（Head, by 山田工業所）／Wood（asimocrafts asigrip Handle, Sold Separately）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Ladle（38cm Overall Length, 200g, asigrip-Compatible）
+
+---
+
+## KIT-008
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+フラットバーナー（GS-450R）
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Stainless Steel／Brass／Aluminum／Steel／Resin
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Cartridge Gas Burner（IGT-Compatible, 270×410×110mm, 1.9kg）
+
+---
+
+## KIT-009
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+火焔ストーブ コーエン（クッカーセット）
+
+**Status**
+
+Owned
+
+### Color
+
+Red／Silver
+
+### Material
+
+Stainless Steel／Heat-Resistant Glass
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Alcohol Stove with Cooker Set（Max Φ23cm Pot Compatible, Bioethanol Fuel）
+
+---
+
+## KIT-010
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+火焔ストーブ サカン（BS-020）
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Stainless Steel／Heat-Resistant Glass
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Alcohol Stove（Tabletop, 200ml Capacity, ~70min Burn Time, Bioethanol Fuel）
+
+---
+
+## KIT-011
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+ヤエンストーブ レギ（GS-370）
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Stainless Steel／Aluminum Alloy／Brass／Rubber
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Cartridge Gas Burner（Integrated Low-Center-of-Gravity Design, 2900kcal/h）
+
+---
+
+## KIT-012
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+ヤエンストーブ ナギ（GS-360）
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Stainless Steel
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Cartridge Gas Burner（Integrated Windscreen, 2800kcal/h）
+
+---
+
+## KIT-013
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+グリルバーナー 雪峰苑（GS-355）
+
+**Status**
+
+Owned
+
+### Color
+
+Black
+
+### Material
+
+Stainless Steel／Brass／Zinc Die-Cast／Resin（Body）／Steel, Enamel Finish（Oil Pan）／Cast Iron, Silicone Heat-Resistant Coating（Griddle）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Cast Iron Griddle Grill Burner（Yakiniku-Style, 1700kcal/h, 5.0kg）
+
+---
+
+## KIT-014
 
 **Brand**
 
@@ -299,7 +579,7 @@ Plate / Cutting Board Dual-Use
 
 ---
 
-## KIT-007a
+## KIT-015a
 
 **Brand**
 
@@ -331,7 +611,7 @@ Cutting Board（Folding, designed to store TAKAYUKI knife when opened）
 
 ---
 
-## KIT-007b
+## KIT-015b
 
 **Brand**
 
@@ -355,7 +635,7 @@ Cutting Board（Handle-less, resin-partial construction desired; no specific pro
 
 ---
 
-## KIT-007c
+## KIT-015c
 
 **Brand**
 
@@ -387,7 +667,39 @@ Cutting Board（Beveled edge for easy lifting）
 
 ---
 
-## KIT-008a
+## KIT-016
+
+**Brand**
+
+DEVISE WORKS × FEDECA
+
+**Product**
+
+SPECIAL GORIMAX
+
+**Status**
+
+Owned
+
+### Color
+
+Black／Brown（Walnut）
+
+### Material
+
+Walnut／Stainless Steel（Blackened）／Brass
+
+### Graphic Attribute
+
+Graffiti-style Graphic（Engraved, Handle & Blade）
+
+### Industrial Attribute
+
+Folding Cooking Knife
+
+---
+
+## KIT-017a
 
 **Brand**
 
@@ -419,7 +731,7 @@ Kitchen Knife（by knife gallery Shibata Takayuki, OLD MOUNTAIN special edition�
 
 ---
 
-## KIT-008b
+## KIT-017b
 
 **Brand**
 
@@ -451,7 +763,7 @@ Kitchen Knife（Shellcon-standard grip, customizable）
 
 ---
 
-## KIT-008c
+## KIT-017c
 
 **Brand**
 
@@ -483,7 +795,7 @@ Kitchen Knife Set（Main Knife + Sub Knife + Leather Sheath, two-blade set）
 
 ---
 
-## KIT-009
+## KIT-018
 
 **Brand**
 
@@ -515,7 +827,7 @@ Tong（U-shaped, spring/hinge-less structure, 235mm）
 
 ---
 
-## KIT-010
+## KIT-019
 
 **Brand**
 
@@ -547,7 +859,7 @@ Tong（Standard, 240mm）
 
 ---
 
-## KIT-011
+## KIT-020
 
 **Brand**
 
@@ -579,7 +891,7 @@ Tong（Mini, 150mm）
 
 ---
 
-## KIT-012
+## KIT-021
 
 **Brand**
 
@@ -611,7 +923,125 @@ Tong（Mini, 150mm）
 
 ---
 
-## KIT-013
+## KIT-022
+
+**Brand**
+
+DEVISE WORKS
+
+**Product**
+
+BURABURA お玉
+
+**Status**
+
+Owned
+
+### Color
+
+Brown（Walnut）
+
+### Material
+
+Walnut（Handle, Engraved）／Nylon（Tip）
+
+### Graphic Attribute
+
+Laser-Engraved Design
+
+### Industrial Attribute
+
+Ladle（Hangable, Not Fire-Safe due to Nylon Tip）
+
+---
+
+## KIT-023
+
+**Brand**
+
+DEVISE WORKS
+
+**Product**
+
+BURABURA ターナー
+
+**Status**
+
+Owned
+
+### Color
+
+Brown（Presumed, Series-Consistent）
+
+### Material
+
+Wood（Handle, Engraved, Exact Species Unconfirmed）／Unconfirmed（Tip）
+
+### Graphic Attribute
+
+Laser-Engraved Design（Presumed, Series-Consistent）
+
+### Industrial Attribute
+
+Turner（Hangable, BURABURA Series）
+
+---
+
+## KIT-024
+
+**Brand**
+
+DEVISE WORKS
+
+**Product**
+
+BURABURA 菜ばし
+
+**Status**
+
+Owned
+
+### Color
+
+Brown（Rosewood）
+
+### Material
+
+Rosewood（Handle, Engraved）／Stainless Steel（Tip）
+
+### Graphic Attribute
+
+Laser-Engraved Design
+
+### Industrial Attribute
+
+Cooking Chopsticks（Hangable, Also Usable as Skewer）
+
+---
+
+## KIT-025a
+
+**Brand**
+
+**Product**
+
+**Status**
+
+Candidate
+
+### Color
+
+### Material
+
+### Graphic Attribute
+
+### Industrial Attribute
+
+Bottle Opener / Can Opener（Specific Product Undecided — THE THIRD PLACE思想に合う本物志向の一本を今後選定）
+
+---
+
+## KIT-026
 
 **Brand**
 
@@ -643,7 +1073,7 @@ Spork（Spoon/Fork Combo）
 
 ---
 
-## KIT-014
+## KIT-027
 
 **Brand**
 
@@ -675,7 +1105,7 @@ Spork（Spoon/Fork Combo）
 
 ---
 
-## KIT-015
+## KIT-028
 
 **Brand**
 
@@ -707,7 +1137,7 @@ Spork（Spoon/Fork Combo）
 
 ---
 
-## KIT-016
+## KIT-029
 
 **Brand**
 
@@ -739,7 +1169,7 @@ Chopsticks（Tapered Tip, Cold-Forged）
 
 ---
 
-## KIT-017
+## KIT-030
 
 **Brand**
 
@@ -771,7 +1201,7 @@ Chopsticks（Tapered Tip, Cold-Forged）
 
 ---
 
-## KIT-018
+## KIT-031
 
 **Brand**
 
@@ -803,7 +1233,111 @@ Chopsticks（Tapered Tip, Cold-Forged）
 
 ---
 
-## KIT-019
+## KIT-032
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+キャンパーズミトン（Campers Mittens）
+
+**Status**
+
+Owned
+
+### Quantity
+
+1（ペア）
+
+### Color
+
+Brown（Suede Leather）
+
+### Material
+
+Suede Leather（Mitten）／Polyester・Cotton（Lining）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Fire-Resistant Cooking Mitten（Lobster-Claw Shape, One Size, Made in Japan）
+
+---
+
+## KIT-033
+
+**Brand**
+
+asimocrafts × サンゾー工務店
+
+**Product**
+
+a384（表記要確認）
+
+**Status**
+
+Owned
+
+### Quantity
+
+6
+
+### Color
+
+Various（Multiple Colorways）
+
+### Material
+
+Stainless Steel（Blade）／Heat-Resistant Silicone（Grip, "チビグリ"）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Collaboration BBQ Skewer（asimocrafts×サンゾー工務店コラボ品、1ID管理で複数色を包括）
+
+---
+
+## KIT-034
+
+**Brand**
+
+CAMPOOPARTS（キャンプオーパーツ）
+
+**Product**
+
+串しぇら＆温度計セット
+
+**Status**
+
+Owned
+
+### Color
+
+Silver
+
+### Material
+
+Stainless Steel（Plate）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Skewer Deep-Frying Plate & Thermometer Set（Donut-Shaped Plate φ155mm／Center Hole φ50mm, Sierra Cup Sold Separately — Used with Owner's Own Cup）
+
+---
+
+## KIT-035
 
 **Brand**
 
@@ -835,7 +1369,7 @@ Single-Wall Mug（Direct-Fire Safe, 220ml）
 
 ---
 
-## KIT-020
+## KIT-036
 
 **Brand**
 
@@ -867,7 +1401,7 @@ Double-Wall Mug（300ml, stackable with MG-153）
 
 ---
 
-## KIT-020a
+## KIT-036a
 
 **Brand**
 
@@ -895,11 +1429,11 @@ None
 
 ### Industrial Attribute
 
-Double-Wall Mug（300ml, replacement candidate for KIT-020）
+Double-Wall Mug（300ml, replacement candidate for KIT-036）
 
 ---
 
-## KIT-021
+## KIT-037
 
 **Brand**
 
@@ -931,7 +1465,7 @@ Double-Wall Mug（450ml, renewed model, stacks with MG-152）
 
 ---
 
-## KIT-021a
+## KIT-037a
 
 **Brand**
 
@@ -949,11 +1483,11 @@ Candidate
 
 ### Industrial Attribute
 
-Double-Wall Mug or Single-Wall Mug（450, specific product/color undecided; replacement candidate for KIT-021）
+Double-Wall Mug or Single-Wall Mug（450, specific product/color undecided; replacement candidate for KIT-037）
 
 ---
 
-## KIT-022
+## KIT-038
 
 **Brand**
 
@@ -985,7 +1519,7 @@ Vacuum-Insulated Tumbler（470ml, φ84×150mm, 215g）
 
 ---
 
-## KIT-022a
+## KIT-038a
 
 **Brand**
 
@@ -1011,11 +1545,11 @@ None
 
 ### Industrial Attribute
 
-Vacuum-Insulated Tumbler（Replacement candidate for KIT-022）
+Vacuum-Insulated Tumbler（Replacement candidate for KIT-038）
 
 ---
 
-## KIT-023
+## KIT-039
 
 **Brand**
 
@@ -1047,7 +1581,7 @@ Vacuum-Insulated Tumbler（470ml, φ84×150mm, 215g）
 
 ---
 
-## KIT-023a
+## KIT-039a
 
 **Brand**
 
@@ -1073,11 +1607,11 @@ None
 
 ### Industrial Attribute
 
-Vacuum-Insulated Tumbler（Replacement candidate for KIT-023）
+Vacuum-Insulated Tumbler（Replacement candidate for KIT-039）
 
 ---
 
-## KIT-024
+## KIT-040
 
 **Brand**
 
@@ -1109,7 +1643,7 @@ Stacking Cup（500cc, φ85×H125mm）
 
 ---
 
-## KIT-025
+## KIT-041
 
 **Brand**
 
@@ -1141,7 +1675,7 @@ Teapot Set（600ml Pot + 2× 150ml Cups, Furoshiki-Style Storage Case）
 
 ---
 
-## KIT-026
+## KIT-042
 
 **Brand**
 
@@ -1149,7 +1683,7 @@ Snow Peak
 
 **Product**
 
-フラットバーナー（GS-450R）
+ステンレスシェラカップ
 
 **Status**
 
@@ -1157,11 +1691,11 @@ Owned
 
 ### Color
 
-Silver
+Silver（Polished）
 
 ### Material
 
-Stainless Steel／Brass／Aluminum／Steel／Resin
+Stainless Steel
 
 ### Graphic Attribute
 
@@ -1169,11 +1703,11 @@ None
 
 ### Industrial Attribute
 
-Cartridge Gas Burner（IGT-Compatible, 270×410×110mm, 1.9kg）
+Sierra Cup（Used as Plate, 310ml, Interior Measurement Markings）
 
 ---
 
-## KIT-027
+## KIT-043
 
 **Brand**
 
@@ -1181,7 +1715,7 @@ Snow Peak
 
 **Product**
 
-火焔ストーブ コーエン（クッカーセット）
+チタンシェラカップ（ランドステーション東京限定）
 
 **Status**
 
@@ -1189,11 +1723,11 @@ Owned
 
 ### Color
 
-Red／Silver
+Purple
 
 ### Material
 
-Stainless Steel／Heat-Resistant Glass
+Titanium
 
 ### Graphic Attribute
 
@@ -1201,11 +1735,11 @@ None
 
 ### Industrial Attribute
 
-Alcohol Stove with Cooker Set（Max Φ23cm Pot Compatible, Bioethanol Fuel）
+Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
 
 ---
 
-## KIT-028
+## KIT-044
 
 **Brand**
 
@@ -1213,7 +1747,7 @@ Snow Peak
 
 **Product**
 
-火焔ストーブ サカン（BS-020）
+チタンシェラカップ（ヘッドクウォーター限定）
 
 **Status**
 
@@ -1221,11 +1755,11 @@ Owned
 
 ### Color
 
-Silver
+Pink Gold
 
 ### Material
 
-Stainless Steel／Heat-Resistant Glass
+Titanium
 
 ### Graphic Attribute
 
@@ -1233,11 +1767,11 @@ None
 
 ### Industrial Attribute
 
-Alcohol Stove（Tabletop, 200ml Capacity, ~70min Burn Time, Bioethanol Fuel）
+Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
 
 ---
 
-## KIT-029
+## KIT-045
 
 **Brand**
 
@@ -1245,7 +1779,7 @@ Snow Peak
 
 **Product**
 
-ヤエンストーブ レギ（GS-370）
+チタンシェラカップ（京都嵐山限定）
 
 **Status**
 
@@ -1253,11 +1787,11 @@ Owned
 
 ### Color
 
-Silver
+Matcha Green
 
 ### Material
 
-Stainless Steel／Aluminum Alloy／Brass／Rubber
+Titanium
 
 ### Graphic Attribute
 
@@ -1265,11 +1799,11 @@ None
 
 ### Industrial Attribute
 
-Cartridge Gas Burner（Integrated Low-Center-of-Gravity Design, 2900kcal/h）
+Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
 
 ---
 
-## KIT-030
+## KIT-046
 
 **Brand**
 
@@ -1277,7 +1811,167 @@ Snow Peak
 
 **Product**
 
-ヤエンストーブ ナギ（GS-360）
+チタンシェラカップ（福岡油山限定）
+
+**Status**
+
+Owned
+
+### Color
+
+Gold
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
+
+---
+
+## KIT-047
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタンシェラカップ（ランドステーション白馬限定）
+
+**Status**
+
+Owned
+
+### Color
+
+Emerald Green
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
+
+---
+
+## KIT-048
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタンシェラカップ（FIELD SUITE SPA限定）
+
+**Status**
+
+Owned
+
+### Color
+
+Orange／Pink（Oxidation Color, Angle-Dependent Shift）
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Facility-Limited Color, 310ml, φ120×45mm, ~37g）
+
+---
+
+## KIT-049
+
+**Brand**
+
+nodel design × solworks
+
+**Product**
+
+White Shera Cup
+
+**Status**
+
+Owned
+
+### Color
+
+White
+
+### Material
+
+Enamel（Steel Base, Glass Coating）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Handmade in Japan, Enamel Finish）
+
+---
+
+## KIT-050
+
+**Brand**
+
+OLD MOUNTAIN
+
+**Product**
+
+VINTAGE BLACK SIERRA
+
+**Status**
+
+Owned
+
+### Color
+
+Black
+
+### Material
+
+Steel（Vintage-Style Finish）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Vintage-Inspired Design）
+
+---
+
+## KIT-051
+
+**Brand**
+
+OLD MOUNTAIN
+
+**Product**
+
+RICECOOKER 480深型 STAINLESS
 
 **Status**
 
@@ -1297,19 +1991,19 @@ None
 
 ### Industrial Attribute
 
-Cartridge Gas Burner（Integrated Windscreen, 2800kcal/h）
+Sierra Cup（Used as Plate, Deep Type, 480ml, Rice/Water Line Markings for Rice Cooking, Body Only — No Lid/Grip/Steamer Rack）
 
 ---
 
-## KIT-031
+## KIT-052
 
 **Brand**
 
-Snow Peak
+OLD MOUNTAIN
 
 **Product**
 
-グリルバーナー 雪峰苑（GS-355）
+RICECOOKER 480深型 IRON
 
 **Status**
 
@@ -1317,11 +2011,11 @@ Owned
 
 ### Color
 
-Black
+Black／Dark Gray（Raw Iron）
 
 ### Material
 
-Stainless Steel／Brass／Zinc Die-Cast／Resin（Body）／Steel, Enamel Finish（Oil Pan）／Cast Iron, Silicone Heat-Resistant Coating（Griddle）
+Iron
 
 ### Graphic Attribute
 
@@ -1329,11 +2023,235 @@ None
 
 ### Industrial Attribute
 
-Cast Iron Griddle Grill Burner（Yakiniku-Style, 1700kcal/h, 5.0kg）
+Sierra Cup（Used as Plate, Deep Type, 480ml, Rice/Water Line Markings for Rice Cooking, Body Only）
 
 ---
 
-## KIT-032
+## KIT-053
+
+**Brand**
+
+OLD MOUNTAIN
+
+**Product**
+
+OKAMADON（ウォールナット）
+
+**Status**
+
+Owned
+
+### Color
+
+Brown（Natural Walnut）
+
+### Material
+
+Walnut
+
+### Graphic Attribute
+
+Geometric Pattern（Engraved, Reverse Side）
+
+### Industrial Attribute
+
+Kamado-Style Rice Cooking Lid（For Use with Deep-Type Sierra Cups, φ10cm, Not a Standalone Cooker — Requires Separate Deep Sierra Cup, Companion Item for KIT-051/052）
+
+---
+
+## KIT-054
+
+**Brand**
+
+OLD MOUNTAIN
+
+**Product**
+
+OKAMADON（ヒノキ）
+
+**Status**
+
+Owned
+
+### Color
+
+Natural（Hinoki Wood Tone）
+
+### Material
+
+Hinoki（Japanese Cypress）
+
+### Graphic Attribute
+
+Geometric Pattern（Engraved, Reverse Side）
+
+### Industrial Attribute
+
+Kamado-Style Rice Cooking Lid（For Use with Deep-Type Sierra Cups, φ10cm, Not a Standalone Cooker — Requires Separate Deep Sierra Cup, Companion Item for KIT-051/052）
+
+---
+
+## KIT-055
+
+**Brand**
+
+Ænd × CALMA STORE
+
+**Product**
+
+Sierra cup 480ml (Copper) RAVEN
+
+**Status**
+
+Owned
+
+### Color
+
+Black（Exterior, Painted）／Copper（Wear-Through Patina Visible Over Time）
+
+### Material
+
+Copper（Hand-Spun, Hammer-Tone Texture）／Nickel Plating（Interior）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, RAVEN Series, 480ml, W95mm(Bottom)/W120mm(Top)×H60mm, 113g）
+
+---
+
+## KIT-056
+
+**Brand**
+
+Ænd × CALMA STORE
+
+**Product**
+
+Sierra cup 480ml (Brass) RAVEN
+
+**Status**
+
+Owned
+
+### Color
+
+Black（Exterior, Painted）／Brass（Wear-Through Patina Visible Over Time）
+
+### Material
+
+Brass（Hand-Spun, Hammer-Tone Texture）／Nickel Plating（Interior）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, RAVEN Series, 480ml, W95mm(Bottom)/W120mm(Top)×H60mm, 113g）
+
+---
+
+## KIT-057
+
+**Brand**
+
+Ænd × CALMA STORE
+
+**Product**
+
+Sierra Cup 350ml HAMMER TONE (Silicon Fluorine Black)
+
+**Status**
+
+Essential
+
+### Color
+
+Black（Silicon Fluorine Coating）
+
+### Material
+
+Titanium（Hand-Spun, Hammer-Tone Texture）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, 350ml, Purchase Decided, Not Yet Owned）
+
+---
+
+## KIT-058
+
+**Brand**
+
+Ænd × CALMA STORE
+
+**Product**
+
+Sierra Cup 350ml HAMMER TONE (Satin Black)
+
+**Status**
+
+Essential
+
+### Color
+
+Black（Satin Finish）
+
+### Material
+
+Titanium（Hand-Spun, Hammer-Tone Texture）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, 350ml, Purchase Decided, Not Yet Owned）
+
+---
+
+## KIT-059
+
+**Brand**
+
+Ænd × CALMA STORE
+
+**Product**
+
+Sierra Cup 480ml (Stainless) 黒酸化塗装
+
+**Status**
+
+Essential
+
+### Color
+
+Black（Black Oxide Coating）
+
+### Material
+
+Stainless Steel（Hand-Spun, Hammer-Tone Texture）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, 480ml, Purchase Decided, Not Yet Owned）
+
+---
+
+## KIT-060
 
 **Brand**
 
@@ -1365,7 +2283,7 @@ Manual Coffee Mill（Foldable Handle/Lid Integrated, 225g）
 
 ---
 
-## KIT-033
+## KIT-061
 
 **Brand**
 
@@ -1397,7 +2315,7 @@ Pour-Over Kettle（Detachable Handle, 3-Hole Spout for Flow Control, 1.0L）
 
 ---
 
-## KIT-034
+## KIT-062
 
 **Brand**
 
@@ -1429,27 +2347,27 @@ Folding Coffee Dripper（Firepit-Style, Uses Standard Paper Filters, 140g）
 
 ---
 
-## KIT-035
+## KIT-063a
 
 **Brand**
 
-Snow Peak
+wanderout（× CINQ）
 
 **Product**
 
-ホットサンドクッカー トラメジーノ（GR-009R）
+Wire Pot Stand - Silver
 
 **Status**
 
-Owned
+Candidate
 
 ### Color
 
-Black
+Silver
 
 ### Material
 
-Aluminum Die-Cast, Silicone Coating（Body）／Stainless Steel（Handle）／Bamboo Laminate（Grip）／Cotton Canvas（Storage Case）
+Stainless Steel（Tin-Plated）
 
 ### Graphic Attribute
 
@@ -1457,11 +2375,11 @@ None
 
 ### Industrial Attribute
 
-Hot Sandwich Cooker（Dual-Sandwich, 880g）
+Wire Mesh Trivet（W155×D155×H13mm, 82.5g, Redesigned from a Discontinued Swiss Product by wanderout and CINQ）
 
 ---
 
-## KIT-036
+## KIT-064
 
 **Brand**
 
@@ -1497,7 +2415,7 @@ Storage Box（0.5 Unit Size, for Cutlery/Cookware Organization）
 
 ---
 
-## KIT-037
+## KIT-065
 
 **Brand**
 
@@ -1533,7 +2451,7 @@ Spice Bottle（3-Stage Adjustable Spout, φ49×H82.5mm, Not Waterproof）
 
 ---
 
-## KIT-038
+## KIT-066
 
 **Brand**
 
@@ -1569,167 +2487,7 @@ Spice Bottle（Same Base as SPICE BOTTLE BOYS, Event-Limited Graphic Variant）
 
 ---
 
-## KIT-039
-
-**Brand**
-
-DEVISE WORKS
-
-**Product**
-
-BURABURA お玉
-
-**Status**
-
-Owned
-
-### Color
-
-Brown（Walnut）
-
-### Material
-
-Walnut（Handle, Engraved）／Nylon（Tip）
-
-### Graphic Attribute
-
-Laser-Engraved Design
-
-### Industrial Attribute
-
-Ladle（Hangable, Not Fire-Safe due to Nylon Tip）
-
----
-
-## KIT-040
-
-**Brand**
-
-DEVISE WORKS
-
-**Product**
-
-BURABURA ターナー
-
-**Status**
-
-Owned
-
-### Color
-
-Brown（Presumed, Series-Consistent）
-
-### Material
-
-Wood（Handle, Engraved, Exact Species Unconfirmed）／Unconfirmed（Tip）
-
-### Graphic Attribute
-
-Laser-Engraved Design（Presumed, Series-Consistent）
-
-### Industrial Attribute
-
-Turner（Hangable, BURABURA Series）
-
----
-
-## KIT-041
-
-**Brand**
-
-DEVISE WORKS
-
-**Product**
-
-BURABURA 菜ばし
-
-**Status**
-
-Owned
-
-### Color
-
-Brown（Rosewood）
-
-### Material
-
-Rosewood（Handle, Engraved）／Stainless Steel（Tip）
-
-### Graphic Attribute
-
-Laser-Engraved Design
-
-### Industrial Attribute
-
-Cooking Chopsticks（Hangable, Also Usable as Skewer）
-
----
-
-## KIT-042
-
-**Brand**
-
-Boottonation
-
-**Product**
-
-gk series 中華鍋25cm
-
-**Status**
-
-Owned
-
-### Color
-
-Silver（Raw Iron, Unseasoned Finish）
-
-### Material
-
-Iron（Hand-Hammered by 山田工業所, 5000+ Strikes）／Wood（asimocrafts asigrip Handle, Sold Separately）
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Wok（43.5cm Overall Length × 25cm Width, 790g, Requires Seasoning Before Use）
-
----
-
-## KIT-043
-
-**Brand**
-
-Boottonation
-
-**Product**
-
-gk series オタマ
-
-**Status**
-
-Owned
-
-### Color
-
-Silver（Raw Iron, Unseasoned Finish）
-
-### Material
-
-Iron（Head, by 山田工業所）／Wood（asimocrafts asigrip Handle, Sold Separately）
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Ladle（38cm Overall Length, 200g, asigrip-Compatible）
-
----
-
-## KIT-044
+## KIT-067
 
 **Brand**
 
@@ -1761,271 +2519,15 @@ Spice Bottle Rack（Holds 4 Spice Bottles, Used Size W140×D140×H65mm, 10mm Rod
 
 ---
 
-## KIT-045
+## KIT-068
 
 **Brand**
 
-Snow Peak
+ANOBA
 
 **Product**
 
-ステンレスシェラカップ
-
-**Status**
-
-Owned
-
-### Color
-
-Silver（Polished）
-
-### Material
-
-Stainless Steel
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Sierra Cup（Used as Plate, 310ml, Interior Measurement Markings）
-
----
-
-## KIT-046
-
-**Brand**
-
-Snow Peak
-
-**Product**
-
-チタンシェラカップ（ランドステーション東京限定）
-
-**Status**
-
-Owned
-
-### Color
-
-Purple
-
-### Material
-
-Titanium
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
-
----
-
-## KIT-047
-
-**Brand**
-
-Snow Peak
-
-**Product**
-
-チタンシェラカップ（ヘッドクウォーター限定）
-
-**Status**
-
-Owned
-
-### Color
-
-Pink Gold
-
-### Material
-
-Titanium
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
-
----
-
-## KIT-048
-
-**Brand**
-
-Snow Peak
-
-**Product**
-
-チタンシェラカップ（京都嵐山限定）
-
-**Status**
-
-Owned
-
-### Color
-
-Matcha Green
-
-### Material
-
-Titanium
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
-
----
-
-## KIT-049
-
-**Brand**
-
-Snow Peak
-
-**Product**
-
-チタンシェラカップ（福岡油山限定）
-
-**Status**
-
-Owned
-
-### Color
-
-Gold
-
-### Material
-
-Titanium
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
-
----
-
-## KIT-050
-
-**Brand**
-
-Snow Peak
-
-**Product**
-
-チタンシェラカップ（ランドステーション白馬限定）
-
-**Status**
-
-Owned
-
-### Color
-
-Emerald Green
-
-### Material
-
-Titanium
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
-
----
-
-## KIT-051
-
-**Brand**
-
-Snow Peak
-
-**Product**
-
-チタンシェラカップ（FIELD SUITE SPA限定）
-
-**Status**
-
-Owned
-
-### Color
-
-Orange／Pink（Oxidation Color, Angle-Dependent Shift）
-
-### Material
-
-Titanium
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Sierra Cup（Used as Plate, Facility-Limited Color, 310ml, φ120×45mm, ~37g）
-
----
-
-## KIT-052
-
-**Brand**
-
-nodel design × solworks
-
-**Product**
-
-White Shera Cup
-
-**Status**
-
-Owned
-
-### Color
-
-White
-
-### Material
-
-Enamel（Steel Base, Glass Coating）
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Sierra Cup（Used as Plate, Handmade in Japan, Enamel Finish）
-
----
-
-## KIT-053
-
-**Brand**
-
-OLD MOUNTAIN
-
-**Product**
-
-VINTAGE BLACK SIERRA
+フォールディングワイヤーバスケット M
 
 **Status**
 
@@ -2037,27 +2539,27 @@ Black
 
 ### Material
 
-Steel（Vintage-Style Finish）
+Steel（Wire, Presumed）
 
 ### Graphic Attribute
 
-None
+Logo Plate
 
 ### Industrial Attribute
 
-Sierra Cup（Used as Plate, Vintage-Inspired Design）
+Folding Wire Basket（IGT 1-Unit Compatible, approx. 24×35×25cm, Used as Dish-Washing / Storage Basket）
 
 ---
 
-## KIT-054
+## KIT-069
 
 **Brand**
 
-OLD MOUNTAIN
+Snow Peak
 
 **Product**
 
-RICECOOKER 480深型 STAINLESS
+キッチンメッシュケース S
 
 **Status**
 
@@ -2065,11 +2567,11 @@ Owned
 
 ### Color
 
-Silver
+Black
 
 ### Material
 
-Stainless Steel
+Mesh Fabric（Presumed Polyester）
 
 ### Graphic Attribute
 
@@ -2077,19 +2579,19 @@ None
 
 ### Industrial Attribute
 
-Sierra Cup（Used as Plate, Deep Type, 480ml, Rice/Water Line Markings for Rice Cooking, Body Only — No Lid/Grip/Steamer Rack）
+Cutlery / Kitchen Tool Storage Pouch（Mesh, Breathable, S Size）
 
 ---
 
-## KIT-055
+## KIT-070
 
 **Brand**
 
-OLD MOUNTAIN
+Snow Peak
 
 **Product**
 
-RICECOOKER 480深型 IRON
+ガビングスタンド
 
 **Status**
 
@@ -2097,11 +2599,11 @@ Owned
 
 ### Color
 
-Black／Dark Gray（Raw Iron）
+Black（Frame, Presumed）
 
 ### Material
 
-Iron
+Aluminum Alloy・Nylon（Frame）／Tarpaulin（Bag）
 
 ### Graphic Attribute
 
@@ -2109,31 +2611,31 @@ None
 
 ### Industrial Attribute
 
-Sierra Cup（Used as Plate, Deep Type, 480ml, Rice/Water Line Markings for Rice Cooking, Body Only）
+Freestanding Dust Stand（Frame + Gabbing Bag + Storage Case, 50×36×63cm, 2.0kg）— Replacement Under Consideration
 
 ---
 
-## KIT-056
+## KIT-070a
 
 **Brand**
 
-Ænd × CALMA STORE
+ANOBA
 
 **Product**
 
-Sierra cup 480ml (Copper) RAVEN
+BLACK EDITION マルチダストバケット（SKU: AN118）
 
 **Status**
 
-Owned
+Candidate
 
 ### Color
 
-Black（Exterior, Painted）／Copper（Wear-Through Patina Visible Over Time）
+Black
 
 ### Material
 
-Copper（Hand-Spun, Hammer-Tone Texture）／Nickel Plating（Interior）
+Polyester／PE Board／Tarpaulin／PP
 
 ### Graphic Attribute
 
@@ -2141,31 +2643,31 @@ None
 
 ### Industrial Attribute
 
-Sierra Cup（Used as Plate, RAVEN Series, 480ml, W95mm(Bottom)/W120mm(Top)×H60mm, 113g）
+Foldable Bucket-Type Bag（Gear Storage / Trash Bin Dual-Use, 8 Bag-Hanging Hooks for 2-Way Sorting, approx. 36×27×32Hcm, 1250g）— Replacement Candidate for KIT-070
 
 ---
 
-## KIT-057
+## KIT-070b
 
 **Brand**
 
-Ænd × CALMA STORE
+ANOBA
 
 **Product**
 
-Sierra cup 480ml (Brass) RAVEN
+フォールディングサイドテーブル（SKU: AN129）
 
 **Status**
 
-Owned
+Candidate
 
 ### Color
 
-Black（Exterior, Painted）／Brass（Wear-Through Patina Visible Over Time）
+Silver（Steel, Unfinished）
 
 ### Material
 
-Brass（Hand-Spun, Hammer-Tone Texture）／Nickel Plating（Interior）
+Steel
 
 ### Graphic Attribute
 
@@ -2173,103 +2675,7 @@ None
 
 ### Industrial Attribute
 
-Sierra Cup（Used as Plate, RAVEN Series, 480ml, W95mm(Bottom)/W120mm(Top)×H60mm, 113g）
-
----
-
-## KIT-058
-
-**Brand**
-
-Ænd × CALMA STORE
-
-**Product**
-
-Sierra Cup 350ml HAMMER TONE (Silicon Fluorine Black)
-
-**Status**
-
-Essential
-
-### Color
-
-Black（Silicon Fluorine Coating）
-
-### Material
-
-Titanium（Hand-Spun, Hammer-Tone Texture）
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Sierra Cup（Used as Plate, 350ml, Purchase Decided, Not Yet Owned）
-
----
-
-## KIT-059
-
-**Brand**
-
-Ænd × CALMA STORE
-
-**Product**
-
-Sierra Cup 350ml HAMMER TONE (Satin Black)
-
-**Status**
-
-Essential
-
-### Color
-
-Black（Satin Finish）
-
-### Material
-
-Titanium（Hand-Spun, Hammer-Tone Texture）
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Sierra Cup（Used as Plate, 350ml, Purchase Decided, Not Yet Owned）
-
----
-
-## KIT-060
-
-**Brand**
-
-Ænd × CALMA STORE
-
-**Product**
-
-Sierra Cup 480ml (Stainless) 黒酸化塗装
-
-**Status**
-
-Essential
-
-### Color
-
-Black（Black Oxide Coating）
-
-### Material
-
-Stainless Steel（Hand-Spun, Hammer-Tone Texture）
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Sierra Cup（Used as Plate, 480ml, Purchase Decided, Not Yet Owned）
+Folding Side Table（Height-Adjustable Mesh Shelf, Designed to Pair with KIT-070a Multi Dust Bucket as a Trash Station, approx. 38×31×H45cm, 2850g）
 
 ---
 
@@ -2397,7 +2803,7 @@ Version 1.4のKIT-009〜012を訂正。「つかみのトング」がFEDECAのCL
 - KIT-022（新規）：Snow Peak サーモタンブラー470 サンド（TW-470-SN）。Owned。
 - KIT-023（新規）：Snow Peak サーモタンブラー470 ブラック（TW-470-BK）。Owned。
 - KIT-024（新規）：Snow Peak Way ECO CUP。年度限定ロゴ入りのため、具体的な年度（何年のWayイベント配布分か）は未確認。Owned。
-- 会話内で言及された「KIT-020/021/022/023それぞれの買い替え候補（ダブル300/450の別色・限定品、または相当するシングルサイズ／YETI）」は、いずれも具体的な製品名が未確定のため、今回は正式なCandidate IDとして登録せず、口頭記録に留めた。具体化した時点でKIT-020〜023それぞれの枝番（例：KIT-022a=YETI候補）として登録する想定。
+- 会話内で言及された「KIT-020/021/022/023それぞれの買い替え候補」は、いずれも具体的な製品名が未確定のため、今回は正式なCandidate IDとして登録せず、口頭記録に留めた。
 
 ---
 
@@ -2408,41 +2814,36 @@ Version 1.6で保留にしていた買い替え候補を調査し、枝番Candid
 ### Changes
 
 - Registry Rules・Candidate Recording Policyに「既存Owned品への買い替え候補も同じ枝番方式で記録する」旨を追記。
-- KIT-020a（新規）：チタンダブルマグ300の海外限定カラー版候補。グレー／ブルー／パープル／グリーンのアノダイズカラー展開が存在することを確認したが、正確なモデル名・入手経路は未確認。Candidate。
-- KIT-021a（新規）：チタンダブルマグ450の買い替え候補枠。具体的な色・製品・シングル450かどうかも含めて未確定のため、空枠として確保。Candidate。
-- KIT-022a（新規）：サーモタンブラー470サンドの買い替え候補としてYETI Rambler 16oz（473ml）を仮登録。470mlに最も近い容量として確認。正式モデル名・色は未確認。Candidate。
+- KIT-020a（新規）：チタンダブルマグ300の海外限定カラー版候補。Candidate。
+- KIT-021a（新規）：チタンダブルマグ450の買い替え候補枠。空枠。Candidate。
+- KIT-022a（新規）：サーモタンブラー470サンドの買い替え候補としてYETI Rambler 16oz（473ml）を仮登録。Candidate。
 - KIT-023a（新規）：サーモタンブラー470ブラックの買い替え候補として同じくYETI Rambler 16oz。Candidate。
-- KIT-025（新規）：Snow Peak サヨウ（CS-340、2023年発売）。透明急須本体＋湯呑み2個＋風呂敷型収納ケースのセット。急須600ml、湯呑み150ml。Owned。
+- KIT-025（新規）：Snow Peak サヨウ（CS-340）。急須600ml、湯呑み150ml×2、風呂敷型収納ケース。Owned。
 
 ---
 
 ## Version 1.8
 
-キッチンゾーンで使用するSnow Peak製バーナー・ストーブ6点、コーヒー器具3点、ホットサンドクッカー1点の計10点を、TP-004のFire/Coffee Domainとは別に、TP-011（Kitchen）側で管理する方針を反映。Registry Rulesに「Domain Scope Note」を新設した（本バージョン時点では「例外的取り決め」として記述）。
+キッチンゾーンで使用するSnow Peak製バーナー・ストーブ6点、コーヒー器具3点、ホットサンドクッカー1点の計10点を、TP-004のFire/Coffee Domainとは別に、TP-011（Kitchen）側で管理する方針を反映。Registry Rulesに「Domain Scope Note」を新設した。
 
 ### Changes
 
 - Registry Rulesに「Domain Scope Note (Kitchen vs. Fire/Coffee overlap)」を新設。
-- KIT-026（新規）：Snow Peak フラットバーナー（GS-450R）。IGT規格対応カートリッジガスバーナー。Owned。
-- KIT-027（新規）：Snow Peak 火焔ストーブ コーエン（クッカーセット）。バイオエタノール式アルコールストーブ、最大Φ23cm鍋対応。Owned。
-- KIT-028（新規）：Snow Peak 火焔ストーブ サカン（BS-020）。卓上型アルコールストーブ、200ml、燃焼時間約70分。Owned。
-- KIT-029（新規）：Snow Peak ヤエンストーブ レギ（GS-370）。低重心一体型カートリッジガスバーナー、2900kcal/h。Owned。
-- KIT-030（新規）：Snow Peak ヤエンストーブ ナギ（GS-360）。風防一体型カートリッジガスバーナー、2800kcal/h。Owned。
-- KIT-031（新規）：Snow Peak グリルバーナー 雪峰苑（GS-355）。鋳鉄グリドル焼肉バーナー、1700kcal/h。Owned。
-- KIT-032（新規）：Snow Peak フィールドバリスタ ミル（CS-116）。手挽きセラミック刃コーヒーミル、225g。Owned。
-- KIT-033（新規）：Snow Peak フィールドバリスタケトル ブラック Online Edition。オンライン限定黒、注ぎ口3穴構造、1.0L。Owned。
-- KIT-034（新規）：Snow Peak フォールディングコーヒードリッパー「焚火台型」（CS-113）。ステンレス18-8、市販フィルター対応、140g。Owned。
-- KIT-035（新規）：Snow Peak ホットサンドクッカー トラメジーノ（GR-009R）。アルミダイカスト、2枚同時焼成、880g。Owned。
+- KIT-026〜031（新規）：Snow Peak バーナー・ストーブ6点（フラットバーナー、火焔ストーブコーエン、火焔ストーブサカン、ヤエンストーブレギ、ヤエンストーブナギ、グリルバーナー雪峰苑）。Owned。
+- KIT-032（新規）：Snow Peak フィールドバリスタ ミル（CS-116）。Owned。
+- KIT-033（新規）：Snow Peak フィールドバリスタケトル ブラック Online Edition。Owned。
+- KIT-034（新規）：Snow Peak フォールディングコーヒードリッパー「焚火台型」（CS-113）。Owned。
+- KIT-035（新規）：Snow Peak ホットサンドクッカー トラメジーノ（GR-009R）。Owned。
 
 ---
 
 ## Version 1.9
 
-Version 1.8の「Domain Scope Note」を訂正。プロジェクトオーナーより、Fire DomainとKitchenの区分は「例外的な取り決め」ではなく、燃料ではなく**目的**による定義上の区分であるとの指摘を受けた。Fire Domain＝暖房・炎の鑑賞目的（燃料は薪に限らずケロシン等も含む。FIR-018武井バーナーは灯油式だが暖房目的のためFire Domainのまま）。Kitchen＝調理目的（燃料はガス・アルコール等を問わない）。この原則に基づき記述を修正した。
+Version 1.8の「Domain Scope Note」を訂正。Fire DomainとKitchenの区分は、燃料ではなく**目的**による定義上の区分であることを明記。
 
 ### Changes
 
-- Registry Rulesの「Domain Scope Note」を全面的に書き直し、「プロジェクトオーナーの判断による例外」という表現を削除。区分原則を「機材の目的（暖房・鑑賞 vs. 調理）」として明記。
+- Registry Rulesの「Domain Scope Note」を全面的に書き直し、区分原則を「機材の目的（暖房・鑑賞 vs. 調理）」として明記。
 - FIR-018（武井バーナー Purple Stove 501A）が灯油式でありながらFire Domainに留まる理由（暖房目的）を明記。
 - KIT-026〜035の登録内容自体に変更なし。区分原則の記述のみ訂正。
 
@@ -2450,78 +2851,132 @@ Version 1.8の「Domain Scope Note」を訂正。プロジェクトオーナー�
 
 ## Version 2.0
 
-所有物の洗い出し（Step 1）の一環として、DEVISE WORKS製の調味料入れ・収納ボックス・キッチンツール計6点（BOXERハーフユニット、SPICE BOTTLE BOYS×2、禁断コラボスパイスボトル×2、BURABURAシリーズ3種）を新規登録。
+所有物の洗い出し（Step 1）の一環として、DEVISE WORKS製の調味料入れ・収納ボックス・キッチンツール計6点を新規登録。
 
 ### Changes
 
-- KIT-036（新規）：DEVISE WORKS「BOXERハーフユニット」。ユニットサイズ規格0.5サイズの黒いボックス、2個入り、カトラリー・調理器具の整理用。Owned。
-- KIT-037（新規）：DEVISE WORKS「SPICE BOTTLE BOYS」×2。ステンレス黒塗装＋耐熱ガラス、レーザー彫刻、3段階出し口調整、φ49×H82.5mm。防水性なし。Owned。
-- KIT-038（新規）：DEVISE WORKS「禁断コラボ スパイスボトル」×2。SPICE BOTTLE BOYSと同じベースに、YOKOHAMA BAYOUT vol.2限定の「禁断」コラボグラフィックを施したバージョン。Owned。
-- KIT-039（新規）：DEVISE WORKS「BURABURA お玉」。ハンドルはウォールナット（彫刻入り、高級外車使用材）、先端はナイロン。Owned。
-- KIT-040（新規）：DEVISE WORKS「BURABURA ターナー」。BURABURAシリーズの一つ。素材の詳細（正確な木材種・先端素材）は未確認のため、シリーズ準拠と推定する旨を注記。Owned。
-- KIT-041（新規）：DEVISE WORKS「BURABURA 菜ばし」。ハンドルはローズウッド（彫刻入り）、先端はステンレス。串としても使用可能。Owned。
+- KIT-036（新規）：DEVISE WORKS「BOXERハーフユニット」。Owned。
+- KIT-037（新規）：DEVISE WORKS「SPICE BOTTLE BOYS」×2。Owned。
+- KIT-038（新規）：DEVISE WORKS「禁断コラボ スパイスボトル」×2。Owned。
+- KIT-039（新規）：DEVISE WORKS「BURABURA お玉」。Owned。
+- KIT-040（新規）：DEVISE WORKS「BURABURA ターナー」。Owned。
+- KIT-041（新規）：DEVISE WORKS「BURABURA 菜ばし」。Owned。
 
 ---
 
 ## Version 2.1
 
-所有物の洗い出し（Step 1）の一環として、Boottonation gkシリーズ（asimocraftsアシグリップ対応）2点と、DEVISE WORKS×WHAT WE WANT「MONDOKORO」（スパイスボトルラック）を新規登録。
+所有物の洗い出し（Step 1）の一環として、Boottonation gkシリーズ2点と、DEVISE WORKS×WHAT WE WANT「MONDOKORO」を新規登録。
 
 ### Changes
 
-- KIT-042（新規）：Boottonation gk series 中華鍋25cm。山田工業所製、5000回以上打ち出しの鉄製中華鍋、全長43.5cm×幅25cm、790g、要シーズニング。グリップはasimocraftsアシグリップ（別売）対応。Owned。
-- KIT-043（新規）：Boottonation gk series オタマ。同じく山田工業所製ヘッド、鉄製、全長38cm、200g、アシグリップ対応。Owned。
-- KIT-044（新規）：DEVISE WORKS×WHAT WE WANT「MONDOKORO」。スパイスボトル4本収納可能なスパイスラック、木製彫刻＋真鍮パーツ4点、使用時W140×D140×H65mm、10mm棒ネジで三脚対応。所有している具体的なバリエーション（ナチュラルウッド版かMONDOKORO BLACK版か）は未確認のため、基本仕様のみ登録。Owned。
+- KIT-042（新規）：Boottonation gk series 中華鍋25cm。Owned。
+- KIT-043（新規）：Boottonation gk series オタマ。Owned。
+- KIT-044（新規）：DEVISE WORKS×WHAT WE WANT「MONDOKORO」。Owned。
 
 ---
 
 ## Version 2.2
 
-KIT-044（MONDOKORO）の仕様を訂正。プロジェクトオーナーより、所有しているのはナチュラルウォールナット版で、彫刻には黒インクが刷り込まれていることが判明。彫刻モチーフは黒魔術的な紋章（Occult Emblem）であることも確認。
+KIT-044（MONDOKORO）の仕様を訂正。所有しているのはナチュラルウォールナット版で、彫刻には黒インクが刷り込まれていることが判明。
 
 ### Changes
 
-- KIT-044：Material「Wood（Engraved）」→「Walnut（Engraved）」に訂正。
-- KIT-044：Graphic Attribute「Engraved Design」→「Occult Emblem（Engraved, Black Ink Inlay）」に訂正。
-- KIT-044：Color「Brown（Natural Wood）／Gold（Brass Parts）」→「Brown（Natural Walnut）」に整理（真鍮パーツの色はMaterial欄で扱うため、Colorからは重複記載を除去）。
+- KIT-044：Material・Graphic Attribute・Colorを訂正（Occult Emblem、Engraved Black Ink Inlay等）。
 
 ---
 
 ## Version 2.3
 
-所有物の洗い出し（Step 1）の一環として、皿として使用しているシェラカップ計13点（Snow Peak 7点、nodel design×solworks 1点、OLD MOUNTAIN 4点、Ænd×CALMA STORE 2点）を新規登録。
+所有物の洗い出し（Step 1）の一環として、皿として使用しているシェラカップ計13点を新規登録。
 
 ### Changes
 
-- KIT-045（新規）：Snow Peak ステンレスシェラカップ（ポリッシュ仕上げ）。310ml。Owned。
-- KIT-046（新規）：Snow Peak チタンシェラカップ、ランドステーション東京限定（パープル）。Owned。
-- KIT-047（新規）：Snow Peak チタンシェラカップ、ヘッドクウォーター限定。正確な限定カラーは未確認。Owned。
-- KIT-048（新規）：Snow Peak チタンシェラカップ、京都嵐山限定。正確な限定カラーは未確認。Owned。
-- KIT-049（新規）：Snow Peak チタンシェラカップ、福岡油山限定。正確な限定カラーは未確認。Owned。
-- KIT-050（新規）：Snow Peak チタンシェラカップ、ランドステーション白馬限定。正確な限定カラーは未確認。Owned。
-- KIT-051（新規）：Snow Peak チタンシェラカップ、FIELD SUITE SPA限定（酸化発色によるオレンジ〜ピンク、角度により変化）。Owned。
-- KIT-052（新規）：nodel design×solworks「White Shera Cup」。ホーロー（琺瑯）仕上げ、日本製ハンドメイド。Owned。
-- KIT-053（新規）：OLD MOUNTAIN「VINTAGE BLACK SIERRA」。ブラック、ヴィンテージスタイル。Owned。
-- KIT-054（新規）：OLD MOUNTAIN「RICECOOKER 480深型 STAINLESS」×2。480ml、炊飯用のRICE/WATERライン付き、本体のみ（蓋・グリップ・蒸し網別売）。Owned。
-- KIT-055（新規）：OLD MOUNTAIN「RICECOOKER 480深型 IRON」。同じく480ml炊飯用ライン付き。Owned。
-- KIT-056（新規）：Ænd×CALMA STORE「Sierra cup 480ml (Copper) RAVEN」。銅へら絞り＋槌目仕上げ、外側黒塗装（経年で銅の地色が見える仕様）、内側ニッケルメッキ。Owned。
-- KIT-057（新規）：Ænd×CALMA STORE「Sierra cup 480ml (Brass) RAVEN」。真鍮へら絞り＋槌目仕上げ、外側黒塗装、内側ニッケルメッキ。Owned。
+- KIT-045〜053（新規）：Snow Peak・nodel design×solworks・OLD MOUNTAINのシェラカップ9点。Owned。
+- KIT-054〜055（新規）：OLD MOUNTAIN RICECOOKER 480深型（STAINLESS／IRON）。Owned。
+- KIT-056〜057（新規）：Ænd×CALMA STORE RAVEN（Copper／Brass）。Owned。
 
 ---
 
 ## Version 2.4
 
-Version 2.3で「正確なカラー未確認」としていたSnow Peak限定チタンシェラカップ4点の色を確定。また、OLD MOUNTAIN RICECOOKER 480深型の構成を訂正（IRON・STAINLESSは素材違いの別個体であり、STAINLESSの数量は1、誤って記録していた「×2」は誤り）。あわせて、CALMA STORE購入予定のシエラカップ3点をEssentialとして新規登録。
+Version 2.3で「正確なカラー未確認」としていたSnow Peak限定チタンシェラカップ4点の色を確定。また、OLD MOUNTAIN RICECOOKER 480深型 STAINLESSの数量誤り（×2→正しくは1）を訂正。あわせて、CALMA STORE購入予定のシエラカップ3点をEssentialとして新規登録。
 
 ### Changes
 
-- KIT-047（ヘッドクウォーター限定）：Color「Store-Limited Color（Exact Shade Unconfirmed）」→「Pink Gold」に確定。
-- KIT-048（京都嵐山限定）：Color「Store-Limited Color（Exact Shade Unconfirmed）」→「Matcha Green」に確定。
-- KIT-049（福岡油山限定）：Color「Store-Limited Color（Exact Shade Unconfirmed）」→「Gold」に確定。
-- KIT-050（ランドステーション白馬限定）：Color「Store-Limited Color（Exact Shade Unconfirmed）」→「Emerald Green」に確定。
-- KIT-054（RICECOOKER 480深型 STAINLESS）：Quantity「2」を削除（アイアンとステンレスは別個体で、それぞれ1個ずつ所有。誤って記録していた数量2を訂正）。
-- KIT-058（新規）：Ænd×CALMA STORE「Sierra Cup 350ml HAMMER TONE (Silicon Fluorine Black)」。チタン、ハンマートーン仕上げ。購入予定・未所有。Essential。
-- KIT-059（新規）：Ænd×CALMA STORE「Sierra Cup 350ml HAMMER TONE (Satin Black)」。チタン、ハンマートーン仕上げ、サテン黒。購入予定・未所有。Essential。
-- KIT-060（新規）：Ænd×CALMA STORE「Sierra Cup 480ml (Stainless) 黒酸化塗装」。ステンレス、ハンマートーン仕上げ、黒酸化発色。購入予定・未所有。Essential。
+- KIT-047〜050：Color（Store-Limited Color未確認）をそれぞれPink Gold／Matcha Green／Gold／Emerald Greenに確定。
+- KIT-054：Quantity「2」を削除（誤記訂正）。
+- KIT-058〜060（新規）：Ænd×CALMA STORE Sierra Cup 350ml/480ml HAMMER TONE系3点。Essential。
+
+---
+
+## Version 2.5
+
+所有物の洗い出し（Step 1）の一環として、まな板・鍋つかみ・炊飯周辺・串・収納・ゴミ処理・鍋敷きに関する新規アイテム11件（うち枝番除く新規メイン7件：OKAMADON×2、キャンパーズミトン、串しぇら＆温度計セット、a384串、ANOBAフォールディングワイヤーバスケットM、Snow PeakキッチンメッシュケースS、Snow Peakガビングスタンド、および枝番Candidate3件：栓抜き候補、ANOBAマルチダストバケット候補、ANOBAフォールディングサイドテーブル候補、wanderout Wire Pot Stand候補）を新規登録。
+
+あわせて、プロジェクトオーナーの明示的な指示に基づき、KIT-001〜070の全件を「取得順の連番」から「用途別グルーピングによる連番」へ全面的に再採番した（Category Grouping Policyを新設）。この再採番はRegistry Rulesの「IDは原則として変更しない」の例外として、明示的な指示に基づく正式な再編成として記録する。
+
+### Changes（新規登録）
+
+- OKAMADON（ウォールナット／ヒノキ）：OLD MOUNTAIN製、シェラカップ炊飯用の釜蓋。KIT-051/052（RICECOOKER）と機能的に対応するが、専用品ではないため独立ID登録。Owned。
+- Snow Peak キャンパーズミトン：スエードレザー製、ロブスタークロー型、耐火性、1ペア。Owned。
+- CAMPOOPARTS 串しぇら＆温度計セット：ステンレス製プレート＋温度計、串揚げ用（シェラカップは自前使用）。Owned。
+- asimocrafts×サンゾー工務店 a384：ステンレス製BBQ串、耐熱シリコングリップ「チビグリ」、6本、複数色を1ID管理。Owned。
+- ANOBA フォールディングワイヤーバスケットM：IGT1ユニット対応、水切りカゴ兼用、ブラック。Owned。
+- Snow Peak キッチンメッシュケースS：ブラック。Owned。
+- Snow Peak ガビングスタンド：フリースタンド型ダストスタンド。Owned（買い替え検討中）。
+- 栓抜き・缶切り候補：ブランド・製品未定のCandidate空枠。
+- ANOBA BLACK EDITIONマルチダストバケット（SKU: AN118）：ガビングスタンドの買い替え候補。Candidate。
+- ANOBA フォールディングサイドテーブル（SKU: AN129）：マルチダストバケットと組み合わせて使用する前提の買い替え候補。Candidate。
+- wanderout×CINQ Wire Pot Stand - Silver：鍋敷き候補。Candidate。
+
+### Changes（全面再採番）
+
+Registry Rulesに「Category Grouping Policy」を新設し、以下13グループの用途別連番体系へ全件を再編した。
+
+1. 鍋・グリドル・焚火系調理器具（KIT-001〜007）
+2. バーナー・ストーブ（KIT-008〜013）
+3. 刃物・まな板（KIT-014〜017）
+4. 汎用調理小道具（KIT-018〜025）
+5. 食事用カトラリー（KIT-026〜031）
+6. 串・耐熱グローブ（KIT-032〜034）
+7. マグ・タンブラー（KIT-035〜040）
+8. 急須（KIT-041）
+9. シェラカップ・炊飯関連（KIT-042〜059）
+10. コーヒー器具（KIT-060〜062）
+11. 鍋敷き（KIT-063）
+12. 収納・スパイス（KIT-064〜069）
+13. ゴミ処理（KIT-070）
+
+#### 新旧ID対応表
+
+| 旧ID | 新ID | 旧ID | 新ID | 旧ID | 新ID |
+|---|---|---|---|---|---|
+| KIT-001 | KIT-001 | KIT-025 | KIT-041 | KIT-047 | KIT-044 |
+| KIT-002 | KIT-002 | KIT-026 | KIT-008 | KIT-048 | KIT-045 |
+| KIT-003 | KIT-003 | KIT-027 | KIT-009 | KIT-049 | KIT-046 |
+| KIT-004 | KIT-004 | KIT-028 | KIT-010 | KIT-050 | KIT-047 |
+| KIT-005 | KIT-016 | KIT-029 | KIT-011 | KIT-051 | KIT-048 |
+| KIT-006 | KIT-014 | KIT-030 | KIT-012 | KIT-052 | KIT-049 |
+| KIT-007a | KIT-015a | KIT-031 | KIT-013 | KIT-053 | KIT-050 |
+| KIT-007b | KIT-015b | KIT-032 | KIT-060 | KIT-054 | KIT-051 |
+| KIT-007c | KIT-015c | KIT-033 | KIT-061 | KIT-055 | KIT-052 |
+| KIT-008a | KIT-017a | KIT-034 | KIT-062 | KIT-056 | KIT-055 |
+| KIT-008b | KIT-017b | KIT-035 | KIT-005 | KIT-057 | KIT-056 |
+| KIT-008c | KIT-017c | KIT-036 | KIT-064 | KIT-058 | KIT-057 |
+| KIT-009 | KIT-018 | KIT-037 | KIT-065 | KIT-059 | KIT-058 |
+| KIT-010 | KIT-019 | KIT-038 | KIT-066 | KIT-060 | KIT-059 |
+| KIT-011 | KIT-020 | KIT-039 | KIT-022 | — | — |
+| KIT-012 | KIT-021 | KIT-040 | KIT-023 | — | — |
+| KIT-013 | KIT-026 | KIT-041 | KIT-024 | — | — |
+| KIT-014 | KIT-027 | KIT-042 | KIT-006 | — | — |
+| KIT-015 | KIT-028 | KIT-043 | KIT-007 | — | — |
+| KIT-016 | KIT-029 | KIT-044 | KIT-067 | — | — |
+| KIT-017 | KIT-030 | KIT-045 | KIT-042 | — | — |
+| KIT-018 | KIT-031 | KIT-046 | KIT-043 | — | — |
+| KIT-020a | KIT-036a | KIT-021a | KIT-037a | KIT-022a | KIT-038a |
+| KIT-023a | KIT-039a | — | — | — | — |
+
+内容（Brand/Product/Material/Color/Graphic Attribute/Industrial Attribute）は、Version 2.4時点の記録から一切変更していない。番号体系のみ、上記対応表に基づき再編した。
 
 ---
