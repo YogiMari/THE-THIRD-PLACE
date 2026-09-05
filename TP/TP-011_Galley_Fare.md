@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 2.3
+Version 2.4
 
 ---
 
@@ -1841,7 +1841,7 @@ Owned
 
 ### Color
 
-Store-Limited Color（Exact Shade Unconfirmed）
+Pink Gold
 
 ### Material
 
@@ -1873,7 +1873,7 @@ Owned
 
 ### Color
 
-Store-Limited Color（Exact Shade Unconfirmed）
+Matcha Green
 
 ### Material
 
@@ -1905,7 +1905,7 @@ Owned
 
 ### Color
 
-Store-Limited Color（Exact Shade Unconfirmed）
+Gold
 
 ### Material
 
@@ -1937,7 +1937,7 @@ Owned
 
 ### Color
 
-Store-Limited Color（Exact Shade Unconfirmed）
+Emerald Green
 
 ### Material
 
@@ -2063,10 +2063,6 @@ RICECOOKER 480深型 STAINLESS
 
 Owned
 
-### Quantity
-
-2
-
 ### Color
 
 Silver
@@ -2178,6 +2174,102 @@ None
 ### Industrial Attribute
 
 Sierra Cup（Used as Plate, RAVEN Series, 480ml, W95mm(Bottom)/W120mm(Top)×H60mm, 113g）
+
+---
+
+## KIT-058
+
+**Brand**
+
+Ænd × CALMA STORE
+
+**Product**
+
+Sierra Cup 350ml HAMMER TONE (Silicon Fluorine Black)
+
+**Status**
+
+Essential
+
+### Color
+
+Black（Silicon Fluorine Coating）
+
+### Material
+
+Titanium（Hand-Spun, Hammer-Tone Texture）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, 350ml, Purchase Decided, Not Yet Owned）
+
+---
+
+## KIT-059
+
+**Brand**
+
+Ænd × CALMA STORE
+
+**Product**
+
+Sierra Cup 350ml HAMMER TONE (Satin Black)
+
+**Status**
+
+Essential
+
+### Color
+
+Black（Satin Finish）
+
+### Material
+
+Titanium（Hand-Spun, Hammer-Tone Texture）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, 350ml, Purchase Decided, Not Yet Owned）
+
+---
+
+## KIT-060
+
+**Brand**
+
+Ænd × CALMA STORE
+
+**Product**
+
+Sierra Cup 480ml (Stainless) 黒酸化塗装
+
+**Status**
+
+Essential
+
+### Color
+
+Black（Black Oxide Coating）
+
+### Material
+
+Stainless Steel（Hand-Spun, Hammer-Tone Texture）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, 480ml, Purchase Decided, Not Yet Owned）
 
 ---
 
@@ -2414,5 +2506,22 @@ KIT-044（MONDOKORO）の仕様を訂正。プロジェクトオーナーより�
 - KIT-055（新規）：OLD MOUNTAIN「RICECOOKER 480深型 IRON」。同じく480ml炊飯用ライン付き。Owned。
 - KIT-056（新規）：Ænd×CALMA STORE「Sierra cup 480ml (Copper) RAVEN」。銅へら絞り＋槌目仕上げ、外側黒塗装（経年で銅の地色が見える仕様）、内側ニッケルメッキ。Owned。
 - KIT-057（新規）：Ænd×CALMA STORE「Sierra cup 480ml (Brass) RAVEN」。真鍮へら絞り＋槌目仕上げ、外側黒塗装、内側ニッケルメッキ。Owned。
+
+---
+
+## Version 2.4
+
+Version 2.3で「正確なカラー未確認」としていたSnow Peak限定チタンシェラカップ4点の色を確定。また、OLD MOUNTAIN RICECOOKER 480深型の構成を訂正（IRON・STAINLESSは素材違いの別個体であり、STAINLESSの数量は1、誤って記録していた「×2」は誤り）。あわせて、CALMA STORE購入予定のシエラカップ3点をEssentialとして新規登録。
+
+### Changes
+
+- KIT-047（ヘッドクウォーター限定）：Color「Store-Limited Color（Exact Shade Unconfirmed）」→「Pink Gold」に確定。
+- KIT-048（京都嵐山限定）：Color「Store-Limited Color（Exact Shade Unconfirmed）」→「Matcha Green」に確定。
+- KIT-049（福岡油山限定）：Color「Store-Limited Color（Exact Shade Unconfirmed）」→「Gold」に確定。
+- KIT-050（ランドステーション白馬限定）：Color「Store-Limited Color（Exact Shade Unconfirmed）」→「Emerald Green」に確定。
+- KIT-054（RICECOOKER 480深型 STAINLESS）：Quantity「2」を削除（アイアンとステンレスは別個体で、それぞれ1個ずつ所有。誤って記録していた数量2を訂正）。
+- KIT-058（新規）：Ænd×CALMA STORE「Sierra Cup 350ml HAMMER TONE (Silicon Fluorine Black)」。チタン、ハンマートーン仕上げ。購入予定・未所有。Essential。
+- KIT-059（新規）：Ænd×CALMA STORE「Sierra Cup 350ml HAMMER TONE (Satin Black)」。チタン、ハンマートーン仕上げ、サテン黒。購入予定・未所有。Essential。
+- KIT-060（新規）：Ænd×CALMA STORE「Sierra Cup 480ml (Stainless) 黒酸化塗装」。ステンレス、ハンマートーン仕上げ、黒酸化発色。購入予定・未所有。Essential。
 
 ---
