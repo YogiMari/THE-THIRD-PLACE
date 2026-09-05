@@ -692,7 +692,7 @@ Knowledge Documents
 　・Discovery  
 　・Chronicle  
 　・Beyond Journey  
-　・Cultural Reference  
+　・Cultural Pantheon  
   
 　　　　↓  
   
@@ -1525,7 +1525,7 @@ TM/
     TM-001 Heritage Chronicle  
     TM-002 Atelier Discovery  
     TM-003 Beyond Journey  
-    TM-004 Cultural Reference  
+    TM-004 Cultural Pantheon  
     TM-005 Search Doctrine  
   
 assets/  
