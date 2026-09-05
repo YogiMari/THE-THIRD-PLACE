@@ -1,4 +1,3 @@
-PX-001 Documentation System
 # PX-001 Documentation System
 
 **Document ID**: PX-001  
@@ -667,7 +666,7 @@ Documentation System を更新せずに構造変更を行ってはならない�
 - TM-001 Heritage Chronicle
 - TM-002 Atelier Discovery
 - TM-003 Beyond Journey
-- TM-004 Cultural Reference
+- TM-004 Cultural Pantheon
 
 ---
 
