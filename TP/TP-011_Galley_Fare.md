@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 2.2
+Version 2.3
 
 ---
 
@@ -1761,6 +1761,426 @@ Spice Bottle Rack（Holds 4 Spice Bottles, Used Size W140×D140×H65mm, 10mm Rod
 
 ---
 
+## KIT-045
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+ステンレスシェラカップ
+
+**Status**
+
+Owned
+
+### Color
+
+Silver（Polished）
+
+### Material
+
+Stainless Steel
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, 310ml, Interior Measurement Markings）
+
+---
+
+## KIT-046
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタンシェラカップ（ランドステーション東京限定）
+
+**Status**
+
+Owned
+
+### Color
+
+Purple
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
+
+---
+
+## KIT-047
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタンシェラカップ（ヘッドクウォーター限定）
+
+**Status**
+
+Owned
+
+### Color
+
+Store-Limited Color（Exact Shade Unconfirmed）
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
+
+---
+
+## KIT-048
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタンシェラカップ（京都嵐山限定）
+
+**Status**
+
+Owned
+
+### Color
+
+Store-Limited Color（Exact Shade Unconfirmed）
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
+
+---
+
+## KIT-049
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタンシェラカップ（福岡油山限定）
+
+**Status**
+
+Owned
+
+### Color
+
+Store-Limited Color（Exact Shade Unconfirmed）
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
+
+---
+
+## KIT-050
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタンシェラカップ（ランドステーション白馬限定）
+
+**Status**
+
+Owned
+
+### Color
+
+Store-Limited Color（Exact Shade Unconfirmed）
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
+
+---
+
+## KIT-051
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+チタンシェラカップ（FIELD SUITE SPA限定）
+
+**Status**
+
+Owned
+
+### Color
+
+Orange／Pink（Oxidation Color, Angle-Dependent Shift）
+
+### Material
+
+Titanium
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Facility-Limited Color, 310ml, φ120×45mm, ~37g）
+
+---
+
+## KIT-052
+
+**Brand**
+
+nodel design × solworks
+
+**Product**
+
+White Shera Cup
+
+**Status**
+
+Owned
+
+### Color
+
+White
+
+### Material
+
+Enamel（Steel Base, Glass Coating）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Handmade in Japan, Enamel Finish）
+
+---
+
+## KIT-053
+
+**Brand**
+
+OLD MOUNTAIN
+
+**Product**
+
+VINTAGE BLACK SIERRA
+
+**Status**
+
+Owned
+
+### Color
+
+Black
+
+### Material
+
+Steel（Vintage-Style Finish）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Vintage-Inspired Design）
+
+---
+
+## KIT-054
+
+**Brand**
+
+OLD MOUNTAIN
+
+**Product**
+
+RICECOOKER 480深型 STAINLESS
+
+**Status**
+
+Owned
+
+### Quantity
+
+2
+
+### Color
+
+Silver
+
+### Material
+
+Stainless Steel
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Deep Type, 480ml, Rice/Water Line Markings for Rice Cooking, Body Only — No Lid/Grip/Steamer Rack）
+
+---
+
+## KIT-055
+
+**Brand**
+
+OLD MOUNTAIN
+
+**Product**
+
+RICECOOKER 480深型 IRON
+
+**Status**
+
+Owned
+
+### Color
+
+Black／Dark Gray（Raw Iron）
+
+### Material
+
+Iron
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, Deep Type, 480ml, Rice/Water Line Markings for Rice Cooking, Body Only）
+
+---
+
+## KIT-056
+
+**Brand**
+
+Ænd × CALMA STORE
+
+**Product**
+
+Sierra cup 480ml (Copper) RAVEN
+
+**Status**
+
+Owned
+
+### Color
+
+Black（Exterior, Painted）／Copper（Wear-Through Patina Visible Over Time）
+
+### Material
+
+Copper（Hand-Spun, Hammer-Tone Texture）／Nickel Plating（Interior）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, RAVEN Series, 480ml, W95mm(Bottom)/W120mm(Top)×H60mm, 113g）
+
+---
+
+## KIT-057
+
+**Brand**
+
+Ænd × CALMA STORE
+
+**Product**
+
+Sierra cup 480ml (Brass) RAVEN
+
+**Status**
+
+Owned
+
+### Color
+
+Black（Exterior, Painted）／Brass（Wear-Through Patina Visible Over Time）
+
+### Material
+
+Brass（Hand-Spun, Hammer-Tone Texture）／Nickel Plating（Interior）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Sierra Cup（Used as Plate, RAVEN Series, 480ml, W95mm(Bottom)/W120mm(Top)×H60mm, 113g）
+
+---
+
 # Single Source of Truth
 
 TP-011 Galley Fareは、キッチン機材（調理器具・刃物・調理小物）に関する唯一のMaster Databaseである。
@@ -1972,5 +2392,27 @@ KIT-044（MONDOKORO）の仕様を訂正。プロジェクトオーナーより�
 - KIT-044：Material「Wood（Engraved）」→「Walnut（Engraved）」に訂正。
 - KIT-044：Graphic Attribute「Engraved Design」→「Occult Emblem（Engraved, Black Ink Inlay）」に訂正。
 - KIT-044：Color「Brown（Natural Wood）／Gold（Brass Parts）」→「Brown（Natural Walnut）」に整理（真鍮パーツの色はMaterial欄で扱うため、Colorからは重複記載を除去）。
+
+---
+
+## Version 2.3
+
+所有物の洗い出し（Step 1）の一環として、皿として使用しているシェラカップ計13点（Snow Peak 7点、nodel design×solworks 1点、OLD MOUNTAIN 4点、Ænd×CALMA STORE 2点）を新規登録。
+
+### Changes
+
+- KIT-045（新規）：Snow Peak ステンレスシェラカップ（ポリッシュ仕上げ）。310ml。Owned。
+- KIT-046（新規）：Snow Peak チタンシェラカップ、ランドステーション東京限定（パープル）。Owned。
+- KIT-047（新規）：Snow Peak チタンシェラカップ、ヘッドクウォーター限定。正確な限定カラーは未確認。Owned。
+- KIT-048（新規）：Snow Peak チタンシェラカップ、京都嵐山限定。正確な限定カラーは未確認。Owned。
+- KIT-049（新規）：Snow Peak チタンシェラカップ、福岡油山限定。正確な限定カラーは未確認。Owned。
+- KIT-050（新規）：Snow Peak チタンシェラカップ、ランドステーション白馬限定。正確な限定カラーは未確認。Owned。
+- KIT-051（新規）：Snow Peak チタンシェラカップ、FIELD SUITE SPA限定（酸化発色によるオレンジ〜ピンク、角度により変化）。Owned。
+- KIT-052（新規）：nodel design×solworks「White Shera Cup」。ホーロー（琺瑯）仕上げ、日本製ハンドメイド。Owned。
+- KIT-053（新規）：OLD MOUNTAIN「VINTAGE BLACK SIERRA」。ブラック、ヴィンテージスタイル。Owned。
+- KIT-054（新規）：OLD MOUNTAIN「RICECOOKER 480深型 STAINLESS」×2。480ml、炊飯用のRICE/WATERライン付き、本体のみ（蓋・グリップ・蒸し網別売）。Owned。
+- KIT-055（新規）：OLD MOUNTAIN「RICECOOKER 480深型 IRON」。同じく480ml炊飯用ライン付き。Owned。
+- KIT-056（新規）：Ænd×CALMA STORE「Sierra cup 480ml (Copper) RAVEN」。銅へら絞り＋槌目仕上げ、外側黒塗装（経年で銅の地色が見える仕様）、内側ニッケルメッキ。Owned。
+- KIT-057（新規）：Ænd×CALMA STORE「Sierra cup 480ml (Brass) RAVEN」。真鍮へら絞り＋槌目仕上げ、外側黒塗装、内側ニッケルメッキ。Owned。
 
 ---
