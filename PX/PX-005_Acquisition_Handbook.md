@@ -11,7 +11,7 @@ Acquisition Handbook
   
 **Version**  
   
-1.8  
+1.9  
   
 **Status**  
   
@@ -555,41 +555,6 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ---  
   
-## Product 12  
-  
-### 9Barista Magnetic Dosing Funnel  
-  
-| Item | Details |  
-|---|---|  
-| Manufacturer | 9Barista |  
-| Model | 53mm Magnetic Dosing Funnel |  
-| Current Purchase Model | 53mm Magnetic Dosing Funnel |  
-| Category | Dosing Funnel |  
-| Acquisition Status | Purchase Required |  
-| Quantity | 1 |  
-| Purchase Type | Official Japan Checkout |  
-| Primary Purchase Source | 9Barista Official Store |  
-| Purchase URL | Official Store |  
-| Japan Shipping | Available |  
-| Warranty | Manufacturer Policy |  
-| Current Product Price | ¥7,900 |  
-| Estimated Shipping | Included / checkout |  
-| Estimated Import Tax / Charges | Included / checkout |  
-| Estimated Total Cost | ¥7,900 |  
-| Currency | JPY |  
-| Purchase Priority | ★★★★★ |  
-  
-### Notes  
-  
-* Official 9Barista accessory.  
-* 53 mm specification.  
-* Confirmed Workflow component.  
-* Blind Shaker → Magnetic Dosing Funnel → WDT.  
-* Third-party dosing funnel is rejected.  
-* Combine with 9Barista machine purchase where practical.  
-  
----  
-  
 ## Product 13  
   
 ### 9Barista Puck Screen  
@@ -1124,6 +1089,29 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ---  
   
+## Included 04 — 9Barista Magnetic Dosing Funnel  
+  
+| Item | Details |  
+|---|---|  
+| Manufacturer | 9Barista |  
+| Model | 53mm Magnetic Dosing Funnel |  
+| Category | Dosing Funnel |  
+| Acquisition Status | Included |  
+| Quantity | 1 |  
+| Purchase Type | Included with selected 9Barista Mk.2 Pro configuration |  
+| Purchase Price | Included |  
+| Current Standalone Reference Price | ¥7,900 |  
+| Additional Purchase | Not Required |  
+  
+### Notes  
+  
+* Per PX-004 (Ver.2.9+), this is a standard 9Barista Mk.2 Pro accessory and is not managed as an independent Equipment / Acquisition Item.  
+* Confirmed Workflow component: Blind Shaker → Magnetic Dosing Funnel → WDT.  
+* Third-party dosing funnel is rejected.  
+* Do not purchase separately.  
+  
+---  
+  
 # Coffee System Water Configuration  
   
 | Product | Quantity | Capacity | Estimated Acquisition Cost | Acquisition Status |  
@@ -1595,7 +1583,6 @@ They must not be duplicated through separate purchases unless a future PX-004 de
 | ★★★★★ | MantaBrew WeighMaster Ultra | 1 | ¥40,000〜45,000 | Purchase Required |  
 | ★★★★★ | Weber Workshops Bean Cellar Bulk | 1 | ¥38,000〜42,000 | Purchase Required |  
 | ★★★★★ | Weber Workshops Blind Shaker Onyx | 1 | ¥20,000〜24,000 | Purchase Required |  
-| ★★★★★ | 9Barista Magnetic Dosing Funnel | 1 | ¥7,900 | Purchase Required |  
 | ★★★★★ | Normcore Planetary WDT Tool 54mm | 1 | ¥12,000〜18,000 | Purchase Required |  
 | ★★★★★ | Pullman Chisel Redistribution Tool Wood 53.3mm | 1 | ¥45,000〜50,000 | Purchase Required |  
 | ★★★★★ | The Force Tamper 53mm | 1 | ¥40,000〜47,000 | Purchase Required |  
@@ -1643,10 +1630,10 @@ They must not be duplicated through separate purchases unless a future PX-004 de
 ## Group A — 9Barista  
   
 * 9Barista Mk.2 Pro  
-* 9Barista Magnetic Dosing Funnel  
 * 9Barista Puck Screen  
 * Included IMS Precision Basket  
 * Included Stainless Steel Basket Cap Pro  
+* Included 9Barista Magnetic Dosing Funnel  
   
 ### Principle  
   
@@ -1762,12 +1749,12 @@ The following is a conservative planning estimate for acquiring all Purchase Req
   
 | Group | Estimated Cost |  
 |---|---:|  
-| Core Espresso System | ¥412,400〜467,400 |  
+| Core Espresso System | ¥404,500〜459,500 |  
 | Station / Workflow | ¥58,000〜78,000 |  
 | Latte System | ¥102,000〜127,500 |  
 | Espresso Glass / Transport | ¥25,480〜31,480 |  
 | Dedicated Water | ¥33,790〜41,790 |  
-| **Estimated Total** | **¥631,670〜746,170** |  
+| **Estimated Total** | **¥623,770〜738,270** |  
   
 ### Budget Policy  
   
@@ -1849,7 +1836,7 @@ The Coffee System acquisition is considered complete only when:
 | 09 | Normcore RDT Spray Bottle | 1 | ¥2,000〜4,000 | Purchase Required |  
 | 10 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm | 1 | ¥16,000〜22,000 | Purchase Required |  
 | 11 | Weber Workshops Blind Shaker Onyx | 1 | ¥20,000〜24,000 | Purchase Required |  
-| 12 | 9Barista Magnetic Dosing Funnel | 1 | ¥7,900 | Purchase Required |  
+| 12 | 9Barista Magnetic Dosing Funnel | 1 | Included | Included |  
 | 13 | 9Barista Puck Screen | 1 | ¥4,000〜7,000 | Purchase Required |  
 | 14 | Weber Workshops Puck Screen Stand | 1 | ¥15,000〜22,000 | Purchase Required |  
 | 15 | ALM KOPi Z1 Mini Steamer | 1 | ¥70,000〜82,000 | Purchase Required |  
@@ -1920,6 +1907,7 @@ Important synchronization confirmations:
 | 1.6 | 2026-08-21 | Full synchronization against PX-004 v2.7. All PX-004 Confirmed Equipment restored to the acquisition registry. 9Barista Puck Screen and Weber Workshops Puck Screen Stand restored. |  
 | 1.7 | 2026-08-21 | Current acquisition information review. Official current prices updated where verified. Successor-model relationships identified but acquisition registry retained conservative PX-004 naming. |  
 | 1.8 | 2026-08-21 | Acquisition policy revised. Current successor models are now adopted as PX-005 purchase targets where clearly established. All active Equipment receives a current price or realistic acquisition estimate. Overseas products receive conservative Japan-arrival cost estimates. LAGOM mini 2 and MantaBrew WeighMaster Ultra adopted as current acquisition models. Pullman Chisel updated to current 53.3 mm Wood configuration. KRUVE PROPEL commercial package quantity distinguished from PX-004 system allocation. Estimated complete acquisition budget added. |  
+| 1.9 | 2026-09-07 | 9Barista Magnetic Dosing Funnelを、PX-004 Ver.2.9で明確化された「Mk.2 Pro標準付属品」の扱いへ整合。独立Purchase Required項目（旧Product 12）からIncluded Equipment（Included 04）へ移動し、Priority表・Purchase Grouping・Final Inventory・Estimated Acquisition Budgetを整合させた（Core Espresso System見積を¥7,900減額）。 |  
   
 ---  
   
