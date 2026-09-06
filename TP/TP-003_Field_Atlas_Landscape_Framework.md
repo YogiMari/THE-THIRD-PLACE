@@ -1,6 +1,6 @@
 # TP-003
 # Field Atlas Landscape Framework
-## Ver.1.8
+## Ver.1.9
 
 ---
 
@@ -525,9 +525,13 @@ THE THIRD PLACE Core Documents の一つとして、
 - TP-001 THE THIRD PLACE Constitution
 - TP-002 THE THIRD PLACE Design Bible
 - TP-004 Equipment Registry Object Reference
-- TP-005 Price Master
-- TP-006 Storage Layout Master
-- TP-007 Site Layout Master
+- TP-005 Acquisition Strategy
+- TP-006 Foundation Compass
+- TP-007 Habitat Architecture
+- TP-008 Affinity Lexicon
+- TP-009 Aesthetic Grammar
+- TP-010 Storage Blueprint
+- TP-011 Galley Fare
 
 Field Atlas は、
 
@@ -558,3 +562,4 @@ THE THIRD PLACE を実現するための
 | 1.6 | 2026-09-02 | 橘ふれあい公園（大子広域公園グリンヴィラの一つ下）・成田ゆめ牧場（TACO GLAMPの一つ下）・無印良品カンパーニャ嬬恋（那須プレリーの一つ上）・伊豆キャンファーム（シャトレーゼ小海の一つ下）・ラスタキャンプ白州（ウェルキャンプ西丹沢の一つ上）を再配置。 |
 | 1.7 | 2026-09-02 | 小田原フォレストキャンプ場をふもとっぱらとTACO GLAMP THE MEXICOの間（87.1暫定）へ再配置。未訪問12件について、アーリーチェックイン可否を公式サイトに加え予約サイト（なっぷ等）・第三者レビュー・口コミで裏付け確認し、確認根拠をIdentityコメントに明記。区画面積が確認できたフィールド（moss camp field 120㎡、JUTE CAMP FIELD 約100〜140㎡、大子広域公園グリンヴィラ 100㎡、富士高原トマトフィールド 185〜277㎡、小田原フォレストキャンプ場 80㎡）にTHE THIRD PLACE基準（車込み100㎡／車別80㎡）との対比を追記。Hillbilly Campingの区画面積を、公表値未確認だった「80㎡」から実測値「約8×8.5m＝68㎡（駐車スペース別）」へ訂正。 |
 | 1.8 | 2026-09-02 | 未訪問12件の移動時間を、東京都江戸川区小岩を起点とした実測値へ更新（Mariの実測報告に基づく）。KARUIZAWA CAMP GOLD 4h（変更なし）、Hillbilly Camping 4h→2.5h、moss camp field 2.5h→4h、JUTE CAMP FIELD 2h→3.5h、大子広域公園グリンヴィラ 3h→3.5h、富士高原トマトフィールド 3.5h→4h、ふもとっぱら 3.5h→4h、小田原フォレストキャンプ場 2.5h→3.5h、CAMPGROUND BREEZE TATEYAMA 2.5h（変更なし）、TACO GLAMP THE MEXICO 2h（変更なし）、朝霧ジャンボリーオートキャンプ場 3.5h→4h、成田ゆめ牧場 2h→1.5h。これにより未訪問12件全ての移動時間が小岩起点の実測値へ統一された。 |
+| 1.9 | 2026-09-07 | Relationship to Other Core Documentsの参照リストを現行の文書体系へ更新。TP-005〜007の名称誤り（Price Master／Storage Layout Master／Site Layout Master）を、正式名称（Acquisition Strategy／Foundation Compass／Habitat Architecture）へ修正し、欠落していたTP-008〜011（Affinity Lexicon／Aesthetic Grammar／Storage Blueprint／Galley Fare）を追加。 |
