@@ -4,7 +4,7 @@ PX-002 Project Ledger
 **Document ID**: PX-002  
 **Title**: Project Ledger  
 **Series**: PX – Project  
-**Version**: 3.0  
+**Version**: 3.1  
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -57,14 +57,29 @@ PX-002 Project Ledger
 
 | ID | Document |
 |----|----------|
+| TP-000 | THE THIRD PLACE Original |
 | TP-001 | Constitution |
 | TP-002 | Design Bible |
+| TP-003 | Field Atlas Landscape Framework |
 | TP-004 | Equipment Registry Object Reference |
 | TP-005 | Acquisition Strategy |
+| TP-006 | Foundation Compass |
 | TP-007 | Habitat Architecture |
+| TP-008 | Affinity Lexicon |
+| TP-009 | Aesthetic Grammar |
+| TP-010 | Storage Blueprint |
+| TP-011 | Galley Fare |
+| PX-001 | Documentation System |
+| PX-002 | Project Ledger |
+| PX-003 | Vigil Protocol |
+| PX-004 | Barista Codex |
+| PX-005 | Acquisition Handbook |
+| PX-006 | Brew Care |
 | TM-001 | Heritage Chronicle |
 | TM-002 | Atelier Discovery |
-| PX-001 | Documentation System |
+| TM-003 | Beyond Journey |
+| TM-004 | Cultural Pantheon |
+| TM-005 | Search Doctrine |
 
 ---
 
@@ -72,9 +87,9 @@ PX-002 Project Ledger
 
 | Series | Documents | Status |
 |:------:|:---------:|:------:|
-| TP | 10 | ✓ |
-| TM | 4 | ✓ |
-| PX | 2 | ✓ |
+| TP | 12 | ✓ |
+| TM | 5 | ✓ |
+| PX | 6 | ✓ |
 
 ---
 
@@ -91,6 +106,7 @@ PX-002 Project Ledger
 | Version | Date | Description |
 |----------|------|-------------|
 | 3.0 | 2026-07-15 | Simplified for long-term operation. Optimized for conversation search and daily maintenance. |
+| 3.1 | 2026-09-07 | Project Overview（文書数）とQuick Accessを実際のRepository構成（TP12／TM5／PX6、全23文書）へ整合。 |
 
 ---
 
