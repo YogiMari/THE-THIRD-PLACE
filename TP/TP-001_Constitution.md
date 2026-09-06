@@ -2,7 +2,7 @@ TP-001 THE THIRD PLACE Constitution
   
   
 # THE THIRD PLACE Constitution  
-## Ver.4.1  
+## Ver.4.2  
   
 ---  
   
@@ -1519,7 +1519,9 @@ PX/
     PX-001 Documentation System  
     PX-002 Project Ledger  
     PX-003 Vigil Protocol  
-    PX-004 Acquisition Handbook  
+    PX-004 Barista Codex  
+    PX-005 Acquisition Handbook  
+    PX-006 Brew Care  
   
 TM/  
     TM-001 Heritage Chronicle  
@@ -1630,6 +1632,18 @@ Master Document一覧（§13.5）、
 Repository Architecture（Appendix B）を、  
   
 それぞれ更新した。  
+  
+---    
+
+### Ver.4.2  
+  
+Appendix B Repository Architectureの PX ディレクトリ構成を実際のRepositoryへ整合。  
+  
+PX-004を Acquisition Handbook から Barista Codex へ訂正し、  
+  
+実在する PX-005 Acquisition Handbook、  
+  
+PX-006 Brew Care を新規追加した。  
   
 ---  
   
