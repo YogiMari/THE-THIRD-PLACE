@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.7  
+Version 7.8  
   
 ---  
   
@@ -1484,7 +1484,7 @@ nodel design
 
 **Status**  
 
-Candidate  
+Upgrade  
 
 **Parent**  
 
@@ -4880,5 +4880,15 @@ LGT-032 (OTACHIDAI BLACK) specification corrected. Project owner confirmed the b
 - LGT-032: Material corrected from "Wood, Black-Painted (Engraved with Gold Ink) / Brass (Pole)" to "Walnut, Black-Painted (Engraved) / Brass (Pole)."  
 - LGT-032: Graphic Attribute corrected from "Engraved Design (Gold Ink Inlay)" to "Occult Emblem (Engraved, Gold Ink Inlay)," aligning with the same Graphic Attribute vocabulary used for FUR-005/010 (HIJIWARU) and FUR-013 (EXTENMON TABLE).  
 - LGT-032: Color simplified to "Black (Body) / Gold (Brass Pole)," removing the redundant "Engraving Ink Inlay" sub-note now captured under Graphic Attribute.  
+
+---  
+
+## Version 7.8  
+
+LGT-022 (38-kT miyabi Wood, Hinoki) Status corrected per direct instruction from the project owner.
+
+### Changes  
+
+- LGT-022: Status corrected from "Candidate" to "Upgrade" (child of LGT-016, 3ndelier Blade).  
 
 ---  
