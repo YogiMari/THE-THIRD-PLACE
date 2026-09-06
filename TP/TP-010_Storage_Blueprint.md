@@ -1,6 +1,6 @@
-TP-010 Storage Blueprint Ver.2.1
+TP-010 Storage Blueprint Ver.2.2
 # TP-010 Storage Blueprint
-## Ver.2.1
+## Ver.2.2
 
 Status : Planning
 
@@ -30,6 +30,7 @@ Storage is an operational system.
 
 | TP | Document |
 |---|---|
+| TP-000 | THE THIRD PLACE Original |
 | TP-001 | THE THIRD PLACE Constitution |
 | TP-002 | Design Bible |
 | TP-003 | Field Atlas Landscape Framework |
@@ -40,6 +41,7 @@ Storage is an operational system.
 | TP-008 | Affinity Lexicon |
 | TP-009 | Aesthetic Grammar |
 | TP-010 | Storage Blueprint |
+| TP-011 | Galley Fare |
 
 ---
 
@@ -649,7 +651,7 @@ TP-010 Storage Blueprint
 
 ## Version
 
-Ver.2.1
+Ver.2.2
 
 ---
 
@@ -664,6 +666,7 @@ Planning
 - TP-001 THE THIRD PLACE Constitution
 - TP-002 Design Bible
 - TP-004 Equipment Registry Object Reference
+- TP-006 Foundation Compass
 - TP-007 Habitat Architecture
 
 ---
