@@ -3053,25 +3053,25 @@ Equipment Registry Object Reference は、
 
 ---
 
-Price Master は、
+Acquisition Strategy は、
 
 購入判断を管理する。
 
 ---
 
-Storage Layout Master は、
+Storage Blueprint は、
 
 運用を管理する。
 
 ---
 
-Design Chronicle は、
+Heritage Chronicle は、
 
 時間を記録する。
 
 ---
 
-Discovery は、
+Atelier Discovery は、
 
 発見を記録する。
 
