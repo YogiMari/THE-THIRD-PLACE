@@ -4885,10 +4885,10 @@ LGT-032 (OTACHIDAI BLACK) specification corrected. Project owner confirmed the b
 
 ## Version 7.8  
 
-LGT-022 (38-kT miyabi Wood, Hinoki) Status corrected per direct instruction from the project owner.
+Status change per direct instruction from the project owner: LGT-022 (38-kT miyabi Wood, Hinoki) reclassified from Candidate to Upgrade.
 
 ### Changes  
 
-- LGT-022: Status corrected from "Candidate" to "Upgrade" (child of LGT-016, 3ndelier Blade).  
+- LGT-022: Status corrected from Candidate to Upgrade.  
 
 ---  
