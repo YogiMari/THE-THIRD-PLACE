@@ -1,7 +1,7 @@
 TP-006 Foundation Compass
 # TP-006
 # Foundation Compass
-## Ver.1.0
+## Ver.1.1
 
 ---
 
@@ -374,8 +374,10 @@ THE THIRD PLACE Core Documents の中で、
 | TP-005 Acquisition Strategy | Equipment を迎える戦略 |
 | **TP-006 Foundation Compass** | Foundation を構成・維持するための指針 |
 | TP-007 Habitat Architecture | フィールドで完成する暮らしの設計 |
-| TP-008 Discovery | 調査・発見 |
-| TP-009 Affinity Catalog | 美意識・価値観・親和性 |
+| TP-008 Affinity Lexicon | 好み・美意識・親和性の語彙 |
+| TP-009 Aesthetic Grammar | 美しさを構成する法則 |
+| TP-010 Storage Blueprint | 収納設計・運用 |
+| TP-011 Galley Fare | キッチン機材の独立マスターデータ |
 
 Foundation Compass は、
 
