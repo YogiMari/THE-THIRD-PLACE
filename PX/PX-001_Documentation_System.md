@@ -3,7 +3,7 @@
 **Document ID**: PX-001  
 **Title**: Documentation System  
 **Series**: PX – Project  
-**Version**: 1.0  
+**Version**: 1.1  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -15,6 +15,7 @@
 | Version | Date | Description |
 |----------|------|-------------|
 | 1.0 | 2026-07-15 | Initial release. Documentation System migrated into the PX Series as the official operational standard for THE THIRD PLACE Project. |
+| 1.1 | 2026-09-07 | Document Series一覧(§8)とReferences(§24)を実際のRepository構成へ整合。TP-010・TP-011、TM-005、PX-003〜PX-006を追加。 |
 
 ---
 
@@ -215,6 +216,8 @@ Design Documents
 - TP-007
 - TP-008
 - TP-009
+- TP-010
+- TP-011
 
 ---
 
@@ -226,6 +229,7 @@ Media Documents
 - TM-002
 - TM-003
 - TM-004
+- TM-005
 
 ---
 
@@ -235,13 +239,13 @@ Project Documents
 
 - PX-001 Documentation System
 - PX-002 Project Ledger
+- PX-003 Vigil Protocol
+- PX-004 Barista Codex
+- PX-005 Acquisition Handbook
+- PX-006 Brew Care
 
 Reserved
 
-- PX-003 Workflow Standard
-- PX-004 Metadata Standard
-- PX-005 Change Log
-- PX-006 Release Notes
 - PX-007 Reserved
 
 # 9. Document Classification
@@ -649,6 +653,7 @@ Documentation System を更新せずに構造変更を行ってはならない�
 
 ### TP Series
 
+- TP-000 THE THIRD PLACE Original
 - TP-001 Constitution
 - TP-002 Design Bible
 - TP-003 Field Atlas Landscape Framework
@@ -658,6 +663,8 @@ Documentation System を更新せずに構造変更を行ってはならない�
 - TP-007 Habitat Architecture
 - TP-008 Affinity Lexicon
 - TP-009 Aesthetic Grammar
+- TP-010 Storage Blueprint
+- TP-011 Galley Fare
 
 ---
 
@@ -667,6 +674,7 @@ Documentation System を更新せずに構造変更を行ってはならない�
 - TM-002 Atelier Discovery
 - TM-003 Beyond Journey
 - TM-004 Cultural Pantheon
+- TM-005 Search Doctrine
 
 ---
 
@@ -674,6 +682,10 @@ Documentation System を更新せずに構造変更を行ってはならない�
 
 - PX-001 Documentation System
 - PX-002 Project Ledger
+- PX-003 Vigil Protocol
+- PX-004 Barista Codex
+- PX-005 Acquisition Handbook
+- PX-006 Brew Care
 
 ---
 
