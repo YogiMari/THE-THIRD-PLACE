@@ -1,6 +1,6 @@
 TM-004 Cultural Pantheon
 # TM-004 Cultural Pantheon
-## Ver.1.1
+## Ver.1.2
 
 *(旧題: Cultural Reference。Ver.1.1にて "Cultural Pantheon" へ改題。評価基準・Tier構成・本文内容に変更は無い。)*
 
@@ -2426,7 +2426,9 @@ Butterfly Tableなど、
 
 Bridge Systemは、
 
-ProjectにおけるLiving Zoneの中核を構成する。
+Projectにおける、
+
+Living Zoneの中核を構成する。
 
 家具、
 
@@ -2814,7 +2816,7 @@ THE THIRD PLACEでは、
 
 ### THE THIRD PLACE
 
-ProjectではCONPE10を採用。
+Projectでは CONPE10を採用。
 
 Lighting Zoneにおける、
 
@@ -3987,7 +3989,7 @@ THE THIRD PLACEという文化である。
 
 **End of Document**
 
-**TM-004 Cultural Pantheon Ver.1.1**
+**TM-004 Cultural Pantheon Ver.1.2**
 
 # Appendix
 
@@ -4099,6 +4101,7 @@ THE THIRD PLACEでは、
 
 - TP-002 Design Bible
 - TP-004 Equipment Registry
+- TP-005 Acquisition Strategy
 - TP-008 Affinity Lexicon
 - TP-009 Aesthetic Grammar
 
@@ -4142,7 +4145,7 @@ Projectの文化的資産として蓄積していく。
 
 **TM-004 Cultural Pantheon**
 
-**Version 1.1**
+**Version 1.2**
 
 **Status : First Edition**
 
@@ -4161,4 +4164,4 @@ THE THIRD PLACEが歩み続ける文化の地図として、
 
 **End of Document**
 
-**TM-004 Cultural Pantheon Ver.1.1**
+**TM-004 Cultural Pantheon Ver.1.2**
