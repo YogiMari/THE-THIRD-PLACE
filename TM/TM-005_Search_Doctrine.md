@@ -3,9 +3,18 @@ TM-005 Search Doctrine
 ### THE THIRD PLACE Search Philosophy & Research Methodology
 
 **Document ID:** TM-005  
-**Version:** 2.0  
+**Version:** 2.1  
 **Status:** Official  
 **Category:** TM (THE THIRD PLACE Management)
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 2.0 | — | Prior version. Exact release date not recorded. |
+| 2.1 | 2026-09-07 | Added an "Origin" subsection documenting that TM-005 and PX-003 Vigil Protocol were originally a single document, later split into methodology (TM-005) and execution (PX-003). No content changes to the research methodology itself. |
 
 ---
 
@@ -22,6 +31,18 @@ Its purpose is to define how information should be discovered, evaluated, interp
 Operational execution is governed separately by **PX-003 Vigil Protocol**.
 
 Search Doctrine ensures that every search performed throughout THE THIRD PLACE follows a consistent intellectual framework regardless of execution method.
+
+---
+
+## Origin
+
+TM-005 and PX-003 Vigil Protocol were originally a single document.
+
+They were later split so that methodology and execution could each be managed and updated independently.
+
+TM-005 retains **how research should think**.
+
+PX-003 retains **how research is executed**.
 
 ---
 
@@ -721,9 +742,9 @@ Understanding is.
 | Title | Search Doctrine |
 | Framework | THE THIRD PLACE |
 | Category | TM |
-| Version | 2.0 |
+| Version | 2.1 |
 | Status | Official |
 | Language | English |
 | Maintainer | THE THIRD PLACE |
 | Related Documents | PX-003 Vigil Protocol / TM-001 Heritage Chronicle / TM-002 Atelier Discovery |
-| Last Revised | Version 2.0 |
+| Last Revised | Version 2.1 |
