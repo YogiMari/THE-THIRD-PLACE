@@ -1,16 +1,81 @@
 PX-003 Vigil Protocol
 # PX-003
 # Vigil Protocol
+### THE THIRD PLACE Acquisition Monitoring & Patrol Operations
 
 **Document ID**: PX-003  
 **Title**: Vigil Protocol  
-**Version**: 2.0
+**Series**: PX – Project  
+**Version**: 2.1  
 **Status**: Official  
 **Owner**: THE THIRD PLACE
 
 ---
 
-# XXXII. Freshness Validation
+# Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 2.0 | — | Prior version. Exact release date not recorded. |
+| 2.1 | 2026-09-07 | Split-origin repair. PX-003 and TM-005 Search Doctrine were originally a single document, later divided into methodology (TM-005) and execution (PX-003) without renumbering chapters or restoring header sections — leaving PX-003 starting at Chapter XXXII with no preceding chapters and no Purpose section. Added "I. Purpose" (including Relationship with Other Documents), renumbered all chapters I–VIII, and added a Series field to the document header. |
+
+---
+
+# I. Purpose
+
+## Mission
+
+Vigil Protocol defines the **operational execution** of acquisition monitoring within THE THIRD PLACE.
+
+Its purpose is not to define research philosophy or methodology; that is governed separately by **TM-005 Search Doctrine**.
+
+Its purpose is to define how patrols are executed: what is searched, how freshness and availability are verified, how findings are scored, and how the Watch List is maintained.
+
+---
+
+## Origin
+
+Vigil Protocol and TM-005 Search Doctrine were originally a single document.
+
+They were later split so that methodology and execution could each be managed and updated independently.
+
+TM-005 retains **how research should think**.
+
+PX-003 retains **how research is executed**.
+
+---
+
+## Relationship with Other Documents
+
+```text
+TM-005 Search Doctrine
+(Methodology & Philosophy)
+        │
+        ▼
+PX-003 Vigil Protocol
+(Execution: Patrol, Watch List, Scoring)
+        │
+        │ Executes Search
+        ▼
+Web Research
+        │
+        ▼
+Difference Analysis
+        │
+        ▼
+TM-002 Atelier Discovery
+(Daily Intelligence Report)
+        │
+        ▼
+TM-001 Heritage Chronicle
+(Long-term Knowledge Archive)
+```
+
+Findings surfaced by a Vigil Patrol feed into TP-005 Acquisition Strategy for purchase decisions.
+
+---
+
+# II. Freshness Validation
 
 Every finding shall undergo freshness validation before it is eligible for reporting.
 
@@ -93,7 +158,7 @@ These findings shall never appear within Patrol Reports.
 
 ---
 
-# XXXIII. Availability Verification
+# III. Availability Verification
 
 Finding a page does not constitute a finding.
 
@@ -148,7 +213,7 @@ Otherwise discard the result.
 
 ---
 
-# XXXIV. Date Validation
+# IV. Date Validation
 
 Every reported finding shall include the latest verifiable date whenever available.
 
@@ -190,7 +255,7 @@ Historical information may only be reported when directly connected to:
 
 ---
 
-# XXXV. Opportunity Evaluation
+# V. Opportunity Evaluation
 
 Every verified finding shall receive an Opportunity Score.
 
@@ -232,7 +297,7 @@ Priority shall be determined by the combined evaluation rather than any single f
 
 ---
 
-# XXXVI. Reporting Philosophy
+# VI. Reporting Philosophy
 
 Vigil does not exist to report search results.
 
@@ -250,7 +315,7 @@ If the answer is no, the finding shall normally be discarded.
 
 ---
 
-# XXXVII. Patrol Initiation
+# VII. Patrol Initiation
 
 When instructed to execute Vigil Patrol, Vigil shall immediately begin operational execution.
 
@@ -279,7 +344,7 @@ No explanatory response shall be produced before execution.
 
 ---
 
-# XXXVIII. Watch List
+# VIII. Watch List
 
 The Watch List shall be maintained at the end of this document.
 
