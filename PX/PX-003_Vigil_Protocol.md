@@ -6,7 +6,7 @@ PX-003 Vigil Protocol
 **Document ID**: PX-003  
 **Title**: Vigil Protocol  
 **Series**: PX – Project  
-**Version**: 2.2  
+**Version**: 2.3  
 **Status**: Official  
 **Owner**: THE THIRD PLACE
 
@@ -19,6 +19,7 @@ PX-003 Vigil Protocol
 | 2.0 | — | Prior version. Exact release date not recorded. |
 | 2.1 | 2026-09-07 | Split-origin repair. PX-003 and TM-005 Search Doctrine were originally a single document, later divided into methodology (TM-005) and execution (PX-003) without renumbering chapters or restoring header sections — leaving PX-003 starting at Chapter XXXII with no preceding chapters and no Purpose section. Added "I. Purpose" (including Relationship with Other Documents), renumbered all chapters I–VIII, and added a Series field to the document header. |
 | 2.2 | 2026-09-08 | Added Watch List entries 008–022, sourced from every TP-004 Equipment Registry item with Status = Essential / Candidate / Upgrade not already covered by an existing entry (each tagged with its TP-004 Reference ID). Coffee Domain intentionally excluded (governed by PX-004/PX-005). |
+| 2.3 | 2026-09-08 | Entry 018 (Wood Board) corrected per project owner confirmation: nodel design sells this as a standalone product under the exact name "Wood Board." Removed the availability-uncertainty note and refined keywords accordingly. |
 
 ---
 
@@ -773,7 +774,7 @@ nodel design
 
 **Target**
 
-Wood Board（Beck Container / Bridge Frame用, Oak・Walnut）
+Wood Board
 
 **TP-004 Reference**
 
@@ -781,14 +782,15 @@ STR-014, STR-016 (Status: Essential)
 
 **Notes**
 
-Beck Container ①②およびContainer Bridge Frame用の交換・追加ウッドボード。単品販売の有無を要確認。
+nodel designが「Wood Board」という製品名でそのまま単品販売している。Beck Container ①（Oak, STR-014）およびBeck Container ②（Walnut, STR-016）用。
 
 **Required Keywords**
 
 - nodel design Wood Board
-- Beck Container Wood Board
+- Wood Board nodel design Oak
+- Wood Board nodel design Walnut
+- ノデルデザイン Wood Board
 - ノデルデザイン ウッドボード
-- ベックコンテナ 天板
 
 ---
 
