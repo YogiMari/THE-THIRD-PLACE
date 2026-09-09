@@ -11,7 +11,7 @@ Barista Codex
     
 # Version    
     
-3.1    
+3.2    
     
 # Status    
     
@@ -114,6 +114,24 @@ Coffee Zoneでは、単一ブランドでEquipment一式を統一しない。
     
 この原則は、Mari個人のファッション観（全身を単一ブランドで統一しない／その年のコレクションとして完成されたルックである場合を除き、鞄・靴等のカテゴリごとに個別ブランドを選ぶ）をCoffee Zoneに適用したものである（2026-09）。    
     
+    
+---    
+    
+### 3. Category Tier Exception（カテゴリ構造起因のTier例外）    
+    
+Coffee Zoneでは、ブランドで選ぶこと自体は正式な原則（Cross-Brand Curation Principle）として許容している。    
+    
+ただし、Coffee Zoneを構成するブランドは、原則としてPortable Luxury・Architectural Simplicity・Industrial Designを体現するTier A水準（9Barista、Option-O、MantaBrew、Weber Workshops、Saint Anthony Industries、Pullman等）で統一する。    
+    
+以下2カテゴリについては、カテゴリの市場構造そのものにTier A水準の選択肢が存在しないため、機能・素材適合を理由とした明示的な例外として記録する。ブランドの格が届いていないことを認識しないまま採用した状態と、認識した上で機能を理由に採用した状態は区別する。    
+    
+**Milk Pitcher / Pitcher Sleeve（WPM）**    
+    
+ミルクピッチャーというカテゴリには、Weber Workshops・Pullman・Saint Anthony Industries水準の設計・製造一貫型ブティックブランドが実質的に存在しない（市場調査：2026-09）。WPMは競技バリスタ用品市場の中で機能的に妥当な選択だが、Reasonに記載の採用理由はラテアート習得のしやすさという機能面のみであり、他のConfirmed Equipmentが共通して備えるブランド哲学・素材の贅沢さへの言及を欠く。カテゴリ構造上の制約による例外として正式に記録する。    
+    
+**Tool Station（KNODOS）**    
+    
+KNODOSは "Premium Espresso Accessories for Home Baristas" を自認するホームバリスタ向けアクセサリーブランドであり、9Barista・Weber Workshops等が想定するプロ・競技・コレクター水準の顧客層とは異なる。ただし採用理由はWalnut素材によるDesign Bibleとの整合性、およびThe Blocとの役割分離（Tool Station機能）であり、天板保護という裏方機能に対する適材適所の選定として妥当と判断する。ブランド格ではなく、素材とWorkflow機能を理由とした例外として正式に記録する。    
     
 ---    
     
@@ -1794,6 +1812,7 @@ PX-004は、価格・購入先・輸送・関税・購入手順などの調達�
 | 2.9 | 2026-08 | Standard accessories included with 9Barista Mk.2 Pro were clarified as Included Components / Accessories rather than independent Equipment. 9Barista Magnetic Dosing Funnel and 9Barista Stainless Steel Basket Cap Pro are explicitly excluded from independent TP-004 / PX-005 management. Alternative Basket Cap status clarified as Not Separately Acquired. |  
 | 3.0 | 2026-08 | Puck Screen placement added explicitly to the confirmed Puck Preparation Workflow. Water Transfer confirmed as direct pouring from the existing dedicated water bottles, with no additional transfer equipment required. ALM KOPi Z1 Mini Steamer is confirmed to use existing kitchen single burners, with no dedicated Coffee System burner required. |  
 | 3.1 | 2026-09 | Coffee Zone Philosophy (Exception Clause) added to Design Principles. Non-Rational Luxury Principle and Cross-Brand Curation Principle established as Coffee Zone-specific philosophies, distinct from and exceptional to the THE THIRD PLACE-wide Baseline. These apply exclusively to Coffee Zone and not to other domains. |  
+| 3.2 | 2026-09 | Category Tier Exception added to Design Principles as Coffee Zone Philosophy item 3. Documents that Milk Pitcher / Pitcher Sleeve (WPM) and Tool Station (KNODOS) fall below the Tier A brand standard applied elsewhere in Coffee Zone, and records both as explicit, function/material-justified exceptions rather than unexamined selections. Based on market research confirming no Tier A-equivalent brand exists in either category (2026-09). |  
   
 ---  
   
