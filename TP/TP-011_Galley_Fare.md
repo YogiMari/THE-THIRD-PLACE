@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 2.5
+Version 2.6
 
 ---
 
@@ -2700,10 +2700,28 @@ Planning、調達戦略、デザイン思想、美意識、評価は、それぞ
 
 ---
 
-# Related Documents
+# Relationship to Other Core Documents
 
-- TP-001 THE THIRD PLACE Constitution
-- TP-004 Equipment Registry Object Reference
+TP-011 Galley Fare は、
+
+THE THIRD PLACE Core Documents の中で、
+
+キッチン機材を担う独立したMaster Documentである。
+
+| Document | Responsibility |
+|-----------|----------------|
+| TP-000 Original | プロジェクトの原典 |
+| TP-001 Constitution | プロジェクト全体の憲章 |
+| TP-002 Design Bible | 設計思想 |
+| TP-003 Field Atlas | 舞台の選定 |
+| TP-004 Equipment Registry | Equipment の唯一のマスターデータ（キッチン機材を除く） |
+| TP-005 Acquisition Strategy | Equipment を迎える戦略 |
+| TP-006 Foundation Compass | Foundation を構成・維持するための指針 |
+| TP-007 Habitat Architecture | フィールドに完成する暮らしの空間を定義する |
+| TP-008 Affinity Lexicon | 好み・美意識・親和性の語彙 |
+| TP-009 Aesthetic Grammar | 美しさを構成する法則 |
+| TP-010 Storage Blueprint | 収納設計・運用 |
+| **TP-011 Galley Fare** | キッチン機材の独立マスターデータ |
 
 ---
 
@@ -2980,3 +2998,12 @@ Registry Rulesに「Category Grouping Policy」を新設し、以下13グルー�
 内容（Brand/Product/Material/Color/Graphic Attribute/Industrial Attribute）は、Version 2.4時点の記録から一切変更していない。番号体系のみ、上記対応表に基づき再編した。
 
 ---
+
+## Version 2.6
+
+Related Documentsを「Relationship to Other Core Documents」表へ拡張し、TP-000〜TP-010すべてとの関係を明記した。
+
+### Changes
+
+- Related DocumentsをRelationship to Other Core Documentsへ改名し、TP-000〜TP-010を含む完全な文書関係表を追加。
+- Kitchen機材の登録内容（KIT-001〜070系列）に変更なし。

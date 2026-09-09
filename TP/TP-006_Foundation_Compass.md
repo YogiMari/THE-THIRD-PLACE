@@ -1,7 +1,7 @@
 TP-006 Foundation Compass
 # TP-006
 # Foundation Compass
-## Ver.1.0
+## Ver.1.2
 
 ---
 
@@ -104,6 +104,7 @@ Foundation Compass は、
 - TP-003 Field Atlas
 - TP-004 Equipment Registry
 - TP-005 Acquisition Strategy
+- TP-010 Storage Blueprint
 
 そして、
 
@@ -183,10 +184,9 @@ Equipment は、
 例
 
 - Kitchen Module
-- Light Module
-- Coffee Module
+- Living Core Module
 - Bedding Module
-- Reserve Module
+- Light & Aroma Module
 
 モジュール単位で構成を見直し、
 
@@ -204,21 +204,13 @@ Equipment は、
 
 役割は頻繁に変更しない。
 
-### Beck Container 01
+コンテナごとの具体的な役割・固定収納物は、
 
-Kitchen Module
+TP-010 Storage Blueprint が
 
-### Beck Container 02
+唯一のMaster Documentとして管理する。
 
-Living Core Module
-
-### Shellcon 25 01
-
-Bedding Module
-
-### Shellcon 25 02
-
-Reserve Module
+本書では重複して記載しない。
 
 Container は、
 
@@ -374,8 +366,10 @@ THE THIRD PLACE Core Documents の中で、
 | TP-005 Acquisition Strategy | Equipment を迎える戦略 |
 | **TP-006 Foundation Compass** | Foundation を構成・維持するための指針 |
 | TP-007 Habitat Architecture | フィールドで完成する暮らしの設計 |
-| TP-008 Discovery | 調査・発見 |
-| TP-009 Affinity Catalog | 美意識・価値観・親和性 |
+| TP-008 Affinity Lexicon | 好み・美意識・親和性の語彙 |
+| TP-009 Aesthetic Grammar | 美しさを構成する法則 |
+| TP-010 Storage Blueprint | 収納設計・運用 |
+| TP-011 Galley Fare | キッチン機材の独立マスターデータ |
 
 Foundation Compass は、
 

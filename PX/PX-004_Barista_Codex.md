@@ -11,7 +11,7 @@ Barista Codex
     
 # Version    
     
-3.2    
+3.5    
     
 # Status    
     
@@ -90,13 +90,13 @@ Coffee Zoneに限り、以下の独自Philosophyを正式に適用する。他�
     
 ### 1. Non-Rational Luxury Principle（無駄を選び取る審美性）    
     
-Coffee Zoneでは、機能的合理性を上回る場合でも、素材・機構そのものの贅沢さを理由に採用することを正式に許容する。    
+Coffee Zoneでは、機能的合理性を上回る場合でも、素材・機構そのものの賅沢さを理由に採用することを正式に許容する。    
     
-THE THIRD PLACE全体の原則は「無駄を削ぎ落とす」ことにあるが、Coffee Zoneにおいては「機能的に不要な贅沢を、その不要さゆえに選び取る」ことこそが最も THE THIRD PLACE的な表現となりうる。    
+THE THIRD PLACE全体の原則は「無駄を削ぎ落とす」ことにあるが、Coffee Zoneにおいては「機能的に不要な賅沢を、その不要さゆえに選び取る」ことこそが最も THE THIRD PLACE的な表現となりうる。    
     
 **Reference Case**    
     
-WDT Toolの選定において、機能面で既存ツールを上回る優位性を持たない真鍮製ギア機構（Weber Workshops MOONRAKER Ultra Edition）を、その機能的必要性ではなく「Swiss watchmaking」という物語性・所作の贅沢さを理由に選定した判断（58mm仮説Workflow検討, 2026-09）。    
+WDT Toolの選定において、機能面で既存ツールを上回る優位性を持たない真鑑製ギア機構（Weber Workshops MOONRAKER Ultra Edition）を、その機能的必要性ではなく「Swiss watchmaking」という物語性・所作の賅沢さを理由に選定した判断（58mm仈説 Workflow検討, 2026-09）。    
     
 ---    
     
@@ -156,7 +156,7 @@ KNODOSは "Premium Espresso Accessories for Home Baristas" を自認するホー
 * 9Barista Magnetic Dosing Funnel    
 * 9Barista Stainless Steel Basket Cap Pro    
     
-これらは9Barista Mk.2 Proに包含される付属品であり、Coffee Systemの独立Equipmentとして管理しない。    
+これらは9Barista Mk.2 Proに包含される付属品であり、Coffee Systemの独立 Equipmentとして管理しない。    
     
 したがって、TP-004 Equipment RegistryおよびPX-005 Acquisition Handbookでは、これらを独立したEquipment / Acquisition Itemとして登録しない。    
     
@@ -438,6 +438,16 @@ THE THIRD PLACEが求めるWorkflow・品質・デザインとの整合性を満
     
 54mm仕様を正式採用する。    
     
+### Decision Context    
+    
+Normcore Planetary WDT Tool 54mmの採用は、当初の第一候補であったWeber Workshops MOONRAKER Ultra Editionが物理的に不適合であったことに起因する、現実的な代替選定である。    
+    
+MOONRAKER Ultra Editionは真鍮製ギア機構による「Swiss watchmaking」的な精密工学を備え、THE THIRD PLACEが求めるブランド格・機構美において当初最有力候補として検討された。しかし、MOONRAKER Ultra Editionはベースリング形状が58mmポルタフィルター専用設計であり、9Barista Mk.2 Proの53mmバスケットとは物理的に適合しない。9Barista公式からもアダプター等の互換手段は提供されていないことを確認済みである。    
+    
+したがってNormcoreは、「ギア駆動によるPlanetary機構」という機能要件と53mm系Workflowとの互換性を両立する、現実的な最上位互換候補として選定された。    
+    
+本Decision Contextは、Coffee Zone Philosophy（Non-Rational Luxury Principle）のReference Caseで言及されるMOONRAKER Ultra Editionの検討経緯、およびVersion History 2.8の記録と対応する。    
+    
 ### Physical Configuration    
     
 Normcore Planetary WDT Tool 54mmの本体最大外径は約65 mm。    
@@ -542,7 +552,7 @@ KNODOS
     
 という役割分担を成立させる。    
     
-また、WDT使用後に針へ残った粉をウォールナット天板へ落とすことを防止する。    
+また、WDT使用後に针へ残った粉をウォールナット天板へ落とすことを防止する。    
     
 KNODOSのレザー面はWDTの一時置きにも使用できる。    
     
@@ -693,9 +703,9 @@ Black / Onyx系の外観を優先し、Onyxを正式仕様とする。
     
 Weber公式では底部の詳細な有効径・排出口径は公開されていない。    
     
-一方、9Barista Magnetic Dosing Funnelは上部径68 mmであり、Weber Blind Shakerとの実使用例を確認している。    
+一方、9Barista Magnetic Dosing Funnelは上部径 68 mmであり、Weber Blind Shakerとの実使用例を確認している。    
     
-したがって、Weberの最大外径75 mmと9Baristaファンネルの68 mmを単純比較して不適合とは判断しない。    
+したがって、Weberの最大外径 75 mmと9Baristaファンネルの68 mmを単純比較して不適合とは判断しない。    
     
 ---    
     
@@ -875,7 +885,7 @@ Confirmed
     
 ### Decision    
     
-1泊2日・2人でのCoffee System運用に必要な専用水の携行構成を正式採用する。    
+1泏2日・2人でのCoffee System運用に必要な専用水の携行構成を正式採用する。    
     
 ### Operation Scenario    
     
@@ -884,7 +894,7 @@ Confirmed
 * Espresso ×2    
 * Latte ×2    
     
-遅めの昼食後    
+遅めの昇食後    
     
 * Latte ×2    
     
@@ -968,7 +978,7 @@ Coffee System専用水は、専用のWater Transfer Toolを使用せず、各Wat
 * Snow Peak 酒筒 Titanium    
   → 540mLの追加容量を担う独立したチタン製容器    
     
-3本合計2.54Lにより、1泊2日・2人のCoffee Systemを現地給水なしでも成立させることを目的とする。    
+3本合計2.54Lにより、1泏2日・2人のCoffee Systemを現地給水なしでも成立させることを目的とする。    
     
 **Status：CONFIRMED**    
     
@@ -980,7 +990,7 @@ Coffee System専用水は、専用のWater Transfer Toolを使用せず、各Wat
     
 THE THIRD PLACEでは、9BaristaによるStraight Espressoについて、同一形状のカップを2個揃えるのではなく、異なる目的を持つ2種類の専用センシンググラスを正式構成とする。    
     
-同じ9Barista Espressoを2人で共有しながら、それぞれ異なるグラスによって異なる感覚的アプローチを体験できる構成とする。    
+同ゆ9Barista Espressoを2人で共有しながら、それぞれ異なるグラスによって異なる感覚的アプローチを体験できる構成とする。    
     
 ---    
     
@@ -1409,7 +1419,7 @@ Rejected
   
 ブランド・設計品質とも有力候補だった。  
   
-ただし、9Barista 53 mmとの正確な寸法適合について追加確認が必要であり、Weberの実使用確認済みWorkflowを上回らなかった。  
+ただ、9Barista 53 mmとの正確な寸法適合について追加確認が必要であり、Weberの実使用確認済みWorkflowを上回らなかった。  
   
 ---  
   
@@ -1423,7 +1433,26 @@ Rejected
   
 49–58 mm対応で53 mmをカバーする点も有力だった。  
   
-しかし、今回のWorkflowではWeberの既存ブランド整合性および9Baristaとの実使用確認を優先した。  
+しかし、今回のWorkflowではWeberの既存ブランド整合性およど9Baristaとの実使用確認を優先した。  
+  
+---  
+  
+## Econtto Portawave  
+  
+**Status**  
+  
+Rejected  
+  
+### Reason  
+  
+WDT Toolの新規候補として検討したが、以下の理由により採用基準に達しなかった。  
+  
+* 54mm版は汎用54mmではなく、Dalla Corte／Breville専用のポルタフィルターシェイプであり、9Barista Mk.2 Proの53mmバスケットとの適合実績が確認できない。  
+* 当該54mm版（Dalla Corte／Breville）は、公式ストアにおいて現在いずれも在庫切れ（Unavailable）。  
+* 公式製品説明内で「30本のニードル付属」と「14本のニードルが駆動」という記載の食い違いがあり、機構仕様の正確性に疑義がある。  
+* 第三者レビュー（R&D ESPRESSO LAB等）は58mm版についてのみで、53mm／9Baristaでの実使用実績は一件も確認できなかった。  
+  
+Normcore Planetary WDT Tool 54mmは、KNODOS Tool Stationへの実測適合（外径約65mm）を含め53mm系Workflowでの実績が確認済みであり、Econttoはこれを上回る根拠を提示できなかった。  
   
 ---  
   
@@ -1679,7 +1708,7 @@ Coffee Systemでは家具レベルのウォールナット天板を使用する�
 * 天板を汚さない  
 * 天板を傷めない  
 * 道具を直接転がさない  
-* 道具を散乱させない  
+* 道具を散らかさない  
   
 ことをWorkflow設計に含める。  
   
@@ -1788,6 +1817,8 @@ Coffee System専用水は、専用のWater Transfer Toolを使用せず、各Wat
 Coffee Equipmentに関する正式決定は、**PX-004 Barista Codex**を基準とする。  
   
 PX-004でConfirmedされたEquipmentは、TP-004 Equipment Registryへ反映し、調達情報についてはPX-005 Acquisition Handbookで管理する。  
+
+ただし、PX-004でConfirmedされた時点では、TP-004への反映は行わない。TP-004への反映は、当該Equipmentが実際に購入・所有（Owned）された時点で初めて行う。購入前のConfirmed Equipmentは、PX-004上でのみ管理される。  
   
 PX-004に記載される製品・付属品のうち、Confirmed Equipmentに包含される標準付属品は、独立したEquipment / Acquisition Itemとして管理しない。  
   
@@ -1812,7 +1843,10 @@ PX-004は、価格・購入先・輸送・関税・購入手順などの調達�
 | 2.9 | 2026-08 | Standard accessories included with 9Barista Mk.2 Pro were clarified as Included Components / Accessories rather than independent Equipment. 9Barista Magnetic Dosing Funnel and 9Barista Stainless Steel Basket Cap Pro are explicitly excluded from independent TP-004 / PX-005 management. Alternative Basket Cap status clarified as Not Separately Acquired. |  
 | 3.0 | 2026-08 | Puck Screen placement added explicitly to the confirmed Puck Preparation Workflow. Water Transfer confirmed as direct pouring from the existing dedicated water bottles, with no additional transfer equipment required. ALM KOPi Z1 Mini Steamer is confirmed to use existing kitchen single burners, with no dedicated Coffee System burner required. |  
 | 3.1 | 2026-09 | Coffee Zone Philosophy (Exception Clause) added to Design Principles. Non-Rational Luxury Principle and Cross-Brand Curation Principle established as Coffee Zone-specific philosophies, distinct from and exceptional to the THE THIRD PLACE-wide Baseline. These apply exclusively to Coffee Zone and not to other domains. |  
-| 3.2 | 2026-09 | Category Tier Exception added to Design Principles as Coffee Zone Philosophy item 3. Documents that Milk Pitcher / Pitcher Sleeve (WPM) and Tool Station (KNODOS) fall below the Tier A brand standard applied elsewhere in Coffee Zone, and records both as explicit, function/material-justified exceptions rather than unexamined selections. Based on market research confirming no Tier A-equivalent brand exists in either category (2026-09). |  
+| 3.2 | 2026-09 | Relationship section clarified per direct instruction from the project owner: reflection of Confirmed Equipment into TP-004 Equipment Registry occurs only upon actual purchase (Owned status), not at the point of Confirmation. Confirmed-but-not-yet-purchased Equipment remains managed exclusively within PX-004. This corresponds to a related TP-004 update (Version 7.10) formalizing the Coffee Domain (COF-series) registration timing rule. |  
+| 3.3 | 2026-09 | WDT Tool section: Decision Context added. Formally documents that Normcore Planetary WDT Tool 54mm was selected as a realistic alternative after the original first-choice candidate, Weber Workshops MOONRAKER Ultra Edition, was found physically incompatible (58mm-only base ring shape vs. the 9Barista Mk.2 Pro's 53mm basket, with no official adapter available). This formalizes reasoning previously recorded only in project chat history and cross-referenced with the Coffee Zone Philosophy Reference Case and Version History 2.8. |  
+| 3.4 | 2026-09 | Econtto Portawave added to Rejected Equipment as a new WDT Tool candidate. Rejected due to: 54mm variants being Dalla Corte/Breville-specific portafilter shapes rather than a generic 54mm fit, with no confirmed 9Barista 53mm compatibility; those 54mm variants currently unavailable in stock; an internal specification inconsistency in official marketing copy (30 needles included vs. 14-needle drive pattern); and third-party reviews covering only the 58mm variant with no 53mm/9Barista field usage found. Normcore Planetary WDT Tool 54mm's confirmed KNODOS Tool Station fit and established 53mm-system track record were not matched or exceeded. |  
+| 3.5 | 2026-09 | Category Tier Exception added to Design Principles as Coffee Zone Philosophy item 3. Documents that Milk Pitcher / Pitcher Sleeve (WPM) and Tool Station (KNODOS) fall below the Tier A brand standard applied elsewhere in Coffee Zone, and records both as explicit, function/material-justified exceptions rather than unexamined selections. Based on market research confirming no Tier A-equivalent brand exists in either category (2026-09). |  
   
 ---  
   

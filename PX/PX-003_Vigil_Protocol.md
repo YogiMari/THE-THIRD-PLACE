@@ -1,16 +1,83 @@
 PX-003 Vigil Protocol
 # PX-003
 # Vigil Protocol
+### THE THIRD PLACE Acquisition Monitoring & Patrol Operations
 
 **Document ID**: PX-003  
 **Title**: Vigil Protocol  
-**Version**: 2.0
+**Series**: PX – Project  
+**Version**: 2.3  
 **Status**: Official  
 **Owner**: THE THIRD PLACE
 
 ---
 
-# XXXII. Freshness Validation
+# Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 2.0 | — | Prior version. Exact release date not recorded. |
+| 2.1 | 2026-09-07 | Split-origin repair. PX-003 and TM-005 Search Doctrine were originally a single document, later divided into methodology (TM-005) and execution (PX-003) without renumbering chapters or restoring header sections — leaving PX-003 starting at Chapter XXXII with no preceding chapters and no Purpose section. Added "I. Purpose" (including Relationship with Other Documents), renumbered all chapters I–VIII, and added a Series field to the document header. |
+| 2.2 | 2026-09-08 | Added Watch List entries 008–022, sourced from every TP-004 Equipment Registry item with Status = Essential / Candidate / Upgrade not already covered by an existing entry (each tagged with its TP-004 Reference ID). Coffee Domain intentionally excluded (governed by PX-004/PX-005). |
+| 2.3 | 2026-09-08 | Entry 018 (Wood Board) corrected per project owner confirmation: nodel design sells this as a standalone product under the exact name "Wood Board." Removed the availability-uncertainty note and refined keywords accordingly. |
+
+---
+
+# I. Purpose
+
+## Mission
+
+Vigil Protocol defines the **operational execution** of acquisition monitoring within THE THIRD PLACE.
+
+Its purpose is not to define research philosophy or methodology; that is governed separately by **TM-005 Search Doctrine**.
+
+Its purpose is to define how patrols are executed: what is searched, how freshness and availability are verified, how findings are scored, and how the Watch List is maintained.
+
+---
+
+## Origin
+
+Vigil Protocol and TM-005 Search Doctrine were originally a single document.
+
+They were later split so that methodology and execution could each be managed and updated independently.
+
+TM-005 retains **how research should think**.
+
+PX-003 retains **how research is executed**.
+
+---
+
+## Relationship with Other Documents
+
+```text
+TM-005 Search Doctrine
+(Methodology & Philosophy)
+        │
+        ▼
+PX-003 Vigil Protocol
+(Execution: Patrol, Watch List, Scoring)
+        │
+        │ Executes Search
+        ▼
+Web Research
+        │
+        ▼
+Difference Analysis
+        │
+        ▼
+TM-002 Atelier Discovery
+(Daily Intelligence Report)
+        │
+        ▼
+TM-001 Heritage Chronicle
+(Long-term Knowledge Archive)
+```
+
+Findings surfaced by a Vigil Patrol feed into TP-005 Acquisition Strategy for purchase decisions.
+
+---
+
+# II. Freshness Validation
 
 Every finding shall undergo freshness validation before it is eligible for reporting.
 
@@ -93,7 +160,7 @@ These findings shall never appear within Patrol Reports.
 
 ---
 
-# XXXIII. Availability Verification
+# III. Availability Verification
 
 Finding a page does not constitute a finding.
 
@@ -148,7 +215,7 @@ Otherwise discard the result.
 
 ---
 
-# XXXIV. Date Validation
+# IV. Date Validation
 
 Every reported finding shall include the latest verifiable date whenever available.
 
@@ -190,7 +257,7 @@ Historical information may only be reported when directly connected to:
 
 ---
 
-# XXXV. Opportunity Evaluation
+# V. Opportunity Evaluation
 
 Every verified finding shall receive an Opportunity Score.
 
@@ -232,7 +299,7 @@ Priority shall be determined by the combined evaluation rather than any single f
 
 ---
 
-# XXXVI. Reporting Philosophy
+# VI. Reporting Philosophy
 
 Vigil does not exist to report search results.
 
@@ -250,7 +317,7 @@ If the answer is no, the finding shall normally be discarded.
 
 ---
 
-# XXXVII. Patrol Initiation
+# VII. Patrol Initiation
 
 When instructed to execute Vigil Patrol, Vigil shall immediately begin operational execution.
 
@@ -279,7 +346,7 @@ No explanatory response shall be produced before execution.
 
 ---
 
-# XXXVIII. Watch List
+# VIII. Watch List
 
 The Watch List shall be maintained at the end of this document.
 
@@ -305,6 +372,10 @@ Each Watch List entry may be modified independently without affecting any other 
 ---
 
 # Current Watch List
+
+Entries 001–007 predate this revision.
+
+Entries 008–022 were added by cross-referencing **TP-004 Equipment Registry** for every item with Status = Essential / Candidate / Upgrade (i.e. not yet Owned) that was not already covered by an existing entry. Each such entry lists its **TP-004 Reference** ID for traceability. Coffee Domain (COF-series) items are intentionally excluded — they remain governed by PX-004 Barista Codex / PX-005 Acquisition Handbook until purchased.
 
 ## 001
 
@@ -457,6 +528,358 @@ Miyabi Wood
 - Miyabi
 - ノデルデザイン
 - ミヤビウッド
+
+---
+
+## 008
+
+**Brand**
+
+nodel design
+
+**Target**
+
+Butterfly Table M Black Look
+
+**TP-004 Reference**
+
+FUR-017 (Status: Upgrade)
+
+**Required Keywords**
+
+- Butterfly Table M
+- Butterfly Table Black Look
+- nodel design butterfly
+- ノデルデザイン
+- バタフライテーブル
+- バタフライテーブル M
+
+---
+
+## 009
+
+**Brand**
+
+neru design works × LampUp
+
+**Target**
+
+MIYABI RICH Alumi Frozen
+
+**TP-004 Reference**
+
+LGT-015 (Status: Essential)
+
+**Required Keywords**
+
+- MIYABI RICH Alumi Frozen
+- MIYABI RICH アルミ
+- neru design works LampUp
+- ミヤビリッチ
+- アルミフローズン
+- ネルデザインワークス ランプアップ
+
+---
+
+## 010
+
+**Brand**
+
+neru design works
+
+**Target**
+
+メッシュシェード (Mesh Shade, 38-kT)
+
+**TP-004 Reference**
+
+LGT-028a (Status: Candidate)
+
+**Required Keywords**
+
+- メッシュシェード
+- Mesh Shade neru design works
+- 38-kT メッシュシェード
+- ネルデザインワークス メッシュ
+
+---
+
+## 011
+
+**Brand**
+
+CALMA STORE × neru design works
+
+**Target**
+
+POCKET SHADE M（neru design works柄）
+
+**TP-004 Reference**
+
+LGT-028b (Status: Candidate)
+
+**Required Keywords**
+
+- POCKET SHADE M
+- Pocket Shade neru design works
+- CALMA STORE ポケットシェード
+- ポケットシェード M
+
+---
+
+## 012
+
+**Brand**
+
+IFA
+
+**Target**
+
+Pivotshade
+
+**TP-004 Reference**
+
+LGT-039 (Status: Essential)
+
+**Required Keywords**
+
+- IFA Pivotshade
+- Pivotshade
+- IFA ピボットシェード
+- ピボットシェード
+
+---
+
+## 013
+
+**Brand**
+
+OLD MOUNTAIN
+
+**Target**
+
+MKGP
+
+**TP-004 Reference**
+
+ARM-002 (Status: Essential)
+
+**Required Keywords**
+
+- MKGP OLD MOUNTAIN
+- MKGP Palo Santo Holder
+- オールドマウンテン MKGP
+- MKGP パロサント
+
+---
+
+## 014
+
+**Brand**
+
+Filoméla
+
+**Target**
+
+INCENSE CHAMBER Tokyo Limited
+
+**TP-004 Reference**
+
+ARM-003 (Status: Essential)
+
+**Required Keywords**
+
+- Filoméla INCENSE CHAMBER
+- Filomela Incense Chamber Tokyo
+- フィロメラ インセンスチャンバー
+- Filoméla Tokyo Limited
+
+---
+
+## 015
+
+**Brand**
+
+UNIT/04 × KUNST・BAUM
+
+**Target**
+
+SCENT TOWER
+
+**TP-004 Reference**
+
+ARM-004 (Status: Candidate)
+
+**Required Keywords**
+
+- UNIT/04 SCENT TOWER
+- SCENT TOWER KUNST BAUM
+- ユニット04 セントタワー
+- UNIT04 diffuser
+
+---
+
+## 016
+
+**Brand**
+
+BALLISTICS / LOCKFIELD EQUIPMENT
+
+**Target**
+
+SHELCON LEG 25
+
+**TP-004 Reference**
+
+STR-006, STR-012 (Status: Essential)
+
+**Required Keywords**
+
+- SHELCON LEG 25
+- Ballistics Shelcon Leg
+- LOCKFIELD EQUIPMENT Shelcon Leg
+- バリスティクス シェルコンレッグ
+- シェルコン25 レッグ
+
+---
+
+## 017
+
+**Brand**
+
+nodel design
+
+**Target**
+
+Butterfly Under Shelf
+
+**TP-004 Reference**
+
+STR-019 (Status: Essential)
+
+**Required Keywords**
+
+- Butterfly Under Shelf
+- nodel design under shelf
+- ノデルデザイン アンダーシェルフ
+- バタフライ アンダーシェルフ
+
+---
+
+## 018
+
+**Brand**
+
+nodel design
+
+**Target**
+
+Wood Board
+
+**TP-004 Reference**
+
+STR-014, STR-016 (Status: Essential)
+
+**Notes**
+
+nodel designが「Wood Board」という製品名でそのまま単品販売している。Beck Container ①（Oak, STR-014）およびBeck Container ②（Walnut, STR-016）用。
+
+**Required Keywords**
+
+- nodel design Wood Board
+- Wood Board nodel design Oak
+- Wood Board nodel design Walnut
+- ノデルデザイン Wood Board
+- ノデルデザイン ウッドボード
+
+---
+
+## 019
+
+**Brand**
+
+neru design works
+
+**Target**
+
+copper250
+
+**TP-004 Reference**
+
+FIR-014 (Status: Essential)
+
+**Required Keywords**
+
+- copper250 neru design works
+- ネルデザインワークス コッパー250
+- copper250 gas tube cover
+
+---
+
+## 020
+
+**Brand**
+
+DAMNGOOD!! × OMA FACTORY
+
+**Target**
+
+FT no BARREL
+
+**TP-004 Reference**
+
+FIR-015 (Status: Upgrade)
+
+**Required Keywords**
+
+- FT no BARREL
+- DAMNGOOD OMA FACTORY barrel
+- エフティーノーバレル
+- FT NO BARREL Titanium
+
+---
+
+## 021
+
+**Brand**
+
+MT.SUMI
+
+**Target**
+
+Aura FG
+
+**TP-004 Reference**
+
+FIR-019 (Status: Candidate)
+
+**Required Keywords**
+
+- MT.SUMI Aura FG
+- Aura FG fire pit
+- マウントスミ オーラFG
+
+---
+
+## 022
+
+**Brand**
+
+FIREGRAPHIX
+
+**Target**
+
+BLISS-SP
+
+**TP-004 Reference**
+
+FIR-020 (Status: Candidate)
+
+**Required Keywords**
+
+- FIREGRAPHIX BLISS-SP
+- BLISS-SP fire pit
+- ファイアーグラフィックス ブリスSP
 
 ---
 

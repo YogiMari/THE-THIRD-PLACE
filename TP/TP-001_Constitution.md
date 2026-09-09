@@ -2,7 +2,7 @@ TP-001 THE THIRD PLACE Constitution
   
   
 # THE THIRD PLACE Constitution  
-## Ver.4.1  
+## Ver.4.3  
   
 ---  
   
@@ -679,20 +679,24 @@ Project Ledger
 　　　　↓  
   
 Master Documents  
-　・Equipment Registry  
-　・Galley Fare  
 　・Field Atlas  
+　・Equipment Registry  
+　・Acquisition Strategy  
+　・Foundation Compass  
 　・Habitat Architecture  
-　・Storage Blueprint  
 　・Affinity Lexicon  
+　・Aesthetic Grammar  
+　・Storage Blueprint  
+　・Galley Fare  
   
 　　　　↓  
   
 Knowledge Documents  
-　・Discovery  
-　・Chronicle  
+　・Heritage Chronicle  
+　・Atelier Discovery  
 　・Beyond Journey  
 　・Cultural Pantheon  
+　・Search Doctrine  
   
 　　　　↓  
   
@@ -787,7 +791,39 @@ GitHub上の最新版を、
   
 ---  
   
-## 13.4 Equipment Registry  
+## 13.4 Project Ledger  
+  
+管理対象  
+  
+・Conversation Ledger（会話記録・検索用ワード）  
+  
+・Active Conversations  
+  
+・Quick Access  
+  
+Project Ledgerは、  
+  
+重要な判断の記録先として、  
+  
+本Constitution §9（記録）で参照される。  
+  
+---  
+  
+## 13.5 Field Atlas  
+  
+管理対象  
+  
+・キャンプ場  
+  
+・ロケーション  
+  
+・適性評価  
+  
+・運用条件  
+  
+---  
+  
+## 13.6 Equipment Registry  
   
 管理対象  
   
@@ -815,49 +851,53 @@ TP-011 Galley Fareが独立して管理する。
   
 ---  
   
-## 13.5 Galley Fare  
+## 13.7 Acquisition Strategy  
   
 管理対象  
   
-・キッチン調理器具  
+・Acquisition Priority（Must Buy／High／Medium／Low）  
   
-・調理の機能的必然性に基づく選定基準  
+・Acquisition Status（Planned／Watching／Ready／Acquired）  
   
-Galley Fareは、  
+・月間予算  
   
-Equipment Registryとは異なる評価軸を持つ、  
+・市場監視  
   
-独立したMaster Databaseである。  
+Acquisition Strategyは、  
   
-所作、  
+Equipment Registryの情報を基準に、  
   
-デザイン、  
+取得順序・取得時期を管理する。  
   
-ブランドの格を、  
-  
-必須条件としない。  
-  
-実際に調理が成立する機能性を、  
-  
-最優先とする。  
+Equipmentの詳細情報は保持しない。  
   
 ---  
   
-## 13.6 Field Atlas  
+## 13.8 Foundation Compass  
   
 管理対象  
   
-・キャンプ場  
+・Equipment Module  
   
-・ロケーション  
+・Vehicle Loading  
   
-・適性評価  
+・Deployment Sequence  
   
-・運用条件  
+・Recovery Sequence  
+  
+・Seasonal Configuration  
+  
+・Maintenance Cycle  
+  
+Containerごとの具体的な役割・固定収納物は、  
+  
+TP-010 Storage Blueprintが管理する。  
+  
+本書では重複して記載しない。  
   
 ---  
   
-## 13.7 Habitat Architecture  
+## 13.9 Habitat Architecture  
   
 管理対象  
   
@@ -871,19 +911,7 @@ Equipment Registryとは異なる評価軸を持つ、
   
 ---  
   
-## 13.8 Storage Blueprint  
-  
-管理対象  
-  
-・収納  
-  
-・収納ルール  
-  
-・Container Assignment  
-  
----  
-  
-## 13.9 Affinity Lexicon  
+## 13.10 Affinity Lexicon  
   
 管理対象  
   
@@ -935,7 +963,91 @@ Human Principlesを説明する補助資料として扱う。
   
 ---  
   
-## 13.10 Discovery  
+## 13.11 Aesthetic Grammar  
+  
+管理対象  
+  
+・比率  
+  
+・余白  
+  
+・光と陰影  
+  
+・素材と質感  
+  
+・色  
+  
+・構成と動線  
+  
+・調和  
+  
+Aesthetic Grammarは、  
+  
+Affinity Lexiconが定義する語彙に、  
+  
+「なぜ美しいのか」という法則を与える。  
+  
+---  
+  
+## 13.12 Storage Blueprint  
+  
+管理対象  
+  
+・収納  
+  
+・収納ルール  
+  
+・Container Assignment  
+  
+---  
+  
+## 13.13 Galley Fare  
+  
+管理対象  
+  
+・キッチン調理器具  
+  
+・調理の機能的必然性に基づく選定基準  
+  
+Galley Fareは、  
+  
+Equipment Registryとは異なる評価軸を持つ、  
+  
+独立したMaster Databaseである。  
+  
+所作、  
+  
+デザイン、  
+  
+ブランドの格を、  
+  
+必須条件としない。  
+  
+実際に調理が成立する機能性を、  
+  
+最優先とする。  
+  
+---  
+  
+## 13.14 Heritage Chronicle  
+  
+管理対象  
+  
+・活動記録  
+  
+・月次記録  
+  
+・完成までの歩み  
+  
+Chronicleは、  
+  
+歴史を保存する文書である。  
+  
+設計判断は記載しない。  
+  
+---  
+  
+## 13.15 Atelier Discovery  
   
 管理対象  
   
@@ -961,25 +1073,7 @@ Discoveryに記載された内容は、
   
 ---  
   
-## 13.11 Chronicle  
-  
-管理対象  
-  
-・活動記録  
-  
-・月次記録  
-  
-・完成までの歩み  
-  
-Chronicleは、  
-  
-歴史を保存する文書である。  
-  
-設計判断は記載しない。  
-  
----  
-  
-## 13.12 Beyond Journey  
+## 13.16 Beyond Journey  
   
 管理対象  
   
@@ -994,6 +1088,48 @@ Beyond Journeyは、
 THE THIRD PLACEを通して得られた、  
   
 人生そのものの記録を管理する。  
+  
+---  
+  
+## 13.17 Cultural Pantheon  
+  
+管理対象  
+  
+・ブランド文化  
+  
+・Creator  
+  
+・Community  
+  
+・Gallery  
+  
+・Shop  
+  
+・Brand Tier（S〜D）  
+  
+・Brand Lineage（系譜）  
+  
+Cultural Pantheonは、  
+  
+Equipment情報を保持しない。  
+  
+ブランドの背景・思想のみを扱う。  
+  
+---  
+  
+## 13.18 Search Doctrine  
+  
+管理対象  
+  
+・調査の哲学・方法論  
+  
+・情報源の優先順位  
+  
+・Difference Analysis手法  
+  
+監視対象（Watch List）・調査キーワード自体は、  
+  
+PX-003 Vigil Protocolが管理する。  
   
 # 14. Document Relationships  
   
@@ -1519,7 +1655,9 @@ PX/
     PX-001 Documentation System  
     PX-002 Project Ledger  
     PX-003 Vigil Protocol  
-    PX-004 Acquisition Handbook  
+    PX-004 Barista Codex  
+    PX-005 Acquisition Handbook  
+    PX-006 Brew Care  
   
 TM/  
     TM-001 Heritage Chronicle  
@@ -1630,6 +1768,40 @@ Master Document一覧（§13.5）、
 Repository Architecture（Appendix B）を、  
   
 それぞれ更新した。  
+  
+---    
+
+### Ver.4.2  
+  
+Appendix B Repository Architectureの PX ディレクトリ構成を実際のRepositoryへ整合。  
+  
+PX-004を Acquisition Handbook から Barista Codex へ訂正し、  
+  
+実在する PX-005 Acquisition Handbook、  
+  
+PX-006 Brew Care を新規追加した。  
+  
+---  
+  
+### Ver.4.3  
+  
+Information Hierarchy（§12）とSingle Source of Truth（§13）を、  
+  
+現行の文書体系（TP-000〜TP-011、TM-001〜TM-005、Project Ledger）へ完全に整合させた。  
+  
+Master DocumentsにAcquisition Strategy（TP-005）、Foundation Compass（TP-006）、  
+  
+Aesthetic Grammar（TP-009）を追加。  
+  
+Knowledge DocumentsにSearch Doctrine（TM-005）を追加し、  
+  
+Discovery／ChronicleをAtelier Discovery／Heritage Chronicleへ正式名称化。  
+  
+§13にProject Ledger（13.4）、Acquisition Strategy（13.7）、Foundation Compass（13.8）、  
+  
+Aesthetic Grammar（13.11）、Cultural Pantheon（13.17）、Search Doctrine（13.18）の  
+  
+管理対象定義を新設し、全18文書の管理対象を§13で網羅した。  
   
 ---  
   

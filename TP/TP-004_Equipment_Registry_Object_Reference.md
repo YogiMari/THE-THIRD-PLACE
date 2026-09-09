@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.8  
+Version 7.10  
   
 ---  
   
@@ -23,6 +23,10 @@ It is the Single Source of Truth for:
 Planning information is intentionally excluded.  
 
 TP-004 does not manage kitchen cooking equipment. Kitchen equipment is governed by TP-011 Galley Fare under a separate, function-first selection standard. See TP-011 for details.  
+
+Coffee equipment follows a registration rule distinct from all other domains. Items under active comparison or decision-making are tracked exclusively in PX-004 Barista Codex, not in TP-004. A Coffee item is registered in TP-004 (COF-series) only once it has been purchased and is Owned; until then, the Coffee Domain (COF-series) remains intentionally unpopulated — this is by design, not missing data.
+
+This rule applies only to Coffee and Kitchen. All other domains (Furniture, Light, Aroma, Storage, Fire) are unaffected: items under consideration, on hold, or decided-but-not-yet-purchased continue to be registered in TP-004 using the existing Status system (Essential / Candidate / Upgrade), as before.
   
 ---  
   
@@ -60,6 +64,8 @@ COF-001
 FIR-001  
   
 IDs never change.  
+
+Branch suffixes (lowercase letters, e.g. LGT-028a, LGT-028b) may be attached directly to a parent ID to register mutually exclusive product candidates competing for the same equipment role, without shifting the sequence of subsequent IDs. This differs from Child Components (permanently associated sub-parts, simultaneously owned): branch variants represent alternative candidates for a single slot, and typically only one will ultimately be promoted (Status changed to Essential/Owned) while the other is retired or reclassified.  
   
 ---  
   
@@ -1678,6 +1684,11 @@ MMM Pocket Shade PAJAMA MOON LIAN HOME
 
 Owned  
 
+### Branch Variants  
+
+- LGT-028a  
+- LGT-028b  
+
 ### Color  
 
 Floral  
@@ -1693,6 +1704,78 @@ None
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+---  
+
+## LGT-028a  
+
+**Brand**  
+
+neru design works  
+
+**Product**  
+
+メッシュシェード  
+
+**Status**  
+
+Candidate  
+
+**Parent**  
+
+LGT-028  
+
+### Color  
+
+Copper  
+
+### Material  
+
+Copper（Mesh Fabric）  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Portable LED Lantern（38-kT Shade）  
+
+---  
+
+## LGT-028b  
+
+**Brand**  
+
+CALMA STORE × neru design works  
+
+**Product**  
+
+POCKET SHADE M（neru design works柄）  
+
+**Status**  
+
+Candidate  
+
+**Parent**  
+
+LGT-028  
+
+### Color  
+
+Khaki  
+
+### Material  
+
+Fabric  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Portable LED Lantern（38-kT Shade, Foldable）  
 
 ---  
 
@@ -4890,5 +4973,32 @@ Status change per direct instruction from the project owner: LGT-022 (38-kT miya
 ### Changes  
 
 - LGT-022: Status corrected from Candidate to Upgrade.  
+
+---  
+
+## Version 7.9  
+
+Branch-suffix ID notation introduced per direct instruction from the project owner, to register two competing shade candidates for LGT-028 without shifting the numbering of subsequent Light Domain IDs (a lighter-weight alternative to the Child Components pattern used in Version 7.6).
+
+### Changes  
+
+- Introduced "Branch Variants" as a new field, distinct from "Child Components": branch variants (lowercase letter suffixes, e.g. LGT-028a) represent mutually exclusive candidates competing for one equipment slot, rather than permanently associated sub-parts.  
+- LGT-028 (CARMA STORE, MMM Pocket Shade PAJAMA MOON LIAN HOME): added Branch Variants field listing LGT-028a and LGT-028b. No other field changed.  
+- LGT-028a (new): neru design works, "メッシュシェード" (Mesh Shade), Candidate, Parent LGT-028, Copper / Copper Mesh Fabric, Portable LED Lantern (38-kT Shade).  
+- LGT-028b (new): CALMA STORE × neru design works, "POCKET SHADE M" (neru design works pattern), Candidate, Parent LGT-028, Khaki / Fabric, Portable LED Lantern (38-kT Shade, Foldable).  
+- Registry Rules (Equipment ID section): added a note defining branch-suffix notation for future use.  
+- No existing Light Domain IDs (LGT-029 onward) were renumbered or shifted.  
+
+---  
+
+## Version 7.10  
+
+Scope clarification per direct instruction from the project owner: Coffee Domain (COF-series) registration timing formalized, distinct from the Kitchen exclusion rule.
+
+### Changes  
+
+- Purpose section: added a rule stating that Coffee equipment under active decision-making is tracked exclusively in PX-004 Barista Codex, and is registered in TP-004 (COF-series) only upon purchase (Owned status). Until purchase, the empty COF-series frame (retained since Version 7.1) is confirmed as intentional, not missing data.  
+- Purpose section: clarified that this phased-registration rule applies only to Coffee and Kitchen. All other domains (Furniture, Light, Aroma, Storage, Fire) continue to register not-yet-purchased items (Essential / Candidate / Upgrade) directly in TP-004 as before — this change does not alter their existing practice.  
+- No equipment data, Status, or field values were changed in this revision.  
 
 ---  
