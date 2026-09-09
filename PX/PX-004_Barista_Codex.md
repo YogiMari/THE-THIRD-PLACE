@@ -11,7 +11,7 @@ Barista Codex
     
 # Version    
     
-3.4    
+3.5    
     
 # Status    
     
@@ -114,6 +114,24 @@ Coffee Zoneでは、単一ブランドでEquipment一式を統一しない。
     
 この原則は、Mari個人のファッション観（全身を単一ブランドで統一しない／その年のコレクションとして完成されたルックである場合を除き、鞄・靴等のカテゴリごとに個別ブランドを選ぶ）をCoffee Zoneに適用したものである（2026-09）。    
     
+    
+---    
+    
+### 3. Category Tier Exception（カテゴリ構造起因のTier例外）    
+    
+Coffee Zoneでは、ブランドで選ぶこと自体は正式な原則（Cross-Brand Curation Principle）として許容している。    
+    
+ただし、Coffee Zoneを構成するブランドは、原則としてPortable Luxury・Architectural Simplicity・Industrial Designを体現するTier A水準（9Barista、Option-O、MantaBrew、Weber Workshops、Saint Anthony Industries、Pullman等）で統一する。    
+    
+以下2カテゴリについては、カテゴリの市場構造そのものにTier A水準の選択肢が存在しないため、機能・素材適合を理由とした明示的な例外として記録する。ブランドの格が届いていないことを認識しないまま採用した状態と、認識した上で機能を理由に採用した状態は区別する。    
+    
+**Milk Pitcher / Pitcher Sleeve（WPM）**    
+    
+ミルクピッチャーというカテゴリには、Weber Workshops・Pullman・Saint Anthony Industries水準の設計・製造一貫型ブティックブランドが実質的に存在しない（市場調査：2026-09）。WPMは競技バリスタ用品市場の中で機能的に妥当な選択だが、Reasonに記載の採用理由はラテアート習得のしやすさという機能面のみであり、他のConfirmed Equipmentが共通して備えるブランド哲学・素材の贅沢さへの言及を欠く。カテゴリ構造上の制約による例外として正式に記録する。    
+    
+**Tool Station（KNODOS）**    
+    
+KNODOSは "Premium Espresso Accessories for Home Baristas" を自認するホームバリスタ向けアクセサリーブランドであり、9Barista・Weber Workshops等が想定するプロ・競技・コレクター水準の顧客層とは異なる。ただし採用理由はWalnut素材によるDesign Bibleとの整合性、およびThe Blocとの役割分離（Tool Station機能）であり、天板保護という裏方機能に対する適材適所の選定として妥当と判断する。ブランド格ではなく、素材とWorkflow機能を理由とした例外として正式に記録する。    
     
 ---    
     
@@ -1828,6 +1846,7 @@ PX-004は、価格・購入先・輸送・関税・購入手順などの調達�
 | 3.2 | 2026-09 | Relationship section clarified per direct instruction from the project owner: reflection of Confirmed Equipment into TP-004 Equipment Registry occurs only upon actual purchase (Owned status), not at the point of Confirmation. Confirmed-but-not-yet-purchased Equipment remains managed exclusively within PX-004. This corresponds to a related TP-004 update (Version 7.10) formalizing the Coffee Domain (COF-series) registration timing rule. |  
 | 3.3 | 2026-09 | WDT Tool section: Decision Context added. Formally documents that Normcore Planetary WDT Tool 54mm was selected as a realistic alternative after the original first-choice candidate, Weber Workshops MOONRAKER Ultra Edition, was found physically incompatible (58mm-only base ring shape vs. the 9Barista Mk.2 Pro's 53mm basket, with no official adapter available). This formalizes reasoning previously recorded only in project chat history and cross-referenced with the Coffee Zone Philosophy Reference Case and Version History 2.8. |  
 | 3.4 | 2026-09 | Econtto Portawave added to Rejected Equipment as a new WDT Tool candidate. Rejected due to: 54mm variants being Dalla Corte/Breville-specific portafilter shapes rather than a generic 54mm fit, with no confirmed 9Barista 53mm compatibility; those 54mm variants currently unavailable in stock; an internal specification inconsistency in official marketing copy (30 needles included vs. 14-needle drive pattern); and third-party reviews covering only the 58mm variant with no 53mm/9Barista field usage found. Normcore Planetary WDT Tool 54mm's confirmed KNODOS Tool Station fit and established 53mm-system track record were not matched or exceeded. |  
+| 3.5 | 2026-09 | Category Tier Exception added to Design Principles as Coffee Zone Philosophy item 3. Documents that Milk Pitcher / Pitcher Sleeve (WPM) and Tool Station (KNODOS) fall below the Tier A brand standard applied elsewhere in Coffee Zone, and records both as explicit, function/material-justified exceptions rather than unexamined selections. Based on market research confirming no Tier A-equivalent brand exists in either category (2026-09). |  
   
 ---  
   
