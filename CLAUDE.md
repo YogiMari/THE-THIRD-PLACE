@@ -1,5 +1,7 @@
 # CLAUDE.md — THE THIRD PLACE
 
+<!-- Synced from: THE THIRD PLACE Conversation Constitution Ver.1.2 -->
+
 このファイルは、Claude Codeがこのリポジトリを直接操作する際に自動的に読み込む運用指示書です。
 TP/PX/TM文書の内容そのものはここには含みません。各ファイルを直接参照してください。
 
