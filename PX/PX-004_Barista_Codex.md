@@ -11,7 +11,7 @@ Barista Codex
     
 # Version    
     
-3.3    
+3.4    
     
 # Status    
     
@@ -1419,6 +1419,25 @@ Rejected
   
 ---  
   
+## Econtto Portawave  
+  
+**Status**  
+  
+Rejected  
+  
+### Reason  
+  
+WDT Toolの新規候補として検討したが、以下の理由により採用基準に達しなかった。  
+  
+* 54mm版は汎用54mmではなく、Dalla Corte／Breville専用のポルタフィルターシェイプであり、9Barista Mk.2 Proの53mmバスケットとの適合実績が確認できない。  
+* 当該54mm版（Dalla Corte／Breville）は、公式ストアにおいて現在いずれも在庫切れ（Unavailable）。  
+* 公式製品説明内で「30本のニードル付属」と「14本のニードルが駆動」という記載の食い違いがあり、機構仕様の正確性に疑義がある。  
+* 第三者レビュー（R&D ESPRESSO LAB等）は58mm版についてのみで、53mm／9Baristaでの実使用実績は一件も確認できなかった。  
+  
+Normcore Planetary WDT Tool 54mmは、KNODOS Tool Stationへの実測適合（外径約65mm）を含め53mm系Workflowでの実績が確認済みであり、Econttoはこれを上回る根拠を提示できなかった。  
+  
+---  
+  
 ## Additional Ground Transfer Cup  
   
 **Status**  
@@ -1808,6 +1827,7 @@ PX-004は、価格・購入先・輸送・関税・購入手順などの調達�
 | 3.1 | 2026-09 | Coffee Zone Philosophy (Exception Clause) added to Design Principles. Non-Rational Luxury Principle and Cross-Brand Curation Principle established as Coffee Zone-specific philosophies, distinct from and exceptional to the THE THIRD PLACE-wide Baseline. These apply exclusively to Coffee Zone and not to other domains. |  
 | 3.2 | 2026-09 | Relationship section clarified per direct instruction from the project owner: reflection of Confirmed Equipment into TP-004 Equipment Registry occurs only upon actual purchase (Owned status), not at the point of Confirmation. Confirmed-but-not-yet-purchased Equipment remains managed exclusively within PX-004. This corresponds to a related TP-004 update (Version 7.10) formalizing the Coffee Domain (COF-series) registration timing rule. |  
 | 3.3 | 2026-09 | WDT Tool section: Decision Context added. Formally documents that Normcore Planetary WDT Tool 54mm was selected as a realistic alternative after the original first-choice candidate, Weber Workshops MOONRAKER Ultra Edition, was found physically incompatible (58mm-only base ring shape vs. the 9Barista Mk.2 Pro's 53mm basket, with no official adapter available). This formalizes reasoning previously recorded only in project chat history and cross-referenced with the Coffee Zone Philosophy Reference Case and Version History 2.8. |  
+| 3.4 | 2026-09 | Econtto Portawave added to Rejected Equipment as a new WDT Tool candidate. Rejected due to: 54mm variants being Dalla Corte/Breville-specific portafilter shapes rather than a generic 54mm fit, with no confirmed 9Barista 53mm compatibility; those 54mm variants currently unavailable in stock; an internal specification inconsistency in official marketing copy (30 needles included vs. 14-needle drive pattern); and third-party reviews covering only the 58mm variant with no 53mm/9Barista field usage found. Normcore Planetary WDT Tool 54mm's confirmed KNODOS Tool Station fit and established 53mm-system track record were not matched or exceeded. |  
   
 ---  
   
