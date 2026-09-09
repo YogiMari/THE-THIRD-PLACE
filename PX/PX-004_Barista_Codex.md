@@ -11,7 +11,7 @@ Barista Codex
     
 # Version    
     
-3.2    
+3.3    
     
 # Status    
     
@@ -419,6 +419,16 @@ Planetary機構により均一なベッド形成と高い再現性を実現す�
 THE THIRD PLACEが求めるWorkflow・品質・デザインとの整合性を満たす。    
     
 54mm仕様を正式採用する。    
+    
+### Decision Context    
+    
+Normcore Planetary WDT Tool 54mmの採用は、当初の第一候補であったWeber Workshops MOONRAKER Ultra Editionが物理的に不適合であったことに起因する、現実的な代替選定である。    
+    
+MOONRAKER Ultra Editionは真鍮製ギア機構による「Swiss watchmaking」的な精密工学を備え、THE THIRD PLACEが求めるブランド格・機構美において当初最有力候補として検討された。しかし、MOONRAKER Ultra Editionはベースリング形状が58mmポルタフィルター専用設計であり、9Barista Mk.2 Proの53mmバスケットとは物理的に適合しない。9Barista公式からもアダプター等の互換手段は提供されていないことを確認済みである。    
+    
+したがってNormcoreは、「ギア駆動によるPlanetary機構」という機能要件と53mm系Workflowとの互換性を両立する、現実的な最上位互換候補として選定された。    
+    
+本Decision Contextは、Coffee Zone Philosophy（Non-Rational Luxury Principle）のReference Caseで言及されるMOONRAKER Ultra Editionの検討経緯、およびVersion History 2.8の記録と対応する。    
     
 ### Physical Configuration    
     
@@ -1797,6 +1807,7 @@ PX-004は、価格・購入先・輸送・関税・購入手順などの調達�
 | 3.0 | 2026-08 | Puck Screen placement added explicitly to the confirmed Puck Preparation Workflow. Water Transfer confirmed as direct pouring from the existing dedicated water bottles, with no additional transfer equipment required. ALM KOPi Z1 Mini Steamer is confirmed to use existing kitchen single burners, with no dedicated Coffee System burner required. |  
 | 3.1 | 2026-09 | Coffee Zone Philosophy (Exception Clause) added to Design Principles. Non-Rational Luxury Principle and Cross-Brand Curation Principle established as Coffee Zone-specific philosophies, distinct from and exceptional to the THE THIRD PLACE-wide Baseline. These apply exclusively to Coffee Zone and not to other domains. |  
 | 3.2 | 2026-09 | Relationship section clarified per direct instruction from the project owner: reflection of Confirmed Equipment into TP-004 Equipment Registry occurs only upon actual purchase (Owned status), not at the point of Confirmation. Confirmed-but-not-yet-purchased Equipment remains managed exclusively within PX-004. This corresponds to a related TP-004 update (Version 7.10) formalizing the Coffee Domain (COF-series) registration timing rule. |  
+| 3.3 | 2026-09 | WDT Tool section: Decision Context added. Formally documents that Normcore Planetary WDT Tool 54mm was selected as a realistic alternative after the original first-choice candidate, Weber Workshops MOONRAKER Ultra Edition, was found physically incompatible (58mm-only base ring shape vs. the 9Barista Mk.2 Pro's 53mm basket, with no official adapter available). This formalizes reasoning previously recorded only in project chat history and cross-referenced with the Coffee Zone Philosophy Reference Case and Version History 2.8. |  
   
 ---  
   
