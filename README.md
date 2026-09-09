@@ -364,4 +364,3 @@ Unless otherwise stated, all original documents, designs, structures, and writte
 ---
 
 ## © THE THIRD PLACE
-
