@@ -1,4 +1,3 @@
-TP-010 Storage Blueprint Ver.2.2
 # TP-010 Storage Blueprint
 ## Ver.2.2
 
@@ -8,7 +7,7 @@ Status : Planning
 
 # Purpose
 
-Storage Blueprint defines the complete storage system of THE THIRD PLACE.
+Storage Blueprintは、THE THIRD PLACEの収納システム全体を定義する。
 
 ## Scope
 
@@ -20,9 +19,9 @@ Storage Blueprint defines the complete storage system of THE THIRD PLACE.
 - Return Sequence
 - Operation Master
 
-Storage is not packing.
+収納とは、荷物を詰めることではない。
 
-Storage is an operational system.
+収納とは、運用システムである。
 
 ---
 
@@ -49,29 +48,29 @@ Storage is an operational system.
 
 TP-004
 
-Equipment Master
+装備マスター
 
 ↓
 
 TP-010
 
-Storage Design & Operation
+収納設計・運用
 
 ↓
 
 TP-007
 
-Site Deployment
+現地展開
 
 ---
 
 # Design Philosophy
 
-Storage is not capacity.
+収納とは、容量ではない。
 
-Storage is operation.
+収納とは、運用である。
 
-Every item has:
+すべてのアイテムは、以下を持つ:
 
 - One Position
 - One Sequence
@@ -120,19 +119,19 @@ Coffee Equipment
 
 ×
 
-Never Store
+収納禁止
 
 Light Equipment
 
 ×
 
-Never Store
+収納禁止
 
 Mixed Storage
 
 ×
 
-Prohibited
+禁止
 
 ---
 
@@ -256,7 +255,7 @@ Living Core Module
 - Coffee EquipmentはBridge Table完成後に取り出す。
 - 残り4セットはサイドテーブル展開用とする。
 - Vapaluxは最下層固定。
-- Storage positions never change except during maintenance.
+- 収納位置は、メンテナンス時を除き変更しない。
 
 ---
 
@@ -278,9 +277,9 @@ Internal Size
 
 ### Rule
 
-Dedicated to bedding only.
+寝具専用。
 
-No other equipment permitted.
+他の装備の収納は認めない。
 
 ---
 
@@ -338,13 +337,13 @@ CONPE10はShellCon25へ収納しない。
 
 ### Rule
 
-Loading order is fixed.
+積載順は固定とする。
 
 ---
 
 # Deployment Sequence
 
-① Beck② Open
+① Beck②を開く
 
 ↓
 
@@ -356,7 +355,7 @@ Loading order is fixed.
 
 ↓
 
-④ Bridge Table Complete
+④ Bridge Table完成
 
 ↓
 
@@ -368,7 +367,7 @@ Loading order is fixed.
 
 ↓
 
-⑦ Beck①・Beck② Side Tables Complete
+⑦ Beck①・Beck②サイドテーブル完成
 
 ↓
 
@@ -380,11 +379,11 @@ Loading order is fixed.
 
 ↓
 
-⑩ Vapalux（Required Only）
+⑩ Vapalux（必要時のみ）
 
 # Coffee Sequence
 
-Bridge Table Complete
+Bridge Table完成
 
 ↓
 
@@ -412,9 +411,9 @@ Aieve WDT Tool
 
 ↓
 
-Brewing
+抽出
 
-Storage follows the reverse order.
+収納は、この逆順で行う。
 
 ---
 
@@ -452,7 +451,7 @@ Filoméla INCENSE CHAMBER
 
 ↓
 
-Vapalux（Required Only）
+Vapalux（必要時のみ）
 
 ---
 
@@ -466,7 +465,7 @@ Wood Board（4 Sets）
 
 ↓
 
-Close Side Tables
+サイドテーブルを閉じる
 
 ↓
 
@@ -486,30 +485,30 @@ Aroma Equipment
 
 ↓
 
-Close Beck②
+Beck②を閉じる
 
 ↓
 
-Vehicle Loading
+車両積載
 
 ---
 
 # Home Operation
 
-## Remove Only
+## 取り外すもののみ
 
 - wildingout LF1984
-- Vapalux M320（Used Only）
+- Vapalux M320（使用時のみ）
 
-Recharge
-
-↓
-
-Dry if Required
+充電
 
 ↓
 
-Return to Fixed Position
+必要に応じて乾燥
+
+↓
+
+定位置へ戻す
 
 Bridge Frame・Wood Board・Coffee Equipmentは
 
@@ -533,35 +532,35 @@ CONPE10は
 
 ## Vehicle
 
-Vehicle-fixed storage is the default state.
+車両固定収納をデフォルト状態とする。
 
 ---
 
 ## Camp
 
-Follow the defined Deployment Sequence.
+定められたDeployment Sequenceに従う。
 
-Do not change storage positions.
+収納位置は変更しない。
 
 ---
 
 ## Return
 
-Follow the defined Return Sequence.
+定められたReturn Sequenceに従う。
 
-Restore every item to its fixed position.
+すべてのアイテムを定位置へ戻す。
 
 ---
 
 ## Maintenance
 
-Inspect after each trip.
+使用後は毎回点検する。
 
-Clean before storage.
+収納前に清掃する。
 
-Dry completely before closing containers.
+コンテナを閉じる前に完全に乾燥させる。
 
-Recharge LF1984 before returning it to its fixed position.
+LF1984は定位置へ戻す前に充電する。
 
 ---
 
@@ -569,13 +568,13 @@ Recharge LF1984 before returning it to its fixed position.
 
 ## Beck①
 
-Kitchen Module only.
+Kitchen Module専用。
 
 ---
 
 ## Beck②
 
-Living Core Module only.
+Living Core Module専用。
 
 Coffee Equipment
 
@@ -589,13 +588,13 @@ Bridge Frame・Wood Board・Coffee Equipment・Vapaluxの収納位置は固定�
 
 ## ShellCon25①
 
-Bedding only.
+Bedding専用。
 
 ---
 
 ## ShellCon25②
 
-Light & Aroma Module only.
+Light & Aroma Module専用。
 
 ### Fixed Contents
 
@@ -629,15 +628,13 @@ One Sequence
 
 One Operation
 
-No temporary permanent locations.
+一時的な固定位置は認めない。
 
-No duplicate storage.
+重複収納は認めない。
 
-No mixed modules.
+モジュールの混在は認めない。
 
-Storage follows operation,
-
-not available space.
+収納は、空きスペースにではなく、運用に従う。
 
 ---
 
@@ -728,9 +725,9 @@ Verified
 
 ## Final Operational Rules
 
-Storage is not capacity.
+収納とは、容量ではない。
 
-Storage is operation.
+収納とは、運用である。
 
 Every item has
 
@@ -778,4 +775,4 @@ Permanent Storage
 
 ---
 
-This document is the operational blueprint for the complete Storage Zone of THE THIRD PLACE.
+本文書は、THE THIRD PLACEの収納ゾーン全体における運用ブループリントである。
