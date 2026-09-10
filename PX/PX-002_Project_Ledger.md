@@ -1,4 +1,3 @@
-PX-002 Project Ledger
 # PX-002 Project Ledger
 
 **Document ID**: PX-002  
@@ -105,7 +104,7 @@ PX-002 Project Ledger
 
 | Version | Date | Description |
 |----------|------|-------------|
-| 3.0 | 2026-07-15 | Simplified for long-term operation. Optimized for conversation search and daily maintenance. |
+| 3.0 | 2026-07-15 | 長期運用向けに簡素化。会話検索と日次メンテナンスに最適化。 |
 | 3.1 | 2026-09-07 | Project Overview（文書数）とQuick Accessを実際のRepository構成（TP12／TM5／PX6、全23文書）へ整合。 |
 
 ---
