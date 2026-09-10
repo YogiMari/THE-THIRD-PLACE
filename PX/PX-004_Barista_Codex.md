@@ -1010,10 +1010,10 @@ Straight Espresso
     
 ### Selection Rationale    
     
-* Dedicated espresso sensory glass    
-* Used with 9Barista    
-* Designed specifically to improve the sensory experience of espresso    
-* Strong alignment with THE THIRD PLACE design philosophy    
+* エスプレッソ専用のセンサリーグラス    
+* 9Baristaと組み合わせて使用    
+* エスプレッソの感覚的体験を高めるために専用設計されている    
+* THE THIRD PLACEのデザイン思想との整合性が強い    
     
 PROPELは、エスプレッソの層を統合し、コントロールされた感覚的体験を提供する専用グラスとして採用する。    
     
@@ -1035,11 +1035,11 @@ Straight Espresso
     
 ### Selection Rationale    
     
-* Dedicated espresso sensory glass    
-* Used with 9Barista    
-* Designed specifically to alter and enhance espresso aroma and flavor through aeration    
-* Particularly well matched to 9Barista’s approximately 40ml extraction    
-* Provides a different sensory approach from KRUVE PROPEL    
+* エスプレッソ専用のセンサリーグラス    
+* 9Baristaと組み合わせて使用    
+* エアレーションによってエスプレッソの香りと風味を変化・向上させるために専用設計されている    
+* 9Baristaの約40ml抽出と特に相性が良い    
+* KRUVE PROPELとは異なる感覚的アプローチを提供する    
     
 AERESSOは、エスプレッソのエアレーションによって香りと風味を開く、PROPELとは異なる感覚的アプローチを担う専用グラスとして採用する。    
     
@@ -1053,7 +1053,7 @@ AERESSOは、エスプレッソのエアレーションによって香りと風�
     
 ### Purpose    
     
-Protective transport case for PROPEL + AERESSO    
+PROPEL + AERESSO用の保護運搬ケース    
     
 ### Quantity    
     
@@ -1061,16 +1061,16 @@ Protective transport case for PROPEL + AERESSO
     
 ### Selection Rationale    
     
-* Shared transport solution    
-* Protects both espresso glasses    
-* Minimal equipment    
-* No unnecessary hard case    
+* 共用の運搬手段    
+* 両方のエスプレッソグラスを保護する    
+* 機材を最小限に抑える    
+* 不要なハードケースを持たない    
     
 ### Transport Policy    
     
-* No Pelican-style hard case    
-* No second glass case    
-* The single HILLS FIELD case is the confirmed transport solution    
+* Pelican型のハードケースは使用しない    
+* 2つ目のグラスケースは持たない    
+* HILLS FIELDケース1つを、正式な運搬手段とする    
     
 ---    
     
@@ -1082,19 +1082,19 @@ Protective transport case for PROPEL + AERESSO
     
 ### Purpose    
     
-Protective separator between PROPEL and AERESSO    
+PROPELとAERESSOの間の保護セパレーター    
     
 ### Quantity    
     
-1 package    
+1パッケージ    
     
 ### Diameter    
     
-approximately 67mm    
+約67mm    
     
 ### Thickness    
     
-approximately 2mm    
+約2mm    
     
 ### Material    
     
@@ -1106,17 +1106,17 @@ Black
     
 ### Role    
     
-* Prevent direct glass-to-glass contact    
-* Reduce minor vibration and movement    
-* Preserve nesting depth as much as possible    
+* グラス同士の直接接触を防ぐ    
+* 微小な振動・動きを軽減する    
+* ネスティングの深さをできる限り維持する    
     
 ### Installation    
     
-* One coaster placed between PROPEL and AERESSO    
-* No case modification    
-* No DIY fabrication    
+* PROPELとAERESSOの間にコースターを1枚設置    
+* ケースの改造は行わない    
+* DIYでの製作は行わない    
     
-The second coaster in the package is retained as a spare.    
+パッケージ内のもう1枚のコースターは、予備として保持する。    
     
 ---    
     
@@ -1136,20 +1136,20 @@ Latte
     
 ### Transport    
     
-* FIKA12 already has its own case    
-* FIKA12 case is stored directly in the Bek Container    
+* FIKA12には専用ケースが付属している    
+* FIKA12ケースはBek Container内にそのまま収納する    
     
-FIKA12 remains the dedicated shared solution for latte.    
+FIKA12は、ラテ用の共用の専用解決策として維持する。    
     
 ### Configuration Priorities    
     
-* Purpose-designed coffee equipment    
-* Distinct functional roles    
-* Two-person operation    
-* Minimal additional equipment    
-* Safe transport    
-* No unnecessary hard cases    
-* No DIY case modification    
+* 用途に特化して設計されたコーヒー機材であること    
+* それぞれ明確に異なる機能的役割を持つこと    
+* 2人分の運用であること    
+* 追加機材を最小限に抑えること    
+* 安全な運搬であること    
+* 不要なハードケースを持たないこと    
+* DIYでのケース改造を行わないこと    
     
 ---    
     
@@ -1830,23 +1830,23 @@ PX-004は、価格・購入先・輸送・関税・購入手順などの調達�
   
 | Version | Date | Summary |  
 |---|---|---|  
-| 1.0 | 2026-08 | Initial official release |  
-| 2.0 | 2026-08 | Document restructured. Decision records and acquisition records separated. Coffee Scale updated to MantaBrew Master Kit (Module A + Module B). Confirmed equipment synchronized with current official decisions. |  
-| 2.1 | 2026-08 | Weber Workshops Blind Shaker Onyx added as Confirmed Equipment. Blind Shaker workflow, selection criteria, physical compatibility requirements, and rejected alternatives added. |  
-| 2.2 | 2026-08 | Espresso / Latte Cup Configuration added. KRUVE PROPEL and ICOSA Brewhouse AERESSO confirmed as the two dedicated espresso sensory glasses. HILLS FIELD Glass Case Single confirmed as the shared transport case. AION Seine Super Absorbent Coaster 801-BL confirmed as the protective separator. DAMNGOOD × CATAPULT FACTORY FIKA12 ×2 confirmed as the dedicated latte cup configuration. |  
-| 2.3 | 2026-08 | Coffee System Water Bottle Configuration added. Snow Peak オーロラボトル 1L, YETI Yonder 1L, and Snow Peak 酒筒 Titanium 540mL confirmed as the dedicated water transport configuration for the Coffee System. Water Bottle / Water Carrier removed from Deferred items. |  
-| 2.4 | 2026-08 | Weber Workshops Bean Cellar Bulk and AION Seine Super Absorbent Coaster 801-BL naming synchronized with PX-005 and official product naming. Water Management confirmed as part of the official Coffee System configuration. |  
-| 2.5 | 2026-08 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm added as Confirmed Tool Station. Normcore Planetary WDT Tool fixed to 54mm. Distributor, Tamper, and WDT moved from The Bloc to KNODOS. The Bloc role redefined as Extraction Core, with Normcore RDT Spray Bottle and Weber Workshops Blind Shaker Onyx assigned to its two Tool cutouts. Confirmed Coffee Preparation Workflow updated accordingly. |  
-| 2.6 | 2026-08 | Coffee Workflow updated following physical workflow investigation. Blind Shaker Onyx remains the primary ground-transfer and homogenization vessel. LAGOM Mini Ground Transfer Cup is retained only as a secondary route if direct transfer is physically unavailable. Two-person Espresso operation is explicitly defined as two sequential extraction cycles. WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout and WPM Pitcher Sleeve confirmed for Latte workflow, with one-cup-at-a-time steaming and two sequential cycles. Latte workflow updated accordingly. |  
-| 2.7 | 2026-08 | Coffee System baseline consolidated following current equipment decisions. |  
-| 2.8 | 2026-08 | Historical decision records added for Varia EVO Hybrid Gen 2 and Weber Workshops MOONRAKER Ultra Edition. Varia is recorded as previously considered but not selected due to insufficient alignment with THE THIRD PLACE Coffee System equipment character and design direction. MOONRAKER Ultra Edition is recorded as highly regarded but rejected for current use because it is designed for 58mm baskets while the current 9Barista workflow is 53mm. |  
-| 2.9 | 2026-08 | Standard accessories included with 9Barista Mk.2 Pro were clarified as Included Components / Accessories rather than independent Equipment. 9Barista Magnetic Dosing Funnel and 9Barista Stainless Steel Basket Cap Pro are explicitly excluded from independent TP-004 / PX-005 management. Alternative Basket Cap status clarified as Not Separately Acquired. |  
-| 3.0 | 2026-08 | Puck Screen placement added explicitly to the confirmed Puck Preparation Workflow. Water Transfer confirmed as direct pouring from the existing dedicated water bottles, with no additional transfer equipment required. ALM KOPi Z1 Mini Steamer is confirmed to use existing kitchen single burners, with no dedicated Coffee System burner required. |  
-| 3.1 | 2026-09 | Coffee Zone Philosophy (Exception Clause) added to Design Principles. Non-Rational Luxury Principle and Cross-Brand Curation Principle established as Coffee Zone-specific philosophies, distinct from and exceptional to the THE THIRD PLACE-wide Baseline. These apply exclusively to Coffee Zone and not to other domains. |  
-| 3.2 | 2026-09 | Relationship section clarified per direct instruction from the project owner: reflection of Confirmed Equipment into TP-004 Equipment Registry occurs only upon actual purchase (Owned status), not at the point of Confirmation. Confirmed-but-not-yet-purchased Equipment remains managed exclusively within PX-004. This corresponds to a related TP-004 update (Version 7.10) formalizing the Coffee Domain (COF-series) registration timing rule. |  
-| 3.3 | 2026-09 | WDT Tool section: Decision Context added. Formally documents that Normcore Planetary WDT Tool 54mm was selected as a realistic alternative after the original first-choice candidate, Weber Workshops MOONRAKER Ultra Edition, was found physically incompatible (58mm-only base ring shape vs. the 9Barista Mk.2 Pro's 53mm basket, with no official adapter available). This formalizes reasoning previously recorded only in project chat history and cross-referenced with the Coffee Zone Philosophy Reference Case and Version History 2.8. |  
-| 3.4 | 2026-09 | Econtto Portawave added to Rejected Equipment as a new WDT Tool candidate. Rejected due to: 54mm variants being Dalla Corte/Breville-specific portafilter shapes rather than a generic 54mm fit, with no confirmed 9Barista 53mm compatibility; those 54mm variants currently unavailable in stock; an internal specification inconsistency in official marketing copy (30 needles included vs. 14-needle drive pattern); and third-party reviews covering only the 58mm variant with no 53mm/9Barista field usage found. Normcore Planetary WDT Tool 54mm's confirmed KNODOS Tool Station fit and established 53mm-system track record were not matched or exceeded. |  
-| 3.5 | 2026-09 | Category Tier Exception added to Design Principles as Coffee Zone Philosophy item 3. Documents that Milk Pitcher / Pitcher Sleeve (WPM) and Tool Station (KNODOS) fall below the Tier A brand standard applied elsewhere in Coffee Zone, and records both as explicit, function/material-justified exceptions rather than unexamined selections. Based on market research confirming no Tier A-equivalent brand exists in either category (2026-09). |  
+| 1.0 | 2026-08 | 初回正式リリース。 |  
+| 2.0 | 2026-08 | 文書構成を再編。意思決定記録と調達記録を分離。Coffee ScaleをMantaBrew Master Kit（Module A + Module B）へ更新。Confirmed Equipmentを現行の正式決定と同期。 |  
+| 2.1 | 2026-08 | Weber Workshops Blind Shaker OnyxをConfirmed Equipmentとして追加。Blind ShakerのWorkflow、Selection Criteria、物理適合要件、および不採用となった候補を追加。 |  
+| 2.2 | 2026-08 | Espresso / Latte Cup Configurationを追加。KRUVE PROPELとICOSA Brewhouse AERESSOを、2種類の専用エスプレッソセンサリーグラスとして正式採用。HILLS FIELD Glass Case Singleを共用の運搬ケースとして正式採用。AION Seine Super Absorbent Coaster 801-BLを保護用セパレーターとして正式採用。DAMNGOOD × CATAPULT FACTORY FIKA12 ×2を、専用ラテカップ構成として正式採用。 |  
+| 2.3 | 2026-08 | Coffee System Water Bottle Configurationを追加。Snow Peak オーロラボトル1L、YETI Yonder 1L、Snow Peak 酒筒 Titanium 540mLを、Coffee System専用の水携行構成として正式採用。Water Bottle / Water CarrierをDeferred項目から除外。 |  
+| 2.4 | 2026-08 | Weber Workshops Bean Cellar BulkおよびAION Seine Super Absorbent Coaster 801-BLの表記を、PX-005および公式製品名と同期。Water Managementを、Coffee Systemの正式構成の一部として確定。 |  
+| 2.5 | 2026-08 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mmをConfirmed Tool Stationとして追加。Normcore Planetary WDT Toolを54mmに確定。Distributor・Tamper・WDTをThe BlocからKNODOSへ移設。The Blocの役割をExtraction Coreとして再定義し、2つのTool cutoutにNormcore RDT Spray BottleとWeber Workshops Blind Shaker Onyxを割り当て。Confirmed Coffee Preparation Workflowをこれに合わせて更新。 |  
+| 2.6 | 2026-08 | 物理的なWorkflow調査を経て、Coffee Workflowを更新。Blind Shaker Onyxを、主たる粉移送・均質化容器として維持。LAGOM Mini Ground Transfer Cupは、直接受けが物理的に成立しない場合のSecondary Routeとしてのみ維持。2人分のEspresso運用を、2回の連続抽出サイクルとして明確に定義。Latte WorkflowについてWPM Handleless Pitcher Standard 450cc / #07 Sharp SpoutおよびWPM Pitcher Sleeveを正式採用し、1杯ずつスチームする2サイクル運用とした。Latte Workflowをこれに合わせて更新。 |  
+| 2.7 | 2026-08 | 現行の機材決定に基づき、Coffee Systemのbaselineを統合整理。 |  
+| 2.8 | 2026-08 | Varia EVO Hybrid Gen 2およびWeber Workshops MOONRAKER Ultra Editionについての過去の検討経緯を記録として追加。Variaは、過去に検討されたもののTHE THIRD PLACE Coffee Systemの機材性格・デザイン方向性との整合が不十分として不採用だった旨を記録。MOONRAKER Ultra Editionは高く評価されたものの、58mmバスケット向け設計であり現行の9Barista Workflowが53mmであるため、現時点での採用は見送られた旨を記録。 |  
+| 2.9 | 2026-08 | 9Barista Mk.2 Proに付属する標準アクセサリーを、独立EquipmentではなくIncluded Components / Accessoriesとして明確化。9Barista Magnetic Dosing Funnelおよび9Barista Stainless Steel Basket Cap Proは、独立したTP-004 / PX-005管理対象から明示的に除外。Alternative Basket CapのStatusを、Not Separately Acquiredとして明確化。 |  
+| 3.0 | 2026-08 | Puck Screenの配置を、Confirmed Puck Preparation Workflowへ明示的に追加。Water Transferは、既存の専用Water Bottleからの直接注入とし、追加の移送機材を必要としないことを確定。ALM KOPi Z1 Mini Steamerは、既存のキッチン用シングルバーナーを流用することを確定し、Coffee System専用バーナーは不要とした。 |  
+| 3.1 | 2026-09 | Coffee Zone Philosophy（Exception Clause）をDesign Principlesへ追加。Non-Rational Luxury PrincipleとCross-Brand Curation Principleを、THE THIRD PLACE全体のBaselineとは区別される、Coffee Zone固有の例外的Philosophyとして確立。これらはCoffee Zoneにのみ適用し、他のDomainには適用しない。 |  
+| 3.2 | 2026-09 | プロジェクトオーナーの直接指示に基づき、Relationshipセクションを明確化: Confirmed EquipmentのTP-004 Equipment Registryへの反映は、Confirmed時点ではなく、実際に購入（Owned Status）された時点で初めて行う。Confirmedだが未購入のEquipmentは、PX-004のみで管理を継続する。これは、Coffee Domain（COF-series）の登録タイミングルールを正式化した、関連するTP-004の更新（Version 7.10）に対応する。 |  
+| 3.3 | 2026-09 | WDT Toolセクション: Decision Contextを追加。当初の第一候補であったWeber Workshops MOONRAKER Ultra Editionが物理的に不適合（58mm専用のベースリング形状であり、9Barista Mk.2 Proの53mmバスケットと適合せず、公式アダプターも存在しない）と判明した後、Normcore Planetary WDT Tool 54mmが現実的な代替として選定された経緯を正式に記録。これは、それまでプロジェクトチャット履歴にのみ記録されていた理由を正式化するものであり、Coffee Zone Philosophy Reference CaseおよびVersion History 2.8と相互参照する。 |  
+| 3.4 | 2026-09 | Econtto Portawaveを、新規のWDT Tool候補としてRejected Equipmentへ追加。不採用理由: 54mmバリエーションは汎用の54mm適合ではなく、Dalla Corte／Breville専用のポルタフィルター形状であり、9Barista 53mmとの適合が確認できないこと。当該54mmバリエーションは現在在庫切れであること。公式マーケティング表記に仕様上の矛盾（ニードル30本付属 vs. 14本駆動パターン）が存在すること。第三者レビューは58mm版のみを対象とし、53mm／9Baristaでの実使用実績が確認できなかったこと。Normcore Planetary WDT Tool 54mmが持つ、確認済みのKNODOS Tool Station適合性と53mm系での実績を、上回る・並ぶことはできなかった。 |  
+| 3.5 | 2026-09 | Category Tier Exceptionを、Coffee Zone Philosophyの項目3としてDesign Principlesへ追加。Milk Pitcher / Pitcher Sleeve（WPM）およびTool Station（KNODOS）が、Coffee Zoneの他部分に適用しているTier Aブランド水準に届いていないことを記録し、両者を無自覚な選定ではなく、機能・素材を根拠とした明示的な例外として位置付ける。両カテゴリともTier A相当のブランドが市場に存在しないことを確認した市場調査（2026-09）に基づく。 |  
   
 ---  
   
