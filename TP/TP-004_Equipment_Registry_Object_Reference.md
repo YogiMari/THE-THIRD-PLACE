@@ -1,15 +1,16 @@
+ated 
 # TP-004 Equipment Registry Object Reference  
 Version 7.11  
   
 ---  
   
-# Purpose  
+# Purpose（目的）  
   
-TP-004 is the official Equipment Registry of THE THIRD PLACE.  
+TP-004は、THE THIRD PLACEの公式Equipment Registry（装備台帳）である。  
   
-This document manages every physical object that composes THE THIRD PLACE.  
+この文書は、THE THIRD PLACEを構成するすべての物理的なオブジェクトを管理する。  
   
-It is the Single Source of Truth for:  
+以下項目のSingle Source of Truthである:  
   
 - Equipment  
 - Components  
@@ -20,21 +21,21 @@ It is the Single Source of Truth for:
 - Industrial Attribute  
 - Ownership Status  
   
-Planning information is intentionally excluded.  
+Planning情報（計画段階の情報）は、意図的に除外している。  
 
-TP-004 does not manage kitchen cooking equipment. Kitchen equipment is governed by TP-011 Galley Fare under a separate, function-first selection standard. See TP-011 for details.  
+TP-004はキッチン調理器具を管理しない。キッチン機材は、別途function-first（機能優先）の選定基準を持つTP-011 Galley Fareが管理する。詳細はTP-011を参照。  
 
-Coffee equipment follows a registration rule distinct from all other domains. Items under active comparison or decision-making are tracked exclusively in PX-004 Barista Codex, not in TP-004. A Coffee item is registered in TP-004 (COF-series) only once it has been purchased and is Owned; until then, the Coffee Domain (COF-series) remains intentionally unpopulated — this is by design, not missing data.
+Coffee機材は、他のすべてのDomainと異なる登録ルールに従う。比較検討中・意思決定中のアイテムは、TP-004ではなくPX-004 Barista Codexのみで追跡する。Coffeeアイテムは、購入されOwnedになった時点で初めてTP-004（COF-series）へ登録される。それまでの間、Coffee Domain（COF-series）は意図的に未入力のままとする — これはデータの欠落ではなく、設計上の仕様である。
 
-This rule applies only to Coffee and Kitchen. All other domains (Furniture, Light, Aroma, Storage, Fire) are unaffected: items under consideration, on hold, or decided-but-not-yet-purchased continue to be registered in TP-004 using the existing Status system (Essential / Candidate / Upgrade), as before.
+このルールは、CoffeeとKitchenのみに適用される。他のすべてのDomain（Furniture、Light、Aroma、Storage、Fire）には影響しない: 検討中・保留中・決定済みだが未購入のアイテムは、これまで通り既存のStatusシステム（Essential / Candidate / Upgrade）を用いてTP-004へ登録され続ける。
   
 ---  
   
-# Registry Rules  
+# Registry Rules（登録ルール）  
   
-## Equipment Domains  
+## Equipment Domains（装備ドメイン）  
   
-Equipment is classified into six domains.  
+Equipmentは、6つのDomainに分類される。  
   
 1. Furniture  
 2. Light  
@@ -45,9 +46,9 @@ Equipment is classified into six domains.
   
 ---  
   
-## Equipment ID  
+## Equipment ID（装備ID）  
   
-Each object receives one permanent ID.  
+各オブジェクトには、恒久的なIDが1つ付与される。  
   
 Examples  
   
@@ -63,37 +64,37 @@ COF-001
   
 FIR-001  
   
-IDs never change.  
+IDは変更されない。  
 
-Branch suffixes (lowercase letters, e.g. LGT-028a, LGT-028b) may be attached directly to a parent ID to register mutually exclusive product candidates competing for the same equipment role, without shifting the sequence of subsequent IDs. This differs from Child Components (permanently associated sub-parts, simultaneously owned): branch variants represent alternative candidates for a single slot, and typically only one will ultimately be promoted (Status changed to Essential/Owned) while the other is retired or reclassified.  
+ブランチ接尾辞（小文字アルファベット、例: LGT-028a、LGT-028b）は、後続IDの番号をずらすことなく、同じ装備枠を競合する複数の製品候補を登録するために、親IDへ直接付与できる。これはChild Components（恒久的に付随する構成部品、同時に所有される）とは異なる: ブランチバリアントは、1つの枠に対する代替候補を表し、通常は最終的にどちらか一方だけが昇格（StatusがEssential/Ownedへ変更）し、もう一方は廃止または別枠へ分類される。  
   
 ---  
   
-## Status  
+## Status（ステータス）  
   
-| Status | Meaning |  
+| Status | 意味 |  
 |---------|----------|  
-| Owned | Currently owned |  
-| Essential | Necessary and purchase is decided (awaiting purchase) |  
-| Candidate | Necessary, but the specific product is not yet decided (under evaluation) |  
-| Upgrade | A replacement for something already owned, or a "nice to have" item (lowest priority tier) |  
+| Owned | 現在所有している |  
+| Essential | 必要であり、購入が決定している（購入待ち） |  
+| Candidate | 必要だが、具体的な製品はまだ決まっていない（検討中） |  
+| Upgrade | 既に所有しているものの置き換え、または「あれば良い」アイテム（最も優先度の低い層） |  
 
-"Wanted" has been retired; its meaning is absorbed into "Essential."  
+「Wanted」は廃止され、その意味は「Essential」へ統合された。  
   
 ---  
   
-## Attribute Policy  
+## Attribute Policy（属性ポリシー）  
   
-Appearance is **not** stored.  
+Appearance（外観）は保存**しない**。  
   
-Appearance is determined by TP-002 Design Bible using  
+Appearanceは、TP-002 Design Bibleにより、以下を用いて決定される:  
   
 - Material  
 - Color  
 - Texture  
 - Finish  
   
-TP-004 therefore stores only  
+そのためTP-004が保存するのは、以下のみである:  
   
 - Material  
 - Color  
@@ -3833,11 +3834,11 @@ Soft Cooler
 
 # Coffee  
 
-Coffee Domain manages the complete brewing workflow.  
+Coffee Domainは、抽出に関する一連のワークフロー全体を管理する。  
 
-Selection criteria and purchasing priorities belong in TP-005 Acquisition Strategy.  
+選定基準や購入優先順位は、TP-005 Acquisition Strategyの管轄である。  
 
-TP-004 manages only equipment.  
+TP-004は、装備（Equipment）のみを管理する。  
 
 ---  
 
@@ -4869,13 +4870,13 @@ None
 
 Fire Pit  
 
-# Parent / Child Rules  
+# Parent / Child Rules（親子関係ルール）  
 
-A Parent object represents the primary equipment.  
+Parentオブジェクトは、主たる装備を表す。  
 
-Child objects are components, custom parts, interchangeable accessories, or permanently associated items.  
+Childオブジェクトは、構成部品、カスタムパーツ、交換可能なアクセサリー、または恒久的に付随するアイテムである。  
 
-A Child object may not exist independently unless its status changes in the future.  
+Childオブジェクトは、将来ステータスが変更されない限り、単独では存在しない。  
 
 Example  
 
@@ -4909,11 +4910,11 @@ STR-007
 
 ---  
 
-# Graphic Attribute  
+# Graphic Attribute（グラフィック属性）  
 
-Graphic Attribute records only the applied graphic language.  
+Graphic Attributeは、適用されたグラフィック表現のみを記録する。  
 
-Graphic is **not** equipment.  
+Graphicは装備そのもの**ではない**。  
 
 Examples  
 
@@ -4923,15 +4924,15 @@ Examples
 - Silkscreen  
 - Exterior Graphic  
 
-If no graphic exists,  
+グラフィックが存在しない場合、  
 
 Graphic Attribute = None  
 
 ---  
 
-# Industrial Attribute  
+# Industrial Attribute（インダストリアル属性）  
 
-Industrial Attribute records the functional or structural role of the object.  
+Industrial Attributeは、そのオブジェクトの機能的・構造的な役割を記録する。  
 
 Examples  
 
@@ -4979,9 +4980,9 @@ Fire
 
 ---  
 
-# Color Rule  
+# Color Rule（カラールール）  
 
-Only physical colors are recorded.  
+記録するのは、実際の物理的な色のみである。  
 
 Examples  
 
@@ -4995,13 +4996,13 @@ Examples
 - Floral  
 - Multi  
 
-No subjective descriptions are permitted.  
+主観的な表現は認めない。  
 
 ---  
 
-# Material Rule  
+# Material Rule（マテリアルルール）  
 
-Only actual materials are recorded.  
+記録するのは、実際の素材のみである。  
 
 Examples  
 
@@ -5018,15 +5019,15 @@ Examples
 - Resin  
 - Titanium  
 
-Surface finish belongs to TP-002 Design Bible.  
+表面仕上げ（Surface finish）は、TP-002 Design Bibleの管轄である。  
 
 ---  
 
-# Single Source of Truth  
+# Single Source of Truth（唯一の正）  
 
-TP-004 Equipment Registry is the authoritative source for all camp equipment governed by Human Principles aesthetic alignment. Kitchen cooking equipment is governed separately by TP-011 Galley Fare and is not registered in TP-004.  
+TP-004 Equipment Registryは、Human Principlesとの美意識的整合が求められる、すべてのキャンプ装備における正式な情報源である。キッチン調理器具は、TP-011 Galley Fareが別途管理し、TP-004には登録しない。  
 
-The following information shall originate from TP-004:  
+以下の情報は、TP-004を発生源とする:  
 
 - Equipment IDs  
 - Brand  
@@ -5038,9 +5039,9 @@ The following information shall originate from TP-004:
 - Graphic Attribute  
 - Industrial Attribute  
 
-Other documents reference TP-004 but do not redefine equipment.  
+他の文書はTP-004を参照するが、装備情報を再定義しない。  
 
-Planning, acquisition strategy, design philosophy, aesthetics, positioning, and evaluation are managed in their respective documents.  
+Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning、Evaluationは、それぞれの文書で管理する。  
 
 ---  
 
