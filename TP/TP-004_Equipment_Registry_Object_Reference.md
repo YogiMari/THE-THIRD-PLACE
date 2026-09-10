@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.10  
+Version 7.11  
   
 ---  
   
@@ -770,6 +770,300 @@ None
 ### Industrial Attribute  
 
 Inflatable Bed  
+
+---  
+
+## FUR-020  
+
+**Brand**  
+
+Snow Peak  
+
+**Product**  
+
+ダウン システムオフトン（BD-060, Quilt component only）  
+
+**Status**  
+
+Essential  
+
+**Quantity**  
+
+2  
+
+### Color  
+
+Unconfirmed（メーカー公式ページに色名記載なし、要確認）  
+
+### Material  
+
+50D Polyester（表地）／150D Polyester（裏地）／Down 95%・Feather 5%（中綿）  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Quilt（関東〜雪中入門用、快適温度2℃・下限温度-4℃、FUR-021と併用が前提）  
+
+---  
+
+## FUR-021  
+
+**Brand**  
+
+Snow Peak  
+
+**Product**  
+
+コンパクトワイドマット（TM-089）  
+
+**Status**  
+
+Essential  
+
+**Quantity**  
+
+2  
+
+### Color  
+
+Unconfirmed（メーカー公式ページに色名記載なし、要確認）  
+
+### Material  
+
+75D Polyester  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Sleeping Mat（R値5.4・ASTM F3340-22準拠、2枚連結使用。FUR-020セット付属。FUR-022系との併用時は本格雪中用の主断熱層としても使用）  
+
+---  
+
+## FUR-022  
+
+**Brand**  
+
+Unconfirmed（候補2社から選定予定）  
+
+**Product**  
+
+Unconfirmed  
+
+**Status**  
+
+Candidate  
+
+### Branch Variants  
+
+- FUR-022a  
+- FUR-022b  
+
+### Color  
+
+Black  
+
+### Material  
+
+Down（Full Custom Order）  
+
+### Industrial Attribute  
+
+Quilt（本格雪中用。バックレス構造につきFUR-021・FUR-023との併用が必須。カスタムオーダーで下限-18℃級を想定）  
+
+---  
+
+## FUR-022a  
+
+**Brand**  
+
+Enlightened Equipment  
+
+**Product**  
+
+Accomplice（2-Person Sleeping Quilt）  
+
+**Status**  
+
+Candidate  
+
+**Parent**  
+
+FUR-022  
+
+### Color  
+
+Black  
+
+### Material  
+
+Down（850fp／950fp選択可、Full Custom）  
+
+### Industrial Attribute  
+
+Quilt（2人用、パッド固定ストラップ標準装備、外側19色・内側12色からのフルカスタム展開）  
+
+---  
+
+## FUR-022b  
+
+**Brand**  
+
+UGQ Outdoor  
+
+**Product**  
+
+Tango Duo（Quilt for 2）  
+
+**Status**  
+
+Candidate  
+
+**Parent**  
+
+FUR-022  
+
+### Color  
+
+Black  
+
+### Material  
+
+Down（850fp／900fp選択可、Full Custom）  
+
+### Industrial Attribute  
+
+Quilt（2人用、Made to Order、外側50色以上・内側11色からのフルカスタム展開）  
+
+---  
+
+## FUR-023  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+Unconfirmed  
+
+**Status**  
+
+Candidate  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Closed-Cell Foam  
+
+### Industrial Attribute  
+
+Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-021の下に重ね敷きする想定）  
+
+---  
+
+## FUR-024  
+
+**Brand**  
+
+Unconfirmed（候補2案から選定予定）  
+
+**Product**  
+
+Unconfirmed  
+
+**Status**  
+
+Candidate  
+
+### Branch Variants  
+
+- FUR-024a  
+- FUR-024b  
+
+### Color  
+
+Black  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-021全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用）  
+
+---  
+
+## FUR-024a  
+
+**Brand**  
+
+Therm-a-Rest  
+
+**Product**  
+
+Synergy Lite Sheet（X-Large）  
+
+**Status**  
+
+Candidate  
+
+**Parent**  
+
+FUR-024  
+
+### Color  
+
+Black  
+
+### Material  
+
+Nylon  
+
+### Industrial Attribute  
+
+Pad Sheet（専用ブランド品、X-Largeサイズ：76×196cm）  
+
+---  
+
+## FUR-024b  
+
+**Brand**  
+
+Unconfirmed（汎用品）  
+
+**Product**  
+
+汎用キャンプマット用フィッテッドシーツ  
+
+**Status**  
+
+Candidate  
+
+**Parent**  
+
+FUR-024  
+
+### Color  
+
+Black  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Pad Sheet（汎用品、寸法要件優先：約77×196cm、ブランド不問）  
 
 # Light  
 
@@ -5000,5 +5294,25 @@ Scope clarification per direct instruction from the project owner: Coffee Domain
 - Purpose section: added a rule stating that Coffee equipment under active decision-making is tracked exclusively in PX-004 Barista Codex, and is registered in TP-004 (COF-series) only upon purchase (Owned status). Until purchase, the empty COF-series frame (retained since Version 7.1) is confirmed as intentional, not missing data.  
 - Purpose section: clarified that this phased-registration rule applies only to Coffee and Kitchen. All other domains (Furniture, Light, Aroma, Storage, Fire) continue to register not-yet-purchased items (Essential / Candidate / Upgrade) directly in TP-004 as before — this change does not alter their existing practice.  
 - No equipment data, Status, or field values were changed in this revision.  
+
+---  
+
+## Version 7.11  
+
+Winter sleeping-system research (conducted across multiple project chat sessions) registered as new Furniture Domain entries, following direct instruction from the project owner. This covers the replacement of the existing Grand Ofton (used atop FUR-019 BONFLAG TACTICAL AIR BED 2P) for two distinct use cases: (1) Kanto-area / entry-level snow camping, and (2) full-scale snow camping. FUR-019 itself (Owned) is unchanged; these are new, separate entries for the quilt/mat/sheet system used on top of it.
+
+### Changes  
+
+- FUR-020 (new): Snow Peak, "ダウン システムオフトン" (Quilt component only, ×2), Essential, Black-target aesthetic but Color left Unconfirmed pending manufacturer color-name verification. Comfort temperature 2°C / limit temperature -4°C. Selected over the non-down variant (BD-061/071, comfort 10°C / limit 5°C) for superior warmth and smaller packed size. Purchase decided; this is the confirmed solution for Kanto-area / entry-level snow camping use.  
+- FUR-021 (new): Snow Peak, "コンパクトワイドマット (TM-089)" (×2), Essential, R-value 5.4 (ASTM F3340-22), connectable pad-to-pad. Bundled with FUR-020's purchase (Slim vs. Wide mat-set packaging is functionally irrelevant to the quilt itself, which is identical across both; Wide's mat width (77cm ×2 = 154cm) was selected because it matches FUR-019's 152cm bed width, unlike Slim's 65cm ×2 = 130cm). Serves as the primary insulation layer for both the Kanto/entry-level and full winter use cases.  
+- FUR-022 (new): Unconfirmed Brand/Product, Candidate, Black (confirmed color decision; all other specs pending). Represents the equipment slot for a full winter-capable top quilt with two competing Branch Variants (FUR-022a, FUR-022b). Both candidates are backless quilt designs (no integrated floor), requiring FUR-021 and FUR-023 underneath.  
+- FUR-022a (new): Enlightened Equipment, "Accomplice" 2-Person Sleeping Quilt, Candidate, Parent FUR-022, Black, full custom order (850fp/950fp down, temperature ratings customizable to 0°F/-18°C and colder, integrated pad-attachment straps compatible with either two single pads or one double pad).  
+- FUR-022b (new): UGQ Outdoor, "Tango Duo" (Quilt for 2), Candidate, Parent FUR-022, Black, full custom order (850fp/900fp down, temperature ratings customizable to 0°F/-19°C, made to order in Jackson, Michigan).  
+- FUR-023 (new): Unconfirmed Brand/Product, Candidate, closed-cell foam sleeping mat. Serves as insulation backup / puncture insurance beneath FUR-021, specifically for the full winter use case (raises combined R-value above the ~R6 threshold generally recommended for sub -10°C / high-altitude conditions, and protects against total insulation loss if the air mat fails in the field).  
+- FUR-024 (new): Unconfirmed Brand/Product, Candidate, Black (confirmed color decision — this sheet sits on top of the mat and is visible, unlike FUR-020/021 which sit underneath and were left color-unconfirmed). Represents the equipment slot for a fitted sheet used over FUR-021, with two competing Branch Variants (FUR-024a, FUR-024b). Sized at approximately 77×196cm ×2 to match FUR-021's footprint; shared across both the Kanto/entry-level and full winter use cases.  
+- FUR-024a (new): Therm-a-Rest, "Synergy Lite Sheet" (X-Large, 76×196cm), Candidate, Parent FUR-024, Black, nylon. Dedicated-brand option; sized to closely match one FUR-021 mat unit.  
+- FUR-024b (new): Unconfirmed Brand, generic fitted camp-mat sheet, Candidate, Parent FUR-024, Black, material unconfirmed. Generic option prioritizing dimensional fit (~77×196cm) over brand.  
+- Note: FUR-019 (BONFLAG TACTICAL AIR BED 2P) has no published/available R-value (its "Oxford 1000D / PVC" construction indicates no built-in insulation layer); it is treated as contributing negligible insulation on its own for the R-value calculations underlying FUR-021/FUR-023's selection.  
+- Item count increased from 20 to 29 in the Furniture Domain (new items: FUR-020 through FUR-024, including Branch Variants FUR-022a/022b and FUR-024a/024b — nine new IDs total; offset by no removals).  
 
 ---  
