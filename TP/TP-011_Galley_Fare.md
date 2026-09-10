@@ -54,12 +54,12 @@ IDは欠番不可。番号は原則として変更しない。
 
 ## Status
 
-| Status | Meaning |
+| Status | 意味 |
 |---------|----------|
-| Owned | Currently owned |
-| Essential | Necessary and purchase is decided (awaiting purchase) |
-| Candidate | Necessary, but the specific product is not yet decided (under evaluation) |
-| Upgrade | A replacement for something already owned, or a "nice to have" item (lowest priority tier) |
+| Owned | 現在所有している |
+| Essential | 必要であり、購入が決定している（購入待ち） |
+| Candidate | 必要だが、具体的な製品はまだ決まっていない（検討中） |
+| Upgrade | 既に所有しているものの置き換え、または「あれば良い」アイテム（最も優先度の低い層） |
 
 ## Attribute Policy
 
@@ -2786,7 +2786,7 @@ KIT-006をMYプレート（TW-040）の正式登録に更新し、まな板・�
 ### Changes
 
 - KIT-009（新規）：FEDECA CLEVER TONG、名栗ブラック、標準サイズ（240mm）。Owned。
-- KIT-010（新規）：FEDECA CLEVER TONG、ブラウン系の名栗、標準サイズ（240mm）。正確な公式カラー名は未確認（名栗イペ等の可能性）。Owned。
+- KIT-010（新規）：FEDECA CLEVER TONG、ブラウン系の名栗、標準サイズ（240mm）。正確な公式カラー名は未確認。Owned。
 - KIT-011（新規）：FEDECA CLEVER TONG mini、名栗ブラック、150mm。Owned。
 - KIT-012（新規）：FEDECA CLEVER TONG mini、ライトブラウン系の名栗、150mm。正確な公式カラー名は未確認。Owned。
 - KIT-013〜015（新規）：Snow Peak チタン先割れスプーン（SCT-004）、オンライン限定色のグリーン・パープル・ブルーをそれぞれ個別登録。Owned。
