@@ -13,8 +13,8 @@ TM-005 Search Doctrine
 
 | Version | Date | Description |
 |----------|------|-------------|
-| 2.0 | — | Prior version. Exact release date not recorded. |
-| 2.1 | 2026-09-07 | Added an "Origin" subsection documenting that TM-005 and PX-003 Vigil Protocol were originally a single document, later split into methodology (TM-005) and execution (PX-003). No content changes to the research methodology itself. |
+| 2.0 | — | 旧バージョン。正確な公開日は未記録。 |
+| 2.1 | 2026-09-07 | TM-005とPX-003 Vigil Protocolがもともと1つの文書であり、後に方法論（TM-005）と実行（PX-003）へ分割されたことを記す「Origin」サブセクションを追加。調査方法論そのものの内容変更は無し。 |
 
 ---
 
@@ -22,43 +22,43 @@ TM-005 Search Doctrine
 
 ## Mission
 
-Search Doctrine defines the philosophy and methodology governing research within THE THIRD PLACE.
+Search Doctrineは、THE THIRD PLACE内の調査を統括する思想・方法論を定義する。
 
-Its purpose is not to define operational procedures.
+その目的は、運用手順を定義することではない。
 
-Its purpose is to define how information should be discovered, evaluated, interpreted, and transformed into knowledge.
+その目的は、情報がどのように発見・評価・解釈され、知識へと変換されるべきかを定義することである。
 
-Operational execution is governed separately by **PX-003 Vigil Protocol**.
+運用上の実行は、別途**PX-003 Vigil Protocol**が管轄する。
 
-Search Doctrine ensures that every search performed throughout THE THIRD PLACE follows a consistent intellectual framework regardless of execution method.
+Search Doctrineは、THE THIRD PLACE全体で行われるすべての検索が、実行方法にかかわらず一貫した知的枠組みに従うことを保証する。
 
 ---
 
 ## Origin
 
-TM-005 and PX-003 Vigil Protocol were originally a single document.
+TM-005とPX-003 Vigil Protocolは、もともと1つの文書であった。
 
-They were later split so that methodology and execution could each be managed and updated independently.
+方法論と実行をそれぞれ独立して管理・更新できるよう、後に分割された。
 
-TM-005 retains **how research should think**.
+TM-005は**調査がどう考えるべきか**を担う。
 
-PX-003 retains **how research is executed**.
+PX-003は**調査がどう実行されるか**を担う。
 
 ---
 
 ## Objectives
 
-Research conducted under this doctrine shall pursue the following objectives.
+本Doctrineに基づく調査は、以下の目標を追求する。
 
-- Discover meaningful information.
-- Detect change rather than repetition.
-- Improve understanding over time.
-- Preserve valuable knowledge.
-- Support informed decision-making.
-- Inspire future projects.
-- Strengthen historical continuity.
+- 意味のある情報を発見すること。
+- 反復ではなく変化を検知すること。
+- 時間をかけて理解を深めること。
+- 価値ある知識を保存すること。
+- 十分な情報に基づく意思決定を支援すること。
+- 将来のプロジェクトに着想を与えること。
+- 歴史的な継続性を強化すること。
 
-Research is considered successful when it improves understanding rather than increasing the quantity of collected information.
+調査は、収集した情報の量を増やすことではなく、理解を深めることに成功したときに、成功とみなされる。
 
 ---
 
@@ -66,61 +66,61 @@ Research is considered successful when it improves understanding rather than inc
 
 ## Why We Search
 
-Searching is an act of observation.
+検索とは、観測という行為である。
 
-Observation becomes knowledge only after verification, interpretation, and historical comparison.
+観測は、検証・解釈・歴史的比較を経て初めて知識となる。
 
-THE THIRD PLACE does not collect information for its own sake.
+THE THIRD PLACEは、情報そのものを集めることを目的としない。
 
-Instead, research exists to continuously observe the evolving landscape surrounding craftsmanship, outdoor culture, architecture, design, equipment, materials, objects, and the creators behind them.
+代わりに、調査は、職人技、アウトドア文化、建築、デザイン、機材、素材、モノ、そしてその作り手たちを取り巻く、絶えず進化する状況を継続的に観測するために存在する。
 
-Every execution represents another observation.
+すべての実行が、一つの観測を表す。
 
-Every observation contributes to accumulated understanding.
+すべての観測が、蓄積された理解に貢献する。
 
-Understanding produces better future decisions.
+理解は、より良い将来の決定を生み出す。
 
-Research therefore becomes an ongoing dialogue with the world rather than a series of isolated searches.
+したがって調査は、孤立した検索の連続ではなく、世界との継続的な対話となる。
 
 ---
 
 ## The Role of AI
 
-Within this framework, AI functions as:
+この枠組みの中で、AIは以下として機能する:
 
-- Observer
-- Curator
-- Research Assistant
-- Analyst
-- Archivist
+- Observer（観測者）
+- Curator（キュレーター）
+- Research Assistant（調査アシスタント）
+- Analyst（アナリスト）
+- Archivist（アーキビスト）
 
-AI is expected to recognize meaningful change while filtering informational noise.
+AIには、情報ノイズを取り除きながら、意味のある変化を認識することが求められる。
 
-Its responsibility is not exhaustive collection.
+その責務は、網羅的な収集ではない。
 
-Its responsibility is meaningful interpretation.
+その責務は、意味のある解釈である。
 
 ---
 
 # III. Principles
 
-Every research activity shall follow these principles.
+すべての調査活動は、以下の原則に従う。
 
 ---
 
 ## Accuracy
 
-Information shall be verified whenever possible.
+可能な限り、情報を検証する。
 
-Official information always supersedes unofficial information.
+公式情報は、常に非公式情報に優先する。
 
-Conflicting information shall be identified rather than assumed.
+矛盾する情報は、推測せず、その存在を明確に示す。
 
 ---
 
 ## Reliability
 
-Sources shall generally be evaluated in the following order.
+情報源は、原則として以下の順序で評価する。
 
 1. Official Sources
 2. Authorized Retailers
@@ -129,73 +129,73 @@ Sources shall generally be evaluated in the following order.
 5. Community Discussion
 6. Social Media
 
-Unverified rumors shall not be treated as established facts.
+未検証の噂を、確立された事実として扱わない。
 
 ---
 
 ## Freshness
 
-Research shall prioritize current information.
+調査は、現在の情報を優先する。
 
-Historical information has value only when it contributes to present understanding.
+過去の情報は、現在の理解に貢献する場合にのみ価値を持つ。
 
-Daily research should emphasize meaningful change.
+日々の調査では、意味のある変化を重視すべきである。
 
-Repeated information without change should normally be omitted.
+変化のない反復情報は、通常省略すべきである。
 
 ---
 
 ## Relevance
 
-Information shall directly support the objectives of THE THIRD PLACE.
+情報は、THE THIRD PLACEの目的を直接支えるものでなければならない。
 
-Interesting but unrelated information should be ignored.
+興味深いが無関係な情報は無視する。
 
 ---
 
 ## Continuity
 
-Research is cumulative.
+調査は積み重ねである。
 
-Each execution should build upon previous observations rather than begin from nothing.
+各実行は、何もないところから始めるのではなく、過去の観測の上に積み重ねるべきである。
 
-Historical context shall always improve present understanding.
+歴史的な文脈は、常に現在の理解を高める。
 
 ---
 
 ## Consistency
 
-Search methodology shall remain stable regardless of execution date.
+検索の方法論は、実行日にかかわらず安定していなければならない。
 
-Operational improvements shall not alter the philosophical foundation unless this doctrine itself is revised.
+本Doctrine自体が改訂されない限り、運用上の改善が思想的な基盤を変えてはならない。
 
 ---
 
 ## Clarity
 
-Every observation should clearly communicate:
+すべての観測は、以下を明確に伝えるべきである:
 
-- What happened.
-- Why it matters.
-- Whether action is appropriate.
+- 何が起きたか。
+- なぜそれが重要か。
+- 行動が適切かどうか。
 
-The reader should not require additional interpretation.
+読み手が追加の解釈を必要としないようにする。
 
 ---
 
 ## Actionability
 
-Research shall prioritize actionable information.
+調査は、行動可能な情報を優先すべきである。
 
-Information that cannot reasonably lead to observation, understanding, or action shall be considered lower value.
+観測・理解・行動に合理的につながらない情報は、価値が低いとみなす。
 
-The objective is meaningful observation rather than exhaustive collection.
+目的は、網羅的な収集ではなく、意味のある観測である。
 
 ---
 
 # IV. Standard Search Scope
 
-Unless otherwise specified, research should consider the following categories of sources.
+特に指定がない限り、調査は以下のカテゴリの情報源を考慮すべきである。
 
 ## Official Sources
 
@@ -226,11 +226,11 @@ Unless otherwise specified, research should consider the following categories of
 
 ## Marketplace
 
-Marketplace research supports observation of availability and market behavior.
+マーケットプレイス調査は、入手可否や市場動向の観測を支える。
 
-Priority is defined operationally by PX-003 Vigil Protocol.
+優先順位は、PX-003 Vigil Protocolによって運用上定義される。
 
-Typical marketplaces include:
+代表的なマーケットプレイス:
 
 - Mercari
 - Yahoo!フリマ
@@ -241,7 +241,7 @@ Typical marketplaces include:
 
 ## Optional Sources
 
-Research may additionally include:
+調査には、以下も追加で含めてよい:
 
 - Kickstarter
 - Makuake
@@ -250,37 +250,37 @@ Research may additionally include:
 - 楽天市場
 - Yahoo!ショッピング
 
-Additional sources may be introduced whenever they improve research quality.
+調査の質を高める場合は、追加の情報源を随時導入してよい。
 
 ---
 
 # V. Search Methodology
 
-Every subject should be researched using multiple search expressions.
+すべての対象は、複数の検索表現を用いて調査すべきである。
 
-Examples include:
+例:
 
-- Official Product Name
-- Product Number
-- Brand Name
-- Japanese Name
-- English Name
-- Common Abbreviation
-- Historical Name
-- Nickname
-- Collaboration Name
-- Common Misspellings
-- Relevant Hashtags
+- 正式な製品名
+- 型番
+- ブランド名
+- 日本語名
+- 英語名
+- 一般的な略称
+- 過去の名称
+- 通称
+- コラボレーション名
+- よくある誤記
+- 関連するハッシュタグ
 
-Search methodology prioritizes comprehensive discovery over literal keyword matching.
+検索方法論は、文字通りのキーワード一致よりも、網羅的な発見を優先する。
 
-Duplicate discoveries shall be merged into a single verified observation.
+重複して発見された情報は、1つの検証済み観測へ統合する。
 
 # VI. Observation Categories
 
-Every observation shall be classified according to its primary significance.
+すべての観測は、その主たる意義に応じて分類する。
 
-Classification exists to improve comparison, reporting, and historical continuity.
+分類は、比較・報告・歴史的継続性を高めるために存在する。
 
 ---
 
@@ -347,324 +347,324 @@ Classification exists to improve comparison, reporting, and historical continuit
 - Historical Reference
 - Creative Inspiration
 
-Multiple classifications may be assigned when appropriate.
+複数の分類を、適切な場合には併せて割り当ててよい。
 
 ---
 
 # VII. Information Priority
 
-Not every observation carries equal value.
+すべての観測が同じ価値を持つわけではない。
 
-Priority shall be determined by practical significance rather than publication volume.
+優先度は、発信量ではなく実務上の重要性によって決定する。
 
 | Priority | Type | Description |
 |----------|------|-------------|
-| ★★★★★ | New Product | Newly announced products |
-| ★★★★★ | Restock | Product becomes available |
-| ★★★★★ | Reservation | Reservation begins |
-| ★★★★★ | Lottery | Lottery opens |
-| ★★★★★ | Immediate Availability | Product can be acquired immediately |
-| ★★★★☆ | Limited Edition | Limited production item |
-| ★★★★☆ | Collaboration | Collaborative release |
-| ★★★★☆ | Official Announcement | Major official update |
-| ★★★★☆ | Specification Change | Important revision |
-| ★★★☆☆ | Marketplace Trend | Significant market movement |
-| ★★★☆☆ | Price Trend | Premium price movement |
-| ★★★☆☆ | Review | High-value evaluation |
-| ★★☆☆☆ | Event | Exhibition or event |
-| ★★☆☆☆ | Brand Activity | General company news |
-| ★☆☆☆☆ | Routine SNS Update | Informational but low urgency |
+| ★★★★★ | New Product | 新たに発表された製品 |
+| ★★★★★ | Restock | 製品が再入荷した |
+| ★★★★★ | Reservation | 予約が開始された |
+| ★★★★★ | Lottery | 抽選が開始された |
+| ★★★★★ | Immediate Availability | 製品を即座に入手できる |
+| ★★★★☆ | Limited Edition | 限定生産アイテム |
+| ★★★★☆ | Collaboration | コラボレーション発売 |
+| ★★★★☆ | Official Announcement | 重要な公式アップデート |
+| ★★★★☆ | Specification Change | 重要な仕様改訂 |
+| ★★★☆☆ | Marketplace Trend | 顕著な市場の動き |
+| ★★★☆☆ | Price Trend | プレミア価格の動き |
+| ★★★☆☆ | Review | 価値の高い評価・レビュー |
+| ★★☆☆☆ | Event | 展示会・イベント |
+| ★★☆☆☆ | Brand Activity | 一般的な企業ニュース |
+| ★☆☆☆☆ | Routine SNS Update | 有益だが緊急性の低い情報 |
 
-Whenever multiple observations occur simultaneously, higher-priority information shall always appear first.
+複数の観測が同時に発生した場合、優先度の高い情報を常に先に掲載する。
 
 ---
 
 # VIII. Research Workflow
 
-Every execution shall follow the same conceptual workflow.
+すべての実行は、同一の概念的Workflowに従う。
 
 ```text
-Start
+Start（開始）
 
 ↓
 
-Read TM-005 Search Doctrine
+Read TM-005 Search Doctrine（TM-005 Search Doctrineを読む）
 
 ↓
 
-Read PX-003 Vigil Protocol
+Read PX-003 Vigil Protocol（PX-003 Vigil Protocolを読む）
 
 ↓
 
-Load Active Watch List
+Load Active Watch List（有効なWatch Listを読み込む）
 (from PX-003)
 
 ↓
 
-Generate Search Queries
+Generate Search Queries（検索クエリを生成する）
 
 ↓
 
-Collect Information
+Collect Information（情報を収集する）
 
 ↓
 
-Verify Sources
+Verify Sources（情報源を検証する）
 
 ↓
 
-Normalize Information
+Normalize Information（情報を正規化する）
 
 ↓
 
-Compare Against TM-001 Heritage Chronicle
+Compare Against TM-001 Heritage Chronicle（TM-001 Heritage Chronicleと照合する）
 
 ↓
 
-Identify Meaningful Differences
+Identify Meaningful Differences（意味のある差分を特定する）
 
 ↓
 
-Evaluate Relevance
+Evaluate Relevance（関連性を評価する）
 
 ↓
 
-Assign Priority
+Assign Priority（優先度を割り当てる）
 
 ↓
 
-Generate TM-002 Atelier Discovery
+Generate TM-002 Atelier Discovery（TM-002 Atelier Discoveryを生成する）
 
 ↓
 
-Determine Historical Value
+Determine Historical Value（歴史的価値を判断する）
 
 ↓
 
-Update TM-001 Heritage Chronicle
+Update TM-001 Heritage Chronicle（TM-001 Heritage Chronicleを更新する）
 
 ↓
 
-End
+End（終了）
 ```
 
-TM-005 defines the philosophy.
+TM-005は思想を定義する。
 
-PX-003 defines operational execution.
+PX-003は運用上の実行を定義する。
 
-TM-001 preserves accumulated knowledge.
+TM-001は蓄積された知識を保存する。
 
-TM-002 communicates current discoveries.
+TM-002は現在の発見を伝える。
 
 ---
 
 # IX. Difference Analysis
 
-One of the principal objectives of THE THIRD PLACE research is identifying change.
+THE THIRD PLACE調査の主要な目的の一つは、変化を特定することである。
 
-Research should compare newly collected information against historical observations rather than treating each execution independently.
+調査は、各実行を独立したものとして扱うのではなく、新たに収集した情報を過去の観測と比較すべきである。
 
-Meaningful differences include:
+意味のある差分には、以下が含まれる:
 
-- New products
-- Newly opened reservations
-- Newly opened lotteries
-- Newly available inventory
-- Newly confirmed restocks
-- Product discontinuation
-- Specification revisions
-- Marketplace price changes
-- Supply changes
-- Official announcements
-- Event schedule revisions
+- 新製品
+- 新たに開始された予約
+- 新たに開始された抽選
+- 新たに入手可能となった在庫
+- 新たに確認された再入荷
+- 製品の販売終了
+- 仕様改訂
+- マーケットプレイスの価格変動
+- 供給量の変化
+- 公式発表
+- イベントスケジュールの改訂
 
-Information that has not changed should generally be omitted from daily reporting.
+変化のない情報は、通常、日次報告から省略すべきである。
 
-Difference analysis emphasizes evolution rather than repetition.
+差分分析は、反復ではなく進展を重視する。
 
 ---
 
 # X. Output Standard
 
-Daily research shall generate **TM-002 Atelier Discovery**.
+日々の調査は、**TM-002 Atelier Discovery**を生成する。
 
-The report should normally include:
+レポートには、通常以下を含めるべきである:
 
 ## Executive Summary
 
-The most significant discoveries.
+最も重要な発見。
 
 ---
 
 ## Priority Alerts
 
-Items requiring immediate attention.
+即座の対応が必要な項目。
 
-Examples include:
+例:
 
-- Reservation opens today.
-- Lottery closes soon.
-- Product available now.
-- Limited inventory.
-- Unexpected restock.
+- 予約が本日開始される。
+- 抽選がまもなく締め切られる。
+- 製品が今すぐ入手可能である。
+- 在庫が限定的である。
+- 予期しない再入荷。
 
 ---
 
 ## Brand Updates
 
-Meaningful activities organized by brand.
+ブランド別に整理された、意味のある活動。
 
 ---
 
 ## Marketplace Watch
 
-Market observations including:
+以下を含む市場観測:
 
-- Rare listings
-- Supply changes
-- Premium price movement
-- Acquisition opportunities
+- 希少な出品
+- 供給量の変化
+- プレミア価格の動き
+- 調達の機会
 
 ---
 
 ## Recommendations
 
-Objective recommendations based upon current observations.
+現在の観測に基づく客観的な推奨事項。
 
-Examples:
+例:
 
-- Purchase immediately.
-- Monitor closely.
-- Wait for confirmation.
-- Observe future price movement.
+- 直ちに購入する。
+- 注意深く監視する。
+- 確認を待つ。
+- 今後の価格動向を観察する。
 
-Recommendations should remain evidence-based rather than speculative.
+推奨事項は、推測ではなく根拠に基づくべきである。
 
 ---
 
 ## References
 
-Official sources shall appear before secondary sources.
+公式情報源を、二次情報源より先に掲載する。
 
 ---
 
 # XI. Heritage Chronicle Integration
 
-TM-001 Heritage Chronicle serves as the permanent historical archive.
+TM-001 Heritage Chronicleは、恒久的な歴史アーカイブとして機能する。
 
-Following every research cycle, AI shall determine whether newly verified information deserves long-term preservation.
+各調査サイクルの後、AIは、新たに検証された情報が長期保存に値するかを判断する。
 
-Historical records should emphasize:
+歴史的記録は、以下を重視すべきである:
 
-- Product launches
-- Collaboration history
-- Design evolution
-- Brand milestones
-- Long-term marketplace trends
-- Restock history
-- Manufacturing changes
-- Significant announcements
+- 製品発売
+- コラボレーションの歴史
+- デザインの変遷
+- ブランドの節目
+- 長期的なマーケットプレイスの動向
+- 再入荷の履歴
+- 製造上の変化
+- 重要な発表
 
-The archive exists to strengthen future understanding rather than preserve every observation.
+アーカイブは、すべての観測を保存するためではなく、将来の理解を強化するために存在する。
 
 ---
 
 # XII. Knowledge Lifecycle
 
-Knowledge continuously evolves.
+知識は絶えず進化する。
 
 ```text
-Observation
+Observation（観測）
 
 ↓
 
-Verification
+Verification（検証）
 
 ↓
 
-Interpretation
+Interpretation（解釈）
 
 ↓
 
-Daily Report
+Daily Report（日次レポート）
 
 ↓
 
-Historical Archive
+Historical Archive（歴史アーカイブ）
 
 ↓
 
-Future Comparison
+Future Comparison（将来の比較）
 
 ↓
 
-Improved Understanding
+Improved Understanding（理解の深化）
 
 ↓
 
-New Observation
+New Observation（新たな観測）
 ```
 
-Each completed cycle improves every future cycle.
+完了した各サイクルが、将来のすべてのサイクルを改善する。
 
-Knowledge accumulates.
+知識は蓄積する。
 
-Understanding deepens.
+理解は深まる。
 
-Decision quality improves.
+意思決定の質は向上する。
 
 ---
 
 # XIII. Search Configuration
 
-Search targets are managed exclusively within **PX-003 Vigil Protocol**.
+検索対象は、もっぱら**PX-003 Vigil Protocol**内で管理する。
 
-TM-005 defines the philosophy and methodology of research.
+TM-005は、調査の思想と方法論を定義する。
 
-PX-003 defines operational execution, marketplace priorities, search keywords, and the active Watch List.
+PX-003は、運用上の実行、マーケットプレイスの優先順位、検索キーワード、および有効なWatch Listを定義する。
 
-Changes to monitored products shall therefore be performed only within PX-003.
+したがって、監視対象製品の変更は、PX-003内でのみ行う。
 
-This separation allows research philosophy to remain stable while operational targets evolve independently.
+この分離により、調査の思想は安定を保ちながら、運用上の対象は独立して進化できる。
 
 ---
 
 # XIV. Future Expansion
 
-Search Doctrine is designed as a scalable methodology.
+Search Doctrineは、拡張可能な方法論として設計されている。
 
-Future versions may incorporate:
+将来のバージョンには、以下が組み込まれる可能性がある:
 
-- Automated trend scoring
-- Marketplace history analysis
-- Relationship mapping between brands
-- Seasonal recommendation models
-- Opportunity prediction
-- Collection management integration
-- Equipment lifecycle analysis
-- Preference learning
-- Weekly intelligence summaries
-- Monthly strategic reports
+- 自動トレンドスコアリング
+- マーケットプレイス履歴分析
+- ブランド間の関係性マッピング
+- 季節ごとの推奨モデル
+- 機会予測
+- コレクション管理との統合
+- 機材ライフサイクル分析
+- 嗜好学習
+- 週次インテリジェンスサマリー
+- 月次戦略レポート
 
-These additions shall extend the methodology without altering its philosophical foundation.
+これらの追加は、思想的な基盤を変えることなく方法論を拡張するものとする。
 
 ---
 
 # XV. Revision Policy
 
-Search Doctrine is a living document.
+Search Doctrineは、生きた文書である。
 
-Revisions shall be introduced only when they improve:
+改訂を導入するのは、以下を改善する場合に限る:
 
-- Accuracy
-- Consistency
-- Interpretability
-- Practical usefulness
-- Long-term maintainability
+- 正確性
+- 一貫性
+- 解釈可能性
+- 実用性
+- 長期的な保守性
 
-Operational adjustments belong in PX-003.
+運用上の調整はPX-003に属する。
 
-Methodological adjustments belong in TM-005.
+方法論上の調整はTM-005に属する。
 
 ---
 
@@ -673,60 +673,60 @@ Methodological adjustments belong in TM-005.
 ```text
 PX-003 Vigil Protocol
         │
-        │ Executes Search
+        │ 検索を実行
         ▼
 Web Research
         │
         ▼
 TM-005 Search Doctrine
-(Methodology & Philosophy)
+（方法論・思想）
         │
         ▼
 Difference Analysis
         │
         ▼
 TM-002 Atelier Discovery
-(Daily Intelligence Report)
+（日次インテリジェンスレポート）
         │
         ▼
 TM-001 Heritage Chronicle
-(Long-term Knowledge Archive)
+（長期知識アーカイブ）
 ```
 
-Each document has a distinct responsibility.
+各文書は明確な責任を持つ。
 
-- TM-005 defines **how research should think**.
-- PX-003 defines **how research is executed**.
-- TM-002 communicates current intelligence.
-- TM-001 preserves accumulated knowledge.
+- TM-005は**調査がどう考えるべきか**を定義する。
+- PX-003は**調査がどう実行されるか**を定義する。
+- TM-002は現在のインテリジェンスを伝える。
+- TM-001は蓄積された知識を保存する。
 
-Together they establish a continuous cycle of observation, interpretation, reporting, and preservation.
+これらが合わさり、観測・解釈・報告・保存の継続的なサイクルを確立する。
 
 ---
 
 # XVII. Core Principle
 
-The purpose of research is not to know more.
+調査の目的は、より多くを知ることではない。
 
-Its purpose is to understand more.
+その目的は、より深く理解することである。
 
-Information alone has limited value.
+情報だけでは、価値は限定的である。
 
-Knowledge emerges through verification.
+知識は検証を通じて生まれる。
 
-Understanding emerges through comparison.
+理解は比較を通じて生まれる。
 
-Wisdom emerges through continuity.
+知恵は継続を通じて生まれる。
 
-Every observation should reduce uncertainty.
+すべての観測は、不確実性を減らすべきである。
 
-Every report should improve decision-making.
+すべての報告は、意思決定を改善すべきである。
 
-Every archived record should strengthen future understanding.
+すべての保存記録は、将来の理解を強化すべきである。
 
-Search is not the destination.
+検索は目的地ではない。
 
-Understanding is.
+理解こそが目的地である。
 
 ---
 
@@ -744,7 +744,7 @@ Understanding is.
 | Category | TM |
 | Version | 2.1 |
 | Status | Official |
-| Language | English |
+| Language | Japanese |
 | Maintainer | THE THIRD PLACE |
 | Related Documents | PX-003 Vigil Protocol / TM-001 Heritage Chronicle / TM-002 Atelier Discovery |
 | Last Revised | Version 2.1 |
