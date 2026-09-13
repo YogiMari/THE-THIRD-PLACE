@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.11  
+Version 7.12  
   
 ---  
   
@@ -793,7 +793,7 @@ Essential
 
 ### Color  
 
-Unconfirmed（メーカー公式ページに色名記載なし、要確認）  
+Taupe / Classic Brown（トープ／クラシックブラウン。プロジェクトオーナーからの情報提供に基づく。メーカー公式ページ・レビューサイトのテキスト情報では独立した裏付けが取れていないため、購入前に実物・店舗での最終確認を推奨）  
 
 ### Material  
 
@@ -829,7 +829,7 @@ Essential
 
 ### Color  
 
-Unconfirmed（メーカー公式ページに色名記載なし、要確認）  
+Unconfirmed（マット単体の色名は未確認。FUR-020と同一セット内の付属品のため、Taupe / Classic Brownと同系統である可能性が高いが、未検証のためUnconfirmedのまま維持）  
 
 ### Material  
 
@@ -988,6 +988,8 @@ Candidate
 
 - FUR-024a  
 - FUR-024b  
+- FUR-024c  
+- FUR-024d  
 
 ### Color  
 
@@ -1015,7 +1017,7 @@ Synergy Lite Sheet（X-Large）
 
 **Status**  
 
-Candidate  
+Candidate（色条件不適合につき優先度を降格。参考記録として保持）  
 
 **Parent**  
 
@@ -1023,7 +1025,7 @@ FUR-024
 
 ### Color  
 
-Black  
+Stargazer（柄物。正規販売店（REI、CampSaver等）で確認した公式カラー名はStargazerのみで、ブラック展開は確認できなかった。CampSaverでは廃盤（discontinued）表記あり、現行流通状況は要確認）  
 
 ### Material  
 
@@ -1031,7 +1033,7 @@ Nylon
 
 ### Industrial Attribute  
 
-Pad Sheet（専用ブランド品、X-Largeサイズ：76×196cm）  
+Pad Sheet（専用ブランド品、X-Largeサイズ：76×196cm。オールブラック条件・廃盤の可能性の両面でFUR-024b/c以下に劣後）  
 
 ---  
 
@@ -1039,11 +1041,11 @@ Pad Sheet（専用ブランド品、X-Largeサイズ：76×196cm）
 
 **Brand**  
 
-Unconfirmed（汎用品）  
+WAQ  
 
 **Product**  
 
-汎用キャンプマット用フィッテッドシーツ  
+RELAXING CAMP MAT 専用カバー  
 
 **Status**  
 
@@ -1055,7 +1057,7 @@ FUR-024
 
 ### Color  
 
-Black  
+Black（タン／オリーブとの選択制の中からブラックを指定）  
 
 ### Material  
 
@@ -1063,7 +1065,71 @@ Unconfirmed
 
 ### Industrial Attribute  
 
-Pad Sheet（汎用品、寸法要件優先：約77×196cm、ブランド不問）  
+Pad Sheet（洗濯機で丸洗い可能。使用サイズ約70×200×10cmで、FUR-021（77×196cm）にほぼ近似）  
+
+---  
+
+## FUR-024c  
+
+**Brand**  
+
+HOTEL CAMPS  
+
+**Product**  
+
+リバーシブル ホットカバー（コットカバー）  
+
+**Status**  
+
+Candidate  
+
+**Parent**  
+
+FUR-024  
+
+### Color  
+
+Black×Black（カーキブラウンとの選択制の中からブラックを指定）  
+
+### Material  
+
+Polyester（内部に断熱アルミシートを内蔵）  
+
+### Industrial Attribute  
+
+Pad Sheet（使用サイズ約84×205cm、収納サイズφ18×30cm、重量750g。断熱アルミシート内蔵により保温補強機能を兼ねる。リバーシブル仕様でブランケット・掛け布団としても転用可能）  
+
+---  
+
+## FUR-024d  
+
+**Brand**  
+
+VISIONPEAKS × NANGA  
+
+**Product**  
+
+IBUKI BOX SHEETS S  
+
+**Status**  
+
+Candidate（色条件不適合につき参考記録として保持）  
+
+**Parent**  
+
+FUR-024  
+
+### Color  
+
+Brown（ブラック展開なし。オールブラック条件を満たさないため優先度は低いが、NANGAコラボという出自の記録として残す）  
+
+### Material  
+
+Polyester, Polyurethane（伸縮性生地）  
+
+### Industrial Attribute  
+
+Pad Sheet（使用サイズ約68×198×15cm、収納サイズφ13×23cm、重量550g）  
 
 # Light  
 
@@ -5314,5 +5380,23 @@ LGT-032（OTACHIDAI BLACK）の仕様を修正。プロジェクトオーナー�
 - FUR-024b（新規）: Brand未確定、汎用キャンプマット用フィッテッドシーツ、Candidate、Parent FUR-024、Black、素材未確定。ブランドよりも寸法適合（約77×196cm）を優先する汎用品の選択肢。  
 - 補足: FUR-019（BONFLAG TACTICAL AIR BED 2P）は公開されたR値を持たない（「Oxford 1000D / PVC」構造から、内蔵断熱層は無いと判断される）。FUR-021・FUR-023選定の根拠となるR値計算においては、FUR-019単体の断熱寄与はほぼ無いものとして扱う。  
 - Furniture Domainのアイテム数は20件から29件に増加（新規: FUR-020〜FUR-024、およびBranch VariantsのFUR-022a/022b、FUR-024a/024b — 合計9件の新規ID。削除は無し）。  
+
+---  
+
+## Version 7.12  
+
+Version 7.11で登録した冬季スリーピングシステム系エントリについて、その後の追加調査およびプロジェクトオーナーからの情報提供に基づき、Color・在庫状況等を訂正・補強。  
+
+### Changes  
+
+- FUR-020: Colorを「Unconfirmed」から「Taupe / Classic Brown」に更新（プロジェクトオーナーからの情報提供に基づく。メーカー公式ページ・レビューサイトのテキストでは独立した裏付けが取れておらず、購入前の実物確認を推奨する旨を注記）。  
+- FUR-021: Color注記を「マット単体の色名は未確認。FUR-020と同一セット付属品のため同系統の可能性が高いが未検証」に更新（Colorステータス自体はUnconfirmedを維持）。  
+- FUR-024a（Therm-a-Rest Synergy Lite Sheet）: 追加調査により、実際の公式カラー展開は柄物「Stargazer」のみでブラック展開は無いこと、および複数の正規販売店で廃盤（discontinued）表記があることが判明。Colorを「Black」から「Stargazer」に訂正し、Statusに「色条件不適合につき優先度を降格」の注記を追加。オールブラック条件を満たさないため、参考記録として保持する。  
+- FUR-024b: 汎用プレースホルダーから、追加調査で特定した実在製品「WAQ RELAXING CAMP MAT 専用カバー」に更新。ブラック／タン／オリーブの選択制からブラックを指定。使用サイズ約70×200×10cm。  
+- FUR-024c（新規）: HOTEL CAMPS「リバーシブル ホットカバー（コットカバー）」、Candidate、Parent FUR-024、Black×Black（カーキブラウンとの選択制）。内部に断熱アルミシートを内蔵しており、Pad Sheetとしての機能に加え保温補強・ブランケット/掛け布団としての転用可能性も持つ。  
+- FUR-024d（新規）: VISIONPEAKS × NANGA「IBUKI BOX SHEETS S」、Candidate、Parent FUR-024。NANGAとのコラボレーション品として調査対象になったが、カラー展開がBrownのみでオールブラック条件を満たさないため、参考記録として保持する。  
+- FUR-024のBranch Variantsを、FUR-024a／024b／024c／024dの4件体制に更新。  
+- 補足: FUR-024シリーズの検討を通じ、サーマレスト・Sea to Summit・VISIONPEAKS×NANGAといった専門アウトドアブランドのマット用シーツ市場では、カラー展開がブラウン・ベージュ・柄物中心でブラック展開が乏しい傾向が確認された。オールブラックの実現は、WAQ・HOTEL CAMPSのような汎用寄りのメーカーの方が現実的であるという知見を得た。  
+- Furniture Domainのアイテム数は29件から31件に増加（新規: FUR-024c、FUR-024d。削除は無し）。  
 
 ---  
