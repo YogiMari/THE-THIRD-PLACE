@@ -1,150 +1,216 @@
-# PX-007 Fire Codex  
+# PX-007 Deliberation Codex
 
-# Document ID  
-
-PX-007  
-
-# Document Title  
-
-Fire Codex  
-
-# Version  
-
-1.0（Draft）  
-
-# Status  
-
-Draft  
-
----  
-
-## Purpose  
-
-PX-007 Fire Codexは、THE THIRD PLACEにおけるFire Domain（焚き火台・薪ストーブ・暖房機材）の意思決定基準を管理する仕様書である。  
-
-本書では以下を管理する。  
-
-* Fire Domain Evaluation Criteria  
-* Decision Reasons  
-* Comparison Records（候補間の評価記録）  
-* Rejected Items  
-* Pending Items  
-
-価格・購入先・輸送・関税などの調達情報は管理対象外とする（別途PX系文書での管理を将来検討）。  
-
-**Coffeeドメインとの相違点**：PX-004 Barista Codexは「Confirmed（決定）してから初めてTP-004へ反映する」段階的登録ルールを採用しているが、Fire DomainはTP-004 Purposeで明記されている通り、Candidate／Essential／Upgrade段階から直接TP-004（FIR-series）へ登録される。したがってPX-007は、TP-004にすでに存在するFIR-seriesアイテムに対して、その選定理由・比較評価・意思決定ロジックを補完する文書として機能する。TP-004の登録タイミング自体は変更しない。  
-
----  
-
-## Relationship  
-
-```
-TP-004
-Equipment Registry (FIR-series)
-      ▲
-      │ 参照・補完
-      │
+# Document ID
 PX-007
-Fire Codex
-（評価基準・比較記録・決定理由）
+
+# Document Title
+Deliberation Codex
+
+# Version
+3.0
+
+# Status
+Official
+
+---
+
+## Purpose
+
+PX-007 Deliberation Codexは、Coffee Domain（PX-004管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire）における、検討中ギアの意思決定を支援する文書である。
+
+本書は2種類の内容を管理する。
+
+* **Zone Evaluation Philosophy**（恆久）：各ゾーンの評価哲学・評価軸。ゾーンの性格が変わらない限り、恆久的に保持する。
+* **Under Consideration**（可変）：現在検討中のギアの具体的な検討情報（候補製品名、比較、経緯を含む）。比較できる候補が複数あるものだけでなく、単一候補・未着手のものもすべて含めて記録する。TP-004側のStatusが確定（Candidate → Essential→Owned）した時点で、当該記載を空欄化し、Decision Logへ一行要約を残す。
+
+TP-004側には、検討中（Candidate）のアイテムについて、用途（Industrial Attribute）とEquipment IDのみを登録する。具体的なBrand・Product名や比較検討情報は、本書でのみ一元管理する。
+
+---
+
+## Relationship
+
+```
+新たな検討ニーズ発生
+     ↓
+PX-007に起票（用途・背景を記録、この時点ではTP-004には無し）
+     ↓
+「THE THIRD PLACEとして増やして良い」と判断
+     ↓
+TP-004に新規ID発番。用途のみ記載（Brand/ProductはUnconfirmed）。Status = Candidate
+     ↓
+PX-007側で具体的な製品比較・検討を深める
+     ↓
+購入決定（特定の製品が確定）
+     ↓
+TP-004にBrand/Productの詳細を記載。Status = Essential
+     ↓
+購入
+     ↓
+TP-004 Status = Owned
+     ↓
+PX-007側：Under Considerationを空欄化し、Decision Logへ一行要約を記録して終了
+     ↓
+（将来、買い替え検討が発生した場合）
+PX-007 Under Considerationへ再登場
 ```
 
----  
+---
 
-## Design Principles（Fire Domain Evaluation Axes）  
+# Zone Evaluation Philosophy（恆久）
 
-Fire Domainの機材は、以下4軸で評価する。  
+## Fire
 
-### 1. Form（意匠美）  
-ギア本体・道具そのものの造形的な美しさ。素材・仕上げ・Design Bibleとの整合、既存FIRドメインアイテムとの美意識的一貫性。  
+Fire Domainの機材は、以下4軸で評価する。
 
-### 2. Flame Aesthetics（炎の見え方）  
-燃焼中の炎そのものの視覚的な美しさ。炎の高さ・揺らめき方・開口部からの見え方、薪の組み方による表情の出やすさ。  
+1. **Form（意匠美）** — ギア本体・道具そのものの造形的な美しさ
+2. **Flame Aesthetics（炎の見え方）** — 燃焼中の炎そのものの視覚的な美しさ
+3. **Ease of Clean-up（撤収容易性）** — 灰処理・撤収にかかる手間
+4. **Transport（積載のしやすさ）** — 車両への積載・収納の一体性
 
-### 3. Ease of Clean-up（撤収容易性）  
-灰処理・撤収にかかる手間。灰受けの取り外しやすさ、燃焼後の温度低下の速さ、パーツ点数の少なさ。  
+以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）：Popularity・SNS・Review Count・Rarity・Collector Value・Price。
 
-### 4. Transport（積載のしやすさ）  
-車両への積載・収納の一体性。本体・煙突・スタンド等が単一の収納系にまとまっているか、パーツが分散管理を要求しないか。  
+Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則」の例外領域ではない。機能を伴わない贅沢の採用は正式に許容しない。
 
-以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）。  
+## Furniture
 
-* Popularity  
-* SNS  
-* Review Count  
-* Rarity  
-* Collector Value  
-* Price  
+未策定。
 
-**Coffee Zoneとの相違**：Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則」の例外領域ではない。4軸すべてにおいて実用性と美意識のバランスを取ることを基本とし、機能を伴わない贅沢の採用は正式に許容しない。  
+## Light
 
----  
+未策定。
 
-# Comparison Records  
+## Aroma
 
----  
+未策定。
 
-## Fire Pit Candidate Comparison（FIR-019 vs FIR-020）  
+## Storage
 
-**Status**  
+未策定（現時点でCandidate項目なし）。
 
-Under Evaluation（両候補ともTP-004上でCandidate、正式決定はしていない）  
+---
 
-### Candidates  
+# Under Consideration（可変）
 
-| Category | Brand | Model | TP-004 ID |  
-|---|---|---|---|  
-| Fire Pit | MT.SUMI | Aura FG | FIR-019 |  
-| Fire Pit | FIREGRAPHIX | BLISS-SP | FIR-020 |  
+---
 
-### Evaluation  
+## Fire
 
-| Axis | FIR-019 Aura FG | FIR-020 BLISS-SP |  
-|---|---|---|  
-| Form | 洗練された機能美を掲げる多次燃焼デザイン | 所有欲を掻き立てる高価格に負けないデザインを意図し、フロントフェイス・ハンドルは職人の手作業にこだわる |  
-| Flame Aesthetics | フルガラス3面窓で炎を遮るものがなく、ダイナミクスと美しさを最大限楽しめる | エアカーテン機構の開発が最も苦労した部分であり、独自の揺らめく炎を生み出す |  
-| Ease of Clean-up | 多次燃焼構造により燃え残り・灰が比較的少量。炉板（耐火煉瓦ライト）も軽量。灰受け自体の取り出しやすさは未確認（Gap） | ロストル形状変更により灰が捨てやすく改良済み。ただし「向き合う感覚」を重視し、灰をあえて残す運用哲学もあり、Ease of Clean-up軸との整合はやや複雑 |  
-| Transport | 収納バッグ1つに本体・煙突8分割・固定リング・グリッド・工具が完結。総重量22kg | 本体単体16kg。煙突・スタンドは別売オプションで、車両積載時は複数の管理単位に分かれる |  
+### Fire Pit（TP-004 ID: FIR-019、単一枠）
 
-### Unresolved Gaps  
+**用途**：薪ストーブ。1台のみ必要なため、FURのような親子構造ではなく単一IDとして管理。
 
-* FIR-019（Aura FG）の灰受け機構そのものの取り出しやすさは、一次情報で確認できていない。  
-* 両候補とも実物確認（現地でのハンズオン検証）は未実施。  
+**Status**：Under Evaluation
 
-### Decision  
+| Axis | 候補１ MT.SUMI Aura FG | 候補２ FIREGRAPHIX BLISS-SP |
+|---|---|---|
+| Form | 洗練された機能美を掲げる多次燃焼デザイン | 所有欲を掻き立てるデザインを意図し、フロントフェイス・ハンドルは職人の手作業にこだわる |
+| Flame Aesthetics | フルガラス3面窓で炎を遮るものがなく、ダイナミクスと美しさを最大限楽しめる | エアカーテン機構の開発が最も苦労した部分であり、独自の揺らめく炎を生み出す |
+| Ease of Clean-up | 多次燃焼構造で灰が比較的少量、炉板も軽量。灰受け自体の取り出しやすさは未確認（Gap） | ロストル形状変更で灰が捨てやすく改良済み。ただし「向き合う感覚」を重視し灰を残す運用哲学もあり |
+| Transport | 収納バッグ1つに全部品完結、総重量22kg | 本体単体16kg、煙突・スタンドは別売で管理単位が分散 |
 
-**未決定。** 本Comparisonは評価軸の試験運用として実施したものであり、正式採用を確定するものではない。  
+**Unresolved Gaps**：候補１の灰受け取り出しやすさ未確認。両候補とも実物確認未実施。
 
----  
+**Decision**：未決定
 
-# Pending  
+---
 
-現時点では正式決定していない項目。  
+## Furniture
 
-* Fire Pit（FIR-019 vs FIR-020の最終決定）  
+### Winter Top Quilt（TP-004 ID: FUR-022）
 
----  
+**用途**：本格雪中用トップキルト。バックレス構造につきFUR-021・FUR-023との併用が必須。
 
-# Rejected Equipment  
+**Status**：Under Evaluation
 
-（現時点で正式に不採用となったFire Domain候補なし）  
+| | 候補１ Enlightened Equipment Accomplice | 候補２ UGQ Outdoor Tango Duo |
+|---|---|---|
+| 仕様 | 2人用、850fp／950fp選択可、パッド固定ストラップ標準装備、外側19色・内側12色フルカスタム | 2人用、850fp／900fp選択可、Made to Order、外側50色以上・内側11色フルカスタム |
 
----  
+**Decision**：未決定
 
-# SSOT  
+### Winter Sleeping Mat（TP-004 ID: FUR-023）
 
-Fire Domainの評価基準・比較記録・決定理由に関する正式情報は、**PX-007 Fire Codex**を基準とする。  
+**用途**：本格雪中用クローズドセルフォーム製マット。FUR-021の下に重ね敷きし、断熱補強・エア漏れ時の保険として機能。
 
-Equipment自体のBrand／Product／Status／Material等の登録情報は、引き続き**TP-004 Equipment Registry**をSingle Source of Truthとする。PX-007はTP-004の登録ルールを変更せず、その意思決定背景を補完する。  
+**Status**：Candidate（ブランド・製品未確定、調査未着手）
 
----  
+**Decision**：未決定
 
-# Version History  
+### Pad Sheet（TP-004 ID: FUR-024）
 
-| Version | Date | Summary |  
-|---|---|---|  
-| 1.0 | 2026-09 | 初回ドラフト作成。Fire Domain Evaluation Criteria（Form／Flame Aesthetics／Ease of Clean-up／Transport）を確立。FIR-019 vs FIR-020の試験的比較評価を記録。 |  
+**用途**：FUR-021上に敷くフィッテドシーツ。約77×196cm相当を2枚使用しFUR-021全面をカバー。
 
----  
+**Status**：Under Evaluation
 
-# End of Document  
+| | 候補１ Therm-a-Rest Synergy Lite Sheet | 候補２ WAQ 専用カバー | 候補３ HOTEL CAMPS リバーシブルホットカバー | 候補４ VISIONPEAKS×NANGA IBUKI BOX SHEETS S |
+|---|---|---|---|---|
+| Color適合 | Stargazer柄のみ、Black展開なし（不適合） | Black指定可 | Black×Black指定可 | Brownのみ、Black展開なし（不適合） |
+| 特徴 | 廃盤の可能性あり | 洗濯機で丸洗い可能 | 断熱アルミシート内蔵、リバーシブル | NANGAコラボ由来 |
+
+**Decision**：未決定。候補1・4はオールブラック条件不適合につき参考記録として保持、実質的な最有力候補は候補2・3。
+
+---
+
+## Light
+
+### Portable LED Lantern（TP-004 ID: LGT-041）
+
+**用途**：ポータブルLEDランタンの新規候補。
+
+**Status**：Candidate（比較対象なし）
+
+**検討中の製品**：wildingout 「LF1984」、Brown、Walnut。現時点で競合候補はなし。
+
+**Decision**：未決定
+
+※ LGT-028（親）・LGT-028a（neru design works メッシュシェード）・LGT-028b（CALMA STORE × neru design works POCKET SHADE M）の交換候補は、TP-004側で現状維持とし、本改訂の移行対象外とする（別途整理予定）。
+
+---
+
+## Aroma
+
+### Vertical Diffuser（TP-004 ID: ARM-004）
+
+**用途**：縦型ディフューザーの新規候補。
+
+**Status**：Candidate（比較対象なし）
+
+**検討中の製品**：UNIT/04 × KUNST・BAUM 「SCENT TOWER」、Black、Metal。現時点で競合候補はなし。
+
+**Decision**：未決定
+
+---
+
+## Storage
+
+現時点でCandidate項目なし。
+
+---
+
+# Decision Log
+
+確定・削除した項目を一行要約で記録する。詳細な比較内容そのものは、確定後は保持しない。
+
+（現時点で記録なし）
+
+---
+
+# SSOT
+
+各ゾーンの評価哲学・比較記録・決定理由に関する正式情報は、**PX-007 Deliberation Codex**を基準とする。
+
+Equipment自体のBrand／Product／Status／Material等の登録情報は、引き続き**TP-004 Equipment Registry**をSingle Source of Truthとする。PX-007はTP-004の登録ルールを変更せず、その意思決定背景を補完する。
+
+---
+
+# Version History
+
+| Version | Date | Summary |
+|---|---|---|
+| 1.0 | 2026-09 | 初回ドラフト（PX-007 Fire Codexとして作成）。Fire Domain Evaluation Criteriaを確立し、FIR-019 vs FIR-020の試験比較を記録。 |
+| 2.0 | 2026-09 | 文書をFire単独からCoffee以外の全ゾーン横断の検討支援文書「Deliberation Codex」へ再定義。Zone Evaluation Philosophy（恆久）とUnder Consideration（可変）を分離。 |
+| 3.0 | 2026-09 | TP-004 Version 7.14と連動した全面改訂。TP-004側はCandidateアイテムの用途・IDのみを保持し、具体的なBrand・Product・比較検討情報は全て本書へ一元化。Fire（FIR-019単一枠、旧FIR-020はTP-004から削除）、Furniture（FUR-022/023/024、既存Branch VariantはTP-004から削除）、Light（LGT-041のみ移行、LGT-028系は据え置き）、Aroma（ARM-004）の全検討情報をUnder Considerationへ反映。確定時はUnder Considerationを空欄化しDecision Logへ一行要約を残す運用を確立。 |
+
+---
+
+# End of Document
