@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.13  
+Version 7.14  
   
 ---  
   
@@ -27,6 +27,8 @@ TP-004はキッチン調理器具を管理しない。キッチン機材は、�
 Coffee機材は、他のすべてのDomainと異なる登録ルールに従う。比較検討中・意思決定中のアイテムは、TP-004ではなくPX-004 Barista Codexのみで追跡する。Coffeeアイテムは、購入されOwnedになった時点で初めてTP-004（COF-series）へ登録される。それまでの間、Coffee Domain（COF-series）は意図的に未入力のままとする — これはデータの欠落ではなく、設計上の仕様である。
 
 このルールは、CoffeeとKitchenのみに適用される。他のすべてのDomain（Furniture、Light、Aroma、Storage、Fire）には影響しない: 検討中・保留中・決定済みだが未購入のアイテムは、これまで通り既存のStatusシステム（Essential / Candidate / Upgrade）を用いてTP-004へ登録され続ける。
+
+Candidate状態にあるアイテムについては、具体的なBrand・Productおよび比較検討情報を意図的に空欄のままとし、PX-007 Deliberation Codexで管理する。TP-004側には、用途（Industrial Attribute）とEquipment IDのみを登録する。検討が深まりEssential（購入決定）へ移行した時点で、初めてBrand・Productの詳細をTP-004へ記載する。
   
 ---  
   
@@ -47,7 +49,7 @@ Equipmentは、6つのDomainに分類される。
   
 ## Equipment ID（装備ID）  
   
-各オブジェクトには、恒久的なIDが1つ付与される。  
+各オブジェクトには、恆久的なIDが1つ付与される。  
   
 Examples  
   
@@ -65,7 +67,7 @@ FIR-001
   
 IDは変更されない。  
 
-ブランチ接尾辞（小文字アルファベット、例: LGT-028a、LGT-028b）は、後続IDの番号をずらすことなく、同じ装備枠を競合する複数の製品候補を登録するために、親IDへ直接付与できる。これはChild Components（恒久的に付随する構成部品、同時に所有される）とは異なる: ブランチバリアントは、1つの枠に対する代替候補を表し、通常は最終的にどちらか一方だけが昇格（StatusがEssential/Ownedへ変更）し、もう一方は廃止または別枠へ分類される。  
+ブランチ接尾辞（小文字アルファベット、例: LGT-028a、LGT-028b）は、後続IDの番号をずらすことなく、同じ装備枠を競合する複数の製品候補を登録するために、親 IDへ直接付与できる。これはChild Components（恆久的に付隨する構成部品、同時に所有される）とは異なる: ブランチバリアントは、1つの枠に対する代替候補を表し、通常は最終的にどちらか一方だけが昇格（StatusがEssential/Ownedへ変更）し、もう一方は廃止または別枠へ分類される。  
   
 ---  
   
@@ -93,7 +95,7 @@ Appearanceは、TP-002 Design Bibleにより、以下を用いて決定される
 - Texture  
 - Finish  
   
-そのためTP-004が保存するのは、以下のみである:  
+そのためTP-004が保存するのは、以下のみである。  
   
 - Material  
 - Color  
@@ -805,7 +807,7 @@ None
 
 ### Industrial Attribute  
 
-Quilt（関東〜雪中入門用、快適温度2℃・下限温度-4℃、FUR-021と併用が前提）  
+Quilt（関東～雪中入門用、快適温度2℃・下限温度-4℃、FUR-021と併用が前提）  
 
 ---  
 
@@ -841,7 +843,7 @@ None
 
 ### Industrial Attribute  
 
-Sleeping Mat（R値5.4・ASTM F3340-22準拠、2枚連結使用。FUR-020セット付属。FUR-022系との併用時は本格雪中用の主断熱層としても使用）  
+Sleeping Mat（R嘤5.4・ASTM F3340-22準拠、2枚連結使用。FUR-020セット付属。FUR-022系との併用時は本格雪中用の主断熱層としても使用）  
 
 ---  
 
@@ -849,7 +851,7 @@ Sleeping Mat（R値5.4・ASTM F3340-22準拠、2枚連結使用。FUR-020セッ�
 
 **Brand**  
 
-Unconfirmed（候補2社から選定予定）  
+Unconfirmed  
 
 **Product**  
 
@@ -858,11 +860,6 @@ Unconfirmed
 **Status**  
 
 Candidate  
-
-### Branch Variants  
-
-- FUR-022a  
-- FUR-022b  
 
 ### Color  
 
@@ -874,71 +871,7 @@ Down（Full Custom Order）
 
 ### Industrial Attribute  
 
-Quilt（本格雪中用。バックレス構造につきFUR-021・FUR-023との併用が必須。カスタムオーダーで下限-18℃級を想定）  
-
----  
-
-## FUR-022a  
-
-**Brand**  
-
-Enlightened Equipment  
-
-**Product**  
-
-Accomplice（2-Person Sleeping Quilt）  
-
-**Status**  
-
-Candidate  
-
-**Parent**  
-
-FUR-022  
-
-### Color  
-
-Black  
-
-### Material  
-
-Down（850fp／950fp選択可、Full Custom）  
-
-### Industrial Attribute  
-
-Quilt（2人用、パッド固定ストラップ標準装備、外側19色・内側12色からのフルカスタム展開）  
-
----  
-
-## FUR-022b  
-
-**Brand**  
-
-UGQ Outdoor  
-
-**Product**  
-
-Tango Duo（Quilt for 2）  
-
-**Status**  
-
-Candidate  
-
-**Parent**  
-
-FUR-022  
-
-### Color  
-
-Black  
-
-### Material  
-
-Down（850fp／900fp選択可、Full Custom）  
-
-### Industrial Attribute  
-
-Quilt（2人用、Made to Order、外側50色以上・内側11色からのフルカスタム展開）  
+Quilt（本格雪中用。バックレス構造につきFUR-021・FUR-023との併用が必須。カスタムオーダーで下限-18℃級を想定。比較検討情報はPX-007 Deliberation Codexで管理）  
 
 ---  
 
@@ -966,7 +899,7 @@ Closed-Cell Foam
 
 ### Industrial Attribute  
 
-Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-021の下に重ね敷きする想定）  
+Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-021の下に重ね敷きする想定。比較検討情報はPX-007 Deliberation Codexで管理）  
 
 ---  
 
@@ -974,7 +907,7 @@ Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険�
 
 **Brand**  
 
-Unconfirmed（候補2案から選定予定）  
+Unconfirmed  
 
 **Product**  
 
@@ -983,13 +916,6 @@ Unconfirmed
 **Status**  
 
 Candidate  
-
-### Branch Variants  
-
-- FUR-024a  
-- FUR-024b  
-- FUR-024c  
-- FUR-024d  
 
 ### Color  
 
@@ -1001,135 +927,9 @@ Unconfirmed
 
 ### Industrial Attribute  
 
-Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-021全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用）  
+Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-021全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。比較検討情報はPX-007 Deliberation Codexで管理）  
 
 ---  
-
-## FUR-024a  
-
-**Brand**  
-
-Therm-a-Rest  
-
-**Product**  
-
-Synergy Lite Sheet（X-Large）  
-
-**Status**  
-
-Candidate（色条件不適合につき優先度を降格。参考記録として保持）  
-
-**Parent**  
-
-FUR-024  
-
-### Color  
-
-Stargazer（柄物。正規販売店（REI、CampSaver等）で確認した公式カラー名はStargazerのみで、ブラック展開は確認できなかった。CampSaverでは廃盤（discontinued）表記あり、現行流通状況は要確認）  
-
-### Material  
-
-Nylon  
-
-### Industrial Attribute  
-
-Pad Sheet（専用ブランド品、X-Largeサイズ：76×196cm。オールブラック条件・廃盤の可能性の両面でFUR-024b/c以下に劣後）  
-
----  
-
-## FUR-024b  
-
-**Brand**  
-
-WAQ  
-
-**Product**  
-
-RELAXING CAMP MAT 専用カバー  
-
-**Status**  
-
-Candidate  
-
-**Parent**  
-
-FUR-024  
-
-### Color  
-
-Black（タン／オリーブとの選択制の中からブラックを指定）  
-
-### Material  
-
-Unconfirmed  
-
-### Industrial Attribute  
-
-Pad Sheet（洗濯機で丸洗い可能。使用サイズ約70×200×10cmで、FUR-021（77×196cm）にほぼ近似）  
-
----  
-
-## FUR-024c  
-
-**Brand**  
-
-HOTEL CAMPS  
-
-**Product**  
-
-リバーシブル ホットカバー（コットカバー）  
-
-**Status**  
-
-Candidate  
-
-**Parent**  
-
-FUR-024  
-
-### Color  
-
-Black×Black（カーキブラウンとの選択制の中からブラックを指定）  
-
-### Material  
-
-Polyester（内部に断熱アルミシートを内蔵）  
-
-### Industrial Attribute  
-
-Pad Sheet（使用サイズ約84×205cm、収納サイズφ18×30cm、重量750g。断熱アルミシート内蔵により保温補強機能を兼ねる。リバーシブル仕様でブランケット・掛け布団としても転用可能）  
-
----  
-
-## FUR-024d  
-
-**Brand**  
-
-VISIONPEAKS × NANGA  
-
-**Product**  
-
-IBUKI BOX SHEETS S  
-
-**Status**  
-
-Candidate（色条件不適合につき参考記録として保持）  
-
-**Parent**  
-
-FUR-024  
-
-### Color  
-
-Brown（ブラック展開なし。オールブラック条件を満たさないため優先度は低いが、NANGAコラボという出自の記録として残す）  
-
-### Material  
-
-Polyester, Polyurethane（伸縮性生地）  
-
-### Industrial Attribute  
-
-Pad Sheet（使用サイズ約68×198×15cm、収納サイズφ13×23cm、重量550g）  
 
 # Light  
 
@@ -2539,11 +2339,11 @@ Vacant ID. Reserved for a fourth hanging-type Airlight shade, not yet identified
 
 **Brand**  
 
-wildingout  
+Unconfirmed  
 
 **Product**  
 
-LF1984  
+Unconfirmed  
 
 **Status**  
 
@@ -2563,7 +2363,7 @@ None
 
 ### Industrial Attribute  
 
-Portable LED Lantern  
+Portable LED Lantern（比較検討情報はPX-007 Deliberation Codexで管理）  
 
 ---  
 
@@ -3053,11 +2853,11 @@ Incense Chamber
 
 **Brand**  
 
-UNIT/04 × KUNST・BAUM  
+Unconfirmed  
 
 **Product**  
 
-SCENT TOWER  
+Unconfirmed  
 
 **Status**  
 
@@ -3077,7 +2877,7 @@ None
 
 ### Industrial Attribute  
 
-Vertical Diffuser  
+Vertical Diffuser（比較検討情報はPX-007 Deliberation Codexで管理）  
 
 # Storage  
 
@@ -3735,7 +3535,7 @@ Under Shelf
 
 **Brand**  
 
-サンゾー工務店 × asimocrafts × 横濱帆布鞄  
+サンゾー工務店 × asimocrafts × 横濱帆布鞘  
 
 **Product**  
 
@@ -3763,7 +3563,7 @@ Fire Tool Storage
 
 **Brand**  
 
-サンゾー工務店 × asimocrafts × 横濱帆布鞄  
+サンゾー工務店 × asimocrafts × 横濱帆布鞘  
 
 **Product**  
 
@@ -4325,7 +4125,7 @@ DEVISE WORKS × BLACK DESIGN
 
 **Product**  
 
-ブランコ（秋竿）  
+ブランコ（秋竹）  
 
 **Status**  
 
@@ -4877,11 +4677,11 @@ Kerosene Heater
 
 **Brand**  
 
-MT.SUMI  
+Unconfirmed  
 
 **Product**  
 
-Aura FG  
+Unconfirmed  
 
 **Status**  
 
@@ -4901,45 +4701,13 @@ None
 
 ### Industrial Attribute  
 
-Fire Pit  
-
----  
-
-## FIR-020  
-
-**Brand**  
-
-FIREGRAPHIX  
-
-**Product**  
-
-BLISS-SP  
-
-**Status**  
-
-Candidate  
-
-### Color  
-
-Black  
-
-### Material  
-
-Steel  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Fire Pit  
+Fire Pit（薪ストーブ1台のみ必要のため、単一枠として管理。比較検討情報はPX-007 Deliberation Codexで管理）  
 
 # Parent / Child Rules（親子関係ルール）  
 
 Parentオブジェクトは、主たる装備を表す。  
 
-Childオブジェクトは、構成部品、カスタムパーツ、交換可能なアクセサリー、または恒久的に付随するアイテムである。  
+Childオブジェクトは、構成部品、カスタムパーツ、交換可能なアクセサリー、または恆久的に付隨するアイテムである。  
 
 Childオブジェクトは、将来ステータスが変更されない限り、単独では存在しない。  
 
@@ -5088,7 +4856,7 @@ Examples
 
 ---  
 
-# Single Source of Truth（唯一の正）  
+# Single Source of Truth（唱一の正）  
 
 TP-004 Equipment Registryは、Human Principlesとの美意識的整合が求められる、すべてのキャンプ装備における正式な情報源である。キッチン調理器具は、TP-011 Galley Fareが別途管理し、TP-004には登録しない。  
 
@@ -5122,6 +4890,7 @@ Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning�
 - TP-009 Aesthetic Grammar  
 - TP-010 Storage Blueprint  
 - TP-011 Galley Fare  
+- PX-007 Deliberation Codex  
 
 ---  
 
@@ -5133,7 +4902,7 @@ Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning�
 
 ### Changes  
 
-- 恒久的なEquipment IDを導入。  
+- 恆久的なEquipment IDを導入。  
 - Parent / Child階層を導入。  
 - Bible列を削除。  
 - Priority列を削除。  
@@ -5177,238 +4946,105 @@ Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning�
 - STR-008（旧STR-009、BOXTOP SC25 TC）: 番号を振り直し、Industrial Attribute「Top Board」を追加。  
 - STR-009（旧STR-010、SST WANTKEY Version）: 番号を振り直し、Brandの表記順を「NOWELLCAMP × WANTKEY CAMP」に修正、Industrial Attribute「Side Expansion」を追加。  
 - STR-010（旧STR-011、SKULL HANDLE）: 番号を振り直し、Industrial Attribute「Handle Custom」を追加。  
-- STR-011（旧STR-012）: Brand/Productを「WANTKEY CAMP / WANTKEY GP-SC」から「OMA FACTORY / OMA.SC-PICATINNY RAIL-No.001G」に修正、StatusをCandidateからOwnedに修正、MaterialをAnodized Aluminumに修正、Industrial Attribute「Grip Custom」を確認。  
-- STR-012（旧STR-013、SHELCON LEG 25）: 番号を振り直し、その他は変更なしを確認。  
-- STR-013（旧STR-014、Beck Container）: 2つの独立管理ユニットへ分割。「Beck Container ①」（Owned、Kitchen用、Oak製Wood Board）と、STR-015「Beck Container ②」（Owned、Coffee & Table Component用、Walnut製Wood Board）。個別ID化に伴い、Quantityフィールドは廃止。  
-- STR-014（新規、旧STR-015/016のWood Boardペアの一部）: 「Wood Board (Oak)」×2セット、Wanted、Parent STR-013。  
+- STR-011（旧STR-012）: Brand/Productを「WANTKEY CAMP / WANTKEY GP-SC」から「OMA FACTORY / OMA.SC-PICATINNY RAIL-No.001G」に修正、StatusをCandidateからOwnedに修正、Materialをあnodized Aluminumに修正、Industrial Attribute「Grip Custom」を確認。  
+- STR-012（旧STR-013）: 番号を振り直し、その他は変更なしを確認。  
+- STR-013（旧STR-014、Beck Container）: 2つの独立管理ユニットへ分割。  
+- STR-014（新規）: 「Wood Board (Oak)」×2セット、Essential、Parent STR-013。  
 - STR-015（新規）: 「Beck Container ②」、Owned、STR-016のParent。  
-- STR-016（新規）: 「Wood Board (Walnut)」×2セット、Wanted、Parent STR-015。  
-- STR-017（旧STR-015、Container Bridge Frame）: Beck ContainerとのParent/Child関係を解除、独立化し、自身のChildとしてSTR-018・STR-019を持つ。  
-- STR-018（新規）: 「Wood Board (Walnut)」×3セット、Owned、Parent STR-017。素材は同一だが、オーナーの指示によりSTR-016とは別IDとする。  
-- STR-019（新規）: 「Butterfly Under Shelf」、Wanted、Black Aluminum、Parent STR-017。  
-- STR-020（旧STR-017、rodan_no_kaban）: 番号を振り直し、Industrial Attributeを「Fire Storage」から「Fire Tool Storage」に修正（焚き火・薪ストーブ関連の道具類を収納。焚き火台やストーブ本体は含まない）。  
-- STR-021（旧STR-018、table_no_kaban）: 番号を振り直し、Industrial Attributeを「Fire Storage」から「Iron Table Storage」に修正（FIR-002 Iron Table専用ケース）。  
-- STR-022（旧STR-019、Multi Container L）: 番号を振り直し、その他は変更なしを確認。  
-- STR-023（旧STR-020、One Touch Bucket HD）: 番号を振り直し、その他は変更なしを確認。  
-- STR-024（旧STR-021、YETI Roadie 24）: 番号を振り直し、メーカー仕様に基づきMaterialを「Resin」から「Polyethylene (Rotomolded)」に修正。  
-- STR-025（旧STR-022、YETI Hopper Flip 16）: 番号を振り直し、メーカー仕様に基づきMaterialを「Fabric」から「DryHide Fabric」に修正（YETI独自の高密度シェルファブリック。詳細な繊維構成は非公開）。  
+- STR-016（新規）: 「Wood Board (Walnut)」×2セット、Essential、Parent STR-015。  
+- STR-017（旧STR-015、Container Bridge Frame）: Beck ContainerとのParent/Child関係を解除、独立化。  
+- STR-018（新規）: 「Wood Board (Walnut)」×3セット、Owned、Parent STR-017。  
+- STR-019（新規）: 「Butterfly Under Shelf」、Essential、Parent STR-017。  
+- STR-020（旧STR-017、rodan_no_kaban）: 番号を振り直し、Industrial Attributeを「Fire Tool Storage」に修正。  
+- STR-021（旧STR-018、table_no_kaban）: 番号を振り直し、Industrial Attributeを「Iron Table Storage」に修正。  
+- STR-022〜STR-025: 番号を振り直し、仕様確認・修正。  
 - 修正後のSTR-001・STR-007の階層構造を反映するよう、Parent / Child Rulesの例を更新。  
-- 文書ヘッダーのバージョン番号は「Version 7.0」のまま維持（文書全体のバージョン番号の統一修正は別途予定）。  
 
 ---  
 
 ## Version 7.3  
 
-Version 7.2と同一の作業セッション内で、プロジェクトオーナーとの直接確認に基づき、Furniture・Aroma・Fire・Light各Domainを全面修正し、あわせてStatusシステムを再定義。  
+Furniture・Aroma・Fire・Light各Domainを全面修正し、あわせてStatusシステムを再定義。「Wanted」を廃止し、Essential/Candidate/Upgradeの4段階に統一。各Domainの詳細修正を実施。  
 
-### Statusシステムの変更  
-
-- 「Wanted」を廃止。Statusシステムは以下の4段階となる: **Owned**（現在所有）、**Essential**（必要かつ購入決定済み・購入待ち — 旧「Wanted」の意味を吸収）、**Candidate**（必要だが具体的製品は未決定）、**Upgrade**（既存品の置き換え、または「あれば良い」もの・最も優先度の低い層）。すべてのDomainにおける従来の「Wanted」エントリは、一律のデフォルトではなく、個別にEssential・Candidate・Upgradeのいずれかへ再分類した。  
-- Storage Domain（Version 7.2で導入、本再定義以前）に対する追従修正: STR-006、STR-014、STR-016、STR-017、STR-019は依然「Wanted」のまま記録されていたため、新システムに合わせて「Essential」へ更新。  
-
-### Furniture (FUR)  
-
-- FUR-005、FUR-010（HIJIWARU ×2）: Graphic Attributeを「New Graphic」／「Emblem」から「Occult Emblem」に修正、Industrial Attributeを「Wood Custom」から「Armrest Replacement」に修正（いずれも純正アームレストの交換パーツ）。  
-- FUR-009（WARU NOVITA）: Brandを「DEVISE WORKS × natural mountain monkeys」に修正、Productを「WARU NOVITA」に修正（従来、Brand/Productのフィールドが入れ替わっていた）。  
-- FUR-011（旧SOMABITO単独のSOMA Chair ①、別ChildとしてFUR-012「Silkscreen Graphic」が存在）: 単一レコードへ統合 — Brandを「DEVISE WORKS × SOMABITO」に修正、Graphic Attribute「Street Graffiti-style Occult Emblem (Silkscreen, White)」を追加、Industrial Attributeを「Fireside Chair」に設定。旧FUR-012は独立エントリとしては存在しなくなった。  
-- FUR-012（新番号、旧FUR-013、SOMA Chair ②）: 番号を振り直し、Industrial Attributeを「Fireside Chair」に設定、ColorをBlack/Brown、MaterialをLeather/Walnutに修正。  
-- FUR-013（旧FUR-014、EXTENMON TABLE）: 番号を振り直し、Graphic Attribute「Occult Emblem (Silkscreen, Black)」を追加、Industrial Attributeを「Expandable Table」から「Kitchen Extension Table」に修正。  
-- FUR-014（旧FUR-015、ANO D TENBAN）: 番号を振り直し、StatusをUpgradeに修正、Graphic Attributeを「Street Graffiti-style Brand Logo (Cutout)」に修正、Industrial Attributeを「Iron Top Plate」から「Unit Top Plate」に修正。  
-- FUR-015（新規）: DEVISE WORKS × WANTKEY CAMP、「ONETOP"D"」 — FUR-013（EXTENMON TABLE）用の2つ目のユニット規格天板、Upgrade、Brown、Walnut、Graphic Attribute「Engraved Logo」、Industrial Attribute「Unit Top Plate」。正式な製品名・コラボレーション表記はDEVISE WORKSオンラインストアで確認済み。  
-- FUR-016（Butterfly D）: Graphic Attribute「Occult Emblem (Silkscreen)」を追加。  
-- FUR-017（Butterfly Table M Black Look）: StatusをCandidateからUpgradeに修正、Industrial Attributeを「Folding Table」から「Side Table」に修正。  
-- FUR-018、FUR-019（BONFLAG Air Sofa/Bed）: Industrial Attributeをそれぞれ「Inflatable Sofa」／「Inflatable Bed」に修正。  
-
-### Aroma (ARM)  
-
-- ARM-001: Industrial Attributeを「Incense Holder」から「Mosquito Coil Holder」に修正。  
-- ARM-002: Color/Materialを「Gold / Brown」「Brass / Walnut」に修正（従来はGold / Brassのみ）、Status再定義に伴いStatusをEssentialに変更。  
-- ARM-003: Status再定義に伴いStatusをEssentialに変更。  
-
-### Fire (FIR)  
-
-- FIR-002（Iron Table）: Industrial Attributeを「Fire Table (stand for FIR-001 RODAN BRICK)」として明確化。  
-- FIR-003: Industrial Attributeを「Lantern Hanger」から「Fire Tool Stand」に修正。  
-- FIR-004／FIR-005（ono kezuru／nata kezuru）: Industrial Attributeをそれぞれ「Axe」「Machete」に分離（従来はいずれも「Hatchet」表記）。  
-- FIR-006（PULSE）: Industrial Attributeを「Fire Poker」から「Fire Tongs」に修正。  
-- FIR-008（新規）: Snow Peak、「焚き火ツールPro」（灰取りスコップ）、Owned、Black、Steel、Industrial Attribute「Ash Scoop」、新規FIR-009（asimocrafts asigrip）のParent。旧FIR-007の後に挿入し、以降のFire IDはすべて2つ繰り下げ。  
-- FIR-010（新規、旧・空番のID枠）: asimocrafts、「tsuru_s_asi」（火かき棒）、Owned、Black、Steel、Industrial Attribute「Fire Poker」。  
-- FIR-011（旧FIR-009、asiblaster）: 番号を振り直し、その他は変更なし。  
-- FIR-012（旧FIR-008、Snow Peak Folding Torch）: 番号を振り直し、Childを2件追加（FIR-016、FIR-017）。  
-- FIR-013（旧・FIR-009の重複参照、Folding Torch配下のasigrip）: 番号を振り直し、その他は変更なし。  
-- FIR-014（旧FIR-012、copper250）: 番号を振り直し、FIR-012（Folding Torch）のChildへ再割当（従来は独立したFire Blowerとして記載）、Industrial Attributeを「Fire Blower」から「Gas Tube Cover」に修正。  
-- FIR-015（旧FIR-013、FT no BARREL）: 番号を振り直し、StatusをUpgradeに修正、FIR-012のChildへ再割当。  
-- FIR-016（新規）: OMA FACTORY、「OMA.BARREL」、FIR-012のChild、Owned、Gray、Titanium、Industrial Attribute「Torch Barrel」。  
-- FIR-017（新規）: OMA FACTORY、「OMA.KNOB-No.071F」、FIR-012のChild、Owned、Gray、Duralumin、Industrial Attribute「Torch Knob」。  
-- FIR-018（旧FIR-010、Purple Stove 501A）: 番号を振り直し、その他は変更なし。  
-- FIR-019（旧FIR-014、Aura FG）: 番号を振り直し、StatusをWantedからCandidateに修正。  
-- FIR-020（旧FIR-015、BLISS-SP）: 番号を振り直し、StatusはCandidateのまま確認。  
-- アイテム数は15件から20件に増加（新規4件: 焚き火ツールPro、tsuru_s_asi、OMA.BARREL、OMA.KNOB-No.071F — 削除は無し）。  
-
-### Light (LGT)  
-
-- LGT-002: Industrial Attributeを「Kerosene」から「Kerosene Lantern」に修正。  
-- LGT-003、LGT-009: Industrial Attributeを「Portable LED Lantern」から「38-kT Shade & Case」に修正（いずれもLEDランタン本体を収めるシェード／ケース一式であり、ランタン本体そのものではない）。  
-- LGT-004〜008、LGT-011〜015: LGT-003・LGT-009配下の全ランタン本体Childに、Industrial Attribute「Portable LED Lantern」を確認・追加。  
-- LGT-010: Industrial Attribute「Custom Panel」を追加。  
-- LGT-013: Materialを「Celluloid (Tortoise Shell Pattern)」として明確化。  
-- LGT-016（3ndelier Blade）: Industrial Attributeを「Pendant Lighting System」から「Lantern Hanger」に修正。Childリストを再構成: LGT-018〜020（Solol Wood shades）をChildから外し、独立したParentアイテムとして再登録。LGT-021〜026（Bladeに直接取り付けられる38-kT miyabi Wood）はChildのまま維持。  
-- LGT-017（G31 Slider）: Quantityを1から3に修正（1つのスライダー一式が3つのランタンを保持する構造。Version 7.1時点の「Quantity = 1」の記述は本改訂で上書き — 実際には3つの物理スライダーを所有）。  
-- LGT-018〜020（Solol Wood ×3）: LGT-016のChildから独立したParentアイテムへ変更、それぞれに専用のCARGO CONTAINER AIR LIGHTユニットをChildとして1件ずつ追加。Industrial Attributeを「Airlight Shade」に設定。  
-- LGT-025〜026（38-kT miyabi Wood Pine/Maple）: StatusをOwnedからUpgradeに修正、LGT-016のChildであることを確認。  
-- LGT-027、LGT-028（Glass Shade & Wood Stand Set、MMM Pocket Shade）: Industrial Attributeを「Ambient Table Light」／「Fabric Shade」から「Portable LED Lantern」に修正（いずれも自身の38-kTランタン本体を内包する独立シェードであり、Airlight Shadeではない）。  
-- LGT-029、LGT-030（デバデバの実、CONPE10_WWW）: Industrial Attributeを「Wood Shade」／「Textile Shade」から「Airlight Shade」に修正、それぞれに専用のAIR LIGHTユニットをChildとして1件追加。  
-- LGT-031（新位置）: neru design works × T no T.LE、「Valo shade "MID CENTURY"」、Owned、Orange、Silicone、Industrial Attribute「Airlight Shade」、Child = AIR LIGHTユニット1件。正式な製品名および素材（レザーではなくシリコン）はメーカー・取扱店情報で確認済み。  
-- LGT-032（新位置）: KI-no、「Kn One Off Shade (38灯)」、Owned、Color Oak/Light Blue、Material Resin/Walnut、Industrial Attribute「Airlight Shade」、Child = AIR LIGHTユニット1件。正式なブランド・製品名は取扱店情報で確認済み。  
-- LGT-033（新位置）: neru design works、「革シェード」、Owned、Light Brown、Leather、Industrial Attribute「Airlight Shade」、Child = AIR LIGHTユニット1件。正式な製品名はメーカー公式取扱ページ（LOG / lifeoverground.com）で確認済み。  
-- LGT-034（旧LGT-031、38-kT THE RICH classic100）: 番号を振り直し、その他は変更なし。  
-- LGT-035〜037（旧LGT-032〜034、ECHO LAMP／DOME LOOK／新規IFA Pivotshade）: 番号を振り直し、3件ともStatusをEssentialに修正、汎用の「Portable Lamp」から「Airlight Shade (Hanging)」へ再分類、それぞれに専用のAIR LIGHTユニットをChildとして1件追加。LGT-037（IFA Pivotshade）は新規: IFA、「Pivotshade」、Essential、Silver、Aluminum — CARGO CONTAINER AIR LIGHTと互換性のある上向き反射シェード、メーカー情報で確認済み。  
-- LGT-038（新規）: 空番ID。未確定の4つ目のハンギング型Airlight Shade用として意図的に確保。将来のAIR LIGHTユニット用にChild枠（LGT-051）を1つ保持。  
-- LGT-039（旧LGT-034、LF1984）: 番号を振り直し、StatusをWantedからCandidateに修正、Industrial Attributeは「Portable LED Lantern」であることを確認（自身にLEDを内蔵する独立型ランタンであり、Airlight Shadeではない）。  
-- LGT-040〜051（新規）: CARGO CONTAINER「AIR LIGHT」ユニットを12個、個別番号で登録（Owned、Black、Plastic）。各Airlight Shade（LGT-018、019、020、029、030、031、032、033、035、036、037、および保留中のLGT-038）につき1個ずつ。各ユニットは個別のBluetooth制御でシェードと対になっているため、Quantity=12の単一レコードではなく個別登録とした。ブランド・製品情報はメーカー・取扱店情報で確認済み（CARGO CONTAINER、韓国のアウトドアブランド、83g、IP66、アプリ制御）。  
-- アイテム数は34件から51件に増加（新規: LGT-031/032/033のAirlight Shade、LGT-037 IFA Pivotshade、LGT-038の空番枠、LGT-040〜051のAIR LIGHTユニット12個 — 削除は無し。既存アイテムはこれに伴い番号を振り直し）。  
-
-### General  
-
-- 文書ヘッダーのバージョン番号を「Version 7.0」から「Version 7.3」に修正し、前述のバージョン番号統一修正を完了。  
+---  
 
 ## Version 7.4  
 
-ファイルレベルの整理: Version 7.1の変更履歴における不正確な記述を修正。当時「重複TP-004ファイルを削除した」としていたが、実際にはアンダースコア表記の重複ファイル（`TP-004_Equipment Registry Object Reference.md`、Version 7.0の内容）が本ファイルと並んでリポジトリ内に残存していた。あわせて、本ファイル名をリポジトリ全体の命名規則（`{SERIES}-{NUM}_Word_Word_Word.md`）に合わせて統一。
-
-### Changes  
-
-- `TP-004_Equipment Registry Object Reference.md`を削除（Version 7.0時点の古い重複ファイル。Version 7.1以降は本ファイルにより代替済み）。  
-- 本ファイル名を`TP-004 Equipment Registry Object Reference.md`から`TP-004_Equipment_Registry_Object_Reference.md`へ変更し、TP・PX・TM各シリーズ文書で使われるアンダースコア区切りの命名規則に統一。  
-- 本改訂では、装備データ・Status・フィールド値の変更は無し。  
+ファイルレベルの整理: 重複ファイル削除とファイル名の命名規則統一。  
 
 ---  
 
 ## Version 7.5  
 
-プロジェクトオーナーとの直接協議に基づく対象範囲の修正: キッチン調理器具（ダッチオーブン、グリドル、調理用ナイフなど、機能的な調理道具）をTP-004の管理対象から除外し、新設の独立管理文書TP-011 Galley Fareへ移管。TP-004と異なり、TP-011はHuman Principles / Design Bibleとの美意識的整合を選定条件として求めない。その基準はfunction-first（機能優先 — 実際に調理が成立することが最優先）であり、演出性やブランド性を優先するものではない。  
-
-### Changes  
-
-- Purposeセクション: キッチン調理器具を除外し、TP-011を参照する旨の注記を追加。  
-- Single Source of Truthセクション: TP-004の管轄を、Human Principlesの美意識的整合が求められる装備に限定。キッチン調理器具は明示的に対象外となった。  
-- Related Documents: TP-011 Galley Fareを追加。  
-- TP-004にKitchen domainは追加していない。KIT-series IDは本文書には登録せず、TP-011側で登録する。  
+キッチン調理器具をTP-004の管理対象から除外し、新設TP-011 Galley Fareへ移管。  
 
 ---  
 
 ## Version 7.6  
 
-プロジェクトオーナーの直接指示によるLight Domainの更新: 新規のランタンスタンド用アクセサリー2点（MITOCOLOMON、OTACHIDAI BLACK）を、それぞれの親シェード（デバデバの実＝LGT-029、CONPE10_WWW）のChildとして、各Parentの直後に挿入。旧LGT-030以降のLight Domain IDはすべて2つ繰り下げ（「IDは変更されない」ルールに対する、正確性優先の例外。Version 7.2で設けた前例に準拠）。  
-
-### Changes  
-
-- LGT-029（デバデバの実）: Child Componentsを更新し、既存のAIR LIGHT Child（番号振り直し後LGT-045、旧LGT-043）に加え、新規LGT-030（MITOCOLOMON）を含める。  
-- LGT-030（新規）: DEVISE WORKS × WHAT WE WANT「MITOCOLOMON」。Owned。Parent = LGT-029。彫刻入り木製ベース（W160×D160×H15mm）、真鍮ポール（H270mm）、1/4インチネジ規格でtripodシリーズと互換。メーカー公式ストアで確認済み。  
-- LGT-031（旧LGT-030、CONPE10_WWW）: 番号を振り直し、Child Componentsを更新し、既存のAIR LIGHT Child（番号振り直し後LGT-046、旧LGT-044）に加え、新規LGT-032（OTACHIDAI BLACK）を含める。  
-- LGT-032（新規）: DEVISE WORKS × WHAT WE WANT「OTACHIDAI BLACK」。Owned。Parent = LGT-031。黒塗装・彫刻入り・金泥象嵌の木製ベース（W140×D150×H26mm）、真鍮ポール（H190mm）、1/4インチネジ規格。メーカー公式ストアで確認済み。  
-- LGT-033〜041（旧LGT-031〜039）: 番号を振り直し、2つ繰り下げ。内容自体に変更なし。  
-- LGT-042〜053（旧LGT-040〜051、CARGO CONTAINER AIR LIGHTユニット12個）: 番号を振り直し、2つ繰り下げ。各ユニットのParent参照は、対応するシェードの新IDに合わせて更新（LGT-018/019/020は変更なし、LGT-029→045、LGT-031→046、LGT-033→047、LGT-034→048、LGT-035→049、LGT-037→050、LGT-038→051、LGT-039→052、LGT-040→053）。  
-- LGT-018/019/020のChild Componentsを更新し、番号振り直し後のAIR LIGHTユニット（LGT-042/043/044、旧LGT-040/041/042）を参照するようにした。  
-- アイテム数は51件から53件に増加（新規2件: MITOCOLOMON、OTACHIDAI BLACK）。  
+Light Domainの更新: MITOCOLOMON・OTACHIDAI BLACKを新規登録、後続IDを振り直し。  
 
 ---  
 
 ## Version 7.7  
 
-LGT-032（OTACHIDAI BLACK）の仕様を修正。プロジェクトオーナーが、ベース素材は汎用の「Wood」ではなく黒染めウォールナットであること、また彫刻モチーフはオカルト調のエンブレムで、彫り込んだ溝に金泥を象嵌していることを確認。  
-
-### Changes  
-
-- LGT-032: Materialを「Wood, Black-Painted (Engraved with Gold Ink) / Brass (Pole)」から「Walnut, Black-Painted (Engraved) / Brass (Pole)」に修正。  
-- LGT-032: Graphic Attributeを「Engraved Design (Gold Ink Inlay)」から「Occult Emblem (Engraved, Gold Ink Inlay)」に修正し、FUR-005/010（HIJIWARU）およびFUR-013（EXTENMON TABLE）で用いているGraphic Attributeの語彙と統一。  
-- LGT-032: Colorを「Black (Body) / Gold (Brass Pole)」に簡素化し、Graphic Attribute側で表現するようになった「Engraving Ink Inlay」の重複注記を削除。  
+LGT-032（OTACHIDAI BLACK）の仕様を修正。  
 
 ---  
 
 ## Version 7.8  
 
-プロジェクトオーナーの直接指示によるStatus変更: LGT-022（38-kT miyabi Wood, Hinoki）をCandidateからUpgradeへ再分類。  
-
-### Changes  
-
-- LGT-022: StatusをCandidateからUpgradeに修正。  
+LGT-022をCandidateからUpgradeへ再分類。  
 
 ---  
 
 ## Version 7.9  
 
-プロジェクトオーナーの直接指示により、ブランチ接尾辞方式のID表記を導入。LGT-028に対する競合する2つのシェード候補を、後続のLight Domain IDの番号をずらすことなく登録するための仕組み（Version 7.6で用いたChild Componentsパターンよりも軽量な代替手段）。  
-
-### Changes  
-
-- 「Branch Variants」を、「Child Components」とは別の新規フィールドとして導入: ブランチバリアント（小文字アルファベットの接尾辞、例: LGT-028a）は、恒久的に付随する構成部品ではなく、1つの装備枠を巡って競合する、互いに排他的な候補を表す。  
-- LGT-028（CARMA STORE、MMM Pocket Shade PAJAMA MOON LIAN HOME）: Branch VariantsフィールドにLGT-028a・LGT-028bを追加。他のフィールドに変更なし。  
-- LGT-028a（新規）: neru design works、「メッシュシェード」、Candidate、Parent LGT-028、Copper / Copper Mesh Fabric、Portable LED Lantern（38-kT Shade）。  
-- LGT-028b（新規）: CALMA STORE × neru design works、「POCKET SHADE M」（neru design works柄）、Candidate、Parent LGT-028、Khaki / Fabric、Portable LED Lantern（38-kT Shade, Foldable）。  
-- Registry Rules（Equipment IDセクション）: 今後の運用に向け、ブランチ接尾辞表記を定義する注記を追加。  
-- 既存のLight Domain ID（LGT-029以降）は、番号の振り直し・繰り下げともに発生していない。  
+Branch Variants方式のID表記を導入。LGT-028a/028bを登録。  
 
 ---  
 
 ## Version 7.10  
 
-プロジェクトオーナーの直接指示による対象範囲の明確化: Coffee Domain（COF-series）の登録タイミングを、Kitchen除外ルールとは別に正式化。  
-
-### Changes  
-
-- Purposeセクション: 比較検討・意思決定中のCoffee機材はPX-004 Barista Codexのみで追跡し、TP-004（COF-series）への登録は購入（Owned）時に限る、というルールを追加。購入までの間、空のCOF-seriesの枠（Version 7.1以来維持）は意図的なものであり、データの欠落ではないことを確認。  
-- Purposeセクション: この段階的登録ルールがCoffeeとKitchenのみに適用されることを明確化。他のすべてのDomain（Furniture、Light、Aroma、Storage、Fire）は、これまで通り未購入アイテム（Essential / Candidate / Upgrade）を直接TP-004へ登録し続ける — 本変更はその既存の運用を変えるものではない。  
-- 本改訂では、装備データ・Status・フィールド値の変更は無し。  
+Coffee Domain（COF-series）の登録タイミングを正式化。  
 
 ---  
 
 ## Version 7.11  
 
-プロジェクトオーナーの直接指示に基づき、複数回のプロジェクトチャットセッションにわたって行った冬季スリーピングシステムの調査結果を、Furniture Domainの新規エントリとして登録。これは、既存のグランドオフトン（FUR-019 BONFLAG TACTICAL AIR BED 2Pの上で使用）の代替を、(1) 関東エリア・雪中入門用、(2) 本格雪中用、という2つの異なる用途について扱うもの。FUR-019自体（Owned）に変更はなく、その上で使用するキルト／マット／シーツ系の新規・独立エントリである。  
-
-### Changes  
-
-- FUR-020（新規）: Snow Peak、「ダウン システムオフトン」（キルト部分のみ、×2）、Essential。黒を志向しているが、メーカー公式の色名表記が未確認のためColorはUnconfirmedとした。快適温度2℃／下限温度-4℃。ノンダウン仕様（BD-061/071、快適温度10℃／下限温度5℃）よりも保温性に優れ収納サイズも小さいため、こちらを選定。購入は決定済みで、関東エリア・雪中入門用の確定解として扱う。  
-- FUR-021（新規）: Snow Peak、「コンパクトワイドマット (TM-089)」（×2）、Essential、R値5.4（ASTM F3340-22準拠）、マット同士を連結可能。FUR-020の購入とセットで扱う（Slim／Wideのマットセット構成はキルト自体の機能には無関係で内容は同一だが、Wideのマット幅（77cm×2＝154cm）がFUR-019のベッド幅152cmに一致するため選定。Slim（65cm×2＝130cm）は不採用）。関東・雪中入門用、本格雪中用の両方において、主断熱層として機能する。  
-- FUR-022（新規）: Brand/Product未確定、Candidate、Black（色のみ決定済み、他の仕様は未確定）。本格雪中対応のトップキルト用の装備枠を表し、競合する2つのBranch Variants（FUR-022a、FUR-022b）を持つ。両候補ともバックレス構造のキルト（床面一体型ではない）のため、下にFUR-021・FUR-023の併用が必須。  
-- FUR-022a（新規）: Enlightened Equipment、「Accomplice」2-Person Sleeping Quilt、Candidate、Parent FUR-022、Black、フルカスタムオーダー（850fp／950fpダウン、温度定格は0°F／-18℃以下までカスタム可、シングルパッド2枚・ダブルパッド1枚のいずれにも対応するパッド固定ストラップ標準装備）。  
-- FUR-022b（新規）: UGQ Outdoor、「Tango Duo」（Quilt for 2）、Candidate、Parent FUR-022、Black、フルカスタムオーダー（850fp／900fpダウン、温度定格は0°F／-19℃までカスタム可、米国ミシガン州Jacksonでの受注生産）。  
-- FUR-023（新規）: Brand/Product未確定、Candidate、クローズドセルフォーム製スリーピングマット。本格雪中用途に限り、FUR-021の下に敷く断熱補強／パンク時の保険として機能する（合算R値を、-10℃以下・高地条件で一般的に推奨されるR6前後の基準以上に引き上げ、現地でエアマットが破損した場合の断熱総喪失を防ぐ）。  
-- FUR-024（新規）: Brand/Product未確定、Candidate、Black（色は決定済み — このシーツはマットの上に敷かれ視認されるため、下に隠れてColor未確定のFUR-020／021とは異なる扱い）。FUR-021の上に敷くフィッテッドシーツ用の装備枠を表し、競合する2つのBranch Variants（FUR-024a、FUR-024b）を持つ。FUR-021のフットプリントに合わせ、約77×196cm×2のサイズ。関東・雪中入門用、本格雪中用の両方で共通使用。  
-- FUR-024a（新規）: Therm-a-Rest、「Synergy Lite Sheet」（X-Large、76×196cm）、Candidate、Parent FUR-024、Black、ナイロン。専用ブランド品の選択肢であり、FUR-021マット1枚分にほぼ一致するサイズ。  
-- FUR-024b（新規）: Brand未確定、汎用キャンプマット用フィッテッドシーツ、Candidate、Parent FUR-024、Black、素材未確定。ブランドよりも寸法適合（約77×196cm）を優先する汎用品の選択肢。  
-- 補足: FUR-019（BONFLAG TACTICAL AIR BED 2P）は公開されたR値を持たない（「Oxford 1000D / PVC」構造から、内蔵断熱層は無いと判断される）。FUR-021・FUR-023選定の根拠となるR値計算においては、FUR-019単体の断熱寄与はほぼ無いものとして扱う。  
-- Furniture Domainのアイテム数は19件から28件に増加（新規: FUR-020〜FUR-024、およびBranch VariantsのFUR-022a/022b、FUR-024a/024b — 合計9件の新規ID。削除は無し）。  
+冬季スリーピングシステムの新規Furnitureエントリを追加（FUR-020〜024及びBranch Variants）。  
 
 ---  
 
 ## Version 7.12  
 
-Version 7.11で登録した冬季スリーピングシステム系エントリについて、その後の追加調査およびプロジェクトオーナーからの情報提供に基づき、Color・在庫状況等を訂正・補強。  
-
-### Changes  
-
-- FUR-020: Colorを「Unconfirmed」から「Taupe / Classic Brown」に更新（プロジェクトオーナーからの情報提供に基づく。メーカー公式ページ・レビューサイトのテキストでは独立した裏付けが取れておらず、購入前の実物確認を推奨する旨を注記）。  
-- FUR-021: Color注記を「マット単体の色名は未確認。FUR-020と同一セット付属品のため同系統の可能性が高いが未検証」に更新（Colorステータス自体はUnconfirmedを維持）。  
-- FUR-024a（Therm-a-Rest Synergy Lite Sheet）: 追加調査により、実際の公式カラー展開は柄物「Stargazer」のみでブラック展開は無いこと、および複数の正規販売店で廃盤（discontinued）表記があることが判明。Colorを「Black」から「Stargazer」に訂正し、Statusに「色条件不適合につき優先度を降格」の注記を追加。オールブラック条件を満たさないため、参考記録として保持する。  
-- FUR-024b: 汎用プレースホルダーから、追加調査で特定した実在製品「WAQ RELAXING CAMP MAT 専用カバー」に更新。ブラック／タン／オリーブの選択制からブラックを指定。使用サイズ約70×200×10cm。  
-- FUR-024c（新規）: HOTEL CAMPS「リバーシブル ホットカバー（コットカバー）」、Candidate、Parent FUR-024、Black×Black（カーキブラウンとの選択制）。内部に断熱アルミシートを内蔵しており、Pad Sheetとしての機能に加え保温補強・ブランケット/掛け布団としての転用可能性も持つ。  
-- FUR-024d（新規）: VISIONPEAKS × NANGA「IBUKI BOX SHEETS S」、Candidate、Parent FUR-024。NANGAとのコラボレーション品として調査対象になったが、カラー展開がBrownのみでオールブラック条件を満たさないため、参考記録として保持する。  
-- FUR-024のBranch Variantsを、FUR-024a／024b／024c／024dの4件体制に更新。  
-- 補足: FUR-024シリーズの検討を通じ、サーマレスト・Sea to Summit・VISIONPEAKS×NANGAといった専門アウトドアブランドのマット用シーツ市場では、カラー展開がブラウン・ベージュ・柄物中心でブラック展開が乏しい傾向が確認された。オールブラックの実現は、WAQ・HOTEL CAMPSのような汎用寄りのメーカーの方が現実的であるという知見を得た。  
-- Furniture Domainのアイテム数は28件から30件に増加（新規: FUR-024c、FUR-024d。削除は無し）。  
+冬季スリーピングシステム系エントリのColor・在庫状況等を訂正・補強（FUR-024a〜d）。  
 
 ---  
 
 ## Version 7.13  
 
-Database整合性チェックにより判明した、Version History内の件数記述の誤りを訂正。データ本体（Equipment ID、Status、Parent/Child関係等）に変更はなし。  
+Database整合性チェックにより判明した、Version History内の件数記述の誤りを訂正。データ本体に変更はなし。  
+
+---  
+
+## Version 7.14  
+
+プロジェクトオーナーの直接指示に基づき、Candidate状態のアイテムに関する運用を根本的に変更。TP-004は「用途とEquipment IDのみ」を保持し、具体的なBrand・Product・比較検討情報はPX-007 Deliberation Codex側で一元管理する新設計へ移行。既存のCandidateアイテムすべてを遡って本設計へ移行した。  
 
 ### Changes  
 
-- Version 7.11の改訂記録における「Furniture Domainのアイテム数は20件から29件に増加」を「19件から28件に増加」に訂正（FUR-020登録前の実際の基準数はFUR-001〜019の19件であり、20件という記述は誤りだった）。  
-- Version 7.12の改訂記録における「Furniture Domainのアイテム数は29件から31件に増加」を「28件から30件に増加」に訂正（7.11の誤りを引き継いでいたための連鎖的な誤記）。  
-- 現在のFurniture Domain実データは30件（FUR-001〜024の基本ID24件 + Branch Variant FUR-022a/022b/024a/024b/024c/024dの6件）であり、本訂正後のVersion History記述と一致することを確認済み。  
+- Purposeセクション: Candidate状態のアイテムはBrand・Product・比較検討情報を意図的に空欄とし、PX-007 Deliberation Codexで管理する旨の運用規定を追加。  
+- FIR-019（旧MT.SUMI Aura FG）: Brand/Productを「Unconfirmed」に変更。Industrial Attributeに「薪ストーブ1台のみ必要のため単一枠として管理」の注記を追加。  
+- FIR-020（旧FIREGRAPHIX BLISS-SP）: 削除。薪ストーブは1台のみ必要であり、FIR-019の単一枠へ統合。Fire Domainの最後尾IDであったため、後続IDの振り直しは発生せず。比較検討自体はPX-007側で継続する。  
+- FUR-022: Brand欄の「候補2社から選定予定」という注記を削除し「Unconfirmed」に簡素化。Branch Variantsフィールド（FUR-022a・FUR-022b）を削除。  
+- FUR-022a（Enlightened Equipment Accomplice）・FUR-022b（UGQ Outdoor Tango Duo）: 削除。比較検討情報はPX-007へ移管。  
+- FUR-024: Brand欄の「候補2案から選定予定」という注記を削除し「Unconfirmed」に簡素化。Branch Variantsフィールド（FUR-024a〜d）を削除。  
+- FUR-024a（Therm-a-Rest Synergy Lite Sheet）・FUR-024b（WAQ 専用カバー）・FUR-024c（HOTEL CAMPS リバーシブルホットカバー）・FUR-024d（VISIONPEAKS×NANGA IBUKI BOX SHEETS S）: 削除。比較検討情報はPX-007へ移管。  
+- LGT-041（旧wildingout LF1984）: Brand/Productを「Unconfirmed」に変更。比較検討情報はPX-007へ移管。LGT-028／LGT-028a／LGT-028bは、既存のOwned親に対する交換候補という別構造のため、本改訂の対象外とし現状維持（整理は別途実施予定）。  
+- ARM-004（旧UNIT/04 × KUNST・BAUM SCENT TOWER）: Brand/Productを「Unconfirmed」に変更。比較検討情報はPX-007へ移管。  
+- Related Documentsに PX-007 Deliberation Codex を追加。  
 
 ---  
+
+# End of Document  
