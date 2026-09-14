@@ -11,7 +11,7 @@ Acquisition Handbook
   
 **Version**  
   
-1.9  
+2.0  
   
 **Status**  
   
@@ -42,6 +42,8 @@ PX-005 Acquisition Handbookは、PX-004 Barista Codexで正式採用されたCof
 * Acquisition Completeness  
   
 Equipmentの採用理由、Workflow、Selection Criteria、DecisionはPX-004で管理する。  
+  
+Coffee Beansについては消耗品として扱い、本書内の「Coffee Beans Procurement」セクションで独立して管理する。豆はPX-004による意思決定の対象としない。  
   
 ---  
   
@@ -1112,6 +1114,31 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ---  
   
+# Coffee Beans Procurement  
+  
+Coffee Beansは消耗品として扱い、Equipment Acquisition Registryとは独立して管理する。  
+  
+Equipmentと異なり、Coffee BeansはPX-004による正式なDecisionを経ない。継続的な試用・ローテーションを前提とし、本セクションのみで現況を管理する。  
+  
+## Current Rotation  
+  
+| Role | Brand | Product | Status | Purchase Channel | Notes |  
+|---|---|---|---|---|---|  
+| Primary | Onibus Coffee | ONIBUS Blend | Active | 国内直販（onibuscoffee.com／中目黒店舗） | Medium Roast, Brazil(Pulped Natural)+Guatemala(Washed)+Ethiopia(Natural) |  
+| Aesthetic Exception | April Coffee Roasters | Sustainable Profile Espresso | Active | 海外公式ストア（aprilcoffeeroasters.com、国際発送対応） | Medium Roast, Brazil/Colombia Washed Base |  
+  
+## Rotation Policy  
+  
+* 主軸（Primary）は安定運用を優先し、頻繁には変更しない。  
+* 審美枠（Aesthetic Exception）は試用・入れ替えを許容する。  
+* 新規候補を試す場合、本セクションの表のみを更新する。PX-004・TP-004への反映は行わない。  
+  
+## Research Basis  
+  
+2026-09実施のAdvanced Research（9Barista公式・各ロースター公式サイト等の一次情報に基づく比較調査）に基づき、上記Rotationを設定。  
+  
+---  
+  
 # Coffee System Water Configuration  
   
 | Product | Quantity | Capacity | Estimated Acquisition Cost | Acquisition Status |  
@@ -1764,7 +1791,6 @@ ALM KOPi Z1 Miniは、別途バーナーでの運用が必要。
   
 以下は含まない:  
   
-* コーヒー豆  
 * 燃料  
 * ALM KOPi Z1 Mini用の別途バーナー  
 * 消耗品としての清掃用品  
@@ -1908,6 +1934,7 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
 | 1.7 | 2026-08-21 | 現行の調達情報を見直し。確認できた範囲で現行の公式価格を更新。後継モデル関係を特定したが、調達registryはPX-004の表記を保守的に維持。 |  
 | 1.8 | 2026-08-21 | 調達ポリシーを改訂。後継関係が明確に確立している場合、現行の後継モデルをPX-005の購入対象として採用するようにした。すべての現行Equipmentに、現行価格または現実的な調達目安を設定。海外製品には、保守的な日本到着後コスト目安を設定。LAGOM mini 2およびMantaBrew WeighMaster Ultraを、現行の調達モデルとして採用。Pullman Chiselを、現行の53.3mm Wood構成へ更新。KRUVE PROPELの市販パッケージ数量を、PX-004上のシステム割当と区別。調達完了までの見積予算を追加。 |  
 | 1.9 | 2026-09-07 | 9Barista Magnetic Dosing Funnelを、PX-004 Ver.2.9で明確化された「Mk.2 Pro標準付属品」の扱いへ整合。独立Purchase Required項目（旧Product 12）からIncluded Equipment（Included 04）へ移動し、Priority表・Purchase Grouping・Final Inventory・Estimated Acquisition Budgetを整合させた（Core Espresso System見積を¥7,900減額）。 |  
+| 2.0 | 2026-09 | Coffee Beans Procurementセクションを新設。コーヒー豆を消耗品として、Equipment Acquisition Registryから独立させて管理する方針を確立。Current RotationにOnibus Coffee「ONIBUS Blend」（Primary）とApril Coffee Roasters「Sustainable Profile Espresso」（Aesthetic Exception）を登録。Estimated Acquisition Budgetの除外リストから「コーヒー豆」の記載を削除（本セクションで独立管理するため除外リストへの言及自体が不要になったことによる整理）。Purposeセクションへ本方針を明記。 |  
   
 ---  
   
