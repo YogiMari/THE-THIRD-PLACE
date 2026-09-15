@@ -1,6 +1,6 @@
 # TP-003
 # Field Atlas Landscape Framework
-## Ver.2.0
+## Ver.2.1
 
 ---
 
@@ -507,9 +507,10 @@ Field Atlas Databaseの統合スコアは、フィールド本来の質を1つ�
 
 - 各軸は0〜10点のスコアで記録する。
 - 訪問済みフィールドは、Mariへのヒアリングによる感覚値を記録する。
-- 未訪問フィールドは、訪問後にヒアリングを行い記録する。調査情報のみでの推測記入は行わない。
+- 未訪問フィールドは、TP-003 Field Atlas Database内に既に記録されている調査情報（Identityコメント・チェックイン条件・区画面積等の一次情報）を根拠とした暫定スコアとして記録する。新たな推測調査は行わない。
 - 未記録の軸は「—」とし、推測で埋めない。
-- 「近さ」は、Mariの感覚値（移動時間だけでなく道中の負担感等を含めた総合的な近さの感覚）として記録する。
+- 「近さ」は、訪問済みはMariの感覚値（移動時間だけでなく道中の負担感等を含めた総合的な近さの感覚）として、未訪問はDatabase記載のAccess Note（移動時間）を根拠とした暫定値として記録する。
+- レーダーチャート等で可視化する際、未訪問（暫定）データは、訪問済み（実測）データと明確に区別できる色・線種で表示する。
 
 ## Sub-Score Table
 
@@ -640,3 +641,4 @@ THE THIRD PLACE を実現するための
 | 1.8 | 2026-09-02 | 未訪問12件の移動時間を、東京都江戸川区小岩を起点とした実測値へ更新（Mariの実測報告に基づく）。KARUIZAWA CAMP GOLD 4h（変更なし）、Hillbilly Camping 4h→2.5h、moss camp field 2.5h→4h、JUTE CAMP FIELD 2h→3.5h、大子広域公園グリンヴィラ 3h→3.5h、富士高原トマトフィールド 3.5h→4h、ふもとっぱら 3.5h→4h、小田原フォレストキャンプ場 2.5h→3.5h、CAMPGROUND BREEZE TATEYAMA 2.5h（変更なし）、TACO GLAMP THE MEXICO 2h（変更なし）、朝霧ジャンボリーオートキャンプ場 3.5h→4h、成田ゆめ牧場 2h→1.5h。これにより未訪問12件全ての移動時間が小岩起点の実測値へ統一された。 |
 | 1.9 | 2026-09-07 | Relationship to Other Core Documentsの参照リストを現行の文書体系へ更新。TP-005〜007の名称誤り（Price Master／Storage Layout Master／Site Layout Master）を、正式名称（Acquisition Strategy／Foundation Compass／Habitat Architecture）へ修正し、欠落していたTP-008〜011（Affinity Lexicon／Aesthetic Grammar／Storage Blueprint／Galley Fare）を追加。 |
 | 2.0 | 2026-09-15 | Radar Sub-Scoresセクションを新設。可視化専用の7軸（Site／Facility／Surroundings／View／Identity／Partner Value／近さ）個別スコアDatabaseを追加し、レーダーチャート等の自動生成を可能にする基盤とした。「近さ」は正式ランキングスコアには算入しない可視化専用軸と明記。Render Fika・スノーピークヘッドクォーターズキャンプフィールドの2件をMariへのヒアリングにより記録、残り47件は未記録（—）のまま推測せず据え置き。 |
+| 2.1 | 2026-09-15 | Radar Sub-ScoresのRecording Ruleを改訂。未訪問フィールドについて、訪問後ヒアリングを待つ運用から、Field Atlas Database内に既に記録済みの調査情報（Identityコメント等）を根拠とした暫定スコア記入へ変更。可視化時に訪問済み（実測）と未訪問（暫定）を色・線種で明確に区別する表示ルールを追加。 |
