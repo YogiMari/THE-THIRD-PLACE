@@ -1,5 +1,5 @@
 # TP-010 Storage Blueprint
-## Ver.2.2
+## Ver.2.3
 
 Status : Planning
 
@@ -630,11 +630,35 @@ One Operation
 
 一時的な固定位置は認めない。
 
-重複収納は認めない。
+重複収納は原則として認めない（例外はDuplicate Storage Exceptionを参照）。
 
 モジュールの混在は認めない。
 
 収納は、空きスペースにではなく、運用に従う。
+
+---
+
+# Duplicate Storage Exception（重複収納の例外）
+
+Duplicate storageは、原則として禁止とする。
+
+ただし、以下の条件をすべて満たす場合に限り、例外として認める。
+
+1. 既存Equipmentが、Storage Domainの評価軸（設営効率・撤収効率）を著しく損なっていること
+2. 複数個を、単なる複製ではなく、明確な機能分化（役割の違い）を持つPairとして運用すること
+3. 同一Product・同一Color・同一Materialにより、Aesthetic GrammarのConsistency原則（素材の反復による調和）を満たすこと
+4. 例外適用はEquipment単位で個別に判断し、Blanket Ruleとしない
+
+本例外は、Duplicate storage禁止の原則を撤回するものではなく、Storage Domainの完成度を優先するための限定的な運用判断である。
+
+## Applied Case: Multi Dust Bucket
+
+Snow Peak ガビングスタンド（DB-030）は、フレーム組み立て工程が設営効率を著しく損なうと判断し、Statusを見直す。
+
+ANOBA BLACK EDITION マルチダストバケット ×2 を、上記例外条件に基づき採用する。
+
+- 役割分化：1個目＝燃えるゴミ・缶ゴミ用、2個目＝ビンゴミ用
+- 同一Product・同一Color（Black）・同一Materialにより統一感を維持する
 
 ---
 
@@ -648,7 +672,7 @@ TP-010 Storage Blueprint
 
 ## Version
 
-Ver.2.2
+Ver.2.3
 
 ---
 
@@ -770,7 +794,7 @@ Permanent Storage
 - Bridge Frame・Wood Board・Coffee Equipment・Vapaluxは固定位置を変更しない。
 - 展開順と収納順は常に一致させる。
 - Temporary permanent locationsは禁止。
-- Duplicate storageは禁止。
+- Duplicate storageは原則禁止（例外条件はDuplicate Storage Exceptionを参照。適用例：Multi Dust Bucket）。
 - Mixed modulesは禁止。
 
 ---
