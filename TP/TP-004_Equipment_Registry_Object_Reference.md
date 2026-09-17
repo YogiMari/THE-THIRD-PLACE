@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.18  
+Version 7.19  
   
 ---  
   
@@ -1412,7 +1412,7 @@ MIYABI RICH Alumi Frozen
 
 **Status**  
 
-Essential  
+Owned  
 
 **Parent**  
 
@@ -2899,7 +2899,7 @@ Shellcon 01
 
 **Status**  
 
-Essential  
+Owned  
 
 ### Child Components  
 
@@ -3450,7 +3450,7 @@ Container Bridge Frame
 
 **Status**  
 
-Essential  
+Owned  
 
 ### Child Components  
 
@@ -5025,4 +5025,17 @@ Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning�
 
 - STR-026：新規登録。ANOBA BLACK EDITION マルチダストバケット（Status: Essential, Quantity: 2）。TP-010 Duplicate Storage Exceptionに基づき、燃えるゴミ・缶ゴミ用／ビンゴミ用の役割分化を行った2台構成として採用。  
 - 従来使用のSnow Peak ガビングスタンド（DB-030）は、TP-004へ未登録のまま運用されていたため、Retiredレコードの追加は行わない。  
+- Related Documents：変更なし。  
+
+---  
+
+## Version 7.19  
+
+MARI様のご購入報告に基づき、Essential段階だった3件のStatusをOwnedへ更新。
+
+### Changes  
+
+- STR-001：StatusをEssentialからOwnedへ更新（Snow Peak Shelf Container 25 雪峰祭 Black／Shellcon 01、本体を購入）。子部品（STR-002〜006）のStatusは個別に維持し、本更新の対象外とする。  
+- LGT-015：StatusをEssentialからOwnedへ更新（neru design works × LampUp MIYABI RICH Alumi Frozen）。  
+- STR-017：StatusをEssentialからOwnedへ更新（nodel design Container Bridge Frame、本体を購入）。子部品（STR-018・STR-019）のStatusは個別に維持し、本更新の対象外とする。  
 - Related Documents：変更なし。  
