@@ -10,7 +10,7 @@ Deliberation Codex
 
 # Version
 
-2.2
+2.3
 
 # Status
 
@@ -78,7 +78,7 @@ Fire Domainの機材は、以下4軸で評価する。
 
 1. **Form（意匠美）** — ギア本体・道具そのものの造形的な美しさ
 2. **Flame Aesthetics（炎の見え方）** — 燃焼中の炎そのものの視覚的な美しさ
-3. **Ease of Clean-up（撤収容易性）** — 灰処理・撤収にかかる手間
+3. **Ease of Clean-up（撃収容易性）** — 災処理・撃収にかかる手間
 4. **Transport（積載のしやすさ）** — 車両への積載・収納の一体性
 
 以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）：Popularity／SNS／Review Count／Rarity／Collector Value／Price。
@@ -115,8 +115,8 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 | Axis | 候補① MT.SUMI Aura FG | 候補② FIREGRAPHIX BLISS-SP |
 |---|---|---|
-| Form | 洗練された機能美を掲げる多次燃焼デザイン | 所有欲を掻き立てるデザインを意図し、フロントフェイス・ハンドルは職人の手作業にこだわる |
-| Flame Aesthetics | フルガラス3面窓で炎を遮るものがなく、ダイナミクスと美しさを最大限楽しめる | エアカーテン機構の開発が最も苦労した部分であり、独自の揺らめく炎を生み出す |
+| Form | 洗練された機能美を掛げる多次燃焼デザイン | 所有欲を掘り立てるデザインを意図し、フロントフェイス・ハンドルは職人の手作業にこだわる |
+| Flame Aesthetics | フルガラス3面窓で炎を遙るものがなく、ダイナミクスと美しさを最大限楽しめる | エアカーテン機構の開発が最も苦労した部分であり、独自の揚らめく炎を生み出す |
 | Ease of Clean-up | 多次燃焼構造で灰が比較的少量、炉板も軽量。灰受け自体の取り出しやすさは未確認（Gap） | ロストル形状変更で灰が捨てやすく改良済み。ただし「向き合う感覚」を重視し灰を残す運用哲学もあり |
 | Transport | 収納バッグ1つに全部品完結、総重量22kg | 本体単体16kg、煙突・スタンドは別売で管理単位が分散 |
 
@@ -136,7 +136,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 | | 候補① Enlightened Equipment Accomplice | 候補② UGQ Outdoor Tango Duo |
 |---|---|---|
-| 仕様 | 2人用、2人用850fp／950fp選択可、パッド固定ストラップ標準装備、外側19色・内側12色フルカスタム | 2人用、850fp／900fp選択可、Made to Order、外冄50色以上・内冄11色フルカスタム |
+| 仕様 | 2人用、2人用850fp／950fp選択可、パッド固定ストラップ標準装備、外側19色・内側12色フルカスタム | 2人用、850fp／900fp選択可、Made to Order、外凄50色以上・内凄11色フルカスタム |
 
 **Decision**：未決定
 
@@ -200,7 +200,6 @@ TP-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 | ID | Product | Brand | Note |
 |---|---|---|---|
-| LGT-015 | MIYABI RICH Alumi Frozen | neru design works × LampUp | Parent: LGT-009 |
 | LGT-037 | RT-01AC01 / ECHO LAMP | rove troupe | — |
 | LGT-038 | DOME LOOK | KURASHI MADE | — |
 | LGT-039 | Pivotshade | IFA | — |
@@ -217,12 +216,10 @@ TP-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 | ID | Product | Brand | Note |
 |---|---|---|---|
-| STR-001 | Shelf Container 25 雪峰祭 Black（Shellcon 01） | Snow Peak | 本体。購入決定済み・未所有 |
 | STR-006 | SHELCON LEG 25 | BALLISTICS | Parent: STR-001 |
 | STR-012 | SHELCON LEG 25 | LOCKFIELD EQUIPMENT × BALLISTIC | Parent: STR-007 |
 | STR-014 | Wood Board（Oak） | nodel design | Parent: STR-013／数量2組 |
 | STR-016 | Wood Board（Walnut） | nodel design | Parent: STR-015／数量2組 |
-| STR-017 | Container Bridge Frame | nodel design | — |
 | STR-019 | Butterfly Under Shelf | nodel design | Parent: STR-017 |
 
 ## Fire
@@ -258,7 +255,8 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 1.0 | 2026-09 | 初回ドラフト（PX-007 Fire Codexとして作成）。Fire Domain Evaluation Criteriaを確立し、FIR-019 vs FIR-020の試験比較を記録。 |
 | 2.0 | 2026-09 | 文書をFire単独からCoffee以外の全ゾーン横断の検討支援文書「Deliberation Codex」へ再定義。Zone Evaluation Philosophy（恒久）とUnder Consideration（可変）を分離。 |
 | 2.1 | 2026-09 | TP-004 Version 7.14と連動し、Candidate段階の具体的製品情報を全てPX-007へ移管。FUR-022a/b、FUR-024a〜d、FIR-020（FIR-019へ統合）、LGT-041の具体情報をUnder Considerationへ反映。ARM-004はプロジェクトオーナーの判断により購入決定（Essential）となったため、Under Considerationには含めず、Decision Logへ記録しTP-004に詳細を残置。ファイルをPX-007_Fire_Codex.mdからPX-007_Deliberation_Codex.mdへリネーム。 |
-| 2.2 | 2026-09-16 | プロジェクトオーナーの指示に基づき「Confirmed — Purchase Pending」セクションを新設。Coffee Domainを除く全ゾーンでStatus = Essentialとなっている全Equipment（Furniture 2件、Light 4件、Aroma 3件、Storage 7件、Fire 1件）を一覧化。STR-001（Shellcon 01）のStatus訂正（Owned→Essential、TP-004 v7.15）を反映。本セクションは購入リストアーティファクトのソースとして使用する。Purpose・Relationshipを3カテゴリ構成へ更新。 |
+| 2.2 | 2026-09-16 | プロジェクトオーナーの指示に基づき「Confirmed — Purchase Pending」セクションを新設。Coffee Domainを除く全ゾーンでStatus = Essentialとなっている全Equipment（Furniture 2件、Light 4件、Aroma 3件、Storage 7件、Fire 1件）を一覧化。STR-001（Shellcon 01）のStatus訂正（Owned→Essential、TP-004 v7.15）を反映。本セクションは購入リストアーティファクトのソースとして使用する。Purpose・Relationshipを3カテゴリー構成へ更新。 |
+| 2.3 | 2026-09-17 | MARI様のご購入報告（STR-001／LGT-015／STR-017）を受け、TP-004側のStatus更新（Essential→Owned）と連動して「Confirmed — Purchase Pending」から該当3行（Light: LGT-015、Storage: STR-001・STR-017）を削除。 |
 
 ---
 
