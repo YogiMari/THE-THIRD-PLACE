@@ -1,5 +1,5 @@
 # TP-010 Storage Blueprint
-## Ver.2.3
+## Ver.2.4
 
 Status : Planning
 
@@ -314,6 +314,24 @@ Light EquipmentとAroma Equipment専用。
 Filomélaは必ず横置き収納。
 
 CONPE10はShellCon25へ収納しない。
+
+---
+
+# Dust Management Module
+
+ゴミ分別は、燃えるゴミ・燃えないゴミ（缶・ビン）の2系統とし、役割の異なる2つの独立した什器で運用する。同一製品の複製（Duplicate storage）ではないため、Duplicate Storage Exceptionの適用対象外である。
+
+## 燃えないゴミ（缶・ビン）側
+
+STR-028（ANOBA フォールディングサイドテーブル）に、STR-026（ANOBA BLACK EDITION マルチダストバケット）を収納して運用する。使用頻度が低いため、テーブル下へ収納する多段階の取り出し動作を許容する。
+
+## 燃えるゴミ側
+
+STR-029（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box フルセット）を単独で運用する。フォールディングサイドテーブルは介さない。使用頻度が高いため、取り出し動作の少ない単独設置とした。
+
+## Rule
+
+2つの什器は、いずれも黒いスチールフレーム＋黒系ファブリックという共通のデザイン言語を持つため、並べて設置した際の視覚的統一感（Aesthetic Grammar Consistency原則）を保つ。
 
 ---
 
@@ -651,14 +669,9 @@ Duplicate storageは、原則として禁止とする。
 
 本例外は、Duplicate storage禁止の原則を撤回するものではなく、Storage Domainの完成度を優先するための限定的な運用判断である。
 
-## Applied Case: Multi Dust Bucket
+## Applied Case
 
-Snow Peak ガビングスタンド（DB-030）は、フレーム組み立て工程が設営効率を著しく損なうと判断し、Statusを見直す。
-
-ANOBA BLACK EDITION マルチダストバケット ×2 を、上記例外条件に基づき採用する。
-
-- 役割分化：1個目＝燃えるゴミ・缶ゴミ用、2個目＝ビンゴミ用
-- 同一Product・同一Color（Black）・同一Materialにより統一感を維持する
+現時点で本例外の適用事例はない。ゴミ箱運用の検討（Dust Management Module参照）では、最終的に異なる2製品（ANOBA・T-box）による役割分化構成を採用したため、Duplicate storageには該当せず、本例外の適用対象外となった。
 
 ---
 
@@ -672,7 +685,7 @@ TP-010 Storage Blueprint
 
 ## Version
 
-Ver.2.3
+Ver.2.4
 
 ---
 
@@ -794,7 +807,8 @@ Permanent Storage
 - Bridge Frame・Wood Board・Coffee Equipment・Vapaluxは固定位置を変更しない。
 - 展開順と収納順は常に一致させる。
 - Temporary permanent locationsは禁止。
-- Duplicate storageは原則禁止（例外条件はDuplicate Storage Exceptionを参照。適用例：Multi Dust Bucket）。
+- Duplicate storageは原則禁止（例外条件はDuplicate Storage Exceptionを参照。現時点で適用事例なし）。
+- ゴミ分別は、STR-028+STR-026（燃えないゴミ）とSTR-029（燃えるゴミ）の役割分化構成で運用する（Dust Management Module参照）。
 - Mixed modulesは禁止。
 
 ---
