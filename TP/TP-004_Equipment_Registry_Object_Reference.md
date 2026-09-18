@@ -1440,6 +1440,10 @@ None
 
 Lantern Stand  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-002  
@@ -1475,6 +1479,10 @@ None
 ### Industrial Attribute  
 
 Kerosene Lantern  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -1516,6 +1524,10 @@ None
 
 38-kT Shade & Case  
 
+### Price  
+
+¥22,000  
+
 ---  
 
 ## LGT-004  
@@ -1547,6 +1559,10 @@ Camphor Wood
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -1580,6 +1596,10 @@ Satin Walnut
 
 Portable LED Lantern  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-006  
@@ -1611,6 +1631,10 @@ Zebrawood
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -1644,6 +1668,10 @@ New Guinea Walnut
 
 Portable LED Lantern  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-008  
@@ -1675,6 +1703,10 @@ Jindai Yakusugi
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -1717,6 +1749,10 @@ None
 
 38-kT Shade & Case  
 
+### Price  
+
+¥11,550  
+
 ---  
 
 ## LGT-010  
@@ -1748,6 +1784,10 @@ Stainless Steel
 ### Industrial Attribute  
 
 Custom Panel  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -1781,13 +1821,17 @@ Copper
 
 Portable LED Lantern  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-012  
 
 **Brand**  
 
-CARMA STORE  
+CALMA STORE  
 
 **Product**  
 
@@ -1813,13 +1857,17 @@ Mother of Pearl
 
 Portable LED Lantern  
 
+### Price  
+
+¥14,800  
+
 ---  
 
 ## LGT-013  
 
 **Brand**  
 
-CARMA STORE  
+CALMA STORE  
 
 **Product**  
 
@@ -1844,6 +1892,10 @@ Celluloid (Tortoise Shell Pattern)
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -1877,6 +1929,10 @@ Stained Glass
 
 Portable LED Lantern  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-015  
@@ -1908,6 +1964,10 @@ Aluminum
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -1951,6 +2011,10 @@ None
 
 Lantern Hanger  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-017  
@@ -1987,6 +2051,10 @@ Aluminum
 
 Slider  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-018  
@@ -2018,6 +2086,10 @@ Walnut
 ### Industrial Attribute  
 
 Airlight Shade  
+
+### Price  
+
+¥39,600  
 
 ---  
 
@@ -2051,6 +2123,10 @@ Hinoki
 
 Airlight Shade  
 
+### Price  
+
+¥39,600  
+
 ---  
 
 ## LGT-020  
@@ -2082,6 +2158,10 @@ Pine
 ### Industrial Attribute  
 
 Airlight Shade  
+
+### Price  
+
+¥39,600  
 
 ---  
 
@@ -2115,6 +2195,10 @@ Walnut
 
 Portable LED Lantern  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-022  
@@ -2146,6 +2230,10 @@ Sugi
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -2179,6 +2267,10 @@ Karin
 
 Portable LED Lantern  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-024  
@@ -2210,6 +2302,10 @@ African Wood
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -2243,6 +2339,10 @@ Pine
 
 Wood Sleeve  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-026  
@@ -2274,6 +2374,10 @@ Maple
 ### Industrial Attribute  
 
 Wood Sleeve  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -2307,13 +2411,17 @@ None
 
 Portable LED Lantern  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-028  
 
 **Brand**  
 
-CARMA STORE  
+CALMA STORE  
 
 **Product**  
 
@@ -2343,6 +2451,10 @@ None
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -2453,6 +2565,10 @@ None
 
 Airlight Shade  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-030  
@@ -2488,6 +2604,10 @@ Engraved Design
 ### Industrial Attribute  
 
 Lantern Stand（Base W160×D160×H15mm, Brass Pole H270mm, 1/4-inch screw thread, compatible with tripod series）  
+
+### Price  
+
+¥11,440  
 
 ---  
 
@@ -2525,6 +2645,10 @@ None
 ### Industrial Attribute  
 
 Airlight Shade  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -2566,6 +2690,10 @@ Occult Emblem（Engraved, Gold Ink Inlay）
 
 Tabletop Lantern Stand（Base W140×D150×H26mm, Brass Pole H190mm, 1/4-inch screw thread）  
 
+### Price  
+
+¥16,720  
+
 ---  
 
 ## LGT-033  
@@ -2597,6 +2725,10 @@ Silicone
 ### Industrial Attribute  
 
 Airlight Shade  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -2630,6 +2762,10 @@ Resin / Walnut
 
 Airlight Shade  
 
+### Price  
+
+¥15,400  
+
 ---  
 
 ## LGT-035  
@@ -2661,6 +2797,10 @@ Leather
 ### Industrial Attribute  
 
 Airlight Shade  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -2702,6 +2842,10 @@ None
 
 Premium Lantern  
 
+### Price  
+
+¥12,870  
+
 ---  
 
 ## LGT-037  
@@ -2737,6 +2881,10 @@ None
 ### Industrial Attribute  
 
 Airlight Shade (Hanging)  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -2774,6 +2922,10 @@ None
 
 Airlight Shade (Hanging)  
 
+### Price  
+
+¥8,800  
+
 ---  
 
 ## LGT-039  
@@ -2809,6 +2961,10 @@ None
 ### Industrial Attribute  
 
 Airlight Shade (Hanging)  
+
+### Price  
+
+¥23,000  
 
 ---  
 
@@ -2884,6 +3040,10 @@ Plastic
 
 Airlight (Portable LED Light Body)  
 
+### Price  
+
+¥5,780  
+
 ---  
 
 ## LGT-043  
@@ -2915,6 +3075,10 @@ Plastic
 ### Industrial Attribute  
 
 Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
 
 ---  
 
@@ -2948,6 +3112,10 @@ Plastic
 
 Airlight (Portable LED Light Body)  
 
+### Price  
+
+¥5,780  
+
 ---  
 
 ## LGT-045  
@@ -2979,6 +3147,10 @@ Plastic
 ### Industrial Attribute  
 
 Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
 
 ---  
 
@@ -3012,6 +3184,10 @@ Plastic
 
 Airlight (Portable LED Light Body)  
 
+### Price  
+
+¥5,780  
+
 ---  
 
 ## LGT-047  
@@ -3043,6 +3219,10 @@ Plastic
 ### Industrial Attribute  
 
 Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
 
 ---  
 
@@ -3076,6 +3256,10 @@ Plastic
 
 Airlight (Portable LED Light Body)  
 
+### Price  
+
+¥5,780  
+
 ---  
 
 ## LGT-049  
@@ -3107,6 +3291,10 @@ Plastic
 ### Industrial Attribute  
 
 Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
 
 ---  
 
@@ -3140,6 +3328,10 @@ Plastic
 
 Airlight (Portable LED Light Body)  
 
+### Price  
+
+¥5,780  
+
 ---  
 
 ## LGT-051  
@@ -3171,6 +3363,10 @@ Plastic
 ### Industrial Attribute  
 
 Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
 
 ---  
 
@@ -3204,6 +3400,10 @@ Plastic
 
 Airlight (Portable LED Light Body)  
 
+### Price  
+
+¥5,780  
+
 ---  
 
 ## LGT-053  
@@ -3235,6 +3435,10 @@ Plastic
 ### Industrial Attribute  
 
 Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
 
 ---  
 
