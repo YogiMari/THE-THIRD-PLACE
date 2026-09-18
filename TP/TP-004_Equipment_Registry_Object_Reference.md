@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.28  
+Version 7.29  
   
 ---  
   
@@ -540,7 +540,7 @@ Unconfirmed
 
 ### Material  
 
-Unconfirmed  
+500D Cordura Nylon  
 
 ### Industrial Attribute  
 
@@ -1361,7 +1361,7 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Wood-grain Print（モク）  
 
 ### Material  
 
@@ -3490,7 +3490,7 @@ Base
 
 **Brand**  
 
-Unconfirmed  
+neru design works  
 
 **Product**  
 
@@ -3507,11 +3507,11 @@ LGT-054
 
 ### Color  
 
-Unconfirmed  
+Gold  
 
 ### Material  
 
-Unconfirmed  
+Brass  
 
 ### Industrial Attribute  
 
@@ -3543,11 +3543,11 @@ LGT-054
 
 ### Color  
 
-Unconfirmed  
+Brown  
 
 ### Material  
 
-Unconfirmed  
+Black Walnut  
 
 ### Industrial Attribute  
 
@@ -3598,7 +3598,7 @@ Kerosene Lantern Accessory / Variant Part（LGT-002用）
 
 **Brand**  
 
-Unconfirmed  
+WHAT WE WANT（WWW）  
 
 **Product**  
 
@@ -3615,11 +3615,11 @@ LGT-032
 
 ### Color  
 
-Unconfirmed  
+Gold  
 
 ### Material  
 
-Unconfirmed  
+Brass  
 
 ### Industrial Attribute  
 
@@ -3634,7 +3634,7 @@ Otachidai Bar（お立ち台バー）
 
 **Brand**  
 
-Unconfirmed  
+38Explore  
 
 **Product**  
 
@@ -4925,7 +4925,7 @@ Unconfirmed
 
 ### Material  
 
-Unconfirmed  
+Oak / Stainless Steel  
 
 ### Industrial Attribute  
 
@@ -5012,7 +5012,7 @@ Leg（Beck Container②用）
 
 **Brand**  
 
-Unconfirmed  
+wanderout  
 
 **Product**  
 
@@ -5033,7 +5033,7 @@ Unconfirmed
 
 ### Material  
 
-Unconfirmed  
+Steel（Chrome-Plated）  
 
 ### Industrial Attribute  
 
@@ -6144,7 +6144,7 @@ Retired. FIR-019（Fire Pit枠）へ統合済み。旧登録情報（FIREGRAPHIX
 
 **Brand**  
 
-Unconfirmed  
+サンゾー工務店  
 
 **Product**  
 
@@ -6361,11 +6361,11 @@ FIR-005
 
 ### Color  
 
-Unconfirmed  
+Brown  
 
 ### Material  
 
-Unconfirmed  
+Walnut  
 
 ### Industrial Attribute  
 
@@ -6397,11 +6397,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
-Unconfirmed  
+Brass（Black-Painted）  
 
 ### Industrial Attribute  
 
@@ -6581,7 +6581,7 @@ Fireside Spatula
 
 **Brand**  
 
-Unconfirmed  
+サンゾー工務店  
 
 **Product**  
 
@@ -6853,7 +6853,7 @@ Black
 
 ### Material  
 
-Unconfirmed  
+Nylon 40D Ripstop（Silicone Coating, PU Blackout）／AL7001 Aluminum（Poles）  
 
 ### Industrial Attribute  
 
@@ -7323,3 +7323,32 @@ STR-011のPrice未記載を解消。また、プロジェクトオーナーの�
 - Version 7.0〜7.27の記述内にある旧FUR-ID表記は、当時の記録として遡及修正しない。
 
 - Related Documents：PX-003 Vigil Protocol、PX-007 Deliberation Codex（Furniture番号整理に伴う参照更新）。  
+
+## Version 7.29
+
+Owned/EssentialアイテムのうちBrand／Color／Materialが「Unconfirmed」のまま残っていた項目について、ウェブ調査により公式ページ・販売元ページで確認できた範囲のみ反映した。同一製品で複数のカラーバリエーションが存在する等、購入した個体を特定できない項目は、推測を避けるため引き続きUnconfirmedのまま保持している。
+
+なお、Brass／Walnutなど無垢素材のColorは、当該Materialが確認できた場合に本文書内の既存表記慣例（例：LGT-002・LGT-030・FUR-003＝Brass→Gold、FUR-001・FUR-016等＝Walnut→Brown）に基づき記録した。個別に塗装色が確認された場合を除く。
+
+### Changes（確認・反映、13件）
+
+- FUR-011（Kermit CARRY TOTE）：Materialを「500D Cordura Nylon」に確定（Ballistics.jp公式ページ）。Colorは公式に3配色（Coyote×Multicam等）が存在し所有個体を特定できないため、Unconfirmedのまま維持。
+- FUR-034（SNIPE HANGER home. モク）：Colorを「Wood-grain Print（モク）」に確定（SINANO WORKS公式ページ、モクは同社の正式カラー名）。
+- LGT-056（Futamata）：Brandを「neru design works」、Materialを「Brass」に確定（lifeoverground.com掲載、真鍮削り出しと明記）。Colorは上記慣例によりGoldとした。
+- LGT-057（OD-CAN PLATE）：Materialを「Black Walnut」に確定（INOUT公式ページ）。Colorは無垢ウォールナットの実色としてBrownとした。
+- LGT-059（WWW_LANTHANUMHOOK）：Brandを「WHAT WE WANT（WWW）」、Materialを「Brass」に確定（WHAT WE WANT公式ページ）。Colorは上記慣例によりGoldとした。
+- LGT-060（FORKBASEset (BS)）：Brandを「38Explore」に確定（価格一致・製品ラインナップにより確認）。Color・Materialは情報未確認のまま維持。
+- STR-032a（KRAKEN STAND）：Materialを「Oak / Stainless Steel」に確定（calma store公式ページ）。Brand・Colorは販売元と製造元の関係が不明確なため未確認のまま維持。
+- STR-033（ユニバーサルスタンド）：Brandを「wanderout」、Materialを「Steel（Chrome-Plated）」に確定（wanderout公式ページ）。複数カラー展開があり所有個体を特定できないため、Colorは未確認のまま維持。
+- FIR-021（LECTER Ver2）：Brandを「サンゾー工務店」に確定（同社公式サイトに一致製品あり）。
+- FIR-027（WWW_SAYA）：Materialを「Walnut」に確定（WHAT WE WANT公式ページ）。Colorは無垢ウォールナットの実色としてBrownとした。
+- FIR-028（shank heater 百式改）：Materialを「Brass（Black-Painted）」、Colorを「Black」に確定（lifeoverground.com掲載、黒塗装が真鍮地に馴染む旨明記）。Brandは制作元表記が複数説あり確定できないため未確認のまま維持。
+- FIR-034（カスタムベロ）：Brandを「サンゾー工務店」に確定（同社RODANシリーズのキャラクター名オプションパーツと一致）。
+- SHL-004（Slug Shelter V2.0）：Materialを「Nylon 40D Ripstop（Silicone Coating, PU Blackout）／AL7001 Aluminum（Poles）」に確定（HELLOS factory製品情報の複数ソース集約）。
+
+### 引き続きUnconfirmedのまま残る項目
+
+- 上記以外の項目（FUR-025〜027・031〜033、LGT-054・055・058、STR-013a・015a・032（Color）、FIR-022〜024・026・029〜033・035、SHL-001・002）：公式ページが見つからない、販売元と製造元の帰属が不明確、または複数バリエーションが存在し所有個体を特定できないため、引き続きUnconfirmedのまま保持する。今後、プロジェクトオーナーによる現物確認または追加情報の提供を待つ。
+- FIR-035（半月セット）：調査の過程で、現行のBrand表記「Blick」ではなく、サンゾー工務店RODANシリーズのオプションパーツである可能性が浮上したが、既存の確定済みフィールドを上書きする判断はプロジェクトオーナーの確認を要するため、今回は変更しない。
+
+- Related Documents：変更なし。  
