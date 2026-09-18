@@ -3600,6 +3600,10 @@ None
 
 Storage Container  
 
+### Price  
+
+¥27,500  
+
 ---  
 
 ## STR-002  
@@ -3823,6 +3827,10 @@ None
 
 Storage Container  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## STR-008  
@@ -4015,6 +4023,10 @@ Painted Aluminum
 
 Modular Storage（Kitchen）  
 
+### Price  
+
+¥43,450  
+
 ---  
 
 ## STR-014  
@@ -4078,6 +4090,10 @@ Painted Aluminum
 ### Industrial Attribute  
 
 Modular Storage（Coffee & Table Components）  
+
+### Price  
+
+¥43,450  
 
 ---  
 
@@ -4204,6 +4220,10 @@ Aluminum
 
 Under Shelf  
 
+### Price  
+
+¥30,800  
+
 ---  
 
 ## STR-020  
@@ -4244,6 +4264,10 @@ Fabric
 
 Accessory Storage  
 
+### Price  
+
+¥9,108  
+
 ---  
 
 ## STR-023  
@@ -4271,6 +4295,10 @@ Canvas
 ### Industrial Attribute  
 
 Consumables Storage  
+
+### Price  
+
+¥2,980  
 
 ---  
 
@@ -4300,6 +4328,10 @@ Polyethylene（Rotomolded）
 
 Cooler  
 
+### Price  
+
+¥51,150  
+
 ---  
 
 ## STR-025  
@@ -4327,6 +4359,10 @@ DryHide Fabric
 ### Industrial Attribute  
 
 Soft Cooler  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -4363,6 +4399,10 @@ None
 ### Industrial Attribute  
 
 Dust Bucket（燃えないゴミ〈缶・ビン〉用。使用頻度が低いため、多段階の取り出し動作を許容する。従来使用のSnow Peak ガビングスタンド（DB-030、STR-027としてRetired登録済み）からの置き換えとして採用）  
+
+### Price  
+
+¥5,000  
 
 ---  
 
@@ -4402,6 +4442,10 @@ None
 
 Dust Bucket（燃えるゴミ用。本体はWINDY AND RAINY「Folding wire T-box」（W395×H440×D195mm、重量約1420g、耐荷重20kg、ワンアクションで組み立て完了）。KAZE_TO_MORIオリジナルのCOVER×2・FUTA×3を装着したフルセットとして採用。ブランドデザインのゴミ袋付属。フォールディングサイドテーブルを介さず単独で運用。使用頻度が高いため、取り出し動作の少ない構成とした）  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## STR-029  
@@ -4437,6 +4481,10 @@ None
 ### Industrial Attribute  
 
 Side Table（SKU: AN139。サイズ約38×31×45Hcm、重量約2850g、静耐荷重天板約5kg・各棚約2.5kg）  
+
+### Price  
+
+¥9,000  
 
 ---  
 
