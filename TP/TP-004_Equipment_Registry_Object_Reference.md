@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.24  
+Version 7.25  
   
 ---  
   
@@ -36,7 +36,7 @@ Coffee機材は、他のすべてのDomainと異なる登録ルールに従う�
   
 ## Equipment Domains（装備ドメイン）  
   
-Equipmentは、6つのDomainに分類される。  
+Equipmentは、7つのDomainに分類される。  
   
 1. Furniture  
 2. Light  
@@ -44,6 +44,7 @@ Equipmentは、6つのDomainに分類される。
 4. Storage  
 5. Coffee  
 6. Fire  
+7. Shelter  
   
 ---  
   
@@ -64,6 +65,8 @@ STR-001
 COF-001  
   
 FIR-001  
+  
+SHL-001  
   
 IDは変更されない。  
 
@@ -103,6 +106,7 @@ Appearanceは、TP-002 Design Bibleにより、以下を用いて決定される
 - Color  
 - Graphic Attribute  
 - Industrial Attribute  
+- Price（Version 7.25より、任意項目として再導入。既存登録済みアイテムへの遡及記載は別途対応）  
   
 ---  
   
@@ -931,6 +935,393 @@ Unconfirmed
 
 Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-021全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はPX-007 Deliberation Codexで管理）  
 
+---  
+
+## FUR-025  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+真聖衣  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FUR-002  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Hardware / Screw Set Custom（ROYAL BROWN Chester Field Seat用カスタムパーツ）  
+
+### Price  
+
+¥18,655  
+
+---  
+## FUR-026  
+
+**Brand**  
+
+neru design works（NDW）  
+
+**Product**  
+
+2UNITFRAME NDW ver.  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FUR-013  
+
+
+### Color  
+
+Black  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Table Top Frame（天板枠 左）  
+
+### Price  
+
+¥16,500  
+
+---  
+## FUR-027  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+TSURAICHI KUROWAKU  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FUR-013  
+
+
+### Color  
+
+Black  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Table Top Frame（天板枠 右）  
+
+### Price  
+
+¥17,160  
+
+---  
+## FUR-028  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+CUTTING MAT BLACK  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FUR-013  
+
+
+### Color  
+
+Black  
+
+### Material  
+
+Silicone  
+
+### Industrial Attribute  
+
+Table Silicone Mat  
+
+### Price  
+
+¥8,350  
+
+---  
+## FUR-029  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+CUTTING MAT White  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FUR-013  
+
+
+### Color  
+
+White  
+
+### Material  
+
+Silicone  
+
+### Industrial Attribute  
+
+Table Silicone Mat  
+
+### Price  
+
+¥8,350  
+
+---  
+## FUR-030  
+
+**Brand**  
+
+DEVISE WORKS  
+
+**Product**  
+
+EDGEPAD GOLD紋章  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FUR-013  
+
+
+### Color  
+
+Gold  
+
+### Material  
+
+Silicone  
+
+### Graphic Attribute  
+
+Occult Emblem  
+
+### Industrial Attribute  
+
+Table Silicone Sheet  
+
+### Price  
+
+¥6,050  
+
+---  
+## FUR-031  
+
+**Brand**  
+
+neru design works（NDW）  
+
+**Product**  
+
+WWW_EXTENSIONSIDEBAR NDWver  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FUR-013  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Table Hanger Hook  
+
+### Price  
+
+¥5,000  
+
+---  
+## FUR-032  
+
+**Brand**  
+
+ABLE  
+
+**Product**  
+
+IGT 1ユニットスタンド  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Table Unit Stand  
+
+### Price  
+
+¥20,200  
+
+---  
+## FUR-033  
+
+**Brand**  
+
+Kermit Chair USA  
+
+**Product**  
+
+Kermit CARRY TOTE  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Carrying Tote（Kermit Chair①②共通使用、2脚収納可。MARI様のご意向により本来はFUR-001の直後へ番号挿入・後続番号繰下げが望ましいが、今回の一括登録では既存IDへの影響を避けるため末尾に追加。別途Furniture Domainの番号整理を検討）  
+
+### Price  
+
+¥19,700  
+
+---  
+## FUR-034  
+
+**Brand**  
+
+DEVISE WORKS × WHAT WE WANT  
+
+**Product**  
+
+EXTENSIONTABLE CASE  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FUR-013  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Carrying Case（EXTENMON TABLE用）  
+
+### Price  
+
+¥15,400  
+
+---  
+## FUR-035  
+
+**Brand**  
+
+SNIPE  
+
+**Product**  
+
+SNIPE HANGER home. モク  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Wood  
+
+### Industrial Attribute  
+
+Hanger Rack  
+
+### Price  
+
+¥22,000  
+
+---  
 # Light  
 
 ---  
@@ -980,6 +1371,10 @@ M320
 **Status**  
 
 Owned  
+
+### Child Components  
+
+- LGT-058  
 
 ### Color  
 
@@ -2067,6 +2462,10 @@ Owned
 
 LGT-031  
 
+### Child Components  
+
+- LGT-059  
+
 ### Color  
 
 Black（Body）／Gold（Brass Pole）  
@@ -2194,6 +2593,10 @@ Airlight Shade
 **Status**  
 
 Owned  
+
+### Child Components  
+
+- LGT-060  
 
 ### Quantity  
 
@@ -2749,6 +3152,262 @@ Plastic
 
 Airlight (Portable LED Light Body)  
 
+---  
+
+## LGT-054  
+
+**Brand**  
+
+neru design works  
+
+**Product**  
+
+BM Lanthan  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- LGT-055  
+- LGT-056  
+- LGT-057  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Gas Lantern（本体、通称「ネルガス」）  
+
+### Price  
+
+¥48,400  
+
+---  
+## LGT-055  
+
+**Brand**  
+
+MOLDS Tokyo  
+
+**Product**  
+
+Vintage cover250  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-054  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Base  
+
+### Price  
+
+¥37,980  
+
+---  
+## LGT-056  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+Futamata  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-054  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Side Rail  
+
+### Price  
+
+¥23,150  
+
+---  
+## LGT-057  
+
+**Brand**  
+
+INOUT  
+
+**Product**  
+
+OD-CAN PLATE  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-054  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Lower Base  
+
+### Price  
+
+¥14,800  
+
+---  
+## LGT-058  
+
+**Brand**  
+
+Vapourax  
+
+**Product**  
+
+クラッシュアイス  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-002  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Kerosene Lantern Accessory / Variant Part（LGT-002用）  
+
+### Price  
+
+¥40,000  
+
+---  
+## LGT-059  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+WWW_LANTHANUMHOOK  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-032  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Otachidai Bar（お立ち台バー）  
+
+### Price  
+
+¥1,320  
+
+---  
+## LGT-060  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+FORKBASEset (BS)  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-036  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Stand（38-kT THE RICH classic100 ×2用）  
+
+### Price  
+
+¥18,040  
+
+---  
 # Aroma  
 
 ---  
@@ -3533,57 +4192,13 @@ Under Shelf
 
 ## STR-020  
 
-**Brand**  
-
-サンゾー工務店 × asimocrafts × 横濱帆布鞄  
-
-**Product**  
-
-rodan_no_kaban  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Gray  
-
-### Material  
-
-Canvas  
-
-### Industrial Attribute  
-
-Fire Tool Storage  
+Retired. FIR-036へ移設済み（Fireドメインの装備専用ケースはFireドメインで管理する方針に基づき、Storageから移動）。本IDは欠番として保持する。  
 
 ---  
 
 ## STR-021  
 
-**Brand**  
-
-サンゾー工務店 × asimocrafts × 横濱帆布鞄  
-
-**Product**  
-
-table_no_kaban  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Gray  
-
-### Material  
-
-Canvas  
-
-### Industrial Attribute  
-
-Iron Table Storage  
+Retired. FIR-037へ移設済み（Fireドメインの装備専用ケースはFireドメインで管理する方針に基づき、Storageから移動）。本IDは欠番として保持する。  
 
 ---  
 
@@ -3807,6 +4422,250 @@ None
 
 Side Table（SKU: AN139。サイズ約38×31×45Hcm、重量約2850g、静耐荷重天板約5kg・各棚約2.5kg）  
 
+---  
+
+## STR-030  
+
+**Brand**  
+
+YETI  
+
+**Product**  
+
+YETI ICE 4 lb (1.8 kg)  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Blue  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Ice Pack (Hard)  
+
+### Price  
+
+¥6,160  
+
+---  
+## STR-031  
+
+**Brand**  
+
+YETI  
+
+**Product**  
+
+YETI Thin Ice - Large  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Blue  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Ice Pack (Soft, for Soft Cooler)  
+
+### Price  
+
+¥4,730  
+
+---  
+## STR-032  
+
+**Brand**  
+
+YETI  
+
+**Product**  
+
+Rambler® Half Gallon Jug  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- STR-032a  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Stainless Steel  
+
+### Industrial Attribute  
+
+Insulated Jug (1.9L)  
+
+### Price  
+
+要確認  
+
+---  
+## STR-032a  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+KRAKEN STAND  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+STR-032  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Jug Stand（STR-032用）  
+
+### Price  
+
+¥19,800  
+
+---  
+## STR-013a  
+
+**Brand**  
+
+nodel design  
+
+**Product**  
+
+Black Stand  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+STR-013  
+
+
+### Color  
+
+Black  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Leg（Beck Container①用）  
+
+### Price  
+
+¥9,900  
+
+---  
+## STR-015a  
+
+**Brand**  
+
+nodel design  
+
+**Product**  
+
+Black Stand  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+STR-015  
+
+
+### Color  
+
+Black  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Leg（Beck Container②用）  
+
+### Price  
+
+¥9,900  
+
+---  
+## STR-033  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+ユニバーサルスタンド  
+
+**Status**  
+
+Owned  
+
+### Quantity  
+
+4  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Storage Container Base / Leg（汎用スタンド）  
+
+### Price  
+
+¥55,500  
+
+---  
 # Coffee  
 
 Coffee Domainは、抽出に関する一連のワークフロー全体を管理する。  
@@ -4177,6 +5036,12 @@ RODAN BRICK
 
 Owned  
 
+### Child Components  
+
+- FIR-034  
+- FIR-035  
+- FIR-036  
+
 ### Color  
 
 Black  
@@ -4208,6 +5073,10 @@ Iron Table
 **Status**  
 
 Owned  
+
+### Child Components  
+
+- FIR-037  
 
 ### Color  
 
@@ -4819,6 +5688,732 @@ Fire Pit（検討中。旧FIR-020と統合。具体的な候補情報はPX-007 D
 
 Retired. FIR-019（Fire Pit枠）へ統合済み。旧登録情報（FIREGRAPHIX BLISS-SP）はPX-007 Deliberation Codexへ移管。本IDは欠番として保持する。  
 
+---  
+
+## FIR-021  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+LECTER Ver2  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Trivet（五徳）  
+
+### Price  
+
+¥19,000  
+
+---  
+## FIR-022  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+TAKIBI SHEET  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Fire-Resistant Sheet  
+
+### Price  
+
+¥7,480  
+
+---  
+## FIR-023  
+
+**Brand**  
+
+DEVISE WORKS  
+
+**Product**  
+
+MACKY DEVISE  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Steel  
+
+### Industrial Attribute  
+
+Fire Knife  
+
+### Price  
+
+¥54,450  
+
+---  
+## FIR-024  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+HONE HOOK  
+
+**Status**  
+
+Owned  
+
+### Quantity  
+
+2  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Hook  
+
+### Price  
+
+¥3,200  
+
+---  
+## FIR-025  
+
+**Brand**  
+
+SomAbito  
+
+**Product**  
+
+焚き火side stand  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black（KURO脚）  
+
+### Material  
+
+Steel / Brass（真鍮紋章）  
+
+### Graphic Attribute  
+
+Emblem（紋章）  
+
+### Industrial Attribute  
+
+Fireside Stand  
+
+### Price  
+
+¥39,050  
+
+---  
+## FIR-026  
+
+**Brand**  
+
+neru design works  
+
+**Product**  
+
+Ono kezuru カバー  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-004  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Axe Cover  
+
+### Price  
+
+¥3,630  
+
+---  
+## FIR-027  
+
+**Brand**  
+
+WHAT WE WANT（WWW）  
+
+**Product**  
+
+WWW_SAYA  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-005  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Sheath Case（Nata kezuru用）  
+
+### Price  
+
+¥9,900  
+
+---  
+## FIR-028  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+shank heater 百式改  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- FIR-029  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Gas Stove  
+
+### Price  
+
+¥38,500  
+
+---  
+## FIR-029  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+shank container  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-028  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Stove Bag  
+
+### Price  
+
+¥8,800  
+
+---  
+## FIR-030  
+
+**Brand**  
+
+DEVISE WORKS  
+
+**Product**  
+
+MACCHO CASE  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Fire Starter Case  
+
+### Price  
+
+¥9,020  
+
+---  
+## FIR-031  
+
+**Brand**  
+
+SOMABITO  
+
+**Product**  
+
+SOMA no Folk  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Fireside Fork  
+
+### Price  
+
+¥11,800  
+
+---  
+## FIR-032  
+
+**Brand**  
+
+WHAT WE WANT（WWW）  
+
+**Product**  
+
+WWW_HANGER  
+
+**Status**  
+
+Owned  
+
+### Quantity  
+
+7  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Hook  
+
+### Price  
+
+¥7,040  
+
+---  
+## FIR-033  
+
+**Brand**  
+
+SOMABITO  
+
+**Product**  
+
+SOMA no Hera  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Fireside Spatula  
+
+### Price  
+
+¥11,800  
+
+---  
+## FIR-034  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+カスタムベロ（ナターシャ・マチルダ・アンナ・ジェーン）  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-001  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Rodan Custom Option Part（ベロ）  
+
+### Price  
+
+¥11,800  
+
+---  
+## FIR-035  
+
+**Brand**  
+
+Blick  
+
+**Product**  
+
+半月セット  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-001  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Rodan Custom Option Part（半月）  
+
+### Price  
+
+¥23,650  
+
+---  
+## FIR-036  
+
+**Brand**  
+
+サンゾー工務店 × asimocrafts × 横濱帆布鞄  
+
+**Product**  
+
+rodan_no_kaban  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-001  
+
+
+### Color  
+
+Gray  
+
+### Material  
+
+Canvas  
+
+### Industrial Attribute  
+
+Fire Pit Carrying Case（旧STR-020より移設）  
+
+### Price  
+
+¥20,900  
+
+---  
+## FIR-037  
+
+**Brand**  
+
+サンゾー工務店 × asimocrafts × 横濱帆布鞄  
+
+**Product**  
+
+table_no_kaban  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-002  
+
+
+### Color  
+
+Gray  
+
+### Material  
+
+Canvas  
+
+### Industrial Attribute  
+
+Iron Table Carrying Case（旧STR-021より移設）  
+
+### Price  
+
+¥38,500  
+
+---  
+
+# Shelter  
+
+---  
+
+## SHL-001  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+幕男  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- SHL-002  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Winter Hexa Tarp  
+
+### Price  
+
+¥62,535  
+
+---  
+## SHL-002  
+
+**Brand**  
+
+DEVISE  
+
+**Product**  
+
+W3.8 ROPE（DEVISE ver.）  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+SHL-001  
+
+### Quantity  
+
+2  
+
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Guy Rope（ガイロープ）  
+
+### Price  
+
+¥21,780  
+
+---  
+## SHL-003  
+
+**Brand**  
+
+DEVISE WORKS × HEIMPLANET  
+
+**Product**  
+
+CLOUDBREAK"D"  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+White  
+
+### Material  
+
+High Tenacity (HT) Polyester, TPU（エアフレーム）／100D ripstop polyester（フライシート）／210D Nylon（フロア）  
+
+### Industrial Attribute  
+
+Inflatable Shelter Tent（設営約5分、インナーテント着脱可、フロントドア跳ね上げ対応）  
+
+### Price  
+
+¥550,000  
+
+---  
+## SHL-004  
+
+**Brand**  
+
+HELLOS factory  
+
+**Product**  
+
+Slug Shelter V2.0（国内流通名：スネイルシェルター）  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Shelter Tent  
+
+### Price  
+
+要確認  
+
+---  
 # Parent / Child Rules（親子関係ルール）  
 
 Parentオブジェクトは、主たる装備を表す。  
@@ -5176,4 +6771,46 @@ MARI様のご購入報告に基づき、STR-026（ANOBAダストバケット）�
 ### Changes  
 
 - STR-028：Material欄の記述を「詳細な生地構成は未確認」から、X-PACの一般的な構造（表地＋X-Ply補強層＋防水フィルムの3〜4層ラミネート、Dimension-Polyant社製）を明記する記述へ訂正。未確認として残すのは、本製品固有の表地デニールやグレード（X3/X4等）のみに限定。  
+- Related Documents：変更なし。  
+
+## Version 7.25  
+
+MARI様がClaude導入以前に個人管理していたスプレッドシート（Numbersファイル）を精査し、GitHub未登録の既存所有ギアをTP-004へ統合。あわせて、7つ目のDomain「Shelter」を新設し、Price（価格）フィールドを任意項目として再導入した（Version 7.0で一度削除された項目の復活。既存登録済みアイテムへの遡及記載は別途対応予定）。
+
+### Changes（構造）
+
+- Registry Rules：Equipment Domainsを6→7に変更し、「Shelter」を追加。Equipment ID例に「SHL-001」を追加。  
+- Attribute Policy：保存フィールドに「Price」を追加（任意項目）。  
+- Domain運用ルール：装備専用のケース・バッグ類は、対象装備と同じDomainに属する（Storageへ分離しない）方針を確認。これに伴いSTR-020・STR-021をFireドメインへ移設。  
+
+### Changes（Furniture、新規11件）
+
+- FUR-025〜FUR-035：真聖衣（FUR-002子部品）、天板枠左右2種（FUR-013子部品）、シリコンマット黒白2種（FUR-013子部品）、シリコンシート（FUR-013子部品）、ハンガーフック（FUR-013子部品）、ABLE IGTユニットスタンド、Kermit CARRY TOTE、EXTENSIONTABLE CASE（FUR-013子部品）、SNIPE HANGER home.を新規登録。すべてOwned。  
+- 備考：Kermit CARRY TOTEは、MARI様のご意向としては本来FUR-001直後への番号挿入・後続繰下げが望ましいが、今回の一括登録では既存ID体系への影響を避けるため末尾（FUR-033）に追加した。Furniture Domainの番号整理は別途の課題として保持する。  
+
+### Changes（Storage、新規7件・移設2件）
+
+- STR-030〜STR-033、STR-013a、STR-015a、STR-032aを新規登録（YETI ICE／Thin Ice／Rambler Half Gallon Jug／ユニバーサルスタンド／Beck Container用Black Stand×2／Jug Stand）。すべてOwned。  
+- STR-020（rodan_no_kaban）・STR-021（table_no_kaban）：Fireドメインへ移設のためRetired化。移設先はFIR-036・FIR-037。  
+
+### Changes（Fire、新規17件）
+
+- FIR-021〜FIR-037：五徳、焚き火シート、ナイフ、フック、SomAbito焚き火side stand、斧カバー（FIR-004子）、鞘ケース（FIR-005子）、ガスストーブ＋バッグ、着火ケース、フォーク、フック、ヘラ、Rodanカスタムオプション2件（FIR-001子）、旧STR-020・STR-021（FIR-001／FIR-002子として移設）を新規登録。すべてOwned。  
+- FIR-001・FIR-002：Child Componentsを追加。  
+
+### Changes（Light、新規7件）
+
+- LGT-054〜LGT-060：ガスランタン「ネルガス」一式4点（本体・ベース・横レール・下部ベース）、Vapourax M320用アクセサリー（LGT-002子）、お立ち台バー（LGT-032子）、FORKBASEset（LGT-036子）を新規登録。すべてOwned。  
+- LGT-002・LGT-032・LGT-036：Child Componentsを追加。  
+
+### Changes（Shelter、新設・4件）
+
+- Domain新設。SHL-001（幕男、冬用ヘキサタープ）とその子SHL-002（ガイロープ）、SHL-003（DEVISE WORKS×HEIMPLANET CLOUDBREAK"D" White）、SHL-004（HELLOS factory Slug Shelter V2.0／国内名スネイルシェルター、Black）を新規登録。すべてOwned。  
+
+### 既知の未確認事項
+
+- STR-032（YETI Rambler Half Gallon Jug）・SHL-004（Slug Shelter V2.0）の価格が未確認。  
+- Furniture Domainの番号整理（Kermit CARRY TOTEの適切な位置への挿入）が未対応。  
+- 上記以外の新規登録アイテムの一部（ニッチなガレージブランド品）は、ウェブ上での公式情報が確認できず、購入記録上の名称をそのまま採用している。  
+
 - Related Documents：変更なし。  
