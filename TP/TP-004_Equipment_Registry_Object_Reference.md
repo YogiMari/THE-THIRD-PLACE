@@ -1450,7 +1450,7 @@ Lantern Stand
 
 **Brand**  
 
-Vapourax  
+Vapalux  
 
 **Product**  
 
@@ -1482,7 +1482,7 @@ Kerosene Lantern
 
 ### Price  
 
-要確認  
+¥49,500  
 
 ---  
 
@@ -2341,7 +2341,7 @@ Wood Sleeve
 
 ### Price  
 
-要確認  
+¥11,990  
 
 ---  
 
@@ -4923,7 +4923,7 @@ Insulated Jug (1.9L)
 
 ### Price  
 
-要確認  
+¥17,930  
 
 ---  
 ## STR-032a  
@@ -6887,7 +6887,7 @@ Shelter Tent
 
 ### Price  
 
-要確認  
+¥396,000  
 
 ---  
 # Parent / Child Rules（親子関係ルール）  
