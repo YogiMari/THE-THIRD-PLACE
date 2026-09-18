@@ -11,7 +11,7 @@ Acquisition Handbook
   
 **Version**  
   
-2.1  
+2.2  
   
 **Status**  
   
@@ -44,6 +44,8 @@ PX-005 Acquisition Handbookは、PX-004 Barista Codexで正式採用されたCof
 Equipmentの採用理由、Workflow、Selection Criteria、DecisionはPX-004で管理する。  
   
 Coffee Beansについては消耗品として扱い、本書内の「Coffee Beans Procurement」セクションで独立して管理する。豆はPX-004による意思決定の対象としない。  
+  
+9Barista純正の予備部品・メンテナンス用品については消耗品として扱い、本書内の「9Barista Official Spare Parts (Preventive Stock)」セクションで独立して管理する。これらはPX-004による意思決定の対象としない。  
   
 ---  
   
@@ -193,6 +195,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 * 公式Japan Checkoutでの購入を推奨。  
 * Standard構成への代替は行わない。  
 * 付属品は、予備として必要な場合を除き、別途購入しない。  
+* 本体標準付属品：53mm Tamper（9Barista純正・汎用）、Heat Transfer PlateまたはInduction Adaptor Plate（選択したコンロ種別に応じて1点）、Spare Boiler O-ring ×1、Spare Safety Ring ×1、User Guide。THE THIRD PLACEではThe Force Tamper 53mmを主力Tamperとするため、付属の汎用Tamperは予備として保持する。  
   
 ---  
   
@@ -1139,6 +1142,61 @@ Equipmentと異なり、Coffee BeansはPX-004による正式なDecisionを経な
   
 ---  
   
+# 9Barista Official Spare Parts (Preventive Stock)  
+  
+## Purpose  
+  
+本セクションは、9Barista Mk.2 Pro本体および9Barista Puck Screen（Group A、Month 1）の注文と同時に、送料を効率化するために検討すべき、9Barista公式ストア取扱いの予備部品・メンテナンス用品を管理する。  
+  
+本セクションは、Equipment Acquisition Registryとは独立して管理する。PX-004のConfirmed Equipment決定の対象外であり、Coffee System本体のWorkflow・意思決定には影響しない。  
+  
+本セクションの根拠は、2026-09時点で確認した9Barista公式サイト（9barista.com）の一次情報（Spare Parts／Mk.2カテゴリ、および製品ページの説明文）である。  
+  
+## Descalerについて  
+  
+2026-09時点で、9Barista公式ストアの「Cleaning」カテゴリには取扱商品が存在しない。したがって、9Barista公式ストアからDescaler（スケール除去剤）を購入することはできない。  
+  
+Descalerの取り扱いは、引き続きPX-006 Brew Care 第18.3項の指定（Puly Descaler／Urnex Dezcal Liquid／Durgol Swiss Espresso Special Descaler）に従い、国内で別途調達する。9Barista注文への同梱対象ではない。  
+  
+## Standard Box Contents（本体購入時の標準付属品）  
+  
+9Barista Mk.2本体には、選択したバリアントによらず、以下が標準で付属することを公式情報で確認した。同一品の重複購入を避けるため、ここに記録する。  
+  
+* 9Barista Mk.2（選択したバリアント）  
+* 53mm Tamper（9Barista純正・汎用品）※THE THIRD PLACEではThe Force Tamper 53mmを主力Tamperとするため、付属の汎用Tamperは予備として保持する  
+* Heat Transfer PlateまたはInduction Adaptor Plate（購入時に選択したコンロ種別に応じて1点）  
+* Spare Boiler O-ring ×1（Mk.2用、3mm断面）  
+* Spare Safety Ring ×1（Oリング一式込み）  
+* User Guide  
+  
+## Recommended Preventive Spare Parts（推奨・任意）  
+  
+野外・キャンプ運用では、部品が破損しても近隣で即座に代替品を入手できず、9Barista（英国ケンブリッジ）からの取り寄せには相応の日数を要する。本体・Puck Screenの注文に同梱することで、送料を実質的に節約しながら予備を確保できる。  
+  
+| Item | 用途 | 参考価格（公式） | 推奨度 | 備考 |  
+|---|---|---:|---|---|  
+| Safety Ring and Seals | 過熱時の安全弁一式。側面からの水漏れが交換のサイン | $6.99 | 推奨 | 本体標準付属分とは別に予備1点を確保 |  
+| Boiler O-ring Seal（Mk.2, 3mm） | Boiler間の圧力シール。抽出圧力を保持する要 | $2.99 | 推奨 | 本体標準付属分とは別に予備1点を確保 |  
+| Overheat Repair Kit（Mk.2） | コンロにかけたまま失念した等の過熱損傷から機体を復旧する一式（Safety Valve・Thermal Break・Group Insulator・各種Seal等を含む） | $50.00 | 任意 | 野外運用では失念による過熱リスクが相対的に高いため検討価値あり。下記個別Valve部品と重複するため、購入する場合はどちらか一方とする |  
+  
+### 現時点で見送るもの  
+  
+以下は、9Barista公式の製品説明でも「通常使用下では交換頻度が低い」旨が明記されており、機能上の不足が確認されるまでは購入を見送る。  
+  
+* Valve Pin and Seal／Valve Body Seal／Valve Chamber Seal／Valve Spring（バルブ機構の個別部品）  
+* Upper Chamber O-ring／Grouphead O-ring  
+* Group Insulator／Metal Chimney／Handle／Upper・Lower Handle Bush（構造部品。故障の記録なし）  
+* Basket Cap Pro予備（本体購入時にIncluded済み。高額なため予備は不要）  
+* Induction Adaptor PlateとHeat Transfer Plateのうち、使用しないコンロ種別用の一方  
+  
+## Acquisition Note  
+  
+本セクションの品目は、既存のAcquisition Status体系（Purchase Required／Included／Already Owned／To Be Confirmed）の対象外とし、「Optional Preventive Stock」として独立管理する。  
+  
+購入する場合は、Purchase Grouping「Group A — 9Barista」の注文へ同梱する。  
+  
+---  
+  
 # Coffee System Water Configuration  
   
 | Product | Quantity | Capacity | Estimated Acquisition Cost | Acquisition Status |  
@@ -1661,10 +1719,15 @@ LAGOM mini 2 Ground Transfer Cupは、Weber Workshops Blind Shaker Onyxへの直
 * Included IMS Precision Basket  
 * Included Stainless Steel Basket Cap Pro  
 * Included 9Barista Magnetic Dosing Funnel  
+* Optional：Safety Ring and Seals（予備）  
+* Optional：Boiler O-ring Seal Mk.2（予備）  
+* Optional：Overheat Repair Kit Mk.2  
   
 ### Principle  
   
 実用的な場合は、純正アクセサリーをまとめて購入する。  
+  
+Optional項目は「9Barista Official Spare Parts (Preventive Stock)」セクションに従う。  
   
 ---  
   
@@ -1794,7 +1857,7 @@ ALM KOPi Z1 Miniは、別途バーナーでの運用が必要。
 * 燃料  
 * ALM KOPi Z1 Mini用の別途バーナー  
 * 消耗品としての清掃用品  
-* 任意の予備部品  
+* 9Barista Official Spare Parts (Preventive Stock)（任意購入のため別枠管理）  
 * PX-004に含まれない追加Equipment  
   
 ---  
@@ -1929,7 +1992,8 @@ MARI様との合意に基づく、月次購入計画である。Straight Espress
   
 * 9Barista Mk.2 Pro  
 * 9Barista Puck Screen  
-* 小計：¥130,500〜133,500  
+* （任意）Safety Ring and Seals／Boiler O-ring Seal Mk.2／Overheat Repair Kit Mk.2  
+* 小計：¥130,500〜133,500（Optional Preventive Stockを除く）  
 * 上限なし（9Barista本体は公式まとめ買いを優先し、月次上限の例外とする）  
   
 ## Month 2 — Grinder & Scale  
@@ -1982,7 +2046,7 @@ MARI様との合意に基づく、月次購入計画である。Straight Espress
   
 ## Plan Total  
   
-総額目安：¥614,770〜714,270（Estimated Acquisition Budgetの目安¥623,770〜738,270の範囲内）  
+総額目安：¥614,770〜714,270（Estimated Acquisition Budgetの目安¥623,770〜738,270の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
   
 ### Design Rationale  
   
@@ -1992,6 +2056,7 @@ MARI様との合意に基づく、月次購入計画である。Straight Espress
 * DAMNGOOD × CATAPULT FACTORY FIKA12はLatte専用カップ（ミルクスチーム後にのみ使用）であるため、ALM KOPi Z1 Mini・WPM Handleless Pitcher・WPM Pitcher SleeveとともにMonth 7へ配置する。  
 * YETI Yonder 1Lは、MARI様の実飲用計画（2名・1泊・Straight Espresso 6杯・Latte 4杯）で必要水量を試算すると、9Barista使用10回×120mL＋ALM KOPi 2セッション×300mL＝合計約1,800mLとなり、オーロラボトル＋酒筒Titaniumのみ（1,540mL）では約260mL不足するため、Month 5で確保する必要があると判断した。  
 * Snow Peak酒筒Titaniumは、Latte導入（Month 7）に合わせて後方へ配置する。  
+* 9Barista Official Spare Parts (Preventive Stock)は、Group A（9Barista）注文に同梱可能な任意項目として、Month 1の小計とは別枠で記録する。  
   
 ---  
   
@@ -2010,6 +2075,7 @@ MARI様との合意に基づく、月次購入計画である。Straight Espress
 | 1.9 | 2026-09-07 | 9Barista Magnetic Dosing Funnelを、PX-004 Ver.2.9で明確化された「Mk.2 Pro標準付属品」の扱いへ整合。独立Purchase Required項目（旧Product 12）からIncluded Equipment（Included 04）へ移動し、Priority表・Purchase Grouping・Final Inventory・Estimated Acquisition Budgetを整合させた（Core Espresso System見積を¥7,900減額）。 |  
 | 2.0 | 2026-09 | Coffee Beans Procurementセクションを新設。コーヒー豆を消耗品として、Equipment Acquisition Registryから独立させて管理する方針を確立。Current RotationにOnibus Coffee「ONIBUS Blend」（Primary）とApril Coffee Roasters「Sustainable Profile Espresso」（Aesthetic Exception）を登録。Estimated Acquisition Budgetの除外リストから「コーヒー豆」の記載を削除（本セクションで独立管理するため除外リストへの言及自体が不要になったことによる整理）。Purposeセクションへ本方針を明記。 |  
 | 2.1 | 2026-09 | Monthly Acquisition Plan（Confirmed）セクションを新設。MARI様との合意に基づく月次購入計画（Month 1〜7、月あたり目安¥10万・Month 1のみ上限なし）を正式反映。Straight Espresso Workflow完成を優先し、エスプレッソグラス一式（PROPEL／AERESSO／HILLS FIELD Case／AION Coaster）とLatte System（ALM KOPi／WPM Pitcher／WPM Sleeve／FIKA12）を後半（Month 6・7）へ配置する方針を明記。YETI Yonderの必要性について、実飲用計画（Straight Espresso 6杯／Latte 4杯）に基づく水量試算（必要量約1,800mL、YETI除くと1,540mLで約260mL不足）を記録し、Month 5での確保を確定。 |  
+| 2.2 | 2026-09-18 | 「9Barista Official Spare Parts (Preventive Stock)」セクションを新設。9Barista公式サイト（9barista.com）一次情報に基づき、本体標準付属品（Spare Boiler O-ring・Spare Safety Ring・汎用53mm Tamper等）を記録し、重複購入防止の基準とした。推奨予備部品としてSafety Ring and Seals・Boiler O-ring Seal Mk.2を、任意項目としてOverheat Repair Kit Mk.2を追加。通常使用下では交換頻度が低いとされる個別Valve部品・構造部品は見送りとした。Descalerは2026-09時点で9Barista公式ストアの取扱いがないことを確認し、PX-006記載の第三者ブランド（Puly／Urnex Dezcal／Durgol）調達方針を維持。Purchase Grouping Group Aおよび Monthly Acquisition Plan Month 1へOptional項目として反映。Estimated Acquisition BudgetおよびPlan Totalの除外リストに本セクションを明記。 |  
   
 ---  
   
