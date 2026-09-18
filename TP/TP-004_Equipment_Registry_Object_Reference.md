@@ -743,6 +743,10 @@ Occult Emblem (Silkscreen)
 
 Folding Table  
 
+### Price  
+
+¥41,800  
+
 ---  
 
 ## FUR-017  
@@ -774,6 +778,10 @@ None
 ### Industrial Attribute  
 
 Side Table  
+
+### Price  
+
+¥66,000  
 
 ---  
 
@@ -883,6 +891,10 @@ None
 
 Quilt（関東〜雪中入門用、快適温度2℃・下限温度-4℃、FUR-021と併用が前提）  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## FUR-021  
@@ -918,6 +930,10 @@ None
 ### Industrial Attribute  
 
 Sleeping Mat（R値5.4・ASTM F3340-22準拠、2枚連結使用。FUR-020セット付属。FUR-022系との併用時は本格雪中用の主断熱層としても使用）  
+
+### Price  
+
+¥15,400  
 
 ---  
 
@@ -1424,6 +1440,10 @@ None
 
 Lantern Stand  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-002  
@@ -1459,6 +1479,10 @@ None
 ### Industrial Attribute  
 
 Kerosene Lantern  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -1535,6 +1559,10 @@ Camphor Wood
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -1803,7 +1831,7 @@ Portable LED Lantern
 
 **Brand**  
 
-CARMA STORE  
+CALMA STORE  
 
 **Product**  
 
@@ -1839,7 +1867,7 @@ Portable LED Lantern
 
 **Brand**  
 
-CARMA STORE  
+CALMA STORE  
 
 **Product**  
 
@@ -1900,6 +1928,10 @@ Stained Glass
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -2307,6 +2339,10 @@ Pine
 
 Wood Sleeve  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-026  
@@ -2338,6 +2374,10 @@ Maple
 ### Industrial Attribute  
 
 Wood Sleeve  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -2371,13 +2411,17 @@ None
 
 Portable LED Lantern  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## LGT-028  
 
 **Brand**  
 
-CARMA STORE  
+CALMA STORE  
 
 **Product**  
 
@@ -2718,6 +2762,10 @@ Resin / Walnut
 
 Airlight Shade  
 
+### Price  
+
+¥15,400  
+
 ---  
 
 ## LGT-035  
@@ -2874,6 +2922,10 @@ None
 
 Airlight Shade (Hanging)  
 
+### Price  
+
+¥8,800  
+
 ---  
 
 ## LGT-039  
@@ -2909,6 +2961,10 @@ None
 ### Industrial Attribute  
 
 Airlight Shade (Hanging)  
+
+### Price  
+
+¥23,000  
 
 ---  
 
@@ -2984,6 +3040,10 @@ Plastic
 
 Airlight (Portable LED Light Body)  
 
+### Price  
+
+¥5,780  
+
 ---  
 
 ## LGT-043  
@@ -3015,6 +3075,10 @@ Plastic
 ### Industrial Attribute  
 
 Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
 
 ---  
 
@@ -3048,6 +3112,10 @@ Plastic
 
 Airlight (Portable LED Light Body)  
 
+### Price  
+
+¥5,780  
+
 ---  
 
 ## LGT-045  
@@ -3079,6 +3147,10 @@ Plastic
 ### Industrial Attribute  
 
 Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
 
 ---  
 
@@ -3112,6 +3184,10 @@ Plastic
 
 Airlight (Portable LED Light Body)  
 
+### Price  
+
+¥5,780  
+
 ---  
 
 ## LGT-047  
@@ -3143,6 +3219,10 @@ Plastic
 ### Industrial Attribute  
 
 Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
 
 ---  
 
@@ -3176,6 +3256,10 @@ Plastic
 
 Airlight (Portable LED Light Body)  
 
+### Price  
+
+¥5,780  
+
 ---  
 
 ## LGT-049  
@@ -3207,6 +3291,10 @@ Plastic
 ### Industrial Attribute  
 
 Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
 
 ---  
 
@@ -3240,6 +3328,10 @@ Plastic
 
 Airlight (Portable LED Light Body)  
 
+### Price  
+
+¥5,780  
+
 ---  
 
 ## LGT-051  
@@ -3271,6 +3363,10 @@ Plastic
 ### Industrial Attribute  
 
 Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
 
 ---  
 
@@ -3304,6 +3400,10 @@ Plastic
 
 Airlight (Portable LED Light Body)  
 
+### Price  
+
+¥5,780  
+
 ---  
 
 ## LGT-053  
@@ -3335,6 +3435,10 @@ Plastic
 ### Industrial Attribute  
 
 Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
 
 ---  
 
@@ -3662,6 +3766,10 @@ None
 
 Palo Santo Holder  
 
+### Price  
+
+¥38,500  
+
 ---  
 
 ## ARM-003  
@@ -3694,6 +3802,10 @@ None
 
 Incense Chamber  
 
+### Price  
+
+¥60,500  
+
 ---  
 
 ## ARM-004  
@@ -3725,6 +3837,10 @@ None
 ### Industrial Attribute  
 
 Vertical Diffuser  
+
+### Price  
+
+要確認  
 
 # Storage  
 
@@ -3771,6 +3887,10 @@ None
 ### Industrial Attribute  
 
 Storage Container  
+
+### Price  
+
+¥27,500  
 
 ---  
 
@@ -4484,6 +4604,10 @@ Fabric
 
 Accessory Storage  
 
+### Price  
+
+¥9,108  
+
 ---  
 
 ## STR-023  
@@ -4511,6 +4635,10 @@ Canvas
 ### Industrial Attribute  
 
 Consumables Storage  
+
+### Price  
+
+¥2,980  
 
 ---  
 
@@ -4540,6 +4668,10 @@ Polyethylene（Rotomolded）
 
 Cooler  
 
+### Price  
+
+¥51,150  
+
 ---  
 
 ## STR-025  
@@ -4567,6 +4699,10 @@ DryHide Fabric
 ### Industrial Attribute  
 
 Soft Cooler  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -4603,6 +4739,10 @@ None
 ### Industrial Attribute  
 
 Dust Bucket（燃えないゴミ〈缶・ビン〉用。使用頻度が低いため、多段階の取り出し動作を許容する。従来使用のSnow Peak ガビングスタンド（DB-030、STR-027としてRetired登録済み）からの置き換えとして採用）  
+
+### Price  
+
+¥5,000  
 
 ---  
 
@@ -4642,6 +4782,10 @@ None
 
 Dust Bucket（燃えるゴミ用。本体はWINDY AND RAINY「Folding wire T-box」（W395×H440×D195mm、重量約1420g、耐荷重20kg、ワンアクションで組み立て完了）。KAZE_TO_MORIオリジナルのCOVER×2・FUTA×3を装着したフルセットとして採用。ブランドデザインのゴミ袋付属。フォールディングサイドテーブルを介さず単独で運用。使用頻度が高いため、取り出し動作の少ない構成とした）  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## STR-029  
@@ -4677,6 +4821,10 @@ None
 ### Industrial Attribute  
 
 Side Table（SKU: AN139。サイズ約38×31×45Hcm、重量約2850g、静耐荷重天板約5kg・各棚約2.5kg）  
+
+### Price  
+
+¥9,000  
 
 ---  
 
@@ -5738,6 +5886,10 @@ None
 
 Torch  
 
+### Price  
+
+¥7,920  
+
 ---  
 
 ## FIR-013  
@@ -5813,6 +5965,10 @@ None
 ### Industrial Attribute  
 
 Gas Tube Cover  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -5890,6 +6046,10 @@ None
 
 Torch Barrel  
 
+### Price  
+
+¥8,800  
+
 ---  
 
 ## FIR-017  
@@ -5926,6 +6086,10 @@ None
 
 Torch Knob  
 
+### Price  
+
+¥2,400  
+
 ---  
 
 ## FIR-018  
@@ -5957,6 +6121,10 @@ None
 ### Industrial Attribute  
 
 Kerosene Heater  
+
+### Price  
+
+要確認  
 
 ---  
 
