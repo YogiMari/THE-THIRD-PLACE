@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.21  
+Version 7.22  
   
 ---  
   
@@ -3727,7 +3727,7 @@ None
 
 ### Industrial Attribute  
 
-Dust Bucket（TP-010 Duplicate Storage Exceptionに基づく2台運用構想のうち、1台目を購入し運用中。当面はこの1台で運用し、2台目の追加可否・仕様はSTR-028で検討中。従来使用のSnow Peak ガビングスタンド（DB-030、STR-027としてRetired登録済み）からの置き換えとして採用）  
+Dust Bucket（燃えないゴミ〈缶・ビン〉用。STR-029 フォールディングサイドテーブルに収納して運用。使用頻度が低いため、多段階の取り出し動作を許容する。従来使用のSnow Peak ガビングスタンド（DB-030、STR-027としてRetired登録済み）からの置き換えとして採用）  
 
 ---  
 
@@ -3741,23 +3741,23 @@ Retired. Snow Peak ガビングスタンド（DB-030）。サイズ50×36×63(h)
 
 **Brand**  
 
-Unconfirmed  
+KAZE_TO_MORI × WINDY AND RAINY  
 
 **Product**  
 
-Unconfirmed  
+Folding Wire T-box 全面コンプリートセット  
 
 **Status**  
 
-Candidate  
+Essential  
 
 ### Color  
 
-Unconfirmed  
+Black（デジタルカモフラージュ柄）  
 
 ### Material  
 
-Unconfirmed  
+X-PAC（詳細な生地構成は未確認。本体はWINDY AND RAINY製のスチールワイヤーフレーム）  
 
 ### Graphic Attribute  
 
@@ -3765,7 +3765,39 @@ None
 
 ### Industrial Attribute  
 
-Dust Bucket（TP-010 Duplicate Storage Exceptionに基づく2台目枠。ビンゴミ用としての役割分化を想定するが、STR-026と同一のANOBA製品を追加購入するか、別ブランドを検討するかは未定。具体的な候補比較はPX-007 Deliberation Codexで管理する）  
+Dust Bucket（燃えるゴミ用。WINDY AND RAINYのFolding wire T-box本体に、KAZE_TO_MORIオリジナルのCOVER×2・FUTA×3を装着したフルセット。ブランドデザインのゴミ袋付属。フォールディングサイドテーブルを介さず単独で運用。使用頻度が高いため、取り出し動作の少ない構成とした。本体単体のサイズ・重量・開閉方式は未確認）  
+
+---  
+
+## STR-029  
+
+**Brand**  
+
+ANOBA  
+
+**Product**  
+
+フォールディングサイドテーブル  
+
+**Status**  
+
+Essential  
+
+### Color  
+
+Black  
+
+### Material  
+
+Steel  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Side Table（STR-026収納用。SKU: AN139。サイズ約38×31×45Hcm、重量約2850g、静耐荷重天板約5kg・各棚約2.5kg）  
 
 # Coffee  
 
@@ -5095,4 +5127,17 @@ MARI様のご購入報告に基づき、STR-026（ANOBAダストバケット）�
 
 - STR-026：StatusをEssentialからOwnedへ更新（ANOBA BLACK EDITION マルチダストバケット、1台目を購入）。Quantityフィールドを削除（2台構成から単数運用へ変更のため）。Industrial Attributeの記述を、1台目を運用中である旨・2台目検討枠はSTR-028である旨に修正。  
 - STR-028：新規登録。ダストバケット2台目の検討枠（Status: Candidate）。STR-026と同一のANOBA製品を追加購入するか、別ブランドを検討するかは未定。具体的な候補比較はPX-007 Deliberation Codexで管理する。  
+- Related Documents：変更なし。  
+
+---  
+
+## Version 7.22  
+
+プロジェクトオーナーとの協議の結果、ダストバケット2台目枠（STR-028）の検討が完了。単なる複製ではなく、役割の異なる2製品（ANOBA・KAZE_TO_MORI×WINDY AND RAINY T-box）による構成に確定した。これに伴い、TP-010のDuplicate Storage Exceptionは本件には適用されないこととなった（TP-010 Ver.2.4を参照）。
+
+### Changes  
+
+- STR-026：Industrial Attributeを、燃えないゴミ（缶・ビン）用・STR-029フォールディングサイドテーブルへ収納して運用する旨に修正。  
+- STR-028：検討枠（Candidate）から正式決定（Status: Essential）へ更新。Brand/Productを「KAZE_TO_MORI × WINDY AND RAINY / Folding Wire T-box 全面コンプリートセット」に確定。燃えるゴミ用として単独運用する。本体単体のサイズ・重量・開閉方式は未確認のため、Industrial Attributeにその旨を明記。  
+- STR-029：新規登録。ANOBA フォールディングサイドテーブル（Status: Essential）。STR-026の収納先として採用。  
 - Related Documents：変更なし。  
