@@ -19,13 +19,21 @@ THE THIRD PLACEは、「可動式アウトドアリビング」を設計する�
 
 ```
 THE-THIRD-PLACE/
+├── .github/
+│   └── workflows/
+│       └── third-place-sync.yml   # PX-004⇄PX-005 整合性自動検証（CI）
+│
 ├── assets/
 │   └── banner.PNG
+│
+├── scripts/
+│   └── third_place_sync_validator.py   # SSOT同期バリデータ
 │
 ├── TP/    # Foundation Documents（思想・基盤文書）
 ├── PX/    # Project Documents（プロジェクト運用文書）
 ├── TM/    # Knowledge Documents（ナレッジ・研究文書）
 │
+├── CLAUDE.md   # Claude Code運用指示書（自動読込）
 └── README.md
 ```
 
@@ -66,6 +74,7 @@ THE-THIRD-PLACE/
 | PX-004 | Barista Codex | Coffee System（コーヒー機材）に関する正式な意思決定・選定基準・ブランド判断を管理する仕様書。 |
 | PX-005 | Acquisition Handbook | PX-004で正式採用されたCoffee Equipmentについて、価格・購入先・輸送・関税など実際の調達情報を管理するハンドブック。 |
 | PX-006 | Brew Care | コーヒー器具のお手入れ・メンテナンスに関する基準を定める文書。 |
+| PX-007 | Deliberation Codex | Coffee Domain（PX-004管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire）における検討中ギアの評価哲学・比較検討・購入待ちリストを管理する文書。 |
 
 ---
 
@@ -205,13 +214,21 @@ All official documents are maintained within this repository, which serves as th
 
 ```
 THE-THIRD-PLACE/
+├── .github/
+│   └── workflows/
+│       └── third-place-sync.yml   # Automated PX-004⇄PX-005 sync validation (CI)
+│
 ├── assets/
 │   └── banner.PNG
+│
+├── scripts/
+│   └── third_place_sync_validator.py   # SSOT sync validator
 │
 ├── TP/    # Foundation Documents
 ├── PX/    # Project Documents
 ├── TM/    # Knowledge Documents
 │
+├── CLAUDE.md   # Claude Code operating instructions (auto-loaded)
 └── README.md
 ```
 
@@ -252,6 +269,7 @@ Project management, operating rules, documentation standards, and records of act
 | PX-004 | Barista Codex | The official specification governing decisions, selection criteria, and brand judgments for the Coffee System. |
 | PX-005 | Acquisition Handbook | Manages the actual procurement information — price, purchase source, shipping, import duties — for Coffee Equipment officially adopted in PX-004. |
 | PX-006 | Brew Care | Defines the standards for cleaning and maintaining coffee equipment. |
+| PX-007 | Deliberation Codex | Manages zone evaluation philosophy, in-progress equipment deliberation, and the purchase-pending list for all zones outside the Coffee Domain governed by PX-004 (Furniture / Light / Aroma / Storage / Fire). |
 
 ---
 
