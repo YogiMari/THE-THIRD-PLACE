@@ -144,7 +144,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 **Status**：Candidate（比較対象なし、ブランド調査未着手）
 
-クローズドセルフォーム製。FUR-021の下に敷く断熱補強・パンク保険として機能。
+クローズドセルフォーム製。FUR-020（マット部）の下に敷く断熱補強・パンク保険として機能。
 
 ### Pad Sheet（TP-004: FUR-024）
 
@@ -193,8 +193,7 @@ TP-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 | ID | Product | Brand | Note |
 |---|---|---|---|
-| FUR-020 | ダウン システムオフトン（BD-060, Quilt component only） | Snow Peak | 数量2 |
-| FUR-021 | コンパクトワイドマット（TM-089） | Snow Peak | 数量2 |
+| FUR-020 | ダウン システムオフトン スリムマットセット（BD-060、掛け布団+マット一式） | Snow Peak | 数量2 |
 
 ## Light
 
