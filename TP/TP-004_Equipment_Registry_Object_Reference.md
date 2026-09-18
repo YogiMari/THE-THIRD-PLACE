@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.23  
+Version 7.24  
   
 ---  
   
@@ -3761,7 +3761,7 @@ Black（デジタルカモフラージュ柄。本体側はスチールメッキ
 
 ### Material  
 
-Steel（メッキ加工、ワイヤー部）／Steel + Plastic（メッキ加工、脚部）／X-PAC（KAZE_TO_MORI製COVER・FUTA部、詳細な生地構成は未確認）  
+Steel（メッキ加工、ワイヤー部）／Steel + Plastic（メッキ加工、脚部）／X-PAC（Dimension-Polyant社製。表地＋X-Ply補強層＋防水フィルムから成る3〜4層ラミネート。元来ヨット用セイルクロスの技術を応用したもので、アウトドア・バッグ業界で広く採用される汎用素材。KAZE_TO_MORI製COVER・FUTA部に使用。本製品固有の表地デニールやグレード（X3/X4等）は未確認）  
 
 ### Graphic Attribute  
 
@@ -5165,4 +5165,15 @@ MARI様のご購入報告に基づき、STR-026（ANOBAダストバケット）�
 - STR-029：**Child Components** STR-026を追加。  
 - STR-028：Color・Material・Industrial Attributeを、windyandrainy.tokyo公式ページ（商品コード war-037）の情報に基づき更新。本体サイズW395×H440×D195mm、重量約1420g、素材はスチールメッキ（ワイヤー部）／スチールメッキ+プラスチック（脚部）、耐荷重20kg、ワンアクション組み立てであることを確認・反映。KAZE_TO_MORI製COVER/FUTA部の生地構成（X-PAC）は引き続き未確認。  
 - Parent / Child Rules セクションのExampleに STR-029└STR-026 を追加。  
+- Related Documents：変更なし。  
+
+---  
+
+## Version 7.24  
+
+プロジェクトオーナーの指摘に基づく実態訂正。X-PACは、KAZE_TO_MORI固有の未知の素材ではなく、Dimension-Polyant社（アメリカ、ヨット用セイルクロス世界最大手）が開発した業界標準のラミネート生地であり、多くのアウトドア・バッグブランドで採用されている汎用素材であることが判明した。
+
+### Changes  
+
+- STR-028：Material欄の記述を「詳細な生地構成は未確認」から、X-PACの一般的な構造（表地＋X-Ply補強層＋防水フィルムの3〜4層ラミネート、Dimension-Polyant社製）を明記する記述へ訂正。未確認として残すのは、本製品固有の表地デニールやグレード（X3/X4等）のみに限定。  
 - Related Documents：変更なし。  
