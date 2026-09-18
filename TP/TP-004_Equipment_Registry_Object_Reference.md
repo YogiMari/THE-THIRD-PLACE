@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.31  
+Version 7.32  
   
 ---  
   
@@ -1333,7 +1333,7 @@ Black
 
 ### Material  
 
-Unconfirmed  
+Polyester  
 
 ### Industrial Attribute  
 
@@ -6380,7 +6380,7 @@ Sheath Case（Nata kezuru用）
 
 **Brand**  
 
-Unconfirmed  
+neru design works × calma store  
 
 **Product**  
 
@@ -6751,7 +6751,7 @@ Black
 
 ### Material  
 
-Unconfirmed  
+Polyester  
 
 ### Industrial Attribute  
 
@@ -7413,5 +7413,19 @@ Version 7.29までの調査で残っていたUnconfirmed項目について、プ
 - FUR-033（EXTENSIONTABLE CASE）：Material。
 - FIR-028（shank heater 百式改）：Brand。
 - SHL-001（幕男）：Material。
+
+- Related Documents：変更なし。
+
+## Version 7.32
+
+Version 7.31で残っていた最後の3件のUnconfirmedについて、プロジェクトオーナーの現物確認が取れたため反映した。これにより、Coffee Domain（意図的に未入力のCOF-series）を除く、全DomainのOwned／EssentialアイテムのBrand・Color・Materialが確定した。
+
+あわせて、Excelスプレッドシートのマージ時に混入した「通称」表記のような非公式な注記が他に残っていないか、Industrial Attribute欄を全件確認した。LGT-054の「ネルガス」（Version 7.31で削除済み）以外に同種の注記は見つからなかった。なお、SHL-004の「国内流通名：スネイルシェルター」は公式な国内代理店表記であり、ネルガスのような非公式なあだ名とは性質が異なるため、削除対象としない。
+
+### Changes
+
+- FIR-028（shank heater 百式改）：Brandを「neru design works × calma store」に確定（プロジェクトオーナー確認）。
+- FUR-033（EXTENSIONTABLE CASE）：Materialを「Polyester」に確定（プロジェクトオーナー確認）。
+- SHL-001（幕男）：Materialを「Polyester」に確定（プロジェクトオーナー確認）。
 
 - Related Documents：変更なし。  
