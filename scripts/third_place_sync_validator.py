@@ -74,8 +74,20 @@ def normalize_status(value: str | None) -> str:
     return normalize(value or "")
 
 
+def strip_quantity_suffix(model: str) -> str:
+    """
+    Strip a trailing quantity marker such as "×2" or "x 2" from a
+    model name. Quantity is tracked separately (PX-005's Quantity
+    field), so a quantity suffix baked into a PX-004 table cell
+    (e.g. "FIKA12 ×2") must not prevent matching the same
+    equipment recorded without it (e.g. PX-005's "FIKA12").
+    """
+
+    return re.sub(r"\s*[×x]\s*\d+\s*$", "", model, flags=re.IGNORECASE)
+
+
 def equipment_key(brand: str, model: str) -> tuple[str, str]:
-    return normalize(brand), normalize(model)
+    return normalize(brand), normalize(strip_quantity_suffix(model))
 
 
 # ============================================================
@@ -201,6 +213,10 @@ def parse_px004_confirmed_configuration(
         - Snow Peak オーロラボトル 1L
         - YETI Yonder 1L
         - Snow Peak 酒筒 Titanium
+        - 9Barista Handle for 9Barista Espresso Machine（Walnutオプション）
+          (Handle Material Decision: a Confirmed accessory-level
+          decision on an already-Confirmed equipment, documented
+          as prose rather than a Category/Brand/Model/Status row)
     """
 
     records: list[Record] = []
@@ -220,6 +236,29 @@ def parse_px004_confirmed_configuration(
                 section="Latte Cup Configuration",
                 brand="DAMNGOOD × CATAPULT FACTORY",
                 model="FIKA12",
+                status="Confirmed",
+            )
+        )
+
+    # --------------------------------------------------------
+    # Handle Material Decision (9Barista Walnut Handle)
+    # --------------------------------------------------------
+
+    if re.search(
+        r"Handle Material Decision",
+        text,
+        flags=re.IGNORECASE,
+    ) and re.search(
+        r"Walnut仕様.{0,40}正式決定",
+        text,
+        flags=re.DOTALL,
+    ):
+        records.append(
+            Record(
+                document="PX-004",
+                section="Handle Material Decision",
+                brand="9Barista",
+                model="Handle for 9Barista Espresso Machine（Walnutオプション）",
                 status="Confirmed",
             )
         )
@@ -271,7 +310,11 @@ def parse_px005(text: str) -> list[Record]:
     Expected fields:
 
         Manufacturer
-        Model
+        Model (or, when the current purchase model has diverged
+            from the originally Confirmed one, "PX-004 Model" is
+            used instead to preserve the literal PX-004 wording
+            for synchronization purposes; "Current Purchase Model"
+            is metadata only and never used for comparison)
         Acquisition Status
     """
 
@@ -310,7 +353,7 @@ def parse_px005(text: str) -> list[Record]:
             continue
 
         match = re.match(
-            r"^\|\s*(Manufacturer|Model|Acquisition Status)"
+            r"^\|\s*(Manufacturer|Model|PX-004 Model|Acquisition Status)"
             r"\s*\|\s*(.*?)\s*\|$",
             stripped,
         )
@@ -324,7 +367,7 @@ def parse_px005(text: str) -> list[Record]:
         if field == "Manufacturer":
             brand = value
 
-        elif field == "Model":
+        elif field in ("Model", "PX-004 Model"):
             model = value
 
         elif field == "Acquisition Status":
@@ -463,6 +506,10 @@ def check_px004_missing_from_px005(
         Confirmed decision
             ↓
         missing acquisition record
+
+    Matching is quantity-suffix-insensitive (see
+    strip_quantity_suffix) and PX-005 may record the model under
+    either "Model" or "PX-004 Model" (see parse_px005).
     """
 
     acquisition = {
@@ -503,6 +550,12 @@ def check_px005_against_px004(
         Included
         Already Owned
         To Be Confirmed
+
+    Exception: "Included" records are, by PX-005's own Acquisition
+    Status Policy, accessories bundled with another Confirmed
+    equipment ("他のConfirmed Equipmentに付属し、追加購入不要") —
+    they are intentionally never given their own PX-004 Confirmed
+    row, so they are exempt from this check.
     """
 
     confirmed = {
@@ -526,6 +579,9 @@ def check_px005_against_px004(
         status = normalize_status(record.status)
 
         if status not in valid_statuses:
+            continue
+
+        if status == "included":
             continue
 
         key = equipment_key(
