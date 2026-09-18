@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.25  
+Version 7.26  
   
 ---  
   
@@ -153,7 +153,7 @@ Organic Furniture
 
 ### Price  
 
-¥53,900  
+¥65,000  
 
 ---  
 
@@ -193,7 +193,7 @@ Craft Leather
 
 ### Price  
 
-要確認  
+¥116,400  
 
 ---  
 
@@ -233,7 +233,7 @@ Hardware Custom
 
 ### Price  
 
-要確認  
+¥19,250  
 
 ---  
 
@@ -273,7 +273,7 @@ Leg Extension
 
 ### Price  
 
-¥10,780  
+¥30,360  
 
 ---  
 
@@ -313,7 +313,7 @@ Armrest Replacement
 
 ### Price  
 
-¥18,700  
+¥28,000  
 
 ---  
 
@@ -356,7 +356,7 @@ Organic Furniture
 
 ### Price  
 
-¥53,900  
+¥65,000  
 
 ---  
 
@@ -396,7 +396,7 @@ Seat Custom
 
 ### Price  
 
-¥74,800  
+¥68,000  
 
 ---  
 
@@ -436,7 +436,7 @@ Hardware Custom
 
 ### Price  
 
-要確認  
+¥37,400  
 
 ---  
 
@@ -476,7 +476,7 @@ Leg Extension
 
 ### Price  
 
-¥19,800  
+¥41,800  
 
 ---  
 
@@ -516,7 +516,7 @@ Armrest Replacement
 
 ### Price  
 
-¥18,700  
+¥28,900  
 
 ---  
 
@@ -552,7 +552,7 @@ Fireside Chair
 
 ### Price  
 
-¥32,780  
+¥38,500（ソマチェア2脚合計¥77,000の折半）  
 
 ---  
 
@@ -588,7 +588,7 @@ Fireside Chair
 
 ### Price  
 
-¥22,000  
+¥38,500（ソマチェア2脚合計¥77,000の折半）  
 
 ---  
 
@@ -817,7 +817,7 @@ Inflatable Sofa
 
 ### Price  
 
-¥38,000  
+¥37,000  
 
 ---  
 
@@ -853,7 +853,7 @@ Inflatable Bed
 
 ### Price  
 
-¥37,000  
+¥44,000  
 
 ---  
 
@@ -1526,7 +1526,7 @@ None
 
 ### Price  
 
-¥22,000  
+¥25,600  
 
 ---  
 
@@ -1598,7 +1598,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥25,000  
 
 ---  
 
@@ -1634,7 +1634,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥25,000  
 
 ---  
 
@@ -1670,7 +1670,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥25,000  
 
 ---  
 
@@ -1706,7 +1706,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥25,000  
 
 ---  
 
@@ -1751,7 +1751,7 @@ None
 
 ### Price  
 
-¥11,550  
+¥16,800  
 
 ---  
 
@@ -1787,7 +1787,7 @@ Custom Panel
 
 ### Price  
 
-要確認  
+¥9,980  
 
 ---  
 
@@ -1823,7 +1823,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥81,999  
 
 ---  
 
@@ -1859,7 +1859,7 @@ Portable LED Lantern
 
 ### Price  
 
-¥14,800  
+¥25,000  
 
 ---  
 
@@ -1895,7 +1895,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥32,000  
 
 ---  
 
@@ -1967,7 +1967,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥48,890  
 
 ---  
 
@@ -2013,7 +2013,7 @@ Lantern Hanger
 
 ### Price  
 
-要確認  
+¥30,800  
 
 ---  
 
@@ -2053,7 +2053,7 @@ Slider
 
 ### Price  
 
-要確認  
+¥11,800  
 
 ---  
 
@@ -2089,7 +2089,7 @@ Airlight Shade
 
 ### Price  
 
-¥39,600  
+¥50,000  
 
 ---  
 
@@ -2125,7 +2125,7 @@ Airlight Shade
 
 ### Price  
 
-¥39,600  
+¥50,000  
 
 ---  
 
@@ -2161,7 +2161,7 @@ Airlight Shade
 
 ### Price  
 
-¥39,600  
+¥50,000  
 
 ---  
 
@@ -2197,7 +2197,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥13,970  
 
 ---  
 
@@ -2233,7 +2233,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥14,800  
 
 ---  
 
@@ -2269,7 +2269,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥13,970  
 
 ---  
 
@@ -2305,7 +2305,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥13,970  
 
 ---  
 
@@ -2454,7 +2454,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥4,780  
 
 ---  
 
@@ -2567,7 +2567,7 @@ Airlight Shade
 
 ### Price  
 
-要確認  
+¥67,777  
 
 ---  
 
@@ -2607,7 +2607,7 @@ Lantern Stand（Base W160×D160×H15mm, Brass Pole H270mm, 1/4-inch screw thread
 
 ### Price  
 
-¥11,440  
+¥16,720  
 
 ---  
 
@@ -2648,7 +2648,7 @@ Airlight Shade
 
 ### Price  
 
-要確認  
+¥27,170  
 
 ---  
 
@@ -2728,7 +2728,7 @@ Airlight Shade
 
 ### Price  
 
-要確認  
+¥40,000  
 
 ---  
 
@@ -2800,7 +2800,7 @@ Airlight Shade
 
 ### Price  
 
-要確認  
+¥18,450  
 
 ---  
 
@@ -2844,7 +2844,7 @@ Premium Lantern
 
 ### Price  
 
-¥12,870  
+¥25,740（2個合計）  
 
 ---  
 
@@ -2884,7 +2884,7 @@ Airlight Shade (Hanging)
 
 ### Price  
 
-要確認  
+¥45,000  
 
 ---  
 
@@ -3732,7 +3732,7 @@ Mosquito Coil Holder
 
 ### Price  
 
-要確認  
+¥27,000  
 
 ---  
 
@@ -3928,6 +3928,10 @@ None
 
 Top Board  
 
+### Price  
+
+¥64,800  
+
 ---  
 
 ## STR-003  
@@ -3963,6 +3967,10 @@ None
 ### Industrial Attribute  
 
 Side Expansion  
+
+### Price  
+
+¥49,980  
 
 ---  
 
@@ -4000,6 +4008,10 @@ None
 
 Handle Custom  
 
+### Price  
+
+¥14,800  
+
 ---  
 
 ## STR-005  
@@ -4036,6 +4048,10 @@ None
 
 Grip Custom  
 
+### Price  
+
+¥28,000  
+
 ---  
 
 ## STR-006  
@@ -4071,6 +4087,10 @@ None
 ### Industrial Attribute  
 
 Leg Custom  
+### Price  
+
+¥33,880  
+
 ---  
 
 ## STR-007  
@@ -4117,7 +4137,7 @@ Storage Container
 
 ### Price  
 
-要確認  
+¥29,800  
 
 ---  
 
@@ -4151,6 +4171,10 @@ Walnut / Resin
 
 Top Board  
 
+### Price  
+
+¥76,500  
+
 ---  
 
 ## STR-009  
@@ -4183,6 +4207,10 @@ Steel
 
 Side Expansion  
 
+### Price  
+
+¥39,800  
+
 ---  
 
 ## STR-010  
@@ -4214,6 +4242,10 @@ Steel
 ### Industrial Attribute  
 
 Handle Custom  
+
+### Price  
+
+¥27,500  
 
 ---  
 
@@ -4279,6 +4311,10 @@ Steel
 
 Leg Custom  
 
+### Price  
+
+¥17,000  
+
 ---  
 
 ## STR-013  
@@ -4313,7 +4349,7 @@ Modular Storage（Kitchen）
 
 ### Price  
 
-¥43,450  
+¥55,000（2台合計¥110,000の折半）  
 
 ---  
 
@@ -4346,6 +4382,10 @@ Brown
 ### Material  
 
 Oak  
+
+### Price  
+
+¥16,500  
 
 ---  
 
@@ -4381,7 +4421,7 @@ Modular Storage（Coffee & Table Components）
 
 ### Price  
 
-¥43,450  
+¥55,000（2台合計¥110,000の折半）  
 
 ---  
 
@@ -4415,6 +4455,10 @@ Brown
 
 Walnut  
 
+### Price  
+
+¥16,500  
+
 ---  
 
 ## STR-017  
@@ -4443,6 +4487,10 @@ Black
 ### Material  
 
 Black Skin Iron  
+
+### Price  
+
+¥30,800  
 
 ---  
 
@@ -4475,6 +4523,10 @@ Brown
 ### Material  
 
 Walnut  
+
+### Price  
+
+¥16,500  
 
 ---  
 
@@ -4510,7 +4562,7 @@ Under Shelf
 
 ### Price  
 
-¥30,800  
+¥25,300  
 
 ---  
 
@@ -5412,7 +5464,7 @@ Fire Pit
 
 ### Price  
 
-要確認  
+¥44,000  
 
 ---  
 
@@ -5452,7 +5504,7 @@ Fire Table (stand for FIR-001 RODAN BRICK)
 
 ### Price  
 
-¥26,950  
+¥25,080  
 
 ---  
 
@@ -5488,7 +5540,7 @@ Fire Tool Stand
 
 ### Price  
 
-要確認  
+¥85,000  
 
 ---  
 
@@ -5524,7 +5576,7 @@ Axe
 
 ### Price  
 
-要確認  
+¥33,000  
 
 ---  
 
@@ -5640,7 +5692,7 @@ Grip Custom
 
 ### Price  
 
-¥4,400  
+¥6,380  
 
 ---  
 
@@ -5720,7 +5772,7 @@ Grip Custom
 
 ### Price  
 
-¥4,400  
+¥4,810  
 
 ---  
 
@@ -5756,7 +5808,7 @@ Fire Poker
 
 ### Price  
 
-¥11,000  
+¥19,800  
 
 ---  
 
@@ -5792,7 +5844,7 @@ Fire Blower
 
 ### Price  
 
-¥15,400  
+¥33,000  
 
 ---  
 
@@ -5876,7 +5928,7 @@ Grip Custom
 
 ### Price  
 
-¥4,400  
+¥4,810  
 
 ---  
 
@@ -5956,7 +6008,7 @@ Torch Barrel
 
 ### Price  
 
-要確認  
+¥13,200  
 
 ---  
 
@@ -7236,5 +7288,21 @@ MARI様がClaude導入以前に個人管理していたスプレッドシート�
 - STR-032（YETI Rambler Half Gallon Jug）・SHL-004（Slug Shelter V2.0）の価格が未確認。  
 - Furniture Domainの番号整理（Kermit CARRY TOTEの適切な位置への挿入）が未対応。  
 - 上記以外の新規登録アイテムの一部（ニッチなガレージブランド品）は、ウェブ上での公式情報が確認できず、購入記録上の名称をそのまま採用している。  
+
+- Related Documents：変更なし。  
+
+## Version 7.26  
+
+MARI様がClaude導入以前に個人管理していたスプレッドシート（Numbersファイル）から、Price未記載だった既存登録済みアイテムの価格情報を抽出し反映した。
+
+### Changes  
+
+- 全65件の既存アイテム（Furniture 17件、Light 28件、Aroma 1件、Storage 17件、Fire 13件相当、重複ID含む）にPriceフィールドを追加。  
+- STR-013・STR-015（Beck Container①②）：Numbers記載の合計価格（¥110,000／2台分）を折半して各¥55,000として記録。  
+- FUR-011・FUR-012（SOMAチェア①②）：Numbers記載の合計価格（¥77,000／2脚分）を折半して各¥38,500として記録。  
+- STR-007：Numbers上「シェルコン①」表記だったが、製品名（Black Label）に基づきSTR-007（Shellcon 02）へ割当（Version 7.25で確立した「矛盾時はTP側を正とする」原則の逆側、すなわちTP-004の製品名を基準にNumbers側のラベル誤りを解釈）。STR-001は該当データなしのまま。  
+- LGT-037：Numbers上「RT-01/ECHO LAMP」関連の重複記載（タープC-1／タープC-1-2）のうち、rove troupe本体に一致する側を採用。LGT-027は該当データなしのまま。  
+- LGT-036：Numbers記載額はQuantity 2（38-kT THE RICH classic100 ×2）の合計額であることをMARI様に確認済み。単価分割はせず、合計額のままPriceへ記録し、その旨を注記。  
+- 引き続きPriceが空欄のアイテム（コンテナ本体・チェア本体等、Numbers上に取得当時の記録が残っていなかったもの）は、今後判明次第追記する。  
 
 - Related Documents：変更なし。  
