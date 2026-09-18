@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.30  
+Version 7.31  
   
 ---  
   
@@ -536,7 +536,7 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
@@ -1017,7 +1017,7 @@ Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しF
 
 **Brand**  
 
-Unconfirmed  
+Release  
 
 **Product**  
 
@@ -1034,11 +1034,11 @@ FUR-002
 
 ### Color  
 
-Unconfirmed  
+Gold  
 
 ### Material  
 
-Unconfirmed  
+Brass  
 
 ### Industrial Attribute  
 
@@ -1075,7 +1075,7 @@ Black
 
 ### Material  
 
-Unconfirmed  
+Iron  
 
 ### Industrial Attribute  
 
@@ -1091,7 +1091,7 @@ Table Top Frame（天板枠 左）
 
 **Brand**  
 
-Unconfirmed  
+DEVISE WORKS  
 
 **Product**  
 
@@ -1112,7 +1112,7 @@ Black
 
 ### Material  
 
-Unconfirmed  
+Iron  
 
 ### Industrial Attribute  
 
@@ -1128,7 +1128,7 @@ Table Top Frame（天板枠 右）
 
 **Brand**  
 
-Unconfirmed  
+DEVISE WORKS  
 
 **Product**  
 
@@ -1165,7 +1165,7 @@ Table Silicone Mat
 
 **Brand**  
 
-Unconfirmed  
+DEVISE WORKS  
 
 **Product**  
 
@@ -1260,11 +1260,11 @@ FUR-014
 
 ### Color  
 
-Unconfirmed  
+Gold  
 
 ### Material  
 
-Unconfirmed  
+Brass  
 
 ### Industrial Attribute  
 
@@ -1292,11 +1292,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Dark Brown  
 
 ### Material  
 
-Unconfirmed  
+Walnut  
 
 ### Industrial Attribute  
 
@@ -1329,7 +1329,7 @@ FUR-014
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
@@ -3435,15 +3435,15 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Gold  
 
 ### Material  
 
-Unconfirmed  
+Brass  
 
 ### Industrial Attribute  
 
-Gas Lantern（本体、通称「ネルガス」）  
+Gas Lantern（本体）  
 
 ### Price  
 
@@ -3454,7 +3454,7 @@ Gas Lantern（本体、通称「ネルガス」）
 
 **Brand**  
 
-MOLDS Tokyo  
+neru design works  
 
 **Product**  
 
@@ -3471,11 +3471,11 @@ LGT-054
 
 ### Color  
 
-Unconfirmed  
+Copper（Marbled Patina）  
 
 ### Material  
 
-Unconfirmed  
+Copper（Chemically Patinated）  
 
 ### Industrial Attribute  
 
@@ -3579,11 +3579,11 @@ LGT-002
 
 ### Color  
 
-Unconfirmed  
+Amber  
 
 ### Material  
 
-Unconfirmed  
+Glass  
 
 ### Industrial Attribute  
 
@@ -3651,11 +3651,11 @@ LGT-036
 
 ### Color  
 
-Unconfirmed  
+Gold  
 
 ### Material  
 
-Unconfirmed  
+Brass  
 
 ### Industrial Attribute  
 
@@ -4885,7 +4885,7 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Silver  
 
 ### Material  
 
@@ -4904,7 +4904,7 @@ Insulated Jug (1.9L)
 
 **Brand**  
 
-Unconfirmed  
+calma store  
 
 **Product**  
 
@@ -4921,7 +4921,7 @@ STR-032
 
 ### Color  
 
-Unconfirmed  
+Brown  
 
 ### Material  
 
@@ -4961,7 +4961,7 @@ Black
 
 ### Material  
 
-Unconfirmed  
+Iron  
 
 ### Industrial Attribute  
 
@@ -4997,7 +4997,7 @@ Black
 
 ### Material  
 
-Unconfirmed  
+Iron  
 
 ### Industrial Attribute  
 
@@ -5029,7 +5029,7 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
@@ -6156,11 +6156,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
-Unconfirmed  
+Iron  
 
 ### Industrial Attribute  
 
@@ -6175,7 +6175,7 @@ Trivet（五徳）
 
 **Brand**  
 
-Unconfirmed  
+zen camp  
 
 **Product**  
 
@@ -6187,11 +6187,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
-Unconfirmed  
+Silicone-Coated Fiberglass  
 
 ### Industrial Attribute  
 
@@ -6206,7 +6206,7 @@ Fire-Resistant Sheet
 
 **Brand**  
 
-DEVISE WORKS  
+asimocrafts × DEVISE WORKS  
 
 **Product**  
 
@@ -6218,11 +6218,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Brown  
 
 ### Material  
 
-Steel  
+Steel / Oak  
 
 ### Industrial Attribute  
 
@@ -6237,7 +6237,7 @@ Fire Knife
 
 **Brand**  
 
-Unconfirmed  
+DAMNGOOD!!  
 
 **Product**  
 
@@ -6254,11 +6254,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
-Unconfirmed  
+Iron  
 
 ### Industrial Attribute  
 
@@ -6308,7 +6308,7 @@ Fireside Stand
 
 **Brand**  
 
-neru design works  
+neru design works × calma store  
 
 **Product**  
 
@@ -6325,11 +6325,11 @@ FIR-004
 
 ### Color  
 
-Unconfirmed  
+Gold  
 
 ### Material  
 
-Unconfirmed  
+Brass  
 
 ### Industrial Attribute  
 
@@ -6416,7 +6416,7 @@ Gas Stove
 
 **Brand**  
 
-Unconfirmed  
+neru design works  
 
 **Product**  
 
@@ -6433,11 +6433,11 @@ FIR-028
 
 ### Color  
 
-Unconfirmed  
+Camouflage  
 
 ### Material  
 
-Unconfirmed  
+Nylon  
 
 ### Industrial Attribute  
 
@@ -6452,7 +6452,7 @@ Stove Bag
 
 **Brand**  
 
-DEVISE WORKS  
+DEVISE WORKS × WHAT WE WANT  
 
 **Product**  
 
@@ -6464,11 +6464,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Dark Brown  
 
 ### Material  
 
-Unconfirmed  
+Walnut  
 
 ### Industrial Attribute  
 
@@ -6495,11 +6495,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Light Brown  
 
 ### Material  
 
-Unconfirmed  
+Oak  
 
 ### Industrial Attribute  
 
@@ -6511,6 +6511,37 @@ Fireside Fork
 
 ---  
 ## FIR-032  
+
+**Brand**  
+
+SOMABITO  
+
+**Product**  
+
+SOMA no Hera  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Light Brown  
+
+### Material  
+
+Oak  
+
+### Industrial Attribute  
+
+Fireside Spatula  
+
+### Price  
+
+¥11,800  
+
+---  
+## FIR-033  
 
 **Brand**  
 
@@ -6531,11 +6562,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Brown / Dark Brown  
 
 ### Material  
 
-Unconfirmed  
+Walnut / Oak  
 
 ### Industrial Attribute  
 
@@ -6544,37 +6575,6 @@ Hook
 ### Price  
 
 ¥7,040  
-
----  
-## FIR-033  
-
-**Brand**  
-
-SOMABITO  
-
-**Product**  
-
-SOMA no Hera  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Unconfirmed  
-
-### Material  
-
-Unconfirmed  
-
-### Industrial Attribute  
-
-Fireside Spatula  
-
-### Price  
-
-¥11,800  
 
 ---  
 ## FIR-034  
@@ -6598,11 +6598,11 @@ FIR-001
 
 ### Color  
 
-Unconfirmed  
+Gray  
 
 ### Material  
 
-Unconfirmed  
+Nitrided Iron（窒化処理）  
 
 ### Industrial Attribute  
 
@@ -6634,7 +6634,7 @@ FIR-001
 
 ### Color  
 
-Unconfirmed  
+Gray  
 
 ### Material  
 
@@ -6730,7 +6730,7 @@ Iron Table Carrying Case（旧STR-021より移設）
 
 **Brand**  
 
-Unconfirmed  
+The Arth  
 
 **Product**  
 
@@ -6747,7 +6747,7 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
@@ -6766,7 +6766,7 @@ Winter Hexa Tarp
 
 **Brand**  
 
-DEVISE  
+DEVISE WORKS  
 
 **Product**  
 
@@ -6787,11 +6787,11 @@ SHL-001
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
-Unconfirmed  
+Polyester  
 
 ### Industrial Attribute  
 
@@ -7358,5 +7358,60 @@ Version 7.29で保留としていたFIR-035のBrand訂正について、プロ�
 ### Changes
 
 - FIR-035（半月セット）：Brandを誤記の「Blick」から「サンゾー工務店」へ訂正（プロジェクトオーナー確認。FIR-001 RODAN BRICKと同一メーカーによるオプションパーツ）。Materialを「Nitrided Iron（窒化処理）」に確定（RODANシリーズ共通仕様）。Colorは個体を特定できないため引き続きUnconfirmed。
+
+- Related Documents：変更なし。
+
+## Version 7.31
+
+Version 7.29までの調査で残っていたUnconfirmed項目について、プロジェクトオーナーが現物・購入記録を確認し、まとめて情報提供を受けた。提供された内容をそのまま反映した。ウェブ調査による推測ではなく、すべてプロジェクトオーナー本人による現物確認に基づく一次情報である。
+
+### Changes（Furniture）
+
+- FUR-011（Kermit CARRY TOTE）：Colorを「Black」に確定。
+- FUR-025（真聖衣）：Brandを「Release」、Colorを「Gold」、Materialを「Brass」に確定。
+- FUR-026（2UNITFRAME NDW ver.）：Materialを「Iron」に確定。
+- FUR-027（TSURAICHI KUROWAKU）：Brandを「DEVISE WORKS」、Materialを「Iron」に確定。
+- FUR-028（CUTTING MAT BLACK）・FUR-029（CUTTING MAT White）：Brandを「DEVISE WORKS」に確定。
+- FUR-031（WWW_EXTENSIONSIDEBAR NDWver）：Colorを「Gold」、Materialを「Brass」に確定。
+- FUR-032（IGT 1ユニットスタンド）：Colorを「Dark Brown」、Materialを「Walnut」に確定。
+- FUR-033（EXTENSIONTABLE CASE）：Colorを「Black」に確定（Materialは未確認のまま維持）。
+
+### Changes（Light）
+
+- LGT-054（BM Lanthan）：Colorを「Gold」、Materialを「Brass」に確定。Industrial Attributeから通称「ネルガス」の注記を削除。
+- LGT-055（Vintage cover250）：Brandを「MOLDS Tokyo」から「neru design works」へ訂正（プロジェクトオーナー確認）。Colorを「Copper（Marbled Patina）」、Materialを「Copper（Chemically Patinated）」に確定。
+- LGT-058（クラッシュアイス）：Colorを「Amber」、Materialを「Glass」に確定。
+- LGT-060（FORKBASEset (BS)）：Colorを「Gold」、Materialを「Brass」に確定。
+
+### Changes（Storage）
+
+- STR-032（Rambler® Half Gallon Jug）：Colorを「Silver」に確定。
+- STR-032a（KRAKEN STAND）：Brandを「calma store」、Colorを「Brown」に確定。
+- STR-013a・STR-015a（Black Stand）：Materialを「Iron」に確定。
+- STR-033（ユニバーサルスタンド）：Colorを「Black」に確定。
+
+### Changes（Fire）
+
+- FIR-021（LECTER Ver2）：Colorを「Black」、Materialを「Iron」に確定。
+- FIR-022（TAKIBI SHEET）：Brandを「zen camp」、Colorを「Black」、Materialを「Silicone-Coated Fiberglass」に確定。
+- FIR-023（MACKY DEVISE）：Brandを「DEVISE WORKS」から「asimocrafts × DEVISE WORKS」へ訂正（プロジェクトオーナー確認）。Colorを「Brown」に確定。Materialを「Steel」から「Steel / Oak」へ更新（柄部の素材を追加）。
+- FIR-024（HONE HOOK）：Brandを「DAMNGOOD!!」、Colorを「Black」、Materialを「Iron」に確定。
+- FIR-026（Ono kezuruカバー）：Brandを「neru design works」から「neru design works × calma store」へ訂正（プロジェクトオーナー確認）。Colorを「Gold」、Materialを「Brass」に確定。
+- FIR-029（shank container）：Brandを「neru design works」、Colorを「Camouflage」、Materialを「Nylon」に確定。
+- FIR-030（MACCHO CASE）：Brandを「DEVISE WORKS」から「DEVISE WORKS × WHAT WE WANT」へ訂正（プロジェクトオーナー確認）。Colorを「Dark Brown」、Materialを「Walnut」に確定。
+- FIR-031（SOMA no Folk）：Colorを「Light Brown」、Materialを「Oak」に確定。
+- **FIR-032／FIR-033：番号を入れ替え**。プロジェクトオーナーの指示により、SOMA no Hera（SOMABITO）をFIR-032へ、WWW_HANGER（WHAT WE WANT）をFIR-033へ番号変更。IDが変更されない原則に対する例外として、Version 7.28（Furniture番号整理）と同様の扱いとする。FIR-032（SOMA no Hera）：Colorを「Light Brown」、Materialを「Oak」に確定。FIR-033（WWW_HANGER）：Colorを「Brown / Dark Brown」、Materialを「Walnut / Oak」に確定（7個中、素材違いの2バリエーションが混在）。他ドキュメントにFIR-032／FIR-033への参照は存在しないため、相互参照の更新は不要と確認済み。
+- FIR-034（カスタムベロ）・FIR-035（半月セット）：Colorを「Gray」に確定。FIR-034のMaterialを「Nitrided Iron（窒化処理）」に確定（FIR-035と同一仕様）。
+
+### Changes（Shelter）
+
+- SHL-001（幕男）：Brandを「The Arth」、Colorを「Black」に確定（プロジェクトオーナー確認、https://thearth.design/item-detail/1450017 ）。
+- SHL-002（W3.8 ROPE（DEVISE ver.））：Brandを「DEVISE」から「DEVISE WORKS」へ表記統一。Colorを「Black」、Materialを「Polyester」に確定。
+
+### 引き続きUnconfirmedのまま残る項目
+
+- FUR-033（EXTENSIONTABLE CASE）：Material。
+- FIR-028（shank heater 百式改）：Brand。
+- SHL-001（幕男）：Material。
 
 - Related Documents：変更なし。  
