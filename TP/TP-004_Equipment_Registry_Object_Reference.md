@@ -151,6 +151,10 @@ None
 
 Organic Furniture  
 
+### Price  
+
+¥53,900  
+
 ---  
 
 ## FUR-002  
@@ -186,6 +190,10 @@ None
 ### Industrial Attribute  
 
 Craft Leather  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -223,6 +231,10 @@ None
 
 Hardware Custom  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## FUR-004  
@@ -259,6 +271,10 @@ None
 
 Leg Extension  
 
+### Price  
+
+¥10,780  
+
 ---  
 
 ## FUR-005  
@@ -294,6 +310,10 @@ Occult Emblem
 ### Industrial Attribute  
 
 Armrest Replacement  
+
+### Price  
+
+¥18,700  
 
 ---  
 
@@ -334,6 +354,10 @@ None
 
 Organic Furniture  
 
+### Price  
+
+¥53,900  
+
 ---  
 
 ## FUR-007  
@@ -369,6 +393,10 @@ None
 ### Industrial Attribute  
 
 Seat Custom  
+
+### Price  
+
+¥74,800  
 
 ---  
 
@@ -406,6 +434,10 @@ None
 
 Hardware Custom  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## FUR-009  
@@ -441,6 +473,10 @@ None
 ### Industrial Attribute  
 
 Leg Extension  
+
+### Price  
+
+¥19,800  
 
 ---  
 
@@ -478,6 +514,10 @@ Occult Emblem
 
 Armrest Replacement  
 
+### Price  
+
+¥18,700  
+
 ---  
 
 ## FUR-011  
@@ -510,6 +550,10 @@ Street Graffiti-style Occult Emblem (Silkscreen, White)
 
 Fireside Chair  
 
+### Price  
+
+¥32,780  
+
 ---  
 
 ## FUR-012  
@@ -541,6 +585,10 @@ None
 ### Industrial Attribute  
 
 Fireside Chair  
+
+### Price  
+
+¥22,000  
 
 ---  
 
@@ -579,6 +627,10 @@ Occult Emblem (Silkscreen, Black)
 
 Kitchen Extension Table  
 
+### Price  
+
+¥184,800  
+
 ---  
 
 ## FUR-014  
@@ -614,6 +666,10 @@ Street Graffiti-style Brand Logo (Cutout)
 ### Industrial Attribute  
 
 Unit Top Plate  
+
+### Price  
+
+¥12,650  
 
 ---  
 
@@ -651,6 +707,10 @@ Engraved Logo
 
 Unit Top Plate  
 
+### Price  
+
+¥20,900  
+
 ---  
 
 ## FUR-016  
@@ -682,6 +742,10 @@ Occult Emblem (Silkscreen)
 ### Industrial Attribute  
 
 Folding Table  
+
+### Price  
+
+¥41,800  
 
 ---  
 
@@ -715,6 +779,10 @@ None
 
 Side Table  
 
+### Price  
+
+¥66,000  
+
 ---  
 
 ## FUR-018  
@@ -747,6 +815,10 @@ None
 
 Inflatable Sofa  
 
+### Price  
+
+¥38,000  
+
 ---  
 
 ## FUR-019  
@@ -778,6 +850,10 @@ None
 ### Industrial Attribute  
 
 Inflatable Bed  
+
+### Price  
+
+¥37,000  
 
 ---  
 
@@ -815,6 +891,10 @@ None
 
 Quilt（関東〜雪中入門用、快適温度2℃・下限温度-4℃、FUR-021と併用が前提）  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## FUR-021  
@@ -850,6 +930,10 @@ None
 ### Industrial Attribute  
 
 Sleeping Mat（R値5.4・ASTM F3340-22準拠、2枚連結使用。FUR-020セット付属。FUR-022系との併用時は本格雪中用の主断熱層としても使用）  
+
+### Price  
+
+¥15,400  
 
 ---  
 
@@ -5122,6 +5206,10 @@ None
 
 Fire Pit  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## FIR-002  
@@ -5158,6 +5246,10 @@ None
 
 Fire Table (stand for FIR-001 RODAN BRICK)  
 
+### Price  
+
+¥26,950  
+
 ---  
 
 ## FIR-003  
@@ -5189,6 +5281,10 @@ None
 ### Industrial Attribute  
 
 Fire Tool Stand  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -5222,6 +5318,10 @@ None
 
 Axe  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## FIR-005  
@@ -5253,6 +5353,10 @@ None
 ### Industrial Attribute  
 
 Machete  
+
+### Price  
+
+¥29,700  
 
 ---  
 
@@ -5290,6 +5394,10 @@ None
 
 Fire Tongs  
 
+### Price  
+
+¥10,780  
+
 ---  
 
 ## FIR-007  
@@ -5325,6 +5433,10 @@ None
 ### Industrial Attribute  
 
 Grip Custom  
+
+### Price  
+
+¥4,400  
 
 ---  
 
@@ -5362,6 +5474,10 @@ None
 
 Ash Scoop  
 
+### Price  
+
+¥13,200  
+
 ---  
 
 ## FIR-009  
@@ -5398,6 +5514,10 @@ None
 
 Grip Custom  
 
+### Price  
+
+¥4,400  
+
 ---  
 
 ## FIR-010  
@@ -5430,6 +5550,10 @@ None
 
 Fire Poker  
 
+### Price  
+
+¥11,000  
+
 ---  
 
 ## FIR-011  
@@ -5461,6 +5585,10 @@ None
 ### Industrial Attribute  
 
 Fire Blower  
+
+### Price  
+
+¥15,400  
 
 ---  
 
@@ -5502,6 +5630,10 @@ None
 
 Torch  
 
+### Price  
+
+¥7,920  
+
 ---  
 
 ## FIR-013  
@@ -5537,6 +5669,10 @@ None
 ### Industrial Attribute  
 
 Grip Custom  
+
+### Price  
+
+¥4,400  
 
 ---  
 
@@ -5574,6 +5710,10 @@ None
 
 Gas Tube Cover  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## FIR-015  
@@ -5609,6 +5749,10 @@ None
 ### Industrial Attribute  
 
 Torch Barrel  
+
+### Price  
+
+要確認  
 
 ---  
 
@@ -5646,6 +5790,10 @@ None
 
 Torch Barrel  
 
+### Price  
+
+¥8,800  
+
 ---  
 
 ## FIR-017  
@@ -5682,6 +5830,10 @@ None
 
 Torch Knob  
 
+### Price  
+
+¥2,400  
+
 ---  
 
 ## FIR-018  
@@ -5713,6 +5865,10 @@ None
 ### Industrial Attribute  
 
 Kerosene Heater  
+
+### Price  
+
+要確認  
 
 ---  
 
