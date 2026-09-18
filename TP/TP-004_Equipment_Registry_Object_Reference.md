@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.26  
+Version 7.27  
   
 ---  
   
@@ -865,7 +865,7 @@ Snow Peak
 
 **Product**  
 
-ダウン システムオフトン（BD-060, Quilt component only）  
+ダウン システムオフトン スリムマットセット（BD-060、掛け布団+マット一式）  
 
 **Status**  
 
@@ -881,7 +881,7 @@ Taupe / Classic Brown（トープ／クラシックブラウン。プロジェ�
 
 ### Material  
 
-50D Polyester（表地）／150D Polyester（裏地）／Down 95%・Feather 5%（中綿）  
+50D Polyester（表地）／150D Polyester（裏地）／Down 95%・Feather 5%（中綿、掛け布団部）／75D Polyester（マット部）  
 
 ### Graphic Attribute  
 
@@ -889,51 +889,11 @@ None
 
 ### Industrial Attribute  
 
-Quilt（関東〜雪中入門用、快適温度2℃・下限温度-4℃、FUR-021と併用が前提）  
+Quilt & Sleeping Mat Set（関東〜雪中入門用、快適温度2℃・下限温度-4℃。掛け布団+コンパクトワイドマット（R値5.4・ASTM F3340-22準拠、2枚連結使用）のセット販売のため、旧FUR-021単体マット登録は本IDへ統合。FUR-022系との併用時はマット部が本格雪中用の主断熱層としても使用）  
 
 ### Price  
 
-要確認  
-
----  
-
-## FUR-021  
-
-**Brand**  
-
-Snow Peak  
-
-**Product**  
-
-コンパクトワイドマット（TM-089）  
-
-**Status**  
-
-Essential  
-
-**Quantity**  
-
-2  
-
-### Color  
-
-Unconfirmed（マット単体の色名は未確認。FUR-020と同一セット内の付属品のため、Taupe / Classic Brownと同系統である可能性が高いが、未検証のためUnconfirmedのまま維持）  
-
-### Material  
-
-75D Polyester  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Sleeping Mat（R値5.4・ASTM F3340-22準拠、2枚連結使用。FUR-020セット付属。FUR-022系との併用時は本格雪中用の主断熱層としても使用）  
-
-### Price  
-
-¥15,400  
+¥44,000  
 
 ---  
 
@@ -961,7 +921,7 @@ Down（Full Custom Order）
 
 ### Industrial Attribute  
 
-Quilt（本格雪中用トップキルト。バックレス構造につきFUR-021・FUR-023との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はPX-007 Deliberation Codexで管理）  
+Quilt（本格雪中用トップキルト。バックレス構造につきFUR-020（マット部）・FUR-023との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はPX-007 Deliberation Codexで管理）  
 
 ---  
 
@@ -989,7 +949,7 @@ Closed-Cell Foam
 
 ### Industrial Attribute  
 
-Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-021の下に重ね敷きする想定）  
+Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-020（マット部）の下に重ね敷きする想定）  
 
 ---  
 
@@ -1017,7 +977,7 @@ Unconfirmed
 
 ### Industrial Attribute  
 
-Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-021全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はPX-007 Deliberation Codexで管理）  
+Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-020（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はPX-007 Deliberation Codexで管理）  
 
 ---  
 
@@ -1442,7 +1402,7 @@ Lantern Stand
 
 ### Price  
 
-要確認  
+¥95,000  
 
 ---  
 
@@ -1562,7 +1522,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥69,000  
 
 ---  
 
@@ -1931,7 +1891,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥29,700  
 
 ---  
 
@@ -2377,7 +2337,7 @@ Wood Sleeve
 
 ### Price  
 
-要確認  
+¥25,000  
 
 ---  
 
@@ -2413,7 +2373,7 @@ Portable LED Lantern
 
 ### Price  
 
-要確認  
+¥67,000  
 
 ---  
 
@@ -3840,7 +3800,7 @@ Vertical Diffuser
 
 ### Price  
 
-要確認  
+¥19,800  
 
 # Storage  
 
@@ -4682,7 +4642,7 @@ YETI
 
 **Product**  
 
-Hopper Flip 16  
+Hopper Flip 12  
 
 **Status**  
 
@@ -4702,7 +4662,7 @@ Soft Cooler
 
 ### Price  
 
-要確認  
+¥46,860  
 
 ---  
 
@@ -4784,7 +4744,7 @@ Dust Bucket（燃えるゴミ用。本体はWINDY AND RAINY「Folding wire T-box
 
 ### Price  
 
-要確認  
+¥50,600  
 
 ---  
 
@@ -5968,7 +5928,7 @@ Gas Tube Cover
 
 ### Price  
 
-要確認  
+¥28,000  
 
 ---  
 
@@ -6124,7 +6084,7 @@ Kerosene Heater
 
 ### Price  
 
-要確認  
+¥121,000  
 
 ---  
 
@@ -7306,3 +7266,27 @@ MARI様がClaude導入以前に個人管理していたスプレッドシート�
 - 引き続きPriceが空欄のアイテム（コンテナ本体・チェア本体等、Numbers上に取得当時の記録が残っていなかったもの）は、今後判明次第追記する。  
 
 - Related Documents：変更なし。  
+
+## Version 7.27  
+
+Version 7.26時点でPrice未確認（要確認）のまま残っていた11件について、ウェブ調査およびプロジェクトオーナーへの確認により価格情報を確定・反映した。あわせて、調査過程で判明したFUR-020／FUR-021の登録構造の誤り、およびSTR-025の型番誤記をプロジェクトオーナーの指摘に基づき訂正した。
+
+### Changes（Price確定、11件）
+
+- LGT-001（KUROshidare）：¥95,000（プロジェクトオーナー確認）。  
+- LGT-004（38-kT miyabi wood Joker）：¥69,000（プロジェクトオーナー確認）。  
+- LGT-014（MIYABI RICH Amber）：¥29,700（neru design works × LampUp公式価格）。  
+- LGT-026（38-kT miyabi Wood Maple）：¥25,000（プロジェクトオーナー確認）。  
+- LGT-027（TARPtoTARP × LampUp Glass Shade & Wood Stand Set）：¥67,000（プロジェクトオーナー確認）。  
+- ARM-004（UNIT/04 × KUNST・BAUM SCENT TOWER）：¥19,800（プロジェクトオーナー確認）。  
+- STR-025（YETI Hopper Flip 12）：¥46,860（YETI Japan公式価格）。型番訂正は下記参照。  
+- STR-028（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリートセット）：¥50,600（プロジェクトオーナー確認）。  
+- FIR-014（neru design works copper250）：¥28,000（プロジェクトオーナー確認）。  
+- FIR-018（武井バーナー Purple Stove 501A）：¥121,000（プロジェクトオーナー確認。生産終了品につき中古相場での記録）。  
+
+### Changes（構造訂正）
+
+- FUR-020／FUR-021：Snow Peak「ダウン システムオフトン スリムマットセット（BD-060）」は掛け布団+マットのセット販売であることが判明。単体マットとして別ID登録されていたFUR-021をFUR-020へ統合し、FUR-021は削除（Retiredではなく登録自体を撤回）。Price ¥44,000（セット価格）はFUR-020側に記録。FUR-022・FUR-023・FUR-024のIndustrial Attribute内のFUR-021参照、およびPX-007 Deliberation Codexの該当箇所を「FUR-020（マット部）」へ更新。  
+- STR-025：Product表記を誤記の「Hopper Flip 16」から正しい「Hopper Flip 12」へ訂正（16はモデル名ではなく容量16qtを指す表記だった）。  
+
+- Related Documents：PX-007 Deliberation Codex（FUR-020/021統合に伴う参照更新）。  
