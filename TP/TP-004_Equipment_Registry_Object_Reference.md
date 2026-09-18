@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.27  
+Version 7.28  
   
 ---  
   
@@ -524,6 +524,38 @@ Armrest Replacement
 
 **Brand**  
 
+Kermit Chair USA  
+
+**Product**  
+
+Kermit CARRY TOTE  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Carrying Tote（Kermit Chair①②共通使用、2脚収納可。Version 7.28にて、MARI様のご指示によりKermit Chair②の子部品群（FUR-007〜FUR-010）の直後の番号へ移動。以降のFurniture IDを1つずつ繰り下げ）  
+
+### Price  
+
+¥19,700  
+
+---  
+
+## FUR-012  
+
+**Brand**  
+
 DEVISE WORKS × SOMABITO  
 
 **Product**  
@@ -556,7 +588,7 @@ Fireside Chair
 
 ---  
 
-## FUR-012  
+## FUR-013  
 
 **Brand**  
 
@@ -592,7 +624,7 @@ Fireside Chair
 
 ---  
 
-## FUR-013  
+## FUR-014  
 
 **Brand**  
 
@@ -608,8 +640,8 @@ Owned
 
 ### Child Components  
 
-- FUR-014  
 - FUR-015  
+- FUR-016  
 
 ### Color  
 
@@ -633,7 +665,7 @@ Kitchen Extension Table
 
 ---  
 
-## FUR-014  
+## FUR-015  
 
 **Brand**  
 
@@ -649,7 +681,7 @@ Upgrade
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 ### Color  
 
@@ -673,7 +705,7 @@ Unit Top Plate
 
 ---  
 
-## FUR-015  
+## FUR-016  
 
 **Brand**  
 
@@ -689,7 +721,7 @@ Upgrade
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 ### Color  
 
@@ -713,7 +745,7 @@ Unit Top Plate
 
 ---  
 
-## FUR-016  
+## FUR-017  
 
 **Brand**  
 
@@ -749,7 +781,7 @@ Folding Table
 
 ---  
 
-## FUR-017  
+## FUR-018  
 
 **Brand**  
 
@@ -785,7 +817,7 @@ Side Table
 
 ---  
 
-## FUR-018  
+## FUR-019  
 
 **Brand**  
 
@@ -821,7 +853,7 @@ Inflatable Sofa
 
 ---  
 
-## FUR-019  
+## FUR-020  
 
 **Brand**  
 
@@ -857,7 +889,7 @@ Inflatable Bed
 
 ---  
 
-## FUR-020  
+## FUR-021  
 
 **Brand**  
 
@@ -921,7 +953,7 @@ Down（Full Custom Order）
 
 ### Industrial Attribute  
 
-Quilt（本格雪中用トップキルト。バックレス構造につきFUR-020（マット部）・FUR-023との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はPX-007 Deliberation Codexで管理）  
+Quilt（本格雪中用トップキルト。バックレス構造につきFUR-021（マット部）・FUR-023との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はPX-007 Deliberation Codexで管理）  
 
 ---  
 
@@ -949,7 +981,7 @@ Closed-Cell Foam
 
 ### Industrial Attribute  
 
-Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-020（マット部）の下に重ね敷きする想定）  
+Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-021（マット部）の下に重ね敷きする想定）  
 
 ---  
 
@@ -977,7 +1009,7 @@ Unconfirmed
 
 ### Industrial Attribute  
 
-Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-020（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はPX-007 Deliberation Codexで管理）  
+Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-021（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はPX-007 Deliberation Codexで管理）  
 
 ---  
 
@@ -1017,6 +1049,7 @@ Hardware / Screw Set Custom（ROYAL BROWN Chester Field Seat用カスタムパ�
 ¥18,655  
 
 ---  
+
 ## FUR-026  
 
 **Brand**  
@@ -1033,7 +1066,7 @@ Owned
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 
 ### Color  
@@ -1053,6 +1086,7 @@ Table Top Frame（天板枠 左）
 ¥16,500  
 
 ---  
+
 ## FUR-027  
 
 **Brand**  
@@ -1069,7 +1103,7 @@ Owned
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 
 ### Color  
@@ -1089,6 +1123,7 @@ Table Top Frame（天板枠 右）
 ¥17,160  
 
 ---  
+
 ## FUR-028  
 
 **Brand**  
@@ -1105,7 +1140,7 @@ Owned
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 
 ### Color  
@@ -1125,6 +1160,7 @@ Table Silicone Mat
 ¥8,350  
 
 ---  
+
 ## FUR-029  
 
 **Brand**  
@@ -1141,7 +1177,7 @@ Owned
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 
 ### Color  
@@ -1161,6 +1197,7 @@ Table Silicone Mat
 ¥8,350  
 
 ---  
+
 ## FUR-030  
 
 **Brand**  
@@ -1177,7 +1214,7 @@ Owned
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 
 ### Color  
@@ -1201,6 +1238,7 @@ Table Silicone Sheet
 ¥6,050  
 
 ---  
+
 ## FUR-031  
 
 **Brand**  
@@ -1217,7 +1255,7 @@ Owned
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 
 ### Color  
@@ -1237,6 +1275,7 @@ Table Hanger Hook
 ¥5,000  
 
 ---  
+
 ## FUR-032  
 
 **Brand**  
@@ -1268,38 +1307,8 @@ Table Unit Stand
 ¥20,200  
 
 ---  
+
 ## FUR-033  
-
-**Brand**  
-
-Kermit Chair USA  
-
-**Product**  
-
-Kermit CARRY TOTE  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Unconfirmed  
-
-### Material  
-
-Unconfirmed  
-
-### Industrial Attribute  
-
-Carrying Tote（Kermit Chair①②共通使用、2脚収納可。MARI様のご意向により本来はFUR-001の直後へ番号挿入・後続番号繰下げが望ましいが、今回の一括登録では既存IDへの影響を避けるため末尾に追加。別途Furniture Domainの番号整理を検討）  
-
-### Price  
-
-¥19,700  
-
----  
-## FUR-034  
 
 **Brand**  
 
@@ -1315,7 +1324,7 @@ Owned
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 
 ### Color  
@@ -1335,7 +1344,8 @@ Carrying Case（EXTENMON TABLE用）
 ¥15,400  
 
 ---  
-## FUR-035  
+
+## FUR-034  
 
 **Brand**  
 
@@ -4238,6 +4248,10 @@ Anodized Aluminum
 ### Industrial Attribute  
 
 Grip Custom  
+
+### Price  
+
+¥12,000  
 
 ---  
 
@@ -7290,3 +7304,22 @@ Version 7.26時点でPrice未確認（要確認）のまま残っていた11件�
 - STR-025：Product表記を誤記の「Hopper Flip 16」から正しい「Hopper Flip 12」へ訂正（16はモデル名ではなく容量16qtを指す表記だった）。  
 
 - Related Documents：PX-007 Deliberation Codex（FUR-020/021統合に伴う参照更新）。  
+
+## Version 7.28
+
+STR-011のPrice未記載を解消。また、プロジェクトオーナーの直接指示に基づき、Furniture Domainの番号整理を実施した。これはRegistry Rulesの「IDは変更されない」という原則に対する例外であり、Kermit Chair①②の専用収納ケース（旧FUR-033 Kermit CARRY TOTE）が、Kermit Chair②の子部品群（FUR-007〜FUR-010）の直後に位置すべきという実態に合わせるための、一回限りの意図的な再採番である。
+
+### Changes（Price確定）
+
+- STR-011（OMA FACTORY OMA.SC-PICATINNY RAIL-No.001G）：Price未記載だったため¥12,000を追記（プロジェクトオーナー確認）。
+
+### Changes（Furniture番号整理）
+
+- 旧FUR-033（Kermit CARRY TOTE）をFUR-011へ移動。Kermit Chair②の子部品群（FUR-007〜FUR-010）の直後に位置づけた。
+- 上記に伴い、旧FUR-011〜FUR-020をFUR-012〜FUR-021へ、旧FUR-022〜FUR-032は番号据え置き、旧FUR-034・FUR-035をFUR-033・FUR-034へ、それぞれ1つずつ繰り下げ。旧FUR-021（削除済み・欠番）は詰められ、Furniture Domainの登録範囲はFUR-001〜FUR-034の連番となった。
+- Parent参照（旧FUR-013→新FUR-014を親とする子部品群: 旧FUR-014・015・026〜031・034）、およびChild Componentsリスト（新FUR-006・新FUR-014）を、すべて新番号に更新。
+- FUR-022・FUR-023・FUR-024のIndustrial Attribute内の「FUR-020（マット部）」参照を「FUR-021（マット部）」へ更新（Quilt & Sleeping Mat Set本体の新ID反映）。
+- PX-007 Deliberation Codex（FUR-020参照2箇所）、PX-003 Vigil Protocol（FUR-017参照1箇所）を、新番号（FUR-021、FUR-018）へ更新。
+- Version 7.0〜7.27の記述内にある旧FUR-ID表記は、当時の記録として遡及修正しない。
+
+- Related Documents：PX-003 Vigil Protocol、PX-007 Deliberation Codex（Furniture番号整理に伴う参照更新）。  
