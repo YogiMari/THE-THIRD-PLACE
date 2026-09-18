@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.22  
+Version 7.23  
   
 ---  
   
@@ -3713,6 +3713,10 @@ BLACK EDITION マルチダストバケット
 
 Owned  
 
+**Parent**  
+
+STR-029  
+
 ### Color  
 
 Black  
@@ -3727,7 +3731,7 @@ None
 
 ### Industrial Attribute  
 
-Dust Bucket（燃えないゴミ〈缶・ビン〉用。STR-029 フォールディングサイドテーブルに収納して運用。使用頻度が低いため、多段階の取り出し動作を許容する。従来使用のSnow Peak ガビングスタンド（DB-030、STR-027としてRetired登録済み）からの置き換えとして採用）  
+Dust Bucket（燃えないゴミ〈缶・ビン〉用。使用頻度が低いため、多段階の取り出し動作を許容する。従来使用のSnow Peak ガビングスタンド（DB-030、STR-027としてRetired登録済み）からの置き換えとして採用）  
 
 ---  
 
@@ -3753,11 +3757,11 @@ Essential
 
 ### Color  
 
-Black（デジタルカモフラージュ柄）  
+Black（デジタルカモフラージュ柄。本体側はスチールメッキ地肌）  
 
 ### Material  
 
-X-PAC（詳細な生地構成は未確認。本体はWINDY AND RAINY製のスチールワイヤーフレーム）  
+Steel（メッキ加工、ワイヤー部）／Steel + Plastic（メッキ加工、脚部）／X-PAC（KAZE_TO_MORI製COVER・FUTA部、詳細な生地構成は未確認）  
 
 ### Graphic Attribute  
 
@@ -3765,7 +3769,7 @@ None
 
 ### Industrial Attribute  
 
-Dust Bucket（燃えるゴミ用。WINDY AND RAINYのFolding wire T-box本体に、KAZE_TO_MORIオリジナルのCOVER×2・FUTA×3を装着したフルセット。ブランドデザインのゴミ袋付属。フォールディングサイドテーブルを介さず単独で運用。使用頻度が高いため、取り出し動作の少ない構成とした。本体単体のサイズ・重量・開閉方式は未確認）  
+Dust Bucket（燃えるゴミ用。本体はWINDY AND RAINY「Folding wire T-box」（W395×H440×D195mm、重量約1420g、耐荷重20kg、ワンアクションで組み立て完了）。KAZE_TO_MORIオリジナルのCOVER×2・FUTA×3を装着したフルセットとして採用。ブランドデザインのゴミ袋付属。フォールディングサイドテーブルを介さず単独で運用。使用頻度が高いため、取り出し動作の少ない構成とした）  
 
 ---  
 
@@ -3783,6 +3787,10 @@ ANOBA
 
 Essential  
 
+### Child Components  
+
+- STR-026  
+
 ### Color  
 
 Black  
@@ -3797,7 +3805,7 @@ None
 
 ### Industrial Attribute  
 
-Side Table（STR-026収納用。SKU: AN139。サイズ約38×31×45Hcm、重量約2850g、静耐荷重天板約5kg・各棚約2.5kg）  
+Side Table（SKU: AN139。サイズ約38×31×45Hcm、重量約2850g、静耐荷重天板約5kg・各棚約2.5kg）  
 
 # Coffee  
 
@@ -4849,6 +4857,9 @@ STR-007
 └ STR-011  
 └ STR-012  
 
+STR-029  
+└ STR-026  
+
 ---  
 
 # Graphic Attribute（グラフィック属性）  
@@ -5140,4 +5151,18 @@ MARI様のご購入報告に基づき、STR-026（ANOBAダストバケット）�
 - STR-026：Industrial Attributeを、燃えないゴミ（缶・ビン）用・STR-029フォールディングサイドテーブルへ収納して運用する旨に修正。  
 - STR-028：検討枠（Candidate）から正式決定（Status: Essential）へ更新。Brand/Productを「KAZE_TO_MORI × WINDY AND RAINY / Folding Wire T-box 全面コンプリートセット」に確定。燃えるゴミ用として単独運用する。本体単体のサイズ・重量・開閉方式は未確認のため、Industrial Attributeにその旨を明記。  
 - STR-029：新規登録。ANOBA フォールディングサイドテーブル（Status: Essential）。STR-026の収納先として採用。  
+- Related Documents：変更なし。  
+
+---  
+
+## Version 7.23  
+
+プロジェクトオーナーの指示に基づき、STR-026とSTR-029をParent/Child関係として明示。あわせて、windyandrainy.tokyo公式ページの確認により、STR-028（T-box本体）のサイズ・重量・素材・耐荷重が判明したため反映。
+
+### Changes  
+
+- STR-026：**Parent** STR-029を追加。Industrial Attributeから、収納先を説明する記述（Parent/Childで自明になったため）を削除し簡素化。  
+- STR-029：**Child Components** STR-026を追加。  
+- STR-028：Color・Material・Industrial Attributeを、windyandrainy.tokyo公式ページ（商品コード war-037）の情報に基づき更新。本体サイズW395×H440×D195mm、重量約1420g、素材はスチールメッキ（ワイヤー部）／スチールメッキ+プラスチック（脚部）、耐荷重20kg、ワンアクション組み立てであることを確認・反映。KAZE_TO_MORI製COVER/FUTA部の生地構成（X-PAC）は引き続き未確認。  
+- Parent / Child Rules セクションのExampleに STR-029└STR-026 を追加。  
 - Related Documents：変更なし。  
