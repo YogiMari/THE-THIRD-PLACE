@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.29  
+Version 7.30  
   
 ---  
   
@@ -6617,7 +6617,7 @@ Rodan Custom Option Part（ベロ）
 
 **Brand**  
 
-Blick  
+サンゾー工務店  
 
 **Product**  
 
@@ -6638,7 +6638,7 @@ Unconfirmed
 
 ### Material  
 
-Unconfirmed  
+Nitrided Iron（窒化処理）  
 
 ### Industrial Attribute  
 
@@ -7349,6 +7349,14 @@ Owned/EssentialアイテムのうちBrand／Color／Materialが「Unconfirmed」
 ### 引き続きUnconfirmedのまま残る項目
 
 - 上記以外の項目（FUR-025〜027・031〜033、LGT-054・055・058、STR-013a・015a・032（Color）、FIR-022〜024・026・029〜033・035、SHL-001・002）：公式ページが見つからない、販売元と製造元の帰属が不明確、または複数バリエーションが存在し所有個体を特定できないため、引き続きUnconfirmedのまま保持する。今後、プロジェクトオーナーによる現物確認または追加情報の提供を待つ。
-- FIR-035（半月セット）：調査の過程で、現行のBrand表記「Blick」ではなく、サンゾー工務店RODANシリーズのオプションパーツである可能性が浮上したが、既存の確定済みフィールドを上書きする判断はプロジェクトオーナーの確認を要するため、今回は変更しない。
+- Related Documents：変更なし。
+
+## Version 7.30
+
+Version 7.29で保留としていたFIR-035のBrand訂正について、プロジェクトオーナーの確認が取れたため反映した。
+
+### Changes
+
+- FIR-035（半月セット）：Brandを誤記の「Blick」から「サンゾー工務店」へ訂正（プロジェクトオーナー確認。FIR-001 RODAN BRICKと同一メーカーによるオプションパーツ）。Materialを「Nitrided Iron（窒化処理）」に確定（RODANシリーズ共通仕様）。Colorは個体を特定できないため引き続きUnconfirmed。
 
 - Related Documents：変更なし。  
