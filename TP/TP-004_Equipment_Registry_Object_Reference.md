@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.25  
+Version 7.26  
   
 ---  
   
@@ -151,6 +151,10 @@ None
 
 Organic Furniture  
 
+### Price  
+
+¥65,000  
+
 ---  
 
 ## FUR-002  
@@ -186,6 +190,10 @@ None
 ### Industrial Attribute  
 
 Craft Leather  
+
+### Price  
+
+¥116,400  
 
 ---  
 
@@ -223,6 +231,10 @@ None
 
 Hardware Custom  
 
+### Price  
+
+¥19,250  
+
 ---  
 
 ## FUR-004  
@@ -259,6 +271,10 @@ None
 
 Leg Extension  
 
+### Price  
+
+¥30,360  
+
 ---  
 
 ## FUR-005  
@@ -294,6 +310,10 @@ Occult Emblem
 ### Industrial Attribute  
 
 Armrest Replacement  
+
+### Price  
+
+¥28,000  
 
 ---  
 
@@ -334,6 +354,10 @@ None
 
 Organic Furniture  
 
+### Price  
+
+¥65,000  
+
 ---  
 
 ## FUR-007  
@@ -369,6 +393,10 @@ None
 ### Industrial Attribute  
 
 Seat Custom  
+
+### Price  
+
+¥68,000  
 
 ---  
 
@@ -406,6 +434,10 @@ None
 
 Hardware Custom  
 
+### Price  
+
+¥37,400  
+
 ---  
 
 ## FUR-009  
@@ -441,6 +473,10 @@ None
 ### Industrial Attribute  
 
 Leg Extension  
+
+### Price  
+
+¥41,800  
 
 ---  
 
@@ -478,6 +514,10 @@ Occult Emblem
 
 Armrest Replacement  
 
+### Price  
+
+¥28,900  
+
 ---  
 
 ## FUR-011  
@@ -510,6 +550,10 @@ Street Graffiti-style Occult Emblem (Silkscreen, White)
 
 Fireside Chair  
 
+### Price  
+
+¥38,500（ソマチェア2脚合計¥77,000の折半）  
+
 ---  
 
 ## FUR-012  
@@ -541,6 +585,10 @@ None
 ### Industrial Attribute  
 
 Fireside Chair  
+
+### Price  
+
+¥38,500（ソマチェア2脚合計¥77,000の折半）  
 
 ---  
 
@@ -579,6 +627,10 @@ Occult Emblem (Silkscreen, Black)
 
 Kitchen Extension Table  
 
+### Price  
+
+¥184,800  
+
 ---  
 
 ## FUR-014  
@@ -615,6 +667,10 @@ Street Graffiti-style Brand Logo (Cutout)
 
 Unit Top Plate  
 
+### Price  
+
+¥12,650  
+
 ---  
 
 ## FUR-015  
@@ -650,6 +706,10 @@ Engraved Logo
 ### Industrial Attribute  
 
 Unit Top Plate  
+
+### Price  
+
+¥20,900  
 
 ---  
 
@@ -747,6 +807,10 @@ None
 
 Inflatable Sofa  
 
+### Price  
+
+¥37,000  
+
 ---  
 
 ## FUR-019  
@@ -778,6 +842,10 @@ None
 ### Industrial Attribute  
 
 Inflatable Bed  
+
+### Price  
+
+¥44,000  
 
 ---  
 
@@ -1432,6 +1500,10 @@ None
 
 38-kT Shade & Case  
 
+### Price  
+
+¥25,600  
+
 ---  
 
 ## LGT-004  
@@ -1496,6 +1568,10 @@ Satin Walnut
 
 Portable LED Lantern  
 
+### Price  
+
+¥25,000  
+
 ---  
 
 ## LGT-006  
@@ -1527,6 +1603,10 @@ Zebrawood
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+¥25,000  
 
 ---  
 
@@ -1560,6 +1640,10 @@ New Guinea Walnut
 
 Portable LED Lantern  
 
+### Price  
+
+¥25,000  
+
 ---  
 
 ## LGT-008  
@@ -1591,6 +1675,10 @@ Jindai Yakusugi
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+¥25,000  
 
 ---  
 
@@ -1633,6 +1721,10 @@ None
 
 38-kT Shade & Case  
 
+### Price  
+
+¥16,800  
+
 ---  
 
 ## LGT-010  
@@ -1664,6 +1756,10 @@ Stainless Steel
 ### Industrial Attribute  
 
 Custom Panel  
+
+### Price  
+
+¥9,980  
 
 ---  
 
@@ -1697,6 +1793,10 @@ Copper
 
 Portable LED Lantern  
 
+### Price  
+
+¥81,999  
+
 ---  
 
 ## LGT-012  
@@ -1729,6 +1829,10 @@ Mother of Pearl
 
 Portable LED Lantern  
 
+### Price  
+
+¥25,000  
+
 ---  
 
 ## LGT-013  
@@ -1760,6 +1864,10 @@ Celluloid (Tortoise Shell Pattern)
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+¥32,000  
 
 ---  
 
@@ -1825,6 +1933,10 @@ Aluminum
 
 Portable LED Lantern  
 
+### Price  
+
+¥48,890  
+
 ---  
 
 ## LGT-016  
@@ -1867,6 +1979,10 @@ None
 
 Lantern Hanger  
 
+### Price  
+
+¥30,800  
+
 ---  
 
 ## LGT-017  
@@ -1903,6 +2019,10 @@ Aluminum
 
 Slider  
 
+### Price  
+
+¥11,800  
+
 ---  
 
 ## LGT-018  
@@ -1934,6 +2054,10 @@ Walnut
 ### Industrial Attribute  
 
 Airlight Shade  
+
+### Price  
+
+¥50,000  
 
 ---  
 
@@ -1967,6 +2091,10 @@ Hinoki
 
 Airlight Shade  
 
+### Price  
+
+¥50,000  
+
 ---  
 
 ## LGT-020  
@@ -1998,6 +2126,10 @@ Pine
 ### Industrial Attribute  
 
 Airlight Shade  
+
+### Price  
+
+¥50,000  
 
 ---  
 
@@ -2031,6 +2163,10 @@ Walnut
 
 Portable LED Lantern  
 
+### Price  
+
+¥13,970  
+
 ---  
 
 ## LGT-022  
@@ -2062,6 +2198,10 @@ Sugi
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+¥14,800  
 
 ---  
 
@@ -2095,6 +2235,10 @@ Karin
 
 Portable LED Lantern  
 
+### Price  
+
+¥13,970  
+
 ---  
 
 ## LGT-024  
@@ -2126,6 +2270,10 @@ African Wood
 ### Industrial Attribute  
 
 Portable LED Lantern  
+
+### Price  
+
+¥13,970  
 
 ---  
 
@@ -2260,6 +2408,10 @@ None
 
 Portable LED Lantern  
 
+### Price  
+
+¥4,780  
+
 ---  
 
 ## LGT-028a  
@@ -2369,6 +2521,10 @@ None
 
 Airlight Shade  
 
+### Price  
+
+¥67,777  
+
 ---  
 
 ## LGT-030  
@@ -2404,6 +2560,10 @@ Engraved Design
 ### Industrial Attribute  
 
 Lantern Stand（Base W160×D160×H15mm, Brass Pole H270mm, 1/4-inch screw thread, compatible with tripod series）  
+
+### Price  
+
+¥16,720  
 
 ---  
 
@@ -2441,6 +2601,10 @@ None
 ### Industrial Attribute  
 
 Airlight Shade  
+
+### Price  
+
+¥27,170  
 
 ---  
 
@@ -2482,6 +2646,10 @@ Occult Emblem（Engraved, Gold Ink Inlay）
 
 Tabletop Lantern Stand（Base W140×D150×H26mm, Brass Pole H190mm, 1/4-inch screw thread）  
 
+### Price  
+
+¥16,720  
+
 ---  
 
 ## LGT-033  
@@ -2513,6 +2681,10 @@ Silicone
 ### Industrial Attribute  
 
 Airlight Shade  
+
+### Price  
+
+¥40,000  
 
 ---  
 
@@ -2578,6 +2750,10 @@ Leather
 
 Airlight Shade  
 
+### Price  
+
+¥18,450  
+
 ---  
 
 ## LGT-036  
@@ -2618,6 +2794,10 @@ None
 
 Premium Lantern  
 
+### Price  
+
+¥25,740（2個合計）  
+
 ---  
 
 ## LGT-037  
@@ -2653,6 +2833,10 @@ None
 ### Industrial Attribute  
 
 Airlight Shade (Hanging)  
+
+### Price  
+
+¥45,000  
 
 ---  
 
@@ -3442,6 +3626,10 @@ None
 
 Mosquito Coil Holder  
 
+### Price  
+
+¥27,000  
+
 ---  
 
 ## ARM-002  
@@ -3620,6 +3808,10 @@ None
 
 Top Board  
 
+### Price  
+
+¥64,800  
+
 ---  
 
 ## STR-003  
@@ -3655,6 +3847,10 @@ None
 ### Industrial Attribute  
 
 Side Expansion  
+
+### Price  
+
+¥49,980  
 
 ---  
 
@@ -3692,6 +3888,10 @@ None
 
 Handle Custom  
 
+### Price  
+
+¥14,800  
+
 ---  
 
 ## STR-005  
@@ -3728,6 +3928,10 @@ None
 
 Grip Custom  
 
+### Price  
+
+¥28,000  
+
 ---  
 
 ## STR-006  
@@ -3763,6 +3967,10 @@ None
 ### Industrial Attribute  
 
 Leg Custom  
+### Price  
+
+¥33,880  
+
 ---  
 
 ## STR-007  
@@ -3807,6 +4015,10 @@ None
 
 Storage Container  
 
+### Price  
+
+¥29,800  
+
 ---  
 
 ## STR-008  
@@ -3838,6 +4050,10 @@ Walnut / Resin
 ### Industrial Attribute  
 
 Top Board  
+
+### Price  
+
+¥76,500  
 
 ---  
 
@@ -3871,6 +4087,10 @@ Steel
 
 Side Expansion  
 
+### Price  
+
+¥39,800  
+
 ---  
 
 ## STR-010  
@@ -3902,6 +4122,10 @@ Steel
 ### Industrial Attribute  
 
 Handle Custom  
+
+### Price  
+
+¥27,500  
 
 ---  
 
@@ -3967,6 +4191,10 @@ Steel
 
 Leg Custom  
 
+### Price  
+
+¥17,000  
+
 ---  
 
 ## STR-013  
@@ -3998,6 +4226,10 @@ Painted Aluminum
 ### Industrial Attribute  
 
 Modular Storage（Kitchen）  
+
+### Price  
+
+¥55,000（2台合計¥110,000の折半）  
 
 ---  
 
@@ -4031,6 +4263,10 @@ Brown
 
 Oak  
 
+### Price  
+
+¥16,500  
+
 ---  
 
 ## STR-015  
@@ -4062,6 +4298,10 @@ Painted Aluminum
 ### Industrial Attribute  
 
 Modular Storage（Coffee & Table Components）  
+
+### Price  
+
+¥55,000（2台合計¥110,000の折半）  
 
 ---  
 
@@ -4095,6 +4335,10 @@ Brown
 
 Walnut  
 
+### Price  
+
+¥16,500  
+
 ---  
 
 ## STR-017  
@@ -4123,6 +4367,10 @@ Black
 ### Material  
 
 Black Skin Iron  
+
+### Price  
+
+¥30,800  
 
 ---  
 
@@ -4156,6 +4404,10 @@ Brown
 
 Walnut  
 
+### Price  
+
+¥16,500  
+
 ---  
 
 ## STR-019  
@@ -4187,6 +4439,10 @@ Aluminum
 ### Industrial Attribute  
 
 Under Shelf  
+
+### Price  
+
+¥25,300  
 
 ---  
 
@@ -5058,6 +5314,10 @@ None
 
 Fire Pit  
 
+### Price  
+
+¥44,000  
+
 ---  
 
 ## FIR-002  
@@ -5094,6 +5354,10 @@ None
 
 Fire Table (stand for FIR-001 RODAN BRICK)  
 
+### Price  
+
+¥25,080  
+
 ---  
 
 ## FIR-003  
@@ -5125,6 +5389,10 @@ None
 ### Industrial Attribute  
 
 Fire Tool Stand  
+
+### Price  
+
+¥85,000  
 
 ---  
 
@@ -5158,6 +5426,10 @@ None
 
 Axe  
 
+### Price  
+
+¥33,000  
+
 ---  
 
 ## FIR-005  
@@ -5189,6 +5461,10 @@ None
 ### Industrial Attribute  
 
 Machete  
+
+### Price  
+
+¥29,700  
 
 ---  
 
@@ -5226,6 +5502,10 @@ None
 
 Fire Tongs  
 
+### Price  
+
+¥10,780  
+
 ---  
 
 ## FIR-007  
@@ -5261,6 +5541,10 @@ None
 ### Industrial Attribute  
 
 Grip Custom  
+
+### Price  
+
+¥6,380  
 
 ---  
 
@@ -5298,6 +5582,10 @@ None
 
 Ash Scoop  
 
+### Price  
+
+¥13,200  
+
 ---  
 
 ## FIR-009  
@@ -5334,6 +5622,10 @@ None
 
 Grip Custom  
 
+### Price  
+
+¥4,810  
+
 ---  
 
 ## FIR-010  
@@ -5366,6 +5658,10 @@ None
 
 Fire Poker  
 
+### Price  
+
+¥19,800  
+
 ---  
 
 ## FIR-011  
@@ -5397,6 +5693,10 @@ None
 ### Industrial Attribute  
 
 Fire Blower  
+
+### Price  
+
+¥33,000  
 
 ---  
 
@@ -5474,6 +5774,10 @@ None
 
 Grip Custom  
 
+### Price  
+
+¥4,810  
+
 ---  
 
 ## FIR-014  
@@ -5545,6 +5849,10 @@ None
 ### Industrial Attribute  
 
 Torch Barrel  
+
+### Price  
+
+¥13,200  
 
 ---  
 
@@ -6812,5 +7120,21 @@ MARI様がClaude導入以前に個人管理していたスプレッドシート�
 - STR-032（YETI Rambler Half Gallon Jug）・SHL-004（Slug Shelter V2.0）の価格が未確認。  
 - Furniture Domainの番号整理（Kermit CARRY TOTEの適切な位置への挿入）が未対応。  
 - 上記以外の新規登録アイテムの一部（ニッチなガレージブランド品）は、ウェブ上での公式情報が確認できず、購入記録上の名称をそのまま採用している。  
+
+- Related Documents：変更なし。  
+
+## Version 7.26  
+
+MARI様がClaude導入以前に個人管理していたスプレッドシート（Numbersファイル）から、Price未記載だった既存登録済みアイテムの価格情報を抽出し反映した。
+
+### Changes  
+
+- 全65件の既存アイテム（Furniture 17件、Light 28件、Aroma 1件、Storage 17件、Fire 13件相当、重複ID含む）にPriceフィールドを追加。  
+- STR-013・STR-015（Beck Container①②）：Numbers記載の合計価格（¥110,000／2台分）を折半して各¥55,000として記録。  
+- FUR-011・FUR-012（SOMAチェア①②）：Numbers記載の合計価格（¥77,000／2脚分）を折半して各¥38,500として記録。  
+- STR-007：Numbers上「シェルコン①」表記だったが、製品名（Black Label）に基づきSTR-007（Shellcon 02）へ割当（Version 7.25で確立した「矛盾時はTP側を正とする」原則の逆側、すなわちTP-004の製品名を基準にNumbers側のラベル誤りを解釈）。STR-001は該当データなしのまま。  
+- LGT-037：Numbers上「RT-01/ECHO LAMP」関連の重複記載（タープC-1／タープC-1-2）のうち、rove troupe本体に一致する側を採用。LGT-027は該当データなしのまま。  
+- LGT-036：Numbers記載額はQuantity 2（38-kT THE RICH classic100 ×2）の合計額であることをMARI様に確認済み。単価分割はせず、合計額のままPriceへ記録し、その旨を注記。  
+- 引き続きPriceが空欄のアイテム（コンテナ本体・チェア本体等、Numbers上に取得当時の記録が残っていなかったもの）は、今後判明次第追記する。  
 
 - Related Documents：変更なし。  
