@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.27  
+Version 7.32  
   
 ---  
   
@@ -524,6 +524,38 @@ Armrest Replacement
 
 **Brand**  
 
+Kermit Chair USA  
+
+**Product**  
+
+Kermit CARRY TOTE  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black  
+
+### Material  
+
+500D Cordura Nylon  
+
+### Industrial Attribute  
+
+Carrying Tote（Kermit Chair①②共通使用、2脚収納可。Version 7.28にて、MARI様のご指示によりKermit Chair②の子部品群（FUR-007〜FUR-010）の直後の番号へ移動。以降のFurniture IDを1つずつ繰り下げ）  
+
+### Price  
+
+¥19,700  
+
+---  
+
+## FUR-012  
+
+**Brand**  
+
 DEVISE WORKS × SOMABITO  
 
 **Product**  
@@ -556,7 +588,7 @@ Fireside Chair
 
 ---  
 
-## FUR-012  
+## FUR-013  
 
 **Brand**  
 
@@ -592,7 +624,7 @@ Fireside Chair
 
 ---  
 
-## FUR-013  
+## FUR-014  
 
 **Brand**  
 
@@ -608,8 +640,8 @@ Owned
 
 ### Child Components  
 
-- FUR-014  
 - FUR-015  
+- FUR-016  
 
 ### Color  
 
@@ -633,7 +665,7 @@ Kitchen Extension Table
 
 ---  
 
-## FUR-014  
+## FUR-015  
 
 **Brand**  
 
@@ -649,7 +681,7 @@ Upgrade
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 ### Color  
 
@@ -673,7 +705,7 @@ Unit Top Plate
 
 ---  
 
-## FUR-015  
+## FUR-016  
 
 **Brand**  
 
@@ -689,7 +721,7 @@ Upgrade
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 ### Color  
 
@@ -713,7 +745,7 @@ Unit Top Plate
 
 ---  
 
-## FUR-016  
+## FUR-017  
 
 **Brand**  
 
@@ -749,7 +781,7 @@ Folding Table
 
 ---  
 
-## FUR-017  
+## FUR-018  
 
 **Brand**  
 
@@ -785,7 +817,7 @@ Side Table
 
 ---  
 
-## FUR-018  
+## FUR-019  
 
 **Brand**  
 
@@ -821,7 +853,7 @@ Inflatable Sofa
 
 ---  
 
-## FUR-019  
+## FUR-020  
 
 **Brand**  
 
@@ -857,7 +889,7 @@ Inflatable Bed
 
 ---  
 
-## FUR-020  
+## FUR-021  
 
 **Brand**  
 
@@ -921,7 +953,7 @@ Down（Full Custom Order）
 
 ### Industrial Attribute  
 
-Quilt（本格雪中用トップキルト。バックレス構造につきFUR-020（マット部）・FUR-023との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はPX-007 Deliberation Codexで管理）  
+Quilt（本格雪中用トップキルト。バックレス構造につきFUR-021（マット部）・FUR-023との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はPX-007 Deliberation Codexで管理）  
 
 ---  
 
@@ -949,7 +981,7 @@ Closed-Cell Foam
 
 ### Industrial Attribute  
 
-Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-020（マット部）の下に重ね敷きする想定）  
+Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-021（マット部）の下に重ね敷きする想定）  
 
 ---  
 
@@ -977,7 +1009,7 @@ Unconfirmed
 
 ### Industrial Attribute  
 
-Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-020（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はPX-007 Deliberation Codexで管理）  
+Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-021（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はPX-007 Deliberation Codexで管理）  
 
 ---  
 
@@ -985,7 +1017,7 @@ Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しF
 
 **Brand**  
 
-Unconfirmed  
+Release  
 
 **Product**  
 
@@ -1002,11 +1034,11 @@ FUR-002
 
 ### Color  
 
-Unconfirmed  
+Gold  
 
 ### Material  
 
-Unconfirmed  
+Brass  
 
 ### Industrial Attribute  
 
@@ -1017,6 +1049,7 @@ Hardware / Screw Set Custom（ROYAL BROWN Chester Field Seat用カスタムパ�
 ¥18,655  
 
 ---  
+
 ## FUR-026  
 
 **Brand**  
@@ -1033,7 +1066,7 @@ Owned
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 
 ### Color  
@@ -1042,7 +1075,7 @@ Black
 
 ### Material  
 
-Unconfirmed  
+Iron  
 
 ### Industrial Attribute  
 
@@ -1053,11 +1086,12 @@ Table Top Frame（天板枠 左）
 ¥16,500  
 
 ---  
+
 ## FUR-027  
 
 **Brand**  
 
-Unconfirmed  
+DEVISE WORKS  
 
 **Product**  
 
@@ -1069,7 +1103,7 @@ Owned
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 
 ### Color  
@@ -1078,7 +1112,7 @@ Black
 
 ### Material  
 
-Unconfirmed  
+Iron  
 
 ### Industrial Attribute  
 
@@ -1089,11 +1123,12 @@ Table Top Frame（天板枠 右）
 ¥17,160  
 
 ---  
+
 ## FUR-028  
 
 **Brand**  
 
-Unconfirmed  
+DEVISE WORKS  
 
 **Product**  
 
@@ -1105,7 +1140,7 @@ Owned
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 
 ### Color  
@@ -1125,11 +1160,12 @@ Table Silicone Mat
 ¥8,350  
 
 ---  
+
 ## FUR-029  
 
 **Brand**  
 
-Unconfirmed  
+DEVISE WORKS  
 
 **Product**  
 
@@ -1141,7 +1177,7 @@ Owned
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 
 ### Color  
@@ -1161,6 +1197,7 @@ Table Silicone Mat
 ¥8,350  
 
 ---  
+
 ## FUR-030  
 
 **Brand**  
@@ -1177,7 +1214,7 @@ Owned
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 
 ### Color  
@@ -1201,6 +1238,7 @@ Table Silicone Sheet
 ¥6,050  
 
 ---  
+
 ## FUR-031  
 
 **Brand**  
@@ -1217,16 +1255,16 @@ Owned
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 
 ### Color  
 
-Unconfirmed  
+Gold  
 
 ### Material  
 
-Unconfirmed  
+Brass  
 
 ### Industrial Attribute  
 
@@ -1237,6 +1275,7 @@ Table Hanger Hook
 ¥5,000  
 
 ---  
+
 ## FUR-032  
 
 **Brand**  
@@ -1253,11 +1292,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Dark Brown  
 
 ### Material  
 
-Unconfirmed  
+Walnut  
 
 ### Industrial Attribute  
 
@@ -1268,38 +1307,8 @@ Table Unit Stand
 ¥20,200  
 
 ---  
+
 ## FUR-033  
-
-**Brand**  
-
-Kermit Chair USA  
-
-**Product**  
-
-Kermit CARRY TOTE  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Unconfirmed  
-
-### Material  
-
-Unconfirmed  
-
-### Industrial Attribute  
-
-Carrying Tote（Kermit Chair①②共通使用、2脚収納可。MARI様のご意向により本来はFUR-001の直後へ番号挿入・後続番号繰下げが望ましいが、今回の一括登録では既存IDへの影響を避けるため末尾に追加。別途Furniture Domainの番号整理を検討）  
-
-### Price  
-
-¥19,700  
-
----  
-## FUR-034  
 
 **Brand**  
 
@@ -1315,16 +1324,16 @@ Owned
 
 **Parent**  
 
-FUR-013  
+FUR-014  
 
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
-Unconfirmed  
+Polyester  
 
 ### Industrial Attribute  
 
@@ -1335,7 +1344,8 @@ Carrying Case（EXTENMON TABLE用）
 ¥15,400  
 
 ---  
-## FUR-035  
+
+## FUR-034  
 
 **Brand**  
 
@@ -1351,7 +1361,7 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Wood-grain Print（モク）  
 
 ### Material  
 
@@ -3425,15 +3435,15 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Gold  
 
 ### Material  
 
-Unconfirmed  
+Brass  
 
 ### Industrial Attribute  
 
-Gas Lantern（本体、通称「ネルガス」）  
+Gas Lantern（本体）  
 
 ### Price  
 
@@ -3444,7 +3454,7 @@ Gas Lantern（本体、通称「ネルガス」）
 
 **Brand**  
 
-MOLDS Tokyo  
+neru design works  
 
 **Product**  
 
@@ -3461,11 +3471,11 @@ LGT-054
 
 ### Color  
 
-Unconfirmed  
+Copper（Marbled Patina）  
 
 ### Material  
 
-Unconfirmed  
+Copper（Chemically Patinated）  
 
 ### Industrial Attribute  
 
@@ -3480,7 +3490,7 @@ Base
 
 **Brand**  
 
-Unconfirmed  
+neru design works  
 
 **Product**  
 
@@ -3497,11 +3507,11 @@ LGT-054
 
 ### Color  
 
-Unconfirmed  
+Gold  
 
 ### Material  
 
-Unconfirmed  
+Brass  
 
 ### Industrial Attribute  
 
@@ -3533,11 +3543,11 @@ LGT-054
 
 ### Color  
 
-Unconfirmed  
+Brown  
 
 ### Material  
 
-Unconfirmed  
+Black Walnut  
 
 ### Industrial Attribute  
 
@@ -3569,11 +3579,11 @@ LGT-002
 
 ### Color  
 
-Unconfirmed  
+Amber  
 
 ### Material  
 
-Unconfirmed  
+Glass  
 
 ### Industrial Attribute  
 
@@ -3588,7 +3598,7 @@ Kerosene Lantern Accessory / Variant Part（LGT-002用）
 
 **Brand**  
 
-Unconfirmed  
+WHAT WE WANT（WWW）  
 
 **Product**  
 
@@ -3605,11 +3615,11 @@ LGT-032
 
 ### Color  
 
-Unconfirmed  
+Gold  
 
 ### Material  
 
-Unconfirmed  
+Brass  
 
 ### Industrial Attribute  
 
@@ -3624,7 +3634,7 @@ Otachidai Bar（お立ち台バー）
 
 **Brand**  
 
-Unconfirmed  
+38Explore  
 
 **Product**  
 
@@ -3641,11 +3651,11 @@ LGT-036
 
 ### Color  
 
-Unconfirmed  
+Gold  
 
 ### Material  
 
-Unconfirmed  
+Brass  
 
 ### Industrial Attribute  
 
@@ -4238,6 +4248,10 @@ Anodized Aluminum
 ### Industrial Attribute  
 
 Grip Custom  
+
+### Price  
+
+¥12,000  
 
 ---  
 
@@ -4871,7 +4885,7 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Silver  
 
 ### Material  
 
@@ -4890,7 +4904,7 @@ Insulated Jug (1.9L)
 
 **Brand**  
 
-Unconfirmed  
+calma store  
 
 **Product**  
 
@@ -4907,11 +4921,11 @@ STR-032
 
 ### Color  
 
-Unconfirmed  
+Brown  
 
 ### Material  
 
-Unconfirmed  
+Oak / Stainless Steel  
 
 ### Industrial Attribute  
 
@@ -4947,7 +4961,7 @@ Black
 
 ### Material  
 
-Unconfirmed  
+Iron  
 
 ### Industrial Attribute  
 
@@ -4983,7 +4997,7 @@ Black
 
 ### Material  
 
-Unconfirmed  
+Iron  
 
 ### Industrial Attribute  
 
@@ -4998,7 +5012,7 @@ Leg（Beck Container②用）
 
 **Brand**  
 
-Unconfirmed  
+wanderout  
 
 **Product**  
 
@@ -5015,11 +5029,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
-Unconfirmed  
+Steel（Chrome-Plated）  
 
 ### Industrial Attribute  
 
@@ -6130,7 +6144,7 @@ Retired. FIR-019（Fire Pit枠）へ統合済み。旧登録情報（FIREGRAPHIX
 
 **Brand**  
 
-Unconfirmed  
+サンゾー工務店  
 
 **Product**  
 
@@ -6142,11 +6156,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
-Unconfirmed  
+Iron  
 
 ### Industrial Attribute  
 
@@ -6161,7 +6175,7 @@ Trivet（五徳）
 
 **Brand**  
 
-Unconfirmed  
+zen camp  
 
 **Product**  
 
@@ -6173,11 +6187,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
-Unconfirmed  
+Silicone-Coated Fiberglass  
 
 ### Industrial Attribute  
 
@@ -6192,7 +6206,7 @@ Fire-Resistant Sheet
 
 **Brand**  
 
-DEVISE WORKS  
+asimocrafts × DEVISE WORKS  
 
 **Product**  
 
@@ -6204,11 +6218,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Brown  
 
 ### Material  
 
-Steel  
+Steel / Oak  
 
 ### Industrial Attribute  
 
@@ -6223,7 +6237,7 @@ Fire Knife
 
 **Brand**  
 
-Unconfirmed  
+DAMNGOOD!!  
 
 **Product**  
 
@@ -6240,11 +6254,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
-Unconfirmed  
+Iron  
 
 ### Industrial Attribute  
 
@@ -6294,7 +6308,7 @@ Fireside Stand
 
 **Brand**  
 
-neru design works  
+neru design works × calma store  
 
 **Product**  
 
@@ -6311,11 +6325,11 @@ FIR-004
 
 ### Color  
 
-Unconfirmed  
+Gold  
 
 ### Material  
 
-Unconfirmed  
+Brass  
 
 ### Industrial Attribute  
 
@@ -6347,11 +6361,11 @@ FIR-005
 
 ### Color  
 
-Unconfirmed  
+Brown  
 
 ### Material  
 
-Unconfirmed  
+Walnut  
 
 ### Industrial Attribute  
 
@@ -6366,7 +6380,7 @@ Sheath Case（Nata kezuru用）
 
 **Brand**  
 
-Unconfirmed  
+neru design works × calma store  
 
 **Product**  
 
@@ -6383,11 +6397,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
-Unconfirmed  
+Brass（Black-Painted）  
 
 ### Industrial Attribute  
 
@@ -6402,7 +6416,7 @@ Gas Stove
 
 **Brand**  
 
-Unconfirmed  
+neru design works  
 
 **Product**  
 
@@ -6419,11 +6433,11 @@ FIR-028
 
 ### Color  
 
-Unconfirmed  
+Camouflage  
 
 ### Material  
 
-Unconfirmed  
+Nylon  
 
 ### Industrial Attribute  
 
@@ -6438,7 +6452,7 @@ Stove Bag
 
 **Brand**  
 
-DEVISE WORKS  
+DEVISE WORKS × WHAT WE WANT  
 
 **Product**  
 
@@ -6450,11 +6464,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Dark Brown  
 
 ### Material  
 
-Unconfirmed  
+Walnut  
 
 ### Industrial Attribute  
 
@@ -6481,11 +6495,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Light Brown  
 
 ### Material  
 
-Unconfirmed  
+Oak  
 
 ### Industrial Attribute  
 
@@ -6497,6 +6511,37 @@ Fireside Fork
 
 ---  
 ## FIR-032  
+
+**Brand**  
+
+SOMABITO  
+
+**Product**  
+
+SOMA no Hera  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Light Brown  
+
+### Material  
+
+Oak  
+
+### Industrial Attribute  
+
+Fireside Spatula  
+
+### Price  
+
+¥11,800  
+
+---  
+## FIR-033  
 
 **Brand**  
 
@@ -6517,11 +6562,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Brown / Dark Brown  
 
 ### Material  
 
-Unconfirmed  
+Walnut / Oak  
 
 ### Industrial Attribute  
 
@@ -6532,42 +6577,11 @@ Hook
 ¥7,040  
 
 ---  
-## FIR-033  
-
-**Brand**  
-
-SOMABITO  
-
-**Product**  
-
-SOMA no Hera  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Unconfirmed  
-
-### Material  
-
-Unconfirmed  
-
-### Industrial Attribute  
-
-Fireside Spatula  
-
-### Price  
-
-¥11,800  
-
----  
 ## FIR-034  
 
 **Brand**  
 
-Unconfirmed  
+サンゾー工務店  
 
 **Product**  
 
@@ -6584,11 +6598,11 @@ FIR-001
 
 ### Color  
 
-Unconfirmed  
+Gray  
 
 ### Material  
 
-Unconfirmed  
+Nitrided Iron（窒化処理）  
 
 ### Industrial Attribute  
 
@@ -6603,7 +6617,7 @@ Rodan Custom Option Part（ベロ）
 
 **Brand**  
 
-Blick  
+サンゾー工務店  
 
 **Product**  
 
@@ -6620,11 +6634,11 @@ FIR-001
 
 ### Color  
 
-Unconfirmed  
+Gray  
 
 ### Material  
 
-Unconfirmed  
+Nitrided Iron（窒化処理）  
 
 ### Industrial Attribute  
 
@@ -6716,7 +6730,7 @@ Iron Table Carrying Case（旧STR-021より移設）
 
 **Brand**  
 
-Unconfirmed  
+The Arth  
 
 **Product**  
 
@@ -6733,11 +6747,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
-Unconfirmed  
+Polyester  
 
 ### Industrial Attribute  
 
@@ -6752,7 +6766,7 @@ Winter Hexa Tarp
 
 **Brand**  
 
-DEVISE  
+DEVISE WORKS  
 
 **Product**  
 
@@ -6773,11 +6787,11 @@ SHL-001
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
-Unconfirmed  
+Polyester  
 
 ### Industrial Attribute  
 
@@ -6839,7 +6853,7 @@ Black
 
 ### Material  
 
-Unconfirmed  
+Nylon 40D Ripstop（Silicone Coating, PU Blackout）／AL7001 Aluminum（Poles）  
 
 ### Industrial Attribute  
 
@@ -7290,3 +7304,128 @@ Version 7.26時点でPrice未確認（要確認）のまま残っていた11件�
 - STR-025：Product表記を誤記の「Hopper Flip 16」から正しい「Hopper Flip 12」へ訂正（16はモデル名ではなく容量16qtを指す表記だった）。  
 
 - Related Documents：PX-007 Deliberation Codex（FUR-020/021統合に伴う参照更新）。  
+
+## Version 7.28
+
+STR-011のPrice未記載を解消。また、プロジェクトオーナーの直接指示に基づき、Furniture Domainの番号整理を実施した。これはRegistry Rulesの「IDは変更されない」という原則に対する例外であり、Kermit Chair①②の専用収納ケース（旧FUR-033 Kermit CARRY TOTE）が、Kermit Chair②の子部品群（FUR-007〜FUR-010）の直後に位置すべきという実態に合わせるための、一回限りの意図的な再採番である。
+
+### Changes（Price確定）
+
+- STR-011（OMA FACTORY OMA.SC-PICATINNY RAIL-No.001G）：Price未記載だったため¥12,000を追記（プロジェクトオーナー確認）。
+
+### Changes（Furniture番号整理）
+
+- 旧FUR-033（Kermit CARRY TOTE）をFUR-011へ移動。Kermit Chair②の子部品群（FUR-007〜FUR-010）の直後に位置づけた。
+- 上記に伴い、旧FUR-011〜FUR-020をFUR-012〜FUR-021へ、旧FUR-022〜FUR-032は番号据え置き、旧FUR-034・FUR-035をFUR-033・FUR-034へ、それぞれ1つずつ繰り下げ。旧FUR-021（削除済み・欠番）は詰められ、Furniture Domainの登録範囲はFUR-001〜FUR-034の連番となった。
+- Parent参照（旧FUR-013→新FUR-014を親とする子部品群: 旧FUR-014・015・026〜031・034）、およびChild Componentsリスト（新FUR-006・新FUR-014）を、すべて新番号に更新。
+- FUR-022・FUR-023・FUR-024のIndustrial Attribute内の「FUR-020（マット部）」参照を「FUR-021（マット部）」へ更新（Quilt & Sleeping Mat Set本体の新ID反映）。
+- PX-007 Deliberation Codex（FUR-020参照2箇所）、PX-003 Vigil Protocol（FUR-017参照1箇所）を、新番号（FUR-021、FUR-018）へ更新。
+- Version 7.0〜7.27の記述内にある旧FUR-ID表記は、当時の記録として遡及修正しない。
+
+- Related Documents：PX-003 Vigil Protocol、PX-007 Deliberation Codex（Furniture番号整理に伴う参照更新）。  
+
+## Version 7.29
+
+Owned/EssentialアイテムのうちBrand／Color／Materialが「Unconfirmed」のまま残っていた項目について、ウェブ調査により公式ページ・販売元ページで確認できた範囲のみ反映した。同一製品で複数のカラーバリエーションが存在する等、購入した個体を特定できない項目は、推測を避けるため引き続きUnconfirmedのまま保持している。
+
+なお、Brass／Walnutなど無垢素材のColorは、当該Materialが確認できた場合に本文書内の既存表記慣例（例：LGT-002・LGT-030・FUR-003＝Brass→Gold、FUR-001・FUR-016等＝Walnut→Brown）に基づき記録した。個別に塗装色が確認された場合を除く。
+
+### Changes（確認・反映、13件）
+
+- FUR-011（Kermit CARRY TOTE）：Materialを「500D Cordura Nylon」に確定（Ballistics.jp公式ページ）。Colorは公式に3配色（Coyote×Multicam等）が存在し所有個体を特定できないため、Unconfirmedのまま維持。
+- FUR-034（SNIPE HANGER home. モク）：Colorを「Wood-grain Print（モク）」に確定（SINANO WORKS公式ページ、モクは同社の正式カラー名）。
+- LGT-056（Futamata）：Brandを「neru design works」、Materialを「Brass」に確定（lifeoverground.com掲載、真鍮削り出しと明記）。Colorは上記慣例によりGoldとした。
+- LGT-057（OD-CAN PLATE）：Materialを「Black Walnut」に確定（INOUT公式ページ）。Colorは無垢ウォールナットの実色としてBrownとした。
+- LGT-059（WWW_LANTHANUMHOOK）：Brandを「WHAT WE WANT（WWW）」、Materialを「Brass」に確定（WHAT WE WANT公式ページ）。Colorは上記慣例によりGoldとした。
+- LGT-060（FORKBASEset (BS)）：Brandを「38Explore」に確定（価格一致・製品ラインナップにより確認）。Color・Materialは情報未確認のまま維持。
+- STR-032a（KRAKEN STAND）：Materialを「Oak / Stainless Steel」に確定（calma store公式ページ）。Brand・Colorは販売元と製造元の関係が不明確なため未確認のまま維持。
+- STR-033（ユニバーサルスタンド）：Brandを「wanderout」、Materialを「Steel（Chrome-Plated）」に確定（wanderout公式ページ）。複数カラー展開があり所有個体を特定できないため、Colorは未確認のまま維持。
+- FIR-021（LECTER Ver2）：Brandを「サンゾー工務店」に確定（同社公式サイトに一致製品あり）。
+- FIR-027（WWW_SAYA）：Materialを「Walnut」に確定（WHAT WE WANT公式ページ）。Colorは無垢ウォールナットの実色としてBrownとした。
+- FIR-028（shank heater 百式改）：Materialを「Brass（Black-Painted）」、Colorを「Black」に確定（lifeoverground.com掲載、黒塗装が真鍮地に馴染む旨明記）。Brandは制作元表記が複数説あり確定できないため未確認のまま維持。
+- FIR-034（カスタムベロ）：Brandを「サンゾー工務店」に確定（同社RODANシリーズのキャラクター名オプションパーツと一致）。
+- SHL-004（Slug Shelter V2.0）：Materialを「Nylon 40D Ripstop（Silicone Coating, PU Blackout）／AL7001 Aluminum（Poles）」に確定（HELLOS factory製品情報の複数ソース集約）。
+
+### 引き続きUnconfirmedのまま残る項目
+
+- 上記以外の項目（FUR-025〜027・031〜033、LGT-054・055・058、STR-013a・015a・032（Color）、FIR-022〜024・026・029〜033・035、SHL-001・002）：公式ページが見つからない、販売元と製造元の帰属が不明確、または複数バリエーションが存在し所有個体を特定できないため、引き続きUnconfirmedのまま保持する。今後、プロジェクトオーナーによる現物確認または追加情報の提供を待つ。
+- Related Documents：変更なし。
+
+## Version 7.30
+
+Version 7.29で保留としていたFIR-035のBrand訂正について、プロジェクトオーナーの確認が取れたため反映した。
+
+### Changes
+
+- FIR-035（半月セット）：Brandを誤記の「Blick」から「サンゾー工務店」へ訂正（プロジェクトオーナー確認。FIR-001 RODAN BRICKと同一メーカーによるオプションパーツ）。Materialを「Nitrided Iron（窒化処理）」に確定（RODANシリーズ共通仕様）。Colorは個体を特定できないため引き続きUnconfirmed。
+
+- Related Documents：変更なし。
+
+## Version 7.31
+
+Version 7.29までの調査で残っていたUnconfirmed項目について、プロジェクトオーナーが現物・購入記録を確認し、まとめて情報提供を受けた。提供された内容をそのまま反映した。ウェブ調査による推測ではなく、すべてプロジェクトオーナー本人による現物確認に基づく一次情報である。
+
+### Changes（Furniture）
+
+- FUR-011（Kermit CARRY TOTE）：Colorを「Black」に確定。
+- FUR-025（真聖衣）：Brandを「Release」、Colorを「Gold」、Materialを「Brass」に確定。
+- FUR-026（2UNITFRAME NDW ver.）：Materialを「Iron」に確定。
+- FUR-027（TSURAICHI KUROWAKU）：Brandを「DEVISE WORKS」、Materialを「Iron」に確定。
+- FUR-028（CUTTING MAT BLACK）・FUR-029（CUTTING MAT White）：Brandを「DEVISE WORKS」に確定。
+- FUR-031（WWW_EXTENSIONSIDEBAR NDWver）：Colorを「Gold」、Materialを「Brass」に確定。
+- FUR-032（IGT 1ユニットスタンド）：Colorを「Dark Brown」、Materialを「Walnut」に確定。
+- FUR-033（EXTENSIONTABLE CASE）：Colorを「Black」に確定（Materialは未確認のまま維持）。
+
+### Changes（Light）
+
+- LGT-054（BM Lanthan）：Colorを「Gold」、Materialを「Brass」に確定。Industrial Attributeから通称「ネルガス」の注記を削除。
+- LGT-055（Vintage cover250）：Brandを「MOLDS Tokyo」から「neru design works」へ訂正（プロジェクトオーナー確認）。Colorを「Copper（Marbled Patina）」、Materialを「Copper（Chemically Patinated）」に確定。
+- LGT-058（クラッシュアイス）：Colorを「Amber」、Materialを「Glass」に確定。
+- LGT-060（FORKBASEset (BS)）：Colorを「Gold」、Materialを「Brass」に確定。
+
+### Changes（Storage）
+
+- STR-032（Rambler® Half Gallon Jug）：Colorを「Silver」に確定。
+- STR-032a（KRAKEN STAND）：Brandを「calma store」、Colorを「Brown」に確定。
+- STR-013a・STR-015a（Black Stand）：Materialを「Iron」に確定。
+- STR-033（ユニバーサルスタンド）：Colorを「Black」に確定。
+
+### Changes（Fire）
+
+- FIR-021（LECTER Ver2）：Colorを「Black」、Materialを「Iron」に確定。
+- FIR-022（TAKIBI SHEET）：Brandを「zen camp」、Colorを「Black」、Materialを「Silicone-Coated Fiberglass」に確定。
+- FIR-023（MACKY DEVISE）：Brandを「DEVISE WORKS」から「asimocrafts × DEVISE WORKS」へ訂正（プロジェクトオーナー確認）。Colorを「Brown」に確定。Materialを「Steel」から「Steel / Oak」へ更新（柄部の素材を追加）。
+- FIR-024（HONE HOOK）：Brandを「DAMNGOOD!!」、Colorを「Black」、Materialを「Iron」に確定。
+- FIR-026（Ono kezuruカバー）：Brandを「neru design works」から「neru design works × calma store」へ訂正（プロジェクトオーナー確認）。Colorを「Gold」、Materialを「Brass」に確定。
+- FIR-029（shank container）：Brandを「neru design works」、Colorを「Camouflage」、Materialを「Nylon」に確定。
+- FIR-030（MACCHO CASE）：Brandを「DEVISE WORKS」から「DEVISE WORKS × WHAT WE WANT」へ訂正（プロジェクトオーナー確認）。Colorを「Dark Brown」、Materialを「Walnut」に確定。
+- FIR-031（SOMA no Folk）：Colorを「Light Brown」、Materialを「Oak」に確定。
+- **FIR-032／FIR-033：番号を入れ替え**。プロジェクトオーナーの指示により、SOMA no Hera（SOMABITO）をFIR-032へ、WWW_HANGER（WHAT WE WANT）をFIR-033へ番号変更。IDが変更されない原則に対する例外として、Version 7.28（Furniture番号整理）と同様の扱いとする。FIR-032（SOMA no Hera）：Colorを「Light Brown」、Materialを「Oak」に確定。FIR-033（WWW_HANGER）：Colorを「Brown / Dark Brown」、Materialを「Walnut / Oak」に確定（7個中、素材違いの2バリエーションが混在）。他ドキュメントにFIR-032／FIR-033への参照は存在しないため、相互参照の更新は不要と確認済み。
+- FIR-034（カスタムベロ）・FIR-035（半月セット）：Colorを「Gray」に確定。FIR-034のMaterialを「Nitrided Iron（窒化処理）」に確定（FIR-035と同一仕様）。
+
+### Changes（Shelter）
+
+- SHL-001（幕男）：Brandを「The Arth」、Colorを「Black」に確定（プロジェクトオーナー確認、https://thearth.design/item-detail/1450017 ）。
+- SHL-002（W3.8 ROPE（DEVISE ver.））：Brandを「DEVISE」から「DEVISE WORKS」へ表記統一。Colorを「Black」、Materialを「Polyester」に確定。
+
+### 引き続きUnconfirmedのまま残る項目
+
+- FUR-033（EXTENSIONTABLE CASE）：Material。
+- FIR-028（shank heater 百式改）：Brand。
+- SHL-001（幕男）：Material。
+
+- Related Documents：変更なし。
+
+## Version 7.32
+
+Version 7.31で残っていた最後の3件のUnconfirmedについて、プロジェクトオーナーの現物確認が取れたため反映した。これにより、Coffee Domain（意図的に未入力のCOF-series）を除く、全DomainのOwned／EssentialアイテムのBrand・Color・Materialが確定した。
+
+あわせて、Excelスプレッドシートのマージ時に混入した「通称」表記のような非公式な注記が他に残っていないか、Industrial Attribute欄を全件確認した。LGT-054の「ネルガス」（Version 7.31で削除済み）以外に同種の注記は見つからなかった。なお、SHL-004の「国内流通名：スネイルシェルター」は公式な国内代理店表記であり、ネルガスのような非公式なあだ名とは性質が異なるため、削除対象としない。
+
+### Changes
+
+- FIR-028（shank heater 百式改）：Brandを「neru design works × calma store」に確定（プロジェクトオーナー確認）。
+- FUR-033（EXTENSIONTABLE CASE）：Materialを「Polyester」に確定（プロジェクトオーナー確認）。
+- SHL-001（幕男）：Materialを「Polyester」に確定（プロジェクトオーナー確認）。
+
+- Related Documents：変更なし。  

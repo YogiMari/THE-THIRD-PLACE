@@ -5,7 +5,7 @@
 **Document ID**: PX-003  
 **Title**: Vigil Protocol  
 **Series**: PX – Project  
-**Version**: 2.3  
+**Version**: 2.4  
 **Status**: Official  
 **Owner**: THE THIRD PLACE
 
@@ -19,6 +19,7 @@
 | 2.1 | 2026-09-07 | 分割起源の修復。PX-003とTM-005 Search Doctrineはもともと1つの文書だったが、後に方法論（TM-005）と実行（PX-003）へ分割された際、章番号の振り直しやヘッダーセクションの復元が行われず、PX-003が第XXXII章から始まり、それ以前の章もPurposeセクションも存在しない状態になっていた。「I. Purpose」（Relationship with Other Documentsを含む）を追加し、全章をI〜VIIIへ振り直し、文書ヘッダーにSeriesフィールドを追加した。 |
 | 2.2 | 2026-09-08 | Watch Listにエントリ008〜022を追加。TP-004 Equipment Registryのうち、Status = Essential / Candidate / Upgradeで既存エントリに含まれていない全アイテムを抽出（各エントリにTP-004 Reference IDを付記）。Coffee Domainは意図的に除外（PX-004/PX-005が管轄）。 |
 | 2.3 | 2026-09-08 | エントリ018（Wood Board）を、プロジェクトオーナーの確認に基づき修正: nodel designがこの製品を「Wood Board」という正確な名称で単品販売していることを確認。入手可否に関する不確実性の注記を削除し、キーワードを整理した。 |
+| 2.4 | 2026-09-18 | TP-004 Version 7.28（Furniture Domain番号整理）と連動し、Butterfly Table M Black LookのTP-004 ReferenceをFUR-017からFUR-018へ更新。 |
 
 ---
 
@@ -542,7 +543,7 @@ Butterfly Table M Black Look
 
 **TP-004 Reference**
 
-FUR-017 (Status: Upgrade)
+FUR-018 (Status: Upgrade)
 
 **Required Keywords**
 
