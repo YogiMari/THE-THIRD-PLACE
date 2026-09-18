@@ -3442,6 +3442,10 @@ None
 
 Mosquito Coil Holder  
 
+### Price  
+
+要確認  
+
 ---  
 
 ## ARM-002  
@@ -3473,6 +3477,10 @@ None
 ### Industrial Attribute  
 
 Palo Santo Holder  
+
+### Price  
+
+¥38,500  
 
 ---  
 
@@ -3506,6 +3514,10 @@ None
 
 Incense Chamber  
 
+### Price  
+
+¥60,500  
+
 ---  
 
 ## ARM-004  
@@ -3537,6 +3549,10 @@ None
 ### Industrial Attribute  
 
 Vertical Diffuser  
+
+### Price  
+
+要確認  
 
 # Storage  
 
