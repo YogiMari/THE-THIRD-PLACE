@@ -63,13 +63,13 @@ jobs:
             printf '%s' "$result"
           }
 
-          echo "TP004=$(find_file MD-004)" >> "$GITHUB_ENV"
-          echo "PX004=$(find_file BR-002)" >> "$GITHUB_ENV"
-          echo "PX005=$(find_file BR-003)" >> "$GITHUB_ENV"
+          echo "MD004=$(find_file MD-004)" >> "$GITHUB_ENV"
+          echo "BR002=$(find_file BR-002)" >> "$GITHUB_ENV"
+          echo "BR003=$(find_file BR-003)" >> "$GITHUB_ENV"
 
       - name: Validate SSOT consistency
         run: |
           python scripts/third_place_sync_validator.py \
-            --tp004 "$TP004" \
-            --px004 "$PX004" \
-            --px005 "$PX005"
+            --md004 "$MD004" \
+            --br002 "$BR002" \
+            --br003 "$BR003"

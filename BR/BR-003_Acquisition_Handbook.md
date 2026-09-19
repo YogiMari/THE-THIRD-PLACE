@@ -196,7 +196,7 @@ BR-002に登録された製品が現在販売終了しており、メーカー�
 * Standard構成への代替は行わない。  
 * 付属品は、予備として必要な場合を除き、別途購入しない。  
 * 本体標準付属品：53mm Tamper（9Barista純正・汎用）、Heat Transfer PlateまたはInduction Adaptor Plate（選択したコンロ種別に応じて1点）、Spare Boiler O-ring ×1、Spare Safety Ring ×1、User Guide。THE THIRD PLACEではThe Force Tamper 53mmを主力Tamperとするため、付属の汎用Tamperは予備として保持する。  
-* Upper / Lower Handleは標準でAnodised Aluminium仕様。PX-004 Ver.3.7のHandle Material Decisionに基づき、Walnut仕様へ変更する（詳細はProduct 26を参照）。  
+* Upper / Lower Handleは標準でAnodised Aluminium仕様。BR-002 Ver.3.7のHandle Material Decisionに基づき、Walnut仕様へ変更する（詳細はProduct 26を参照）。  
   
 ---  
   
@@ -587,7 +587,7 @@ BR-002に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* PX-004 v2.7にてConfirmed Equipment。  
+* BR-002 v2.7にてConfirmed Equipment。  
 * 9Barista純正アクセサリー。  
 * サードパーティ製Puck Screenは不採用。  
 * 代替Puck Screenとの重複購入は行わない。  
@@ -621,7 +621,7 @@ BR-002に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* PX-004 v2.7にてConfirmed Equipment。  
+* BR-002 v2.7にてConfirmed Equipment。  
 * Puck Screenの収納・乾燥に使用。  
 * Weber Workshopsエコシステムとの互換性。  
 * 代替Puck Screen Standは不要。  
@@ -1048,7 +1048,7 @@ BR-002に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* PX-004 Ver.3.7「Handle Material Decision」にて正式決定。MARI様の直接指示（2026-09-18）に基づく。  
+* BR-002 Ver.3.7「Handle Material Decision」にて正式決定。MARI様の直接指示（2026-09-18）に基づく。  
 * 9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）を、Walnut仕様へ変更する。  
 * Design Bibleの核となる素材言語（Walnut・Brass・Black Steel）との整合を目的とする。  
 * 公式スペアパーツ「Handle for 9Barista Espresso Machine」はUpper・Lower共通の単品販売（1個 $15.00）であり、フルセットには2個必要。  
@@ -1147,7 +1147,7 @@ BR-002に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* PX-004（Ver.2.9以降）に基づき、9Barista Mk.2 Proの標準アクセサリーであり、独立したEquipment / Acquisition Itemとしては管理しない。  
+* BR-002（Ver.2.9以降）に基づき、9Barista Mk.2 Proの標準アクセサリーであり、独立したEquipment / Acquisition Itemとしては管理しない。  
 * ConfirmedなWorkflowコンポーネント：Blind Shaker → Magnetic Dosing Funnel → WDT。  
 * サードパーティ製Dosing Funnelは不採用。  
 * 別途購入しない。  
@@ -1500,8 +1500,8 @@ Coffee Systemの購入リストが完成したと判断する前に、以下を�
 10. Estimated Total Costが、保守的に見積もられていること。  
 11. 不採用となったEquipmentが、現行の購入リストに含まれていないこと。  
 12. 後継関係の根拠なく、代替Equipmentが追加されていないこと。  
-13. Puck ScreenがPX-004 v2.7と同期していること。  
-14. Puck Screen StandがPX-004 v2.7と同期していること。  
+13. Puck ScreenがBR-002 v2.7と同期していること。  
+14. Puck Screen StandがBR-002 v2.7と同期していること。  
 15. KNODOS Tamping Mat with Tool Organiser - Walnut 54mmが登録されていること。  
 16. Normcore Planetary WDT Toolが54mmとして同期していること。  
 17. Pullman Chiselが、現行の53.3mm Wood構成として同期していること。  
@@ -1523,7 +1523,7 @@ Coffee Systemの購入リストが完成したと判断する前に、以下を�
 33. FIKA12の数量が×2として同期していること。  
 34. 現行の後継製品が明示的に識別されていること。  
 35. 現行の市販パッケージ数量と、BR-002上のシステム割当数量が区別されていること。  
-36. 9Barista Handle - WalnutがPX-004 v3.7のHandle Material Decisionと同期していること。  
+36. 9Barista Handle - WalnutがBR-002 v3.7のHandle Material Decisionと同期していること。  
   
 ---  
   
