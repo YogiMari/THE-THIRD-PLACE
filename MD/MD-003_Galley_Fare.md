@@ -1,5 +1,5 @@
 # MD-003 Galley Fare
-Version 2.10
+Version 2.11
 
 ---
 
@@ -117,7 +117,7 @@ Version 2.5より、KIT-番号は取得順の連番ではなく、用途別グ�
 
 MD-004のFire Domainと本書Kitchen（MD-003）は、燃料の種類ではなく、機材の**目的**によって区分される。
 
-- **Fire Domain（MD-004）**：暖を取る、あるいは焚き火のような炎そのものを楽しむための機材。燃料は薪に限らず、ケロシン（灯油）等も含む（例：FIR-018 武井バーナー Purple Stove 501Aは灯油式のケロシンヒーターだが、目的が暖房であるためFire Domainに属する）。
+- **Fire Domain（MD-004）**：暖を取る、あるいは焚き火のような炎そのものを楽しむための機材。燃料は薪に限らず、ケロシン（灯油）等も含む（例：FIR-029 武井バーナー Purple Stove 501Aは灯油式のケロシンヒーターだが、目的が暖房であるためFire Domainに属する）。
 - **Kitchen（MD-003）**：調理を成立させるための機材。燃料はガス・アルコール等を問わない（例：フラットバーナー、火焔ストーブ、ヤエンストーブ、グリルバーナー等は、いずれも調理目的であるためKitchenに属する）。
 
 コーヒー器具（ミル・ケトル・ドリッパー等）についても、キッチンゾーンでの調理行為の一部として同様にKitchenで管理する。
@@ -3482,6 +3482,17 @@ KIT-070bの記述内、STR-025のStatus表記がVersion 2.8時点の「Essential
 ### Changes
 
 - KIT-070b：「MD-004ではSTR-025（SKU: AN139、Black、Essential）として登録されており」を「MD-004ではSTR-025（SKU: AN139、Black、Owned。Version 7.37でEssentialから変更）として登録されており」へ更新。
+
+---
+
+## Version 2.11
+
+MD-004 Equipment Registry Version 7.38のFire Domain番号整理（並べ替えと欠番詰め、新規1件の追加）に伴う参照更新。内容の変更はない。
+
+### Changes
+
+- Domain Scope Note：「FIR-018 武井バーナー Purple Stove 501A」の例示を「FIR-029 武井バーナー Purple Stove 501A」へ更新。
+- Related Documents：MD-004 Equipment Registry Object Reference（Version 7.38）。
 - Related Documents：MD-004 Equipment Registry Object Reference（Version 7.37）。
 
 ---

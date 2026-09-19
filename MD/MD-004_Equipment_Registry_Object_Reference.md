@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.37  
+Version 7.38  
   
 ---  
   
@@ -5434,9 +5434,10 @@ Owned
 
 ### Child Components  
 
-- FIR-034  
-- FIR-035  
-- FIR-036  
+- FIR-002  
+- FIR-003  
+- FIR-004  
+- FIR-005  
 
 ### Color  
 
@@ -5468,717 +5469,15 @@ Fire Pit
 
 **Product**  
 
-Iron Table  
-
-**Status**  
-
-Owned  
-
-### Child Components  
-
-- FIR-037  
-
-### Color  
-
-Black  
-
-### Material  
-
-Steel  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Fire Table (stand for FIR-001 RODAN BRICK)  
-
-### Price  
-
-¥25,080  
-
----  
-
-## FIR-003  
-
-**Brand**  
-
-DEVISE WORKS × BLACK DESIGN  
-
-**Product**  
-
-ブランコ（秋竿）  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Black  
-
-### Material  
-
-Steel  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Fire Tool Stand  
-
-### Price  
-
-¥85,000  
-
----  
-
-## FIR-004  
-
-**Brand**  
-
-neru design works  
-
-**Product**  
-
-ono kezuru  
-
-**Status**  
-
-Owned  
-
-### Child Components  
-
-- FIR-026  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Steel / Oak  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Axe  
-
-### Price  
-
-¥33,000  
-
----  
-
-## FIR-005  
-
-**Brand**  
-
-neru design works  
-
-**Product**  
-
-nata kezuru  
-
-**Status**  
-
-Owned  
-
-### Child Components  
-
-- FIR-027  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Steel / Oak  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Machete  
-
-### Price  
-
-¥29,700  
-
----  
-
-## FIR-006  
-
-**Brand**  
-
-サンゾー工務店  
-
-**Product**  
-
-PULSE  
-
-**Status**  
-
-Owned  
-
-### Child Components  
-
-- FIR-007  
-
-### Color  
-
-Black  
-
-### Material  
-
-Steel  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Fire Tongs  
-
-### Price  
-
-¥10,780  
-
----  
-
-## FIR-007  
-
-**Brand**  
-
-asimocrafts  
-
-**Product**  
-
-asigrip  
-
-**Parent**  
-
-FIR-006  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Wood  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Grip Custom  
-
-### Price  
-
-¥6,380  
-
----  
-
-## FIR-008  
-
-**Brand**  
-
-Snow Peak  
-
-**Product**  
-
-焚き火ツールPro  
-
-**Status**  
-
-Owned  
-
-### Child Components  
-
-- FIR-009  
-
-### Color  
-
-Black  
-
-### Material  
-
-Steel  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Ash Scoop  
-
-### Price  
-
-¥13,200  
-
----  
-
-## FIR-009  
-
-**Brand**  
-
-asimocrafts  
-
-**Product**  
-
-asigrip  
-
-**Parent**  
-
-FIR-008  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Wood  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Grip Custom  
-
-### Price  
-
-¥4,810  
-
----  
-
-## FIR-010  
-
-**Brand**  
-
-asimocrafts  
-
-**Product**  
-
-tsuru_s_asi  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Black  
-
-### Material  
-
-Steel  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Fire Poker  
-
-### Price  
-
-¥19,800  
-
----  
-
-## FIR-011  
-
-**Brand**  
-
-asimocrafts  
-
-**Product**  
-
-asiblaster  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Black  
-
-### Material  
-
-Stainless Steel / Oak  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Fire Blower  
-
-### Price  
-
-¥33,000  
-
----  
-
-## FIR-012  
-
-**Brand**  
-
-Snow Peak  
-
-**Product**  
-
-Folding Torch  
-
-**Status**  
-
-Owned  
-
-### Child Components  
-
-- FIR-013  
-- FIR-014  
-- FIR-015  
-- FIR-016  
-- FIR-017  
-
-### Color  
-
-Silver  
-
-### Material  
-
-Stainless Steel  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Torch  
-
-### Price  
-
-¥7,920  
-
----  
-
-## FIR-013  
-
-**Brand**  
-
-asimocrafts  
-
-**Product**  
-
-asigrip  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-FIR-012  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Wood  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Grip Custom  
-
-### Price  
-
-¥4,810  
-
----  
-
-## FIR-014  
-
-**Brand**  
-
-neru design works  
-
-**Product**  
-
-copper250  
-
-**Status**  
-
-Essential  
-
-**Parent**  
-
-FIR-012  
-
-### Color  
-
-Copper  
-
-### Material  
-
-Copper  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Gas Tube Cover  
-
-### Price  
-
-¥28,000  
-
----  
-
-## FIR-015  
-
-**Brand**  
-
-DAMNGOOD!! × OMA FACTORY  
-
-**Product**  
-
-FT no BARREL  
-
-**Status**  
-
-Upgrade  
-
-**Parent**  
-
-FIR-012  
-
-### Color  
-
-Gray  
-
-### Material  
-
-Titanium  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Torch Barrel  
-
-### Price  
-
-¥13,200  
-
----  
-
-## FIR-016  
-
-**Brand**  
-
-OMA FACTORY  
-
-**Product**  
-
-OMA.BARREL  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-FIR-012  
-
-### Color  
-
-Gray  
-
-### Material  
-
-Titanium  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Torch Barrel  
-
-### Price  
-
-¥8,800  
-
----  
-
-## FIR-017  
-
-**Brand**  
-
-OMA FACTORY  
-
-**Product**  
-
-OMA.KNOB-No.071F  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-FIR-012  
-
-### Color  
-
-Gray  
-
-### Material  
-
-Duralumin  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Torch Knob  
-
-### Price  
-
-¥2,400  
-
----  
-
-## FIR-018  
-
-**Brand**  
-
-武井バーナー  
-
-**Product**  
-
-Purple Stove 501A  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Gold  
-
-### Material  
-
-Brass  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Kerosene Heater  
-
-### Price  
-
-¥121,000  
-
----  
-
-## FIR-019  
-
-**Brand**  
-
-Unconfirmed  
-
-**Product**  
-
-Unconfirmed  
-
-**Status**  
-
-Candidate  
-
-### Color  
-
-Black  
-
-### Material  
-
-Steel  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Fire Pit（検討中。旧FIR-020と統合。具体的な候補情報はCZ-001 Deliberation Codexで管理）  
-
----  
-
-## FIR-020  
-
-Retired. FIR-019（Fire Pit枠）へ統合済み。旧登録情報（FIREGRAPHIX BLISS-SP）はCZ-001 Deliberation Codexへ移管。本IDは欠番として保持する。  
-
----  
-
-## FIR-021  
-
-**Brand**  
-
-サンゾー工務店  
-
-**Product**  
-
 LECTER Ver2  
 
 **Status**  
 
 Owned  
+
+**Parent**  
+
+FIR-001  
 
 ### Color  
 
@@ -6197,413 +5496,7 @@ Trivet（五徳）
 ¥19,000  
 
 ---  
-## FIR-022  
-
-**Brand**  
-
-zen camp  
-
-**Product**  
-
-TAKIBI SHEET  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Black  
-
-### Material  
-
-Silicone-Coated Fiberglass  
-
-### Industrial Attribute  
-
-Fire-Resistant Sheet  
-
-### Price  
-
-¥7,480  
-
----  
-## FIR-023  
-
-**Brand**  
-
-asimocrafts × DEVISE WORKS  
-
-**Product**  
-
-MACKY DEVISE  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Steel / Oak  
-
-### Industrial Attribute  
-
-Fire Knife  
-
-### Price  
-
-¥54,450  
-
----  
-## FIR-024  
-
-**Brand**  
-
-DAMNGOOD!!  
-
-**Product**  
-
-HONE HOOK  
-
-**Status**  
-
-Owned  
-
-### Quantity  
-
-2  
-
-
-### Color  
-
-Black  
-
-### Material  
-
-Iron  
-
-### Industrial Attribute  
-
-Hook  
-
-### Price  
-
-¥3,200  
-
----  
-## FIR-025  
-
-**Brand**  
-
-SomAbito  
-
-**Product**  
-
-焚き火side stand  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Black（KURO脚）  
-
-### Material  
-
-Steel / Brass（真鍮紋章）  
-
-### Graphic Attribute  
-
-Emblem（紋章）  
-
-### Industrial Attribute  
-
-Fireside Stand  
-
-### Price  
-
-¥39,050  
-
----  
-## FIR-026  
-
-**Brand**  
-
-neru design works × calma store  
-
-**Product**  
-
-Ono kezuru カバー  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-FIR-004  
-
-
-### Color  
-
-Gold  
-
-### Material  
-
-Brass  
-
-### Industrial Attribute  
-
-Axe Cover  
-
-### Price  
-
-¥3,630  
-
----  
-## FIR-027  
-
-**Brand**  
-
-WHAT WE WANT（WWW）  
-
-**Product**  
-
-WWW_SAYA  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-FIR-005  
-
-
-### Color  
-
-Brown  
-
-### Material  
-
-Walnut  
-
-### Industrial Attribute  
-
-Sheath Case（Nata kezuru用）  
-
-### Price  
-
-¥9,900  
-
----  
-## FIR-028  
-
-**Brand**  
-
-neru design works × calma store  
-
-**Product**  
-
-shank heater 百式改  
-
-**Status**  
-
-Owned  
-
-### Child Components  
-
-- FIR-029  
-
-
-### Color  
-
-Black  
-
-### Material  
-
-Brass（Black-Painted）  
-
-### Industrial Attribute  
-
-Gas Stove  
-
-### Price  
-
-¥38,500  
-
----  
-## FIR-029  
-
-**Brand**  
-
-neru design works  
-
-**Product**  
-
-shank container  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-FIR-028  
-
-
-### Color  
-
-Camouflage  
-
-### Material  
-
-Nylon  
-
-### Industrial Attribute  
-
-Stove Bag  
-
-### Price  
-
-¥8,800  
-
----  
-## FIR-030  
-
-**Brand**  
-
-DEVISE WORKS × WHAT WE WANT  
-
-**Product**  
-
-MACCHO CASE  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Dark Brown  
-
-### Material  
-
-Walnut  
-
-### Industrial Attribute  
-
-Fire Starter Case  
-
-### Price  
-
-¥9,020  
-
----  
-## FIR-031  
-
-**Brand**  
-
-SOMABITO  
-
-**Product**  
-
-SOMA no Folk  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Light Brown  
-
-### Material  
-
-Oak  
-
-### Industrial Attribute  
-
-Fireside Fork  
-
-### Price  
-
-¥11,800  
-
----  
-## FIR-032  
-
-**Brand**  
-
-SOMABITO  
-
-**Product**  
-
-SOMA no Hera  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Light Brown  
-
-### Material  
-
-Oak  
-
-### Industrial Attribute  
-
-Fireside Spatula  
-
-### Price  
-
-¥11,800  
-
----  
-## FIR-033  
-
-**Brand**  
-
-WHAT WE WANT（WWW）  
-
-**Product**  
-
-WWW_HANGER  
-
-**Status**  
-
-Owned  
-
-### Quantity  
-
-7  
-
-
-### Color  
-
-Brown / Dark Brown  
-
-### Material  
-
-Walnut / Oak  
-
-### Industrial Attribute  
-
-Hook  
-
-### Price  
-
-¥7,040  
-
----  
-## FIR-034  
+## FIR-003  
 
 **Brand**  
 
@@ -6639,7 +5532,7 @@ Rodan Custom Option Part（ベロ）
 ¥11,800  
 
 ---  
-## FIR-035  
+## FIR-004  
 
 **Brand**  
 
@@ -6675,7 +5568,7 @@ Rodan Custom Option Part（半月）
 ¥23,650  
 
 ---  
-## FIR-036  
+## FIR-005  
 
 **Brand**  
 
@@ -6711,7 +5604,47 @@ Fire Pit Carrying Case（Storageドメインより移設。Version 7.25）
 ¥20,900  
 
 ---  
-## FIR-037  
+## FIR-006  
+
+**Brand**  
+
+サンゾー工務店  
+
+**Product**  
+
+Iron Table  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- FIR-007  
+
+### Color  
+
+Black  
+
+### Material  
+
+Steel  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Fire Table (stand for FIR-001 RODAN BRICK)  
+
+### Price  
+
+¥25,080  
+
+---  
+
+## FIR-007  
 
 **Brand**  
 
@@ -6727,7 +5660,7 @@ Owned
 
 **Parent**  
 
-FIR-002  
+FIR-006  
 
 
 ### Color  
@@ -6745,6 +5678,1074 @@ Iron Table Carrying Case（Storageドメインより移設。Version 7.25）
 ### Price  
 
 ¥38,500  
+
+---  
+
+## FIR-008  
+
+**Brand**  
+
+DEVISE WORKS × BLACK DESIGN  
+
+**Product**  
+
+ブランコ（秋竿）  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- FIR-009  
+
+### Color  
+
+Black  
+
+### Material  
+
+Steel  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Fire Tool Stand  
+
+### Price  
+
+¥85,000  
+
+---  
+
+## FIR-009  
+
+**Brand**  
+
+DAMNGOOD!!  
+
+**Product**  
+
+HONE HOOK  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-008  
+
+### Quantity  
+
+2  
+
+
+### Color  
+
+Black  
+
+### Material  
+
+Iron  
+
+### Industrial Attribute  
+
+Hook  
+
+### Price  
+
+¥3,200  
+
+---  
+## FIR-010  
+
+**Brand**  
+
+neru design works  
+
+**Product**  
+
+ono kezuru  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Steel / Oak  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Axe  
+
+### Price  
+
+¥33,000  
+
+---  
+
+## FIR-011  
+
+**Brand**  
+
+neru design works  
+
+**Product**  
+
+nata kezuru  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Steel / Oak  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Machete  
+
+### Price  
+
+¥29,700  
+
+---  
+
+## FIR-012  
+
+**Brand**  
+
+asimocrafts × DEVISE WORKS  
+
+**Product**  
+
+MACKY DEVISE  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Steel / Oak  
+
+### Industrial Attribute  
+
+Fire Knife  
+
+### Price  
+
+¥54,450  
+
+---  
+## FIR-013  
+
+**Brand**  
+
+サンゾー工務店  
+
+**Product**  
+
+PULSE  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- FIR-014  
+- FIR-015  
+
+### Color  
+
+Black  
+
+### Material  
+
+Steel  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Fire Tongs  
+
+### Price  
+
+¥10,780  
+
+---  
+
+## FIR-014  
+
+**Brand**  
+
+asimocrafts  
+
+**Product**  
+
+asigrip  
+
+**Parent**  
+
+FIR-013  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Wood  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Grip Custom  
+
+### Price  
+
+¥6,380  
+
+---  
+
+## FIR-015  
+
+**Brand**  
+
+WHAT WE WANT（WWW）  
+
+**Product**  
+
+WWW_SAYA  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-013  
+
+
+### Color  
+
+Brown  
+
+### Material  
+
+Walnut  
+
+### Industrial Attribute  
+
+Sheath Case（Nata kezuru用）  
+
+### Price  
+
+¥9,900  
+
+---  
+## FIR-016  
+
+**Brand**  
+
+Snow Peak  
+
+**Product**  
+
+焚き火ツールPro  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- FIR-017  
+
+### Color  
+
+Black  
+
+### Material  
+
+Steel  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Ash Scoop  
+
+### Price  
+
+¥13,200  
+
+---  
+
+## FIR-017  
+
+**Brand**  
+
+asimocrafts  
+
+**Product**  
+
+asigrip  
+
+**Parent**  
+
+FIR-016  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Wood  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Grip Custom  
+
+### Price  
+
+¥4,810  
+
+---  
+
+## FIR-018  
+
+**Brand**  
+
+asimocrafts  
+
+**Product**  
+
+asiblaster  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black  
+
+### Material  
+
+Stainless Steel / Oak  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Fire Blower  
+
+### Price  
+
+¥33,000  
+
+---  
+
+## FIR-019  
+
+**Brand**  
+
+asimocrafts  
+
+**Product**  
+
+tsuru_s_asi  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black  
+
+### Material  
+
+Steel  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Fire Poker  
+
+### Price  
+
+¥19,800  
+
+---  
+
+## FIR-020  
+
+**Brand**  
+
+asimocrafts  
+
+**Product**  
+
+kushi_z_asi  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black / Brown  
+
+### Material  
+
+Steel（黒皮鉄板） / Oak  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Roasting Fork（全長約42cm、先端保護用レザーケース付き）  
+
+### Price  
+
+¥10,000（ショップ価格。実購入額は未確認）  
+
+---  
+
+## FIR-021  
+
+**Brand**  
+
+SOMABITO  
+
+**Product**  
+
+SOMA no Folk  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Light Brown  
+
+### Material  
+
+Oak  
+
+### Industrial Attribute  
+
+Fireside Fork  
+
+### Price  
+
+¥11,800  
+
+---  
+## FIR-022  
+
+**Brand**  
+
+SOMABITO  
+
+**Product**  
+
+SOMA no Hera  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Light Brown  
+
+### Material  
+
+Oak  
+
+### Industrial Attribute  
+
+Fireside Spatula  
+
+### Price  
+
+¥11,800  
+
+---  
+## FIR-023  
+
+**Brand**  
+
+Snow Peak  
+
+**Product**  
+
+Folding Torch  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- FIR-024  
+- FIR-025  
+- FIR-026  
+- FIR-027  
+- FIR-028  
+
+### Color  
+
+Silver  
+
+### Material  
+
+Stainless Steel  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Torch  
+
+### Price  
+
+¥7,920  
+
+---  
+
+## FIR-024  
+
+**Brand**  
+
+asimocrafts  
+
+**Product**  
+
+asigrip  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-023  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Wood  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Grip Custom  
+
+### Price  
+
+¥4,810  
+
+---  
+
+## FIR-025  
+
+**Brand**  
+
+neru design works  
+
+**Product**  
+
+copper250  
+
+**Status**  
+
+Essential  
+
+**Parent**  
+
+FIR-023  
+
+### Color  
+
+Copper  
+
+### Material  
+
+Copper  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Gas Tube Cover  
+
+### Price  
+
+¥28,000  
+
+---  
+
+## FIR-026  
+
+**Brand**  
+
+DAMNGOOD!! × OMA FACTORY  
+
+**Product**  
+
+FT no BARREL  
+
+**Status**  
+
+Upgrade  
+
+**Parent**  
+
+FIR-023  
+
+### Color  
+
+Gray  
+
+### Material  
+
+Titanium  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Torch Barrel  
+
+### Price  
+
+¥13,200  
+
+---  
+
+## FIR-027  
+
+**Brand**  
+
+OMA FACTORY  
+
+**Product**  
+
+OMA.BARREL  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-023  
+
+### Color  
+
+Gray  
+
+### Material  
+
+Titanium  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Torch Barrel  
+
+### Price  
+
+¥8,800  
+
+---  
+
+## FIR-028  
+
+**Brand**  
+
+OMA FACTORY  
+
+**Product**  
+
+OMA.KNOB-No.071F  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-023  
+
+### Color  
+
+Gray  
+
+### Material  
+
+Duralumin  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Torch Knob  
+
+### Price  
+
+¥2,400  
+
+---  
+
+## FIR-029  
+
+**Brand**  
+
+武井バーナー  
+
+**Product**  
+
+Purple Stove 501A  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Gold  
+
+### Material  
+
+Brass  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Kerosene Heater  
+
+### Price  
+
+¥121,000  
+
+---  
+
+## FIR-030  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+Unconfirmed  
+
+**Status**  
+
+Candidate  
+
+### Color  
+
+Black  
+
+### Material  
+
+Steel  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Fire Pit（検討中。旧FIR-020と統合。具体的な候補情報はCZ-001 Deliberation Codexで管理）  
+
+---  
+
+## FIR-031  
+
+**Brand**  
+
+zen camp  
+
+**Product**  
+
+TAKIBI SHEET  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black  
+
+### Material  
+
+Silicone-Coated Fiberglass  
+
+### Industrial Attribute  
+
+Fire-Resistant Sheet  
+
+### Price  
+
+¥7,480  
+
+---  
+## FIR-032  
+
+**Brand**  
+
+SomAbito  
+
+**Product**  
+
+焚き火side stand  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black（KURO脚）  
+
+### Material  
+
+Steel / Brass（真鍮紋章）  
+
+### Graphic Attribute  
+
+Emblem（紋章）  
+
+### Industrial Attribute  
+
+Fireside Stand  
+
+### Price  
+
+¥39,050  
+
+---  
+## FIR-033  
+
+**Brand**  
+
+neru design works × calma store  
+
+**Product**  
+
+shank heater 百式改  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- FIR-034  
+
+
+### Color  
+
+Black  
+
+### Material  
+
+Brass（Black-Painted）  
+
+### Industrial Attribute  
+
+Gas Stove  
+
+### Price  
+
+¥38,500  
+
+---  
+## FIR-034  
+
+**Brand**  
+
+neru design works  
+
+**Product**  
+
+shank container  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-033  
+
+
+### Color  
+
+Camouflage  
+
+### Material  
+
+Nylon  
+
+### Industrial Attribute  
+
+Stove Bag  
+
+### Price  
+
+¥8,800  
+
+---  
+## FIR-035  
+
+**Brand**  
+
+DEVISE WORKS × WHAT WE WANT  
+
+**Product**  
+
+MACCHO CASE  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Dark Brown  
+
+### Material  
+
+Walnut  
+
+### Industrial Attribute  
+
+Fire Starter Case  
+
+### Price  
+
+¥9,020  
+
+---  
+## FIR-036  
+
+**Brand**  
+
+WHAT WE WANT（WWW）  
+
+**Product**  
+
+WWW_HANGER  
+
+**Status**  
+
+Owned  
+
+### Quantity  
+
+7  
+
+
+### Color  
+
+Brown / Dark Brown  
+
+### Material  
+
+Walnut / Oak  
+
+### Industrial Attribute  
+
+Hook  
+
+### Price  
+
+¥7,040  
 
 ---  
 
@@ -7602,6 +7603,48 @@ MARI様のご指示に基づき、SHL-004（HELLOS factory Slug Shelter V2.0）�
 - Version 7.0〜7.36の記述内にある旧STR-ID表記は、当時の記録として遡及修正しない。
 
 - Related Documents：MD-001 Storage Blueprint（Ver.2.6）、MD-003 Galley Fare（Ver.2.9）。
+
+---  
+
+## Version 7.38  
+
+プロジェクトオーナーの直接指示に基づき、Fire Domainの番号整理（並べ替えと欠番詰め、新規1件の追加）を実施した。これはRegistry Rulesの「IDは変更されない」という原則に対する例外であり、Version 7.36（Furniture Domain全体の番号整理）・Version 7.37（Storage Domainの番号整理）と同様の、一回限りの意図的な再採番である。
+
+### Changes（Fire番号整理）
+
+- 下記の旧→新対応表に基づき、Fire Domain全37枠（FIR-001〜FIR-037）を新36枠（FIR-001〜FIR-036）へ同時に再採番した（プレースホルダ経由の一括置換により、途中の番号衝突は発生していない）。
+
+| 旧ID | 新ID | 旧ID | 新ID | 旧ID | 新ID |
+|---|---|---|---|---|---|
+| FIR-001 | FIR-001 | FIR-002 | FIR-006 | FIR-003 | FIR-008 |
+| FIR-004 | FIR-010 | FIR-005 | FIR-011 | FIR-006 | FIR-013 |
+| FIR-007 | FIR-014 | FIR-008 | FIR-016 | FIR-009 | FIR-017 |
+| FIR-010 | FIR-019 | FIR-011 | FIR-018 | FIR-012 | FIR-023 |
+| FIR-013 | FIR-024 | FIR-014 | FIR-025 | FIR-015 | FIR-026 |
+| FIR-016 | FIR-027 | FIR-017 | FIR-028 | FIR-018 | FIR-029 |
+| FIR-019 | FIR-030 | FIR-020 | （削除） | （新規） | FIR-020 |
+| FIR-021 | FIR-002 | FIR-022 | FIR-031 | FIR-023 | FIR-012 |
+| FIR-024 | FIR-009 | FIR-025 | FIR-032 | FIR-026 | （削除） |
+| FIR-027 | FIR-015 | FIR-028 | FIR-033 | FIR-029 | FIR-034 |
+| FIR-030 | FIR-035 | FIR-031 | FIR-021 | FIR-032 | FIR-022 |
+| FIR-033 | FIR-036 | FIR-034 | FIR-003 | FIR-035 | FIR-004 |
+| FIR-036 | FIR-005 | FIR-037 | FIR-007 | | |
+
+- 旧FIR-020（Retired記録。旧FIREGRAPHIX BLISS-SPの統合済みID）：欠番を詰めるため、記録自体を削除した。経緯（旧FIR-019への統合）はVersion 7.14を参照。
+- 旧FIR-026（neru design works × calma store、Ono kezuru カバー、旧FIR-004の子）：削除した。
+- FIR-020（新規）：asimocrafts kushi_z_asi（串焼き用フォーク、全長約42cm、先端保護用レザーケース付き）を登録。Status = Owned。Color: Black / Brown。Material: Steel（黒皮鉄板）／ Oak。Price: ¥10,000（ショップ価格。実購入額は未確認）。
+- Parent、Child Componentsリスト、Industrial Attribute内のFIR参照を、すべて上記対応表に基づき新番号へ更新した。
+- 実態に即して以下のParent/Child関係を新設・変更した：
+  - FIR-002（旧FIR-021、LECTER Ver2）：新規にParent: FIR-001を追加。FIR-001のChild ComponentsにFIR-002を追加。
+  - FIR-008（旧FIR-003、ブランコ／秋竿）：新規にChild Components: FIR-009を追加。
+  - FIR-009（旧FIR-024、HONE HOOK）：新規にParent: FIR-008を追加。
+  - FIR-013（旧FIR-006、PULSE）：Child ComponentsをFIR-014, FIR-015に更新（FIR-015を追加）。
+  - FIR-015（旧FIR-027、WWW_SAYA）：Parentを旧FIR-005（nata kezuru）からFIR-013（PULSE）へ変更。
+  - FIR-010（旧FIR-004、ono kezuru）・FIR-011（旧FIR-005、nata kezuru）：Child Componentsを削除（子なし。旧FIR-026削除および旧FIR-027の付け替えによる）。
+- MD-003 Galley Fare（Domain Scope Note内のFIR-018参照）、CZ-001 Deliberation Codex（Fire Pit見出しおよびNote内のFIR-019参照）、CZ-002 Vigil Protocol（MD-004 Reference内のFIR-014・FIR-015・FIR-019参照）を、それぞれ新番号へ更新。CZ-002のFIR-020（Status: Candidate）ブロックは、参照先ID自体が削除されるため削除した。
+- Version 7.0〜7.37の記述内にある旧FIR-ID表記は、当時の記録として遡及修正しない。
+
+- Related Documents：MD-003 Galley Fare、CZ-001 Deliberation Codex、CZ-002 Vigil Protocol（Fire番号整理に伴う参照更新）。
 
 ---  
 

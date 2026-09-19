@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: PX – Project  
-**Version**: 2.6  
+**Version**: 2.7  
 **Status**: Official  
 **Owner**: THE THIRD PLACE
 
@@ -22,6 +22,7 @@
 | 2.4 | 2026-09-18 | TP-004 Version 7.28（Furniture Domain番号整理）と連動し、Butterfly Table M Black LookのTP-004 ReferenceをFUR-017からFUR-018へ更新。 |
 | 2.5 | 2026-09-19 | MD-004 Version 7.34（Aroma番号入替）と連動し、エントリ014（Filoméla INCENSE CHAMBER）のMD-004 ReferenceをARM-003（Status: Essential）からARM-004（Status: Upgrade）へ、エントリ015（SCENT TOWER）のMD-004 ReferenceをARM-004からARM-003へ更新。エントリ015のStatus表記（Candidate）は、MD-004 Version 7.14（Essential化）以降の更新漏れであったため、あわせてEssentialへ訂正した。 |
 | 2.6 | 2026-09-19 | MD-004 Version 7.36（Furniture Domain番号整理・二回目）と連動し、Butterfly Table M Black LookのMD-004 ReferenceをFUR-018からFUR-026へ更新。 |
+| 2.7 | 2026-09-19 | MD-004 Version 7.38（Fire Domain番号整理）と連動し、エントリ019（copper250）のMD-004 ReferenceをFIR-014からFIR-025へ、エントリ020（FT no BARREL）をFIR-015からFIR-026へ、エントリ021（MT.SUMI Aura FG）をFIR-019からFIR-030へ更新。エントリ022（FIREGRAPHIX BLISS-SP、MD-004 Reference: 旧FIR-020）は、参照先の旧FIR-020レコード自体がMD-004側で削除されたため削除した。 |
 
 ---
 
@@ -808,7 +809,7 @@ copper250
 
 **MD-004 Reference**
 
-FIR-014 (Status: Essential)
+FIR-025 (Status: Essential)
 
 **Required Keywords**
 
@@ -830,7 +831,7 @@ FT no BARREL
 
 **MD-004 Reference**
 
-FIR-015 (Status: Upgrade)
+FIR-026 (Status: Upgrade)
 
 **Required Keywords**
 
@@ -853,35 +854,13 @@ Aura FG
 
 **MD-004 Reference**
 
-FIR-019 (Status: Candidate)
+FIR-030 (Status: Candidate)
 
 **Required Keywords**
 
 - MT.SUMI Aura FG
 - Aura FG fire pit
 - マウントスミ オーラFG
-
----
-
-## 022
-
-**Brand**
-
-FIREGRAPHIX
-
-**Target**
-
-BLISS-SP
-
-**MD-004 Reference**
-
-FIR-020 (Status: Candidate)
-
-**Required Keywords**
-
-- FIREGRAPHIX BLISS-SP
-- BLISS-SP fire pit
-- ファイアーグラフィックス ブリスSP
 
 ---
 
