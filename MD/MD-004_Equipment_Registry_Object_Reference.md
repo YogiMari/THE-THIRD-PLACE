@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.41  
+Version 7.42  
   
 ---  
   
@@ -113,7 +113,39 @@ Appearanceは、OP-002 Design Bibleにより、以下を用いて決定される
   
 # Furniture  
 
----  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## FUR-001  
 
@@ -199,6 +231,43 @@ Craft Leather
 ### Price  
 
 ¥116,400  
+
+---  
+
+## FUR-003  
+
+**Brand**  
+
+Release  
+
+**Product**  
+
+真聖衣  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FUR-002  
+
+
+### Color  
+
+Gold  
+
+### Material  
+
+Brass  
+
+### Industrial Attribute  
+
+Hardware / Screw Set Custom（ROYAL BROWN Chester Field Seat用カスタムパーツ）  
+
+### Price  
+
+¥18,655  
 
 ---  
 
@@ -757,311 +826,6 @@ Unit Top Plate
 
 ---  
 
-## FUR-025  
-
-**Brand**  
-
-DEVISE WORKS × WHAT WE WANT  
-
-**Product**  
-
-Butterfly D  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Walnut  
-
-### Graphic Attribute  
-
-Occult Emblem (Silkscreen)  
-
-### Industrial Attribute  
-
-Folding Table  
-
-### Price  
-
-¥41,800  
-
----  
-
-## FUR-026  
-
-**Brand**  
-
-nodel design  
-
-**Product**  
-
-Butterfly Table M Black Look  
-
-**Status**  
-
-Upgrade  
-
-### Color  
-
-Black  
-
-### Material  
-
-Walnut  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Side Table  
-
-### Price  
-
-¥66,000  
-
----  
-
-## FUR-027  
-
-**Brand**  
-
-BONFLAG  
-
-**Product**  
-
-TACTICAL AIR SOFA 2P  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Black  
-
-### Material  
-
-Oxford 1000D / PVC  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Inflatable Sofa  
-
-### Price  
-
-¥37,000  
-
----  
-
-## FUR-028  
-
-**Brand**  
-
-BONFLAG  
-
-**Product**  
-
-TACTICAL AIR BED 2P  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Black  
-
-### Material  
-
-Oxford 1000D / PVC  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Inflatable Bed  
-
-### Price  
-
-¥44,000  
-
----  
-
-## FUR-031  
-
-**Brand**  
-
-Snow Peak  
-
-**Product**  
-
-ダウン システムオフトン スリムマットセット（BD-060、掛け布団+マット一式）  
-
-**Status**  
-
-Essential  
-
-**Quantity**  
-
-2  
-
-### Color  
-
-Taupe / Classic Brown（トープ／クラシックブラウン。プロジェクトオーナーからの情報提供に基づく。メーカー公式ページ・レビューサイトのテキスト情報では独立した裏付けが取れていないため、購入前に実物・店舗での最終確認を推奨）  
-
-### Material  
-
-50D Polyester（表地）／150D Polyester（裏地）／Down 95%・Feather 5%（中綿、掛け布団部）／75D Polyester（マット部）  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Quilt & Sleeping Mat Set（関東〜雪中入門用、快適温度2℃・下限温度-4℃。掛け布団+コンパクトワイドマット（R値5.4・ASTM F3340-22準拠、2枚連結使用）のセット販売のため、旧FUR-021単体マット登録は本IDへ統合。FUR-032系との併用時はマット部が本格雪中用の主断熱層としても使用）  
-
-### Price  
-
-¥44,000  
-
----  
-
-## FUR-032  
-
-**Brand**  
-
-Unconfirmed  
-
-**Product**  
-
-Unconfirmed  
-
-**Status**  
-
-Candidate  
-
-### Color  
-
-Black  
-
-### Material  
-
-Down（Full Custom Order）  
-
-### Industrial Attribute  
-
-Quilt（本格雪中用トップキルト。バックレス構造につきFUR-031（マット部）・FUR-033との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
-
----  
-
-## FUR-033  
-
-**Brand**  
-
-Unconfirmed  
-
-**Product**  
-
-Unconfirmed  
-
-**Status**  
-
-Candidate  
-
-### Color  
-
-Unconfirmed  
-
-### Material  
-
-Closed-Cell Foam  
-
-### Industrial Attribute  
-
-Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-031（マット部）の下に重ね敷きする想定）  
-
----  
-
-## FUR-034  
-
-**Brand**  
-
-Unconfirmed  
-
-**Product**  
-
-Unconfirmed  
-
-**Status**  
-
-Candidate  
-
-### Color  
-
-Black  
-
-### Material  
-
-Unconfirmed  
-
-### Industrial Attribute  
-
-Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-031（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
-
----  
-
-## FUR-003  
-
-**Brand**  
-
-Release  
-
-**Product**  
-
-真聖衣  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-FUR-002  
-
-
-### Color  
-
-Gold  
-
-### Material  
-
-Brass  
-
-### Industrial Attribute  
-
-Hardware / Screw Set Custom（ROYAL BROWN Chester Field Seat用カスタムパーツ）  
-
-### Price  
-
-¥18,655  
-
----  
-
 ## FUR-018  
 
 **Brand**  
@@ -1288,38 +1052,6 @@ Table Hanger Hook
 
 ---  
 
-## FUR-029  
-
-**Brand**  
-
-ABLE  
-
-**Product**  
-
-IGT 1ユニットスタンド  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Dark Brown  
-
-### Material  
-
-Walnut  
-
-### Industrial Attribute  
-
-Table Unit Stand  
-
-### Price  
-
-¥20,200  
-
----  
-
 ## FUR-024  
 
 **Brand**  
@@ -1357,6 +1089,182 @@ Carrying Case（EXTENMON TABLE用）
 
 ---  
 
+## FUR-025  
+
+**Brand**  
+
+DEVISE WORKS × WHAT WE WANT  
+
+**Product**  
+
+Butterfly D  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Walnut  
+
+### Graphic Attribute  
+
+Occult Emblem (Silkscreen)  
+
+### Industrial Attribute  
+
+Folding Table  
+
+### Price  
+
+¥41,800  
+
+---  
+
+## FUR-026  
+
+**Brand**  
+
+nodel design  
+
+**Product**  
+
+Butterfly Table M Black Look  
+
+**Status**  
+
+Upgrade  
+
+### Color  
+
+Black  
+
+### Material  
+
+Walnut  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Side Table  
+
+### Price  
+
+¥66,000  
+
+---  
+
+## FUR-027  
+
+**Brand**  
+
+BONFLAG  
+
+**Product**  
+
+TACTICAL AIR SOFA 2P  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black  
+
+### Material  
+
+Oxford 1000D / PVC  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Inflatable Sofa  
+
+### Price  
+
+¥37,000  
+
+---  
+
+## FUR-028  
+
+**Brand**  
+
+BONFLAG  
+
+**Product**  
+
+TACTICAL AIR BED 2P  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black  
+
+### Material  
+
+Oxford 1000D / PVC  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Inflatable Bed  
+
+### Price  
+
+¥44,000  
+
+---  
+
+## FUR-029  
+
+**Brand**  
+
+ABLE  
+
+**Product**  
+
+IGT 1ユニットスタンド  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Dark Brown  
+
+### Material  
+
+Walnut  
+
+### Industrial Attribute  
+
+Table Unit Stand  
+
+### Price  
+
+¥20,200  
+
+---  
+
 ## FUR-030  
 
 **Brand**  
@@ -1386,6 +1294,130 @@ Hanger Rack
 ### Price  
 
 ¥22,000  
+
+---  
+
+## FUR-031  
+
+**Brand**  
+
+Snow Peak  
+
+**Product**  
+
+ダウン システムオフトン スリムマットセット（BD-060、掛け布団+マット一式）  
+
+**Status**  
+
+Essential  
+
+**Quantity**  
+
+2  
+
+### Color  
+
+Taupe / Classic Brown（トープ／クラシックブラウン。プロジェクトオーナーからの情報提供に基づく。メーカー公式ページ・レビューサイトのテキスト情報では独立した裏付けが取れていないため、購入前に実物・店舗での最終確認を推奨）  
+
+### Material  
+
+50D Polyester（表地）／150D Polyester（裏地）／Down 95%・Feather 5%（中綿、掛け布団部）／75D Polyester（マット部）  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Quilt & Sleeping Mat Set（関東〜雪中入門用、快適温度2℃・下限温度-4℃。掛け布団+コンパクトワイドマット（R値5.4・ASTM F3340-22準拠、2枚連結使用）のセット販売のため、旧FUR-021単体マット登録は本IDへ統合。FUR-032系との併用時はマット部が本格雪中用の主断熱層としても使用）  
+
+### Price  
+
+¥44,000  
+
+---  
+
+## FUR-032  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+Unconfirmed  
+
+**Status**  
+
+Candidate  
+
+### Color  
+
+Black  
+
+### Material  
+
+Down（Full Custom Order）  
+
+### Industrial Attribute  
+
+Quilt（本格雪中用トップキルト。バックレス構造につきFUR-031（マット部）・FUR-033との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
+
+---  
+
+## FUR-033  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+Unconfirmed  
+
+**Status**  
+
+Candidate  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Closed-Cell Foam  
+
+### Industrial Attribute  
+
+Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-031（マット部）の下に重ね敷きする想定）  
+
+---  
+
+## FUR-034  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+Unconfirmed  
+
+**Status**  
+
+Candidate  
+
+### Color  
+
+Black  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-031（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
 
 ---  
 # Light  
@@ -7680,6 +7712,12 @@ Fire Domain検討中案件の表記を整理した。登録内容（Equipment記
 ### Changes
 
 - FIR-020（asimocrafts kushi_z_asi、Owned）：Price を「¥10,000（ショップ価格。実購入額は未確認）」から「¥10,000」へ更新。プロジェクトオーナー確認により、この金額での購入が確定したため、注記を削除した。Version 7.38の履歴内にある同アイテムの「ショップ価格。実購入額は未確認」の記述は、当時の記録として遡及修正しない。
+
+---  
+
+## Version 7.42
+
+Furniture ドメインの記載順を FUR ID の昇順に整理。登録内容の変更なし。一部の子部品（FUR-003、FUR-018〜FUR-024、FUR-029、FUR-030）が FUR-034 の後ろに置かれていた配置を解消した。
 
 ---  
 
