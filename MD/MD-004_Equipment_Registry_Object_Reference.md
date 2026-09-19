@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.36  
+Version 7.37  
   
 ---  
   
@@ -4556,82 +4556,6 @@ Under Shelf
 
 ## STR-020  
 
-Retired. FIR-036へ移設済み（Fireドメインの装備専用ケースはFireドメインで管理する方針に基づき、Storageから移動）。本IDは欠番として保持する。  
-
----  
-
-## STR-021  
-
-Retired. FIR-037へ移設済み（Fireドメインの装備専用ケースはFireドメインで管理する方針に基づき、Storageから移動）。本IDは欠番として保持する。  
-
----  
-
-## STR-022  
-
-**Brand**  
-
-Snow Peak  
-
-**Product**  
-
-Multi Container L  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Black  
-
-### Material  
-
-Fabric  
-
-### Industrial Attribute  
-
-Accessory Storage  
-
-### Price  
-
-¥9,108  
-
----  
-
-## STR-023  
-
-**Brand**  
-
-WHATNOT  
-
-**Product**  
-
-One Touch Bucket HD  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Black  
-
-### Material  
-
-Canvas  
-
-### Industrial Attribute  
-
-Consumables Storage  
-
-### Price  
-
-¥2,980  
-
----  
-
-## STR-024  
-
 **Brand**  
 
 YETI  
@@ -4643,6 +4567,10 @@ Roadie 24
 **Status**  
 
 Owned  
+
+### Child Components  
+
+- STR-021  
 
 ### Color  
 
@@ -4662,7 +4590,43 @@ Cooler
 
 ---  
 
-## STR-025  
+## STR-021  
+
+**Brand**  
+
+YETI  
+
+**Product**  
+
+YETI ICE 4 lb (1.8 kg)  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+STR-020  
+
+### Color  
+
+Blue  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Ice Pack (Hard)  
+
+### Price  
+
+¥6,160  
+
+---  
+
+## STR-022  
 
 **Brand**  
 
@@ -4675,6 +4639,10 @@ Hopper Flip 12
 **Status**  
 
 Owned  
+
+### Child Components  
+
+- STR-023  
 
 ### Color  
 
@@ -4694,6 +4662,156 @@ Soft Cooler
 
 ---  
 
+## STR-023  
+
+**Brand**  
+
+YETI  
+
+**Product**  
+
+YETI Thin Ice - Large  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+STR-022  
+
+### Color  
+
+Blue  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Ice Pack (Soft, for Soft Cooler)  
+
+### Price  
+
+¥4,730  
+
+---  
+
+## STR-024  
+
+**Brand**  
+
+YETI  
+
+**Product**  
+
+Rambler® Half Gallon Jug  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- STR-024a  
+
+
+### Color  
+
+Silver  
+
+### Material  
+
+Stainless Steel  
+
+### Industrial Attribute  
+
+Insulated Jug (1.9L)  
+
+### Price  
+
+¥17,930  
+
+---  
+
+## STR-024a  
+
+**Brand**  
+
+calma store  
+
+**Product**  
+
+KRAKEN STAND  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+STR-024  
+
+
+### Color  
+
+Brown  
+
+### Material  
+
+Oak / Stainless Steel  
+
+### Industrial Attribute  
+
+Jug Stand（STR-024用）  
+
+### Price  
+
+¥19,800  
+
+---  
+
+## STR-025  
+
+**Brand**  
+
+ANOBA  
+
+**Product**  
+
+フォールディングサイドテーブル  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- STR-026  
+
+### Color  
+
+Black  
+
+### Material  
+
+Steel  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Side Table（SKU: AN139。サイズ約38×31×45Hcm、重量約2850g、静耐荷重天板約5kg・各棚約2.5kg）  
+
+### Price  
+
+¥9,000  
+
+---  
+
 ## STR-026  
 
 **Brand**  
@@ -4710,7 +4828,7 @@ Owned
 
 **Parent**  
 
-STR-029  
+STR-025  
 
 ### Color  
 
@@ -4726,7 +4844,7 @@ None
 
 ### Industrial Attribute  
 
-Dust Bucket（燃えないゴミ〈缶・ビン〉用。使用頻度が低いため、多段階の取り出し動作を許容する。従来使用のSnow Peak ガビングスタンド（DB-030、STR-027としてRetired登録済み）からの置き換えとして採用）  
+Dust Bucket（燃えないゴミ〈缶・ビン〉用。使用頻度が低いため、多段階の取り出し動作を許容する。従来使用のSnow Peak ガビングスタンド（DB-030。Version 7.20でRetired登録。Version 7.37の番号整理により当該レコードは削除）からの置き換えとして採用）  
 
 ### Price  
 
@@ -4735,12 +4853,6 @@ Dust Bucket（燃えないゴミ〈缶・ビン〉用。使用頻度が低いた
 ---  
 
 ## STR-027  
-
-Retired. Snow Peak ガビングスタンド（DB-030）。サイズ50×36×63(h)cm、重量2.0kg、ポリ袋を最大3枚まで取り付け分別対応可能なフレーム組立式ダストスタンドであったが、設営効率（OP-002 Storage Domain評価軸）を著しく損なうと判断され、STR-026（ANOBA BLACK EDITION マルチダストバケット）への置き換え対象となった。MD-004への正式登録がなされないまま運用されていた期間があり、本レコードは事後的な記録である。MD-001 Duplicate Storage Exceptionの適用事例として、本IDを今後同種の入れ替えが発生した際の記録形式の参照として保持する。  
-
----  
-
-## STR-028  
 
 **Brand**  
 
@@ -4776,23 +4888,19 @@ Dust Bucket（燃えるゴミ用。本体はWINDY AND RAINY「Folding wire T-box
 
 ---  
 
-## STR-029  
+## STR-028  
 
 **Brand**  
 
-ANOBA  
+Snow Peak  
 
 **Product**  
 
-フォールディングサイドテーブル  
+Multi Container L  
 
 **Status**  
 
-Essential  
-
-### Child Components  
-
-- STR-026  
+Owned  
 
 ### Color  
 
@@ -4800,31 +4908,27 @@ Black
 
 ### Material  
 
-Steel  
-
-### Graphic Attribute  
-
-None  
+Fabric  
 
 ### Industrial Attribute  
 
-Side Table（SKU: AN139。サイズ約38×31×45Hcm、重量約2850g、静耐荷重天板約5kg・各棚約2.5kg）  
+Accessory Storage  
 
 ### Price  
 
-¥9,000  
+¥9,108  
 
 ---  
 
-## STR-030  
+## STR-029  
 
 **Brand**  
 
-YETI  
+WHATNOT  
 
 **Product**  
 
-YETI ICE 4 lb (1.8 kg)  
+One Touch Bucket HD  
 
 **Status**  
 
@@ -4832,125 +4936,19 @@ Owned
 
 ### Color  
 
-Blue  
+Black  
 
 ### Material  
 
-Plastic  
+Canvas  
 
 ### Industrial Attribute  
 
-Ice Pack (Hard)  
+Consumables Storage  
 
 ### Price  
 
-¥6,160  
-
----  
-
-## STR-031  
-
-**Brand**  
-
-YETI  
-
-**Product**  
-
-YETI Thin Ice - Large  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Blue  
-
-### Material  
-
-Plastic  
-
-### Industrial Attribute  
-
-Ice Pack (Soft, for Soft Cooler)  
-
-### Price  
-
-¥4,730  
-
----  
-
-## STR-032  
-
-**Brand**  
-
-YETI  
-
-**Product**  
-
-Rambler® Half Gallon Jug  
-
-**Status**  
-
-Owned  
-
-### Child Components  
-
-- STR-032a  
-
-
-### Color  
-
-Silver  
-
-### Material  
-
-Stainless Steel  
-
-### Industrial Attribute  
-
-Insulated Jug (1.9L)  
-
-### Price  
-
-¥17,930  
-
----  
-
-## STR-032a  
-
-**Brand**  
-
-calma store  
-
-**Product**  
-
-KRAKEN STAND  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-STR-032  
-
-
-### Color  
-
-Brown  
-
-### Material  
-
-Oak / Stainless Steel  
-
-### Industrial Attribute  
-
-Jug Stand（STR-032用）  
-
-### Price  
-
-¥19,800  
+¥2,980  
 
 ---  
 
@@ -5028,7 +5026,7 @@ Leg（Beck Container②用）
 
 ---  
 
-## STR-033  
+## STR-030  
 
 **Brand**  
 
@@ -6706,7 +6704,7 @@ Canvas
 
 ### Industrial Attribute  
 
-Fire Pit Carrying Case（旧STR-020より移設）  
+Fire Pit Carrying Case（Storageドメインより移設。Version 7.25）  
 
 ### Price  
 
@@ -6742,7 +6740,7 @@ Canvas
 
 ### Industrial Attribute  
 
-Iron Table Carrying Case（旧STR-021より移設）  
+Iron Table Carrying Case（Storageドメインより移設。Version 7.25）  
 
 ### Price  
 
@@ -6971,7 +6969,7 @@ STR-007
 └ STR-011  
 └ STR-012  
 
-STR-029  
+STR-025  
 └ STR-026  
 
 ---  
@@ -7569,6 +7567,41 @@ MARI様のご指示に基づき、SHL-004（HELLOS factory Slug Shelter V2.0）�
 - CZ-001 Deliberation Codex（Winter Top Quilt／Winter Sleeping Mat／Pad Sheet／Confirmed - Purchase PendingにおけるFUR参照）、CZ-002 Vigil Protocol（Butterfly Table M Black LookのMD-004 Reference）を、それぞれ新番号へ更新。
 
 - Related Documents：CZ-001 Deliberation Codex、CZ-002 Vigil Protocol（Furniture番号整理に伴う参照更新）。
+
+---  
+
+## Version 7.37
+
+プロジェクトオーナーの直接指示に基づき、Storage Domainの番号整理（並べ替えと欠番詰め）を実施した。これはRegistry Rulesの「IDは変更されない」という原則に対する例外であり、Version 7.28（Furniture Domain Kermit CARRY TOTEの位置整理）・Version 7.36（Furniture Domain全体の番号整理）と同様の、一回限りの意図的な再採番である。
+
+### Changes（Storage番号整理）
+
+- 下記の旧→新対応表に基づき、Storage DomainのSTR-020〜STR-033（STR-032a含む）を同時に再採番した（プレースホルダ経由の一括置換により、途中の番号衝突は発生していない）。STR-001〜STR-019・STR-013a・STR-015aは変更なし。
+
+| 旧ID | 新ID | 製品 |
+|---|---|---|
+| STR-024 | STR-020 | YETI Roadie 24 |
+| STR-030 | STR-021 | YETI ICE 4 lb |
+| STR-025 | STR-022 | YETI Hopper Flip 12 |
+| STR-031 | STR-023 | YETI Thin Ice - Large |
+| STR-032 | STR-024 | YETI Rambler Half Gallon Jug |
+| STR-032a | STR-024a | calma store KRAKEN STAND |
+| STR-029 | STR-025 | ANOBA フォールディングサイドテーブル |
+| STR-026 | STR-026 | ANOBA ダストバケット（番号変更なし） |
+| STR-028 | STR-027 | KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box |
+| STR-022 | STR-028 | Snow Peak Multi Container L |
+| STR-023 | STR-029 | WHATNOT One Touch Bucket HD |
+| STR-033 | STR-030 | wanderout ユニバーサルスタンド |
+
+- 旧STR-020・STR-021（Fireドメインへ移設済みのRetiredレコード。Version 7.25）、および旧STR-027（Snow Peak ガビングスタンド、Retired。Version 7.20で事後的に登録）の計3件は、跡地に新IDが入るため本Versionで削除した。経緯はVersion 7.20（STR-027の事後登録）・Version 7.25（旧STR-020・STR-021のFireドメイン移設）を参照。
+- Parent、Child Componentsリスト、Industrial Attribute内のSTR参照を、すべて上記対応表に基づき新番号へ更新した。FIR-036・FIR-037のIndustrial Attribute内にあった「旧STR-020／STR-021より移設」という記述は、削除された旧IDを指すため「Storageドメインより移設。Version 7.25」に改めた。
+- Parent / Child Rules（親子関係ルール）章のExampleを `STR-029 └ STR-026` から `STR-025 └ STR-026` へ更新した。
+- STR-020（YETI Roadie 24）とSTR-021（YETI ICE 4 lb）、STR-022（YETI Hopper Flip 12）とSTR-023（YETI Thin Ice - Large）について、実態に即してParent/Child関係を新設した（STR-020のChild ComponentsにSTR-021を追加、STR-021にParent: STR-020を追加。STR-022・STR-023も同様）。
+- STR-025（旧STR-029、ANOBA フォールディングサイドテーブル）のStatusを、購入報告に基づきEssentialからOwnedへ更新した。
+- STR-026（ANOBAダストバケット）のIndustrial Attribute内、旧STR-027（削除済み）への言及を、置き換え元の経緯（Version 7.20でRetired登録、Version 7.37の番号整理により当該レコードは削除）を説明する記述に改めた。
+- Version 7.0〜7.36の記述内にある旧STR-ID表記は、当時の記録として遡及修正しない。
+
+- Related Documents：MD-001 Storage Blueprint（Ver.2.6）、MD-003 Galley Fare（Ver.2.9）。
 
 ---  
 
