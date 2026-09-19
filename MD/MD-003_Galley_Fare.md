@@ -1,5 +1,5 @@
 # MD-003 Galley Fare
-Version 2.7
+Version 2.8
 
 ---
 
@@ -47,6 +47,8 @@ KIT-001〜（3文字Prefix、MD-004の採番規則を継続使用）
 IDは欠番不可。番号は原則として変更しない。
 
 ただし、プロジェクトオーナーの明示的な指示による全面的な再編成（Version 2.5：用途別グルーピングによる全件再採番）は、この原則の例外として記録する。再編成の詳細な新旧対応表はVersion Historyに記載する。
+
+他のMaster Document（MD-004等）へ管理を移管したIDは、欠番とせず、移管先を示す記録（Retired）として保持する（Version 2.8より）。
 
 複数の候補が同一カテゴリで併存する場合、同一メイン番号に対して枝番（a, b, c...）を付与する（例：KIT-015a, KIT-015b, KIT-015c）。
 
@@ -107,7 +109,7 @@ Version 2.5より、KIT-番号は取得順の連番ではなく、用途別グ�
 10. コーヒー器具（KIT-060〜062）
 11. 鍋敷き（KIT-063）
 12. 収納・スパイス（KIT-064〜069）
-13. ゴミ処理（KIT-070）
+13. ゴミ処理（KIT-070〜070b。Version 2.8よりMD-004 Storage Domainへ移管済み。移管記録のみ保持）
 
 新規カテゴリの追加時は、末尾（現状KIT-070の次）に新グループとして追加するか、既存グループ内に挿入する場合は当該グループ以降の番号をすべて繰り下げる全面再採番を伴う。番号変更を伴う再編成は、その都度Version Historyに新旧対応表を記録する。
 
@@ -121,6 +123,8 @@ MD-004のFire Domainと本書Kitchen（MD-003）は、燃料の種類ではな�
 コーヒー器具（ミル・ケトル・ドリッパー等）についても、キッチンゾーンでの調理行為の一部として同様にKitchenで管理する。
 
 この区分は、MD-004 Fire Domainの既存定義を変更するものではなく、両ドメインの境界を目的ベースで明確化したものである。
+
+**Storage Domainとの境界（Version 2.8追記）**：ゴミ箱・ダストスタンド・ダストバケット（およびその置き台となるサイドテーブル）は、調理を目的としない収納系の装備であるため、Kitchenではなくストレージ（MD-004 Storage Domain）で管理する。
 
 ---
 
@@ -141,6 +145,12 @@ Snow Peak
 **Status**
 
 Owned
+
+### Child Components
+
+- KIT-071
+- KIT-072
+- KIT-073
 
 ### Color
 
@@ -2586,97 +2596,19 @@ Cutlery / Kitchen Tool Storage Pouch（Mesh, Breathable, S Size）
 
 ## KIT-070
 
-**Brand**
-
-Snow Peak
-
-**Product**
-
-ガビングスタンド
-
-**Status**
-
-Owned
-
-### Color
-
-Black（Frame, Presumed）
-
-### Material
-
-Aluminum Alloy・Nylon（Frame）／Tarpaulin（Bag）
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Freestanding Dust Stand（Frame + Gabbing Bag + Storage Case, 50×36×63cm, 2.0kg）— Replacement Under Consideration
+Retired. MD-004 Equipment Registry（Storage Domain）STR-027へ移管済み（Version 2.8）。旧登録：Snow Peak ガビングスタンド（Owned・置換検討中）。ゴミ箱はストレージ装備であるため、MD-004で一元管理する。本IDは移管記録として保持する。
 
 ---
 
 ## KIT-070a
 
-**Brand**
-
-ANOBA
-
-**Product**
-
-BLACK EDITION マルチダストバケット（SKU: AN118）
-
-**Status**
-
-Candidate
-
-### Color
-
-Black
-
-### Material
-
-Polyester／PE Board／Tarpaulin／PP
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Foldable Bucket-Type Bag（Gear Storage / Trash Bin Dual-Use, 8 Bag-Hanging Hooks for 2-Way Sorting, approx. 36×27×32Hcm, 1250g）— Replacement Candidate for KIT-070
+Retired. MD-004 Equipment Registry（Storage Domain）STR-026へ移管済み（Version 2.8）。旧登録：ANOBA BLACK EDITION マルチダストバケット（SKU: AN118、Candidate）。MD-004ではSTR-026としてOwned登録されている。本IDは移管記録として保持する。
 
 ---
 
 ## KIT-070b
 
-**Brand**
-
-ANOBA
-
-**Product**
-
-フォールディングサイドテーブル（SKU: AN129）
-
-**Status**
-
-Candidate
-
-### Color
-
-Silver（Steel, Unfinished）
-
-### Material
-
-Steel
-
-### Graphic Attribute
-
-None
-
-### Industrial Attribute
-
-Folding Side Table（Height-Adjustable Mesh Shelf, Designed to Pair with KIT-070a Multi Dust Bucket as a Trash Station, approx. 38×31×H45cm, 2850g）
+Retired. MD-004 Equipment Registry（Storage Domain）STR-029へ移管済み（Version 2.8）。旧登録：ANOBA フォールディングサイドテーブル（SKU: AN129、Silver、Candidate）。MD-004ではSTR-029（SKU: AN139、Black、Essential）として登録されており、SKU・色は旧登録と一致していなかった。MD-004の記載を正とする。本IDは移管記録として保持する。
 
 ---
 
@@ -3509,6 +3441,24 @@ MARI様がClaude導入以前に個人管理していたスプレッドシート�
 - KIT-008：Colorを「Silver」から「Black」へ訂正（MARI様の実物確認に基づく）。
 - 既知の未確認事項：KIT-074（リフターグリップ）の価格が未確認。一部新規登録アイテム（ニッチなガレージブランド品）はウェブ上での公式情報が確認できず、購入記録上の名称をそのまま採用している。
 - Relationship to Other Core Documents：変更なし。
+
+---
+
+## Version 2.8
+
+ゴミ箱（ダストスタンド・ダストバケット）はストレージの装備であるとのMARI様のご判断に基づき、KIT-070系（KIT-070・070a・070b）をMD-004 Equipment Registry（Storage Domain）へ移管し、MD-003とMD-004の二重登録を解消した。あわせて、KIT-001の子部品リストの欠落を補った。
+
+### Changes
+
+- KIT-070（Snow Peak ガビングスタンド）：MD-004 STR-027（Retired）へ移管。本IDは移管記録として保持。
+- KIT-070a（ANOBA BLACK EDITION マルチダストバケット）：MD-004 STR-026（Owned）へ移管。本IDは移管記録として保持。
+- KIT-070b（ANOBA フォールディングサイドテーブル）：MD-004 STR-029（Essential）へ移管。本IDは移管記録として保持。
+- 旧KIT-070bの記載（SKU: AN129、Silver）とMD-004 STR-029の記載（SKU: AN139、Black）は一致していなかった。MD-004の記載を正として維持した。SKU・色の公式情報による確認は未了。
+- Registry Rules（Equipment ID）：他のMaster Documentへ移管したIDは、欠番とせず移管記録（Retired）として保持する旨を追記。
+- Category Grouping Policy：グループ13（ゴミ処理）を、MD-004 Storage Domainへ移管済みで移管記録のみ保持する旨に更新。
+- Domain Scope Note：ゴミ箱・ダストスタンド・ダストバケット（およびその置き台となるサイドテーブル）はStorage Domain（MD-004）で管理する旨を追記。
+- KIT-001：Child Componentsとして KIT-071・KIT-072・KIT-073 を追記（各子部品のParent記載は従来どおり）。
+- その他のKIT登録内容に変更なし。
 
 ---
 
