@@ -50,7 +50,7 @@ THE-THIRD-PLACE/
 | TP-000 | Original | プロジェクトの原典。特定のギアやデザインではなく、著者が人生を通して辿り着いた「判断原理」そのものを記録した最上位文書。 |
 | TP-001 | Constitution | プロジェクト全体の憲章。思想・運営原則・ブランドとの向き合い方（Brand Philosophy）・意思決定の構造（Decision Philosophy）を定義する。 |
 | TP-002 | Design Bible | 設計思想・評価基準・Design Language（Appearance／Industrial／Graphic／Harmony）を定めるプロジェクトの根幹文書。 |
-| TP-003 | Field Atlas Landscape Framework | キャンプ場・ロケーションなど、プロジェクトが展開される「舞台」そのものの選定基準を定義する。 |
+| TP-003 | Field Atlas Landscape Framework | フィールド・ロケーションなど、プロジェクトが展開される「舞台」そのものの選定基準を定義する。 |
 | TP-004 | Equipment Registry Object Reference | 所有物（Equipment）に関する唯一のマスターデータベース。Design Bibleとの美意識的整合を選定条件とする。 |
 | TP-005 | Acquisition Strategy | Equipmentを「いつ・どの順序で・どのような判断基準で迎えるか」を定める調達戦略文書。 |
 | TP-006 | Foundation Compass | Equipmentを最も美しく、効率的に、一貫性を持って運用するための基盤指針。収納マニュアルではなく「運用の基盤」を定義する。 |
