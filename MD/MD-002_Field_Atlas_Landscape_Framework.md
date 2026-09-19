@@ -1,4 +1,4 @@
-# TP-003
+# MD-002
 # Field Atlas Landscape Framework
 ## Ver.3.2
 
@@ -551,7 +551,7 @@ Ver.3.1までは絶対値によるヒアリングだったが、Ver.3.2より**�
 
 - 各軸は0〜10点のスコアで記録する。
 - 訪問済みフィールドは、既存の基準・記録済みサイトとの相対比較によるMariのヒアリング値を記録する。
-- 未訪問フィールドは、TP-003 Field Atlas Database内に既に記録されている調査情報（Identityコメント・チェックイン条件・区画面積等の一次情報）を根拠とした暫定スコアとして記録する。新たな推測調査は行わない。
+- 未訪問フィールドは、MD-002 Field Atlas Database内に既に記録されている調査情報（Identityコメント・チェックイン条件・区画面積等の一次情報）を根拠とした暫定スコアとして記録する。新たな推測調査は行わない。
 - 未記録の軸は「—」とし、推測で埋めない。
 - Partner Value（合計）は、6軸すべてが記録された時点で自動的に算出する。一部の軸が「—」の場合は合計も「—」とする。
 - レーダーチャート等で可視化する際、未訪問（暫定）データは、訪問済み（実測）データと明確に区別できる色・線種で表示する。
@@ -646,17 +646,17 @@ THE THIRD PLACE Core Documents の一つとして、
 
 以下の文書と連携する。
 
-- TP-000 THE THIRD PLACE Original
-- TP-001 THE THIRD PLACE Constitution
-- TP-002 THE THIRD PLACE Design Bible
-- TP-004 Equipment Registry Object Reference
-- TP-005 Acquisition Strategy
-- TP-006 Foundation Compass
-- TP-007 Habitat Architecture
-- TP-008 Affinity Lexicon
-- TP-009 Aesthetic Grammar
-- TP-010 Storage Blueprint
-- TP-011 Galley Fare
+- DS-001 THE THIRD PLACE Original
+- OP-001 THE THIRD PLACE Constitution
+- OP-002 THE THIRD PLACE Design Bible
+- MD-004 Equipment Registry Object Reference
+- OP-005 Acquisition Strategy
+- OP-006 Foundation Compass
+- OP-007 Habitat Architecture
+- OP-003 Affinity Lexicon
+- OP-004 Aesthetic Grammar
+- MD-001 Storage Blueprint
+- MD-003 Galley Fare
 
 Field Atlas は、
 
@@ -693,3 +693,9 @@ THE THIRD PLACE を実現するための
 | 3.0 | 2026-09-15 | Evaluation Frameworkを全面改訂。旧Surroundings軸を廃止しIdentity軸（Surrounding Value）へ統合。新たにComfort軸（設備への場内距離・区画間隔・プライバシー等）を新設。Partner Valueを独立評価軸から、6軸（Site・Facility・Comfort・View・Identity・近さ）の合計による算出値（総合スコア）へ変更。Ranking Philosophyの「距離はスコアに含めない」という方針をMariの意思決定により正式に撤回し、近さ（Distance）を6軸の1つとして正式にスコアへ組み込む方針へ転換。Site軸に地面種別（砂利7点以上／芝4〜6点／土3点以下、ただし芝の質次第で例外あり）のスコアリング目安を追加。既存49サイトの統合スコアはVer.2.1までの旧フレームワークによる暫定値のまま据え置き、新フレームワークでの再評価は順次実施する方針を明記。Radar Sub-Scoresを6軸＋Partner Value（合計）の構成へ再設計。 |
 | 3.1 | 2026-09-15 | Facility軸の定義を明確化し、管理棟に併設されたショップ・温泉・サウナ・スパ等の体験価値はFacilityではなくIdentity（Experience Identity）で評価する旨を追記。Radar Sub-Scoresのスノーピークヘッドクォーターズ・Render Fika・RECAMP 富士スピードウェイの3件について、新6軸フレームワークで全軸を再ヒアリングし、Partner Value（合計）を算出。 |
 | 3.2 | 2026-09-15 | Radar Sub-Scoresのヒアリング方式を絶対値評価から**相対比較方式**へ変更し、全49件（訪問済み37件・未訪問12件）を最初から撮り直した。軸ごとの10点基準サイトを設定（Site：South One Village／Facility：スノーピークHQ・Render Fika／Comfort：Render Fika／View：浩庵キャンプ場／Identity：Render Fika・スノーピークHQ・スノーピーク鹿沼／近さ：Render Fika10点・スノーピークHQ1点）。View軸の基準として浩庵キャンプ場（山梨県身延町・本栖湖畔）を新規Reference Benchmark Siteとして追加。訪問済み37件はMariへの相対比較ヒアリング、未訪問12件はField Atlas Database記載の調査情報を根拠とした暫定値により、Partner Value（合計）を全件算出した。最高はRender Fika（54点）、最低はサンビレッジ金谷キャンプ場（18点）。 |
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TP-003からMD-002へ番号を変更した。自己ID表記および「Relationship to Other Core Documents」参照リストを新ID体系へ更新した。Revision History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Ver.3.2）に変更はない。旧ID: TP-003。
