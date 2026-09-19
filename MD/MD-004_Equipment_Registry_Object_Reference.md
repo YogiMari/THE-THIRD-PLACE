@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.33  
+Version 7.34  
   
 ---  
   
@@ -132,9 +132,9 @@ Owned
 ### Child Components  
 
 - FUR-002  
-- FUR-003  
 - FUR-004  
 - FUR-005  
+- FUR-006  
 
 ### Color  
 
@@ -178,7 +178,7 @@ FUR-001
 
 ### Child Components  
 
-- FUR-025  
+- FUR-003  
 
 ### Color  
 
@@ -202,7 +202,7 @@ Craft Leather
 
 ---  
 
-## FUR-003  
+## FUR-004  
 
 **Brand**  
 
@@ -242,7 +242,7 @@ Hardware Custom
 
 ---  
 
-## FUR-004  
+## FUR-005  
 
 **Brand**  
 
@@ -282,7 +282,7 @@ Leg Extension
 
 ---  
 
-## FUR-005  
+## FUR-006  
 
 **Brand**  
 
@@ -322,7 +322,7 @@ Armrest Replacement
 
 ---  
 
-## FUR-006  
+## FUR-007  
 
 **Brand**  
 
@@ -338,10 +338,10 @@ Owned
 
 ### Child Components  
 
-- FUR-007  
 - FUR-008  
 - FUR-009  
 - FUR-010  
+- FUR-011  
 
 ### Color  
 
@@ -365,7 +365,7 @@ Organic Furniture
 
 ---  
 
-## FUR-007  
+## FUR-008  
 
 **Brand**  
 
@@ -381,7 +381,7 @@ Owned
 
 **Parent**  
 
-FUR-006  
+FUR-007  
 
 ### Color  
 
@@ -405,7 +405,7 @@ Seat Custom
 
 ---  
 
-## FUR-008  
+## FUR-009  
 
 **Brand**  
 
@@ -421,7 +421,7 @@ Owned
 
 **Parent**  
 
-FUR-006  
+FUR-007  
 
 ### Color  
 
@@ -445,7 +445,7 @@ Hardware Custom
 
 ---  
 
-## FUR-009  
+## FUR-010  
 
 **Brand**  
 
@@ -461,7 +461,7 @@ Owned
 
 **Parent**  
 
-FUR-006  
+FUR-007  
 
 ### Color  
 
@@ -485,7 +485,7 @@ Leg Extension
 
 ---  
 
-## FUR-010  
+## FUR-011  
 
 **Brand**  
 
@@ -501,7 +501,7 @@ Owned
 
 **Parent**  
 
-FUR-006  
+FUR-007  
 
 ### Color  
 
@@ -525,7 +525,7 @@ Armrest Replacement
 
 ---  
 
-## FUR-011  
+## FUR-012  
 
 **Brand**  
 
@@ -549,7 +549,7 @@ Black
 
 ### Industrial Attribute  
 
-Carrying Tote（Kermit Chair①②共通使用、2脚収納可。Version 7.28にて、MARI様のご指示によりKermit Chair②の子部品群（FUR-007〜FUR-010）の直後の番号へ移動。以降のFurniture IDを1つずつ繰り下げ）  
+Carrying Tote（Kermit Chair①②共通使用、2脚収納可。Version 7.28にて、MARI様のご指示によりKermit Chair②の子部品群（FUR-008〜FUR-011）の直後の番号へ移動。以降のFurniture IDを1つずつ繰り下げ）  
 
 ### Price  
 
@@ -557,7 +557,7 @@ Carrying Tote（Kermit Chair①②共通使用、2脚収納可。Version 7.28に
 
 ---  
 
-## FUR-012  
+## FUR-013  
 
 **Brand**  
 
@@ -593,7 +593,7 @@ Fireside Chair
 
 ---  
 
-## FUR-013  
+## FUR-014  
 
 **Brand**  
 
@@ -629,7 +629,7 @@ Fireside Chair
 
 ---  
 
-## FUR-014  
+## FUR-015  
 
 **Brand**  
 
@@ -645,15 +645,15 @@ Owned
 
 ### Child Components  
 
-- FUR-015  
 - FUR-016  
-- FUR-026  
-- FUR-027  
-- FUR-028  
-- FUR-029  
-- FUR-030  
-- FUR-031  
-- FUR-033  
+- FUR-017  
+- FUR-018  
+- FUR-019  
+- FUR-020  
+- FUR-021  
+- FUR-022  
+- FUR-023  
+- FUR-024  
 
 ### Color  
 
@@ -677,7 +677,7 @@ Kitchen Extension Table
 
 ---  
 
-## FUR-015  
+## FUR-016  
 
 **Brand**  
 
@@ -693,7 +693,7 @@ Upgrade
 
 **Parent**  
 
-FUR-014  
+FUR-015  
 
 ### Color  
 
@@ -717,7 +717,7 @@ Unit Top Plate
 
 ---  
 
-## FUR-016  
+## FUR-017  
 
 **Brand**  
 
@@ -733,7 +733,7 @@ Upgrade
 
 **Parent**  
 
-FUR-014  
+FUR-015  
 
 ### Color  
 
@@ -757,7 +757,7 @@ Unit Top Plate
 
 ---  
 
-## FUR-017  
+## FUR-025  
 
 **Brand**  
 
@@ -793,7 +793,7 @@ Folding Table
 
 ---  
 
-## FUR-018  
+## FUR-026  
 
 **Brand**  
 
@@ -829,7 +829,7 @@ Side Table
 
 ---  
 
-## FUR-019  
+## FUR-027  
 
 **Brand**  
 
@@ -865,7 +865,7 @@ Inflatable Sofa
 
 ---  
 
-## FUR-020  
+## FUR-028  
 
 **Brand**  
 
@@ -901,7 +901,7 @@ Inflatable Bed
 
 ---  
 
-## FUR-021  
+## FUR-031  
 
 **Brand**  
 
@@ -933,7 +933,7 @@ None
 
 ### Industrial Attribute  
 
-Quilt & Sleeping Mat Set（関東〜雪中入門用、快適温度2℃・下限温度-4℃。掛け布団+コンパクトワイドマット（R値5.4・ASTM F3340-22準拠、2枚連結使用）のセット販売のため、旧FUR-021単体マット登録は本IDへ統合。FUR-022系との併用時はマット部が本格雪中用の主断熱層としても使用）  
+Quilt & Sleeping Mat Set（関東〜雪中入門用、快適温度2℃・下限温度-4℃。掛け布団+コンパクトワイドマット（R値5.4・ASTM F3340-22準拠、2枚連結使用）のセット販売のため、旧FUR-021単体マット登録は本IDへ統合。FUR-032系との併用時はマット部が本格雪中用の主断熱層としても使用）  
 
 ### Price  
 
@@ -941,7 +941,7 @@ Quilt & Sleeping Mat Set（関東〜雪中入門用、快適温度2℃・下限�
 
 ---  
 
-## FUR-022  
+## FUR-032  
 
 **Brand**  
 
@@ -965,11 +965,11 @@ Down（Full Custom Order）
 
 ### Industrial Attribute  
 
-Quilt（本格雪中用トップキルト。バックレス構造につきFUR-021（マット部）・FUR-023との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
+Quilt（本格雪中用トップキルト。バックレス構造につきFUR-031（マット部）・FUR-033との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
 
 ---  
 
-## FUR-023  
+## FUR-033  
 
 **Brand**  
 
@@ -993,11 +993,11 @@ Closed-Cell Foam
 
 ### Industrial Attribute  
 
-Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-021（マット部）の下に重ね敷きする想定）  
+Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-031（マット部）の下に重ね敷きする想定）  
 
 ---  
 
-## FUR-024  
+## FUR-034  
 
 **Brand**  
 
@@ -1021,11 +1021,11 @@ Unconfirmed
 
 ### Industrial Attribute  
 
-Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-021（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
+Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-031（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
 
 ---  
 
-## FUR-025  
+## FUR-003  
 
 **Brand**  
 
@@ -1062,7 +1062,7 @@ Hardware / Screw Set Custom（ROYAL BROWN Chester Field Seat用カスタムパ�
 
 ---  
 
-## FUR-026  
+## FUR-018  
 
 **Brand**  
 
@@ -1078,7 +1078,7 @@ Owned
 
 **Parent**  
 
-FUR-014  
+FUR-015  
 
 
 ### Color  
@@ -1099,7 +1099,7 @@ Table Top Frame（天板枠 左）
 
 ---  
 
-## FUR-027  
+## FUR-019  
 
 **Brand**  
 
@@ -1115,7 +1115,7 @@ Owned
 
 **Parent**  
 
-FUR-014  
+FUR-015  
 
 
 ### Color  
@@ -1136,7 +1136,7 @@ Table Top Frame（天板枠 右）
 
 ---  
 
-## FUR-028  
+## FUR-020  
 
 **Brand**  
 
@@ -1152,7 +1152,7 @@ Owned
 
 **Parent**  
 
-FUR-014  
+FUR-015  
 
 
 ### Color  
@@ -1173,7 +1173,7 @@ Table Silicone Mat
 
 ---  
 
-## FUR-029  
+## FUR-021  
 
 **Brand**  
 
@@ -1189,7 +1189,7 @@ Owned
 
 **Parent**  
 
-FUR-014  
+FUR-015  
 
 
 ### Color  
@@ -1210,7 +1210,7 @@ Table Silicone Mat
 
 ---  
 
-## FUR-030  
+## FUR-022  
 
 **Brand**  
 
@@ -1226,7 +1226,7 @@ Owned
 
 **Parent**  
 
-FUR-014  
+FUR-015  
 
 
 ### Color  
@@ -1251,7 +1251,7 @@ Table Silicone Sheet
 
 ---  
 
-## FUR-031  
+## FUR-023  
 
 **Brand**  
 
@@ -1267,7 +1267,7 @@ Owned
 
 **Parent**  
 
-FUR-014  
+FUR-015  
 
 
 ### Color  
@@ -1288,7 +1288,7 @@ Table Hanger Hook
 
 ---  
 
-## FUR-032  
+## FUR-029  
 
 **Brand**  
 
@@ -1320,7 +1320,7 @@ Table Unit Stand
 
 ---  
 
-## FUR-033  
+## FUR-024  
 
 **Brand**  
 
@@ -1336,7 +1336,7 @@ Owned
 
 **Parent**  
 
-FUR-014  
+FUR-015  
 
 
 ### Color  
@@ -1357,7 +1357,7 @@ Carrying Case（EXTENMON TABLE用）
 
 ---  
 
-## FUR-034  
+## FUR-030  
 
 **Brand**  
 
@@ -6904,9 +6904,9 @@ Example
 
 FUR-001  
 └ FUR-002  
-└ FUR-003  
 └ FUR-004  
 └ FUR-005  
+└ FUR-006  
 
 LGT-009  
 └ LGT-010  
@@ -7473,6 +7473,37 @@ MD-003 Galley Fare Version 2.8（ゴミ箱のストレージ移管に伴うKIT-0
 - 各子部品側のParent記載および登録内容に変更なし。
 
 - Related Documents：MD-003 Galley Fare（Version 2.8。KIT-070系をSTR-026・027・029の移管記録へ整理）。
+
+## Version 7.34
+
+プロジェクトオーナーの直接指示に基づき、Furniture Domainの番号整理を実施した。これはRegistry Rulesの「IDは変更されない」という原則に対する例外であり、Version 7.28（Kermit CARRY TOTEの位置整理）と同様の、実態（Kermit①→②→CARRY TOTE→SOMA→EXTENMON TABLE→Butterfly→Sofa／Quilt & Sleeping Mat Set系の順）に合わせるための一回限りの意図的な再採番である。
+
+### Changes（Furniture番号整理）
+
+- 下記の旧→新対応表に基づき、Furniture Domain全34件（FUR-001〜FUR-034）を同時に再採番した（プレースホルダ経由の一括置換により、途中の番号衝突は発生していない）。
+
+| 旧ID | 新ID | 旧ID | 新ID | 旧ID | 新ID |
+|---|---|---|---|---|---|
+| FUR-001 | FUR-001 | FUR-013 | FUR-014 | FUR-025 | FUR-003 |
+| FUR-002 | FUR-002 | FUR-014 | FUR-015 | FUR-026 | FUR-018 |
+| FUR-003 | FUR-004 | FUR-015 | FUR-016 | FUR-027 | FUR-019 |
+| FUR-004 | FUR-005 | FUR-016 | FUR-017 | FUR-028 | FUR-020 |
+| FUR-005 | FUR-006 | FUR-017 | FUR-025 | FUR-029 | FUR-021 |
+| FUR-006 | FUR-007 | FUR-018 | FUR-026 | FUR-030 | FUR-022 |
+| FUR-007 | FUR-008 | FUR-019 | FUR-027 | FUR-031 | FUR-023 |
+| FUR-008 | FUR-009 | FUR-020 | FUR-028 | FUR-032 | FUR-029 |
+| FUR-009 | FUR-010 | FUR-021 | FUR-031 | FUR-033 | FUR-024 |
+| FUR-010 | FUR-011 | FUR-022 | FUR-032 | FUR-034 | FUR-030 |
+| FUR-011 | FUR-012 | FUR-023 | FUR-033 | | |
+| FUR-012 | FUR-013 | FUR-024 | FUR-034 | | |
+
+- Parent、Child Componentsリスト、Industrial Attribute内のFUR参照（子部品・関連部品への言及を含む）を、すべて上記対応表に基づき新番号へ更新した。
+- Parent / Child Rules（親子関係ルール）章のExample（FUR-001とその子部品の例示）も、実際のデータに合わせて新番号へ更新した。
+- FUR-031（旧FUR-021、Quilt & Sleeping Mat Set）のIndustrial Attribute内にある「旧FUR-021単体マット登録は本IDへ統合」という記述は、Version 7.28以前に削除・撤回された別ID（今回の対応表の対象外）を指す歴史的記述のため、遡及修正しない。
+- Version 7.0〜7.33の記述内にある旧FUR-ID表記は、当時の記録として遡及修正しない。
+- CZ-001 Deliberation Codex（Winter Top Quilt／Winter Sleeping Mat／Pad Sheet／Confirmed - Purchase PendingにおけるFUR参照）、CZ-002 Vigil Protocol（Butterfly Table M Black LookのMD-004 Reference）を、それぞれ新番号へ更新。
+
+- Related Documents：CZ-001 Deliberation Codex、CZ-002 Vigil Protocol（Furniture番号整理に伴う参照更新）。
 
 ---  
 

@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: PX – Project  
-**Version**: 2.4  
+**Version**: 2.5  
 **Status**: Official  
 **Owner**: THE THIRD PLACE
 
@@ -20,6 +20,7 @@
 | 2.2 | 2026-09-08 | Watch Listにエントリ008〜022を追加。TP-004 Equipment Registryのうち、Status = Essential / Candidate / Upgradeで既存エントリに含まれていない全アイテムを抽出（各エントリにTP-004 Reference IDを付記）。Coffee Domainは意図的に除外（PX-004/PX-005が管轄）。 |
 | 2.3 | 2026-09-08 | エントリ018（Wood Board）を、プロジェクトオーナーの確認に基づき修正: nodel designがこの製品を「Wood Board」という正確な名称で単品販売していることを確認。入手可否に関する不確実性の注記を削除し、キーワードを整理した。 |
 | 2.4 | 2026-09-18 | TP-004 Version 7.28（Furniture Domain番号整理）と連動し、Butterfly Table M Black LookのTP-004 ReferenceをFUR-017からFUR-018へ更新。 |
+| 2.5 | 2026-09-19 | MD-004 Version 7.34（Furniture Domain番号整理・二回目）と連動し、Butterfly Table M Black LookのMD-004 ReferenceをFUR-018からFUR-026へ更新。 |
 
 ---
 
@@ -543,7 +544,7 @@ Butterfly Table M Black Look
 
 **MD-004 Reference**
 
-FUR-018 (Status: Upgrade)
+FUR-026 (Status: Upgrade)
 
 **Required Keywords**
 
