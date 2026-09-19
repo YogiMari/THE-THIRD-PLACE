@@ -10,7 +10,7 @@ Deliberation Codex
 
 # Version
 
-2.6
+2.7
 
 # Status
 
@@ -173,7 +173,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ## Aroma
 
-現時点でUnder Consideration項目なし（ARM-004は購入決定済み。Decision Log参照）。
+現時点でUnder Consideration項目なし（ARM-003は購入決定済み。Decision Log参照）。
 
 ---
 
@@ -208,8 +208,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | ID | Product | Brand | Note |
 |---|---|---|---|
 | ARM-002 | MKGP | OLD MOUNTAIN | — |
-| ARM-003 | INCENSE CHAMBER Tokyo Limited | Filoméla | — |
-| ARM-004 | SCENT TOWER | UNIT/04 × KUNST・BAUM | — |
+| ARM-003 | SCENT TOWER | UNIT/04 × KUNST・BAUM | — |
 
 ## Storage
 
@@ -235,7 +234,8 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 | Date | Domain | Item | Decision |
 |---|---|---|---|
-| 2026-09 | Aroma | ARM-004 Vertical Diffuser | UNIT/04 × KUNST・BAUM SCENT TOWERを正式決定（Status: Essential）。詳細はMD-004参照。 |
+| 2026-09 | Aroma | ARM-003 Vertical Diffuser | UNIT/04 × KUNST・BAUM SCENT TOWERを正式決定（Status: Essential）。詳細はMD-004参照。（決定当時のIDはARM-004。2026-09-19のMD-004 Version 7.34で番号入替） |
+| 2026-09-19 | Aroma | ARM-004 Incense Chamber | Filoméla INCENSE CHAMBER Tokyo LimitedのStatusをEssentialからUpgradeへ変更（MD-004 Version 7.34、MARI様のご指示）。Confirmed — Purchase Pendingから除外。旧ID: ARM-003。 |
 
 ---
 
@@ -258,7 +258,8 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 2.3 | 2026-09-17 | MARI様のご購入報告（STR-001／LGT-015／STR-017）を受け、TP-004側のStatus更新（Essential→Owned）と連動して「Confirmed — Purchase Pending」から該当3行（Light: LGT-015、Storage: STR-001・STR-017）を削除。 |
 | 2.4 | 2026-09-18 | TP-004 Version 7.28（Furniture Domain番号整理）と連動し、FUR-020参照を全てFUR-021へ更新。 |
 | 2.5 | 2026-09-19 | Document Header の Version 欄が「2.3」のまま更新されておらず、本Version History の最終行（2.4）と不一致であったため、Version欄を2.4へ同期した上で、本行の追加により2.5へ更新。内容面の変更は無し。 |
-| 2.6 | 2026-09-19 | MD-004 Version 7.34（Furniture Domain番号整理・二回目）と連動し、FUR-022→FUR-032、FUR-023→FUR-033、FUR-021→FUR-031（2箇所）、FUR-024→FUR-034参照を更新。 |
+| 2.6 | 2026-09-19 | MD-004 Version 7.34（Aroma番号入替）と連動。SCENT TOWERのIDをARM-004からARM-003へ更新（Under Considerationの注記、Confirmed — Purchase Pendingの表、Decision Log）。Filoméla INCENSE CHAMBER Tokyo LimitedはStatusがEssentialからUpgradeへ変更（新ID: ARM-004）となったため、Confirmed — Purchase Pending（Aroma）から除外し、Decision Logへ記録。Version 2.1・2.2の過去行は歴史的記録として遡及修正しない。 |
+| 2.7 | 2026-09-19 | MD-004 Version 7.36（Furniture Domain番号整理・二回目）と連動し、FUR-022→FUR-032、FUR-023→FUR-033、FUR-021→FUR-031（2箇所）、FUR-024→FUR-034参照を更新。 |
 
 ---
 
