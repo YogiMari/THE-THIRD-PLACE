@@ -1,10 +1,10 @@
-# PX-006 Brew Care  
+# BR-001 Brew Care  
 
-# PX-006 Brew Care  
+# BR-001 Brew Care  
 
 ## Document ID  
 
-PX-006  
+BR-001  
 
 ## Document Title  
 
@@ -30,7 +30,7 @@ THE THIRD PLACE Project
 
 # 1. Purpose  
 
-PX-006 Brew Careは、THE THIRD PLACE Coffee Systemの、Care（手入れ）・洗浄・乾燥・定期ケア・車両内長期保管・使用前点検について定義する。  
+BR-001 Brew Careは、THE THIRD PLACE Coffee Systemの、Care（手入れ）・洗浄・乾燥・定期ケア・車両内長期保管・使用前点検について定義する。  
 
 本文書は、洗浄を最大化することを目的としない。  
 
@@ -80,33 +80,33 @@ Routine Care（日常ケア）、Periodic Care（定期ケア）、Descaling（�
 - 収納システムの設計  
 - 調達Workflow  
 
-機材選定は引き続きPX-004が管轄する。  
+機材選定は引き続きBR-002が管轄する。  
 
-所有情報は引き続きTP-004が管轄する。  
+所有情報は引き続きMD-004が管轄する。  
 
-調達は引き続きPX-005が管轄する。  
+調達は引き続きBR-003が管轄する。  
 
 ---  
 
 # 3. Document Relationship  
 
 ```text  
-PX-004  
+BR-002  
 Barista Codex  
     ↓  
 何が選ばれているか  
 
-TP-004  
+MD-004  
 Equipment Registry Object Reference  
     ↓  
 何を所有しているか  
 
-PX-005  
+BR-003  
 Acquisition Handbook  
     ↓  
 何を／どこで／どう調達するか  
 
-PX-006  
+BR-001  
 Brew Care  
     ↓  
 Coffee Systemをどう手入れするか  
@@ -114,11 +114,11 @@ Coffee Systemをどう手入れするか
 次回使用  
 ```  
 
-PX-006は、PX-004で確立されたEquipment決定を変更しない。  
+BR-001は、BR-002で確立されたEquipment決定を変更しない。  
 
-PX-006は所有記録を管理しない。  
+BR-001は所有記録を管理しない。  
 
-PX-006は調達情報を管理しない。  
+BR-001は調達情報を管理しない。  
 
 ---  
 
@@ -802,7 +802,7 @@ ALM KOPi Z1 Miniは、公開されたメーカーのCleaning Manual（清掃マ�
 - Descaling間隔  
 - 完全分解手順  
 
-PX-006は、これらの手順を推測で作り出してはならない。  
+BR-001は、これらの手順を推測で作り出してはならない。  
 
 ## 32.1 Confirmed Product Structure  
 
@@ -1591,7 +1591,7 @@ Coffee Systemは、必要以上のCareを要求せず、それでいて次のCof
 
 # 68. Status of Unverified Information  
 
-メーカー文書が入手できない場合、PX-006内の情報はその根拠水準に応じて分類しなければならない。  
+メーカー文書が入手できない場合、BR-001内の情報はその根拠水準に応じて分類しなければならない。  
 
 ## Evidence Levels  
 
@@ -1621,7 +1621,7 @@ Coffee Systemは、必要以上のCareを要求せず、それでいて次のCof
 
 # 69. Future Revision Trigger  
 
-以下の場合、PX-006を改訂すべきである:  
+以下の場合、BR-001を改訂すべきである:  
 
 - メーカーのCare Manualが入手可能になった場合  
 - 現行のメーカー指示が変更された場合  
@@ -1663,3 +1663,9 @@ READY（準備完了）
 目指す状態は、以下である:  
 
 > **必要な箇所は清潔に、必要な箇所は保護し、保管前には乾いており、次回使用の準備が整っているCoffee System。**  
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、PX-006からBR-001へ番号を変更した。本文中の他文書参照（PX-004・TP-004・PX-005等）を新ID体系へ更新した。内容（Ver.1.0）に変更はない。旧ID: PX-006。
