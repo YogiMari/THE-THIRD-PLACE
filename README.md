@@ -135,7 +135,7 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 
 | ID | Document | どのような文書か |
 | --- | --- | --- |
-| CZ-001 | Deliberation Codex | Coffee Domain（BR系列管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire）における検討中ギアの評価哲学・比較検討・購入待ちリストを管理する文書。 |
+| CZ-001 | Deliberation Codex | Coffee Domain（BR系列管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire／Shelter）における検討中ギアの評価哲学・比較検討・購入待ちリストを管理する文書。 |
 | CZ-002 | Vigil Protocol | ガレージブランドや市場の動向を継続的に監視し、入手機会の鮮度（Freshness）を評価するリサーチ運用プロトコル。 |
 
 ---
@@ -391,7 +391,7 @@ The series managing deliberation and market monitoring for zones outside coffee.
 
 | ID | Document | What this document is |
 | --- | --- | --- |
-| CZ-001 | Deliberation Codex | Manages zone evaluation philosophy, in-progress equipment deliberation, and the purchase-pending list for all zones outside the Coffee Domain governed by the BR series (Furniture / Light / Aroma / Storage / Fire). |
+| CZ-001 | Deliberation Codex | Manages zone evaluation philosophy, in-progress equipment deliberation, and the purchase-pending list for all zones outside the Coffee Domain governed by the BR series (Furniture / Light / Aroma / Storage / Fire / Shelter). |
 | CZ-002 | Vigil Protocol | A research operations protocol for continuously monitoring garage brands and market trends, evaluating the freshness of acquisition opportunities. |
 
 ---
