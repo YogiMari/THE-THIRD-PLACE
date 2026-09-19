@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.38  
+Version 7.39  
   
 ---  
   
@@ -27,7 +27,7 @@ MD-004はキッチン調理器具を管理しない。キッチン機材は、�
 
 Coffee機材は、他のすべてのDomainと異なる登録ルールに従う。比較検討中・意思決定中のアイテムは、MD-004ではなくBR-002 Barista Codexのみで追跡する。Coffeeアイテムは、購入されOwnedになった時点で初めてMD-004（COF-series）へ登録される。それまでの間、Coffee Domain（COF-series）は意図的に未入力のままとする — これはデータの欠落ではなく、設計上の仕様である。
 
-このルールは、CoffeeとKitchenのみに適用される。他のすべてのDomain（Furniture、Light、Aroma、Storage、Fire）には影響しない: 検討中・保留中・決定済みだが未購入のアイテムは、これまで通り既存のStatusシステム（Essential / Candidate / Upgrade）を用いてMD-004へ登録され続ける。
+このルールは、CoffeeとKitchenのみに適用される。他のすべてのDomain（Furniture、Light、Aroma、Storage、Fire、Shelter）には影響しない: 検討中・保留中・決定済みだが未購入のアイテムは、これまで通り既存のStatusシステム（Essential / Candidate / Upgrade）を用いてMD-004へ登録され続ける。
 
 **Candidate段階における具体的製品情報の扱い**：Status = Candidateのアイテムは、MD-004上ではBrand / Productを「Unconfirmed」とし、用途（Industrial Attribute）とEquipment IDのみを記録する。複数の具体的な製品候補間の比較・評価・検討記録は、MD-004ではなくCZ-001 Deliberation Codexのみで管理する。特定の製品が正式に決定（Status = Essential）した時点で、初めてBrand / ProductをMD-004へ記載する。これにより、Candidateの定義（「必要だが、具体的な製品はまだ決まっていない」）とMD-004上の実データを正確に一致させる。競合していた複数の候補IDは、1件の決定枠IDへ統合し、不要となったIDはRetired（統合済み）として記録を残す。
   
@@ -7368,7 +7368,7 @@ Version 7.26時点でPrice未確認（要確認）のまま残っていた11件�
 
 ### Changes（構造訂正）
 
-- FUR-020／FUR-021：Snow Peak「ダウン システムオフトン スリムマットセット（BD-060）」は掛け布団+マットのセット販売であることが判明。単体マットとして別ID登録されていたFUR-021をFUR-020へ統合し、FUR-021は削除（Retiredではなく登録自体を撤回）。Price ¥44,000（セット価格）はFUR-020側に記録。FUR-022系・FUR-023・FUR-024のIndustrial Attribute内のFUR-021参照、およびPX-007 Deliberation Codexの該当箇所を「FUR-020（マット部）」へ更新。  
+- FUR-020／FUR-021：Snow Peak「ダウン システムオフトン スリムマットセット（BD-060）」は掛け布団+マットのセット販売であることが判明。単体マットとして別ID登録されていたFUR-021をFUR-020へ統合し、FUR-021は削除（Retiredではなく登録自体を撤回）。Price ¥44,000（セット価格）はFUR-020側に記録。FUR-022・FUR-023・FUR-024のIndustrial Attribute内のFUR-021参照、およびPX-007 Deliberation Codexの該当箇所を「FUR-020（マット部）」へ更新。  
 - STR-025：Product表記を誤記の「Hopper Flip 16」から正しい「Hopper Flip 12」へ訂正（16はモデル名ではなく容量16qtを指す表記だった）。  
 
 - Related Documents：PX-007 Deliberation Codex（FUR-020/021統合に伴う参照更新）。  
@@ -7645,6 +7645,18 @@ MARI様のご指示に基づき、SHL-004（HELLOS factory Slug Shelter V2.0）�
 - Version 7.0〜7.37の記述内にある旧FIR-ID表記は、当時の記録として遡及修正しない。
 
 - Related Documents：MD-003 Galley Fare、CZ-001 Deliberation Codex、CZ-002 Vigil Protocol（Fire番号整理に伴う参照更新）。
+
+---  
+
+## Version 7.39
+
+Shelter Domain（Version 7.25で新設）の反映漏れ1件と、Version 7.35作成時の転記ミス1件を訂正した。登録内容（Equipment記録）の変更はない。
+
+### Changes
+
+- Purpose：「他のすべてのDomain」の列挙にShelterを追加（Furniture、Light、Aroma、Storage、Fire、Shelter）。
+- Version 7.27の履歴行：Version 7.35の更新時に「FUR-022」の直後へ誤って挿入された「系」の1文字を削除し、原文へ復元した。
+- Related Documents：変更なし。
 
 ---  
 
