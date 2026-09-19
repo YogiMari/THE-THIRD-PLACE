@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: PX – Project  
-**Version**: 2.7  
+**Version**: 2.8  
 **Status**: Official  
 **Owner**: THE THIRD PLACE
 
@@ -23,6 +23,7 @@
 | 2.5 | 2026-09-19 | MD-004 Version 7.34（Aroma番号入替）と連動し、エントリ014（Filoméla INCENSE CHAMBER）のMD-004 ReferenceをARM-003（Status: Essential）からARM-004（Status: Upgrade）へ、エントリ015（SCENT TOWER）のMD-004 ReferenceをARM-004からARM-003へ更新。エントリ015のStatus表記（Candidate）は、MD-004 Version 7.14（Essential化）以降の更新漏れであったため、あわせてEssentialへ訂正した。 |
 | 2.6 | 2026-09-19 | MD-004 Version 7.36（Furniture Domain番号整理・二回目）と連動し、Butterfly Table M Black LookのMD-004 ReferenceをFUR-018からFUR-026へ更新。 |
 | 2.7 | 2026-09-19 | MD-004 Version 7.38（Fire Domain番号整理）と連動し、エントリ019（copper250）のMD-004 ReferenceをFIR-014からFIR-025へ、エントリ020（FT no BARREL）をFIR-015からFIR-026へ、エントリ021（MT.SUMI Aura FG）をFIR-019からFIR-030へ更新。エントリ022（FIREGRAPHIX BLISS-SP、MD-004 Reference: 旧FIR-020）は、参照先の旧FIR-020レコード自体がMD-004側で削除されたため削除した。 |
+| 2.8 | 2026-09-19 | MD-004 Version 7.40（Fire Domain検討中案件の表記整理）と連動し、Watch List説明文の「エントリ008〜022」の表記をエントリ022削除後の実態に合わせて「エントリ008〜021」に訂正。 |
 
 ---
 
@@ -378,7 +379,7 @@ Required Keywordsには、発見精度を最大化するために必要な実用
 
 エントリ001〜007は、本改訂以前から存在する。
 
-エントリ008〜022は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、BR-002 Barista Codex / BR-003 Acquisition Handbookが引き続き管轄する。
+エントリ008〜021は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、BR-002 Barista Codex / BR-003 Acquisition Handbookが引き続き管轄する。
 
 ## 001
 
