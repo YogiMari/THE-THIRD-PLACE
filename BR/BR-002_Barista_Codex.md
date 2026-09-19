@@ -1,9 +1,9 @@
-# PX-004 Barista Codex    
-# PX-004 Barista Codex    
+# BR-002 Barista Codex    
+# BR-002 Barista Codex    
     
 # Document ID    
     
-PX-004    
+BR-002    
     
 # Document Title    
     
@@ -21,7 +21,7 @@ Official
     
 ## Purpose    
     
-PX-004 Barista Codexは、THE THIRD PLACEにおけるCoffee Systemの意思決定を管理する正式仕様書である。    
+BR-002 Barista Codexは、THE THIRD PLACEにおけるCoffee Systemの意思決定を管理する正式仕様書である。    
     
 本書では以下を管理する。    
     
@@ -34,21 +34,21 @@ PX-004 Barista Codexは、THE THIRD PLACEにおけるCoffee Systemの意思決�
 * Pending Items    
 * Deferred Items    
     
-価格・購入先・輸送・関税・購入手順などの調達情報は管理対象外とし、PX-005 Acquisition Handbookで管理する。    
+価格・購入先・輸送・関税・購入手順などの調達情報は管理対象外とし、BR-003 Acquisition Handbookで管理する。    
     
 ---    
     
 ## Relationship    
     
-PX-004    
+BR-002    
 Barista Codex    
 │    
 ▼    
-TP-004    
+MD-004    
 Equipment Registry    
 │    
 ▼    
-PX-005    
+BR-003    
 Acquisition Handbook    
     
 ---    
@@ -167,7 +167,7 @@ Walnutは、THE THIRD PLACE全体のAesthetic Grammarの核となる素材言語
     
 標準のAnodised Aluminiumは機能面で妥当だが、Coffee Zoneが他の採用済みEquipment（KNODOS、Pullman Chisel等）で一貫して採用しているWalnut言語との統一性を優先し、Upper / Lower Handle双方をWalnut仕様に変更する。    
     
-価格・購入先・数量等の調達情報はPX-005で管理する。    
+価格・購入先・数量等の調達情報はBR-003で管理する。    
     
 ### Included Components / Accessories    
     
@@ -178,11 +178,11 @@ Walnutは、THE THIRD PLACE全体のAesthetic Grammarの核となる素材言語
     
 これらは9Barista Mk.2 Proに包含される付属品であり、Coffee Systemの独立 Equipmentとして管理しない。    
     
-したがって、TP-004 Equipment RegistryおよびPX-005 Acquisition Handbookでは、これらを独立したEquipment / Acquisition Itemとして登録しない。    
+したがって、MD-004 Equipment RegistryおよびBR-003 Acquisition Handbookでは、これらを独立したEquipment / Acquisition Itemとして登録しない。    
     
 単体で販売されている場合でも、現在のCoffee SystemではMk.2 Proの付属品を使用し、追加購入を必要としない。    
     
-Handle（Upper / Lower）については、上記Handle Material Decisionに基づき、標準付属のAnodised Aluminium仕様からWalnut仕様への変更を、PX-005にてPurchase Required項目として管理する。    
+Handle（Upper / Lower）については、上記Handle Material Decisionに基づき、標準付属のAnodised Aluminium仕様からWalnut仕様への変更を、BR-003にてPurchase Required項目として管理する。    
     
 ### Selection Criteria    
     
@@ -1356,7 +1356,7 @@ Not Separately Acquired
   
 9Barista Stainless Steel Basket Cap Proは9Barista Mk.2 Proの標準付属品として使用する。  
   
-そのため、Coffee Systemの独立Equipmentとして管理せず、TP-004 Equipment RegistryおよびPX-005 Acquisition Handbookの独立項目には含めない。  
+そのため、Coffee Systemの独立Equipmentとして管理せず、MD-004 Equipment RegistryおよびBR-003 Acquisition Handbookの独立項目には含めない。  
   
 Third-party / additional Basket Capは採用しない。  
   
@@ -1498,7 +1498,7 @@ LAGOM MiniからBlind Shakerへの直接受けが物理的に成立する場合�
   
 現時点では正式決定していない項目。  
   
-（現在、Pending項目なし。Coffee Beansは消耗品としてPX-005 Acquisition Handbookの「Coffee Beans Procurement」セクションのみで管理し、本文書の対象外とする。）  
+（現在、Pending項目なし。Coffee Beansは消耗品としてBR-003 Acquisition Handbookの「Coffee Beans Procurement」セクションのみで管理し、本文書の対象外とする。）  
   
 ---  
   
@@ -1520,7 +1520,7 @@ LAGOM MiniからBlind Shakerへの直接受けが物理的に成立する場合�
   
 Coffee Station全体のレイアウト確定後に検討する。  
   
-ただし、PX-004で正式採用したKNODOS Tamping Mat with Tool Organiser - Walnut 54mmは、Coffee Tool Workflowを成立させるためのEquipmentとしてConfirmedとする。  
+ただし、BR-002で正式採用したKNODOS Tamping Mat with Tool Organiser - Walnut 54mmは、Coffee Tool Workflowを成立させるためのEquipmentとしてConfirmedとする。  
   
 ---  
   
@@ -1828,15 +1828,15 @@ Coffee System専用水は、専用のWater Transfer Toolを使用せず、各Wat
   
 # SSOT  
   
-Coffee Equipmentに関する正式決定は、**PX-004 Barista Codex**を基準とする。  
+Coffee Equipmentに関する正式決定は、**BR-002 Barista Codex**を基準とする。  
   
-PX-004でConfirmedされたEquipmentは、TP-004 Equipment Registryへ反映し、調達情報についてはPX-005 Acquisition Handbookで管理する。  
+BR-002でConfirmedされたEquipmentは、MD-004 Equipment Registryへ反映し、調達情報についてはBR-003 Acquisition Handbookで管理する。  
 
-ただし、PX-004でConfirmedされた時点では、TP-004への反映は行わない。TP-004への反映は、当該Equipmentが実際に購入・所有（Owned）された時点で初めて行う。購入前のConfirmed Equipmentは、PX-004上でのみ管理される。  
+ただし、BR-002でConfirmedされた時点では、MD-004への反映は行わない。MD-004への反映は、当該Equipmentが実際に購入・所有（Owned）された時点で初めて行う。購入前のConfirmed Equipmentは、BR-002上でのみ管理される。  
   
-PX-004に記載される製品・付属品のうち、Confirmed Equipmentに包含される標準付属品は、独立したEquipment / Acquisition Itemとして管理しない。  
+BR-002に記載される製品・付属品のうち、Confirmed Equipmentに包含される標準付属品は、独立したEquipment / Acquisition Itemとして管理しない。  
   
-PX-004は、価格・購入先・輸送・関税・購入手順などの調達情報を管理対象外とする。  
+BR-002は、価格・購入先・輸送・関税・購入手順などの調達情報を管理対象外とする。  
   
 ---  
   
@@ -1864,6 +1864,12 @@ PX-004は、価格・購入先・輸送・関税・購入手順などの調達�
 | 3.6 | 2026-09 | Coffee Beansを本文書の管理対象から除外。豆は消耗品としてPX-005 Acquisition Handbookの「Coffee Beans Procurement」セクションのみで管理する方針を確立し、Pending項目から削除（PX-005 Ver.2.0と対応）。 |  
 | 3.7 | 2026-09-18 | Espresso Machineセクションへ「Handle Material Decision」を新設。9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）を、9Barista公式スペアパーツのWalnut仕様へ変更することを正式決定。Design Bibleの核となる素材言語（Walnut・Brass・Black Steel）との整合を採用理由とした。MARI様の直接指示（2026-09-18）に基づく。 |  
   
+---  
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、PX-004からBR-002へ番号を変更した。本文中の他文書参照（TP-004・PX-005等）を新ID体系へ更新した。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Ver.3.7）に変更はない。旧ID: PX-004。
+
 ---  
   
 # End of Document  
