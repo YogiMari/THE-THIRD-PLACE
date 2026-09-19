@@ -1,5 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
-Version 7.32  
+  
+Version 7.33  
   
 ---  
   
@@ -174,6 +175,10 @@ Owned
 **Parent**  
 
 FUR-001  
+
+### Child Components  
+
+- FUR-025  
 
 ### Color  
 
@@ -642,6 +647,13 @@ Owned
 
 - FUR-015  
 - FUR-016  
+- FUR-026  
+- FUR-027  
+- FUR-028  
+- FUR-029  
+- FUR-030  
+- FUR-031  
+- FUR-033  
 
 ### Color  
 
@@ -4307,6 +4319,7 @@ Owned
 
 ### Child Components  
 
+- STR-013a  
 - STR-014  
 
 ### Color  
@@ -4379,6 +4392,7 @@ Owned
 
 ### Child Components  
 
+- STR-015a  
 - STR-016  
 
 ### Color  
@@ -4833,6 +4847,7 @@ Ice Pack (Hard)
 ¥6,160  
 
 ---  
+
 ## STR-031  
 
 **Brand**  
@@ -4864,6 +4879,7 @@ Ice Pack (Soft, for Soft Cooler)
 ¥4,730  
 
 ---  
+
 ## STR-032  
 
 **Brand**  
@@ -4900,6 +4916,7 @@ Insulated Jug (1.9L)
 ¥17,930  
 
 ---  
+
 ## STR-032a  
 
 **Brand**  
@@ -4936,6 +4953,7 @@ Jug Stand（STR-032用）
 ¥19,800  
 
 ---  
+
 ## STR-013a  
 
 **Brand**  
@@ -4972,6 +4990,7 @@ Leg（Beck Container①用）
 ¥9,900  
 
 ---  
+
 ## STR-015a  
 
 **Brand**  
@@ -5008,6 +5027,7 @@ Leg（Beck Container②用）
 ¥9,900  
 
 ---  
+
 ## STR-033  
 
 **Brand**  
@@ -5532,6 +5552,10 @@ ono kezuru
 
 Owned  
 
+### Child Components  
+
+- FIR-026  
+
 ### Color  
 
 Brown  
@@ -5567,6 +5591,10 @@ nata kezuru
 **Status**  
 
 Owned  
+
+### Child Components  
+
+- FIR-027  
 
 ### Color  
 
@@ -7209,7 +7237,7 @@ MARI様のご購入報告に基づき、STR-026（ANOBAダストバケット）�
 - STR-026：**Parent** STR-029を追加。Industrial Attributeから、収納先を説明する記述（Parent/Childで自明になったため）を削除し簡素化。  
 - STR-029：**Child Components** STR-026を追加。  
 - STR-028：Color・Material・Industrial Attributeを、windyandrainy.tokyo公式ページ（商品コード war-037）の情報に基づき更新。本体サイズW395×H440×D195mm、重量約1420g、素材はスチールメッキ（ワイヤー部）／スチールメッキ+プラスチック（脚部）、耐荷重20kg、ワンアクション組み立てであることを確認・反映。KAZE_TO_MORI製COVER/FUTA部の生地構成（X-PAC）は引き続き未確認。  
-- Parent / Child Rules セクションのExampleに STR-029└STR-026 を追加。  
+- Parent / Child Rules セクションのExampleに STR-029 └ STR-026 を追加。  
 - Related Documents：変更なし。  
 
 ---  
@@ -7318,7 +7346,7 @@ STR-011のPrice未記載を解消。また、プロジェクトオーナーの�
 - 旧FUR-033（Kermit CARRY TOTE）をFUR-011へ移動。Kermit Chair②の子部品群（FUR-007〜FUR-010）の直後に位置づけた。
 - 上記に伴い、旧FUR-011〜FUR-020をFUR-012〜FUR-021へ、旧FUR-022〜FUR-032は番号据え置き、旧FUR-034・FUR-035をFUR-033・FUR-034へ、それぞれ1つずつ繰り下げ。旧FUR-021（削除済み・欠番）は詰められ、Furniture Domainの登録範囲はFUR-001〜FUR-034の連番となった。
 - Parent参照（旧FUR-013→新FUR-014を親とする子部品群: 旧FUR-014・015・026〜031・034）、およびChild Componentsリスト（新FUR-006・新FUR-014）を、すべて新番号に更新。
-- FUR-022・FUR-023・FUR-024のIndustrial Attribute内の「FUR-020（マット部）」参照を「FUR-021（マット部）」へ更新（Quilt & Sleeping Mat Set本体の新ID反映）。
+- FUR-022・FUR-023・FUR-024のIndustrial Attribute内の「FUR-020（マット部）」参照を「FUR-021（マット部）」へ更新。
 - PX-007 Deliberation Codex（FUR-020参照2箇所）、PX-003 Vigil Protocol（FUR-017参照1箇所）を、新番号（FUR-021、FUR-018）へ更新。
 - Version 7.0〜7.27の記述内にある旧FUR-ID表記は、当時の記録として遡及修正しない。
 
@@ -7430,7 +7458,23 @@ Version 7.31で残っていた最後の3件のUnconfirmedについて、プロ�
 
 - Related Documents：変更なし。
 
----
+## Version 7.33
+
+MD-003 Galley Fare Version 2.8（ゴミ箱のストレージ移管に伴うKIT-070系の整理）との整合確認、および親子関係の記載点検の結果、親側のChild Componentsリストに抜けがあったため補完した。本文書のゴミ関連の登録（STR-026〜STR-029）の内容に変更はなく、引き続きゴミ箱・ダストバケット・サイドテーブルの正の登録先は本文書である。
+
+### Changes
+
+- FUR-002：Child Componentsとして FUR-025 を追記（FUR-025のParent記載に対応）。
+- FUR-014：Child Componentsに FUR-026・FUR-027・FUR-028・FUR-029・FUR-030・FUR-031・FUR-033 を追記（各子部品のParent記載に対応。従来はFUR-015・FUR-016のみ記載）。
+- FIR-004：Child Componentsとして FIR-026 を追記。
+- FIR-005：Child Componentsとして FIR-027 を追記。
+- STR-013：Child Componentsに STR-013a を追記（従来はSTR-014のみ記載）。
+- STR-015：Child Componentsに STR-015a を追記（従来はSTR-016のみ記載）。
+- 各子部品側のParent記載および登録内容に変更なし。
+
+- Related Documents：MD-003 Galley Fare（Version 2.8。KIT-070系をSTR-026・027・029の移管記録へ整理）。
+
+---  
 
 ## Document Renumbering Note
 
