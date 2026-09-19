@@ -10,7 +10,7 @@ Deliberation Codex
 
 # Version
 
-2.6
+2.7
 
 # Status
 
@@ -130,7 +130,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ## Furniture
 
-### Winter Top Quilt（MD-004: FUR-022）
+### Winter Top Quilt（MD-004: FUR-032）
 
 **Status**：Under Evaluation
 
@@ -140,13 +140,13 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 **Decision**：未決定
 
-### Winter Sleeping Mat（MD-004: FUR-023）
+### Winter Sleeping Mat（MD-004: FUR-033）
 
 **Status**：Candidate（比較対象なし、ブランド調査未着手）
 
-クローズドセルフォーム製。FUR-021（マット部）の下に敷く断熱補強・パンク保険として機能。
+クローズドセルフォーム製。FUR-031（マット部）の下に敷く断熱補強・パンク保険として機能。
 
-### Pad Sheet（MD-004: FUR-024）
+### Pad Sheet（MD-004: FUR-034）
 
 **Status**：Under Evaluation
 
@@ -193,7 +193,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 | ID | Product | Brand | Note |
 |---|---|---|---|
-| FUR-021 | ダウン システムオフトン スリムマットセット（BD-060、掛け布団+マット一式） | Snow Peak | 数量2 |
+| FUR-031 | ダウン システムオフトン スリムマットセット（BD-060、掛け布団+マット一式） | Snow Peak | 数量2 |
 
 ## Light
 
@@ -259,6 +259,7 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 2.4 | 2026-09-18 | TP-004 Version 7.28（Furniture Domain番号整理）と連動し、FUR-020参照を全てFUR-021へ更新。 |
 | 2.5 | 2026-09-19 | Document Header の Version 欄が「2.3」のまま更新されておらず、本Version History の最終行（2.4）と不一致であったため、Version欄を2.4へ同期した上で、本行の追加により2.5へ更新。内容面の変更は無し。 |
 | 2.6 | 2026-09-19 | MD-004 Version 7.34（Aroma番号入替）と連動。SCENT TOWERのIDをARM-004からARM-003へ更新（Under Considerationの注記、Confirmed — Purchase Pendingの表、Decision Log）。Filoméla INCENSE CHAMBER Tokyo LimitedはStatusがEssentialからUpgradeへ変更（新ID: ARM-004）となったため、Confirmed — Purchase Pending（Aroma）から除外し、Decision Logへ記録。Version 2.1・2.2の過去行は歴史的記録として遡及修正しない。 |
+| 2.7 | 2026-09-19 | MD-004 Version 7.36（Furniture Domain番号整理・二回目）と連動し、FUR-022→FUR-032、FUR-023→FUR-033、FUR-021→FUR-031（2箇所）、FUR-024→FUR-034参照を更新。 |
 
 ---
 
