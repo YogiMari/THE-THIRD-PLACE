@@ -96,7 +96,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Third Place |
 | Category | Spatial |
-| Definition | 自宅・職場に続く第三の居場所。<br>目的地ではなく、帰る場所。 |
+| Definition | 自宅・職場に続く第三の居場所。目的地ではなく、帰る場所。 |
 | Affinity | Core |
 | Related Terms | Living Space |
 | Opposite Concepts | — |
@@ -110,7 +110,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Living Space |
 | Category | Spatial |
-| Definition | 生活を行うための空間。<br>宿営地ではなく居住空間。 |
+| Definition | 生活を行うための空間。宿営地ではなく居住空間。 |
 | Affinity | High |
 | Related Terms | Third Place、Movable Living |
 | Opposite Concepts | — |
@@ -138,7 +138,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Hospitality |
 | Category | Spatial |
-| Definition | 自分だけではなく、<br>共に過ごす人が快適であることを重視する価値観。 |
+| Definition | 自分だけではなく、共に過ごす人が快適であることを重視する価値観。 |
 | Affinity | Core |
 | Related Terms | Movable Living、Comfort |
 | Opposite Concepts | — |
@@ -180,7 +180,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Harmony |
 | Category | Spatial |
-| Definition | 個々の要素ではなく、<br>全体として成立している状態。 |
+| Definition | 個々の要素ではなく、全体として成立している状態。 |
 | Affinity | Core |
 | Related Terms | Balance、Unity |
 | Opposite Concepts | — |
@@ -236,7 +236,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Flow |
 | Category | Spatial |
-| Definition | 人の動き。<br>設営・撤収・滞在までを含めた動線。 |
+| Definition | 人の動き。設営・撤収・滞在までを含めた動線。 |
 | Affinity | High |
 | Related Terms | Layout、Sequence |
 | Opposite Concepts | — |
@@ -250,7 +250,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Sequence |
 | Category | Spatial |
-| Definition | 空間体験の流れ。<br>収納から設営、<br>滞在、<br>撤収までを一つの体験として捉える。 |
+| Definition | 空間体験の流れ。収納から設営、滞在、撤収までを一つの体験として捉える。 |
 | Affinity | High |
 | Related Terms | Flow、Rhythm |
 | Opposite Concepts | — |
@@ -292,7 +292,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Perspective |
 | Category | Spatial |
-| Definition | 立つ・座る・歩くなど、<br>視点の変化まで含めた空間設計。 |
+| Definition | 立つ・座る・歩くなど、視点の変化まで含めた空間設計。 |
 | Affinity | High |
 | Related Terms | Layer、Depth |
 | Opposite Concepts | — |
@@ -320,7 +320,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Openness |
 | Category | Spatial |
-| Definition | 開放感。<br>視界を遮らず、<br>景色を取り込む設計。 |
+| Definition | 開放感。視界を遮らず、景色を取り込む設計。 |
 | Affinity | High |
 | Related Terms | Depth、Enclosure |
 | Opposite Concepts | Enclosure |
@@ -334,7 +334,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Enclosure |
 | Category | Spatial |
-| Definition | 包まれる安心感。<br>タープや家具によって生まれる居住性。 |
+| Definition | 包まれる安心感。タープや家具によって生まれる居住性。 |
 | Affinity | High |
 | Related Terms | Openness、Threshold |
 | Opposite Concepts | Openness |
@@ -362,7 +362,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Destination |
 | Category | Spatial |
-| Definition | 自然へ行くことではなく、<br>この空間へ帰るという思想。 |
+| Definition | 自然へ行くことではなく、この空間へ帰るという思想。 |
 | Affinity | Core |
 | Related Terms | Threshold |
 | Opposite Concepts | — |
@@ -396,7 +396,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Residential |
 | Category | Architectural |
-| Definition | 暮らしを前提とした空間。<br>滞在ではなく生活を感じさせることを重視する。 |
+| Definition | 暮らしを前提とした空間。滞在ではなく生活を感じさせることを重視する。 |
 | Affinity | High |
 | Related Terms | Architecture、Pavilion |
 | Opposite Concepts | — |
@@ -410,7 +410,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Pavilion |
 | Category | Architectural |
-| Definition | 自然との境界を曖昧にする軽やかな建築。<br>屋外リビングの理想形の一つ。 |
+| Definition | 自然との境界を曖昧にする軽やかな建築。屋外リビングの理想形の一つ。 |
 | Affinity | High |
 | Related Terms | Residential、Interior |
 | Opposite Concepts | — |
@@ -452,7 +452,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Courtyard |
 | Category | Architectural |
-| Definition | 空間の中心となる居場所。<br>人が自然に集まる構成。 |
+| Definition | 空間の中心となる居場所。人が自然に集まる構成。 |
 | Affinity | High |
 | Related Terms | Exterior、Terrace |
 | Opposite Concepts | — |
@@ -494,7 +494,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Human Scale |
 | Category | Architectural |
-| Definition | 人の身体感覚に合った寸法。<br>大き過ぎず、小さ過ぎない心地よさ。 |
+| Definition | 人の身体感覚に合った寸法。大き過ぎず、小さ過ぎない心地よさ。 |
 | Affinity | Core |
 | Related Terms | Open Plan、Modularity |
 | Opposite Concepts | — |
@@ -536,7 +536,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Permanence |
 | Category | Architectural |
-| Definition | 一時的ではなく、<br>長く使い続けられる価値。 |
+| Definition | 一時的ではなく、長く使い続けられる価値。 |
 | Affinity | Core |
 | Related Terms | Flexibility、Timeless |
 | Opposite Concepts | — |
@@ -668,7 +668,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Material |
 | Category | Material |
-| Definition | 素材そのもの。<br>THE THIRD PLACEでは素材は装飾ではなく、空間品質を決定する要素である。 |
+| Definition | 素材そのもの。THE THIRD PLACEでは素材は装飾ではなく、空間品質を決定する要素である。 |
 | Affinity | High |
 | Related Terms | Natural Material |
 | Opposite Concepts | — |
@@ -682,7 +682,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Natural Material |
 | Category | Material |
-| Definition | 自然由来の素材。<br>時間とともに表情が変化することを価値とする。 |
+| Definition | 自然由来の素材。時間とともに表情が変化することを価値とする。 |
 | Affinity | High |
 | Related Terms | Material、Walnut |
 | Opposite Concepts | — |
@@ -696,7 +696,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Walnut |
 | Category | Material |
-| Definition | THE THIRD PLACEを代表する木材。<br>深い色味と経年変化による品格を持つ。 |
+| Definition | THE THIRD PLACEを代表する木材。深い色味と経年変化による品格を持つ。 |
 | Affinity | Core |
 | Related Terms | Natural Material、Oak |
 | Opposite Concepts | — |
@@ -724,7 +724,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Wood Grain |
 | Category | Material |
-| Definition | 木目。<br>自然素材ならではの個体差を含めた美しさ。 |
+| Definition | 木目。自然素材ならではの個体差を含めた美しさ。 |
 | Affinity | High |
 | Related Terms | Oak、Brass |
 | Opposite Concepts | — |
@@ -738,7 +738,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Brass |
 | Category | Material |
-| Definition | 時間とともに色が変化する金属。<br>静かな存在感を持つ素材。 |
+| Definition | 時間とともに色が変化する金属。静かな存在感を持つ素材。 |
 | Affinity | Core |
 | Related Terms | Wood Grain、Copper |
 | Opposite Concepts | — |
@@ -864,7 +864,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Texture |
 | Category | Material |
-| Definition | 素材表面の質感。<br>視覚だけでなく触覚も含めた印象。 |
+| Definition | 素材表面の質感。視覚だけでなく触覚も含めた印象。 |
 | Affinity | High |
 | Related Terms | Fabric、Matte Finish |
 | Opposite Concepts | — |
@@ -906,7 +906,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Patina |
 | Category | Material |
-| Definition | 経年変化によって生まれる風合い。<br>劣化ではなく価値として扱う。 |
+| Definition | 経年変化によって生まれる風合い。劣化ではなく価値として扱う。 |
 | Affinity | Core |
 | Related Terms | Satin Finish、Aging |
 | Opposite Concepts | — |
@@ -1024,7 +1024,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Radius |
 | Category | Form |
-| Definition | 角の丸み。<br>手触りや印象を左右する重要な要素。 |
+| Definition | 角の丸み。手触りや印象を左右する重要な要素。 |
 | Affinity | High |
 | Related Terms | Curve、Chamfer |
 | Opposite Concepts | — |
@@ -1038,7 +1038,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Chamfer |
 | Category | Form |
-| Definition | 面取り。<br>家具品質を感じさせる加工。 |
+| Definition | 面取り。家具品質を感じさせる加工。 |
 | Affinity | High |
 | Related Terms | Radius、Edge |
 | Opposite Concepts | — |
@@ -1052,7 +1052,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Edge |
 | Category | Form |
-| Definition | 輪郭。<br>製品全体の印象を決定する境界線。 |
+| Definition | 輪郭。製品全体の印象を決定する境界線。 |
 | Affinity | High |
 | Related Terms | Chamfer、Thickness |
 | Opposite Concepts | — |
@@ -1066,7 +1066,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Thickness |
 | Category | Form |
-| Definition | 部材の厚み。<br>安心感や重厚感を生む要素。 |
+| Definition | 部材の厚み。安心感や重厚感を生む要素。 |
 | Affinity | High |
 | Related Terms | Edge、Proportion |
 | Opposite Concepts | — |
@@ -1108,7 +1108,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Asymmetry |
 | Category | Form |
-| Definition | 意図を持った非対称。<br>動きや個性を生み出す。 |
+| Definition | 意図を持った非対称。動きや個性を生み出す。 |
 | Affinity | High |
 | Related Terms | Symmetry、Structure |
 | Opposite Concepts | Symmetry |
@@ -1234,7 +1234,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Negative Space |
 | Category | Form |
-| Definition | 形そのものではなく、<br>余白によって成立する美しさ。 |
+| Definition | 形そのものではなく、余白によって成立する美しさ。 |
 | Affinity | Core |
 | Related Terms | Visual Weight、Presence |
 | Opposite Concepts | — |
@@ -1700,7 +1700,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Light |
 | Category | Light |
-| Definition | 空間を照らすためではなく、<br>素材を美しく見せる存在。 |
+| Definition | 空間を照らすためではなく、素材を美しく見せる存在。 |
 | Affinity | High |
 | Related Terms | Warm Light |
 | Opposite Concepts | — |
@@ -1826,7 +1826,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Shadow |
 | Category | Light |
-| Definition | 陰影。<br>光と同等に重要な要素。 |
+| Definition | 陰影。光と同等に重要な要素。 |
 | Affinity | High |
 | Related Terms | Diffusion、Contrast |
 | Opposite Concepts | — |
@@ -1972,7 +1972,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Ember |
 | Category | Fire |
-| Definition | 熾火。<br>静かな時間を象徴する存在。 |
+| Definition | 熾火。静かな時間を象徴する存在。 |
 | Affinity | High |
 | Related Terms | Flame、Warmth |
 | Opposite Concepts | — |
@@ -2300,7 +2300,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Pause |
 | Category | Aroma |
-|定義 | 一度立ち止まる時間。 |
+| Definition | 一度立ち止まる時間。 |
 | Affinity | High |
 | Related Terms | Atmosphere、Meditation |
 | Opposite Concepts | — |
@@ -2446,7 +2446,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Espresso |
 | Category | Coffee |
-|定義 | 凝縮された抽出体験。 |
+| Definition | 凝縮された抽出体験。 |
 | Affinity | High |
 | Related Terms | Process、Manual |
 | Opposite Concepts | — |
@@ -2530,7 +2530,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Workflow |
 | Category | Coffee |
-|定義 | 準備・抽出・提供・片付けまでの流れ。 |
+| Definition | 準備・抽出・提供・片付けまでの流れ。 |
 | Affinity | High |
 | Related Terms | Craft、Hospitality |
 | Opposite Concepts | — |
@@ -2600,7 +2600,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Analog |
 | Category | Coffee |
-|定義 | 手で操作する楽しさ。 |
+| Definition | 手で操作する楽しさ。 |
 | Affinity | High |
 | Related Terms | Classic Engineering、Steam Pressure |
 | Opposite Concepts | — |
@@ -2642,7 +2642,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Serving |
 | Category | Coffee |
-|定義 | 提供する所作。 |
+| Definition | 提供する所作。 |
 | Affinity | High |
 | Related Terms | Preparation、Cleanup |
 | Opposite Concepts | — |
@@ -2718,7 +2718,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Meadow |
 | Category | Landscape |
-|定義 | 広い草地。 |
+| Definition | 広い草地。 |
 | Affinity | Medium |
 | Related Terms | Woodland、Gravel |
 | Opposite Concepts | — |
@@ -2760,7 +2760,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Lake |
 | Category | Landscape |
-|定義 | 湖。 |
+| Definition | 湖。 |
 | Affinity | Medium |
 | Related Terms | Mountain、River |
 | Opposite Concepts | — |
@@ -2788,7 +2788,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Shore |
 | Category | Landscape |
-|定義 | 水辺。 |
+| Definition | 水辺。 |
 | Affinity | Medium |
 | Related Terms | River、Horizon |
 | Opposite Concepts | — |
@@ -2802,7 +2802,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Horizon |
 | Category | Landscape |
-|定義 | 遠景。 |
+| Definition | 遠景。 |
 | Affinity | Medium |
 | Related Terms | Shore、Open Sky |
 | Opposite Concepts | — |
@@ -2816,7 +2816,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Open Sky |
 | Category | Landscape |
-| 定義 | 広い空。 |
+| Definition | 広い空。 |
 | Affinity | Medium |
 | Related Terms | Horizon、Twilight |
 | Opposite Concepts | — |
@@ -2858,7 +2858,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Morning Light |
 | Category | Landscape |
-|定義 | 朝の光。 |
+| Definition | 朝の光。 |
 | Affinity | Medium |
 | Related Terms | Dawn、Evening Glow |
 | Opposite Concepts | — |
@@ -2872,7 +2872,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Evening Glow |
 | Category | Landscape |
-| 定義 | 夕日の光。 |
+| Definition | 夕日の光。 |
 | Affinity | Medium |
 | Related Terms | Morning Light、Wind |
 | Opposite Concepts | — |
@@ -2914,7 +2914,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Seasonal Change |
 | Category | Landscape |
-|定義 | 四季による景色の変化。 |
+| Definition | 四季による景色の変化。 |
 | Affinity | Medium |
 | Related Terms | Reflection、Quiet Nature |
 | Opposite Concepts | — |
@@ -2942,7 +2942,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Scenic Quality |
 | Category | Landscape |
-|定義 | 景観品質。 |
+| Definition | 景観品質。 |
 | Affinity | Medium |
 | Related Terms | Quiet Nature |
 | Opposite Concepts | — |
@@ -2976,7 +2976,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Typography |
 | Category | Graphic |
-|定義 | 文字そのものの造形。 |
+| Definition | 文字そのものの造形。 |
 | Affinity | High |
 | Related Terms | Graphic、Monoline |
 | Opposite Concepts | — |
@@ -3004,7 +3004,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Emblem |
 | Category | Graphic |
-|定義 | 象徴的な記号。 |
+| Definition | 象徴的な記号。 |
 | Affinity | High |
 | Related Terms | Monoline、Symbol |
 | Opposite Concepts | — |
@@ -3018,7 +3018,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Symbol |
 | Category | Graphic |
-|定義 | 意味を持つ視覚表現。 |
+| Definition | 意味を持つ視覚表現。 |
 | Affinity | High |
 | Related Terms | Emblem、Identity |
 | Opposite Concepts | — |
@@ -3046,7 +3046,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Grid |
 | Category | Graphic |
-|定義 | 秩序ある配置。 |
+| Definition | 秩序ある配置。 |
 | Affinity | High |
 | Related Terms | Identity、Alignment |
 | Opposite Concepts | — |
@@ -3060,7 +3060,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Alignment |
 | Category | Graphic |
-| 定義 | 整列。 |
+| Definition | 整列。 |
 | Affinity | High |
 | Related Terms | Grid、Negative Space |
 | Opposite Concepts | — |
@@ -3074,7 +3074,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Negative Space |
 | Category | Graphic |
-|定義 | 余白による構成。 |
+| Definition | 余白による構成。 |
 | Affinity | Core |
 | Related Terms | Alignment、Contrast |
 | Opposite Concepts | — |
@@ -3088,7 +3088,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Contrast |
 | Category | Graphic |
-|定義 | 視覚的な強弱。 |
+| Definition | 視覚的な強弱。 |
 | Affinity | High |
 | Related Terms | Negative Space、Simplicity |
 | Opposite Concepts | — |
@@ -3102,7 +3102,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Simplicity |
 | Category | Graphic |
-|定義 | 情報量を抑えた美しさ。 |
+| Definition | 情報量を抑えた美しさ。 |
 | Affinity | Core |
 | Related Terms | Contrast、Minimal Graphic |
 | Opposite Concepts | — |
@@ -3130,7 +3130,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Line Quality |
 | Category | Graphic |
-| 定義 | 線そのものの美しさ。 |
+| Definition | 線そのものの美しさ。 |
 | Affinity | High |
 | Related Terms | Minimal Graphic、Composition |
 | Opposite Concepts | — |
@@ -3144,7 +3144,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Composition |
 | Category | Graphic |
-| 定義 | 視覚要素の配置設計。 |
+| Definition | 視覚要素の配置設計。 |
 | Affinity | High |
 | Related Terms | Line Quality、Visual Rhythm |
 | Opposite Concepts | — |
@@ -3158,7 +3158,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Visual Rhythm |
 | Category | Graphic |
-| 定義 | 繰り返しによって生まれるリズム。 |
+| Definition | 繰り返しによって生まれるリズム。 |
 | Affinity | High |
 | Related Terms | Composition |
 | Opposite Concepts | — |
@@ -3178,7 +3178,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Color |
 | Category | Color |
-| Definition | 空間全体の印象を決定する視覚要素。<br>素材とは独立して扱う。 |
+| Definition | 空間全体の印象を決定する視覚要素。素材とは独立して扱う。 |
 | Affinity | High |
 | Related Terms | Black |
 | Opposite Concepts | — |
@@ -3192,7 +3192,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Black |
 | Category | Color |
-| Definition | 静けさ。<br>引き締め。<br>工業製品との親和性。 |
+| Definition | 静けさ。引き締め。工業製品との親和性。 |
 | Affinity | High |
 | Related Terms | Color、Brown |
 | Opposite Concepts | White |
@@ -3220,7 +3220,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Gold |
 | Category | Color |
-|定義 | 真鍮が生み出す上質さ。 |
+| Definition | 真鍮が生み出す上質さ。 |
 | Affinity | High |
 | Related Terms | Brown、Silver |
 | Opposite Concepts | — |
@@ -3234,7 +3234,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Silver |
 | Category | Color |
-| Definition | 精密さ。<br>清潔感。<br>工業的印象。 |
+| Definition | 精密さ。清潔感。工業的印象。 |
 | Affinity | High |
 | Related Terms | Gold、Copper |
 | Opposite Concepts | — |
@@ -3248,7 +3248,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Copper |
 | Category | Color |
-| 定義 | 経年変化を楽しむ色。 |
+| Definition | 経年変化を楽しむ色。 |
 | Affinity | High |
 | Related Terms | Silver、Gray |
 | Opposite Concepts | — |
@@ -3262,7 +3262,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Gray |
 | Category | Color |
-| Definition | 中立性。<br>素材同士を調和させる色。 |
+| Definition | 中立性。素材同士を調和させる色。 |
 | Affinity | High |
 | Related Terms | Copper、White |
 | Opposite Concepts | — |
@@ -3276,7 +3276,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | White |
 | Category | Color |
-| Definition | 余白。<br>清潔感。<br>光を受け止める色。 |
+| Definition | 余白。清潔感。光を受け止める色。 |
 | Affinity | High |
 | Related Terms | Gray、Natural Tone |
 | Opposite Concepts | Black |
@@ -3290,7 +3290,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Natural Tone |
 | Category | Color |
-|定義 | 素材本来の色を尊重する考え方。 |
+| Definition | 素材本来の色を尊重する考え方。 |
 | Affinity | High |
 | Related Terms | White、Matte Black |
 | Opposite Concepts | — |
@@ -3304,7 +3304,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Matte Black |
 | Category | Color |
-|定義 | 光を抑えたブラック。 |
+| Definition | 光を抑えたブラック。 |
 | Affinity | High |
 | Related Terms | Natural Tone、Warm Palette |
 | Opposite Concepts | — |
@@ -3318,7 +3318,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Warm Palette |
 | Category | Color |
-|定義 | 暖色を中心とした配色。 |
+| Definition | 暖色を中心とした配色。 |
 | Affinity | High |
 | Related Terms | Matte Black、Neutral Palette |
 | Opposite Concepts | — |
@@ -3332,7 +3332,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Neutral Palette |
 | Category | Color |
-| 定義 | 色数を抑えた構成。 |
+| Definition | 色数を抑えた構成。 |
 | Affinity | High |
 | Related Terms | Warm Palette、Contrast |
 | Opposite Concepts | — |
@@ -3346,7 +3346,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Contrast |
 | Category | Color |
-| 定義 | 色同士の対比。 |
+| Definition | 色同士の対比。 |
 | Affinity | High |
 | Related Terms | Neutral Palette、Color Harmony |
 | Opposite Concepts | — |
@@ -3360,7 +3360,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Color Harmony |
 | Category | Color |
-| 定義 | 色彩全体の調和。 |
+| Definition | 色彩全体の調和。 |
 | Affinity | High |
 | Related Terms | Contrast、Monochrome |
 | Opposite Concepts | — |
@@ -3374,7 +3374,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Monochrome |
 | Category | Color |
-| 定義 | 色数を限定した世界観。 |
+| Definition | 色数を限定した世界観。 |
 | Affinity | High |
 | Related Terms | Color Harmony、Earth Tone |
 | Opposite Concepts | — |
@@ -3402,7 +3402,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Material Color |
 | Category | Color |
-| 定義 | 素材そのものが持つ色。 |
+| Definition | 素材そのものが持つ色。 |
 | Affinity | High |
 | Related Terms | Earth Tone、Visual Balance |
 | Opposite Concepts | — |
@@ -3416,7 +3416,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Visual Balance |
 | Category | Color |
-| 定義 | 色による重量感の調整。 |
+| Definition | 色による重量感の調整。 |
 | Affinity | High |
 | Related Terms | Material Color |
 | Opposite Concepts | — |
@@ -3450,7 +3450,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Silence |
 | Category | Sound |
-| Definition | 静寂。<br>最も重要な音。 |
+| Definition | 静寂。最も重要な音。 |
 | Affinity | Core |
 | Related Terms | Soundscape、Fire Crackle |
 | Opposite Concepts | — |
@@ -3464,7 +3464,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Fire Crackle |
 | Category | Sound |
-| 定義 | 薪が燃える音。 |
+| Definition | 薪が燃える音。 |
 | Affinity | Medium |
 | Related Terms | Silence、Wind |
 | Opposite Concepts | — |
@@ -3478,7 +3478,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Wind |
 | Category | Sound |
-| 定義 | 風の音。 |
+| Definition | 風の音。 |
 | Affinity | Medium |
 | Related Terms | Fire Crackle、Rain |
 | Opposite Concepts | — |
@@ -3492,7 +3492,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Rain |
 | Category | Sound |
-| 定義 | 雨音。 |
+| Definition | 雨音。 |
 | Affinity | Medium |
 | Related Terms | Wind、River Sound |
 | Opposite Concepts | — |
@@ -3506,7 +3506,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | River Sound |
 | Category | Sound |
-| 定義 | 川のせせらぎ。 |
+| Definition | 川のせせらぎ。 |
 | Affinity | Medium |
 | Related Terms | Rain、Forest Ambience |
 | Opposite Concepts | — |
@@ -3520,7 +3520,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Forest Ambience |
 | Category | Sound |
-| 定義 | 森が生み出す自然音。 |
+| Definition | 森が生み出す自然音。 |
 | Affinity | Medium |
 | Related Terms | River Sound、Birdsong |
 | Opposite Concepts | — |
@@ -3534,7 +3534,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Birdsong |
 | Category | Sound |
-| 定義 | 鳥のさえずり。 |
+| Definition | 鳥のさえずり。 |
 | Affinity | Medium |
 | Related Terms | Forest Ambience、Leaves |
 | Opposite Concepts | — |
@@ -3548,7 +3548,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Leaves |
 | Category | Sound |
-| 定義 | 葉が揺れる音。 |
+| Definition | 葉が揺れる音。 |
 | Affinity | Medium |
 | Related Terms | Birdsong、Coffee Brewing |
 | Opposite Concepts | — |
@@ -3562,7 +3562,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Coffee Brewing |
 | Category | Sound |
-| 定義 | 抽出中の音。 |
+| Definition | 抽出中の音。 |
 | Affinity | High |
 | Related Terms | Leaves、Steam |
 | Opposite Concepts | — |
@@ -3576,7 +3576,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Steam |
 | Category | Sound |
-| 定義 | 蒸気音。 |
+| Definition | 蒸気音。 |
 | Affinity | Medium |
 | Related Terms | Coffee Brewing、Metal Resonance |
 | Opposite Concepts | — |
@@ -3590,7 +3590,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Metal Resonance |
 | Category | Sound |
-| 定義 | 金属が触れ合う音。 |
+| Definition | 金属が触れ合う音。 |
 | Affinity | Medium |
 | Related Terms | Steam、Wood Resonance |
 | Opposite Concepts | — |
@@ -3604,7 +3604,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Wood Resonance |
 | Category | Sound |
-| 定義 | 木材の柔らかな響き。 |
+| Definition | 木材の柔らかな響き。 |
 | Affinity | Medium |
 | Related Terms | Metal Resonance、Footstep |
 | Opposite Concepts | — |
@@ -3618,7 +3618,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Footstep |
 | Category | Sound |
-| 定義 | 砂利を歩く音。 |
+| Definition | 砂利を歩く音。 |
 | Affinity | Medium |
 | Related Terms | Wood Resonance、Distance |
 | Opposite Concepts | — |
@@ -3632,7 +3632,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Distance |
 | Category | Sound |
-| 定義 | 静けさを感じさせる遠くの音。 |
+| Definition | 静けさを感じさせる遠くの音。 |
 | Affinity | Medium |
 | Related Terms | Footstep、Acoustic Comfort |
 | Opposite Concepts | — |
@@ -3646,7 +3646,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Acoustic Comfort |
 | Category | Sound |
-| 定義 | 耳に心地よい音環境。 |
+| Definition | 耳に心地よい音環境。 |
 | Affinity | Medium |
 | Related Terms | Distance、Quiet Conversation |
 | Opposite Concepts | — |
@@ -3660,7 +3660,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Quiet Conversation |
 | Category | Sound |
-| 定義 | 自然と調和する会話。 |
+| Definition | 自然と調和する会話。 |
 | Affinity | Medium |
 | Related Terms | Acoustic Comfort、Ambient Sound |
 | Opposite Concepts | — |
@@ -3674,7 +3674,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Ambient Sound |
 | Category | Sound |
-| 定義 | 空間を包む背景音。 |
+| Definition | 空間を包む背景音。 |
 | Affinity | Medium |
 | Related Terms | Quiet Conversation |
 | Opposite Concepts | — |
@@ -3694,7 +3694,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Craftsmanship |
 | Category | Cultural |
-| 定義 | 職人によるものづくり。 |
+| Definition | 職人によるものづくり。 |
 | Affinity | Core |
 | Related Terms | Authenticity |
 | Opposite Concepts | — |
@@ -3708,7 +3708,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Authenticity |
 | Category | Cultural |
-| 定義 | 本質を大切にする姿勢。 |
+| Definition | 本質を大切にする姿勢。 |
 | Affinity | Core |
 | Related Terms | Craftsmanship、Heritage |
 | Opposite Concepts | — |
@@ -3722,7 +3722,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Heritage |
 | Category | Cultural |
-| 定義 | 受け継がれてきた文化。 |
+| Definition | 受け継がれてきた文化。 |
 | Affinity | Core |
 | Related Terms | Authenticity、Tradition |
 | Opposite Concepts | — |
@@ -3736,7 +3736,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Tradition |
 | Category | Cultural |
-| 定義 | 伝統。 |
+| Definition | 伝統。 |
 | Affinity | High |
 | Related Terms | Heritage、Timelessness |
 | Opposite Concepts | — |
@@ -3750,7 +3750,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Timelessness |
 | Category | Cultural |
-| 定義 | 流行を超えた価値。 |
+| Definition | 流行を超えた価値。 |
 | Affinity | Core |
 | Related Terms | Tradition、Permanence |
 | Opposite Concepts | — |
@@ -3764,7 +3764,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Permanence |
 | Category | Cultural |
-| 定義 | 長く残る価値。 |
+| Definition | 長く残る価値。 |
 | Affinity | Core |
 | Related Terms | Timelessness、Simplicity |
 | Opposite Concepts | — |
@@ -3778,7 +3778,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Simplicity |
 | Category | Cultural |
-| 定義 | 引き算の美学。 |
+| Definition | 引き算の美学。 |
 | Affinity | Core |
 | Related Terms | Permanence、Honesty |
 | Opposite Concepts | — |
@@ -3792,7 +3792,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Honesty |
 | Category | Cultural |
-| 定義 | 素材・構造を偽らない姿勢。 |
+| Definition | 素材・構造を偽らない姿勢。 |
 | Affinity | High |
 | Related Terms | Simplicity、Respect |
 | Opposite Concepts | — |
@@ -3806,7 +3806,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Respect |
 | Category | Cultural |
-| 定義 | 自然・道具・職人への敬意。 |
+| Definition | 自然・道具・職人への敬意。 |
 | Affinity | High |
 | Related Terms | Honesty、Story |
 | Opposite Concepts | — |
@@ -3820,7 +3820,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Story |
 | Category | Cultural |
-| 定義 | 背景や歴史を含めた価値。 |
+| Definition | 背景や歴史を含めた価値。 |
 | Affinity | Core |
 | Related Terms | Respect、Craft Culture |
 | Opposite Concepts | — |
@@ -3834,7 +3834,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Craft Culture |
 | Category | Cultural |
-| 定義 | 手仕事を尊重する文化。 |
+| Definition | 手仕事を尊重する文化。 |
 | Affinity | High |
 | Related Terms | Story、Industrial Culture |
 | Opposite Concepts | Industrial Culture |
@@ -3848,7 +3848,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Industrial Culture |
 | Category | Cultural |
-| 定義 | 工業製品への敬意。 |
+| Definition | 工業製品への敬意。 |
 | Affinity | High |
 | Related Terms | Craft Culture、Design Culture |
 | Opposite Concepts | Craft Culture |
@@ -3862,7 +3862,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Design Culture |
 | Category | Cultural |
-| 定義 | 優れたデザインを文化として捉える姿勢。 |
+| Definition | 優れたデザインを文化として捉える姿勢。 |
 | Affinity | High |
 | Related Terms | Industrial Culture、Hospitality Culture |
 | Opposite Concepts | — |
@@ -3876,7 +3876,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Hospitality Culture |
 | Category | Cultural |
-| 定義 | 人を迎える文化。 |
+| Definition | 人を迎える文化。 |
 | Affinity | High |
 | Related Terms | Design Culture、Sustainability |
 | Opposite Concepts | — |
@@ -3890,7 +3890,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Sustainability |
 | Category | Cultural |
-| 定義 | 長く使い続ける思想。 |
+| Definition | 長く使い続ける思想。 |
 | Affinity | High |
 | Related Terms | Hospitality Culture、Repairability |
 | Opposite Concepts | — |
@@ -3904,7 +3904,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Repairability |
 | Category | Cultural |
-| 定義 | 修理しながら使い続ける考え方。 |
+| Definition | 修理しながら使い続ける考え方。 |
 | Affinity | Core |
 | Related Terms | Sustainability、Ownership |
 | Opposite Concepts | — |
@@ -3918,7 +3918,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Ownership |
 | Category | Cultural |
-| 定義 | 所有ではなく付き合うという感覚。 |
+| Definition | 所有ではなく付き合うという感覚。 |
 | Affinity | Core |
 | Related Terms | Repairability、Legacy |
 | Opposite Concepts | — |
@@ -3932,7 +3932,7 @@ Affinity Lexicon は以下のカテゴリーで構成される。
 |--------|-------|
 | Term | Legacy |
 | Category | Cultural |
-| 定義 | 次世代へ受け継ぐ価値。 |
+| Definition | 次世代へ受け継ぐ価値。 |
 | Affinity | Core |
 | Related Terms | Ownership |
 | Opposite Concepts | — |
@@ -3952,7 +3952,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Calm |
 | Category | Emotional |
-| 定義 | 穏やかさ。 |
+| Definition | 穏やかさ。 |
 | Affinity | Core |
 | Related Terms | Belonging |
 | Opposite Concepts | — |
@@ -3966,7 +3966,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Belonging |
 | Category | Emotional |
-| 定義 | 帰る場所という感覚。 |
+| Definition | 帰る場所という感覚。 |
 | Affinity | Core |
 | Related Terms | Calm、Fulfillment |
 | Opposite Concepts | — |
@@ -3980,7 +3980,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Fulfillment |
 | Category | Emotional |
-| 定義 | 満たされること。 |
+| Definition | 満たされること。 |
 | Affinity | High |
 | Related Terms | Belonging、Satisfaction |
 | Opposite Concepts | — |
@@ -3994,7 +3994,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Satisfaction |
 | Category | Emotional |
-| 定義 | 道具・空間・時間への満足。 |
+| Definition | 道具・空間・時間への満足。 |
 | Affinity | High |
 | Related Terms | Fulfillment、Comfort |
 | Opposite Concepts | — |
@@ -4008,7 +4008,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Comfort |
 | Category | Emotional |
-| 定義 | 安心感。 |
+| Definition | 安心感。 |
 | Affinity | Core |
 | Related Terms | Satisfaction、Warmth |
 | Opposite Concepts | — |
@@ -4022,7 +4022,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Warmth |
 | Category | Emotional |
-| 定義 | 人間的な温かさ。 |
+| Definition | 人間的な温かさ。 |
 | Affinity | High |
 | Related Terms | Comfort、Trust |
 | Opposite Concepts | — |
@@ -4036,7 +4036,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Trust |
 | Category | Emotional |
-| 定義 | 安心して使えること。 |
+| Definition | 安心して使えること。 |
 | Affinity | High |
 | Related Terms | Warmth、Curiosity |
 | Opposite Concepts | — |
@@ -4050,7 +4050,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Curiosity |
 | Category | Emotional |
-| 定義 | 新しい発見への興味。 |
+| Definition | 新しい発見への興味。 |
 | Affinity | High |
 | Related Terms | Trust、Discovery |
 | Opposite Concepts | — |
@@ -4064,7 +4064,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Discovery |
 | Category | Emotional |
-| 定義 | 知る楽しさ。 |
+| Definition | 知る楽しさ。 |
 | Affinity | High |
 | Related Terms | Curiosity、Reflection |
 | Opposite Concepts | — |
@@ -4078,7 +4078,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Reflection |
 | Category | Emotional |
-| 定義 | 自分自身と向き合う時間。 |
+| Definition | 自分自身と向き合う時間。 |
 | Affinity | High |
 | Related Terms | Discovery、Gratitude |
 | Opposite Concepts | — |
@@ -4092,7 +4092,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Gratitude |
 | Category | Emotional |
-| 定義 | 自然・道具・時間への感謝。 |
+| Definition | 自然・道具・時間への感謝。 |
 | Affinity | High |
 | Related Terms | Reflection、Presence |
 | Opposite Concepts | — |
@@ -4106,7 +4106,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Presence |
 | Category | Emotional |
-| 定義 | 今この瞬間を味わうこと。 |
+| Definition | 今この瞬間を味わうこと。 |
 | Affinity | Core |
 | Related Terms | Gratitude、Relaxation |
 | Opposite Concepts | — |
@@ -4120,7 +4120,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Relaxation |
 | Category | Emotional |
-| 定義 | 力を抜ける状態。 |
+| Definition | 力を抜ける状態。 |
 | Affinity | High |
 | Related Terms | Presence、Inspiration |
 | Opposite Concepts | — |
@@ -4134,7 +4134,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Inspiration |
 | Category | Emotional |
-| 定義 | 景色や空間から受ける刺激。 |
+| Definition | 景色や空間から受ける刺激。 |
 | Affinity | High |
 | Related Terms | Relaxation、Connection |
 | Opposite Concepts | — |
@@ -4148,7 +4148,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Connection |
 | Category | Emotional |
-| 定義 | 人・自然・道具とのつながり。 |
+| Definition | 人・自然・道具とのつながり。 |
 | Affinity | High |
 | Related Terms | Inspiration、Memory |
 | Opposite Concepts | — |
@@ -4162,7 +4162,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Memory |
 | Category | Emotional |
-| 定義 | 思い出として積み重なる体験。 |
+| Definition | 思い出として積み重なる体験。 |
 | Affinity | Core |
 | Related Terms | Connection、Happiness |
 | Opposite Concepts | — |
@@ -4176,7 +4176,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Happiness |
 | Category | Emotional |
-| 定義 | 豊かな時間から生まれる幸福感。 |
+| Definition | 豊かな時間から生まれる幸福感。 |
 | Affinity | High |
 | Related Terms | Memory、Peace |
 | Opposite Concepts | — |
@@ -4190,7 +4190,7 @@ THE THIRD PLACEが目指す感情価値。
 |--------|-------|
 | Term | Peace |
 | Category | Emotional |
-| 定義 | 静かな心。 |
+| Definition | 静かな心。 |
 | Affinity | High |
 | Related Terms | Happiness |
 | Opposite Concepts | — |
@@ -4266,5 +4266,7 @@ Affinityは、他文書での言及頻度・中心性を基準とした初期評
 ## Document Renumbering Note
 
 本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TP-008からOP-003へ番号を変更した。語彙定義自体（Ver.1.1、全16カテゴリー）に変更はない。旧ID: TP-008。
+
+2026-09-19付で、一部語彙エントリのField列で「Definition」が誤って「定義」と表記されていた不具合を修正した（内容・定義文自体に変更はない）。
 
 # End of Document
