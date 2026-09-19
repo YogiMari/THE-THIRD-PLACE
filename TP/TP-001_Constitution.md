@@ -2,7 +2,7 @@ TP-001 THE THIRD PLACE Constitution
   
   
 # THE THIRD PLACE Constitution  
-## Ver.4.3  
+## Ver.4.4  
   
 ---  
   
@@ -41,6 +41,12 @@ AI運用、
 GitHub運用、  
   
 すべての最上位原則を定義する。  
+  
+なお、TP-000 THE THIRD PLACE Originalは、本プロジェクトに先立って存在する、不変の思想的原典である。  
+  
+THE THIRD PLACEというプロジェクトそのもの——Document Architecture、Governance、運用体系——は、本Constitution（TP-001）から始まる。  
+  
+TP-000の位置づけについては、§13.0にて定義する。  
   
 ---  
   
@@ -667,6 +673,9 @@ THE THIRD PLACEは、
 THE THIRD PLACEにおける情報階層を以下と定義する。  
   
 ```text  
+TP-000 THE THIRD PLACE Original（不変の原典・Document Architecture外）  
+　　　　↓  
+  
 THE THIRD PLACE Constitution  
 　　　　↓  
   
@@ -703,6 +712,12 @@ Knowledge Documents
 Operational Records  
 ```  
   
+TP-000は、Document Architectureの通常の階層（上位文書が下位文書を規定する構造）の外側に位置する不変の原典である。  
+  
+Constitution以下の各文書は、TP-000に記された原理を現実世界へ実装するために存在するが、  
+  
+TP-000そのものは、この階層構造の一部として更新・管理されるものではない。  
+  
 情報は常に上位文書を優先する。  
   
 下位文書は、  
@@ -732,6 +747,28 @@ Single Source of Truth（SSOT）を採用する。
 THE THIRD PLACE全体の正式文書は、  
   
 GitHub Repositoryによって管理される。  
+  
+---  
+  
+## 13.0 TP-000 Original  
+  
+管理対象  
+  
+・Human Principlesの原典的記述（Recognition、Identity、Human Blueprint、Axioms、Principles、Decision Flow、Expression）  
+  
+・THE THIRD PLACEという概念そのものの起源  
+  
+TP-000は、THE THIRD PLACEプロジェクトに先立って存在する、不変の思想的原典である。  
+  
+本Constitution §3 Human Principlesは、TP-000に記された原理を、プロジェクト運営のための条文として再定義したものであり、TP-000そのものを置き換えるものではない。  
+  
+TP-000は、他の文書と異なり、Project Ledgerを通じた通常の意思決定プロセスによる改訂を前提としない。  
+  
+改訂されるのは、既存の原理では説明できない新しい真実が、人生を通して現れた場合に限る。  
+  
+THE THIRD PLACEプロジェクト——Document Architecture、Governance、運用体系——は、本Constitution（TP-001）から始まる。  
+  
+TP-000は、そのプロジェクトの根拠となる原典として、Document Architectureの外側かつ最上流に位置する。  
   
 ---  
   
@@ -1802,6 +1839,24 @@ Discovery／ChronicleをAtelier Discovery／Heritage Chronicleへ正式名称化
 Aesthetic Grammar（13.11）、Cultural Pantheon（13.17）、Search Doctrine（13.18）の  
   
 管理対象定義を新設し、全18文書の管理対象を§13で網羅した。  
+  
+---  
+  
+### Ver.4.4  
+  
+MARI様のご指示に基づき、TP-000 THE THIRD PLACE OriginalをConstitutionの文書体系へ正式に位置づけた。  
+  
+Preambleへ、TP-000が本プロジェクトに先立つ不変の思想的原典であり、  
+  
+THE THIRD PLACEプロジェクトそのものは本Constitution（TP-001）から始まる旨を明記。  
+  
+Information Hierarchy（§12）の図へ、TP-000をDocument Architectureの外側かつ最上流に位置する存在として追加し、  
+  
+その位置づけを補足する説明文を追加。  
+  
+§13にTP-000の管理対象を定義する新セクション「13.0 TP-000 Original」を新設（既存の13.1〜13.18の番号は変更せず維持）。  
+  
+これにより、Constitution自身が定義するDocument ArchitectureからTP-000が欠落していた状態を解消した。  
   
 ---  
   
