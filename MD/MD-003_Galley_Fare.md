@@ -1,5 +1,5 @@
 # MD-003 Galley Fare
-Version 2.8
+Version 2.9
 
 ---
 
@@ -2596,7 +2596,7 @@ Cutlery / Kitchen Tool Storage Pouch（Mesh, Breathable, S Size）
 
 ## KIT-070
 
-Retired. MD-004 Equipment Registry（Storage Domain）STR-027へ移管済み（Version 2.8）。旧登録：Snow Peak ガビングスタンド（Owned・置換検討中）。ゴミ箱はストレージ装備であるため、MD-004で一元管理する。本IDは移管記録として保持する。
+Retired. MD-004 Equipment Registry（Storage Domain）旧STR-027（Retired）へ移管済み（Version 2.8）だったが、MD-004 Version 7.37の番号整理で当該レコードは削除された。旧登録：Snow Peak ガビングスタンド（Owned・置換検討中）。ゴミ箱はストレージ装備であるため、MD-004で一元管理する。本IDは移管記録として保持する。
 
 ---
 
@@ -2608,7 +2608,7 @@ Retired. MD-004 Equipment Registry（Storage Domain）STR-026へ移管済み（V
 
 ## KIT-070b
 
-Retired. MD-004 Equipment Registry（Storage Domain）STR-029へ移管済み（Version 2.8）。旧登録：ANOBA フォールディングサイドテーブル（SKU: AN129、Silver、Candidate）。MD-004ではSTR-029（SKU: AN139、Black、Essential）として登録されており、SKU・色は旧登録と一致していなかった。MD-004の記載を正とする。本IDは移管記録として保持する。
+Retired. MD-004 Equipment Registry（Storage Domain）STR-025へ移管済み（Version 2.8）。旧登録：ANOBA フォールディングサイドテーブル（SKU: AN129、Silver、Candidate）。MD-004ではSTR-025（SKU: AN139、Black、Essential）として登録されており、SKU・色は旧登録と一致していなかった。MD-004の記載を正とする。本IDは移管記録として保持する。
 
 ---
 
@@ -3450,15 +3450,28 @@ MARI様がClaude導入以前に個人管理していたスプレッドシート�
 
 ### Changes
 
-- KIT-070（Snow Peak ガビングスタンド）：MD-004 STR-027（Retired）へ移管。本IDは移管記録として保持。
+- KIT-070（Snow Peak ガビングスタンド）：旧STR-027（Retired。MD-004 Version 7.37で削除）へ移管。本IDは移管記録として保持。
 - KIT-070a（ANOBA BLACK EDITION マルチダストバケット）：MD-004 STR-026（Owned）へ移管。本IDは移管記録として保持。
-- KIT-070b（ANOBA フォールディングサイドテーブル）：MD-004 STR-029（Essential）へ移管。本IDは移管記録として保持。
-- 旧KIT-070bの記載（SKU: AN129、Silver）とMD-004 STR-029の記載（SKU: AN139、Black）は一致していなかった。MD-004の記載を正として維持した。SKU・色の公式情報による確認は未了。
+- KIT-070b（ANOBA フォールディングサイドテーブル）：MD-004 STR-025（Essential）へ移管。本IDは移管記録として保持。
+- 旧KIT-070bの記載（SKU: AN129、Silver）とMD-004 STR-025の記載（SKU: AN139、Black）は一致していなかった。MD-004の記載を正として維持した。SKU・色の公式情報による確認は未了。
 - Registry Rules（Equipment ID）：他のMaster Documentへ移管したIDは、欠番とせず移管記録（Retired）として保持する旨を追記。
 - Category Grouping Policy：グループ13（ゴミ処理）を、MD-004 Storage Domainへ移管済みで移管記録のみ保持する旨に更新。
 - Domain Scope Note：ゴミ箱・ダストスタンド・ダストバケット（およびその置き台となるサイドテーブル）はStorage Domain（MD-004）で管理する旨を追記。
 - KIT-001：Child Componentsとして KIT-071・KIT-072・KIT-073 を追記（各子部品のParent記載は従来どおり）。
 - その他のKIT登録内容に変更なし。
+
+---
+
+## Version 2.9
+
+MD-004 Equipment Registry Version 7.37のSTR番号整理（Storage Domainの並べ替えと欠番詰め）に伴う参照更新。内容の変更はない。
+
+### Changes
+
+- KIT-070：移管先の記述を「MD-004 STR-027（Retired）」から「旧STR-027（Retired。MD-004 Version 7.37で削除）」へ更新。
+- KIT-070a：移管先STR-026は番号変更なし。記述の変更なし。
+- KIT-070b：移管先の記述を「MD-004 STR-029」から「MD-004 STR-025」へ更新（2箇所）。
+- Related Documents：MD-004 Equipment Registry Object Reference（Version 7.37）。
 
 ---
 
