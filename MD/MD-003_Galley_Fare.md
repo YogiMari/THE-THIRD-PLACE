@@ -1,5 +1,5 @@
 # MD-003 Galley Fare
-Version 2.9
+Version 2.10
 
 ---
 
@@ -2608,7 +2608,7 @@ Retired. MD-004 Equipment Registry（Storage Domain）STR-026へ移管済み（V
 
 ## KIT-070b
 
-Retired. MD-004 Equipment Registry（Storage Domain）STR-025へ移管済み（Version 2.8）。旧登録：ANOBA フォールディングサイドテーブル（SKU: AN129、Silver、Candidate）。MD-004ではSTR-025（SKU: AN139、Black、Essential）として登録されており、SKU・色は旧登録と一致していなかった。MD-004の記載を正とする。本IDは移管記録として保持する。
+Retired. MD-004 Equipment Registry（Storage Domain）STR-025へ移管済み（Version 2.8）。旧登録：ANOBA フォールディングサイドテーブル（SKU: AN129、Silver、Candidate）。MD-004ではSTR-025（SKU: AN139、Black、Owned。Version 7.37でEssentialから変更）として登録されており、SKU・色は旧登録と一致していなかった。MD-004の記載を正とする。本IDは移管記録として保持する。
 
 ---
 
@@ -3471,6 +3471,17 @@ MD-004 Equipment Registry Version 7.37のSTR番号整理（Storage Domainの並�
 - KIT-070：移管先の記述を「MD-004 STR-027（Retired）」から「旧STR-027（Retired。MD-004 Version 7.37で削除）」へ更新。
 - KIT-070a：移管先STR-026は番号変更なし。記述の変更なし。
 - KIT-070b：移管先の記述を「MD-004 STR-029」から「MD-004 STR-025」へ更新（2箇所）。
+- Related Documents：MD-004 Equipment Registry Object Reference（Version 7.37）。
+
+---
+
+## Version 2.10
+
+KIT-070bの記述内、STR-025のStatus表記がVersion 2.8時点の「Essential」のまま更新されていなかったため修正した。MD-004 Equipment Registry Version 7.37でSTR-025のStatusはEssentialからOwnedへ変更されている。
+
+### Changes
+
+- KIT-070b：「MD-004ではSTR-025（SKU: AN139、Black、Essential）として登録されており」を「MD-004ではSTR-025（SKU: AN139、Black、Owned。Version 7.37でEssentialから変更）として登録されており」へ更新。
 - Related Documents：MD-004 Equipment Registry Object Reference（Version 7.37）。
 
 ---
