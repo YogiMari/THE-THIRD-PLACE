@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.40  
+Version 7.41  
   
 ---  
   
@@ -6165,7 +6165,7 @@ Roasting Fork（全長約42cm、先端保護用レザーケース付き）
 
 ### Price  
 
-¥10,000（ショップ価格。実購入額は未確認）  
+¥10,000  
 
 ---  
 
@@ -7670,6 +7670,16 @@ Fire Domain検討中案件の表記を整理した。登録内容（Equipment記
 - FIR-015（WWW_SAYA Sheath Case、Owned）：Industrial Attributeの表記を「Sheath Case（Nata kezuru用）」から「Sheath Case（PULSE用）」へ更新。Version 7.38でParent関係がFIR-011（旧Nata kezuru）からFIR-013（PULSE）へ変更された際の記述漏れを修正。
 
 - Related Documents：CZ-001 Deliberation Codex、CZ-002 Vigil Protocol（参照元の背景理解のため）。
+
+---  
+
+## Version 7.41
+
+プロジェクトオーナー確認に基づき、FIR-020（asimocrafts kushi_z_asi）の Price の確認状態を明確にした。実購入額が確認されたため、注記を削除した。登録内容（Equipment記録の実質）に変更はない。
+
+### Changes
+
+- FIR-020（asimocrafts kushi_z_asi、Owned）：Price を「¥10,000（ショップ価格。実購入額は未確認）」から「¥10,000」へ更新。プロジェクトオーナー確認により、この金額での購入が確定したため、注記を削除した。Version 7.38の履歴内にある同アイテムの「ショップ価格。実購入額は未確認」の記述は、当時の記録として遡及修正しない。
 
 ---  
 
