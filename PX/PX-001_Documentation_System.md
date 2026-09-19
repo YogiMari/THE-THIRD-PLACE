@@ -3,7 +3,7 @@
 **Document ID**: PX-001  
 **Title**: Documentation System  
 **Series**: PX – Project  
-**Version**: 1.1  
+**Version**: 1.2  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -16,6 +16,7 @@
 |----------|------|-------------|
 | 1.0 | 2026-07-15 | 初版。Documentation SystemをPXシリーズへ移行し、THE THIRD PLACE Projectの正式な運用標準として採用。 |
 | 1.1 | 2026-09-07 | Document Series一覧(§8)とReferences(§24)を実際のRepository構成へ整合。TP-010・TP-011、TM-005、PX-003〜PX-006を追加。 |
+| 1.2 | 2026-09-19 | Document Series一覧(§8)の反映漏れを修正。PX-007を「Reserved」からPX-007 Deliberation Codex（正式発行済み）へ更新。 |
 
 ---
 
@@ -243,10 +244,7 @@ Project Documents
 - PX-004 Barista Codex
 - PX-005 Acquisition Handbook
 - PX-006 Brew Care
-
-Reserved
-
-- PX-007 Reserved
+- PX-007 Deliberation Codex
 
 # 9. Document Classification
 
@@ -686,6 +684,7 @@ Documentation System を更新せずに構造変更を行ってはならない�
 - PX-004 Barista Codex
 - PX-005 Acquisition Handbook
 - PX-006 Brew Care
+- PX-007 Deliberation Codex
 
 ---
 
