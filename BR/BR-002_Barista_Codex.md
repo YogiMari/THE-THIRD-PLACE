@@ -1472,7 +1472,7 @@ WDT Toolの新規候補として検討したが、以下の理由により採用
 * 54mm版は汎用54mmではなく、Dalla Corte／Breville専用のポルタフィルターシェイプであり、9Barista Mk.2 Proの53mmバスケットとの適合実績が確認できない。  
 * 当該54mm版（Dalla Corte／Breville）は、公式ストアにおいて現在いずれも在庫切れ（Unavailable）。  
 * 公式製品説明内で「30本のニード付属」と「14本のニードが駆動」という記載の食い違いがあり、機構仕様の正確性に疑義がある。  
-* 第三者レビュー（R&D ESPRESSO LAB等）は58mm版についてのみで、53mm／9Baristaでの実使用実績は一件も確認できない。  
+* 第三者レビュー（R&D ESPRESSO LAB等）は58mm版についてのみで、53mm／9Baristaでの実使用実績は一件も確認できなかった。  
   
 Normcore Planetary WDT Tool 54mmは、KNODOS Tool Stationへの実測適合（外径約65mm）を含む53mm系Workflowでの実績が確認済みであり、Econttoはこれを上回る根拠を提示できなかった。  
   
