@@ -1,8 +1,8 @@
-# PX-007 Deliberation Codex
+# CZ-001 Deliberation Codex
 
 # Document ID
 
-PX-007
+CZ-001
 
 # Document Title
 
@@ -20,18 +20,18 @@ Official
 
 ## Purpose
 
-PX-007 Deliberation Codexは、Coffee Domain（PX-004管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire）における、検討中ギアの意思決定を支援する文書である。
+CZ-001 Deliberation Codexは、Coffee Domain（BR-002管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire）における、検討中ギアの意思決定を支援する文書である。
 
 本書は3種類の内容を管理する。
 
 * **Zone Evaluation Philosophy**（恒久）：各ゾーンの評価哲学・評価軸。ゾーンの性格が変わらない限り、恒久的に保持する。
-* **Under Consideration**（可変）：現在検討中のギアの具体的製品情報・比較・評価記録。TP-004側のステータスが確定（Candidate → Essential/Owned）した時点で、当該記載を空欄化する。
-* **Confirmed — Purchase Pending**（可変）：製品・ブランドは確定済み（TP-004側のStatus = Essential）だが、まだ所有していないEquipmentの一覧。Coffee Domainを除く全ゾーン（Furniture／Light／Aroma／Storage／Fire）が対象。本セクションは、購入リスト（買い物タスク管理）アーティファクトのソースとして使用する。
+* **Under Consideration**（可変）：現在検討中のギアの具体的製品情報・比較・評価記録。MD-004側のステータスが確定（Candidate → Essential/Owned）した時点で、当該記載を空欄化する。
+* **Confirmed — Purchase Pending**（可変）：製品・ブランドは確定済み（MD-004側のStatus = Essential）だが、まだ所有していないEquipmentの一覧。Coffee Domainを除く全ゾーン（Furniture／Light／Aroma／Storage／Fire）が対象。本セクションは、購入リスト（買い物タスク管理）アーティファクトのソースとして使用する。
 
-### TP-004との役割分担
+### MD-004との役割分担
 
-* TP-004：Brand／Product／Status／Material等のSingle Source of Truth。Status = Candidateの間は、Brand / Productを「Unconfirmed」とする。
-* PX-007：Candidate段階の具体的な製品名・ブランド・比較評価・検討経緯（Under Consideration）、およびEssential段階の購入待ちEquipment一覧（Confirmed — Purchase Pending）を保持する。
+* MD-004：Brand／Product／Status／Material等のSingle Source of Truth。Status = Candidateの間は、Brand / Productを「Unconfirmed」とする。
+* CZ-001：Candidate段階の具体的な製品名・ブランド・比較評価・検討経緯（Under Consideration）、およびEssential段階の購入待ちEquipment一覧（Confirmed — Purchase Pending）を保持する。
 
 Candidateが確定（Essential/Owned）した時点でUnder Considerationから削除し、Decision Logへ一行要約を残す。詳細な比較内容そのものは確定後は保持しない。Essentialになったアイテムは同時にConfirmed — Purchase Pendingへ追加し、購入完了（Owned）した時点でそこから削除する。
 
@@ -40,14 +40,14 @@ Candidateが確定（Essential/Owned）した時点でUnder Considerationから�
 ## Relationship
 
 ```
-PX-007 Deliberation Codex
+CZ-001 Deliberation Codex
 │
 ├─ Zone Evaluation Philosophy（恒久）
 │
 ├─ Under Consideration（可変）
 │       │ 検討が深まる
 │       ▼
-│  TP-004 Status更新（Candidate → Essential）
+│  MD-004 Status更新（Candidate → Essential）
 │       │
 │       ▼
 │  Under Considerationから削除 → Decision Logへ一行記録
@@ -57,12 +57,12 @@ PX-007 Deliberation Codex
 │       │
 │       │（将来、買い替え検討が発生）
 │       ▼
-│  PX-007 Under Considerationへ再登場
+│  CZ-001 Under Considerationへ再登場
 │
 └─ Confirmed — Purchase Pending（可変）
         │ 購入完了
         ▼
-   TP-004 Status更新（Essential → Owned）
+   MD-004 Status更新（Essential → Owned）
         │
         ▼
    Confirmed — Purchase Pendingから削除
@@ -109,7 +109,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ## Fire
 
-### Fire Pit（TP-004: FIR-019）
+### Fire Pit（MD-004: FIR-019）
 
 **Status**：Under Evaluation
 
@@ -120,7 +120,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 | Ease of Clean-up | 多次燃焼構造で灰が比較的少量、炉板も軽量。灰受け自体の取り出しやすさは未確認（Gap） | ロストル形状変更で灰が捨てやすく改良済み。ただし「向き合う感覚」を重視し灰を残す運用哲学もあり |
 | Transport | 収納バッグ1つに全部品完結、総重量22kg | 本体単体16kg、煙突・スタンドは別売で管理単位が分散 |
 
-**Note**：旧FIR-020（BLISS-SP）はFIR-019へ統合済み。TP-004上のID自体はRetiredとして保持。
+**Note**：旧FIR-020（BLISS-SP）はFIR-019へ統合済み。MD-004上のID自体はRetiredとして保持。
 
 **Unresolved Gaps**：MT.SUMI Aura FGの灰受け取り出しやすさは一次情報で未確認。両候補とも実物確認未実施。
 
@@ -130,7 +130,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ## Furniture
 
-### Winter Top Quilt（TP-004: FUR-022）
+### Winter Top Quilt（MD-004: FUR-022）
 
 **Status**：Under Evaluation
 
@@ -140,13 +140,13 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 **Decision**：未決定
 
-### Winter Sleeping Mat（TP-004: FUR-023）
+### Winter Sleeping Mat（MD-004: FUR-023）
 
 **Status**：Candidate（比較対象なし、ブランド調査未着手）
 
 クローズドセルフォーム製。FUR-021（マット部）の下に敷く断熱補強・パンク保険として機能。
 
-### Pad Sheet（TP-004: FUR-024）
+### Pad Sheet（MD-004: FUR-024）
 
 **Status**：Under Evaluation
 
@@ -161,7 +161,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ## Light
 
-### Portable LED Lantern（TP-004: LGT-041）
+### Portable LED Lantern（MD-004: LGT-041）
 
 **Status**：Candidate（比較対象なし）
 
@@ -185,9 +185,9 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 # Confirmed — Purchase Pending（可変）
 
-TP-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipmentの一覧。製品・ブランドは確定済みだが、まだ所有していない。
+MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipmentの一覧。製品・ブランドは確定済みだが、まだ所有していない。
 
-購入完了（TP-004側でStatus = Ownedへ更新）した時点で、該当行を本セクションから削除する。
+購入完了（MD-004側でStatus = Ownedへ更新）した時点で、該当行を本セクションから削除する。
 
 ## Furniture
 
@@ -235,15 +235,15 @@ TP-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 | Date | Domain | Item | Decision |
 |---|---|---|---|
-| 2026-09 | Aroma | ARM-004 Vertical Diffuser | UNIT/04 × KUNST・BAUM SCENT TOWERを正式決定（Status: Essential）。詳細はTP-004参照。 |
+| 2026-09 | Aroma | ARM-004 Vertical Diffuser | UNIT/04 × KUNST・BAUM SCENT TOWERを正式決定（Status: Essential）。詳細はMD-004参照。 |
 
 ---
 
 # SSOT
 
-各ゾーンの評価哲学・比較記録・決定理由に関する正式情報は、**PX-007 Deliberation Codex**を基準とする。
+各ゾーンの評価哲学・比較記録・決定理由に関する正式情報は、**CZ-001 Deliberation Codex**を基準とする。
 
-Equipment自体のBrand／Product／Status／Material等の登録情報は、引き続き**TP-004 Equipment Registry**をSingle Source of Truthとする。PX-007はTP-004の登録ルールを変更せず、その意思決定背景を補完する。
+Equipment自体のBrand／Product／Status／Material等の登録情報は、引き続き**MD-004 Equipment Registry**をSingle Source of Truthとする。CZ-001はMD-004の登録ルールを変更せず、その意思決定背景を補完する。
 
 ---
 
@@ -257,6 +257,12 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 2.2 | 2026-09-16 | プロジェクトオーナーの指示に基づき「Confirmed — Purchase Pending」セクションを新設。Coffee Domainを除く全ゾーンでStatus = Essentialとなっている全Equipment（Furniture 2件、Light 4件、Aroma 3件、Storage 7件、Fire 1件）を一覧化。STR-001（Shellcon 01）のStatus訂正（Owned→Essential、TP-004 v7.15）を反映。本セクションは購入リストアーティファクトのソースとして使用する。Purpose・Relationshipを3カテゴリ構成へ更新。 |
 | 2.3 | 2026-09-17 | MARI様のご購入報告（STR-001／LGT-015／STR-017）を受け、TP-004側のStatus更新（Essential→Owned）と連動して「Confirmed — Purchase Pending」から該当3行（Light: LGT-015、Storage: STR-001・STR-017）を削除。 |
 | 2.4 | 2026-09-18 | TP-004 Version 7.28（Furniture Domain番号整理）と連動し、FUR-020参照を全てFUR-021へ更新。 |
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、PX-007からCZ-001へ番号を変更した。本文中の他文書参照（TP-004等）を新ID体系へ更新した。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Ver.2.3）に変更はない。旧ID: PX-007。
 
 ---
 

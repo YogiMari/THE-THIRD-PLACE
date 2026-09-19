@@ -1,9 +1,9 @@
-PX-005 Acquisition Handbook  
-# PX-005 Acquisition Handbook  
+BR-003 Acquisition Handbook  
+# BR-003 Acquisition Handbook  
   
 **Document ID**  
   
-PX-005  
+BR-003  
   
 **Document Title**  
   
@@ -21,7 +21,7 @@ Official
   
 ## Purpose  
   
-PX-005 Acquisition Handbookは、PX-004 Barista Codexで正式採用されたCoffee Equipmentについて、現在購入する際の調達情報を管理する正式文書である。  
+BR-003 Acquisition Handbookは、BR-002 Barista Codexで正式採用されたCoffee Equipmentについて、現在購入する際の調達情報を管理する正式文書である。  
   
 本書では以下を管理する。  
   
@@ -41,32 +41,32 @@ PX-005 Acquisition Handbookは、PX-004 Barista Codexで正式採用されたCof
 * Purchase Grouping  
 * Acquisition Completeness  
   
-Equipmentの採用理由、Workflow、Selection Criteria、DecisionはPX-004で管理する。  
+Equipmentの採用理由、Workflow、Selection Criteria、DecisionはBR-002で管理する。  
   
-Coffee Beansについては消耗品として扱い、本書内の「Coffee Beans Procurement」セクションで独立して管理する。豆はPX-004による意思決定の対象としない。  
+Coffee Beansについては消耗品として扱い、本書内の「Coffee Beans Procurement」セクションで独立して管理する。豆はBR-002による意思決定の対象としない。  
   
-9Barista純正の予備部品・メンテナンス用品については消耗品として扱い、本書内の「9Barista Official Spare Parts (Preventive Stock)」セクションで独立して管理する。これらはPX-004による意思決定の対象としない。  
+9Barista純正の予備部品・メンテナンス用品については消耗品として扱い、本書内の「9Barista Official Spare Parts (Preventive Stock)」セクションで独立して管理する。これらはBR-002による意思決定の対象としない。  
   
 ---  
   
 # Relationship  
   
-PX-004  
+BR-002  
 Barista Codex  
 │  
 ▼  
-TP-004  
+MD-004  
 Equipment Registry  
 │  
 ▼  
-PX-005  
+BR-003  
 Acquisition Handbook  
   
 ---  
   
 # Acquisition Status Policy  
   
-PX-004でConfirmedとなったEquipmentは、原則としてPX-005に登録する。  
+BR-002でConfirmedとなったEquipmentは、原則としてBR-003に登録する。  
   
 ただし、Coffee Systemにおける「正式構成Equipment」と「追加購入が必要なEquipment」を明確に区別する。  
   
@@ -105,7 +105,7 @@ PX-004でConfirmedとなったEquipmentは、原則としてPX-005に登録す�
 ## Purchasing Priority  
   
 1. 正規品であること  
-2. PX-004記載の正確なモデル／バリアントであること  
+2. BR-002記載の正確なモデル／バリアントであること  
 3. 元モデルが販売終了している場合は、現行の後継モデルであること  
 4. 正規保証があること  
 5. 長期的に入手可能であること  
@@ -115,7 +115,7 @@ PX-004でConfirmedとなったEquipmentは、原則としてPX-005に登録す�
   
 # Price Policy  
   
-PX-005では、購入判断に使用できるよう、原則として全製品に価格目安を記載する。  
+BR-003では、購入判断に使用できるよう、原則として全製品に価格目安を記載する。  
   
 価格の優先順位は以下とする。  
   
@@ -145,13 +145,13 @@ Estimated Total Costは公式販売価格を意味しない。
   
 # Successor Model Policy  
   
-PX-004に登録された製品が現在販売終了しており、メーカーが明確な後継モデルを販売している場合、PX-005では現行後継モデルをCurrent Purchase Modelとして扱う。  
+BR-002に登録された製品が現在販売終了しており、メーカーが明確な後継モデルを販売している場合、BR-003では現行後継モデルをCurrent Purchase Modelとして扱う。  
   
-ただし、PX-004の正式なDecisionや歴史的モデル名称を独断で変更しない。  
+ただし、BR-002の正式なDecisionや歴史的モデル名称を独断で変更しない。  
   
 ### Current Successor Mapping  
   
-| PX-004 Reference | PX-005 Current Purchase Model |  
+| BR-002 Reference | BR-003 Current Purchase Model |  
 |---|---|  
 | Option-O LAGOM Mini (USB-C PD) | Option-O LAGOM mini 2 |  
 | MantaBrew Master Kit (Module A + Module B) | MantaBrew WeighMaster Ultra |  
@@ -168,7 +168,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 | Item | Details |  
 |---|---|  
 | Manufacturer | 9Barista |  
-| PX-004 Model | Mk.2 Pro |  
+| BR-002 Model | Mk.2 Pro |  
 | Current Purchase Model | Mk.2 Pro |  
 | Category | Espresso Machine |  
 | Acquisition Status | Purchase Required |  
@@ -188,7 +188,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 ### Notes  
   
 * 現行の購入モデルはMk.2 Proのまま。  
-* PX-004記載の仕様を正確に維持。  
+* BR-002記載の仕様を正確に維持。  
 * Flame Powered。  
 * Dual Boiler。  
 * Portable Espresso System。  
@@ -207,7 +207,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 | Item | Details |  
 |---|---|  
 | Manufacturer | Option-O |  
-| PX-004 Model | LAGOM Mini (USB-C PD) |  
+| BR-002 Model | LAGOM Mini (USB-C PD) |  
 | Current Purchase Model | LAGOM mini 2 |  
 | Category | Coffee Grinder |  
 | Acquisition Status | Purchase Required |  
@@ -226,13 +226,13 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* PX-004記載のLAGOM Miniの現行後継モデル。  
+* BR-002記載のLAGOM Miniの現行後継モデル。  
 * 現行の公式モデルはLAGOM mini 2。  
 * USB-C PDは引き続き対応。  
 * 現行モデルにはマグネット式Ground Transfer Cupが付属。  
 * 現行モデルには100W USB-C電源アダプターが付属。  
-* PX-004の歴史的なモデル名は、参照用として維持。  
-* PX-005の調達対象は、現行のLAGOM mini 2。  
+* BR-002の歴史的なモデル名は、参照用として維持。  
+* BR-003の調達対象は、現行のLAGOM mini 2。  
 * サードパーティ製Ground Transfer Cupは不要。  
   
 ---  
@@ -244,7 +244,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 | Item | Details |  
 |---|---|  
 | Manufacturer | MantaBrew |  
-| PX-004 Model | Master Kit (Module A + Module B) |  
+| BR-002 Model | Master Kit (Module A + Module B) |  
 | Current Purchase Model | WeighMaster Ultra |  
 | Category | Coffee Scale |  
 | Acquisition Status | Purchase Required |  
@@ -263,7 +263,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* PX-004記載のMaster Kitに対応する、現行の後継／改称された完全構成。  
+* BR-002記載のMaster Kitに対応する、現行の後継／改称された完全構成。  
 * WeighMaster Ultraは、Module A + Module Bの完全構成を統合したもの。  
 * 現行の公式価格はUSD 229。  
 * 0.1g単位で計測。  
@@ -389,7 +389,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 | Item | Details |  
 |---|---|  
 | Manufacturer | Pullman |  
-| PX-004 Model | Chisel Redistribution Tool Wood (53 mm Custom Order) |  
+| BR-002 Model | Chisel Redistribution Tool Wood (53 mm Custom Order) |  
 | Current Purchase Model | Chisel Redistribution Tool Wood 53.3 mm |  
 | Category | Distribution Tool |  
 | Acquisition Status | Purchase Required |  
@@ -410,7 +410,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 * 現行の53.3mm構成を、実用上の現行購入モデルとして使用。  
 * Wood仕様を維持。  
-* PX-004記載の53mm Custom Orderに最も近い、現行の量産仕様。  
+* BR-002記載の53mm Custom Orderに最も近い、現行の量産仕様。  
 * 支払い前に、正確なバスケット適合性を確認すること。  
 * KNODOS Tamping Mat with Tool Organiser - Walnut 54mmを常設収納場所とする。  
 * The Blocは常設収納場所ではない。  
@@ -745,7 +745,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 | Current Purchase Model | PROPEL 2-piece set |  
 | Category | Espresso Glass |  
 | Acquisition Status | Purchase Required |  
-| PX-004 System Quantity | 1 |  
+| BR-002 System Quantity | 1 |  
 | Current Purchase Unit | 1 set / 2 glasses |  
 | Purchase Type | Overseas Import |  
 | Primary Purchase Source | KRUVE Official Store |  
@@ -762,7 +762,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 ### Notes  
   
 * 現行の市販パッケージには、グラス2個が含まれる。  
-* PX-004上のシステム割当は×1のまま。  
+* BR-002上のシステム割当は×1のまま。  
 * 1個をTHE THIRD PLACEへ割り当てる。  
 * 残る1個は予備として保持する。  
 * Straight Espresso。  
@@ -801,7 +801,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 * 専用のセンサリーグラス。  
 * エアレーション重視の設計。  
 * 9Baristaと組み合わせて使用。  
-* PX-004上の数量：×1。  
+* BR-002上の数量：×1。  
 * 2個目のAERESSOは不要。  
   
 ---  
@@ -944,7 +944,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 * 9BaristaおよびALM KOPi Z1 Miniに使用。  
 * 飲料水ではない。  
 * 調理用水ではない。  
-* PX-004記載の製品同一性を維持。  
+* BR-002記載の製品同一性を維持。  
 * 断りなく別のSnow Peakボトルへ代替しない。  
   
 ---  
@@ -1077,10 +1077,10 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 ### Notes  
   
 * 機能上のConfirmedコンポーネント。  
-* PX-005上で常に可視化しておくこと。  
+* BR-003上で常に可視化しておくこと。  
 * 未購入項目として表示させないこと。  
 * 現行の単体参照価格：約¥5,600。  
-* 将来のPX-004決定で予備が必要とされない限り、重複購入しない。  
+* 将来のBR-002決定で予備が必要とされない限り、重複購入しない。  
   
 ---  
   
@@ -1104,7 +1104,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 * Confirmedな9Barista Workflowに必要なコンポーネント。  
 * 採用したPro構成に付属。  
 * 別途購入しない。  
-* 代替Basket CapはPX-004にて不採用。  
+* 代替Basket CapはBR-002にて不採用。  
   
 ---  
   
@@ -1113,7 +1113,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 | Item | Details |  
 |---|---|  
 | Manufacturer | Option-O |  
-| PX-004 Model | LAGOM Mini Ground Transfer Cup |  
+| BR-002 Model | LAGOM Mini Ground Transfer Cup |  
 | Current Purchase Model | LAGOM mini 2 Ground Transfer Cup |  
 | Category | Ground Transfer Component |  
 | Acquisition Status | Included |  
@@ -1158,7 +1158,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 Coffee Beansは消耗品として扱い、Equipment Acquisition Registryとは独立して管理する。  
   
-Equipmentと異なり、Coffee BeansはPX-004による正式なDecisionを経ない。継続的な試用・ローテーションを前提とし、本セクションのみで現況を管理する。  
+Equipmentと異なり、Coffee BeansはBR-002による正式なDecisionを経ない。継続的な試用・ローテーションを前提とし、本セクションのみで現況を管理する。  
   
 ## Current Rotation  
   
@@ -1171,7 +1171,7 @@ Equipmentと異なり、Coffee BeansはPX-004による正式なDecisionを経な
   
 * 主軸（Primary）は安定運用を優先し、頻繁には変更しない。  
 * 審美枠（Aesthetic Exception）は試用・入れ替えを許容する。  
-* 新規候補を試す場合、本セクションの表のみを更新する。PX-004・TP-004への反映は行わない。  
+* 新規候補を試す場合、本セクションの表のみを更新する。BR-002・MD-004への反映は行わない。  
   
 ## Research Basis  
   
@@ -1185,7 +1185,7 @@ Equipmentと異なり、Coffee BeansはPX-004による正式なDecisionを経な
   
 本セクションは、9Barista Mk.2 Pro本体・9Barista Puck Screen・9Barista Handle - Walnut（Group A、Month 1）の注文と同時に、送料を効率化するために検討すべき、9Barista公式ストア取扱いの予備部品・メンテナンス用品を管理する。  
   
-本セクションは、Equipment Acquisition Registryとは独立して管理する。PX-004のConfirmed Equipment決定の対象外であり、Coffee System本体のWorkflow・意思決定には影響しない。  
+本セクションは、Equipment Acquisition Registryとは独立して管理する。BR-002のConfirmed Equipment決定の対象外であり、Coffee System本体のWorkflow・意思決定には影響しない。  
   
 本セクションの根拠は、2026-09時点で確認した9Barista公式サイト（9barista.com）の一次情報（Spare Parts／Mk.2カテゴリ、および製品ページの説明文）である。  
   
@@ -1193,7 +1193,7 @@ Equipmentと異なり、Coffee BeansはPX-004による正式なDecisionを経な
   
 2026-09時点で、9Barista公式ストアの「Cleaning」カテゴリには取扱商品が存在しない。したがって、9Barista公式ストアからDescaler（スケール除去剤）を購入することはできない。  
   
-Descalerの取り扱いは、引き続きPX-006 Brew Care 第18.3項の指定（Puly Descaler／Urnex Dezcal Liquid／Durgol Swiss Espresso Special Descaler）に従い、国内で別途調達する。9Barista注文への同梱対象ではない。  
+Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（Puly Descaler／Urnex Dezcal Liquid／Durgol Swiss Espresso Special Descaler）に従い、国内で別途調達する。9Barista注文への同梱対象ではない。  
   
 ## Standard Box Contents（本体購入時の標準付属品）  
   
@@ -1452,13 +1452,13 @@ PROPEL / AERESSO
 * Cleaning Equipment  
 * Additional Storage Equipment  
   
-これらの除外は、現行のPX-004 Workflowに基づくものであり、独立した製品評価によるものではない。  
+これらの除外は、現行のBR-002 Workflowに基づくものであり、独立した製品評価によるものではない。  
   
 ---  
   
 # Purchase List Definition  
   
-PX-005から購入リストを生成する際:  
+BR-003から購入リストを生成する際:  
   
 ### Include  
   
@@ -1488,13 +1488,13 @@ PX-005から購入リストを生成する際:
   
 Coffee Systemの購入リストが完成したと判断する前に、以下を確認しなければならない:  
   
-1. PX-004のConfirmed Equipmentがすべて、PX-005に存在すること。  
+1. BR-002のConfirmed Equipmentがすべて、BR-003に存在すること。  
 2. 各Confirmed Equipmentに、Acquisition Statusが設定されていること。  
 3. Included Equipmentが明示的に識別されていること。  
 4. Included Equipmentが、未購入項目として誤って扱われていないこと。  
 5. Quantityが定義されていること。  
-6. 製品名が、PX-004の公式表記と一致するか、現行後継への明示的な対応関係を持つこと。  
-7. メーカー名が、PX-004の公式表記と一致すること。  
+6. 製品名が、BR-002の公式表記と一致するか、現行後継への明示的な対応関係を持つこと。  
+7. メーカー名が、BR-002の公式表記と一致すること。  
 8. 購入状況が、Coffee Systemの機能上の状態と分離されていること。  
 9. すべての製品に、現行価格または現実的な調達目安が設定されていること。  
 10. Estimated Total Costが、保守的に見積もられていること。  
@@ -1522,27 +1522,27 @@ Coffee Systemの購入リストが完成したと判断する前に、以下を�
 32. Espressoグラスの運搬構成が同期していること。  
 33. FIKA12の数量が×2として同期していること。  
 34. 現行の後継製品が明示的に識別されていること。  
-35. 現行の市販パッケージ数量と、PX-004上のシステム割当数量が区別されていること。  
+35. 現行の市販パッケージ数量と、BR-002上のシステム割当数量が区別されていること。  
 36. 9Barista Handle - WalnutがPX-004 v3.7のHandle Material Decisionと同期していること。  
   
 ---  
   
-# PX-004 / PX-005 Synchronization Rule  
+# BR-002 / BR-003 Synchronization Rule  
   
-PX-004 Barista Codexは、Coffee Equipmentに関する意思決定の権限を持つ。  
+BR-002 Barista Codexは、Coffee Equipmentに関する意思決定の権限を持つ。  
   
-PX-005 Acquisition Handbookは、現行調達に関する権限を持つ。  
+BR-003 Acquisition Handbookは、現行調達に関する権限を持つ。  
   
-PX-005は、以下の場合に限り、Confirmed Equipmentの調達モデルを更新できる:  
+BR-003は、以下の場合に限り、Confirmed Equipmentの調達モデルを更新できる:  
   
 1. 元の製品が販売終了している場合。  
 2. メーカーが後継製品を明確に示している場合。  
 3. 後継製品が、意図したCoffee Systemの機能を維持している場合。  
 4. 後継製品が、現行の実用的な購入選択肢である場合。  
   
-PX-005は、無関係な代替Equipmentを独自に追加してはならない。  
+BR-003は、無関係な代替Equipmentを独自に追加してはならない。  
   
-PX-004が改訂された場合:  
+BR-002が改訂された場合:  
   
 1. Confirmed Equipmentを同期すること。  
 2. 製品名を同期すること。  
@@ -1553,12 +1553,12 @@ PX-004が改訂された場合:
 7. Workflow上必要な場合、Included Equipmentが識別可能な状態を維持すること。  
 8. 正式なWorkflowの一部を構成する収納割当を同期すること。  
 9. 仕様変更を同期すること。  
-10. Equipmentの役割が、PX-004とPX-005間で一貫していること。  
+10. Equipmentの役割が、BR-002とBR-003間で一貫していること。  
 11. Latte Workflow構成が同期していること。  
 12. 2人分の連続運用が同期していること。  
 13. WPM PitcherおよびSleeveの構成が同期していること。  
 14. Puck ScreenおよびPuck Screen Standの状態が同期していること。  
-15. PX-004が変更された際は、現行の後継対応関係を見直すこと。  
+15. BR-002が変更された際は、現行の後継対応関係を見直すこと。  
 16. Handle素材決定（Anodised Aluminium／Walnut）が同期していること。  
   
 ---  
@@ -1620,7 +1620,7 @@ PX-004が改訂された場合:
   
 # Product Variant Integrity  
   
-以下の仕様は、PX-004が改訂されない限り固定とする。  
+以下の仕様は、BR-002が改訂されない限り固定とする。  
   
 | Product | Fixed / Current Specification |  
 |---|---|  
@@ -1694,7 +1694,7 @@ LAGOM mini 2 Ground Transfer Cupは、Weber Workshops Blind Shaker Onyxへの直
   
 採用した9Barista Mk.2 Pro構成に付属するコンポーネントは、正式なシステムの一部であり続ける。  
   
-将来のPX-004決定で予備が明示的に必要とされない限り、別途購入によって重複させてはならない。  
+将来のBR-002決定で予備が明示的に必要とされない限り、別途購入によって重複させてはならない。  
   
 ---  
   
@@ -1901,13 +1901,13 @@ ALM KOPi Z1 Miniは、別途バーナーでの運用が必要。
 * ALM KOPi Z1 Mini用の別途バーナー  
 * 消耗品としての清掃用品  
 * 9Barista Official Spare Parts (Preventive Stock)（任意購入のため別枠管理）  
-* PX-004に含まれない追加Equipment  
+* BR-002に含まれない追加Equipment  
   
 ---  
   
 # Price Integrity Rule  
   
-PX-005は、以下を現行の公式価格として表記してはならない:  
+BR-003は、以下を現行の公式価格として表記してはならない:  
   
 * 過去の価格  
 * 古い価格  
@@ -1949,7 +1949,7 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
 12. Espressoグラスの運搬が物理的に確認済みであること。  
 13. Latteカップの運搬が物理的に確認済みであること。  
 14. Puck Screenの収納が物理的に確認済みであること。  
-15. PX-004のConfirmed Equipmentがすべて、PX-005に反映されていること。  
+15. BR-002のConfirmed Equipmentがすべて、BR-003に反映されていること。  
   
 ---  
   
@@ -2119,6 +2119,12 @@ Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The B
 | 2.3 | 2026-09-18 | Product 26「9Barista Handle - Walnut」を新設。PX-004 Ver.3.7のHandle Material Decision（MARI様の直接指示、2026-09-18）と同期し、9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）をWalnut仕様へ変更する購入をConfirmed / Purchase Requiredとして正式登録。数量2（Upper・Lower各1、公式スペアパーツは単品$15.00販売）、参考価格¥4,500〜6,000。Group A（9Barista）およびMonth 1へ統合し、Current Acquisition Priority・Estimated Acquisition Budget（Core Espresso System: ¥404,500〜459,500 → ¥409,000〜465,500、Estimated Total: ¥623,770〜738,270 → ¥628,270〜744,270）・Plan Total（¥614,770〜714,270 → ¥619,270〜720,270）・Final Acquisition Inventory（Included項目を26〜28から27〜29へ繰り下げ）・Product Variant Integrity・Purchase Completeness Rule・PX-004/PX-005 Synchronization Ruleへ反映。 |  
 | 2.4 | 2026-09-18 | MARI様の直接指示に基づき、Monthly Acquisition Plan（Confirmed）を全面再編成。7ヶ月構成（Workflow順グルーピング）から6ヶ月構成（予算均等化グルーピング）へ変更。9Barista（Month 1・上限なし）とMilk System（Month 6・最終月）を固定端点とし、Month 2〜5はドメイン横断で月あたり¥93,000〜117,000程度に予算バランスさせたグループへ再編成（Month 2: LAGOM mini 2＋Puck Screen Stand＋Aurora Bottle＋AION Coaster、Month 3: Pullman Chisel＋Blind Shaker Onyx＋酒筒Titanium＋KRUVE PROPEL、Month 4: Force Tamper＋The Bloc＋KNODOS＋WDT、Month 5: WeighMaster Ultra＋Bean Cellar＋ICOSA AERESSO＋YETI Yonder＋HILLS FIELD Case＋RDT Bottle）。Plan Total（¥619,270〜720,270 → ¥619,270〜721,270）を再計算。Straight Espresso Workflowの機能的完成時期はMonth 5終了時点のまま変わらない旨をDesign Rationaleに明記。 |  
   
+---  
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、PX-005からBR-003へ番号を変更した。本文中の他文書参照（PX-004・TP-004等）を新ID体系へ更新した。「PX-004 v2.7 Synchronization」セクションおよびVersion Control表内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Ver.2.4）に変更はない。旧ID: PX-005。
+
 ---  
   
 # End of Document  

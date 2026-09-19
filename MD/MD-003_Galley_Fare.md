@@ -1,4 +1,4 @@
-# TP-011 Galley Fare
+# MD-003 Galley Fare
 Version 2.7
 
 ---
@@ -13,13 +13,13 @@ THE THIRD PLACEはキャンプという活動である以上、調理という�
 
 ---
 
-# Relationship to TP-004
+# Relationship to MD-004
 
-TP-004 Equipment Registry Object Referenceは、Human Principles / Design Bibleとの美意識的整合を選定条件とする所有物の、唯一のMaster Databaseである。
+MD-004 Equipment Registry Object Referenceは、Human Principles / Design Bibleとの美意識的整合を選定条件とする所有物の、唯一のMaster Databaseである。
 
-TP-011はこれと異なる評価軸を用いる。
+MD-003はこれと異なる評価軸を用いる。
 
-TP-011の対象機材はTP-004には登録しない。
+MD-003の対象機材はMD-004には登録しない。
 
 両者は独立したMaster Documentとして並立する。
 
@@ -42,7 +42,7 @@ Popularity、SNS、レビュー、希少性は評価基準にしない。
 
 ## Equipment ID
 
-KIT-001〜（3文字Prefix、TP-004の採番規則を継続使用）
+KIT-001〜（3文字Prefix、MD-004の採番規則を継続使用）
 
 IDは欠番不可。番号は原則として変更しない。
 
@@ -63,7 +63,7 @@ IDは欠番不可。番号は原則として変更しない。
 
 ## Attribute Policy
 
-TP-004と同一のフィールド構成を用いる。
+MD-004と同一のフィールド構成を用いる。
 
 - Brand
 - Product
@@ -77,7 +77,7 @@ TP-004と同一のフィールド構成を用いる。
 
 ## Candidate Recording Policy
 
-TP-011は、キッチン機材を選んでいく過程・ストーリー自体を記録対象とする。
+MD-003は、キッチン機材を選んでいく過程・ストーリー自体を記録対象とする。
 
 そのため、同一カテゴリ（同じIndustrial Attribute）に対して複数のCandidateが併存することを許容する。
 
@@ -85,9 +85,9 @@ TP-011は、キッチン機材を選んでいく過程・ストーリー自体�
 
 既存Owned品の買い替え候補も同じ枝番方式で記録する（例：KIT-036a＝KIT-036の買い替え候補）。
 
-TP-004（所有物のみを記録）とは異なり、TP-011は「まだ選ばれていない候補」も、検討過程の記録として枝番付きIDで管理する。
+MD-004（所有物のみを記録）とは異なり、MD-003は「まだ選ばれていない候補」も、検討過程の記録として枝番付きIDで管理する。
 
-いずれか一つが購入・確定した時点でStatusをOwnedへ更新し、TP-004には登録しない（TP-011で完結）。不採用となった候補はStatusをUpgrade等に変更するか、Version Historyに不採用の経緯を記録した上で扱いを決める。
+いずれか一つが購入・確定した時点でStatusをOwnedへ更新し、MD-004には登録しない（MD-003で完結）。不採用となった候補はStatusをUpgrade等に変更するか、Version Historyに不採用の経緯を記録した上で扱いを決める。
 
 ## Category Grouping Policy（Version 2.5新設）
 
@@ -113,14 +113,14 @@ Version 2.5より、KIT-番号は取得順の連番ではなく、用途別グ�
 
 ## Domain Scope Note (Kitchen vs. Fire/Coffee)
 
-TP-004のFire Domainと本書Kitchen（TP-011）は、燃料の種類ではなく、機材の**目的**によって区分される。
+MD-004のFire Domainと本書Kitchen（MD-003）は、燃料の種類ではなく、機材の**目的**によって区分される。
 
-- **Fire Domain（TP-004）**：暖を取る、あるいは焚き火のような炎そのものを楽しむための機材。燃料は薪に限らず、ケロシン（灯油）等も含む（例：FIR-018 武井バーナー Purple Stove 501Aは灯油式のケロシンヒーターだが、目的が暖房であるためFire Domainに属する）。
-- **Kitchen（TP-011）**：調理を成立させるための機材。燃料はガス・アルコール等を問わない（例：フラットバーナー、火焔ストーブ、ヤエンストーブ、グリルバーナー等は、いずれも調理目的であるためKitchenに属する）。
+- **Fire Domain（MD-004）**：暖を取る、あるいは焚き火のような炎そのものを楽しむための機材。燃料は薪に限らず、ケロシン（灯油）等も含む（例：FIR-018 武井バーナー Purple Stove 501Aは灯油式のケロシンヒーターだが、目的が暖房であるためFire Domainに属する）。
+- **Kitchen（MD-003）**：調理を成立させるための機材。燃料はガス・アルコール等を問わない（例：フラットバーナー、火焔ストーブ、ヤエンストーブ、グリルバーナー等は、いずれも調理目的であるためKitchenに属する）。
 
 コーヒー器具（ミル・ケトル・ドリッパー等）についても、キッチンゾーンでの調理行為の一部として同様にKitchenで管理する。
 
-この区分は、TP-004 Fire Domainの既存定義を変更するものではなく、両ドメインの境界を目的ベースで明確化したものである。
+この区分は、MD-004 Fire Domainの既存定義を変更するものではなく、両ドメインの境界を目的ベースで明確化したものである。
 
 ---
 
@@ -3171,9 +3171,9 @@ Wet Tissue Case
 ---
 # Single Source of Truth
 
-TP-011 Galley Fareは、キッチン機材（調理器具・刃物・調理小物）に関する唯一のMaster Databaseである。
+MD-003 Galley Fareは、キッチン機材（調理器具・刃物・調理小物）に関する唯一のMaster Databaseである。
 
-以下の情報はTP-011を起点とする。
+以下の情報はMD-003を起点とする。
 
 - Equipment IDs（KIT-）
 - Brand
@@ -3184,7 +3184,7 @@ TP-011 Galley Fareは、キッチン機材（調理器具・刃物・調理小�
 - Graphic Attribute
 - Industrial Attribute
 
-TP-004はキッチン機材を管理しない。
+MD-004はキッチン機材を管理しない。
 
 Planning、調達戦略、デザイン思想、美意識、評価は、それぞれの関連文書が管理する。
 
@@ -3192,7 +3192,7 @@ Planning、調達戦略、デザイン思想、美意識、評価は、それぞ
 
 # Relationship to Other Core Documents
 
-TP-011 Galley Fare は、
+MD-003 Galley Fare は、
 
 THE THIRD PLACE Core Documents の中で、
 
@@ -3200,18 +3200,18 @@ THE THIRD PLACE Core Documents の中で、
 
 | Document | Responsibility |
 |-----------|----------------|
-| TP-000 Original | プロジェクトの原典 |
-| TP-001 Constitution | プロジェクト全体の憲章 |
-| TP-002 Design Bible | 設計思想 |
-| TP-003 Field Atlas | 舞台の選定 |
-| TP-004 Equipment Registry | Equipment の唯一のマスターデータ（キッチン機材を除く） |
-| TP-005 Acquisition Strategy | Equipment を迎える戦略 |
-| TP-006 Foundation Compass | Foundation を構成・維持するための指針 |
-| TP-007 Habitat Architecture | フィールドに完成する暮らしの空間を定義する |
-| TP-008 Affinity Lexicon | 好み・美意識・親和性の語彙 |
-| TP-009 Aesthetic Grammar | 美しさを構成する法則 |
-| TP-010 Storage Blueprint | 収納設計・運用 |
-| **TP-011 Galley Fare** | キッチン機材の独立マスターデータ |
+| DS-001 Original | プロジェクトの原典 |
+| OP-001 Constitution | プロジェクト全体の憲章 |
+| OP-002 Design Bible | 設計思想 |
+| MD-002 Field Atlas | 舞台の選定 |
+| MD-004 Equipment Registry | Equipment の唯一のマスターデータ（キッチン機材を除く） |
+| OP-005 Acquisition Strategy | Equipment を迎える戦略 |
+| OP-006 Foundation Compass | Foundation を構成・維持するための指針 |
+| OP-007 Habitat Architecture | フィールドに完成する暮らしの空間を定義する |
+| OP-003 Affinity Lexicon | 好み・美意識・親和性の語彙 |
+| OP-004 Aesthetic Grammar | 美しさを構成する法則 |
+| MD-001 Storage Blueprint | 収納設計・運用 |
+| **MD-003 Galley Fare** | キッチン機材の独立マスターデータ |
 
 ---
 
@@ -3509,3 +3509,9 @@ MARI様がClaude導入以前に個人管理していたスプレッドシート�
 - KIT-008：Colorを「Silver」から「Black」へ訂正（MARI様の実物確認に基づく）。
 - 既知の未確認事項：KIT-074（リフターグリップ）の価格が未確認。一部新規登録アイテム（ニッチなガレージブランド品）はウェブ上での公式情報が確認できず、購入記録上の名称をそのまま採用している。
 - Relationship to Other Core Documents：変更なし。
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TP-011からMD-003へ番号を変更した。本文中の他文書参照（TP-004等）および「Relationship to Other Core Documents」表を新ID体系へ更新した。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Version 2.7）に変更はない。旧ID: TP-011。
