@@ -3,7 +3,7 @@
 **Document ID**: PX-002  
 **Title**: Project Ledger  
 **Series**: PX – Project  
-**Version**: 3.1  
+**Version**: 3.2  
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -74,6 +74,7 @@
 | PX-004 | Barista Codex |
 | PX-005 | Acquisition Handbook |
 | PX-006 | Brew Care |
+| PX-007 | Deliberation Codex |
 | TM-001 | Heritage Chronicle |
 | TM-002 | Atelier Discovery |
 | TM-003 | Beyond Journey |
@@ -88,7 +89,7 @@
 |:------:|:---------:|:------:|
 | TP | 12 | ✓ |
 | TM | 5 | ✓ |
-| PX | 6 | ✓ |
+| PX | 7 | ✓ |
 
 ---
 
@@ -106,6 +107,7 @@
 |----------|------|-------------|
 | 3.0 | 2026-07-15 | 長期運用向けに簡素化。会話検索と日次メンテナンスに最適化。 |
 | 3.1 | 2026-09-07 | Project Overview（文書数）とQuick Accessを実際のRepository構成（TP12／TM5／PX6、全23文書）へ整合。 |
+| 3.2 | 2026-09-19 | PX-007 Deliberation CodexをQuick AccessおよびProject Overviewへ反映漏れを修正（PX 6→7、全体23→24文書）。 |
 
 ---
 
