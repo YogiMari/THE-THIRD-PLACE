@@ -11,7 +11,7 @@ Barista Codex
     
 # Version    
     
-3.7    
+3.8    
     
 # Status    
     
@@ -90,13 +90,13 @@ Coffee Zoneに限り、以下の独自Philosophyを正式に適用する。他�
     
 ### 1. Non-Rational Luxury Principle（無駄を選び取る審美性）    
     
-Coffee Zoneでは、機能的合理性を上回る場合でも、素材・機構そのものの賅沢さを理由に採用することを正式に許容する。    
+Coffee Zoneでは、機能的合理性を上回る場合でも、素材・機構そのものの贅沢さを理由に採用することを正式に許容する。    
     
-THE THIRD PLACE全体の原則は「無駄を削ぎ落とす」ことにあるが、Coffee Zoneにおいては「機能的に不要な賅沢を、その不要さゆえに選び取る」ことこそが最も THE THIRD PLACE的な表現となりうる。    
+THE THIRD PLACE全体の原則は「無駄を削ぎ落とす」ことにあるが、Coffee Zoneにおいては「機能的に不要な贅沢を、その不要さゆえに選び取る」ことこそが最も THE THIRD PLACE的な表現となりうる。    
     
 **Reference Case**    
     
-WDT Toolの選定において、機能面で既存ツールを上回る優位性を持たない真鑑製ギア機構（Weber Workshops MOONRAKER Ultra Edition）を、その機能的必要性ではなく「Swiss watchmaking」という物語性・所作の賅沢さを理由に選定した判断（58mm仈説 Workflow検討, 2026-09）。    
+WDT Toolの選定において、機能面で既存ツールを上回る優位性を持たない真鍮製ギア機構（Weber Workshops MOONRAKER Ultra Edition）を、その機能的必要性ではなく「Swiss watchmaking」という物語性・所作の贅沢さを理由に選定した判断（58mm仮説 Workflow検討, 2026-09）。    
     
 ---    
     
@@ -464,7 +464,7 @@ THE THIRD PLACEが求めるWorkflow・品質・デザインとの整合性を満
     
 Normcore Planetary WDT Tool 54mmの採用は、当初の第一候補であったWeber Workshops MOONRAKER Ultra Editionが物理的に不適合であったことに起因する、現実的な代替選定である。    
     
-MOONRAKER Ultra Editionは真鑑製ギア機構による「Swiss watchmaking」的な精密工学を備え、THE THIRD PLACEが求めるブランド格・機構美において当初最有力候補として検討された。しかし、MOONRAKER Ultra Editionはベースリング形状が58mmポルタフィルター専用設計であり、9Barista Mk.2 Proの53mmバスケットとは物理的に適合しない。9Barista公式からもアダプター等の互換手段は提供されていないことを確認済みである。    
+MOONRAKER Ultra Editionは真鍮製ギア機構による「Swiss watchmaking」的な精密工学を備え、THE THIRD PLACEが求めるブランド格・機構美において当初最有力候補として検討された。しかし、MOONRAKER Ultra Editionはベースリング形状が58mmポルタフィルター専用設計であり、9Barista Mk.2 Proの53mmバスケットとは物理的に適合しない。9Barista公式からもアダプター等の互換手段は提供されていないことを確認済みである。    
     
 したがってNormcoreは、「ギア駆動によるPlanetary機構」という機能要件と53mm系 Workflowとの互換性を両立する、現実的な最上位互換候補として選定された。    
     
@@ -503,7 +503,7 @@ Normcore RDT Spray Bottleを正式採用する。
     
 Ross Droplet Technique専用設計であり、    
     
-* 非気低減    
+* 静電気低減    
 * 粉飛散防止    
 * Workflow    
     
@@ -574,7 +574,7 @@ KNODOS
     
 という役割分担を成立させる。    
     
-また、WDT使用後に针へ残った粉をウォールナット天板へ落とすことを防止する。    
+また、WDT使用後に針へ残った粉をウォールナット天板へ落とすことを防止する。    
     
 KNODOSのレザー面はWDTの一時置きにも使用できる。    
     
@@ -584,7 +584,7 @@ KNODOSは54mm版を正式採用する。
     
 Normcore Planetary WDT Tool 54mmは最大外径約65mmであり、KNODOS写真上の大径Tool Organiser部との寸法関係が最も適切と判断した。    
     
-Pullman ChiselおよびThe Force Tamperは53mmであり　54mm版とのサイズ関係が自然である。    
+Pullman ChiselおよびThe Force Tamperは53mmであり、54mm版とのサイズ関係が自然である。    
     
 58mm版は採用しない。    
     
@@ -698,7 +698,7 @@ Blind Shakerは単なるDosing Cupではなく、エスプレッソ粉をシェ�
     
 #### 9Baristaとの適合性    
     
-Weber Blind Shakerど9Barista 53 mm Magnetic Dosing Funnelを組み合わせた実使用例を確認した。    
+Weber Blind Shakerと9Barista 53 mm Magnetic Dosing Funnelを組み合わせた実使用例を確認した。    
     
 したがって、    
     
@@ -907,7 +907,7 @@ Confirmed
     
 ### Decision    
     
-1泲2日・2人でのCoffee System運用に必要な専用水の携行構成を正式採用する。    
+1泊2日・2人でのCoffee System運用に必要な専用水の携行構成を正式採用する。    
     
 ### Operation Scenario    
     
@@ -916,7 +916,7 @@ Confirmed
 * Espresso ×2    
 * Latte ×2    
     
-遅めの昇食後    
+遅めの昼食後    
     
 * Latte ×2    
     
@@ -1000,7 +1000,7 @@ Coffee System専用水は、専用のWater Transfer Toolを使用せず、各Wat
 * Snow Peak 酒筒 Titanium    
   → 540mLの追加容量を担う独立したチタン製容器    
     
-3本合計2.54Lにより、1泲2日・2人のCoffee Systemを現地給水なしでも成立させることを目的とする。    
+3本合計2.54Lにより、1泊2日・2人のCoffee Systemを現地給水なしでも成立させることを目的とする。    
     
 **Status：CONFIRMED**    
     
@@ -1012,7 +1012,7 @@ Coffee System専用水は、専用のWater Transfer Toolを使用せず、各Wat
     
 THE THIRD PLACEでは、9BaristaによるStraight Espressoについて、同一形状のカップを2個揃えるのではなく、異なる目的を持つ2種類の専用センシンググラスを正式構成とする。    
     
-同ゆ9Barista Espressoを2人で共有しながら、それぞれ異なるグラスによって異なる感覚的アプローチを体験できる構成とする。    
+同じ9Barista Espressoを2人で共有しながら、それぞれ異なるグラスによって異なる感覚的アプローチを体験できる構成とする。    
     
 ---    
     
@@ -1159,11 +1159,11 @@ Latte
 ### Transport    
     
 * FIKA12には専用ケースが付属している    
-* FIKA12ケースはBek Container内にそのまま収納する    
+* FIKA12ケースはBeck Container内にそのまま収納する    
     
 FIKA12は、ラテ用の共用の専用解決策として維持する。    
     
-### Configuration Priorities    
+### Configuration Priorities  
     
 * 用途に特化して設計されたコーヒー機材であること    
 * それぞれ明確に異なる機能的役割を持つこと    
@@ -1455,7 +1455,7 @@ Rejected
   
 49–58 mm対応で53 mmをカバーする点も有力候補だった。  
   
-しかし、今回のWorkflowではWeberの既存ブランド整合性およど9Baristaとの実使用確認を優先した。  
+しかし、今回のWorkflowではWeberの既存ブランド整合性および9Baristaとの実使用確認を優先した。  
   
 ---  
   
@@ -1470,11 +1470,11 @@ Rejected
 WDT Toolの新規候補として検討したが、以下の理由により採用基準に達しなかった。  
   
 * 54mm版は汎用54mmではなく、Dalla Corte／Breville専用のポルタフィルターシェイプであり、9Barista Mk.2 Proの53mmバスケットとの適合実績が確認できない。  
-* 当詬54mm版（Dalla Corte／Breville）は、公式ストアにおいて現在いずれも在庫切れ（Unavailable）。  
+* 当該54mm版（Dalla Corte／Breville）は、公式ストアにおいて現在いずれも在庫切れ（Unavailable）。  
 * 公式製品説明内で「30本のニード付属」と「14本のニードが駆動」という記載の食い違いがあり、機構仕様の正確性に疑義がある。  
-* 第三者レビュー（R&D ESPRESSO LAB等）は58mm版についてのみで、53mm／9Baristaでの実使用実績は一件も確認できなかった。  
+* 第三者レビュー（R&D ESPRESSO LAB等）は58mm版についてのみで、53mm／9Baristaでの実使用実績は一件も確認できない。  
   
-Normcore Planetary WDT Tool 54mmは、KNODOS Tool Stationへの実測適合（外径約65mm）を含ゅ53mm系Workflowでの実績が確認済みであり、Econttoはこれを上回る根拠を提示できなかった。  
+Normcore Planetary WDT Tool 54mmは、KNODOS Tool Stationへの実測適合（外径約65mm）を含む53mm系Workflowでの実績が確認済みであり、Econttoはこれを上回る根拠を提示できなかった。  
   
 ---  
   
@@ -1853,16 +1853,17 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 2.5 | 2026-08 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mmをConfirmed Tool Stationとして追加。Normcore Planetary WDT Toolを54mmに確定。Distributor・Tamper・WDTをThe BlocからKNODOSへ移設。The Blocの役割をExtraction Coreとして再定義し、2つのTool cutoutにNormcore RDT Spray BottleとWeber Workshops Blind Shaker Onyxを割り当て。Confirmed Coffee Preparation Workflowをこれに合わせて更新。 |  
 | 2.6 | 2026-08 | 物理的なWorkflow調査を経て、Coffee Workflowを更新。Blind Shaker Onyxを、主たる粉移送・均質化容器として維持。LAGOM Mini Ground Transfer Cupは、直接受けが物理的に成立しない場合のSecondary Routeとしてのみ維持。2人分のEspresso運用を、2回の連続抽出サイクルとして明確に定義。Latte WorkflowについてWPM Handleless Pitcher Standard 450cc / #07 Sharp SpoutおよびWPM Pitcher Sleeveを正式採用し、1杯ずつスチームする2サイクル運用とした。Latte Workflowをこれに合わせて更新。 |  
 | 2.7 | 2026-08 | 現行の機材決定に基づき、Coffee Systemのbaselineを統合整理。 |  
-| 2.8 | 2026-08 | Varia EVO Hybrid Gen 2およびWeber Workshops MOONRAKER Ultra Editionについての過去の検討経緯を記録として追加。Variaは、過去に検討されたもののTHE THIRD PLACE Coffee Systemの機材性格・デザイン方向性との整合が不十分として不採用だった旨を記録。MOONRAKER Ultra Editionは高く評価されたものの、58mmバスケット向け設計であり現行の9Barista Workflowい53mmであるため、現時点での採用は見送られた旨を記録。 |  
-| 2.9 | 2026-08 | 9Barista Mk.2 Proに付属する標準アクセサリーを、独立EquipmentではなくIncluded Components / Accessoriesとして明確化。9Barista Magnetic Dosing Funnelおよぱ9Barista Stainless Steel Basket Cap Proは、独立したTP-004 / PX-005管理対象から明示的に除外。Alternative Basket CapのStatusを、Not Separately Acquiredとして明確化。 |  
+| 2.8 | 2026-08 | Varia EVO Hybrid Gen 2およびWeber Workshops MOONRAKER Ultra Editionについての過去の検討経緯を記録として追加。Variaは、過去に検討されたもののTHE THIRD PLACE Coffee Systemの機材性格・デザイン方向性との整合が不十分として不採用だった旨を記録。MOONRAKER Ultra Editionは高く評価されたものの、58mmバスケット向け設計であり現行の9Barista Workflowは53mmであるため、現時点での採用は見送られた旨を記録。 |  
+| 2.9 | 2026-08 | 9Barista Mk.2 Proに付属する標準アクセサリーを、独立EquipmentではなくIncluded Components / Accessoriesとして明確化。9Barista Magnetic Dosing Funnelおよび9Barista Stainless Steel Basket Cap Proは、独立したTP-004 / PX-005管理対象から明示的に除外。Alternative Basket CapのStatusを、Not Separately Acquiredとして明確化。 |  
 | 3.0 | 2026-08 | Puck Screenの配置を、Confirmed Puck Preparation Workflowへ明示的に追加。Water Transferは、既存の専用Water Bottleからの直接注入とし、追加の移送機材を必要としないことを確定。ALM KOPi Z1 Mini Steamerは、既存のキッチン用シングルバーナーを流用することを確定し、Coffee System専用バーナーは不要とした。 |  
 | 3.1 | 2026-09 | Coffee Zone Philosophy（Exception Clause）をDesign Principlesへ追加。Non-Rational Luxury PrincipleとCross-Brand Curation Principleを、THE THIRD PLACE全体のBaselineとは区別される、Coffee Zone固有の例外的Philosophyとして確立。これらはCoffee Zoneにのみ適用し、他のDomainには適用しない。 |  
 | 3.2 | 2026-09 | プロジェクトオーナーの直接指示に基づき、Relationshipセクションを明確化: Confirmed EquipmentのTP-004 Equipment Registryへの反映は、Confirmed時点ではなく、実際に購入（Owned Status）された時点で初めて行う。Confirmedだが未購入のEquipmentは、PX-004のみで管理を継続する。これは、Coffee Domain（COF-series）の登録タイミングルールを正式化した、関連するTP-004の更新（Version 7.10）に対応する。 |  
 | 3.3 | 2026-09 | WDT Toolセクション: Decision Contextを追加。当初の第一候補であったWeber Workshops MOONRAKER Ultra Editionが物理的に不適合（58mm専用のベースリング形状であり、9Barista Mk.2 Proの53mmバスケットと適合せず、公式アダプターも存在しない）と判明した後、Normcore Planetary WDT Tool 54mmが現実的な代替として選定された経緯を正式に記録。これは、それまでプロジェクトチャット履歴にのみ記録されていた理由を正式化するものであり、Coffee Zone Philosophy Reference CaseおよびVersion History 2.8と相互参照する。 |  
-| 3.4 | 2026-09 | Econtto Portawaveを、新規のWDT Tool候補としてRejected Equipmentへ追加。不採用理由: 54mm版は汎用54mm適合ではなく、Dalla Corte／Breville専用のポルタフィルター形状であり、9Barista 53mmとの適合が確認できないこと。当詬54mm版（Dalla Corte／Breville）は現在在庫切れであること。公式マーケティング表記に仕様上の矛盾（ニード30本付属 vs. 14本駆動パターン）が存在すること。第三者レビューは58mm版のみを対象とし、53mm／9Baristaでの実使用実績が確認できなかったこと。Normcore Planetary WDT Tool 54mmが持つ、確認済みのKNODOS Tool Station適合性と53mm系での実績を、上回る・並ぶことはできなかった。 |  
+| 3.4 | 2026-09 | Econtto Portawaveを、新規のWDT Tool候補としてRejected Equipmentへ追加。不採用理由: 54mm版は汎用54mm適合ではなく、Dalla Corte／Breville専用のポルタフィルター形状であり、9Barista 53mmとの適合が確認できないこと。当該54mm版（Dalla Corte／Breville）は現在在庫切れであること。公式マーケティング表記に仕様上の矛盾（ニード30本付属 vs. 14本駆動パターン）が存在すること。第三者レビューは58mm版のみを対象とし、53mm／9Baristaでの実使用実績が確認できなかったこと。Normcore Planetary WDT Tool 54mmが持つ、確認済みのKNODOS Tool Station適合性と53mm系での実績を、上回る・並ぶことはできなかった。 |  
 | 3.5 | 2026-09 | Category Tier Exceptionを、Coffee Zone Philosophyの項目3としてDesign Principlesへ追加。Milk Pitcher / Pitcher Sleeve（WPM）およびTool Station（KNODOS）が、Coffee Zoneの他部分に適用しているTier Aブランド水準に届いていないことを記録し、両者を無自覚な選定ではなく、機能・素材を根拠とした明示的な例外として位置付ける。両カテゴリともTier A相当のブランドが市場に存在しないことを確認した市場調査（2026-09）に基づく。 |  
 | 3.6 | 2026-09 | Coffee Beansを本文書の管理対象から除外。豆は消耗品としてPX-005 Acquisition Handbookの「Coffee Beans Procurement」セクションのみで管理する方針を確立し、Pending項目から削除（PX-005 Ver.2.0と対応）。 |  
 | 3.7 | 2026-09-18 | Espresso Machineセクションへ「Handle Material Decision」を新設。9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）を、9Barista公式スペアパーツのWalnut仕様へ変更することを正式決定。Design Bibleの核となる素材言語（Walnut・Brass・Black Steel）との整合を採用理由とした。MARI様の直接指示（2026-09-18）に基づく。 |  
+| 3.8 | 2026-09-19 | 誤字・脱字の訂正のみ（内容の変更なし）。「賅沢」→「贅沢」、「真鑑製」→「真鍮製」、「仈説」→「仮説」、「针」→「針」、「1泲2日」→「1泊2日」、「昇食後」→「昼食後」、「同ゆ」→「同じ」、「当詬」→「当該」、「含ゅ」→「含む」、「およど／およぱ」→「および」、「Shakerど」→「Shakerと」、「Workflowい」→「Workflowは」、「Bek Container」→「Beck Container」、「非気低減」→「静電気低減」、全角スペース→「、」（Version History内の該当行の誤字も同様に訂正。旧IDの表記は歴史的記録として保持）。 |  
   
 ---  
 
@@ -1870,6 +1871,6 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 
 本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、PX-004からBR-002へ番号を変更した。本文中の他文書参照（TP-004・PX-005等）を新ID体系へ更新した。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Ver.3.7）に変更はない。旧ID: PX-004。
 
----  
-  
+---
+
 # End of Document  
