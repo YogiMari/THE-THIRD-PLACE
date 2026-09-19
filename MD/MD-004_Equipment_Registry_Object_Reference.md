@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.34  
+Version 7.35  
   
 ---  
   
@@ -6875,6 +6875,11 @@ Slug Shelter V2.0（国内流通名：スネイルシェルター）
 
 Owned  
 
+### Child Components  
+
+- SHL-005  
+
+
 ### Color  
 
 Black  
@@ -6890,6 +6895,42 @@ Shelter Tent
 ### Price  
 
 ¥396,000  
+
+---  
+## SHL-005  
+
+**Brand**  
+
+HELLOS factory  
+
+**Product**  
+
+ベスタビュールV2.0（DAC POLE）  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+SHL-004  
+
+
+### Color  
+
+Black  
+
+### Material  
+
+Nylon 40D Ripstop（Silicone Coating, PU Blackout）／DAC Pole  
+
+### Industrial Attribute  
+
+Vestibule（SHL-004 Slug Shelter V2.0専用の前室オプション）  
+
+### Price  
+
+¥90,200（販売店の税込価格。オーナー申告「10万弱」と整合）  
 
 ---  
 # Parent / Child Rules（親子関係ルール）  
@@ -7328,7 +7369,7 @@ Version 7.26時点でPrice未確認（要確認）のまま残っていた11件�
 
 ### Changes（構造訂正）
 
-- FUR-020／FUR-021：Snow Peak「ダウン システムオフトン スリムマットセット（BD-060）」は掛け布団+マットのセット販売であることが判明。単体マットとして別ID登録されていたFUR-021をFUR-020へ統合し、FUR-021は削除（Retiredではなく登録自体を撤回）。Price ¥44,000（セット価格）はFUR-020側に記録。FUR-022・FUR-023・FUR-024のIndustrial Attribute内のFUR-021参照、およびPX-007 Deliberation Codexの該当箇所を「FUR-020（マット部）」へ更新。  
+- FUR-020／FUR-021：Snow Peak「ダウン システムオフトン スリムマットセット（BD-060）」は掛け布団+マットのセット販売であることが判明。単体マットとして別ID登録されていたFUR-021をFUR-020へ統合し、FUR-021は削除（Retiredではなく登録自体を撤回）。Price ¥44,000（セット価格）はFUR-020側に記録。FUR-022系・FUR-023・FUR-024のIndustrial Attribute内のFUR-021参照、およびPX-007 Deliberation Codexの該当箇所を「FUR-020（マット部）」へ更新。  
 - STR-025：Product表記を誤記の「Hopper Flip 16」から正しい「Hopper Flip 12」へ訂正（16はモデル名ではなく容量16qtを指す表記だった）。  
 
 - Related Documents：PX-007 Deliberation Codex（FUR-020/021統合に伴う参照更新）。  
@@ -7486,6 +7527,17 @@ MARI様のご指示に基づき、Aroma Domainの2件のStatusおよび番号を
 - Version 7.14・Version 7.27の記述内にある旧ARM-004（SCENT TOWER）の表記は、当時の記録として遡及修正しない。
 
 - Related Documents：CZ-001 Deliberation Codex、CZ-002 Vigil Protocol（Aroma番号入替に伴う参照更新）。
+
+## Version 7.35
+
+MARI様のご指示に基づき、SHL-004（HELLOS factory Slug Shelter V2.0）の専用オプション「ベスタビュールV2.0」をSHL-005として子部品登録した。
+
+### Changes
+
+- SHL-005：新規登録（Status: Owned、Parent: SHL-004）。Brand・Productは日本正規ディーラー（Burn Freely等）の商品表記「HELLOS FACTORY SNAIL SHELTER V2.0専用ベスタビュールV2.0(DAC POLE)」に基づく。Color・Materialはオーナーの指示により本体（SHL-004）と同一（Black／Nylon 40D Ripstop）とした。ポールのみ、商品名表記に基づきDAC Poleとして記録（本体のAL7001 Aluminumとは異なる可能性があるため、現物確認後に必要であれば訂正）。Price ¥90,200は販売店の税込価格で、オーナー申告（10万弱）と整合。実購入額が異なる場合は訂正する。  
+- SHL-004：Child Componentsとして SHL-005 を追記。  
+
+- Related Documents：変更なし。
 
 ---  
 
