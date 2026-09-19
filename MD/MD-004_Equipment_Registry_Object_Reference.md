@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.39  
+Version 7.40  
   
 ---  
   
@@ -5974,7 +5974,7 @@ Walnut
 
 ### Industrial Attribute  
 
-Sheath Case（Nata kezuru用）  
+Sheath Case（PULSE用）  
 
 ### Price  
 
@@ -6539,7 +6539,7 @@ None
 
 ### Industrial Attribute  
 
-Fire Pit（検討中。旧FIR-020と統合。具体的な候補情報はCZ-001 Deliberation Codexで管理）  
+Fire Pit（検討中。Version 7.14で統合した単一の検討枠。具体的な候補情報はCZ-001 Deliberation Codexで管理）  
 
 ---  
 
@@ -7657,6 +7657,19 @@ Shelter Domain（Version 7.25で新設）の反映漏れ1件と、Version 7.35�
 - Purpose：「他のすべてのDomain」の列挙にShelterを追加（Furniture、Light、Aroma、Storage、Fire、Shelter）。
 - Version 7.27の履歴行：Version 7.35の更新時に「FUR-022」の直後へ誤って挿入された「系」の1文字を削除し、原文へ復元した。
 - Related Documents：変更なし。
+
+---  
+
+## Version 7.40
+
+Fire Domain検討中案件の表記を整理した。登録内容（Equipment記録）の実質的変更はない。
+
+### Changes
+
+- FIR-030（Fire Pit、検討中）：Industrial Attributeの表記を「旧FIR-020と統合」から「Version 7.14で統合した単一の検討枠」へ更新。統合経緯の説明をより明確にした（Version 7.14のFIR-019への統合から、Version 7.38のFire Domain再採番を経て、現在はFIR-030として管理される同一の検討枠であることを明示）。
+- FIR-015（WWW_SAYA Sheath Case、Owned）：Industrial Attributeの表記を「Sheath Case（Nata kezuru用）」から「Sheath Case（PULSE用）」へ更新。Version 7.38でParent関係がFIR-011（旧Nata kezuru）からFIR-013（PULSE）へ変更された際の記述漏れを修正。
+
+- Related Documents：CZ-001 Deliberation Codex、CZ-002 Vigil Protocol（参照元の背景理解のため）。
 
 ---  
 

@@ -1,5 +1,5 @@
 # MD-003 Galley Fare
-Version 2.11
+Version 2.12
 
 ---
 
@@ -3493,7 +3493,18 @@ MD-004 Equipment Registry Version 7.38のFire Domain番号整理（並べ替え�
 
 - Domain Scope Note：「FIR-018 武井バーナー Purple Stove 501A」の例示を「FIR-029 武井バーナー Purple Stove 501A」へ更新。
 - Related Documents：MD-004 Equipment Registry Object Reference（Version 7.38）。
-- Related Documents：MD-004 Equipment Registry Object Reference（Version 7.37）。
+
+---
+
+## Version 2.12
+
+MD-004 Version 7.40（Fire Domain検討中案件の表記整理）との連動と、Version 2.11記述内における重複した参照を整理した。登録内容（Kitchen機材）に変更はない。
+
+### Changes
+
+- Version 2.11の「Related Documents」セクション内に記載されていた2つの重複参照（Version 7.38および Version 7.37への言及）を整理し、参照元の最新バージョン（Version 7.38）のみを記載。Version 7.37への古い参照を削除した。
+
+- Related Documents：MD-004 Equipment Registry Object Reference（Version 7.40、Fire Domain表記整理に伴う）。
 
 ---
 
