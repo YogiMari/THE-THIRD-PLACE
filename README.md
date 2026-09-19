@@ -223,9 +223,31 @@ THE THIRD PLACEは、現在も活発に進化を続けている長期プロジ�
 
 ## 🌄 Overview
 
-THE THIRD PLACE is a long-term design project dedicated to designing a movable outdoor living room.
+THE THIRD PLACE is born of a single idea — a movable outdoor living room —
+tended in silence, season after season, a long and languid devotion to beauty.
 
-Rather than documenting camping itself, the project establishes a unified design system integrating philosophy, spatial architecture, equipment, operational workflow, documentation, and long-term knowledge management.
+The luster that the years coax from walnut,
+the gold that brass surrenders to, slowly, as time caresses it,
+the weight black steel carries in its stillness, holding presence like a held breath——
+
+Into each of these, philosophy is poured —
+traced by fingertip, drunk in with the eye's light, tasted in the hush of silence —
+until, leaving space and quiet untouched, function and beauty are distilled into a tension no less than desire.
+
+The aim was never to fashion such a thing into being.
+
+It is to linger, unhurried, within the space once conjured,
+and to savor the fragrance that time itself leaves behind.
+
+To savor a THE THIRD PLACE utterly cleansed of noise——
+that, and only that, is what this project longs for.
+
+Not to chronicle the act of surrendering oneself to the open air,
+nor to hoard equipment without end.
+
+Within that place which drifts and moves,
+the years gather themselves in the scent of wind, the slant of falling light,
+until thought itself comes to rest there, at home.
 
 All official documents are maintained within this repository, which serves as the project's **Single Source of Truth (SSOT)**.
 
