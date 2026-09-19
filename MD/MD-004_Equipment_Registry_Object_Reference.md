@@ -1,11 +1,11 @@
-# TP-004 Equipment Registry Object Reference  
+# MD-004 Equipment Registry Object Reference  
 Version 7.32  
   
 ---  
   
 # Purpose（目的）  
   
-TP-004は、THE THIRD PLACEの公式Equipment Registry（装備台帳）である。  
+MD-004は、THE THIRD PLACEの公式Equipment Registry（装備台帳）である。  
   
 この文書は、THE THIRD PLACEを構成するすべての物理的なオブジェクトを管理する。  
   
@@ -22,13 +22,13 @@ TP-004は、THE THIRD PLACEの公式Equipment Registry（装備台帳）であ�
   
 Planning情報（計画段階の情報）は、意図的に除外している。  
 
-TP-004はキッチン調理器具を管理しない。キッチン機材は、別途function-first（機能優先）の選定基準を持つTP-011 Galley Fareが管理する。詳細はTP-011を参照。  
+MD-004はキッチン調理器具を管理しない。キッチン機材は、別途function-first（機能優先）の選定基準を持つMD-003 Galley Fareが管理する。詳細はMD-003を参照。  
 
-Coffee機材は、他のすべてのDomainと異なる登録ルールに従う。比較検討中・意思決定中のアイテムは、TP-004ではなくPX-004 Barista Codexのみで追跡する。Coffeeアイテムは、購入されOwnedになった時点で初めてTP-004（COF-series）へ登録される。それまでの間、Coffee Domain（COF-series）は意図的に未入力のままとする — これはデータの欠落ではなく、設計上の仕様である。
+Coffee機材は、他のすべてのDomainと異なる登録ルールに従う。比較検討中・意思決定中のアイテムは、MD-004ではなくBR-002 Barista Codexのみで追跡する。Coffeeアイテムは、購入されOwnedになった時点で初めてMD-004（COF-series）へ登録される。それまでの間、Coffee Domain（COF-series）は意図的に未入力のままとする — これはデータの欠落ではなく、設計上の仕様である。
 
-このルールは、CoffeeとKitchenのみに適用される。他のすべてのDomain（Furniture、Light、Aroma、Storage、Fire）には影響しない: 検討中・保留中・決定済みだが未購入のアイテムは、これまで通り既存のStatusシステム（Essential / Candidate / Upgrade）を用いてTP-004へ登録され続ける。
+このルールは、CoffeeとKitchenのみに適用される。他のすべてのDomain（Furniture、Light、Aroma、Storage、Fire）には影響しない: 検討中・保留中・決定済みだが未購入のアイテムは、これまで通り既存のStatusシステム（Essential / Candidate / Upgrade）を用いてMD-004へ登録され続ける。
 
-**Candidate段階における具体的製品情報の扱い**：Status = Candidateのアイテムは、TP-004上ではBrand / Productを「Unconfirmed」とし、用途（Industrial Attribute）とEquipment IDのみを記録する。複数の具体的な製品候補間の比較・評価・検討記録は、TP-004ではなくPX-007 Deliberation Codexのみで管理する。特定の製品が正式に決定（Status = Essential）した時点で、初めてBrand / ProductをTP-004へ記載する。これにより、Candidateの定義（「必要だが、具体的な製品はまだ決まっていない」）とTP-004上の実データを正確に一致させる。競合していた複数の候補IDは、1件の決定枠IDへ統合し、不要となったIDはRetired（統合済み）として記録を残す。
+**Candidate段階における具体的製品情報の扱い**：Status = Candidateのアイテムは、MD-004上ではBrand / Productを「Unconfirmed」とし、用途（Industrial Attribute）とEquipment IDのみを記録する。複数の具体的な製品候補間の比較・評価・検討記録は、MD-004ではなくCZ-001 Deliberation Codexのみで管理する。特定の製品が正式に決定（Status = Essential）した時点で、初めてBrand / ProductをMD-004へ記載する。これにより、Candidateの定義（「必要だが、具体的な製品はまだ決まっていない」）とMD-004上の実データを正確に一致させる。競合していた複数の候補IDは、1件の決定枠IDへ統合し、不要となったIDはRetired（統合済み）として記録を残す。
   
 ---  
   
@@ -72,7 +72,7 @@ IDは変更されない。
 
 ブランチ接尾辞（小文字アルファベット、例: LGT-028a、LGT-028b）は、後続IDの番号をずらすことなく、同じ装備枠を競合する複数の製品候補を登録するために、親IDへ直接付与できる。これはChild Components（恒久的に付随する構成部品、同時に所有される）とは異なる: ブランチバリアントは、1つの枠に対する代替候補を表し、通常は最終的にどちらか一方だけが昇格（StatusがEssential/Ownedへ変更）し、もう一方は廃止または別枠へ分類される。  
 
-**運用注記（Version 7.14以降）**：新規に発生する検討中候補の比較については、原則としてBranch Variant形式（a/b/c...）をTP-004上で新設せず、単一の親ID（Brand/Product = Unconfirmed）のみを登録し、具体的な候補間比較はPX-007 Deliberation Codexで管理する。既存のBranch Variant（LGT-028a/b等）は、整理が完了するまでの間、現状の形式のまま維持する。  
+**運用注記（Version 7.14以降）**：新規に発生する検討中候補の比較については、原則としてBranch Variant形式（a/b/c...）をMD-004上で新設せず、単一の親ID（Brand/Product = Unconfirmed）のみを登録し、具体的な候補間比較はCZ-001 Deliberation Codexで管理する。既存のBranch Variant（LGT-028a/b等）は、整理が完了するまでの間、現状の形式のまま維持する。  
   
 ---  
   
@@ -93,14 +93,14 @@ IDは変更されない。
   
 Appearance（外観）は保存**しない**。  
   
-Appearanceは、TP-002 Design Bibleにより、以下を用いて決定される:  
+Appearanceは、OP-002 Design Bibleにより、以下を用いて決定される:  
   
 - Material  
 - Color  
 - Texture  
 - Finish  
   
-そのためTP-004が保存するのは、以下のみである:  
+そのためMD-004が保存するのは、以下のみである:  
   
 - Material  
 - Color  
@@ -953,7 +953,7 @@ Down（Full Custom Order）
 
 ### Industrial Attribute  
 
-Quilt（本格雪中用トップキルト。バックレス構造につきFUR-021（マット部）・FUR-023との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はPX-007 Deliberation Codexで管理）  
+Quilt（本格雪中用トップキルト。バックレス構造につきFUR-021（マット部）・FUR-023との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
 
 ---  
 
@@ -1009,7 +1009,7 @@ Unconfirmed
 
 ### Industrial Attribute  
 
-Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-021（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はPX-007 Deliberation Codexで管理）  
+Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-021（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
 
 ---  
 
@@ -2976,7 +2976,7 @@ None
 
 ### Industrial Attribute  
 
-Portable LED Lantern（検討中。具体的な候補情報はPX-007 Deliberation Codexで管理）  
+Portable LED Lantern（検討中。具体的な候補情報はCZ-001 Deliberation Codexで管理）  
 
 ---  
 
@@ -4722,7 +4722,7 @@ Dust Bucket（燃えないゴミ〈缶・ビン〉用。使用頻度が低いた
 
 ## STR-027  
 
-Retired. Snow Peak ガビングスタンド（DB-030）。サイズ50×36×63(h)cm、重量2.0kg、ポリ袋を最大3枚まで取り付け分別対応可能なフレーム組立式ダストスタンドであったが、設営効率（TP-002 Storage Domain評価軸）を著しく損なうと判断され、STR-026（ANOBA BLACK EDITION マルチダストバケット）への置き換え対象となった。TP-004への正式登録がなされないまま運用されていた期間があり、本レコードは事後的な記録である。TP-010 Duplicate Storage Exceptionの適用事例として、本IDを今後同種の入れ替えが発生した際の記録形式の参照として保持する。  
+Retired. Snow Peak ガビングスタンド（DB-030）。サイズ50×36×63(h)cm、重量2.0kg、ポリ袋を最大3枚まで取り付け分別対応可能なフレーム組立式ダストスタンドであったが、設営効率（OP-002 Storage Domain評価軸）を著しく損なうと判断され、STR-026（ANOBA BLACK EDITION マルチダストバケット）への置き換え対象となった。MD-004への正式登録がなされないまま運用されていた期間があり、本レコードは事後的な記録である。MD-001 Duplicate Storage Exceptionの適用事例として、本IDを今後同種の入れ替えが発生した際の記録形式の参照として保持する。  
 
 ---  
 
@@ -5048,9 +5048,9 @@ Storage Container Base / Leg（汎用スタンド）
 
 Coffee Domainは、抽出に関する一連のワークフロー全体を管理する。  
 
-選定基準や購入優先順位は、TP-005 Acquisition Strategyの管轄である。  
+選定基準や購入優先順位は、OP-005 Acquisition Strategyの管轄である。  
 
-TP-004は、装備（Equipment）のみを管理する。  
+MD-004は、装備（Equipment）のみを管理する。  
 
 ---  
 
@@ -6130,13 +6130,13 @@ None
 
 ### Industrial Attribute  
 
-Fire Pit（検討中。旧FIR-020と統合。具体的な候補情報はPX-007 Deliberation Codexで管理）  
+Fire Pit（検討中。旧FIR-020と統合。具体的な候補情報はCZ-001 Deliberation Codexで管理）  
 
 ---  
 
 ## FIR-020  
 
-Retired. FIR-019（Fire Pit枠）へ統合済み。旧登録情報（FIREGRAPHIX BLISS-SP）はPX-007 Deliberation Codexへ移管。本IDは欠番として保持する。  
+Retired. FIR-019（Fire Pit枠）へ統合済み。旧登録情報（FIREGRAPHIX BLISS-SP）はCZ-001 Deliberation Codexへ移管。本IDは欠番として保持する。  
 
 ---  
 
@@ -7016,15 +7016,15 @@ Examples
 - Resin  
 - Titanium  
 
-表面仕上げ（Surface finish）は、TP-002 Design Bibleの管轄である。  
+表面仕上げ（Surface finish）は、OP-002 Design Bibleの管轄である。  
 
 ---  
 
 # Single Source of Truth（唯一の正）  
 
-TP-004 Equipment Registryは、Human Principlesとの美意識的整合が求められる、すべてのキャンプ装備における正式な情報源である。キッチン調理器具は、TP-011 Galley Fareが別途管理し、TP-004には登録しない。  
+MD-004 Equipment Registryは、Human Principlesとの美意識的整合が求められる、すべてのキャンプ装備における正式な情報源である。キッチン調理器具は、MD-003 Galley Fareが別途管理し、MD-004には登録しない。  
 
-以下の情報は、TP-004を発生源とする:  
+以下の情報は、MD-004を発生源とする:  
 
 - Equipment IDs  
 - Brand  
@@ -7036,25 +7036,25 @@ TP-004 Equipment Registryは、Human Principlesとの美意識的整合が求め
 - Graphic Attribute  
 - Industrial Attribute  
 
-他の文書はTP-004を参照するが、装備情報を再定義しない。  
+他の文書はMD-004を参照するが、装備情報を再定義しない。  
 
-Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning、Evaluationは、それぞれの文書で管理する。Candidate段階の具体的製品比較・評価はPX-007 Deliberation Codexで管理する。  
+Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning、Evaluationは、それぞれの文書で管理する。Candidate段階の具体的製品比較・評価はCZ-001 Deliberation Codexで管理する。  
 
 ---  
 
 # Related Documents  
 
-- TP-001 THE THIRD PLACE Constitution  
-- TP-002 Design Bible  
-- TP-003 Field Atlas  
-- TP-005 Acquisition Strategy  
-- TP-006 Foundation Compass  
-- TP-007 Habitat Architecture  
-- TP-008 Affinity Lexicon  
-- TP-009 Aesthetic Grammar  
-- TP-010 Storage Blueprint  
-- TP-011 Galley Fare  
-- PX-007 Deliberation Codex  
+- OP-001 THE THIRD PLACE Constitution  
+- OP-002 Design Bible  
+- MD-002 Field Atlas  
+- OP-005 Acquisition Strategy  
+- OP-006 Foundation Compass  
+- OP-007 Habitat Architecture  
+- OP-003 Affinity Lexicon  
+- OP-004 Aesthetic Grammar  
+- MD-001 Storage Blueprint  
+- MD-003 Galley Fare  
+- CZ-001 Deliberation Codex  
 
 ---  
 
@@ -7428,4 +7428,10 @@ Version 7.31で残っていた最後の3件のUnconfirmedについて、プロ�
 - FUR-033（EXTENSIONTABLE CASE）：Materialを「Polyester」に確定（プロジェクトオーナー確認）。
 - SHL-001（幕男）：Materialを「Polyester」に確定（プロジェクトオーナー確認）。
 
-- Related Documents：変更なし。  
+- Related Documents：変更なし。
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TP-004からMD-004へ番号を変更した。本文中の他文書参照（TP-002・TP-005・TP-011・PX-007等）および「Relationship to Other Core Documents」表を新ID体系へ更新した。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Version 7.32）に変更はない。旧ID: TP-004。  
