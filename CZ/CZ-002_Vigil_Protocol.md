@@ -4,8 +4,8 @@
 
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
-**Series**: PX – Project  
-**Version**: 2.8  
+**Series**: CZ – Cross-Zone Ops  
+**Version**: 2.9  
 **Status**: Official  
 **Owner**: THE THIRD PLACE
 
@@ -24,6 +24,7 @@
 | 2.6 | 2026-09-19 | MD-004 Version 7.36（Furniture Domain番号整理・二回目）と連動し、Butterfly Table M Black LookのMD-004 ReferenceをFUR-018からFUR-026へ更新。 |
 | 2.7 | 2026-09-19 | MD-004 Version 7.38（Fire Domain番号整理）と連動し、エントリ019（copper250）のMD-004 ReferenceをFIR-014からFIR-025へ、エントリ020（FT no BARREL）をFIR-015からFIR-026へ、エントリ021（MT.SUMI Aura FG）をFIR-019からFIR-030へ更新。エントリ022（FIREGRAPHIX BLISS-SP、MD-004 Reference: 旧FIR-020）は、参照先の旧FIR-020レコード自体がMD-004側で削除されたため削除した。 |
 | 2.8 | 2026-09-19 | MD-004 Version 7.40（Fire Domain検討中案件の表記整理）と連動し、Watch List説明文の「エントリ008〜022」の表記をエントリ022削除後の実態に合わせて「エントリ008〜021」に訂正。 |
+| 2.9 | 2026-09-19 | 文書番号再編時の Series 表記更新漏れを訂正。Series: PX – Project → CZ – Cross-Zone Ops。内容に変更なし。 |
 
 ---
 
