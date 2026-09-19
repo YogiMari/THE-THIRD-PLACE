@@ -311,8 +311,8 @@ def parse_px005(text: str) -> list[Record]:
 
         Manufacturer
         Model (or, when the current purchase model has diverged
-            from the originally Confirmed one, "PX-004 Model" is
-            used instead to preserve the literal PX-004 wording
+            from the originally Confirmed one, "BR-002 Model" is
+            used instead to preserve the literal BR-002 wording
             for synchronization purposes; "Current Purchase Model"
             is metadata only and never used for comparison)
         Acquisition Status
@@ -353,7 +353,7 @@ def parse_px005(text: str) -> list[Record]:
             continue
 
         match = re.match(
-            r"^\|\s*(Manufacturer|Model|PX-004 Model|Acquisition Status)"
+            r"^\|\s*(Manufacturer|Model|BR-002 Model|Acquisition Status)"
             r"\s*\|\s*(.*?)\s*\|$",
             stripped,
         )
@@ -367,7 +367,7 @@ def parse_px005(text: str) -> list[Record]:
         if field == "Manufacturer":
             brand = value
 
-        elif field in ("Model", "PX-004 Model"):
+        elif field in ("Model", "BR-002 Model"):
             model = value
 
         elif field == "Acquisition Status":
