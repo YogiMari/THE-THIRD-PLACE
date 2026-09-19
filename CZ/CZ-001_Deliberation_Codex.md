@@ -10,7 +10,7 @@ Deliberation Codex
 
 # Version
 
-2.7
+2.8
 
 # Status
 
@@ -109,7 +109,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ## Fire
 
-### Fire Pit（MD-004: FIR-019）
+### Fire Pit（MD-004: FIR-030）
 
 **Status**：Under Evaluation
 
@@ -120,7 +120,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 | Ease of Clean-up | 多次燃焼構造で灰が比較的少量、炉板も軽量。灰受け自体の取り出しやすさは未確認（Gap） | ロストル形状変更で灰が捨てやすく改良済み。ただし「向き合う感覚」を重視し灰を残す運用哲学もあり |
 | Transport | 収納バッグ1つに全部品完結、総重量22kg | 本体単体16kg、煙突・スタンドは別売で管理単位が分散 |
 
-**Note**：旧FIR-020（BLISS-SP）はFIR-019へ統合済み。MD-004上のID自体はRetiredとして保持。
+**Note**：旧FIR-020（BLISS-SP）はFIR-019（現FIR-030）へ統合済み。旧FIR-020は欠番として保持されていたが、MD-004 Version 7.38のFire Domain番号整理により当該レコード自体を削除した。統合の経緯はMD-004 Version 7.14を参照。
 
 **Unresolved Gaps**：MT.SUMI Aura FGの灰受け取り出しやすさは一次情報で未確認。両候補とも実物確認未実施。
 
@@ -224,7 +224,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 | ID | Product | Brand | Note |
 |---|---|---|---|
-| FIR-014 | copper250 | neru design works | Parent: FIR-012 |
+| FIR-025 | copper250 | neru design works | Parent: FIR-023 |
 
 ---
 
@@ -260,6 +260,7 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 2.5 | 2026-09-19 | Document Header の Version 欄が「2.3」のまま更新されておらず、本Version History の最終行（2.4）と不一致であったため、Version欄を2.4へ同期した上で、本行の追加により2.5へ更新。内容面の変更は無し。 |
 | 2.6 | 2026-09-19 | MD-004 Version 7.34（Aroma番号入替）と連動。SCENT TOWERのIDをARM-004からARM-003へ更新（Under Considerationの注記、Confirmed — Purchase Pendingの表、Decision Log）。Filoméla INCENSE CHAMBER Tokyo LimitedはStatusがEssentialからUpgradeへ変更（新ID: ARM-004）となったため、Confirmed — Purchase Pending（Aroma）から除外し、Decision Logへ記録。Version 2.1・2.2の過去行は歴史的記録として遡及修正しない。 |
 | 2.7 | 2026-09-19 | MD-004 Version 7.36（Furniture Domain番号整理・二回目）と連動し、FUR-022→FUR-032、FUR-023→FUR-033、FUR-021→FUR-031（2箇所）、FUR-024→FUR-034参照を更新。 |
+| 2.8 | 2026-09-19 | MD-004 Version 7.38（Fire Domain番号整理）と連動し、FIR-019→FIR-030（Fire Pit見出し・Confirmed — Purchase Pending表）、FIR-014→FIR-025・FIR-012→FIR-023（Confirmed — Purchase Pendingの表、Parent表記）参照を更新。旧FIR-020（BLISS-SP）に関するNoteを、MD-004側で当該レコード自体が削除されたことを反映した記述へ更新。Version 1.0・2.1の過去行は歴史的記録として遡及修正しない。 |
 
 ---
 
