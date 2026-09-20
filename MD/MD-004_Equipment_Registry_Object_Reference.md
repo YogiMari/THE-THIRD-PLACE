@@ -7718,7 +7718,7 @@ SomAbito 表記統一、FIR-020 Material 修正、Furniture 見出し構造修�
 - FIR-022: Brand を「SOMABITO」から「SomAbito」へ統一（公式表記）
 - FIR-020: Material を「Steel（黒皮鉄板） / Oak」から「Black Skin Iron / Oak」へ修正（英語表記統一）
 - Furniture セクション直後の空見出し（## FUR-001）と余分な空行を削除、構造を整理
-- FIR-032（SOMA no Hera）は元々 SomAbito 表記のため変更なし
+- FIR-032（焚き火side stand）は元々 SomAbito 表記のため変更なし
 
 ---  
 

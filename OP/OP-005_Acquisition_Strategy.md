@@ -5,6 +5,14 @@ OP-005 Acquisition Strategy
 
 ---
 
+# Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 1.2 | 2026-09-20 | MD-004 の Status 体系（Essential / Candidate / Upgrade）に合わせ、Relationship の購入対象Statusの記述を「Must Buy または Candidate」から「Essential・Candidate・Upgrade」へ修正。Acquisition Priority（Must Buy / High / Medium / Low）は取得優先度の区分であり、変更なし。 |
+
+---
+
 # Purpose
 
 Acquisition Strategy は、
