@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.45  
+Version 7.46  
   
 ---  
   
@@ -4163,7 +4163,7 @@ Top Board
 
 **Brand**  
 
-NOWELLCAMP × WANTKEY CAMP  
+WANTKEY CAMP × NOWELLCAMP  
 
 **Product**  
 
@@ -7731,6 +7731,18 @@ Furniture ドメインの Brand 表記を、プロジェクトオーナーの指
 - FUR-012（Kermit CARRY TOTE）: Brand を「Kermit Chair USA」から「BALLISTICS INDUSTRIES」へ訂正（プロジェクトオーナー確認）。
 - FUR-018・FUR-023: Brand から「（NDW）」表記を削除し「neru design works」へ統一。
 - FUR-024（EXTENSIONTABLE CASE）: Brand を「DEVISE WORKS × WHAT WE WANT」から「neru design works × WHAT WE WANT」へ訂正（プロジェクトオーナー確認）。
+
+---
+
+## Version 7.46
+
+STR-009 のBrand表記を訂正した。Equipment記録の実質的な変更はない。
+
+### Changes
+
+- STR-009（WANTKEY CAMP × NOWELLCAMP SST WANTKEY Version）：Brand を「NOWELLCAMP × WANTKEY CAMP」から「WANTKEY CAMP × NOWELLCAMP」へ訂正（プロジェクトオーナー確認。WANTKEY CAMPが先）。
+
+- Related Documents：変更なし。
 
 ---
 ## Document Renumbering Note
