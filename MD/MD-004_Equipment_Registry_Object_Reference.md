@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.44  
+Version 7.45  
   
 ---  
   
@@ -566,7 +566,7 @@ Armrest Replacement
 
 **Brand**  
 
-Kermit Chair USA  
+BALLISTICS INDUSTRIES  
 
 **Product**  
 
@@ -798,7 +798,7 @@ Unit Top Plate
 
 **Brand**  
 
-neru design works（NDW）  
+neru design works  
 
 **Product**  
 
@@ -987,7 +987,7 @@ Table Silicone Sheet
 
 **Brand**  
 
-neru design works（NDW）  
+neru design works  
 
 **Product**  
 
@@ -1024,7 +1024,7 @@ Table Hanger Hook
 
 **Brand**  
 
-DEVISE WORKS × WHAT WE WANT  
+neru design works × WHAT WE WANT  
 
 **Product**  
 
@@ -7722,6 +7722,17 @@ SomAbito 表記統一、FIR-020 Material 修正、Furniture 見出し構造修�
 
 ---  
 
+## Version 7.45
+
+Furniture ドメインの Brand 表記を、プロジェクトオーナーの指摘に基づき訂正した。
+
+### Changes
+
+- FUR-012（Kermit CARRY TOTE）: Brand を「Kermit Chair USA」から「BALLISTICS INDUSTRIES」へ訂正（プロジェクトオーナー確認）。
+- FUR-018・FUR-023: Brand から「（NDW）」表記を削除し「neru design works」へ統一。
+- FUR-024（EXTENSIONTABLE CASE）: Brand を「DEVISE WORKS × WHAT WE WANT」から「neru design works × WHAT WE WANT」へ訂正（プロジェクトオーナー確認）。
+
+---
 ## Document Renumbering Note
 
 本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TP-004からMD-004へ番号を変更した。本文中の他文書参照（TP-002・TP-005・TP-011・PX-007等）および「Relationship to Other Core Documents」表を新ID体系へ更新した。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Version 7.32）に変更はない。旧ID: TP-004。  
