@@ -1,7 +1,7 @@
 OP-005 Acquisition Strategy
 # OP-005
 # Acquisition Strategy
-## Ver.1.1
+## Ver.1.2
 
 ---
 
@@ -53,13 +53,9 @@ Equipment Registry の
 
 Status が
 
-Must Buy
+Essential・Candidate・Upgrade
 
-または
-
-Candidate
-
-となっている Equipment のみとする。
+のいずれかとなっている Equipment のみとする。
 
 Equipment 情報を
 
