@@ -82,8 +82,8 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 
 | ID | Document | どのような文書か |
 | --- | --- | --- |
-| OP-001 | Constitution | プロジェクト全体の憲章。思想・運営原則・ブランドとの向き合い方（Brand Philosophy）・意思決定の構造（Decision Philosophy）を定義する。 |
-| OP-002 | Design Bible | 設計思想・評価基準・Design Language（Appearance／Industrial／Graphic／Harmony）を定めるプロジェクトの根幹文書。 |
+| OP-001 | Constitution | プロジェクト全体を支える最高位文書。Human Principles・Design Principles・文書体系（Document Architecture）・SSOT・ブランドとの向き合い方（Brand Philosophy）・意思決定の構造（Decision Philosophy）・AI／GitHub運用原則を定義する。 |
+| OP-002 | Design Bible | 設計思想・評価基準・完成定義を定めるプロジェクトの根幹文書。空間を構成するDesign Domains（Furniture／Light／Aroma／Storage／Coffee／Fire）と、それを統一するDesign Language（Appearance／Industrial／Graphic／Harmony）の二層で設計体系を構成する。 |
 | OP-003 | Affinity Lexicon | 「好き」を判断のための共通言語として体系化する嗜好辞典。ブランドや製品そのものを管理する文書ではない。 |
 | OP-004 | Aesthetic Grammar | 比率・余白・光・素材・配置・所作など、美しさを成立させる法則を定義する美意識文法。Design Languageを補完する。 |
 | OP-005 | Acquisition Strategy | Equipmentを「いつ・どの順序で・どのような判断基準で迎えるか」を定める調達戦略文書。 |
@@ -100,7 +100,7 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 
 | ID | Document | どのような文書か |
 | --- | --- | --- |
-| DB-001 | Project Ledger | プロジェクトの現在の focus、進行中の議論、進捗状況を記録する「生きた文書（Living Document）」。 |
+| DB-001 | Project Ledger | プロジェクトの唯一の運用ダッシュボード。Current Focus・Active Conversationsに加え、目的のチャットを最短で探すConversation Ledger、番号を覚えていなくても文書を特定できるQuick Access（早見表）、系列別の文書数を示すProject Overviewを管理する「生きた文書（Living Document）」。 |
 
 ---
 
@@ -113,7 +113,7 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 | MD-001 | Storage Blueprint | 収納の配置、パッキング手順、設営・撤収の手順など、Storageを一つの運用システムとして定義する文書。 |
 | MD-002 | Field Atlas Landscape Framework | フィールド・ロケーションなど、プロジェクトが展開される「舞台」そのものの選定基準を定義する。 |
 | MD-003 | Galley Fare | キッチン機材（調理器具・刃物・調理小物）を、MD-004とは独立した実用性優先の基準で管理するMaster Document。 |
-| MD-004 | Equipment Registry Object Reference | 所有物（Equipment）に関する唯一のマスターデータベース。Design Bibleとの美意識的整合を選定条件とする。 |
+| MD-004 | Equipment Registry Object Reference | 所有物（Equipment）に関する唯一のマスターデータベース。Design Bibleとの美意識的整合を選定条件とし、7つのDomain（Furniture／Light／Aroma／Storage／Coffee／Fire／Shelter）のEquipment・Components・親子関係・Material・Color・Attribute・Ownership Statusを管理する。Coffee機材は購入されOwnedになった時点で初めて登録する。 |
 
 ---
 
@@ -149,7 +149,7 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 | KN-001 | Heritage Chronicle | プロジェクトの重要な意思決定・設計思想の変化・Equipment構成の変遷を時系列で記録する公式アーカイブ。「なぜその判断をしたのか」を未来の自分が理解するための知識資産。 |
 | KN-002 | Cultural Pantheon（旧題: Cultural Reference） | ブランドそのものではなく、ブランドを生み出した思想・人物・コミュニティ・ショップ・系譜を記録する公式カルチャーリファレンス。 |
 | KN-003 | Beyond Journey | キャンプという趣味に留まらず、建築・家具・照明・工業デザイン・自動車・写真・ライフスタイルなど分野横断でTHE THIRD PLACEの美意識を育てるカルチャーマガジン。 |
-| KN-004 | Atelier Discovery | ガレージブランド・アウトドアブランド・市場動向をリサーチするメディア。ブランドの宣伝ではなく、動向の観察を目的とする。 |
+| KN-004 | Atelier Discovery | ガレージブランド・アウトドアブランド・市場動向をリサーチするメディア。ブランドの宣伝ではなく、動向の観察を目的とする。冒頭に、最優先購入対象を継続監視するMust Buy Dashboardを常設する。 |
 
 ---
 
@@ -338,8 +338,8 @@ The series defining THE THIRD PLACE's design philosophy, rules, and laws themsel
 
 | ID | Document | What this document is |
 | --- | --- | --- |
-| OP-001 | Constitution | The project-wide charter. Defines the overall philosophy, operating principles, the relationship with brands (Brand Philosophy), and the structure of decision-making (Decision Philosophy). |
-| OP-002 | Design Bible | The project's foundational document, defining design philosophy, evaluation criteria, and the Design Language (Appearance / Industrial / Graphic / Harmony). |
+| OP-001 | Constitution | The highest-authority document supporting the whole project. Defines the Human Principles, Design Principles, Document Architecture, SSOT, the relationship with brands (Brand Philosophy), the structure of decision-making (Decision Philosophy), and the AI / GitHub operating principles. |
+| OP-002 | Design Bible | The project's foundational document, defining design philosophy, evaluation criteria, and the definition of completion. Its design framework has two layers: the Design Domains that compose the space (Furniture / Light / Aroma / Storage / Coffee / Fire) and the Design Language that unifies them (Appearance / Industrial / Graphic / Harmony). |
 | OP-003 | Affinity Lexicon | A dictionary that systematizes "what is liked" as a shared vocabulary for judgment. It does not manage brands or products themselves. |
 | OP-004 | Aesthetic Grammar | Defines the laws that constitute beauty — proportion, margin, light, material, composition, gesture — complementing the Design Language. |
 | OP-005 | Acquisition Strategy | Defines when, in what order, and by what criteria Equipment is acquired. |
@@ -356,7 +356,7 @@ The series recording the project's current state of progress.
 
 | ID | Document | What this document is |
 | --- | --- | --- |
-| DB-001 | Project Ledger | A living document recording the project's current focus, ongoing discussions, and progress. |
+| DB-001 | Project Ledger | The project's single operational dashboard. Alongside Current Focus and Active Conversations, it manages the Conversation Ledger (for finding the right chat fastest), Quick Access (a quick-reference table that identifies documents without memorizing their numbers), and the Project Overview (document counts by series) — a living document. |
 
 ---
 
@@ -369,7 +369,7 @@ The series managing the ledger of owned equipment and places.
 | MD-001 | Storage Blueprint | Defines storage layout, packing sequence, and setup/teardown procedures, treating Storage as a complete operational system rather than mere packing. |
 | MD-002 | Field Atlas Landscape Framework | Defines the selection criteria for the "stage" itself — campsites, locations, and terrain — on which the project is deployed. |
 | MD-003 | Galley Fare | An independent Master Document for kitchen equipment (cookware, blades, cooking tools), governed by a function-first standard separate from MD-004. |
-| MD-004 | Equipment Registry Object Reference | The single master database of owned Equipment. Aesthetic alignment with the Design Bible is a condition for inclusion. |
+| MD-004 | Equipment Registry Object Reference | The single master database of owned Equipment. Aesthetic alignment with the Design Bible is a condition for inclusion. It manages Equipment, Components, Parent / Child relationships, Material, Color, Attributes, and Ownership Status across seven Domains (Furniture / Light / Aroma / Storage / Coffee / Fire / Shelter). Coffee equipment is registered only once purchased and Owned. |
 
 ---
 
@@ -405,7 +405,7 @@ The series managing accumulated knowledge and the cultural archive.
 | KN-001 | Heritage Chronicle | The official archive recording, in chronological order, the project's key decisions, shifts in design philosophy, and the evolution of its Equipment configuration — a knowledge asset for understanding, in the future, why a given decision was made. |
 | KN-002 | Cultural Pantheon (formerly titled Cultural Reference) | An official cultural reference recording not the brands themselves, but the philosophies, people, communities, shops, and lineages that gave rise to them. |
 | KN-003 | Beyond Journey | A culture magazine that grows THE THIRD PLACE's aesthetic sense by crossing disciplines — architecture, furniture, lighting, industrial design, automobiles, photography, lifestyle — beyond camping as a single hobby. |
-| KN-004 | Atelier Discovery | A research publication covering garage brands, outdoor brands, and market trends. Its aim is observation of trends, not brand promotion. |
+| KN-004 | Atelier Discovery | A research publication covering garage brands, outdoor brands, and market trends. Its aim is observation of trends, not brand promotion. It opens with a permanent Must Buy Dashboard that continuously monitors the highest-priority acquisition targets. |
 
 ---
 
