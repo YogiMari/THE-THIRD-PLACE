@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.43  
+Version 7.44  
   
 ---  
   
@@ -114,37 +114,6 @@ Appearanceは、OP-002 Design Bibleにより、以下を用いて決定される
 # Furniture
 
 ---
-
-## FUR-001
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 ## FUR-001  
 
@@ -629,7 +598,7 @@ Carrying Tote（Kermit Chair①②共通使用、2脚収納可。Version 7.28に
 
 **Brand**  
 
-DEVISE WORKS × SOMABITO  
+DEVISE WORKS × SomAbito  
 
 **Product**  
 
@@ -665,7 +634,7 @@ Fireside Chair
 
 **Brand**  
 
-SOMABITO  
+SomAbito  
 
 **Product**  
 
@@ -6184,7 +6153,7 @@ Black / Brown
 
 ### Material  
 
-Steel（黒皮鉄板） / Oak  
+Black Skin Iron / Oak  
 
 ### Graphic Attribute  
 
@@ -6204,7 +6173,7 @@ Roasting Fork（全長約42cm、先端保護用レザーケース付き）
 
 **Brand**  
 
-SOMABITO  
+SomAbito  
 
 **Product**  
 
@@ -6235,7 +6204,7 @@ Fireside Fork
 
 **Brand**  
 
-SOMABITO  
+SomAbito  
 
 **Product**  
 
@@ -7732,6 +7701,24 @@ Version 7.42 の並べ替え作業で発生した、Furniture 見出し直後の
   - 構造：「# Furniture」→空行→「---」→空行→「## FUR-001」
 
 - FUR ブロックの本文内容に変更はない。
+
+---
+
+## Version 7.44
+
+SomAbito 表記統一、FIR-020 Material 修正、Furniture 見出し構造修正。
+
+関連: OP-005 Acquisition Strategy (Ver.1.2)
+
+### Changes
+
+- FUR-013: Brand を「DEVISE WORKS × SOMABITO」から「DEVISE WORKS × SomAbito」へ統一（公式表記）
+- FUR-014: Brand を「SOMABITO」から「SomAbito」へ統一（公式表記）
+- FIR-021: Brand を「SOMABITO」から「SomAbito」へ統一（公式表記）
+- FIR-022: Brand を「SOMABITO」から「SomAbito」へ統一（公式表記）
+- FIR-020: Material を「Steel（黒皮鉄板） / Oak」から「Black Skin Iron / Oak」へ修正（英語表記統一）
+- Furniture セクション直後の空見出し（## FUR-001）と余分な空行を削除、構造を整理
+- FIR-032（焚き火side stand）は元々 SomAbito 表記のため変更なし
 
 ---  
 
