@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.42  
+Version 7.43  
   
 ---  
   
@@ -111,12 +111,11 @@ Appearanceは、OP-002 Design Bibleにより、以下を用いて決定される
   
 ---  
   
-# Furniture  
+# Furniture
 
+---
 
-
-
-
+## FUR-001
 
 
 
@@ -7718,6 +7717,21 @@ Fire Domain検討中案件の表記を整理した。登録内容（Equipment記
 ## Version 7.42
 
 Furniture ドメインの記載順を FUR ID の昇順に整理。登録内容の変更なし。一部の子部品（FUR-003、FUR-018〜FUR-024、FUR-029、FUR-030）が FUR-034 の後ろに置かれていた配置を解消した。
+
+---  
+
+## Version 7.43
+
+Version 7.42 の並べ替え作業で発生した、Furniture 見出し直後の余分な空行と区切り線の欠落を修正。登録内容の変更なし。
+
+### Changes
+
+- 「# Furniture」見出しと「## FUR-001」ブロックの間の体裁を、他のドメイン見出し（# Light など）と統一した。
+  - 余分な空行（約30行）を削除。
+  - 見出し直後に、他のドメインと同じ「---」区切り線を追加。
+  - 構造：「# Furniture」→空行→「---」→空行→「## FUR-001」
+
+- FUR ブロックの本文内容に変更はない。
 
 ---  
 
