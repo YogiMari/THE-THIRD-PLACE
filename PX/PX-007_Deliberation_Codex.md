@@ -10,7 +10,7 @@ Deliberation Codex
 
 # Version
 
-2.1
+2.2
 
 # Status
 
@@ -22,17 +22,18 @@ Official
 
 PX-007 Deliberation Codexは、Coffee Domain（PX-004管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire）における、検討中ギアの意思決定を支援する文書である。
 
-本書は2種類の内容を管理する。
+本書は3種類の内容を管理する。
 
 * **Zone Evaluation Philosophy**（恒久）：各ゾーンの評価哲学・評価軸。ゾーンの性格が変わらない限り、恒久的に保持する。
 * **Under Consideration**（可変）：現在検討中のギアの具体的製品情報・比較・評価記録。TP-004側のステータスが確定（Candidate → Essential/Owned）した時点で、当該記載を空欄化する。
+* **Confirmed — Purchase Pending**（可変）：製品・ブランドは確定済み（TP-004側のStatus = Essential）だが、まだ所有していないEquipmentの一覧。Coffee Domainを除く全ゾーン（Furniture／Light／Aroma／Storage／Fire）が対象。本セクションは、購入リスト（買い物タスク管理）アーティファクトのソースとして使用する。
 
 ### TP-004との役割分担
 
-* TP-004：用途（Industrial Attribute）とEquipment IDのみを保持する。Status = Candidateの間は、Brand / Productを「Unconfirmed」とする。
-* PX-007：具体的な製品名・ブランド・比較評価・検討経緯を保持する。
+* TP-004：Brand／Product／Status／Material等のSingle Source of Truth。Status = Candidateの間は、Brand / Productを「Unconfirmed」とする。
+* PX-007：Candidate段階の具体的な製品名・ブランド・比較評価・検討経緯（Under Consideration）、およびEssential段階の購入待ちEquipment一覧（Confirmed — Purchase Pending）を保持する。
 
-確定後はUnder Considerationから削除し、Decision Logへ一行要約を残す。詳細な比較内容そのものは確定後は保持しない。
+Candidateが確定（Essential/Owned）した時点でUnder Considerationから削除し、Decision Logへ一行要約を残す。詳細な比較内容そのものは確定後は保持しない。Essentialになったアイテムは同時にConfirmed — Purchase Pendingへ追加し、購入完了（Owned）した時点でそこから削除する。
 
 ---
 
@@ -43,17 +44,28 @@ PX-007 Deliberation Codex
 │
 ├─ Zone Evaluation Philosophy（恒久）
 │
-└─ Under Consideration（可変）
-        │ 検討が深まる
+├─ Under Consideration（可変）
+│       │ 検討が深まる
+│       ▼
+│  TP-004 Status更新（Candidate → Essential）
+│       │
+│       ▼
+│  Under Considerationから削除 → Decision Logへ一行記録
+│       │
+│       ▼
+│  Confirmed — Purchase Pendingへ追加
+│       │
+│       │（将来、買い替え検討が発生）
+│       ▼
+│  PX-007 Under Considerationへ再登場
+│
+└─ Confirmed — Purchase Pending（可変）
+        │ 購入完了
         ▼
-   TP-004 Status更新（Candidate → Essential/Owned）
+   TP-004 Status更新（Essential → Owned）
         │
         ▼
-   Under Considerationから削除 → Decision Logへ一行記録
-        │
-        │（将来、買い替え検討が発生）
-        ▼
-   PX-007 Under Considerationへ再登場
+   Confirmed — Purchase Pendingから削除
 ```
 
 ---
@@ -171,6 +183,56 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ---
 
+# Confirmed — Purchase Pending（可変）
+
+TP-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipmentの一覧。製品・ブランドは確定済みだが、まだ所有していない。
+
+購入完了（TP-004側でStatus = Ownedへ更新）した時点で、該当行を本セクションから削除する。
+
+## Furniture
+
+| ID | Product | Brand | Note |
+|---|---|---|---|
+| FUR-020 | ダウン システムオフトン（BD-060, Quilt component only） | Snow Peak | 数量2 |
+| FUR-021 | コンパクトワイドマット（TM-089） | Snow Peak | 数量2 |
+
+## Light
+
+| ID | Product | Brand | Note |
+|---|---|---|---|
+| LGT-015 | MIYABI RICH Alumi Frozen | neru design works × LampUp | Parent: LGT-009 |
+| LGT-037 | RT-01AC01 / ECHO LAMP | rove troupe | — |
+| LGT-038 | DOME LOOK | KURASHI MADE | — |
+| LGT-039 | Pivotshade | IFA | — |
+
+## Aroma
+
+| ID | Product | Brand | Note |
+|---|---|---|---|
+| ARM-002 | MKGP | OLD MOUNTAIN | — |
+| ARM-003 | INCENSE CHAMBER Tokyo Limited | Filoméla | — |
+| ARM-004 | SCENT TOWER | UNIT/04 × KUNST・BAUM | — |
+
+## Storage
+
+| ID | Product | Brand | Note |
+|---|---|---|---|
+| STR-001 | Shelf Container 25 雪峰祭 Black（Shellcon 01） | Snow Peak | 本体。購入決定済み・未所有 |
+| STR-006 | SHELCON LEG 25 | BALLISTICS | Parent: STR-001 |
+| STR-012 | SHELCON LEG 25 | LOCKFIELD EQUIPMENT × BALLISTIC | Parent: STR-007 |
+| STR-014 | Wood Board（Oak） | nodel design | Parent: STR-013／数量2組 |
+| STR-016 | Wood Board（Walnut） | nodel design | Parent: STR-015／数量2組 |
+| STR-017 | Container Bridge Frame | nodel design | — |
+| STR-019 | Butterfly Under Shelf | nodel design | Parent: STR-017 |
+
+## Fire
+
+| ID | Product | Brand | Note |
+|---|---|---|---|
+| FIR-014 | copper250 | neru design works | Parent: FIR-012 |
+
+---
+
 # Decision Log
 
 確定・削除した項目を一行要約で記録する。詳細な比較内容そのものは、確定後は保持しない。
@@ -196,6 +258,7 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 1.0 | 2026-09 | 初回ドラフト（PX-007 Fire Codexとして作成）。Fire Domain Evaluation Criteriaを確立し、FIR-019 vs FIR-020の試験比較を記録。 |
 | 2.0 | 2026-09 | 文書をFire単独からCoffee以外の全ゾーン横断の検討支援文書「Deliberation Codex」へ再定義。Zone Evaluation Philosophy（恒久）とUnder Consideration（可変）を分離。 |
 | 2.1 | 2026-09 | TP-004 Version 7.14と連動し、Candidate段階の具体的製品情報を全てPX-007へ移管。FUR-022a/b、FUR-024a〜d、FIR-020（FIR-019へ統合）、LGT-041の具体情報をUnder Considerationへ反映。ARM-004はプロジェクトオーナーの判断により購入決定（Essential）となったため、Under Considerationには含めず、Decision Logへ記録しTP-004に詳細を残置。ファイルをPX-007_Fire_Codex.mdからPX-007_Deliberation_Codex.mdへリネーム。 |
+| 2.2 | 2026-09-16 | プロジェクトオーナーの指示に基づき「Confirmed — Purchase Pending」セクションを新設。Coffee Domainを除く全ゾーンでStatus = Essentialとなっている全Equipment（Furniture 2件、Light 4件、Aroma 3件、Storage 7件、Fire 1件）を一覧化。STR-001（Shellcon 01）のStatus訂正（Owned→Essential、TP-004 v7.15）を反映。本セクションは購入リストアーティファクトのソースとして使用する。Purpose・Relationshipを3カテゴリ構成へ更新。 |
 
 ---
 
