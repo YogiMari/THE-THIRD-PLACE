@@ -1,11 +1,11 @@
-# PX-003
+# CZ-002
 # Vigil Protocol
 ### THE THIRD PLACE Acquisition Monitoring & Patrol Operations
 
-**Document ID**: PX-003  
+**Document ID**: CZ-002  
 **Title**: Vigil Protocol  
-**Series**: PX – Project  
-**Version**: 2.3  
+**Series**: CZ – Cross-Zone Ops  
+**Version**: 2.9  
 **Status**: Official  
 **Owner**: THE THIRD PLACE
 
@@ -19,6 +19,12 @@
 | 2.1 | 2026-09-07 | 分割起源の修復。PX-003とTM-005 Search Doctrineはもともと1つの文書だったが、後に方法論（TM-005）と実行（PX-003）へ分割された際、章番号の振り直しやヘッダーセクションの復元が行われず、PX-003が第XXXII章から始まり、それ以前の章もPurposeセクションも存在しない状態になっていた。「I. Purpose」（Relationship with Other Documentsを含む）を追加し、全章をI〜VIIIへ振り直し、文書ヘッダーにSeriesフィールドを追加した。 |
 | 2.2 | 2026-09-08 | Watch Listにエントリ008〜022を追加。TP-004 Equipment Registryのうち、Status = Essential / Candidate / Upgradeで既存エントリに含まれていない全アイテムを抽出（各エントリにTP-004 Reference IDを付記）。Coffee Domainは意図的に除外（PX-004/PX-005が管轄）。 |
 | 2.3 | 2026-09-08 | エントリ018（Wood Board）を、プロジェクトオーナーの確認に基づき修正: nodel designがこの製品を「Wood Board」という正確な名称で単品販売していることを確認。入手可否に関する不確実性の注記を削除し、キーワードを整理した。 |
+| 2.4 | 2026-09-18 | TP-004 Version 7.28（Furniture Domain番号整理）と連動し、Butterfly Table M Black LookのTP-004 ReferenceをFUR-017からFUR-018へ更新。 |
+| 2.5 | 2026-09-19 | MD-004 Version 7.34（Aroma番号入替）と連動し、エントリ014（Filoméla INCENSE CHAMBER）のMD-004 ReferenceをARM-003（Status: Essential）からARM-004（Status: Upgrade）へ、エントリ015（SCENT TOWER）のMD-004 ReferenceをARM-004からARM-003へ更新。エントリ015のStatus表記（Candidate）は、MD-004 Version 7.14（Essential化）以降の更新漏れであったため、あわせてEssentialへ訂正した。 |
+| 2.6 | 2026-09-19 | MD-004 Version 7.36（Furniture Domain番号整理・二回目）と連動し、Butterfly Table M Black LookのMD-004 ReferenceをFUR-018からFUR-026へ更新。 |
+| 2.7 | 2026-09-19 | MD-004 Version 7.38（Fire Domain番号整理）と連動し、エントリ019（copper250）のMD-004 ReferenceをFIR-014からFIR-025へ、エントリ020（FT no BARREL）をFIR-015からFIR-026へ、エントリ021（MT.SUMI Aura FG）をFIR-019からFIR-030へ更新。エントリ022（FIREGRAPHIX BLISS-SP、MD-004 Reference: 旧FIR-020）は、参照先の旧FIR-020レコード自体がMD-004側で削除されたため削除した。 |
+| 2.8 | 2026-09-19 | MD-004 Version 7.40（Fire Domain検討中案件の表記整理）と連動し、Watch List説明文の「エントリ008〜022」の表記をエントリ022削除後の実態に合わせて「エントリ008〜021」に訂正。 |
+| 2.9 | 2026-09-19 | 文書番号再編時の Series 表記更新漏れを訂正。Series: PX – Project → CZ – Cross-Zone Ops。内容に変更なし。 |
 
 ---
 
@@ -28,7 +34,7 @@
 
 Vigil Protocolは、THE THIRD PLACEにおける調達監視の**実行運用**を定義する。
 
-調査の思想・方法論を定義することは目的としない。それは別途**TM-005 Search Doctrine**が管轄する。
+調査の思想・方法論を定義することは目的としない。それは別途**OP-009 Search Doctrine**が管轄する。
 
 本書の目的は、パトロールがどのように実行されるかを定義することである: 何を検索するか、鮮度と入手可否をどう検証するか、発見内容をどうスコアリングするか、Watch Listをどう維持するか。
 
@@ -36,24 +42,24 @@ Vigil Protocolは、THE THIRD PLACEにおける調達監視の**実行運用**�
 
 ## Origin
 
-Vigil ProtocolとTM-005 Search Doctrineは、もともと1つの文書であった。
+Vigil ProtocolとOP-009 Search Doctrineは、もともと1つの文書であった。
 
 方法論と実行をそれぞれ独立して管理・更新できるよう、後に分割された。
 
-TM-005は**調査がどう考えるべきか**を担う。
+OP-009は**調査がどう考えるべきか**を担う。
 
-PX-003は**調査がどう実行されるか**を担う。
+CZ-002は**調査がどう実行されるか**を担う。
 
 ---
 
 ## Relationship with Other Documents
 
 ```text
-TM-005 Search Doctrine
+OP-009 Search Doctrine
 （方法論・思想）
         │
         ▼
-PX-003 Vigil Protocol
+CZ-002 Vigil Protocol
 （実行：Patrol、Watch List、Scoring）
         │
         │ 検索を実行
@@ -64,15 +70,15 @@ Web Research
 Difference Analysis
         │
         ▼
-TM-002 Atelier Discovery
+KN-004 Atelier Discovery
 （日次インテリジェンスレポート）
         │
         ▼
-TM-001 Heritage Chronicle
+KN-001 Heritage Chronicle
 （長期ナレッジアーカイブ）
 ```
 
-Vigil Patrolによって発見された内容は、購入判断のためTP-005 Acquisition Strategyへ引き継がれる。
+Vigil Patrolによって発見された内容は、購入判断のためOP-005 Acquisition Strategyへ引き継がれる。
 
 ---
 
@@ -374,7 +380,7 @@ Required Keywordsには、発見精度を最大化するために必要な実用
 
 エントリ001〜007は、本改訂以前から存在する。
 
-エントリ008〜022は、**TP-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**TP-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、PX-004 Barista Codex / PX-005 Acquisition Handbookが引き続き管轄する。
+エントリ008〜021は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、BR-002 Barista Codex / BR-003 Acquisition Handbookが引き続き管轄する。
 
 ## 001
 
@@ -540,9 +546,9 @@ nodel design
 
 Butterfly Table M Black Look
 
-**TP-004 Reference**
+**MD-004 Reference**
 
-FUR-017 (Status: Upgrade)
+FUR-026 (Status: Upgrade)
 
 **Required Keywords**
 
@@ -565,7 +571,7 @@ neru design works × LampUp
 
 MIYABI RICH Alumi Frozen
 
-**TP-004 Reference**
+**MD-004 Reference**
 
 LGT-015 (Status: Essential)
 
@@ -590,7 +596,7 @@ neru design works
 
 メッシュシェード (Mesh Shade, 38-kT)
 
-**TP-004 Reference**
+**MD-004 Reference**
 
 LGT-028a (Status: Candidate)
 
@@ -613,7 +619,7 @@ CALMA STORE × neru design works
 
 POCKET SHADE M（neru design works柄）
 
-**TP-004 Reference**
+**MD-004 Reference**
 
 LGT-028b (Status: Candidate)
 
@@ -636,7 +642,7 @@ IFA
 
 Pivotshade
 
-**TP-004 Reference**
+**MD-004 Reference**
 
 LGT-039 (Status: Essential)
 
@@ -659,7 +665,7 @@ OLD MOUNTAIN
 
 MKGP
 
-**TP-004 Reference**
+**MD-004 Reference**
 
 ARM-002 (Status: Essential)
 
@@ -682,9 +688,9 @@ Filoméla
 
 INCENSE CHAMBER Tokyo Limited
 
-**TP-004 Reference**
+**MD-004 Reference**
 
-ARM-003 (Status: Essential)
+ARM-004 (Status: Upgrade)
 
 **Required Keywords**
 
@@ -705,9 +711,9 @@ UNIT/04 × KUNST・BAUM
 
 SCENT TOWER
 
-**TP-004 Reference**
+**MD-004 Reference**
 
-ARM-004 (Status: Candidate)
+ARM-003 (Status: Essential)
 
 **Required Keywords**
 
@@ -728,7 +734,7 @@ BALLISTICS / LOCKFIELD EQUIPMENT
 
 SHELCON LEG 25
 
-**TP-004 Reference**
+**MD-004 Reference**
 
 STR-006, STR-012 (Status: Essential)
 
@@ -752,7 +758,7 @@ nodel design
 
 Butterfly Under Shelf
 
-**TP-004 Reference**
+**MD-004 Reference**
 
 STR-019 (Status: Essential)
 
@@ -775,7 +781,7 @@ nodel design
 
 Wood Board
 
-**TP-004 Reference**
+**MD-004 Reference**
 
 STR-014, STR-016 (Status: Essential)
 
@@ -803,9 +809,9 @@ neru design works
 
 copper250
 
-**TP-004 Reference**
+**MD-004 Reference**
 
-FIR-014 (Status: Essential)
+FIR-025 (Status: Essential)
 
 **Required Keywords**
 
@@ -825,9 +831,9 @@ DAMNGOOD!! × OMA FACTORY
 
 FT no BARREL
 
-**TP-004 Reference**
+**MD-004 Reference**
 
-FIR-015 (Status: Upgrade)
+FIR-026 (Status: Upgrade)
 
 **Required Keywords**
 
@@ -848,37 +854,15 @@ MT.SUMI
 
 Aura FG
 
-**TP-004 Reference**
+**MD-004 Reference**
 
-FIR-019 (Status: Candidate)
+FIR-030 (Status: Candidate)
 
 **Required Keywords**
 
 - MT.SUMI Aura FG
 - Aura FG fire pit
 - マウントスミ オーラFG
-
----
-
-## 022
-
-**Brand**
-
-FIREGRAPHIX
-
-**Target**
-
-BLISS-SP
-
-**TP-004 Reference**
-
-FIR-020 (Status: Candidate)
-
-**Required Keywords**
-
-- FIREGRAPHIX BLISS-SP
-- BLISS-SP fire pit
-- ファイアーグラフィックス ブリスSP
 
 ---
 
@@ -926,6 +910,12 @@ Patrol Reportには、以下を決して含めない:
 Vigilの目的は、網羅的な検索ではない。
 
 Vigilの目的は、情報ノイズを最小限に抑えながら、現在有効で、検証可能で、行動可能な調達機会を浮かび上がらせることである。
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、PX-003からCZ-002へ番号を変更した。本文中の他文書参照（TM-005・TM-001・TM-002・TP-004・TP-005・PX-004・PX-005等）を新ID体系へ更新した。Revision History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Ver.2.4）に変更はない。旧ID: PX-003。
 
 ---
 

@@ -1,5 +1,5 @@
-TP-006 Foundation Compass
-# TP-006
+OP-006 Foundation Compass
+# OP-006
 # Foundation Compass
 ## Ver.1.2
 
@@ -100,15 +100,15 @@ Foundation Compass は、
 
 以下の文書を参照する。
 
-- TP-002 Design Bible
-- TP-003 Field Atlas
-- TP-004 Equipment Registry
-- TP-005 Acquisition Strategy
-- TP-010 Storage Blueprint
+- OP-002 Design Bible
+- MD-002 Field Atlas
+- MD-004 Equipment Registry
+- OP-005 Acquisition Strategy
+- MD-001 Storage Blueprint
 
 そして、
 
-TP-007 Habitat Architecture を
+OP-007 Habitat Architecture を
 
 成立させるための基盤となる。
 
@@ -206,7 +206,7 @@ Equipment は、
 
 コンテナごとの具体的な役割・固定収納物は、
 
-TP-010 Storage Blueprint が
+MD-001 Storage Blueprint が
 
 唯一のMaster Documentとして管理する。
 
@@ -358,18 +358,18 @@ THE THIRD PLACE Core Documents の中で、
 
 | Document | Responsibility |
 |-----------|----------------|
-| TP-000 Original | プロジェクトの原典 |
-| TP-001 Constitution | プロジェクト全体の憲章 |
-| TP-002 Design Bible | 設計思想 |
-| TP-003 Field Atlas | 舞台の選定 |
-| TP-004 Equipment Registry | Equipment の唯一のマスターデータ |
-| TP-005 Acquisition Strategy | Equipment を迎える戦略 |
-| **TP-006 Foundation Compass** | Foundation を構成・維持するための指針 |
-| TP-007 Habitat Architecture | フィールドで完成する暮らしの設計 |
-| TP-008 Affinity Lexicon | 好み・美意識・親和性の語彙 |
-| TP-009 Aesthetic Grammar | 美しさを構成する法則 |
-| TP-010 Storage Blueprint | 収納設計・運用 |
-| TP-011 Galley Fare | キッチン機材の独立マスターデータ |
+| DS-001 THE THIRD PLACE Original | プロジェクトの原典 |
+| OP-001 Constitution | プロジェクト全体の憲章 |
+| OP-002 Design Bible | 設計思想 |
+| MD-002 Field Atlas | 舞台の選定 |
+| MD-004 Equipment Registry | Equipment の唯一のマスターデータ |
+| OP-005 Acquisition Strategy | Equipment を迎える戦略 |
+| **OP-006 Foundation Compass** | Foundation を構成・維持するための指針 |
+| OP-007 Habitat Architecture | フィールドで完成する暮らしの設計 |
+| OP-003 Affinity Lexicon | 好み・美意識・親和性の語彙 |
+| OP-004 Aesthetic Grammar | 美しさを構成する法則 |
+| MD-001 Storage Blueprint | 収納設計・運用 |
+| MD-003 Galley Fare | キッチン機材の独立マスターデータ |
 
 Foundation Compass は、
 
@@ -402,3 +402,9 @@ Foundation Compass は、
 > **A lasting habitat begins with a disciplined foundation.**
 
 **「永く愛せる居場所は、整えられた基盤から始まる。」**
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TP-006からOP-006へ番号を変更した。本文中の他文書参照および「Relationship to Other Core Documents」表を新ID体系へ更新した。内容（Ver.1.2）に変更はない。旧ID: TP-006。

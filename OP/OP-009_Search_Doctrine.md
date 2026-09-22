@@ -1,11 +1,11 @@
-TM-005 Search Doctrine
-# TM-005 Search Doctrine
+OP-009 Search Doctrine
+# OP-009 Search Doctrine
 ### THE THIRD PLACE Search Philosophy & Research Methodology
 
-**Document ID:** TM-005  
-**Version:** 2.1  
+**Document ID:** OP-009  
+**Version:** 2.2  
 **Status:** Official  
-**Category:** TM (THE THIRD PLACE Management)
+**Category:** OP (Operation — Definition)
 
 ---
 
@@ -15,6 +15,7 @@ TM-005 Search Doctrine
 |----------|------|-------------|
 | 2.0 | — | 旧バージョン。正確な公開日は未記録。 |
 | 2.1 | 2026-09-07 | TM-005とPX-003 Vigil Protocolがもともと1つの文書であり、後に方法論（TM-005）と実行（PX-003）へ分割されたことを記す「Origin」サブセクションを追加。調査方法論そのものの内容変更は無し。 |
+| 2.2 | 2026-09-19 | プロジェクト全体の文書番号再編に伴い、TM-005からOP-009へ番号を変更。本文中のPX-003・TM-001・TM-002参照をCZ-002・KN-001・KN-004へ更新。調査方法論そのものの内容変更は無し。 |
 
 ---
 
@@ -28,7 +29,7 @@ Search Doctrineは、THE THIRD PLACE内の調査を統括する思想・方法�
 
 その目的は、情報がどのように発見・評価・解釈され、知識へと変換されるべきかを定義することである。
 
-運用上の実行は、別途**PX-003 Vigil Protocol**が管轄する。
+運用上の実行は、別途**CZ-002 Vigil Protocol**が管轄する。
 
 Search Doctrineは、THE THIRD PLACE全体で行われるすべての検索が、実行方法にかかわらず一貫した知的枠組みに従うことを保証する。
 
@@ -36,13 +37,13 @@ Search Doctrineは、THE THIRD PLACE全体で行われるすべての検索が�
 
 ## Origin
 
-TM-005とPX-003 Vigil Protocolは、もともと1つの文書であった。
+OP-009とCZ-002 Vigil Protocolは、もともと1つの文書であった（旧ID：TM-005とPX-003）。
 
 方法論と実行をそれぞれ独立して管理・更新できるよう、後に分割された。
 
-TM-005は**調査がどう考えるべきか**を担う。
+OP-009は**調査がどう考えるべきか**を担う。
 
-PX-003は**調査がどう実行されるか**を担う。
+CZ-002は**調査がどう実行されるか**を担う。
 
 ---
 
@@ -228,7 +229,7 @@ AIには、情報ノイズを取り除きながら、意味のある変化を認
 
 マーケットプレイス調査は、入手可否や市場動向の観測を支える。
 
-優先順位は、PX-003 Vigil Protocolによって運用上定義される。
+優先順位は、CZ-002 Vigil Protocolによって運用上定義される。
 
 代表的なマーケットプレイス:
 
@@ -358,7 +359,7 @@ AIには、情報ノイズを取り除きながら、意味のある変化を認
 優先度は、発信量ではなく実務上の重要性によって決定する。
 
 | Priority | Type | Description |
-|----------|------|-------------|
+|----------|------|--------------|
 | ★★★★★ | New Product | 新たに発表された製品 |
 | ★★★★★ | Restock | 製品が再入荷した |
 | ★★★★★ | Reservation | 予約が開始された |
@@ -388,16 +389,16 @@ Start（開始）
 
 ↓
 
-Read TM-005 Search Doctrine（TM-005 Search Doctrineを読む）
+Read OP-009 Search Doctrine（OP-009 Search Doctrineを読む）
 
 ↓
 
-Read PX-003 Vigil Protocol（PX-003 Vigil Protocolを読む）
+Read CZ-002 Vigil Protocol（CZ-002 Vigil Protocolを読む）
 
 ↓
 
 Load Active Watch List（有効なWatch Listを読み込む）
-(from PX-003)
+(from CZ-002)
 
 ↓
 
@@ -417,7 +418,7 @@ Normalize Information（情報を正規化する）
 
 ↓
 
-Compare Against TM-001 Heritage Chronicle（TM-001 Heritage Chronicleと照合する）
+Compare Against KN-001 Heritage Chronicle（KN-001 Heritage Chronicleと照合する）
 
 ↓
 
@@ -433,7 +434,7 @@ Assign Priority（優先度を割り当てる）
 
 ↓
 
-Generate TM-002 Atelier Discovery（TM-002 Atelier Discoveryを生成する）
+Generate KN-004 Atelier Discovery（KN-004 Atelier Discoveryを生成する）
 
 ↓
 
@@ -441,20 +442,20 @@ Determine Historical Value（歴史的価値を判断する）
 
 ↓
 
-Update TM-001 Heritage Chronicle（TM-001 Heritage Chronicleを更新する）
+Update KN-001 Heritage Chronicle（KN-001 Heritage Chronicleを更新する）
 
 ↓
 
 End（終了）
 ```
 
-TM-005は思想を定義する。
+OP-009は思想を定義する。
 
-PX-003は運用上の実行を定義する。
+CZ-002は運用上の実行を定義する。
 
-TM-001は蓄積された知識を保存する。
+KN-001は蓄積された知識を保存する。
 
-TM-002は現在の発見を伝える。
+KN-004は現在の発見を伝える。
 
 ---
 
@@ -486,7 +487,7 @@ THE THIRD PLACE調査の主要な目的の一つは、変化を特定するこ�
 
 # X. Output Standard
 
-日々の調査は、**TM-002 Atelier Discovery**を生成する。
+日々の調査は、**KN-004 Atelier Discovery**を生成する。
 
 レポートには、通常以下を含めるべきである:
 
@@ -550,7 +551,7 @@ THE THIRD PLACE調査の主要な目的の一つは、変化を特定するこ�
 
 # XI. Heritage Chronicle Integration
 
-TM-001 Heritage Chronicleは、恒久的な歴史アーカイブとして機能する。
+KN-001 Heritage Chronicleは、恒久的な歴史アーカイブとして機能する。
 
 各調査サイクルの後、AIは、新たに検証された情報が長期保存に値するかを判断する。
 
@@ -617,13 +618,13 @@ New Observation（新たな観測）
 
 # XIII. Search Configuration
 
-検索対象は、もっぱら**PX-003 Vigil Protocol**内で管理する。
+検索対象は、もっぱら**CZ-002 Vigil Protocol**内で管理する。
 
-TM-005は、調査の思想と方法論を定義する。
+OP-009は、調査の思想と方法論を定義する。
 
-PX-003は、運用上の実行、マーケットプレイスの優先順位、検索キーワード、および有効なWatch Listを定義する。
+CZ-002は、運用上の実行、マーケットプレイスの優先順位、検索キーワード、および有効なWatch Listを定義する。
 
-したがって、監視対象製品の変更は、PX-003内でのみ行う。
+したがって、監視対象製品の変更は、CZ-002内でのみ行う。
 
 この分離により、調査の思想は安定を保ちながら、運用上の対象は独立して進化できる。
 
@@ -662,43 +663,43 @@ Search Doctrineは、生きた文書である。
 - 実用性
 - 長期的な保守性
 
-運用上の調整はPX-003に属する。
+運用上の調整はCZ-002に属する。
 
-方法論上の調整はTM-005に属する。
+方法論上の調整はOP-009に属する。
 
 ---
 
 # XVI. Relationship with Other Documents
 
 ```text
-PX-003 Vigil Protocol
+CZ-002 Vigil Protocol
         │
         │ 検索を実行
         ▼
 Web Research
         │
         ▼
-TM-005 Search Doctrine
+OP-009 Search Doctrine
 （方法論・思想）
         │
         ▼
 Difference Analysis
         │
         ▼
-TM-002 Atelier Discovery
+KN-004 Atelier Discovery
 （日次インテリジェンスレポート）
         │
         ▼
-TM-001 Heritage Chronicle
+KN-001 Heritage Chronicle
 （長期知識アーカイブ）
 ```
 
 各文書は明確な責任を持つ。
 
-- TM-005は**調査がどう考えるべきか**を定義する。
-- PX-003は**調査がどう実行されるか**を定義する。
-- TM-002は現在のインテリジェンスを伝える。
-- TM-001は蓄積された知識を保存する。
+- OP-009は**調査がどう考えるべきか**を定義する。
+- CZ-002は**調査がどう実行されるか**を定義する。
+- KN-004は現在のインテリジェンスを伝える。
+- KN-001は蓄積された知識を保存する。
 
 これらが合わさり、観測・解釈・報告・保存の継続的なサイクルを確立する。
 
@@ -738,13 +739,14 @@ TM-001 Heritage Chronicle
 
 | Item | Value |
 |------|-------|
-| Document ID | TM-005 |
+| Document ID | OP-009 |
 | Title | Search Doctrine |
 | Framework | THE THIRD PLACE |
-| Category | TM |
-| Version | 2.1 |
+| Category | OP |
+| Version | 2.2 |
 | Status | Official |
 | Language | Japanese |
 | Maintainer | THE THIRD PLACE |
-| Related Documents | PX-003 Vigil Protocol / TM-001 Heritage Chronicle / TM-002 Atelier Discovery |
-| Last Revised | Version 2.1 |
+| Related Documents | CZ-002 Vigil Protocol / KN-001 Heritage Chronicle / KN-004 Atelier Discovery |
+| Last Revised | Version 2.2 |
+| Former ID | TM-005 |

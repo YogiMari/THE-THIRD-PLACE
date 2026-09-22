@@ -1,5 +1,5 @@
-TM-004 Cultural Pantheon
-# TM-004 Cultural Pantheon
+KN-002 Cultural Pantheon
+# KN-002 Cultural Pantheon
 ## Ver.1.2
 
 *(旧題: Cultural Reference。Ver.1.1にて "Cultural Pantheon" へ改題。評価基準・Tier構成・本文内容に変更は無い。)*
@@ -1913,13 +1913,13 @@ Status、
 
 Priorityなどは、
 
-TP-004 Equipment Registryを参照する。
+MD-004 Equipment Registryを参照する。
 
 ---
 
 ## Relationship with TP Documents
 
-### TP-002 Design Bible
+### OP-002 Design Bible
 
 美しさの基準を定義する。
 
@@ -1929,7 +1929,7 @@ TP-004 Equipment Registryを参照する。
 
 ---
 
-### TP-004 Equipment Registry
+### MD-004 Equipment Registry
 
 所有物を管理する。
 
@@ -1939,7 +1939,7 @@ TP-004 Equipment Registryを参照する。
 
 ---
 
-### TP-005 Acquisition Strategy
+### OP-005 Acquisition Strategy
 
 取得戦略を管理する。
 
@@ -1949,7 +1949,7 @@ TP-004 Equipment Registryを参照する。
 
 ---
 
-### TP-008 Affinity Lexicon
+### OP-003 Affinity Lexicon
 
 「好き」を語彙化する。
 
@@ -1959,7 +1959,7 @@ TP-004 Equipment Registryを参照する。
 
 ---
 
-### TP-009 Aesthetic Grammar
+### OP-004 Aesthetic Grammar
 
 美しさの法則を定義する。
 
@@ -3989,7 +3989,7 @@ THE THIRD PLACEという文化である。
 
 **End of Document**
 
-**TM-004 Cultural Pantheon Ver.1.2**
+**KN-002 Cultural Pantheon Ver.1.2**
 
 # Appendix
 
@@ -4099,19 +4099,19 @@ THE THIRD PLACEでは、
 
 以下のTP文書を補完する。
 
-- TP-002 Design Bible
-- TP-004 Equipment Registry
-- TP-005 Acquisition Strategy
-- TP-008 Affinity Lexicon
-- TP-009 Aesthetic Grammar
+- OP-002 Design Bible
+- MD-004 Equipment Registry
+- OP-005 Acquisition Strategy
+- OP-003 Affinity Lexicon
+- OP-004 Aesthetic Grammar
 
 TMシリーズでは、
 
 以下と連携する。
 
-- TM-001 Heritage Chronicle
-- TM-002 Atelier Discovery
-- TM-003 Beyond Journey
+- KN-001 Heritage Chronicle
+- KN-004 Atelier Discovery
+- KN-003 Beyond Journey
 
 ---
 
@@ -4143,7 +4143,7 @@ Projectの文化的資産として蓄積していく。
 
 **Document Status**
 
-**TM-004 Cultural Pantheon**
+**KN-002 Cultural Pantheon**
 
 **Version 1.2**
 
@@ -4162,6 +4162,12 @@ THE THIRD PLACEが歩み続ける文化の地図として、
 
 ---
 
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TM-004からKN-002へ番号を変更した。「E. Documentation Relationship」内の他文書参照（TP-002・TP-004・TP-005・TP-008・TP-009・TM-001〜003）および自己ID表記を新ID体系へ更新した。内容（Ver.1.2）に変更はない。旧ID: TM-004。
+
+---
+
 **End of Document**
 
-**TM-004 Cultural Pantheon Ver.1.2**
+**KN-002 Cultural Pantheon Ver.1.2**

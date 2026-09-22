@@ -1,4 +1,4 @@
-# TP-000 THE THIRD PLACE Original
+# DS-001 THE THIRD PLACE Original
 ## Version 1.0
 
 > Original Source of Truth
@@ -3136,3 +3136,9 @@ THE THIRD PLACE の
 **THE THIRD PLACE Original**
 
 **Version 1.0**
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TP-000からDS-001へ番号を変更した。内容・版数（Version 1.0）に変更はない。旧ID: TP-000。

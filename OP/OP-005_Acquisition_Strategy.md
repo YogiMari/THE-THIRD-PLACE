@@ -1,7 +1,15 @@
-TP-005 Acquisition Strategy
-# TP-005
+OP-005 Acquisition Strategy
+# OP-005
 # Acquisition Strategy
-## Ver.1.1
+## Ver.1.2
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 1.2 | 2026-09-20 | MD-004 の Status 体系（Essential / Candidate / Upgrade）に合わせ、Relationship の購入対象Statusの記述を「Must Buy または Candidate」から「Essential・Candidate・Upgrade」へ修正。Acquisition Priority（Must Buy / High / Medium / Low）は取得優先度の区分であり、変更なし。 |
 
 ---
 
@@ -43,7 +51,7 @@ Acquisition Strategy は
 
 本書は、
 
-TP-004 Equipment Registry Object Reference
+MD-004 Equipment Registry Object Reference
 
 を唯一の参照元とする。
 
@@ -53,13 +61,9 @@ Equipment Registry の
 
 Status が
 
-Must Buy
+Essential・Candidate・Upgrade
 
-または
-
-Candidate
-
-となっている Equipment のみとする。
+のいずれかとなっている Equipment のみとする。
 
 Equipment 情報を
 
@@ -316,18 +320,18 @@ THE THIRD PLACE Core Documents の
 
 | Document | Responsibility |
 |-----------|----------------|
-| TP-000 Original | プロジェクトの原典 |
-| TP-001 Constitution | プロジェクト全体の憲章 |
-| TP-002 Design Bible | 設計思想 |
-| TP-003 Field Atlas | 舞台の設計 |
-| TP-004 Equipment Registry | Equipment の唯一のマスターデータ |
-| **TP-005 Acquisition Strategy** | Equipment を迎える戦略 |
-| TP-006 Foundation Compass | Foundation を構成・維持するための指針 |
-| TP-007 Habitat Architecture | フィールドで完成する暮らしの設計 |
-| TP-008 Affinity Lexicon | 好み・美意識・親和性の語彙 |
-| TP-009 Aesthetic Grammar | 美しさを構成する法則 |
-| TP-010 Storage Blueprint | 収納設計・運用 |
-| TP-011 Galley Fare | キッチン機材の独立マスターデータ |
+| DS-001 THE THIRD PLACE Original | プロジェクトの原典 |
+| OP-001 Constitution | プロジェクト全体の憲章 |
+| OP-002 Design Bible | 設計思想 |
+| MD-002 Field Atlas | 舞台の設計 |
+| MD-004 Equipment Registry | Equipment の唯一のマスターデータ |
+| **OP-005 Acquisition Strategy** | Equipment を迎える戦略 |
+| OP-006 Foundation Compass | Foundation を構成・維持するための指針 |
+| OP-007 Habitat Architecture | フィールドで完成する暮らしの設計 |
+| OP-003 Affinity Lexicon | 好み・美意識・親和性の語彙 |
+| OP-004 Aesthetic Grammar | 美しさを構成する法則 |
+| MD-001 Storage Blueprint | 収納設計・運用 |
+| MD-003 Galley Fare | キッチン機材の独立マスターデータ |
 
 Acquisition Strategy は、
 
@@ -343,7 +347,7 @@ Equipment の詳細情報は保持しない。
 
 Equipment の情報は、
 
-TP-004 Equipment Registry Object Reference
+MD-004 Equipment Registry Object Reference
 
 のみが保持する。
 
@@ -378,3 +382,9 @@ Acquisition Strategy は、
 > **Every acquisition is a design decision.**
 
 **「すべての迎え入れは、デザイン上の意思決定である。」**
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TP-005からOP-005へ番号を変更した。本文中の他文書参照（Equipment Registry等）および「Relationship to Other Core Documents」表を新ID体系へ更新した。内容（Ver.1.1）に変更はない。旧ID: TP-005。

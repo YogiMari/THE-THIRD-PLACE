@@ -1,8 +1,8 @@
-TP-001 THE THIRD PLACE Constitution  
+OP-001 THE THIRD PLACE Constitution  
   
   
 # THE THIRD PLACE Constitution  
-## Ver.4.3  
+## Ver.5.0  
   
 ---  
   
@@ -41,6 +41,12 @@ AI運用、
 GitHub運用、  
   
 すべての最上位原則を定義する。  
+  
+なお、DS-001 THE THIRD PLACE Originalは、本プロジェクトに先立って存在する、不変の思想的原典である。  
+  
+THE THIRD PLACEというプロジェクトそのもの——Document Architecture、Governance、運用体系——は、本Constitution（OP-001）から始まる。  
+  
+DS-001の位置づけについては、§13.0にて定義する。  
   
 ---  
   
@@ -667,6 +673,9 @@ THE THIRD PLACEは、
 THE THIRD PLACEにおける情報階層を以下と定義する。  
   
 ```text  
+DS-001 THE THIRD PLACE Original（不変の原典・Document Architecture外）  
+　　　　↓  
+  
 THE THIRD PLACE Constitution  
 　　　　↓  
   
@@ -703,11 +712,19 @@ Knowledge Documents
 Operational Records  
 ```  
   
+DS-001は、Document Architectureの通常の階層（上位文書が下位文書を規定する構造）の外側に位置する不変の原典である。  
+  
+Constitution以下の各文書は、DS-001に記された原理を現実世界へ実装するために存在するが、  
+  
+DS-001そのものは、この階層構造の一部として更新・管理されるものではない。  
+  
 情報は常に上位文書を優先する。  
   
 下位文書は、  
   
 上位文書を変更する権限を持たない。  
+  
+本図が示す「設計・思想」の階層構造は、2026-09-19付の文書番号再編（§27参照）以降も、DS／OP／記録（DB・MD・BR・CZ・KN）という新しい系列分類と両立する。本図は情報の重み付け（何が何に優先するか）を示すものであり、系列分類は文書の可変性の度合い（絶対不変・定義・可変）を示すものである。両者は異なる軸である。  
   
 ---  
   
@@ -732,6 +749,28 @@ Single Source of Truth（SSOT）を採用する。
 THE THIRD PLACE全体の正式文書は、  
   
 GitHub Repositoryによって管理される。  
+  
+---  
+  
+## 13.0 DS-001 THE THIRD PLACE Original  
+  
+管理対象  
+  
+・Human Principlesの原典的記述（Recognition、Identity、Human Blueprint、Axioms、Principles、Decision Flow、Expression）  
+  
+・THE THIRD PLACEという概念そのものの起源  
+  
+DS-001は、THE THIRD PLACEプロジェクトに先立って存在する、不変の思想的原典である。  
+  
+本Constitution §3 Human Principlesは、DS-001に記された原理を、プロジェクト運営のための条文として再定義したものであり、DS-001そのものを置き換えるものではない。  
+  
+DS-001は、他の文書と異なり、Project Ledgerを通じた通常の意思決定プロセスによる改訂を前提としない。  
+  
+改訂されるのは、既存の原理では説明できない新しい真実が、人生を通して現れた場合に限る。  
+  
+THE THIRD PLACEプロジェクト——Document Architecture、Governance、運用体系——は、本Constitution（OP-001）から始まる。  
+  
+DS-001は、そのプロジェクトの根拠となる原典として、Document Architectureの外側かつ最上流に位置する。  
   
 ---  
   
@@ -847,7 +886,7 @@ Human Principlesとの美意識的整合を条件とする所有物の、
   
 調理の機能的必然性に基づくキッチン機材は、  
   
-TP-011 Galley Fareが独立して管理する。  
+MD-003 Galley Fareが独立して管理する。  
   
 ---  
   
@@ -891,7 +930,7 @@ Equipmentの詳細情報は保持しない。
   
 Containerごとの具体的な役割・固定収納物は、  
   
-TP-010 Storage Blueprintが管理する。  
+MD-001 Storage Blueprintが管理する。  
   
 本書では重複して記載しない。  
   
@@ -1129,7 +1168,7 @@ Equipment情報を保持しない。
   
 監視対象（Watch List）・調査キーワード自体は、  
   
-PX-003 Vigil Protocolが管理する。  
+CZ-002 Vigil Protocolが管理する。  
   
 # 14. Document Relationships  
   
@@ -1632,39 +1671,50 @@ GitHubパス修正。
   
 THE THIRD PLACEの正式Repository構成を以下と定義する。  
   
+2026-09-19付の文書番号再編（§27参照）により、フォルダ構成をTP／PX／TMの3系列から、DS／OP／記録（DB・MD・BR・CZ・KN）の系列へ再編した。  
+  
 ```text  
 THE-THIRD-PLACE/  
   
 README.md  
   
-TP/  
-    TP-000 Original  
-    TP-001 Constitution  
-    TP-002 Design Bible  
-    TP-003 Field Atlas Landscape Framework  
-    TP-004 Equipment Registry Object Reference  
-    TP-005 Acquisition Strategy  
-    TP-006 Foundation Compass  
-    TP-007 Habitat Architecture  
-    TP-008 Affinity Lexicon  
-    TP-009 Aesthetic Grammar  
-    TP-010 Storage Blueprint  
-    TP-011 Galley Fare  
+DS/  
+    DS-001 Original  
   
-PX/  
-    PX-001 Documentation System  
-    PX-002 Project Ledger  
-    PX-003 Vigil Protocol  
-    PX-004 Barista Codex  
-    PX-005 Acquisition Handbook  
-    PX-006 Brew Care  
+OP/  
+    OP-001 Constitution  
+    OP-002 Design Bible  
+    OP-003 Affinity Lexicon  
+    OP-004 Aesthetic Grammar  
+    OP-005 Acquisition Strategy  
+    OP-006 Foundation Compass  
+    OP-007 Habitat Architecture  
+    OP-008 Documentation System  
+    OP-009 Search Doctrine  
   
-TM/  
-    TM-001 Heritage Chronicle  
-    TM-002 Atelier Discovery  
-    TM-003 Beyond Journey  
-    TM-004 Cultural Pantheon  
-    TM-005 Search Doctrine  
+DB/  
+    DB-001 Project Ledger  
+  
+MD/  
+    MD-001 Storage Blueprint  
+    MD-002 Field Atlas Landscape Framework  
+    MD-003 Galley Fare  
+    MD-004 Equipment Registry Object Reference  
+  
+BR/  
+    BR-001 Brew Care  
+    BR-002 Barista Codex  
+    BR-003 Acquisition Handbook  
+  
+CZ/  
+    CZ-001 Deliberation Codex  
+    CZ-002 Vigil Protocol  
+  
+KN/  
+    KN-001 Heritage Chronicle  
+    KN-002 Cultural Pantheon  
+    KN-003 Beyond Journey  
+    KN-004 Atelier Discovery  
   
 assets/  
     banner.PNG  
@@ -1802,6 +1852,64 @@ Discovery／ChronicleをAtelier Discovery／Heritage Chronicleへ正式名称化
 Aesthetic Grammar（13.11）、Cultural Pantheon（13.17）、Search Doctrine（13.18）の  
   
 管理対象定義を新設し、全18文書の管理対象を§13で網羅した。  
+  
+---  
+  
+### Ver.4.4  
+  
+MARI様のご指示に基づき、TP-000 THE THIRD PLACE OriginalをConstitutionの文書体系へ正式に位置づけた。  
+  
+Preambleへ、TP-000が本プロジェクトに先立つ不変の思想的原典であり、  
+  
+THE THIRD PLACEプロジェクトそのものは本Constitution（TP-001）から始まる旨を明記。  
+  
+Information Hierarchy（§12）の図へ、TP-000をDocument Architectureの外側かつ最上流に位置する存在として追加し、  
+  
+その位置づけを補足する説明文を追加。  
+  
+§13にTP-000の管理対象を定義する新セクション「13.0 TP-000 Original」を新設（既存の13.1〜13.18の番号は変更せず維持）。  
+  
+これにより、Constitution自身が定義するDocument ArchitectureからTP-000が欠落していた状態を解消した。  
+  
+---  
+  
+### Ver.5.0  
+  
+MARI様のご指示に基づき、プロジェクト全体の文書番号体系を抜本的に再編した（Major Version：Document Architecture変更）。  
+  
+再編の趣旨は、「設計・運用・記録」という既存の3分類を、内容の可変性の度合いによって再定義することである。  
+  
+**設計（DS）**＝絶対不変。改訂は、既存の原理では説明できない新しい真実が現れた場合に限る。DS-001のみ。  
+  
+**運用（OP）**＝定義。思想・規則・法則そのものを扱い、Versionは上がるが個別データの入れ替えは伴わない。OP-001〜OP-009。  
+  
+**記録**＝可変。品目・価格・Status・会話履歴など、中身のデータが日常的に入れ替わる。記録はさらに4区分へ細分化した——  
+  
+　・Dashboard（DB-001）：運用管理そのもの  
+  
+　・Master Data（MD-001〜MD-004）：所有物・場所の台帳  
+  
+　・Barista（BR-001〜BR-003）：コーヒー機材の意思決定・調達・手入れという独立系統  
+  
+　・Cross-Zone Ops（CZ-001〜CZ-002）：コーヒー以外のゾーンの検討・市場監視  
+  
+　・Knowledge（KN-001〜KN-004）：知の蓄積・文化アーカイブ  
+  
+新旧ID対応は以下の通り：TP-000→DS-001、TP-001→OP-001、TP-002→OP-002、TP-008→OP-003、TP-009→OP-004、TP-005→OP-005、TP-006→OP-006、TP-007→OP-007、PX-001→OP-008、TM-005→OP-009、PX-002→DB-001、TP-010→MD-001、TP-003→MD-002、TP-011→MD-003、TP-004→MD-004、PX-006→BR-001、PX-004→BR-002、PX-005→BR-003、PX-007→CZ-001、PX-003→CZ-002、TM-001→KN-001、TM-004→KN-002、TM-003→KN-003、TM-002→KN-004。  
+  
+本文書自身をTP-001からOP-001へ改名し、Preamble・§12・§13.0・§13.6・§13.8・§13.18内の相互参照、およびAppendix B Repository Architectureを新ID・新フォルダ構成へ更新した。上記Ver.4.3以前のVersion Historyは、当時実際に使用されていた旧IDのまま、歴史的記録として保持する（§27参照）。  
+  
+---  
+  
+# 27. Document Renumbering Policy  
+  
+2026-09-19付で、プロジェクト全体の文書番号を再編した。これは正式なBaseline変更であり、旧番号体系（TP／PX／TM）への回帰を前提としない。  
+  
+再編の背景として、PX-001 Documentation System §11には「文書公開後は、Document IDを変更してはならない」という原則があった。本再編は、プロジェクトオーナー自身による意図的なDocument Architecture変更として、この原則を正式に上書きするものである。うっかりした変更ではなく、意図された方針転換として記録する。  
+  
+新ID体系のもとでも、PX-001（新ID：OP-008）§11の「文書公開後はDocument IDを変更しない」という原則自体は、再編完了後の運用に対しては引き続き有効とする。  
+  
+新旧ID対応表はAppendix C Ver.5.0の記載を正式な参照先とする。  
   
 ---  
   

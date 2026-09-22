@@ -1,4 +1,4 @@
-TP-002 Design Bible Ver.5.0
+OP-002 Design Bible Ver.5.0
 # THE THIRD PLACE Design Bible
 ## Ver.5.0 Official Complete Edition
 
@@ -1117,7 +1117,7 @@ Single Source of Truthを維持する。
 
 # Documentation Architecture（文書体系）
 
-## TP-001
+## OP-001
 
 ### THE THIRD PLACE Constitution（憲章）
 
@@ -1133,7 +1133,7 @@ Single Source of Truthを維持する。
 
 ---
 
-## TP-002
+## OP-002
 
 ### THE THIRD PLACE Design Bible（デザインバイブル）
 
@@ -1151,7 +1151,7 @@ THE THIRD PLACEの根幹となる文書。
 
 ---
 
-## TP-003
+## MD-002
 
 ### Field Atlas（フィールドアトラス）
 
@@ -1171,7 +1171,7 @@ THE THIRD PLACEの根幹となる文書。
 
 ---
 
-## TP-004
+## MD-004
 
 ### Equipment Registry Object Reference（所有物マスター）
 
@@ -1197,7 +1197,7 @@ Equipment情報は、
 
 ---
 
-## TP-005
+## OP-005
 
 ### Acquisition Strategy（取得戦略）
 
@@ -1213,7 +1213,7 @@ Must Buy管理。
 
 ---
 
-## TP-006
+## OP-006
 
 ### Foundation Compass（価値基準）
 
@@ -1227,7 +1227,7 @@ Design Compass。
 
 ---
 
-## TP-007
+## OP-007
 
 ### Habitat Architecture（空間設計）
 
@@ -1245,7 +1245,7 @@ Design Compass。
 
 ---
 
-## TP-008
+## OP-003
 
 ### Affinity Lexicon（嗜好辞典）
 
@@ -1265,7 +1265,7 @@ Design Taste。
 
 ---
 
-## TP-009
+## OP-004
 
 ### Aesthetic Grammar（美意識文法）
 
@@ -1275,7 +1275,7 @@ Design Languageを補完する文書。
 
 ---
 
-## TP-010
+## MD-001
 
 ### Storage Blueprint（収納設計）
 
@@ -1293,7 +1293,7 @@ Design Languageを補完する文書。
 
 ---
 
-## TP-011
+## MD-003
 
 ### Galley Fare（キッチン機材台帳）
 
@@ -1305,7 +1305,7 @@ Equipment Registryとは独立した評価軸を持つ。
 
 # Editorial Series（刊行物）
 
-## TM-001
+## KN-001
 
 ### Heritage Chronicle（クロニクル）
 
@@ -1317,7 +1317,7 @@ Equipment Registryとは独立した評価軸を持つ。
 
 ---
 
-## TM-002
+## KN-004
 
 ### Atelier Discovery（ディスカバリー）
 
@@ -1331,7 +1331,7 @@ Equipment Registryとは独立した評価軸を持つ。
 
 ---
 
-## TM-003
+## KN-003
 
 ### Beyond Journey（ジャーニー）
 
@@ -1343,7 +1343,7 @@ Equipment Registryとは独立した評価軸を持つ。
 
 ---
 
-## TM-004
+## KN-002
 
 ### Cultural Pantheon（カルチュラル・パンテオン）
 
@@ -1353,7 +1353,7 @@ Equipment Registryとは独立した評価軸を持つ。
 
 ---
 
-## TM-005
+## OP-009
 
 ### Search Doctrine（サーチ・ドクトリン）
 
@@ -1966,3 +1966,9 @@ THE THIRD PLACEは、
 **Ver.5.0 Official Complete Edition**
 
 **End of Document**
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TP-002からOP-002へ番号を変更した。Documentation ArchitectureおよびEditorial Series（文書体系一覧）内の各文書IDを新ID体系へ更新した。内容・版数（Ver.5.0 Official Complete Edition）に変更はない。旧ID: TP-002。

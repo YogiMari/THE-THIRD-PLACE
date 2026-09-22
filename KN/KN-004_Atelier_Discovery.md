@@ -1,5 +1,5 @@
-TM-002 Atelier Discovery
-# TM-002 Atelier Discovery
+KN-004 Atelier Discovery
+# KN-004 Atelier Discovery
 
 ## Purpose
 
@@ -250,7 +250,7 @@ Projectの購入判断を支援する。
 
 ## Must Buy Watch
 
-TP-005 Acquisition Strategy に登録された
+OP-005 Acquisition Strategy に登録された
 
 Must Buy Item を継続監視する。
 
@@ -342,10 +342,10 @@ Discoveryで得られた情報は、
 
 必要に応じて
 
-- TP-005 Acquisition Strategy
-- TP-004 Equipment Registry
-- TM-001 Heritage Chronicle
-- TM-003 Beyond Journey
+- OP-005 Acquisition Strategy
+- MD-004 Equipment Registry
+- KN-001 Heritage Chronicle
+- KN-003 Beyond Journey
 
 へ反映される。
 
@@ -416,6 +416,12 @@ Projectへ届けるために存在する。
 現在を知ることは、
 
 未来を育てる第一歩である。
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TM-002からKN-004へ番号を変更した。Editorial Rules及びMust Buy Watch内の他文書参照を新ID体系へ更新した。その他の内容に変更はない。旧ID: TM-002。
 
 ---
 
