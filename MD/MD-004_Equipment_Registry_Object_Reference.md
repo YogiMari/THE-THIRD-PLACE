@@ -1061,7 +1061,7 @@ Carrying Case（EXTENMON TABLE用）
 
 **Brand**  
 
-DEVISE WORKS × WHAT WE WANT  
+TENt o TEN  
 
 **Product**  
 
@@ -1128,8 +1128,44 @@ Side Table
 ¥66,000  
 
 ---  
+---
 
-## FUR-027  
+## FUR-027
+
+**Brand**
+
+WHAT WE WANT
+
+**Product**
+
+WWW_KAZARITANA
+
+**Status**
+
+Owned
+
+### Color
+
+Brown / Dark Brown
+
+### Material
+
+Oak / Walnut
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Nesting Table
+
+### Price
+
+¥35,000
+
+
+## FUR-028  
 
 **Brand**  
 
@@ -1165,7 +1201,7 @@ Inflatable Sofa
 
 ---  
 
-## FUR-028  
+## FUR-029  
 
 **Brand**  
 
@@ -1201,7 +1237,7 @@ Inflatable Bed
 
 ---  
 
-## FUR-029  
+## FUR-030  
 
 **Brand**  
 
@@ -1233,7 +1269,7 @@ Table Unit Stand
 
 ---  
 
-## FUR-030  
+## FUR-031  
 
 **Brand**  
 
@@ -1265,7 +1301,7 @@ Hanger Rack
 
 ---  
 
-## FUR-031  
+## FUR-032  
 
 **Brand**  
 
@@ -1297,7 +1333,7 @@ None
 
 ### Industrial Attribute  
 
-Quilt & Sleeping Mat Set（関東〜雪中入門用、快適温度2℃・下限温度-4℃。掛け布団+コンパクトワイドマット（R値5.4・ASTM F3340-22準拠、2枚連結使用）のセット販売のため、旧FUR-021単体マット登録は本IDへ統合。FUR-032系との併用時はマット部が本格雪中用の主断熱層としても使用）  
+Quilt & Sleeping Mat Set（関東〜雪中入門用、快適温度2℃・下限温度-4℃。掛け布団+コンパクトワイドマット（R値5.4・ASTM F3340-22準拠、2枚連結使用）のセット販売のため、旧FUR-021単体マット登録は本IDへ統合。FUR-033系との併用時はマット部が本格雪中用の主断熱層としても使用）  
 
 ### Price  
 
@@ -1305,7 +1341,7 @@ Quilt & Sleeping Mat Set（関東〜雪中入門用、快適温度2℃・下限�
 
 ---  
 
-## FUR-032  
+## FUR-033  
 
 **Brand**  
 
@@ -1329,11 +1365,11 @@ Down（Full Custom Order）
 
 ### Industrial Attribute  
 
-Quilt（本格雪中用トップキルト。バックレス構造につきFUR-031（マット部）・FUR-033との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
+Quilt（本格雪中用トップキルト。バックレス構造につきFUR-032（マット部）・FUR-034との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
 
 ---  
 
-## FUR-033  
+## FUR-034  
 
 **Brand**  
 
@@ -1357,11 +1393,11 @@ Closed-Cell Foam
 
 ### Industrial Attribute  
 
-Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-031（マット部）の下に重ね敷きする想定）  
+Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-032（マット部）の下に重ね敷きする想定）  
 
 ---  
 
-## FUR-034  
+## FUR-035  
 
 **Brand**  
 
@@ -1385,7 +1421,7 @@ Unconfirmed
 
 ### Industrial Attribute  
 
-Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-031（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
+Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-032（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
 
 ---  
 # Light  
@@ -2960,38 +2996,6 @@ Vacant ID. Reserved for a fourth hanging-type Airlight shade, not yet identified
 
 ---  
 
-## LGT-041  
-
-**Brand**  
-
-Unconfirmed  
-
-**Product**  
-
-Unconfirmed  
-
-**Status**  
-
-Candidate  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Walnut  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Portable LED Lantern（検討中。具体的な候補情報はCZ-001 Deliberation Codexで管理）  
-
----  
-
 ## LGT-042  
 
 **Brand**  
@@ -4040,8 +4044,7 @@ Grip Custom
 
 **Brand**  
 
-BALLISTICS  
-
+BALLISTICS INDUSTRIES
 **Product**  
 
 SHELCON LEG 25  
@@ -4271,8 +4274,7 @@ Grip Custom
 
 **Brand**  
 
-LOCKFIELD EQUIPMENT × BALLISTIC  
-
+LOCKFIELD EQUIPMENT × BALLISTICS INDUSTRIES
 **Product**  
 
 SHELCON LEG 25  
@@ -4319,8 +4321,8 @@ Owned
 
 ### Child Components  
 
-- STR-013a  
 - STR-014  
+- STR-015  
 
 ### Color  
 
@@ -4340,7 +4342,7 @@ Modular Storage（Kitchen）
 
 ---  
 
-## STR-014  
+## STR-015  
 
 **Brand**  
 
@@ -4376,7 +4378,7 @@ Oak
 
 ---  
 
-## STR-015  
+## STR-016  
 
 **Brand**  
 
@@ -4392,8 +4394,8 @@ Owned
 
 ### Child Components  
 
-- STR-015a  
-- STR-016  
+- STR-017  
+- STR-018  
 
 ### Color  
 
@@ -4413,7 +4415,7 @@ Modular Storage（Coffee & Table Components）
 
 ---  
 
-## STR-016  
+## STR-018  
 
 **Brand**  
 
@@ -4425,7 +4427,7 @@ Wood Board（Walnut）
 
 **Parent**  
 
-STR-015  
+STR-016  
 
 ### Status  
 
@@ -4449,7 +4451,7 @@ Walnut
 
 ---  
 
-## STR-017  
+## STR-019  
 
 **Brand**  
 
@@ -4465,8 +4467,8 @@ Owned
 
 ### Child Components  
 
-- STR-018  
-- STR-019  
+- STR-020  
+- STR-021  
 
 ### Color  
 
@@ -4482,7 +4484,7 @@ Black Skin Iron
 
 ---  
 
-## STR-018  
+## STR-020  
 
 **Brand**  
 
@@ -4494,7 +4496,7 @@ Wood Board（Walnut）
 
 **Parent**  
 
-STR-017  
+STR-019  
 
 ### Status  
 
@@ -4518,7 +4520,7 @@ Walnut
 
 ---  
 
-## STR-019  
+## STR-021  
 
 **Brand**  
 
@@ -4530,7 +4532,7 @@ Butterfly Under Shelf
 
 **Parent**  
 
-STR-017  
+STR-019  
 
 ### Status  
 
@@ -4554,7 +4556,7 @@ Under Shelf
 
 ---  
 
-## STR-020  
+## STR-022  
 
 **Brand**  
 
@@ -4570,7 +4572,7 @@ Owned
 
 ### Child Components  
 
-- STR-021  
+- STR-023  
 
 ### Color  
 
@@ -4590,78 +4592,6 @@ Cooler
 
 ---  
 
-## STR-021  
-
-**Brand**  
-
-YETI  
-
-**Product**  
-
-YETI ICE 4 lb (1.8 kg)  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-STR-020  
-
-### Color  
-
-Blue  
-
-### Material  
-
-Plastic  
-
-### Industrial Attribute  
-
-Ice Pack (Hard)  
-
-### Price  
-
-¥6,160  
-
----  
-
-## STR-022  
-
-**Brand**  
-
-YETI  
-
-**Product**  
-
-Hopper Flip 12  
-
-**Status**  
-
-Owned  
-
-### Child Components  
-
-- STR-023  
-
-### Color  
-
-Black  
-
-### Material  
-
-DryHide Fabric  
-
-### Industrial Attribute  
-
-Soft Cooler  
-
-### Price  
-
-¥46,860  
-
----  
-
 ## STR-023  
 
 **Brand**  
@@ -4670,7 +4600,7 @@ YETI
 
 **Product**  
 
-YETI Thin Ice - Large  
+YETI ICE 4 lb (1.8 kg)  
 
 **Status**  
 
@@ -4690,6 +4620,78 @@ Plastic
 
 ### Industrial Attribute  
 
+Ice Pack (Hard)  
+
+### Price  
+
+¥6,160  
+
+---  
+
+## STR-024  
+
+**Brand**  
+
+YETI  
+
+**Product**  
+
+Hopper Flip 12  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- STR-025  
+
+### Color  
+
+Black  
+
+### Material  
+
+DryHide Fabric  
+
+### Industrial Attribute  
+
+Soft Cooler  
+
+### Price  
+
+¥46,860  
+
+---  
+
+## STR-025  
+
+**Brand**  
+
+YETI  
+
+**Product**  
+
+YETI Thin Ice - Large  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+STR-024  
+
+### Color  
+
+Blue  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
 Ice Pack (Soft, for Soft Cooler)  
 
 ### Price  
@@ -4698,7 +4700,7 @@ Ice Pack (Soft, for Soft Cooler)
 
 ---  
 
-## STR-024  
+## STR-026  
 
 **Brand**  
 
@@ -4714,7 +4716,7 @@ Owned
 
 ### Child Components  
 
-- STR-024a  
+- STR-026a  
 
 
 ### Color  
@@ -4735,7 +4737,7 @@ Insulated Jug (1.9L)
 
 ---  
 
-## STR-024a  
+## STR-026a  
 
 **Brand**  
 
@@ -4751,7 +4753,7 @@ Owned
 
 **Parent**  
 
-STR-024  
+STR-026  
 
 
 ### Color  
@@ -4764,7 +4766,7 @@ Oak / Stainless Steel
 
 ### Industrial Attribute  
 
-Jug Stand（STR-024用）  
+Jug Stand（STR-026用）  
 
 ### Price  
 
@@ -4772,7 +4774,7 @@ Jug Stand（STR-024用）
 
 ---  
 
-## STR-025  
+## STR-027  
 
 **Brand**  
 
@@ -4788,7 +4790,7 @@ Owned
 
 ### Child Components  
 
-- STR-026  
+- STR-028  
 
 ### Color  
 
@@ -4812,7 +4814,7 @@ Side Table（SKU: AN139。サイズ約38×31×45Hcm、重量約2850g、静耐荷
 
 ---  
 
-## STR-026  
+## STR-028  
 
 **Brand**  
 
@@ -4828,7 +4830,7 @@ Owned
 
 **Parent**  
 
-STR-025  
+STR-027  
 
 ### Color  
 
@@ -4852,7 +4854,7 @@ Dust Bucket（燃えないゴミ〈缶・ビン〉用。使用頻度が低いた
 
 ---  
 
-## STR-027  
+## STR-029  
 
 **Brand**  
 
@@ -4888,7 +4890,7 @@ Dust Bucket（燃えるゴミ用。本体はWINDY AND RAINY「Folding wire T-box
 
 ---  
 
-## STR-028  
+## STR-030  
 
 **Brand**  
 
@@ -4920,7 +4922,7 @@ Accessory Storage
 
 ---  
 
-## STR-029  
+## STR-031  
 
 **Brand**  
 
@@ -4952,7 +4954,7 @@ Consumables Storage
 
 ---  
 
-## STR-013a  
+## STR-014  
 
 **Brand**  
 
@@ -4965,11 +4967,6 @@ Black Stand
 **Status**  
 
 Owned  
-
-**Parent**  
-
-STR-013  
-
 
 ### Color  
 
@@ -4989,7 +4986,7 @@ Leg（Beck Container①用）
 
 ---  
 
-## STR-015a  
+## STR-017  
 
 **Brand**  
 
@@ -5002,11 +4999,6 @@ Black Stand
 **Status**  
 
 Owned  
-
-**Parent**  
-
-STR-015  
-
 
 ### Color  
 
@@ -5026,7 +5018,7 @@ Leg（Beck Container②用）
 
 ---  
 
-## STR-030  
+## STR-032  
 
 **Brand**  
 
@@ -6970,8 +6962,8 @@ STR-007
 └ STR-011  
 └ STR-012  
 
-STR-025  
-└ STR-026  
+STR-027  
+└ STR-028  
 
 ---  
 
@@ -7213,7 +7205,7 @@ Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning�
 
 ### Changes  
 
-- STR-026：新規登録。ANOBA BLACK EDITION マルチダストバケット（Status: Essential, Quantity: 2）。TP-010 Duplicate Storage Exceptionに基づき、燃えるゴミ・缶ゴミ用／ビンゴミ用の役割分化を行った2台構成として採用。  
+- STR-028：新規登録。ANOBA BLACK EDITION マルチダストバケット（Status: Essential, Quantity: 2）。TP-010 Duplicate Storage Exceptionに基づき、燃えるゴミ・缶ゴミ用／ビンゴミ用の役割分化を行った2台構成として採用。  
 - 従来使用のSnow Peak ガビングスタンド（DB-030）は、TP-004へ未登録のまま運用されていたため、Retiredレコードの追加は行わない。  
 - Related Documents：変更なし。  
 
@@ -7227,7 +7219,7 @@ MARI様のご購入報告に基づき、Essential段階だった3件のStatusを
 
 - STR-001：StatusをEssentialからOwnedへ更新（Snow Peak Shelf Container 25 雪峰祭 Black／Shellcon 01、本体を購入）。子部品（STR-002〜006）のStatusは個別に維持し、本更新の対象外とする。  
 - LGT-015：StatusをEssentialからOwnedへ更新（neru design works × LampUp MIYABI RICH Alumi Frozen）。  
-- STR-017：StatusをEssentialからOwnedへ更新（nodel design Container Bridge Frame、本体を購入）。子部品（STR-018・STR-019）のStatusは個別に維持し、本更新の対象外とする。  
+- STR-019：StatusをEssentialからOwnedへ更新（nodel design Container Bridge Frame、本体を購入）。子部品（STR-020・STR-021）のStatusは個別に維持し、本更新の対象外とする。  
 - Related Documents：変更なし。  
 
 ---  
@@ -7238,46 +7230,46 @@ Version 7.18時点で見送っていたSnow Peak ガビングスタンド（DB-0
 
 ### Changes  
 
-- STR-027：新規登録（Retired）。Snow Peak ガビングスタンド（DB-030）。STR-026への置き換えに伴う廃止記録。サイズ・重量・分別仕様を事後的に記録。  
+- STR-029：新規登録（Retired）。Snow Peak ガビングスタンド（DB-030）。STR-028への置き換えに伴う廃止記録。サイズ・重量・分別仕様を事後的に記録。  
 - Related Documents：変更なし。  
 
 ---  
 
 ## Version 7.21  
 
-MARI様のご購入報告に基づき、STR-026（ANOBAダストバケット）のStatus更新と、2台目検討枠の新設。IDはSTR-027が直前のVersion 7.20で別用途（Retired記録）に確定していたため、新規枠にはSTR-028を採番した。
+MARI様のご購入報告に基づき、STR-028（ANOBAダストバケット）のStatus更新と、2台目検討枠の新設。IDはSTR-029が直前のVersion 7.20で別用途（Retired記録）に確定していたため、新規枠にはSTR-030を採番した。
 
 ### Changes  
 
-- STR-026：StatusをEssentialからOwnedへ更新（ANOBA BLACK EDITION マルチダストバケット、1台目を購入）。Quantityフィールドを削除（2台構成から単数運用へ変更のため）。Industrial Attributeの記述を、1台目を運用中である旨・2台目検討枠はSTR-028である旨に修正。  
-- STR-028：新規登録。ダストバケット2台目の検討枠（Status: Candidate）。STR-026と同一のANOBA製品を追加購入するか、別ブランドを検討するかは未定。具体的な候補比較はPX-007 Deliberation Codexで管理する。  
+- STR-028：StatusをEssentialからOwnedへ更新（ANOBA BLACK EDITION マルチダストバケット、1台目を購入）。Quantityフィールドを削除（2台構成から単数運用へ変更のため）。Industrial Attributeの記述を、1台目を運用中である旨・2台目検討枠はSTR-030である旨に修正。  
+- STR-030：新規登録。ダストバケット2台目の検討枠（Status: Candidate）。STR-028と同一のANOBA製品を追加購入するか、別ブランドを検討するかは未定。具体的な候補比較はPX-007 Deliberation Codexで管理する。  
 - Related Documents：変更なし。  
 
 ---  
 
 ## Version 7.22  
 
-プロジェクトオーナーとの協議の結果、ダストバケット2台目枠（STR-028）の検討が完了。単なる複製ではなく、役割の異なる2製品（ANOBA・KAZE_TO_MORI×WINDY AND RAINY T-box）による構成に確定した。これに伴い、TP-010のDuplicate Storage Exceptionは本件には適用されないこととなった（TP-010 Ver.2.4を参照）。
+プロジェクトオーナーとの協議の結果、ダストバケット2台目枠（STR-030）の検討が完了。単なる複製ではなく、役割の異なる2製品（ANOBA・KAZE_TO_MORI×WINDY AND RAINY T-box）による構成に確定した。これに伴い、TP-010のDuplicate Storage Exceptionは本件には適用されないこととなった（TP-010 Ver.2.4を参照）。
 
 ### Changes  
 
-- STR-026：Industrial Attributeを、燃えないゴミ（缶・ビン）用・STR-029フォールディングサイドテーブルへ収納して運用する旨に修正。  
-- STR-028：検討枠（Candidate）から正式決定（Status: Essential）へ更新。Brand/Productを「KAZE_TO_MORI × WINDY AND RAINY / Folding Wire T-box 全面コンプリートセット」に確定。燃えるゴミ用として単独運用する。本体単体のサイズ・重量・開閉方式は未確認のため、Industrial Attributeにその旨を明記。  
-- STR-029：新規登録。ANOBA フォールディングサイドテーブル（Status: Essential）。STR-026の収納先として採用。  
+- STR-028：Industrial Attributeを、燃えないゴミ（缶・ビン）用・STR-031フォールディングサイドテーブルへ収納して運用する旨に修正。  
+- STR-030：検討枠（Candidate）から正式決定（Status: Essential）へ更新。Brand/Productを「KAZE_TO_MORI × WINDY AND RAINY / Folding Wire T-box 全面コンプリートセット」に確定。燃えるゴミ用として単独運用する。本体単体のサイズ・重量・開閉方式は未確認のため、Industrial Attributeにその旨を明記。  
+- STR-031：新規登録。ANOBA フォールディングサイドテーブル（Status: Essential）。STR-028の収納先として採用。  
 - Related Documents：変更なし。  
 
 ---  
 
 ## Version 7.23  
 
-プロジェクトオーナーの指示に基づき、STR-026とSTR-029をParent/Child関係として明示。あわせて、windyandrainy.tokyo公式ページの確認により、STR-028（T-box本体）のサイズ・重量・素材・耐荷重が判明したため反映。
+プロジェクトオーナーの指示に基づき、STR-028とSTR-031をParent/Child関係として明示。あわせて、windyandrainy.tokyo公式ページの確認により、STR-030（T-box本体）のサイズ・重量・素材・耐荷重が判明したため反映。
 
 ### Changes  
 
-- STR-026：**Parent** STR-029を追加。Industrial Attributeから、収納先を説明する記述（Parent/Childで自明になったため）を削除し簡素化。  
-- STR-029：**Child Components** STR-026を追加。  
-- STR-028：Color・Material・Industrial Attributeを、windyandrainy.tokyo公式ページ（商品コード war-037）の情報に基づき更新。本体サイズW395×H440×D195mm、重量約1420g、素材はスチールメッキ（ワイヤー部）／スチールメッキ+プラスチック（脚部）、耐荷重20kg、ワンアクション組み立てであることを確認・反映。KAZE_TO_MORI製COVER/FUTA部の生地構成（X-PAC）は引き続き未確認。  
-- Parent / Child Rules セクションのExampleに STR-029└STR-026 を追加。  
+- STR-028：**Parent** STR-031を追加。Industrial Attributeから、収納先を説明する記述（Parent/Childで自明になったため）を削除し簡素化。  
+- STR-031：**Child Components** STR-028を追加。  
+- STR-030：Color・Material・Industrial Attributeを、windyandrainy.tokyo公式ページ（商品コード war-037）の情報に基づき更新。本体サイズW395×H440×D195mm、重量約1420g、素材はスチールメッキ（ワイヤー部）／スチールメッキ+プラスチック（脚部）、耐荷重20kg、ワンアクション組み立てであることを確認・反映。KAZE_TO_MORI製COVER/FUTA部の生地構成（X-PAC）は引き続き未確認。  
+- Parent / Child Rules セクションのExampleに STR-031└STR-028 を追加。  
 - Related Documents：変更なし。  
 
 ---  
@@ -7288,7 +7280,7 @@ MARI様のご購入報告に基づき、STR-026（ANOBAダストバケット）�
 
 ### Changes  
 
-- STR-028：Material欄の記述を「詳細な生地構成は未確認」から、X-PACの一般的な構造（表地＋X-Ply補強層＋防水フィルムの3〜4層ラミネート、Dimension-Polyant社製）を明記する記述へ訂正。未確認として残すのは、本製品固有の表地デニールやグレード（X3/X4等）のみに限定。  
+- STR-030：Material欄の記述を「詳細な生地構成は未確認」から、X-PACの一般的な構造（表地＋X-Ply補強層＋防水フィルムの3〜4層ラミネート、Dimension-Polyant社製）を明記する記述へ訂正。未確認として残すのは、本製品固有の表地デニールやグレード（X3/X4等）のみに限定。  
 - Related Documents：変更なし。  
 
 ## Version 7.25  
@@ -7299,21 +7291,21 @@ MARI様がClaude導入以前に個人管理していたスプレッドシート�
 
 - Registry Rules：Equipment Domainsを6→7に変更し、「Shelter」を追加。Equipment ID例に「SHL-001」を追加。  
 - Attribute Policy：保存フィールドに「Price」を追加（任意項目）。  
-- Domain運用ルール：装備専用のケース・バッグ類は、対象装備と同じDomainに属する（Storageへ分離しない）方針を確認。これに伴いSTR-020・STR-021をFireドメインへ移設。  
+- Domain運用ルール：装備専用のケース・バッグ類は、対象装備と同じDomainに属する（Storageへ分離しない）方針を確認。これに伴いSTR-022・STR-023をFireドメインへ移設。  
 
 ### Changes（Furniture、新規11件）
 
 - FUR-025〜FUR-035：真聖衣（FUR-002子部品）、天板枠左右2種（FUR-013子部品）、シリコンマット黒白2種（FUR-013子部品）、シリコンシート（FUR-013子部品）、ハンガーフック（FUR-013子部品）、ABLE IGTユニットスタンド、Kermit CARRY TOTE、EXTENSIONTABLE CASE（FUR-013子部品）、SNIPE HANGER home.を新規登録。すべてOwned。  
-- 備考：Kermit CARRY TOTEは、MARI様のご意向としては本来FUR-001直後への番号挿入・後続繰下げが望ましいが、今回の一括登録では既存ID体系への影響を避けるため末尾（FUR-033）に追加した。Furniture Domainの番号整理は別途の課題として保持する。  
+- 備考：Kermit CARRY TOTEは、MARI様のご意向としては本来FUR-001直後への番号挿入・後続繰下げが望ましいが、今回の一括登録では既存ID体系への影響を避けるため末尾（FUR-034）に追加した。Furniture Domainの番号整理は別途の課題として保持する。  
 
 ### Changes（Storage、新規7件・移設2件）
 
-- STR-030〜STR-033、STR-013a、STR-015a、STR-032aを新規登録（YETI ICE／Thin Ice／Rambler Half Gallon Jug／ユニバーサルスタンド／Beck Container用Black Stand×2／Jug Stand）。すべてOwned。  
-- STR-020（rodan_no_kaban）・STR-021（table_no_kaban）：Fireドメインへ移設のためRetired化。移設先はFIR-036・FIR-037。  
+- STR-032〜STR-033、STR-014、STR-017、STR-032aを新規登録（YETI ICE／Thin Ice／Rambler Half Gallon Jug／ユニバーサルスタンド／Beck Container用Black Stand×2／Jug Stand）。すべてOwned。  
+- STR-022（rodan_no_kaban）・STR-023（table_no_kaban）：Fireドメインへ移設のためRetired化。移設先はFIR-036・FIR-037。  
 
 ### Changes（Fire、新規17件）
 
-- FIR-021〜FIR-037：五徳、焚き火シート、ナイフ、フック、SomAbito焚き火side stand、斧カバー（FIR-004子）、鞘ケース（FIR-005子）、ガスストーブ＋バッグ、着火ケース、フォーク、フック、ヘラ、Rodanカスタムオプション2件（FIR-001子）、旧STR-020・STR-021（FIR-001／FIR-002子として移設）を新規登録。すべてOwned。  
+- FIR-021〜FIR-037：五徳、焚き火シート、ナイフ、フック、SomAbito焚き火side stand、斧カバー（FIR-004子）、鞘ケース（FIR-005子）、ガスストーブ＋バッグ、着火ケース、フォーク、フック、ヘラ、Rodanカスタムオプション2件（FIR-001子）、旧STR-022・STR-023（FIR-001／FIR-002子として移設）を新規登録。すべてOwned。  
 - FIR-001・FIR-002：Child Componentsを追加。  
 
 ### Changes（Light、新規7件）
@@ -7340,7 +7332,7 @@ MARI様がClaude導入以前に個人管理していたスプレッドシート�
 ### Changes  
 
 - 全65件の既存アイテム（Furniture 17件、Light 28件、Aroma 1件、Storage 17件、Fire 13件相当、重複ID含む）にPriceフィールドを追加。  
-- STR-013・STR-015（Beck Container①②）：Numbers記載の合計価格（¥110,000／2台分）を折半して各¥55,000として記録。  
+- STR-013・STR-016（Beck Container①②）：Numbers記載の合計価格（¥110,000／2台分）を折半して各¥55,000として記録。  
 - FUR-011・FUR-012（SOMAチェア①②）：Numbers記載の合計価格（¥77,000／2脚分）を折半して各¥38,500として記録。  
 - STR-007：Numbers上「シェルコン①」表記だったが、製品名（Black Label）に基づきSTR-007（Shellcon 02）へ割当（Version 7.25で確立した「矛盾時はTP側を正とする」原則の逆側、すなわちTP-004の製品名を基準にNumbers側のラベル誤りを解釈）。STR-001は該当データなしのまま。  
 - LGT-037：Numbers上「RT-01/ECHO LAMP」関連の重複記載（タープC-1／タープC-1-2）のうち、rove troupe本体に一致する側を採用。LGT-027は該当データなしのまま。  
@@ -7351,7 +7343,7 @@ MARI様がClaude導入以前に個人管理していたスプレッドシート�
 
 ## Version 7.27  
 
-Version 7.26時点でPrice未確認（要確認）のまま残っていた11件について、ウェブ調査およびプロジェクトオーナーへの確認により価格情報を確定・反映した。あわせて、調査過程で判明したFUR-020／FUR-021の登録構造の誤り、およびSTR-025の型番誤記をプロジェクトオーナーの指摘に基づき訂正した。
+Version 7.26時点でPrice未確認（要確認）のまま残っていた11件について、ウェブ調査およびプロジェクトオーナーへの確認により価格情報を確定・反映した。あわせて、調査過程で判明したFUR-020／FUR-021の登録構造の誤り、およびSTR-027の型番誤記をプロジェクトオーナーの指摘に基づき訂正した。
 
 ### Changes（Price確定、11件）
 
@@ -7361,21 +7353,21 @@ Version 7.26時点でPrice未確認（要確認）のまま残っていた11件�
 - LGT-026（38-kT miyabi Wood Maple）：¥25,000（プロジェクトオーナー確認）。  
 - LGT-027（TARPtoTARP × LampUp Glass Shade & Wood Stand Set）：¥67,000（プロジェクトオーナー確認）。  
 - ARM-004（UNIT/04 × KUNST・BAUM SCENT TOWER）：¥19,800（プロジェクトオーナー確認）。  
-- STR-025（YETI Hopper Flip 12）：¥46,860（YETI Japan公式価格）。型番訂正は下記参照。  
-- STR-028（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリートセット）：¥50,600（プロジェクトオーナー確認）。  
+- STR-027（YETI Hopper Flip 12）：¥46,860（YETI Japan公式価格）。型番訂正は下記参照。  
+- STR-030（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリートセット）：¥50,600（プロジェクトオーナー確認）。  
 - FIR-014（neru design works copper250）：¥28,000（プロジェクトオーナー確認）。  
 - FIR-018（武井バーナー Purple Stove 501A）：¥121,000（プロジェクトオーナー確認。生産終了品につき中古相場での記録）。  
 
 ### Changes（構造訂正）
 
 - FUR-020／FUR-021：Snow Peak「ダウン システムオフトン スリムマットセット（BD-060）」は掛け布団+マットのセット販売であることが判明。単体マットとして別ID登録されていたFUR-021をFUR-020へ統合し、FUR-021は削除（Retiredではなく登録自体を撤回）。Price ¥44,000（セット価格）はFUR-020側に記録。FUR-022・FUR-023・FUR-024のIndustrial Attribute内のFUR-021参照、およびPX-007 Deliberation Codexの該当箇所を「FUR-020（マット部）」へ更新。  
-- STR-025：Product表記を誤記の「Hopper Flip 16」から正しい「Hopper Flip 12」へ訂正（16はモデル名ではなく容量16qtを指す表記だった）。  
+- STR-027：Product表記を誤記の「Hopper Flip 16」から正しい「Hopper Flip 12」へ訂正（16はモデル名ではなく容量16qtを指す表記だった）。  
 
 - Related Documents：PX-007 Deliberation Codex（FUR-020/021統合に伴う参照更新）。  
 
 ## Version 7.28
 
-STR-011のPrice未記載を解消。また、プロジェクトオーナーの直接指示に基づき、Furniture Domainの番号整理を実施した。これはRegistry Rulesの「IDは変更されない」という原則に対する例外であり、Kermit Chair①②の専用収納ケース（旧FUR-033 Kermit CARRY TOTE）が、Kermit Chair②の子部品群（FUR-007〜FUR-010）の直後に位置すべきという実態に合わせるための、一回限りの意図的な再採番である。
+STR-011のPrice未記載を解消。また、プロジェクトオーナーの直接指示に基づき、Furniture Domainの番号整理を実施した。これはRegistry Rulesの「IDは変更されない」という原則に対する例外であり、Kermit Chair①②の専用収納ケース（旧FUR-034 Kermit CARRY TOTE）が、Kermit Chair②の子部品群（FUR-007〜FUR-010）の直後に位置すべきという実態に合わせるための、一回限りの意図的な再採番である。
 
 ### Changes（Price確定）
 
@@ -7383,8 +7375,8 @@ STR-011のPrice未記載を解消。また、プロジェクトオーナーの�
 
 ### Changes（Furniture番号整理）
 
-- 旧FUR-033（Kermit CARRY TOTE）をFUR-011へ移動。Kermit Chair②の子部品群（FUR-007〜FUR-010）の直後に位置づけた。
-- 上記に伴い、旧FUR-011〜FUR-020をFUR-012〜FUR-021へ、旧FUR-022〜FUR-032は番号据え置き、旧FUR-034・FUR-035をFUR-033・FUR-034へ、それぞれ1つずつ繰り下げ。旧FUR-021（削除済み・欠番）は詰められ、Furniture Domainの登録範囲はFUR-001〜FUR-034の連番となった。
+- 旧FUR-034（Kermit CARRY TOTE）をFUR-011へ移動。Kermit Chair②の子部品群（FUR-007〜FUR-010）の直後に位置づけた。
+- 上記に伴い、旧FUR-011〜FUR-020をFUR-012〜FUR-021へ、旧FUR-022〜FUR-033は番号据え置き、旧FUR-035・FUR-035をFUR-034・FUR-035へ、それぞれ1つずつ繰り下げ。旧FUR-021（削除済み・欠番）は詰められ、Furniture Domainの登録範囲はFUR-001〜FUR-035の連番となった。
 - Parent参照（旧FUR-013→新FUR-014を親とする子部品群: 旧FUR-014・015・026〜031・034）、およびChild Componentsリスト（新FUR-006・新FUR-014）を、すべて新番号に更新。
 - FUR-022・FUR-023・FUR-024のIndustrial Attribute内の「FUR-020（マット部）」参照を「FUR-021（マット部）」へ更新（Quilt & Sleeping Mat Set本体の新ID反映）。
 - PX-007 Deliberation Codex（FUR-020参照2箇所）、PX-003 Vigil Protocol（FUR-017参照1箇所）を、新番号（FUR-021、FUR-018）へ更新。
@@ -7401,7 +7393,7 @@ Owned/EssentialアイテムのうちBrand／Color／Materialが「Unconfirmed」
 ### Changes（確認・反映、13件）
 
 - FUR-011（Kermit CARRY TOTE）：Materialを「500D Cordura Nylon」に確定（Ballistics.jp公式ページ）。Colorは公式に3配色（Coyote×Multicam等）が存在し所有個体を特定できないため、Unconfirmedのまま維持。
-- FUR-034（SNIPE HANGER home. モク）：Colorを「Wood-grain Print（モク）」に確定（SINANO WORKS公式ページ、モクは同社の正式カラー名）。
+- FUR-035（SNIPE HANGER home. モク）：Colorを「Wood-grain Print（モク）」に確定（SINANO WORKS公式ページ、モクは同社の正式カラー名）。
 - LGT-056（Futamata）：Brandを「neru design works」、Materialを「Brass」に確定（lifeoverground.com掲載、真鍮削り出しと明記）。Colorは上記慣例によりGoldとした。
 - LGT-057（OD-CAN PLATE）：Materialを「Black Walnut」に確定（INOUT公式ページ）。Colorは無垢ウォールナットの実色としてBrownとした。
 - LGT-059（WWW_LANTHANUMHOOK）：Brandを「WHAT WE WANT（WWW）」、Materialを「Brass」に確定（WHAT WE WANT公式ページ）。Colorは上記慣例によりGoldとした。
@@ -7416,7 +7408,7 @@ Owned/EssentialアイテムのうちBrand／Color／Materialが「Unconfirmed」
 
 ### 引き続きUnconfirmedのまま残る項目
 
-- 上記以外の項目（FUR-025〜027・031〜033、LGT-054・055・058、STR-013a・015a・032（Color）、FIR-022〜024・026・029〜033・035、SHL-001・002）：公式ページが見つからない、販売元と製造元の帰属が不明確、または複数バリエーションが存在し所有個体を特定できないため、引き続きUnconfirmedのまま保持する。今後、プロジェクトオーナーによる現物確認または追加情報の提供を待つ。
+- 上記以外の項目（FUR-025〜027・031〜033、LGT-054・055・058、STR-014・015a・032（Color）、FIR-022〜024・026・029〜033・035、SHL-001・002）：公式ページが見つからない、販売元と製造元の帰属が不明確、または複数バリエーションが存在し所有個体を特定できないため、引き続きUnconfirmedのまま保持する。今後、プロジェクトオーナーによる現物確認または追加情報の提供を待つ。
 - Related Documents：変更なし。
 
 ## Version 7.30
@@ -7438,11 +7430,11 @@ Version 7.29までの調査で残っていたUnconfirmed項目について、プ
 - FUR-011（Kermit CARRY TOTE）：Colorを「Black」に確定。
 - FUR-025（真聖衣）：Brandを「Release」、Colorを「Gold」、Materialを「Brass」に確定。
 - FUR-026（2UNITFRAME NDW ver.）：Materialを「Iron」に確定。
-- FUR-027（TSURAICHI KUROWAKU）：Brandを「DEVISE WORKS」、Materialを「Iron」に確定。
-- FUR-028（CUTTING MAT BLACK）・FUR-029（CUTTING MAT White）：Brandを「DEVISE WORKS」に確定。
-- FUR-031（WWW_EXTENSIONSIDEBAR NDWver）：Colorを「Gold」、Materialを「Brass」に確定。
-- FUR-032（IGT 1ユニットスタンド）：Colorを「Dark Brown」、Materialを「Walnut」に確定。
-- FUR-033（EXTENSIONTABLE CASE）：Colorを「Black」に確定（Materialは未確認のまま維持）。
+- FUR-028（TSURAICHI KUROWAKU）：Brandを「DEVISE WORKS」、Materialを「Iron」に確定。
+- FUR-029（CUTTING MAT BLACK）・FUR-030（CUTTING MAT White）：Brandを「DEVISE WORKS」に確定。
+- FUR-032（WWW_EXTENSIONSIDEBAR NDWver）：Colorを「Gold」、Materialを「Brass」に確定。
+- FUR-033（IGT 1ユニットスタンド）：Colorを「Dark Brown」、Materialを「Walnut」に確定。
+- FUR-034（EXTENSIONTABLE CASE）：Colorを「Black」に確定（Materialは未確認のまま維持）。
 
 ### Changes（Light）
 
@@ -7455,7 +7447,7 @@ Version 7.29までの調査で残っていたUnconfirmed項目について、プ
 
 - STR-032（Rambler® Half Gallon Jug）：Colorを「Silver」に確定。
 - STR-032a（KRAKEN STAND）：Brandを「calma store」、Colorを「Brown」に確定。
-- STR-013a・STR-015a（Black Stand）：Materialを「Iron」に確定。
+- STR-014・STR-017（Black Stand）：Materialを「Iron」に確定。
 - STR-033（ユニバーサルスタンド）：Colorを「Black」に確定。
 
 ### Changes（Fire）
@@ -7478,7 +7470,7 @@ Version 7.29までの調査で残っていたUnconfirmed項目について、プ
 
 ### 引き続きUnconfirmedのまま残る項目
 
-- FUR-033（EXTENSIONTABLE CASE）：Material。
+- FUR-034（EXTENSIONTABLE CASE）：Material。
 - FIR-028（shank heater 百式改）：Brand。
 - SHL-001（幕男）：Material。
 
@@ -7493,26 +7485,26 @@ Version 7.31で残っていた最後の3件のUnconfirmedについて、プロ�
 ### Changes
 
 - FIR-028（shank heater 百式改）：Brandを「neru design works × calma store」に確定（プロジェクトオーナー確認）。
-- FUR-033（EXTENSIONTABLE CASE）：Materialを「Polyester」に確定（プロジェクトオーナー確認）。
+- FUR-034（EXTENSIONTABLE CASE）：Materialを「Polyester」に確定（プロジェクトオーナー確認）。
 - SHL-001（幕男）：Materialを「Polyester」に確定（プロジェクトオーナー確認）。
 
 - Related Documents：変更なし。
 
 ## Version 7.33
 
-MD-003 Galley Fare Version 2.8（ゴミ箱のストレージ移管に伴うKIT-070系の整理）との整合確認、および親子関係の記載点検の結果、親側のChild Componentsリストに抜けがあったため補完した。本文書のゴミ関連の登録（STR-026〜STR-029）の内容に変更はなく、引き続きゴミ箱・ダストバケット・サイドテーブルの正の登録先は本文書である。
+MD-003 Galley Fare Version 2.8（ゴミ箱のストレージ移管に伴うKIT-070系の整理）との整合確認、および親子関係の記載点検の結果、親側のChild Componentsリストに抜けがあったため補完した。本文書のゴミ関連の登録（STR-028〜STR-031）の内容に変更はなく、引き続きゴミ箱・ダストバケット・サイドテーブルの正の登録先は本文書である。
 
 ### Changes
 
 - FUR-002：Child Componentsとして FUR-025 を追記（FUR-025のParent記載に対応）。
-- FUR-014：Child Componentsに FUR-026・FUR-027・FUR-028・FUR-029・FUR-030・FUR-031・FUR-033 を追記（各子部品のParent記載に対応。従来はFUR-015・FUR-016のみ記載）。
+- FUR-014：Child Componentsに FUR-026・FUR-028・FUR-029・FUR-030・FUR-031・FUR-032・FUR-034 を追記（各子部品のParent記載に対応。従来はFUR-015・FUR-016のみ記載）。
 - FIR-004：Child Componentsとして FIR-026 を追記。
 - FIR-005：Child Componentsとして FIR-027 を追記。
-- STR-013：Child Componentsに STR-013a を追記（従来はSTR-014のみ記載）。
-- STR-015：Child Componentsに STR-015a を追記（従来はSTR-016のみ記載）。
+- STR-013：Child Componentsに STR-014 を追記（従来はSTR-015のみ記載）。
+- STR-016：Child Componentsに STR-017 を追記（従来はSTR-018のみ記載）。
 - 各子部品側のParent記載および登録内容に変更なし。
 
-- Related Documents：MD-003 Galley Fare（Version 2.8。KIT-070系をSTR-026・027・029の移管記録へ整理）。
+- Related Documents：MD-003 Galley Fare（Version 2.8。KIT-070系をSTR-028・027・029の移管記録へ整理）。
 
 ## Version 7.34
 
@@ -7544,26 +7536,26 @@ MARI様のご指示に基づき、SHL-004（HELLOS factory Slug Shelter V2.0）�
 
 ### Changes（Furniture番号整理）
 
-- 下記の旧→新対応表に基づき、Furniture Domain全34件（FUR-001〜FUR-034）を同時に再採番した（プレースホルダ経由の一括置換により、途中の番号衝突は発生していない）。
+- 下記の旧→新対応表に基づき、Furniture Domain全34件（FUR-001〜FUR-035）を同時に再採番した（プレースホルダ経由の一括置換により、途中の番号衝突は発生していない）。
 
 | 旧ID | 新ID | 旧ID | 新ID | 旧ID | 新ID |
 |---|---|---|---|---|---|
 | FUR-001 | FUR-001 | FUR-013 | FUR-014 | FUR-025 | FUR-003 |
 | FUR-002 | FUR-002 | FUR-014 | FUR-015 | FUR-026 | FUR-018 |
-| FUR-003 | FUR-004 | FUR-015 | FUR-016 | FUR-027 | FUR-019 |
-| FUR-004 | FUR-005 | FUR-016 | FUR-017 | FUR-028 | FUR-020 |
-| FUR-005 | FUR-006 | FUR-017 | FUR-025 | FUR-029 | FUR-021 |
-| FUR-006 | FUR-007 | FUR-018 | FUR-026 | FUR-030 | FUR-022 |
-| FUR-007 | FUR-008 | FUR-019 | FUR-027 | FUR-031 | FUR-023 |
-| FUR-008 | FUR-009 | FUR-020 | FUR-028 | FUR-032 | FUR-029 |
-| FUR-009 | FUR-010 | FUR-021 | FUR-031 | FUR-033 | FUR-024 |
-| FUR-010 | FUR-011 | FUR-022 | FUR-032 | FUR-034 | FUR-030 |
-| FUR-011 | FUR-012 | FUR-023 | FUR-033 | | |
-| FUR-012 | FUR-013 | FUR-024 | FUR-034 | | |
+| FUR-003 | FUR-004 | FUR-015 | FUR-016 | FUR-028 | FUR-019 |
+| FUR-004 | FUR-005 | FUR-016 | FUR-017 | FUR-029 | FUR-020 |
+| FUR-005 | FUR-006 | FUR-017 | FUR-025 | FUR-030 | FUR-021 |
+| FUR-006 | FUR-007 | FUR-018 | FUR-026 | FUR-031 | FUR-022 |
+| FUR-007 | FUR-008 | FUR-019 | FUR-028 | FUR-032 | FUR-023 |
+| FUR-008 | FUR-009 | FUR-020 | FUR-029 | FUR-033 | FUR-030 |
+| FUR-009 | FUR-010 | FUR-021 | FUR-032 | FUR-034 | FUR-024 |
+| FUR-010 | FUR-011 | FUR-022 | FUR-033 | FUR-035 | FUR-031 |
+| FUR-011 | FUR-012 | FUR-023 | FUR-034 | | |
+| FUR-012 | FUR-013 | FUR-024 | FUR-035 | | |
 
 - Parent、Child Componentsリスト、Industrial Attribute内のFUR参照（子部品・関連部品への言及を含む）を、すべて上記対応表に基づき新番号へ更新した。
 - Parent / Child Rules（親子関係ルール）章のExample（FUR-001とその子部品の例示）も、実際のデータに合わせて新番号へ更新した。
-- FUR-031（旧FUR-021、Quilt & Sleeping Mat Set）のIndustrial Attribute内にある「旧FUR-021単体マット登録は本IDへ統合」という記述は、Version 7.28以前に削除・撤回された別ID（今回の対応表の対象外）を指す歴史的記述のため、遡及修正しない。
+- FUR-032（旧FUR-021、Quilt & Sleeping Mat Set）のIndustrial Attribute内にある「旧FUR-021単体マット登録は本IDへ統合」という記述は、Version 7.28以前に削除・撤回された別ID（今回の対応表の対象外）を指す歴史的記述のため、遡及修正しない。
 - Version 7.0〜7.35の記述内にある旧FUR-ID表記は、当時の記録として遡及修正しない。
 - CZ-001 Deliberation Codex（Winter Top Quilt／Winter Sleeping Mat／Pad Sheet／Confirmed - Purchase PendingにおけるFUR参照）、CZ-002 Vigil Protocol（Butterfly Table M Black LookのMD-004 Reference）を、それぞれ新番号へ更新。
 
@@ -7577,29 +7569,29 @@ MARI様のご指示に基づき、SHL-004（HELLOS factory Slug Shelter V2.0）�
 
 ### Changes（Storage番号整理）
 
-- 下記の旧→新対応表に基づき、Storage DomainのSTR-020〜STR-033（STR-032a含む）を同時に再採番した（プレースホルダ経由の一括置換により、途中の番号衝突は発生していない）。STR-001〜STR-019・STR-013a・STR-015aは変更なし。
+- 下記の旧→新対応表に基づき、Storage DomainのSTR-022〜STR-033（STR-032a含む）を同時に再採番した（プレースホルダ経由の一括置換により、途中の番号衝突は発生していない）。STR-001〜STR-021・STR-014・STR-017は変更なし。
 
 | 旧ID | 新ID | 製品 |
 |---|---|---|
-| STR-024 | STR-020 | YETI Roadie 24 |
-| STR-030 | STR-021 | YETI ICE 4 lb |
-| STR-025 | STR-022 | YETI Hopper Flip 12 |
-| STR-031 | STR-023 | YETI Thin Ice - Large |
-| STR-032 | STR-024 | YETI Rambler Half Gallon Jug |
-| STR-032a | STR-024a | calma store KRAKEN STAND |
-| STR-029 | STR-025 | ANOBA フォールディングサイドテーブル |
-| STR-026 | STR-026 | ANOBA ダストバケット（番号変更なし） |
-| STR-028 | STR-027 | KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box |
-| STR-022 | STR-028 | Snow Peak Multi Container L |
-| STR-023 | STR-029 | WHATNOT One Touch Bucket HD |
-| STR-033 | STR-030 | wanderout ユニバーサルスタンド |
+| STR-026 | STR-022 | YETI Roadie 24 |
+| STR-032 | STR-023 | YETI ICE 4 lb |
+| STR-027 | STR-024 | YETI Hopper Flip 12 |
+| STR-031 | STR-025 | YETI Thin Ice - Large |
+| STR-032 | STR-026 | YETI Rambler Half Gallon Jug |
+| STR-032a | STR-026a | calma store KRAKEN STAND |
+| STR-031 | STR-027 | ANOBA フォールディングサイドテーブル |
+| STR-028 | STR-028 | ANOBA ダストバケット（番号変更なし） |
+| STR-030 | STR-029 | KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box |
+| STR-024 | STR-030 | Snow Peak Multi Container L |
+| STR-025 | STR-031 | WHATNOT One Touch Bucket HD |
+| STR-033 | STR-032 | wanderout ユニバーサルスタンド |
 
-- 旧STR-020・STR-021（Fireドメインへ移設済みのRetiredレコード。Version 7.25）、および旧STR-027（Snow Peak ガビングスタンド、Retired。Version 7.20で事後的に登録）の計3件は、跡地に新IDが入るため本Versionで削除した。経緯はVersion 7.20（STR-027の事後登録）・Version 7.25（旧STR-020・STR-021のFireドメイン移設）を参照。
-- Parent、Child Componentsリスト、Industrial Attribute内のSTR参照を、すべて上記対応表に基づき新番号へ更新した。FIR-036・FIR-037のIndustrial Attribute内にあった「旧STR-020／STR-021より移設」という記述は、削除された旧IDを指すため「Storageドメインより移設。Version 7.25」に改めた。
-- Parent / Child Rules（親子関係ルール）章のExampleを `STR-029 └ STR-026` から `STR-025 └ STR-026` へ更新した。
-- STR-020（YETI Roadie 24）とSTR-021（YETI ICE 4 lb）、STR-022（YETI Hopper Flip 12）とSTR-023（YETI Thin Ice - Large）について、実態に即してParent/Child関係を新設した（STR-020のChild ComponentsにSTR-021を追加、STR-021にParent: STR-020を追加。STR-022・STR-023も同様）。
-- STR-025（旧STR-029、ANOBA フォールディングサイドテーブル）のStatusを、購入報告に基づきEssentialからOwnedへ更新した。
-- STR-026（ANOBAダストバケット）のIndustrial Attribute内、旧STR-027（削除済み）への言及を、置き換え元の経緯（Version 7.20でRetired登録、Version 7.37の番号整理により当該レコードは削除）を説明する記述に改めた。
+- 旧STR-022・STR-023（Fireドメインへ移設済みのRetiredレコード。Version 7.25）、および旧STR-029（Snow Peak ガビングスタンド、Retired。Version 7.20で事後的に登録）の計3件は、跡地に新IDが入るため本Versionで削除した。経緯はVersion 7.20（STR-029の事後登録）・Version 7.25（旧STR-022・STR-023のFireドメイン移設）を参照。
+- Parent、Child Componentsリスト、Industrial Attribute内のSTR参照を、すべて上記対応表に基づき新番号へ更新した。FIR-036・FIR-037のIndustrial Attribute内にあった「旧STR-022／STR-023より移設」という記述は、削除された旧IDを指すため「Storageドメインより移設。Version 7.25」に改めた。
+- Parent / Child Rules（親子関係ルール）章のExampleを `STR-031 └ STR-028` から `STR-027 └ STR-028` へ更新した。
+- STR-022（YETI Roadie 24）とSTR-023（YETI ICE 4 lb）、STR-024（YETI Hopper Flip 12）とSTR-025（YETI Thin Ice - Large）について、実態に即してParent/Child関係を新設した（STR-022のChild ComponentsにSTR-023を追加、STR-023にParent: STR-022を追加。STR-024・STR-025も同様）。
+- STR-027（旧STR-031、ANOBA フォールディングサイドテーブル）のStatusを、購入報告に基づきEssentialからOwnedへ更新した。
+- STR-028（ANOBAダストバケット）のIndustrial Attribute内、旧STR-029（削除済み）への言及を、置き換え元の経緯（Version 7.20でRetired登録、Version 7.37の番号整理により当該レコードは削除）を説明する記述に改めた。
 - Version 7.0〜7.36の記述内にある旧STR-ID表記は、当時の記録として遡及修正しない。
 
 - Related Documents：MD-001 Storage Blueprint（Ver.2.6）、MD-003 Galley Fare（Ver.2.9）。
@@ -7685,7 +7677,7 @@ Fire Domain検討中案件の表記を整理した。登録内容（Equipment記
 
 ## Version 7.42
 
-Furniture ドメインの記載順を FUR ID の昇順に整理。登録内容の変更なし。一部の子部品（FUR-003、FUR-018〜FUR-024、FUR-029、FUR-030）が FUR-034 の後ろに置かれていた配置を解消した。
+Furniture ドメインの記載順を FUR ID の昇順に整理。登録内容の変更なし。一部の子部品（FUR-003、FUR-018〜FUR-024、FUR-030、FUR-031）が FUR-035 の後ろに置かれていた配置を解消した。
 
 ---  
 
