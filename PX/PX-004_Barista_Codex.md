@@ -11,7 +11,7 @@ Barista Codex
     
 # Version    
     
-3.6    
+3.7    
     
 # Status    
     
@@ -149,6 +149,26 @@ KNODOSは "Premium Espresso Accessories for Home Baristas" を自認するホー
     
 9Barista Mk.2 ProをTHE THIRD PLACEの標準エスプレッソマシンとして正式採用する。    
     
+### Handle Material Decision    
+    
+9Barista Mk.2 Proの標準構成では、Upper / Lower Handleともに Anodised Aluminium 仕様となる。    
+    
+THE THIRD PLACEでは、9Barista公式スペアパーツとして提供されるWalnut仕様（同一の公式Handle製品における選択オプション）へ、標準仕様から変更することを正式決定する。    
+    
+### Selection Criteria (Handle Material)    
+    
+* Design Bibleとの素材整合（Walnut・Brass・Black Steel）    
+* 9Barista公式アクセサリーであること    
+* Mk.1 / Mk.2双方との互換性（将来のメンテナンス性）    
+    
+### Reason (Handle Material)    
+    
+Walnutは、THE THIRD PLACE全体のAesthetic Grammarの核となる素材言語（Walnut・Brass・Black Steel）と直接整合する。    
+    
+標準のAnodised Aluminiumは機能面で妥当だが、Coffee Zoneが他の採用済みEquipment（KNODOS、Pullman Chisel等）で一貫して採用しているWalnut言語との統一性を優先し、Upper / Lower Handle双方をWalnut仕様に変更する。    
+    
+価格・購入先・数量等の調達情報はPX-005で管理する。    
+    
 ### Included Components / Accessories    
     
 9Barista Mk.2 Proの標準付属品として、以下を現行Workflowで使用する。    
@@ -161,6 +181,8 @@ KNODOSは "Premium Espresso Accessories for Home Baristas" を自認するホー
 したがって、TP-004 Equipment RegistryおよびPX-005 Acquisition Handbookでは、これらを独立したEquipment / Acquisition Itemとして登録しない。    
     
 単体で販売されている場合でも、現在のCoffee SystemではMk.2 Proの付属品を使用し、追加購入を必要としない。    
+    
+Handle（Upper / Lower）については、上記Handle Material Decisionに基づき、標準付属のAnodised Aluminium仕様からWalnut仕様への変更を、PX-005にてPurchase Required項目として管理する。    
     
 ### Selection Criteria    
     
@@ -1565,7 +1587,7 @@ The Force Tamper 53mm
 ↓    
 9Barista Mk.2 Pro  
   
-9Barista Magnetic Dosing Funnelは9Barista Mk.2 Proの標準付属品であり、独立Equipmentとして管理しない。  
+9Barista Magnetic Dosing Funnelは9Barista Mk.2 Proの標準付属品であり、独立Equipmentとして管理しない。    
   
 9Barista Puck Screenは正式採用品として使用する。  
   
@@ -1840,6 +1862,7 @@ PX-004は、価格・購入先・輸送・関税・購入手順などの調達�
 | 3.4 | 2026-09 | Econtto Portawaveを、新規のWDT Tool候補としてRejected Equipmentへ追加。不採用理由: 54mm版は汎用54mm適合ではなく、Dalla Corte／Breville専用のポルタフィルター形状であり、9Barista 53mmとの適合が確認できないこと。当詬54mm版（Dalla Corte／Breville）は現在在庫切れであること。公式マーケティング表記に仕様上の矛盾（ニード30本付属 vs. 14本駆動パターン）が存在すること。第三者レビューは58mm版のみを対象とし、53mm／9Baristaでの実使用実績が確認できなかったこと。Normcore Planetary WDT Tool 54mmが持つ、確認済みのKNODOS Tool Station適合性と53mm系での実績を、上回る・並ぶことはできなかった。 |  
 | 3.5 | 2026-09 | Category Tier Exceptionを、Coffee Zone Philosophyの項目3としてDesign Principlesへ追加。Milk Pitcher / Pitcher Sleeve（WPM）およびTool Station（KNODOS）が、Coffee Zoneの他部分に適用しているTier Aブランド水準に届いていないことを記録し、両者を無自覚な選定ではなく、機能・素材を根拠とした明示的な例外として位置付ける。両カテゴリともTier A相当のブランドが市場に存在しないことを確認した市場調査（2026-09）に基づく。 |  
 | 3.6 | 2026-09 | Coffee Beansを本文書の管理対象から除外。豆は消耗品としてPX-005 Acquisition Handbookの「Coffee Beans Procurement」セクションのみで管理する方針を確立し、Pending項目から削除（PX-005 Ver.2.0と対応）。 |  
+| 3.7 | 2026-09-18 | Espresso Machineセクションへ「Handle Material Decision」を新設。9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）を、9Barista公式スペアパーツのWalnut仕様へ変更することを正式決定。Design Bibleの核となる素材言語（Walnut・Brass・Black Steel）との整合を採用理由とした。MARI様の直接指示（2026-09-18）に基づく。 |  
   
 ---  
   
