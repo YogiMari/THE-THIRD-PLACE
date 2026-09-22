@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.46  
+Version 7.47  
   
 ---  
   
@@ -1061,7 +1061,7 @@ Carrying Case（EXTENMON TABLE用）
 
 **Brand**  
 
-TENt o TEN  
+DEVISE WORKS × TENt o TEN × WHAT WE WANT  
 
 **Product**  
 
@@ -7734,6 +7734,17 @@ STR-009 のBrand表記を訂正した。Equipment記録の実質的な変更は�
 
 - STR-009（WANTKEY CAMP × NOWELLCAMP SST WANTKEY Version）：Brand を「NOWELLCAMP × WANTKEY CAMP」から「WANTKEY CAMP × NOWELLCAMP」へ訂正（プロジェクトオーナー確認。WANTKEY CAMPが先）。
 
+- Related Documents：変更なし。
+
+---
+
+## Version 7.47
+
+プロジェクトオーナー確認に基づき、FUR-025のBrand表記を訂正した。Equipment記録の実質的な変更はない。
+
+### Changes
+
+- FUR-025（Butterfly D）：Brand を「TENt o TEN」から「DEVISE WORKS × TENt o TEN × WHAT WE WANT」へ訂正（プロジェクトオーナー確認。3社コラボレーション表記が正）。
 - Related Documents：変更なし。
 
 ---
