@@ -1,6 +1,6 @@
 # TP-003
 # Field Atlas Landscape Framework
-## Ver.3.0
+## Ver.3.1
 
 ---
 
@@ -132,6 +132,8 @@ Field Atlas は
 
 **設備までの場内移動距離（トイレが遠い等）は、この軸には含めない。Comfort軸で評価する。**
 
+**管理棟に併設されたショップ・温泉・サウナ・スパ等、その場所固有の体験価値を伴う要素は、Facilityではなく Identity（Experience Identity）で評価する。Facilityは、あくまで運営インフラとしての品質のみを対象とする。**
+
 ---
 
 # 3. Comfort
@@ -239,6 +241,7 @@ Identity は次の三要素で構成される。
 - ガレージブランドイベント
 - 農園体験
 - 地域文化との接点
+- 管理棟等に併設されたショップ・温泉・サウナ・スパ
 
 ---
 
@@ -533,9 +536,9 @@ Ver.3.0のEvaluation Frameworkに合わせ、6軸個別スコアを記録する�
 
 | Field | Site | Facility | Comfort | View | Identity | 近さ | Partner Value（合計） |
 |---|---|---|---|---|---|---|---|
-| スノーピークヘッドクォーターズキャンプフィールド | 10 | 10 | — | 10 | 10 | 1 | — |
-| Render Fika | 10 | 10 | — | 8 | 10 | 10 | — |
-| RECAMP 富士スピードウェイ | 6 | — | — | — | — | — | — |
+| スノーピークヘッドクォーターズキャンプフィールド | 8 | 10 | 7 | 8 | 10 | 1 | 44 |
+| Render Fika | 9 | 10 | 10 | 5 | 5 | 10 | 49 |
+| RECAMP 富士スピードウェイ | 6 | 8 | 6 | 8 | 10 | 5 | 43 |
 | South One Village | — | — | — | — | — | — | — |
 | スノーピーク鹿沼キャンプフィールド&スパ | — | — | — | — | — | — | — |
 | スノーピーク白河高原キャンプフィールド | — | — | — | — | — | — | — |
@@ -582,8 +585,6 @@ Ver.3.0のEvaluation Frameworkに合わせ、6軸個別スコアを記録する�
 | 神栖市営日川浜オートキャンプ場 | — | — | — | — | — | — | — |
 | サンビレッジ金谷キャンプ場 | — | — | — | — | — | — | — |
 | キャンプ ざ カントリー | — | — | — | — | — | — | — |
-
-**注記：** スノーピークヘッドクォーターズキャンプフィールド・Render FikaのComfort、およびRECAMP 富士スピードウェイのFacility以降は、旧フレームワーク（Surroundings軸）では収集していなかったため、Ver.3.0移行に伴い再ヒアリングが必要である。
 
 ---
 
@@ -662,3 +663,4 @@ THE THIRD PLACE を実現するための
 | 2.0 | 2026-09-15 | Radar Sub-Scoresセクションを新設。可視化専用の7軸（Site／Facility／Surroundings／View／Identity／Partner Value／近さ）個別スコアDatabaseを追加し、レーダーチャート等の自動生成を可能にする基盤とした。「近さ」は正式ランキングスコアには算入しない可視化専用軸と明記。Render Fika・スノーピークヘッドクォーターズキャンプフィールドの2件をMariへのヒアリングにより記録、残り47件は未記録（—）のまま推測せず据え置き。 |
 | 2.1 | 2026-09-15 | Radar Sub-ScoresのRecording Ruleを改訂。未訪問フィールドについて、訪問後ヒアリングを待つ運用から、Field Atlas Database内に既に記録済みの調査情報（Identityコメント等）を根拠とした暫定スコア記入へ変更。可視化時に訪問済み（実測）と未訪問（暫定）を色・線種で明確に区別する表示ルールを追加。 |
 | 3.0 | 2026-09-15 | Evaluation Frameworkを全面改訂。旧Surroundings軸を廃止しIdentity軸（Surrounding Value）へ統合。新たにComfort軸（設備への場内距離・区画間隔・プライバシー等）を新設。Partner Valueを独立評価軸から、6軸（Site・Facility・Comfort・View・Identity・近さ）の合計による算出値（総合スコア）へ変更。Ranking Philosophyの「距離はスコアに含めない」という方針をMariの意思決定により正式に撤回し、近さ（Distance）を6軸の1つとして正式にスコアへ組み込む方針へ転換。Site軸に地面種別（砂利7点以上／芝4〜6点／土3点以下、ただし芝の質次第で例外あり）のスコアリング目安を追加。既存49サイトの統合スコアはVer.2.1までの旧フレームワークによる暫定値のまま据え置き、新フレームワークでの再評価は順次実施する方針を明記。Radar Sub-Scoresを6軸＋Partner Value（合計）の構成へ再設計。 |
+| 3.1 | 2026-09-15 | Facility軸の定義を明確化し、管理棟に併設されたショップ・温泉・サウナ・スパ等の体験価値はFacilityではなくIdentity（Experience Identity）で評価する旨を追記。Radar Sub-Scoresのスノーピークヘッドクォーターズ・Render Fika・RECAMP 富士スピードウェイの3件について、新6軸フレームワークで全軸を再ヒアリングし、Partner Value（合計）を算出：スノーピークHQ 44点（Site8・Facility10・Comfort7・View8・Identity10・近さ1）、Render Fika 49点（Site9・Facility10・Comfort10・View5・Identity5・近さ10）、RECAMP富士スピードウェイ 43点（Site6・Facility8・Comfort6・View8・Identity10・近さ5）。 |
