@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.19  
+Version 7.20  
   
 ---  
   
@@ -3731,7 +3731,13 @@ None
 
 ### Industrial Attribute  
 
-Dust Bucket（TP-010 Duplicate Storage Exceptionに基づく2台運用。1台目＝燃えるゴミ・缶ゴミ用、2台目＝ビンゴミ用として役割分化。従来使用のSnow Peak ガビングスタンド（DB-030、フレーム組立式）からの置き換えとして採用。DB-030はTP-004へ未登録のまま運用されていたため、Retired登録は行わず本IDのみ新設する）  
+Dust Bucket（TP-010 Duplicate Storage Exceptionに基づく2台運用。1台目＝燃えるゴミ・缶ゴミ用、2台目＝ビンゴミ用として役割分化。従来使用のSnow Peak ガビングスタンド（DB-030、フレーム組立式）からの置き換えとして採用）  
+
+---  
+
+## STR-027  
+
+Retired. Snow Peak ガビングスタンド（DB-030）。サイズ50×36×63(h)cm、重量2.0kg、ポリ袋を最大3枚まで取り付け分別対応可能なフレーム組立式ダストスタンドであったが、設営効率（TP-002 Storage Domain評価軸）を著しく損なうと判断され、STR-026（ANOBA BLACK EDITION マルチダストバケット ×2）への置き換え対象となった。TP-004への正式登録がなされないまま運用されていた期間があり、本レコードは事後的な記録である。TP-010 Duplicate Storage Exceptionの適用事例として、本IDを今後同種の入れ替えが発生した際の記録形式の参照として保持する。  
 
 # Coffee  
 
@@ -5038,4 +5044,15 @@ MARI様のご購入報告に基づき、Essential段階だった3件のStatusを
 - STR-001：StatusをEssentialからOwnedへ更新（Snow Peak Shelf Container 25 雪峰祭 Black／Shellcon 01、本体を購入）。子部品（STR-002〜006）のStatusは個別に維持し、本更新の対象外とする。  
 - LGT-015：StatusをEssentialからOwnedへ更新（neru design works × LampUp MIYABI RICH Alumi Frozen）。  
 - STR-017：StatusをEssentialからOwnedへ更新（nodel design Container Bridge Frame、本体を購入）。子部品（STR-018・STR-019）のStatusは個別に維持し、本更新の対象外とする。  
+- Related Documents：変更なし。  
+
+---  
+
+## Version 7.20  
+
+Version 7.18時点で見送っていたSnow Peak ガビングスタンド（DB-030）のRetiredレコードを、プロジェクトオーナーの指示により追加。今後も同種の装備入れ替えが継続的に発生する見込みのため、記録形式を確立する目的も兼ねる。
+
+### Changes  
+
+- STR-027：新規登録（Retired）。Snow Peak ガビングスタンド（DB-030）。STR-026への置き換えに伴う廃止記録。サイズ・重量・分別仕様を事後的に記録。  
 - Related Documents：変更なし。  
