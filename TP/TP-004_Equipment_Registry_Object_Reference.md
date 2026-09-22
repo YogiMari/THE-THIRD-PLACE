@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.20  
+Version 7.21  
   
 ---  
   
@@ -3711,11 +3711,7 @@ BLACK EDITION マルチダストバケット
 
 **Status**  
 
-Essential  
-
-**Quantity**  
-
-2  
+Owned  
 
 ### Color  
 
@@ -3731,13 +3727,45 @@ None
 
 ### Industrial Attribute  
 
-Dust Bucket（TP-010 Duplicate Storage Exceptionに基づく2台運用。1台目＝燃えるゴミ・缶ゴミ用、2台目＝ビンゴミ用として役割分化。従来使用のSnow Peak ガビングスタンド（DB-030、フレーム組立式）からの置き換えとして採用）  
+Dust Bucket（TP-010 Duplicate Storage Exceptionに基づく2台運用構想のうち、1台目を購入し運用中。当面はこの1台で運用し、2台目の追加可否・仕様はSTR-028で検討中。従来使用のSnow Peak ガビングスタンド（DB-030、STR-027としてRetired登録済み）からの置き換えとして採用）  
 
 ---  
 
 ## STR-027  
 
-Retired. Snow Peak ガビングスタンド（DB-030）。サイズ50×36×63(h)cm、重量2.0kg、ポリ袋を最大3枚まで取り付け分別対応可能なフレーム組立式ダストスタンドであったが、設営効率（TP-002 Storage Domain評価軸）を著しく損なうと判断され、STR-026（ANOBA BLACK EDITION マルチダストバケット ×2）への置き換え対象となった。TP-004への正式登録がなされないまま運用されていた期間があり、本レコードは事後的な記録である。TP-010 Duplicate Storage Exceptionの適用事例として、本IDを今後同種の入れ替えが発生した際の記録形式の参照として保持する。  
+Retired. Snow Peak ガビングスタンド（DB-030）。サイズ50×36×63(h)cm、重量2.0kg、ポリ袋を最大3枚まで取り付け分別対応可能なフレーム組立式ダストスタンドであったが、設営効率（TP-002 Storage Domain評価軸）を著しく損なうと判断され、STR-026（ANOBA BLACK EDITION マルチダストバケット）への置き換え対象となった。TP-004への正式登録がなされないまま運用されていた期間があり、本レコードは事後的な記録である。TP-010 Duplicate Storage Exceptionの適用事例として、本IDを今後同種の入れ替えが発生した際の記録形式の参照として保持する。  
+
+---  
+
+## STR-028  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+Unconfirmed  
+
+**Status**  
+
+Candidate  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Dust Bucket（TP-010 Duplicate Storage Exceptionに基づく2台目枠。ビンゴミ用としての役割分化を想定するが、STR-026と同一のANOBA製品を追加購入するか、別ブランドを検討するかは未定。具体的な候補比較はPX-007 Deliberation Codexで管理する）  
 
 # Coffee  
 
@@ -5055,4 +5083,16 @@ Version 7.18時点で見送っていたSnow Peak ガビングスタンド（DB-0
 ### Changes  
 
 - STR-027：新規登録（Retired）。Snow Peak ガビングスタンド（DB-030）。STR-026への置き換えに伴う廃止記録。サイズ・重量・分別仕様を事後的に記録。  
+- Related Documents：変更なし。  
+
+---  
+
+## Version 7.21  
+
+MARI様のご購入報告に基づき、STR-026（ANOBAダストバケット）のStatus更新と、2台目検討枠の新設。IDはSTR-027が直前のVersion 7.20で別用途（Retired記録）に確定していたため、新規枠にはSTR-028を採番した。
+
+### Changes  
+
+- STR-026：StatusをEssentialからOwnedへ更新（ANOBA BLACK EDITION マルチダストバケット、1台目を購入）。Quantityフィールドを削除（2台構成から単数運用へ変更のため）。Industrial Attributeの記述を、1台目を運用中である旨・2台目検討枠はSTR-028である旨に修正。  
+- STR-028：新規登録。ダストバケット2台目の検討枠（Status: Candidate）。STR-026と同一のANOBA製品を追加購入するか、別ブランドを検討するかは未定。具体的な候補比較はPX-007 Deliberation Codexで管理する。  
 - Related Documents：変更なし。  
