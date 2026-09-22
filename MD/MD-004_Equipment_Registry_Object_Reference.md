@@ -1061,7 +1061,7 @@ Carrying Case（EXTENMON TABLE用）
 
 **Brand**  
 
-DEVISE WORKS × TENt o TEN × WHAT WE WANT  
+TENt o TEN  
 
 **Product**  
 
@@ -1480,7 +1480,7 @@ Owned
 
 ### Child Components  
 
-- LGT-058  
+- LGT-003  
 
 ### Color  
 
@@ -1504,8 +1504,7 @@ Kerosene Lantern
 
 ---  
 
-## LGT-003  
-
+## LGT-004
 **Brand**  
 
 WANTKEY CAMP × 38Explore  
@@ -1564,7 +1563,7 @@ Owned
 
 **Parent**  
 
-LGT-003  
+LGT-004  
 
 ### Color  
 
@@ -1600,7 +1599,7 @@ Owned
 
 **Parent**  
 
-LGT-003  
+LGT-004  
 
 ### Color  
 
@@ -1636,7 +1635,7 @@ Owned
 
 **Parent**  
 
-LGT-003  
+LGT-004  
 
 ### Color  
 
@@ -1672,7 +1671,7 @@ Owned
 
 **Parent**  
 
-LGT-003  
+LGT-004  
 
 ### Color  
 
@@ -1708,7 +1707,7 @@ Owned
 
 **Parent**  
 
-LGT-003  
+LGT-004  
 
 ### Color  
 
@@ -2003,6 +2002,10 @@ nodel design
 
 Owned  
 
+**Parent**  
+
+LGT-035  
+
 ### Child Components  
 
 - LGT-017  
@@ -2089,9 +2092,13 @@ Solol Wood (Walnut)
 
 Owned  
 
+**Parent**  
+
+LGT-035  
+
 ### Child Components  
 
-- LGT-042  
+- LGT-042a  
 
 ### Color  
 
@@ -2125,9 +2132,13 @@ Solol Wood (Hinoki)
 
 Owned  
 
+**Parent**  
+
+LGT-035  
+
 ### Child Components  
 
-- LGT-043  
+- LGT-042b  
 
 ### Color  
 
@@ -2161,9 +2172,13 @@ Solol Wood (Pine)
 
 Owned  
 
+**Parent**  
+
+LGT-035  
+
 ### Child Components  
 
-- LGT-044  
+- LGT-042c  
 
 ### Color  
 
@@ -2413,6 +2428,10 @@ Glass Shade & Wood Stand Set
 
 Owned  
 
+**Parent**  
+
+LGT-036  
+
 ### Color  
 
 Gray  
@@ -2448,6 +2467,10 @@ MMM Pocket Shade PAJAMA MOON LIAN HOME
 **Status**  
 
 Owned  
+
+**Parent**  
+
+LGT-036  
 
 ### Branch Variants  
 
@@ -2565,7 +2588,7 @@ Owned
 ### Child Components  
 
 - LGT-030  
-- LGT-045  
+- LGT-042d  
 
 ### Color  
 
@@ -2646,7 +2669,7 @@ Owned
 ### Child Components  
 
 - LGT-032  
-- LGT-046  
+- LGT-043a  
 
 ### Color  
 
@@ -2730,7 +2753,7 @@ Owned
 
 ### Child Components  
 
-- LGT-047  
+- LGT-043b  
 
 ### Color  
 
@@ -2766,7 +2789,7 @@ Owned
 
 ### Child Components  
 
-- LGT-048  
+- LGT-043c  
 
 ### Color  
 
@@ -2802,7 +2825,11 @@ Owned
 
 ### Child Components  
 
-- LGT-049  
+- LGT-016  
+- LGT-018  
+- LGT-019  
+- LGT-020  
+- LGT-043d  
 
 ### Color  
 
@@ -2838,6 +2865,8 @@ Owned
 
 ### Child Components  
 
+- LGT-027  
+- LGT-028  
 - LGT-060  
 
 ### Quantity  
@@ -2882,7 +2911,7 @@ Essential
 
 ### Child Components  
 
-- LGT-050  
+- LGT-044a  
 
 ### Color  
 
@@ -2922,7 +2951,7 @@ Essential
 
 ### Child Components  
 
-- LGT-051  
+- LGT-044b  
 
 ### Color  
 
@@ -2962,7 +2991,7 @@ Essential
 
 ### Child Components  
 
-- LGT-052  
+- LGT-044c  
 
 ### Color  
 
@@ -2992,12 +3021,11 @@ Vacant ID. Reserved for a fourth hanging-type Airlight shade, not yet identified
 
 ### Child Components  
 
-- LGT-053  
+- LGT-044d  
 
 ---  
 
-## LGT-042  
-
+## LGT-042a
 **Brand**  
 
 CARGO CONTAINER  
@@ -3032,8 +3060,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-043  
-
+## LGT-042b
 **Brand**  
 
 CARGO CONTAINER  
@@ -3068,8 +3095,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-044  
-
+## LGT-042c
 **Brand**  
 
 CARGO CONTAINER  
@@ -3104,8 +3130,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-045  
-
+## LGT-042d
 **Brand**  
 
 CARGO CONTAINER  
@@ -3140,8 +3165,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-046  
-
+## LGT-043a
 **Brand**  
 
 CARGO CONTAINER  
@@ -3176,8 +3200,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-047  
-
+## LGT-043b
 **Brand**  
 
 CARGO CONTAINER  
@@ -3212,8 +3235,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-048  
-
+## LGT-043c
 **Brand**  
 
 CARGO CONTAINER  
@@ -3248,8 +3270,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-049  
-
+## LGT-043d
 **Brand**  
 
 CARGO CONTAINER  
@@ -3284,8 +3305,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-050  
-
+## LGT-044a
 **Brand**  
 
 CARGO CONTAINER  
@@ -3320,8 +3340,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-051  
-
+## LGT-044b
 **Brand**  
 
 CARGO CONTAINER  
@@ -3356,8 +3375,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-052  
-
+## LGT-044c
 **Brand**  
 
 CARGO CONTAINER  
@@ -3392,8 +3410,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-053  
-
+## LGT-044d
 **Brand**  
 
 CARGO CONTAINER  
@@ -3574,8 +3591,7 @@ Lower Base
 ¥14,800  
 
 ---  
-## LGT-058  
-
+## LGT-003
 **Brand**  
 
 Vapourax  
