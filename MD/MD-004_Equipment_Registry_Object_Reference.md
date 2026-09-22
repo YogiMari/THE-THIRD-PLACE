@@ -1061,7 +1061,7 @@ Carrying Case（EXTENMON TABLE用）
 
 **Brand**  
 
-DEVISE WORKS × WHAT WE WANT  
+TENt o TEN  
 
 **Product**  
 
