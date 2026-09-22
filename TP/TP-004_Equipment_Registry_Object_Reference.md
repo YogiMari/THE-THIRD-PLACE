@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.17  
+Version 7.18  
   
 ---  
   
@@ -3697,6 +3697,42 @@ DryHide Fabric
 
 Soft Cooler  
 
+---  
+
+## STR-026  
+
+**Brand**  
+
+ANOBA  
+
+**Product**  
+
+BLACK EDITION マルチダストバケット  
+
+**Status**  
+
+Essential  
+
+**Quantity**  
+
+2  
+
+### Color  
+
+Black  
+
+### Material  
+
+Polyester / PE板 / Tarpaulin / PP  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Dust Bucket（TP-010 Duplicate Storage Exceptionに基づく2台運用。1台目＝燃えるゴミ・缶ゴミ用、2台目＝ビンゴミ用として役割分化。従来使用のSnow Peak ガビングスタンド（DB-030、フレーム組立式）からの置き換えとして採用。DB-030はTP-004へ未登録のまま運用されていたため、Retired登録は行わず本IDのみ新設する）  
+
 # Coffee  
 
 Coffee Domainは、抽出に関する一連のワークフロー全体を管理する。  
@@ -4940,7 +4976,7 @@ Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning�
 - FUR-022a・FUR-022b：削除。具体情報（Enlightened Equipment Accomplice、UGQ Outdoor Tango Duo）はPX-007 Deliberation Codexへ移管。  
 - FUR-024：Brand/Productを「Unconfirmed（候補2案から選定予定）」から「Unconfirmed」に簡素化。Branch Variantsフィールドを削除。  
 - FUR-024a〜FUR-024d：削除。具体情報（Therm-a-Rest、WAQ、HOTEL CAMPS、VISIONPEAKS×NANGAの4候補）はPX-007 Deliberation Codexへ移管。  
-- FIR-019：Brand/Productを「MT.SUMI」「Aura FG」から「Unconfirmed」に変更。旧FIR-020（FIREGRAPHIX BLISS-SP）と統合し、単一のFire Pit検討枠とした。  
+- FIR-019：Brand/Productを「MT.SUMI」「Aura FG」から「Unconfirmed」に変更。旧FIR-020と統合し、単一のFire Pit検討枠とした。  
 - FIR-020：Retiredとして記録。旧登録情報はPX-007 Deliberation Codexへ移管。ID自体は欠番として保持。  
 - LGT-041：Brand/Productを「wildingout」「LF1984」から「Unconfirmed」に変更。具体情報はPX-007 Deliberation Codexへ移管。  
 - ARM-004：プロジェクトオーナーの判断により購入決定。StatusをCandidateからEssentialへ変更。Brand/Product（UNIT/04 × KUNST・BAUM SCENT TOWER）はTP-004に残置し、PX-007への移管対象から除外。  
@@ -4978,3 +5014,15 @@ Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning�
 ### Changes  
 
 - LGT-028b：Brandを「CALMA STORE × neru design works」から「neru design works × CALMA STORE」へ訂正（neru design worksによるCALMA STORE別注品であり、ブランド順は制作元が先）。Productを「POCKET SHADE M（neru design works柄）」から「POCKET SHADE」へ簡素化。  
+
+---  
+
+## Version 7.18  
+
+プロジェクトオーナーとの協議に基づき、TP-010 Duplicate Storage Exceptionの新設を受けて、ゴミ箱運用をANOBAへ切り替え。  
+
+### Changes  
+
+- STR-026：新規登録。ANOBA BLACK EDITION マルチダストバケット（Status: Essential, Quantity: 2）。TP-010 Duplicate Storage Exceptionに基づき、燃えるゴミ・缶ゴミ用／ビンゴミ用の役割分化を行った2台構成として採用。  
+- 従来使用のSnow Peak ガビングスタンド（DB-030）は、TP-004へ未登録のまま運用されていたため、Retiredレコードの追加は行わない。  
+- Related Documents：変更なし。  
