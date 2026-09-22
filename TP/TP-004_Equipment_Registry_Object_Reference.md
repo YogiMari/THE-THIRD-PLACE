@@ -4272,6 +4272,10 @@ Roadie 24
 
 Owned  
 
+### Child Components
+
+- STR-030
+
 ### Color  
 
 Gray  
@@ -4299,6 +4303,10 @@ Hopper Flip 16
 **Status**  
 
 Owned  
+
+### Child Components
+
+- STR-031
 
 ### Color  
 
@@ -4438,6 +4446,10 @@ YETI ICE 4 lb (1.8 kg)
 
 Owned  
 
+**Parent**
+
+STR-024
+
 ### Color  
 
 Blue  
@@ -4468,6 +4480,10 @@ YETI Thin Ice - Large
 **Status**  
 
 Owned  
+
+**Parent**
+
+STR-025
 
 ### Color  
 
