@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.48  
+Version 7.49  
   
 ---  
   
@@ -1504,6 +1504,42 @@ Kerosene Lantern
 
 ---  
 
+## LGT-003  
+
+**Brand**  
+
+Vapalux  
+
+**Product**  
+
+クラッシュアイス  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-002  
+
+
+### Color  
+
+Amber  
+
+### Material  
+
+Glass  
+
+### Industrial Attribute  
+
+Kerosene Lantern Accessory / Variant Part（LGT-002用）  
+
+### Price  
+
+¥40,000  
+
+---  
 ## LGT-004  
 
 **Brand**  
@@ -1971,6 +2007,11 @@ Owned
 
 LGT-010  
 
+### Child Components  
+
+- LGT-017  
+- LGT-018  
+
 ### Color  
 
 Silver  
@@ -1993,432 +2034,6 @@ Portable LED Lantern
 
 **Brand**  
 
-nodel design  
-
-**Product**  
-
-3ndelier Blade  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-036  
-
-### Child Components  
-
-- LGT-018  
-- LGT-022  
-- LGT-023  
-- LGT-024  
-- LGT-025  
-- LGT-026  
-- LGT-027  
-
-### Color  
-
-Black  
-
-### Material  
-
-Steel  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Lantern Hanger  
-
-### Price  
-
-¥30,800  
-
----  
-
-## LGT-018  
-
-**Brand**  
-
-nodel design  
-
-**Product**  
-
-G31 Slider  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-017  
-
-### Quantity  
-
-3  
-
-### Color  
-
-Black  
-
-### Material  
-
-Aluminum  
-
-### Industrial Attribute  
-
-Slider  
-
-### Price  
-
-¥11,800  
-
----  
-
-## LGT-019  
-
-**Brand**  
-
-nodel design × solworks  
-
-**Product**  
-
-Solol Wood (Walnut)  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-036  
-
-### Child Components  
-
-- LGT-042a  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Walnut  
-
-### Industrial Attribute  
-
-Airlight Shade  
-
-### Price  
-
-¥50,000  
-
----  
-
-## LGT-020  
-
-**Brand**  
-
-nodel design × solworks  
-
-**Product**  
-
-Solol Wood (Hinoki)  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-036  
-
-### Child Components  
-
-- LGT-042b  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Hinoki  
-
-### Industrial Attribute  
-
-Airlight Shade  
-
-### Price  
-
-¥50,000  
-
----  
-
-## LGT-021  
-
-**Brand**  
-
-nodel design × solworks  
-
-**Product**  
-
-Solol Wood (Pine)  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-036  
-
-### Child Components  
-
-- LGT-042c  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Pine  
-
-### Industrial Attribute  
-
-Airlight Shade  
-
-### Price  
-
-¥50,000  
-
----  
-
-## LGT-022  
-
-**Brand**  
-
-nodel design  
-
-**Product**  
-
-38-kT miyabi Wood (Walnut)  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-017  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Walnut  
-
-### Industrial Attribute  
-
-Portable LED Lantern  
-
-### Price  
-
-¥13,970  
-
----  
-
-## LGT-023  
-
-**Brand**  
-
-nodel design  
-
-**Product**  
-
-38-kT miyabi Wood (Sugi)  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-017  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Sugi  
-
-### Industrial Attribute  
-
-Portable LED Lantern  
-
-### Price  
-
-¥14,800  
-
----  
-
-## LGT-024  
-
-**Brand**  
-
-nodel design  
-
-**Product**  
-
-38-kT miyabi Wood (Karin)  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-017  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Karin  
-
-### Industrial Attribute  
-
-Portable LED Lantern  
-
-### Price  
-
-¥13,970  
-
----  
-
-## LGT-025  
-
-**Brand**  
-
-nodel design  
-
-**Product**  
-
-38-kT miyabi Wood (African Wood)  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-017  
-
-### Color  
-
-Brown  
-
-### Material  
-
-African Wood  
-
-### Industrial Attribute  
-
-Portable LED Lantern  
-
-### Price  
-
-¥13,970  
-
----  
-
-## LGT-026  
-
-**Brand**  
-
-nodel design  
-
-**Product**  
-
-38-kT miyabi Wood (Pine)  
-
-**Status**  
-
-Upgrade  
-
-**Parent**  
-
-LGT-017  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Pine  
-
-### Industrial Attribute  
-
-Wood Sleeve  
-
-### Price  
-
-¥11,990  
-
----  
-
-## LGT-027  
-
-**Brand**  
-
-nodel design  
-
-**Product**  
-
-38-kT miyabi Wood (Maple)  
-
-**Status**  
-
-Upgrade  
-
-**Parent**  
-
-LGT-017  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Maple  
-
-### Industrial Attribute  
-
-Wood Sleeve  
-
-### Price  
-
-¥25,000  
-
----  
-
-## LGT-028  
-
-**Brand**  
-
 TARPtoTARP × LampUp  
 
 **Product**  
@@ -2431,7 +2046,7 @@ Owned
 
 **Parent**  
 
-LGT-037  
+LGT-016  
 
 ### Color  
 
@@ -2455,7 +2070,7 @@ Portable LED Lantern
 
 ---  
 
-## LGT-029  
+## LGT-018  
 
 **Brand**  
 
@@ -2471,12 +2086,12 @@ Owned
 
 **Parent**  
 
-LGT-037  
+LGT-016  
 
 ### Branch Variants  
 
-- LGT-029a  
-- LGT-029b  
+- LGT-018a  
+- LGT-018b  
 
 ### Color  
 
@@ -2500,7 +2115,7 @@ Portable LED Lantern
 
 ---  
 
-## LGT-029a  
+## LGT-018a  
 
 **Brand**  
 
@@ -2516,7 +2131,7 @@ Candidate
 
 **Parent**  
 
-LGT-029  
+LGT-018  
 
 ### Color  
 
@@ -2536,7 +2151,7 @@ Portable LED Lantern（38-kT Shade）
 
 ---  
 
-## LGT-029b  
+## LGT-018b  
 
 **Brand**  
 
@@ -2552,7 +2167,7 @@ Candidate
 
 **Parent**  
 
-LGT-029  
+LGT-018  
 
 ### Color  
 
@@ -2572,7 +2187,525 @@ Portable LED Lantern（38-kT Shade, Foldable）
 
 ---  
 
+## LGT-019  
+
+**Brand**  
+
+nodel design  
+
+**Product**  
+
+3ndelier Blade  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- LGT-020  
+- LGT-021  
+- LGT-022  
+- LGT-023  
+- LGT-024  
+- LGT-025  
+- LGT-026  
+
+### Color  
+
+Black  
+
+### Material  
+
+Steel  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Lantern Hanger  
+
+### Price  
+
+¥30,800  
+
+---  
+
+## LGT-020  
+
+**Brand**  
+
+nodel design  
+
+**Product**  
+
+G31 Slider  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-019  
+
+### Quantity  
+
+3  
+
+### Color  
+
+Black  
+
+### Material  
+
+Aluminum  
+
+### Industrial Attribute  
+
+Slider  
+
+### Price  
+
+¥11,800  
+
+---  
+
+## LGT-021  
+
+**Brand**  
+
+nodel design  
+
+**Product**  
+
+38-kT miyabi Wood (Walnut)  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-019  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Walnut  
+
+### Industrial Attribute  
+
+Portable LED Lantern  
+
+### Price  
+
+¥13,970  
+
+---  
+
+## LGT-022  
+
+**Brand**  
+
+nodel design  
+
+**Product**  
+
+38-kT miyabi Wood (Sugi)  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-019  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Sugi  
+
+### Industrial Attribute  
+
+Portable LED Lantern  
+
+### Price  
+
+¥14,800  
+
+---  
+
+## LGT-023  
+
+**Brand**  
+
+nodel design  
+
+**Product**  
+
+38-kT miyabi Wood (Karin)  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-019  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Karin  
+
+### Industrial Attribute  
+
+Portable LED Lantern  
+
+### Price  
+
+¥13,970  
+
+---  
+
+## LGT-024  
+
+**Brand**  
+
+nodel design  
+
+**Product**  
+
+38-kT miyabi Wood (African Wood)  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-019  
+
+### Color  
+
+Brown  
+
+### Material  
+
+African Wood  
+
+### Industrial Attribute  
+
+Portable LED Lantern  
+
+### Price  
+
+¥13,970  
+
+---  
+
+## LGT-025  
+
+**Brand**  
+
+nodel design  
+
+**Product**  
+
+38-kT miyabi Wood (Pine)  
+
+**Status**  
+
+Upgrade  
+
+**Parent**  
+
+LGT-019  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Pine  
+
+### Industrial Attribute  
+
+Wood Sleeve  
+
+### Price  
+
+¥11,990  
+
+---  
+
+## LGT-026  
+
+**Brand**  
+
+nodel design  
+
+**Product**  
+
+38-kT miyabi Wood (Maple)  
+
+**Status**  
+
+Upgrade  
+
+**Parent**  
+
+LGT-019  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Maple  
+
+### Industrial Attribute  
+
+Wood Sleeve  
+
+### Price  
+
+¥25,000  
+
+---  
+
+## LGT-027  
+
+**Brand**  
+
+nodel design × solworks  
+
+**Product**  
+
+Solol Wood (Walnut)  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- LGT-028  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Walnut  
+
+### Industrial Attribute  
+
+Airlight Shade  
+
+### Price  
+
+¥50,000  
+
+---  
+
+## LGT-028  
+
+**Brand**  
+
+CARGO CONTAINER  
+
+**Product**  
+
+AIR LIGHT  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-027  
+
+### Color  
+
+Black  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
+
+---  
+
+## LGT-029  
+
+**Brand**  
+
+nodel design × solworks  
+
+**Product**  
+
+Solol Wood (Hinoki)  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- LGT-030  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Hinoki  
+
+### Industrial Attribute  
+
+Airlight Shade  
+
+### Price  
+
+¥50,000  
+
+---  
+
 ## LGT-030  
+
+**Brand**  
+
+CARGO CONTAINER  
+
+**Product**  
+
+AIR LIGHT  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-029  
+
+### Color  
+
+Black  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
+
+---  
+
+## LGT-031  
+
+**Brand**  
+
+nodel design × solworks  
+
+**Product**  
+
+Solol Wood (Pine)  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- LGT-032  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Pine  
+
+### Industrial Attribute  
+
+Airlight Shade  
+
+### Price  
+
+¥50,000  
+
+---  
+
+## LGT-032  
+
+**Brand**  
+
+CARGO CONTAINER  
+
+**Product**  
+
+AIR LIGHT  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-031  
+
+### Color  
+
+Black  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
+
+---  
+
+## LGT-033  
 
 **Brand**  
 
@@ -2588,8 +2721,8 @@ Owned
 
 ### Child Components  
 
-- LGT-031  
-- LGT-042d  
+- LGT-034  
+- LGT-035  
 
 ### Color  
 
@@ -2613,7 +2746,7 @@ Airlight Shade
 
 ---  
 
-## LGT-031  
+## LGT-034  
 
 **Brand**  
 
@@ -2629,7 +2762,7 @@ Owned
 
 **Parent**  
 
-LGT-030  
+LGT-033  
 
 ### Color  
 
@@ -2653,7 +2786,43 @@ Lantern Stand（Base W160×D160×H15mm, Brass Pole H270mm, 1/4-inch screw thread
 
 ---  
 
-## LGT-032  
+## LGT-035  
+
+**Brand**  
+
+CARGO CONTAINER  
+
+**Product**  
+
+AIR LIGHT  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-033  
+
+### Color  
+
+Black  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
+
+---  
+
+## LGT-036  
 
 **Brand**  
 
@@ -2669,8 +2838,8 @@ Owned
 
 ### Child Components  
 
-- LGT-033  
-- LGT-043a  
+- LGT-037  
+- LGT-039  
 
 ### Color  
 
@@ -2694,7 +2863,7 @@ Airlight Shade
 
 ---  
 
-## LGT-033  
+## LGT-037  
 
 **Brand**  
 
@@ -2710,11 +2879,11 @@ Owned
 
 **Parent**  
 
-LGT-032  
+LGT-036  
 
 ### Child Components  
 
-- LGT-059  
+- LGT-038  
 
 ### Color  
 
@@ -2738,547 +2907,43 @@ Tabletop Lantern Stand（Base W140×D150×H26mm, Brass Pole H190mm, 1/4-inch scr
 
 ---  
 
-## LGT-034  
+## LGT-038  
 
 **Brand**  
 
-neru design works × T no T.LE  
+WHAT WE WANT（WWW）  
 
 **Product**  
 
-Valo shade "MID CENTURY"  
+WWW_LANTHANUMHOOK  
 
 **Status**  
 
 Owned  
 
-### Child Components  
+**Parent**  
 
-- LGT-043b  
+LGT-037  
 
-### Color  
-
-Orange  
-
-### Material  
-
-Silicone  
-
-### Industrial Attribute  
-
-Airlight Shade  
-
-### Price  
-
-¥40,000  
-
----  
-
-## LGT-035  
-
-**Brand**  
-
-KI-no  
-
-**Product**  
-
-Kn One Off Shade (38灯)  
-
-**Status**  
-
-Owned  
-
-### Child Components  
-
-- LGT-043c  
 
 ### Color  
 
-Oak / Light Blue  
-
-### Material  
-
-Resin / Walnut  
-
-### Industrial Attribute  
-
-Airlight Shade  
-
-### Price  
-
-¥15,400  
-
----  
-
-## LGT-036  
-
-**Brand**  
-
-neru design works  
-
-**Product**  
-
-革シェード  
-
-**Status**  
-
-Owned  
-
-### Child Components  
-
-- LGT-017  
-- LGT-019  
-- LGT-020  
-- LGT-021  
-- LGT-043d  
-
-### Color  
-
-Light Brown  
-
-### Material  
-
-Leather  
-
-### Industrial Attribute  
-
-Airlight Shade  
-
-### Price  
-
-¥18,450  
-
----  
-
-## LGT-037  
-
-**Brand**  
-
-38Explore  
-
-**Product**  
-
-38-kT THE RICH classic100  
-
-**Status**  
-
-Owned  
-
-### Child Components  
-
-- LGT-028  
-- LGT-029  
-- LGT-060  
-
-### Quantity  
-
-2  
-
-### Color  
-
-Black  
+Gold  
 
 ### Material  
 
 Brass  
 
-### Graphic Attribute  
-
-None  
-
 ### Industrial Attribute  
 
-Premium Lantern  
+Otachidai Bar（お立ち台バー）  
 
 ### Price  
 
-¥25,740（2個合計）  
+¥1,320  
 
 ---  
-
-## LGT-038  
-
-**Brand**  
-
-rove troupe  
-
-**Product**  
-
-RT-01AC01 / ECHO LAMP  
-
-**Status**  
-
-Essential  
-
-### Child Components  
-
-- LGT-044a  
-
-### Color  
-
-Black  
-
-### Material  
-
-Aluminum / Glass  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Airlight Shade (Hanging)  
-
-### Price  
-
-¥45,000  
-
----  
-
 ## LGT-039  
-
-**Brand**  
-
-KURASHI MADE  
-
-**Product**  
-
-DOME LOOK  
-
-**Status**  
-
-Essential  
-
-### Child Components  
-
-- LGT-044b  
-
-### Color  
-
-Black  
-
-### Material  
-
-Aluminum / Glass  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Airlight Shade (Hanging)  
-
-### Price  
-
-¥8,800  
-
----  
-
-## LGT-040  
-
-**Brand**  
-
-IFA  
-
-**Product**  
-
-Pivotshade  
-
-**Status**  
-
-Essential  
-
-### Child Components  
-
-- LGT-044c  
-
-### Color  
-
-Silver  
-
-### Material  
-
-Aluminum  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Airlight Shade (Hanging)  
-
-### Price  
-
-¥23,000  
-
----  
-
-## LGT-041  
-
-Vacant ID. Reserved for a fourth hanging-type Airlight shade, not yet identified.  
-
-### Child Components  
-
-- LGT-044d  
-
----  
-
-## LGT-042a  
-
-**Brand**  
-
-CARGO CONTAINER  
-
-**Product**  
-
-AIR LIGHT  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-019  
-
-### Color  
-
-Black  
-
-### Material  
-
-Plastic  
-
-### Industrial Attribute  
-
-Airlight (Portable LED Light Body)  
-
-### Price  
-
-¥5,780  
-
----  
-
-## LGT-042b  
-
-**Brand**  
-
-CARGO CONTAINER  
-
-**Product**  
-
-AIR LIGHT  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-020  
-
-### Color  
-
-Black  
-
-### Material  
-
-Plastic  
-
-### Industrial Attribute  
-
-Airlight (Portable LED Light Body)  
-
-### Price  
-
-¥5,780  
-
----  
-
-## LGT-042c  
-
-**Brand**  
-
-CARGO CONTAINER  
-
-**Product**  
-
-AIR LIGHT  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-021  
-
-### Color  
-
-Black  
-
-### Material  
-
-Plastic  
-
-### Industrial Attribute  
-
-Airlight (Portable LED Light Body)  
-
-### Price  
-
-¥5,780  
-
----  
-
-## LGT-042d  
-
-**Brand**  
-
-CARGO CONTAINER  
-
-**Product**  
-
-AIR LIGHT  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-030  
-
-### Color  
-
-Black  
-
-### Material  
-
-Plastic  
-
-### Industrial Attribute  
-
-Airlight (Portable LED Light Body)  
-
-### Price  
-
-¥5,780  
-
----  
-
-## LGT-043a  
-
-**Brand**  
-
-CARGO CONTAINER  
-
-**Product**  
-
-AIR LIGHT  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-032  
-
-### Color  
-
-Black  
-
-### Material  
-
-Plastic  
-
-### Industrial Attribute  
-
-Airlight (Portable LED Light Body)  
-
-### Price  
-
-¥5,780  
-
----  
-
-## LGT-043b  
-
-**Brand**  
-
-CARGO CONTAINER  
-
-**Product**  
-
-AIR LIGHT  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-034  
-
-### Color  
-
-Black  
-
-### Material  
-
-Plastic  
-
-### Industrial Attribute  
-
-Airlight (Portable LED Light Body)  
-
-### Price  
-
-¥5,780  
-
----  
-
-## LGT-043c  
-
-**Brand**  
-
-CARGO CONTAINER  
-
-**Product**  
-
-AIR LIGHT  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-035  
-
-### Color  
-
-Black  
-
-### Material  
-
-Plastic  
-
-### Industrial Attribute  
-
-Airlight (Portable LED Light Body)  
-
-### Price  
-
-¥5,780  
-
----  
-
-## LGT-043d  
 
 **Brand**  
 
@@ -3314,79 +2979,43 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-044a  
+## LGT-040  
 
 **Brand**  
 
-CARGO CONTAINER  
+neru design works × T no T.LE  
 
 **Product**  
 
-AIR LIGHT  
+Valo shade "MID CENTURY"  
 
 **Status**  
 
 Owned  
 
-**Parent**  
+### Child Components  
 
-LGT-038  
-
-### Color  
-
-Black  
-
-### Material  
-
-Plastic  
-
-### Industrial Attribute  
-
-Airlight (Portable LED Light Body)  
-
-### Price  
-
-¥5,780  
-
----  
-
-## LGT-044b  
-
-**Brand**  
-
-CARGO CONTAINER  
-
-**Product**  
-
-AIR LIGHT  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-039  
+- LGT-041  
 
 ### Color  
 
-Black  
+Orange  
 
 ### Material  
 
-Plastic  
+Silicone  
 
 ### Industrial Attribute  
 
-Airlight (Portable LED Light Body)  
+Airlight Shade  
 
 ### Price  
 
-¥5,780  
+¥40,000  
 
 ---  
 
-## LGT-044c  
+## LGT-041  
 
 **Brand**  
 
@@ -3422,7 +3051,43 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-044d  
+## LGT-042  
+
+**Brand**  
+
+KI-no  
+
+**Product**  
+
+Kn One Off Shade (38灯)  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- LGT-043  
+
+### Color  
+
+Oak / Light Blue  
+
+### Material  
+
+Resin / Walnut  
+
+### Industrial Attribute  
+
+Airlight Shade  
+
+### Price  
+
+¥15,400  
+
+---  
+
+## LGT-043  
 
 **Brand**  
 
@@ -3438,7 +3103,7 @@ Owned
 
 **Parent**  
 
-LGT-041 (pending — parent shade not yet identified)  
+LGT-042  
 
 ### Color  
 
@@ -3458,7 +3123,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-055  
+## LGT-044  
 
 **Brand**  
 
@@ -3466,7 +3131,7 @@ neru design works
 
 **Product**  
 
-BM Lanthan  
+革シェード  
 
 **Status**  
 
@@ -3474,209 +3139,107 @@ Owned
 
 ### Child Components  
 
-- LGT-056  
-- LGT-057  
-- LGT-058  
-
+- LGT-045  
 
 ### Color  
 
-Gold  
+Light Brown  
+
+### Material  
+
+Leather  
+
+### Industrial Attribute  
+
+Airlight Shade  
+
+### Price  
+
+¥18,450  
+
+---  
+
+## LGT-045  
+
+**Brand**  
+
+CARGO CONTAINER  
+
+**Product**  
+
+AIR LIGHT  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-044  
+
+### Color  
+
+Black  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
+
+---  
+
+## LGT-046  
+
+**Brand**  
+
+38Explore  
+
+**Product**  
+
+38-kT THE RICH classic100  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- LGT-047  
+
+### Quantity  
+
+2  
+
+### Color  
+
+Black  
 
 ### Material  
 
 Brass  
 
-### Industrial Attribute  
+### Graphic Attribute  
 
-Gas Lantern（本体）  
-
-### Price  
-
-¥48,400  
-
----  
-## LGT-056  
-
-**Brand**  
-
-neru design works  
-
-**Product**  
-
-Vintage cover250  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-055  
-
-
-### Color  
-
-Copper（Marbled Patina）  
-
-### Material  
-
-Copper（Chemically Patinated）  
+None  
 
 ### Industrial Attribute  
 
-Base  
+Premium Lantern  
 
 ### Price  
 
-¥37,980  
+¥25,740（2個合計）  
 
 ---  
-## LGT-057  
 
-**Brand**  
-
-neru design works  
-
-**Product**  
-
-Futamata  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-055  
-
-
-### Color  
-
-Gold  
-
-### Material  
-
-Brass  
-
-### Industrial Attribute  
-
-Side Rail  
-
-### Price  
-
-¥23,150  
-
----  
-## LGT-058  
-
-**Brand**  
-
-INOUT  
-
-**Product**  
-
-OD-CAN PLATE  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-055  
-
-
-### Color  
-
-Brown  
-
-### Material  
-
-Black Walnut  
-
-### Industrial Attribute  
-
-Lower Base  
-
-### Price  
-
-¥14,800  
-
----  
-## LGT-003  
-
-**Brand**  
-
-Vapourax  
-
-**Product**  
-
-クラッシュアイス  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-002  
-
-
-### Color  
-
-Amber  
-
-### Material  
-
-Glass  
-
-### Industrial Attribute  
-
-Kerosene Lantern Accessory / Variant Part（LGT-002用）  
-
-### Price  
-
-¥40,000  
-
----  
-## LGT-059  
-
-**Brand**  
-
-WHAT WE WANT（WWW）  
-
-**Product**  
-
-WWW_LANTHANUMHOOK  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-LGT-033  
-
-
-### Color  
-
-Gold  
-
-### Material  
-
-Brass  
-
-### Industrial Attribute  
-
-Otachidai Bar（お立ち台バー）  
-
-### Price  
-
-¥1,320  
-
----  
-## LGT-060  
+## LGT-047  
 
 **Brand**  
 
@@ -3692,7 +3255,7 @@ Owned
 
 **Parent**  
 
-LGT-037  
+LGT-046  
 
 
 ### Color  
@@ -3712,6 +3275,280 @@ Stand（38-kT THE RICH classic100 ×2用）
 ¥18,040  
 
 ---  
+## LGT-048  
+
+**Brand**  
+
+rove troupe  
+
+**Product**  
+
+RT-01AC01 / ECHO LAMP  
+
+**Status**  
+
+Essential  
+
+### Child Components  
+
+- LGT-049  
+
+### Color  
+
+Black  
+
+### Material  
+
+Aluminum / Glass  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Airlight Shade (Hanging)  
+
+### Price  
+
+¥45,000  
+
+---  
+
+## LGT-049  
+
+**Brand**  
+
+CARGO CONTAINER  
+
+**Product**  
+
+AIR LIGHT  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-048  
+
+### Color  
+
+Black  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
+
+---  
+
+## LGT-050  
+
+**Brand**  
+
+KURASHI MADE  
+
+**Product**  
+
+DOME LOOK  
+
+**Status**  
+
+Essential  
+
+### Child Components  
+
+- LGT-051  
+
+### Color  
+
+Black  
+
+### Material  
+
+Aluminum / Glass  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Airlight Shade (Hanging)  
+
+### Price  
+
+¥8,800  
+
+---  
+
+## LGT-051  
+
+**Brand**  
+
+CARGO CONTAINER  
+
+**Product**  
+
+AIR LIGHT  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-050  
+
+### Color  
+
+Black  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
+
+---  
+
+## LGT-052  
+
+**Brand**  
+
+IFA  
+
+**Product**  
+
+Pivotshade  
+
+**Status**  
+
+Essential  
+
+### Child Components  
+
+- LGT-053  
+
+### Color  
+
+Silver  
+
+### Material  
+
+Aluminum  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Airlight Shade (Hanging)  
+
+### Price  
+
+¥23,000  
+
+---  
+
+## LGT-053  
+
+**Brand**  
+
+CARGO CONTAINER  
+
+**Product**  
+
+AIR LIGHT  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-052  
+
+### Color  
+
+Black  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
+
+---  
+
+## LGT-054  
+
+Vacant ID. Reserved for a fourth hanging-type Airlight shade, not yet identified.  
+
+### Child Components  
+
+- LGT-055  
+
+---  
+
+## LGT-055  
+
+**Brand**  
+
+CARGO CONTAINER  
+
+**Product**  
+
+AIR LIGHT  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+LGT-054 (pending — parent shade not yet identified)  
+
+### Color  
+
+Black  
+
+### Material  
+
+Plastic  
+
+### Industrial Attribute  
+
+Airlight (Portable LED Light Body)  
+
+### Price  
+
+¥5,780  
+
+---  
+
 # Aroma  
 
 ---  
@@ -4746,7 +4583,7 @@ Owned
 
 ### Child Components  
 
-- STR-026a  
+- STR-027  
 
 
 ### Color  
@@ -4767,7 +4604,7 @@ Insulated Jug (1.9L)
 
 ---  
 
-## STR-026a  
+## STR-027  
 
 **Brand**  
 
@@ -4804,7 +4641,7 @@ Jug Stand（STR-026用）
 
 ---  
 
-## STR-027  
+## STR-028  
 
 **Brand**  
 
@@ -4820,7 +4657,7 @@ Owned
 
 ### Child Components  
 
-- STR-028  
+- STR-029  
 
 ### Color  
 
@@ -4844,7 +4681,7 @@ Side Table（SKU: AN139。サイズ約38×31×45Hcm、重量約2850g、静耐荷
 
 ---  
 
-## STR-028  
+## STR-029  
 
 **Brand**  
 
@@ -4860,7 +4697,7 @@ Owned
 
 **Parent**  
 
-STR-027  
+STR-028  
 
 ### Color  
 
@@ -4884,7 +4721,7 @@ Dust Bucket（燃えないゴミ〈缶・ビン〉用。使用頻度が低いた
 
 ---  
 
-## STR-029  
+## STR-030  
 
 **Brand**  
 
@@ -4920,7 +4757,7 @@ Dust Bucket（燃えるゴミ用。本体はWINDY AND RAINY「Folding wire T-box
 
 ---  
 
-## STR-030  
+## STR-031  
 
 **Brand**  
 
@@ -4952,7 +4789,7 @@ Accessory Storage
 
 ---  
 
-## STR-031  
+## STR-032  
 
 **Brand**  
 
@@ -5048,7 +4885,7 @@ Leg（Beck Container②用）
 
 ---  
 
-## STR-032  
+## STR-033  
 
 **Brand**  
 
@@ -5594,7 +5431,7 @@ Rodan Custom Option Part（半月）
 
 **Brand**  
 
-サンゾー工務店 × asimocrafts × 横濱帆布鞄  
+asimocrafts × サンゾー工務店 × 横濱帆布鞄  
 
 **Product**  
 
@@ -5670,7 +5507,7 @@ Fire Table (stand for FIR-001 RODAN BRICK)
 
 **Brand**  
 
-サンゾー工務店 × asimocrafts × 横濱帆布鞄  
+asimocrafts × サンゾー工務店 × 横濱帆布鞄  
 
 **Product**  
 
@@ -5971,7 +5808,7 @@ Grip Custom
 
 **Brand**  
 
-WHAT WE WANT（WWW）  
+WHAT WE WANT  
 
 **Product**  
 
@@ -6537,38 +6374,6 @@ Kerosene Heater
 
 **Brand**  
 
-Unconfirmed  
-
-**Product**  
-
-Unconfirmed  
-
-**Status**  
-
-Candidate  
-
-### Color  
-
-Black  
-
-### Material  
-
-Steel  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Fire Pit（検討中。Version 7.14で統合した単一の検討枠。具体的な候補情報はCZ-001 Deliberation Codexで管理）  
-
----  
-
-## FIR-031  
-
-**Brand**  
-
 zen camp  
 
 **Product**  
@@ -6596,7 +6401,7 @@ Fire-Resistant Sheet
 ¥7,480  
 
 ---  
-## FIR-032  
+## FIR-031  
 
 **Brand**  
 
@@ -6631,7 +6436,7 @@ Fireside Stand
 ¥39,050  
 
 ---  
-## FIR-033  
+## FIR-032  
 
 **Brand**  
 
@@ -6647,7 +6452,7 @@ Owned
 
 ### Child Components  
 
-- FIR-034  
+- FIR-033  
 
 
 ### Color  
@@ -6667,7 +6472,7 @@ Gas Stove
 ¥38,500  
 
 ---  
-## FIR-034  
+## FIR-033  
 
 **Brand**  
 
@@ -6683,7 +6488,7 @@ Owned
 
 **Parent**  
 
-FIR-033  
+FIR-032  
 
 
 ### Color  
@@ -6703,7 +6508,7 @@ Stove Bag
 ¥8,800  
 
 ---  
-## FIR-035  
+## FIR-034  
 
 **Brand**  
 
@@ -6734,11 +6539,11 @@ Fire Starter Case
 ¥9,020  
 
 ---  
-## FIR-036  
+## FIR-035  
 
 **Brand**  
 
-WHAT WE WANT（WWW）  
+WHAT WE WANT  
 
 **Product**  
 
@@ -7813,6 +7618,35 @@ Light Domainを再編した。過去のバージョン7.38時点の作業（未�
 - CZ-001 Deliberation Codex（Confirmed — Purchase Pending, Light表）、CZ-002 Vigil Protocol（Watch List, エントリ009〜012のMD-004 Reference）を、上記対応表に基づき同期更新した（CZ-001 Ver.2.11、CZ-002 Ver.2.10）。
 - CZ-001内「Under Consideration」セクションの旧LGT-041（削除済みCandidateレコードへの参照）は、本再編とは無関係の既存の記述であり、対象外として現状のまま保持した。
 - Related Documents：CZ-001 Deliberation Codex、CZ-002 Vigil Protocol。
+
+---
+## Version 7.49
+
+プロジェクトオーナー確認に基づき、Light・Storage・Fire各Domainを追加修正した。
+
+### Changes
+
+**Light Domain**
+
+- LGT-055〜058（neru design works BM Lanthan「ネルガス」一式）を削除した（プロジェクトオーナー確認）。
+- LGT-003（クラッシュアイス）：Brand を「Vapourax」から「Vapalux」へ訂正（LGT-002と同一ブランド）。
+- LGT-016（MIYABI RICH Alumi Frozen）：Glass Shade & Wood Stand Set・MMM Pocket Shade（および分岐候補a/b）を子として明示（LGT-010グループ内、旧LGT-037の子から付け替え）。
+- 3ndelier Blade、Solol Wood (Walnut/Hinoki/Pine) は革シェードと無関係と判明したため、革シェード（旧LGT-036）のParent/Child関係を解消し、革シェードの子はAIR LIGHT本体のみとした。
+- 上記反映後、Light Domain全体（LGT-001〜055、Branch Variants含む）を番号昇順で振り直した。AIR LIGHT本体は、各シェードに1台ずつの1:1関係となったため、a/b/c/d表記を廃止し通常番号へ戻した。
+- CZ-001（Confirmed — Purchase Pending, Light表）、CZ-002（Watch List エントリ010〜012）を新IDへ同期した。
+
+**Storage Domain**
+
+- STR-026a（calma store KRAKEN STAND）の枝番（a）を廃止し、STR-026の子のまま独立ID化。以降のSTR-027〜032をSTR-028〜033へ繰り下げた。
+
+**Fire Domain**
+
+- FIR-015・FIR-035（旧FIR-036）：Brandの「（WWW）」表記を削除（WHAT WE WANTへ統一）。
+- FIR-030（検討中Fire Pit枠、Unconfirmed/Candidate）を削除した（プロジェクトオーナー確認）。
+- FIR-005・FIR-007：Brand表記順を「サンゾー工務店 × asimocrafts × 横濱帆布鞄」から「asimocrafts × サンゾー工務店 × 横濱帆布鞄」へ変更（プロジェクトオーナー確認）。
+- 上記FIR-030削除を反映し、FIR-031〜036をFIR-030〜035へ繰り下げた。
+
+- Related Documents：CZ-001 Deliberation Codex、CZ-002 Vigil Protocol（Light Domain関連のみ）。
 
 ---
 ## Document Renumbering Note
