@@ -2996,38 +2996,6 @@ Vacant ID. Reserved for a fourth hanging-type Airlight shade, not yet identified
 
 ---  
 
-## LGT-041  
-
-**Brand**  
-
-Unconfirmed  
-
-**Product**  
-
-Unconfirmed  
-
-**Status**  
-
-Candidate  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Walnut  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Portable LED Lantern（検討中。具体的な候補情報はCZ-001 Deliberation Codexで管理）  
-
----  
-
 ## LGT-042  
 
 **Brand**  
