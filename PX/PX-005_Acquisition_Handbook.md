@@ -11,7 +11,7 @@ Acquisition Handbook
   
 **Version**  
   
-2.3  
+2.4  
   
 **Status**  
   
@@ -2030,7 +2030,7 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
   
 # Monthly Acquisition Plan (Confirmed)  
   
-MARI様との合意に基づく、月次購入計画である。Straight Espresso Workflowの完成を最優先し、エスプレッソグラス関連およびLatte Systemを後半へ配置する。  
+MARI様との合意に基づく、月次購入計画である。**9Baristaを最初（Month 1）、Milk Systemを最後（Month 6）に配置**し、その間の月は個別ドメインのWorkflow順ではなく、**コーヒーギア全体を対象に、月あたり目安「10万円をわずかに超える程度」で予算バランスさせたグループ**として再編成する。  
   
 ## Month 1 — 9Barista一式  
   
@@ -2041,47 +2041,43 @@ MARI様との合意に基づく、月次購入計画である。Straight Espress
 * 小計：¥135,000〜139,500（Optional Preventive Stockを除く）  
 * 上限なし（9Barista本体は公式まとめ買いを優先し、月次上限の例外とする）  
   
-## Month 2 — Grinder & Scale  
+## Month 2  
   
 * Option-O LAGOM mini 2  
-* MantaBrew WeighMaster Ultra  
-* 小計：¥110,000〜123,000  
+* Weber Workshops Puck Screen Stand  
+* Snow Peak オーロラボトル 1L  
+* AION Seine Super Absorbent Coaster 801-BL  
+* 小計：¥94,000〜115,000  
   
-## Month 3 — Station系  
-  
-* Saint Anthony Industries The Bloc  
-* KNODOS Tamping Mat with Tool Organiser - Walnut 54mm  
-* Normcore RDT Spray Bottle  
-* The Force Tamper 53mm  
-* 小計：¥83,000〜103,000  
-  
-## Month 4 — 抽出ツール  
+## Month 3  
   
 * Pullman Chisel Redistribution Tool Wood 53.3mm  
-* Normcore Planetary WDT Tool 54mm  
-* Weber Workshops Puck Screen Stand  
-* 小計：¥72,000〜90,000  
-  
-## Month 5 — Bean Storage / Blind Shaker ＋ 専用水（オーロラボトル・YETI）  
-  
-* Weber Workshops Bean Cellar Bulk  
 * Weber Workshops Blind Shaker Onyx  
-* Snow Peak オーロラボトル 1L  
-* YETI Yonder 1L  
-* 小計：¥71,000〜86,000  
-  
-この時点で、豆保存→計量→抽出→抽出後の一連のStraight Espresso Workflowが完成する。エスプレッソグラス（PROPEL／AERESSO）が未到着の間は、キッチン用カップで代用する。  
-  
-## Month 6 — エスプレッソグラス一式 ＋ 酒筒Titanium  
-  
-* KRUVE PROPEL  
-* ICOSA Brewhouse AERESSO  
-* HILLS FIELD Glass Case Single  
-* AION Seine Super Absorbent Coaster 801-BL  
 * Snow Peak 酒筒 Titanium  
-* 小計：¥46,270〜52,270  
+* KRUVE PROPEL  
+* 小計：¥96,790〜109,790  
   
-## Month 7 — Latte System（最終月）  
+## Month 4  
+  
+* The Force Tamper 53mm  
+* Saint Anthony Industries The Bloc  
+* KNODOS Tamping Mat with Tool Organiser - Walnut 54mm  
+* Normcore Planetary WDT Tool 54mm  
+* 小計：¥93,000〜117,000  
+  
+## Month 5  
+  
+* MantaBrew WeighMaster Ultra  
+* Weber Workshops Bean Cellar Bulk  
+* ICOSA Brewhouse AERESSO  
+* YETI Yonder 1L  
+* HILLS FIELD Glass Case Single  
+* Normcore RDT Spray Bottle  
+* 小計：¥98,480〜113,480  
+  
+Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The Bloc／KNODOS）・抽出Tool（Chisel／WDT／Force Tamper）・エスプレッソグラス（PROPEL／AERESSO／HILLS FIELD Case）・専用水（Aurora Bottle／YETI／酒筒）がすべて揃い、Straight Espresso Workflowが完成する。予算バランスを優先した結果、個々の機能グループ（Station一式、Glass一式等）が複数月にまたがって到着する構成になるため、Workflowの全パーツが揃うMonth 5終了時点までは、未到着パーツをキッチン用品等で代用する必要がある。  
+  
+## Month 6 — Latte System（最終月）  
   
 * ALM KOPi Z1 Mini Steamer  
 * WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout  
@@ -2091,16 +2087,14 @@ MARI様との合意に基づく、月次購入計画である。Straight Espress
   
 ## Plan Total  
   
-総額目安：¥619,270〜720,270（Estimated Acquisition Budgetの目安¥628,270〜744,270の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
+総額目安：¥619,270〜721,270（Estimated Acquisition Budgetの目安¥628,270〜744,270の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
   
 ### Design Rationale  
   
-* Month 1・2は月次上限を設けず、9Barista一式とGrinder / Scaleを最優先で確保する。  
-* Month 3〜5は、Straight Espresso Workflowを完成させるためのStation・抽出Tool・Bean Storage・専用水を優先し、鑑賞用途であるエスプレッソグラスは後回しにする。  
-* KRUVE PROPEL・ICOSA Brewhouse AERESSO・HILLS FIELD Glass Case Single・AION Seine Coasterは、抽出したエスプレッソを直接受けてそのまま飲む専用センサリーグラス一式である。機能的な代替（キッチン用カップ）で運用開始が可能なため、Month 6へ配置する。  
-* DAMNGOOD × CATAPULT FACTORY FIKA12はLatte専用カップ（ミルクスチーム後にのみ使用）であるため、ALM KOPi Z1 Mini・WPM Handleless Pitcher・WPM Pitcher SleeveとともにMonth 7へ配置する。  
-* YETI Yonder 1Lは、MARI様の実飲用計画（2名・1泊・Straight Espresso 6杯・Latte 4杯）で必要水量を試算すると、9Barista使用10回×120mL＋ALM KOPi 2セッション×300mL＝合計約1,800mLとなり、オーロラボトル＋酒筒Titaniumのみ（1,540mL）では約260mL不足するため、Month 5で確保する必要があると判断した。  
-* Snow Peak酒筒Titaniumは、Latte導入（Month 7）に合わせて後方へ配置する。  
+* 9Barista（Month 1）とMilk System（Month 6）の位置づけは、MARI様の指示に基づく固定端点とする。Month 1は上限なし（公式まとめ買い優先）、Month 6はLatte Workflow一式を完結させる最終月とする。  
+* Month 2〜5は、従来のWorkflow順グルーピング（Grinder→Station→抽出Tool→Bean Storage→Glassという段階的配置）を廃し、月あたり予算をおおむね¥93,000〜117,000の範囲に均等化したグループへ再編成した。各グループの中身はドメインを横断する（例：Month 2はGrinder・Puck Screen Stand・水ボトル・コースターを混在）。  
+* この再編成により、月ごとの支出額のばらつきが小さくなる一方、Straight Espresso Workflowの機能的完成はMonth 5終了時点までかかる（旧計画ではMonth 5時点で完成していたため、完成時期自体は変わらない）。  
+* YETI Yonder 1Lの必要性は、MARI様の実飲用計画（2名・1泊・Straight Espresso 6杯・Latte 4杯、必要水量約1,800mL）に基づく従来の試算を維持する。  
 * 9Barista Official Spare Parts (Preventive Stock)は、Group A（9Barista）注文に同梱可能な任意項目として、Month 1の小計とは別枠で記録する。  
 * 9Barista Handle - Walnutは、PX-004 Ver.3.7のHandle Material Decisionに基づく確定購入品として、Month 1の本体・Puck Screen注文へ統合する。  
   
@@ -2123,6 +2117,7 @@ MARI様との合意に基づく、月次購入計画である。Straight Espress
 | 2.1 | 2026-09 | Monthly Acquisition Plan（Confirmed）セクションを新設。MARI様との合意に基づく月次購入計画（Month 1〜7、月あたり目安¥10万・Month 1のみ上限なし）を正式反映。Straight Espresso Workflow完成を優先し、エスプレッソグラス一式（PROPEL／AERESSO／HILLS FIELD Case／AION Coaster）とLatte System（ALM KOPi／WPM Pitcher／WPM Sleeve／FIKA12）を後半（Month 6・7）へ配置する方針を明記。YETI Yonderの必要性について、実飲用計画（Straight Espresso 6杯／Latte 4杯）に基づく水量試算（必要量約1,800mL、YETI除くと1,540mLで約260mL不足）を記録し、Month 5での確保を確定。 |  
 | 2.2 | 2026-09-18 | 「9Barista Official Spare Parts (Preventive Stock)」セクションを新設。9Barista公式サイト（9barista.com）一次情報に基づき、本体標準付属品（Spare Boiler O-ring・Spare Safety Ring・汎用53mm Tamper等）を記録し、重複購入防止の基準とした。推奨予備部品としてSafety Ring and Seals・Boiler O-ring Seal Mk.2を、任意項目としてOverheat Repair Kit Mk.2を追加。通常使用下では交換頻度が低いとされる個別Valve部品・構造部品は見送りとした。Descalerは2026-09時点で9Barista公式ストアの取扱いがないことを確認し、PX-006記載の第三者ブランド（Puly／Urnex Dezcal／Durgol）調達方針を維持。Purchase Grouping Group Aおよび Monthly Acquisition Plan Month 1へOptional項目として反映。Estimated Acquisition BudgetおよびPlan Totalの除外リストに本セクションを明記。 |  
 | 2.3 | 2026-09-18 | Product 26「9Barista Handle - Walnut」を新設。PX-004 Ver.3.7のHandle Material Decision（MARI様の直接指示、2026-09-18）と同期し、9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）をWalnut仕様へ変更する購入をConfirmed / Purchase Requiredとして正式登録。数量2（Upper・Lower各1、公式スペアパーツは単品$15.00販売）、参考価格¥4,500〜6,000。Group A（9Barista）およびMonth 1へ統合し、Current Acquisition Priority・Estimated Acquisition Budget（Core Espresso System: ¥404,500〜459,500 → ¥409,000〜465,500、Estimated Total: ¥623,770〜738,270 → ¥628,270〜744,270）・Plan Total（¥614,770〜714,270 → ¥619,270〜720,270）・Final Acquisition Inventory（Included項目を26〜28から27〜29へ繰り下げ）・Product Variant Integrity・Purchase Completeness Rule・PX-004/PX-005 Synchronization Ruleへ反映。 |  
+| 2.4 | 2026-09-18 | MARI様の直接指示に基づき、Monthly Acquisition Plan（Confirmed）を全面再編成。7ヶ月構成（Workflow順グルーピング）から6ヶ月構成（予算均等化グルーピング）へ変更。9Barista（Month 1・上限なし）とMilk System（Month 6・最終月）を固定端点とし、Month 2〜5はドメイン横断で月あたり¥93,000〜117,000程度に予算バランスさせたグループへ再編成（Month 2: LAGOM mini 2＋Puck Screen Stand＋Aurora Bottle＋AION Coaster、Month 3: Pullman Chisel＋Blind Shaker Onyx＋酒筒Titanium＋KRUVE PROPEL、Month 4: Force Tamper＋The Bloc＋KNODOS＋WDT、Month 5: WeighMaster Ultra＋Bean Cellar＋ICOSA AERESSO＋YETI Yonder＋HILLS FIELD Case＋RDT Bottle）。Plan Total（¥619,270〜720,270 → ¥619,270〜721,270）を再計算。Straight Espresso Workflowの機能的完成時期はMonth 5終了時点のまま変わらない旨をDesign Rationaleに明記。 |  
   
 ---  
   
