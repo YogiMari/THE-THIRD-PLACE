@@ -89,23 +89,23 @@ PX-004でConfirmedとなったEquipmentは、原則としてPX-005に登録す�
   
 # Acquisition Rules  
   
-All purchases shall follow these principles.  
+すべての購入は、以下の原則に従う。  
   
 ## Preferred Sources  
   
-1. Official Manufacturer Store  
-2. Authorized Distributor  
-3. Domestic Authorized Retailer  
-4. Amazon Japan only when official / authorized seller is clearly identified  
+1. メーカー公式ストア  
+2. 正規代理店  
+3. 国内正規販売店  
+4. Amazon Japan（公式または正規販売者であることが明確な場合のみ）  
   
 ## Purchasing Priority  
   
-1. Genuine Product  
-2. Exact PX-004 Model / Variant  
-3. Current Successor Model where the original model has been superseded  
-4. Official Warranty  
-5. Long-term Availability  
-6. Combined Shipping when practical  
+1. 正規品であること  
+2. PX-004記載の正確なモデル／バリアントであること  
+3. 元モデルが販売終了している場合は、現行の後継モデルであること  
+4. 正規保証があること  
+5. 長期的に入手可能であること  
+6. 現実的な場合はまとめ配送を行うこと  
   
 ---  
   
@@ -151,7 +151,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 |---|---|  
 | Option-O LAGOM Mini (USB-C PD) | Option-O LAGOM mini 2 |  
 | MantaBrew Master Kit (Module A + Module B) | MantaBrew WeighMaster Ultra |  
-| Other products | Current model only when successor relationship is sufficiently clear |  
+| Other products | 後継関係が十分明確な場合のみ、現行モデルとする |  
   
 ---  
   
@@ -183,14 +183,14 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Current purchase model remains Mk.2 Pro.  
-* Exact PX-004 specification is maintained.  
-* Flame Powered.  
-* Dual Boiler.  
-* Portable Espresso System.  
-* Official Japan checkout is preferred.  
-* Do not substitute Standard configuration.  
-* Included accessories must not be purchased separately unless required as spare equipment.  
+* 現行の購入モデルはMk.2 Proのまま。  
+* PX-004記載の仕様を正確に維持。  
+* Flame Powered。  
+* Dual Boiler。  
+* Portable Espresso System。  
+* 公式Japan Checkoutでの購入を推奨。  
+* Standard構成への代替は行わない。  
+* 付属品は、予備として必要な場合を除き、別途購入しない。  
   
 ---  
   
@@ -220,14 +220,14 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Current successor to the PX-004 LAGOM Mini.  
-* Current official model is LAGOM mini 2.  
-* USB-C PD remains supported.  
-* Current model includes magnetised Ground Transfer Cup.  
-* Current model includes 100W USB-C power adapter.  
-* PX-004 historical model name is retained as the reference.  
-* PX-005 acquisition target is the current LAGOM mini 2.  
-* No third-party Ground Transfer Cup is required.  
+* PX-004記載のLAGOM Miniの現行後継モデル。  
+* 現行の公式モデルはLAGOM mini 2。  
+* USB-C PDは引き続き対応。  
+* 現行モデルにはマグネット式Ground Transfer Cupが付属。  
+* 現行モデルには100W USB-C電源アダプターが付属。  
+* PX-004の歴史的なモデル名は、参照用として維持。  
+* PX-005の調達対象は、現行のLAGOM mini 2。  
+* サードパーティ製Ground Transfer Cupは不要。  
   
 ---  
   
@@ -257,16 +257,16 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Current successor / renamed complete configuration corresponding to the PX-004 Master Kit.  
-* WeighMaster Ultra combines the complete Module A + Module B configuration.  
-* Current official price is USD 229.  
-* 0.1g measurement.  
-* Maximum capacity 2,000g.  
-* USB-C charging.  
-* Water resistant.  
-* 1-year hardware warranty.  
-* Do not substitute Module A only.  
-* Do not substitute Module B only.  
+* PX-004記載のMaster Kitに対応する、現行の後継／改称された完全構成。  
+* WeighMaster Ultraは、Module A + Module Bの完全構成を統合したもの。  
+* 現行の公式価格はUSD 229。  
+* 0.1g単位で計測。  
+* 最大容量2,000g。  
+* USB-C充電。  
+* 防水仕様。  
+* 1年間のハードウェア保証。  
+* Module A単体への代替は行わない。  
+* Module B単体への代替は行わない。  
   
 ---  
   
@@ -296,11 +296,11 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Bulk Version.  
-* Single Dose Workflow.  
-* Bean Cellar supplied funnel is used.  
-* Separate Bean Spoon is not required.  
-* Current official price is used as the product-price reference.  
+* Bulk Version。  
+* Single Dose Workflow。  
+* Bean Cellar付属の漏斗を使用。  
+* 別途Bean Spoonは不要。  
+* 製品価格の参照には現行の公式価格を使用。  
   
 ---  
   
@@ -330,15 +330,15 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Extraction Core.  
-* Integrated Knock Box.  
-* Tamp Station.  
-* Portafilter Stand.  
-* Normcore RDT Spray Bottle is managed here.  
-* Weber Workshops Blind Shaker Onyx is managed here.  
-* The two Tool cutouts are assigned to RDT and Blind Shaker.  
-* Distributor, Tamper and WDT are not permanently stored here.  
-* RDT stand is not purchased separately.  
+* Extraction Core。  
+* Knock Box機能を統合。  
+* Tamp Station。  
+* Portafilter Stand。  
+* Normcore RDT Spray Bottleはここで管理する。  
+* Weber Workshops Blind Shaker Onyxはここで管理する。  
+* 2つのTool cutoutは、RDTとBlind Shakerに割り当てる。  
+* Distributor・Tamper・WDTはここに常設しない。  
+* RDTスタンドは別途購入しない。  
   
 ---  
   
@@ -368,11 +368,11 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* 53 mm.  
-* Automatic leveling.  
-* Adjustable pressure.  
-* KNODOS Tamping Mat with Tool Organiser - Walnut 54mm is the permanent storage location.  
-* The Bloc is not the permanent storage location.  
+* 53 mm。  
+* 自動レベリング。  
+* 圧力調整可能。  
+* KNODOS Tamping Mat with Tool Organiser - Walnut 54mmを常設収納場所とする。  
+* The Blocは常設収納場所ではない。  
   
 ---  
   
@@ -402,12 +402,12 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Current 53.3 mm configuration is used as the practical current purchase model.  
-* Wood specification is maintained.  
-* This is the current closest production specification to the PX-004 53 mm Custom Order.  
-* Exact basket compatibility must be confirmed before payment.  
-* KNODOS Tamping Mat with Tool Organiser - Walnut 54mm is the permanent storage location.  
-* The Bloc is not the permanent storage location.  
+* 現行の53.3mm構成を、実用上の現行購入モデルとして使用。  
+* Wood仕様を維持。  
+* PX-004記載の53mm Custom Orderに最も近い、現行の量産仕様。  
+* 支払い前に、正確なバスケット適合性を確認すること。  
+* KNODOS Tamping Mat with Tool Organiser - Walnut 54mmを常設収納場所とする。  
+* The Blocは常設収納場所ではない。  
   
 ---  
   
@@ -436,12 +436,12 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* 54 mm specification is fixed.  
-* Planetary mechanism.  
-* 58 mm version is not adopted.  
-* KNODOS large Tool Organiser position is assigned.  
-* WDT is not permanently stored on The Bloc.  
-* Current purchase price is treated as an acquisition estimate because Japanese pricing varies by retailer.  
+* 54mm仕様に確定。  
+* Planetary機構。  
+* 58mm版は採用しない。  
+* KNODOSの大径Tool Organiser位置に割り当て。  
+* WDTはThe Blocには常設収納しない。  
+* 国内価格は販売店により変動するため、現行購入価格は調達目安として扱う。  
   
 ---  
   
@@ -470,11 +470,11 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Fine Mist.  
-* Designed for RDT.  
-* The Bloc manages the bottle.  
-* Dedicated RDT stand is not purchased.  
-* Horizontal storage on The Bloc is the confirmed configuration.  
+* Fine Mist。  
+* RDT専用設計。  
+* ボトルはThe Blocで管理する。  
+* RDT専用スタンドは購入しない。  
+* The Bloc上での横置き収納を正式構成とする。  
   
 ---  
   
@@ -504,15 +504,15 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Walnut specification.  
-* 54 mm specification.  
-* Integrated Tamping Mat.  
-* Integrated Tool Organiser.  
-* Functions as the Coffee Tool Station.  
-* Large Tool Organiser: Normcore Planetary WDT Tool 54mm.  
-* Standard Tool Organiser: Pullman Chisel.  
-* Standard Tool Organiser: The Force Tamper.  
-* No additional Coffee Tool Stand is required.  
+* Walnut仕様。  
+* 54mm仕様。  
+* Tamping Matを統合。  
+* Tool Organiserを統合。  
+* Coffee Tool Stationとして機能する。  
+* 大径Tool Organiser：Normcore Planetary WDT Tool 54mm。  
+* 通常径Tool Organiser：Pullman Chisel。  
+* 通常径Tool Organiser：The Force Tamper。  
+* 追加のCoffee Tool Standは不要。  
   
 ---  
   
@@ -542,16 +542,16 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Onyx specification.  
-* Standard Blind Shaker for THE THIRD PLACE.  
-* Built for 58 mm baskets.  
-* Primary ground-transfer / homogenization vessel.  
-* LAGOM Mini → Blind Shaker is the Primary Route.  
-* LAGOM Mini Ground Transfer Cup is Secondary Route only.  
-* 9Barista Magnetic Dosing Funnel follows Blind Shaker.  
-* The Bloc Tool cutout is the permanent storage location.  
-* Independent Ground Transfer Cup is not purchased.  
-* Independent Dosing Cup is not purchased.  
+* Onyx仕様。  
+* THE THIRD PLACEの標準Blind Shaker。  
+* 58mmバスケット向け設計。  
+* 主たる粉移送・均質化容器。  
+* LAGOM Mini → Blind ShakerをPrimary Routeとする。  
+* LAGOM Mini Ground Transfer CupはSecondary Routeのみで使用。  
+* Blind Shakerの後に9Barista Magnetic Dosing Funnelへ続く。  
+* The BlocのTool cutoutを常設収納場所とする。  
+* 独立したGround Transfer Cupは購入しない。  
+* 独立したDosing Cupは購入しない。  
   
 ---  
   
@@ -581,11 +581,11 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Confirmed Equipment in PX-004 v2.7.  
-* Official 9Barista accessory.  
-* Third-party Puck Screen is rejected.  
-* Do not duplicate with an alternative Puck Screen.  
-* Current exact price may vary by official bundle / availability.  
+* PX-004 v2.7にてConfirmed Equipment。  
+* 9Barista純正アクセサリー。  
+* サードパーティ製Puck Screenは不採用。  
+* 代替Puck Screenとの重複購入は行わない。  
+* 正確な現行価格は、公式バンドル・在庫状況により変動する場合がある。  
   
 ---  
   
@@ -615,10 +615,10 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Confirmed Equipment in PX-004 v2.7.  
-* Used for Puck Screen storage / drying.  
-* Weber Workshops ecosystem compatibility.  
-* No alternative Puck Screen Stand is required.  
+* PX-004 v2.7にてConfirmed Equipment。  
+* Puck Screenの収納・乾燥に使用。  
+* Weber Workshopsエコシステムとの互換性。  
+* 代替Puck Screen Standは不要。  
   
 ---  
   
@@ -648,14 +648,14 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Confirmed Equipment.  
-* Standalone Milk Steamer.  
-* Compact.  
-* One unit is sufficient.  
-* Two-person Latte operation uses two sequential steaming cycles.  
-* Separate single burner is required.  
-* Voltage and operating requirements must be confirmed before purchase.  
-* Second steamer is not required.  
+* Confirmed Equipment。  
+* 独立型のMilk Steamer。  
+* コンパクト。  
+* 1台で十分。  
+* 2人分のLatte運用は、2回の連続スチームサイクルで行う。  
+* 別途シングルバーナーが必要。  
+* 購入前に電圧・動作要件を確認すること。  
+* 2台目のSteamerは不要。  
   
 ---  
   
@@ -684,13 +684,13 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Handleless.  
-* 450cc.  
-* #07 Sharp Spout.  
-* Sharp Spout specification is fixed.  
-* Round Spout is not adopted.  
-* One pitcher is used for both sequential Latte cycles.  
-* Second pitcher is not required.  
+* Handleless。  
+* 450cc。  
+* #07 Sharp Spout。  
+* Sharp Spout仕様に確定。  
+* Round Spoutは採用しない。  
+* 1個のPitcherを、連続する2回のLatteサイクル双方で使用する。  
+* 2個目のPitcherは不要。  
   
 ---  
   
@@ -719,12 +719,12 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Compatible with selected WPM Handleless Pitcher.  
-* Thermal insulation.  
-* Grip improvement.  
-* Supports safe outdoor handling.  
-* One sleeve is sufficient.  
-* Second sleeve is not required.  
+* 採用したWPM Handleless Pitcherと互換。  
+* 保温性。  
+* グリップ性向上。  
+* 屋外での安全な取り扱いを補助。  
+* 1個で十分。  
+* 2個目のSleeveは不要。  
   
 ---  
   
@@ -755,13 +755,13 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Current commercial package contains two glasses.  
-* PX-004 system allocation remains ×1.  
-* One glass is allocated to THE THIRD PLACE.  
-* Remaining glass is retained as spare.  
-* Straight Espresso.  
-* Dedicated espresso sensory glass.  
-* No second PROPEL system allocation is required.  
+* 現行の市販パッケージには、グラス2個が含まれる。  
+* PX-004上のシステム割当は×1のまま。  
+* 1個をTHE THIRD PLACEへ割り当てる。  
+* 残る1個は予備として保持する。  
+* Straight Espresso。  
+* エスプレッソ専用のセンサリーグラス。  
+* PROPELの2つ目のシステム割当は不要。  
   
 ---  
   
@@ -791,12 +791,12 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Straight Espresso.  
-* Dedicated sensory glass.  
-* Aeration-oriented design.  
-* Used with 9Barista.  
-* PX-004 quantity: ×1.  
-* No second AERESSO is required.  
+* Straight Espresso。  
+* 専用のセンサリーグラス。  
+* エアレーション重視の設計。  
+* 9Baristaと組み合わせて使用。  
+* PX-004上の数量：×1。  
+* 2個目のAERESSOは不要。  
   
 ---  
   
@@ -826,12 +826,12 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* One case carries PROPEL + AERESSO.  
-* Single case configuration is fixed.  
-* No second glass case.  
-* No Pelican-style hard case.  
-* No case modification.  
-* AION 801-BL is used as the separator inside the case.  
+* 1つのケースにPROPEL + AERESSOを収める。  
+* シングルケース構成に確定。  
+* 2つ目のグラスケースは持たない。  
+* Pelican型のハードケースは使用しない。  
+* ケースの改造は行わない。  
+* ケース内のセパレーターにはAION 801-BLを使用。  
   
 ---  
   
@@ -860,14 +860,14 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Approx. diameter: 67 mm.  
-* Approx. thickness: 2 mm.  
-* Material: Polyurethane.  
-* Color: Black.  
-* One coaster is used between PROPEL and AERESSO.  
-* Remaining pieces are retained as spare.  
-* No case modification.  
-* No DIY fabrication.  
+* 直径：約67mm。  
+* 厚さ：約2mm。  
+* 素材：Polyurethane。  
+* カラー：Black。  
+* PROPELとAERESSOの間にコースターを1枚使用。  
+* 残りは予備として保持する。  
+* ケースの改造は行わない。  
+* DIYでの製作は行わない。  
   
 ---  
   
@@ -896,14 +896,14 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Quantity 2 is fixed.  
-* Dedicated Latte cups.  
-* Each FIKA12 has its own transport case where supplied.  
-* Cases are stored directly in the Bek Container.  
-* Two cups are required for two-person operation.  
-* No additional Latte cup is required.  
-* Current availability is limited and may depend on release / authorized stock.  
-* Price is an acquisition estimate rather than a permanent official list price.  
+* 数量2個に確定。  
+* Latte専用カップ。  
+* 付属する場合、FIKA12各個に専用の運搬ケースがある。  
+* ケースはBek Container内にそのまま収納する。  
+* 2人分の運用には2個必要。  
+* 追加のLatteカップは不要。  
+* 現行の入手可否は限定的で、発売・正規在庫状況に左右される場合がある。  
+* 価格は恒久的な公式定価ではなく、調達目安である。  
   
 ---  
   
@@ -932,14 +932,14 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Confirmed Coffee System Water Equipment.  
-* Capacity: 1,000 mL.  
-* Dedicated Coffee System water.  
-* Used for 9Barista and ALM KOPi Z1 Mini.  
-* Not drinking water.  
-* Not cooking water.  
-* PX-004 product identity is maintained.  
-* Do not silently substitute a different Snow Peak bottle.  
+* Confirmed Coffee System Water Equipment。  
+* 容量：1,000mL。  
+* Coffee System専用水。  
+* 9BaristaおよびALM KOPi Z1 Miniに使用。  
+* 飲料水ではない。  
+* 調理用水ではない。  
+* PX-004記載の製品同一性を維持。  
+* 断りなく別のSnow Peakボトルへ代替しない。  
   
 ---  
   
@@ -969,14 +969,14 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Confirmed Coffee System Water Equipment.  
-* Capacity: 1,000 mL.  
-* Lightweight.  
-* Transparent / remaining volume visibility.  
-* Dedicated Coffee System water.  
-* Not drinking water.  
-* Not cooking water.  
-* Exact Japanese color / stock should be confirmed before purchase.  
+* Confirmed Coffee System Water Equipment。  
+* 容量：1,000mL。  
+* 軽量。  
+* 透明・残量確認可能。  
+* Coffee System専用水。  
+* 飲料水ではない。  
+* 調理用水ではない。  
+* 購入前に、国内向けの正確なカラー・在庫を確認すること。  
   
 ---  
   
@@ -1006,13 +1006,13 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Confirmed Coffee System Water Equipment.  
-* Capacity: 540 mL.  
-* Dedicated Coffee System water.  
-* Provides additional capacity.  
-* Not drinking water.  
-* Not cooking water.  
-* Current official price is used as the reference.  
+* Confirmed Coffee System Water Equipment。  
+* 容量：540mL。  
+* Coffee System専用水。  
+* 追加容量を担う。  
+* 飲料水ではない。  
+* 調理用水ではない。  
+* 参照価格には現行の公式価格を使用。  
   
 ---  
   
@@ -1034,11 +1034,11 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Confirmed functional component.  
-* Must remain visible in PX-005.  
-* Must not appear as a missing purchase.  
-* Current standalone reference price: approximately ¥5,600.  
-* Do not purchase a duplicate unless a future PX-004 decision requires a spare.  
+* 機能上のConfirmedコンポーネント。  
+* PX-005上で常に可視化しておくこと。  
+* 未購入項目として表示させないこと。  
+* 現行の単体参照価格：約¥5,600。  
+* 将来のPX-004決定で予備が必要とされない限り、重複購入しない。  
   
 ---  
   
@@ -1059,10 +1059,10 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Required component of the confirmed 9Barista workflow.  
-* Included with selected Pro configuration.  
-* Do not purchase separately.  
-* Alternative Basket Cap is rejected by PX-004.  
+* Confirmedな9Barista Workflowに必要なコンポーネント。  
+* 採用したPro構成に付属。  
+* 別途購入しない。  
+* 代替Basket CapはPX-004にて不採用。  
   
 ---  
   
@@ -1081,11 +1081,11 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Secondary Route only.  
-* Supplied with current LAGOM mini 2.  
-* Used only if direct LAGOM Mini → Blind Shaker transfer is physically unavailable or impractical.  
-* Independent Ground Transfer Cup is not purchased.  
-* Third-party Ground Transfer Cup is not required.  
+* Secondary Routeのみで使用。  
+* 現行のLAGOM mini 2に付属。  
+* LAGOM Mini → Blind Shakerの直接受けが物理的に不可能・非実用的な場合のみ使用。  
+* 独立したGround Transfer Cupは購入しない。  
+* サードパーティ製Ground Transfer Cupは不要。  
   
 ---  
   
@@ -1105,10 +1105,10 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Notes  
   
-* Per PX-004 (Ver.2.9+), this is a standard 9Barista Mk.2 Pro accessory and is not managed as an independent Equipment / Acquisition Item.  
-* Confirmed Workflow component: Blind Shaker → Magnetic Dosing Funnel → WDT.  
-* Third-party dosing funnel is rejected.  
-* Do not purchase separately.  
+* PX-004（Ver.2.9以降）に基づき、9Barista Mk.2 Proの標準アクセサリーであり、独立したEquipment / Acquisition Itemとしては管理しない。  
+* ConfirmedなWorkflowコンポーネント：Blind Shaker → Magnetic Dosing Funnel → WDT。  
+* サードパーティ製Dosing Funnelは不採用。  
+* 別途購入しない。  
   
 ---  
   
@@ -1123,21 +1123,21 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ### Purpose  
   
-Dedicated Coffee System water only.  
+Coffee System専用水のみを対象とする。  
   
 * 9Barista Espresso  
 * ALM KOPi Z1 Mini Milk Steaming  
   
-Not intended for:  
+以下の用途には使用しない：  
   
-* Drinking Water  
-* Cooking Water  
+* 飲料水  
+* 調理用水  
   
 ---  
   
 # Espresso Glass Transport Configuration  
   
-The confirmed transport configuration is:  
+正式な運搬構成は以下の通り：  
   
 * KRUVE PROPEL ×1  
 * ICOSA Brewhouse AERESSO ×1  
@@ -1146,18 +1146,18 @@ The confirmed transport configuration is:
   
 ### Transport Policy  
   
-* One case only.  
-* No second glass case.  
-* No hard case.  
-* No case modification.  
-* AION 801-BL is the separator.  
-* Spare coaster remains unused until required.  
+* ケースは1つのみ。  
+* 2つ目のグラスケースは持たない。  
+* ハードケースは使用しない。  
+* ケースの改造は行わない。  
+* セパレーターはAION 801-BL。  
+* 予備のコースターは、必要になるまで未使用のまま保持する。  
   
 ---  
   
 # Latte Cup Configuration  
   
-The confirmed Latte configuration is:  
+正式なLatte構成は以下の通り：  
   
 * DAMNGOOD × CATAPULT FACTORY FIKA12 ×2  
 * FIKA12 dedicated case ×2  
@@ -1167,7 +1167,7 @@ The confirmed Latte configuration is:
   
 ### Operation  
   
-Two servings are always prepared.  
+常に2杯分を用意する。  
   
 #### Cycle 1  
   
@@ -1197,17 +1197,17 @@ Steam
 ↓  
 FIKA12  
   
-One pitcher is sufficient.  
+1個のPitcherで十分。  
   
-One steamer is sufficient.  
+1台のSteamerで十分。  
   
-A second pitcher or second steamer is not required.  
+2個目のPitcherや2台目のSteamerは不要。  
   
 ---  
   
 # Coffee Tool Station Configuration  
   
-The confirmed Tool Station configuration is:  
+正式なTool Station構成は以下の通り：  
   
 * KNODOS Tamping Mat with Tool Organiser - Walnut 54mm ×1  
 * Normcore Planetary WDT Tool 54mm ×1  
@@ -1222,13 +1222,13 @@ The confirmed Tool Station configuration is:
 | Pullman Chisel Redistribution Tool Wood 53.3mm | KNODOS Tool Organiser |  
 | The Force Tamper 53mm | KNODOS Tool Organiser |  
   
-The Bloc is not used as permanent storage for these three tools.  
+The Blocは、これら3つのToolの常設収納場所としては使用しない。  
   
 ---  
   
 # Extraction Core Configuration  
   
-The confirmed Extraction Core is:  
+正式なExtraction Coreは以下の通り：  
   
 * Saint Anthony Industries The Bloc ×1  
 * 9Barista Mk.2 Pro ×1  
@@ -1240,13 +1240,13 @@ The confirmed Extraction Core is:
 1. Normcore RDT Spray Bottle  
 2. Weber Workshops Blind Shaker Onyx  
   
-Distributor, Tamper and WDT are not stored in The Bloc.  
+Distributor・Tamper・WDTはThe Blocに収納しない。  
   
 ---  
   
 # Espresso System Configuration  
   
-The confirmed Espresso System is:  
+正式なEspresso Systemは以下の通り：  
   
 * Weber Workshops Bean Cellar Bulk ×1  
 * MantaBrew WeighMaster Ultra ×1  
@@ -1263,7 +1263,7 @@ The confirmed Espresso System is:
   
 ### Operation  
   
-Two servings are prepared sequentially.  
+2杯分を順に用意する。  
   
 #### Cycle 1  
   
@@ -1291,25 +1291,25 @@ PROPEL / AERESSO
   
 #### Cycle 2  
   
-The same workflow is repeated.  
+同じWorkflowを繰り返す。  
   
-A second grinder is not required.  
+2台目のGrinderは不要。  
   
-A second Blind Shaker is not required.  
+2台目のBlind Shakerは不要。  
   
-A second Dosing Funnel is not required.  
+2台目のDosing Funnelは不要。  
   
-A second WDT is not required.  
+2台目のWDTは不要。  
   
-A second Distributor is not required.  
+2台目のDistributorは不要。  
   
-A second Tamper is not required.  
+2台目のTamperは不要。  
   
 ---  
   
 # Excluded From Purchase  
   
-The following items are not part of the active acquisition list.  
+以下のアイテムは、現行の調達対象リストに含まれない。  
   
 * Bean Spoon  
 * Independent Ground Transfer Cup  
@@ -1329,23 +1329,23 @@ The following items are not part of the active acquisition list.
 * Cleaning Equipment  
 * Additional Storage Equipment  
   
-These exclusions are based on the current PX-004 Workflow and are not independent product evaluations.  
+これらの除外は、現行のPX-004 Workflowに基づくものであり、独立した製品評価によるものではない。  
   
 ---  
   
 # Purchase List Definition  
   
-When generating a purchase list from PX-005:  
+PX-005から購入リストを生成する際:  
   
 ### Include  
   
-Items where:  
+以下に該当するアイテム：  
   
 `Acquisition Status = Purchase Required`  
   
 ### Exclude  
   
-Items where:  
+以下に該当するアイテム：  
   
 `Acquisition Status = Included`  
   
@@ -1355,7 +1355,7 @@ Items where:
   
 ### Review Separately  
   
-Items where:  
+以下に該当するアイテム：  
   
 `Acquisition Status = To Be Confirmed`  
   
@@ -1363,158 +1363,158 @@ Items where:
   
 # Purchase Completeness Rule  
   
-Before stating that the Coffee System purchase list is complete, the following must be checked:  
+Coffee Systemの購入リストが完成したと判断する前に、以下を確認しなければならない:  
   
-1. All PX-004 Confirmed Equipment exists in PX-005.  
-2. Each Confirmed Equipment has an Acquisition Status.  
-3. Included Equipment is explicitly identified.  
-4. Included Equipment is not incorrectly treated as a missing purchase.  
-5. Quantity is defined.  
-6. Product name matches PX-004 official naming or has an explicit current-successor mapping.  
-7. Manufacturer name matches PX-004 official naming.  
-8. Purchase status is separated from Coffee System functional status.  
-9. All products have a current price or realistic acquisition estimate.  
-10. Estimated Total Cost is conservative.  
-11. No rejected equipment is added to the active purchase list.  
-12. No alternative equipment is added without successor justification.  
-13. Puck Screen is synchronized from PX-004 v2.7.  
-14. Puck Screen Stand is synchronized from PX-004 v2.7.  
-15. KNODOS Tamping Mat with Tool Organiser - Walnut 54mm is registered.  
-16. Normcore Planetary WDT Tool is synchronized as 54mm.  
-17. Pullman Chisel is synchronized as the current 53.3 mm Wood configuration.  
-18. The Force Tamper is synchronized as 53 mm.  
-19. Weber Blind Shaker is synchronized as Onyx.  
-20. Distributor, Tamper and WDT storage configuration is synchronized.  
-21. The Bloc's role as Extraction Core is synchronized.  
-22. The Bloc Tool cutouts are assigned to RDT and Blind Shaker.  
-23. No separate RDT stand is added.  
-24. No separate Bean Spoon is added.  
-25. WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout is synchronized.  
-26. WPM Pitcher Sleeve is synchronized.  
-27. ALM KOPi Z1 Mini is synchronized.  
-28. Two-person Latte operation is synchronized as two sequential cycles.  
-29. One WPM Pitcher is sufficient.  
-30. One ALM KOPi Z1 Mini is sufficient.  
-31. Coffee System water configuration totals 2,540 mL.  
-32. Espresso glass transport configuration is synchronized.  
-33. FIKA12 quantity is synchronized as ×2.  
-34. Current successor products are explicitly identified.  
-35. Current commercial package quantities are distinguished from PX-004 system allocation quantities.  
+1. PX-004のConfirmed Equipmentがすべて、PX-005に存在すること。  
+2. 各Confirmed Equipmentに、Acquisition Statusが設定されていること。  
+3. Included Equipmentが明示的に識別されていること。  
+4. Included Equipmentが、未購入項目として誤って扱われていないこと。  
+5. Quantityが定義されていること。  
+6. 製品名が、PX-004の公式表記と一致するか、現行後継への明示的な対応関係を持つこと。  
+7. メーカー名が、PX-004の公式表記と一致すること。  
+8. 購入状況が、Coffee Systemの機能上の状態と分離されていること。  
+9. すべての製品に、現行価格または現実的な調達目安が設定されていること。  
+10. Estimated Total Costが、保守的に見積もられていること。  
+11. 不採用となったEquipmentが、現行の購入リストに含まれていないこと。  
+12. 後継関係の根拠なく、代替Equipmentが追加されていないこと。  
+13. Puck ScreenがPX-004 v2.7と同期していること。  
+14. Puck Screen StandがPX-004 v2.7と同期していること。  
+15. KNODOS Tamping Mat with Tool Organiser - Walnut 54mmが登録されていること。  
+16. Normcore Planetary WDT Toolが54mmとして同期していること。  
+17. Pullman Chiselが、現行の53.3mm Wood構成として同期していること。  
+18. The Force Tamperが53mmとして同期していること。  
+19. Weber Blind ShakerがOnyxとして同期していること。  
+20. Distributor・Tamper・WDTの収納構成が同期していること。  
+21. The BlocのExtraction Coreとしての役割が同期していること。  
+22. The BlocのTool cutoutが、RDTとBlind Shakerに割り当てられていること。  
+23. 別途のRDTスタンドが追加されていないこと。  
+24. 別途のBean Spoonが追加されていないこと。  
+25. WPM Handleless Pitcher Standard 450cc / #07 Sharp Spoutが同期していること。  
+26. WPM Pitcher Sleeveが同期していること。  
+27. ALM KOPi Z1 Miniが同期していること。  
+28. 2人分のLatte運用が、2回の連続サイクルとして同期していること。  
+29. WPM Pitcherは1個で十分であること。  
+30. ALM KOPi Z1 Miniは1台で十分であること。  
+31. Coffee System水構成の合計が2,540mLであること。  
+32. Espressoグラスの運搬構成が同期していること。  
+33. FIKA12の数量が×2として同期していること。  
+34. 現行の後継製品が明示的に識別されていること。  
+35. 現行の市販パッケージ数量と、PX-004上のシステム割当数量が区別されていること。  
   
 ---  
   
 # PX-004 / PX-005 Synchronization Rule  
   
-PX-004 Barista Codex is the decision authority for Coffee Equipment.  
+PX-004 Barista Codexは、Coffee Equipmentに関する意思決定の権限を持つ。  
   
-PX-005 Acquisition Handbook is the acquisition authority for current procurement.  
+PX-005 Acquisition Handbookは、現行調達に関する権限を持つ。  
   
-PX-005 may update a Confirmed Equipment's acquisition model when:  
+PX-005は、以下の場合に限り、Confirmed Equipmentの調達モデルを更新できる:  
   
-1. The original product is discontinued.  
-2. The manufacturer clearly identifies a successor.  
-3. The successor preserves the intended Coffee System function.  
-4. The successor is the current practical purchase option.  
+1. 元の製品が販売終了している場合。  
+2. メーカーが後継製品を明確に示している場合。  
+3. 後継製品が、意図したCoffee Systemの機能を維持している場合。  
+4. 後継製品が、現行の実用的な購入選択肢である場合。  
   
-PX-005 must not independently add unrelated alternative equipment.  
+PX-005は、無関係な代替Equipmentを独自に追加してはならない。  
   
-If PX-004 is revised:  
+PX-004が改訂された場合:  
   
-1. Confirmed Equipment must be synchronized.  
-2. Product names must be synchronized.  
-3. Quantities must be synchronized.  
-4. Acquisition Status must be reviewed.  
-5. New Confirmed Equipment must be added.  
-6. Removed or rejected Equipment must be removed from the active acquisition registry.  
-7. Included Equipment must remain identifiable when required for the workflow.  
-8. Storage assignments must be synchronized where they form part of the official Workflow.  
-9. Specification changes must be synchronized.  
-10. Equipment roles must remain consistent between PX-004 and PX-005.  
-11. Latte workflow configuration must remain synchronized.  
-12. Two-person sequential operation must remain synchronized.  
-13. WPM Pitcher and Sleeve configuration must remain synchronized.  
-14. Puck Screen and Puck Screen Stand status must remain synchronized.  
-15. Current successor mappings must be reviewed when PX-004 changes.  
+1. Confirmed Equipmentを同期すること。  
+2. 製品名を同期すること。  
+3. 数量を同期すること。  
+4. Acquisition Statusを見直すこと。  
+5. 新規のConfirmed Equipmentを追加すること。  
+6. 削除または不採用となったEquipmentを、現行の調達registryから除去すること。  
+7. Workflow上必要な場合、Included Equipmentが識別可能な状態を維持すること。  
+8. 正式なWorkflowの一部を構成する収納割当を同期すること。  
+9. 仕様変更を同期すること。  
+10. Equipmentの役割が、PX-004とPX-005間で一貫していること。  
+11. Latte Workflow構成が同期していること。  
+12. 2人分の連続運用が同期していること。  
+13. WPM PitcherおよびSleeveの構成が同期していること。  
+14. Puck ScreenおよびPuck Screen Standの状態が同期していること。  
+15. PX-004が変更された際は、現行の後継対応関係を見直すこと。  
   
 ---  
   
 # Purchase Checklist  
   
-Before purchase:  
+購入前に:  
   
-* Confirm official product.  
-* Confirm current model.  
-* Confirm exact variant.  
-* Confirm quantity.  
-* Confirm Japan shipping.  
-* Confirm current price.  
-* Confirm shipping cost.  
-* Confirm applicable import tax.  
-* Confirm warranty.  
-* Confirm compatibility.  
-* Confirm voltage where applicable.  
-* Confirm whether the item is Included with another product.  
-* Confirm current stock status.  
-* Keep invoice.  
-* Register warranty where applicable.  
+* 正規品であることを確認する。  
+* 現行モデルであることを確認する。  
+* 正確なバリアントを確認する。  
+* 数量を確認する。  
+* 日本への配送可否を確認する。  
+* 現行価格を確認する。  
+* 配送料を確認する。  
+* 適用される輸入関税を確認する。  
+* 保証内容を確認する。  
+* 互換性を確認する。  
+* 該当する場合は電圧を確認する。  
+* 他の製品にIncludedされているかを確認する。  
+* 現行の在庫状況を確認する。  
+* 領収書・請求書を保管する。  
+* 該当する場合は保証登録を行う。  
   
 ---  
   
 # Overseas Purchase Policy  
   
-For overseas purchases, the following shall be confirmed before payment:  
+海外購入では、支払い前に以下を確認する:  
   
-1. Official manufacturer or authorized retailer.  
-2. Exact model and specification.  
-3. Japan shipping availability.  
-4. Shipping charge.  
-5. Applicable duties and consumption tax.  
-6. Import handling fee where applicable.  
-7. Warranty coverage in Japan.  
-8. Voltage / plug requirements where applicable.  
-9. Return policy.  
-10. Current exchange rate.  
+1. メーカー公式または正規販売店であること。  
+2. 正確なモデル・仕様。  
+3. 日本への配送可否。  
+4. 送料。  
+5. 適用される関税・消費税。  
+6. 該当する場合は輸入取扱手数料。  
+7. 日本国内での保証適用範囲。  
+8. 該当する場合は電圧・プラグ要件。  
+9. 返品ポリシー。  
+10. 現行の為替レート。  
   
-The final purchase amount shall be calculated conservatively.  
+最終的な購入金額は、保守的に算出する。  
   
 ---  
   
 # Japan Purchase Policy  
   
-For domestic purchases:  
+国内購入では:  
   
-1. Prefer official Japanese distributor.  
-2. Prefer official manufacturer store.  
-3. Use Amazon Japan only when seller authenticity is sufficiently clear.  
-4. Confirm domestic warranty.  
-5. Confirm current stock.  
-6. Confirm exact model number.  
-7. Avoid unofficial parallel-import products when the official product is available at a reasonable total cost.  
+1. 国内正規代理店を優先する。  
+2. メーカー公式ストアを優先する。  
+3. Amazon Japanは、販売者の真正性が十分明確な場合のみ使用する。  
+4. 国内保証を確認する。  
+5. 現行の在庫を確認する。  
+6. 正確な型番を確認する。  
+7. 正規品が妥当な総コストで入手可能な場合、非公式な並行輸入品は避ける。  
   
 ---  
   
 # Product Variant Integrity  
   
-The following specifications are fixed unless PX-004 is revised.  
+以下の仕様は、PX-004が改訂されない限り固定とする。  
   
 | Product | Fixed / Current Specification |  
 |---|---|  
 | 9Barista | Mk.2 Pro |  
-| Option-O LAGOM Mini | Current successor: LAGOM mini 2 / USB-C PD |  
-| MantaBrew | Current successor: WeighMaster Ultra |  
-| Pullman Chisel | Current purchase: 53.3 mm / Wood |  
+| Option-O LAGOM Mini | 現行後継: LAGOM mini 2 / USB-C PD |  
+| MantaBrew | 現行後継: WeighMaster Ultra |  
+| Pullman Chisel | 現行購入: 53.3 mm / Wood |  
 | The Force Tamper | 53 mm |  
 | Normcore Planetary WDT | 54mm |  
 | KNODOS | Walnut 54mm |  
 | Weber Blind Shaker | Onyx |  
 | WPM Pitcher | Handleless 450cc / #07 Sharp Spout |  
-| WPM Sleeve | Compatible with selected Handleless Pitcher |  
+| WPM Sleeve | 採用したHandleless Pitcherと互換 |  
 | FIKA12 | ×2 |  
-| PROPEL | ×1 system allocation / 2-piece commercial package |  
+| PROPEL | システム割当×1／2個入り市販パッケージ |  
 | AERESSO | ×1 |  
 | HILLS FIELD Glass Case | Single ×1 |  
 | AION 801-BL | ×1 package |  
-| Coffee System Water | 2,540mL total |  
+| Coffee System Water | 合計2,540mL |  
 | Puck Screen | 9Barista Official |  
 | Puck Screen Stand | Weber Workshops |  
   
@@ -1522,7 +1522,7 @@ The following specifications are fixed unless PX-004 is revised.
   
 # Compatibility Policy  
   
-Before purchase, physical compatibility must be confirmed for:  
+購入前に、以下について物理的な互換性を確認しなければならない:  
   
 ## Espresso  
   
@@ -1548,7 +1548,7 @@ Before purchase, physical compatibility must be confirmed for:
 * AION 801-BL → separator configuration  
 * FIKA12 ×2 → dedicated cases / Bek Container  
   
-No new accessory shall be added merely to solve a problem that can be resolved by correct configuration of an existing Confirmed Equipment item.  
+既存のConfirmed Equipmentの正しい構成によって解決できる問題のために、新たなアクセサリーを追加してはならない。  
   
 ---  
   
@@ -1556,19 +1556,19 @@ No new accessory shall be added merely to solve a problem that can be resolved b
   
 ## LAGOM mini 2 Ground Transfer Cup  
   
-The LAGOM mini 2 Ground Transfer Cup may be used only if direct grinding into the Weber Workshops Blind Shaker Onyx is physically unavailable or impractical.  
+LAGOM mini 2 Ground Transfer Cupは、Weber Workshops Blind Shaker Onyxへの直接受けが物理的に不可能・非実用的な場合に限り使用してよい。  
   
-It is not an additional purchased Coffee System item.  
+追加購入するCoffee Systemアイテムではない。  
   
-It is treated as an Included Component supplied with the current LAGOM mini 2.  
+現行のLAGOM mini 2に付属するIncluded Componentとして扱う。  
   
 ---  
   
 ## Included 9Barista Components  
   
-Components supplied with the selected 9Barista Mk.2 Pro configuration remain part of the official system.  
+採用した9Barista Mk.2 Pro構成に付属するコンポーネントは、正式なシステムの一部であり続ける。  
   
-They must not be duplicated through separate purchases unless a future PX-004 decision explicitly requires a spare.  
+将来のPX-004決定で予備が明示的に必要とされない限り、別途購入によって重複させてはならない。  
   
 ---  
   
@@ -1637,7 +1637,7 @@ They must not be duplicated through separate purchases unless a future PX-004 de
   
 ### Principle  
   
-Purchase official accessories together where practical.  
+実用的な場合は、純正アクセサリーをまとめて購入する。  
   
 ---  
   
@@ -1649,7 +1649,7 @@ Purchase official accessories together where practical.
   
 ### Principle  
   
-Combine where availability and shipping conditions permit.  
+在庫状況・配送条件が許す場合はまとめて購入する。  
   
 ---  
   
@@ -1662,7 +1662,7 @@ Combine where availability and shipping conditions permit.
   
 ### Principle  
   
-Prefer domestic acquisition to simplify shipping, warranty and replacement.  
+配送・保証・交換を簡素化するため、国内調達を優先する。  
   
 ---  
   
@@ -1673,14 +1673,14 @@ Prefer domestic acquisition to simplify shipping, warranty and replacement.
   
 ### Principle  
   
-Before purchase confirm:  
+購入前に以下を確認する:  
   
-* Exact diameter.  
-* Current lead time.  
-* International shipping.  
-* Current currency conversion.  
-* Import charges.  
-* Compatibility with 9Barista 53 mm basket.  
+* 正確な直径。  
+* 現行の納期。  
+* 国際配送。  
+* 現行の為替換算。  
+* 輸入関連費用。  
+* 9Barista 53mmバスケットとの互換性。  
   
 ---  
   
@@ -1691,9 +1691,9 @@ Before purchase confirm:
   
 ### Principle  
   
-These are structural Coffee Station components.  
+これらはCoffee Stationを構成する構造的コンポーネントである。  
   
-Confirm dimensions and transport method before purchase.  
+購入前に、寸法と運搬方法を確認する。  
   
 ---  
   
@@ -1706,11 +1706,11 @@ Confirm dimensions and transport method before purchase.
   
 ### Principle  
   
-The Latte System is purchased as a complete workflow.  
+Latte Systemは、完結したWorkflowとして購入する。  
   
-ALM KOPi Z1 Mini requires separate burner operation.  
+ALM KOPi Z1 Miniは、別途バーナーでの運用が必要。  
   
-Voltage and operating requirements must be confirmed before purchase.  
+購入前に電圧・動作要件を確認すること。  
   
 ---  
   
@@ -1723,9 +1723,9 @@ Voltage and operating requirements must be confirmed before purchase.
   
 ### Principle  
   
-Glass and transport configuration should be purchased as one functional set.  
+グラス・運搬構成は、1つの機能セットとして購入する。  
   
-No additional glass case is required.  
+追加のグラスケースは不要。  
   
 ---  
   
@@ -1737,15 +1737,15 @@ No additional glass case is required.
   
 ### Principle  
   
-These three bottles constitute the dedicated Coffee System water capacity of 2,540mL.  
+この3本のボトルが、Coffee System専用水の容量2,540mLを構成する。  
   
-They are not interchangeable with drinking-water or cooking-water equipment.  
+飲料水・調理用水の機材とは互換性がない。  
   
 ---  
   
 # Estimated Acquisition Budget  
   
-The following is a conservative planning estimate for acquiring all Purchase Required Equipment.  
+以下は、Purchase Required（購入対象）となっている全Equipmentを調達するための、保守的な計画目安である。  
   
 | Group | Estimated Cost |  
 |---|---:|  
@@ -1758,66 +1758,66 @@ The following is a conservative planning estimate for acquiring all Purchase Req
   
 ### Budget Policy  
   
-This amount is a planning estimate.  
+この金額は計画上の目安である。  
   
-It includes conservative allowance for overseas shipping and import-related charges where applicable.  
+該当する場合、海外配送・輸入関連費用について保守的な余裕を含む。  
   
-It does not include:  
+以下は含まない:  
   
-* Coffee beans  
-* Fuel  
-* Separate burner for ALM KOPi Z1 Mini  
-* Consumable cleaning products  
-* Optional spare parts  
-* Additional equipment not included in PX-004  
+* コーヒー豆  
+* 燃料  
+* ALM KOPi Z1 Mini用の別途バーナー  
+* 消耗品としての清掃用品  
+* 任意の予備部品  
+* PX-004に含まれない追加Equipment  
   
 ---  
   
 # Price Integrity Rule  
   
-PX-005 shall not represent:  
+PX-005は、以下を現行の公式価格として表記してはならない:  
   
-* Historical prices  
-* Old prices  
-* Third-party marketplace prices  
-* Different variants  
-* Different generations  
+* 過去の価格  
+* 古い価格  
+* サードパーティ・マーケットプレイスの価格  
+* 異なるバリアント  
+* 異なる世代  
   
-as current official prices.  
+の価格。  
   
-However, when a current official price cannot be obtained, a realistic acquisition estimate may be used.  
+ただし、現行の公式価格が取得できない場合は、現実的な調達目安を用いてよい。  
   
-Such values must be identified as:  
+そのような値は、  
   
 `Estimated`  
   
-or  
+または  
   
 `Planning Estimate`  
   
-and must not be described as an official current price.  
+として明示し、現行の公式価格として記載してはならない。  
   
 ---  
   
 # Acquisition Completeness Rule  
   
-The Coffee System acquisition is considered complete only when:  
+Coffee Systemの調達は、以下すべてを満たした場合にのみ完了とみなす:  
   
-1. All `Purchase Required` equipment has been acquired.  
-2. All `Included` equipment has been confirmed as included.  
-3. All exact variants have been verified.  
-4. All international purchases have been received.  
-5. No critical equipment remains unverified.  
-6. The complete Coffee Workflow can be performed.  
-7. Two-person Espresso operation can be performed.  
-8. Two-person Latte operation can be performed.  
-9. The Tool Station can be physically configured.  
-10. The Extraction Core can be physically configured.  
-11. The dedicated Coffee System water capacity is available.  
-12. Espresso glass transport is physically confirmed.  
-13. Latte cup transport is physically confirmed.  
-14. Puck Screen storage is physically confirmed.  
-15. All PX-004 Confirmed Equipment is represented in PX-005.  
+1. すべての`Purchase Required`Equipmentを取得済みであること。  
+2. すべての`Included`Equipmentが、付属品であることを確認済みであること。  
+3. すべての正確なバリアントを確認済みであること。  
+4. すべての海外購入品を受領済みであること。  
+5. 重要なEquipmentに未確認のものが残っていないこと。  
+6. 完全なCoffee Workflowを実行できること。  
+7. 2人分のEspresso運用を実行できること。  
+8. 2人分のLatte運用を実行できること。  
+9. Tool Stationを物理的に構成できること。  
+10. Extraction Coreを物理的に構成できること。  
+11. Coffee System専用水の容量が確保されていること。  
+12. Espressoグラスの運搬が物理的に確認済みであること。  
+13. Latteカップの運搬が物理的に確認済みであること。  
+14. Puck Screenの収納が物理的に確認済みであること。  
+15. PX-004のConfirmed Equipmentがすべて、PX-005に反映されていること。  
   
 ---  
   
@@ -1899,14 +1899,14 @@ Important synchronization confirmations:
   
 | Version | Date | Summary |  
 |---|---|---|  
-| 1.0 | 2026-08 | Initial official release |  
-| 1.2 | 2026-08 | Acquisition records updated |  
-| 1.3 | 2026-08 | PX-004 v2.3 synchronization. Confirmed Equipment registry reconstructed from PX-004. Included Equipment policy added. Blind Shaker, espresso glass configuration, latte cup configuration, and Coffee System water configuration synchronized. |  
-| 1.4 | 2026-08 | PX-004 v2.5 synchronization. KNODOS Tamping Mat with Tool Organiser - Walnut 54mm added. Normcore Planetary WDT Tool synchronized to 54mm. Tool Station / Extraction Core roles synchronized. |  
-| 1.5 | 2026-08 | PX-004 v2.6 synchronization. WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout and WPM Pitcher Sleeve added as Confirmed Equipment. ALM KOPi Z1 Mini two-cycle Latte workflow synchronized. Two-person sequential Espresso / Latte operation synchronized. |  
-| 1.6 | 2026-08-21 | Full synchronization against PX-004 v2.7. All PX-004 Confirmed Equipment restored to the acquisition registry. 9Barista Puck Screen and Weber Workshops Puck Screen Stand restored. |  
-| 1.7 | 2026-08-21 | Current acquisition information review. Official current prices updated where verified. Successor-model relationships identified but acquisition registry retained conservative PX-004 naming. |  
-| 1.8 | 2026-08-21 | Acquisition policy revised. Current successor models are now adopted as PX-005 purchase targets where clearly established. All active Equipment receives a current price or realistic acquisition estimate. Overseas products receive conservative Japan-arrival cost estimates. LAGOM mini 2 and MantaBrew WeighMaster Ultra adopted as current acquisition models. Pullman Chisel updated to current 53.3 mm Wood configuration. KRUVE PROPEL commercial package quantity distinguished from PX-004 system allocation. Estimated complete acquisition budget added. |  
+| 1.0 | 2026-08 | 初回正式リリース。 |  
+| 1.2 | 2026-08 | 調達記録を更新。 |  
+| 1.3 | 2026-08 | PX-004 v2.3と同期。Confirmed Equipment registryをPX-004から再構築。Included Equipmentポリシーを追加。Blind Shaker、エスプレッソグラス構成、ラテカップ構成、Coffee System水構成を同期。 |  
+| 1.4 | 2026-08 | PX-004 v2.5と同期。KNODOS Tamping Mat with Tool Organiser - Walnut 54mmを追加。Normcore Planetary WDT Toolを54mmへ同期。Tool Station / Extraction Coreの役割を同期。 |  
+| 1.5 | 2026-08 | PX-004 v2.6と同期。WPM Handleless Pitcher Standard 450cc / #07 Sharp SpoutおよびWPM Pitcher SleeveをConfirmed Equipmentとして追加。ALM KOPi Z1 Miniの2サイクルLatte Workflowを同期。2人分の連続Espresso / Latte運用を同期。 |  
+| 1.6 | 2026-08-21 | PX-004 v2.7との全面同期。PX-004のConfirmed Equipmentをすべて調達registryへ復元。9Barista Puck ScreenおよびWeber Workshops Puck Screen Standを復元。 |  
+| 1.7 | 2026-08-21 | 現行の調達情報を見直し。確認できた範囲で現行の公式価格を更新。後継モデル関係を特定したが、調達registryはPX-004の表記を保守的に維持。 |  
+| 1.8 | 2026-08-21 | 調達ポリシーを改訂。後継関係が明確に確立している場合、現行の後継モデルをPX-005の購入対象として採用するようにした。すべての現行Equipmentに、現行価格または現実的な調達目安を設定。海外製品には、保守的な日本到着後コスト目安を設定。LAGOM mini 2およびMantaBrew WeighMaster Ultraを、現行の調達モデルとして採用。Pullman Chiselを、現行の53.3mm Wood構成へ更新。KRUVE PROPELの市販パッケージ数量を、PX-004上のシステム割当と区別。調達完了までの見積予算を追加。 |  
 | 1.9 | 2026-09-07 | 9Barista Magnetic Dosing Funnelを、PX-004 Ver.2.9で明確化された「Mk.2 Pro標準付属品」の扱いへ整合。独立Purchase Required項目（旧Product 12）からIncluded Equipment（Included 04）へ移動し、Priority表・Purchase Grouping・Final Inventory・Estimated Acquisition Budgetを整合させた（Core Espresso System見積を¥7,900減額）。 |  
   
 ---  
