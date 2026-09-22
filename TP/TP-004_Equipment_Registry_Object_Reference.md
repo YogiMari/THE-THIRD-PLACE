@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.16  
+Version 7.17  
   
 ---  
   
@@ -1907,11 +1907,11 @@ Portable LED Lantern（38-kT Shade）
 
 **Brand**  
 
-CALMA STORE × neru design works  
+neru design works × CALMA STORE  
 
 **Product**  
 
-POCKET SHADE M（neru design works柄）  
+POCKET SHADE  
 
 **Status**  
 
@@ -4968,3 +4968,13 @@ Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning�
 
 - LGT-022：Product/Materialを「Hinoki」から「Sugi」へ訂正。StatusをUpgradeからOwnedへ訂正（プロジェクトオーナーが既に所有しているため）。  
 - LGT-025（Pine）・LGT-026（Maple）：変更なし。引き続きUpgrade（購入希望）として維持する。  
+
+---  
+
+## Version 7.17  
+
+プロジェクトオーナーの指摘に基づく実態訂正。LGT-028bのBrand表記が誤っていた。  
+
+### Changes  
+
+- LGT-028b：Brandを「CALMA STORE × neru design works」から「neru design works × CALMA STORE」へ訂正（neru design worksによるCALMA STORE別注品であり、ブランド順は制作元が先）。Productを「POCKET SHADE M（neru design works柄）」から「POCKET SHADE」へ簡素化。  
