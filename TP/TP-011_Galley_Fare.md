@@ -1,5 +1,5 @@
 # TP-011 Galley Fare
-Version 2.6
+Version 2.7
 
 ---
 
@@ -73,6 +73,7 @@ TP-004と同一のフィールド構成を用いる。
 - Graphic Attribute
 - Industrial Attribute
 - Parent / Child relationships（該当する場合）
+- Price（Version 2.7より、任意項目として再導入。既存登録済みアイテムへの遡及記載は別途対応）
 
 ## Candidate Recording Policy
 
@@ -367,7 +368,7 @@ Owned
 
 ### Color
 
-Silver
+Black（MARI様の実物確認に基づき、Version 2.7でSilverから訂正）
 
 ### Material
 
@@ -2679,6 +2680,495 @@ Folding Side Table（Height-Adjustable Mesh Shelf, Designed to Pair with KIT-070
 
 ---
 
+## KIT-071
+
+**Brand**
+
+Unconfirmed
+
+**Product**
+
+インナーネット26
+
+**Status**
+
+Owned
+
+**Parent**
+
+KIT-001
+
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Industrial Attribute
+
+Inner Net（和鉄ダッチオーブン26用）
+
+### Price
+
+¥2,420
+
+---
+## KIT-072
+
+**Brand**
+
+Unconfirmed
+
+**Product**
+
+和鉄ダッチオーブン収納ケース M
+
+**Status**
+
+Owned
+
+**Parent**
+
+KIT-001
+
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Industrial Attribute
+
+Storage Case（和鉄ダッチオーブン26用）
+
+### Price
+
+¥8,470
+
+---
+## KIT-073
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+Lifter Pro Set For Cast Iron Dutch Oven（N-021）
+
+**Status**
+
+Owned
+
+**Parent**
+
+KIT-001
+
+### Child Components
+
+- KIT-074
+
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Industrial Attribute
+
+Lifter（和鉄ダッチオーブン26用、大小2ツール構成）
+
+### Price
+
+¥5,280
+
+---
+## KIT-074
+
+**Brand**
+
+Unconfirmed
+
+**Product**
+
+リフターグリップ
+
+**Status**
+
+Owned
+
+**Parent**
+
+KIT-073
+
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Industrial Attribute
+
+Grip Custom（KIT-073用）
+
+### Price
+
+価格不明
+
+---
+## KIT-075
+
+**Brand**
+
+Unconfirmed
+
+**Product**
+
+FB NO GOTOKU!? YOTSUTOSHI MODEL
+
+**Status**
+
+Owned
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Industrial Attribute
+
+Trivet（五徳）
+
+### Price
+
+¥22,000
+
+---
+## KIT-076
+
+**Brand**
+
+Unconfirmed
+
+**Product**
+
+チャコールスタンド26
+
+**Status**
+
+Owned
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Industrial Attribute
+
+Oven Stand（ダッチオーブン置き台）
+
+### Price
+
+¥3,080
+
+---
+## KIT-077
+
+**Brand**
+
+Unconfirmed（1/f space）
+
+**Product**
+
+Wind shield
+
+**Status**
+
+Owned
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Industrial Attribute
+
+Windscreen（バーナー用風防）
+
+### Price
+
+¥4,730
+
+---
+## KIT-078
+
+**Brand**
+
+Unconfirmed（1/f space）
+
+**Product**
+
+1/f spider
+
+**Status**
+
+Owned
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Industrial Attribute
+
+Burner Lid（バーナーの蓋）
+
+### Price
+
+¥9,900
+
+---
+## KIT-079
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+タコ焼きプレート
+
+**Status**
+
+Owned
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Industrial Attribute
+
+Takoyaki Plate
+
+### Price
+
+¥5,280
+
+---
+## KIT-080
+
+**Brand**
+
+OMA FACTORY
+
+**Product**
+
+バーナーノブ
+
+**Status**
+
+Owned
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Industrial Attribute
+
+Burner Knob
+
+### Price
+
+¥1,800
+
+---
+## KIT-081
+
+**Brand**
+
+INOUT
+
+**Product**
+
+Sierra Cup Leather case【BLACK】
+
+**Status**
+
+Owned
+
+### Color
+
+Black
+
+### Material
+
+Leather
+
+### Industrial Attribute
+
+Sierra Cup Case
+
+### Price
+
+¥7,180
+
+---
+## KIT-082
+
+**Brand**
+
+Unconfirmed
+
+**Product**
+
+バークランプランタンスタンド
+
+**Status**
+
+Owned
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Industrial Attribute
+
+Sierra Cup Stand（バークランプ式）
+
+### Price
+
+¥7,480
+
+---
+## KIT-083
+
+**Brand**
+
+Unconfirmed
+
+**Product**
+
+和武器M
+
+**Status**
+
+Owned
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Industrial Attribute
+
+Chopsticks
+
+### Price
+
+¥5,280
+
+---
+## KIT-084
+
+**Brand**
+
+DAMNGOOD!!GARAGE
+
+**Product**
+
+FB NO PLATE SKULL
+
+**Status**
+
+Owned
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Industrial Attribute
+
+Plate（アシナガ）
+
+### Price
+
+¥9,800
+
+---
+## KIT-085
+
+**Brand**
+
+H&O BALLISTICS
+
+**Product**
+
+EWT CAP BSPC-021
+
+**Status**
+
+Owned
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Industrial Attribute
+
+Wet Tissue Case
+
+### Price
+
+¥5,390
+
+---
 # Single Source of Truth
 
 TP-011 Galley Fareは、キッチン機材（調理器具・刃物・調理小物）に関する唯一のMaster Databaseである。
@@ -3007,3 +3497,15 @@ Related Documentsを「Relationship to Other Core Documents」表へ拡張し、
 
 - Related DocumentsをRelationship to Other Core Documentsへ改名し、TP-000〜TP-010を含む完全な文書関係表を追加。
 - Kitchen機材の登録内容（KIT-001〜070系列）に変更なし。
+
+## Version 2.7
+
+MARI様がClaude導入以前に個人管理していたスプレッドシート（Numbersファイル）を精査し、GitHub未登録の既存所有キッチン機材をTP-011へ統合。あわせてPrice（価格）フィールドを任意項目として再導入した。
+
+### Changes
+
+- Attribute PolicyにPriceフィールドを追加（任意項目）。
+- KIT-071〜KIT-085（新規15件）：インナーネット26・収納ケース・Lifter Proセット（KIT-001子、KIT-073/074）・五徳・チャコールスタンド・風防・バーナー蓋・タコ焼きプレート・バーナーノブ・シェラカップケース・シェラカップスタンド・和武器M箸・アシナガプレート・H&Oウェットティッシュケースを新規登録。すべてOwned。
+- KIT-008：Colorを「Silver」から「Black」へ訂正（MARI様の実物確認に基づく）。
+- 既知の未確認事項：KIT-074（リフターグリップ）の価格が未確認。一部新規登録アイテム（ニッチなガレージブランド品）はウェブ上での公式情報が確認できず、購入記録上の名称をそのまま採用している。
+- Relationship to Other Core Documents：変更なし。
