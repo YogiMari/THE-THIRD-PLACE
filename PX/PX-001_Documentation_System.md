@@ -14,7 +14,7 @@
 
 | Version | Date | Description |
 |----------|------|-------------|
-| 1.0 | 2026-07-15 | Initial release. Documentation System migrated into the PX Series as the official operational standard for THE THIRD PLACE Project. |
+| 1.0 | 2026-07-15 | 初版。Documentation SystemをPXシリーズへ移行し、THE THIRD PLACE Projectの正式な運用標準として採用。 |
 | 1.1 | 2026-09-07 | Document Series一覧(§8)とReferences(§24)を実際のRepository構成へ整合。TP-010・TP-011、TM-005、PX-003〜PX-006を追加。 |
 
 ---
