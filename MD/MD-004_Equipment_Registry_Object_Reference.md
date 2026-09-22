@@ -1061,7 +1061,7 @@ Carrying Case（EXTENMON TABLE用）
 
 **Brand**  
 
-TENt o TEN  
+DEVISE WORKS × TENt o TEN × WHAT WE WANT  
 
 **Product**  
 
@@ -3445,7 +3445,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-054  
+## LGT-055
 
 **Brand**  
 
@@ -3483,7 +3483,7 @@ Gas Lantern（本体）
 ¥48,400  
 
 ---  
-## LGT-055  
+## LGT-056
 
 **Brand**  
 
@@ -3519,7 +3519,7 @@ Base
 ¥37,980  
 
 ---  
-## LGT-056  
+## LGT-057
 
 **Brand**  
 
@@ -3555,7 +3555,7 @@ Side Rail
 ¥23,150  
 
 ---  
-## LGT-057  
+## LGT-058
 
 **Brand**  
 
@@ -3626,7 +3626,7 @@ Kerosene Lantern Accessory / Variant Part（LGT-002用）
 ¥40,000  
 
 ---  
-## LGT-059  
+## LGT-060
 
 **Brand**  
 
@@ -3662,7 +3662,7 @@ Otachidai Bar（お立ち台バー）
 ¥1,320  
 
 ---  
-## LGT-060  
+## LGT-061
 
 **Brand**  
 
