@@ -11,7 +11,7 @@ Acquisition Handbook
   
 **Version**  
   
-2.2  
+2.3  
   
 **Status**  
   
@@ -196,6 +196,7 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
 * Standard構成への代替は行わない。  
 * 付属品は、予備として必要な場合を除き、別途購入しない。  
 * 本体標準付属品：53mm Tamper（9Barista純正・汎用）、Heat Transfer PlateまたはInduction Adaptor Plate（選択したコンロ種別に応じて1点）、Spare Boiler O-ring ×1、Spare Safety Ring ×1、User Guide。THE THIRD PLACEではThe Force Tamper 53mmを主力Tamperとするため、付属の汎用Tamperは予備として保持する。  
+* Upper / Lower Handleは標準でAnodised Aluminium仕様。PX-004 Ver.3.7のHandle Material Decisionに基づき、Walnut仕様へ変更する（詳細はProduct 26を参照）。  
   
 ---  
   
@@ -1021,6 +1022,42 @@ PX-004に登録された製品が現在販売終了しており、メーカー�
   
 ---  
   
+## Product 26  
+  
+### 9Barista Handle - Walnut  
+  
+| Item | Details |  
+|---|---|  
+| Manufacturer | 9Barista |  
+| Model | Handle for 9Barista Espresso Machine（Walnutオプション） |  
+| Current Purchase Model | Handle - Walnut |  
+| Category | Handle (Upper / Lower) |  
+| Acquisition Status | Purchase Required |  
+| Quantity | 2（Upper ×1, Lower ×1） |  
+| Purchase Type | Official Accessory / Upgrade |  
+| Primary Purchase Source | 9Barista Official Store |  
+| Purchase URL | Official Store |  
+| Japan Shipping | Available |  
+| Warranty | Manufacturer Policy |  
+| Current Product Price | $15.00 each（$30.00 for ×2） |  
+| Estimated Shipping | Included / calculated at official checkout（Product 01と同時注文） |  
+| Estimated Import Tax / Charges | Included at official Japan checkout |  
+| Estimated Total Cost | ¥4,500〜6,000 |  
+| Currency | USD / JPY |  
+| Purchase Priority | ★★★★★ |  
+  
+### Notes  
+  
+* PX-004 Ver.3.7「Handle Material Decision」にて正式決定。MARI様の直接指示（2026-09-18）に基づく。  
+* 9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）を、Walnut仕様へ変更する。  
+* Design Bibleの核となる素材言語（Walnut・Brass・Black Steel）との整合を目的とする。  
+* 公式スペアパーツ「Handle for 9Barista Espresso Machine」はUpper・Lower共通の単品販売（1個 $15.00）であり、フルセットには2個必要。  
+* Mk.1・Mk.2共通対応品。  
+* 9Barista Mk.2 Pro本体・9Barista Puck Screンと同時注文し、Group A（9Barista）へ統合する。  
+* サードパーティ製Handleは不採用。  
+  
+---  
+  
 # Included Equipment  
   
 ## Included 01 — IMS Precision Basket 53 mm  
@@ -1146,7 +1183,7 @@ Equipmentと異なり、Coffee BeansはPX-004による正式なDecisionを経な
   
 ## Purpose  
   
-本セクションは、9Barista Mk.2 Pro本体および9Barista Puck Screen（Group A、Month 1）の注文と同時に、送料を効率化するために検討すべき、9Barista公式ストア取扱いの予備部品・メンテナンス用品を管理する。  
+本セクションは、9Barista Mk.2 Pro本体・9Barista Puck Screen・9Barista Handle - Walnut（Group A、Month 1）の注文と同時に、送料を効率化するために検討すべき、9Barista公式ストア取扱いの予備部品・メンテナンス用品を管理する。  
   
 本セクションは、Equipment Acquisition Registryとは独立して管理する。PX-004のConfirmed Equipment決定の対象外であり、Coffee System本体のWorkflow・意思決定には影響しない。  
   
@@ -1167,11 +1204,12 @@ Descalerの取り扱いは、引き続きPX-006 Brew Care 第18.3項の指定（
 * Heat Transfer PlateまたはInduction Adaptor Plate（購入時に選択したコンロ種別に応じて1点）  
 * Spare Boiler O-ring ×1（Mk.2用、3mm断面）  
 * Spare Safety Ring ×1（Oリング一式込み）  
+* Upper / Lower Handle ×各1（標準はAnodised Aluminium。THE THIRD PLACEではWalnut仕様へ変更 — 詳細はProduct 26を参照）  
 * User Guide  
   
 ## Recommended Preventive Spare Parts（推奨・任意）  
   
-野外・キャンプ運用では、部品が破損しても近隣で即座に代替品を入手できず、9Barista（英国ケンブリッジ）からの取り寄せには相応の日数を要する。本体・Puck Screenの注文に同梱することで、送料を実質的に節約しながら予備を確保できる。  
+野外・キャンプ運用では、部品が破損しても近隣で即座に代替品を入手できず、9Barista（英国ケンブリッジ）からの取り寄せには相応の日数を要する。本体・Puck Screen・Handleの注文に同梱することで、送料を実質的に節約しながら予備を確保できる。  
   
 | Item | 用途 | 参考価格（公式） | 推奨度 | 備考 |  
 |---|---|---:|---|---|  
@@ -1185,7 +1223,7 @@ Descalerの取り扱いは、引き続きPX-006 Brew Care 第18.3項の指定（
   
 * Valve Pin and Seal／Valve Body Seal／Valve Chamber Seal／Valve Spring（バルブ機構の個別部品）  
 * Upper Chamber O-ring／Grouphead O-ring  
-* Group Insulator／Metal Chimney／Handle／Upper・Lower Handle Bush（構造部品。故障の記録なし）  
+* Group Insulator／Metal Chimney／Handle Bush（構造部品。故障の記録なし）  
 * Basket Cap Pro予備（本体購入時にIncluded済み。高額なため予備は不要）  
 * Induction Adaptor PlateとHeat Transfer Plateのうち、使用しないコンロ種別用の一方  
   
@@ -1485,6 +1523,7 @@ Coffee Systemの購入リストが完成したと判断する前に、以下を�
 33. FIKA12の数量が×2として同期していること。  
 34. 現行の後継製品が明示的に識別されていること。  
 35. 現行の市販パッケージ数量と、PX-004上のシステム割当数量が区別されていること。  
+36. 9Barista Handle - WalnutがPX-004 v3.7のHandle Material Decisionと同期していること。  
   
 ---  
   
@@ -1520,6 +1559,7 @@ PX-004が改訂された場合:
 13. WPM PitcherおよびSleeveの構成が同期していること。  
 14. Puck ScreenおよびPuck Screen Standの状態が同期していること。  
 15. PX-004が変更された際は、現行の後継対応関係を見直すこと。  
+16. Handle素材決定（Anodised Aluminium／Walnut）が同期していること。  
   
 ---  
   
@@ -1585,6 +1625,7 @@ PX-004が改訂された場合:
 | Product | Fixed / Current Specification |  
 |---|---|  
 | 9Barista | Mk.2 Pro |  
+| 9Barista Handle | Walnut |  
 | Option-O LAGOM Mini | 現行後継: LAGOM mini 2 / USB-C PD |  
 | MantaBrew | 現行後継: WeighMaster Ultra |  
 | Pullman Chisel | 現行購入: 53.3 mm / Wood |  
@@ -1664,6 +1705,7 @@ LAGOM mini 2 Ground Transfer Cupは、Weber Workshops Blind Shaker Onyxへの直
 | Priority | Equipment | Quantity | Estimated Total Cost | Acquisition Status |  
 |---|---|---:|---:|---|  
 | ★★★★★ | 9Barista Mk.2 Pro | 1 | ¥126,500 | Purchase Required |  
+| ★★★★★ | 9Barista Handle - Walnut | 2 | ¥4,500〜6,000 | Purchase Required |  
 | ★★★★★ | Option-O LAGOM mini 2 | 1 | ¥70,000〜78,000 | Purchase Required |  
 | ★★★★★ | MantaBrew WeighMaster Ultra | 1 | ¥40,000〜45,000 | Purchase Required |  
 | ★★★★★ | Weber Workshops Bean Cellar Bulk | 1 | ¥38,000〜42,000 | Purchase Required |  
@@ -1716,6 +1758,7 @@ LAGOM mini 2 Ground Transfer Cupは、Weber Workshops Blind Shaker Onyxへの直
   
 * 9Barista Mk.2 Pro  
 * 9Barista Puck Screen  
+* 9Barista Handle - Walnut ×2  
 * Included IMS Precision Basket  
 * Included Stainless Steel Basket Cap Pro  
 * Included 9Barista Magnetic Dosing Funnel  
@@ -1839,12 +1882,12 @@ ALM KOPi Z1 Miniは、別途バーナーでの運用が必要。
   
 | Group | Estimated Cost |  
 |---|---:|  
-| Core Espresso System | ¥404,500〜459,500 |  
+| Core Espresso System | ¥409,000〜465,500 |  
 | Station / Workflow | ¥58,000〜78,000 |  
 | Latte System | ¥102,000〜127,500 |  
 | Espresso Glass / Transport | ¥25,480〜31,480 |  
 | Dedicated Water | ¥33,790〜41,790 |  
-| **Estimated Total** | **¥623,770〜738,270** |  
+| **Estimated Total** | **¥628,270〜744,270** |  
   
 ### Budget Policy  
   
@@ -1939,9 +1982,10 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
 | 23 | Snow Peak オーロラボトル 1L | 1 | ¥8,000〜13,000 | Purchase Required |  
 | 24 | YETI Yonder 1L | 1 | ¥5,000〜7,000 | Purchase Required |  
 | 25 | Snow Peak 酒筒 Titanium | 1 | ¥20,790〜21,790 | Purchase Required |  
-| 26 | IMS Precision Basket 53 mm | 1 | Included | Included |  
-| 27 | 9Barista Stainless Steel Basket Cap Pro | 1 | Included | Included |  
-| 28 | LAGOM mini 2 Ground Transfer Cup | 1 | Included | Included / Secondary Route |  
+| 26 | 9Barista Handle - Walnut | 2 | ¥4,500〜6,000 | Purchase Required |  
+| 27 | IMS Precision Basket 53 mm | 1 | Included | Included |  
+| 28 | 9Barista Stainless Steel Basket Cap Pro | 1 | Included | Included |  
+| 29 | LAGOM mini 2 Ground Transfer Cup | 1 | Included | Included / Secondary Route |  
   
 ---  
   
@@ -1992,8 +2036,9 @@ MARI様との合意に基づく、月次購入計画である。Straight Espress
   
 * 9Barista Mk.2 Pro  
 * 9Barista Puck Screen  
+* 9Barista Handle - Walnut ×2  
 * （任意）Safety Ring and Seals／Boiler O-ring Seal Mk.2／Overheat Repair Kit Mk.2  
-* 小計：¥130,500〜133,500（Optional Preventive Stockを除く）  
+* 小計：¥135,000〜139,500（Optional Preventive Stockを除く）  
 * 上限なし（9Barista本体は公式まとめ買いを優先し、月次上限の例外とする）  
   
 ## Month 2 — Grinder & Scale  
@@ -2046,7 +2091,7 @@ MARI様との合意に基づく、月次購入計画である。Straight Espress
   
 ## Plan Total  
   
-総額目安：¥614,770〜714,270（Estimated Acquisition Budgetの目安¥623,770〜738,270の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
+総額目安：¥619,270〜720,270（Estimated Acquisition Budgetの目安¥628,270〜744,270の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
   
 ### Design Rationale  
   
@@ -2057,6 +2102,7 @@ MARI様との合意に基づく、月次購入計画である。Straight Espress
 * YETI Yonder 1Lは、MARI様の実飲用計画（2名・1泊・Straight Espresso 6杯・Latte 4杯）で必要水量を試算すると、9Barista使用10回×120mL＋ALM KOPi 2セッション×300mL＝合計約1,800mLとなり、オーロラボトル＋酒筒Titaniumのみ（1,540mL）では約260mL不足するため、Month 5で確保する必要があると判断した。  
 * Snow Peak酒筒Titaniumは、Latte導入（Month 7）に合わせて後方へ配置する。  
 * 9Barista Official Spare Parts (Preventive Stock)は、Group A（9Barista）注文に同梱可能な任意項目として、Month 1の小計とは別枠で記録する。  
+* 9Barista Handle - Walnutは、PX-004 Ver.3.7のHandle Material Decisionに基づく確定購入品として、Month 1の本体・Puck Screen注文へ統合する。  
   
 ---  
   
@@ -2076,6 +2122,7 @@ MARI様との合意に基づく、月次購入計画である。Straight Espress
 | 2.0 | 2026-09 | Coffee Beans Procurementセクションを新設。コーヒー豆を消耗品として、Equipment Acquisition Registryから独立させて管理する方針を確立。Current RotationにOnibus Coffee「ONIBUS Blend」（Primary）とApril Coffee Roasters「Sustainable Profile Espresso」（Aesthetic Exception）を登録。Estimated Acquisition Budgetの除外リストから「コーヒー豆」の記載を削除（本セクションで独立管理するため除外リストへの言及自体が不要になったことによる整理）。Purposeセクションへ本方針を明記。 |  
 | 2.1 | 2026-09 | Monthly Acquisition Plan（Confirmed）セクションを新設。MARI様との合意に基づく月次購入計画（Month 1〜7、月あたり目安¥10万・Month 1のみ上限なし）を正式反映。Straight Espresso Workflow完成を優先し、エスプレッソグラス一式（PROPEL／AERESSO／HILLS FIELD Case／AION Coaster）とLatte System（ALM KOPi／WPM Pitcher／WPM Sleeve／FIKA12）を後半（Month 6・7）へ配置する方針を明記。YETI Yonderの必要性について、実飲用計画（Straight Espresso 6杯／Latte 4杯）に基づく水量試算（必要量約1,800mL、YETI除くと1,540mLで約260mL不足）を記録し、Month 5での確保を確定。 |  
 | 2.2 | 2026-09-18 | 「9Barista Official Spare Parts (Preventive Stock)」セクションを新設。9Barista公式サイト（9barista.com）一次情報に基づき、本体標準付属品（Spare Boiler O-ring・Spare Safety Ring・汎用53mm Tamper等）を記録し、重複購入防止の基準とした。推奨予備部品としてSafety Ring and Seals・Boiler O-ring Seal Mk.2を、任意項目としてOverheat Repair Kit Mk.2を追加。通常使用下では交換頻度が低いとされる個別Valve部品・構造部品は見送りとした。Descalerは2026-09時点で9Barista公式ストアの取扱いがないことを確認し、PX-006記載の第三者ブランド（Puly／Urnex Dezcal／Durgol）調達方針を維持。Purchase Grouping Group Aおよび Monthly Acquisition Plan Month 1へOptional項目として反映。Estimated Acquisition BudgetおよびPlan Totalの除外リストに本セクションを明記。 |  
+| 2.3 | 2026-09-18 | Product 26「9Barista Handle - Walnut」を新設。PX-004 Ver.3.7のHandle Material Decision（MARI様の直接指示、2026-09-18）と同期し、9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）をWalnut仕様へ変更する購入をConfirmed / Purchase Requiredとして正式登録。数量2（Upper・Lower各1、公式スペアパーツは単品$15.00販売）、参考価格¥4,500〜6,000。Group A（9Barista）およびMonth 1へ統合し、Current Acquisition Priority・Estimated Acquisition Budget（Core Espresso System: ¥404,500〜459,500 → ¥409,000〜465,500、Estimated Total: ¥623,770〜738,270 → ¥628,270〜744,270）・Plan Total（¥614,770〜714,270 → ¥619,270〜720,270）・Final Acquisition Inventory（Included項目を26〜28から27〜29へ繰り下げ）・Product Variant Integrity・Purchase Completeness Rule・PX-004/PX-005 Synchronization Ruleへ反映。 |  
   
 ---  
   
