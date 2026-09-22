@@ -1,5 +1,5 @@
 # TP-004 Equipment Registry Object Reference  
-Version 7.15  
+Version 7.16  
   
 ---  
   
@@ -1646,11 +1646,11 @@ nodel design
 
 **Product**  
 
-38-kT miyabi Wood (Hinoki)  
+38-kT miyabi Wood (Sugi)  
 
 **Status**  
 
-Upgrade  
+Owned  
 
 **Parent**  
 
@@ -1662,7 +1662,7 @@ Brown
 
 ### Material  
 
-Hinoki  
+Sugi  
 
 ### Industrial Attribute  
 
@@ -4957,3 +4957,14 @@ Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning�
 ### Changes  
 
 - STR-001：StatusをOwnedからEssentialへ訂正。  
+
+---  
+
+## Version 7.16  
+
+プロジェクトオーナーの指摘に基づく実態訂正。LGT-022は「Hinoki」として登録されていたが、nodel design「38-kT miyabi Wood」シリーズに同名の製品は実在しないことが判明した。同シリーズは2024年3月の発売時点でWalnutとSugiの2色のみで展開されており、プロジェクトオーナーが所有する4色目（Walnut・Karin・African Woodに次ぐもの）は、発売時期および外観の特徴（明るい色味・縦方向の力強い木目）から、Sugiである可能性が高いと判断した。
+
+### Changes  
+
+- LGT-022：Product/Materialを「Hinoki」から「Sugi」へ訂正。StatusをUpgradeからOwnedへ訂正（プロジェクトオーナーが既に所有しているため）。  
+- LGT-025（Pine）・LGT-026（Maple）：変更なし。引き続きUpgrade（購入希望）として維持する。  
