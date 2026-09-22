@@ -1,5 +1,5 @@
-TM-001 Heritage Chronicle
-# TM-001 Heritage Chronicle
+KN-001 Heritage Chronicle
+# KN-001 Heritage Chronicle
 
 ## Purpose
 
@@ -39,8 +39,8 @@ Heritage Chronicleは、
 
 Heritage Chronicle が対象とするもの
 
-- TPシリーズの更新
-- TMシリーズの更新
+- DS・OPシリーズの更新
+- 記録系列（DB・MD・BR・CZ・KN）の更新
 - Design Review
 - Project全体の意思決定
 - Equipment構成変更
@@ -114,7 +114,7 @@ Equipment Registryの履歴管理として機能する。
 
 ## Documentation History
 
-TP・TM文書の更新履歴。
+全系列（DS・OP・DB・MD・BR・CZ・KN）の文書の更新履歴。
 
 対象
 
@@ -122,7 +122,7 @@ TP・TM文書の更新履歴。
 - Design Bible
 - Field Atlas
 - Documentation System
-- その他TP・TM文書
+- その他の正式文書
 
 ---
 
@@ -250,3 +250,6 @@ THE THIRD PLACEの時間を継承する、
 
 ---
 
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TM-001からKN-001へ番号を変更した。Scope及びDocumentation History内の旧シリーズ名（TP・TM）の記述を新系列名へ更新した。その他の内容に変更はない。旧ID: TM-001。

@@ -1,9 +1,9 @@
-# PX-001 Documentation System
+# OP-008 Documentation System
 
-**Document ID**: PX-001  
+**Document ID**: OP-008  
 **Title**: Documentation System  
-**Series**: PX – Project  
-**Version**: 1.1  
+**Series**: OP – Operation (Definition)  
+**Version**: 2.0  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -16,6 +16,8 @@
 |----------|------|-------------|
 | 1.0 | 2026-07-15 | 初版。Documentation SystemをPXシリーズへ移行し、THE THIRD PLACE Projectの正式な運用標準として採用。 |
 | 1.1 | 2026-09-07 | Document Series一覧(§8)とReferences(§24)を実際のRepository構成へ整合。TP-010・TP-011、TM-005、PX-003〜PX-006を追加。 |
+| 1.2 | 2026-09-19 | Document Series一覧(§8)の反映漏れを修正。PX-007を「Reserved」からPX-007 Deliberation Codex（正式発行済み）へ更新。 |
+| 2.0 | 2026-09-19 | プロジェクト全体の文書番号再編（Constitution OP-001 Ver.5.0参照）に伴い、TP-001からOP-008へ番号を変更。本書が定義する文書体系そのものを、旧TP／PX／TM 3系列から、新DS／OP／記録（DB・MD・BR・CZ・KN）系列へ全面的に再構築した（Major Version）。§4 Project Architecture、§5 Series Responsibilities、§6 Responsibility Matrix、§8 Document Series、§11 Naming Convention、§13 SSOT Examples、§14 Reference Rules、§24 Referencesを新体系へ更新。§19の運用ルール番号を、もはや存在しないPX接頭辞から独立したDOC番号へ改称。 |
 
 ---
 
@@ -23,9 +25,9 @@
 
 本書は、THE THIRD PLACE Project における文書体系および運用基準を定義する。
 
-TP・TM・PX の各シリーズが長期にわたり一貫した構造で運用されることを目的とする。
+DS・OP・記録（DB・MD・BR・CZ・KN）の各系列が長期にわたり一貫した構造で運用されることを目的とする。
 
-本書は、文書の役割、分類、管理方法および運用ルールを定義する PX シリーズの基準文書である。
+本書は、文書の役割、分類、管理方法および運用ルールを定義する、文書体系そのものの基準文書である。
 
 ---
 
@@ -35,9 +37,9 @@ TP・TM・PX の各シリーズが長期にわたり一貫した構造で運用�
 
 ## Included
 
-- TP Series
-- TM Series
-- PX Series
+- DS Series
+- OP Series
+- 記録（DB・MD・BR・CZ・KN Series）
 
 ## Excluded
 
@@ -56,7 +58,7 @@ TP・TM・PX の各シリーズが長期にわたり一貫した構造で運用�
 | Term | Definition |
 |------|------------|
 | Document | THE THIRD PLACE を構成する正式文書 |
-| Series | TP・TM・PX の文書群 |
+| Series | DS・OP・記録（DB・MD・BR・CZ・KN）の文書群 |
 | Authority | 文書の権限区分 |
 | Status | 文書のライフサイクル状態 |
 | SSOT | Single Source of Truth（唯一の正本） |
@@ -69,74 +71,74 @@ TP・TM・PX の各シリーズが長期にわたり一貫した構造で運用�
 
 # 4. Project Architecture
 
-THE THIRD PLACE Project は、3つの独立したシリーズで構成される。
+THE THIRD PLACE Project は、可変性の度合いによって区分された系列で構成される。
 
 ```text
 THE THIRD PLACE
 
-├── TP
-│     Design
+├── DS
+│     設計（絶対不変）
 │
-├── TM
-│     Media
+├── OP
+│     運用（定義：不変だが改訂の可能性あり）
 │
-└── PX
-      Project
+└── 記録（可変）
+      │
+      ├── DB   Dashboard
+      ├── MD   Master Data
+      ├── BR   Barista
+      ├── CZ   Cross-Zone Ops
+      └── KN   Knowledge
 ```
 
-各シリーズは独立した責任範囲を持ち、相互に役割を侵害してはならない。
+各系列は独立した責任範囲を持ち、相互に役割を侵害してはならない。
 
 ---
 
 # 5. Series Responsibilities
 
-## TP — Design
+## DS — Design（絶対不変）
 
-TPシリーズは、THE THIRD PLACEそのものを設計する。
+DSシリーズは、THE THIRD PLACEの不変の思想的原典を保持する。
 
 対象
 
-- Design Philosophy
+- Human Principlesの原典的記述
+
+DSシリーズは、通常の意思決定プロセスによる改訂を前提としない。
+
+---
+
+## OP — Operation（定義）
+
+OPシリーズは、THE THIRD PLACEの設計思想・規則・法則そのものを定義する。
+
+対象
+
 - Constitution
+- Design Philosophy
 - Design Rules
-- Master Data
-- Equipment
-- Architecture
-- Design Standards
+- Vocabulary / Grammar
+- Documentation Governance
+- Research Methodology
 
-TPシリーズは運用ルールを定義しない。
-
----
-
-## TM — Media
-
-TMシリーズは、THE THIRD PLACE の活動・発見・記録を保存する。
-
-対象
-
-- Chronicle
-- Discovery
-- Journey
-- Cultural Reference
-
-TMシリーズは設計基準および運用基準を定義しない。
+OPシリーズは、Versionは改訂されるが、個別データの入れ替えは伴わない。
 
 ---
 
-## PX — Project
+## 記録（DB・MD・BR・CZ・KN）— Record（可変）
 
-PXシリーズは、THE THIRD PLACE Project の運用を定義する。
+記録系列は、THE THIRD PLACE Project の運用データ・所有物・意思決定・アーカイブを保持する。
 
 対象
 
-- Documentation
-- Governance
-- Workflow
-- Project Management
-- Document Management
-- Version Management
+- Dashboard（運用管理そのもの）
+- Master Data（所有物・場所の台帳）
+- Barista（コーヒー機材の意思決定・調達・手入れ）
+- Cross-Zone Ops（コーヒー以外のゾーンの検討・市場監視）
+- Knowledge（知の蓄積・文化アーカイブ）
 
-PXシリーズは設計思想・世界観・記録を保持しない。
+記録系列は、設計思想そのものを定義しない。
 
 ---
 
@@ -144,11 +146,11 @@ PXシリーズは設計思想・世界観・記録を保持しない。
 
 | Series | Responsibility | Not Responsible For |
 |---------|----------------|---------------------|
-| TP | Design | Project Operation |
-| TM | Media | Design Standards |
-| PX | Project Operation | Design Philosophy / Records |
+| DS | 不変の思想原典 | Project Operation / Records |
+| OP | 設計・規則の定義 | Project Operation Data |
+| 記録（DB/MD/BR/CZ/KN） | Project Operation / Records | Design Philosophy |
 
-各シリーズは、自身の責任範囲のみを保持する。
+各系列は、自身の責任範囲のみを保持する。
 
 機能重複は禁止する。
 
@@ -156,7 +158,7 @@ PXシリーズは設計思想・世界観・記録を保持しない。
 
 # 7. Project Principles
 
-PXシリーズは以下の原則に従う。
+文書体系は以下の原則に従う。
 
 ## Principle 001
 
@@ -202,51 +204,62 @@ AI Friendly
 
 # 8. Document Series
 
-## TP Series
+## DS Series（設計・絶対不変）
 
-Design Documents
-
-- TP-000
-- TP-001
-- TP-002
-- TP-003
-- TP-004
-- TP-005
-- TP-006
-- TP-007
-- TP-008
-- TP-009
-- TP-010
-- TP-011
+- DS-001 THE THIRD PLACE Original
 
 ---
 
-## TM Series
+## OP Series（運用・定義）
 
-Media Documents
-
-- TM-001
-- TM-002
-- TM-003
-- TM-004
-- TM-005
+- OP-001 Constitution
+- OP-002 Design Bible
+- OP-003 Affinity Lexicon
+- OP-004 Aesthetic Grammar
+- OP-005 Acquisition Strategy
+- OP-006 Foundation Compass
+- OP-007 Habitat Architecture
+- OP-008 Documentation System
+- OP-009 Search Doctrine
 
 ---
 
-## PX Series
+## DB Series（Dashboard）
 
-Project Documents
+- DB-001 Project Ledger
 
-- PX-001 Documentation System
-- PX-002 Project Ledger
-- PX-003 Vigil Protocol
-- PX-004 Barista Codex
-- PX-005 Acquisition Handbook
-- PX-006 Brew Care
+---
 
-Reserved
+## MD Series（Master Data）
 
-- PX-007 Reserved
+- MD-001 Storage Blueprint
+- MD-002 Field Atlas Landscape Framework
+- MD-003 Galley Fare
+- MD-004 Equipment Registry Object Reference
+
+---
+
+## BR Series（Barista）
+
+- BR-001 Brew Care
+- BR-002 Barista Codex
+- BR-003 Acquisition Handbook
+
+---
+
+## CZ Series（Cross-Zone Ops）
+
+- CZ-001 Deliberation Codex
+- CZ-002 Vigil Protocol
+
+---
+
+## KN Series（Knowledge）
+
+- KN-001 Heritage Chronicle
+- KN-002 Cultural Pantheon
+- KN-003 Beyond Journey
+- KN-004 Atelier Discovery
 
 # 9. Document Classification
 
@@ -326,14 +339,14 @@ Series-Number Document Title
 例
 
 ```
-TP-004 Equipment Registry Object Reference
+MD-004 Equipment Registry Object Reference
 
-TM-001 Heritage Chronicle
+KN-001 Heritage Chronicle
 
-PX-001 Documentation System
+OP-008 Documentation System
 ```
 
-文書公開後は、Document ID を変更してはならない。
+文書公開後は、Document ID を変更してはならない（2026-09-19付の文書番号再編は、プロジェクトオーナー自身による意図的なDocument Architecture変更であり、本原則の例外として正式に記録される。詳細はOP-001 Constitution §27参照）。
 
 Title の変更は必要最小限とする。
 
@@ -397,10 +410,10 @@ Version は Semantic Versioning の考え方を採用する。
 
 | Information | SSOT |
 |-------------|------|
-| Equipment | TP-004 |
-| Design Philosophy | TP-002 |
-| Project Documentation | PX-001 |
-| Project Status | PX-002 |
+| Equipment | MD-004 |
+| Design Philosophy | OP-002 |
+| Project Documentation | OP-008 |
+| Project Status | DB-001 |
 
 ---
 
@@ -419,12 +432,12 @@ Version は Semantic Versioning の考え方を採用する。
 許可される例
 
 ```
-See TP-004 Equipment Registry Object Reference.
+See MD-004 Equipment Registry Object Reference.
 ```
 
 禁止例
 
-TP-004 の内容を別文書へコピーして保持すること。
+MD-004 の内容を別文書へコピーして保持すること。
 
 ---
 
@@ -474,7 +487,7 @@ Document ID は永続的な識別子とする。
 新規文書を作成する前に、以下を確認する。
 
 1. 既存文書で対応できないこと
-2. TP・TM・PX のいずれに属するか
+2. DS・OP・記録（DB/MD/BR/CZ/KN）のいずれに属するか
 3. 責任範囲が既存文書と重複しないこと
 4. Document ID を採番すること
 5. Project Ledger へ登録すること
@@ -501,27 +514,27 @@ Status を Archive または Deprecated に変更し、履歴として保持す�
 
 ---
 
-# 19. PX Operating Rules
+# 19. Documentation Operating Rules
 
-PXシリーズは以下の運用ルールに従う。
-
----
-
-## Rule PX-001
-
-PXシリーズは、プロジェクト運用のみを対象とする。
-
-設計思想・世界観・活動記録は保持しない。
+文書体系は以下の運用ルールに従う。
 
 ---
 
-## Rule PX-002
+## Rule DOC-01
 
-TP・TM・PX の責任範囲を侵害してはならない。
+記録系列は、プロジェクト運用のみを対象とする。
+
+設計思想・原典は保持しない。
 
 ---
 
-## Rule PX-003
+## Rule DOC-02
+
+DS・OP・記録 の責任範囲を侵害してはならない。
+
+---
+
+## Rule DOC-03
 
 Project Ledger はプロジェクトの運用状況を管理する。
 
@@ -531,7 +544,7 @@ Documentation System は運用ルールを管理する。
 
 ---
 
-## Rule PX-004
+## Rule DOC-04
 
 正式文書は必ず Documentation System に従う。
 
@@ -539,7 +552,7 @@ Documentation System は運用ルールを管理する。
 
 ---
 
-## Rule PX-005
+## Rule DOC-05
 
 すべての文書は References を用いて相互参照する。
 
@@ -547,7 +560,7 @@ Documentation System は運用ルールを管理する。
 
 ---
 
-## Rule PX-006
+## Rule DOC-06
 
 Project Ledger は唯一の運用ダッシュボードとする。
 
@@ -557,7 +570,7 @@ Documentation System は保持しない。
 
 ---
 
-## Rule PX-007
+## Rule DOC-07
 
 Conversation は履歴として保持する。
 
@@ -567,7 +580,7 @@ Project Ledger 上では履歴を残すことを推奨する。
 
 ---
 
-## Rule PX-008
+## Rule DOC-08
 
 Project Ledger は Living Document として運用する。
 
@@ -577,7 +590,7 @@ Documentation System は Standard Document として運用する。
 
 # 20. Quality Principles
 
-PXシリーズは以下を品質基準とする。
+文書体系は以下を品質基準とする。
 
 - Readability
 - Consistency
@@ -593,7 +606,7 @@ PXシリーズは以下を品質基準とする。
 
 # 21. Documentation Principles
 
-PXシリーズは、
+記録系列は、
 
 「読むため」ではなく、
 
@@ -615,7 +628,7 @@ PXシリーズは、
 
 # 22. Project Management Principles
 
-PXシリーズは、
+文書体系は、
 
 プロジェクト全体の運用効率を向上させることを目的とする。
 
@@ -651,41 +664,62 @@ Documentation System を更新せずに構造変更を行ってはならない�
 
 ## Primary Documents
 
-### TP Series
+### DS Series
 
-- TP-000 THE THIRD PLACE Original
-- TP-001 Constitution
-- TP-002 Design Bible
-- TP-003 Field Atlas Landscape Framework
-- TP-004 Equipment Registry Object Reference
-- TP-005 Acquisition Strategy
-- TP-006 Foundation Compass
-- TP-007 Habitat Architecture
-- TP-008 Affinity Lexicon
-- TP-009 Aesthetic Grammar
-- TP-010 Storage Blueprint
-- TP-011 Galley Fare
+- DS-001 THE THIRD PLACE Original
 
 ---
 
-### TM Series
+### OP Series
 
-- TM-001 Heritage Chronicle
-- TM-002 Atelier Discovery
-- TM-003 Beyond Journey
-- TM-004 Cultural Pantheon
-- TM-005 Search Doctrine
+- OP-001 Constitution
+- OP-002 Design Bible
+- OP-003 Affinity Lexicon
+- OP-004 Aesthetic Grammar
+- OP-005 Acquisition Strategy
+- OP-006 Foundation Compass
+- OP-007 Habitat Architecture
+- OP-008 Documentation System
+- OP-009 Search Doctrine
 
 ---
 
-### PX Series
+### DB Series
 
-- PX-001 Documentation System
-- PX-002 Project Ledger
-- PX-003 Vigil Protocol
-- PX-004 Barista Codex
-- PX-005 Acquisition Handbook
-- PX-006 Brew Care
+- DB-001 Project Ledger
+
+---
+
+### MD Series
+
+- MD-001 Storage Blueprint
+- MD-002 Field Atlas Landscape Framework
+- MD-003 Galley Fare
+- MD-004 Equipment Registry Object Reference
+
+---
+
+### BR Series
+
+- BR-001 Brew Care
+- BR-002 Barista Codex
+- BR-003 Acquisition Handbook
+
+---
+
+### CZ Series
+
+- CZ-001 Deliberation Codex
+- CZ-002 Vigil Protocol
+
+---
+
+### KN Series
+
+- KN-001 Heritage Chronicle
+- KN-002 Cultural Pantheon
+- KN-003 Beyond Journey
+- KN-004 Atelier Discovery
 
 ---
 
@@ -693,7 +727,7 @@ Documentation System を更新せずに構造変更を行ってはならない�
 
 すべての正式文書は、本書で定義する運用基準へ準拠する。
 
-Documentation System は PX シリーズの基準文書であり、
+Documentation System は文書体系の基準文書であり、
 
 Project 全体の Documentation Standard として位置付ける。
 
@@ -705,17 +739,17 @@ Documentation System を優先する。
 
 # 26. Future Expansion
 
-PXシリーズは、
+文書体系は、
 
 THE THIRD PLACE Project の運用状況に応じて拡張する。
 
-将来的な PX 文書は、
+将来的な文書は、
 
 本書の構造および運用ルールへ従うこと。
 
 Reserved IDs は必要時のみ使用する。
 
-不要な PX 文書は追加しない。
+不要な文書は追加しない。
 
 ---
 
@@ -723,9 +757,9 @@ Reserved IDs は必要時のみ使用する。
 
 | Series | Purpose | Responsibility |
 |---------|----------|----------------|
-| TP | Design | プロジェクトを設計する |
-| TM | Media | プロジェクトを記録する |
-| PX | Project | プロジェクトを運用する |
+| DS | 設計（絶対不変） | 不変の思想原典を保持する |
+| OP | 運用（定義） | 設計思想・規則・法則を定義する |
+| DB / MD / BR / CZ / KN | 記録（可変） | プロジェクトを運用・記録する |
 
 ---
 

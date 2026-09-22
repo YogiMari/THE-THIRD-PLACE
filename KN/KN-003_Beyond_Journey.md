@@ -1,5 +1,5 @@
-# TM-003 Beyond Journey  
-**TM-003 Beyond Journey**  
+# KN-003 Beyond Journey  
+**KN-003 Beyond Journey**  
   
 **Purpose**  
   
@@ -753,3 +753,9 @@ Project全体の記憶を管理する。
 感情を大きく表に出すことは少ないが、  
   
 自分の専門領域については明確な意見を持っている。  
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TM-003からKN-003へ番号を変更した。自己ID・タイトル表記を新ID体系へ更新した。その他の内容に変更はない。旧ID: TM-003。

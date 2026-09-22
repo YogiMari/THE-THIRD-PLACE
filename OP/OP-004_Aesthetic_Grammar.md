@@ -1,5 +1,5 @@
-TP-009 Aesthetic Grammar
-# TP-009 Aesthetic Grammar
+OP-004 Aesthetic Grammar
+# OP-004 Aesthetic Grammar
 ## Ver.1.1
 
 ---
@@ -1341,18 +1341,18 @@ THE THIRD PLACE Core Documents の中で、
 
 | Document | Responsibility |
 |-----------|----------------|
-| TP-000 Original | プロジェクトの原典 |
-| TP-001 Constitution | プロジェクト全体の憲章 |
-| TP-002 Design Bible | 設計思想 |
-| TP-003 Field Atlas | 舞台の選定 |
-| TP-004 Equipment Registry | Equipment の唯一のマスターデータ |
-| TP-005 Acquisition Strategy | Equipment を迎える戦略 |
-| TP-006 Foundation Compass | Foundation を構成・維持するための指針 |
-| TP-007 Habitat Architecture | フィールドに完成する暮らしの空間を定義する |
-| TP-008 Affinity Lexicon | 好み・美意識・親和性の語彙 |
-| **TP-009 Aesthetic Grammar** | 美しさを構成する法則 |
-| TP-010 Storage Blueprint | 収納設計・運用 |
-| TP-011 Galley Fare | キッチン機材の独立マスターデータ |
+| DS-001 THE THIRD PLACE Original | プロジェクトの原典 |
+| OP-001 Constitution | プロジェクト全体の憲章 |
+| OP-002 Design Bible | 設計思想 |
+| MD-002 Field Atlas | 舞台の選定 |
+| MD-004 Equipment Registry | Equipment の唯一のマスターデータ |
+| OP-005 Acquisition Strategy | Equipment を迎える戦略 |
+| OP-006 Foundation Compass | Foundation を構成・維持するための指針 |
+| OP-007 Habitat Architecture | フィールドに完成する暮らしの空間を定義する |
+| OP-003 Affinity Lexicon | 好み・美意識・親和性の語彙 |
+| **OP-004 Aesthetic Grammar** | 美しさを構成する法則 |
+| MD-001 Storage Blueprint | 収納設計・運用 |
+| MD-003 Galley Fare | キッチン機材の独立マスターデータ |
 
 Aesthetic Grammar は、
 
@@ -1388,3 +1388,9 @@ THE THIRD PLACEである。
 > It emerges from harmony.**
 
 **「美しさは物によって作られるものではない。調和から生まれる。」**
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TP-009からOP-004へ番号を変更した。「Relationship to Other Core Documents」表を新ID体系へ更新した。内容（Ver.1.1、全7章）に変更はない。旧ID: TP-009。

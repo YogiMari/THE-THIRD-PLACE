@@ -4,27 +4,27 @@
 THE THIRD PLACE — SSOT Sync Validator
 
 Synchronization authority:
-    PX-004 <-> PX-005
+    BR-002 <-> BR-003
 
 Operational registry:
-    TP-004
+    MD-004
 
 Document roles:
-    PX-004 = Coffee System Decision Authority
-    PX-005 = Acquisition / Purchase Authority
-    TP-004 = Purchased / Owned / Operational Equipment Registry
+    BR-002 = Coffee System Decision Authority
+    BR-003 = Acquisition / Purchase Authority
+    MD-004 = Purchased / Owned / Operational Equipment Registry
 
 Required synchronization:
-    PX-004 -> PX-005 : REQUIRED
-    PX-005 -> PX-004 : REQUIRED
+    BR-002 -> BR-003 : REQUIRED
+    BR-003 -> BR-002 : REQUIRED
 
 Not required:
-    PX-004 -> TP-004
-    TP-004 -> PX-004
+    BR-002 -> MD-004
+    MD-004 -> BR-002
 
 Reason:
-    PX-004 may contain equipment that has not yet been purchased.
-    TP-004 contains only equipment that has actually been purchased,
+    BR-002 may contain equipment that has not yet been purchased.
+    MD-004 contains only equipment that has actually been purchased,
     owned, and entered into operational use.
 
 The validator never modifies source documents.
@@ -64,7 +64,7 @@ def read_text(path: Path) -> str:
 
 def normalize(value: str) -> str:
     value = value.strip()
-    value = value.replace("\u3000", " ")
+    value = value.replace("　", " ")
     value = value.replace("×", "x")
     value = re.sub(r"\s+", " ", value)
     return value.lower()
@@ -74,26 +74,38 @@ def normalize_status(value: str | None) -> str:
     return normalize(value or "")
 
 
-def equipment_key(brand: str, model: str) -> tuple[str, str]:
-    return normalize(brand), normalize(model)
-
-
-# ============================================================
-# PX-004 Parser
-# ============================================================
-
-def parse_px004(text: str) -> list[Record]:
+def strip_quantity_suffix(model: str) -> str:
     """
-    Parse PX-004 confirmed equipment.
+    Strip a trailing quantity marker such as "×2" or "x 2" from a
+    model name. Quantity is tracked separately (BR-003's Quantity
+    field), so a quantity suffix baked into a BR-002 table cell
+    (e.g. "FIKA12 ×2") must not prevent matching the same
+    equipment recorded without it (e.g. BR-003's "FIKA12").
+    """
+
+    return re.sub(r"\s*[×x]\s*\d+\s*$", "", model, flags=re.IGNORECASE)
+
+
+def equipment_key(brand: str, model: str) -> tuple[str, str]:
+    return normalize(brand), normalize(strip_quantity_suffix(model))
+
+
+# ============================================================
+# BR-002 Parser
+# ============================================================
+
+def parse_br002(text: str) -> list[Record]:
+    """
+    Parse BR-002 confirmed equipment.
 
     Primary source:
         Category / Brand / Model / Status tables.
 
-    In addition, PX-004 contains confirmed configuration items
+    In addition, BR-002 contains confirmed configuration items
     outside the standard table. Those explicitly confirmed items
-    are parsed by parse_px004_confirmed_configuration().
+    are parsed by parse_br002_confirmed_configuration().
 
-    No equipment is inferred from TP-004 or PX-005.
+    No equipment is inferred from MD-004 or BR-003.
     """
 
     records: list[Record] = []
@@ -134,7 +146,7 @@ def parse_px004(text: str) -> list[Record]:
             if normalize_status(status) == "confirmed":
                 records.append(
                     Record(
-                        document="PX-004",
+                        document="BR-002",
                         section=category or current_section,
                         brand=brand,
                         model=model,
@@ -172,7 +184,7 @@ def parse_px004(text: str) -> list[Record]:
             if normalize_status(status) == "confirmed":
                 records.append(
                     Record(
-                        document="PX-004",
+                        document="BR-002",
                         section=category or current_section,
                         brand=brand,
                         model=model,
@@ -181,18 +193,18 @@ def parse_px004(text: str) -> list[Record]:
                 )
 
     records.extend(
-        parse_px004_confirmed_configuration(text)
+        parse_br002_confirmed_configuration(text)
     )
 
     return records
 
 
-def parse_px004_confirmed_configuration(
+def parse_br002_confirmed_configuration(
     text: str,
 ) -> list[Record]:
     """
     Explicitly recognize confirmed configuration items that are
-    stated in PX-004 outside the standard equipment table.
+    stated in BR-002 outside the standard equipment table.
 
     These are not inferred additions.
 
@@ -201,6 +213,10 @@ def parse_px004_confirmed_configuration(
         - Snow Peak オーロラボトル 1L
         - YETI Yonder 1L
         - Snow Peak 酒筒 Titanium
+        - 9Barista Handle for 9Barista Espresso Machine（Walnutオプション）
+          (Handle Material Decision: a Confirmed accessory-level
+          decision on an already-Confirmed equipment, documented
+          as prose rather than a Category/Brand/Model/Status row)
     """
 
     records: list[Record] = []
@@ -216,10 +232,33 @@ def parse_px004_confirmed_configuration(
     ):
         records.append(
             Record(
-                document="PX-004",
+                document="BR-002",
                 section="Latte Cup Configuration",
                 brand="DAMNGOOD × CATAPULT FACTORY",
                 model="FIKA12",
+                status="Confirmed",
+            )
+        )
+
+    # --------------------------------------------------------
+    # Handle Material Decision (9Barista Walnut Handle)
+    # --------------------------------------------------------
+
+    if re.search(
+        r"Handle Material Decision",
+        text,
+        flags=re.IGNORECASE,
+    ) and re.search(
+        r"Walnut仕様.{0,40}正式決定",
+        text,
+        flags=re.DOTALL,
+    ):
+        records.append(
+            Record(
+                document="BR-002",
+                section="Handle Material Decision",
+                brand="9Barista",
+                model="Handle for 9Barista Espresso Machine（Walnutオプション）",
                 status="Confirmed",
             )
         )
@@ -249,7 +288,7 @@ def parse_px004_confirmed_configuration(
             if model in body:
                 records.append(
                     Record(
-                        document="PX-004",
+                        document="BR-002",
                         section="Water Bottle Configuration",
                         brand=brand,
                         model=model,
@@ -261,17 +300,21 @@ def parse_px004_confirmed_configuration(
 
 
 # ============================================================
-# PX-005 Parser
+# BR-003 Parser
 # ============================================================
 
-def parse_px005(text: str) -> list[Record]:
+def parse_br003(text: str) -> list[Record]:
     """
-    Parse PX-005 acquisition records.
+    Parse BR-003 acquisition records.
 
     Expected fields:
 
         Manufacturer
-        Model
+        Model (or, when the current purchase model has diverged
+            from the originally Confirmed one, "BR-002 Model" is
+            used instead to preserve the literal BR-002 wording
+            for synchronization purposes; "Current Purchase Model"
+            is metadata only and never used for comparison)
         Acquisition Status
     """
 
@@ -289,7 +332,7 @@ def parse_px005(text: str) -> list[Record]:
         if brand and model:
             records.append(
                 Record(
-                    document="PX-005",
+                    document="BR-003",
                     section=section,
                     brand=brand,
                     model=model,
@@ -310,7 +353,7 @@ def parse_px005(text: str) -> list[Record]:
             continue
 
         match = re.match(
-            r"^\|\s*(Manufacturer|Model|Acquisition Status)"
+            r"^\|\s*(Manufacturer|Model|BR-002 Model|Acquisition Status)"
             r"\s*\|\s*(.*?)\s*\|$",
             stripped,
         )
@@ -324,7 +367,7 @@ def parse_px005(text: str) -> list[Record]:
         if field == "Manufacturer":
             brand = value
 
-        elif field == "Model":
+        elif field in ("Model", "BR-002 Model"):
             model = value
 
         elif field == "Acquisition Status":
@@ -336,16 +379,16 @@ def parse_px005(text: str) -> list[Record]:
 
 
 # ============================================================
-# TP-004 Parser
+# MD-004 Parser
 # ============================================================
 
-def parse_tp004(text: str) -> list[Record]:
+def parse_md004(text: str) -> list[Record]:
     """
-    Parse TP-004 only for reporting.
+    Parse MD-004 only for reporting.
 
-    TP-004 is NOT used as a gate for PX-004/PX-005.
+    MD-004 is NOT used as a gate for BR-002/BR-003.
 
-    A product being absent from TP-004 is normal when it has
+    A product being absent from MD-004 is normal when it has
     not yet been purchased / owned / entered into operation.
     """
 
@@ -366,7 +409,7 @@ def parse_tp004(text: str) -> list[Record]:
         if brand and model:
             records.append(
                 Record(
-                    document="TP-004",
+                    document="MD-004",
                     section=current_id or current_section,
                     brand=brand,
                     model=model,
@@ -440,29 +483,33 @@ def parse_tp004(text: str) -> list[Record]:
 # Validation
 # ============================================================
 
-def check_px004_not_empty(
-    px004: list[Record],
+def check_br002_not_empty(
+    br002: list[Record],
 ) -> list[str]:
 
-    if px004:
+    if br002:
         return []
 
     return [
-        "PX-004 parser returned 0 Confirmed Equipment records."
+        "BR-002 parser returned 0 Confirmed Equipment records."
     ]
 
 
-def check_px004_missing_from_px005(
-    px004: list[Record],
-    px005: list[Record],
+def check_br002_missing_from_br003(
+    br002: list[Record],
+    br003: list[Record],
 ) -> list[str]:
     """
-    Every PX-004 Confirmed Equipment must have a PX-005 record.
+    Every BR-002 Confirmed Equipment must have a BR-003 record.
 
     This protects against:
         Confirmed decision
             ↓
         missing acquisition record
+
+    Matching is quantity-suffix-insensitive (see
+    strip_quantity_suffix) and BR-003 may record the model under
+    either "Model" or "BR-002 Model" (see parse_br003).
     """
 
     acquisition = {
@@ -470,12 +517,12 @@ def check_px004_missing_from_px005(
             record.brand,
             record.model,
         )
-        for record in px005
+        for record in br003
     }
 
     errors: list[str] = []
 
-    for record in px004:
+    for record in br002:
         key = equipment_key(
             record.brand,
             record.model,
@@ -483,26 +530,32 @@ def check_px004_missing_from_px005(
 
         if key not in acquisition:
             errors.append(
-                "PX-004 Confirmed Equipment missing from PX-005: "
+                "BR-002 Confirmed Equipment missing from BR-003: "
                 f"{record.brand} / {record.model}"
             )
 
     return errors
 
 
-def check_px005_against_px004(
-    px004: list[Record],
-    px005: list[Record],
+def check_br003_against_br002(
+    br002: list[Record],
+    br003: list[Record],
 ) -> list[str]:
     """
-    Every active PX-005 acquisition record must correspond
-    to a Confirmed PX-004 equipment.
+    Every active BR-003 acquisition record must correspond
+    to a Confirmed BR-002 equipment.
 
     Valid statuses:
         Purchase Required
         Included
         Already Owned
         To Be Confirmed
+
+    Exception: "Included" records are, by BR-003's own Acquisition
+    Status Policy, accessories bundled with another Confirmed
+    equipment ("他のConfirmed Equipmentに付属し、追加購入不要") —
+    they are intentionally never given their own BR-002 Confirmed
+    row, so they are exempt from this check.
     """
 
     confirmed = {
@@ -510,7 +563,7 @@ def check_px005_against_px004(
             record.brand,
             record.model,
         )
-        for record in px004
+        for record in br002
     }
 
     valid_statuses = {
@@ -522,10 +575,13 @@ def check_px005_against_px004(
 
     errors: list[str] = []
 
-    for record in px005:
+    for record in br003:
         status = normalize_status(record.status)
 
         if status not in valid_statuses:
+            continue
+
+        if status == "included":
             continue
 
         key = equipment_key(
@@ -535,16 +591,16 @@ def check_px005_against_px004(
 
         if key not in confirmed:
             errors.append(
-                "PX-005 acquisition record has no corresponding "
-                "PX-004 Confirmed Equipment: "
+                "BR-003 acquisition record has no corresponding "
+                "BR-002 Confirmed Equipment: "
                 f"{record.brand} / {record.model}"
             )
 
     return errors
 
 
-def check_px005_status_values(
-    px005: list[Record],
+def check_br003_status_values(
+    br003: list[Record],
 ) -> list[str]:
     allowed = {
         "purchase required",
@@ -555,12 +611,12 @@ def check_px005_status_values(
 
     errors: list[str] = []
 
-    for record in px005:
+    for record in br003:
         status = normalize_status(record.status)
 
         if status not in allowed:
             errors.append(
-                "PX-005 invalid Acquisition Status: "
+                "BR-003 invalid Acquisition Status: "
                 f"{record.brand} / {record.model} "
                 f"= {record.status}"
             )
@@ -568,11 +624,11 @@ def check_px005_status_values(
     return errors
 
 
-def check_px004_duplicates(
-    px004: list[Record],
+def check_br002_duplicates(
+    br002: list[Record],
 ) -> list[str]:
     """
-    Only exact duplicate PX-004 records are errors.
+    Only exact duplicate BR-002 records are errors.
 
     Manufacturer + Model alone is NOT sufficient to call a
     duplicate because separate configuration records may
@@ -585,7 +641,7 @@ def check_px004_duplicates(
         tuple[str, str, str]
     ] = set()
 
-    for record in px004:
+    for record in br002:
         key = (
             normalize(record.section),
             normalize(record.brand),
@@ -594,7 +650,7 @@ def check_px004_duplicates(
 
         if key in seen:
             errors.append(
-                "Exact duplicate PX-004 Confirmed record: "
+                "Exact duplicate BR-002 Confirmed record: "
                 f"{record.section} / "
                 f"{record.brand} / "
                 f"{record.model}"
@@ -606,8 +662,8 @@ def check_px004_duplicates(
 
 
 def check_model_drift(
-    px004: list[Record],
-    px005: list[Record],
+    br002: list[Record],
+    br003: list[Record],
 ) -> list[str]:
     """
     Detect obvious model-name drift when manufacturer names
@@ -623,7 +679,7 @@ def check_model_drift(
         list[Record],
     ] = {}
 
-    for record in px004:
+    for record in br002:
         brand = normalize(record.brand)
 
         by_brand.setdefault(
@@ -631,7 +687,7 @@ def check_model_drift(
             [],
         ).append(record)
 
-    for record in px005:
+    for record in br003:
         brand = normalize(record.brand)
 
         candidates = by_brand.get(
@@ -661,10 +717,10 @@ def check_model_drift(
             ):
                 errors.append(
                     "Possible model-name drift between "
-                    "PX-004 and PX-005: "
+                    "BR-002 and BR-003: "
                     f"{record.brand}: "
-                    f"PX-004='{candidate.model}', "
-                    f"PX-005='{record.model}'"
+                    f"BR-002='{candidate.model}', "
+                    f"BR-003='{record.model}'"
                 )
                 break
 
@@ -680,46 +736,46 @@ def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
             "THE THIRD PLACE "
-            "PX-004 / PX-005 Sync Validator"
+            "BR-002 / BR-003 Sync Validator"
         )
     )
 
     parser.add_argument(
-        "--tp004",
+        "--md004",
         required=True,
-        help="Path to TP-004",
+        help="Path to MD-004",
     )
 
     parser.add_argument(
-        "--px004",
+        "--br002",
         required=True,
-        help="Path to PX-004",
+        help="Path to BR-002",
     )
 
     parser.add_argument(
-        "--px005",
+        "--br003",
         required=True,
-        help="Path to PX-005",
+        help="Path to BR-003",
     )
 
     args = parser.parse_args()
 
     try:
-        tp004 = parse_tp004(
+        md004 = parse_md004(
             read_text(
-                Path(args.tp004)
+                Path(args.md004)
             )
         )
 
-        px004 = parse_px004(
+        br002 = parse_br002(
             read_text(
-                Path(args.px004)
+                Path(args.br002)
             )
         )
 
-        px005 = parse_px005(
+        br003 = parse_br003(
             read_text(
-                Path(args.px005)
+                Path(args.br003)
             )
         )
 
@@ -731,44 +787,44 @@ def main() -> int:
     errors: list[str] = []
 
     # --------------------------------------------------------
-    # PX-004 <-> PX-005 is the mandatory synchronization pair.
+    # BR-002 <-> BR-003 is the mandatory synchronization pair.
     # --------------------------------------------------------
 
     errors.extend(
-        check_px004_not_empty(px004)
+        check_br002_not_empty(br002)
     )
 
     errors.extend(
-        check_px004_missing_from_px005(
-            px004,
-            px005,
+        check_br002_missing_from_br003(
+            br002,
+            br003,
         )
     )
 
     errors.extend(
-        check_px005_against_px004(
-            px004,
-            px005,
+        check_br003_against_br002(
+            br002,
+            br003,
         )
     )
 
     errors.extend(
-        check_px005_status_values(px005)
+        check_br003_status_values(br003)
     )
 
     errors.extend(
-        check_px004_duplicates(px004)
+        check_br002_duplicates(br002)
     )
 
     errors.extend(
         check_model_drift(
-            px004,
-            px005,
+            br002,
+            br003,
         )
     )
 
     # --------------------------------------------------------
-    # TP-004 is intentionally NOT used for synchronization.
+    # MD-004 is intentionally NOT used for synchronization.
     # --------------------------------------------------------
 
     print(
@@ -784,7 +840,7 @@ def main() -> int:
     )
 
     print(
-        "  PX-004 <-> PX-005"
+        "  BR-002 <-> BR-003"
     )
 
     print(
@@ -792,24 +848,24 @@ def main() -> int:
     )
 
     print(
-        "  TP-004"
+        "  MD-004"
     )
 
     print()
 
     print(
-        f"TP-004 operational records: "
-        f"{len(tp004)}"
+        f"MD-004 operational records: "
+        f"{len(md004)}"
     )
 
     print(
-        f"PX-004 Confirmed records: "
-        f"{len(px004)}"
+        f"BR-002 Confirmed records: "
+        f"{len(br002)}"
     )
 
     print(
-        f"PX-005 acquisition records: "
-        f"{len(px005)}"
+        f"BR-003 acquisition records: "
+        f"{len(br003)}"
     )
 
     print()
@@ -833,12 +889,12 @@ def main() -> int:
         return 1
 
     print(
-        "PASS — PX-004 and PX-005 "
+        "PASS — BR-002 and BR-003 "
         "are synchronized."
     )
 
     print(
-        "TP-004 is treated as the "
+        "MD-004 is treated as the "
         "purchased / operational registry."
     )
 

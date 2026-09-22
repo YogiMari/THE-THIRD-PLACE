@@ -1,5 +1,5 @@
-# TP-010 Storage Blueprint
-## Ver.2.5
+# MD-001 Storage Blueprint
+## Ver.2.6
 
 Status : Planning
 
@@ -27,38 +27,38 @@ Storage Blueprintは、THE THIRD PLACEの収納システム全体を定義する
 
 # Position
 
-| TP | Document |
+| ID | Document |
 |---|---|
-| TP-000 | THE THIRD PLACE Original |
-| TP-001 | THE THIRD PLACE Constitution |
-| TP-002 | Design Bible |
-| TP-003 | Field Atlas Landscape Framework |
-| TP-004 | Equipment Registry Object Reference |
-| TP-005 | Acquisition Strategy |
-| TP-006 | Foundation Compass |
-| TP-007 | Habitat Architecture |
-| TP-008 | Affinity Lexicon |
-| TP-009 | Aesthetic Grammar |
-| TP-010 | Storage Blueprint |
-| TP-011 | Galley Fare |
+| DS-001 | THE THIRD PLACE Original |
+| OP-001 | THE THIRD PLACE Constitution |
+| OP-002 | Design Bible |
+| OP-003 | Affinity Lexicon |
+| OP-004 | Aesthetic Grammar |
+| OP-005 | Acquisition Strategy |
+| OP-006 | Foundation Compass |
+| OP-007 | Habitat Architecture |
+| MD-001 | Storage Blueprint |
+| MD-002 | Field Atlas Landscape Framework |
+| MD-003 | Galley Fare |
+| MD-004 | Equipment Registry Object Reference |
 
 ---
 
 # Relationship
 
-TP-004
+MD-004
 
 装備マスター
 
 ↓
 
-TP-010
+MD-001
 
 収納設計・運用
 
 ↓
 
-TP-007
+OP-007
 
 現地展開
 
@@ -323,11 +323,11 @@ CONPE10はShellCon25へ収納しない。
 
 ## 燃えないゴミ（缶・ビン）側
 
-STR-029（ANOBA フォールディングサイドテーブル）に、STR-026（ANOBA BLACK EDITION マルチダストバケット）を収納して運用する。使用頻度が低いため、テーブル下へ収納する多段階の取り出し動作を許容する。
+STR-025（ANOBA フォールディングサイドテーブル）に、STR-026（ANOBA BLACK EDITION マルチダストバケット）を収納して運用する。使用頻度が低いため、テーブル下へ収納する多段階の取り出し動作を許容する。
 
 ## 燃えるゴミ側
 
-STR-028（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box フルセット）を単独で運用する。フォールディングサイドテーブルは介さない。使用頻度が高いため、取り出し動作の少ない単独設置とした。
+STR-027（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box フルセット）を単独で運用する。フォールディングサイドテーブルは介さない。使用頻度が高いため、取り出し動作の少ない単独設置とした。
 
 ## Rule
 
@@ -679,13 +679,13 @@ Duplicate storageは、原則として禁止とする。
 
 ## Document
 
-TP-010 Storage Blueprint
+MD-001 Storage Blueprint
 
 ---
 
 ## Version
 
-Ver.2.5
+Ver.2.6
 
 ---
 
@@ -697,11 +697,11 @@ Planning
 
 ## Parent Documents
 
-- TP-001 THE THIRD PLACE Constitution
-- TP-002 Design Bible
-- TP-004 Equipment Registry Object Reference
-- TP-006 Foundation Compass
-- TP-007 Habitat Architecture
+- OP-001 THE THIRD PLACE Constitution
+- OP-002 Design Bible
+- MD-004 Equipment Registry Object Reference
+- OP-006 Foundation Compass
+- OP-007 Habitat Architecture
 
 ---
 
@@ -719,6 +719,8 @@ Verified
 - Vapalux M320
 - Living Table Deployment
 - Side Table Deployment
+
+Wood Board ×7 Sets のうち4セット（STR-014・STR-016、各2組）は未購入（MD-004 Status = Essential）。本検証結果は未購入分を含む。実物での確認は未了。
 
 ---
 
@@ -808,9 +810,15 @@ Permanent Storage
 - 展開順と収納順は常に一致させる。
 - Temporary permanent locationsは禁止。
 - Duplicate storageは原則禁止（例外条件はDuplicate Storage Exceptionを参照。現時点で適用事例なし）。
-- ゴミ分別は、STR-029+STR-026（燃えないゴミ）とSTR-028（燃えるゴミ）の役割分化構成で運用する（Dust Management Module参照）。
+- ゴミ分別は、STR-025+STR-026（燃えないゴミ）とSTR-027（燃えるゴミ）の役割分化構成で運用する（Dust Management Module参照）。
 - Mixed modulesは禁止。
 
 ---
 
 本文書は、THE THIRD PLACEの収納ゾーン全体における運用ブループリントである。
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TP-010からMD-001へ番号を変更した。本文中の文書参照（Position表・Relationship・Parent Documents）を新ID体系へ更新した。内容（Ver.2.5）に変更はない。旧ID: TP-010。

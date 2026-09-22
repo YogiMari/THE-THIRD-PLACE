@@ -1,8 +1,8 @@
-# PX-007 Deliberation Codex
+# CZ-001 Deliberation Codex
 
 # Document ID
 
-PX-007
+CZ-001
 
 # Document Title
 
@@ -10,7 +10,7 @@ Deliberation Codex
 
 # Version
 
-2.3
+2.10
 
 # Status
 
@@ -20,18 +20,18 @@ Official
 
 ## Purpose
 
-PX-007 Deliberation Codexは、Coffee Domain（PX-004管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire）における、検討中ギアの意思決定を支援する文書である。
+CZ-001 Deliberation Codexは、Coffee Domain（BR-002管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire／Shelter）における、検討中ギアの意思決定を支援する文書である。
 
 本書は3種類の内容を管理する。
 
 * **Zone Evaluation Philosophy**（恒久）：各ゾーンの評価哲学・評価軸。ゾーンの性格が変わらない限り、恒久的に保持する。
-* **Under Consideration**（可変）：現在検討中のギアの具体的製品情報・比較・評価記録。TP-004側のステータスが確定（Candidate → Essential/Owned）した時点で、当該記載を空欄化する。
-* **Confirmed — Purchase Pending**（可変）：製品・ブランドは確定済み（TP-004側のStatus = Essential）だが、まだ所有していないEquipmentの一覧。Coffee Domainを除く全ゾーン（Furniture／Light／Aroma／Storage／Fire）が対象。本セクションは、購入リスト（買い物タスク管理）アーティファクトのソースとして使用する。
+* **Under Consideration**（可変）：現在検討中のギアの具体的製品情報・比較・評価記録。MD-004側のステータスが確定（Candidate → Essential/Owned）した時点で、当該記載を空欄化する。
+* **Confirmed — Purchase Pending**（可変）：製品・ブランドは確定済み（MD-004側のStatus = Essential）だが、まだ所有していないEquipmentの一覧。Coffee Domainを除く全ゾーン（Furniture／Light／Aroma／Storage／Fire／Shelter）が対象。本セクションは、購入リスト（買い物タスク管理）アーティファクトのソースとして使用する。
 
-### TP-004との役割分担
+### MD-004との役割分担
 
-* TP-004：Brand／Product／Status／Material等のSingle Source of Truth。Status = Candidateの間は、Brand / Productを「Unconfirmed」とする。
-* PX-007：Candidate段階の具体的な製品名・ブランド・比較評価・検討経緯（Under Consideration）、およびEssential段階の購入待ちEquipment一覧（Confirmed — Purchase Pending）を保持する。
+* MD-004：Brand／Product／Status／Material等のSingle Source of Truth。Status = Candidateの間は、Brand / Productを「Unconfirmed」とする。
+* CZ-001：Candidate段階の具体的な製品名・ブランド・比較評価・検討経緯（Under Consideration）、およびEssential段階の購入待ちEquipment一覧（Confirmed — Purchase Pending）を保持する。
 
 Candidateが確定（Essential/Owned）した時点でUnder Considerationから削除し、Decision Logへ一行要約を残す。詳細な比較内容そのものは確定後は保持しない。Essentialになったアイテムは同時にConfirmed — Purchase Pendingへ追加し、購入完了（Owned）した時点でそこから削除する。
 
@@ -40,14 +40,14 @@ Candidateが確定（Essential/Owned）した時点でUnder Considerationから�
 ## Relationship
 
 ```
-PX-007 Deliberation Codex
+CZ-001 Deliberation Codex
 │
 ├─ Zone Evaluation Philosophy（恒久）
 │
 ├─ Under Consideration（可変）
 │       │ 検討が深まる
 │       ▼
-│  TP-004 Status更新（Candidate → Essential）
+│  MD-004 Status更新（Candidate → Essential）
 │       │
 │       ▼
 │  Under Considerationから削除 → Decision Logへ一行記録
@@ -57,12 +57,12 @@ PX-007 Deliberation Codex
 │       │
 │       │（将来、買い替え検討が発生）
 │       ▼
-│  PX-007 Under Considerationへ再登場
+│  CZ-001 Under Considerationへ再登場
 │
 └─ Confirmed — Purchase Pending（可変）
         │ 購入完了
         ▼
-   TP-004 Status更新（Essential → Owned）
+   MD-004 Status更新（Essential → Owned）
         │
         ▼
    Confirmed — Purchase Pendingから削除
@@ -101,6 +101,10 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 未策定（現時点でCandidate項目なし）。
 
+## Shelter
+
+未策定（現時点でCandidate項目なし）。
+
 ---
 
 # Under Consideration（可変）
@@ -109,7 +113,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ## Fire
 
-### Fire Pit（TP-004: FIR-019）
+### Fire Pit（MD-004: FIR-030）
 
 **Status**：Under Evaluation
 
@@ -120,7 +124,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 | Ease of Clean-up | 多次燃焼構造で灰が比較的少量、炉板も軽量。灰受け自体の取り出しやすさは未確認（Gap） | ロストル形状変更で灰が捨てやすく改良済み。ただし「向き合う感覚」を重視し灰を残す運用哲学もあり |
 | Transport | 収納バッグ1つに全部品完結、総重量22kg | 本体単体16kg、煙突・スタンドは別売で管理単位が分散 |
 
-**Note**：旧FIR-020（BLISS-SP）はFIR-019へ統合済み。TP-004上のID自体はRetiredとして保持。
+**Note**：旧FIR-020（BLISS-SP）はFIR-019（現FIR-030）へ統合済み。旧FIR-020は欠番として保持されていたが、MD-004 Version 7.38のFire Domain番号整理により当該レコード自体を削除した。統合の経緯はMD-004 Version 7.14を参照。
 
 **Unresolved Gaps**：MT.SUMI Aura FGの灰受け取り出しやすさは一次情報で未確認。両候補とも実物確認未実施。
 
@@ -130,7 +134,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ## Furniture
 
-### Winter Top Quilt（TP-004: FUR-022）
+### Winter Top Quilt（MD-004: FUR-032）
 
 **Status**：Under Evaluation
 
@@ -140,13 +144,13 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 **Decision**：未決定
 
-### Winter Sleeping Mat（TP-004: FUR-023）
+### Winter Sleeping Mat（MD-004: FUR-033）
 
 **Status**：Candidate（比較対象なし、ブランド調査未着手）
 
-クローズドセルフォーム製。FUR-021の下に敷く断熱補強・パンク保険として機能。
+クローズドセルフォーム製。FUR-031（マット部）の下に敷く断熱補強・パンク保険として機能。
 
-### Pad Sheet（TP-004: FUR-024）
+### Pad Sheet（MD-004: FUR-034）
 
 **Status**：Under Evaluation
 
@@ -161,7 +165,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ## Light
 
-### Portable LED Lantern（TP-004: LGT-041）
+### Portable LED Lantern（MD-004: LGT-041）
 
 **Status**：Candidate（比較対象なし）
 
@@ -173,7 +177,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ## Aroma
 
-現時点でUnder Consideration項目なし（ARM-004は購入決定済み。Decision Log参照）。
+現時点でUnder Consideration項目なし（ARM-003は購入決定済み。Decision Log参照）。
 
 ---
 
@@ -183,18 +187,23 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ---
 
+## Shelter
+
+現時点でCandidate項目なし。
+
+---
+
 # Confirmed — Purchase Pending（可変）
 
-TP-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipmentの一覧。製品・ブランドは確定済みだが、まだ所有していない。
+MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipmentの一覧。製品・ブランドは確定済みだが、まだ所有していない。
 
-購入完了（TP-004側でStatus = Ownedへ更新）した時点で、該当行を本セクションから削除する。
+購入完了（MD-004側でStatus = Ownedへ更新）した時点で、該当行を本セクションから削除する。
 
 ## Furniture
 
 | ID | Product | Brand | Note |
 |---|---|---|---|
-| FUR-020 | ダウン システムオフトン（BD-060, Quilt component only） | Snow Peak | 数量2 |
-| FUR-021 | コンパクトワイドマット（TM-089） | Snow Peak | 数量2 |
+| FUR-031 | ダウン システムオフトン スリムマットセット（BD-060、掛け布団+マット一式） | Snow Peak | 数量2 |
 
 ## Light
 
@@ -209,8 +218,7 @@ TP-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | ID | Product | Brand | Note |
 |---|---|---|---|
 | ARM-002 | MKGP | OLD MOUNTAIN | — |
-| ARM-003 | INCENSE CHAMBER Tokyo Limited | Filoméla | — |
-| ARM-004 | SCENT TOWER | UNIT/04 × KUNST・BAUM | — |
+| ARM-003 | SCENT TOWER | UNIT/04 × KUNST・BAUM | — |
 
 ## Storage
 
@@ -221,12 +229,17 @@ TP-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | STR-014 | Wood Board（Oak） | nodel design | Parent: STR-013／数量2組 |
 | STR-016 | Wood Board（Walnut） | nodel design | Parent: STR-015／数量2組 |
 | STR-019 | Butterfly Under Shelf | nodel design | Parent: STR-017 |
+| STR-027 | Folding Wire T-box 全面コンプリートセット | KAZE_TO_MORI × WINDY AND RAINY | — |
 
 ## Fire
 
 | ID | Product | Brand | Note |
 |---|---|---|---|
-| FIR-014 | copper250 | neru design works | Parent: FIR-012 |
+| FIR-025 | copper250 | neru design works | Parent: FIR-023 |
+
+## Shelter
+
+現時点でStatus = Essentialの項目なし（SHL-001〜SHL-005はすべてOwned）。
 
 ---
 
@@ -236,15 +249,16 @@ TP-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 | Date | Domain | Item | Decision |
 |---|---|---|---|
-| 2026-09 | Aroma | ARM-004 Vertical Diffuser | UNIT/04 × KUNST・BAUM SCENT TOWERを正式決定（Status: Essential）。詳細はTP-004参照。 |
+| 2026-09 | Aroma | ARM-003 Vertical Diffuser | UNIT/04 × KUNST・BAUM SCENT TOWERを正式決定（Status: Essential）。詳細はMD-004参照。（決定当時のIDはARM-004。2026-09-19のMD-004 Version 7.34で番号入替） |
+| 2026-09-19 | Aroma | ARM-004 Incense Chamber | Filoméla INCENSE CHAMBER Tokyo LimitedのStatusをEssentialからUpgradeへ変更（MD-004 Version 7.34、MARI様のご指示）。Confirmed — Purchase Pendingから除外。旧ID: ARM-003。 |
 
 ---
 
 # SSOT
 
-各ゾーンの評価哲学・比較記録・決定理由に関する正式情報は、**PX-007 Deliberation Codex**を基準とする。
+各ゾーンの評価哲学・比較記録・決定理由に関する正式情報は、**CZ-001 Deliberation Codex**を基準とする。
 
-Equipment自体のBrand／Product／Status／Material等の登録情報は、引き続き**TP-004 Equipment Registry**をSingle Source of Truthとする。PX-007はTP-004の登録ルールを変更せず、その意思決定背景を補完する。
+Equipment自体のBrand／Product／Status／Material等の登録情報は、引き続き**MD-004 Equipment Registry**をSingle Source of Truthとする。CZ-001はMD-004の登録ルールを変更せず、その意思決定背景を補完する。
 
 ---
 
@@ -257,6 +271,19 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 2.1 | 2026-09 | TP-004 Version 7.14と連動し、Candidate段階の具体的製品情報を全てPX-007へ移管。FUR-022a/b、FUR-024a〜d、FIR-020（FIR-019へ統合）、LGT-041の具体情報をUnder Considerationへ反映。ARM-004はプロジェクトオーナーの判断により購入決定（Essential）となったため、Under Considerationには含めず、Decision Logへ記録しTP-004に詳細を残置。ファイルをPX-007_Fire_Codex.mdからPX-007_Deliberation_Codex.mdへリネーム。 |
 | 2.2 | 2026-09-16 | プロジェクトオーナーの指示に基づき「Confirmed — Purchase Pending」セクションを新設。Coffee Domainを除く全ゾーンでStatus = Essentialとなっている全Equipment（Furniture 2件、Light 4件、Aroma 3件、Storage 7件、Fire 1件）を一覧化。STR-001（Shellcon 01）のStatus訂正（Owned→Essential、TP-004 v7.15）を反映。本セクションは購入リストアーティファクトのソースとして使用する。Purpose・Relationshipを3カテゴリ構成へ更新。 |
 | 2.3 | 2026-09-17 | MARI様のご購入報告（STR-001／LGT-015／STR-017）を受け、TP-004側のStatus更新（Essential→Owned）と連動して「Confirmed — Purchase Pending」から該当3行（Light: LGT-015、Storage: STR-001・STR-017）を削除。 |
+| 2.4 | 2026-09-18 | TP-004 Version 7.28（Furniture Domain番号整理）と連動し、FUR-020参照を全てFUR-021へ更新。 |
+| 2.5 | 2026-09-19 | Document Header の Version 欄が「2.3」のまま更新されておらず、本Version History の最終行（2.4）と不一致であったため、Version欄を2.4へ同期した上で、本行の追加により2.5へ更新。内容面の変更は無し。 |
+| 2.6 | 2026-09-19 | MD-004 Version 7.34（Aroma番号入替）と連動。SCENT TOWERのIDをARM-004からARM-003へ更新（Under Considerationの注記、Confirmed — Purchase Pendingの表、Decision Log）。Filoméla INCENSE CHAMBER Tokyo LimitedはStatusがEssentialからUpgradeへ変更（新ID: ARM-004）となったため、Confirmed — Purchase Pending（Aroma）から除外し、Decision Logへ記録。Version 2.1・2.2の過去行は歴史的記録として遡及修正しない。 |
+| 2.7 | 2026-09-19 | MD-004 Version 7.36（Furniture Domain番号整理・二回目）と連動し、FUR-022→FUR-032、FUR-023→FUR-033、FUR-021→FUR-031（2箇所）、FUR-024→FUR-034参照を更新。 |
+| 2.8 | 2026-09-19 | MD-004 Version 7.38（Fire Domain番号整理）と連動し、FIR-019→FIR-030（Fire Pit見出し・Confirmed — Purchase Pending表）、FIR-014→FIR-025・FIR-012→FIR-023（Confirmed — Purchase Pendingの表、Parent表記）参照を更新。旧FIR-020（BLISS-SP）に関するNoteを、MD-004側で当該レコード自体が削除されたことを反映した記述へ更新。Version 1.0・2.1の過去行は歴史的記録として遡及修正しない。 |
+| 2.9 | 2026-09-20 | MD-004 Version 7.25で新設されたShelter Domain（現在SHL-001〜SHL-005、すべてOwned）が、本書の対象ゾーン表記に反映されていなかったため補完。Purpose（対象ゾーン・Confirmed — Purchase Pendingの対象）へShelterを追加し、Zone Evaluation Philosophy・Under Consideration・Confirmed — Purchase Pendingへ Shelter 見出しを新設（いずれも現時点で該当項目なし）。Version 1.0〜2.8の過去行は歴史的記録として遡及修正しない。 |
+| 2.10 | 2026-09-20 | MD-004 Version 7.37（Storage Domain番号整理）と連動した点検で、Confirmed — Purchase Pending の Storage 表に、MD-004で Status = Essential でありながら未掲載だった STR-027（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリートセット。旧STR-028）を追加。表の収録は、MD-004 の Essential 全13件（Coffee除く）と一致した。 |
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、PX-007からCZ-001へ番号を変更した。本文中の他文書参照（TP-004等）を新ID体系へ更新した。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Ver.2.3）に変更はない。旧ID: PX-007。
 
 ---
 
