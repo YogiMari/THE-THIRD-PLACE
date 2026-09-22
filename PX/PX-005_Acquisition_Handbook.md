@@ -11,7 +11,7 @@ Acquisition Handbook
   
 **Version**  
   
-2.0  
+2.1  
   
 **Status**  
   
@@ -1921,6 +1921,80 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
   
 ---  
   
+# Monthly Acquisition Plan (Confirmed)  
+  
+MARI様との合意に基づく、月次購入計画である。Straight Espresso Workflowの完成を最優先し、エスプレッソグラス関連およびLatte Systemを後半へ配置する。  
+  
+## Month 1 — 9Barista一式  
+  
+* 9Barista Mk.2 Pro  
+* 9Barista Puck Screen  
+* 小計：¥130,500〜133,500  
+* 上限なし（9Barista本体は公式まとめ買いを優先し、月次上限の例外とする）  
+  
+## Month 2 — Grinder & Scale  
+  
+* Option-O LAGOM mini 2  
+* MantaBrew WeighMaster Ultra  
+* 小計：¥110,000〜123,000  
+  
+## Month 3 — Station系  
+  
+* Saint Anthony Industries The Bloc  
+* KNODOS Tamping Mat with Tool Organiser - Walnut 54mm  
+* Normcore RDT Spray Bottle  
+* The Force Tamper 53mm  
+* 小計：¥83,000〜103,000  
+  
+## Month 4 — 抽出ツール  
+  
+* Pullman Chisel Redistribution Tool Wood 53.3mm  
+* Normcore Planetary WDT Tool 54mm  
+* Weber Workshops Puck Screen Stand  
+* 小計：¥72,000〜90,000  
+  
+## Month 5 — Bean Storage / Blind Shaker ＋ 専用水（オーロラボトル・YETI）  
+  
+* Weber Workshops Bean Cellar Bulk  
+* Weber Workshops Blind Shaker Onyx  
+* Snow Peak オーロラボトル 1L  
+* YETI Yonder 1L  
+* 小計：¥71,000〜86,000  
+  
+この時点で、豆保存→計量→抽出→抽出後の一連のStraight Espresso Workflowが完成する。エスプレッソグラス（PROPEL／AERESSO）が未到着の間は、キッチン用カップで代用する。  
+  
+## Month 6 — エスプレッソグラス一式 ＋ 酒筒Titanium  
+  
+* KRUVE PROPEL  
+* ICOSA Brewhouse AERESSO  
+* HILLS FIELD Glass Case Single  
+* AION Seine Super Absorbent Coaster 801-BL  
+* Snow Peak 酒筒 Titanium  
+* 小計：¥46,270〜52,270  
+  
+## Month 7 — Latte System（最終月）  
+  
+* ALM KOPi Z1 Mini Steamer  
+* WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout  
+* WPM Pitcher Sleeve  
+* DAMNGOOD × CATAPULT FACTORY FIKA12 ×2  
+* 小計：¥102,000〜126,500  
+  
+## Plan Total  
+  
+総額目安：¥614,770〜714,270（Estimated Acquisition Budgetの目安¥623,770〜738,270の範囲内）  
+  
+### Design Rationale  
+  
+* Month 1・2は月次上限を設けず、9Barista一式とGrinder / Scaleを最優先で確保する。  
+* Month 3〜5は、Straight Espresso Workflowを完成させるためのStation・抽出Tool・Bean Storage・専用水を優先し、鑑賞用途であるエスプレッソグラスは後回しにする。  
+* KRUVE PROPEL・ICOSA Brewhouse AERESSO・HILLS FIELD Glass Case Single・AION Seine Coasterは、抽出したエスプレッソを直接受けてそのまま飲む専用センサリーグラス一式である。機能的な代替（キッチン用カップ）で運用開始が可能なため、Month 6へ配置する。  
+* DAMNGOOD × CATAPULT FACTORY FIKA12はLatte専用カップ（ミルクスチーム後にのみ使用）であるため、ALM KOPi Z1 Mini・WPM Handleless Pitcher・WPM Pitcher SleeveとともにMonth 7へ配置する。  
+* YETI Yonder 1Lは、MARI様の実飲用計画（2名・1泊・Straight Espresso 6杯・Latte 4杯）で必要水量を試算すると、9Barista使用10回×120mL＋ALM KOPi 2セッション×300mL＝合計約1,800mLとなり、オーロラボトル＋酒筒Titaniumのみ（1,540mL）では約260mL不足するため、Month 5で確保する必要があると判断した。  
+* Snow Peak酒筒Titaniumは、Latte導入（Month 7）に合わせて後方へ配置する。  
+  
+---  
+  
 # Version Control  
   
 | Version | Date | Summary |  
@@ -1935,6 +2009,7 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
 | 1.8 | 2026-08-21 | 調達ポリシーを改訂。後継関係が明確に確立している場合、現行の後継モデルをPX-005の購入対象として採用するようにした。すべての現行Equipmentに、現行価格または現実的な調達目安を設定。海外製品には、保守的な日本到着後コスト目安を設定。LAGOM mini 2およびMantaBrew WeighMaster Ultraを、現行の調達モデルとして採用。Pullman Chiselを、現行の53.3mm Wood構成へ更新。KRUVE PROPELの市販パッケージ数量を、PX-004上のシステム割当と区別。調達完了までの見積予算を追加。 |  
 | 1.9 | 2026-09-07 | 9Barista Magnetic Dosing Funnelを、PX-004 Ver.2.9で明確化された「Mk.2 Pro標準付属品」の扱いへ整合。独立Purchase Required項目（旧Product 12）からIncluded Equipment（Included 04）へ移動し、Priority表・Purchase Grouping・Final Inventory・Estimated Acquisition Budgetを整合させた（Core Espresso System見積を¥7,900減額）。 |  
 | 2.0 | 2026-09 | Coffee Beans Procurementセクションを新設。コーヒー豆を消耗品として、Equipment Acquisition Registryから独立させて管理する方針を確立。Current RotationにOnibus Coffee「ONIBUS Blend」（Primary）とApril Coffee Roasters「Sustainable Profile Espresso」（Aesthetic Exception）を登録。Estimated Acquisition Budgetの除外リストから「コーヒー豆」の記載を削除（本セクションで独立管理するため除外リストへの言及自体が不要になったことによる整理）。Purposeセクションへ本方針を明記。 |  
+| 2.1 | 2026-09 | Monthly Acquisition Plan（Confirmed）セクションを新設。MARI様との合意に基づく月次購入計画（Month 1〜7、月あたり目安¥10万・Month 1のみ上限なし）を正式反映。Straight Espresso Workflow完成を優先し、エスプレッソグラス一式（PROPEL／AERESSO／HILLS FIELD Case／AION Coaster）とLatte System（ALM KOPi／WPM Pitcher／WPM Sleeve／FIKA12）を後半（Month 6・7）へ配置する方針を明記。YETI Yonderの必要性について、実飲用計画（Straight Espresso 6杯／Latte 4杯）に基づく水量試算（必要量約1,800mL、YETI除くと1,540mLで約260mL不足）を記録し、Month 5での確保を確定。 |  
   
 ---  
   
