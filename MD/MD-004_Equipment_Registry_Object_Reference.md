@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.49  
+Version 7.50  
   
 ---  
   
@@ -2009,7 +2009,6 @@ LGT-010
 
 ### Child Components  
 
-- LGT-017  
 - LGT-018  
 
 ### Color  
@@ -2044,10 +2043,6 @@ Glass Shade & Wood Stand Set
 
 Owned  
 
-**Parent**  
-
-LGT-016  
-
 ### Color  
 
 Gray  
@@ -2074,15 +2069,15 @@ Portable LED Lantern
 
 **Brand**  
 
-CALMA STORE  
+OTEBO CRAFTS  
 
 **Product**  
 
-MMM Pocket Shade PAJAMA MOON LIAN HOME  
+BABEL  
 
 **Status**  
 
-Owned  
+Essential  
 
 **Parent**  
 
@@ -2090,32 +2085,20 @@ LGT-016
 
 ### Branch Variants  
 
-- LGT-018a  
-- LGT-018b  
-
-### Color  
-
-Floral  
+- LGT-019a  
+- LGT-019b  
 
 ### Material  
 
-Fabric  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Portable LED Lantern  
+Walnut  
 
 ### Price  
 
-¥4,780  
+¥20,000  
 
 ---  
 
-## LGT-018a  
+## LGT-019a  
 
 **Brand**  
 
@@ -2151,7 +2134,7 @@ Portable LED Lantern（38-kT Shade）
 
 ---  
 
-## LGT-018b  
+## LGT-019b  
 
 **Brand**  
 
@@ -2187,7 +2170,7 @@ Portable LED Lantern（38-kT Shade, Foldable）
 
 ---  
 
-## LGT-019  
+## LGT-020  
 
 **Brand**  
 
@@ -2203,13 +2186,13 @@ Owned
 
 ### Child Components  
 
-- LGT-020  
 - LGT-021  
 - LGT-022  
 - LGT-023  
 - LGT-024  
 - LGT-025  
 - LGT-026  
+- LGT-027  
 
 ### Color  
 
@@ -2233,7 +2216,7 @@ Lantern Hanger
 
 ---  
 
-## LGT-020  
+## LGT-021  
 
 **Brand**  
 
@@ -2249,7 +2232,7 @@ Owned
 
 **Parent**  
 
-LGT-019  
+LGT-020  
 
 ### Quantity  
 
@@ -2273,7 +2256,7 @@ Slider
 
 ---  
 
-## LGT-021  
+## LGT-022  
 
 **Brand**  
 
@@ -2289,7 +2272,7 @@ Owned
 
 **Parent**  
 
-LGT-019  
+LGT-020  
 
 ### Color  
 
@@ -2309,7 +2292,7 @@ Portable LED Lantern
 
 ---  
 
-## LGT-022  
+## LGT-023  
 
 **Brand**  
 
@@ -2325,7 +2308,7 @@ Owned
 
 **Parent**  
 
-LGT-019  
+LGT-020  
 
 ### Color  
 
@@ -2345,7 +2328,7 @@ Portable LED Lantern
 
 ---  
 
-## LGT-023  
+## LGT-024  
 
 **Brand**  
 
@@ -2361,7 +2344,7 @@ Owned
 
 **Parent**  
 
-LGT-019  
+LGT-020  
 
 ### Color  
 
@@ -2381,7 +2364,7 @@ Portable LED Lantern
 
 ---  
 
-## LGT-024  
+## LGT-025  
 
 **Brand**  
 
@@ -2397,7 +2380,7 @@ Owned
 
 **Parent**  
 
-LGT-019  
+LGT-020  
 
 ### Color  
 
@@ -2417,7 +2400,7 @@ Portable LED Lantern
 
 ---  
 
-## LGT-025  
+## LGT-026  
 
 **Brand**  
 
@@ -2433,7 +2416,7 @@ Upgrade
 
 **Parent**  
 
-LGT-019  
+LGT-020  
 
 ### Color  
 
@@ -2453,7 +2436,7 @@ Wood Sleeve
 
 ---  
 
-## LGT-026  
+## LGT-027  
 
 **Brand**  
 
@@ -2469,7 +2452,7 @@ Upgrade
 
 **Parent**  
 
-LGT-019  
+LGT-020  
 
 ### Color  
 
@@ -2489,7 +2472,7 @@ Wood Sleeve
 
 ---  
 
-## LGT-027  
+## LGT-028  
 
 **Brand**  
 
@@ -2505,7 +2488,7 @@ Owned
 
 ### Child Components  
 
-- LGT-028  
+- LGT-029  
 
 ### Color  
 
@@ -2525,7 +2508,7 @@ Airlight Shade
 
 ---  
 
-## LGT-028  
+## LGT-029  
 
 **Brand**  
 
@@ -2541,7 +2524,7 @@ Owned
 
 **Parent**  
 
-LGT-027  
+LGT-028  
 
 ### Color  
 
@@ -2561,7 +2544,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-029  
+## LGT-030  
 
 **Brand**  
 
@@ -2577,7 +2560,7 @@ Owned
 
 ### Child Components  
 
-- LGT-030  
+- LGT-031  
 
 ### Color  
 
@@ -2597,7 +2580,7 @@ Airlight Shade
 
 ---  
 
-## LGT-030  
+## LGT-031  
 
 **Brand**  
 
@@ -2613,7 +2596,7 @@ Owned
 
 **Parent**  
 
-LGT-029  
+LGT-030  
 
 ### Color  
 
@@ -2633,7 +2616,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-031  
+## LGT-032  
 
 **Brand**  
 
@@ -2649,7 +2632,7 @@ Owned
 
 ### Child Components  
 
-- LGT-032  
+- LGT-033  
 
 ### Color  
 
@@ -2669,7 +2652,7 @@ Airlight Shade
 
 ---  
 
-## LGT-032  
+## LGT-033  
 
 **Brand**  
 
@@ -2685,7 +2668,7 @@ Owned
 
 **Parent**  
 
-LGT-031  
+LGT-032  
 
 ### Color  
 
@@ -2705,7 +2688,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-033  
+## LGT-034  
 
 **Brand**  
 
@@ -2721,8 +2704,8 @@ Owned
 
 ### Child Components  
 
-- LGT-034  
 - LGT-035  
+- LGT-036  
 
 ### Color  
 
@@ -2746,7 +2729,7 @@ Airlight Shade
 
 ---  
 
-## LGT-034  
+## LGT-035  
 
 **Brand**  
 
@@ -2762,7 +2745,7 @@ Owned
 
 **Parent**  
 
-LGT-033  
+LGT-034  
 
 ### Color  
 
@@ -2786,7 +2769,7 @@ Lantern Stand（Base W160×D160×H15mm, Brass Pole H270mm, 1/4-inch screw thread
 
 ---  
 
-## LGT-035  
+## LGT-036  
 
 **Brand**  
 
@@ -2802,7 +2785,7 @@ Owned
 
 **Parent**  
 
-LGT-033  
+LGT-034  
 
 ### Color  
 
@@ -2822,7 +2805,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-036  
+## LGT-037  
 
 **Brand**  
 
@@ -2838,8 +2821,8 @@ Owned
 
 ### Child Components  
 
-- LGT-037  
-- LGT-039  
+- LGT-038  
+- LGT-040  
 
 ### Color  
 
@@ -2863,7 +2846,7 @@ Airlight Shade
 
 ---  
 
-## LGT-037  
+## LGT-038  
 
 **Brand**  
 
@@ -2879,11 +2862,11 @@ Owned
 
 **Parent**  
 
-LGT-036  
+LGT-037  
 
 ### Child Components  
 
-- LGT-038  
+- LGT-039  
 
 ### Color  
 
@@ -2907,7 +2890,7 @@ Tabletop Lantern Stand（Base W140×D150×H26mm, Brass Pole H190mm, 1/4-inch scr
 
 ---  
 
-## LGT-038  
+## LGT-039  
 
 **Brand**  
 
@@ -2923,7 +2906,7 @@ Owned
 
 **Parent**  
 
-LGT-037  
+LGT-038  
 
 
 ### Color  
@@ -2943,7 +2926,7 @@ Otachidai Bar（お立ち台バー）
 ¥1,320  
 
 ---  
-## LGT-039  
+## LGT-040  
 
 **Brand**  
 
@@ -2959,7 +2942,7 @@ Owned
 
 **Parent**  
 
-LGT-036  
+LGT-037  
 
 ### Color  
 
@@ -2979,7 +2962,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-040  
+## LGT-041  
 
 **Brand**  
 
@@ -2995,7 +2978,7 @@ Owned
 
 ### Child Components  
 
-- LGT-041  
+- LGT-042  
 
 ### Color  
 
@@ -3015,7 +2998,7 @@ Airlight Shade
 
 ---  
 
-## LGT-041  
+## LGT-042  
 
 **Brand**  
 
@@ -3031,7 +3014,7 @@ Owned
 
 **Parent**  
 
-LGT-040  
+LGT-041  
 
 ### Color  
 
@@ -3051,7 +3034,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-042  
+## LGT-043  
 
 **Brand**  
 
@@ -3067,7 +3050,7 @@ Owned
 
 ### Child Components  
 
-- LGT-043  
+- LGT-044  
 
 ### Color  
 
@@ -3087,7 +3070,7 @@ Airlight Shade
 
 ---  
 
-## LGT-043  
+## LGT-044  
 
 **Brand**  
 
@@ -3103,7 +3086,7 @@ Owned
 
 **Parent**  
 
-LGT-042  
+LGT-043  
 
 ### Color  
 
@@ -3123,7 +3106,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-044  
+## LGT-045  
 
 **Brand**  
 
@@ -3139,7 +3122,7 @@ Owned
 
 ### Child Components  
 
-- LGT-045  
+- LGT-046  
 
 ### Color  
 
@@ -3159,7 +3142,7 @@ Airlight Shade
 
 ---  
 
-## LGT-045  
+## LGT-046  
 
 **Brand**  
 
@@ -3175,7 +3158,7 @@ Owned
 
 **Parent**  
 
-LGT-044  
+LGT-045  
 
 ### Color  
 
@@ -3195,7 +3178,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-046  
+## LGT-047  
 
 **Brand**  
 
@@ -3211,7 +3194,7 @@ Owned
 
 ### Child Components  
 
-- LGT-047  
+- LGT-048  
 
 ### Quantity  
 
@@ -3239,7 +3222,7 @@ Premium Lantern
 
 ---  
 
-## LGT-047  
+## LGT-048  
 
 **Brand**  
 
@@ -3255,7 +3238,7 @@ Owned
 
 **Parent**  
 
-LGT-046  
+LGT-047  
 
 
 ### Color  
@@ -3275,7 +3258,7 @@ Stand（38-kT THE RICH classic100 ×2用）
 ¥18,040  
 
 ---  
-## LGT-048  
+## LGT-049  
 
 **Brand**  
 
@@ -3291,7 +3274,7 @@ Essential
 
 ### Child Components  
 
-- LGT-049  
+- LGT-050  
 
 ### Color  
 
@@ -3315,7 +3298,7 @@ Airlight Shade (Hanging)
 
 ---  
 
-## LGT-049  
+## LGT-050  
 
 **Brand**  
 
@@ -3331,7 +3314,7 @@ Owned
 
 **Parent**  
 
-LGT-048  
+LGT-049  
 
 ### Color  
 
@@ -3351,7 +3334,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-050  
+## LGT-051  
 
 **Brand**  
 
@@ -3367,7 +3350,7 @@ Essential
 
 ### Child Components  
 
-- LGT-051  
+- LGT-052  
 
 ### Color  
 
@@ -3391,7 +3374,7 @@ Airlight Shade (Hanging)
 
 ---  
 
-## LGT-051  
+## LGT-052  
 
 **Brand**  
 
@@ -3407,7 +3390,7 @@ Owned
 
 **Parent**  
 
-LGT-050  
+LGT-051  
 
 ### Color  
 
@@ -3427,7 +3410,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-052  
+## LGT-053  
 
 **Brand**  
 
@@ -3443,7 +3426,7 @@ Essential
 
 ### Child Components  
 
-- LGT-053  
+- LGT-054  
 
 ### Color  
 
@@ -3467,7 +3450,7 @@ Airlight Shade (Hanging)
 
 ---  
 
-## LGT-053  
+## LGT-054  
 
 **Brand**  
 
@@ -3483,7 +3466,7 @@ Owned
 
 **Parent**  
 
-LGT-052  
+LGT-053  
 
 ### Color  
 
@@ -3503,17 +3486,17 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-054  
+## LGT-055  
 
 Vacant ID. Reserved for a fourth hanging-type Airlight shade, not yet identified.  
 
 ### Child Components  
 
-- LGT-055  
+- LGT-056  
 
 ---  
 
-## LGT-055  
+## LGT-056  
 
 **Brand**  
 
@@ -3529,7 +3512,7 @@ Owned
 
 **Parent**  
 
-LGT-054 (pending — parent shade not yet identified)  
+LGT-055 (pending — parent shade not yet identified)  
 
 ### Color  
 
@@ -7645,6 +7628,22 @@ Light Domainを再編した。過去のバージョン7.38時点の作業（未�
 - FIR-030（検討中Fire Pit枠、Unconfirmed/Candidate）を削除した（プロジェクトオーナー確認）。
 - FIR-005・FIR-007：Brand表記順を「サンゾー工務店 × asimocrafts × 横濱帆布鞄」から「asimocrafts × サンゾー工務店 × 横濱帆布鞄」へ変更（プロジェクトオーナー確認）。
 - 上記FIR-030削除を反映し、FIR-031〜036をFIR-030〜035へ繰り下げた。
+
+- Related Documents：CZ-001 Deliberation Codex、CZ-002 Vigil Protocol（Light Domain関連のみ）。
+
+---
+
+## Version 7.50
+
+プロジェクトオーナー確認に基づき、Light Domainを再修正した。
+
+### Changes
+
+- LGT-017（Glass Shade & Wood Stand Set）：LGT-016との親子関係を解消し、独立したアイテムへ変更（Parentフィールドを削除）。
+- LGT-018：CALMA STORE MMM Pocket Shade PAJAMA MOON LIAN HOMEから、OTEBO CRAFTS BABEL（Material: Walnut、Price: ¥20,000、Status: Essential）へ差し替え。Parent（LGT-016）およびBranch Variantsを持つ構造は維持。
+- LGT-018a・LGT-018b（メッシュシェード・POCKET SHADE、Branch Variants）：LGT-019a・LGT-019bへ改番。Parent（LGT-018）は変更なし。
+- 上記反映後、旧LGT-019（nodel design 3ndelier Blade）以降のLight Domain全アイテム（旧LGT-019〜055）を1つずつ繰り下げ（新LGT-020〜056）。
+- CZ-001（Confirmed — Purchase Pending, Light表）、CZ-002（Watch List エントリ010〜012）のMD-004参照を新IDへ同期した（CZ-001 Ver.2.13、CZ-002 Ver.2.12）。
 
 - Related Documents：CZ-001 Deliberation Codex、CZ-002 Vigil Protocol（Light Domain関連のみ）。
 
