@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 2.15  
+**Version**: 2.16  
 **Status**: Official  
 **Owner**: THE THIRD PLACE
 
@@ -31,6 +31,7 @@
 | 2.13 | 2026-09-23 | MD-004 Version 7.51（LGT-018/BABELの独立親化、LGT-034〜046ブロックの移動・並べ替え、AIR LIGHT群の4個単位グループ化、全体再連番）と連動し、MD-004 Referenceを更新：エントリ010（メッシュシェード）をLGT-019aからLGT-017aへ、エントリ011（POCKET SHADE M）をLGT-019bからLGT-017bへ、エントリ012（Pivotshade）をLGT-053からLGT-042へ更新。エントリ009（MIYABI RICH Alumi Frozen、LGT-016）は今回の再編後も番号に変更がないため更新なし。 |
 | 2.14 | 2026-09-23 | MD-004（Version 7.53）との番号照合に基づき、プロジェクトオーナーの指示でMD-004 Referenceを訂正：エントリ017（Butterfly Under Shelf）をSTR-019からSTR-021へ、エントリ018（Wood Board）をSTR-014, STR-016からSTR-015, STR-018へ（Notes内の記述も同期）、エントリ021（MT.SUMI Aura FG）を削除済みのFIR-030からMD-004 Version 7.53新設の空き枠FIR-036へ更新。 |
 | 2.15 | 2026-09-23 | MD-004（Version 7.53）を正とした照合に基づき、エントリ009（MIYABI RICH Alumi Frozen）のMD-004 Reference のStatus表記をEssentialからOwnedへ訂正（MD-004上はOwned）。エントリ自体の扱い（Watch Listからの除外要否）は変更していない。 |
+| 2.16 | 2026-09-23 | MD-004（Version 7.54）を正としたWatch Listの整理（プロジェクトオーナー指示）。MD-004上でOwnedとなっている旧エントリ009（MIYABI RICH Alumi Frozen、LGT-016）を削除し、旧エントリ010〜021を009〜020へ繰り上げ。MD-004でStatus = Essentialながら未掲載だった3件を追加：021 OTEBO CRAFTS BABEL（LGT-017）、022 Snow Peak ダウン システムオフトン スリムマットセット（FUR-032）、023 KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリートセット（STR-030）。エントリ001・002・004・005・006・007にMD-004 Referenceを付記し、Brand表記をMD-004の公式表記へ統一（001 DEVISE WORKS × ANCAM、002 DEVISE WORKS × WANTKEY CAMP、004 rove troupe、006 wildingout、007 nodel design）。 |
 
 ---
 
@@ -386,17 +387,23 @@ Required Keywordsには、発見精度を最大化するために必要な実用
 
 エントリ001〜007は、本改訂以前から存在する。
 
-エントリ008〜021は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、BR-002 Barista Codex / BR-003 Acquisition Handbookが引き続き管轄する。
+エントリ008〜023は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、BR-002 Barista Codex / BR-003 Acquisition Handbookが引き続き管轄する。
+
+エントリ001〜007にも、MD-004上の該当IDが存在するものについては**MD-004 Reference**を付記している（003 WANTKEY SC HANDLEはMD-004に該当IDなし）。MD-004上の製品が未確定（Brand / Product = Unconfirmed）の枠（FUR-034 Sleeping Mat、FUR-035 Pad Sheet）は、検索対象の製品が定まらないため本リストの対象外とし、CZ-001 Deliberation Codexで管理する。
 
 ## 001
 
 **Brand**
 
-DEVISE WORKS
+DEVISE WORKS × ANCAM
 
 **Target**
 
 ANO D TENBAN
+
+**MD-004 Reference**
+
+FUR-016 (Status: Upgrade)
 
 **Required Keywords**
 
@@ -414,11 +421,15 @@ ANO D TENBAN
 
 **Brand**
 
-DEVISE WORKS
+DEVISE WORKS × WANTKEY CAMP
 
 **Target**
 
 ONETOP"D"
+
+**MD-004 Reference**
+
+FUR-017 (Status: Upgrade)
 
 **Required Keywords**
 
@@ -458,11 +469,15 @@ SC HANDLE
 
 **Brand**
 
-ROVE TROUPE
+rove troupe
 
 **Target**
 
 RT-01 ECHO LAMP
+
+**MD-004 Reference**
+
+LGT-040 (Status: Essential)
 
 **Required Keywords**
 
@@ -486,6 +501,10 @@ KURASHI MADE
 
 DOME LOOK
 
+**MD-004 Reference**
+
+LGT-041 (Status: Essential)
+
 **Required Keywords**
 
 - DOME LOOK
@@ -501,11 +520,15 @@ DOME LOOK
 
 **Brand**
 
-WILDINGOUT
+wildingout
 
 **Target**
 
 LF1984
+
+**MD-004 Reference**
+
+LGT-043 (Status: Vacant — 本製品を充当するか検討中。CZ-001参照)
 
 **Required Keywords**
 
@@ -522,11 +545,15 @@ LF1984
 
 **Brand**
 
-NODEL DESIGN
+nodel design
 
 **Target**
 
 Miyabi Wood
+
+**MD-004 Reference**
+
+LGT-033, LGT-034 (Status: Upgrade)
 
 **Required Keywords**
 
@@ -571,31 +598,6 @@ FUR-026 (Status: Upgrade)
 
 **Brand**
 
-neru design works × LampUp
-
-**Target**
-
-MIYABI RICH Alumi Frozen
-
-**MD-004 Reference**
-
-LGT-016 (Status: Owned)
-
-**Required Keywords**
-
-- MIYABI RICH Alumi Frozen
-- MIYABI RICH アルミ
-- neru design works LampUp
-- ミヤビリッチ
-- アルミフローズン
-- ネルデザインワークス ランプアップ
-
----
-
-## 010
-
-**Brand**
-
 neru design works
 
 **Target**
@@ -615,7 +617,7 @@ LGT-017a (Status: Candidate)
 
 ---
 
-## 011
+## 010
 
 **Brand**
 
@@ -638,7 +640,7 @@ LGT-017b (Status: Candidate)
 
 ---
 
-## 012
+## 011
 
 **Brand**
 
@@ -661,7 +663,7 @@ LGT-042 (Status: Essential)
 
 ---
 
-## 013
+## 012
 
 **Brand**
 
@@ -684,7 +686,7 @@ ARM-002 (Status: Essential)
 
 ---
 
-## 014
+## 013
 
 **Brand**
 
@@ -707,7 +709,7 @@ ARM-004 (Status: Upgrade)
 
 ---
 
-## 015
+## 014
 
 **Brand**
 
@@ -730,7 +732,7 @@ ARM-003 (Status: Essential)
 
 ---
 
-## 016
+## 015
 
 **Brand**
 
@@ -754,7 +756,7 @@ STR-006, STR-012 (Status: Essential)
 
 ---
 
-## 017
+## 016
 
 **Brand**
 
@@ -777,7 +779,7 @@ STR-021 (Status: Essential)
 
 ---
 
-## 018
+## 017
 
 **Brand**
 
@@ -805,7 +807,7 @@ nodel designが「Wood Board」という製品名でそのまま単品販売し�
 
 ---
 
-## 019
+## 018
 
 **Brand**
 
@@ -827,7 +829,7 @@ FIR-025 (Status: Essential)
 
 ---
 
-## 020
+## 019
 
 **Brand**
 
@@ -850,7 +852,7 @@ FIR-026 (Status: Upgrade)
 
 ---
 
-## 021
+## 020
 
 **Brand**
 
@@ -869,6 +871,87 @@ FIR-036 (Status: Vacant — 購入時に登録予定)
 - MT.SUMI Aura FG
 - Aura FG fire pit
 - マウントスミ オーラFG
+
+---
+
+## 021
+
+**Brand**
+
+OTEBO CRAFTS
+
+**Target**
+
+BABEL
+
+**MD-004 Reference**
+
+LGT-017 (Status: Essential)
+
+**Required Keywords**
+
+- OTEBO CRAFTS BABEL
+- otebo crafts babel
+- OTEBO BABEL
+- BABEL OTEBO
+- OTEBOCRAFTS
+- BABEL Walnut
+- オテボクラフツ
+- オテボクラフツ バベル
+
+---
+
+## 022
+
+**Brand**
+
+Snow Peak
+
+**Target**
+
+ダウン システムオフトン スリムマットセット（BD-060）
+
+**MD-004 Reference**
+
+FUR-032 (Status: Essential)
+
+**Required Keywords**
+
+- BD-060
+- Snow Peak BD-060
+- snow peak BD-060
+- ダウン システムオフトン スリムマットセット
+- システムオフトン スリムマットセット
+- スノーピーク システムオフトン
+- スノーピーク BD-060
+- スノーピーク ダウン システムオフトン
+
+---
+
+## 023
+
+**Brand**
+
+KAZE_TO_MORI × WINDY AND RAINY
+
+**Target**
+
+Folding Wire T-box 全面コンプリートセット
+
+**MD-004 Reference**
+
+STR-030 (Status: Essential)
+
+**Required Keywords**
+
+- Folding Wire T-box
+- Folding Wire T-box 全面コンプリートセット
+- KAZE_TO_MORI T-box
+- WINDY AND RAINY T-box
+- KAZE_TO_MORI WINDY AND RAINY
+- T-box 全面コンプリートセット
+- フォールディングワイヤー Tボックス
+- Tボックス コンプリートセット
 
 ---
 
