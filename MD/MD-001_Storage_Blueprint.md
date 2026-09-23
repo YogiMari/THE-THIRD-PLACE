@@ -1,5 +1,5 @@
 # MD-001 Storage Blueprint
-## Ver.2.6
+## Ver.2.7
 
 Status : Planning
 
@@ -323,11 +323,11 @@ CONPE10はShellCon25へ収納しない。
 
 ## 燃えないゴミ（缶・ビン）側
 
-STR-025（ANOBA フォールディングサイドテーブル）に、STR-026（ANOBA BLACK EDITION マルチダストバケット）を収納して運用する。使用頻度が低いため、テーブル下へ収納する多段階の取り出し動作を許容する。
+STR-028（ANOBA フォールディングサイドテーブル）に、STR-029（ANOBA BLACK EDITION マルチダストバケット）を収納して運用する。使用頻度が低いため、テーブル下へ収納する多段階の取り出し動作を許容する。
 
 ## 燃えるゴミ側
 
-STR-027（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box フルセット）を単独で運用する。フォールディングサイドテーブルは介さない。使用頻度が高いため、取り出し動作の少ない単独設置とした。
+STR-030（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリートセット）を単独で運用する。フォールディングサイドテーブルは介さない。使用頻度が高いため、取り出し動作の少ない単独設置とした。
 
 ## Rule
 
@@ -685,7 +685,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.6
+Ver.2.7
 
 ---
 
@@ -720,7 +720,7 @@ Verified
 - Living Table Deployment
 - Side Table Deployment
 
-Wood Board ×7 Sets のうち4セット（STR-014・STR-016、各2組）は未購入（MD-004 Status = Essential）。本検証結果は未購入分を含む。実物での確認は未了。
+Wood Board ×7 Sets のうち4セット（STR-015・STR-018、各2組）は未購入（MD-004 Status = Essential）。本検証結果は未購入分を含む。実物での確認は未了。
 
 ---
 
@@ -810,7 +810,7 @@ Permanent Storage
 - 展開順と収納順は常に一致させる。
 - Temporary permanent locationsは禁止。
 - Duplicate storageは原則禁止（例外条件はDuplicate Storage Exceptionを参照。現時点で適用事例なし）。
-- ゴミ分別は、STR-025+STR-026（燃えないゴミ）とSTR-027（燃えるゴミ）の役割分化構成で運用する（Dust Management Module参照）。
+- ゴミ分別は、STR-028+STR-029（燃えないゴミ）とSTR-030（燃えるゴミ）の役割分化構成で運用する（Dust Management Module参照）。
 - Mixed modulesは禁止。
 
 ---

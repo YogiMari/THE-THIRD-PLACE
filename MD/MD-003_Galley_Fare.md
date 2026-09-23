@@ -1,5 +1,5 @@
 # MD-003 Galley Fare
-Version 2.12
+Version 2.13
 
 ---
 
@@ -2602,13 +2602,13 @@ Retired. MD-004 Equipment Registry（Storage Domain）旧STR-027（Retired）へ
 
 ## KIT-070a
 
-Retired. MD-004 Equipment Registry（Storage Domain）STR-026へ移管済み（Version 2.8）。旧登録：ANOBA BLACK EDITION マルチダストバケット（SKU: AN118、Candidate）。MD-004ではSTR-026としてOwned登録されている。本IDは移管記録として保持する。
+Retired. MD-004 Equipment Registry（Storage Domain）STR-029へ移管済み（Version 2.8。移管当時のIDはSTR-026）。旧登録：ANOBA BLACK EDITION マルチダストバケット（SKU: AN118、Candidate）。MD-004ではSTR-029としてOwned登録されている。本IDは移管記録として保持する。
 
 ---
 
 ## KIT-070b
 
-Retired. MD-004 Equipment Registry（Storage Domain）STR-025へ移管済み（Version 2.8）。旧登録：ANOBA フォールディングサイドテーブル（SKU: AN129、Silver、Candidate）。MD-004ではSTR-025（SKU: AN139、Black、Owned。Version 7.37でEssentialから変更）として登録されており、SKU・色は旧登録と一致していなかった。MD-004の記載を正とする。本IDは移管記録として保持する。
+Retired. MD-004 Equipment Registry（Storage Domain）STR-028へ移管済み（Version 2.8。移管当時のIDはSTR-025）。旧登録：ANOBA フォールディングサイドテーブル（SKU: AN129、Silver、Candidate）。MD-004ではSTR-028（SKU: AN139、Black、Owned。Version 7.37でEssentialから変更）として登録されており、SKU・色は旧登録と一致していなかった。MD-004の記載を正とする。本IDは移管記録として保持する。
 
 ---
 
@@ -3505,6 +3505,19 @@ MD-004 Version 7.40（Fire Domain検討中案件の表記整理）との連動�
 - Version 2.11の「Related Documents」セクション内に記載されていた2つの重複参照（Version 7.38および Version 7.37への言及）を整理し、参照元の最新バージョン（Version 7.38）のみを記載。Version 7.37への古い参照を削除した。
 
 - Related Documents：MD-004 Equipment Registry Object Reference（Version 7.40、Fire Domain表記整理に伴う）。
+
+---
+
+## Version 2.13
+
+MD-004 Equipment Registry（Version 7.53）を正とした照合に基づく参照更新。登録内容（Kitchen機材）に変更はない。
+
+### Changes
+
+- KIT-070a：移管先の記述を「MD-004 STR-026」から「MD-004 STR-029」へ更新（2箇所）。MD-004上の現行ID（ANOBA BLACK EDITION マルチダストバケット）に合わせたもの。
+- KIT-070b：移管先の記述を「MD-004 STR-025」から「MD-004 STR-028」へ更新（2箇所）。MD-004上の現行ID（ANOBA フォールディングサイドテーブル）に合わせたもの。
+- Version History内の過去の記述（Version 2.8〜2.10のSTR番号）は当時の記録として遡及修正しない。
+- Related Documents：MD-004 Equipment Registry Object Reference（Version 7.53）。
 
 ---
 

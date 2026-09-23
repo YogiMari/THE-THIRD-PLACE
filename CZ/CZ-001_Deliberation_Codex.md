@@ -10,7 +10,7 @@ Deliberation Codex
 
 # Version
 
-2.15
+2.16
 
 # Status
 
@@ -211,6 +211,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 | ID | Product | Brand | Note |
 |---|---|---|---|
+| LGT-017 | BABEL | OTEBO CRAFTS | — |
 | LGT-040 | RT-01AC01 / ECHO LAMP | rove troupe | — |
 | LGT-041 | DOME LOOK | KURASHI MADE | — |
 | LGT-042 | Pivotshade | IFA | — |
@@ -231,7 +232,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | STR-015 | Wood Board（Oak） | nodel design | Parent: STR-013／数量2組 |
 | STR-018 | Wood Board（Walnut） | nodel design | Parent: STR-016／数量2組 |
 | STR-021 | Butterfly Under Shelf | nodel design | Parent: STR-019 |
-| STR-027 | Folding Wire T-box 全面コンプリートセット | KAZE_TO_MORI × WINDY AND RAINY | — |
+| STR-030 | Folding Wire T-box 全面コンプリートセット | KAZE_TO_MORI × WINDY AND RAINY | — |
 
 ## Fire
 
@@ -285,6 +286,7 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 2.13 | 2026-09-23 | MD-004 Version 7.50（LGT-017のLGT-016子化解消、LGT-018をOTEBO CRAFTS BABELへ差し替え、LGT-018a/018bをLGT-019a/019bへ改番、以降のLight Domain番号を1つずつ繰り下げ）と連動し、Confirmed — Purchase Pending の Light 表を更新：LGT-048→LGT-049（RT-01AC01 / ECHO LAMP）、LGT-050→LGT-051（DOME LOOK）、LGT-052→LGT-053（Pivotshade）。 |
 | 2.14 | 2026-09-23 | MD-004 Version 7.51（LGT-018/BABELの独立親化、LGT-034〜046ブロックのLGT-017直後への移動と並べ替え、AIR LIGHT群の4個単位グループ化、全体再連番）と連動し、Confirmed — Purchase Pending の Light 表を更新：LGT-049→LGT-040（RT-01AC01 / ECHO LAMP）、LGT-051→LGT-041（DOME LOOK）、LGT-053→LGT-042（Pivotshade）。 |
 | 2.15 | 2026-09-23 | MD-004（Version 7.53）との番号照合に基づき、プロジェクトオーナーの指示で参照を訂正。Furniture：Winter Top Quilt FUR-032→FUR-033、Winter Sleeping Mat FUR-033→FUR-034、Pad Sheet FUR-034→FUR-035、マット部参照 FUR-031→FUR-032（Under Consideration・Confirmed — Purchase Pending表）。Light：Portable LED Lantern（wildingout LF1984）の参照を削除済みの旧LGT-041から、空き枠LGT-043への充当検討へ変更。Storage：Wood Board（Oak）STR-014→STR-015、Wood Board（Walnut）STR-016→STR-018（Parent: STR-016）、Butterfly Under Shelf STR-019→STR-021（Parent: STR-019）。Fire：Fire Pit見出し・NoteをFIR-030（削除済み）からMD-004 Version 7.53新設の空き枠FIR-036へ更新。 |
+| 2.16 | 2026-09-23 | MD-004（Version 7.53）を正とした照合に基づき、Confirmed — Purchase Pending を訂正：Storage表のFolding Wire T-box 全面コンプリートセットをSTR-027→STR-030へ更新。Light表に、MD-004でStatus = Essentialでありながら未掲載だったLGT-017（OTEBO CRAFTS BABEL、MD-004 Version 7.50で登録）を追加。 |
 
 ---
 
