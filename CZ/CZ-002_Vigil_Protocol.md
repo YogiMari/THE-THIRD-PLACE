@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 2.13  
+**Version**: 2.14  
 **Status**: Official  
 **Owner**: THE THIRD PLACE
 
@@ -29,6 +29,7 @@
 | 2.11 | 2026-09-22 | MD-004 Version 7.49（Light Domain再修正）と連動し、MD-004 Referenceを更新：エントリ010（メッシュシェード）をLGT-029aからLGT-018aへ、エントリ011（POCKET SHADE M）をLGT-029bからLGT-018bへ、エントリ012（Pivotshade）をLGT-040からLGT-052へ更新。エントリ009（MIYABI RICH Alumi Frozen、LGT-016）は今回の再編後も番号に変更がないため更新なし。 |
 | 2.12 | 2026-09-23 | MD-004 Version 7.50（LGT-017のLGT-016子化解消、LGT-018をOTEBO CRAFTS BABELへ差し替え、LGT-018a/018bをLGT-019a/019bへ改番、以降のLight Domain番号を1つずつ繰り下げ）と連動し、MD-004 Referenceを更新：エントリ010（メッシュシェード）をLGT-018aからLGT-019aへ、エントリ011（POCKET SHADE M）をLGT-018bからLGT-019bへ、エントリ012（Pivotshade）をLGT-052からLGT-053へ更新。エントリ009（MIYABI RICH Alumi Frozen、LGT-016）は今回の再編後も番号に変更がないため更新なし。 |
 | 2.13 | 2026-09-23 | MD-004 Version 7.51（LGT-018/BABELの独立親化、LGT-034〜046ブロックの移動・並べ替え、AIR LIGHT群の4個単位グループ化、全体再連番）と連動し、MD-004 Referenceを更新：エントリ010（メッシュシェード）をLGT-019aからLGT-017aへ、エントリ011（POCKET SHADE M）をLGT-019bからLGT-017bへ、エントリ012（Pivotshade）をLGT-053からLGT-042へ更新。エントリ009（MIYABI RICH Alumi Frozen、LGT-016）は今回の再編後も番号に変更がないため更新なし。 |
+| 2.14 | 2026-09-23 | MD-004（Version 7.53）との番号照合に基づき、プロジェクトオーナーの指示でMD-004 Referenceを訂正：エントリ017（Butterfly Under Shelf）をSTR-019からSTR-021へ、エントリ018（Wood Board）をSTR-014, STR-016からSTR-015, STR-018へ（Notes内の記述も同期）、エントリ021（MT.SUMI Aura FG）を削除済みのFIR-030からMD-004 Version 7.53新設の空き枠FIR-036へ更新。 |
 
 ---
 
@@ -764,7 +765,7 @@ Butterfly Under Shelf
 
 **MD-004 Reference**
 
-STR-019 (Status: Essential)
+STR-021 (Status: Essential)
 
 **Required Keywords**
 
@@ -787,11 +788,11 @@ Wood Board
 
 **MD-004 Reference**
 
-STR-014, STR-016 (Status: Essential)
+STR-015, STR-018 (Status: Essential)
 
 **Notes**
 
-nodel designが「Wood Board」という製品名でそのまま単品販売している。Beck Container ①（Oak, STR-014）およびBeck Container ②（Walnut, STR-016）用。
+nodel designが「Wood Board」という製品名でそのまま単品販売している。Beck Container ①（STR-013）用のOak（STR-015）およびBeck Container ②（STR-016）用のWalnut（STR-018）。
 
 **Required Keywords**
 
@@ -860,7 +861,7 @@ Aura FG
 
 **MD-004 Reference**
 
-FIR-030 (Status: Candidate)
+FIR-036 (Status: Vacant — 購入時に登録予定)
 
 **Required Keywords**
 

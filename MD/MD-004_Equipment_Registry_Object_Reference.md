@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.52  
+Version 7.53  
   
 ---  
   
@@ -6551,6 +6551,12 @@ Hook
 
 ---  
 
+## FIR-036  
+
+Vacant ID. Reserved for a fire pit currently under deliberation (see CZ-001 Deliberation Codex). To be registered upon purchase.  
+
+---  
+
 # Shelter  
 
 ---  
@@ -7666,6 +7672,17 @@ Light Domainを再編した。過去のバージョン7.38時点の作業（未�
 - AIR LIGHT本体（CARGO CONTAINER AIR LIGHT）12件のID表記を、「LGT-044a〜046d」形式から「LGT-04_Na」形式（N=グループ番号1〜3、a〜dは枝番）へ変更。数字とa/b/c/dの間にアンダーバーを挿入し、グループ番号を3桁（044〜046）から連番の1桁（1〜3）へ簡略化。最大IDはLGT-04_3d（12件＝3グループ×4）であることを確認。各アイテムのParent（対応シェード）は変更なし。
 - LGT-025（WWW_LANTHANUMHOOK）：Brandを「WHAT WE WANT（WWW）」から「WHAT WE WANT」へ訂正（表記統一）。
 - Related Documents：変更なし。
+
+---
+
+## Version 7.53
+
+プロジェクトオーナーの指示に基づき、Fire Domainの末尾に空き枠を新設した。
+
+### Changes
+
+- FIR-036：Vacant ID（空き枠）として新設。CZ-001 Deliberation Codexで検討中のFire Pit（候補：MT.SUMI Aura FG／FIREGRAPHIX BLISS-SP）のいずれかを購入した時点で、本IDへ登録する予定。Version 7.49で削除した旧FIR-030（検討中Fire Pit枠）の後継枠にあたる。
+- Related Documents：CZ-001 Deliberation Codex（Ver.2.15）、CZ-002 Vigil Protocol（Ver.2.14）のFire Pit参照をFIR-036へ同期。
 
 ---
 ## Document Renumbering Note
