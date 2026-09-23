@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.52  
+Version 7.54  
   
 ---  
   
@@ -1333,7 +1333,7 @@ None
 
 ### Industrial Attribute  
 
-Quilt & Sleeping Mat Set（関東〜雪中入門用、快適温度2℃・下限温度-4℃。掛け布団+コンパクトワイドマット（R値5.4・ASTM F3340-22準拠、2枚連結使用）のセット販売のため、旧FUR-021単体マット登録は本IDへ統合。FUR-033系との併用時はマット部が本格雪中用の主断熱層としても使用）  
+Quilt & Sleeping Mat Set（関東〜雪中入門用、快適温度2℃・下限温度-4℃。掛け布団+コンパクトワイドマット（R値5.4・ASTM F3340-22準拠、2枚連結使用）のセット販売のため、旧FUR-021単体マット登録は本IDへ統合。冬用トップキルト枠〈FUR-033〉は本IDの採用により統合済み〈Retired〉）  
 
 ### Price  
 
@@ -1343,29 +1343,7 @@ Quilt & Sleeping Mat Set（関東〜雪中入門用、快適温度2℃・下限�
 
 ## FUR-033  
 
-**Brand**  
-
-Unconfirmed  
-
-**Product**  
-
-Unconfirmed  
-
-**Status**  
-
-Candidate  
-
-### Color  
-
-Black  
-
-### Material  
-
-Down（Full Custom Order）  
-
-### Industrial Attribute  
-
-Quilt（本格雪中用トップキルト。バックレス構造につきFUR-032（マット部）・FUR-034との併用が必須。カスタムオーダーで下限-18℃級を想定。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
+Retired. 冬用トップキルト枠（本格雪中用、Candidate）。プロジェクトオーナーの決定により、冬用キルトはSnow Peak ダウン システムオフトン スリムマットセット（FUR-032）を採用したため、本枠はFUR-032へ統合した。本IDは統合記録として保持する。  
 
 ---  
 
@@ -4184,6 +4162,42 @@ Modular Storage（Kitchen）
 
 ---  
 
+## STR-014  
+
+**Brand**  
+
+nodel design  
+
+**Product**  
+
+Black Stand  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+STR-013  
+
+### Color  
+
+Black  
+
+### Material  
+
+Iron  
+
+### Industrial Attribute  
+
+Leg（Beck Container①用）  
+
+### Price  
+
+¥9,900  
+
+---  
+
 ## STR-015  
 
 **Brand**  
@@ -4254,6 +4268,42 @@ Modular Storage（Coffee & Table Components）
 ### Price  
 
 ¥55,000（2台合計¥110,000の折半）  
+
+---  
+
+## STR-017  
+
+**Brand**  
+
+nodel design  
+
+**Product**  
+
+Black Stand  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+STR-016  
+
+### Color  
+
+Black  
+
+### Material  
+
+Iron  
+
+### Industrial Attribute  
+
+Leg（Beck Container②用）  
+
+### Price  
+
+¥9,900  
 
 ---  
 
@@ -4793,70 +4843,6 @@ Consumables Storage
 ### Price  
 
 ¥2,980  
-
----  
-
-## STR-014  
-
-**Brand**  
-
-nodel design  
-
-**Product**  
-
-Black Stand  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Black  
-
-### Material  
-
-Iron  
-
-### Industrial Attribute  
-
-Leg（Beck Container①用）  
-
-### Price  
-
-¥9,900  
-
----  
-
-## STR-017  
-
-**Brand**  
-
-nodel design  
-
-**Product**  
-
-Black Stand  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Black  
-
-### Material  
-
-Iron  
-
-### Industrial Attribute  
-
-Leg（Beck Container②用）  
-
-### Price  
-
-¥9,900  
 
 ---  
 
@@ -6551,6 +6537,12 @@ Hook
 
 ---  
 
+## FIR-036  
+
+Vacant ID. Reserved for a fire pit currently under deliberation (see CZ-001 Deliberation Codex). To be registered upon purchase.  
+
+---  
+
 # Shelter  
 
 ---  
@@ -7666,6 +7658,30 @@ Light Domainを再編した。過去のバージョン7.38時点の作業（未�
 - AIR LIGHT本体（CARGO CONTAINER AIR LIGHT）12件のID表記を、「LGT-044a〜046d」形式から「LGT-04_Na」形式（N=グループ番号1〜3、a〜dは枝番）へ変更。数字とa/b/c/dの間にアンダーバーを挿入し、グループ番号を3桁（044〜046）から連番の1桁（1〜3）へ簡略化。最大IDはLGT-04_3d（12件＝3グループ×4）であることを確認。各アイテムのParent（対応シェード）は変更なし。
 - LGT-025（WWW_LANTHANUMHOOK）：Brandを「WHAT WE WANT（WWW）」から「WHAT WE WANT」へ訂正（表記統一）。
 - Related Documents：変更なし。
+
+---
+
+## Version 7.53
+
+プロジェクトオーナーの指示に基づき、Fire Domainの末尾に空き枠を新設した。
+
+### Changes
+
+- FIR-036：Vacant ID（空き枠）として新設。CZ-001 Deliberation Codexで検討中のFire Pit（候補：MT.SUMI Aura FG／FIREGRAPHIX BLISS-SP）のいずれかを購入した時点で、本IDへ登録する予定。Version 7.49で削除した旧FIR-030（検討中Fire Pit枠）の後継枠にあたる。
+- Related Documents：CZ-001 Deliberation Codex（Ver.2.15）、CZ-002 Vigil Protocol（Ver.2.14）のFire Pit参照をFIR-036へ同期。
+
+---
+
+## Version 7.54
+
+プロジェクトオーナーの決定・確認に基づき、Furniture／Storage Domainを修正した。
+
+### Changes
+
+- FUR-033（冬用トップキルト枠、Unconfirmed／Candidate）：冬用キルトはSnow Peak ダウン システムオフトン スリムマットセット（FUR-032）を採用したとのプロジェクトオーナーの決定により、Retired（FUR-032へ統合）とした。後続IDの番号は変更しない（FUR-034 Sleeping Mat、FUR-035 Pad Sheetは据え置き）。
+- FUR-032：Industrial Attribute内の「FUR-033系との併用時は…」の記述を、FUR-033の統合を示す記述へ更新。
+- STR-014・STR-017（nodel design Black Stand）：それぞれBeck Container ①（STR-013）・Beck Container ②（STR-016）の子部品であることをプロジェクトオーナーが確認。Parentフィールドを追加し（親側のChild Componentsには既に記載済み）、記載位置を親の直後（STR-013の次・STR-016の次）へ移動した。
+- Related Documents：CZ-001 Deliberation Codex（Ver.2.17。Winter Top Quiltの検討終了をDecision Logへ記録）。
 
 ---
 ## Document Renumbering Note

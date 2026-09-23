@@ -10,7 +10,7 @@ Deliberation Codex
 
 # Version
 
-2.14
+2.17
 
 # Status
 
@@ -113,7 +113,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ## Fire
 
-### Fire Pit（MD-004: FIR-030）
+### Fire Pit（MD-004: FIR-036、空き枠）
 
 **Status**：Under Evaluation
 
@@ -124,7 +124,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 | Ease of Clean-up | 多次燃焼構造で灰が比較的少量、炉板も軽量。灰受け自体の取り出しやすさは未確認（Gap） | ロストル形状変更で灰が捨てやすく改良済み。ただし「向き合う感覚」を重視し灰を残す運用哲学もあり |
 | Transport | 収納バッグ1つに全部品完結、総重量22kg | 本体単体16kg、煙突・スタンドは別売で管理単位が分散 |
 
-**Note**：旧FIR-020（BLISS-SP）はFIR-019（現FIR-030）へ統合済み。旧FIR-020は欠番として保持されていたが、MD-004 Version 7.38のFire Domain番号整理により当該レコード自体を削除した。統合の経緯はMD-004 Version 7.14を参照。
+**Note**：旧FIR-020（BLISS-SP）はFIR-019へ統合済み（その後FIR-030へ改番、MD-004 Version 7.49で削除）。現在はMD-004 Version 7.53で新設した空き枠FIR-036が本検討の登録先であり、いずれかの候補を購入した時点でFIR-036へ登録する。旧FIR-020は欠番として保持されていたが、MD-004 Version 7.38のFire Domain番号整理により当該レコード自体を削除した。統合の経緯はMD-004 Version 7.14を参照。
 
 **Unresolved Gaps**：MT.SUMI Aura FGの灰受け取り出しやすさは一次情報で未確認。両候補とも実物確認未実施。
 
@@ -134,23 +134,13 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ## Furniture
 
-### Winter Top Quilt（MD-004: FUR-032）
-
-**Status**：Under Evaluation
-
-| | 候補① Enlightened Equipment Accomplice | 候補② UGQ Outdoor Tango Duo |
-|---|---|---|
-| 仕様 | 2人用、2人用850fp／950fp選択可、パッド固定ストラップ標準装備、外側19色・内側12色フルカスタム | 2人用、850fp／900fp選択可、Made to Order、外冄50色以上・内冄11色フルカスタム |
-
-**Decision**：未決定
-
-### Winter Sleeping Mat（MD-004: FUR-033）
+### Winter Sleeping Mat（MD-004: FUR-034）
 
 **Status**：Candidate（比較対象なし、ブランド調査未着手）
 
-クローズドセルフォーム製。FUR-031（マット部）の下に敷く断熱補強・パンク保険として機能。
+クローズドセルフォーム製。FUR-032（マット部）の下に敷く断熱補強・パンク保険として機能。
 
-### Pad Sheet（MD-004: FUR-034）
+### Pad Sheet（MD-004: FUR-035）
 
 **Status**：Under Evaluation
 
@@ -165,13 +155,13 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 ## Light
 
-### Portable LED Lantern（MD-004: LGT-041）
+### Portable LED Lantern（MD-004: LGT-043 空き枠への充当を検討中）
 
 **Status**：Candidate（比較対象なし）
 
 検討中製品：wildingout「LF1984」。Brown、Walnut。
 
-（LGT-028グループの親子構造は、今回の整理対象外として据え置き）
+MD-004 Light Domain末尾の空き枠LGT-043（吊り下げ型ランタン用に確保）へ充当するかどうかを検討中。
 
 ---
 
@@ -203,12 +193,13 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 | ID | Product | Brand | Note |
 |---|---|---|---|
-| FUR-031 | ダウン システムオフトン スリムマットセット（BD-060、掛け布団+マット一式） | Snow Peak | 数量2 |
+| FUR-032 | ダウン システムオフトン スリムマットセット（BD-060、掛け布団+マット一式） | Snow Peak | 数量2 |
 
 ## Light
 
 | ID | Product | Brand | Note |
 |---|---|---|---|
+| LGT-017 | BABEL | OTEBO CRAFTS | — |
 | LGT-040 | RT-01AC01 / ECHO LAMP | rove troupe | — |
 | LGT-041 | DOME LOOK | KURASHI MADE | — |
 | LGT-042 | Pivotshade | IFA | — |
@@ -226,10 +217,10 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 |---|---|---|---|
 | STR-006 | SHELCON LEG 25 | BALLISTICS | Parent: STR-001 |
 | STR-012 | SHELCON LEG 25 | LOCKFIELD EQUIPMENT × BALLISTIC | Parent: STR-007 |
-| STR-014 | Wood Board（Oak） | nodel design | Parent: STR-013／数量2組 |
-| STR-016 | Wood Board（Walnut） | nodel design | Parent: STR-015／数量2組 |
-| STR-019 | Butterfly Under Shelf | nodel design | Parent: STR-017 |
-| STR-027 | Folding Wire T-box 全面コンプリートセット | KAZE_TO_MORI × WINDY AND RAINY | — |
+| STR-015 | Wood Board（Oak） | nodel design | Parent: STR-013／数量2組 |
+| STR-018 | Wood Board（Walnut） | nodel design | Parent: STR-016／数量2組 |
+| STR-021 | Butterfly Under Shelf | nodel design | Parent: STR-019 |
+| STR-030 | Folding Wire T-box 全面コンプリートセット | KAZE_TO_MORI × WINDY AND RAINY | — |
 
 ## Fire
 
@@ -251,6 +242,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 |---|---|---|---|
 | 2026-09 | Aroma | ARM-003 Vertical Diffuser | UNIT/04 × KUNST・BAUM SCENT TOWERを正式決定（Status: Essential）。詳細はMD-004参照。（決定当時のIDはARM-004。2026-09-19のMD-004 Version 7.34で番号入替） |
 | 2026-09-19 | Aroma | ARM-004 Incense Chamber | Filoméla INCENSE CHAMBER Tokyo LimitedのStatusをEssentialからUpgradeへ変更（MD-004 Version 7.34、MARI様のご指示）。Confirmed — Purchase Pendingから除外。旧ID: ARM-003。 |
+| 2026-09-23 | Furniture | FUR-033 Winter Top Quilt | 候補（Enlightened Equipment Accomplice／UGQ Outdoor Tango Duo）の検討を終了。冬用キルトはSnow Peak ダウン システムオフトン スリムマットセット（FUR-032）を採用（プロジェクトオーナー決定）。FUR-033はMD-004 Version 7.54でRetired（FUR-032へ統合）。 |
 
 ---
 
@@ -282,6 +274,9 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 2.12 | 2026-09-22 | MD-004 Version 7.49（Light Domain再修正：LGT-055〜058削除、LGT-003ブランド訂正、革シェード〈LGT-036〉のParent/Child解消、Glass Shade & Wood Stand Set/MMM Pocket ShadeのLGT-016子化、全体再連番）と連動し、Confirmed — Purchase Pending の Light 表を更新：LGT-038→LGT-048（RT-01AC01 / ECHO LAMP）、LGT-039→LGT-050（DOME LOOK）、LGT-040→LGT-052（Pivotshade）。 |
 | 2.13 | 2026-09-23 | MD-004 Version 7.50（LGT-017のLGT-016子化解消、LGT-018をOTEBO CRAFTS BABELへ差し替え、LGT-018a/018bをLGT-019a/019bへ改番、以降のLight Domain番号を1つずつ繰り下げ）と連動し、Confirmed — Purchase Pending の Light 表を更新：LGT-048→LGT-049（RT-01AC01 / ECHO LAMP）、LGT-050→LGT-051（DOME LOOK）、LGT-052→LGT-053（Pivotshade）。 |
 | 2.14 | 2026-09-23 | MD-004 Version 7.51（LGT-018/BABELの独立親化、LGT-034〜046ブロックのLGT-017直後への移動と並べ替え、AIR LIGHT群の4個単位グループ化、全体再連番）と連動し、Confirmed — Purchase Pending の Light 表を更新：LGT-049→LGT-040（RT-01AC01 / ECHO LAMP）、LGT-051→LGT-041（DOME LOOK）、LGT-053→LGT-042（Pivotshade）。 |
+| 2.15 | 2026-09-23 | MD-004（Version 7.53）との番号照合に基づき、プロジェクトオーナーの指示で参照を訂正。Furniture：Winter Top Quilt FUR-032→FUR-033、Winter Sleeping Mat FUR-033→FUR-034、Pad Sheet FUR-034→FUR-035、マット部参照 FUR-031→FUR-032（Under Consideration・Confirmed — Purchase Pending表）。Light：Portable LED Lantern（wildingout LF1984）の参照を削除済みの旧LGT-041から、空き枠LGT-043への充当検討へ変更。Storage：Wood Board（Oak）STR-014→STR-015、Wood Board（Walnut）STR-016→STR-018（Parent: STR-016）、Butterfly Under Shelf STR-019→STR-021（Parent: STR-019）。Fire：Fire Pit見出し・NoteをFIR-030（削除済み）からMD-004 Version 7.53新設の空き枠FIR-036へ更新。 |
+| 2.16 | 2026-09-23 | MD-004（Version 7.53）を正とした照合に基づき、Confirmed — Purchase Pending を訂正：Storage表のFolding Wire T-box 全面コンプリートセットをSTR-027→STR-030へ更新。Light表に、MD-004でStatus = Essentialでありながら未掲載だったLGT-017（OTEBO CRAFTS BABEL、MD-004 Version 7.50で登録）を追加。 |
+| 2.17 | 2026-09-23 | MD-004 Version 7.54と連動。Under ConsiderationからWinter Top Quilt（FUR-033）を削除し、Decision Logへ「Snow Peak ダウン システムオフトン（FUR-032）採用・FUR-033 Retired」を記録。Light欄の「LGT-028グループの親子構造は据え置き」の注記を削除（該当グループはMD-004上に存在しないため。プロジェクトオーナー確認）。 |
 
 ---
 
