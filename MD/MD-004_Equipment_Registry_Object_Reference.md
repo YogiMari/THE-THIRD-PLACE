@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.51  
+Version 7.52  
   
 ---  
   
@@ -2178,7 +2178,7 @@ Owned
 
 ### Child Components  
 
-- LGT-044a  
+- LGT-04_1a  
 
 ### Color  
 
@@ -2198,7 +2198,7 @@ Airlight Shade
 
 ---  
 
-## LGT-044a  
+## LGT-04_1a  
 
 **Brand**  
 
@@ -2250,7 +2250,7 @@ Owned
 
 ### Child Components  
 
-- LGT-044b  
+- LGT-04_1b  
 
 ### Color  
 
@@ -2270,7 +2270,7 @@ Airlight Shade
 
 ---  
 
-## LGT-044b  
+## LGT-04_1b  
 
 **Brand**  
 
@@ -2323,7 +2323,7 @@ Owned
 ### Child Components  
 
 - LGT-022  
-- LGT-044c  
+- LGT-04_1c  
 
 ### Color  
 
@@ -2387,7 +2387,7 @@ Lantern Stand（Base W160×D160×H15mm, Brass Pole H270mm, 1/4-inch screw thread
 
 ---  
 
-## LGT-044c  
+## LGT-04_1c  
 
 **Brand**  
 
@@ -2440,7 +2440,7 @@ Owned
 ### Child Components  
 
 - LGT-024  
-- LGT-044d  
+- LGT-04_1d  
 
 ### Color  
 
@@ -2512,7 +2512,7 @@ Tabletop Lantern Stand（Base W140×D150×H26mm, Brass Pole H190mm, 1/4-inch scr
 
 **Brand**  
 
-WHAT WE WANT（WWW）  
+WHAT WE WANT  
 
 **Product**  
 
@@ -2544,7 +2544,7 @@ Otachidai Bar（お立ち台バー）
 ¥1,320  
 
 ---  
-## LGT-044d  
+## LGT-04_1d  
 
 **Brand**  
 
@@ -2596,7 +2596,7 @@ Owned
 
 ### Child Components  
 
-- LGT-045a  
+- LGT-04_2a  
 
 ### Color  
 
@@ -2616,7 +2616,7 @@ Airlight Shade
 
 ---  
 
-## LGT-045a  
+## LGT-04_2a  
 
 **Brand**  
 
@@ -2970,7 +2970,7 @@ Owned
 
 ### Child Components  
 
-- LGT-045b  
+- LGT-04_2b  
 
 ### Color  
 
@@ -2990,7 +2990,7 @@ Airlight Shade
 
 ---  
 
-## LGT-045b  
+## LGT-04_2b  
 
 **Brand**  
 
@@ -3042,7 +3042,7 @@ Owned
 
 ### Child Components  
 
-- LGT-045c  
+- LGT-04_2c  
 
 ### Color  
 
@@ -3062,7 +3062,7 @@ Airlight Shade
 
 ---  
 
-## LGT-045c  
+## LGT-04_2c  
 
 **Brand**  
 
@@ -3114,7 +3114,7 @@ Owned
 
 ### Child Components  
 
-- LGT-045d  
+- LGT-04_2d  
 
 ### Color  
 
@@ -3134,7 +3134,7 @@ Airlight Shade
 
 ---  
 
-## LGT-045d  
+## LGT-04_2d  
 
 **Brand**  
 
@@ -3266,7 +3266,7 @@ Essential
 
 ### Child Components  
 
-- LGT-046a  
+- LGT-04_3a  
 
 ### Color  
 
@@ -3290,7 +3290,7 @@ Airlight Shade (Hanging)
 
 ---  
 
-## LGT-046a  
+## LGT-04_3a  
 
 **Brand**  
 
@@ -3342,7 +3342,7 @@ Essential
 
 ### Child Components  
 
-- LGT-046b  
+- LGT-04_3b  
 
 ### Color  
 
@@ -3366,7 +3366,7 @@ Airlight Shade (Hanging)
 
 ---  
 
-## LGT-046b  
+## LGT-04_3b  
 
 **Brand**  
 
@@ -3418,7 +3418,7 @@ Essential
 
 ### Child Components  
 
-- LGT-046c  
+- LGT-04_3c  
 
 ### Color  
 
@@ -3442,7 +3442,7 @@ Airlight Shade (Hanging)
 
 ---  
 
-## LGT-046c  
+## LGT-04_3c  
 
 **Brand**  
 
@@ -3484,11 +3484,11 @@ Vacant ID. Reserved for a fourth hanging-type Airlight shade, not yet identified
 
 ### Child Components  
 
-- LGT-046d  
+- LGT-04_3d  
 
 ---  
 
-## LGT-046d  
+## LGT-04_3d  
 
 **Brand**  
 
@@ -7654,6 +7654,18 @@ Light Domainを再編した。過去のバージョン7.38時点の作業（未�
 - CZ-001（Confirmed — Purchase Pending, Light表）、CZ-002（Watch List エントリ010〜012）のMD-004参照を新IDへ同期した（CZ-001 Ver.2.14、CZ-002 Ver.2.13）。
 
 - Related Documents：CZ-001 Deliberation Codex、CZ-002 Vigil Protocol（Light Domain関連のみ）。
+
+---
+
+## Version 7.52
+
+プロジェクトオーナー確認に基づき、Light Domainを再修正した。
+
+### Changes
+
+- AIR LIGHT本体（CARGO CONTAINER AIR LIGHT）12件のID表記を、「LGT-044a〜046d」形式から「LGT-04_Na」形式（N=グループ番号1〜3、a〜dは枝番）へ変更。数字とa/b/c/dの間にアンダーバーを挿入し、グループ番号を3桁（044〜046）から連番の1桁（1〜3）へ簡略化。最大IDはLGT-04_3d（12件＝3グループ×4）であることを確認。各アイテムのParent（対応シェード）は変更なし。
+- LGT-025（WWW_LANTHANUMHOOK）：Brandを「WHAT WE WANT（WWW）」から「WHAT WE WANT」へ訂正（表記統一）。
+- Related Documents：変更なし。
 
 ---
 ## Document Renumbering Note
