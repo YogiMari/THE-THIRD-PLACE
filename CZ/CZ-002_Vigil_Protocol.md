@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 2.12  
+**Version**: 2.13  
 **Status**: Official  
 **Owner**: THE THIRD PLACE
 
@@ -28,6 +28,7 @@
 | 2.10 | 2026-09-22 | MD-004 Light Zone再編（LGT-016・018〜020のLGT-035子化、LGT-027・028のLGT-036子化、AIR LIGHT群のa/b/c/d表記化、LGT-058クラッシュアイスのLGT-003移設に伴うLGT-003〜057全体繰り下げ）と連動し、MD-004 Referenceを更新：エントリ009（MIYABI RICH Alumi Frozen）をLGT-015からLGT-016へ、エントリ010（メッシュシェード）をLGT-028aからLGT-029aへ、エントリ011（POCKET SHADE M）をLGT-028bからLGT-029bへ、エントリ012（Pivotshade）をLGT-039からLGT-040へ更新。 |
 | 2.11 | 2026-09-22 | MD-004 Version 7.49（Light Domain再修正）と連動し、MD-004 Referenceを更新：エントリ010（メッシュシェード）をLGT-029aからLGT-018aへ、エントリ011（POCKET SHADE M）をLGT-029bからLGT-018bへ、エントリ012（Pivotshade）をLGT-040からLGT-052へ更新。エントリ009（MIYABI RICH Alumi Frozen、LGT-016）は今回の再編後も番号に変更がないため更新なし。 |
 | 2.12 | 2026-09-23 | MD-004 Version 7.50（LGT-017のLGT-016子化解消、LGT-018をOTEBO CRAFTS BABELへ差し替え、LGT-018a/018bをLGT-019a/019bへ改番、以降のLight Domain番号を1つずつ繰り下げ）と連動し、MD-004 Referenceを更新：エントリ010（メッシュシェード）をLGT-018aからLGT-019aへ、エントリ011（POCKET SHADE M）をLGT-018bからLGT-019bへ、エントリ012（Pivotshade）をLGT-052からLGT-053へ更新。エントリ009（MIYABI RICH Alumi Frozen、LGT-016）は今回の再編後も番号に変更がないため更新なし。 |
+| 2.13 | 2026-09-23 | MD-004 Version 7.51（LGT-018/BABELの独立親化、LGT-034〜046ブロックの移動・並べ替え、AIR LIGHT群の4個単位グループ化、全体再連番）と連動し、MD-004 Referenceを更新：エントリ010（メッシュシェード）をLGT-019aからLGT-017aへ、エントリ011（POCKET SHADE M）をLGT-019bからLGT-017bへ、エントリ012（Pivotshade）をLGT-053からLGT-042へ更新。エントリ009（MIYABI RICH Alumi Frozen、LGT-016）は今回の再編後も番号に変更がないため更新なし。 |
 
 ---
 
@@ -601,7 +602,7 @@ neru design works
 
 **MD-004 Reference**
 
-LGT-019a (Status: Candidate)
+LGT-017a (Status: Candidate)
 
 **Required Keywords**
 
@@ -624,7 +625,7 @@ POCKET SHADE M（neru design works柄）
 
 **MD-004 Reference**
 
-LGT-019b (Status: Candidate)
+LGT-017b (Status: Candidate)
 
 **Required Keywords**
 
@@ -647,7 +648,7 @@ Pivotshade
 
 **MD-004 Reference**
 
-LGT-053 (Status: Essential)
+LGT-042 (Status: Essential)
 
 **Required Keywords**
 

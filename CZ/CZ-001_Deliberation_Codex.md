@@ -10,7 +10,7 @@ Deliberation Codex
 
 # Version
 
-2.13
+2.14
 
 # Status
 
@@ -209,9 +209,9 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 | ID | Product | Brand | Note |
 |---|---|---|---|
-| LGT-049 | RT-01AC01 / ECHO LAMP | rove troupe | — |
-| LGT-051 | DOME LOOK | KURASHI MADE | — |
-| LGT-053 | Pivotshade | IFA | — |
+| LGT-040 | RT-01AC01 / ECHO LAMP | rove troupe | — |
+| LGT-041 | DOME LOOK | KURASHI MADE | — |
+| LGT-042 | Pivotshade | IFA | — |
 
 ## Aroma
 
@@ -281,6 +281,7 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 2.11 | 2026-09-22 | MD-004 Light Zone再編（LGT-016・018〜020のLGT-035子化、LGT-027・028のLGT-036子化、AIR LIGHT群のa/b/c/d表記化、LGT-058クラッシュアイスのLGT-003移設に伴うLGT-003〜057全体繰り下げ）と連動し、Confirmed — Purchase Pending の Light 表を更新：LGT-037→LGT-038（RT-01AC01 / ECHO LAMP）、LGT-038→LGT-039（DOME LOOK）、LGT-039→LGT-040（Pivotshade）。 |
 | 2.12 | 2026-09-22 | MD-004 Version 7.49（Light Domain再修正：LGT-055〜058削除、LGT-003ブランド訂正、革シェード〈LGT-036〉のParent/Child解消、Glass Shade & Wood Stand Set/MMM Pocket ShadeのLGT-016子化、全体再連番）と連動し、Confirmed — Purchase Pending の Light 表を更新：LGT-038→LGT-048（RT-01AC01 / ECHO LAMP）、LGT-039→LGT-050（DOME LOOK）、LGT-040→LGT-052（Pivotshade）。 |
 | 2.13 | 2026-09-23 | MD-004 Version 7.50（LGT-017のLGT-016子化解消、LGT-018をOTEBO CRAFTS BABELへ差し替え、LGT-018a/018bをLGT-019a/019bへ改番、以降のLight Domain番号を1つずつ繰り下げ）と連動し、Confirmed — Purchase Pending の Light 表を更新：LGT-048→LGT-049（RT-01AC01 / ECHO LAMP）、LGT-050→LGT-051（DOME LOOK）、LGT-052→LGT-053（Pivotshade）。 |
+| 2.14 | 2026-09-23 | MD-004 Version 7.51（LGT-018/BABELの独立親化、LGT-034〜046ブロックのLGT-017直後への移動と並べ替え、AIR LIGHT群の4個単位グループ化、全体再連番）と連動し、Confirmed — Purchase Pending の Light 表を更新：LGT-049→LGT-040（RT-01AC01 / ECHO LAMP）、LGT-051→LGT-041（DOME LOOK）、LGT-053→LGT-042（Pivotshade）。 |
 
 ---
 
