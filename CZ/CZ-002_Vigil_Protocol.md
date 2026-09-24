@@ -32,7 +32,7 @@
 | 2.14 | 2026-09-23 | MD-004（Version 7.53）との番号照合に基づき、プロジェクトオーナーの指示でMD-004 Referenceを訂正：エントリ017（Butterfly Under Shelf）をSTR-019からSTR-021へ、エントリ018（Wood Board）をSTR-014, STR-016からSTR-015, STR-018へ（Notes内の記述も同期）、エントリ021（MT.SUMI Aura FG）を削除済みのFIR-030からMD-004 Version 7.53新設の空き枠FIR-036へ更新。 |
 | 2.15 | 2026-09-23 | MD-004（Version 7.53）を正とした照合に基づき、エントリ009（MIYABI RICH Alumi Frozen）のMD-004 Reference のStatus表記をEssentialからOwnedへ訂正（MD-004上はOwned）。エントリ自体の扱い（Watch Listからの除外要否）は変更していない。 |
 | 2.16 | 2026-09-23 | MD-004（Version 7.54）を正としたWatch Listの整理（プロジェクトオーナー指示）。MD-004上でOwnedとなっている旧エントリ009（MIYABI RICH Alumi Frozen、LGT-016）を削除し、旧エントリ010〜021を009〜020へ繰り上げ。MD-004でStatus = Essentialながら未掲載だった3件を追加：021 OTEBO CRAFTS BABEL（LGT-017）、022 Snow Peak ダウン システムオフトン スリムマットセット（FUR-032）、023 KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリートセット（STR-030）。エントリ001・002・004・005・006・007にMD-004 Referenceを付記し、Brand表記をMD-004の公式表記へ統一（001 DEVISE WORKS × ANCAM、002 DEVISE WORKS × WANTKEY CAMP、004 rove troupe、006 wildingout、007 nodel design）。 |
-| 3.0 | 2026-09-24 | Volatility Restructureにより、実行プロトコル各章（II〜VII、Watch List Structure、Watch List Maintenance Rules、Operational Directives）をOP-009 Search Doctrine §XVIII. Patrol Protocolへ逐語移設した。責任範囲の変更のためMajor Version。 |
+| 3.0 | 2026-09-24 | Volatility Restructureにより、実行プロトコル各章（II〜VII、Watch List Structure、Watch List Maintenance Rules、Operational Directives）をOP-009 Search Doctrine §XVIII. Patrol Protocolへ逐語移設した。責任範囲の変更のためMajor Version。併せて、プロジェクトオーナーの確認により、エントリ003のBrandを「WANTKEY CAMP × LOCKFIELD EQUIPMENT」、Targetを「SC HANDLE WANTKEY Exclusive」へ確定（旧KN-004 Watch Listの表記を公式表記として採用）し、Required Keywordsに正式製品名を追加。 |
 
 ---
 
@@ -150,7 +150,7 @@ Watch Listを維持する際、それ以前のプロトコルの各セクショ�
 
 エントリ008〜023は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、BR-002 Barista Codex / BR-003 Acquisition Handbookが引き続き管轄する。
 
-エントリ001〜007にも、MD-004上の該当IDが存在するものについては**MD-004 Reference**を付記している（003 WANTKEY SC HANDLEはMD-004に該当IDなし）。MD-004上の製品が未確定（Brand / Product = Unconfirmed）の枠（FUR-034 Sleeping Mat、FUR-035 Pad Sheet）は、検索対象の製品が定まらないため本リストの対象外とし、CZ-001 Deliberation Codexで管理する。
+エントリ001〜007にも、MD-004上の該当IDが存在するものについては**MD-004 Reference**を付記している（003 WANTKEY CAMP × LOCKFIELD EQUIPMENT SC HANDLE WANTKEY ExclusiveはMD-004に該当IDなし）。MD-004上の製品が未確定（Brand / Product = Unconfirmed）の枠（FUR-034 Sleeping Mat、FUR-035 Pad Sheet）は、検索対象の製品が定まらないため本リストの対象外とし、CZ-001 Deliberation Codexで管理する。
 
 ## 001
 
@@ -208,14 +208,15 @@ FUR-017
 
 **Brand**
 
-WANTKEY CAMP
+WANTKEY CAMP × LOCKFIELD EQUIPMENT
 
 **Target**
 
-SC HANDLE
+SC HANDLE WANTKEY Exclusive
 
 **Required Keywords**
 
+- SC HANDLE WANTKEY Exclusive
 - SC HANDLE
 - sc handle
 - WANTKEY SC HANDLE
