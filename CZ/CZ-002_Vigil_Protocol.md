@@ -289,7 +289,7 @@ LF1984
 
 **MD-004 Reference**
 
-LGT-043
+LGT-043（本製品を充当するか検討中。CZ-001参照）
 
 **Required Keywords**
 
@@ -625,7 +625,7 @@ Aura FG
 
 **MD-004 Reference**
 
-FIR-036
+FIR-036（購入時に登録予定）
 
 **Required Keywords**
 

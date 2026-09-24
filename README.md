@@ -66,7 +66,7 @@ THE-THIRD-PLACE/
 
 ## 📚 ドキュメント一覧（Documentation）
 
-個別文書の一覧・役割・Authority・Volatility区分は、OP-008 Documentation System §8 Document Series を参照。
+個別文書の一覧・役割・Authority・Volatility区分は、OP-008 Documentation System §8 Document Series を参照。各文書のプロフィール文（日本語版・英語版）は OP-008 Appendix F — Document Profiles を参照。
 
 ### Volatility（変動性）区分
 
@@ -249,7 +249,7 @@ THE-THIRD-PLACE/
 
 ## 📚 Documentation
 
-For the full document catalog (ID, role, Authority, and Volatility), see OP-008 Documentation System §8 Document Series.
+For the full document catalog (ID, role, Authority, and Volatility), see OP-008 Documentation System §8 Document Series. For each document's profile text (Japanese and English), see OP-008 Appendix F — Document Profiles.
 
 ### Volatility Classification
 
