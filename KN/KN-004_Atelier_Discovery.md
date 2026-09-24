@@ -88,13 +88,7 @@ Atelier Discovery の冒頭に掲載し、
 
 ## Watch List
 
-| Priority | Brand | Product |
-|----------|-------|---------|
-| S | DEVISE WORKS × ANCAM | ANO D TENBAN |
-| S | WANTKEY CAMP × LOCKFIELD EQUIPMENT | SC HANDLE WANTKEY Exclusive |
-| S | rove troupe | ECHO LAMP |
-| S | wildingout | LF1984 |
-| S | KURASHI MADE | DOME LOOK |
+Watch List は CZ-002 Vigil Protocol を唯一の正本とする。
 
 ---
 
@@ -422,6 +416,12 @@ Projectへ届けるために存在する。
 ## Document Renumbering Note
 
 本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TM-002からKN-004へ番号を変更した。Editorial Rules及びMust Buy Watch内の他文書参照を新ID体系へ更新した。その他の内容に変更はない。旧ID: TM-002。
+
+---
+
+## Volatility Restructure Note
+
+本文書は、2026-09-24付のVolatility Restructureにより、§Watch Listの表を「Watch List は CZ-002 Vigil Protocol を唯一の正本とする」という参照文へ置換した（表データはCZ-002と重複していたため除去。CZ-002側に同一データが存在する）。
 
 ---
 
