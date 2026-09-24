@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.1  
+**Version**: 4.2  
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -65,14 +65,14 @@
 | Series | Documents | Status |
 |:------:|:---------:|:------:|
 | DS | 1 | ✓ |
-| OP | 9 | ✓ |
+| OP | 10 | ✓ |
 | DB | 1 | ✓ |
 | MD | 4 | ✓ |
 | BR | 3 | ✓ |
 | CZ | 2 | ✓ |
 | KN | 4 | ✓ |
 
-合計 24 文書。
+合計 25 文書。
 
 ---
 
@@ -94,6 +94,7 @@
 | 3.3 | 2026-09-19 | MARI様のご要望に基づき、Quick Accessを番号とタイトルのみの一覧から、各文書の役割を一言で示す早見表へ拡張。TP／PX／TM系列ごとに区分し、番号を記憶していなくても内容から文書を特定できる構成へ変更。 |
 | 4.0 | 2026-09-19 | プロジェクト全体の文書番号再編（OP-001 Constitution Ver.5.0 §27参照）に伴い、PX-002からDB-001へ番号を変更。Series表記をDB – Dashboard (Record)へ更新。Quick AccessおよびProject Overviewを、旧TP／PX／TM 3系列から新DS／OP／DB／MD／BR／CZ／KN 7系列（全24文書）へ全面的に再構成。Conversation Ledgerの Document 欄を新IDへ更新（Conversation Titleは当時のチャット名のため原文のまま保持）。 |
 | 4.1 | 2026-09-24 | Volatility Restructure（追補）により、Quick Accessの各シリーズ表（ひとことで言うと列）をOP-008 Documentation System §8 Document Series（Summary列）へ逐語移設し、参照文へ置換。冒頭の説明文は残置。Minor Version。 |
+| 4.2 | 2026-09-24 | OP-010新設がProject Overviewへ反映されていなかった漏れを修正（OP 9→10、合計24→25文書）。あわせてOP-005・OP-010・BR-002・BR-003・CZ-001の文書名重複解消による改名（OP-008 §11.1・OP-001 §12/Appendix B参照）を確認。本表は文書数のみを扱うためタイトル変更自体の反映事項はなし。Minor Version。 |
 
 ---
 
