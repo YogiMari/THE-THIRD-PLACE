@@ -1,5 +1,5 @@
 # MD-003 Galley Fare
-Version 2.14
+Version 2.15
 
 ---
 
@@ -1193,7 +1193,7 @@ asimocrafts × サンゾー工務店
 
 **Product**
 
-a384（表記要確認）
+A394
 
 **Status**
 
@@ -1201,11 +1201,11 @@ Owned
 
 ### Quantity
 
-6
+4
 
 ### Color
 
-Various（Multiple Colorways）
+Silver（Blade）／Red・Blue・Beige・Gray（Grip, 4色。MARI様確認）
 
 ### Material
 
@@ -1217,7 +1217,7 @@ None
 
 ### Industrial Attribute
 
-Collaboration BBQ Skewer（asimocrafts×サンゾー工務店コラボ品、1ID管理で複数色を包括）
+Collaboration BBQ Skewer（asimocrafts×サンゾー工務店コラボ品A394。CAN FEEL取扱ページで正式名称確認、旧表記「a384」を訂正。1ID管理で複数色を包括）
 
 ---
 
@@ -2574,7 +2574,7 @@ KIT-001
 
 ### Color
 
-Unconfirmed（型番末尾BRはBrownを示唆するが、現物未確認のため保留）
+Tan（MARI様確認）
 
 ### Material
 
@@ -2669,7 +2669,7 @@ Grip（KIT-073本体に一体で付属する竹製グリップ。単体では販
 
 **Brand**
 
-Unconfirmed
+DAMNGOOD!!
 
 **Product**
 
@@ -2681,11 +2681,11 @@ Owned
 
 ### Color
 
-Unconfirmed
+Black（MARI様確認）
 
 ### Material
 
-Unconfirmed
+Iron（MARI様確認）
 
 ### Industrial Attribute
 
@@ -2805,7 +2805,7 @@ Owned
 
 ### Color
 
-Unconfirmed
+Black（MARI様確認）
 
 ### Material
 
@@ -2836,11 +2836,11 @@ Owned
 
 ### Color
 
-Unconfirmed
+Gold（MARI様確認）
 
 ### Material
 
-Unconfirmed
+Brass（MARI様確認）
 
 ### Industrial Attribute
 
@@ -2991,7 +2991,7 @@ Owned
 
 ### Color
 
-Unconfirmed（展開色：BK／OD／COYOTE／GROW〈蓄光〉の4色中いずれか、現物未確認）
+Black（BK。MARI様確認）
 
 ### Material
 
@@ -3445,6 +3445,22 @@ MARI様による現物確認・公式ページ提供に基づき、Version 2.7�
 - KIT-084（旧「FB NO PLATE SKULL」）：MARI様のご指摘により、製品自体を「DAMNGOOD!!GARAGE FB NO PLATE SKULL」から「DAMAGE MARK×Geek Field アシナガプレート Geek ver.（Nitriding Steel）」へ訂正。Brand・Product・Color・Material・Industrial Attributeを全面的に更新。Priceも公式販売価格¥3,600へ更新したが、実購入額は別途確認が必要な旨を注記。
 - KIT-085（EWT CAP）：BrandをH&O BALLISTICSからH&O×BALLISTICSへ表記を整理。MaterialをBALLISTICS公式ページに基づきNylon Resinへ確定。Colorは展開色が4色（BK／OD／COYOTE／GROW）あり所有個体を特定できないため、Unconfirmedのまま保持。
 - 引き続きUnconfirmedのまま残る項目：KIT-033（a384、製品名自体が未確認）、KIT-072（Color）、KIT-075（FB NO GOTOKU!? YOTSUTOSHI MODEL、Brand・Color・Material）、KIT-079（Color）、KIT-080（バーナーノブ、Color・Material）、KIT-085（Color）。今後、プロジェクトオーナーによる現物確認または追加情報の提供を待つ。
+
+- Related Documents：変更なし。
+
+## Version 2.15
+
+MARI様の追加確認に基づき、Version 2.14時点で残っていたKIT-033・072・075・079・080・085のUnconfirmed項目を確定した。あわせて、KIT-033の製品名誤記（旧「a384」）をCAN FEEL取扱ページの確認により「A394」へ訂正した。
+
+### Changes
+
+- KIT-033（BBQ串）：ProductをA394へ訂正（asimocrafts×サンゾー工務店公式コラボ品、CAN FEEL取扱ページ確認）。Quantityを6から4へ訂正、ColorをSilver（Blade）／Red・Blue・Beige・Gray（Grip, 4色）へ確定（いずれもMARI様確認）。
+- KIT-072（和鉄ダッチオーブン収納ケースM）：ColorをTanへ確定（MARI様確認）。
+- KIT-075（FB NO GOTOKU!? YOTSUTOSHI MODEL）：BrandをDAMNGOOD!!、ColorをBlack、MaterialをIronへ確定（MARI様確認）。
+- KIT-079（雪峰苑たこ焼きプレート）：ColorをBlackへ確定（MARI様確認）。
+- KIT-080（バーナーノブ）：ColorをGold、MaterialをBrassへ確定（MARI様確認）。
+- KIT-085（EWT CAP）：Colorを展開色4色中のBlack（BK）へ確定（MARI様確認）。
+- これにより、MD-003全Owned項目のBrand・Color・Materialが確定した（KIT-033のQuantity/Color更新に伴う枝番Candidate等への影響なし）。
 
 - Related Documents：変更なし。
 
