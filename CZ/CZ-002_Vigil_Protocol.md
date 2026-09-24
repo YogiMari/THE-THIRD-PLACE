@@ -164,7 +164,7 @@ ANO D TENBAN
 
 **MD-004 Reference**
 
-FUR-016 (Status: Upgrade)
+FUR-016
 
 **Required Keywords**
 
@@ -190,7 +190,7 @@ ONETOP"D"
 
 **MD-004 Reference**
 
-FUR-017 (Status: Upgrade)
+FUR-017
 
 **Required Keywords**
 
@@ -238,7 +238,7 @@ RT-01 ECHO LAMP
 
 **MD-004 Reference**
 
-LGT-040 (Status: Essential)
+LGT-040
 
 **Required Keywords**
 
@@ -264,7 +264,7 @@ DOME LOOK
 
 **MD-004 Reference**
 
-LGT-041 (Status: Essential)
+LGT-041
 
 **Required Keywords**
 
@@ -289,7 +289,7 @@ LF1984
 
 **MD-004 Reference**
 
-LGT-043 (Status: Vacant — 本製品を充当するか検討中。CZ-001参照)
+LGT-043
 
 **Required Keywords**
 
@@ -314,7 +314,7 @@ Miyabi Wood
 
 **MD-004 Reference**
 
-LGT-033, LGT-034 (Status: Upgrade)
+LGT-033, LGT-034
 
 **Required Keywords**
 
@@ -342,7 +342,7 @@ Butterfly Table M Black Look
 
 **MD-004 Reference**
 
-FUR-026 (Status: Upgrade)
+FUR-026
 
 **Required Keywords**
 
@@ -367,7 +367,7 @@ neru design works
 
 **MD-004 Reference**
 
-LGT-017a (Status: Candidate)
+LGT-017a
 
 **Required Keywords**
 
@@ -390,7 +390,7 @@ POCKET SHADE M（neru design works柄）
 
 **MD-004 Reference**
 
-LGT-017b (Status: Candidate)
+LGT-017b
 
 **Required Keywords**
 
@@ -413,7 +413,7 @@ Pivotshade
 
 **MD-004 Reference**
 
-LGT-042 (Status: Essential)
+LGT-042
 
 **Required Keywords**
 
@@ -436,7 +436,7 @@ MKGP
 
 **MD-004 Reference**
 
-ARM-002 (Status: Essential)
+ARM-002
 
 **Required Keywords**
 
@@ -459,7 +459,7 @@ INCENSE CHAMBER Tokyo Limited
 
 **MD-004 Reference**
 
-ARM-004 (Status: Upgrade)
+ARM-004
 
 **Required Keywords**
 
@@ -482,7 +482,7 @@ SCENT TOWER
 
 **MD-004 Reference**
 
-ARM-003 (Status: Essential)
+ARM-003
 
 **Required Keywords**
 
@@ -505,7 +505,7 @@ SHELCON LEG 25
 
 **MD-004 Reference**
 
-STR-006, STR-012 (Status: Essential)
+STR-006, STR-012
 
 **Required Keywords**
 
@@ -529,7 +529,7 @@ Butterfly Under Shelf
 
 **MD-004 Reference**
 
-STR-021 (Status: Essential)
+STR-021
 
 **Required Keywords**
 
@@ -552,7 +552,7 @@ Wood Board
 
 **MD-004 Reference**
 
-STR-015, STR-018 (Status: Essential)
+STR-015, STR-018
 
 **Notes**
 
@@ -580,7 +580,7 @@ copper250
 
 **MD-004 Reference**
 
-FIR-025 (Status: Essential)
+FIR-025
 
 **Required Keywords**
 
@@ -602,7 +602,7 @@ FT no BARREL
 
 **MD-004 Reference**
 
-FIR-026 (Status: Upgrade)
+FIR-026
 
 **Required Keywords**
 
@@ -625,7 +625,7 @@ Aura FG
 
 **MD-004 Reference**
 
-FIR-036 (Status: Vacant — 購入時に登録予定)
+FIR-036
 
 **Required Keywords**
 
@@ -647,7 +647,7 @@ BABEL
 
 **MD-004 Reference**
 
-LGT-017 (Status: Essential)
+LGT-017
 
 **Required Keywords**
 
@@ -674,7 +674,7 @@ Snow Peak
 
 **MD-004 Reference**
 
-FUR-032 (Status: Essential)
+FUR-032
 
 **Required Keywords**
 
@@ -701,7 +701,7 @@ Folding Wire T-box 全面コンプリートセット
 
 **MD-004 Reference**
 
-STR-030 (Status: Essential)
+STR-030
 
 **Required Keywords**
 
