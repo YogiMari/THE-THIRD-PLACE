@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.0
+**Version**: 3.1
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -19,6 +19,7 @@
 | 1.2 | 2026-09-19 | Document Series一覧(§8)の反映漏れを修正。PX-007を「Reserved」からPX-007 Deliberation Codex（正式発行済み）へ更新。 |
 | 2.0 | 2026-09-19 | プロジェクト全体の文書番号再編（Constitution OP-001 Ver.5.0参照）に伴い、TP-001からOP-008へ番号を変更。本書が定義する文書体系そのものを、旧TP／PX／TM 3系列から、新DS／OP／記録（DB・MD・BR・CZ・KN）系列へ全面的に再構築した（Major Version）。§4 Project Architecture、§5 Series Responsibilities、§6 Responsibility Matrix、§8 Document Series、§11 Naming Convention、§13 SSOT Examples、§14 Reference Rules、§24 Referencesを新体系へ更新。§19の運用ルール番号を、もはや存在しないPX接頭辞から独立したDOC番号へ改称。 |
 | 3.0 | 2026-09-24 | Volatility Restructure。§8 Document Seriesを唯一の文書カタログへ拡張（Document ID／Title／Path／Role／Authority／Volatility列を新設、OP-010を追加）。§9にVolatility区分（Static／Periodic／Living）を新設。§24 Referencesの文書一覧を§8参照の1行へ置換。Rule DOC-06の自己矛盾を解消。責任範囲の変更のためMajor Version。（追補）Appendix F — Document Profilesを新設し、README.mdの全文書プロフィール文（日英）を逐語移設。§8にSummary列を新設し、DB-001 Quick Accessの「ひとことで言うと」列を逐語移設。DS-001・OP-008・BR-001〜003・CZ-001〜002のRole列を「See Appendix F」へ更新。BR-002・BR-003のAuthorityをSSOTへ変更（2026-09-24 MARI様承認）。 |
+| 3.1 | 2026-09-24 | MARI様のご指摘に基づき、§11 Naming Conventionへ文書名重複禁止ルール（Document Title Uniqueness Rule）を新設。制定にあたり、OP-010／MD-004のRegistry重複、OP-005／BR-003のAcquisition重複、BR-002／CZ-001のCodex重複が判明したため、OP-010をQualification Charterへ、OP-005をPursuit Strategyへ、BR-003をProcurement Handbookへ、BR-002をBarista Canonへ、CZ-001をDeliberation Dossierへそれぞれ改名し是正。§8カタログのTitle／Path列、Appendix Fの該当プロフィール文（日英）を同期。ファイル名もそれぞれ変更。 |
 
 ---
 
@@ -218,21 +219,21 @@ Authority 列は本 Version（3.0）で新設された分類である。BR-001�
 | OP-002 | Design Bible | `OP/OP-002_Design_Bible.md` | 管理対象<br>・空間思想<br>・デザイン原理<br>・空間全体の完成定義 | SSOT | Static | 空間づくりの設計思想 |
 | OP-003 | Affinity Lexicon | `OP/OP-003_Affinity_Lexicon.md` | 管理対象<br>Affinity Lexiconは、<br>Human Principlesから派生する<br>「好み」<br>を管理する文書である。<br>対象は、<br>ブランドではない。<br>美意識でもない。<br>人生を通して蓄積される<br>嗜好、<br>感性、<br>建築、<br>家具、<br>文化、<br>色、<br>素材、<br>音、<br>香り、<br>思想、<br>世界観<br>などを体系的に記録する。<br>Affinity Lexiconは、<br>Design Bibleを変更する権限を持たない。<br>Human Principlesを説明する補助資料として扱う。 | Standard | Static | 好み・美意識を表す語彙辞典 |
 | OP-004 | Aesthetic Grammar | `OP/OP-004_Aesthetic_Grammar.md` | 管理対象<br>・比率<br>・余白<br>・光と陰影<br>・素材と質感<br>・色<br>・構成と動線<br>・調和<br>Aesthetic Grammarは、<br>Affinity Lexiconが定義する語彙に、<br>「なぜ美しいのか」という法則を与える。 | Standard | Static | 「なぜそれが美しいのか」を説明する法則集 |
-| OP-005 | Acquisition Strategy | `OP/OP-005_Acquisition_Strategy.md` | 管理対象<br>・Acquisition Priority（Must Buy／High／Medium／Low）<br>・Acquisition Status（Planned／Watching／Ready／Acquired）<br>・月間予算<br>・市場監視<br>Acquisition Strategyは、<br>Equipment Registryの情報を基準に、<br>取得順序・取得時期を管理する。<br>Equipmentの詳細情報は保持しない。 | Standard | Static | 何を・いつ・どんな基準で迎えるかの戦略と月間予算 |
+| OP-005 | Pursuit Strategy | `OP/OP-005_Pursuit_Strategy.md` | 管理対象<br>・Acquisition Priority（Must Buy／High／Medium／Low）<br>・Acquisition Status（Planned／Watching／Ready／Acquired）<br>・月間予算<br>・市場監視<br>Pursuit Strategyは、<br>Equipment Registryの情報を基準に、<br>取得順序・取得時期を管理する。<br>Equipmentの詳細情報は保持しない。 | Standard | Static | 何を・いつ・どんな基準で迎えるかの戦略と月間予算 |
 | OP-006 | Foundation Compass | `OP/OP-006_Foundation_Compass.md` | 管理対象<br>・Equipment Module<br>・Vehicle Loading<br>・Deployment Sequence<br>・Recovery Sequence<br>・Seasonal Configuration<br>・Maintenance Cycle<br>Containerごとの具体的な役割・固定収納物は、<br>MD-001 Storage Blueprintが管理する。<br>本書では重複して記載しない。 | Standard | Static | 積載・設営・撤収・季節ごとの運用のしかた |
 | OP-007 | Habitat Architecture | `OP/OP-007_Habitat_Architecture.md` | 管理対象<br>・居住空間<br>・サイト構成<br>・ゾーニング<br>・空間構成 | Standard | Static | 現地で完成する暮らしの空間そのものの設計思想 |
 | OP-008 | Documentation System | `OP/OP-008_Documentation_System.md` | See Appendix F | Standard | Static | 文書運用ルールそのものの基準書 |
 | OP-009 | Search Doctrine | `OP/OP-009_Search_Doctrine.md` | 管理対象<br>・調査の哲学・方法論<br>・情報源の優先順位<br>・Difference Analysis手法<br>監視対象（Watch List）・調査キーワード自体は、<br>CZ-002 Vigil Protocolが管理する。 | Standard | Static | 調査の哲学・方法論 |
-| OP-010 | Registry Standard | `OP/OP-010_Registry_Standard.md` | OP-010 Registry Standard は、記録系列台帳（MD-002／MD-003／MD-004）の登録規則・評価基準を定義する。 | Standard | Static | (no source summary — OP-010 is new in this restructure; not present in the original DB-001 Quick Access table) |
+| OP-010 | Qualification Charter | `OP/OP-010_Qualification_Charter.md` | OP-010 Qualification Charter は、記録系列台帳（MD-002／MD-003／MD-004）の登録規則・評価基準を定義する。 | Standard | Static | 台帳（MD-002／003／004）の登録規則・評価基準の基準書 |
 | DB-001 | Project Ledger | `DB/DB-001_Project_Ledger.md` | 管理対象<br>・Conversation Ledger（会話記録・検索用ワード）<br>・Active Conversations<br>・Quick Access<br>Project Ledgerは、<br>重要な判断の記録先として、<br>本Constitution §9（記録）で参照される。 | Standard | Periodic | この文書。会話履歴・早見表・運用ダッシュボード |
 | MD-001 | Storage Blueprint | `MD/MD-001_Storage_Blueprint.md` | 管理対象<br>・収納<br>・収納ルール<br>・Container Assignment | SSOT | Living | 収納・コンテナの割り当てルール |
 | MD-002 | Field Atlas Landscape Framework | `MD/MD-002_Field_Atlas_Landscape_Framework.md` | 管理対象<br>・キャンプ場<br>・ロケーション<br>・適性評価<br>・運用条件 | SSOT | Periodic | キャンプ場・ロケーションの選定と評価 |
 | MD-003 | Galley Fare | `MD/MD-003_Galley_Fare.md` | 管理対象<br>・キッチン調理器具<br>・調理の機能的必然性に基づく選定基準<br>Galley Fareは、<br>Equipment Registryとは異なる評価軸を持つ、<br>独立したMaster Databaseである。<br>所作、<br>デザイン、<br>ブランドの格を、<br>必須条件としない。<br>実際に調理が成立する機能性を、<br>最優先とする。 | SSOT | Living | キッチン道具だけの独立した台帳 |
 | MD-004 | Equipment Registry Object Reference | `MD/MD-004_Equipment_Registry_Object_Reference.md` | 管理対象<br>・所有物<br>・購入予定<br>・Status<br>・Zone<br>・Category<br>・Official Name<br>Equipment Registryは、<br>Human Principlesとの美意識的整合を条件とする所有物の、<br>唯一のMaster Databaseである。<br>調理の機能的必然性に基づくキッチン機材は、<br>MD-003 Galley Fareが独立して管理する。 | SSOT | Living | 所有物・購入予定ギアの唯一の台帳（キッチン以外） |
 | BR-001 | Brew Care | `BR/BR-001_Brew_Care.md` | See Appendix F | Standard | Static | コーヒー機材のお手入れ・洗浄・保管ルール |
-| BR-002 | Barista Codex | `BR/BR-002_Barista_Codex.md` | See Appendix F | SSOT | Periodic | コーヒー機材の意思決定文書 |
-| BR-003 | Acquisition Handbook | `BR/BR-003_Acquisition_Handbook.md` | See Appendix F | SSOT | Living | コーヒー機材の調達先・価格・購入計画 |
-| CZ-001 | Deliberation Codex | `CZ/CZ-001_Deliberation_Codex.md` | See Appendix F | SSOT | Living | コーヒー以外のゾーンで検討中のギアの比較・検討記録 |
+| BR-002 | Barista Canon | `BR/BR-002_Barista_Canon.md` | See Appendix F | SSOT | Periodic | コーヒー機材の意思決定文書 |
+| BR-003 | Procurement Handbook | `BR/BR-003_Procurement_Handbook.md` | See Appendix F | SSOT | Living | コーヒー機材の調達先・価格・購入計画 |
+| CZ-001 | Deliberation Dossier | `CZ/CZ-001_Deliberation_Dossier.md` | See Appendix F | SSOT | Living | コーヒー以外のゾーンで検討中のギアの比較・検討記録 |
 | CZ-002 | Vigil Protocol | `CZ/CZ-002_Vigil_Protocol.md` | See Appendix F | SSOT | Living | 欲しいギアの市場監視・パトロールの実行手順 |
 | KN-001 | Heritage Chronicle | `KN/KN-001_Heritage_Chronicle.md` | 管理対象<br>・活動記録<br>・月次記録<br>・完成までの歩み<br>Chronicleは、<br>歴史を保存する文書である。<br>設計判断は記載しない。 | Archive | Static | プロジェクトの歴史・決定理由のアーカイブ |
 | KN-002 | Cultural Pantheon | `KN/KN-002_Cultural_Pantheon.md` | 管理対象<br>・ブランド文化<br>・Creator<br>・Community<br>・Gallery<br>・Shop<br>・Brand Tier（S〜D）<br>・Brand Lineage（系譜）<br>Cultural Pantheonは、<br>Equipment情報を保持しない。<br>ブランドの背景・思想のみを扱う。 | Reference | Static | ブランドの文化・背景・系譜のアーカイブ |
@@ -346,6 +347,28 @@ OP-008 Documentation System
 文書公開後は、Document ID を変更してはならない（2026-09-19付の文書番号再編は、プロジェクトオーナー自身による意図的なDocument Architecture変更であり、本原則の例外として正式に記録される。詳細はOP-001 Constitution §27参照）。
 
 Title の変更は必要最小限とする。
+
+---
+
+## 11.1 Document Title Uniqueness Rule（2026-09-24新設）
+
+文書タイトル（§8カタログのTitle列に記載される名称そのもの）は、既存の他文書のタイトルと同じ単語を含んではならない。
+
+本ルールは文書タイトルにのみ適用する。文書本文中の見出し・データ項目名（例：Acquisition Priority、Acquisition Status等の記録系フィールド名）や、Constitution §17が定義するCanonのような概念語の使用までは制限しない。
+
+文書公開後はDocument IDを変更してはならない、というNaming Convention本則は維持されるが、本ルールに抵触することが判明した既存タイトルについては、第11節の定める「必要最小限」の例外としてTitle変更を認める。
+
+制定時点（2026-09-24、MARI様のご指摘）で判明していた重複と是正内容は以下の通り。
+
+| 重複語 | 旧タイトル | 新タイトル |
+|---|---|---|
+| Registry | OP-010 Registry Standard | OP-010 Qualification Charter |
+| Acquisition | OP-005 Acquisition Strategy | OP-005 Pursuit Strategy |
+| Acquisition | BR-003 Acquisition Handbook | BR-003 Procurement Handbook |
+| Codex | BR-002 Barista Codex | BR-002 Barista Canon |
+| Codex | CZ-001 Deliberation Codex | CZ-001 Deliberation Dossier |
+
+新規文書を発行する際は、既存の全文書タイトル（§8参照）と語が重複しないことを、発行前に確認する。
 
 ---
 
@@ -795,11 +818,12 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 | OP-002 | Design Bible | 設計思想・評価基準・完成定義を定めるプロジェクトの根幹文書。空間を構成するDesign Domains（Furniture／Light／Aroma／Storage／Coffee／Fire）と、それを統一するDesign Language（Appearance／Industrial／Graphic／Harmony）の二層で設計体系を構成する。 |
 | OP-003 | Affinity Lexicon | 「好き」を判断のための共通言語として体系化する嗜好辞典。ブランドや製品そのものを管理する文書ではない。 |
 | OP-004 | Aesthetic Grammar | 比率・余白・光・素材・配置・所作など、美しさを成立させる法則を定義する美意識文法。Design Languageを補完する。 |
-| OP-005 | Acquisition Strategy | Equipmentを「いつ・どの順序で・どのような判断基準で迎えるか」を定める調達戦略文書。 |
+| OP-005 | Pursuit Strategy | Equipmentを「いつ・どの順序で・どのような判断基準で迎えるか」を定める調達戦略文書。 |
 | OP-006 | Foundation Compass | Equipmentを最も美しく、効率的に、一貫性を持って運用するための基盤指針。収納マニュアルではなく「運用の基盤」を定義する。 |
 | OP-007 | Habitat Architecture | Foundation Compassが定める基盤の上に築かれる、フィールドに完成する「暮らしの空間」そのものを設計する文書。 |
 | OP-008 | Documentation System | DS・OP・記録（DB・MD・BR・CZ・KN）の各系列が長期にわたり一貫した構造で運用されるための、文書の役割・分類・管理方法を定める文書体系全体の基準文書。 |
 | OP-009 | Search Doctrine | 情報をどのように発見・評価・解釈し、知識へ変換するかを定めるリサーチの哲学・方法論。実際の実行手順はCZ-002が別途管理する。 |
+| OP-010 | Qualification Charter | 記録系列台帳（MD-002 Field Atlas／MD-003 Galley Fare／MD-004 Equipment Registry）の登録規則・評価基準を定義する文書。データそのものは各台帳が保持する。 |
 
 ---
 
@@ -833,8 +857,8 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 | ID | Document | どのような文書か |
 | --- | --- | --- |
 | BR-001 | Brew Care | コーヒー器具のお手入れ・メンテナンスに関する基準を定める文書。 |
-| BR-002 | Barista Codex | Coffee System（コーヒー機材）に関する正式な意思決定・選定基準・ブランド判断を管理する仕様書。 |
-| BR-003 | Acquisition Handbook | BR-002で正式採用されたCoffee Equipmentについて、価格・購入先・輸送・関税など実際の調達情報を管理するハンドブック。 |
+| BR-002 | Barista Canon | Coffee System（コーヒー機材）に関する正式な意思決定・選定基準・ブランド判断を管理する仕様書。 |
+| BR-003 | Procurement Handbook | BR-002で正式採用されたCoffee Equipmentについて、価格・購入先・輸送・関税など実際の調達情報を管理するハンドブック。 |
 
 ---
 
@@ -844,7 +868,7 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 
 | ID | Document | どのような文書か |
 | --- | --- | --- |
-| CZ-001 | Deliberation Codex | Coffee Domain（BR系列管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire／Shelter）における検討中ギアの評価哲学・比較検討・購入待ちリストを管理する文書。 |
+| CZ-001 | Deliberation Dossier | Coffee Domain（BR系列管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire／Shelter）における検討中ギアの評価哲学・比較検討・購入待ちリストを管理する文書。 |
 | CZ-002 | Vigil Protocol | ガレージブランドや市場の動向を継続的に監視し、入手機会の鮮度（Freshness）を評価するリサーチ運用プロトコル。 |
 
 ---
@@ -885,11 +909,12 @@ The series defining THE THIRD PLACE's design philosophy, rules, and laws themsel
 | OP-002 | Design Bible | The project's foundational document, defining design philosophy, evaluation criteria, and the definition of completion. Its design framework has two layers: the Design Domains that compose the space (Furniture / Light / Aroma / Storage / Coffee / Fire) and the Design Language that unifies them (Appearance / Industrial / Graphic / Harmony). |
 | OP-003 | Affinity Lexicon | A dictionary that systematizes "what is liked" as a shared vocabulary for judgment. It does not manage brands or products themselves. |
 | OP-004 | Aesthetic Grammar | Defines the laws that constitute beauty — proportion, margin, light, material, composition, gesture — complementing the Design Language. |
-| OP-005 | Acquisition Strategy | Defines when, in what order, and by what criteria Equipment is acquired. |
+| OP-005 | Pursuit Strategy | Defines when, in what order, and by what criteria Equipment is acquired. |
 | OP-006 | Foundation Compass | The operational foundation for running Equipment as beautifully, efficiently, and consistently as possible. Not a storage manual — it defines the "foundation of operation" itself. |
 | OP-007 | Habitat Architecture | Building on the foundation defined by Foundation Compass, this document designs the completed living space itself as it appears in the field. |
 | OP-008 | Documentation System | The foundational standard for the entire documentation system, defining the roles, classification, and management rules of documents so that the DS, OP, and Record (DB / MD / BR / CZ / KN) series remain structurally consistent over the long term. |
 | OP-009 | Search Doctrine | Defines the philosophy and methodology of research — how information should be discovered, evaluated, interpreted, and turned into knowledge. Actual operational execution is separately governed by CZ-002. |
+| OP-010 | Qualification Charter | Defines the registration rules and evaluation criteria for the record-series ledgers (MD-002 Field Atlas / MD-003 Galley Fare / MD-004 Equipment Registry). The data itself remains held by each ledger. |
 
 ---
 
@@ -923,8 +948,8 @@ The series managing decisions, procurement, and care for coffee equipment.
 | ID | Document | What this document is |
 | --- | --- | --- |
 | BR-001 | Brew Care | Defines the standards for cleaning and maintaining coffee equipment. |
-| BR-002 | Barista Codex | The official specification governing decisions, selection criteria, and brand judgments for the Coffee System. |
-| BR-003 | Acquisition Handbook | Manages the actual procurement information — price, purchase source, shipping, import duties — for Coffee Equipment officially adopted in BR-002. |
+| BR-002 | Barista Canon | The official specification governing decisions, selection criteria, and brand judgments for the Coffee System. |
+| BR-003 | Procurement Handbook | Manages the actual procurement information — price, purchase source, shipping, import duties — for Coffee Equipment officially adopted in BR-002. |
 
 ---
 
@@ -934,7 +959,7 @@ The series managing deliberation and market monitoring for zones outside coffee.
 
 | ID | Document | What this document is |
 | --- | --- | --- |
-| CZ-001 | Deliberation Codex | Manages zone evaluation philosophy, in-progress equipment deliberation, and the purchase-pending list for all zones outside the Coffee Domain governed by the BR series (Furniture / Light / Aroma / Storage / Fire / Shelter). |
+| CZ-001 | Deliberation Dossier | Manages zone evaluation philosophy, in-progress equipment deliberation, and the purchase-pending list for all zones outside the Coffee Domain governed by the BR series (Furniture / Light / Aroma / Storage / Fire / Shelter). |
 | CZ-002 | Vigil Protocol | A research operations protocol for continuously monitoring garage brands and market trends, evaluating the freshness of acquisition opportunities. |
 
 ---
