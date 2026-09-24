@@ -234,6 +234,7 @@ THE THIRD PLACE Core Documents の一つとして、
 - OP-004 Aesthetic Grammar
 - MD-001 Storage Blueprint
 - MD-003 Galley Fare
+- OP-010 Registry Standard
 
 Field Atlas は、
 

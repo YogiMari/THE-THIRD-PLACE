@@ -3049,6 +3049,7 @@ THE THIRD PLACE Core Documents の中で、
 | OP-004 Aesthetic Grammar | 美しさを構成する法則 |
 | MD-001 Storage Blueprint | 収納設計・運用 |
 | **MD-003 Galley Fare** | キッチン機材の独立マスターデータ |
+| OP-010 Registry Standard | Selection Standard・Registry Rulesの登録規則 |
 
 ---
 

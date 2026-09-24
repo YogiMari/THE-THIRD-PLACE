@@ -6754,6 +6754,7 @@ Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning�
 - MD-001 Storage Blueprint  
 - MD-003 Galley Fare  
 - CZ-001 Deliberation Codex  
+- OP-010 Registry Standard  
 
 ---  
 
