@@ -11,7 +11,7 @@ Barista Codex
     
 # Version    
     
-3.8    
+4.0    
     
 # Status    
     
@@ -55,83 +55,7 @@ Acquisition Handbook
     
 ## Design Principles    
     
-Coffee Equipmentは以下を満たすもののみ採用する。    
-    
-* Portable Luxury    
-* Architectural Simplicity    
-* Long-term Ownership    
-* High Reliability    
-* Workflow Optimization    
-* Repairability    
-* Functional Beauty    
-* Design Bibleとの整合    
-* Foundation Compassとの整合    
-    
-以下は評価対象としない。    
-    
-* Popularity    
-* SNS    
-* Review Count    
-* Rarity    
-* Collector Value    
-* Price    
-    
----    
-    
-## Coffee Zone Philosophy (Exception Clause)    
-    
-Coffee Zoneは、THE THIRD PLACE全体のBaselineに対する明示的な例外領域として扱う。    
-    
-THE THIRD PLACE全体では、Popularity・SNS・Rarity・Collector Value・Priceを評価対象とせず、Workflow最適化と機能的合理性を優先する。    
-    
-Coffee Zoneに限り、以下の独自Philosophyを正式に適用する。他ドメイン（Furniture / Light / Aroma / Storage / Fire）には適用しない。    
-    
----    
-    
-### 1. Non-Rational Luxury Principle（無駄を選び取る審美性）    
-    
-Coffee Zoneでは、機能的合理性を上回る場合でも、素材・機構そのものの贅沢さを理由に採用することを正式に許容する。    
-    
-THE THIRD PLACE全体の原則は「無駄を削ぎ落とす」ことにあるが、Coffee Zoneにおいては「機能的に不要な贅沢を、その不要さゆえに選び取る」ことこそが最も THE THIRD PLACE的な表現となりうる。    
-    
-**Reference Case**    
-    
-WDT Toolの選定において、機能面で既存ツールを上回る優位性を持たない真鍮製ギア機構（Weber Workshops MOONRAKER Ultra Edition）を、その機能的必要性ではなく「Swiss watchmaking」という物語性・所作の贅沢さを理由に選定した判断（58mm仮説 Workflow検討, 2026-09）。    
-    
----    
-    
-### 2. Cross-Brand Curation Principle（単一ブランド一式禁止・カテゴリ別最良ブランド選定）    
-    
-Coffee Zoneでは、単一ブランドでEquipment一式を統一しない。    
-    
-各カテゴリ（Distribution Tool / Tamper / WDT Tool / Blind Shaker / Tamping Station 等）ごとに、そのカテゴリにおいて最良と判断したブランドを個別に選定し、複数ブランドを意図的に組み合わせる。    
-    
-**Exception**    
-    
-特定ブランドが、その年のコレクション／ラインとして複数カテゴリを横断する「完成されたルック」を意図的に設計・販売している場合に限り、そのセットとしての採用を許容する。    
-    
-**Origin**    
-    
-この原則は、Mari個人のファッション観（全身を単一ブランドで統一しない／その年のコレクションとして完成されたルックである場合を除き、鞘・靴等のカテゴリごとに個別ブランドを選ぶ）をCoffee Zoneに適用したものである（2026-09）。    
-    
-    
----    
-    
-### 3. Category Tier Exception（カテゴリ構造起因のTier例外）    
-    
-Coffee Zoneでは、ブランドで選ぶこと自体は正式な原則（Cross-Brand Curation Principle）として許容している。    
-    
-ただし、Coffee Zoneを構成するブランドは、原則としてPortable Luxury・Architectural Simplicity・Industrial Designを体現する Tier A水準（9Barista、Option-O、MantaBrew、Weber Workshops、Saint Anthony Industries、Pullman等）で統一する。    
-    
-以下2カテゴリについては、カテゴリの市場構造そのものにTier A水準の選択肢が存在しないため、機能・素材適合を理由とした明示的な例外として記録する。ブランドの格が届いていないことを認識しないまま採用した状態と、認識した上で機能を理由に採用した状態は区別する。    
-    
-**Milk Pitcher / Pitcher Sleeve（WPM）**    
-    
-ミルクピッチャーというカテゴリには、Weber Workshops・Pullman・Saint Anthony Industries水準の設計・製造一貫型ブティックブランドが実質的に存在しない（市場調査：2026-09）。WPMは競技バリスタ用品市場の中で機能的に妥当な選択だが、Reasonに記載の採用理由はラテアート習得のしやすさという機能面のみであり、他のConfirmed Equipmentが共通して備えるブランド哲学・素材の贅沢さへの言及を欠く。カテゴリ構造上の制約による例外として正式に記録する。    
-    
-**Tool Station（KNODOS）**    
-    
-KNODOSは "Premium Espresso Accessories for Home Baristas" を自認するホームバリスタ向けアクセサリーブランドであり、9Barista・Weber Workshops等が想定するプロ・競技・コレクター水準の顧客層とは異なる。ただし採用理由はWalnut素材によるDesign Bibleとの整合性、およびThe Blocとの役割分離（Tool Station機能）であり、天板保護という裏方機能に対する適材適所の選定として妥当と判断する。ブランド格ではなく、素材とWorkflow機能を理由とした例外として正式に記録する。    
+→ OP-002 Design Bible §05. Coffee（コーヒー）を参照。
     
 ---    
     
@@ -1864,6 +1788,7 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 3.6 | 2026-09 | Coffee Beansを本文書の管理対象から除外。豆は消耗品としてPX-005 Acquisition Handbookの「Coffee Beans Procurement」セクションのみで管理する方針を確立し、Pending項目から削除（PX-005 Ver.2.0と対応）。 |  
 | 3.7 | 2026-09-18 | Espresso Machineセクションへ「Handle Material Decision」を新設。9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）を、9Barista公式スペアパーツのWalnut仕様へ変更することを正式決定。Design Bibleの核となる素材言語（Walnut・Brass・Black Steel）との整合を採用理由とした。MARI様の直接指示（2026-09-18）に基づく。 |  
 | 3.8 | 2026-09-19 | 誤字・脱字の訂正のみ（内容の変更なし）。「賅沢」→「贅沢」、「真鑑製」→「真鍮製」、「仈説」→「仮説」、「针」→「針」、「1泲2日」→「1泊2日」、「昇食後」→「昼食後」、「同ゆ」→「同じ」、「当詬」→「当該」、「含ゅ」→「含む」、「およど／およぱ」→「および」、「Shakerど」→「Shakerと」、「Workflowい」→「Workflowは」、「Bek Container」→「Beck Container」、「非気低減」→「静電気低減」、全角スペース→「、」（Version History内の該当行の誤字も同様に訂正。旧IDの表記は歴史的記録として保持）。 |  
+| 4.0 | 2026-09-24 | Volatility Restructureにより、Design PrinciplesとCoffee Zone Philosophy (Exception Clause)をOP-002 Design Bible §05. Coffeeへ逐語移設し、本節を参照1行へ置換。責任範囲の変更のためMajor Version。 |  
   
 ---  
 

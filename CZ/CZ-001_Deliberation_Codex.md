@@ -10,7 +10,7 @@ Deliberation Codex
 
 # Version
 
-2.17
+3.0
 
 # Status
 
@@ -72,38 +72,7 @@ CZ-001 Deliberation Codex
 
 # Zone Evaluation Philosophy（恒久）
 
-## Fire
-
-Fire Domainの機材は、以下4軸で評価する。
-
-1. **Form（意匠美）** — ギア本体・道具そのものの造形的な美しさ
-2. **Flame Aesthetics（炎の見え方）** — 燃焼中の炎そのものの視覚的な美しさ
-3. **Ease of Clean-up（撤収容易性）** — 灰処理・撤収にかかる手間
-4. **Transport（積載のしやすさ）** — 車両への積載・収納の一体性
-
-以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）：Popularity／SNS／Review Count／Rarity／Collector Value／Price。
-
-Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則」の例外領域ではない。機能を伴わない贅沢の採用は正式に許容しない。
-
-## Furniture
-
-未策定。
-
-## Light
-
-未策定。
-
-## Aroma
-
-未策定。
-
-## Storage
-
-未策定（現時点でCandidate項目なし）。
-
-## Shelter
-
-未策定（現時点でCandidate項目なし）。
+→ OP-002 Design Bible §Design Domains（各ドメイン節 Zone Evaluation Philosophy）を参照。
 
 ---
 
@@ -269,6 +238,7 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 2.7 | 2026-09-19 | MD-004 Version 7.36（Furniture Domain番号整理・二回目）と連動し、FUR-022→FUR-032、FUR-023→FUR-033、FUR-021→FUR-031（2箇所）、FUR-024→FUR-034参照を更新。 |
 | 2.8 | 2026-09-19 | MD-004 Version 7.38（Fire Domain番号整理）と連動し、FIR-019→FIR-030（Fire Pit見出し・Confirmed — Purchase Pending表）、FIR-014→FIR-025・FIR-012→FIR-023（Confirmed — Purchase Pendingの表、Parent表記）参照を更新。旧FIR-020（BLISS-SP）に関するNoteを、MD-004側で当該レコード自体が削除されたことを反映した記述へ更新。Version 1.0・2.1の過去行は歴史的記録として遡及修正しない。 |
 | 2.9 | 2026-09-20 | MD-004 Version 7.25で新設されたShelter Domain（現在SHL-001〜SHL-005、すべてOwned）が、本書の対象ゾーン表記に反映されていなかったため補完。Purpose（対象ゾーン・Confirmed — Purchase Pendingの対象）へShelterを追加し、Zone Evaluation Philosophy・Under Consideration・Confirmed — Purchase Pendingへ Shelter 見出しを新設（いずれも現時点で該当項目なし）。Version 1.0〜2.8の過去行は歴史的記録として遡及修正しない。 |
+| 3.0 | 2026-09-24 | Volatility Restructureにより、Zone Evaluation Philosophy（恒久）の各ドメイン節をOP-002 Design Bible §Design Domainsへ逐語移設し、本節を参照1行へ置換。責任範囲の変更のためMajor Version。 |
 | 2.10 | 2026-09-20 | MD-004 Version 7.37（Storage Domain番号整理）と連動した点検で、Confirmed — Purchase Pending の Storage 表に、MD-004で Status = Essential でありながら未掲載だった STR-027（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリートセット。旧STR-028）を追加。表の収録は、MD-004 の Essential 全13件（Coffee除く）と一致した。 |
 | 2.11 | 2026-09-22 | MD-004 Light Zone再編（LGT-016・018〜020のLGT-035子化、LGT-027・028のLGT-036子化、AIR LIGHT群のa/b/c/d表記化、LGT-058クラッシュアイスのLGT-003移設に伴うLGT-003〜057全体繰り下げ）と連動し、Confirmed — Purchase Pending の Light 表を更新：LGT-037→LGT-038（RT-01AC01 / ECHO LAMP）、LGT-038→LGT-039（DOME LOOK）、LGT-039→LGT-040（Pivotshade）。 |
 | 2.12 | 2026-09-22 | MD-004 Version 7.49（Light Domain再修正：LGT-055〜058削除、LGT-003ブランド訂正、革シェード〈LGT-036〉のParent/Child解消、Glass Shade & Wood Stand Set/MMM Pocket ShadeのLGT-016子化、全体再連番）と連動し、Confirmed — Purchase Pending の Light 表を更新：LGT-038→LGT-048（RT-01AC01 / ECHO LAMP）、LGT-039→LGT-050（DOME LOOK）、LGT-040→LGT-052（Pivotshade）。 |

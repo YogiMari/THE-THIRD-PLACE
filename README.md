@@ -66,90 +66,17 @@ THE-THIRD-PLACE/
 
 ## 📚 ドキュメント一覧（Documentation）
 
-### 🏛 DS — Design（設計・絶対不変）
+個別文書の一覧・役割・Authority・Volatility区分は、OP-008 Documentation System §8 Document Series を参照。各文書のプロフィール文（日本語版・英語版）は OP-008 Appendix F — Document Profiles を参照。
 
-THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
+### Volatility（変動性）区分
 
-| ID | Document | どのような文書か |
-| --- | --- | --- |
-| DS-001 | Original | プロジェクトの原典。特定のギアやデザインではなく、著者が人生を通して辿り着いた「判断原理」そのものを記録した最上位文書。 |
+| 区分 | 説明 |
+| --- | --- |
+| Static | 原則更新されない（規則・原典・編集方針） |
+| Periodic | 決定の変化時に更新する |
+| Living | 台帳・リスト。頻繁に更新される前提 |
 
----
-
-### ⚙️ OP — Operation（運用・定義）
-
-設計思想・規則・法則そのものを定義するシリーズ。
-
-| ID | Document | どのような文書か |
-| --- | --- | --- |
-| OP-001 | Constitution | プロジェクト全体を支える最高位文書。Human Principles・Design Principles・文書体系（Document Architecture）・SSOT・ブランドとの向き合い方（Brand Philosophy）・意思決定の構造（Decision Philosophy）・AI／GitHub運用原則を定義する。 |
-| OP-002 | Design Bible | 設計思想・評価基準・完成定義を定めるプロジェクトの根幹文書。空間を構成するDesign Domains（Furniture／Light／Aroma／Storage／Coffee／Fire）と、それを統一するDesign Language（Appearance／Industrial／Graphic／Harmony）の二層で設計体系を構成する。 |
-| OP-003 | Affinity Lexicon | 「好き」を判断のための共通言語として体系化する嗜好辞典。ブランドや製品そのものを管理する文書ではない。 |
-| OP-004 | Aesthetic Grammar | 比率・余白・光・素材・配置・所作など、美しさを成立させる法則を定義する美意識文法。Design Languageを補完する。 |
-| OP-005 | Acquisition Strategy | Equipmentを「いつ・どの順序で・どのような判断基準で迎えるか」を定める調達戦略文書。 |
-| OP-006 | Foundation Compass | Equipmentを最も美しく、効率的に、一貫性を持って運用するための基盤指針。収納マニュアルではなく「運用の基盤」を定義する。 |
-| OP-007 | Habitat Architecture | Foundation Compassが定める基盤の上に築かれる、フィールドに完成する「暮らしの空間」そのものを設計する文書。 |
-| OP-008 | Documentation System | DS・OP・記録（DB・MD・BR・CZ・KN）の各系列が長期にわたり一貫した構造で運用されるための、文書の役割・分類・管理方法を定める文書体系全体の基準文書。 |
-| OP-009 | Search Doctrine | 情報をどのように発見・評価・解釈し、知識へ変換するかを定めるリサーチの哲学・方法論。実際の実行手順はCZ-002が別途管理する。 |
-
----
-
-### 📊 DB — Dashboard
-
-プロジェクトの現在の進行状況を記録するシリーズ。
-
-| ID | Document | どのような文書か |
-| --- | --- | --- |
-| DB-001 | Project Ledger | プロジェクトの唯一の運用ダッシュボード。Current Focus・Active Conversationsに加え、目的のチャットを最短で探すConversation Ledger、番号を覚えていなくても文書を特定できるQuick Access（早見表）、系列別の文書数を示すProject Overviewを管理する「生きた文書（Living Document）」。 |
-
----
-
-### 🗃 MD — Master Data
-
-所有物・場所の台帳を管理するシリーズ。
-
-| ID | Document | どのような文書か |
-| --- | --- | --- |
-| MD-001 | Storage Blueprint | 収納の配置、パッキング手順、設営・撤収の手順など、Storageを一つの運用システムとして定義する文書。 |
-| MD-002 | Field Atlas Landscape Framework | フィールド・ロケーションなど、プロジェクトが展開される「舞台」そのものの選定基準を定義する。 |
-| MD-003 | Galley Fare | キッチン機材（調理器具・刃物・調理小物）を、MD-004とは独立した実用性優先の基準で管理するMaster Document。 |
-| MD-004 | Equipment Registry Object Reference | 所有物（Equipment）に関する唯一のマスターデータベース。Design Bibleとの美意識的整合を選定条件とし、7つのDomain（Furniture／Light／Aroma／Storage／Coffee／Fire／Shelter）のEquipment・Components・親子関係・Material・Color・Attribute・Ownership Statusを管理する。Coffee機材は購入されOwnedになった時点で初めて登録する。 |
-
----
-
-### ☕ BR — Barista
-
-コーヒー機材の意思決定・調達・お手入れを管理するシリーズ。
-
-| ID | Document | どのような文書か |
-| --- | --- | --- |
-| BR-001 | Brew Care | コーヒー器具のお手入れ・メンテナンスに関する基準を定める文書。 |
-| BR-002 | Barista Codex | Coffee System（コーヒー機材）に関する正式な意思決定・選定基準・ブランド判断を管理する仕様書。 |
-| BR-003 | Acquisition Handbook | BR-002で正式採用されたCoffee Equipmentについて、価格・購入先・輸送・関税など実際の調達情報を管理するハンドブック。 |
-
----
-
-### 🔭 CZ — Cross-Zone Ops
-
-コーヒー以外のゾーンの検討・市場監視を管理するシリーズ。
-
-| ID | Document | どのような文書か |
-| --- | --- | --- |
-| CZ-001 | Deliberation Codex | Coffee Domain（BR系列管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire／Shelter）における検討中ギアの評価哲学・比較検討・購入待ちリストを管理する文書。 |
-| CZ-002 | Vigil Protocol | ガレージブランドや市場の動向を継続的に監視し、入手機会の鮮度（Freshness）を評価するリサーチ運用プロトコル。 |
-
----
-
-### 📖 KN — Knowledge
-
-知の蓄積・文化アーカイブを管理するシリーズ。
-
-| ID | Document | どのような文書か |
-| --- | --- | --- |
-| KN-001 | Heritage Chronicle | プロジェクトの重要な意思決定・設計思想の変化・Equipment構成の変遷を時系列で記録する公式アーカイブ。「なぜその判断をしたのか」を未来の自分が理解するための知識資産。 |
-| KN-002 | Cultural Pantheon（旧題: Cultural Reference） | ブランドそのものではなく、ブランドを生み出した思想・人物・コミュニティ・ショップ・系譜を記録する公式カルチャーリファレンス。 |
-| KN-003 | Beyond Journey | キャンプという趣味に留まらず、建築・家具・照明・工業デザイン・自動車・写真・ライフスタイルなど分野横断でTHE THIRD PLACEの美意識を育てるカルチャーマガジン。 |
-| KN-004 | Atelier Discovery | ガレージブランド・アウトドアブランド・市場動向をリサーチするメディア。ブランドの宣伝ではなく、動向の観察を目的とする。冒頭に、最優先購入対象を継続監視するMust Buy Dashboardを常設する。 |
+Static 文書に Living データを置かない。Living 文書に恒久ルールを置かない。詳細は OP-008 §9.3 を参照。
 
 ---
 
@@ -322,90 +249,17 @@ THE-THIRD-PLACE/
 
 ## 📚 Documentation
 
-### 🏛 DS — Design (Absolute, Immutable)
+For the full document catalog (ID, role, Authority, and Volatility), see OP-008 Documentation System §8 Document Series. For each document's profile text (Japanese and English), see OP-008 Appendix F — Document Profiles.
 
-The series holding THE THIRD PLACE's immutable philosophical origin.
+### Volatility Classification
 
-| ID | Document | What this document is |
-| --- | --- | --- |
-| DS-001 | Original | The project's founding text. Rather than any specific gear or design, it records the **judgment principles** the author arrived at over a lifetime — the highest-authority document in the project. |
+| Class | Description |
+| --- | --- |
+| Static | Not normally updated (rules, origin texts, editorial policy) |
+| Periodic | Updated when a decision changes |
+| Living | Ledgers / lists, expected to be updated frequently |
 
----
-
-### ⚙️ OP — Operation (Definitions)
-
-The series defining THE THIRD PLACE's design philosophy, rules, and laws themselves.
-
-| ID | Document | What this document is |
-| --- | --- | --- |
-| OP-001 | Constitution | The highest-authority document supporting the whole project. Defines the Human Principles, Design Principles, Document Architecture, SSOT, the relationship with brands (Brand Philosophy), the structure of decision-making (Decision Philosophy), and the AI / GitHub operating principles. |
-| OP-002 | Design Bible | The project's foundational document, defining design philosophy, evaluation criteria, and the definition of completion. Its design framework has two layers: the Design Domains that compose the space (Furniture / Light / Aroma / Storage / Coffee / Fire) and the Design Language that unifies them (Appearance / Industrial / Graphic / Harmony). |
-| OP-003 | Affinity Lexicon | A dictionary that systematizes "what is liked" as a shared vocabulary for judgment. It does not manage brands or products themselves. |
-| OP-004 | Aesthetic Grammar | Defines the laws that constitute beauty — proportion, margin, light, material, composition, gesture — complementing the Design Language. |
-| OP-005 | Acquisition Strategy | Defines when, in what order, and by what criteria Equipment is acquired. |
-| OP-006 | Foundation Compass | The operational foundation for running Equipment as beautifully, efficiently, and consistently as possible. Not a storage manual — it defines the "foundation of operation" itself. |
-| OP-007 | Habitat Architecture | Building on the foundation defined by Foundation Compass, this document designs the completed living space itself as it appears in the field. |
-| OP-008 | Documentation System | The foundational standard for the entire documentation system, defining the roles, classification, and management rules of documents so that the DS, OP, and Record (DB / MD / BR / CZ / KN) series remain structurally consistent over the long term. |
-| OP-009 | Search Doctrine | Defines the philosophy and methodology of research — how information should be discovered, evaluated, interpreted, and turned into knowledge. Actual operational execution is separately governed by CZ-002. |
-
----
-
-### 📊 DB — Dashboard
-
-The series recording the project's current state of progress.
-
-| ID | Document | What this document is |
-| --- | --- | --- |
-| DB-001 | Project Ledger | The project's single operational dashboard. Alongside Current Focus and Active Conversations, it manages the Conversation Ledger (for finding the right chat fastest), Quick Access (a quick-reference table that identifies documents without memorizing their numbers), and the Project Overview (document counts by series) — a living document. |
-
----
-
-### 🗃 MD — Master Data
-
-The series managing the ledger of owned equipment and places.
-
-| ID | Document | What this document is |
-| --- | --- | --- |
-| MD-001 | Storage Blueprint | Defines storage layout, packing sequence, and setup/teardown procedures, treating Storage as a complete operational system rather than mere packing. |
-| MD-002 | Field Atlas Landscape Framework | Defines the selection criteria for the "stage" itself — campsites, locations, and terrain — on which the project is deployed. |
-| MD-003 | Galley Fare | An independent Master Document for kitchen equipment (cookware, blades, cooking tools), governed by a function-first standard separate from MD-004. |
-| MD-004 | Equipment Registry Object Reference | The single master database of owned Equipment. Aesthetic alignment with the Design Bible is a condition for inclusion. It manages Equipment, Components, Parent / Child relationships, Material, Color, Attributes, and Ownership Status across seven Domains (Furniture / Light / Aroma / Storage / Coffee / Fire / Shelter). Coffee equipment is registered only once purchased and Owned. |
-
----
-
-### ☕ BR — Barista
-
-The series managing decisions, procurement, and care for coffee equipment.
-
-| ID | Document | What this document is |
-| --- | --- | --- |
-| BR-001 | Brew Care | Defines the standards for cleaning and maintaining coffee equipment. |
-| BR-002 | Barista Codex | The official specification governing decisions, selection criteria, and brand judgments for the Coffee System. |
-| BR-003 | Acquisition Handbook | Manages the actual procurement information — price, purchase source, shipping, import duties — for Coffee Equipment officially adopted in BR-002. |
-
----
-
-### 🔭 CZ — Cross-Zone Ops
-
-The series managing deliberation and market monitoring for zones outside coffee.
-
-| ID | Document | What this document is |
-| --- | --- | --- |
-| CZ-001 | Deliberation Codex | Manages zone evaluation philosophy, in-progress equipment deliberation, and the purchase-pending list for all zones outside the Coffee Domain governed by the BR series (Furniture / Light / Aroma / Storage / Fire / Shelter). |
-| CZ-002 | Vigil Protocol | A research operations protocol for continuously monitoring garage brands and market trends, evaluating the freshness of acquisition opportunities. |
-
----
-
-### 📖 KN — Knowledge
-
-The series managing accumulated knowledge and the cultural archive.
-
-| ID | Document | What this document is |
-| --- | --- | --- |
-| KN-001 | Heritage Chronicle | The official archive recording, in chronological order, the project's key decisions, shifts in design philosophy, and the evolution of its Equipment configuration — a knowledge asset for understanding, in the future, why a given decision was made. |
-| KN-002 | Cultural Pantheon (formerly titled Cultural Reference) | An official cultural reference recording not the brands themselves, but the philosophies, people, communities, shops, and lineages that gave rise to them. |
-| KN-003 | Beyond Journey | A culture magazine that grows THE THIRD PLACE's aesthetic sense by crossing disciplines — architecture, furniture, lighting, industrial design, automobiles, photography, lifestyle — beyond camping as a single hobby. |
-| KN-004 | Atelier Discovery | A research publication covering garage brands, outdoor brands, and market trends. Its aim is observation of trends, not brand promotion. It opens with a permanent Must Buy Dashboard that continuously monitors the highest-priority acquisition targets. |
+A Static document must not hold Living data. A Living document must not hold permanent rules. See OP-008 §9.3 for details.
 
 ---
 

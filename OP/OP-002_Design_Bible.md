@@ -1,6 +1,6 @@
-OP-002 Design Bible Ver.5.0
+OP-002 Design Bible Ver.5.1
 # THE THIRD PLACE Design Bible
-## Ver.5.0 Official Complete Edition
+## Ver.5.1 Official Complete Edition
 
 ---
 
@@ -196,6 +196,11 @@ THE THIRD PLACEにおいて
 
 最も優先順位の高いDesign Domainとする。
 
+
+### Zone Evaluation Philosophy（CZ-001 Deliberation Codexから移設）
+
+未策定。
+
 ---
 
 ## 02. Light（灯り）
@@ -222,6 +227,11 @@ Lightingは、
 
 空間へ静けさを与える存在である。
 
+
+### Zone Evaluation Philosophy（CZ-001 Deliberation Codexから移設）
+
+未策定。
+
 ---
 
 ## 03. Aroma（香り）
@@ -245,6 +255,11 @@ Aromaは、
 静かな時間。
 
 それらを成立させる存在である。
+
+
+### Zone Evaluation Philosophy（CZ-001 Deliberation Codexから移設）
+
+未策定。
 
 ---
 
@@ -280,6 +295,11 @@ Bridge Systemは、
 
 Storage Domainに所属する。
 
+
+### Zone Evaluation Philosophy（CZ-001 Deliberation Codexから移設）
+
+未策定（現時点でCandidate項目なし）。
+
 ---
 
 ## 05. Coffee（コーヒー）
@@ -314,6 +334,89 @@ Coffee Domainは、
 
 生活文化を象徴するDesign Domainである。
 
+
+### Design Principles    
+    
+Coffee Equipmentは以下を満たすもののみ採用する。    
+    
+* Portable Luxury    
+* Architectural Simplicity    
+* Long-term Ownership    
+* High Reliability    
+* Workflow Optimization    
+* Repairability    
+* Functional Beauty    
+* Design Bibleとの整合    
+* Foundation Compassとの整合    
+    
+以下は評価対象としない。    
+    
+* Popularity    
+* SNS    
+* Review Count    
+* Rarity    
+* Collector Value    
+* Price    
+    
+---    
+    
+### Coffee Zone Philosophy (Exception Clause)    
+    
+Coffee Zoneは、THE THIRD PLACE全体のBaselineに対する明示的な例外領域として扱う。    
+    
+THE THIRD PLACE全体では、Popularity・SNS・Rarity・Collector Value・Priceを評価対象とせず、Workflow最適化と機能的合理性を優先する。    
+    
+Coffee Zoneに限り、以下の独自Philosophyを正式に適用する。他ドメイン（Furniture / Light / Aroma / Storage / Fire）には適用しない。    
+    
+---    
+    
+#### 1. Non-Rational Luxury Principle（無駄を選び取る審美性）    
+    
+Coffee Zoneでは、機能的合理性を上回る場合でも、素材・機構そのものの贅沢さを理由に採用することを正式に許容する。    
+    
+THE THIRD PLACE全体の原則は「無駄を削ぎ落とす」ことにあるが、Coffee Zoneにおいては「機能的に不要な贅沢を、その不要さゆえに選び取る」ことこそが最も THE THIRD PLACE的な表現となりうる。    
+    
+**Reference Case**    
+    
+WDT Toolの選定において、機能面で既存ツールを上回る優位性を持たない真鍮製ギア機構（Weber Workshops MOONRAKER Ultra Edition）を、その機能的必要性ではなく「Swiss watchmaking」という物語性・所作の贅沢さを理由に選定した判断（58mm仮説 Workflow検討, 2026-09）。    
+    
+---    
+    
+#### 2. Cross-Brand Curation Principle（単一ブランド一式禁止・カテゴリ別最良ブランド選定）    
+    
+Coffee Zoneでは、単一ブランドでEquipment一式を統一しない。    
+    
+各カテゴリ（Distribution Tool / Tamper / WDT Tool / Blind Shaker / Tamping Station 等）ごとに、そのカテゴリにおいて最良と判断したブランドを個別に選定し、複数ブランドを意図的に組み合わせる。    
+    
+**Exception**    
+    
+特定ブランドが、その年のコレクション／ラインとして複数カテゴリを横断する「完成されたルック」を意図的に設計・販売している場合に限り、そのセットとしての採用を許容する。    
+    
+**Origin**    
+    
+この原則は、Mari個人のファッション観（全身を単一ブランドで統一しない／その年のコレクションとして完成されたルックである場合を除き、鞘・靴等のカテゴリごとに個別ブランドを選ぶ）をCoffee Zoneに適用したものである（2026-09）。    
+    
+    
+---    
+    
+#### 3. Category Tier Exception（カテゴリ構造起因のTier例外）    
+    
+Coffee Zoneでは、ブランドで選ぶこと自体は正式な原則（Cross-Brand Curation Principle）として許容している。    
+    
+ただし、Coffee Zoneを構成するブランドは、原則としてPortable Luxury・Architectural Simplicity・Industrial Designを体現する Tier A水準（9Barista、Option-O、MantaBrew、Weber Workshops、Saint Anthony Industries、Pullman等）で統一する。    
+    
+以下2カテゴリについては、カテゴリの市場構造そのものにTier A水準の選択肢が存在しないため、機能・素材適合を理由とした明示的な例外として記録する。ブランドの格が届いていないことを認識しないまま採用した状態と、認識した上で機能を理由に採用した状態は区別する。    
+    
+**Milk Pitcher / Pitcher Sleeve（WPM）**    
+    
+ミルクピッチャーというカテゴリには、Weber Workshops・Pullman・Saint Anthony Industries水準の設計・製造一貫型ブティックブランドが実質的に存在しない（市場調査：2026-09）。WPMは競技バリスタ用品市場の中で機能的に妥当な選択だが、Reasonに記載の採用理由はラテアート習得のしやすさという機能面のみであり、他のConfirmed Equipmentが共通して備えるブランド哲学・素材の贅沢さへの言及を欠く。カテゴリ構造上の制約による例外として正式に記録する。    
+    
+**Tool Station（KNODOS）**    
+    
+KNODOSは "Premium Espresso Accessories for Home Baristas" を自認するホームバリスタ向けアクセサリーブランドであり、9Barista・Weber Workshops等が想定するプロ・競技・コレクター水準の顧客層とは異なる。ただし採用理由はWalnut素材によるDesign Bibleとの整合性、およびThe Blocとの役割分離（Tool Station機能）であり、天板保護という裏方機能に対する適材適所の選定として妥当と判断する。ブランド格ではなく、素材とWorkflow機能を理由とした例外として正式に記録する。    
+    
+---    
+
 ---
 
 ## 06. Fire（火）
@@ -343,6 +446,28 @@ THE THIRD PLACEの中心となる存在である。
 薪ストーブも、
 
 すべてFire Domainに含まれる。
+
+### Zone Evaluation Philosophy（CZ-001 Deliberation Codexから移設）
+
+Fire Domainの機材は、以下4軸で評価する。
+
+1. **Form（意匠美）** — ギア本体・道具そのものの造形的な美しさ
+2. **Flame Aesthetics（炎の見え方）** — 燃焼中の炎そのものの視覚的な美しさ
+3. **Ease of Clean-up（撤収容易性）** — 灰処理・撤収にかかる手間
+4. **Transport（積載のしやすさ）** — 車両への積載・収納の一体性
+
+以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）：Popularity／SNS／Review Count／Rarity／Collector Value／Price。
+
+Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則」の例外領域ではない。機能を伴わない贅沢の採用は正式に許容しない。
+
+
+## 07. Shelter（シェルター）
+
+
+### Zone Evaluation Philosophy（CZ-001 Deliberation Codexから移設）
+
+未策定（現時点でCandidate項目なし）。
+
 
 # Design Language（設計言語）
 
@@ -1963,7 +2088,7 @@ THE THIRD PLACEは、
 
 **THE THIRD PLACE Design Bible**
 
-**Ver.5.0 Official Complete Edition**
+**Ver.5.1 Official Complete Edition**
 
 **End of Document**
 
@@ -1972,3 +2097,9 @@ THE THIRD PLACEは、
 ## Document Renumbering Note
 
 本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TP-002からOP-002へ番号を変更した。Documentation ArchitectureおよびEditorial Series（文書体系一覧）内の各文書IDを新ID体系へ更新した。内容・版数（Ver.5.0 Official Complete Edition）に変更はない。旧ID: TP-002。
+
+---
+
+## Volatility Restructure Note
+
+本文書は、2026-09-24付のVolatility Restructureにより、Ver.5.0からVer.5.1へ更新した。CZ-001 Deliberation Codex §Zone Evaluation PhilosophyおよびBR-002 Barista Codex §Design Principles／Coffee Zone Philosophy (Exception Clause)を、本書§Design Domainsへ逐語移設した（移設元には参照のみ残す）。

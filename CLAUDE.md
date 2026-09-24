@@ -13,18 +13,24 @@ THE THIRD PLACE は、哲学駆動型アウトドア・ライフスタイル設�
 
 ## 文書体系
 
-文書は可変性の度合いで、設計・運用・記録の3分類に区分される。正式な文書一覧はOP-008 Documentation System §8を参照すること。
+文書は可変性の度合いで、設計・運用・記録の3分類に区分される。正式な文書一覧（Document ID・Title・Path・Role・Authority・Volatility）はOP-008 Documentation System §8を唯一の正本として参照すること。個別文書名はこのファイルでは保持しない。
 
-- `DS/*.md` — 設計（絶対不変）: DS-001 THE THIRD PLACE Original
-- `OP/*.md` — 運用（定義：不変だが改訂の可能性あり）: OP-001 Constitution, OP-002 Design Bible, OP-008 Documentation System 等（OP-001〜OP-009）
+- `DS/*.md` — 設計（絶対不変）
+- `OP/*.md` — 運用（定義：不変だが改訂の可能性あり）。文書の登録規則・評価基準そのものを定義するOP-010 Registry Standardを含む。
 - 記録（可変）— 以下5系列
-  - `DB/*.md` — Dashboard: DB-001 Project Ledger
-  - `MD/*.md` — Master Data: MD-001 Storage Blueprint, MD-002 Field Atlas, MD-003 Galley Fare, MD-004 Equipment Registry
-  - `BR/*.md` — Barista: BR-001 Brew Care, BR-002 Barista Codex, BR-003 Acquisition Handbook
-  - `CZ/*.md` — Cross-Zone Ops: CZ-001 Deliberation Codex, CZ-002 Vigil Protocol
-  - `KN/*.md` — Knowledge: KN-001 Heritage Chronicle, KN-002 Cultural Pantheon, KN-003 Beyond Journey, KN-004 Atelier Discovery
+  - `DB/*.md` — Dashboard
+  - `MD/*.md` — Master Data
+  - `BR/*.md` — Barista
+  - `CZ/*.md` — Cross-Zone Ops
+  - `KN/*.md` — Knowledge
 - 命名規則: `{SERIES}-{NUM}_Word_Word_Word.md`（アンダースコア区切り）
 - 旧ID（TP/PX/TM）は2026-09-19に上記の新IDへ再編済み。各文書末尾のDocument Renumbering Noteに旧IDを記載している。
+
+### Volatility（変動性）区分
+
+OP-008 §9.3で定義される3区分（Static／Periodic／Living）を各文書が保持する。詳細・区分一覧はOP-008 §8のカタログ表を参照。
+
+**Static 文書に Living データを置かない。Living 文書に恒久ルールを置かない。記録文書は他文書の Status を書き写さず、ID参照のみとする。**
 
 ## Master Database
 
