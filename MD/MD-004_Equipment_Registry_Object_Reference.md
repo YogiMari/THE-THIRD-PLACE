@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.54  
+Version 7.55  
   
 ---  
   
@@ -1237,7 +1237,7 @@ Snow Peak
 
 **Product**  
 
-ダウン システムオフトン スリムマットセット（BD-060、掛け布団+マット一式）  
+ダウン システムオフトン ワイドマットセット（BD-060、掛け布団+マット一式）  
 
 **Status**  
 
@@ -7520,6 +7520,18 @@ Light Domainを再編した。過去のバージョン7.38時点の作業（未�
 - FUR-032：Industrial Attribute内の「FUR-033系との併用時は…」の記述を、FUR-033の統合を示す記述へ更新。
 - STR-014・STR-017（nodel design Black Stand）：それぞれBeck Container ①（STR-013）・Beck Container ②（STR-016）の子部品であることをプロジェクトオーナーが確認。Parentフィールドを追加し（親側のChild Componentsには既に記載済み）、記載位置を親の直後（STR-013の次・STR-016の次）へ移動した。
 - Related Documents：CZ-001 Deliberation Codex（Ver.2.17。Winter Top Quiltの検討終了をDecision Logへ記録）。
+
+---
+
+## Version 7.55
+
+MARI様との確認に基づき、FUR-032の商品名表記の誤りを訂正した。Industrial Attribute欄には当初からコンパクトワイドマット（R値5.4・2枚連結使用）である旨が記載されていたが、Product欄の表記が「スリムマットセット」のままになっており、両欄が矛盾していた。MARI様がボンフラッグ TACTICAL AIR BED 2P（FUR-029、幅152cm×長さ200cm）に敷く前提でワイドマットを選定した経緯と一致することを確認し、Product欄をワイドマットセットへ訂正した。
+
+### Changes
+
+- FUR-032：Productを「ダウン システムオフトン スリムマットセット（BD-060、掛け布団+マット一式）」から「ダウン システムオフトン ワイドマットセット（BD-060、掛け布団+マット一式）」へ訂正（MARI様確認。Industrial Attribute欄の記載〈コンパクトワイドマット〉との整合を回復）。
+- Version 7.0〜7.54の記述内にある「スリムマットセット」表記（Version 7.27・7.54のChangesを含む）は、当時の記録として遡及修正しない。
+- Related Documents：変更なし。
 
 ---
 ## Document Renumbering Note
