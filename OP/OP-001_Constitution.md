@@ -2,7 +2,7 @@ OP-001 THE THIRD PLACE Constitution
   
   
 # THE THIRD PLACE Constitution  
-## Ver.5.1  
+## Ver.5.2  
   
 ---  
   
@@ -690,7 +690,7 @@ Project Ledger
 Master Documents  
 　・Field Atlas  
 　・Equipment Registry  
-　・Acquisition Strategy  
+　・Pursuit Strategy  
 　・Foundation Compass  
 　・Habitat Architecture  
 　・Affinity Lexicon  
@@ -1324,11 +1324,12 @@ OP/
     OP-002 Design Bible  
     OP-003 Affinity Lexicon  
     OP-004 Aesthetic Grammar  
-    OP-005 Acquisition Strategy  
+    OP-005 Pursuit Strategy  
     OP-006 Foundation Compass  
     OP-007 Habitat Architecture  
     OP-008 Documentation System  
     OP-009 Search Doctrine  
+    OP-010 Qualification Charter  
   
 DB/  
     DB-001 Project Ledger  
@@ -1341,11 +1342,11 @@ MD/
   
 BR/  
     BR-001 Brew Care  
-    BR-002 Barista Codex  
-    BR-003 Acquisition Handbook  
+    BR-002 Barista Canon  
+    BR-003 Procurement Handbook  
   
 CZ/  
-    CZ-001 Deliberation Codex  
+    CZ-001 Deliberation Dossier  
     CZ-002 Vigil Protocol  
   
 KN/  
@@ -1540,6 +1541,10 @@ MARI様のご指示に基づき、プロジェクト全体の文書番号体系�
 ### Ver.5.1  
 
 Volatility Restructureにより、§13.2〜§13.18（各文書のRole説明）をOP-008 Documentation System §8 Document Seriesへ逐語移設し、本節を参照1行へ置換した（Minor Version：責任範囲の変更）。§13.0（DS-001）・§13.1（Official Repository）は本書に残置。
+
+### Ver.5.2
+
+MARI様のご指摘に基づき、OP-008 §11.1で新設された文書名重複禁止ルールに伴う5文書の改名（OP-010 Registry Standard→Qualification Charter、OP-005 Acquisition Strategy→Pursuit Strategy、BR-003 Acquisition Handbook→Procurement Handbook、BR-002 Barista Codex→Barista Canon、CZ-001 Deliberation Codex→Deliberation Dossier）を、Information Hierarchy（§12、Acquisition Strategy→Pursuit Strategy）およびAppendix B Repository Architectureへ反映。あわせて、Appendix Bに従来欠落していたOP-010を新規追加し、記載漏れを是正した（Minor Version）。
 
 ---
 
