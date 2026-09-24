@@ -1,5 +1,5 @@
 # MD-003 Galley Fare
-Version 2.13
+Version 2.14
 
 ---
 
@@ -887,11 +887,11 @@ Owned
 
 ### Color
 
-Brown（Presumed, Series-Consistent）
+Brown（Presumed, Handle, Series-Consistent）／Black（Tip, Silicone。MARI様確認）
 
 ### Material
 
-Wood（Handle, Engraved, Exact Species Unconfirmed）／Unconfirmed（Tip）
+Wood（Handle, Engraved, Exact Species Unconfirmed）／Silicone（Tip。MARI様確認）
 
 ### Graphic Attribute
 
@@ -2521,11 +2521,11 @@ Retired. MD-004 Equipment Registry（Storage Domain）STR-028へ移管済み（V
 
 **Brand**
 
-Unconfirmed
+Snow Peak
 
 **Product**
 
-インナーネット26
+インナーネット26（CS-521）
 
 **Status**
 
@@ -2538,15 +2538,15 @@ KIT-001
 
 ### Color
 
-Unconfirmed
+Silver
 
 ### Material
 
-Unconfirmed
+Stainless Steel
 
 ### Industrial Attribute
 
-Inner Net（和鉄ダッチオーブン26用）
+Inner Net（和鉄ダッチオーブン26〈KIT-001〉の底に敷き、焦げ付きを防ぐステンレス製メッシュ。Snow Peak公式ページ確認）
 
 ### Price
 
@@ -2557,11 +2557,11 @@ Inner Net（和鉄ダッチオーブン26用）
 
 **Brand**
 
-Unconfirmed
+Snow Peak
 
 **Product**
 
-和鉄ダッチオーブン収納ケース M
+和鉄ダッチオーブン収納ケース M（CS-420BR）
 
 **Status**
 
@@ -2574,15 +2574,15 @@ KIT-001
 
 ### Color
 
-Unconfirmed
+Unconfirmed（型番末尾BRはBrownを示唆するが、現物未確認のため保留）
 
 ### Material
 
-Unconfirmed
+Cotton Canvas No.6（Paraffin, PU Coating）／Acrylic Tape（PP Core）／Plywood／Nylon Mesh
 
 ### Industrial Attribute
 
-Storage Case（和鉄ダッチオーブン26用）
+Storage Case（和鉄ダッチオーブン26〈KIT-001〉用。Snow Peak公式ページ確認）
 
 ### Price
 
@@ -2614,15 +2614,15 @@ KIT-001
 
 ### Color
 
-Unconfirmed
+Black（Iron部。MARI様確認）
 
 ### Material
 
-Unconfirmed
+Iron（本体）／Cotton Canvas No.10（収納ケース。Snow Peak公式ページ確認）
 
 ### Industrial Attribute
 
-Lifter（和鉄ダッチオーブン26用、大小2ツール構成）
+Lifter（和鉄ダッチオーブン26〈KIT-001〉用、大小2ツール構成）
 
 ### Price
 
@@ -2633,11 +2633,11 @@ Lifter（和鉄ダッチオーブン26用、大小2ツール構成）
 
 **Brand**
 
-Unconfirmed
+Snow Peak
 
 **Product**
 
-リフターグリップ
+リフターグリップ（Lifter Pro Set〈N-021〉付属、竹集成材グリップ）
 
 **Status**
 
@@ -2650,19 +2650,19 @@ KIT-073
 
 ### Color
 
-Unconfirmed
+Light Brown（MARI様確認）
 
 ### Material
 
-Unconfirmed
+Bamboo Laminate（竹集成材。Snow Peak公式ページ確認）
 
 ### Industrial Attribute
 
-Grip Custom（KIT-073用）
+Grip（KIT-073本体に一体で付属する竹製グリップ。単体では販売されない）
 
 ### Price
 
-価格不明
+価格不明（KIT-073本体価格に含まれる）
 
 ---
 ## KIT-075
@@ -2700,11 +2700,11 @@ Trivet（五徳）
 
 **Brand**
 
-Unconfirmed
+Snow Peak
 
 **Product**
 
-チャコールスタンド26
+チャコールスタンド26（CS-522）
 
 **Status**
 
@@ -2712,15 +2712,15 @@ Owned
 
 ### Color
 
-Unconfirmed
+Silver
 
 ### Material
 
-Unconfirmed
+Stainless Steel
 
 ### Industrial Attribute
 
-Oven Stand（ダッチオーブン置き台）
+Oven Stand（和鉄ダッチオーブン26〈KIT-001〉置き台。Snow Peak公式ページ確認）
 
 ### Price
 
@@ -2731,7 +2731,7 @@ Oven Stand（ダッチオーブン置き台）
 
 **Brand**
 
-Unconfirmed（1/f space）
+1/f SPACE
 
 **Product**
 
@@ -2743,15 +2743,15 @@ Owned
 
 ### Color
 
-Unconfirmed
+Silver
 
 ### Material
 
-Unconfirmed
+Stainless Steel
 
 ### Industrial Attribute
 
-Windscreen（バーナー用風防）
+Windscreen（KIT-078「1/f spider」専用の風防、パネル3種構成。1/f SPACE公式ページ確認）
 
 ### Price
 
@@ -2762,7 +2762,7 @@ Windscreen（バーナー用風防）
 
 **Brand**
 
-Unconfirmed（1/f space）
+1/f SPACE
 
 **Product**
 
@@ -2774,15 +2774,15 @@ Owned
 
 ### Color
 
-Unconfirmed
+Black
 
 ### Material
 
-Unconfirmed
+Black Skin Steel（SS400、窒化処理ではなく黒皮鉄）
 
 ### Industrial Attribute
 
-Burner Lid（バーナーの蓋）
+Trivet（五徳。KIT-008 フラットバーナー用カスタムパーツ。1/f SPACE公式ページにより「バーナーの蓋」ではなく五徳であることを確認、記述を訂正）
 
 ### Price
 
@@ -2797,7 +2797,7 @@ Snow Peak
 
 **Product**
 
-タコ焼きプレート
+雪峰苑 たこ焼きプレート（CS-356）
 
 **Status**
 
@@ -2809,11 +2809,11 @@ Unconfirmed
 
 ### Material
 
-Unconfirmed
+Aluminum Alloy（フッ素樹脂加工）
 
 ### Industrial Attribute
 
-Takoyaki Plate
+Takoyaki Plate（KIT-013 グリルバーナー雪峰苑専用オプション。Snow Peak公式ページ確認）
 
 ### Price
 
@@ -2886,7 +2886,7 @@ Sierra Cup Case
 
 **Brand**
 
-Unconfirmed
+FEDECA
 
 **Product**
 
@@ -2898,15 +2898,15 @@ Owned
 
 ### Color
 
-Unconfirmed
+Gold
 
 ### Material
 
-Unconfirmed
+Brass（ブラスト仕上げ）
 
 ### Industrial Attribute
 
-Sierra Cup Stand（バークランプ式）
+Sierra Cup Stand（バークランプ式。FEDECA公式ページ確認）
 
 ### Price
 
@@ -2917,11 +2917,11 @@ Sierra Cup Stand（バークランプ式）
 
 **Brand**
 
-Unconfirmed
+Snow Peak
 
 **Product**
 
-和武器M
+和武器 M（SCT-110）
 
 **Status**
 
@@ -2929,15 +2929,15 @@ Owned
 
 ### Color
 
-Unconfirmed
+Silver
 
 ### Material
 
-Unconfirmed
+Stainless Steel（Grip）／Bamboo（Tip）／Brass・Rubber（Joint・Cap）
 
 ### Industrial Attribute
 
-Chopsticks
+Chopsticks（二継式の携帯箸。Snow Peak公式ページ確認）
 
 ### Price
 
@@ -2948,11 +2948,11 @@ Chopsticks
 
 **Brand**
 
-DAMNGOOD!!GARAGE
+DAMAGE MARK × Geek Field
 
 **Product**
 
-FB NO PLATE SKULL
+アシナガプレート Geek ver.（Nitriding Steel）
 
 **Status**
 
@@ -2960,30 +2960,30 @@ Owned
 
 ### Color
 
-Unconfirmed
+Gray（窒化処理特有の色ムラあり）
 
 ### Material
 
-Unconfirmed
+Nitriding Steel（窒化処理）
 
 ### Industrial Attribute
 
-Plate（アシナガ）
+Burner Valve Holder Extension Plate（アシナガプレート。KIT-008 フラットバーナーの器具栓ホルダーをロングサイズ化するカスタムパーツ。DAMAGE MARKのデザインをGeek Fieldが別注生産。MARI様のご指摘により、旧登録「DAMNGOOD!!GARAGE FB NO PLATE SKULL」から製品を訂正）
 
 ### Price
 
-¥9,800
+¥3,600（旧登録時の¥9,800から、製品訂正にあわせて公式販売価格へ更新。実購入額は別途確認が必要）
 
 ---
 ## KIT-085
 
 **Brand**
 
-H&O BALLISTICS
+H&O × BALLISTICS
 
 **Product**
 
-EWT CAP BSPC-021
+EWT CAP（BSPC-021）
 
 **Status**
 
@@ -2991,15 +2991,15 @@ Owned
 
 ### Color
 
-Unconfirmed
+Unconfirmed（展開色：BK／OD／COYOTE／GROW〈蓄光〉の4色中いずれか、現物未確認）
 
 ### Material
 
-Unconfirmed
+Nylon Resin
 
 ### Industrial Attribute
 
-Wet Tissue Case
+Wet Tissue Case（BALLISTICSウエットティッシュカバーと組み合わせて使うヘッドキャップ。H&O発案・BALLISTICS生産。BALLISTICS公式ページ確認）
 
 ### Price
 
@@ -3424,6 +3424,29 @@ MD-004 Equipment Registry（Version 7.53）を正とした照合に基づく参�
 - KIT-070b：移管先の記述を「MD-004 STR-025」から「MD-004 STR-028」へ更新（2箇所）。MD-004上の現行ID（ANOBA フォールディングサイドテーブル）に合わせたもの。
 - Version History内の過去の記述（Version 2.8〜2.10のSTR番号）は当時の記録として遡及修正しない。
 - Related Documents：MD-004 Equipment Registry Object Reference（Version 7.53）。
+
+## Version 2.14
+
+MARI様による現物確認・公式ページ提供に基づき、Version 2.7でUnconfirmedのまま残っていたKIT-071〜085周辺のBrand・Color・Materialを確認・反映した。あわせて、KIT-078のIndustrial Attribute誤記（「バーナーの蓋」→正しくは「五徳」）、KIT-084の製品誤登録（旧「DAMNGOOD!!GARAGE FB NO PLATE SKULL」→正しくは「DAMAGE MARK×Geek Field アシナガプレート Geek ver.」）を訂正した。
+
+### Changes
+
+- KIT-023（BURABURAターナー）：Tip（先端）のMaterialをUnconfirmedからSilicone、対応するColorをBlackへ確定（MARI様確認）。Handle側の樹種は引き続きUnconfirmedのまま維持。
+- KIT-071（インナーネット26）：Brand・Color・MaterialをSnow Peak公式ページ（CS-521）に基づき確定（Snow Peak／Silver／Stainless Steel）。用途（和鉄ダッチオーブン26底面の焦げ付き防止メッシュ）を明記。
+- KIT-072（和鉄ダッチオーブン収納ケースM）：BrandをSnow Peak、MaterialをSnow Peak公式ページ（CS-420BR）に基づき確定。Colorは型番末尾「BR」がBrownを示唆するものの現物未確認のため、推測を避けUnconfirmedのまま保持。
+- KIT-073（Lifter Pro Set N-021）：ColorをBlack（Iron部、MARI様確認）、MaterialをIron（本体）／Cotton Canvas No.10（収納ケース、Snow Peak公式ページ確認）へ確定。
+- KIT-074（リフターグリップ）：Brand・Color・MaterialをSnow Peak／Light Brown／Bamboo Laminateへ確定（MARI様確認・Snow Peak公式ページ確認）。KIT-073本体に一体で付属する部品であり、単体価格は存在しない旨を明記。
+- KIT-076（チャコールスタンド26）：Brand・Color・MaterialをSnow Peak公式ページ（CS-522）に基づき確定（Snow Peak／Silver／Stainless Steel）。
+- KIT-077（Wind shield）：BrandをUnconfirmedから1/f SPACEへ確定。Color・Materialを1/f SPACE公式ページに基づき確定（Silver／Stainless Steel）。KIT-078専用の風防である旨を明記。
+- KIT-078（1/f spider）：BrandをUnconfirmedから1/f SPACEへ確定。Color・Materialを1/f SPACE公式ページに基づき確定（Black／Black Skin Steel, SS400）。Industrial Attributeの誤記「Burner Lid（バーナーの蓋）」を「Trivet（五徳）」へ訂正（公式ページにより、フラットバーナー用五徳カスタムパーツであることが判明）。
+- KIT-079（たこ焼きプレート）：Snow Peak公式ページ（CS-356、正式名称「雪峰苑 たこ焼きプレート」）に基づきProductを確定、MaterialをAluminum Alloy（フッ素樹脂加工）へ確定。KIT-013専用オプションである旨を明記。Colorは公式スペックに記載がなく、現物未確認のためUnconfirmedのまま保持。
+- KIT-082（バークランプランタンスタンド）：BrandをUnconfirmedからFEDECAへ確定。Color・MaterialをFEDECA公式ページに基づき確定（Gold／Brass, ブラスト仕上げ）。
+- KIT-083（和武器M）：BrandをUnconfirmedからSnow Peakへ確定。ProductをSnow Peak公式ページに基づき「和武器 M（SCT-110）」へ確定。Color・Materialを確定（Silver／Stainless Steel・Bamboo・Brass・Rubber）。
+- KIT-084（旧「FB NO PLATE SKULL」）：MARI様のご指摘により、製品自体を「DAMNGOOD!!GARAGE FB NO PLATE SKULL」から「DAMAGE MARK×Geek Field アシナガプレート Geek ver.（Nitriding Steel）」へ訂正。Brand・Product・Color・Material・Industrial Attributeを全面的に更新。Priceも公式販売価格¥3,600へ更新したが、実購入額は別途確認が必要な旨を注記。
+- KIT-085（EWT CAP）：BrandをH&O BALLISTICSからH&O×BALLISTICSへ表記を整理。MaterialをBALLISTICS公式ページに基づきNylon Resinへ確定。Colorは展開色が4色（BK／OD／COYOTE／GROW）あり所有個体を特定できないため、Unconfirmedのまま保持。
+- 引き続きUnconfirmedのまま残る項目：KIT-033（a384、製品名自体が未確認）、KIT-072（Color）、KIT-075（FB NO GOTOKU!? YOTSUTOSHI MODEL、Brand・Color・Material）、KIT-079（Color）、KIT-080（バーナーノブ、Color・Material）、KIT-085（Color）。今後、プロジェクトオーナーによる現物確認または追加情報の提供を待つ。
+
+- Related Documents：変更なし。
 
 ---
 
