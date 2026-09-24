@@ -34,83 +34,11 @@ Coffee機材は、他のすべてのDomainと異なる登録ルールに従う�
 ---  
   
 # Registry Rules（登録ルール）  
-  
-## Equipment Domains（装備ドメイン）  
-  
-Equipmentは、7つのDomainに分類される。  
-  
-1. Furniture  
-2. Light  
-3. Aroma  
-4. Storage  
-5. Coffee  
-6. Fire  
-7. Shelter  
-  
----  
-  
-## Equipment ID（装備ID）  
-  
-各オブジェクトには、恒久的なIDが1つ付与される。  
-  
-Examples  
-  
-FUR-001  
-  
-LGT-001  
-  
-ARM-001  
-  
-STR-001  
-  
-COF-001  
-  
-FIR-001  
-  
-SHL-001  
-  
-IDは変更されない。  
 
-ブランチ接尾辞（小文字アルファベット、例: LGT-028a、LGT-028b）は、後続IDの番号をずらすことなく、同じ装備枠を競合する複数の製品候補を登録するために、親IDへ直接付与できる。これはChild Components（恒久的に付随する構成部品、同時に所有される）とは異なる: ブランチバリアントは、1つの枠に対する代替候補を表し、通常は最終的にどちらか一方だけが昇格（StatusがEssential/Ownedへ変更）し、もう一方は廃止または別枠へ分類される。  
+→ OP-010 Registry Standard Part A を参照。
 
-**運用注記（Version 7.14以降）**：新規に発生する検討中候補の比較については、原則としてBranch Variant形式（a/b/c...）をMD-004上で新設せず、単一の親ID（Brand/Product = Unconfirmed）のみを登録し、具体的な候補間比較はCZ-001 Deliberation Codexで管理する。既存のBranch Variant（LGT-028a/b等）は、整理が完了するまでの間、現状の形式のまま維持する。  
-  
----  
-  
-## Status（ステータス）  
-  
-| Status | 意味 |  
-|---------|----------|  
-| Owned | 現在所有している |  
-| Essential | 必要であり、購入が決定している（購入待ち） |  
-| Candidate | 必要だが、具体的な製品はまだ決まっていない（検討中） |  
-| Upgrade | 既に所有しているものの置き換え、または「あれば良い」アイテム（最も優先度の低い層） |  
+---
 
-「Wanted」は廃止され、その意味は「Essential」へ統合された。  
-  
----  
-  
-## Attribute Policy（属性ポリシー）  
-  
-Appearance（外観）は保存**しない**。  
-  
-Appearanceは、OP-002 Design Bibleにより、以下を用いて決定される:  
-  
-- Material  
-- Color  
-- Texture  
-- Finish  
-  
-そのためMD-004が保存するのは、以下のみである:  
-  
-- Material  
-- Color  
-- Graphic Attribute  
-- Industrial Attribute  
-- Price（Version 7.25より、任意項目として再導入。既存登録済みアイテムへの遡及記載は別途対応）  
-  
----  
-  
 # Furniture
 
 ---
@@ -6728,11 +6656,7 @@ Vestibule（SHL-004 Slug Shelter V2.0専用の前室オプション）
 ---  
 # Parent / Child Rules（親子関係ルール）  
 
-Parentオブジェクトは、主たる装備を表す。  
-
-Childオブジェクトは、構成部品、カスタムパーツ、交換可能なアクセサリー、または恒久的に付随するアイテムである。  
-
-Childオブジェクトは、将来ステータスが変更されない限り、単独では存在しない。  
+→ 規則文は OP-010 Registry Standard Part A を参照。以下は Example（データ）のみ。
 
 Example  
 
@@ -6771,114 +6695,27 @@ STR-027
 
 # Graphic Attribute（グラフィック属性）  
 
-Graphic Attributeは、適用されたグラフィック表現のみを記録する。  
+→ OP-010 Registry Standard Part A を参照。
 
-Graphicは装備そのもの**ではない**。  
-
-Examples  
-
-- Emblem  
-- New Graphic  
-- Skull  
-- Silkscreen  
-- Exterior Graphic  
-
-グラフィックが存在しない場合、  
-
-Graphic Attribute = None  
+---
 
 ---  
 
 # Industrial Attribute（インダストリアル属性）  
 
-Industrial Attributeは、そのオブジェクトの機能的・構造的な役割を記録する。  
-
-Examples  
-
-Furniture  
-
-- Organic Furniture  
-- Folding Table  
-- Seat Custom  
-- Hardware Custom  
-- Leg Extension  
-
-Light  
-
-- Portable LED Lantern  
-- Lantern Stand  
-- Glass Shade  
-- Wood Sleeve  
-- Ambient Light  
-
-Storage  
-
-- Storage Container  
-- Top Board  
-- Side Expansion  
-- Handle Custom  
-- Cooler  
-
-Coffee  
-
-- Espresso Machine  
-- Grinder  
-- Milk Steamer  
-- Bean Storage  
-- Tamper  
-- WDT Tool  
-
-Fire  
-
-- Fire Pit  
-- Fire Table  
-- Fire Poker  
-- Torch  
-- Heater  
-- Fire Blower  
+→ OP-010 Registry Standard Part A を参照。
 
 ---  
 
 # Color Rule（カラールール）  
 
-記録するのは、実際の物理的な色のみである。  
-
-Examples  
-
-- Black  
-- Brown  
-- Gold  
-- Silver  
-- White  
-- Gray  
-- Copper  
-- Floral  
-- Multi  
-
-主観的な表現は認めない。  
+→ OP-010 Registry Standard Part A を参照。
 
 ---  
 
 # Material Rule（マテリアルルール）  
 
-記録するのは、実際の素材のみである。  
-
-Examples  
-
-- Walnut  
-- Oak  
-- Brass  
-- Leather  
-- Steel  
-- Stainless Steel  
-- Aluminum  
-- Glass  
-- Ceramic  
-- Fabric  
-- Resin  
-- Titanium  
-
-表面仕上げ（Surface finish）は、OP-002 Design Bibleの管轄である。  
+→ OP-010 Registry Standard Part A を参照。
 
 ---  
 
