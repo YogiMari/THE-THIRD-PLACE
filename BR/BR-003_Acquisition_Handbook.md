@@ -11,7 +11,7 @@ Acquisition Handbook
   
 **Version**  
   
-2.4  
+3.0  
   
 **Status**  
   
@@ -97,11 +97,10 @@ BR-002でConfirmedとなったEquipmentは、原則としてBR-003に登録す�
   
 ## Preferred Sources  
   
-1. メーカー公式ストア  
-2. 正規代理店  
-3. 国内正規販売店  
-4. Amazon Japan（公式または正規販売者であることが明確な場合のみ）  
+→ OP-005 Acquisition Strategy §Coffee Zone Acquisition Rules を参照。  
   
+---  
+
 ## Purchasing Priority  
   
 1. 正規品であること  
@@ -115,40 +114,16 @@ BR-002でConfirmedとなったEquipmentは、原則としてBR-003に登録す�
   
 # Price Policy  
   
-BR-003では、購入判断に使用できるよう、原則として全製品に価格目安を記載する。  
-  
-価格の優先順位は以下とする。  
-  
-1. Current Official Price  
-2. Current Authorized Retail Price  
-3. Current Established Retail Market Price  
-4. Conservative Planning Estimate  
-  
-価格が公式価格でない場合は、`Estimated` として扱う。  
-  
-海外製品については、日本到着までに必要となる可能性のある以下を考慮してEstimated Total Costを設定する。  
-  
-* Product Price  
-* International Shipping  
-* Consumption Tax  
-* Import Tax / Duty  
-* Import Handling Fee  
-* Currency fluctuation  
-  
-### Conservative Total Cost Policy  
-  
-Estimated Total Costは、実際の購入時に不足しないことを優先し、やや保守的に設定する。  
-  
-Estimated Total Costは公式販売価格を意味しない。  
+→ OP-005 Acquisition Strategy §Coffee Zone Acquisition Rules を参照。  
   
 ---  
-  
+
 # Successor Model Policy  
   
-BR-002に登録された製品が現在販売終了しており、メーカーが明確な後継モデルを販売している場合、BR-003では現行後継モデルをCurrent Purchase Modelとして扱う。  
+→ OP-005 Acquisition Strategy §Coffee Zone Acquisition Rules を参照。  
   
-ただし、BR-002の正式なDecisionや歴史的モデル名称を独断で変更しない。  
-  
+---  
+
 ### Current Successor Mapping  
   
 | BR-002 Reference | BR-003 Current Purchase Model |  
@@ -2118,6 +2093,7 @@ Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The B
 | 2.2 | 2026-09-18 | 「9Barista Official Spare Parts (Preventive Stock)」セクションを新設。9Barista公式サイト（9barista.com）一次情報に基づき、本体標準付属品（Spare Boiler O-ring・Spare Safety Ring・汎用53mm Tamper等）を記録し、重複購入防止の基準とした。推奨予備部品としてSafety Ring and Seals・Boiler O-ring Seal Mk.2を、任意項目としてOverheat Repair Kit Mk.2を追加。通常使用下では交換頻度が低いとされる個別Valve部品・構造部品は見送りとした。Descalerは2026-09時点で9Barista公式ストアの取扱いがないことを確認し、PX-006記載の第三者ブランド（Puly／Urnex Dezcal／Durgol）調達方針を維持。Purchase Grouping Group Aおよび Monthly Acquisition Plan Month 1へOptional項目として反映。Estimated Acquisition BudgetおよびPlan Totalの除外リストに本セクションを明記。 |  
 | 2.3 | 2026-09-18 | Product 26「9Barista Handle - Walnut」を新設。PX-004 Ver.3.7のHandle Material Decision（MARI様の直接指示、2026-09-18）と同期し、9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）をWalnut仕様へ変更する購入をConfirmed / Purchase Requiredとして正式登録。数量2（Upper・Lower各1、公式スペアパーツは単品$15.00販売）、参考価格¥4,500〜6,000。Group A（9Barista）およびMonth 1へ統合し、Current Acquisition Priority・Estimated Acquisition Budget（Core Espresso System: ¥404,500〜459,500 → ¥409,000〜465,500、Estimated Total: ¥623,770〜738,270 → ¥628,270〜744,270）・Plan Total（¥614,770〜714,270 → ¥619,270〜720,270）・Final Acquisition Inventory（Included項目を26〜28から27〜29へ繰り下げ）・Product Variant Integrity・Purchase Completeness Rule・PX-004/PX-005 Synchronization Ruleへ反映。 |  
 | 2.4 | 2026-09-18 | MARI様の直接指示に基づき、Monthly Acquisition Plan（Confirmed）を全面再編成。7ヶ月構成（Workflow順グルーピング）から6ヶ月構成（予算均等化グルーピング）へ変更。9Barista（Month 1・上限なし）とMilk System（Month 6・最終月）を固定端点とし、Month 2〜5はドメイン横断で月あたり¥93,000〜117,000程度に予算バランスさせたグループへ再編成（Month 2: LAGOM mini 2＋Puck Screen Stand＋Aurora Bottle＋AION Coaster、Month 3: Pullman Chisel＋Blind Shaker Onyx＋酒筒Titanium＋KRUVE PROPEL、Month 4: Force Tamper＋The Bloc＋KNODOS＋WDT、Month 5: WeighMaster Ultra＋Bean Cellar＋ICOSA AERESSO＋YETI Yonder＋HILLS FIELD Case＋RDT Bottle）。Plan Total（¥619,270〜720,270 → ¥619,270〜721,270）を再計算。Straight Espresso Workflowの機能的完成時期はMonth 5終了時点のまま変わらない旨をDesign Rationaleに明記。 |  
+| 3.0 | 2026-09-24 | Volatility Restructureにより、調達方針（Preferred Sources／Price Policy／Successor Model Policyの方針文）をOP-005 Acquisition Strategy §Coffee Zone Acquisition Rulesへ逐語移設した。責任範囲の変更のためMajor Version。 |  
   
 ---  
 

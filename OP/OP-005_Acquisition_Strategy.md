@@ -1,7 +1,7 @@
 OP-005 Acquisition Strategy
 # OP-005
 # Acquisition Strategy
-## Ver.1.2
+## Ver.1.3
 
 ---
 
@@ -10,6 +10,7 @@ OP-005 Acquisition Strategy
 | Version | Date | Description |
 |----------|------|-------------|
 | 1.2 | 2026-09-20 | MD-004 の Status 体系（Essential / Candidate / Upgrade）に合わせ、Relationship の購入対象Statusの記述を「Must Buy または Candidate」から「Essential・Candidate・Upgrade」へ修正。Acquisition Priority（Must Buy / High / Medium / Low）は取得優先度の区分であり、変更なし。 |
+| 1.3 | 2026-09-24 | Volatility Restructureにより、BR-003 Acquisition Handbookの調達方針（Preferred Sources／Price Policy／Successor Model Policyの方針文）を、新章§Coffee Zone Acquisition Rulesへ逐語移設した。適用範囲はCoffee Zoneのまま。章追加のためMinor Version。 |
 
 ---
 
@@ -340,6 +341,63 @@ Equipment Registry の情報を基準に、
 取得順序・取得時期・市場監視を管理する。
 
 Equipment の詳細情報は保持しない。
+
+---
+
+# Coffee Zone Acquisition Rules（BR-003から移設）
+
+本章は、Coffee Zoneの調達に関する方針をBR-003 Acquisition Handbookから移設したものである。適用範囲はCoffee Zoneのままとし、他ゾーンへ拡張しない。
+
+---
+
+### Preferred Sources  
+  
+1. メーカー公式ストア  
+2. 正規代理店  
+3. 国内正規販売店  
+4. Amazon Japan（公式または正規販売者であることが明確な場合のみ）  
+
+---
+
+## Price Policy  
+  
+BR-003では、購入判断に使用できるよう、原則として全製品に価格目安を記載する。  
+  
+価格の優先順位は以下とする。  
+  
+1. Current Official Price  
+2. Current Authorized Retail Price  
+3. Current Established Retail Market Price  
+4. Conservative Planning Estimate  
+  
+価格が公式価格でない場合は、`Estimated` として扱う。  
+  
+海外製品については、日本到着までに必要となる可能性のある以下を考慮してEstimated Total Costを設定する。  
+  
+* Product Price  
+* International Shipping  
+* Consumption Tax  
+* Import Tax / Duty  
+* Import Handling Fee  
+* Currency fluctuation  
+  
+#### Conservative Total Cost Policy  
+  
+Estimated Total Costは、実際の購入時に不足しないことを優先し、やや保守的に設定する。  
+  
+Estimated Total Costは公式販売価格を意味しない。  
+  
+---  
+
+---
+
+## Successor Model Policy  
+  
+BR-002に登録された製品が現在販売終了しており、メーカーが明確な後継モデルを販売している場合、BR-003では現行後継モデルをCurrent Purchase Modelとして扱う。  
+  
+ただし、BR-002の正式なDecisionや歴史的モデル名称を独断で変更しない。  
+
+具体的な後継モデル対応表（Current Successor Mapping）は BR-003 Acquisition Handbook を参照。
 
 ---
 
