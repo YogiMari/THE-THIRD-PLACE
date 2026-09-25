@@ -103,7 +103,7 @@ Foundation Compass は、
 - OP-002 Design Bible
 - MD-002 Field Atlas
 - MD-004 Equipment Registry
-- OP-005 Acquisition Strategy
+- OP-005 Pursuit Strategy
 - MD-001 Storage Blueprint
 
 そして、
@@ -363,7 +363,7 @@ THE THIRD PLACE Core Documents の中で、
 | OP-002 Design Bible | 設計思想 |
 | MD-002 Field Atlas | 舞台の選定 |
 | MD-004 Equipment Registry | Equipment の唯一のマスターデータ |
-| OP-005 Acquisition Strategy | Equipment を迎える戦略 |
+| OP-005 Pursuit Strategy | Equipment を迎える戦略 |
 | **OP-006 Foundation Compass** | Foundation を構成・維持するための指針 |
 | OP-007 Habitat Architecture | フィールドで完成する暮らしの設計 |
 | OP-003 Affinity Lexicon | 好み・美意識・親和性の語彙 |

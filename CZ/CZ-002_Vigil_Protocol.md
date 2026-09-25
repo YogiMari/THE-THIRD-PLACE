@@ -87,7 +87,7 @@ KN-001 Heritage Chronicle
 （長期ナレッジアーカイブ）
 ```
 
-Vigil Patrolによって発見された内容は、購入判断のためOP-005 Acquisition Strategyへ引き継がれる。
+Vigil Patrolによって発見された内容は、購入判断のためOP-005 Pursuit Strategyへ引き継がれる。
 
 ---
 
@@ -149,7 +149,7 @@ Watch Listを維持する際、それ以前のプロトコルの各セクショ�
 
 エントリ001〜007は、本改訂以前から存在する。
 
-エントリ008〜023は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、BR-002 Barista Codex / BR-003 Acquisition Handbookが引き続き管轄する。
+エントリ008〜023は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、BR-002 Barista Canon / BR-003 Procurement Handbookが引き続き管轄する。
 
 エントリ001〜007にも、MD-004上の該当IDが存在するものについては**MD-004 Reference**を付記している（003 WANTKEY CAMP × LOCKFIELD EQUIPMENT SC HANDLE WANTKEY ExclusiveはMD-004に該当IDなし）。MD-004上の製品が未確定（Brand / Product = Unconfirmed）の枠（FUR-034 Sleeping Mat、FUR-035 Pad Sheet）は、検索対象の製品が定まらないため本リストの対象外とし、CZ-001 Deliberation Dossierで管理する。
 

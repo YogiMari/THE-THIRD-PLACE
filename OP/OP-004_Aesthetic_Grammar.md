@@ -1346,7 +1346,7 @@ THE THIRD PLACE Core Documents の中で、
 | OP-002 Design Bible | 設計思想 |
 | MD-002 Field Atlas | 舞台の選定 |
 | MD-004 Equipment Registry | Equipment の唯一のマスターデータ |
-| OP-005 Acquisition Strategy | Equipment を迎える戦略 |
+| OP-005 Pursuit Strategy | Equipment を迎える戦略 |
 | OP-006 Foundation Compass | Foundation を構成・維持するための指針 |
 | OP-007 Habitat Architecture | フィールドに完成する暮らしの空間を定義する |
 | OP-003 Affinity Lexicon | 好み・美意識・親和性の語彙 |

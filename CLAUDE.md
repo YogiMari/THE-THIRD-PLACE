@@ -16,7 +16,7 @@ THE THIRD PLACE は、哲学駆動型アウトドア・ライフスタイル設�
 文書は可変性の度合いで、設計・運用・記録の3分類に区分される。正式な文書一覧（Document ID・Title・Path・Role・Authority・Volatility）はOP-008 Documentation System §8を唯一の正本として参照すること。個別文書名はこのファイルでは保持しない。
 
 - `DS/*.md` — 設計（絶対不変）
-- `OP/*.md` — 運用（定義：不変だが改訂の可能性あり）。文書の登録規則・評価基準そのものを定義するOP-010 Registry Standardを含む。
+- `OP/*.md` — 運用（定義：不変だが改訂の可能性あり）。文書の登録規則・評価基準そのものを定義するOP-010 Qualification Charterを含む。
 - 記録（可変）— 以下5系列
   - `DB/*.md` — Dashboard
   - `MD/*.md` — Master Data

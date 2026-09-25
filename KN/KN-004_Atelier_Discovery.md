@@ -244,7 +244,7 @@ Projectの購入判断を支援する。
 
 ## Must Buy Watch
 
-OP-005 Acquisition Strategy に登録された
+OP-005 Pursuit Strategy に登録された
 
 Must Buy Item を継続監視する。
 
@@ -336,7 +336,7 @@ Discoveryで得られた情報は、
 
 必要に応じて
 
-- OP-005 Acquisition Strategy
+- OP-005 Pursuit Strategy
 - MD-004 Equipment Registry
 - KN-001 Heritage Chronicle
 - KN-003 Beyond Journey

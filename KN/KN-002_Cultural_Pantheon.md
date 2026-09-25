@@ -1939,7 +1939,7 @@ MD-004 Equipment Registryを参照する。
 
 ---
 
-### OP-005 Acquisition Strategy
+### OP-005 Pursuit Strategy
 
 取得戦略を管理する。
 
@@ -4101,7 +4101,7 @@ THE THIRD PLACEでは、
 
 - OP-002 Design Bible
 - MD-004 Equipment Registry
-- OP-005 Acquisition Strategy
+- OP-005 Pursuit Strategy
 - OP-003 Affinity Lexicon
 - OP-004 Aesthetic Grammar
 

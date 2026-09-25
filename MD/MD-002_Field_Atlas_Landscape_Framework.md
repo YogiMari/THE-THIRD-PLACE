@@ -23,7 +23,7 @@ Field Atlas Landscape Framework は
 
 # Registry Standard Reference
 
-→ OP-010 Registry Standard Part C を参照。
+→ OP-010 Qualification Charter Part C を参照。
 
 # Field Atlas Database
 
@@ -227,14 +227,14 @@ THE THIRD PLACE Core Documents の一つとして、
 - OP-001 THE THIRD PLACE Constitution
 - OP-002 THE THIRD PLACE Design Bible
 - MD-004 Equipment Registry Object Reference
-- OP-005 Acquisition Strategy
+- OP-005 Pursuit Strategy
 - OP-006 Foundation Compass
 - OP-007 Habitat Architecture
 - OP-003 Affinity Lexicon
 - OP-004 Aesthetic Grammar
 - MD-001 Storage Blueprint
 - MD-003 Galley Fare
-- OP-010 Registry Standard
+- OP-010 Qualification Charter
 
 Field Atlas は、
 

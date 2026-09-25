@@ -25,7 +25,7 @@ Planning情報（計画段階の情報）は、意図的に除外している。
 
 MD-004はキッチン調理器具を管理しない。キッチン機材は、別途function-first（機能優先）の選定基準を持つMD-003 Galley Fareが管理する。詳細はMD-003を参照。  
 
-Coffee機材は、他のすべてのDomainと異なる登録ルールに従う。比較検討中・意思決定中のアイテムは、MD-004ではなくBR-002 Barista Codexのみで追跡する。Coffeeアイテムは、購入されOwnedになった時点で初めてMD-004（COF-series）へ登録される。それまでの間、Coffee Domain（COF-series）は意図的に未入力のままとする — これはデータの欠落ではなく、設計上の仕様である。
+Coffee機材は、他のすべてのDomainと異なる登録ルールに従う。比較検討中・意思決定中のアイテムは、MD-004ではなくBR-002 Barista Canonのみで追跡する。Coffeeアイテムは、購入されOwnedになった時点で初めてMD-004（COF-series）へ登録される。それまでの間、Coffee Domain（COF-series）は意図的に未入力のままとする — これはデータの欠落ではなく、設計上の仕様である。
 
 このルールは、CoffeeとKitchenのみに適用される。他のすべてのDomain（Furniture、Light、Aroma、Storage、Fire、Shelter）には影響しない: 検討中・保留中・決定済みだが未購入のアイテムは、これまで通り既存のStatusシステム（Essential / Candidate / Upgrade）を用いてMD-004へ登録され続ける。
 
@@ -35,7 +35,7 @@ Coffee機材は、他のすべてのDomainと異なる登録ルールに従う�
   
 # Registry Rules（登録ルール）  
 
-→ OP-010 Registry Standard Part A を参照。
+→ OP-010 Qualification Charter Part A を参照。
 
 ---
 
@@ -4851,7 +4851,7 @@ Carrying Case（STR-019 Container Bridge Frame用。約830×383×50mmの黒皮�
 
 Coffee Domainは、抽出に関する一連のワークフロー全体を管理する。  
 
-選定基準や購入優先順位は、OP-005 Acquisition Strategyの管轄である。  
+選定基準や購入優先順位は、OP-005 Pursuit Strategyの管轄である。  
 
 MD-004は、装備（Equipment）のみを管理する。  
 
@@ -6693,7 +6693,7 @@ Vestibule（SHL-004 Slug Shelter V2.0専用の前室オプション）
 ---  
 # Parent / Child Rules（親子関係ルール）  
 
-→ 規則文は OP-010 Registry Standard Part A を参照。以下は Example（データ）のみ。
+→ 規則文は OP-010 Qualification Charter Part A を参照。以下は Example（データ）のみ。
 
 Example  
 
@@ -6732,7 +6732,7 @@ STR-027
 
 # Graphic Attribute（グラフィック属性）  
 
-→ OP-010 Registry Standard Part A を参照。
+→ OP-010 Qualification Charter Part A を参照。
 
 ---
 
@@ -6740,19 +6740,19 @@ STR-027
 
 # Industrial Attribute（インダストリアル属性）  
 
-→ OP-010 Registry Standard Part A を参照。
+→ OP-010 Qualification Charter Part A を参照。
 
 ---  
 
 # Color Rule（カラールール）  
 
-→ OP-010 Registry Standard Part A を参照。
+→ OP-010 Qualification Charter Part A を参照。
 
 ---  
 
 # Material Rule（マテリアルルール）  
 
-→ OP-010 Registry Standard Part A を参照。
+→ OP-010 Qualification Charter Part A を参照。
 
 ---  
 
@@ -6783,7 +6783,7 @@ Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning�
 - OP-001 THE THIRD PLACE Constitution  
 - OP-002 Design Bible  
 - MD-002 Field Atlas  
-- OP-005 Acquisition Strategy  
+- OP-005 Pursuit Strategy  
 - OP-006 Foundation Compass  
 - OP-007 Habitat Architecture  
 - OP-003 Affinity Lexicon  
@@ -6791,7 +6791,7 @@ Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning�
 - MD-001 Storage Blueprint  
 - MD-003 Galley Fare  
 - CZ-001 Deliberation Dossier  
-- OP-010 Registry Standard  
+- OP-010 Qualification Charter  
 
 ---  
 

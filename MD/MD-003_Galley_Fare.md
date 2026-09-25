@@ -27,11 +27,11 @@ MD-003の対象機材はMD-004には登録しない。
 
 # Selection Standard
 
-→ OP-010 Registry Standard Part B を参照。
+→ OP-010 Qualification Charter Part B を参照。
 
 # Registry Rules
 
-→ OP-010 Registry Standard Part B を参照。
+→ OP-010 Qualification Charter Part B を参照。
 
 # Kitchen
 
@@ -3042,14 +3042,14 @@ THE THIRD PLACE Core Documents の中で、
 | OP-002 Design Bible | 設計思想 |
 | MD-002 Field Atlas | 舞台の選定 |
 | MD-004 Equipment Registry | Equipment の唯一のマスターデータ（キッチン機材を除く） |
-| OP-005 Acquisition Strategy | Equipment を迎える戦略 |
+| OP-005 Pursuit Strategy | Equipment を迎える戦略 |
 | OP-006 Foundation Compass | Foundation を構成・維持するための指針 |
 | OP-007 Habitat Architecture | フィールドに完成する暮らしの空間を定義する |
 | OP-003 Affinity Lexicon | 好み・美意識・親和性の語彙 |
 | OP-004 Aesthetic Grammar | 美しさを構成する法則 |
 | MD-001 Storage Blueprint | 収納設計・運用 |
 | **MD-003 Galley Fare** | キッチン機材の独立マスターデータ |
-| OP-010 Registry Standard | Selection Standard・Registry Rulesの登録規則 |
+| OP-010 Qualification Charter | Selection Standard・Registry Rulesの登録規則 |
 
 ---
 

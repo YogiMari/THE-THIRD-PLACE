@@ -197,7 +197,7 @@ THE THIRD PLACEにおいて
 最も優先順位の高いDesign Domainとする。
 
 
-### Zone Evaluation Philosophy（CZ-001 Deliberation Codexから移設）
+### Zone Evaluation Philosophy（CZ-001 Deliberation Dossierから移設）
 
 未策定。
 
@@ -228,7 +228,7 @@ Lightingは、
 空間へ静けさを与える存在である。
 
 
-### Zone Evaluation Philosophy（CZ-001 Deliberation Codexから移設）
+### Zone Evaluation Philosophy（CZ-001 Deliberation Dossierから移設）
 
 未策定。
 
@@ -257,7 +257,7 @@ Aromaは、
 それらを成立させる存在である。
 
 
-### Zone Evaluation Philosophy（CZ-001 Deliberation Codexから移設）
+### Zone Evaluation Philosophy（CZ-001 Deliberation Dossierから移設）
 
 未策定。
 
@@ -296,7 +296,7 @@ Bridge Systemは、
 Storage Domainに所属する。
 
 
-### Zone Evaluation Philosophy（CZ-001 Deliberation Codexから移設）
+### Zone Evaluation Philosophy（CZ-001 Deliberation Dossierから移設）
 
 未策定（現時点でCandidate項目なし）。
 
@@ -447,7 +447,7 @@ THE THIRD PLACEの中心となる存在である。
 
 すべてFire Domainに含まれる。
 
-### Zone Evaluation Philosophy（CZ-001 Deliberation Codexから移設）
+### Zone Evaluation Philosophy（CZ-001 Deliberation Dossierから移設）
 
 Fire Domainの機材は、以下4軸で評価する。
 
@@ -464,7 +464,7 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 ## 07. Shelter（シェルター）
 
 
-### Zone Evaluation Philosophy（CZ-001 Deliberation Codexから移設）
+### Zone Evaluation Philosophy（CZ-001 Deliberation Dossierから移設）
 
 未策定（現時点でCandidate項目なし）。
 
