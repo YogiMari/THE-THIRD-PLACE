@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.2
+3.3
 
 # Status
 
@@ -82,7 +82,7 @@ CZ-001 Deliberation Dossier
 
 ## Fire
 
-### Fire Pit（MD-004: FIR-036、空き枠）
+### Wood Stove／薪ストーブ（MD-004: FIR-036、空き枠）
 
 **Status**：Under Evaluation
 
@@ -93,7 +93,7 @@ CZ-001 Deliberation Dossier
 | Ease of Clean-up | 多次燃焼構造で灰が比較的少量、炉板も軽量。灰受け自体の取り出しやすさは未確認（Gap） | ロストル形状変更で灰が捨てやすく改良済み。ただし「向き合う感覚」を重視し灰を残す運用哲学もあり |
 | Transport | 収納バッグ1つに全部品完結、総重量22kg | 本体単体16kg、煙突・スタンドは別売で管理単位が分散 |
 
-**Note**：旧FIR-020（BLISS-SP）はFIR-019へ統合済み（その後FIR-030へ改番、MD-004 Version 7.49で削除）。現在はMD-004 Version 7.53で新設した空き枠FIR-036が本検討の登録先であり、いずれかの候補を購入した時点でFIR-036へ登録する。旧FIR-020は欠番として保持されていたが、MD-004 Version 7.38のFire Domain番号整理により当該レコード自体を削除した。統合の経緯はMD-004 Version 7.14を参照。
+**Note**：本検討は薪ストーブ（二次燃焼式ポータブルストーブ）の検討であり、焚き火台ではない（2026-09-25、MARI様確認・ウェブ一次情報で両候補とも薪ストーブと確認・MD-004 Version 7.57で呼称訂正）。焚き火台はFIR-001（RODAN BRICK）で既に充足済み。旧FIR-020（BLISS-SP）はFIR-019へ統合済み（その後FIR-030へ改番、MD-004 Version 7.49で削除）。現在はMD-004 Version 7.53で新設した空き枠FIR-036が本検討の登録先であり、いずれかの候補を購入した時点でFIR-036へ登録する。旧FIR-020は欠番として保持されていたが、MD-004 Version 7.38のFire Domain番号整理により当該レコード自体を削除した。統合の経緯はMD-004 Version 7.14を参照。
 
 **Unresolved Gaps**：MT.SUMI Aura FGの灰受け取り出しやすさは一次情報で未確認。両候補とも実物確認未実施。
 
@@ -249,6 +249,7 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 2.17 | 2026-09-23 | MD-004 Version 7.54と連動。Under ConsiderationからWinter Top Quilt（FUR-033）を削除し、Decision Logへ「Snow Peak ダウン システムオフトン（FUR-032）採用・FUR-033 Retired」を記録。Light欄の「LGT-028グループの親子構造は据え置き」の注記を削除（該当グループはMD-004上に存在しないため。プロジェクトオーナー確認）。 |
 | 3.1 | 2026-09-24 | MARI様のご指摘に基づき、OP-008 §11 Naming Conventionへ新設された文書名重複禁止ルールに伴い、タイトルをDeliberation CodexからDeliberation Dossierへ変更（BR-002 Barista Canonとの語重複を解消）。ファイル名もCZ-001_Deliberation_Dossier.mdへ変更。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持。内容（検討記録そのもの）に変更はない。 |
 | 3.2 | 2026-09-25 | MD-004 Version 7.56（Snow Peak公式ECサイト・価格.com・campreview.jp等の一次情報により、FUR-032の正しい型番はBD-070＝ワイドマットセットであると確定）と連動し、Confirmed — Purchase Pending の Furniture 表を「スリムマットセット（BD-060）」から「ワイドマットセット（BD-070）」へ訂正。Decision Log内の2026-09-23付の行（FUR-033関連）にある「スリムマットセット」表記は、当時の記録として遡及修正しない。 |
+| 3.3 | 2026-09-25 | MARI様のご指摘に基づき、Fire節の見出し誤り「Fire Pit」を「Wood Stove／薪ストーブ」へ訂正。焚き火台は既にFIR-001（RODAN BRICK、Owned）で充足済みであり、本検討中の候補（MT.SUMI Aura FG、FIREGRAPHIX BLISS-SP）はいずれも薪ストーブ（二次燃焼式ポータブルストーブ）であることをウェブ一次情報で確認した（MARI様確認）。MD-004 Version 7.57・CZ-002 Vigil Protocol Version 3.1と連動。 |
 
 ---
 
