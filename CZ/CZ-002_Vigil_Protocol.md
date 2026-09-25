@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 3.0  
+**Version**: 3.1  
 **Status**: Official  
 **Owner**: THE THIRD PLACE
 
@@ -33,6 +33,7 @@
 | 2.15 | 2026-09-23 | MD-004（Version 7.53）を正とした照合に基づき、エントリ009（MIYABI RICH Alumi Frozen）のMD-004 Reference のStatus表記をEssentialからOwnedへ訂正（MD-004上はOwned）。エントリ自体の扱い（Watch Listからの除外要否）は変更していない。 |
 | 2.16 | 2026-09-23 | MD-004（Version 7.54）を正としたWatch Listの整理（プロジェクトオーナー指示）。MD-004上でOwnedとなっている旧エントリ009（MIYABI RICH Alumi Frozen、LGT-016）を削除し、旧エントリ010〜021を009〜020へ繰り上げ。MD-004でStatus = Essentialながら未掲載だった3件を追加：021 OTEBO CRAFTS BABEL（LGT-017）、022 Snow Peak ダウン システムオフトン スリムマットセット（FUR-032）、023 KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリートセット（STR-030）。エントリ001・002・004・005・006・007にMD-004 Referenceを付記し、Brand表記をMD-004の公式表記へ統一（001 DEVISE WORKS × ANCAM、002 DEVISE WORKS × WANTKEY CAMP、004 rove troupe、006 wildingout、007 nodel design）。 |
 | 3.0 | 2026-09-24 | Volatility Restructureにより、実行プロトコル各章（II〜VII、Watch List Structure、Watch List Maintenance Rules、Operational Directives）をOP-009 Search Doctrine §XVIII. Patrol Protocolへ逐語移設した。責任範囲の変更のためMajor Version。併せて、プロジェクトオーナーの確認により、エントリ003のBrandを「WANTKEY CAMP × LOCKFIELD EQUIPMENT」、Targetを「SC HANDLE WANTKEY Exclusive」へ確定（旧KN-004 Watch Listの表記を公式表記として採用）し、Required Keywordsに正式製品名を追加。 |
+| 3.1 | 2026-09-25 | MD-004 Version 7.57（FIR-036の呼称訂正：Fire Pit→Wood Stove）と連動。エントリ020（MT.SUMI Aura FG）のRequired Keywordsから誤った「fire pit」表記を削除し「薪ストーブ」関連キーワードへ修正。MD-004 ReferenceにFIR-036が薪ストーブ検討枠である旨を明記。Version 2.7でMD-004側の旧FIR-020レコード削除に伴い削除されていたFIREGRAPHIX BLISS-SPを、新設のFIR-036参照でエントリ024として復元登録。あわせて、Current Watch List冒頭の説明文にある旧称参照を「CZ-001 Deliberation Codex」から「CZ-001 Deliberation Dossier」へ更新し、エントリ022（Snow Peak システムオフトン）をMD-004/CZ-001側で確定済みのBD-070／ワイドマットセット表記へ同期した（従来はBD-060／スリムマットセット表記のまま更新漏れとなっていた）。 |
 
 ---
 
@@ -150,7 +151,7 @@ Watch Listを維持する際、それ以前のプロトコルの各セクショ�
 
 エントリ008〜023は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、BR-002 Barista Codex / BR-003 Acquisition Handbookが引き続き管轄する。
 
-エントリ001〜007にも、MD-004上の該当IDが存在するものについては**MD-004 Reference**を付記している（003 WANTKEY CAMP × LOCKFIELD EQUIPMENT SC HANDLE WANTKEY ExclusiveはMD-004に該当IDなし）。MD-004上の製品が未確定（Brand / Product = Unconfirmed）の枠（FUR-034 Sleeping Mat、FUR-035 Pad Sheet）は、検索対象の製品が定まらないため本リストの対象外とし、CZ-001 Deliberation Codexで管理する。
+エントリ001〜007にも、MD-004上の該当IDが存在するものについては**MD-004 Reference**を付記している（003 WANTKEY CAMP × LOCKFIELD EQUIPMENT SC HANDLE WANTKEY ExclusiveはMD-004に該当IDなし）。MD-004上の製品が未確定（Brand / Product = Unconfirmed）の枠（FUR-034 Sleeping Mat、FUR-035 Pad Sheet）は、検索対象の製品が定まらないため本リストの対象外とし、CZ-001 Deliberation Dossierで管理する。
 
 ## 001
 
@@ -626,13 +627,14 @@ Aura FG
 
 **MD-004 Reference**
 
-FIR-036（購入時に登録予定）
+FIR-036（購入時に登録予定。薪ストーブ検討枠。エントリ024 FIREGRAPHIX BLISS-SPと同一枠を競合）
 
 **Required Keywords**
 
 - MT.SUMI Aura FG
-- Aura FG fire pit
+- Aura FG 薪ストーブ
 - マウントスミ オーラFG
+- マウントスミ 薪ストーブ
 
 ---
 
@@ -671,7 +673,7 @@ Snow Peak
 
 **Target**
 
-ダウン システムオフトン スリムマットセット（BD-060）
+ダウン システムオフトン ワイドマットセット（BD-070）
 
 **MD-004 Reference**
 
@@ -679,13 +681,13 @@ FUR-032
 
 **Required Keywords**
 
-- BD-060
-- Snow Peak BD-060
-- snow peak BD-060
-- ダウン システムオフトン スリムマットセット
-- システムオフトン スリムマットセット
+- BD-070
+- Snow Peak BD-070
+- snow peak BD-070
+- ダウン システムオフトン ワイドマットセット
+- システムオフトン ワイドマットセット
 - スノーピーク システムオフトン
-- スノーピーク BD-060
+- スノーピーク BD-070
 - スノーピーク ダウン システムオフトン
 
 ---
@@ -714,6 +716,33 @@ STR-030
 - T-box 全面コンプリートセット
 - フォールディングワイヤー Tボックス
 - Tボックス コンプリートセット
+
+---
+
+## 024
+
+**Brand**
+
+FIREGRAPHIX
+
+**Target**
+
+BLISS-SP
+
+**MD-004 Reference**
+
+FIR-036（購入時に登録予定。薪ストーブ検討枠。エントリ020 MT.SUMI Aura FGと同一枠を競合）
+
+**Notes**
+
+旧エントリ022相当（旧MD-004 Reference: 旧FIR-020）はVersion 2.7でMD-004側の旧FIR-020レコード削除に伴い削除されていたが、本検討自体はCZ-001 Deliberation Dossierで継続していたため、新設のFIR-036参照で本エントリとして復元登録した（Version 3.1）。
+
+**Required Keywords**
+
+- FIREGRAPHIX BLISS-SP
+- BLISS-SP 薪ストーブ
+- ファイヤーグラフィックス BLISS
+- BLISS SP wood stove
 
 ---
 
