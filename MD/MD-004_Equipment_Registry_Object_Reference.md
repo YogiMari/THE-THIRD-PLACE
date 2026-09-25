@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.56  
+Version 7.57  
   
 ---  
   
@@ -29,7 +29,7 @@ Coffee機材は、他のすべてのDomainと異なる登録ルールに従う�
 
 このルールは、CoffeeとKitchenのみに適用される。他のすべてのDomain（Furniture、Light、Aroma、Storage、Fire、Shelter）には影響しない: 検討中・保留中・決定済みだが未購入のアイテムは、これまで通り既存のStatusシステム（Essential / Candidate / Upgrade）を用いてMD-004へ登録され続ける。
 
-**Candidate段階における具体的製品情報の扱い**：Status = Candidateのアイテムは、MD-004上ではBrand / Productを「Unconfirmed」とし、用途（Industrial Attribute）とEquipment IDのみを記録する。複数の具体的な製品候補間の比較・評価・検討記録は、MD-004ではなくCZ-001 Deliberation Codexのみで管理する。特定の製品が正式に決定（Status = Essential）した時点で、初めてBrand / ProductをMD-004へ記載する。これにより、Candidateの定義（「必要だが、具体的な製品はまだ決まっていない」）とMD-004上の実データを正確に一致させる。競合していた複数の候補IDは、1件の決定枠IDへ統合し、不要となったIDはRetired（統合済み）として記録を残す。
+**Candidate段階における具体的製品情報の扱い**：Status = Candidateのアイテムは、MD-004上ではBrand / Productを「Unconfirmed」とし、用途（Industrial Attribute）とEquipment IDのみを記録する。複数の具体的な製品候補間の比較・評価・検討記録は、MD-004ではなくCZ-001 Deliberation Dossierのみで管理する。特定の製品が正式に決定（Status = Essential）した時点で、初めてBrand / ProductをMD-004へ記載する。これにより、Candidateの定義（「必要だが、具体的な製品はまだ決まっていない」）とMD-004上の実データを正確に一致させる。競合していた複数の候補IDは、1件の決定枠IDへ統合し、不要となったIDはRetired（統合済み）として記録を残す。
   
 ---  
   
@@ -1327,7 +1327,7 @@ Unconfirmed
 
 ### Industrial Attribute  
 
-Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-032（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はCZ-001 Deliberation Codexで管理）  
+Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-032（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はCZ-001 Deliberation Dossierで管理）  
 
 ---  
 # Light  
@@ -6467,7 +6467,7 @@ Hook
 
 ## FIR-036  
 
-Vacant ID. Reserved for a fire pit currently under deliberation (see CZ-001 Deliberation Codex). To be registered upon purchase.  
+Vacant ID. Reserved for a wood stove (薪ストーブ) currently under deliberation (see CZ-001 Deliberation Dossier). Fire Pit is already fulfilled by FIR-001 (RODAN BRICK, Owned). To be registered upon purchase.  
 
 ---  
 
@@ -6737,7 +6737,7 @@ MD-004 Equipment Registryは、Human Principlesとの美意識的整合が求め
 
 他の文書はMD-004を参照するが、装備情報を再定義しない。  
 
-Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning、Evaluationは、それぞれの文書で管理する。Candidate段階の具体的製品比較・評価はCZ-001 Deliberation Codexで管理する。  
+Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning、Evaluationは、それぞれの文書で管理する。Candidate段階の具体的製品比較・評価はCZ-001 Deliberation Dossierで管理する。  
 
 ---  
 
@@ -6753,7 +6753,7 @@ Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning�
 - OP-004 Aesthetic Grammar  
 - MD-001 Storage Blueprint  
 - MD-003 Galley Fare  
-- CZ-001 Deliberation Codex  
+- CZ-001 Deliberation Dossier  
 - OP-010 Registry Standard  
 
 ---  
@@ -7551,6 +7551,23 @@ FUR-032に記録されている価格（¥44,000）はBD-060（スリム）の�
 - Related Documents：変更なし。
 
 ---
+## Version 7.57
+
+MARI様のご指摘に基づき、Fire Domain空き枠FIR-036の呼称誤りを訂正した。焚き火台（Fire Pit）は既にFIR-001（RODAN BRICK、Owned）で充足しており、FIR-036で検討中の候補（MT.SUMI Aura FG、FIREGRAPHIX BLISS-SP）は、いずれも薪ストーブ（二次燃焼式ポータブルストーブ）であることをウェブ一次情報で確認した。あわせて、CZ-001 Deliberation Dossier（2026-09-24付でDeliberation Codexから改称済み）の旧称「Deliberation Codex」が本文書内の現行記述に残置していた箇所（Purpose、FUR-035、Single Source of Truth、Related Documents）を訂正した。
+
+### Changes
+
+- FIR-036：説明文を「Reserved for a fire pit」から「Reserved for a wood stove（薪ストーブ）」へ訂正。焚き火台はFIR-001で充足済みである旨を明記。CZ-001参照表記もDeliberation Codexから最新名称Deliberation Dossierへ更新。
+- Purpose：Candidate段階の比較記録の管理先表記を「CZ-001 Deliberation Codex」から「CZ-001 Deliberation Dossier」へ更新。
+- FUR-035（Pad Sheet）：Industrial Attribute内の管理先表記を「CZ-001 Deliberation Codex」から「CZ-001 Deliberation Dossier」へ更新。
+- Single Source of Truth：管理先表記を「CZ-001 Deliberation Codex」から「CZ-001 Deliberation Dossier」へ更新。
+- Related Documents：「CZ-001 Deliberation Codex」を「CZ-001 Deliberation Dossier」へ更新。
+- Version 7.0〜7.56の記述内にある「Fire Pit」表記および旧称「Deliberation Codex」表記は、当時の記録として遡及修正しない。
+
+- Related Documents：CZ-001 Deliberation Dossier（Ver.3.3。Fire Domain見出し・Note訂正）、CZ-002 Vigil Protocol（Ver.3.1。Watch Listエントリ020訂正・エントリ024新規追加）。
+
+---
+
 ## Document Renumbering Note
 
 本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TP-004からMD-004へ番号を変更した。本文中の他文書参照（TP-002・TP-005・TP-011・PX-007等）および「Relationship to Other Core Documents」表を新ID体系へ更新した。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Version 7.32）に変更はない。旧ID: TP-004。  
