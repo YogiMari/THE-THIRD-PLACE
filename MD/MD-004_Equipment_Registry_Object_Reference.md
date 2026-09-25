@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.57  
+Version 7.58  
   
 ---  
   
@@ -4289,6 +4289,7 @@ Owned
 
 - STR-020  
 - STR-021  
+- STR-034  
 
 ### Color  
 
@@ -4297,6 +4298,10 @@ Black
 ### Material  
 
 Black Skin Iron  
+
+### Industrial Attribute  
+
+Container Extension Frame（Beck Container①・②間の拡張フレーム。公式サイズ830×383×50mm、重量3kg、耐荷重20kg。出典：nodeldesign.com/project-container-bridge）  
 
 ### Price  
 
@@ -4808,6 +4813,38 @@ Storage Container Base / Leg（汎用スタンド）
 ### Price  
 
 ¥55,500  
+
+---  
+
+## STR-034  
+
+**Brand**  
+
+Unconfirmed  
+
+**Product**  
+
+Unconfirmed  
+
+**Status**  
+
+Candidate  
+
+**Parent**  
+
+STR-019  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Carrying Case（STR-019 Container Bridge Frame用。約830×383×50mmの黒皮鉄フレームを保護する市販ケースを検討中。将来的にFUR-026 Butterfly Table M Black Look（Upgrade、未購入）との共用も視野。具体的な製品比較はCZ-001 Deliberation Dossierで管理）  
 
 ---  
 # Coffee  
@@ -7565,6 +7602,19 @@ MARI様のご指摘に基づき、Fire Domain空き枠FIR-036の呼称誤りを�
 - Version 7.0〜7.56の記述内にある「Fire Pit」表記および旧称「Deliberation Codex」表記は、当時の記録として遡及修正しない。
 
 - Related Documents：CZ-001 Deliberation Dossier（Ver.3.3。Fire Domain見出し・Note訂正）、CZ-002 Vigil Protocol（Ver.3.1。Watch Listエントリ020訂正・エントリ024新規追加）。
+
+---
+
+## Version 7.58
+
+MARI様確認・ノデルデザイン公式サイト（nodeldesign.com/project-container-bridge）の一次情報に基づき、STR-019の公式サイズを追記した。あわせて、ブリッジフレーム用の保護ケース検討枠を新設した。
+
+### Changes
+
+- STR-019：Industrial Attributeを新設し、公式サイズ（830×383×50mm）・重量（3kg）・耐荷重（20kg）を記録（出典：nodeldesign.com/project-container-bridge）。Child ComponentsにSTR-034を追加。
+- STR-034：新規登録（Status: Candidate、Parent: STR-019）。ブリッジフレーム保護用の市販ケース検討枠。具体的な製品比較・評価はCZ-001 Deliberation Dossierで管理する。
+
+- Related Documents：CZ-001 Deliberation Dossier（Storage Under Considerationへの新規記載と連動）。
 
 ---
 
