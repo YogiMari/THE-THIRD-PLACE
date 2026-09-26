@@ -1,7 +1,7 @@
 OP-006 Foundation Compass
 # OP-006
 # Foundation Compass
-## Ver.1.2
+## Ver.1.3
 
 ---
 
@@ -33,7 +33,7 @@ Equipment Registry Object Reference が
 
 「何を持つか」
 
-Acquisition Strategy が
+Pursuit Strategy が
 
 「何を迎えるか」
 
@@ -402,6 +402,14 @@ Foundation Compass は、
 > **A lasting habitat begins with a disciplined foundation.**
 
 **「永く愛せる居場所は、整えられた基盤から始まる。」**
+
+---
+
+## Revision History
+
+| Version | Date | Description |
+|---|---|---|
+| 1.3 | 2026-09-26 | 本文内のOP-005表記が旧題『Acquisition Strategy』のままだった箇所をPursuit Strategyへ修正。 |
 
 ---
 
