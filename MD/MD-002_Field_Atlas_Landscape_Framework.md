@@ -1,6 +1,6 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.3.2
+## Ver.3.3
 
 ---
 
@@ -21,7 +21,7 @@ Field Atlas Landscape Framework は
 
 ---
 
-# Registry Standard Reference
+# Qualification Charter Reference
 
 → OP-010 Qualification Charter Part C を参照。
 
@@ -271,6 +271,7 @@ THE THIRD PLACE を実現するための
 | 3.0 | 2026-09-15 | Evaluation Frameworkを全面改訂。旧Surroundings軸を廃止しIdentity軸（Surrounding Value）へ統合。新たにComfort軸（設備への場内距離・区画間隔・プライバシー等）を新設。Partner Valueを独立評価軸から、6軸（Site・Facility・Comfort・View・Identity・近さ）の合計による算出値（総合スコア）へ変更。Ranking Philosophyの「距離はスコアに含めない」という方針をMariの意思決定により正式に撤回し、近さ（Distance）を6軸の1つとして正式にスコアへ組み込む方針へ転換。Site軸に地面種別（砂利7点以上／芝4〜6点／土3点以下、ただし芝の質次第で例外あり）のスコアリング目安を追加。既存49サイトの統合スコアはVer.2.1までの旧フレームワークによる暫定値のまま据え置き、新フレームワークでの再評価は順次実施する方針を明記。Radar Sub-Scoresを6軸＋Partner Value（合計）の構成へ再設計。 |
 | 3.1 | 2026-09-15 | Facility軸の定義を明確化し、管理棟に併設されたショップ・温泉・サウナ・スパ等の体験価値はFacilityではなくIdentity（Experience Identity）で評価する旨を追記。Radar Sub-Scoresのスノーピークヘッドクォーターズ・Render Fika・RECAMP 富士スピードウェイの3件について、新6軸フレームワークで全軸を再ヒアリングし、Partner Value（合計）を算出。 |
 | 3.2 | 2026-09-15 | Radar Sub-Scoresのヒアリング方式を絶対値評価から**相対比較方式**へ変更し、全49件（訪問済み37件・未訪問12件）を最初から撮り直した。軸ごとの10点基準サイトを設定（Site：South One Village／Facility：スノーピークHQ・Render Fika／Comfort：Render Fika／View：浩庵キャンプ場／Identity：Render Fika・スノーピークHQ・スノーピーク鹿沼／近さ：Render Fika10点・スノーピークHQ1点）。View軸の基準として浩庵キャンプ場（山梨県身延町・本栖湖畔）を新規Reference Benchmark Siteとして追加。訪問済み37件はMariへの相対比較ヒアリング、未訪問12件はField Atlas Database記載の調査情報を根拠とした暫定値により、Partner Value（合計）を全件算出した。最高はRender Fika（54点）、最低はサンビレッジ金谷キャンプ場（18点）。 |
+| 3.3 | 2026-09-26 | 見出し『Registry Standard Reference』が2026-09-24付の改題（OP-010→Qualification Charter）に同期していなかった箇所を修正し、『Qualification Charter Reference』へ改題。本文（Part C参照）に変更はない。 |
 
 ---
 
