@@ -318,6 +318,7 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 3.4 | 2026-09-25 | MARI様のご指示に基づき、Storage Under Considerationへ新規記載。STR-019 Container Bridge Frame（MD-004: STR-034としてCandidate登録）の保護ケース検討を追加。市販のノデルデザイン純正Tactical Bag（AS2OV）をサイズ適合の妥協候補として記録。MD-004 Version 7.58と連動。 |
 | 3.5 | 2026-09-25 | MARI様のご指示に基づき、Furniture Under ConsiderationのWinter Sleeping Mat（FUR-034）を、ブランド調査未着手の空欄から3候補比較（Zライトソル／NEMOスイッチバック／BLACK ZONE MAT）へ更新。幅77cm×2枚連結に対し重ねずに敷く「隙間許容案」を仮登録。フルカバー案（116cm幅マット2枚を重ねる配置）は、重なり部分の段差による寝心地悪化が判明したため検討経緯として記録の上で棄却。 |
 | 3.6 | 2026-09-26 | MARI様のご指示に基づき、Winter Sleeping Mat（FUR-034）のStatus・Decisionを更新し、BLACK ZONE MAT×2を暫定最有力候補（仮確定）として明記。MD-004側のStatus更新（Candidate→Essential）・Confirmed — Purchase Pendingへの追加は、正式な購入決定を待って別途行う。候補①②（Zライトソル・NEMOスイッチバック）は比較参考として引き続き保持。 |
+| 3.7 | 2026-09-26 | MARI様のご決定に基づき、Fire — Wood Stove検討（MT.SUMI Aura FG vs FIREGRAPHIX BLISS-SP）を正式決定。FIREGRAPHIX BLISS-SPを採用（MD-004 Version 7.59・FIR-036〜042と連動）。Under Consideration（Fire）を空欄化し、Decision Logへ記録の上、通常運用の例外としてMARI様のご指示により両候補の詳細な検討記録を「Fire — Wood Stove 選定記録」として新設・保持。Confirmed — Purchase Pending（Fire）へFIR-036〜042の7行を追加。 |
 
 ---
 
