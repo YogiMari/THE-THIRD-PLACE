@@ -1,6 +1,6 @@
-OP-002 Design Bible Ver.5.1
+OP-002 Design Bible Ver.5.2
 # THE THIRD PLACE Design Bible
-## Ver.5.1 Official Complete Edition
+## Ver.5.2 Official Complete Edition
 
 ---
 
@@ -1324,7 +1324,7 @@ Equipment情報は、
 
 ## OP-005
 
-### Acquisition Strategy（取得戦略）
+### Pursuit Strategy（取得戦略）
 
 購入計画。
 
@@ -2088,7 +2088,7 @@ THE THIRD PLACEは、
 
 **THE THIRD PLACE Design Bible**
 
-**Ver.5.1 Official Complete Edition**
+**Ver.5.2 Official Complete Edition**
 
 **End of Document**
 
@@ -2103,3 +2103,9 @@ THE THIRD PLACEは、
 ## Volatility Restructure Note
 
 本文書は、2026-09-24付のVolatility Restructureにより、Ver.5.0からVer.5.1へ更新した。CZ-001 Deliberation Codex §Zone Evaluation PhilosophyおよびBR-002 Barista Codex §Design Principles／Coffee Zone Philosophy (Exception Clause)を、本書§Design Domainsへ逐語移設した（移設元には参照のみ残す）。
+
+---
+
+## Pursuit Strategy Reference Sync Note
+
+本文書は、2026-09-26付でVer.5.1からVer.5.2へ更新した。§内のOP-005見出しが旧題『Acquisition Strategy』のままだった箇所をPursuit Strategyへ修正した。
