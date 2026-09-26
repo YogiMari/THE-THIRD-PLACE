@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.5
+3.6
 
 # Status
 
@@ -105,11 +105,11 @@ CZ-001 Deliberation Dossier
 
 ### Winter Sleeping Mat（MD-004: FUR-034）
 
-**Status**：Candidate（比較中、未決定、隙間許容案として仮登録）
+**Status**：Candidate（**暫定最有力候補：BLACK ZONE MAT×2**、正式決定・MD-004 Status更新は未了）
 
-FUR-032（マット部、R値5.4）の下に敷く断熱補強・パンク保険。幅77cm×2枚連結（計154cm）に対し、重ねずに敷く前提（隙間許容案）で候補を仮登録する。
+FUR-032（マット部、R値5.4）の下に敷く断熱補強・パンク保険。幅77cm×2枚連結（計154cm）に対し、重ねずに敷く前提（隙間許容案）で候補を仮登録していたが、2026-09-26、MARI様のご指示によりBLACK ZONE MAT×2を暫定最有力候補とした。
 
-| | 候補① Zライトソル | 候補② NEMOスイッチバック | 候補③ BLACK ZONE MAT |
+| | 候補① Zライトソル | 候補② NEMOスイッチバック | 候補③ BLACK ZONE MAT（**暫定最有力**） |
 |---|---|---|---|
 | ブランド | Therm-a-Rest | NEMO | BlackishGear |
 | 幅×長さ×厚さ | 51×183×2.0cm | 51×183×2.3cm | 60×185×2.0cm |
@@ -125,9 +125,9 @@ FUR-032（マット部、R値5.4）の下に敷く断熱補強・パンク保険
 
 **検討経緯（フルカバー案の棄却）**：154cm幅を1枚または2枚重ねでフルカバーする案（例：CAPTAIN STAG IXPEフォームマット〈ダブル〉116×183cm×2枚を77cmずつずらして重ねる配置）も検討したが、重なり部分（幅78cm相当）で厚さが実質2倍になり段差が生じ、寝心地への悪影響が判明したため棄却。フルカバーを重なりなしで実現する幅154cm級の薄手マットは、2026-09-25時点で発見に至っていない（継続調査の余地あり）。
 
-**Unresolved Gaps**：R値・実績を取るか（候補①②）、価格・軽さ・黒を取るか（候補③）は未決定。幅154cm級フルカバー品の探索は継続中。
+**Unresolved Gaps**：BLACK ZONE MATはR値の第三者試験データはあるものの、実使用（特に厳冬期）での耐久性実績がまだ乏しい点は残るリスクとして保持。幅154cm級フルカバー品の探索は継続中。
 
-**Decision**：未決定
+**Decision**：**仮確定**（BLACK ZONE MAT×2、2026-09-26、MARI様）。正式な購入決定（MD-004 Status = Essentialへの更新・Confirmed — Purchase Pendingへの追加）は別途行う。候補①②は比較参考として保持する。
 
 ### Pad Sheet（MD-004: FUR-035）
 
@@ -284,6 +284,7 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 3.3 | 2026-09-25 | MARI様のご指摘に基づき、Fire節の見出し誤り「Fire Pit」を「Wood Stove／薪ストーブ」へ訂正。焚き火台は既にFIR-001（RODAN BRICK、Owned）で充足済みであり、本検討中の候補（MT.SUMI Aura FG、FIREGRAPHIX BLISS-SP）はいずれも薪ストーブ（二次燃焼式ポータブルストーブ）であることをウェブ一次情報で確認した（MARI様確認）。MD-004 Version 7.57・CZ-002 Vigil Protocol Version 3.1と連動。 |
 | 3.4 | 2026-09-25 | MARI様のご指示に基づき、Storage Under Considerationへ新規記載。STR-019 Container Bridge Frame（MD-004: STR-034としてCandidate登録）の保護ケース検討を追加。市販のノデルデザイン純正Tactical Bag（AS2OV）をサイズ適合の妥協候補として記録。MD-004 Version 7.58と連動。 |
 | 3.5 | 2026-09-25 | MARI様のご指示に基づき、Furniture Under ConsiderationのWinter Sleeping Mat（FUR-034）を、ブランド調査未着手の空欄から3候補比較（Zライトソル／NEMOスイッチバック／BLACK ZONE MAT）へ更新。幅77cm×2枚連結に対し重ねずに敷く「隙間許容案」を仮登録。フルカバー案（116cm幅マット2枚を重ねる配置）は、重なり部分の段差による寝心地悪化が判明したため検討経緯として記録の上で棄却。 |
+| 3.6 | 2026-09-26 | MARI様のご指示に基づき、Winter Sleeping Mat（FUR-034）のStatus・Decisionを更新し、BLACK ZONE MAT×2を暫定最有力候補（仮確定）として明記。MD-004側のStatus更新（Candidate→Essential）・Confirmed — Purchase Pendingへの追加は、正式な購入決定を待って別途行う。候補①②（Zライトソル・NEMOスイッチバック）は比較参考として引き続き保持。 |
 
 ---
 
