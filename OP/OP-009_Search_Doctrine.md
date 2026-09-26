@@ -3,8 +3,8 @@ OP-009 Search Doctrine
 ### THE THIRD PLACE Search Philosophy & Research Methodology
 
 **Document ID:** OP-009  
-**Version:** 2.3  
-**Status:** Official  
+**Version:** 2.4  
+**Status:** Active  
 **Category:** OP (Operation — Definition)
 
 ---
@@ -17,6 +17,7 @@ OP-009 Search Doctrine
 | 2.1 | 2026-09-07 | TM-005とPX-003 Vigil Protocolがもともと1つの文書であり、後に方法論（TM-005）と実行（PX-003）へ分割されたことを記す「Origin」サブセクションを追加。調査方法論そのものの内容変更は無し。 |
 | 2.2 | 2026-09-19 | プロジェクト全体の文書番号再編に伴い、TM-005からOP-009へ番号を変更。本文中のPX-003・TM-001・TM-002参照をCZ-002・KN-001・KN-004へ更新。調査方法論そのものの内容変更は無し。 |
 | 2.3 | 2026-09-24 | Volatility Restructureにより、CZ-002 Vigil Protocolの実行プロトコル（Freshness Validation〜Patrol Initiation、Watch List Structure、Watch List Maintenance Rules、Operational Directives）を、新章§XVIII. Patrol Protocolへ逐語移設した。章追加のためMinor Version。 |
+| 2.4 | 2026-09-26 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
 
 ---
 
@@ -1079,10 +1080,10 @@ Vigilの目的は、情報ノイズを最小限に抑えながら、現在有効
 | Title | Search Doctrine |
 | Framework | THE THIRD PLACE |
 | Category | OP |
-| Version | 2.3 |
-| Status | Official |
+| Version | 2.4 |
+| Status | Active |
 | Language | Japanese |
 | Maintainer | THE THIRD PLACE |
 | Related Documents | CZ-002 Vigil Protocol / KN-001 Heritage Chronicle / KN-004 Atelier Discovery |
-| Last Revised | Version 2.3 |
+| Last Revised | Version 2.4 |
 | Former ID | TM-005 |
