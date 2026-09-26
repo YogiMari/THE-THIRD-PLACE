@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.59  
+Version 7.60  
   
 ---  
   
@@ -1056,42 +1056,42 @@ Side Table
 ¥66,000  
 
 ---  
----
 
-## FUR-027
+## FUR-027  
 
-**Brand**
+**Brand**  
 
-WHAT WE WANT
+WHAT WE WANT  
 
-**Product**
+**Product**  
 
-WWW_KAZARITANA
+WWW_KAZARITANA  
 
-**Status**
+**Status**  
 
-Owned
+Owned  
 
-### Color
+### Color  
 
-Brown / Dark Brown
+Brown / Dark Brown  
 
-### Material
+### Material  
 
-Oak / Walnut
+Oak / Walnut  
 
-### Graphic Attribute
+### Graphic Attribute  
 
-None
+None  
 
-### Industrial Attribute
+### Industrial Attribute  
 
-Nesting Table
+Nesting Table  
 
-### Price
+### Price  
 
-¥35,000
+¥35,000  
 
+---  
 
 ## FUR-028  
 
@@ -1945,7 +1945,7 @@ BABEL
 
 Essential  
 
-### Branch Variants  
+### Child Components  
 
 - LGT-017a  
 - LGT-017b  
@@ -3576,6 +3576,8 @@ Incense Chamber
 
 ¥60,500  
 
+---  
+
 # Storage  
 
 ---  
@@ -3642,7 +3644,7 @@ WANTKEY BOXTOP SC25 HEXA
 
 STR-001  
 
-### Status  
+**Status**  
 
 Owned  
 
@@ -3682,7 +3684,7 @@ HEXA Side Table
 
 STR-001  
 
-### Status  
+**Status**  
 
 Owned  
 
@@ -3722,7 +3724,7 @@ WANTKEY UNITY HANDLE 25
 
 STR-001  
 
-### Status  
+**Status**  
 
 Owned  
 
@@ -3762,7 +3764,7 @@ WANTKEY GP-SC
 
 STR-001  
 
-### Status  
+**Status**  
 
 Owned  
 
@@ -3792,7 +3794,7 @@ Grip Custom
 
 **Brand**  
 
-BALLISTICS INDUSTRIES
+BALLISTICS INDUSTRIES  
 
 **Product**  
 
@@ -3802,7 +3804,7 @@ SHELCON LEG 25
 
 STR-001  
 
-### Status  
+**Status**  
 
 Essential  
 
@@ -3821,6 +3823,7 @@ None
 ### Industrial Attribute  
 
 Leg Custom  
+
 ### Price  
 
 ¥33,880  
@@ -3889,7 +3892,7 @@ WANTKEY BOXTOP SC25 TC
 
 STR-007  
 
-### Status  
+**Status**  
 
 Owned  
 
@@ -3925,7 +3928,7 @@ SST WANTKEY Version
 
 STR-007  
 
-### Status  
+**Status**  
 
 Owned  
 
@@ -3961,7 +3964,7 @@ SKULL HANDLE
 
 STR-007  
 
-### Status  
+**Status**  
 
 Owned  
 
@@ -3997,7 +4000,7 @@ OMA.SC-PICATINNY RAIL-No.001G
 
 STR-007  
 
-### Status  
+**Status**  
 
 Owned  
 
@@ -4023,7 +4026,7 @@ Grip Custom
 
 **Brand**  
 
-LOCKFIELD EQUIPMENT × BALLISTICS INDUSTRIES
+LOCKFIELD EQUIPMENT × BALLISTICS INDUSTRIES  
 
 **Product**  
 
@@ -4033,7 +4036,7 @@ SHELCON LEG 25
 
 STR-007  
 
-### Status  
+**Status**  
 
 Essential  
 
@@ -4142,7 +4145,7 @@ Wood Board（Oak）
 
 STR-013  
 
-### Status  
+**Status**  
 
 Essential  
 
@@ -4251,7 +4254,7 @@ Wood Board（Walnut）
 
 STR-016  
 
-### Status  
+**Status**  
 
 Essential  
 
@@ -4325,7 +4328,7 @@ Wood Board（Walnut）
 
 STR-019  
 
-### Status  
+**Status**  
 
 Owned  
 
@@ -4361,7 +4364,7 @@ Butterfly Under Shelf
 
 STR-019  
 
-### Status  
+**Status**  
 
 Essential  
 
@@ -6956,13 +6959,13 @@ FUR-001
 └ FUR-005  
 └ FUR-006  
 
-LGT-009  
-└ LGT-010  
+LGT-010  
 └ LGT-011  
 └ LGT-012  
 └ LGT-013  
 └ LGT-014  
 └ LGT-015  
+└ LGT-016  
 
 STR-001  
 └ STR-002  
@@ -7027,7 +7030,7 @@ MD-004 Equipment Registryは、Human Principlesとの美意識的整合が求め
 
 他の文書はMD-004を参照するが、装備情報を再定義しない。  
 
-Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning、Evaluationは、それぞれの文書で管理する。Candidate段階の具体的製品比較・評価はCZ-001 Deliberation Dossierで管理する。  
+Planning、Pursuit Strategy、Design Philosophy、Aesthetics、Positioning、Evaluationは、それぞれの文書で管理する。Candidate段階の具体的製品比較・評価はCZ-001 Deliberation Dossierで管理する。  
 
 ---  
 
@@ -7044,6 +7047,7 @@ Planning、Acquisition Strategy、Design Philosophy、Aesthetics、Positioning�
 - MD-001 Storage Blueprint  
 - MD-003 Galley Fare  
 - CZ-001 Deliberation Dossier  
+- CZ-002 Vigil Protocol  
 - OP-010 Qualification Charter  
 
 ---  
@@ -7886,6 +7890,28 @@ MARI様のご決定に基づき、Fire Domainの空き枠FIR-036を、FIREGRAPHI
 - FIR-042：新規登録（ソフトコンテナL、Parent: FIR-036）。
 
 - Related Documents：CZ-001 Deliberation Dossier（Ver.3.7。Wood Stove検討記録の確定・Confirmed — Purchase Pendingへの追加と連動）。
+
+---
+
+## Version 7.60
+
+プロジェクトオーナー確認に基づき、内容監査（一言一句照合）で発見された相互参照の不整合・書式不統一を一括修正した。登録データの実質的な変更は、LGT-017の見出し統一（Branch Variants→Child Components、実質は表記統一のみ）に限られる。
+
+### Changes
+
+- Related Documents：CZ-002 Vigil Protocolを追加（本文中で多数参照されているが末尾リストに漏れていたため）。
+- Parent / Child Rules Example：Light部分の親IDを誤記「LGT-009」から実データに即した「LGT-010」へ訂正し、子リストにLGT-016を追加。
+- Single Source of Truth：旧文書名表記「Acquisition Strategy」を現行名「Pursuit Strategy」へ更新。
+- FUR-027（WWW_KAZARITANA）：区切り線の重複・欠落、および値行末の改行スペース欠落を、他エントリと同一書式へ修復。
+- Aromaドメイン末尾（ARM-004）とStorage見出しの間に欠落していた区切り線を追加。
+- Storageドメイン14件（STR-002〜006、008〜012、015、018、020〜021）：Statusフィールドの表記を「### Status」から他全エントリと同一の「**Status**」へ統一。
+- STR-006：Brand値の改行スペース欠落を修正。Industrial AttributeとPriceの間の空行欠落を修正。
+- STR-012：Brand値の改行スペース欠落を修正。
+- LGT-017：子候補の見出しを「Branch Variants」から「Child Components」へ統一（プロジェクトオーナー確認、LGT-017は正式な親子関係として管理する）。
+
+なお、当初指示にあったFIR-042のColor確定については、内容監査の結果、既にVersion 7.32時点で「Black」として確定済みであることが判明したため、本バージョンでの変更対象から除外した。
+
+- Related Documents：変更なし。
 
 ---
 
