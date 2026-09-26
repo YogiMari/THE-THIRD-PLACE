@@ -1,7 +1,7 @@
 # MD-001 Storage Blueprint
-## Ver.2.7
+## Ver.2.8
 
-Status : Planning
+Status : Active
 
 ---
 
@@ -30,11 +30,11 @@ Storage Blueprintは、THE THIRD PLACEの収納システム全体を定義する
 | ID | Document |
 |---|---|
 | DS-001 | THE THIRD PLACE Original |
-| OP-001 | THE THIRD PLACE Constitution |
+| OP-001 | Constitution |
 | OP-002 | Design Bible |
 | OP-003 | Affinity Lexicon |
 | OP-004 | Aesthetic Grammar |
-| OP-005 | Acquisition Strategy |
+| OP-005 | Pursuit Strategy |
 | OP-006 | Foundation Compass |
 | OP-007 | Habitat Architecture |
 | MD-001 | Storage Blueprint |
@@ -685,13 +685,13 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.7
+Ver.2.8
 
 ---
 
 ## Status
 
-Planning
+Active
 
 ---
 
@@ -816,6 +816,14 @@ Permanent Storage
 ---
 
 本文書は、THE THIRD PLACEの収納ゾーン全体における運用ブループリントである。
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|---|---|---|
+| 2.8 | 2026-09-26 | Position表内のOP-005表記が旧題『Acquisition Strategy』のままだった箇所をPursuit Strategyへ修正。OP-001表記もOP-008 §8カタログのTitle表記へ統一。加えて、ヘッダーStatus値『Planning』をOP-008 §9.2準拠の『Active』へ更新（MARI様確認：収納設計は実運用中のため）。 |
 
 ---
 
