@@ -3793,6 +3793,7 @@ Grip Custom
 **Brand**  
 
 BALLISTICS INDUSTRIES
+
 **Product**  
 
 SHELCON LEG 25  
@@ -4023,6 +4024,7 @@ Grip Custom
 **Brand**  
 
 LOCKFIELD EQUIPMENT × BALLISTICS INDUSTRIES
+
 **Product**  
 
 SHELCON LEG 25  
