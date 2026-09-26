@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.6
+3.7
 
 # Status
 
@@ -82,22 +82,7 @@ CZ-001 Deliberation Dossier
 
 ## Fire
 
-### Wood Stove／薪ストーブ（MD-004: FIR-036、空き枠）
-
-**Status**：Under Evaluation
-
-| Axis | 候補① MT.SUMI Aura FG | 候補② FIREGRAPHIX BLISS-SP |
-|---|---|---|
-| Form | 洗練された機能美を掲げる多次燃焼デザイン | 所有欲を掻き立てるデザインを意図し、フロントフェイス・ハンドルは職人の手作業にこだわる |
-| Flame Aesthetics | フルガラス3面窓で炎を遮るものがなく、ダイナミクスと美しさを最大限楽しめる | エアカーテン機構の開発が最も苦労した部分であり、独自の揺らめく炎を生み出す |
-| Ease of Clean-up | 多次燃焼構造で灰が比較的少量、炉板も軽量。灰受け自体の取り出しやすさは未確認（Gap） | ロストル形状変更で灰が捨てやすく改良済み。ただし「向き合う感覚」を重視し灰を残す運用哲学もあり |
-| Transport | 収納バッグ1つに全部品完結、総重量22kg | 本体単体16kg、煙突・スタンドは別売で管理単位が分散 |
-
-**Note**：本検討は薪ストーブ（二次燃焼式ポータブルストーブ）の検討であり、焚き火台ではない（2026-09-25、MARI様確認・ウェブ一次情報で両候補とも薪ストーブと確認・MD-004 Version 7.57で呼称訂正）。焚き火台はFIR-001（RODAN BRICK）で既に充足済み。旧FIR-020（BLISS-SP）はFIR-019へ統合済み（その後FIR-030へ改番、MD-004 Version 7.49で削除）。現在はMD-004 Version 7.53で新設した空き枠FIR-036が本検討の登録先であり、いずれかの候補を購入した時点でFIR-036へ登録する。旧FIR-020は欠番として保持されていたが、MD-004 Version 7.38のFire Domain番号整理により当該レコード自体を削除した。統合の経緯はMD-004 Version 7.14を参照。
-
-**Unresolved Gaps**：MT.SUMI Aura FGの灰受け取り出しやすさは一次情報で未確認。両候補とも実物確認未実施。
-
-**Decision**：未決定
+現時点でCandidate項目なし（薪ストーブ検討はDecision Logおよび下記「Fire — Wood Stove 選定記録」を参照。2026-09-26、FIREGRAPHIX BLISS-SPで決定）。
 
 ---
 
@@ -228,6 +213,13 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | ID | Product | Brand | Note |
 |---|---|---|---|
 | FIR-025 | copper250 | neru design works | Parent: FIR-023 |
+| FIR-036 | BLISS-SP | FIREGRAPHIX | Parent（本体） |
+| FIR-037 | アルミポータブルスタンド（FG057） | FIREGRAPHIX | Parent: FIR-036 |
+| FIR-038 | オーバーレイチムニー（FG004） | FIREGRAPHIX | Parent: FIR-036 |
+| FIR-039 | オーバーレイチムニー80・5連（FG017） | FIREGRAPHIX | Parent: FIR-036 |
+| FIR-040 | チムニートップ フレキシブル（FG024） | FIREGRAPHIX | Parent: FIR-036 |
+| FIR-041 | スライドチムニーガード700（FG013） | FIREGRAPHIX | Parent: FIR-036 |
+| FIR-042 | ソフトコンテナL（FG034） | FIREGRAPHIX | Parent: FIR-036 |
 
 ## Shelter
 
@@ -244,6 +236,47 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | 2026-09 | Aroma | ARM-003 Vertical Diffuser | UNIT/04 × KUNST・BAUM SCENT TOWERを正式決定（Status: Essential）。詳細はMD-004参照。（決定当時のIDはARM-004。2026-09-19のMD-004 Version 7.34で番号入替） |
 | 2026-09-19 | Aroma | ARM-004 Incense Chamber | Filoméla INCENSE CHAMBER Tokyo LimitedのStatusをEssentialからUpgradeへ変更（MD-004 Version 7.34、MARI様のご指示）。Confirmed — Purchase Pendingから除外。旧ID: ARM-003。 |
 | 2026-09-23 | Furniture | FUR-033 Winter Top Quilt | 候補（Enlightened Equipment Accomplice／UGQ Outdoor Tango Duo）の検討を終了。冬用キルトはSnow Peak ダウン システムオフトン スリムマットセット（FUR-032）を採用（プロジェクトオーナー決定）。FUR-033はMD-004 Version 7.54でRetired（FUR-032へ統合）。 |
+| 2026-09-26 | Fire | Wood Stove（FIR-036〜042） | FIREGRAPHIX BLISS-SPを正式採用（MARI様決定）。MT.SUMI Aura FGとの比較検討を経て決定。詳細な検討記録は下記「Fire — Wood Stove 選定記録」を参照（MARI様のご指示により、通常の一行要約ルールの例外として詳細を保持）。 |
+
+---
+
+## Fire — Wood Stove 選定記録（2026-09-26、詳細保持）
+
+**注記**：本セクションは、CZ-001の通常運用（Candidateが確定した時点でUnder Considerationを削除しDecision Logへ一行要約する）の例外として、MARI様のご指示により両候補の詳細な検討記録をそのまま保持するものである。
+
+**決定**：FIREGRAPHIX BLISS-SPを正式採用（Status: Essential、MD-004: FIR-036〜FIR-042）。
+
+**最終比較表（OP-002 Design Bible Fire Domain 4軸）**
+
+| 評価軸 | MT.SUMI Aura FG | FIREGRAPHIX BLISS-SP |
+|---|---|---|
+| Form | 洗練された機能美、多次燃焼構造 | 職人手作業のフロントフェイス・ハンドル、所有欲を掻き立てる意匠 |
+| Flame Aesthetics | フルガラス3面窓、炎を遮らない | 前面のみガラスだが、エアカーテン機構による「オーロラの炎」（ブランド公式呼称） |
+| Ease of Clean-up | 耐火煉瓦を外すと底面に穴が現れ灰を掃ける（公式動画で確認） | ロストル形状改良で灰が捨てやすい（メーカー公称、直近マイナーチェンジ） |
+| Transport | 標準セット＋延長煙突1本で足りるが、ガードは庫内に入らず別携行確定 | 延長・トップ・ガードまで庫内収納可能（公式資料確認済み）。庫外はスタンドのみ、本体と同一バッグへの収納見込み |
+
+**Aura FG側の検討詳細（不採用・比較参考として保持）**
+
+- 候補：Mt.SUMI AURA FG（ステンレス版基準）
+- 本体スペック：燃焼室内寸W41×D32.5×H22cm、標準煙突Φ80mm×325mm（有効270mm）×8本継ぎ、使用時最大高さ（煙突＋本体）2.85m
+- ヘロスシェルター（SHL-004）運用時の必要高さ：煙突穴まで約2.3m
+- 屋根面クリアランス60cm基準で計算：標準8本のみでは離隔55cmとなり5cm不足。追加1本（Mt.SUMI純正煙突、¥1,690）で離隔82cmとなり基準クリア
+- 煙突ガード（Mt.SUMI製、Φ140mm×530mm）：燃焼室内寸との対角線計算（約52.3cm）、および高さ方向の残り余白（約60mm）から、庫内収納は構造的に不可と判断。バッグとは別携行が確定
+- スパークアレスター：Mt.SUMI純正品は確認できず、汎用品での代替が必要と判明
+- 灰処理：公式動画で耐火煉瓦を外すと底面に穴が現れ、小箒で灰を掃ける仕様を確認
+
+**BLISS-SP側の検討詳細（採用・確定記録）**
+
+- 本体：FIREGRAPHIX BLISS-SP、W429×H359×D535mm、16kg、煙突径Φ106、薪長35cm、¥107,800（MD-004: FIR-036）
+- スタンド：アルミポータブルスタンド（FG057）、4分割式、組立時W436×H255×D395mm、2.5kg、¥30,800（FIR-037）
+- 基本煙突：オーバーレイチムニー（FG004）、入れ子式5分割、収納時350×Φ108mm、¥18,700（FIR-038）
+- 延長煙突：オーバーレイチムニー80・5連（FG017）、収納時350×Φ82mm、使用時1550mm、¥16,500（FIR-039）。標準＋延長を合わせるとヘロスの必要高さ2.3m・60cmクリアランス基準を計算上クリア
+- トップ：チムニートップ フレキシブル（FG024）、Φ67〜80mm対応・全煙突種に取付可、¥6,600（FIR-040）
+- ガード：スライドチムニーガード700（FG013）、Φ67〜106mm対応、使用時70cm／収納時39cm、BLISS-SP炉内収納可（公式明記）、¥14,300（FIR-041）
+- 収納バッグ：ソフトコンテナL（FG034）、内寸610×450×400mm、本体専用設計、¥14,300（FIR-042）
+- 総額：¥209,000
+- 庫内収納：FIREGRAPHIX公式パッキング図により、基本煙突・延長煙突・トップ・ガード一式がすべて庫内（炉内）に収納可能であることを確認。庫外に出るのはスタンドのみ
+- スタンド収納：分解したアルミポータブルスタンドをソフトコンテナL内で本体の下に敷く形での同梱を検討。公式の分解時サイズ記載はないが、同社の鉄製旧型スタンド（FG002）の実測値（収納時330×434×厚み9mm）から類推し、寸法上は収納可能と推定（高さ・幅・奥行きいずれも計算上矛盾なし。ただし公式数値ではなく類推である旨を明記）
 
 ---
 
