@@ -1,7 +1,5 @@
 # BR-001 Brew Care  
 
-# BR-001 Brew Care  
-
 ## Document ID  
 
 BR-001  
@@ -12,7 +10,7 @@ Brew Care
 
 ## Version  
 
-1.0  
+1.1  
 
 ## Status  
 
@@ -92,7 +90,7 @@ Routine Care（日常ケア）、Periodic Care（定期ケア）、Descaling（�
 
 ```text  
 BR-002  
-Barista Codex  
+Barista Canon  
     ↓  
 何が選ばれているか  
 
@@ -102,7 +100,7 @@ Equipment Registry Object Reference
 何を所有しているか  
 
 BR-003  
-Acquisition Handbook  
+Procurement Handbook  
     ↓  
 何を／どこで／どう調達するか  
 
@@ -1663,6 +1661,14 @@ READY（準備完了）
 目指す状態は、以下である:  
 
 > **必要な箇所は清潔に、必要な箇所は保護し、保管前には乾いており、次回使用の準備が整っているCoffee System。**  
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|---|---|---|
+| 1.1 | 2026-09-26 | 冒頭の重複H1見出しを是正。Document Relationship図内の旧文書名（Barista Codex／Acquisition Handbook）を現行名（Barista Canon／Procurement Handbook）へ同期。 |
 
 ---
 

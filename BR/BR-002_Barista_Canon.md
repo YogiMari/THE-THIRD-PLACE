@@ -1,5 +1,4 @@
 # BR-002 Barista Canon    
-# BR-002 Barista Canon    
     
 # Document ID    
     
@@ -11,11 +10,11 @@ Barista Canon
     
 # Version    
     
-4.1    
+4.2    
     
 # Status    
     
-Official    
+Active    
     
 ---    
     
@@ -1789,7 +1788,8 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 3.7 | 2026-09-18 | Espresso Machineセクションへ「Handle Material Decision」を新設。9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）を、9Barista公式スペアパーツのWalnut仕様へ変更することを正式決定。Design Bibleの核となる素材言語（Walnut・Brass・Black Steel）との整合を採用理由とした。MARI様の直接指示（2026-09-18）に基づく。 |  
 | 3.8 | 2026-09-19 | 誤字・脱字の訂正のみ（内容の変更なし）。「賅沢」→「贅沢」、「真鑑製」→「真鍮製」、「仈説」→「仮説」、「针」→「針」、「1泲2日」→「1泊2日」、「昇食後」→「昼食後」、「同ゆ」→「同じ」、「当詬」→「当該」、「含ゅ」→「含む」、「およど／およぱ」→「および」、「Shakerど」→「Shakerと」、「Workflowい」→「Workflowは」、「Bek Container」→「Beck Container」、「非気低減」→「静電気低減」、全角スペース→「、」（Version History内の該当行の誤字も同様に訂正。旧IDの表記は歴史的記録として保持）。 |  
 | 4.0 | 2026-09-24 | Volatility Restructureにより、Design PrinciplesとCoffee Zone Philosophy (Exception Clause)をOP-002 Design Bible §05. Coffeeへ逐語移設し、本節を参照1行へ置換。責任範囲の変更のためMajor Version。 |  
-| 4.1 | 2026-09-24 | MARI様のご指摘に基づき、OP-008 §11 Naming Conventionへ新設された文書名重複禁止ルールに伴い、タイトルをBarista CodexからBarista Canonへ変更（CZ-001 Deliberation Codexとの語重複を解消）。BR-003側もProcurement Handbookへ改名されたため、本書内の参照表記（SSOT・Purpose・Relationship・Included Components・Alternative Basket Cap各節）を同期。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持。ファイル名もBR-002_Barista_Canon.mdへ変更。内容（意思決定事項そのもの）に変更はない。 |  
+| 4.1 | 2026-09-24 | MARI様のご指摘に基づき、OP-008 §11 Naming Conventionへ新設された文書名重複禁止ルールに伴い、タイトルをBarista CodexからBarista Canonへ変更（CZ-001 Deliberation Codexとの語重複を解消）。BR-003側もProcurement Handbookへ改名されたため、本書内の参照表記（SSOT・Purpose・Relationship・Included Components・Alternative Basket Cap各節）を同期。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持。ファイル名もBR-002_Barista_Canon.mdへ変更。内容（意思決定事項そのもの）に変更はない。 |
+| 4.2 | 2026-09-26 | 冒頭の重複H1見出しを是正。ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |  
   
 ---  
 

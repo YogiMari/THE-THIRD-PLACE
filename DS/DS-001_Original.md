@@ -3053,7 +3053,7 @@ Equipment Registry Object Reference は、
 
 ---
 
-Acquisition Strategy は、
+Pursuit Strategy は、
 
 購入判断を管理する。
 
@@ -3136,6 +3136,15 @@ THE THIRD PLACE の
 **THE THIRD PLACE Original**
 
 **Version 1.0**
+
+---
+
+## Version History
+
+| Version | Date | Description |
+|---|---|---|
+| 1.0 | — | 初版制定。 |
+| 1.0 | 2026-09-26 | Single Source of Truth節内のOP-005表記が旧題『Acquisition Strategy』のままだった箇所をPursuit Strategyへ修正。思想内容そのものに変更はない。 |
 
 ---
 

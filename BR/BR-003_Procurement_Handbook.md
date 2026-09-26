@@ -11,11 +11,11 @@ Procurement Handbook
   
 **Version**  
   
-3.1  
+3.2  
   
 **Status**  
   
-Official  
+Active  
   
 ---  
   
@@ -2095,6 +2095,7 @@ Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The B
 | 2.4 | 2026-09-18 | MARI様の直接指示に基づき、Monthly Acquisition Plan（Confirmed）を全面再編成。7ヶ月構成（Workflow順グルーピング）から6ヶ月構成（予算均等化グルーピング）へ変更。9Barista（Month 1・上限なし）とMilk System（Month 6・最終月）を固定端点とし、Month 2〜5はドメイン横断で月あたり¥93,000〜117,000程度に予算バランスさせたグループへ再編成（Month 2: LAGOM mini 2＋Puck Screen Stand＋Aurora Bottle＋AION Coaster、Month 3: Pullman Chisel＋Blind Shaker Onyx＋酒筒Titanium＋KRUVE PROPEL、Month 4: Force Tamper＋The Bloc＋KNODOS＋WDT、Month 5: WeighMaster Ultra＋Bean Cellar＋ICOSA AERESSO＋YETI Yonder＋HILLS FIELD Case＋RDT Bottle）。Plan Total（¥619,270〜720,270 → ¥619,270〜721,270）を再計算。Straight Espresso Workflowの機能的完成時期はMonth 5終了時点のまま変わらない旨をDesign Rationaleに明記。 |  
 | 3.0 | 2026-09-24 | Volatility Restructureにより、調達方針（Preferred Sources／Price Policy／Successor Model Policyの方針文）をOP-005 Acquisition Strategy §Coffee Zone Acquisition Rulesへ逐語移設した。責任範囲の変更のためMajor Version。 |  
 | 3.1 | 2026-09-24 | MARI様のご指摘に基づき、OP-008 §11 Naming Conventionへ新設された文書名重複禁止ルールに伴い、タイトルをAcquisition HandbookからProcurement Handbookへ変更（OP-005 Pursuit Strategyとの語重複を解消）。連動してBR-002 Barista Canon、OP-005 Pursuit Strategyへの参照表記を同期。Version Control内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持。ファイル名もBR-003_Procurement_Handbook.mdへ変更。内容（調達データそのもの）に変更はない。 |  
+| 3.2 | 2026-09-26 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |  
   
 ---  
 
