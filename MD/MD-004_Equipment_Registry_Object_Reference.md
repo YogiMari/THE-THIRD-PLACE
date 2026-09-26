@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.58  
+Version 7.59  
   
 ---  
   
@@ -6504,7 +6504,258 @@ Hook
 
 ## FIR-036  
 
-Vacant ID. Reserved for a wood stove (薪ストーブ) currently under deliberation (see CZ-001 Deliberation Dossier). Fire Pit is already fulfilled by FIR-001 (RODAN BRICK, Owned). To be registered upon purchase.  
+**Brand**  
+
+FIREGRAPHIX  
+
+**Product**  
+
+BLISS-SP  
+
+**Status**  
+
+Essential  
+
+### Child Components  
+
+- FIR-037  
+- FIR-038  
+- FIR-039  
+- FIR-040  
+- FIR-041  
+- FIR-042  
+
+### Color  
+
+Black  
+
+### Material  
+
+Iron（耐熱黒塗装）  
+
+### Industrial Attribute  
+
+Wood Stove（薪ストーブ、二次燃焼式。W429×H359×D535mm、16kg、煙突径Φ106、薪長35cm。CZ-001 Deliberation DossierでMT.SUMI Aura FGと比較検討の結果、採用決定）  
+
+### Price  
+
+¥107,800  
+
+---  
+
+## FIR-037  
+
+**Brand**  
+
+FIREGRAPHIX  
+
+**Product**  
+
+アルミポータブルスタンド（FG057）  
+
+**Status**  
+
+Essential  
+
+**Parent**  
+
+FIR-036  
+
+### Color  
+
+Black  
+
+### Material  
+
+Aluminum  
+
+### Industrial Attribute  
+
+Stove Stand（4分割組み立て式、組立時W436×H255×D395mm、2.5kg。分解時はFIR-042ソフトコンテナへ本体と重ねて収納予定。同社の鉄製旧型FG002〈組立式・収納時厚み9mm〉の実測値から類推し、アルミ版も近い厚みで収まると推定〈公式収納時サイズは未記載〉）  
+
+### Price  
+
+¥30,800  
+
+---  
+
+## FIR-038  
+
+**Brand**  
+
+FIREGRAPHIX  
+
+**Product**  
+
+オーバーレイチムニー（FG004）  
+
+**Status**  
+
+Essential  
+
+**Parent**  
+
+FIR-036  
+
+### Color  
+
+Silver  
+
+### Material  
+
+Stainless Steel（SUS304）  
+
+### Industrial Attribute  
+
+Chimney, Base（入れ子式5分割、収納時350mm×Φ108mm、組立後1535mm、1.2kg。FIR-041と共にFIR-036庫内へ収納可能、公式パッキング図で確認済み）  
+
+### Price  
+
+¥18,700  
+
+---  
+
+## FIR-039  
+
+**Brand**  
+
+FIREGRAPHIX  
+
+**Product**  
+
+オーバーレイチムニー80（5連）（FG017）  
+
+**Status**  
+
+Essential  
+
+**Parent**  
+
+FIR-036  
+
+### Color  
+
+Silver  
+
+### Material  
+
+Stainless Steel（SUS304）  
+
+### Industrial Attribute  
+
+Chimney, Extension（入れ子式5分割、収納時350mm×Φ82mm、使用時1550mm、960g。ヘロスシェルター〈SHL-004〉運用に必要な延長煙突。FIR-036庫内へ収納可能、公式パッキング図で確認済み）  
+
+### Price  
+
+¥16,500  
+
+---  
+
+## FIR-040  
+
+**Brand**  
+
+FIREGRAPHIX  
+
+**Product**  
+
+チムニートップ フレキシブル（FG024）  
+
+**Status**  
+
+Essential  
+
+**Parent**  
+
+FIR-036  
+
+### Color  
+
+Silver  
+
+### Material  
+
+Stainless Steel（SUS304）  
+
+### Industrial Attribute  
+
+Chimney Top / Spark Arrester（Φ67〜80mmフレキシブル対応、基本煙突・延長煙突いずれのトップにも取付可能。長さ230mm×径85mm、190g。FIR-036庫内へ収納可能）  
+
+### Price  
+
+¥6,600  
+
+---  
+
+## FIR-041  
+
+**Brand**  
+
+FIREGRAPHIX  
+
+**Product**  
+
+スライドチムニーガード700（FG013）  
+
+**Status**  
+
+Essential  
+
+**Parent**  
+
+FIR-036  
+
+### Color  
+
+Silver  
+
+### Material  
+
+Stainless Steel（SUS304）  
+
+### Industrial Attribute  
+
+Chimney Contact Guard（Φ67〜106mm対応、使用時約70cmにスライド、収納時約39cm、1.3kg。シルナイロン製シェルター〈SHL-004〉のチャック式煙突穴通過部における生地との接触・焦げを防止。FIR-036庫内収納可、メーカー公式明記）  
+
+### Price  
+
+¥14,300  
+
+---  
+
+## FIR-042  
+
+**Brand**  
+
+FIREGRAPHIX  
+
+**Product**  
+
+ソフトコンテナ L（FG034）  
+
+**Status**  
+
+Essential  
+
+**Parent**  
+
+FIR-036  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Nylon  
+
+### Industrial Attribute  
+
+Carrying Bag（本体専用、内寸610×450×400mm。FIR-036本体〈535×429×359mm〉が収まる設計。分解したFIR-037ポータブルスタンドを本体の下に敷いて重ねる形での同時収納が可能と推定〈類推、現物未確認〉）  
+
+### Price  
+
+¥14,300  
 
 ---  
 
@@ -7615,6 +7866,24 @@ MARI様確認・ノデルデザイン公式サイト（nodeldesign.com/project-c
 - STR-034：新規登録（Status: Candidate、Parent: STR-019）。ブリッジフレーム保護用の市販ケース検討枠。具体的な製品比較・評価はCZ-001 Deliberation Dossierで管理する。
 
 - Related Documents：CZ-001 Deliberation Dossier（Storage Under Considerationへの新規記載と連動）。
+
+---
+
+## Version 7.59
+
+MARI様のご決定に基づき、Fire Domainの空き枠FIR-036を、FIREGRAPHIX BLISS-SP一式として本登録した。CZ-001 Deliberation DossierでのMT.SUMI Aura FGとの比較検討の結果、採用決定に至った。
+
+### Changes
+
+- FIR-036：Vacant IDから本登録へ更新。Brand: FIREGRAPHIX、Product: BLISS-SP、Status: Essential。Child ComponentsとしてFIR-037〜042を追加。
+- FIR-037：新規登録（アルミポータブルスタンド、Parent: FIR-036）。
+- FIR-038：新規登録（オーバーレイチムニー・基本煙突、Parent: FIR-036）。
+- FIR-039：新規登録（オーバーレイチムニー80・延長煙突、Parent: FIR-036）。
+- FIR-040：新規登録（チムニートップ フレキシブル、Parent: FIR-036）。
+- FIR-041：新規登録（スライドチムニーガード700、Parent: FIR-036）。
+- FIR-042：新規登録（ソフトコンテナL、Parent: FIR-036）。
+
+- Related Documents：CZ-001 Deliberation Dossier（Ver.3.7。Wood Stove検討記録の確定・Confirmed — Purchase Pendingへの追加と連動）。
 
 ---
 
