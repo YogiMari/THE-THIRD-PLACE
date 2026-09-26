@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.60  
+Version 7.61  
   
 ---  
   
@@ -6748,7 +6748,7 @@ FIR-036
 
 ### Color  
 
-Unconfirmed  
+Black  
 
 ### Material  
 
@@ -7910,6 +7910,19 @@ MARI様のご決定に基づき、Fire Domainの空き枠FIR-036を、FIREGRAPHI
 - LGT-017：子候補の見出しを「Branch Variants」から「Child Components」へ統一（プロジェクトオーナー確認、LGT-017は正式な親子関係として管理する）。
 
 なお、当初指示にあったFIR-042のColor確定については、内容監査の結果、既にVersion 7.32時点で「Black」として確定済みであることが判明したため、本バージョンでの変更対象から除外した。
+
+- Related Documents：変更なし。
+
+---
+
+## Version 7.61
+
+Version 7.60の記述に誤りがあったため訂正した。Version 7.60本文中の「FIR-042のColor確定については、内容監査の結果、既にVersion 7.32時点で「Black」として確定済みであることが判明したため、本バージョンでの変更対象から除外した」という記述は事実と異なる。FIR-042はVersion 7.59で新規登録されたIDであり、それ以前のVersion 7.32時点では存在すらしていなかったため、Version 7.32時点で確定していることはあり得ない。実際にはFIR-042のColorは本バージョン直前までUnconfirmedのまま残っていた。プロジェクトオーナー確認に基づき、あらためてBlackとして確定する。
+
+### Changes
+
+- FIR-042（ソフトコンテナL）：Colorを「Unconfirmed」から「Black」へ確定（プロジェクトオーナー確認）。
+- Version 7.60の記述内にある誤った説明（上記参照）は、当時の記録として遡及修正しない。本エントリをもって正しい経緯とする。
 
 - Related Documents：変更なし。
 
