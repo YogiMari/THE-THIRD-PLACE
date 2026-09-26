@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.1
+**Version**: 3.2
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -20,6 +20,7 @@
 | 2.0 | 2026-09-19 | プロジェクト全体の文書番号再編（Constitution OP-001 Ver.5.0参照）に伴い、TP-001からOP-008へ番号を変更。本書が定義する文書体系そのものを、旧TP／PX／TM 3系列から、新DS／OP／記録（DB・MD・BR・CZ・KN）系列へ全面的に再構築した（Major Version）。§4 Project Architecture、§5 Series Responsibilities、§6 Responsibility Matrix、§8 Document Series、§11 Naming Convention、§13 SSOT Examples、§14 Reference Rules、§24 Referencesを新体系へ更新。§19の運用ルール番号を、もはや存在しないPX接頭辞から独立したDOC番号へ改称。 |
 | 3.0 | 2026-09-24 | Volatility Restructure。§8 Document Seriesを唯一の文書カタログへ拡張（Document ID／Title／Path／Role／Authority／Volatility列を新設、OP-010を追加）。§9にVolatility区分（Static／Periodic／Living）を新設。§24 Referencesの文書一覧を§8参照の1行へ置換。Rule DOC-06の自己矛盾を解消。責任範囲の変更のためMajor Version。（追補）Appendix F — Document Profilesを新設し、README.mdの全文書プロフィール文（日英）を逐語移設。§8にSummary列を新設し、DB-001 Quick Accessの「ひとことで言うと」列を逐語移設。DS-001・OP-008・BR-001〜003・CZ-001〜002のRole列を「See Appendix F」へ更新。BR-002・BR-003のAuthorityをSSOTへ変更（2026-09-24 MARI様承認）。 |
 | 3.1 | 2026-09-24 | MARI様のご指摘に基づき、§11 Naming Conventionへ文書名重複禁止ルール（Document Title Uniqueness Rule）を新設。制定にあたり、OP-010／MD-004のRegistry重複、OP-005／BR-003のAcquisition重複、BR-002／CZ-001のCodex重複が判明したため、OP-010をQualification Charterへ、OP-005をPursuit Strategyへ、BR-003をProcurement Handbookへ、BR-002をBarista Canonへ、CZ-001をDeliberation Dossierへそれぞれ改名し是正。§8カタログのTitle／Path列、Appendix Fの該当プロフィール文（日英）を同期。ファイル名もそれぞれ変更。 |
+| 3.2 | 2026-09-26 | §8カタログのDB-001 Volatilityが『Periodic』のまま、Rule DOC-08およびDB-001自身のヘッダー記述（Living Document）と矛盾していた点をMARI様確認の上、実態に合わせ『Living』へ修正。 |
 
 ---
 
@@ -225,7 +226,7 @@ Authority 列は本 Version（3.0）で新設された分類である。BR-001�
 | OP-008 | Documentation System | `OP/OP-008_Documentation_System.md` | See Appendix F | Standard | Static | 文書運用ルールそのものの基準書 |
 | OP-009 | Search Doctrine | `OP/OP-009_Search_Doctrine.md` | 管理対象<br>・調査の哲学・方法論<br>・情報源の優先順位<br>・Difference Analysis手法<br>監視対象（Watch List）・調査キーワード自体は、<br>CZ-002 Vigil Protocolが管理する。 | Standard | Static | 調査の哲学・方法論 |
 | OP-010 | Qualification Charter | `OP/OP-010_Qualification_Charter.md` | OP-010 Qualification Charter は、記録系列台帳（MD-002／MD-003／MD-004）の登録規則・評価基準を定義する。 | Standard | Static | 台帳（MD-002／003／004）の登録規則・評価基準の基準書 |
-| DB-001 | Project Ledger | `DB/DB-001_Project_Ledger.md` | 管理対象<br>・Conversation Ledger（会話記録・検索用ワード）<br>・Active Conversations<br>・Quick Access<br>Project Ledgerは、<br>重要な判断の記録先として、<br>本Constitution §9（記録）で参照される。 | Standard | Periodic | この文書。会話履歴・早見表・運用ダッシュボード |
+| DB-001 | Project Ledger | `DB/DB-001_Project_Ledger.md` | 管理対象<br>・Conversation Ledger（会話記録・検索用ワード）<br>・Active Conversations<br>・Quick Access<br>Project Ledgerは、<br>重要な判断の記録先として、<br>本Constitution §9（記録）で参照される。 | Standard | Living | この文書。会話履歴・早見表・運用ダッシュボード |
 | MD-001 | Storage Blueprint | `MD/MD-001_Storage_Blueprint.md` | 管理対象<br>・収納<br>・収納ルール<br>・Container Assignment | SSOT | Living | 収納・コンテナの割り当てルール |
 | MD-002 | Field Atlas Landscape Framework | `MD/MD-002_Field_Atlas_Landscape_Framework.md` | 管理対象<br>・キャンプ場<br>・ロケーション<br>・適性評価<br>・運用条件 | SSOT | Periodic | キャンプ場・ロケーションの選定と評価 |
 | MD-003 | Galley Fare | `MD/MD-003_Galley_Fare.md` | 管理対象<br>・キッチン調理器具<br>・調理の機能的必然性に基づく選定基準<br>Galley Fareは、<br>Equipment Registryとは異なる評価軸を持つ、<br>独立したMaster Databaseである。<br>所作、<br>デザイン、<br>ブランドの格を、<br>必須条件としない。<br>実際に調理が成立する機能性を、<br>最優先とする。 | SSOT | Living | キッチン道具だけの独立した台帳 |
