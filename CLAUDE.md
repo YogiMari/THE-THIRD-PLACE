@@ -1,7 +1,7 @@
 # CLAUDE.md — THE THIRD PLACE
 
 <!-- Synced from: THE THIRD PLACE Conversation Constitution Ver.1.2 -->
-<!-- Document numbering: renumbered 2026-09-19 (see OP-001 Constitution Ver.5.0 §27 / OP-008 Documentation System Ver.2.0) -->
+<!-- Document numbering: renumbered 2026-09-19 (see OP-001 Constitution Ver.5.0 §26 / OP-008 Documentation System Ver.3.5) -->
 
 このファイルは、Claude Codeがこのリポジトリを直接操作する際に自動的に読み込む運用指示書です。
 DS/OP/DB/MD/BR/CZ/KN文書の内容そのものはここには含みません。各ファイルを直接参照してください。

@@ -2,7 +2,7 @@ OP-001 THE THIRD PLACE Constitution
   
   
 # THE THIRD PLACE Constitution  
-## Ver.5.3  
+## Ver.5.4  
   
 ---  
   
@@ -678,36 +678,54 @@ THE THIRD PLACEにおける情報階層を以下と定義する。
 DS-001 THE THIRD PLACE Original（不変の原典・Document Architecture外）  
 　　　　↓  
   
-THE THIRD PLACE Constitution  
+OP-001 THE THIRD PLACE Constitution  
 　　　　↓  
   
-THE THIRD PLACE Design Bible  
-  
-　　　　↓  
-  
-Project Ledger  
+OP-002 THE THIRD PLACE Design Bible  
   
 　　　　↓  
   
-Master Documents  
-　・Field Atlas  
-　・Equipment Registry  
-　・Pursuit Strategy  
-　・Foundation Compass  
-　・Habitat Architecture  
-　・Affinity Lexicon  
-　・Aesthetic Grammar  
-　・Storage Blueprint  
-　・Galley Fare  
+OP-008 Documentation System（文書体系そのものを統制するメタ文書）  
+  
+　　　　↓  
+  
+DB-001 Project Ledger  
+  
+　　　　↓  
+  
+Master Documents（定義＋台帳）  
+　・OP-003 Affinity Lexicon  
+　・OP-004 Aesthetic Grammar  
+　・OP-005 Pursuit Strategy  
+　・OP-006 Foundation Compass  
+　・OP-007 Habitat Architecture  
+　・OP-009 Search Doctrine  
+　・OP-010 Qualification Charter  
+　・MD-001 Storage Blueprint  
+　・MD-002 Field Atlas Landscape Framework  
+　・MD-003 Galley Fare  
+　・MD-004 Equipment Registry Object Reference  
+  
+　　　　↓  
+  
+Barista Documents  
+　・BR-001 Brew Care  
+　・BR-002 Barista Canon  
+　・BR-003 Procurement Handbook  
+  
+　　　　↓  
+  
+Cross-Zone Ops  
+　・CZ-001 Deliberation Dossier  
+　・CZ-002 Vigil Protocol  
   
 　　　　↓  
   
 Knowledge Documents  
-　・Heritage Chronicle  
-　・Atelier Discovery  
-　・Beyond Journey  
-　・Cultural Pantheon  
-　・Search Doctrine  
+　・KN-001 Heritage Chronicle  
+　・KN-002 Cultural Pantheon  
+　・KN-003 Beyond Journey  
+　・KN-004 Atelier Discovery  
   
 　　　　↓  
   
@@ -726,7 +744,7 @@ DS-001そのものは、この階層構造の一部として更新・管理さ�
   
 上位文書を変更する権限を持たない。  
   
-本図が示す「設計・思想」の階層構造は、2026-09-19付の文書番号再編（§27参照）以降も、DS／OP／記録（DB・MD・BR・CZ・KN）という新しい系列分類と両立する。本図は情報の重み付け（何が何に優先するか）を示すものであり、系列分類は文書の可変性の度合い（絶対不変・定義・可変）を示すものである。両者は異なる軸である。  
+本図が示す「設計・思想」の階層構造は、2026-09-19付の文書番号再編（§26参照）以降も、DS／OP／記録（DB・MD・BR・CZ・KN）という新しい系列分類と両立する。本図は情報の重み付け（何が何に優先するか）を示すものであり、系列分類は文書の可変性の度合い（絶対不変・定義・可変）を示すものである。両者は異なる軸である。  
   
 ---  
   
@@ -1313,7 +1331,7 @@ GitHubパス修正。
   
 THE THIRD PLACEの正式Repository構成を以下と定義する。  
   
-2026-09-19付の文書番号再編（§27参照）により、フォルダ構成をTP／PX／TMの3系列から、DS／OP／記録（DB・MD・BR・CZ・KN）の系列へ再編した。  
+2026-09-19付の文書番号再編（§26参照）により、フォルダ構成をTP／PX／TMの3系列から、DS／OP／記録（DB・MD・BR・CZ・KN）の系列へ再編した。  
   
 ```text  
 THE-THIRD-PLACE/  
@@ -1540,7 +1558,7 @@ MARI様のご指示に基づき、プロジェクト全体の文書番号体系�
   
 新旧ID対応は以下の通り：TP-000→DS-001、TP-001→OP-001、TP-002→OP-002、TP-008→OP-003、TP-009→OP-004、TP-005→OP-005、TP-006→OP-006、TP-007→OP-007、PX-001→OP-008、TM-005→OP-009、PX-002→DB-001、TP-010→MD-001、TP-003→MD-002、TP-011→MD-003、TP-004→MD-004、PX-006→BR-001、PX-004→BR-002、PX-005→BR-003、PX-007→CZ-001、PX-003→CZ-002、TM-001→KN-001、TM-004→KN-002、TM-003→KN-003、TM-002→KN-004。  
   
-本文書自身をTP-001からOP-001へ改名し、Preamble・§12・§13.0・§13.6・§13.8・§13.18内の相互参照、およびAppendix B Repository Architectureを新ID・新フォルダ構成へ更新した。上記Ver.4.3以前のVersion Historyは、当時実際に使用されていた旧IDのまま、歴史的記録として保持する（§27参照）。  
+本文書自身をTP-001からOP-001へ改名し、Preamble・§12・§13.0・§13.6・§13.8・§13.18内の相互参照、およびAppendix B Repository Architectureを新ID・新フォルダ構成へ更新した。上記Ver.4.3以前のVersion Historyは、当時実際に使用されていた旧IDのまま、歴史的記録として保持する（§26参照）。  
   
 ### Ver.5.1  
 
@@ -1554,11 +1572,15 @@ MARI様のご指摘に基づき、OP-008 §11.1で新設された文書名重複
 
 MARI様のご指摘に基づき、§9 Decision Philosophy ⑤記録および§14 Document Relationshipsの記述を、確立済みの運用実態へ整合させた。従来「重要な判断はProject Ledgerへ記録する」「Master DocumentsはProject Ledgerによる正式な意思決定を経て更新される」としていたが、実際の意思決定記録先はCoffee Domain：BR-002 Barista Canon、Coffee以外の全ゾーン：CZ-001 Deliberation Dossierであり、Project Ledger（DB-001）はConversation Ledger・Current Focus・Inbox等の運用状況管理のみを担う。この乖離を是正し、§9・§14双方にDB-001の役割限定を明記した（OP-008 §8 DB-001 Role列の同時改訂と連動、Minor Version）。
 
+### Ver.5.4
+
+MARI様のご指摘に基づき、§12 Information Hierarchyの図を、2026-09-19の文書番号再編および2026-09-24のVolatility Restructure以降の現行系列（DS／OP／DB／MD／BR／CZ／KN）へ全面的に再構成した。旧図で「Master Documents」「Knowledge Documents」の2分類のみだった構造を廃し、OP-008・OP-010・BR系列・CZ系列を新設の各段として追加し、誤ってKnowledge側に分類されていたSearch Doctrine（OP-009）をMaster Documents段へ正しく移設した。あわせて、本文書§27「Document Renumbering Policy」が、§26が本来存在すべき箇所を欠番のまま§27として運用されていた不整合をMARI様のご指摘により是正し、§26へ繰り上げた。この番号変更に伴い、OP-008・DB-001・CLAUDE.mdの3ファイルが本節を直接参照していたため、該当箇所を§26参照へ同期した（Minor Version）。
+
 ---
 
 ---  
   
-# 27. Document Renumbering Policy  
+# 26. Document Renumbering Policy  
   
 2026-09-19付で、プロジェクト全体の文書番号を再編した。これは正式なBaseline変更であり、旧番号体系（TP／PX／TM）への回帰を前提としない。  
   
