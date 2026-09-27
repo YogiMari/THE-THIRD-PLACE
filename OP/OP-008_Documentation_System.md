@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.3
+**Version**: 3.4
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -22,6 +22,7 @@
 | 3.1 | 2026-09-24 | MARI様のご指摘に基づき、§11 Naming Conventionへ文書名重複禁止ルール（Document Title Uniqueness Rule）を新設。制定にあたり、OP-010／MD-004のRegistry重複、OP-005／BR-003のAcquisition重複、BR-002／CZ-001のCodex重複が判明したため、OP-010をQualification Charterへ、OP-005をPursuit Strategyへ、BR-003をProcurement Handbookへ、BR-002をBarista Canonへ、CZ-001をDeliberation Dossierへそれぞれ改名し是正。§8カタログのTitle／Path列、Appendix Fの該当プロフィール文（日英）を同期。ファイル名もそれぞれ変更。 |
 | 3.2 | 2026-09-26 | §8カタログのDB-001 Volatilityが『Periodic』のまま、Rule DOC-08およびDB-001自身のヘッダー記述（Living Document）と矛盾していた点をMARI様確認の上、実態に合わせ『Living』へ修正。 |
 | 3.3 | 2026-09-27 | 他の全23文書が備える「Document Renumbering Note」（旧ID開示）が本書のみ欠落していた不整合を、MARI様のご指摘・ご指示に基づき是正。本書末尾へDocument Renumbering Noteを新設し、旧ID: TP-001を明記した。内容の実質的な変更はない。 |
+| 3.4 | 2026-09-27 | MARI様のご指摘に基づき、§8カタログのDB-001 Role列にあった「Project Ledgerは、重要な判断の記録先として、本Constitution §9（記録）で参照される」という記述を是正。実際の意思決定記録先はCoffee Domain：BR-002 Barista Canon、Coffee以外の全ゾーン：CZ-001 Deliberation Dossierであり、DB-001は運用ダッシュボードとして会話管理・進捗管理等のみを担う旨へ更新。OP-001 Constitution §9・§14の同時改訂（Ver.5.3）と連動。 |
 
 ---
 
@@ -227,7 +228,7 @@ Authority 列は本 Version（3.0）で新設された分類である。BR-001�
 | OP-008 | Documentation System | `OP/OP-008_Documentation_System.md` | See Appendix F | Standard | Static | 文書運用ルールそのものの基準書 |
 | OP-009 | Search Doctrine | `OP/OP-009_Search_Doctrine.md` | 管理対象<br>・調査の哲学・方法論<br>・情報源の優先順位<br>・Difference Analysis手法<br>監視対象（Watch List）・調査キーワード自体は、<br>CZ-002 Vigil Protocolが管理する。 | Standard | Static | 調査の哲学・方法論 |
 | OP-010 | Qualification Charter | `OP/OP-010_Qualification_Charter.md` | OP-010 Qualification Charter は、記録系列台帳（MD-002／MD-003／MD-004）の登録規則・評価基準を定義する。 | Standard | Static | 台帳（MD-002／003／004）の登録規則・評価基準の基準書 |
-| DB-001 | Project Ledger | `DB/DB-001_Project_Ledger.md` | 管理対象<br>・Conversation Ledger（会話記録・検索用ワード）<br>・Active Conversations<br>・Quick Access<br>Project Ledgerは、<br>重要な判断の記録先として、<br>本Constitution §9（記録）で参照される。 | Standard | Living | この文書。会話履歴・早見表・運用ダッシュボード |
+| DB-001 | Project Ledger | `DB/DB-001_Project_Ledger.md` | 管理対象<br>・Conversation Ledger（会話記録・検索用ワード）<br>・Active Conversations<br>・Quick Access<br>Project Ledgerは、<br>会話管理・進捗管理等の運用状況を扱う運用ダッシュボードであり、<br>個別の意思決定内容そのものは保持しない（意思決定はCoffee Domain：BR-002、Coffee以外の全ゾーン：CZ-001が担う。OP-001 Constitution §9・§14参照）。 | Standard | Living | この文書。会話履歴・早見表・運用ダッシュボード |
 | MD-001 | Storage Blueprint | `MD/MD-001_Storage_Blueprint.md` | 管理対象<br>・収納<br>・収納ルール<br>・Container Assignment | SSOT | Living | 収納・コンテナの割り当てルール |
 | MD-002 | Field Atlas Landscape Framework | `MD/MD-002_Field_Atlas_Landscape_Framework.md` | 管理対象<br>・キャンプ場<br>・ロケーション<br>・適性評価<br>・運用条件 | SSOT | Periodic | キャンプ場・ロケーションの選定と評価 |
 | MD-003 | Galley Fare | `MD/MD-003_Galley_Fare.md` | 管理対象<br>・キッチン調理器具<br>・調理の機能的必然性に基づく選定基準<br>Galley Fareは、<br>Equipment Registryとは異なる評価軸を持つ、<br>独立したMaster Databaseである。<br>所作、<br>デザイン、<br>ブランドの格を、<br>必須条件としない。<br>実際に調理が成立する機能性を、<br>最優先とする。 | SSOT | Living | キッチン道具だけの独立した台帳 |
