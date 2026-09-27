@@ -50,6 +50,7 @@
 |--------------------|----------|--------------|----------|--------|--------------|
 | PX Documentation System 制作 | OP-008 | PX, Documentation, Standard | PXシリーズのDocumentation Systemを制作。 | Active | 2026-07-15 |
 | PX Project Ledger 制作 | DB-001 | PX, Ledger, Conversation, Chat | Conversation管理を中心としたProject Ledgerを設計。 | Active | 2026-07-15 |
+| Project Ledger 位置づけ整合 | OP-001, OP-008, DB-001 | Project Ledger, Decision, BR-002, CZ-001, 記録, 意思決定, 乖離 | OP-001 §9・§14とOP-008 §8のDB-001 Role記述が「重要な判断はProject Ledgerへ記録」としていたが、実際の記録先はCoffee Domain：BR-002、Coffee以外：CZ-001である運用実態と乖離していた点を是正（OP-001 Ver.5.2→5.3、OP-008 Ver.3.3→3.4）。DB-001自体の空欄セクション（Current Focus・Inbox・KN Publication Log）の充填は継続中。 | Active | 2026-09-27 |
 
 ---
 
