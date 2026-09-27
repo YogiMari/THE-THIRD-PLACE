@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.3  
+**Version**: 4.4  
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -80,6 +80,10 @@
 
 # Project Inbox
 
+**用途**：CZ-001・BR-002・GitHub Issue等、正式な置き場所へ乗せるほどまだ固まっていない、雑多な相談・思いつき・気になった製品名・文書改善アイデアなどを、忘れないよう一時的に書き留める受け皿とする。「相談したこと自体を覚えていられない」ときの拾い網として使う。
+
+検討が具体化したら、CZ-001のUnder Consideration等の正式な置き場所へ移し、本節からは削除する（他文書との情報重複は行わない）。
+
 | Date | Topic |
 |------|-------|
 | — | — |
@@ -133,6 +137,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.1 | 2026-09-24 | Volatility Restructure（追補）により、Quick Accessの各シリーズ表（ひとことで言うと列）をOP-008 Documentation System §8 Document Series（Summary列）へ逐語移設し、参照文へ置換。冒頭の説明文は残置。Minor Version。 |
 | 4.2 | 2026-09-24 | OP-010新設がProject Overviewへ反映されていなかった漏れを修正（OP 9→10、合計24→25文書）。あわせてOP-005・OP-010・BR-002・BR-003・CZ-001の文書名重複解消による改名（OP-008 §11.1・OP-001 §12/Appendix B参照）を確認。本表は文書数のみを扱うためタイトル変更自体の反映事項はなし。Minor Version。 |
 | 4.3 | 2026-09-25 | 「KN Publication Log」節（KN作品の発行記録ログ）と「Change Management（GitHub Issues Kanban）」節（変更管理の運用ルール定義）を新設。Health Checkへ Change Management 行を追加。MARI様承認済み。Minor Version。 |
+| 4.4 | 2026-09-27 | 用途未定だったProject Inbox節に運用ルールを新設。CZ-001・BR-002・GitHub Issue等の正式な置き場所へ乗せる前の、雑多な相談・思いつきの一時受け皿として位置づけた（MARI様承認済み）。Conversation Ledgerへ本日の会話を追記。Minor Version。 |
 
 ---
 
