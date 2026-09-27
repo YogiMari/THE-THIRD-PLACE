@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.5  
+**Version**: 4.6  
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -13,11 +13,13 @@
 
 ## Current Focus
 
-| Priority | Focus | Status |
-|:--:|------|:--:|
-| 1 | — | — |
-| 2 | — | — |
-| 3 | — | — |
+現在進行中の案件を並べる。件数は3件に固定しない（増減に応じて行を追加・削除する）。
+
+| Focus | Status |
+|------|--------|
+| Winter Sleeping Mat（FUR-034） | 仮確定（BLACK ZONE MAT×2）・MD-004正式反映待ち |
+| Pad Sheet（FUR-035） | 仮確定（HOTEL CAMPS×2）・MD-004正式反映待ち |
+| Storage Carrying Case（STR-034） | Under Evaluation・適合品を継続探索中 |
 
 ---
 
@@ -139,6 +141,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.3 | 2026-09-25 | 「KN Publication Log」節（KN作品の発行記録ログ）と「Change Management（GitHub Issues Kanban）」節（変更管理の運用ルール定義）を新設。Health Checkへ Change Management 行を追加。MARI様承認済み。Minor Version。 |
 | 4.4 | 2026-09-27 | 用途未定だったProject Inbox節に運用ルールを新設。CZ-001・BR-002・GitHub Issue等の正式な置き場所へ乗せる前の、雑多な相談・思いつきの一時受け皿として位置づけた（MARI様承認済み）。Conversation Ledgerへ本日の会話を追記。Minor Version。 |
 | 4.5 | 2026-09-27 | OP-001 Constitution §27→§26への繰り上げ是正に伴い、Revision History 4.0行の相互参照をOP-001 §26参照へ更新。MARI様のご指摘に基づく。 |
+| 4.6 | 2026-09-27 | Current Focusを空欄から充填。CZ-001 Under Considerationの現在進行中3件（Winter Sleeping Mat／Pad Sheet／Storage Carrying Case）を記載。あわせてMARI様のご指示により、Priority 1〜3固定の3行制を廃止し、件数を可変長のリストへ変更（増減に応じて行を追加・削除する運用へ）。Minor Version。 |
 
 ---
 
