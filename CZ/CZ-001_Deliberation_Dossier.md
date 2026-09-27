@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.10
+3.11
 
 # Status
 
@@ -33,7 +33,7 @@ CZ-001 Deliberation Dossierは、Coffee Domain（BR-002管轄）を除く全ゾ�
 * MD-004：Brand／Product／Status／Material等のSingle Source of Truth。Status = Candidateの間は、Brand / Productを「Unconfirmed」とする。
 * CZ-001：Candidate段階の具体的な製品名・ブランド・比較評価・検討経緯（Under Consideration）、およびEssential段階の購入待ちEquipment一覧（Confirmed — Purchase Pending）を保持する。
 
-Candidateが確定（Essential/Owned）した時点でUnder Considerationから削除し、Decision Logへ一行要約を残す。詳細な比較内容そのものは確定後は保持しない。Essentialになったアイテムは同時にConfirmed — Purchase Pendingへ追加し、購入完了（Owned）した時点でそこから削除する。
+Candidateが確定（Essential/Owned）した時点でUnder Considerationから削除し、Decision Logへ一行要約を残す。あわせて、不採用候補とその理由を含む詳細な比較内容を、Decision Log直下の「詳細記録」として恒久的に保持する（一行要約のみで、詳細を破棄することはしない。2026-09-27付でCZ-001の標準運用となった）。この詳細記録は、KN-001 Heritage Chronicle発行時の一次資料として使用する。Essentialになったアイテムは同時にConfirmed — Purchase Pendingへ追加し、購入完了（Owned）した時点でそこから削除する。
 
 ---
 
@@ -50,7 +50,7 @@ CZ-001 Deliberation Dossier
 │  MD-004 Status更新（Candidate → Essential）
 │       │
 │       ▼
-│  Under Considerationから削除 → Decision Logへ一行記録
+│  Under Considerationから削除 → Decision Logへ一行記録 + 詳細記録を保持
 │       │
 │       ▼
 │  Confirmed — Purchase Pendingへ追加
@@ -66,6 +66,13 @@ CZ-001 Deliberation Dossier
         │
         ▼
    Confirmed — Purchase Pendingから削除
+
+Decision Log + 詳細記録（恒久保持）
+        │
+        │（MARI様のご意向に応じて随時）
+        ▼
+   KN-001 Heritage Chronicleとして
+   Artifact発行（一次資料からの編集・執筆）
 ```
 
 ---
@@ -240,21 +247,21 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 # Decision Log
 
-確定・削除した項目を一行要約で記録する。詳細な比較内容そのものは、確定後は保持しない。
+確定・削除した項目を一行要約で記録する。あわせて、不採用候補とその理由を含む詳細な比較内容を、各行に対応する「詳細記録」として本節直下（またはリンク先の専用節）に恒久的に保持する（2026-09-27付でCZ-001の標準運用となった。詳細記録はKN-001 Heritage Chronicle発行時の一次資料として使用する）。
 
 | Date | Domain | Item | Decision |
 |---|---|---|---|
 | 2026-09 | Aroma | ARM-003 Vertical Diffuser | UNIT/04 × KUNST・BAUM SCENT TOWERを正式決定（Status: Essential）。詳細はMD-004参照。（決定当時のIDはARM-004。2026-09-19のMD-004 Version 7.34で番号入替） |
 | 2026-09-19 | Aroma | ARM-004 Incense Chamber | Filoméla INCENSE CHAMBER Tokyo LimitedのStatusをEssentialからUpgradeへ変更（MD-004 Version 7.34、MARI様のご指示）。Confirmed — Purchase Pendingから除外。旧ID: ARM-003。 |
-| 2026-09-23 | Furniture | FUR-033 Winter Top Quilt | 候補（Enlightened Equipment Accomplice／UGQ Outdoor Tango Duo）の検討を終了。冬用キルトはSnow Peak ダウン システムオフトン スリムマットセット（FUR-032）を採用（プロジェクトオーナー決定）。FUR-033はMD-004 Version 7.54でRetired（FUR-032へ統合）。 |
-| 2026-09-26 | Fire | Wood Stove（FIR-036〜042） | FIREGRAPHIX BLISS-SPを正式採用（MARI様決定）。MT.SUMI Aura FGとの比較検討を経て決定。詳細な検討記録は下記「Fire — Wood Stove 選定記録」を参照（MARI様のご指示により、通常の一行要約ルールの例外として詳細を保持）。 |
+| 2026-09-23 | Furniture | FUR-033 Winter Top Quilt | 候補（Enlightened Equipment Accomplice／UGQ Outdoor Tango Duo）の検討を終了。冬用キルトはSnow Peak ダウン システムオフトン スリムマットセット（FUR-032）を採用（プロジェクトオーナー決定）。FUR-033はMD-004 Version 7.54でRetired（FUR-032へ統合）。※本行は標準運用化（2026-09-27）以前の記録のため、詳細記録は保持していない。 |
+| 2026-09-26 | Fire | Wood Stove（FIR-036〜042） | FIREGRAPHIX BLISS-SPを正式採用（MARI様決定）。MT.SUMI Aura FGとの比較検討を経て決定。詳細な検討記録は下記「Fire — Wood Stove 選定記録」を参照。 |
 | 2026-09-27 | Furniture | FUR-036 Ofuton Warm Adapter | Snow Peak オフトン ウォームアダプター（BD-066）を正式決定（Status: Essential、数量2、MARI様決定）。CZ-001での事前検討記録は無く、MD-004へ直接新規登録された。詳細はMD-004参照。 |
 
 ---
 
 ## Fire — Wood Stove 選定記録（2026-09-26、詳細保持）
 
-**注記**：本セクションは、CZ-001の通常運用（Candidateが確定した時点でUnder Considerationを削除しDecision Logへ一行要約する）の例外として、MARI様のご指示により両候補の詳細な検討記録をそのまま保持するものである。
+**注記**：本節は、Decision Logの該当行に対応する詳細記録（不採用候補とその理由を含む）である。2026-09-27付でCZ-001の標準運用となった（従来は例外運用だった）。
 
 **決定**：FIREGRAPHIX BLISS-SPを正式採用（Status: Essential、MD-004: FIR-036〜FIR-042）。
 
@@ -298,6 +305,8 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 Equipment自体のBrand／Product／Status／Material等の登録情報は、引き続き**MD-004 Equipment Registry**をSingle Source of Truthとする。CZ-001はMD-004の登録ルールを変更せず、その意思決定背景を補完する。
 
+Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行時の一次資料として使用される。Heritage Chronicle自体は、決定の都度ではなく、MARI様のご意向に応じて随時Artifactとして発行する（発行記録はDB-001 KN Publication Logへ）。
+
 ---
 
 # Version History
@@ -334,6 +343,7 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 3.8 | 2026-09-26 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
 | 3.9 | 2026-09-27 | MARI様のご指示に基づき、Furniture Under ConsiderationのPad Sheet（FUR-035）を更新。公式一次情報（WAQ公式・HOTEL CAMPS公式）調査により、候補②WAQ専用カバーはWAQ製マット専用でありTM-089との規格不一致（サイズ・適合性未確認）と判明。候補③HOTEL CAMPS リバーシブルホットカバー（Black×Black、¥9,980、205×84cm、4隅ドローコード式）をTM-089ワイドマットとのサイズ適合性含め確認の上、暫定最有力候補（仮確定）として明記。MD-004側のStatus更新（Candidate→Essential）・Confirmed — Purchase Pendingへの追加は、正式な購入決定を待って別途行う。候補①②④は比較参考として引き続き保持。 |
 | 3.10 | 2026-09-27 | MARI様のご決定に基づき、Snow Peak オフトン ウォームアダプター（BD-066、MD-004: FUR-036、Status: Essential、数量2）をConfirmed — Purchase PendingのFurniture表へ追加し、Decision Logへ記録。本アイテムはCZ-001での事前のUnder Consideration記録を経ずMD-004へ直接新規登録されたため、Under Considerationセクションへの追加・削除は発生しない。 |
+| 3.11 | 2026-09-27 | MARI様のご指示に基づき、Decision Logの標準運用を変更。従来「詳細な比較内容そのものは、確定後は保持しない」としていたルールを廃止し、不採用候補とその理由を含む詳細記録を恒久的に保持する運用へ変更（Purpose・Decision Log見出し文・Relationship図を更新）。これに伴い、Wood Stove選定記録（Ver.3.7で「例外」として新設）を標準運用の一例として再定義。あわせてSSOTセクションへ、この詳細記録がKN-001 Heritage Chronicle発行時の一次資料となる旨を明記。Minor Version（運用ルール変更のためMajor Versionとの境界事例だが、既存の記録構造〈Decision Log＋詳細記録節〉自体は変更せず、保持方針の転換のみのためMinor Versionとした）。 |
 
 ---
 
