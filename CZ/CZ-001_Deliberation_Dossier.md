@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.8
+3.9
 
 # Status
 
@@ -116,14 +116,24 @@ FUR-032（マット部、R値5.4）の下に敷く断熱補強・パンク保険
 
 ### Pad Sheet（MD-004: FUR-035）
 
-**Status**：Under Evaluation
+**Status**：Candidate（**暫定最有力候補：HOTEL CAMPS リバーシブルホットカバー×2**、正式決定・MD-004 Status更新は未了）
 
-| | 候補① Therm-a-Rest Synergy Lite Sheet | 候補② WAQ 専用カバー | 候補③ HOTEL CAMPS リバーシブルホットカバー | 候補④ VISIONPEAKS×NANGA IBUKI BOX SHEETS S |
+FUR-032（マット部、TM-089ワイドマット、196×77×8cm）×2枚それぞれの上に被せて使用するシーツ。2026-09-27、公式一次情報での詳細調査により、候補②③を精査した。
+
+| | 候補① Therm-a-Rest Synergy Lite Sheet | 候補② WAQ 専用カバー | 候補③ HOTEL CAMPS リバーシブルホットカバー（**暫定最有力**） | 候補④ VISIONPEAKS×NANGA IBUKI BOX SHEETS S |
 |---|---|---|---|---|
-| Color適合 | Stargazer柄のみ、Black展開なし（不適合） | Black指定可 | Black×Black指定可 | Brownのみ、Black展開なし（不適合） |
-| 特徴 | 廃盤の可能性あり | 洗濯機で丸洗い可能 | 断熱アルミシート内蔵、リバーシブル | NANGAコラボ由来 |
+| Color適合 | Stargazer柄のみ、Black展開なし（不適合） | Black指定可 | **Black×Black指定可**（リバーシブル両面） | Brownのみ、Black展開なし（不適合） |
+| サイズ | 未調査 | 約200×70×10cm | 約205×84cm | 未調査 |
+| 適合性 | — | 公式に「WAQ RELAXING CAMP MAT専用」「他製品への適合は確認しておりません」と明記。幅70cm・厚み10cm仕様でTM-089（幅77cm・厚み8cm）とは規格不一致 | 4隅をドローコードで絞ってマットごと固定する汎用ラップ構造。TM-089より長さ+9cm・幅+7cm大きく、絞り込んでフィットさせる設計のため適合可能 | — |
+| 素材・機能 | 廃盤の可能性あり | 洗濯機で丸洗い可能 | 表：ポリエステル100%吸湿発熱ボア／裏：ポリエステル70%＋レーヨン30%／中材：アルミシート。断熱・保温・丸洗い可・ブランケット/掛け布団兼用 | NANGAコラボ由来 |
+| 重量 | 未調査 | 未記載 | 約750g | 未調査 |
+| 実勢価格 | 未調査 | ¥3,840 | ¥9,980 | 未調査 |
 
-**Decision**：未決定。候補①・④はオールブラック条件不適合につき参考記録として保持。実質的な最有力候補は②・③。
+**配置前提**：TM-089ワイドマット1枚につきHOTEL CAMPS×1枚を被せ、4隅のドローコードで絞って固定する（数量2）。
+
+**Unresolved Gaps**：候補②WAQは他社マットへの適合が公式に未確認かつサイズ規格が不一致であり、事実上不採用寄り。候補③HOTEL CAMPSの実勢価格・在庫状況は公式サイト（¥9,980）で確認済みだが、実使用レビュー（TM-089での実装例）は未確認。
+
+**Decision**：**仮確定**（HOTEL CAMPS リバーシブルホットカバー×2、2026-09-27、MARI様）。正式な購入決定（MD-004 Status = Essentialへの更新・Confirmed — Purchase Pendingへの追加）は別途行う。候補①②④は比較参考として引き続き保持。
 
 ---
 
@@ -320,6 +330,7 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 3.6 | 2026-09-26 | MARI様のご指示に基づき、Winter Sleeping Mat（FUR-034）のStatus・Decisionを更新し、BLACK ZONE MAT×2を暫定最有力候補（仮確定）として明記。MD-004側のStatus更新（Candidate→Essential）・Confirmed — Purchase Pendingへの追加は、正式な購入決定を待って別途行う。候補①②（Zライトソル・NEMOスイッチバック）は比較参考として引き続き保持。 |
 | 3.7 | 2026-09-26 | MARI様のご決定に基づき、Fire — Wood Stove検討（MT.SUMI Aura FG vs FIREGRAPHIX BLISS-SP）を正式決定。FIREGRAPHIX BLISS-SPを採用（MD-004 Version 7.59・FIR-036〜042と連動）。Under Consideration（Fire）を空欄化し、Decision Logへ記録の上、通常運用の例外としてMARI様のご指示により両候補の詳細な検討記録を「Fire — Wood Stove 選定記録」として新設・保持。Confirmed — Purchase Pending（Fire）へFIR-036〜042の7行を追加。 |
 | 3.8 | 2026-09-26 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
+| 3.9 | 2026-09-27 | MARI様のご指示に基づき、Furniture Under ConsiderationのPad Sheet（FUR-035）を更新。公式一次情報（WAQ公式・HOTEL CAMPS公式）調査により、候補②WAQ専用カバーはWAQ製マット専用でありTM-089との規格不一致（サイズ・適合性未確認）と判明。候補③HOTEL CAMPS リバーシブルホットカバー（Black×Black、¥9,980、205×84cm、4隅ドローコード式）をTM-089ワイドマットとのサイズ適合性含め確認の上、暫定最有力候補（仮確定）として明記。MD-004側のStatus更新（Candidate→Essential）・Confirmed — Purchase Pendingへの追加は、正式な購入決定を待って別途行う。候補①②④は比較参考として引き続き保持。 |
 
 ---
 
