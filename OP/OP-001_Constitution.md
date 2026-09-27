@@ -2,7 +2,7 @@ OP-001 THE THIRD PLACE Constitution
   
   
 # THE THIRD PLACE Constitution  
-## Ver.5.2  
+## Ver.5.3  
   
 ---  
   
@@ -608,7 +608,9 @@ Design Bibleに適合するか。
   
 重要な判断は、  
   
-Project Ledgerまたは関連文書へ記録する。  
+当該ドメインの記録文書（Coffee Domain：BR-002 Barista Canon、Coffee以外の全ゾーン：CZ-001 Deliberation Dossier）または関連文書へ記録する。  
+  
+Project Ledger（DB-001）は、会話管理・進捗管理等の運用状況を担い、個別の意思決定内容そのものは保持しない。  
   
 結論だけではなく、  
   
@@ -824,7 +826,9 @@ Master Documentsが生まれる。
   
 Master Documentsは、  
   
-Project Ledgerによる正式な意思決定を経て更新される。  
+当該ドメインの記録文書（Coffee Domain：BR-002、Coffee以外の全ゾーン：CZ-001）による正式な意思決定を経て更新される。  
+  
+Project Ledger（DB-001）は、この意思決定プロセスそのものを管轄しない。  
   
 Discoveryは、  
   
@@ -1545,6 +1549,10 @@ Volatility Restructureにより、§13.2〜§13.18（各文書のRole説明）�
 ### Ver.5.2
 
 MARI様のご指摘に基づき、OP-008 §11.1で新設された文書名重複禁止ルールに伴う5文書の改名（OP-010 Registry Standard→Qualification Charter、OP-005 Acquisition Strategy→Pursuit Strategy、BR-003 Acquisition Handbook→Procurement Handbook、BR-002 Barista Codex→Barista Canon、CZ-001 Deliberation Codex→Deliberation Dossier）を、Information Hierarchy（§12、Acquisition Strategy→Pursuit Strategy）およびAppendix B Repository Architectureへ反映。あわせて、Appendix Bに従来欠落していたOP-010を新規追加し、記載漏れを是正した（Minor Version）。
+
+### Ver.5.3
+
+MARI様のご指摘に基づき、§9 Decision Philosophy ⑤記録および§14 Document Relationshipsの記述を、確立済みの運用実態へ整合させた。従来「重要な判断はProject Ledgerへ記録する」「Master DocumentsはProject Ledgerによる正式な意思決定を経て更新される」としていたが、実際の意思決定記録先はCoffee Domain：BR-002 Barista Canon、Coffee以外の全ゾーン：CZ-001 Deliberation Dossierであり、Project Ledger（DB-001）はConversation Ledger・Current Focus・Inbox等の運用状況管理のみを担う。この乖離を是正し、§9・§14双方にDB-001の役割限定を明記した（OP-008 §8 DB-001 Role列の同時改訂と連動、Minor Version）。
 
 ---
 
