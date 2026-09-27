@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.62  
+Version 7.63  
   
 ---  
   
@@ -1328,6 +1328,42 @@ Unconfirmed
 ### Industrial Attribute  
 
 Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-032（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はCZ-001 Deliberation Dossierで管理）  
+
+---  
+
+## FUR-036  
+
+**Brand**  
+
+Snow Peak  
+
+**Product**  
+
+オフトン ウォームアダプター（BD-066）  
+
+**Status**  
+
+Essential  
+
+**Quantity**  
+
+2  
+
+### Color  
+
+Unconfirmed（Blackではないことをプロジェクトオーナーが確認済みだが、正確な色名は未確認）  
+
+### Material  
+
+Polyester（フリース生地）  
+
+### Industrial Attribute  
+
+Inner Liner（システムオフトンの掛け布団内側に、スナップボタン付きテープをループへ通して4箇所で固定して使用するインナーシュラフ。サイズ75×180cm、収納サイズφ16×25cm、重量800g。汚れ防止・追加保温用。FUR-032との併用が前提）  
+
+### Price  
+
+¥7,480  
 
 ---  
 # Light  
@@ -5825,10 +5861,6 @@ asigrip
 
 FIR-016  
 
-**Status**  
-
-Owned  
-
 ### Color  
 
 Brown  
@@ -7939,6 +7971,20 @@ MARI様のご指示に基づき、Claude導入以前の個人Numbersスプレッ
 - リポジトリ全体で、Version History／Revision History／Document Renumbering Note／Document Information（Former ID）以外の箇所に、旧文書ID（TP-／PX-／TM-）の残留は確認されなかった。
 
 - Related Documents：変更なし。
+
+---
+
+## Version 7.63
+
+MARI様のご決定に基づき、ウォームアダプター（Snow Peak BD-066）を新規Essential枠として登録した。あわせて、既存FUR-032（システムオフトン＋ワイドマットセット、数量2）とFUR-035（Pad Sheet、Candidate）は現状の登録内容のまま据え置くことをMARI様に確認した。
+
+### Changes
+
+- FUR-036：新規登録。Brand: Snow Peak、Product: オフトン ウォームアダプター（BD-066）、Status: Essential、Quantity: 2。Color はBlackではないことをMARI様が確認済みだが正確な色名は未確認のためUnconfirmedと記録。Material: Polyester（フリース生地）。Industrial Attributeに、システムオフトンの掛け布団内側にスナップボタン付きテープで4箇所固定して使用するインナーシュラフである旨、公式サイズ（75×180cm）・収納サイズ（φ16×25cm）・重量（800g）を記録。Price ¥7,480（公式単価）。
+- FUR-032：変更なし（Essential、Quantity 2のまま）。
+- FUR-035：変更なし（Candidate のまま。CZ-001記載の暫定最有力候補・HOTEL CAMPS×2は据え置き）。
+
+- Related Documents：CZ-001 Deliberation Dossier（Confirmed — Purchase PendingへのFUR-036追加と連動予定）。
 
 ---
 
