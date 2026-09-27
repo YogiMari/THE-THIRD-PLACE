@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.11
+3.12
 
 # Status
 
@@ -256,6 +256,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | 2026-09-23 | Furniture | FUR-033 Winter Top Quilt | 候補（Enlightened Equipment Accomplice／UGQ Outdoor Tango Duo）の検討を終了。冬用キルトはSnow Peak ダウン システムオフトン スリムマットセット（FUR-032）を採用（プロジェクトオーナー決定）。FUR-033はMD-004 Version 7.54でRetired（FUR-032へ統合）。※本行は標準運用化（2026-09-27）以前の記録のため、詳細記録は保持していない。 |
 | 2026-09-26 | Fire | Wood Stove（FIR-036〜042） | FIREGRAPHIX BLISS-SPを正式採用（MARI様決定）。MT.SUMI Aura FGとの比較検討を経て決定。詳細な検討記録は下記「Fire — Wood Stove 選定記録」を参照。 |
 | 2026-09-27 | Furniture | FUR-036 Ofuton Warm Adapter | Snow Peak オフトン ウォームアダプター（BD-066）を正式決定（Status: Essential、数量2、MARI様決定）。CZ-001での事前検討記録は無く、MD-004へ直接新規登録された。詳細はMD-004参照。 |
+| 2026-09-27 | Storage | ShellCon25①／②のBedding Module転用検討 | ShellCon25①単独、および①＋②の2箱体制の両方で「FUR-032（掛け布団収納ケース×2・マット収納ケース×2）＋FUR-036（ウォームアダプター×2）」全6点の収納可否を検証したが、床面積不足により不採用。既存の収納割当（①＝Bedding Module、②＝Light & Aroma Module）を維持。詳細は下記「Storage — Bedding Module収納検証」を参照。 |
 
 ---
 
@@ -296,6 +297,41 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 - 総額：¥209,000
 - 庫内収納：FIREGRAPHIX公式パッキング図により、基本煙突・延長煙突・トップ・ガード一式がすべて庫内（炉内）に収納可能であることを確認。庫外に出るのはスタンドのみ
 - スタンド収納：分解したアルミポータブルスタンドをソフトコンテナL内で本体の下に敷く形での同梱を検討。公式の分解時サイズ記載はないが、同社の鉄製旧型スタンド（FG002）の実測値（収納時330×434×厚み9mm）から類推し、寸法上は収納可能と推定（高さ・幅・奥行きいずれも計算上矛盾なし。ただし公式数値ではなく類推である旨を明記）
+
+---
+
+## Storage — Bedding Module収納検証（2026-09-27、詳細保持）
+
+**注記**：本節は、Decision Logの該当行に対応する詳細記録（不採用理由を含む）である。
+
+**決定**：ShellCon25①／②をBedding Module（寝具収納）へ転用する案は不採用。既存の収納割当（ShellCon25①＝Bedding Module、ShellCon25②＝Light & Aroma Module〈MD-001でVerified済み〉）を維持する。
+
+**検討の発端**：FUR-032（ダウン システムオフトン ワイドマットセット、掛け布団収納ケース×2＋マット収納ケース×2）とFUR-036（オフトン ウォームアダプター×2）の合計6点が、ShellCon25①（内寸405×290×195mm）単体に収まるかを検証したのが起点。単体では収まらないと判明したため、ShellCon25②（同サイズ）も動員した2箱体制での収納も追加検証した。
+
+**アイテムの床面積・高さ（円柱状収納袋、寝かせて1層で収める前提）**
+
+| アイテム | 床面積（直径×長さ） | 高さ（直径） |
+|---|---|---|
+| 掛け布団収納ケース（Q） | 700cm² | 20cm（**内寸19.5cmを0.5cm超過**） |
+| マット収納ケース（M） | 390cm² | 13cm |
+| ウォームアダプター（W） | 400cm² | 16cm |
+
+**容量計算**
+
+- 箱1個あたりの床面積：40.5×29.0＝1,174.5cm²
+- 箱2個合計：2,349cm²
+- 全アイテム（Q×2、M×2、W×2）の床面積合計：700×2＋390×2＋400×2＝2,980cm²
+- **不足**：2,980cm² − 2,349cm² ＝ 約631cm²（約27%不足）。2箱体制でも全6点は収まらない。
+
+**組み合わせパターンの検証（2箱体制）**
+
+- パターンA（掛け布団を諦める）：箱①＝M×2（66%）、箱②＝W×2（68%）→どちらも余裕で収まるが、Q×2の行き場がなくなる
+- パターンB（掛け布団を活かす）：箱①＝Q×1＋M×1（93%）、箱②＝Q×1＋M×1（93%）→Qは2個とも収まる見込みだが、W×2の行き場がなくなる
+- **結論**：どの組み合わせでも、必ず2点が行き場を失う。6点全部を2箱に収める組み合わせは存在しない。
+
+**付随する制約**：掛け布団収納ケース（Q）は直径20cmで、箱の内寸19.5cmを単体でも0.5cm超過しており、この時点で常にリスクを抱えている。また、ShellCon25②は現状Light & Aroma Module（Filoméla INCENSE CHAMBER、DEVADEVA、KURASHI MADE DOME LOOK、RT-01AC01／ECHO LAMP、VALO SHADE、TARP to TARP×Lampup Glass Shade、MMM Pocket Shade等）の固定収納先としてMD-001でVerified済みであり、転用する場合はこれらの照明・香り系装備一式の新しい収納先を別途用意する必要がある。
+
+**MARI様のご判断**：「結局全部入らないのなら、やめておく」として転用を見送り。ShellCon25①②とも既存の収納割当のまま据え置く。
 
 ---
 
@@ -344,6 +380,7 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 3.9 | 2026-09-27 | MARI様のご指示に基づき、Furniture Under ConsiderationのPad Sheet（FUR-035）を更新。公式一次情報（WAQ公式・HOTEL CAMPS公式）調査により、候補②WAQ専用カバーはWAQ製マット専用でありTM-089との規格不一致（サイズ・適合性未確認）と判明。候補③HOTEL CAMPS リバーシブルホットカバー（Black×Black、¥9,980、205×84cm、4隅ドローコード式）をTM-089ワイドマットとのサイズ適合性含め確認の上、暫定最有力候補（仮確定）として明記。MD-004側のStatus更新（Candidate→Essential）・Confirmed — Purchase Pendingへの追加は、正式な購入決定を待って別途行う。候補①②④は比較参考として引き続き保持。 |
 | 3.10 | 2026-09-27 | MARI様のご決定に基づき、Snow Peak オフトン ウォームアダプター（BD-066、MD-004: FUR-036、Status: Essential、数量2）をConfirmed — Purchase PendingのFurniture表へ追加し、Decision Logへ記録。本アイテムはCZ-001での事前のUnder Consideration記録を経ずMD-004へ直接新規登録されたため、Under Considerationセクションへの追加・削除は発生しない。 |
 | 3.11 | 2026-09-27 | MARI様のご指示に基づき、Decision Logの標準運用を変更。従来「詳細な比較内容そのものは、確定後は保持しない」としていたルールを廃止し、不採用候補とその理由を含む詳細記録を恒久的に保持する運用へ変更（Purpose・Decision Log見出し文・Relationship図を更新）。これに伴い、Wood Stove選定記録（Ver.3.7で「例外」として新設）を標準運用の一例として再定義。あわせてSSOTセクションへ、この詳細記録がKN-001 Heritage Chronicle発行時の一次資料となる旨を明記。Minor Version（運用ルール変更のためMajor Versionとの境界事例だが、既存の記録構造〈Decision Log＋詳細記録節〉自体は変更せず、保持方針の転換のみのためMinor Versionとした）。 |
+| 3.12 | 2026-09-27 | MARI様のご依頼に基づき、過去のチャット「Bedding Module収納検証」（2026-09-27）から、ShellCon25①／②をBedding Moduleへ転用する案の検討記録を遡って追記。床面積計算により全6点（Q×2／M×2／W×2）は2箱体制でも収まらないと判明し、転用を不採用としてShellCon25①②とも既存の収納割当を維持した経緯を、Ver.3.11で新設した標準運用（一行要約＋詳細記録）に沿ってDecision LogおよびStorage詳細記録節へ記録。 |
 
 ---
 
