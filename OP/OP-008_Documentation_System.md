@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.2
+**Version**: 3.3
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -21,6 +21,7 @@
 | 3.0 | 2026-09-24 | Volatility Restructure。§8 Document Seriesを唯一の文書カタログへ拡張（Document ID／Title／Path／Role／Authority／Volatility列を新設、OP-010を追加）。§9にVolatility区分（Static／Periodic／Living）を新設。§24 Referencesの文書一覧を§8参照の1行へ置換。Rule DOC-06の自己矛盾を解消。責任範囲の変更のためMajor Version。（追補）Appendix F — Document Profilesを新設し、README.mdの全文書プロフィール文（日英）を逐語移設。§8にSummary列を新設し、DB-001 Quick Accessの「ひとことで言うと」列を逐語移設。DS-001・OP-008・BR-001〜003・CZ-001〜002のRole列を「See Appendix F」へ更新。BR-002・BR-003のAuthorityをSSOTへ変更（2026-09-24 MARI様承認）。 |
 | 3.1 | 2026-09-24 | MARI様のご指摘に基づき、§11 Naming Conventionへ文書名重複禁止ルール（Document Title Uniqueness Rule）を新設。制定にあたり、OP-010／MD-004のRegistry重複、OP-005／BR-003のAcquisition重複、BR-002／CZ-001のCodex重複が判明したため、OP-010をQualification Charterへ、OP-005をPursuit Strategyへ、BR-003をProcurement Handbookへ、BR-002をBarista Canonへ、CZ-001をDeliberation Dossierへそれぞれ改名し是正。§8カタログのTitle／Path列、Appendix Fの該当プロフィール文（日英）を同期。ファイル名もそれぞれ変更。 |
 | 3.2 | 2026-09-26 | §8カタログのDB-001 Volatilityが『Periodic』のまま、Rule DOC-08およびDB-001自身のヘッダー記述（Living Document）と矛盾していた点をMARI様確認の上、実態に合わせ『Living』へ修正。 |
+| 3.3 | 2026-09-27 | 他の全23文書が備える「Document Renumbering Note」（旧ID開示）が本書のみ欠落していた不整合を、MARI様のご指摘・ご指示に基づき是正。本書末尾へDocument Renumbering Noteを新設し、旧ID: TP-001を明記した。内容の実質的な変更はない。 |
 
 ---
 
@@ -975,6 +976,12 @@ The series managing accumulated knowledge and the cultural archive.
 | KN-002 | Cultural Pantheon (formerly titled Cultural Reference) | An official cultural reference recording not the brands themselves, but the philosophies, people, communities, shops, and lineages that gave rise to them. |
 | KN-003 | Beyond Journey | A culture magazine that grows THE THIRD PLACE's aesthetic sense by crossing disciplines — architecture, furniture, lighting, industrial design, automobiles, photography, lifestyle — beyond camping as a single hobby. |
 | KN-004 | Atelier Discovery | A research publication covering garage brands, outdoor brands, and market trends. Its aim is observation of trends, not brand promotion. It opens with a permanent Must Buy Dashboard that continuously monitors the highest-priority acquisition targets. |
+
+---
+
+## Document Renumbering Note
+
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編（Constitution OP-001 Ver.5.0 §27参照）により、TP-001からOP-008へ番号を変更した。本書が定義する文書体系そのものを、旧TP／PX／TM 3系列から、新DS／OP／記録（DB・MD・BR・CZ・KN）系列へ全面的に再構築した詳細は、Revision History（Version 2.0）を参照。Revision History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。旧ID: TP-001。
 
 ---
 
