@@ -1,5 +1,5 @@
 # MD-001 Storage Blueprint
-## Ver.2.8
+## Ver.2.9
 
 Status : Active
 
@@ -437,10 +437,6 @@ Aieve WDT Tool
 
 # Light Sequence
 
-LF1984
-
-↓
-
 RT-01AC01 / ECHO LAMP
 
 ↓
@@ -515,7 +511,6 @@ Beck②を閉じる
 
 ## 取り外すもののみ
 
-- wildingout LF1984
 - Vapalux M320（使用時のみ）
 
 充電
@@ -577,8 +572,6 @@ CONPE10は
 収納前に清掃する。
 
 コンテナを閉じる前に完全に乾燥させる。
-
-LF1984は定位置へ戻す前に充電する。
 
 ---
 
@@ -685,7 +678,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.8
+Ver.2.9
 
 ---
 
@@ -824,6 +817,7 @@ Permanent Storage
 | Version | Date | Description |
 |---|---|---|
 | 2.8 | 2026-09-26 | Position表内のOP-005表記が旧題『Acquisition Strategy』のままだった箇所をPursuit Strategyへ修正。OP-001表記もOP-008 §8カタログのTitle表記へ統一。加えて、ヘッダーStatus値『Planning』をOP-008 §9.2準拠の『Active』へ更新（MARI様確認：収納設計は実運用中のため）。 |
+| 2.9 | 2026-09-28 | MARI様のご指摘に基づき、MD-004（SSOT）・CZ-001との矛盾を是正。LGT-043はMD-004上でVacant（未確定）であり、wildingout LF1984はCZ-001でStatus: Candidate（LGT-043への充当を検討中）に留まる未所有装備であるにもかかわらず、本文書ではLight Sequence冒頭・Home Operation「取り外すもののみ」・Maintenanceの3箇所で、既に所有・実運用中の固定装備であるかのように記載されていた。該当3箇所からLF1984関連の記載を削除し、MD-004・CZ-001とのSSOT整合を回復した。 |
 
 ---
 
