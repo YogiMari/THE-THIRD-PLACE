@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.4
+**Version**: 3.5
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -23,6 +23,7 @@
 | 3.2 | 2026-09-26 | §8カタログのDB-001 Volatilityが『Periodic』のまま、Rule DOC-08およびDB-001自身のヘッダー記述（Living Document）と矛盾していた点をMARI様確認の上、実態に合わせ『Living』へ修正。 |
 | 3.3 | 2026-09-27 | 他の全23文書が備える「Document Renumbering Note」（旧ID開示）が本書のみ欠落していた不整合を、MARI様のご指摘・ご指示に基づき是正。本書末尾へDocument Renumbering Noteを新設し、旧ID: TP-001を明記した。内容の実質的な変更はない。 |
 | 3.4 | 2026-09-27 | MARI様のご指摘に基づき、§8カタログのDB-001 Role列にあった「Project Ledgerは、重要な判断の記録先として、本Constitution §9（記録）で参照される」という記述を是正。実際の意思決定記録先はCoffee Domain：BR-002 Barista Canon、Coffee以外の全ゾーン：CZ-001 Deliberation Dossierであり、DB-001は運用ダッシュボードとして会話管理・進捗管理等のみを担う旨へ更新。OP-001 Constitution §9・§14の同時改訂（Ver.5.3）と連動。 |
+| 3.5 | 2026-09-27 | OP-001 Constitution §12 Information Hierarchy全面再構成、および同文書§27→§26への繰り上げ是正に伴い、本書内の相互参照2箇所（§11・Document Renumbering Note）をOP-001 §26参照へ更新。MARI様のご指摘に基づく。 |
 
 ---
 
@@ -347,7 +348,7 @@ KN-001 Heritage Chronicle
 OP-008 Documentation System
 ```
 
-文書公開後は、Document ID を変更してはならない（2026-09-19付の文書番号再編は、プロジェクトオーナー自身による意図的なDocument Architecture変更であり、本原則の例外として正式に記録される。詳細はOP-001 Constitution §27参照）。
+文書公開後は、Document ID を変更してはならない（2026-09-19付の文書番号再編は、プロジェクトオーナー自身による意図的なDocument Architecture変更であり、本原則の例外として正式に記録される。詳細はOP-001 Constitution §26参照）。
 
 Title の変更は必要最小限とする。
 
@@ -982,7 +983,7 @@ The series managing accumulated knowledge and the cultural archive.
 
 ## Document Renumbering Note
 
-本文書は、2026-09-19付のプロジェクト全体の文書番号再編（Constitution OP-001 Ver.5.0 §27参照）により、TP-001からOP-008へ番号を変更した。本書が定義する文書体系そのものを、旧TP／PX／TM 3系列から、新DS／OP／記録（DB・MD・BR・CZ・KN）系列へ全面的に再構築した詳細は、Revision History（Version 2.0）を参照。Revision History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。旧ID: TP-001。
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編（Constitution OP-001 Ver.5.0 §26参照）により、TP-001からOP-008へ番号を変更した。本書が定義する文書体系そのものを、旧TP／PX／TM 3系列から、新DS／OP／記録（DB・MD・BR・CZ・KN）系列へ全面的に再構築した詳細は、Revision History（Version 2.0）を参照。Revision History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。旧ID: TP-001。
 
 ---
 
