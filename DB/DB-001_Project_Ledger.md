@@ -52,7 +52,7 @@
 |--------------------|----------|--------------|----------|--------|--------------|
 | PX Documentation System 制作 | OP-008 | PX, Documentation, Standard | PXシリーズのDocumentation Systemを制作。 | Active | 2026-07-15 |
 | PX Project Ledger 制作 | DB-001 | PX, Ledger, Conversation, Chat | Conversation管理を中心としたProject Ledgerを設計。 | Active | 2026-07-15 |
-| Project Ledger 位置づけ整合 | OP-001, OP-008, DB-001 | Project Ledger, Decision, BR-002, CZ-001, 記録, 意思決定, 乖離 | OP-001 §9・§14とOP-008 §8のDB-001 Role記述が「重要な判断はProject Ledgerへ記録」としていたが、実際の記録先はCoffee Domain：BR-002、Coffee以外：CZ-001である運用実態と乖離していた点を是正（OP-001 Ver.5.2→5.3、OP-008 Ver.3.3→3.4）。DB-001自体の空欄セクション（Current Focus・Inbox・KN Publication Log）の充填は継続中。 | Active | 2026-09-27 |
+| Project Ledger 位置づけ整合 | OP-001, OP-008, DB-001, CZ-001 | Project Ledger, Decision, BR-002, CZ-001, 記録, 意思決定, 乖離, 不採用, ShellCon | OP-001 §9・§14とOP-008 §8のDB-001 Role記述の乖離を是正（OP-001 Ver.5.3、OP-008 Ver.3.4）。DB-001の空欄セクションを充填（Current Focus・Project Inbox運用ルール新設、KN Publication Logは未発行のため空欄が正と確認）。あわせてCZ-001に「不採用候補とその理由」を恒久保持する運用を新設（Ver.3.11）し、Wood Stove・ShellCon25 Bedding Module転用検討の2件を記録（Ver.3.12）。 | Active | 2026-09-27 |
 
 ---
 
@@ -142,6 +142,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.4 | 2026-09-27 | 用途未定だったProject Inbox節に運用ルールを新設。CZ-001・BR-002・GitHub Issue等の正式な置き場所へ乗せる前の、雑多な相談・思いつきの一時受け皿として位置づけた（MARI様承認済み）。Conversation Ledgerへ本日の会話を追記。Minor Version。 |
 | 4.5 | 2026-09-27 | OP-001 Constitution §27→§26への繰り上げ是正に伴い、Revision History 4.0行の相互参照をOP-001 §26参照へ更新。MARI様のご指摘に基づく。 |
 | 4.6 | 2026-09-27 | Current Focusを空欄から充填。CZ-001 Under Considerationの現在進行中3件（Winter Sleeping Mat／Pad Sheet／Storage Carrying Case）を記載。あわせてMARI様のご指示により、Priority 1〜3固定の3行制を廃止し、件数を可変長のリストへ変更（増減に応じて行を追加・削除する運用へ）。Minor Version。 |
+| 4.7 | 2026-09-27 | 「Conversation Complete」運用ルールに従い、本日の会話（Project Ledger 位置づけ整合）のConversation LedgerのSummaryを、CZ-001の不採用理由恒久保持ルール新設・Wood Stove/ShellCon記録の反映まで含めた最終形へ更新。Patch Version。 |
 
 ---
 
