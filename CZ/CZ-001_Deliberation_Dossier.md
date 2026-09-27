@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.12
+3.13
 
 # Status
 
@@ -95,52 +95,7 @@ Decision Log + 詳細記録（恒久保持）
 
 ## Furniture
 
-### Winter Sleeping Mat（MD-004: FUR-034）
-
-**Status**：Candidate（**暫定最有力候補：BLACK ZONE MAT×2**、正式決定・MD-004 Status更新は未了）
-
-FUR-032（マット部、R値5.4）の下に敷く断熱補強・パンク保険。幅77cm×2枚連結（計154cm）に対し、重ねずに敷く前提（隙間許容案）で候補を仮登録していたが、2026-09-26、MARI様のご指示によりBLACK ZONE MAT×2を暫定最有力候補とした。
-
-| | 候補① Zライトソル | 候補② NEMOスイッチバック | 候補③ BLACK ZONE MAT（**暫定最有力**） |
-|---|---|---|---|
-| ブランド | Therm-a-Rest | NEMO | BlackishGear |
-| 幅×長さ×厚さ | 51×183×2.0cm | 51×183×2.3cm | 60×185×2.0cm |
-| R値 | 2.0 | 2.0 | 1.9（第三者試験報告書あり、GB/T 10294-2008・ASTM F3340-22準拠） |
-| 折り畳み方式 | 蛇腹 | 蛇腹 | 蛇腹 |
-| 収納サイズ | 51×13×14cm | 51×13×14cm | 15×60×15cm |
-| 重量 | 410g | 415g | 380g |
-| カラー | Silver/Sage（Black展開なし） | Violet/Orange（Black展開なし） | 両面ブラック |
-| 実勢価格 | 約¥8,000 | ¥9,500（税抜） | ¥3,564 |
-| 実績 | 定番・登山用途での耐久実績が豊富 | 定番・厚みでやや優位 | 2025年Makuake発の新興ブランド、レビュー7件のみ |
-
-**配置前提**：お一人様1枚ずつ（数量2）、FUR-032マット幅の左右中央に揃えて敷く。カバー率は幅比で候補①②が約66%（51/77cm）、候補③が約78%（60/77cm）。残りは隙間として許容し、四隅への滑り止め（面ファスナー等）併用を推奨。
-
-**検討経緯（フルカバー案の棄却）**：154cm幅を1枚または2枚重ねでフルカバーする案（例：CAPTAIN STAG IXPEフォームマット〈ダブル〉116×183cm×2枚を77cmずつずらして重ねる配置）も検討したが、重なり部分（幅78cm相当）で厚さが実質2倍になり段差が生じ、寝心地への悪影響が判明したため棄却。フルカバーを重なりなしで実現する幅154cm級の薄手マットは、2026-09-25時点で発見に至っていない（継続調査の余地あり）。
-
-**Unresolved Gaps**：BLACK ZONE MATはR値の第三者試験データはあるものの、実使用（特に厳冬期）での耐久性実績がまだ乏しい点は残るリスクとして保持。幅154cm級フルカバー品の探索は継続中。
-
-**Decision**：**仮確定**（BLACK ZONE MAT×2、2026-09-26、MARI様）。正式な購入決定（MD-004 Status = Essentialへの更新・Confirmed — Purchase Pendingへの追加）は別途行う。候補①②は比較参考として保持する。
-
-### Pad Sheet（MD-004: FUR-035）
-
-**Status**：Candidate（**暫定最有力候補：HOTEL CAMPS リバーシブルホットカバー×2**、正式決定・MD-004 Status更新は未了）
-
-FUR-032（マット部、TM-089ワイドマット、196×77×8cm）×2枚それぞれの上に被せて使用するシーツ。2026-09-27、公式一次情報での詳細調査により、候補②③を精査した。
-
-| | 候補① Therm-a-Rest Synergy Lite Sheet | 候補② WAQ 専用カバー | 候補③ HOTEL CAMPS リバーシブルホットカバー（**暫定最有力**） | 候補④ VISIONPEAKS×NANGA IBUKI BOX SHEETS S |
-|---|---|---|---|---|
-| Color適合 | Stargazer柄のみ、Black展開なし（不適合） | Black指定可 | **Black×Black指定可**（リバーシブル両面） | Brownのみ、Black展開なし（不適合） |
-| サイズ | 未調査 | 約200×70×10cm | 約205×84cm | 未調査 |
-| 適合性 | — | 公式に「WAQ RELAXING CAMP MAT専用」「他製品への適合は確認しておりません」と明記。幅70cm・厚み10cm仕様でTM-089（幅77cm・厚み8cm）とは規格不一致 | 4隅をドローコードで絞ってマットごと固定する汎用ラップ構造。TM-089より長さ+9cm・幅+7cm大きく、絞り込んでフィットさせる設計のため適合可能 | — |
-| 素材・機能 | 廃盤の可能性あり | 洗濯機で丸洗い可能 | 表：ポリエステル100%吸湿発熱ボア／裏：ポリエステル70%＋レーヨン30%／中材：アルミシート。断熱・保温・丸洗い可・ブランケット/掛け布団兼用 | NANGAコラボ由来 |
-| 重量 | 未調査 | 未記載 | 約750g | 未調査 |
-| 実勢価格 | 未調査 | ¥3,840 | ¥9,980 | 未調査 |
-
-**配置前提**：TM-089ワイドマット1枚につきHOTEL CAMPS×1枚を被せ、4隅のドローコードで絞って固定する（数量2）。
-
-**Unresolved Gaps**：候補②WAQは他社マットへの適合が公式に未確認かつサイズ規格が不一致であり、事実上不採用寄り。候補③HOTEL CAMPSの実勢価格・在庫状況は公式サイト（¥9,980）で確認済みだが、実使用レビュー（TM-089での実装例）は未確認。
-
-**Decision**：**仮確定**（HOTEL CAMPS リバーシブルホットカバー×2、2026-09-27、MARI様）。正式な購入決定（MD-004 Status = Essentialへの更新・Confirmed — Purchase Pendingへの追加）は別途行う。候補①②④は比較参考として引き続き保持。
+現時点でCandidate項目なし（Winter Sleeping Mat〈FUR-034〉・Pad Sheet〈FUR-035〉は正式決定済み。Decision Logおよび下記「Furniture — Winter Sleeping Mat / Pad Sheet 選定記録」を参照。2026-09-28、BLACK ZONE MAT×2・HOTEL CAMPS リバーシブルホットカバー×2で決定）。
 
 ---
 
@@ -197,6 +152,8 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | ID | Product | Brand | Note |
 |---|---|---|---|
 | FUR-032 | ダウン システムオフトン ワイドマットセット（BD-070、掛け布団+マット一式） | Snow Peak | 数量2 |
+| FUR-034 | BLACK ZONE MAT | BlackishGear | 数量2 |
+| FUR-035 | リバーシブル ホットカバー（コットカバー） | HOTEL CAMPS | 数量2 |
 | FUR-036 | オフトン ウォームアダプター（BD-066） | Snow Peak | 数量2 |
 
 ## Light
@@ -257,6 +214,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | 2026-09-26 | Fire | Wood Stove（FIR-036〜042） | FIREGRAPHIX BLISS-SPを正式採用（MARI様決定）。MT.SUMI Aura FGとの比較検討を経て決定。詳細な検討記録は下記「Fire — Wood Stove 選定記録」を参照。 |
 | 2026-09-27 | Furniture | FUR-036 Ofuton Warm Adapter | Snow Peak オフトン ウォームアダプター（BD-066）を正式決定（Status: Essential、数量2、MARI様決定）。CZ-001での事前検討記録は無く、MD-004へ直接新規登録された。詳細はMD-004参照。 |
 | 2026-09-27 | Storage | ShellCon25①／②のBedding Module転用検討 | ShellCon25①単独、および①＋②の2箱体制の両方で「FUR-032（掛け布団収納ケース×2・マット収納ケース×2）＋FUR-036（ウォームアダプター×2）」全6点の収納可否を検証したが、床面積不足により不採用。既存の収納割当（①＝Bedding Module、②＝Light & Aroma Module）を維持。詳細は下記「Storage — Bedding Module収納検証」を参照。 |
+| 2026-09-28 | Furniture | Winter Sleeping Mat（FUR-034）／Pad Sheet（FUR-035） | BLACK ZONE MAT×2（FUR-034）・HOTEL CAMPS リバーシブルホットカバー×2（FUR-035）を正式決定（Status: Essential、MARI様決定）。MD-004 Version 7.64と連動。詳細な検討記録は下記「Furniture — Winter Sleeping Mat / Pad Sheet 選定記録」を参照。 |
 
 ---
 
@@ -335,6 +293,51 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 ---
 
+## Furniture — Winter Sleeping Mat / Pad Sheet 選定記録（2026-09-28、詳細保持）
+
+**注記**：本節は、Decision Logの該当行に対応する詳細記録（不採用候補とその理由を含む）である。
+
+**決定**：Winter Sleeping Mat（FUR-034）はBlackishGear BLACK ZONE MAT×2、Pad Sheet（FUR-035）はHOTEL CAMPS リバーシブル ホットカバー×2を正式採用（いずれもStatus: Essential）。
+
+**Winter Sleeping Mat（FUR-034）比較表（2026-09-26仮確定時点）**
+
+| | 候補① Zライトソル | 候補② NEMOスイッチバック | 候補③ BLACK ZONE MAT（**採用**） |
+|---|---|---|---|
+| ブランド | Therm-a-Rest | NEMO | BlackishGear |
+| 幅×長さ×厚さ | 51×183×2.0cm | 51×183×2.3cm | 60×185×2.0cm |
+| R値 | 2.0 | 2.0 | 1.9（第三者試験報告書あり、GB/T 10294-2008・ASTM F3340-22準拠） |
+| 折り畳み方式 | 蛇腹 | 蛇腹 | 蛇腹 |
+| 収納サイズ | 51×13×14cm | 51×13×14cm | 15×60×15cm |
+| 重量 | 410g | 415g | 380g |
+| カラー | Silver/Sage（Black展開なし） | Violet/Orange（Black展開なし） | 両面ブラック |
+| 実勢価格 | 約¥8,000 | ¥9,500（税抜） | ¥3,564（セール価格） |
+| 実績 | 定番・登山用途での耐久実績が豊富 | 定番・厚みでやや優位 | 2025年Makuake発の新興ブランド、レビュー7件のみ |
+
+**配置前提**：お一人様1枚ずつ（数量2）、FUR-032マット幅の左右中央に揃えて敷く。カバー率は幅比で候補①②が約66%（51/77cm）、候補③が約78%（60/77cm）。残りは隙間として許容し、四隅への滑り止め（面ファスナー等）併用を推奨。
+
+**検討経緯（フルカバー案の棄却）**：154cm幅を1枚または2枚重ねでフルカバーする案（例：CAPTAIN STAG IXPEフォームマット〈ダブル〉116×183cm×2枚を77cmずつずらして重ねる配置）も検討したが、重なり部分（幅78cm相当）で厚さが実質2倍になり段差が生じ、寝心地への悪影響が判明したため棄却。フルカバーを重なりなしで実現する幅154cm級の薄手マットは、2026-09-25時点で発見に至っていない。
+
+**残存リスク**：BLACK ZONE MATはR値の第三者試験データはあるものの、実使用（特に厳冬期）での耐久性実績がまだ乏しい点はリスクとして保持。
+
+**Pad Sheet（FUR-035）比較表（2026-09-27精査時点）**
+
+| | 候補① Therm-a-Rest Synergy Lite Sheet | 候補② WAQ 専用カバー | 候補③ HOTEL CAMPS リバーシブル ホットカバー（**採用**） | 候補④ VISIONPEAKS×NANGA IBUKI BOX SHEETS S |
+|---|---|---|---|---|
+| Color適合 | Stargazer柄のみ、Black展開なし（不適合） | Black指定可 | **Black×Black指定可**（リバーシブル両面） | Brownのみ、Black展開なし（不適合） |
+| サイズ | 未調査 | 約200×70×10cm | 使用時約205×84cm、収納時約30×18cm | 未調査 |
+| 適合性 | — | 公式に「WAQ RELAXING CAMP MAT専用」「他製品への適合は確認しておりません」と明記。幅70cm・厚み10cm仕様でTM-089（幅77cm・厚み8cm）とは規格不一致 | 4隅をドローコードで絞ってマットごと固定する汎用ラップ構造。TM-089より長さ+9cm・幅+7cm大きく、絞り込んでフィットさせる設計のため適合可能 | — |
+| 素材・機能 | 廃盤の可能性あり | 洗濯機で丸洗い可能 | 表：ポリエステル100%吸湿発熱ボア／裏：ポリエステル70%＋レーヨン30%／中材：アルミシート。断熱・保温・丸洗い可・ブランケット/掛け布団兼用 | NANGAコラボ由来 |
+| 重量 | 未調査 | 未記載 | 約750g | 未調査 |
+| 公式価格 | 未調査 | ¥3,840 | ¥9,980（hotelcamps.jp公式、2026-09-28確認） | 未調査 |
+
+**配置前提**：TM-089ワイドマット1枚につきHOTEL CAMPS×1枚を被せ、4隅のドローコードで絞って固定する（数量2）。
+
+**不採用理由**：候補②WAQは他社マットへの適合が公式に未確認かつサイズ規格が不一致であり不採用。候補①はStargazer柄のみでBlack展開がなく不適合。候補④はBrownのみでBlack展開がなく不適合。
+
+**一次情報確認**：2026-09-28、hotelcamps.jp公式商品ページ（リバーシブル ホットカバー／コットカバー）にて、正式品名・価格（¥9,980）・サイズ（使用時約205×84cm、収納時約30×18cm）・素材・重量（約750g）を再確認済み。
+
+---
+
 # SSOT
 
 各ゾーンの評価哲学・比較記録・決定理由に関する正式情報は、**CZ-001 Deliberation Dossier**を基準とする。
@@ -381,6 +384,7 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 3.10 | 2026-09-27 | MARI様のご決定に基づき、Snow Peak オフトン ウォームアダプター（BD-066、MD-004: FUR-036、Status: Essential、数量2）をConfirmed — Purchase PendingのFurniture表へ追加し、Decision Logへ記録。本アイテムはCZ-001での事前のUnder Consideration記録を経ずMD-004へ直接新規登録されたため、Under Considerationセクションへの追加・削除は発生しない。 |
 | 3.11 | 2026-09-27 | MARI様のご指示に基づき、Decision Logの標準運用を変更。従来「詳細な比較内容そのものは、確定後は保持しない」としていたルールを廃止し、不採用候補とその理由を含む詳細記録を恒久的に保持する運用へ変更（Purpose・Decision Log見出し文・Relationship図を更新）。これに伴い、Wood Stove選定記録（Ver.3.7で「例外」として新設）を標準運用の一例として再定義。あわせてSSOTセクションへ、この詳細記録がKN-001 Heritage Chronicle発行時の一次資料となる旨を明記。Minor Version（運用ルール変更のためMajor Versionとの境界事例だが、既存の記録構造〈Decision Log＋詳細記録節〉自体は変更せず、保持方針の転換のみのためMinor Versionとした）。 |
 | 3.12 | 2026-09-27 | MARI様のご依頼に基づき、過去のチャット「Bedding Module収納検証」（2026-09-27）から、ShellCon25①／②をBedding Moduleへ転用する案の検討記録を遡って追記。床面積計算により全6点（Q×2／M×2／W×2）は2箱体制でも収まらないと判明し、転用を不採用としてShellCon25①②とも既存の収納割当を維持した経緯を、Ver.3.11で新設した標準運用（一行要約＋詳細記録）に沿ってDecision LogおよびStorage詳細記録節へ記録。 |
+| 3.13 | 2026-09-28 | MARI様のご決定（GitHub Issue #44）に基づき、Winter Sleeping Mat（FUR-034）・Pad Sheet（FUR-035）を正式決定として反映。MD-004 Version 7.64（Status: Candidate→Essential）と連動し、Furniture Under ConsiderationからFUR-034・FUR-035の検討記載を削除、Confirmed — Purchase Pendingへ両ID（BLACK ZONE MAT×2、HOTEL CAMPS リバーシブル ホットカバー×2）を追加。Decision Logへ確定日を記録し、Ver.3.11の標準運用に沿って「Furniture — Winter Sleeping Mat / Pad Sheet 選定記録」を新設して不採用候補の詳細比較を恒久保持。Pad Sheetの価格・正式品名はhotelcamps.jp公式サイトで一次情報確認済み（¥9,980）。 |
 
 ---
 
