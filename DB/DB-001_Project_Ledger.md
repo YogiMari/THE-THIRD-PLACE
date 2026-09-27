@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.6  
+**Version**: 4.8  
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -17,8 +17,6 @@
 
 | Focus | Status |
 |------|--------|
-| Winter Sleeping Mat（FUR-034） | 仮確定（BLACK ZONE MAT×2）・MD-004正式反映待ち |
-| Pad Sheet（FUR-035） | 仮確定（HOTEL CAMPS×2）・MD-004正式反映待ち |
 | Storage Carrying Case（STR-034） | Under Evaluation・適合品を継続探索中 |
 
 ---
@@ -143,6 +141,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.5 | 2026-09-27 | OP-001 Constitution §27→§26への繰り上げ是正に伴い、Revision History 4.0行の相互参照をOP-001 §26参照へ更新。MARI様のご指摘に基づく。 |
 | 4.6 | 2026-09-27 | Current Focusを空欄から充填。CZ-001 Under Considerationの現在進行中3件（Winter Sleeping Mat／Pad Sheet／Storage Carrying Case）を記載。あわせてMARI様のご指示により、Priority 1〜3固定の3行制を廃止し、件数を可変長のリストへ変更（増減に応じて行を追加・削除する運用へ）。Minor Version。 |
 | 4.7 | 2026-09-27 | 「Conversation Complete」運用ルールに従い、本日の会話（Project Ledger 位置づけ整合）のConversation LedgerのSummaryを、CZ-001の不採用理由恒久保持ルール新設・Wood Stove/ShellCon記録の反映まで含めた最終形へ更新。Patch Version。 |
+| 4.8 | 2026-09-28 | MARI様のご決定（GitHub Issue #44）に基づき、Winter Sleeping Mat（FUR-034）・Pad Sheet（FUR-035）がMD-004・CZ-001へ正式反映されたため、Current FocusからFUR-034・FUR-035の2行を削除。Health Check（Change Management）の記載はそのまま維持。Minor Version。 |
 
 ---
 

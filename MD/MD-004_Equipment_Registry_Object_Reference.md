@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.63  
+Version 7.64  
   
 ---  
   
@@ -1279,27 +1279,35 @@ Retired. 冬用トップキルト枠（本格雪中用、Candidate）。プロ�
 
 **Brand**  
 
-Unconfirmed  
+BlackishGear  
 
 **Product**  
 
-Unconfirmed  
+BLACK ZONE MAT  
 
 **Status**  
 
-Candidate  
+Essential  
+
+**Quantity**  
+
+2  
 
 ### Color  
 
-Unconfirmed  
+Black（両面）  
 
 ### Material  
 
-Closed-Cell Foam  
+Polyethylene (IXPE)  
 
 ### Industrial Attribute  
 
-Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険。FUR-032（マット部）の下に重ね敷きする想定）  
+Sleeping Mat（本格雪中用の断熱補強およびエア漏れ時の保険。FUR-032（マット部）の下に重ね敷きする想定。展開サイズ185×60×2cm、収納サイズ15×60×15cm（蛇腹折り畳み）、重量380g、R値1.9（第三者試験報告書、GB/T 10294-2008・ASTM F3340-22準拠）。CZ-001 Deliberation DossierでTherm-a-Rest Zライトソル・NEMOスイッチバックとの比較検討の結果、採用決定）  
+
+### Price  
+
+¥3,564（セール価格）  
 
 ---  
 
@@ -1307,27 +1315,35 @@ Sleeping Mat（本格雪中用、断熱補強およびエア漏れ時の保険�
 
 **Brand**  
 
-Unconfirmed  
+HOTEL CAMPS  
 
 **Product**  
 
-Unconfirmed  
+リバーシブル ホットカバー（コットカバー）  
 
 **Status**  
 
-Candidate  
+Essential  
+
+**Quantity**  
+
+2  
 
 ### Color  
 
-Black  
+Black（両面、リバーシブル）  
 
 ### Material  
 
-Unconfirmed  
+表：ポリエステル100%（吸湿発熱ボア）／裏：ポリエステル70%・レーヨン30%／中材：アルミシート  
 
 ### Industrial Attribute  
 
-Pad Sheet（マット上に敷くシーツ。約77×196cm相当を2枚使用しFUR-032（マット部）全面をカバー。関東〜雪中入門用・本格雪中用の両方で共通使用。具体的な候補比較はCZ-001 Deliberation Dossierで管理）  
+マット上に敷くシーツ。FUR-032（マット部、TM-089ワイドマット、196×77×8cm）×2枚それぞれの上に被せて使用。使用時約205×84cm、収納時約30×18cm、重量約750g。TM-089より長さ+9cm・幅+7cm大きく、4隅をドローコードで絞ってマットごと固定するリバーシブル両面ラップ構造。CZ-001 Deliberation Dossierで候補①②④（Color不適合等）との比較検討の結果、採用決定。  
+
+### Price  
+
+¥9,980（公式サイト価格）  
 
 ---  
 
@@ -7985,6 +8001,18 @@ MARI様のご決定に基づき、ウォームアダプター（Snow Peak BD-066
 - FUR-035：変更なし（Candidate のまま。CZ-001記載の暫定最有力候補・HOTEL CAMPS×2は据え置き）。
 
 - Related Documents：CZ-001 Deliberation Dossier（Confirmed — Purchase PendingへのFUR-036追加と連動予定）。
+
+---
+
+## Version 7.64
+
+MARI様のご決定に基づき、Winter Sleeping Mat（FUR-034）とPad Sheet（FUR-035）を正式反映した。
+
+### Changes
+
+- FUR-034：StatusをCandidateからEssentialへ更新。Brand: BlackishGear、Product: BLACK ZONE MAT。CZ-001 Deliberation DossierでTherm-a-Rest Zライトソル・NEMOスイッチバックとの比較検討の結果、採用決定。
+- FUR-035：StatusをCandidateからEssentialへ更新。Brand: HOTEL CAMPS、Product: リバーシブル ホットカバー（コットカバー）。公式サイト（hotelcamps.jp）にて価格・素材・サイズを一次情報確認済み。CZ-001 Deliberation Dossierでの比較検討の結果、採用決定。
+- Related Documents：CZ-001 Deliberation Dossier（Under ConsiderationからConfirmed — Purchase Pendingへの移動と連動）。
 
 ---
 
