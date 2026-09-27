@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.9
+3.10
 
 # Status
 
@@ -190,6 +190,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | ID | Product | Brand | Note |
 |---|---|---|---|
 | FUR-032 | ダウン システムオフトン ワイドマットセット（BD-070、掛け布団+マット一式） | Snow Peak | 数量2 |
+| FUR-036 | オフトン ウォームアダプター（BD-066） | Snow Peak | 数量2 |
 
 ## Light
 
@@ -247,6 +248,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | 2026-09-19 | Aroma | ARM-004 Incense Chamber | Filoméla INCENSE CHAMBER Tokyo LimitedのStatusをEssentialからUpgradeへ変更（MD-004 Version 7.34、MARI様のご指示）。Confirmed — Purchase Pendingから除外。旧ID: ARM-003。 |
 | 2026-09-23 | Furniture | FUR-033 Winter Top Quilt | 候補（Enlightened Equipment Accomplice／UGQ Outdoor Tango Duo）の検討を終了。冬用キルトはSnow Peak ダウン システムオフトン スリムマットセット（FUR-032）を採用（プロジェクトオーナー決定）。FUR-033はMD-004 Version 7.54でRetired（FUR-032へ統合）。 |
 | 2026-09-26 | Fire | Wood Stove（FIR-036〜042） | FIREGRAPHIX BLISS-SPを正式採用（MARI様決定）。MT.SUMI Aura FGとの比較検討を経て決定。詳細な検討記録は下記「Fire — Wood Stove 選定記録」を参照（MARI様のご指示により、通常の一行要約ルールの例外として詳細を保持）。 |
+| 2026-09-27 | Furniture | FUR-036 Ofuton Warm Adapter | Snow Peak オフトン ウォームアダプター（BD-066）を正式決定（Status: Essential、数量2、MARI様決定）。CZ-001での事前検討記録は無く、MD-004へ直接新規登録された。詳細はMD-004参照。 |
 
 ---
 
@@ -331,6 +333,7 @@ Equipment自体のBrand／Product／Status／Material等の登録情報は、引
 | 3.7 | 2026-09-26 | MARI様のご決定に基づき、Fire — Wood Stove検討（MT.SUMI Aura FG vs FIREGRAPHIX BLISS-SP）を正式決定。FIREGRAPHIX BLISS-SPを採用（MD-004 Version 7.59・FIR-036〜042と連動）。Under Consideration（Fire）を空欄化し、Decision Logへ記録の上、通常運用の例外としてMARI様のご指示により両候補の詳細な検討記録を「Fire — Wood Stove 選定記録」として新設・保持。Confirmed — Purchase Pending（Fire）へFIR-036〜042の7行を追加。 |
 | 3.8 | 2026-09-26 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
 | 3.9 | 2026-09-27 | MARI様のご指示に基づき、Furniture Under ConsiderationのPad Sheet（FUR-035）を更新。公式一次情報（WAQ公式・HOTEL CAMPS公式）調査により、候補②WAQ専用カバーはWAQ製マット専用でありTM-089との規格不一致（サイズ・適合性未確認）と判明。候補③HOTEL CAMPS リバーシブルホットカバー（Black×Black、¥9,980、205×84cm、4隅ドローコード式）をTM-089ワイドマットとのサイズ適合性含め確認の上、暫定最有力候補（仮確定）として明記。MD-004側のStatus更新（Candidate→Essential）・Confirmed — Purchase Pendingへの追加は、正式な購入決定を待って別途行う。候補①②④は比較参考として引き続き保持。 |
+| 3.10 | 2026-09-27 | MARI様のご決定に基づき、Snow Peak オフトン ウォームアダプター（BD-066、MD-004: FUR-036、Status: Essential、数量2）をConfirmed — Purchase PendingのFurniture表へ追加し、Decision Logへ記録。本アイテムはCZ-001での事前のUnder Consideration記録を経ずMD-004へ直接新規登録されたため、Under Considerationセクションへの追加・削除は発生しない。 |
 
 ---
 
