@@ -33,7 +33,7 @@ permissions:
 
 jobs:
   validate-ssot:
-    name: Validate MD-004 / BR-002 / BR-003
+    name: Validate SSOT Synchronization
     runs-on: ubuntu-latest
 
     steps:
@@ -66,10 +66,16 @@ jobs:
           echo "MD004=$(find_file MD-004)" >> "$GITHUB_ENV"
           echo "BR002=$(find_file BR-002)" >> "$GITHUB_ENV"
           echo "BR003=$(find_file BR-003)" >> "$GITHUB_ENV"
+          echo "CZ001=$(find_file CZ-001)" >> "$GITHUB_ENV"
+          echo "CZ002=$(find_file CZ-002)" >> "$GITHUB_ENV"
+          echo "MD001=$(find_file MD-001)" >> "$GITHUB_ENV"
 
       - name: Validate SSOT consistency
         run: |
           python scripts/third_place_sync_validator.py \
             --md004 "$MD004" \
             --br002 "$BR002" \
-            --br003 "$BR003"
+            --br003 "$BR003" \
+            --cz001 "$CZ001" \
+            --cz002 "$CZ002" \
+            --md001 "$MD001"

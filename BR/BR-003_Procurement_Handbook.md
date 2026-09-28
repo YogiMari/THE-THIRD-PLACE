@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-3.8  
+4.1  
   
 **Status**  
   
@@ -68,28 +68,9 @@ Procurement Handbook
   
 # Acquisition Status Policy  
   
-BR-002でConfirmedとなったEquipmentは、原則としてBR-003に登録する。  
+→ OP-005 Pursuit Strategy §Coffee Zone Acquisition Rules を参照。  
   
-ただし、Coffee Systemにおける「正式構成Equipment」と「追加購入が必要なEquipment」を明確に区別する。  
-  
-| Acquisition Status | Meaning |  
-|---|---|  
-| Purchase Required | 別途購入が必要 |  
-| Included | 他のConfirmed Equipmentに付属し、追加購入不要 |  
-| Already Owned | 既所有品であり、追加購入不要 |  
-| To Be Confirmed | 購入要否・価格・販売状況等を確認中 |  
-  
-### Important Rule  
-  
-`Included` のEquipmentはCoffee Systemの正式構成要素として扱う。  
-  
-ただし、購入リストを作成する際には追加購入対象として扱わない。  
-  
-したがって、  
-  
-**Confirmed Equipment ≠ Purchase Required Equipment**  
-  
-である。  
+個別Equipmentへの実際のAcquisition Status値の割り当ては、本書（BR-003）が管理する。  
   
 ---  
   
@@ -105,12 +86,7 @@ BR-002でConfirmedとなったEquipmentは、原則としてBR-003に登録す�
 
 ## Purchasing Priority  
   
-1. 正規品であること  
-2. BR-002記載の正確なモデル／バリアントであること  
-3. 元モデルが販売終了している場合は、現行の後継モデルであること  
-4. 正規保証があること  
-5. 長期的に入手可能であること  
-6. 現実的な場合はまとめ配送を行うこと  
+→ OP-005 Pursuit Strategy §Coffee Zone Acquisition Rules を参照。  
   
 ---  
   
@@ -1311,46 +1287,16 @@ Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（
   
 # Purchase List Definition  
   
-BR-003から購入リストを生成する際:  
-  
-### Include  
-  
-以下に該当するアイテム：  
-  
-`Acquisition Status = Purchase Required`  
-  
-### Exclude  
-  
-以下に該当するアイテム：  
-  
-`Acquisition Status = Included`  
-  
-`Acquisition Status = Already Owned`  
-  
-### Review Separately  
-  
-以下に該当するアイテム：  
-  
-`Acquisition Status = To Be Confirmed`  
+→ OP-005 Pursuit Strategy §Coffee Zone Acquisition Rules を参照。  
   
 ---  
   
 # Purchase Completeness Rule  
   
-Coffee Systemの購入リストが完成したと判断する前に、以下を確認しなければならない:  
+一般原則（BR-002のConfirmed Equipmentの反映漏れ・Included Equipmentの誤扱い・価格表記等の確認事項）は、OP-005 Pursuit Strategy §Coffee Zone Acquisition Rules を参照。  
   
-1. BR-002のConfirmed Equipmentがすべて、BR-003に存在すること。  
-2. 各Confirmed Equipmentに、Acquisition Statusが設定されていること。  
-3. Included Equipmentが明示的に識別されていること。  
-4. Included Equipmentが、未購入項目として誤って扱われていないこと。  
-5. Quantityが定義されていること。  
-6. 製品名が、BR-002の公式表記と一致するか、現行後継への明示的な対応関係を持つこと。  
-7. メーカー名が、BR-002の公式表記と一致すること。  
-8. 購入状況が、Coffee Systemの機能上の状態と分離されていること。  
-9. すべての製品に、現在価格または現実的な調達目安が設定されていること。  
-10. Estimated Total Costが、保守的に見積もられていること。  
-11. 不採用となったEquipmentが、現行の購入リストに含まれていないこと。  
-12. 後継関係の根拠なく、代替Equipmentが追加されていないこと。  
+以下は、本書（BR-003）が管理する、個別製品固有の同期チェック項目である。  
+  
 13. Puck ScreenがBR-002 v2.7と同期していること。  
 14. Puck Screen StandがBR-002 v2.7と同期していること。  
 15. KNODOS Tamping Mat with Tool Organiser - Walnut 54mmが登録されていること。  
@@ -1380,30 +1326,10 @@ Coffee Systemの購入リストが完成したと判断する前に、以下を�
   
 # BR-002 / BR-003 Synchronization Rule  
   
-BR-002 Barista Canonは、Coffee Equipmentに関する意思決定の権限を持つ。  
+一般原則（BR-002とBR-003の権限分担、調達モデル更新の要件、BR-002改訂時の同期手順1〜9）は、OP-005 Pursuit Strategy §Coffee Zone Acquisition Rules を参照。  
   
-BR-003 Procurement Handbookは、現行調達に関する権限を持つ。  
+以下は、本書（BR-003）が管理する、個別製品固有の同期確認項目である。  
   
-BR-003は、以下の場合に限り、Confirmed Equipmentの調達モデルを更新できる:  
-  
-1. 元の製品が販売終了している場合。  
-2. メーカーが後継製品を明確に示している場合。  
-3. 後継製品が、意図したCoffee Systemの機能を維持している場合。  
-4. 後継製品が、現行の実用的な購入選択肢である場合。  
-  
-BR-003は、無関係な代替Equipmentを独自に追加してはならない。  
-  
-BR-002が改訂された場合:  
-  
-1. Confirmed Equipmentを同期すること。  
-2. 製品名を同期すること。  
-3. 数量を同期すること。  
-4. Acquisition Statusを見直すこと。  
-5. 新規のConfirmed Equipmentを追加すること。  
-6. 削除または不採用となったEquipmentを、現行の調達registryから除去すること。  
-7. Workflow上必要な場合、Included Equipmentが識別可能な状態を維持すること。  
-8. 正式なWorkflowの一部を構成する収納割当を同期すること。  
-9. 仕様変更を同期すること。  
 10. Equipmentの役割が、BR-002とBR-003間で一貫していること。  
 11. Latte Workflow構成が同期していること。  
 12. 2人分の連続運用が同期していること。  
@@ -1416,56 +1342,19 @@ BR-002が改訂された場合:
   
 # Purchase Checklist  
   
-購入前に:  
-  
-* 正規品であることを確認する。  
-* 現行モデルであることを確認する。  
-* 正確なバリアントを確認する。  
-* 数量を確認する。  
-* 日本への配送可否を確認する。  
-* 現行価格を確認する。  
-* 配送料を確認する。  
-* 適用される輸入関税を確認する。  
-* 保証内容を確認する。  
-* 互換性を確認する。  
-* 該当する場合は電圧を確認する。  
-* 他の製品にIncludedされているかを確認する。  
-* 現行の在庫状況を確認する。  
-* 領収書・請求書を保管する。  
-* 該当する場合は保証登録を行う。  
+→ OP-005 Pursuit Strategy §Coffee Zone Acquisition Rules を参照。  
   
 ---  
   
 # Overseas Purchase Policy  
   
-海外購入では、支払い前に以下を確認する:  
-  
-1. メーカー公式または正規販売店であること。  
-2. 正確なモデル・仕様。  
-3. 日本への配送可否。  
-4. 送料。  
-5. 適用される関税・消費税。  
-6. 該当する場合は輸入取扱手数料。  
-7. 日本国内での保証適用範囲。  
-8. 該当する場合は電圧・プラグ要件。  
-9. 返品ポリシー。  
-10. 現行の為替レート。  
-  
-最終的な購入金額は、保守的に算出する。  
+→ OP-005 Pursuit Strategy §Coffee Zone Acquisition Rules を参照。  
   
 ---  
   
 # Japan Purchase Policy  
   
-国内購入では:  
-  
-1. 国内正規代理店を優先する。  
-2. メーカー公式ストアを優先する。  
-3. Amazon Japanは、販売者の真正性が十分明確な場合のみ使用する。  
-4. 国内保証を確認する。  
-5. 現行の在庫を確認する。  
-6. 正確な型番を確認する。  
-7. 正規品が妥当な総コストで入手可能な場合、非公式な並行輸入品は避ける。  
+→ OP-005 Pursuit Strategy §Coffee Zone Acquisition Rules を参照。  
   
 ---  
   
@@ -1525,7 +1414,7 @@ BR-002が改訂された場合:
 * AION 801-BL → separator configuration  
 * FIKA12 ×2 → dedicated cases / Beck Container  
   
-既存のConfirmed Equipmentの正しい構成によって解決できる問題のために、新たなアクセサリーを追加してはならない。  
+既存のConfirmed Equipmentの正しい構成によって解決できる問題のために、新たなアクセサリーを追加してはならない（原則の詳細はOP-005 Pursuit Strategy §Coffee Zone Acquisition Rules Compatibility Principleを参照）。  
   
 ---  
   
@@ -1776,27 +1665,7 @@ Core Espresso Systemには、BR-002 Ver.4.3 Heat Source Decisionに基づく9Bar
   
 # Price Integrity Rule  
   
-BR-003は、以下を現行の公式価格として表記してはならない:  
-  
-* 過去の価格  
-* 古い価格  
-* サードパーティ・マーケットプレイスの価格  
-* 異なるバリアント  
-* 異なる世代  
-  
-の価格。  
-  
-ただし、現行の公式価格が取得できない場合は、現実的な調達目安を用いてよい。  
-  
-そのような値は、  
-  
-`Estimated`  
-  
-または  
-  
-`Planning Estimate`  
-  
-として明示し、現行の公式価格として記載してはならない。  
+→ OP-005 Pursuit Strategy §Coffee Zone Acquisition Rules を参照。  
   
 ---  
   
@@ -1961,7 +1830,8 @@ Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The B
 | 3.5 | 2026-09-28 | Ver.3.3の書き込み時に生じた転記誤りを、書き込み前の原文に照らして訂正。Product 16 Notes（「連続すう2回」→「連続する2回」）、Japan Purchase Policy 7（「妃当」→「妥当」）、Version Control 2.1行（「月あたり目安¥1万」→原文どおり「¥10万」）、Version Control 3.3行内の旧誤記の引用（「Puck Screenン」→「Puck Screン」）、Document Renumbering Noteの一文（「内容（Ver.2.4）は、以降のバージョンに変更はない。」→原文どおり「内容（Ver.2.4）に変更はない。」）。調達データそのものに変更はない。MARI様のご指示に基づく。 |  
 | 3.6 | 2026-09-28 | Design RationaleのYETI Yonder 1L必要性の根拠記述を、BR-002 Coffee System Water Bottle Configuration（Operation Scenario／Required Water Volume、Espresso 6杯・Latte 6杯・必要水量2,340mL）への参照に統一。BR-003側の旧試算（Latte 4杯・必要水量約1,800mL）とBR-002運用シナリオとの食い違いを解消（決定の正本はBR-002、BR-003は調達情報）。過去のVersion Control行（2.1等）は歴史的記録として原文のまま保持。MARI様のご指示に基づく。 |  
 | 3.7 | 2026-09-28 | Relationship節の図に「（Confirmed後、実際に購入・Owned Statusとなった時点で登録）」という注記をMD-004の行へ追加し、流れがBR-002 → MD-004 → BR-003ではなくBR-002 → BR-003 → MD-004（購入後）であることを図で明示。BR-002・BR-001と同期。調達データそのものに変更はない。 |  
-| 3.8 | 2026-09-28 | S-07（重複削減）に基づき、BR-002/BR-003間および文書内の重複を削減。Coffee System Water Configuration・Espresso Glass Transport Configuration・Latte Cup Configuration・Coffee Tool Station Configuration・Extraction Core Configuration・Espresso System ConfigurationをBR-002の該当節への参照へ置換（BR-003はProcurement Authorityであり、Workflow・構成決定の重複記述はPurposeの管理範囲外）。Current Acquisition PriorityおよびFinal Acquisition InventoryのEstimated Total Cost列を削除し、Product NN（Confirmed Equipment Acquisition Registry）への参照に一本化。金額の正本をProduct NNの1箇所のみに限定し、複数箇所の金額不一致リスクを解消。「PX-004 v2.7 Synchronization」節（旧ID時代の同期記録、現行Version Controlに内容が上書き済み）を削除しDocument Renumbering Noteへ1行吸収。Confirmed Equipment・Acquisition Status・現行価格そのものに変更はない。MARI様の承認（2026-09-28）に基づく。 |  
+| 4.0 | 2026-09-28 | S-06（BR-003のルールとデータの分離）に基づき、CLAUDE.md／OP-008 §9.3「Living文書に恒久ルールを置かない」に反していた恒久ルール（Acquisition Status Policy・Purchasing Priority・Purchase List Definition・Purchase Completeness Ruleの一般原則1〜12・BR-002/BR-003 Synchronization Ruleの一般原則・Purchase Checklist・Overseas Purchase Policy・Japan Purchase Policy・Compatibility Policyの末尾原則・Price Integrity Rule）を、OP-005 Pursuit Strategy §Coffee Zone Acquisition Rulesへ逐語移設し、本書側は参照行へ置換した。個別製品固有の同期チェック項目（Purchase Completeness Rule 13〜36、Synchronization Rule 10〜16）、Compatibility Policyの具体的互換性一覧、Acquisition Completeness Rule、Acquisition Exceptionsは、この構成固有のデータとして本書に残置した（移設対象外）。調達データそのもの（価格・購入先・Purchase Grouping・Monthly Acquisition Plan等）に変更はない。Product Variant Integrity・Extraction Core Configuration等、BR-002との重複が疑われる節は今回対象外とし、別課題（S-07）で扱う。責任範囲の変更のためMajor Version。OP-008 Ver.3.15・OP-005 Ver.2.2の同時改訂と連動。MARI様のご決定に基づく（S-06）。 |  
+| 4.1 | 2026-09-28 | S-07（重複削減、Ver.4.0のDesign Rationaleで予告されたBR-002との重複解消）に基づき、BR-002/BR-003間および文書内の重複を削減。Coffee System Water Configuration・Espresso Glass Transport Configuration・Latte Cup Configuration・Coffee Tool Station Configuration・Extraction Core Configuration・Espresso System ConfigurationをBR-002の該当節への参照へ置換（BR-003はProcurement Authorityであり、Workflow・構成決定の重複記述はPurposeの管理範囲外）。Current Acquisition PriorityおよびFinal Acquisition InventoryのEstimated Total Cost列を削除し、Product NN（Confirmed Equipment Acquisition Registry）への参照に一本化。金額の正本をProduct NNの1箇所のみに限定し、複数箇所の金額不一致リスクを解消。「PX-004 v2.7 Synchronization」節（旧ID時代の同期記録、現行Version Controlに内容が上書き済み）を削除しDocument Renumbering Noteへ1行吸収。Confirmed Equipment・Acquisition Status・現行価格そのものに変更はない。MARI様の承認（2026-09-28）に基づく。 |  
   
 ---  
 
