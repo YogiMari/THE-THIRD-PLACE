@@ -2,7 +2,7 @@ OP-001 THE THIRD PLACE Constitution
   
   
 # THE THIRD PLACE Constitution  
-## Ver.5.4  
+## Ver.5.5  
   
 ---  
   
@@ -1101,6 +1101,20 @@ GitHub Repositoryの最新版のみが、
   
 常に正式情報である。  
   
+---  
+  
+## 21.1 External Contribution Protocol  
+  
+プロジェクトオーナー以外の協力者が、GitHub Repository外（Google Drive上のファイル、および協力者が使用するAIを含む）で行った調査・編集は、すべて§13.1に定める「GitHub外の作業文書」として扱う。  
+  
+1. **地位**：協力者由来の情報はDiscoveryとして扱い、GitHubへ正式反映されるまでCanonではない（§17）。  
+  
+2. **正式化**：GitHubへの反映の可否・時期・反映先は、プロジェクトオーナーとオーナーのAIが判断する。協力者による直接の正式化、および自動反映は行わない。  
+  
+3. **優先順位**：競合時は、①オーナーの明示的決定、②GitHub最新版、③GitHub外の協力者由来の内容、の順とする。  
+  
+4. **貢献の範囲**：協力者の貢献は調査（Web検索等）を主とするが、これに限らない。貢献の種類にかかわらず、上記1〜3を適用する。  
+  
 # 22. Evolution  
   
 THE THIRD PLACEは、  
@@ -1575,6 +1589,10 @@ MARI様のご指摘に基づき、§9 Decision Philosophy ⑤記録および§14
 ### Ver.5.4
 
 MARI様のご指摘に基づき、§12 Information Hierarchyの図を、2026-09-19の文書番号再編および2026-09-24のVolatility Restructure以降の現行系列（DS／OP／DB／MD／BR／CZ／KN）へ全面的に再構成した。旧図で「Master Documents」「Knowledge Documents」の2分類のみだった構造を廃し、OP-008・OP-010・BR系列・CZ系列を新設の各段として追加し、誤ってKnowledge側に分類されていたSearch Doctrine（OP-009）をMaster Documents段へ正しく移設した。あわせて、本文書§27「Document Renumbering Policy」が、§26が本来存在すべき箇所を欠番のまま§27として運用されていた不整合をMARI様のご指摘により是正し、§26へ繰り上げた。この番号変更に伴い、OP-008・DB-001・CLAUDE.mdの3ファイルが本節を直接参照していたため、該当箇所を§26参照へ同期した（Minor Version）。
+
+### Ver.5.5
+
+MARI様のご指示に基づき、Drive⇄GitHub同期におけるパートナー（プロジェクトオーナー以外の協力者）の貢献の扱いが、Constitution本文およびOP-008のいずれにも定義されていなかった空白を解消するため、§21直下に「21.1 External Contribution Protocol」を新設した。協力者由来の情報の地位（Discovery＝Canonではない）、正式化の判断権者（オーナーとオーナーのAI）、競合時の優先順位（オーナーの明示的決定＞GitHub最新版＞GitHub外の協力者由来の内容）、貢献の範囲（調査を主とするがこれに限らない）を定めた。既存の§13.1・§17・§19の原則を敷衍するものであり、新たな権限体系の追加ではない（Minor Version：運用ルール追加）。Drive⇄GitHubミラー運用そのものの文書化は本改訂の対象外とする。
 
 ---
 
