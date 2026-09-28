@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.65  
+Version 7.66  
   
 ---  
   
@@ -4908,7 +4908,7 @@ Carrying Case（STR-019 Container Bridge Frame用。約830×383×50mmの黒皮�
 
 Coffee Domainは、抽出に関する一連のワークフロー全体を管理する。  
 
-選定基準や購入優先順位は、OP-005 Pursuit Strategyの管轄である。  
+選定基準・意思決定はBR-002 Barista Canon、購入優先度・計画はBR-003 Procurement Handbookの管轄である。  
 
 MD-004は、装備（Equipment）のみを管理する。  
 
@@ -5876,6 +5876,10 @@ asigrip
 **Parent**  
 
 FIR-016  
+
+**Status**  
+
+Owned  
 
 ### Color  
 
@@ -7029,8 +7033,11 @@ STR-007
 └ STR-011  
 └ STR-012  
 
-STR-027  
-└ STR-028  
+STR-026  
+└ STR-027  
+
+STR-028  
+└ STR-029  
 
 ---  
 
@@ -8024,6 +8031,19 @@ MARI様のご決定に基づき、STR-032（WHATNOT One Touch Bucket HD、通年
 
 - STR-032：Industrial Attributeを「Consumables Storage」から「Consumables & Sundries Storage（詳細はMD-001 Storage Blueprint Consumables & Sundries Module参照）」へ更新。Brand・Product・Status・Color・Materialに変更はない。
 - Related Documents：MD-001 Storage Blueprint（Ver.2.12、Consumables & Sundries Module新設と連動）。
+
+---
+
+## Version 7.66
+
+MARI様のご指摘に基づき、C-06として指摘された3件の誤りを修正した。
+
+### Changes
+
+- Coffee節冒頭：「選定基準や購入優先順位は、OP-005 Pursuit Strategyの管轄である」という記述を、OP-005 Ver.2.0以降の実態（購入優先度・購入状態・月次購入計画はBR-003 Procurement Handbookの管轄）およびBR-002 Barista Canonの管轄（Coffee Systemの意思決定）に合わせ、「選定基準・意思決定はBR-002 Barista Canon、購入優先度・計画はBR-003 Procurement Handbookの管轄である」へ訂正。
+- Parent / Child Rules Example：実データと一致しない「STR-027└STR-028」を削除し、実データに基づく正しい組「STR-026└STR-027」「STR-028└STR-029」へ置換。
+- FIR-017（asimocrafts asigrip、Parent: FIR-016）：欠落していたStatus欄を、同一Product「asigrip」の他レコード（FIR-014・FIR-024）と同じ「Owned」として追加（プロジェクトオーナー確認）。
+- Related Documents：変更なし。
 
 ---
 
