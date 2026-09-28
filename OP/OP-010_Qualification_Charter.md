@@ -3,7 +3,7 @@
 **Document ID**: OP-010  
 **Title**: Qualification Charter  
 **Series**: OP – Operation (Definition)  
-**Version**: 1.2  
+**Version**: 1.3  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -17,6 +17,7 @@
 | 1.0 | 2026-09-24 | 新規発行。Volatility Restructureに伴い、MD-004・MD-003・MD-002から登録規則・評価基準（恒久ルール）を移設し、記録系列台帳の登録規則・評価基準を定義する文書として新設した。データ（具体的な登録内容・台帳）は移設元に残る。 |
 | 1.1 | 2026-09-24 | MARI様のご指摘に基づき、タイトルをRegistry StandardからQualification Charterへ変更（MD-004 Equipment Registry Object Referenceとの語重複を解消）。これに伴いOP-008 §11 Naming Conventionへ文書名重複禁止ルールを新設。ファイル名もOP-010_Qualification_Charter.mdへ変更。内容（Purpose以下の本文）に変更はない。 |
 | 1.2 | 2026-09-28 | Part Aへ§Naming Rule（Official Name／Brand／Product Name）を新設し、OP-002 Design Bible §Database Rulesから逐語移設した（Minor Version：章追加）。OP-002 §Database RulesがOP-010 Part A（登録規則・評価基準の正本）と重複していたため（OP-008 Principle 003 Single Source of Truth）、OP-002側は本書への参照1行へ置き換えた。MARI様のご決定に基づく（C-02）。 |
+| 1.3 | 2026-09-28 | MD-004の登録規則違反の整理（C-16）に伴い、Part Aへ「共通部品の子ID形式」（LGT-04_1a等、量産共通部品向けの子ID表記を正式追認）と「Reserved Slot（予約枠）」（Vacant枠とStatus非保持の扱いを正式化）を新設した（Minor Version：章追加）。既存の登録済みID（AIR LIGHT群、LGT-043）はID凍結原則（IDは変更されない）に基づき変更しない。MARI様のご決定に基づく。 |
 
 ---
 
@@ -76,6 +77,8 @@ IDは変更されない。
 
 ブランチ接尾辞（小文字アルファベット、例: LGT-028a、LGT-028b）は、後続IDの番号をずらすことなく、同じ装備枠を競合する複数の製品候補を登録するために、親IDへ直接付与できる。これはChild Components（恒久的に付随する構成部品、同時に所有される）とは異なる: ブランチバリアントは、1つの枠に対する代替候補を表し、通常は最終的にどちらか一方だけが昇格（StatusがEssential/Ownedへ変更）し、もう一方は廃止または別枠へ分類される。  
 
+**共通部品の子ID形式（Version 1.3以降）**：同一の量産パーツ（例：CARGO CONTAINER AIR LIGHT）が複数のParentに共通の子部品として繰り返し登録される場合、`{PREFIX}-{連番グループ}_{枝番}`（例：LGT-04_1a、LGT-04_2b）の形式を用いることができる。連番グループは主番号を簡略化した識別子であり、枝番（a, b, c...）は同一グループ内の個体を識別する。本形式は、通常のChild ID（例：FUR-002）とは別に、共通部品が量産品として繰り返し出現するケースにのみ適用する。  
+
 **運用注記（Version 7.14以降）**：新規に発生する検討中候補の比較については、原則としてBranch Variant形式（a/b/c...）をMD-004上で新設せず、単一の親ID（Brand/Product = Unconfirmed）のみを登録し、具体的な候補間比較はCZ-001 Deliberation Dossierで管理する。既存のBranch Variant（LGT-028a/b等）は、整理が完了するまでの間、現状の形式のまま維持する。  
 
 ---
@@ -90,6 +93,16 @@ IDは変更されない。
 | Upgrade | 既に所有しているものの置き換え、または「あれば良い」アイテム（最も優先度の低い層） |  
 
 「Wanted」は廃止され、その意味は「Essential」へ統合された。  
+  
+---  
+  
+### Reserved Slot（予約枠）（Version 1.3以降）  
+  
+特定のChild Component（共通部品等）に対応するParentがまだ具体的に決定していない場合、当該Parent IDを「Vacant」として登録できる。Vacant枠はStatus語彙（Owned/Essential/Candidate/Upgrade）を持たない。  
+  
+Vacant枠のChildは、Parentフィールドに未確定である旨（例：pending — parent not yet identified）を明記する。  
+  
+Vacant枠は、具体的な検討対象がCZ-001 Deliberation Dossier等で特定・決定された時点で、Brand/Product/Statusを記載し通常のParentへ昇格する。  
   
 ---  
   
