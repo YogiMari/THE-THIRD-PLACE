@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.11
+**Version**: 3.12
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -30,6 +30,7 @@
 | 3.9 | 2026-09-28 | OP-005 Pursuit Strategy Ver.2.0（Acquisition Priority／Acquisition Status／Monthly Planningの3章を削除しBR-003参照へ置換、月間予算とCoffee以外の調達方針のみを保持）に伴い、§8カタログのOP-005行のRoleを同期。MARI様のご決定に基づく。 |
 | 3.10 | 2026-09-28 | OP-005 Pursuit Strategy Ver.2.1（購入優先度・購入状態・月次購入計画はBR-003の管轄、Coffee以外は買えるときに買う、市場監視はCZ-002／OP-009の管轄という実態に合わせ、Purpose・Relationship to Other Core Documentsの「いつ・どの順序で」「取得順序・取得時期・市場監視」という残存記述を是正）に伴い、§8カタログのOP-005行のRoleおよびAppendix F（日英）のOP-005紹介文を同期。市場監視の管理元をCZ-002／OP-009へ明記した。MARI様のご決定に基づく（C-04）。 |
 | 3.11 | 2026-09-28 | CZ-002 Ver.3.0で実行プロトコル（Freshness Validation〜Operational Directives）がOP-009 §XVIII Patrol Protocolへ移設済みであるにもかかわらず、Appendix FのOP-009紹介文（日英）「実際の実行手順はCZ-002が別途管理する」、§8カタログのCZ-002 Summary「パトロールの実行手順」、Appendix FのCZ-002紹介文（日英）「鮮度を評価するリサーチ運用プロトコル」が逆の記述のまま残存していた点を是正。「OP-009＝方法論と実行手順（§XVIII）、CZ-002＝Watch List（監視対象・調査キーワード）」に統一。CZ-002 I. PurposeおよびOP-009 §XVIの同時改訂と連動。MARI様のご決定に基づく（C-05）。 |
+| 3.12 | 2026-09-28 | §15 Document Dependenciesが「依存関係はProject Ledgerにて管理する」としていたが、DB-001に該当節が存在せず、Rule DOC-06（文書一覧はOP-008 §8が唯一の正本、Project LedgerはCurrent Focus等の運用情報のみを管理）とも整合しなかった点を是正し、「依存関係は各文書のReferences（Related Documents）にて個別に表現し、一元的な依存関係台帳は持たない」へ書き換えた。§18.1手順5「Project Ledgerへ登録すること」も同じ矛盾があったため「OP-008 §8 Document Seriesへ登録すること」へ改めた。§18.2「Project Ledgerを運用している場合は、更新内容を反映する」は、DB-001が個別文書の更新内容を記録する節を持たない実態と整合しないため削除した。MARI様のご決定に基づく（C-13）。Patch Version。 |
 
 ---
 
@@ -475,11 +476,9 @@ MD-004 の内容を別文書へコピーして保持すること。
 
 文書間には依存関係が存在する。
 
-依存関係は Project Ledger にて管理する。
+依存関係は、各文書の References（Related Documents）にて個別に表現する。
 
-Documentation System は依存関係を定義するが、
-
-依存情報そのものは保持しない。
+一元的な依存関係台帳は持たない。
 
 ---
 
@@ -520,7 +519,7 @@ Document ID は永続的な識別子とする。
 2. DS・OP・記録（DB/MD/BR/CZ/KN）のいずれに属するか
 3. 責任範囲が既存文書と重複しないこと
 4. Document ID を採番すること
-5. Project Ledger へ登録すること
+5. OP-008 §8 Document Series へ登録すること
 
 これらを満たした場合のみ、新規文書を発行する。
 
@@ -531,8 +530,6 @@ Document ID は永続的な識別子とする。
 文書を更新した場合は、Version を更新する。
 
 更新内容は Revision History に記録する。
-
-Project Ledger を運用している場合は、更新内容を反映する。
 
 ---
 
