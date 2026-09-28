@@ -1,7 +1,7 @@
 OP-006 Foundation Compass
 # OP-006
 # Foundation Compass
-## Ver.1.4
+## Ver.1.5
 
 ---
 
@@ -111,6 +111,20 @@ Foundation Compass は、
 OP-007 Habitat Architecture を
 
 成立させるための基盤となる。
+
+---
+
+# Priority Principle（優先度原則）
+
+Equipmentの優先度は、
+
+価格ではない。
+
+人気でもない。
+
+Design Bibleとの一致度によって決定する。
+
+Coffee Zoneの具体的な購入優先度・購入状態はBR-003 Procurement Handbookが管理する。本原則はその判断基準の拠り所となる。
 
 ---
 
@@ -493,6 +507,7 @@ Foundation Compass は、
 |---|---|---|
 | 1.3 | 2026-09-26 | 本文内のOP-005表記が旧題『Acquisition Strategy』のままだった箇所をPursuit Strategyへ修正。 |
 | 1.4 | 2026-09-28 | MARI様のご決定に基づき、Seasonal Configuration節へ「Configuration Structure」（Base／Season Kit／Weather Overlayの3層定義）、「Seasonal Slot」（車内の季節入れ替え定位置の位置づけ。具体的な配置・中身はMD-001が管理し本書では重複記載しない）、「Tagging Policy」（個別Equipmentへの季節・天候タグは付与せず、運用単位はModule／Season Kitとする）、「Weather Overlay Scope」（雨のKitとしての管理は行わない）を新設。いずれも恒久ルールの定義のみであり、具体的な中身（どのギアがどのKitか）はMD-001 Storage Blueprintへ記載する（Static文書にLivingデータを置かない原則に基づく）。Minor Version。 |
+| 1.5 | 2026-09-28 | 「Relationship」節の後へ「Priority Principle」節を新設（Minor Version：章追加）。OP-002 Design Bible §Database Rulesにあった「Priorityは価格ではなく人気でもなく、Design Bibleとの一致度で決定する」という思想文を移設した。MD-004 Equipment Registry Object ReferenceにはPriority欄自体が存在しない（OP-010 Qualification Charter Part A Attribute Policy参照）ことを確認した上での移設であり、Coffee Zoneの具体的な購入優先度はBR-003 Procurement Handbookが別途管理する旨を明記した。MARI様のご決定に基づく（C-02）。 |
 
 ---
 
