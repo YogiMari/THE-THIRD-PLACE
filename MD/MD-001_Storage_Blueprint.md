@@ -1,5 +1,5 @@
 # MD-001 Storage Blueprint
-## Ver.2.9
+## Ver.2.10
 
 Status : Active
 
@@ -229,6 +229,28 @@ Beck①・Beck②の蓋へ設置し、
 通常は取り出さない。
 
 必要な日のみ最後に取り出す。
+
+---
+
+## Coffee Module Layout（暫定）
+
+**Status : Provisional（試し詰め前）**
+
+基準内寸: 565 × 360 × 265 mm
+
+対象: Coffee Equipment 13点（食器類・Coffee専用水ボトルは対象外）
+
+※Layer 1の旧リストは、本案の確定時に置換する。
+
+- 奥左：Z1 Mini Steamer（横置き）
+- 奥右：9Barista Mk.2 Pro（直立）
+- 手前左：Bean Cellar → KNODOS → WeighMaster（積層。余白にPuck Stand＋Screen、RDT）
+- 手前中：The Bloc → LAGOM（横渡し）
+- 手前右：Pitcher＋Sleeve、Blind Shaker
+
+最大高: 約209mm
+
+Wood Board 3セットは最上層へ平置きする（フェルトケースは外す）。
 
 ---
 
@@ -678,7 +700,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.9
+Ver.2.10
 
 ---
 
@@ -818,6 +840,7 @@ Permanent Storage
 |---|---|---|
 | 2.8 | 2026-09-26 | Position表内のOP-005表記が旧題『Acquisition Strategy』のままだった箇所をPursuit Strategyへ修正。OP-001表記もOP-008 §8カタログのTitle表記へ統一。加えて、ヘッダーStatus値『Planning』をOP-008 §9.2準拠の『Active』へ更新（MARI様確認：収納設計は実運用中のため）。 |
 | 2.9 | 2026-09-28 | MARI様のご指摘に基づき、MD-004（SSOT）・CZ-001との矛盾を是正。LGT-043はMD-004上でVacant（未確定）であり、wildingout LF1984はCZ-001でStatus: Candidate（LGT-043への充当を検討中）に留まる未所有装備であるにもかかわらず、本文書ではLight Sequence冒頭・Home Operation「取り外すもののみ」・Maintenanceの3箇所で、既に所有・実運用中の固定装備であるかのように記載されていた。該当3箇所からLF1984関連の記載を削除し、MD-004・CZ-001とのSSOT整合を回復した。 |
+| 2.10 | 2026-09-28 | Beck②にCoffee Module Layout（暫定）を追記。Layer 1旧リストは未同期 |
 
 ---
 
