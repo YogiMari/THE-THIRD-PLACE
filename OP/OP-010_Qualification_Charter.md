@@ -3,7 +3,7 @@
 **Document ID**: OP-010  
 **Title**: Qualification Charter  
 **Series**: OP – Operation (Definition)  
-**Version**: 1.2  
+**Version**: 2.0  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -17,6 +17,7 @@
 | 1.0 | 2026-09-24 | 新規発行。Volatility Restructureに伴い、MD-004・MD-003・MD-002から登録規則・評価基準（恒久ルール）を移設し、記録系列台帳の登録規則・評価基準を定義する文書として新設した。データ（具体的な登録内容・台帳）は移設元に残る。 |
 | 1.1 | 2026-09-24 | MARI様のご指摘に基づき、タイトルをRegistry StandardからQualification Charterへ変更（MD-004 Equipment Registry Object Referenceとの語重複を解消）。これに伴いOP-008 §11 Naming Conventionへ文書名重複禁止ルールを新設。ファイル名もOP-010_Qualification_Charter.mdへ変更。内容（Purpose以下の本文）に変更はない。 |
 | 1.2 | 2026-09-28 | Part Aへ§Naming Rule（Official Name／Brand／Product Name）を新設し、OP-002 Design Bible §Database Rulesから逐語移設した（Minor Version：章追加）。OP-002 §Database RulesがOP-010 Part A（登録規則・評価基準の正本）と重複していたため（OP-008 Principle 003 Single Source of Truth）、OP-002側は本書への参照1行へ置き換えた。MARI様のご決定に基づく（C-02）。 |
+| 2.0 | 2026-09-28 | Part B Category Grouping Policyと実データ（MD-003 KIT-063／KIT-071〜086）の食い違いを是正。S-01（ID Freeze）方針を採用し、KIT-番号の用途別グルーピング・全面再採番義務を廃止（Equipment ID §に注記追加）。Category Grouping Policyのグループ一覧は登録規則からHistorical Referenceへ位置づけを変更し、番号範囲をKIT-071〜086の実データに一致させた（鍋・グリドル系にKIT-071〜074/076、バーナー・ストーブ系にKIT-075/077〜080/084/086、カトラリー系にKIT-083、シェラカップ系にKIT-081〜082を追加、鍋敷きをKIT-063aへ訂正、いずれにも属さない単品グループを新設しKIT-085を収容）。既存の登録規則を変更する仕様変更のためMajor Version。MARI様のご決定に基づく（C-15）。 |
 
 ---
 
@@ -304,6 +305,8 @@ IDは欠番不可。番号は原則として変更しない。
 
 ただし、プロジェクトオーナーの明示的な指示による全面的な再編成（Version 2.5：用途別グルーピングによる全件再採番）は、この原則の例外として記録する。再編成の詳細な新旧対応表はVersion Historyに記載する。
 
+S-01（ID Freeze）方針の採用（Version 2.0より）に伴い、Version 2.5の全面再採番を以後この原則の唯一の例外として固定し、これ以降は用途別グルーピングを理由とする全面再採番を行わない。
+
 他のMaster Document（MD-004等）へ管理を移管したIDは、欠番とせず、移管先を示す記録（Retired）として保持する（Version 2.8より）。
 
 複数の候補が同一カテゴリで併存する場合、同一メイン番号に対して枝番（a, b, c...）を付与する（例：KIT-015a, KIT-015b, KIT-015c）。
@@ -347,27 +350,26 @@ MD-004（所有物のみを記録）とは異なり、MD-003は「まだ選ば�
 
 いずれか一つが購入・確定した時点でStatusをOwnedへ更新し、MD-004には登録しない（MD-003で完結）。不採用となった候補はStatusをUpgrade等に変更するか、Version Historyに不採用の経緯を記録した上で扱いを決める。
 
-### Category Grouping Policy（Version 2.5新設）
+### Category Grouping Policy（Version 2.5新設、Version 2.0よりHistorical Referenceへ変更）
 
-Version 2.5より、KIT-番号は取得順の連番ではなく、用途別グループごとに連番として整理する。
+Version 2.5〜2.16の間、KIT-番号は用途別グループごとの連番として整理されていた。この期間の登録実績（グループと当時の番号範囲）は、以下にHistorical Referenceとして記録する。この一覧は登録規則ではなく、過去の登録実績の記録である。
 
-グループ順序は以下の通り（本書内の登場順と一致）。
-
-1. 鍋・グリドル・焚火系調理器具（KIT-001〜007）
-2. バーナー・ストーブ（KIT-008〜013）
+1. 鍋・グリドル・焚火系調理器具（KIT-001〜007、KIT-071〜074、KIT-076）
+2. バーナー・ストーブ（KIT-008〜013、KIT-075、KIT-077〜080、KIT-084、KIT-086）
 3. 刃物・まな板（KIT-014〜017）
 4. 汎用調理小道具（KIT-018〜025）
-5. 食事用カトラリー（KIT-026〜031）
+5. 食事用カトラリー（KIT-026〜031、KIT-083）
 6. 串・耐熱グローブ（KIT-032〜034）
 7. マグ・タンブラー（KIT-035〜040）
 8. 急須（KIT-041）
-9. シェラカップ・炊飯関連（KIT-042〜059）
+9. シェラカップ・炊飯関連（KIT-042〜059、KIT-081〜082）
 10. コーヒー器具（KIT-060〜062）
-11. 鍋敷き（KIT-063）
+11. 鍋敷き（KIT-063a。KIT-063は欠番のまま）
 12. 収納・スパイス（KIT-064〜069）
 13. ゴミ処理（KIT-070〜070b。Version 2.8よりMD-004 Storage Domainへ移管済み。移管記録のみ保持）
+14. いずれの用途グループにも属さない単品（例：KIT-085）
 
-新規カテゴリの追加時は、末尾（現状KIT-070の次）に新グループとして追加するか、既存グループ内に挿入する場合は当該グループ以降の番号をすべて繰り下げる全面再採番を伴う。番号変更を伴う再編成は、その都度Version Historyに新旧対応表を記録する。
+Version 2.0より、S-01（ID Freeze）方針を採用し、KIT-番号の用途別グルーピング・それに伴う全面再採番義務を廃止する。新規登録は取得順に末尾（現状KIT-086の次）へ追加し、番号自体を用途分類の指標として用いない。用途分類は各アイテムのIndustrial Attributeフィールドで表現する。既存の枝番ルール（同一枠の複数候補をa/b/c...で記録する運用）は変更しない。
 
 ### Domain Scope Note (Kitchen vs. Fire/Coffee)
 
