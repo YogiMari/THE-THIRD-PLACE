@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.73  
+**Version**: 7.74  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -1373,7 +1373,7 @@ Essential
 
 ### Color  
 
-Unconfirmed（Blackではないことをプロジェクトオーナーが確認済みだが、正確な色名は未確認）  
+Unconfirmed（Snow Peak公式サイトのカラー表記は「その他」で具体的な色名の記載なし〈2026-09-28確認〉。Blackではないことはプロジェクトオーナー確認済み。購入後に実物で確定する）  
 
 ### Material  
 
@@ -2008,9 +2008,17 @@ Essential
 - LGT-017a  
 - LGT-017b  
 
+### Color  
+
+Brown  
+
 ### Material  
 
-Walnut  
+Walnut（Black Walnut）  
+
+### Industrial Attribute  
+
+Lantern Stand（木工旋盤仕上げ。Goal Zero・38灯・ZIG対応。支柱高約13cm、全高約15cm、約130g。uyan.base.shop〈OTEBO CRAFTS公式ショップ〉で確認、2026-09-28。公式ショップの現行掲載価格は¥12,500〈SOLD OUT〉で、本レコードのPriceとは異なる）  
 
 ### Price  
 
@@ -4219,6 +4227,10 @@ Brown
 
 Oak  
 
+### Industrial Attribute  
+
+Top Board（STR-013 Beck Container①の蓋へ設置するサイドテーブル天板。MD-001 Storage Blueprint参照）  
+
 ### Price  
 
 ¥16,500  
@@ -4328,6 +4340,10 @@ Brown
 
 Walnut  
 
+### Industrial Attribute  
+
+Top Board（STR-016 Beck Container②の蓋へ設置するサイドテーブル天板。MD-001 Storage Blueprint参照）  
+
 ### Price  
 
 ¥16,500  
@@ -4401,6 +4417,10 @@ Brown
 ### Material  
 
 Walnut  
+
+### Industrial Attribute  
+
+Top Board（STR-019 Container Bridge Frameに載せるBridge Tableの天板。MD-001 Storage Blueprint参照）  
 
 ### Price  
 
@@ -6402,7 +6422,7 @@ Aluminum
 
 ### Industrial Attribute  
 
-Stove Stand（4分割組み立て式、組立時W436×H255×D395mm、2.5kg。分解時はFIR-042ソフトコンテナへ本体と重ねて収納予定。同社の鉄製旧型FG002〈組立式・収納時厚み9mm〉の実測値から類推し、アルミ版も近い厚みで収まると推定〈公式収納時サイズは未記載〉）  
+Stove Stand（4分割組み立て式、組立時W436×H255×D395mm、2.5kg。分解時はFIR-042ソフトコンテナへ本体と重ねて収納予定。メーカー公式ショップに「薪ストーブ本体と同等のサイズに折りたためて一緒に収納できる」旨の記載あり〈FIREGRAPHIX公式Yahoo!ショッピング、2026-09-28確認〉。収納時の具体寸法は公式未記載）  
 
 ### Price  
 
@@ -6582,7 +6602,7 @@ Nylon
 
 ### Industrial Attribute  
 
-Carrying Bag（本体専用、内寸610×450×400mm。FIR-036本体〈535×429×359mm〉が収まる設計。分解したFIR-037ポータブルスタンドを本体の下に敷いて重ねる形での同時収納が可能と推定〈類推、現物未確認〉）  
+Carrying Bag（本体専用、内寸610×450×400mm。FIR-036本体〈535×429×359mm〉が収まる設計。分解したFIR-037ポータブルスタンドを本体の下に敷いて重ねる形での同時収納が可能（FIR-037がストーブ本体と同等サイズに折りたためる旨のメーカー公式記載に基づく。現物での収納確認は購入後））  
 
 ### Price  
 
@@ -7095,6 +7115,12 @@ MARI様提示の公式商品ページ（2026-09-28）に基づき、SHL-006のBr
 ## Version 7.73
 
 MARI様のご申告（2026-09-28）に基づき、SHL-006 DONKEY HAMMER_AのColorをBrown（グリップ）／Black（鉄部分）、MaterialをOak（グリップ）／Iron（ヘッド）へ更新した（従来は通常モデルの販売店情報に基づく暫定記載とUnconfirmed）。Graphic Attributeは引き続きUnconfirmed。
+
+---
+
+## Version 7.74
+
+未確認・欠落項目をWeb上の公式情報で補完した（2026-09-28）。LGT-017（OTEBO CRAFTS BABEL）へColor・Industrial Attributeを追加（公式ショップの現行価格¥12,500と本レコードのPrice ¥20,000の相違を注記）。FUR-036のColorへSnow Peak公式の表記（「その他」）を注記し、購入後に確定する扱いとした。FIR-037・FIR-042の収納に関する類推記述を、メーカー公式ショップの記載（スタンドは本体と同等サイズに折りたためて一緒に収納できる）に基づく記述へ更新。STR-015・STR-018・STR-020（Wood Board）へ、MD-001の運用に基づくIndustrial Attributeを追加した。
 
 ---
 
