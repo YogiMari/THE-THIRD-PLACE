@@ -1,6 +1,6 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.3.3
+## Ver.3.4
 
 ---
 
@@ -223,18 +223,7 @@ THE THIRD PLACE Core Documents の一つとして、
 
 以下の文書と連携する。
 
-- DS-001 THE THIRD PLACE Original
-- OP-001 THE THIRD PLACE Constitution
-- OP-002 THE THIRD PLACE Design Bible
-- MD-004 Equipment Registry Object Reference
-- OP-005 Pursuit Strategy
-- OP-006 Foundation Compass
-- OP-007 Habitat Architecture
-- OP-003 Affinity Lexicon
-- OP-004 Aesthetic Grammar
-- MD-001 Storage Blueprint
-- MD-003 Galley Fare
-- OP-010 Qualification Charter
+文書一覧は OP-008 §8 Document Series を参照。
 
 Field Atlas は、
 
@@ -272,6 +261,7 @@ THE THIRD PLACE を実現するための
 | 3.1 | 2026-09-15 | Facility軸の定義を明確化し、管理棟に併設されたショップ・温泉・サウナ・スパ等の体験価値はFacilityではなくIdentity（Experience Identity）で評価する旨を追記。Radar Sub-Scoresのスノーピークヘッドクォーターズ・Render Fika・RECAMP 富士スピードウェイの3件について、新6軸フレームワークで全軸を再ヒアリングし、Partner Value（合計）を算出。 |
 | 3.2 | 2026-09-15 | Radar Sub-Scoresのヒアリング方式を絶対値評価から**相対比較方式**へ変更し、全49件（訪問済み37件・未訪問12件）を最初から撮り直した。軸ごとの10点基準サイトを設定（Site：South One Village／Facility：スノーピークHQ・Render Fika／Comfort：Render Fika／View：浩庵キャンプ場／Identity：Render Fika・スノーピークHQ・スノーピーク鹿沼／近さ：Render Fika10点・スノーピークHQ1点）。View軸の基準として浩庵キャンプ場（山梨県身延町・本栖湖畔）を新規Reference Benchmark Siteとして追加。訪問済み37件はMariへの相対比較ヒアリング、未訪問12件はField Atlas Database記載の調査情報を根拠とした暫定値により、Partner Value（合計）を全件算出した。最高はRender Fika（54点）、最低はサンビレッジ金谷キャンプ場（18点）。 |
 | 3.3 | 2026-09-26 | 見出し『Registry Standard Reference』が2026-09-24付の改題（OP-010→Qualification Charter）に同期していなかった箇所を修正し、『Qualification Charter Reference』へ改題。本文（Part C参照）に変更はない。 |
+| 3.4 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Relationship to Other Core Documentsの文書一覧（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。箇条書き以外の固有の説明は変更していない。MARI様のご決定に基づく（S-08）。 |
 
 ---
 

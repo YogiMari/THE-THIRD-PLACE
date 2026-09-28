@@ -1,5 +1,5 @@
 # MD-001 Storage Blueprint
-## Ver.2.19
+## Ver.2.20
 
 Status : Active
 
@@ -27,20 +27,7 @@ Storage Blueprintは、THE THIRD PLACEの収納システム全体を定義する
 
 # Position
 
-| ID | Document |
-|---|---|
-| DS-001 | THE THIRD PLACE Original |
-| OP-001 | Constitution |
-| OP-002 | Design Bible |
-| OP-003 | Affinity Lexicon |
-| OP-004 | Aesthetic Grammar |
-| OP-005 | Pursuit Strategy |
-| OP-006 | Foundation Compass |
-| OP-007 | Habitat Architecture |
-| MD-001 | Storage Blueprint |
-| MD-002 | Field Atlas Landscape Framework |
-| MD-003 | Galley Fare |
-| MD-004 | Equipment Registry Object Reference |
+文書一覧は OP-008 §8 Document Series を参照。
 
 ---
 
@@ -1071,6 +1058,7 @@ Permanent Storage
 | 2.17 | 2026-09-28 | MARI様のご指摘に基づき（課題C-11）、Validation SummaryとCoffee Module Layout（暫定）§未決事項との矛盾を是正。Beck② Storage VerificationのResultは、13点のCoffee Module新構成（Wood Board 3セットで底面を使い切る）のもとではLayer 2（Wood Board ×4 Sets）・Layer 3（Vapalux M320）の格納先が未解決であるにもかかわらずVerifiedのままだったため、Provisionalへ修正し、該当箇所を格納先確定分（Wood Board ×3 Sets）と未解決分（Wood Board ×4 Sets・Vapalux M320）に分けて明記した。Storage Verification Result表のBeck² Storage・Side Table Deployment・Operation Sequenceの3行も✅VerifiedからProvisionalへ修正した（Living Table DeploymentはLayer 0が格納先確定済みのためVerifiedを維持）。Wood Board 4セット・Vapalux M320自体の格納先は本改訂では決定せず、未解決である旨の明記に留めた（格納先の決定はN-06で別途扱う）。 |
 | 2.18 | 2026-09-28 | MARI様のご指摘に基づき（課題C-19）、OP-006 Foundation Compass Recovery Sequence「撤収は、設営の逆順ではない」とMD-001の「収納順」に関する記述の間で、「積載・収納の層順（箱内の格納位置）」と「撤収作業の順序」という異なる2つの概念が同じ「順」という言葉で書かれ、矛盾して見えていた点を是正した。Fixed Principles「展開順と収納順は常に一致させる」は層順（箱内の格納位置）を指す原則であることを明記し、撤収作業の順序はOP-006 Recovery Sequenceに従う旨を追記した。Coffee Sequence「収納は、この逆順で行う」およびReturn Sequence本体（Deployment Sequenceのほぼ逆順）は、現状はOP-006の原則に未整合な暫定運用であることを明記し、正式な撤収手順の設計はN-03で別途扱うこととした。OP-006自体は変更不要（MARI様のご確認済み）。 |
 | 2.19 | 2026-09-28 | MARI様のご確認に基づき（課題C-20）、MD-001内の記述の揺れを是正。(1) Parent Documents（OP-001・OP-002・MD-004・OP-006・OP-007）とRelationship図（MD-004→MD-001→OP-007、OP-007は下流＝現地展開）が矛盾していたため、Parent DocumentsからOP-007を外した（OP-001・OP-002・MD-004・OP-006の4件に修正）。Relationship図・Position表は変更していない。(2) Beck②のPurpose「Coffee Equipment & Light Equipment」およびBeck② Principles「Coffee Equipment + Light Equipment + Living Table Module = Living Core Module」は、Fixed Position Rules Beck²の記述（Coffee Equipment + Living Table Module）および実際のFixed Contents（Beck②内の照明はVapalux M320のみ。DEVADEVA等の照明・香り一般はShellCon25②の担当）と不整合だったため、両箇所とも「Coffee Equipment & Living Table Module」「Coffee Equipment + Living Table Module = Living Core Module」へ修正し、Fixed Position Rulesの記述に統一した。Vapalux M320は引き続きLayer 3・Fixed Position Rulesの個別記載（Bridge Frame・Wood Board・Coffee Equipment・Vapaluxの収納位置は固定）でのみ扱う。Position表（S-08で削除予定）は本改訂の対象外。mainへ先行マージされていたRecovery Sequence訂正（C-19、Ver.2.18）とのマージコンフリクトを解消し、両変更を統合してVer.2.19とした。 |
+| 2.20 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Positionの文書一覧表（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。直後の§Relationship（MD-004→MD-001→OP-007のフロー図）は本書固有の情報のため変更していない。MARI様のご決定に基づく（S-08）。 |
 
 ---
 
