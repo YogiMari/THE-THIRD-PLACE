@@ -1,8 +1,8 @@
 KN-002 Cultural Pantheon
 # KN-002 Cultural Pantheon
-## Ver.1.2
+## Ver.1.3
 
-*(旧題: Cultural Reference。Ver.1.1にて "Cultural Pantheon" へ改題。評価基準・Tier構成・本文内容に変更は無い。)*
+*(旧題: Cultural Reference。Ver.1.1にて "Cultural Pantheon" へ改題。評価基準・Tier構成・本文内容に変更は無い。Ver.1.3にて、Completion節（Equipment RegistryのMust Buyを完成条件とする旧記述）をOP-001 §3.6 Principle of Completion・OP-002 Completion Definitionへの参照文へ置換。Must BuyはOP-010で廃止済みのStatusであり、完成の定義はKN-002の管轄外（Authority: Reference、Equipment情報を保持しない）であるため。2026-09-28 MARI様承認。)*
 
 ---
 
@@ -146,29 +146,9 @@ THE THIRD PLACEが完成して、
 
 # Completion
 
-THE THIRD PLACEは、
+完成の定義はOP-001 §3.6 Principle of Completion、およびOP-002 Completion Definitionを参照する。
 
-終わりのないコレクションではない。
-
-Equipment Registryで定義されたMust Buyが揃った時、
-
-Projectは完成する。
-
-完成後は、
-
-新しい物を追い続けるのではなく、
-
-完成した空間を維持し、
-
-より深く使い続けることを目的とする。
-
-壊れた場合のみ、
-
-同じ製品、
-
-または、
-
-より優れた設計へ更新する。
+Cultural Pantheonは完成の定義を持たない。
 
 ---
 
@@ -3815,21 +3795,9 @@ Livingへ変わる。
 
 ## Completion
 
-THE THIRD PLACEには、
+完成の定義はOP-001 §3.6・OP-002 Completion Definitionを参照する。
 
-「完成」が存在する。
-
-Equipment Registryで定義された、
-
-Must Buyが全て揃った時、
-
-Projectは完成する。
-
-完成とは、
-
-収集の終わりではない。
-
-理想の空間が完成したという意味である。
+本書では完成を定義しない。
 
 ---
 
