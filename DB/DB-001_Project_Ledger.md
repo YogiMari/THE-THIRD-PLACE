@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.8  
+**Version**: 4.9  
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -86,7 +86,7 @@
 
 | Date | Topic |
 |------|-------|
-| — | — |
+| 2026-09-28 | Seasonal Configuration未定義（OP-006）。Season Kit（夏・冬）・Weather Overlay（雨）の定義と、冬用暖房コンテナ（湯たんぽ・電気毛布・シャンクヒーター用）の定位置を検討中 |
 
 ---
 
@@ -142,6 +142,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.6 | 2026-09-27 | Current Focusを空欄から充填。CZ-001 Under Considerationの現在進行中3件（Winter Sleeping Mat／Pad Sheet／Storage Carrying Case）を記載。あわせてMARI様のご指示により、Priority 1〜3固定の3行制を廃止し、件数を可変長のリストへ変更（増減に応じて行を追加・削除する運用へ）。Minor Version。 |
 | 4.7 | 2026-09-27 | 「Conversation Complete」運用ルールに従い、本日の会話（Project Ledger 位置づけ整合）のConversation LedgerのSummaryを、CZ-001の不採用理由恒久保持ルール新設・Wood Stove/ShellCon記録の反映まで含めた最終形へ更新。Patch Version。 |
 | 4.8 | 2026-09-28 | MARI様のご決定（GitHub Issue #44）に基づき、Winter Sleeping Mat（FUR-034）・Pad Sheet（FUR-035）がMD-004・CZ-001へ正式反映されたため、Current FocusからFUR-034・FUR-035の2行を削除。Health Check（Change Management）の記載はそのまま維持。Minor Version。 |
+| 4.9 | 2026-09-28 | Project Inboxへ、Seasonal Configuration未定義（OP-006）に関する検討中案件を1行追加（MARI様ご指示）。Patch Version。 |
 
 ---
 
