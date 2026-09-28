@@ -3,7 +3,7 @@
 **Document ID**: OP-010  
 **Title**: Qualification Charter  
 **Series**: OP – Operation (Definition)  
-**Version**: 1.1  
+**Version**: 1.2  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -16,6 +16,7 @@
 |----------|------|-------------|
 | 1.0 | 2026-09-24 | 新規発行。Volatility Restructureに伴い、MD-004・MD-003・MD-002から登録規則・評価基準（恒久ルール）を移設し、記録系列台帳の登録規則・評価基準を定義する文書として新設した。データ（具体的な登録内容・台帳）は移設元に残る。 |
 | 1.1 | 2026-09-24 | MARI様のご指摘に基づき、タイトルをRegistry StandardからQualification Charterへ変更（MD-004 Equipment Registry Object Referenceとの語重複を解消）。これに伴いOP-008 §11 Naming Conventionへ文書名重複禁止ルールを新設。ファイル名もOP-010_Qualification_Charter.mdへ変更。内容（Purpose以下の本文）に変更はない。 |
+| 1.2 | 2026-09-28 | Part Aへ§Naming Rule（Official Name／Brand／Product Name）を新設し、OP-002 Design Bible §Database Rulesから逐語移設した（Minor Version：章追加）。OP-002 §Database RulesがOP-010 Part A（登録規則・評価基準の正本）と重複していたため（OP-008 Principle 003 Single Source of Truth）、OP-002側は本書への参照1行へ置き換えた。MARI様のご決定に基づく（C-02）。 |
 
 ---
 
@@ -76,8 +77,8 @@ IDは変更されない。
 ブランチ接尾辞（小文字アルファベット、例: LGT-028a、LGT-028b）は、後続IDの番号をずらすことなく、同じ装備枠を競合する複数の製品候補を登録するために、親IDへ直接付与できる。これはChild Components（恒久的に付随する構成部品、同時に所有される）とは異なる: ブランチバリアントは、1つの枠に対する代替候補を表し、通常は最終的にどちらか一方だけが昇格（StatusがEssential/Ownedへ変更）し、もう一方は廃止または別枠へ分類される。  
 
 **運用注記（Version 7.14以降）**：新規に発生する検討中候補の比較については、原則としてBranch Variant形式（a/b/c...）をMD-004上で新設せず、単一の親ID（Brand/Product = Unconfirmed）のみを登録し、具体的な候補間比較はCZ-001 Deliberation Dossierで管理する。既存のBranch Variant（LGT-028a/b等）は、整理が完了するまでの間、現状の形式のまま維持する。  
-  
----  
+
+---
   
 ### Status（ステータス）  
   
@@ -112,7 +113,28 @@ Appearanceは、OP-002 Design Bibleにより、以下を用いて決定される
 - Price（Version 7.25より、任意項目として再導入。既存登録済みアイテムへの遡及記載は別途対応）  
   
 ---  
-  
+
+---
+
+## Naming Rule（命名規則）
+
+### Official Name（正式名称）
+
+必ず正式名称を使用する。
+
+略称を、正式名称として登録しない。
+
+---
+
+### Brand（ブランド）
+
+ブランド名は、正式表記を使用する。
+
+---
+
+### Product Name（製品名）
+
+正式名称で統一する。
 
 ---
 
