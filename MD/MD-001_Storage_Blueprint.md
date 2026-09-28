@@ -1,5 +1,5 @@
 # MD-001 Storage Blueprint
-## Ver.2.16
+## Ver.2.17
 
 Status : Active
 
@@ -925,7 +925,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.16
+Ver.2.17
 
 ---
 
@@ -951,16 +951,17 @@ Active
 
 ### Result
 
-Verified
+Provisional（Wood Board Layer 2・Layer 3の格納先未解決のため）
 
 - Bridge Frame
-- Wood Board ×7 Sets（14 Boards）
+- Wood Board ×3 Sets（Layer 0・格納先確定）
 - Coffee Module
-- Vapalux M320
+- Wood Board ×4 Sets（Layer 2・格納先未解決）
+- Vapalux M320（Layer 3・格納先未解決）
 - Living Table Deployment
 - Side Table Deployment
 
-Wood Board ×7 Sets のうち4セット（STR-015・STR-018、各2組）は未購入（MD-004 Status = Essential）。本検証結果は未購入分を含む。実物での確認は未了。
+Coffee Module Layout（暫定）の判定により、Wood Board 3セット＋Coffee Equipment 13点でBeck②底面を使い切るため、Layer 2（Wood Board ×4 Sets）とLayer 3（Vapalux M320）の格納先は未解決である（詳細はCoffee Module Layout（暫定）§未決事項を参照。格納先自体の決定は本修正の対象外）。Wood Board ×7 Sets のうち4セット（STR-015・STR-018、各2組）は未購入（MD-004 Status = Essential）。本検証結果は未購入分・格納先未解決分を含む。実物での確認は未了。
 
 ---
 
@@ -991,13 +992,13 @@ RT-01AC01 / ECHO LAMPとKURASHI MADE DOME LOOKは未購入（MD-004 Status = Ess
 
 | Item | Result |
 |------|--------|
-| Beck② Storage | ✅ Verified |
+| Beck② Storage | 🔶 Provisional（Wood Board ×4 Sets・Vapalux M320の格納先未解決。Coffee Module Layout §未決事項参照） |
 | Coffee Module | 🔶 Provisional（箱寸法計算では基準内寸565×360×265mmにて成立。試し詰め未了） |
 | Living Table Deployment | ✅ Verified |
-| Side Table Deployment | ✅ Verified |
+| Side Table Deployment | 🔶 Provisional（サイドテーブル用Wood Board ×4 Setsの格納先未解決のため） |
 | ShellCon25② Storage | ✅ Verified |
 | CONPE10 Relocation | ✅ Verified |
-| Operation Sequence | ✅ Verified |
+| Operation Sequence | 🔶 Provisional（Wood Board ×4 Sets・Vapalux格納先未解決のため） |
 
 ---
 
@@ -1070,6 +1071,7 @@ Permanent Storage
 | 2.14 | 2026-09-28 | MARI様のご指摘に基づき、Seasonal Slot Moduleの冬季内容の誤りを訂正した。Seasonal Slot A（ポータブルエアコンの場所）の冬はFIR-036・FIR-029に加えFUR-035（冬用寝具のシーツ）も含む。Seasonal Slot B（夏用ワンタッチバケットの場所）の冬はFUR-032（冬用の大きな寝具、嵩張る方）のみであり、FUR-035はSlot Bには含まれない。Winter Kit § Equipment・Bedding自体（何が冬季に積まれるか）に変更はなく、Seasonal Slot Moduleの表（どちらのSlotに何が入るか）のみを訂正した。 |
 | 2.15 | 2026-09-28 | 【引継ぎ】Beck②コーヒーギア13点収納設計を受け、Coffee Module Layout（暫定）節を拡充。13点＋Wood Boardの寸法一覧（GPT・Gemini web二重チェック確定値）、Beck②内寸の採用根拠（MD-001正本565×360×265mmを基準、540×340×250mmは参考値扱い）、9Barista Mk.2 Proの寸法採用根拠（実寸未確定のため安全側160×190×180を採用）、不採用配置案、配置詳細、判定結果（基準内寸では13点成立、参考値内寸では不成立、Wood Boardは3セットが上限・4セット目は非推奨・5〜7セットは不可）、未決事項（Layer 2 Wood Board×4 SetsとLayer 3 Vapalux M320の格納先が未解決のまま）、試し詰め前に必要な実測項目を追記した。Coffee ModuleのStatusは引き続きProvisional（試し詰め未了のため）。Validation Summaryの該当行へ判定根拠を追記。mainへ先行反映されていたSeasonal Slot Module訂正（旧Ver.2.14）とのコンフリクトを解消し、両変更を統合してVer.2.15とした。 |
 | 2.16 | 2026-09-28 | MARI様のご確認に基づき、MD-004（SSOT）との矛盾を是正。Filoméla INCENSE CHAMBER Tokyo Limited（MD-004 ARM-004：Status = Upgrade）、RT-01AC01 / ECHO LAMP（LGT-040：Status = Essential）、KURASHI MADE DOME LOOK（LGT-041：Status = Essential）、MMM Pocket Shade（MD-004に登録なし。旧LGT-018はOTEBO CRAFTS BABELへ差し替え済み）はいずれも未所有であるにもかかわらず、ShellCon25②（Light & Aroma Module）のFixed Contents・Light Sequence・Fixed Position Rules・Validation Summaryの4箇所で、既に所有・実運用中の固定装備であるかのように記載されていた。Filoméla（Upgrade）・MMM Pocket Shade（未登録）はSSOT整合を優先し、該当4箇所から記載を削除した（Ver.2.9と同様の考え方）。一方、RT-01AC01 / ECHO LAMPとKURASHI MADE DOME LOOK（いずれもMD-004でStatus = Essential）は、購入決定済み装備として記録を残す必要があるため削除せず、該当4箇所に「未所有・MD-004 Status = Essential」の注記を付して維持した（Beck② Storage VerificationのWood Board未購入分と同様の扱い）。あわせて、Filomélaの「横置き固定収納」に関する個別ルール・検証行（Rule節、Validation Summary、Fixed Position Rulesまとめの計3箇所）も、対象がFixed Contentsから外れたことに伴い削除した。MD-004側のStatus（Upgrade／Essential）は変更なし。 |
+| 2.17 | 2026-09-28 | MARI様のご指摘に基づき（課題C-11）、Validation SummaryとCoffee Module Layout（暫定）§未決事項との矛盾を是正。Beck② Storage VerificationのResultは、13点のCoffee Module新構成（Wood Board 3セットで底面を使い切る）のもとではLayer 2（Wood Board ×4 Sets）・Layer 3（Vapalux M320）の格納先が未解決であるにもかかわらずVerifiedのままだったため、Provisionalへ修正し、該当箇所を格納先確定分（Wood Board ×3 Sets）と未解決分（Wood Board ×4 Sets・Vapalux M320）に分けて明記した。Storage Verification Result表のBeck² Storage・Side Table Deployment・Operation Sequenceの3行も✅VerifiedからProvisionalへ修正した（Living Table DeploymentはLayer 0が格納先確定済みのためVerifiedを維持）。Wood Board 4セット・Vapalux M320自体の格納先は本改訂では決定せず、未解決である旨の明記に留めた（格納先の決定はN-06で別途扱う）。 |
 
 ---
 
