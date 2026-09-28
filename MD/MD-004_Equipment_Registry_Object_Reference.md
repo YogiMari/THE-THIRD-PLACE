@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.71  
+**Version**: 7.72  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -4982,6 +4982,42 @@ Peg Case（約42×15×H13.5cm、約380g。メッシュ構造で洗って乾か�
 ¥3,960（tokyocrafts.jp公式サイト価格、2026-09-28確認）  
 
 ---  
+
+## STR-037  
+
+**Brand**  
+
+Snow Peak  
+
+**Product**  
+
+Quilted Ripstop Duffle（AC-25AU012）  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black  
+
+### Material  
+
+Cotton 85% / Modacrylic 15%（表地）／Polyester（裏地・中綿）  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Duffle Bag（L380×W230×H340mm。充電が必要な物だけを入れて運用する。車内位置は後席右〈起こした座面〉。MD-001 Storage Blueprint §Loading Map参照）  
+
+### Price  
+
+¥19,800（購入価格。MARI様申告）  
+
+---  
 # Coffee  
 
 Coffee Domainは、抽出に関する一連のワークフロー全体を管理する。  
@@ -6742,11 +6778,11 @@ Vestibule（SHL-004 Slug Shelter V2.0専用の前室オプション）
 
 **Brand**  
 
-asimocrafts × サンゾー工務店  
+サンゾー工務店 × asimocrafts  
 
 **Product**  
 
-DONKEY HAMMER（ドンキーハンマー）  
+DONKEY HAMMER_A  
 
 **Status**  
 
@@ -6758,7 +6794,7 @@ Unconfirmed
 
 ### Material  
 
-Cast Metal / Hickory（サンゾー工務店 通常モデルの販売店掲載情報に基づく。コラボモデルとの差異は未確認）  
+Cast Metal（ヘッド。サンゾー工務店 通常モデルの販売店掲載情報に基づく）／Natural Wood（asigripグリップ。3zo.online公式商品ページ）  
 
 ### Graphic Attribute  
 
@@ -6766,11 +6802,11 @@ Unconfirmed
 
 ### Industrial Attribute  
 
-Peg Hammer（約1kg。ペグ打ち・薪割り兼用。MARI様申告によりasimocraftsとのコラボモデル）  
+Peg Hammer（ペグ打ち・薪割り兼用。サンゾー工務店 DONKEY HAMMERに、asimocraftsのasigripを取り入れたコラボモデル）  
 
 ### Price  
 
-Unconfirmed（通常モデルの販売店価格は¥13,200。コラボモデルの価格は未確認）  
+¥16,500（3zo.online公式サイト価格、2026-09-28確認）  
 
 ---  
 # Parent / Child Rules（親子関係ルール）  
@@ -7047,6 +7083,12 @@ MARI様のご申告（2026-09-28）に基づき、STR-035 YETI Camino® 35キャ
 ## Version 7.71
 
 MARI様のご申告（2026-09-28）に基づき、STR-036 TOKYO CRAFTS エアドライ ペグケース（Owned）と、SHL-006 asimocrafts × サンゾー工務店 DONKEY HAMMER（Owned）を新規登録した。STR-036の色・素材・価格はtokyocrafts.jp公式商品ページで確認した。SHL-006はコラボモデルの公式情報が確認できなかったため、Color・Graphic Attribute・PriceをUnconfirmedとし、素材は通常モデルの販売店掲載情報を注記付きで記載した。ペグ・ロープ・ガイベルトは消耗品・小物としてMD-004へは登録せず、MD-001 §Peg & Guyline Moduleで管理する。
+
+---
+
+## Version 7.72
+
+MARI様提示の公式商品ページ（2026-09-28）に基づき、SHL-006のBrandをCLAUDE.md作業原則7（コラボ表記は「販売元 × コラボブランド」）に従い「サンゾー工務店 × asimocrafts」へ訂正し、Productを公式名「DONKEY HAMMER_A」、Priceを¥16,500（3zo.online公式価格）、Material・Industrial Attributeを公式情報（asigripグリップ・天然木）に合わせて更新した。Color・Graphic Attributeは公式情報に記載がないためUnconfirmedのまま。あわせて、充電が必要な物を入れるバッグとしてSTR-037 Snow Peak Quilted Ripstop Duffle（AC-25AU012、Black、購入価格¥19,800、Owned）を新規登録した。
 
 ---
 
