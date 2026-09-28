@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.22
+## Ver.2.23
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.22  
+**Version**: 2.23  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -105,6 +105,7 @@ Kitchen Equipment Only
 - Mug
 - Seasoning
 - Kitchen Cloth
+- Coffee Serviceware（購入後に収納。未所有）：HILLS FIELD Glass Case Single（KRUVE PROPEL＋ICOSA AERESSO）、DAMNGOOD × CATAPULT FACTORY FIKA12 ×2（専用ケース付き）
 
 ## Rule
 
@@ -113,6 +114,8 @@ Coffee Equipment
 ×
 
 収納禁止
+
+（抽出・スチームの機材を指す。グラス・ラテカップ等のCoffee Servicewareは食器であり、Tablewareとして本Moduleへ収納する。MARI様のご決定、2026-09-28）
 
 Light Equipment
 
@@ -298,7 +301,7 @@ Wood Board 3セット（6枚）は最上層へ平置きする（フェルトケ�
 
 - Layer 2「Wood Board ×4 Sets」とLayer 3「Vapalux M320」の格納先が未解決（13点＋Wood Board 3セットで底面を使い切るため、両者の置き場所が現状ない）。
 - Coffee Sequence（使用順）は暫定であり、実際の手順に合わせた見直しが必要。
-- Coffee Serviceware・専用水の定位置が未定（N-06）：HILLS FIELD Glass Case Single（KRUVE PROPEL＋ICOSA AERESSO）、DAMNGOOD × CATAPULT FACTORY FIKA12 ×2（専用ケース付き）、Coffee System専用水ボトル3本（計2,540mL）。BR-002・BR-003はFIKA12のケースを「Beck Container内」に収納するとしているが、Beck①はCoffee Equipment収納禁止、Beck②は13点＋Wood Board 3セットで底面を使い切るため、現状いずれにも受け入れ余地がない。試し詰めの結果を受けて定位置を決める。
+- Coffee System専用水ボトル3本（計2,540mL）の定位置が未定（N-06）。Coffee Serviceware（グラスケース・FIKA12）は、食器としてBeck①（Kitchen Module）へ収納することが決定済み（2026-09-28、MARI様のご決定。容量上の問題なしを確認済み）。
 
 ### 必要な実測（試し詰め前に要確認）
 
@@ -463,6 +466,7 @@ STR-032（WHATNOT One Touch Bucket HD）を、通年の消耗品と小物の常�
 - 予備の自在金具
 - 洗濯バサミ ×2
 - レスキューポーチ（絆創膏・薬類）
+- 一酸化炭素警報器 ×1（所有済み、2026-09-28 MARI様確認。シェルター内で燃焼器具を使う前に作動を確認する。OP-006 §Safety Principles）
 
 ## Confirmation Method
 
@@ -540,7 +544,7 @@ Seasonal Slot A・Bへ積む冬季の構成物を定義する。
 
 湯たんぽ・電気毛布はMD-004へ未登録の物品であり、Seasonal Slot Module Ruleと同様の扱いとする。定位置は未定のため、本節では暫定位置を記載しない。
 
-FUR-034・FUR-036は冬用（Season Kit）として本Kitに含める（N-07、2026-09-28 Claude推奨案をMARI様の包括指示に基づき採用）。積載位置は未決だが、FUR-036はFUR-032と併用前提のため、FUR-032と同じSeasonal Slot Bへ同梱することを推奨する。FUR-034の積載位置、およびFIR-032＋FIR-033の積載位置（現状Seasonal Slot A・Bのいずれにも未割当）は、Vehicle Loading（本書§Vehicle）の試し積みで確定する。電気毛布の電源（ポータブル電源の有無）は未確認（DB-001 Project Inbox参照）。
+FUR-034・FUR-036は冬用（Season Kit）として本Kitに含める（N-07、2026-09-28 Claude推奨案をMARI様の包括指示に基づき採用）。積載位置は未決だが、FUR-036はFUR-032と併用前提のため、FUR-032と同じSeasonal Slot Bへ同梱することを推奨する。FUR-034の積載位置、およびFIR-032＋FIR-033の積載位置（現状Seasonal Slot A・Bのいずれにも未割当）は、Vehicle Loading（本書§Vehicle）の試し積みで確定する。電気毛布は電源サイトを利用する場合のみ持参する（ポータブル電源は使わない。2026-09-28、MARI様のご決定）。
 
 ## Consumables
 
@@ -572,7 +576,8 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 | Luggage Capacity（後席使用時） | 647 L | メーカー公表値（英国仕様。Parkers・CarsGuide経由で確認、2026-09-28） |
 | Luggage Capacity（後席格納時） | 1,491 L | 同上 |
 | Rear Seat | 40:20:40分割可倒 | 同上 |
-| Powertrain / 座席数 | 未確認 | 荷室容量はMHEV・PHEVで同一とされる（Parkers） |
+| Powertrain | マイルドハイブリッド（MHEV）3.0L 直列6気筒ディーゼル | MARI様申告（2026-09-28）。荷室容量はMHEV・PHEVで同一とされる（Parkers） |
+| 座席数 | 未確認 | |
 | 荷室床寸法（奥行・幅・開口高・ホイールハウス間幅） | 未確認（実測待ち） | 日本仕様の公表値も未確認 |
 
 ## Vehicle Loading Rule（暫定）
@@ -1042,7 +1047,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.22
+Ver.2.23
 
 ---
 
@@ -1193,6 +1198,7 @@ Permanent Storage
 | 2.20 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Positionの文書一覧表（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。直後の§Relationship（MD-004→MD-001→OP-007のフロー図）は本書固有の情報のため変更していない。MARI様のご決定に基づく（S-08）。 |
 | 2.21 | 2026-09-28 | 整備バックログ（N-02・N-03・N-06・N-07）対応。§Vehicle（Range Rover Sport 2026年型、公表荷室容量647 L／1,491 L、実測待ち項目）、§Vehicle Loading Rule（暫定）、§Full Loading Order（暫定・未検証）、§Site Deployment Sequence（全体・暫定）、§Site Recovery Sequence（全体・暫定。乾燥に時間を要するShelterを最後に撤収）を新設。Winter Kit BeddingへFUR-034・FUR-036を追加し積載位置の未決事項を明記。Coffee Module Layout §未決事項へCoffee Serviceware・専用水の定位置未定を追記。Home Operationへ濡れたShelterの帰宅後乾燥を追記。Dust Management Module・Seasonal Slot Moduleの未所有Equipment（STR-030・FIR-036・FUR-035・FUR-032）へ未所有注記を付記（S-02バリデータ警告の解消）。ヘッダーと末尾Version欄の版数不一致（2.20／2.19）を是正。いずれもClaude推奨案をMARI様の包括指示（2026-09-28）に基づき暫定採用したもの。 |
 | 2.22 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
+| 2.23 | 2026-09-28 | MARI様のご回答（2026-09-28）を反映。Beck①のFixed ContentsへCoffee Serviceware（HILLS FIELD Glass Case Single、FIKA12 ×2）を追加し、Ruleの「Coffee Equipment収納禁止」は抽出・スチーム機材を指し、Servicewareは食器として収納する旨を明記。Coffee Module Layout §未決事項を専用水ボトルのみに更新。Winter Kitの電気毛布を「電源サイト利用時のみ持参」とした。§VehicleへPowertrain（MHEV 3.0L 直列6気筒ディーゼル）を記載。Consumables & Sundries ModuleのSundriesへ一酸化炭素警報器（所有済み）を追加。 |
 
 ---
 

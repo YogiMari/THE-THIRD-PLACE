@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.15  
+**Version**: 4.16
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -77,10 +77,8 @@
 | Date | Topic |
 |------|-------|
 | 2026-09-28 | 冬用暖房コンテナ（湯たんぽ・電気毛布・シャンクヒーター用）の要否・定位置：優先度低、検討中 |
-| 2026-09-28 | 一酸化炭素警報器の所有有無の確認（OP-006 §Safety Principlesにより、シェルター内で燃焼器具を使う場合は必須） |
-| 2026-09-28 | 電気毛布の電源（ポータブル電源の有無）の確認（MD-001 Winter Kit） |
-| 2026-09-28 | Range Rover Sportのパワートレイン・座席数の確認と荷室床寸法の実測、試し積み（MD-001 §Vehicle・§Full Loading Order） |
-| 2026-09-28 | Beck②の試し詰めと実測（MD-001 Coffee Module Layout §必要な実測）。結果を受けてCoffee Serviceware・専用水の定位置を決める |
+| 2026-09-28 | Range Rover Sportの座席数の確認と荷室床寸法の実測、試し積み（MD-001 §Vehicle・§Full Loading Order） |
+| 2026-09-28 | Beck②の試し詰めと実測（MD-001 Coffee Module Layout §必要な実測）。結果を受けてCoffee専用水ボトル3本の定位置を決める |
 | 2026-09-28 | MD-002 Field Atlasで移動時間が未記録のフィールドの実測値（起点：江戸川区小岩） |
 
 ---
@@ -161,6 +159,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.13 | 2026-09-28 | KN Publication Logが参照していた「ways-of-working KN issuance rules」がリポジトリに実在しない不整合を是正し、OP-008 §28 KN Publication Policy（新設）への参照へ更新。MARI様のご決定に基づく（C-14）。Patch Version。 |
 | 4.14 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Project Overviewの系列別文書数表（OP-008 §8から導出可能な重複情報）を「文書一覧・文書数は OP-008 §8 Document Series を参照。」の1行へ置換した。あわせて、検証プロセスを伴わず常に✓固定だったHealth CheckのSSOT／Conversation Ledger／Documentation行を削除し、Change Management行のみを残した。MARI様のご決定に基づく（S-08）。Patch Version。 |
 | 4.15 | 2026-09-28 | §Field Log（キャンプの計画と実施の記録、N-05・N-16）を新設。Project Inboxへ、整備バックログで判明した要確認事項5件（一酸化炭素警報器、電気毛布の電源、車両の確認・実測、Beck②の試し詰め、MD-002の移動時間）を追加。Conversation Ledgerへ本日の会話を1行追加。Claude推奨案をMARI様の包括指示に基づき採用。Minor Version。 |
+| 4.16 | 2026-09-28 | MARI様のご回答に基づき、Project Inboxのうち解決した2件（一酸化炭素警報器：所有済み、電気毛布の電源：電源サイト利用時のみ持参）を削除し、車両（パワートレイン確認済み）とBeck②試し詰め（Coffee Servicewareの定位置決定済み）の2件を残る未決事項のみへ更新。Patch Version。 |
 
 ---
 
