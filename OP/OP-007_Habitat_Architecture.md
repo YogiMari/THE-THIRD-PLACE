@@ -1,7 +1,23 @@
 OP-007 Habitat Architecture
 # OP-007
 # Habitat Architecture
-## Ver.1.1
+## Ver.1.2
+
+**Document ID**: OP-007  
+**Title**: Habitat Architecture  
+**Series**: OP – Operation (Definition)  
+**Version**: 1.2  
+**Authority**: Standard  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 1.2 | 2026-09-28 | S-11（文書ヘッダーの統一）に伴い、Document ID／Title／Series／Authority／Status／Ownerのヘッダー項目、およびRevision History章を新設した。それ以前（〜Ver.1.1）の改訂履歴は本書に記録が存在せず、遡及して復元しない。本節新設のためMinor Version。MARI様のご決定に基づく。 |
 
 ---
 
