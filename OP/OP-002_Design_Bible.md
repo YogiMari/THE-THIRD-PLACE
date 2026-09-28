@@ -1,6 +1,22 @@
-OP-002 Design Bible Ver.5.8
+OP-002 Design Bible Ver.5.9
 # THE THIRD PLACE Design Bible
-## Ver.5.8 Official Complete Edition
+## Ver.5.9 Official Complete Edition
+
+**Document ID**: OP-002  
+**Title**: Design Bible  
+**Series**: OP – Operation (Definition)  
+**Version**: 5.9  
+**Authority**: SSOT  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 5.9 | 2026-09-28 | S-11（文書ヘッダーの統一）に伴い、Document ID／Title／Series／Authority／Status／Ownerのヘッダー項目、およびRevision History章を新設した。それ以前（〜Ver.5.8）の改訂履歴は本書に記録が存在せず、遡及して復元しない。本節新設のためMinor Version。MARI様のご決定に基づく。 |
 
 ---
 
