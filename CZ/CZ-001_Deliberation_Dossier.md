@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.15
+3.16
 
 # Status
 
@@ -22,7 +22,7 @@ Active
 
 CZ-001 Deliberation Dossierは、Coffee Domain（BR-002管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire／Shelter）における、検討中ギアの意思決定を支援する文書である。
 
-本書は4種類の内容を管理する。
+本書は3種類の内容を管理する。
 
 * **Under Consideration**（可変）：現在検討中のギアの具体的製品情報・比較・評価記録。MD-004側のステータスが確定（Candidate → Essential/Owned）した時点で、当該記載を空欄化する。
 * **Confirmed — Purchase Pending**（可変）：製品・ブランドは確定済み（MD-004側のStatus = Essential）だが、まだ所有していないEquipmentの一覧。Coffee Domainを除く全ゾーン（Furniture／Light／Aroma／Storage／Fire／Shelter）が対象。本セクションは、購入リスト（買い物タスク管理）アーティファクトのソースとして使用する。
@@ -36,6 +36,9 @@ CZ-001 Deliberation Dossierは、Coffee Domain（BR-002管轄）を除く全ゾ�
 * CZ-001：Candidate段階の具体的な製品名・ブランド・比較評価・検討経緯（Under Consideration）、およびEssential段階の購入待ちEquipment一覧（Confirmed — Purchase Pending）を保持する。
 
 Candidateが確定（Essential/Owned）した時点でUnder Considerationから削除し、Decision Logへ一行要約を残す。あわせて、不採用候補とその理由を含む詳細な比較内容を、Decision Log直下の「詳細記録」として恒久的に保持する（一行要約のみで、詳細を破棄することはしない。2026-09-27付でCZ-001の標準運用となった）。この詳細記録は、KN-001 Heritage Chronicle発行時の一次資料として使用する。Essentialになったアイテムは同時にConfirmed — Purchase Pendingへ追加し、購入完了（Owned）した時点でそこから削除する。
+
+
+**比較検討を経ない登録（2026-09-28新設）**：比較する候補がなく1製品で即決した場合も、MD-004へEssentialとして登録すると同時に、Decision Logへ一行（採用理由と「比較候補なし」の旨）を記録する。Under Considerationへの掲載と詳細記録は不要とする（Claude推奨案をMARI様の包括指示に基づき暫定採用。N-12）。
 
 ---
 
@@ -371,6 +374,7 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 3.13 | 2026-09-28 | MARI様のご決定（GitHub Issue #44）に基づき、Winter Sleeping Mat（FUR-034）・Pad Sheet（FUR-035）を正式決定として反映。MD-004 Version 7.64（Status: Candidate→Essential）と連動し、Furniture Under ConsiderationからFUR-034・FUR-035の検討記載を削除、Confirmed — Purchase Pendingへ両ID（BLACK ZONE MAT×2、HOTEL CAMPS リバーシブル ホットカバー×2）を追加。Decision Logへ確定日を記録し、Ver.3.11の標準運用に沿って「Furniture — Winter Sleeping Mat / Pad Sheet 選定記録」を新設して不採用候補の詳細比較を恒久保持。Pad Sheetの価格・正式品名はhotelcamps.jp公式サイトで一次情報確認済み（¥9,980）。 |
 | 3.14 | 2026-09-28 | MARI様のご指摘（Issue C-07）に基づき、PurposeとRelationship図を整合。Purposeの管理対象を「Under Consideration／Confirmed — Purchase Pending／Decision Log ＋ 詳細記録」の3項目へ改め、Zone Evaluation PhilosophyはVer.3.0でOP-002 Design Bible §Design Domainsへ移設済みである旨の参照注記へ変更（管理対象の列挙からは除外）。Relationship図もZone Evaluation Philosophyノードへ同旨の注記を追加し、独立ブロックだったDecision Log ＋ 詳細記録をCZ-001ツリーの4本目の枝として統合。あわせてVersion Historyの3.0の行を2.10〜2.17より後（2026-09-24、時系列順）へ並べ替え。構成追加のためMinor Version。 |
 | 3.15 | 2026-09-28 | S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い、Version History のうち Version 1.0・2.0〜2.17を archive/CZ-001_Version_History_Archive.md へ移設した。移設した履歴は原文のまま保持し、要約・削除は行っていない。本文側の検討記録そのものに変更はない。MARI様のご決定に基づく。 |
+| 3.16 | 2026-09-28 | 整備バックログ（N-12）対応。Purposeへ「比較検討を経ない登録」の運用（1製品で即決した場合もDecision Logへ一行記録し、Under Considerationと詳細記録は不要）を追記。あわせてPurposeの「4種類の内容」を、実際に列挙されている3種類へ是正。Claude推奨案をMARI様の包括指示に基づき暫定採用。Minor Version。 |
 
 ---
 
