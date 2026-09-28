@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.26
+## Ver.2.27
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.26  
+**Version**: 2.27  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -478,6 +478,29 @@ STR-032（WHATNOT One Touch Bucket HD）を、通年の消耗品と小物の常�
 
 ---
 
+# Peg & Guyline Module
+
+ペグ・ハンマー・張り綱を、STR-036（TOKYO CRAFTS エアドライ ペグケース）にまとめて運用する。車内の位置は§Loading Map（荷室・手前・右・床）。Consumables & Sundries Module（STR-032）とは別に置く（2026-09-28、MARI様のご決定）。
+
+## Contents
+
+- STR-036 エアドライ ペグケース（本体）
+- SHL-006 DONKEY HAMMER（asimocrafts × サンゾー工務店）
+- 鍛造ペグ 40cm ×6（タープ用）
+- 鍛造ペグ 30cm ×15
+- ロープ
+- ガイベルト
+
+ペグ・ロープ・ガイベルトは消耗品・小物としてMD-004へは登録せず、本節でのみ管理する（Consumables & Sundries Moduleの前例に基づく扱い）。
+
+## Confirmation Method
+
+- ペグ：撤収後に本数を確認する（40cm ×6、30cm ×15）。曲がり・欠けがあれば買い物リストへ追加する。
+- ロープ・ガイベルト：撤収後に傷み・ほつれを確認し、傷んでいれば買い物リストへ追加する。
+- ペグケース：泥が付いたまま車へ戻さない。洗った場合は乾かしてから収納する（OP-006 §Material Care Principles）。
+
+---
+
 # Seasonal Slot Module
 
 車内には、季節の入れ替えに対応する定位置（Seasonal Slot）を2つ設ける。季節が変わるときは、Slotに置く物とSeason Kitの箱ごと積み降ろしする。Module内部の詰め替えは行わない。Seasonal Slotは一時的な固定位置ではなく、車内に定められた恒久的な位置であり、置かれる中身のみが季節に応じて変わる（OP-006 Foundation Compass Seasonal Configuration参照。定義そのものはOP-006が管理し、本節では重複して記載しない）。
@@ -610,7 +633,7 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 | 奥・中／右 | FUR-015 EXTENMON TABLE | Beck①（STR-013、右寄せ） | Beck②（STR-016、右寄せ） |
 | 奥／左の隙間 | FIR-006 Iron Table、FUR-013・FUR-014 SOMA Chair ×2（いずれも縦置き） | | |
 | 手前・左 | FIR-001 RODAN BRICK＋FIR-005 rodan_no_kaban（縦置き） | | |
-| 手前・右 | ペグケース（MD-004未登録） | FUR-029 TACTICAL AIR BED 2P | FUR-029（2段目の続き） |
+| 手前・右 | Peg & Guyline Module（STR-036 ペグケース。§Peg & Guyline Module） | FUR-029 TACTICAL AIR BED 2P | FUR-029（2段目の続き） |
 
 ### 後席（テールゲート側から見て）
 
@@ -1070,7 +1093,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.26
+Ver.2.27
 
 ---
 
@@ -1225,6 +1248,7 @@ Permanent Storage
 | 2.24 | 2026-09-28 | MARI様のご回答を反映。§Vehicleの座席数を5人乗りと記載。Coffee System専用水ボトル3本の収納先を食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ、MD-004 Version 7.70で新規登録）に決定し、Coffee Module Layout §未決事項を解消。§Full Loading Order ③へSTR-035を追加。 |
 | 2.25 | 2026-09-28 | MARI様提供の荷室データを§Vehicleへ記載（容量のVDA方式・Dry表記、奥行〈後席使用時・格納時〉、最大幅、ホイールハウス間幅、開口部〜天井高）。Coffee Module Layout §必要な実測へ、Coffee Equipment未購入のため試し詰めは購入後に行う旨を追記。 |
 | 2.26 | 2026-09-28 | MARI様の試し積み（写真2枚と区画ごとの申告）に基づき、§Vehicle Loading Rule（暫定）と§Full Loading Order（暫定・未検証）を、確認済みの§Vehicle Loading Ruleと§Loading Map（荷室・後席、Seasonal Slotの車内位置）へ置き換えた。後席は左40・中央20を倒し右40を起こす運用、EXTENMON TABLEを床に敷きコンテナを右寄せで積む構成、満載時にテールゲートを開けると手前の荷が倒れる注意を記載。Seasonal Slot Aへ春・秋の中身（SHL-003 CLOUDBREAK"D"）を追加。暫定案にあった「当日のShelterをテールゲート側に置く」ルールは、実際の構成（Shelterは奥の3段目）と異なるため削除した。 |
+| 2.27 | 2026-09-28 | MARI様のご決定に基づき、§Peg & Guyline Moduleを新設（STR-036 エアドライ ペグケースにSHL-006 DONKEY HAMMER、鍛造ペグ40cm ×6・30cm ×15、ロープ、ガイベルトをまとめて運用。車内位置は荷室・手前・右・床。本数確認などの点検方法を記載）。§Loading Mapの「ペグケース（MD-004未登録）」を本節への参照へ更新。MD-004 Version 7.71と連動。 |
 
 ---
 

@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.70  
+**Version**: 7.71  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -4946,6 +4946,42 @@ Carryall Tote（容量35L、自立式・防水。食品の運搬用。Coffee Sys
 ¥25,630（yeti.co.jp公式サイト現行価格、2026-09-28確認）  
 
 ---  
+
+## STR-036  
+
+**Brand**  
+
+TOKYO CRAFTS  
+
+**Product**  
+
+エアドライ ペグケース  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black  
+
+### Material  
+
+Mesh / PVC Tarpaulin / Polypropylene  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Peg Case（約42×15×H13.5cm、約380g。メッシュ構造で洗って乾かせる二重底。40cmまでのペグとハンマーを収納。SHL-006・鍛造ペグ等をまとめて運用する。詳細はMD-001 Storage Blueprint §Peg & Guyline Module参照）  
+
+### Price  
+
+¥3,960（tokyocrafts.jp公式サイト価格、2026-09-28確認）  
+
+---  
 # Coffee  
 
 Coffee Domainは、抽出に関する一連のワークフロー全体を管理する。  
@@ -6701,6 +6737,42 @@ Vestibule（SHL-004 Slug Shelter V2.0専用の前室オプション）
 ¥90,200（販売店の税込価格。オーナー申告「10万弱」と整合）  
 
 ---  
+
+## SHL-006  
+
+**Brand**  
+
+asimocrafts × サンゾー工務店  
+
+**Product**  
+
+DONKEY HAMMER（ドンキーハンマー）  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Unconfirmed  
+
+### Material  
+
+Cast Metal / Hickory（サンゾー工務店 通常モデルの販売店掲載情報に基づく。コラボモデルとの差異は未確認）  
+
+### Graphic Attribute  
+
+Unconfirmed  
+
+### Industrial Attribute  
+
+Peg Hammer（約1kg。ペグ打ち・薪割り兼用。MARI様申告によりasimocraftsとのコラボモデル）  
+
+### Price  
+
+Unconfirmed（通常モデルの販売店価格は¥13,200。コラボモデルの価格は未確認）  
+
+---  
 # Parent / Child Rules（親子関係ルール）  
 
 → 規則文は OP-010 Qualification Charter Part A を参照。以下は Example（データ）のみ。
@@ -6969,6 +7041,12 @@ S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAut
 ## Version 7.70
 
 MARI様のご申告（2026-09-28）に基づき、STR-035 YETI Camino® 35キャリーオール トートバッグ（Owned）を新規登録した。食品の運搬用バッグであり、Coffee System専用水ボトル3本の収納先となる（MD-001と連動）。Color・Price・Materialは、MARI様提示のyeti.co.jp公式商品ページ（ブラック）で確認した。
+
+---
+
+## Version 7.71
+
+MARI様のご申告（2026-09-28）に基づき、STR-036 TOKYO CRAFTS エアドライ ペグケース（Owned）と、SHL-006 asimocrafts × サンゾー工務店 DONKEY HAMMER（Owned）を新規登録した。STR-036の色・素材・価格はtokyocrafts.jp公式商品ページで確認した。SHL-006はコラボモデルの公式情報が確認できなかったため、Color・Graphic Attribute・PriceをUnconfirmedとし、素材は通常モデルの販売店掲載情報を注記付きで記載した。ペグ・ロープ・ガイベルトは消耗品・小物としてMD-004へは登録せず、MD-001 §Peg & Guyline Moduleで管理する。
 
 ---
 
