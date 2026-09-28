@@ -1,7 +1,7 @@
 OP-007 Habitat Architecture
 # OP-007
 # Habitat Architecture
-## Ver.1.1
+## Ver.1.2
 
 ---
 
@@ -368,20 +368,7 @@ THE THIRD PLACE Core Documents の中で、
 
 完成した空間を定義する文書である。
 
-| Document | Responsibility |
-|-----------|----------------|
-| DS-001 THE THIRD PLACE Original | プロジェクトの原典 |
-| OP-001 Constitution | プロジェクト全体の憲章 |
-| OP-002 Design Bible | 設計思想 |
-| MD-002 Field Atlas | 舞台の選定 |
-| MD-004 Equipment Registry | Equipment の唯一のマスターデータ |
-| OP-005 Pursuit Strategy | Equipment を迎える戦略 |
-| OP-006 Foundation Compass | Foundation を構成・維持するための指針 |
-| **OP-007 Habitat Architecture** | フィールドに完成する暮らしの空間を定義する |
-| OP-003 Affinity Lexicon | 好み・美意識・親和性の語彙 |
-| OP-004 Aesthetic Grammar | 美しさを構成する法則 |
-| MD-001 Storage Blueprint | 収納設計・運用 |
-| MD-003 Galley Fare | キッチン機材の独立マスターデータ |
+文書一覧は OP-008 §8 Document Series を参照。
 
 Habitat Architecture は、
 
@@ -425,3 +412,9 @@ Habitat Architecture は、
 ## Document Renumbering Note
 
 本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TP-007からOP-007へ番号を変更した。本文中の他文書参照および「Relationship to Other Core Documents」表を新ID体系へ更新した。内容（Ver.1.1）に変更はない。旧ID: TP-007。
+
+---
+
+## Documentation Catalog Duplication Resolution Note
+
+本文書は、2026-09-28付でVer.1.1からVer.1.2へ更新した（Patch Version：重複節の削除・参照化）。OP-008 Rule DOC-06・Principle 003に基づき、§Relationship to Other Core Documentsの文書一覧表（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。表以外の固有の関係説明は変更していない。MARI様のご決定に基づく（S-08）。
