@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 3.4  
+**Version**: 3.5  
 **Status**: Active  
 **Owner**: THE THIRD PLACE
 
@@ -37,6 +37,7 @@
 | 3.2 | 2026-09-26 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
 | 3.3 | 2026-09-28 | OP-005 Pursuit Strategy Ver.1.5（Acquisition Priority／Acquisition StatusをCoffee Zoneのみ適用、Coffee以外は「買えるときに買う」）に伴い、I. Purpose「Relationship with Other Documents」内の「Vigil Patrolによって発見された内容は、購入判断のためOP-005 Pursuit Strategyへ引き継がれる」を、KN-004への報告・OP-005の基準に従う購入判断・CZ-001「Confirmed — Purchase Pending」による購入待ち管理へ差し替えた。KN-004の常設ダッシュボード改称（Must Buy Dashboard→Horizon、監視対象はCZ-002 Watch Listへ統一）と連動。MARI様のご決定に基づく。 |
 | 3.4 | 2026-09-28 | Ver.3.0で実行プロトコル（Freshness Validation〜Operational Directives）をOP-009 §XVIII Patrol Protocolへ移設済みであるにもかかわらず、I. Purpose（Mission／Origin／Relationship with Other Documents）が「本書は調達監視の実行運用を定義する」「CZ-002は調査がどう実行されるかを担う」など、実行主体がCZ-002であるかのような記述のまま残存していた点を是正。Missionを「Watch List（監視対象・調査キーワード）を管理する」旨へ、Originを「OP-009＝方法論と実行手順、CZ-002＝Watch List」へ、Relationship図をCZ-002→OP-009（監視対象を提供）の順へ描き直した。OP-008 §8／Appendix F、OP-009 §XVIの同時改訂と連動。MARI様のご決定に基づく（C-05）。 |
+| 3.5 | 2026-09-28 | MD-004の現状に合わせてWatch Listを整理（C-08、MARI様のご決定に基づく）。旧エントリ020 MT.SUMI Aura FGを削除（CZ-001 Decision Log 2026-09-26により不採用確定、MD-004に登録なし）。これに伴い旧021〜024（BABEL／FUR-032／T-box／BLISS-SP）を020〜023へ繰り上げ。エントリ023（FIREGRAPHIX BLISS-SP）のMD-004 Reference・Notesを、「購入時に登録予定・エントリ020と競合」から「MD-004上でStatus: Essential登録済み、2026-09-26付でMT.SUMI Aura FGとの比較検討の末に正式採用」へ訂正。MD-004でStatus = Essentialながら未掲載だった9件を新規追加：024 FUR-034（BlackishGear BLACK ZONE MAT）、025 FUR-035（HOTEL CAMPS リバーシブルホットカバー）、026 FUR-036（Snow Peak BD-066 オフトン ウォームアダプター）、027〜032 FIR-037〜042（FIREGRAPHIX BLISS-SPの付属品6点、Parent: FIR-036、個別エントリとして管理）。Current Watch List冒頭の説明文を「エントリ008〜023」から「エントリ008〜032」へ、Unconfirmed除外枠の例示を「FUR-034 Sleeping Mat、FUR-035 Pad Sheet」（2026-09-28にEssential確定済みのため該当しなくなった）から「STR-034 Container Bridge Frame保護ケース」へ更新。 |
 
 ---
 
@@ -153,9 +154,9 @@ Watch Listを維持する際、それ以前のプロトコルの各セクショ�
 
 エントリ001〜007は、本改訂以前から存在する。
 
-エントリ008〜023は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、BR-002 Barista Canon / BR-003 Procurement Handbookが引き続き管轄する。
+エントリ008〜032は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、BR-002 Barista Canon / BR-003 Procurement Handbookが引き続き管轄する。
 
-エントリ001〜007にも、MD-004上の該当IDが存在するものについては**MD-004 Reference**を付記している（003 WANTKEY CAMP × LOCKFIELD EQUIPMENT SC HANDLE WANTKEY ExclusiveはMD-004に該当IDなし）。MD-004上の製品が未確定（Brand / Product = Unconfirmed）の枠（FUR-034 Sleeping Mat、FUR-035 Pad Sheet）は、検索対象の製品が定まらないため本リストの対象外とし、CZ-001 Deliberation Dossierで管理する。
+エントリ001〜007にも、MD-004上の該当IDが存在するものについては**MD-004 Reference**を付記している（003 WANTKEY CAMP × LOCKFIELD EQUIPMENT SC HANDLE WANTKEY ExclusiveはMD-004に該当IDなし）。MD-004上の製品が未確定（Brand / Product = Unconfirmed）の枠（STR-034 Container Bridge Frame保護ケース）は、検索対象の製品が定まらないため本リストの対象外とし、CZ-001 Deliberation Dossierで管理する。
 
 ## 001
 
@@ -623,29 +624,6 @@ FIR-026
 
 **Brand**
 
-MT.SUMI
-
-**Target**
-
-Aura FG
-
-**MD-004 Reference**
-
-FIR-036（購入時に登録予定。薪ストーブ検討枠。エントリ024 FIREGRAPHIX BLISS-SPと同一枠を競合）
-
-**Required Keywords**
-
-- MT.SUMI Aura FG
-- Aura FG 薪ストーブ
-- マウントスミ オーラFG
-- マウントスミ 薪ストーブ
-
----
-
-## 021
-
-**Brand**
-
 OTEBO CRAFTS
 
 **Target**
@@ -669,7 +647,7 @@ LGT-017
 
 ---
 
-## 022
+## 021
 
 **Brand**
 
@@ -696,7 +674,7 @@ FUR-032
 
 ---
 
-## 023
+## 022
 
 **Brand**
 
@@ -723,7 +701,7 @@ STR-030
 
 ---
 
-## 024
+## 023
 
 **Brand**
 
@@ -735,11 +713,11 @@ BLISS-SP
 
 **MD-004 Reference**
 
-FIR-036（購入時に登録予定。薪ストーブ検討枠。エントリ020 MT.SUMI Aura FGと同一枠を競合）
+FIR-036
 
 **Notes**
 
-旧エントリ022相当（旧MD-004 Reference: 旧FIR-020）はVersion 2.7でMD-004側の旧FIR-020レコード削除に伴い削除されていたが、本検討自体はCZ-001 Deliberation Dossierで継続していたため、新設のFIR-036参照で本エントリとして復元登録した（Version 3.1）。
+薪ストーブ検討枠。2026-09-26付でMT.SUMI Aura FGとの比較検討の結果、FIREGRAPHIX BLISS-SPを正式採用（CZ-001 Deliberation Dossier「Fire — Wood Stove選定記録」参照）。MD-004上でStatus: Essentialとして登録済み（不採用となった旧MT.SUMI Aura FGのエントリ〈旧020〉は本改訂で削除）。付属品（アルミポータブルスタンド・チムニー2種・チムニートップ・チムニーガード・収納バッグ）は、エントリ027〜032でFIR-037〜042として個別管理する。
 
 **Required Keywords**
 
@@ -747,6 +725,213 @@ FIR-036（購入時に登録予定。薪ストーブ検討枠。エントリ020 
 - BLISS-SP 薪ストーブ
 - ファイヤーグラフィックス BLISS
 - BLISS SP wood stove
+
+---
+
+## 024
+
+**Brand**
+
+BlackishGear
+
+**Target**
+
+BLACK ZONE MAT
+
+**MD-004 Reference**
+
+FUR-034
+
+**Required Keywords**
+
+- BLACK ZONE MAT
+- BlackishGear BLACK ZONE MAT
+- ブラックゾーンマット
+- ブラックイッシュギア マット
+
+---
+
+## 025
+
+**Brand**
+
+HOTEL CAMPS
+
+**Target**
+
+リバーシブル ホットカバー（コットカバー）
+
+**MD-004 Reference**
+
+FUR-035
+
+**Required Keywords**
+
+- HOTEL CAMPS ホットカバー
+- リバーシブルホットカバー
+- ホテルキャンプス コットカバー
+- HOTEL CAMPS reversible hot cover
+
+---
+
+## 026
+
+**Brand**
+
+Snow Peak
+
+**Target**
+
+オフトン ウォームアダプター（BD-066）
+
+**MD-004 Reference**
+
+FUR-036
+
+**Required Keywords**
+
+- BD-066
+- Snow Peak BD-066
+- スノーピーク ウォームアダプター
+- オフトン ウォームアダプター
+
+---
+
+## 027
+
+**Brand**
+
+FIREGRAPHIX
+
+**Target**
+
+アルミポータブルスタンド（FG057）
+
+**MD-004 Reference**
+
+FIR-037（Parent: FIR-036）
+
+**Required Keywords**
+
+- FIREGRAPHIX FG057
+- アルミポータブルスタンド
+- FIREGRAPHIX アルミポータブルスタンド
+- FG057 stove stand
+
+---
+
+## 028
+
+**Brand**
+
+FIREGRAPHIX
+
+**Target**
+
+オーバーレイチムニー（FG004）
+
+**MD-004 Reference**
+
+FIR-038（Parent: FIR-036）
+
+**Required Keywords**
+
+- FIREGRAPHIX FG004
+- オーバーレイチムニー
+- FIREGRAPHIX オーバーレイチムニー
+- FG004 chimney
+
+---
+
+## 029
+
+**Brand**
+
+FIREGRAPHIX
+
+**Target**
+
+オーバーレイチムニー80（5連）（FG017）
+
+**MD-004 Reference**
+
+FIR-039（Parent: FIR-036）
+
+**Required Keywords**
+
+- FIREGRAPHIX FG017
+- オーバーレイチムニー80
+- オーバーレイチムニー80 5連
+- FIREGRAPHIX 延長煙突
+
+---
+
+## 030
+
+**Brand**
+
+FIREGRAPHIX
+
+**Target**
+
+チムニートップ フレキシブル（FG024）
+
+**MD-004 Reference**
+
+FIR-040（Parent: FIR-036）
+
+**Required Keywords**
+
+- FIREGRAPHIX FG024
+- チムニートップ フレキシブル
+- FIREGRAPHIX スパークアレスター
+- FG024 chimney top
+
+---
+
+## 031
+
+**Brand**
+
+FIREGRAPHIX
+
+**Target**
+
+スライドチムニーガード700（FG013）
+
+**MD-004 Reference**
+
+FIR-041（Parent: FIR-036）
+
+**Required Keywords**
+
+- FIREGRAPHIX FG013
+- スライドチムニーガード700
+- FIREGRAPHIX チムニーガード
+- FG013 chimney guard
+
+---
+
+## 032
+
+**Brand**
+
+FIREGRAPHIX
+
+**Target**
+
+ソフトコンテナ L（FG034）
+
+**MD-004 Reference**
+
+FIR-042（Parent: FIR-036）
+
+**Required Keywords**
+
+- FIREGRAPHIX FG034
+- ソフトコンテナL
+- FIREGRAPHIX 収納バッグ
+- FG034 soft container
 
 ---
 
