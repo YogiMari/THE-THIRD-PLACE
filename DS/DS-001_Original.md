@@ -1,4 +1,15 @@
 # DS-001 THE THIRD PLACE Original
+
+**Document ID**: DS-001  
+**Title**: THE THIRD PLACE Original  
+**Series**: DS – Design (Absolute, Immutable)  
+**Version**: 1.0  
+**Authority**: SSOT  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
+
+---
+
 ## Version 1.0
 
 > Original Source of Truth
@@ -3145,6 +3156,7 @@ THE THIRD PLACE の
 |---|---|---|
 | 1.0 | — | 初版制定。 |
 | 1.0 | 2026-09-26 | Single Source of Truth節内のOP-005表記が旧題『Acquisition Strategy』のままだった箇所をPursuit Strategyへ修正。思想内容そのものに変更はない。 |
+| 1.0 | 2026-09-28 | S-11（文書ヘッダーの統一）に伴い、Document ID／Title／Series／Authority／Status／Ownerのヘッダー項目を追加した。原典の内容・版数（Version 1.0）に変更はない。MARI様のご決定に基づく。 |
 
 ---
 
