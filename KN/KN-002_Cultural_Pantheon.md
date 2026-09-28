@@ -1,8 +1,26 @@
 KN-002 Cultural Pantheon
 # KN-002 Cultural Pantheon
-## Ver.1.3
+## Ver.1.4
 
-*(旧題: Cultural Reference。Ver.1.1にて "Cultural Pantheon" へ改題。評価基準・Tier構成・本文内容に変更は無い。Ver.1.3にて、Completion節（Equipment RegistryのMust Buyを完成条件とする旧記述）をOP-001 §3.6 Principle of Completion・OP-002 Completion Definitionへの参照文へ置換。Must BuyはOP-010で廃止済みのStatusであり、完成の定義はKN-002の管轄外（Authority: Reference、Equipment情報を保持しない）であるため。2026-09-28 MARI様承認。)*
+**Document ID**: KN-002  
+**Title**: Cultural Pantheon  
+**Series**: KN – Knowledge (Record)  
+**Version**: 1.4  
+**Authority**: Reference  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
+
+*(旧題: Cultural Reference。改題・改訂の詳細はRevision History参照。)*
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 1.1 | — | 旧題『Cultural Reference』から『Cultural Pantheon』へ改題。評価基準・Tier構成・本文内容に変更は無い。 |
+| 1.3 | 2026-09-28 | Completion節（Equipment RegistryのMust Buyを完成条件とする旧記述）をOP-001 §3.6 Principle of Completion・OP-002 Completion Definitionへの参照文へ置換。Must BuyはOP-010で廃止済みのStatusであり、完成の定義はKN-002の管轄外（Authority: Reference、Equipment情報を保持しない）であるため。2026-09-28 MARI様承認。 |
+| 1.4 | 2026-09-28 | S-11（文書ヘッダーの統一）に伴い、Document ID／Title／Series／Authority／Status／Ownerのヘッダー項目、およびRevision History章を新設した。従来、冒頭の斜体注記に記載されていた改訂内容（Ver.1.1・1.3）を本表へ転記し、注記は参照文へ短縮した。内容に変更はない。Patch Version。MARI様のご決定に基づく。 |
 
 ---
 
