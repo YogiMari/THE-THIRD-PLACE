@@ -1,23 +1,49 @@
 # BR-002 Barista Canon    
     
-# Document ID    
-    
-BR-002    
-    
-# Document Title    
-    
-Barista Canon    
-    
-# Version    
-    
-4.5    
-    
-# Status    
-    
-Active    
-    
----    
-    
+**Document ID**: BR-002  
+**Title**: Barista Canon  
+**Series**: BR – Barista (Record)  
+**Version**: 4.6  
+**Authority**: SSOT  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
+
+---
+
+# Revision History  
+  
+| Version | Date | Summary |  
+|---|---|---|  
+| 1.0 | 2026-08 | 初回正式リリース。 |  
+| 2.0 | 2026-08 | 文書構成を再編。意思決定記録と調達記録を分離。Coffee ScaleをMantaBrew Master Kit（Module A + Module B）へ更新。Confirmed Equipmentを現行の正式決定と同期。 |  
+| 2.1 | 2026-08 | Weber Workshops Blind Shaker OnyxをConfirmed Equipmentとして追加。Blind ShakerのWorkflow、Selection Criteria、物理適合要件、および不採用となった候補を追加。 |  
+| 2.2 | 2026-08 | Espresso / Latte Cup Configurationを追加。KRUVE PROPELとICOSA Brewhouse AERESSOを、2種類の専用エスプレッソセンサリーグラスとして正式採用。HILLS FIELD Glass Case Singleを共用の運搬ケースとして正式採用。AION Seine Super Absorbent Coaster 801-BLを保護用セパレーターとして正式採用。DAMNGOOD × CATAPULT FACTORY FIKA12 ×2を、専用ラテカップ構成として正式採用。 |  
+| 2.3 | 2026-08 | Coffee System Water Bottle Configurationを追加。Snow Peak オーロラボトル1L、YETI Yonder 1L、Snow Peak 酒筒 Titanium 540mLを、Coffee System専用の水携行構成として正式採用。Water Bottle / Water CarrierをDeferred項目から除外。 |  
+| 2.4 | 2026-08 | Weber Workshops Bean Cellar BulkおよびAION Seine Super Absorbent Coaster 801-BLの表記を、PX-005および公式製品名と同期。Water Managementを、Coffee Systemの正式構成の一部として確定。 |  
+| 2.5 | 2026-08 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mmをConfirmed Tool Stationとして追加。Normcore Planetary WDT Toolを54mmに確定。Distributor・Tamper・WDTをThe BlocからKNODOSへ移設。The Blocの役割をExtraction Coreとして再定義し、2つのTool cutoutにNormcore RDT Spray BottleとWeber Workshops Blind Shaker Onyxを割り当て。Confirmed Coffee Preparation Workflowをこれに合わせて更新。 |  
+| 2.6 | 2026-08 | 物理的なWorkflow調査を経て、Coffee Workflowを更新。Blind Shaker Onyxを、主たる粉移送・均質化容器として維持。LAGOM Mini Ground Transfer Cupは、直接受けが物理的に成立しない場合のSecondary Routeとしてのみ維持。2人分のEspresso運用を、2回の連続抽出サイクルとして明確に定義。Latte WorkflowについてWPM Handleless Pitcher Standard 450cc / #07 Sharp SpoutおよびWPM Pitcher Sleeveを正式採用し、1杯ずつスチームする2サイクル運用とした。Latte Workflowをこれに合わせて更新。 |  
+| 2.7 | 2026-08 | 現行の機材決定に基づき、Coffee Systemのbaselineを統合整理。 |  
+| 2.8 | 2026-08 | Varia EVO Hybrid Gen 2およびWeber Workshops MOONRAKER Ultra Editionについての過去の検討経緯を記録として追加。Variaは、過去に検討されたもののTHE THIRD PLACE Coffee Systemの機材性格・デザイン方向性との整合が不十分として不採用だった旨を記録。MOONRAKER Ultra Editionは高く評価されたものの、58mmバスケット向け設計であり現行の9Barista Workflowは53mmであるため、現時点での採用は見送られた旨を記録。 |  
+| 2.9 | 2026-08 | 9Barista Mk.2 Proに付属する標準アクセサリーを、独立EquipmentではなくIncluded Components / Accessoriesとして明確化。9Barista Magnetic Dosing Funnelおよび9Barista Stainless Steel Basket Cap Proは、独立したTP-004 / PX-005管理対象から明示的に除外。Alternative Basket CapのStatusを、Not Separately Acquiredとして明確化。 |  
+| 3.0 | 2026-08 | Puck Screenの配置を、Confirmed Puck Preparation Workflowへ明示的に追加。Water Transferは、既存の専用Water Bottleからの直接注入とし、追加の移送機材を必要としないことを確定。ALM KOPi Z1 Mini Steamerは、既存のキッチン用シングルバーナーを流用することを確定し、Coffee System専用バーナーは不要とした。 |  
+| 3.1 | 2026-09 | Coffee Zone Philosophy（Exception Clause）をDesign Principlesへ追加。Non-Rational Luxury PrincipleとCross-Brand Curation Principleを、THE THIRD PLACE全体のBaselineとは区別される、Coffee Zone固有の例外的Philosophyとして確立。これらはCoffee Zoneにのみ適用し、他のDomainには適用しない。 |  
+| 3.2 | 2026-09 | プロジェクトオーナーの直接指示に基づき、Relationshipセクションを明確化: Confirmed EquipmentのTP-004 Equipment Registryへの反映は、Confirmed時点ではなく、実際に購入（Owned Status）された時点で初めて行う。Confirmedだが未購入のEquipmentは、PX-004のみで管理を継続する。これは、Coffee Domain（COF-series）の登録タイミングルールを正式化した、関連するTP-004の更新（Version 7.10）に対応する。 |  
+| 3.3 | 2026-09 | WDT Toolセクション: Decision Contextを追加。当初の第一候補であったWeber Workshops MOONRAKER Ultra Editionが物理的に不適合（58mm専用のベースリング形状であり、9Barista Mk.2 Proの53mmバスケットと適合せず、公式アダプターも存在しない）と判明した後、Normcore Planetary WDT Tool 54mmが現実的な代替として選定された経緯を正式に記録。これは、それまでプロジェクトチャット履歴にのみ記録されていた理由を正式化するものであり、Coffee Zone Philosophy Reference CaseおよびVersion History 2.8と相互参照する。 |  
+| 3.4 | 2026-09 | Econtto Portawaveを、新規のWDT Tool候補としてRejected Equipmentへ追加。不採用理由: 54mm版は汎用54mm適合ではなく、Dalla Corte／Breville専用のポルタフィルター形状であり、9Barista 53mmとの適合が確認できないこと。当該54mm版（Dalla Corte／Breville）は現在在庫切れであること。公式マーケティング表記に仕様上の矛盾（ニード30本付属 vs. 14本駆動パターン）が存在すること。第三者レビューは58mm版のみを対象とし、53mm／9Baristaでの実使用実績が確認できなかったこと。Normcore Planetary WDT Tool 54mmが持つ、確認済みのKNODOS Tool Station適合性と53mm系での実績を、上回る・並ぶことはできなかった。 |  
+| 3.5 | 2026-09 | Category Tier Exceptionを、Coffee Zone Philosophyの項目3としてDesign Principlesへ追加。Milk Pitcher / Pitcher Sleeve（WPM）およびTool Station（KNODOS）が、Coffee Zoneの他部分に適用しているTier Aブランド水準に届いていないことを記録し、両者を無自覚な選定ではなく、機能・素材を根拠とした明示的な例外として位置付ける。両カテゴリともTier A相当のブランドが市場に存在しないことを確認した市場調査（2026-09）に基づく。 |  
+| 3.6 | 2026-09 | Coffee Beansを本文書の管理対象から除外。豆は消耗品としてPX-005 Acquisition Handbookの「Coffee Beans Procurement」セクションのみで管理する方針を確立し、Pending項目から削除（PX-005 Ver.2.0と対応）。 |  
+| 3.7 | 2026-09-18 | Espresso Machineセクションへ「Handle Material Decision」を新設。9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）を、9Barista公式スペアパーツのWalnut仕様へ変更することを正式決定。Design Bibleの核となる素材言語（Walnut・Brass・Black Steel）との整合を採用理由とした。MARI様の直接指示（2026-09-18）に基づく。 |  
+| 3.8 | 2026-09-19 | 誤字・脱字の訂正のみ（内容の変更なし）。「賅沢」→「贅沢」、「真鑑製」→「真鍮製」、「仈説」→「仮説」、「针」→「針」、「1泲2日」→「1泊2日」、「昇食後」→「昼食後」、「同ゆ」→「同じ」、「当詬」→「当該」、「含ゅ」→「含む」、「およど／およぱ」→「および」、「Shakerど」→「Shakerと」、「Workflowい」→「Workflowは」、「Bek Container」→「Beck Container」、「非気低減」→「静電気低減」、全角スペース→「、」（Version History内の該当行の誤字も同様に訂正。旧IDの表記は歴史的記録として保持）。 |  
+| 4.0 | 2026-09-24 | Volatility Restructureにより、Design PrinciplesとCoffee Zone Philosophy (Exception Clause)をOP-002 Design Bible §05. Coffeeへ逐語移設し、本節を参照1行へ置換。責任範囲の変更のためMajor Version。 |  
+| 4.1 | 2026-09-24 | MARI様のご指摘に基づき、OP-008 §11 Naming Conventionへ新設された文書名重複禁止ルールに伴い、タイトルをBarista CodexからBarista Canonへ変更（CZ-001 Deliberation Codexとの語重複を解消）。BR-003側もProcurement Handbookへ改名されたため、本書内の参照表記（SSOT・Purpose・Relationship・Included Components・Alternative Basket Cap各節）を同期。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持。ファイル名もBR-002_Barista_Canon.mdへ変更。内容（意思決定事項そのもの）に変更はない。 |
+| 4.2 | 2026-09-26 | 冒頭の重複H1見出しを是正。ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |  
+| 4.3 | 2026-09-28 | Espresso Machineセクションへ「Heat Source Decision」を新設。9Barista Mk.2 Pro（直火式）とALM KOPi Z1 Mini Steamerを並行運用（エスプレッソ抽出とミルクスチームの同時進行）するため、2台のバーナーを同時使用する構成を正式決定。9Barista側はSnow Peak ギガパワーストーブ レクタ（GS-150）を新規採用し、Z1側は既に所有しているSnow Peak ヤエンストーブ レギ（GS-370、MD-003 KIT-011）を流用する。従来「Coffee System専用のシングルバーナーは新たに採用しない」としていたMilk Steamer / Latte Workflow内の記述を、上記決定と整合する内容へ修正（9Barista用バーナーは新規採用のため）。MARI様の直接指示（2026-09-28）に基づく。 |  
+| 4.4 | 2026-09-28 | Heat Source Decision節に、Category / Brand / Model / Statusの正式なConfirmed Equipmentテーブル（Heat Source \| Snow Peak \| ギガパワーストーブ レクタ（GS-150） \| Confirmed）を追加。Ver.4.3で地の文のみに留まっていたGS-150採用決定を、他のConfirmed Equipmentと同じ正式テーブル形式へ落とし込み、BR-003 Product 30（Purchase Required）との同期漏れ（scripts/third_place_sync_validator.py検出）を解消した。意思決定事項そのもの（Ver.4.3の内容）に変更はない。 |  
+| 4.5 | 2026-09-28 | Relationship節の図に「（Confirmed後、実際に購入・Owned Statusとなった時点で登録）」という注記をMD-004の行へ追加し、流れがBR-002 → MD-004 → BR-003ではなくBR-002 → BR-003 → MD-004（購入後）であることを図で明示。BR-003・BR-001も同一趣旨で同期。意思決定事項そのものに変更はない。 |  
+| 4.6 | 2026-09-28 | S-11（文書ヘッダーの統一）に伴い、ヘッダーを##見出し形式からBold Key:Value形式へ統一し、Series／Authority／Ownerの各項目を追加した。Revision Historyの位置を文書末尾から冒頭へ移動し、見出し名もVersion HistoryからRevision Historyへ統一した。意思決定事項そのものに変更はない。Patch Version。MARI様のご決定に基づく。 |  
+
+---
+
 ## Purpose    
     
 BR-002 Barista Canonは、THE THIRD PLACEにおけるCoffee Systemの意思決定を管理する正式仕様書である。    
@@ -1783,39 +1809,6 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
   
 ---  
   
-# Version History  
-  
-| Version | Date | Summary |  
-|---|---|---|  
-| 1.0 | 2026-08 | 初回正式リリース。 |  
-| 2.0 | 2026-08 | 文書構成を再編。意思決定記録と調達記録を分離。Coffee ScaleをMantaBrew Master Kit（Module A + Module B）へ更新。Confirmed Equipmentを現行の正式決定と同期。 |  
-| 2.1 | 2026-08 | Weber Workshops Blind Shaker OnyxをConfirmed Equipmentとして追加。Blind ShakerのWorkflow、Selection Criteria、物理適合要件、および不採用となった候補を追加。 |  
-| 2.2 | 2026-08 | Espresso / Latte Cup Configurationを追加。KRUVE PROPELとICOSA Brewhouse AERESSOを、2種類の専用エスプレッソセンサリーグラスとして正式採用。HILLS FIELD Glass Case Singleを共用の運搬ケースとして正式採用。AION Seine Super Absorbent Coaster 801-BLを保護用セパレーターとして正式採用。DAMNGOOD × CATAPULT FACTORY FIKA12 ×2を、専用ラテカップ構成として正式採用。 |  
-| 2.3 | 2026-08 | Coffee System Water Bottle Configurationを追加。Snow Peak オーロラボトル1L、YETI Yonder 1L、Snow Peak 酒筒 Titanium 540mLを、Coffee System専用の水携行構成として正式採用。Water Bottle / Water CarrierをDeferred項目から除外。 |  
-| 2.4 | 2026-08 | Weber Workshops Bean Cellar BulkおよびAION Seine Super Absorbent Coaster 801-BLの表記を、PX-005および公式製品名と同期。Water Managementを、Coffee Systemの正式構成の一部として確定。 |  
-| 2.5 | 2026-08 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mmをConfirmed Tool Stationとして追加。Normcore Planetary WDT Toolを54mmに確定。Distributor・Tamper・WDTをThe BlocからKNODOSへ移設。The Blocの役割をExtraction Coreとして再定義し、2つのTool cutoutにNormcore RDT Spray BottleとWeber Workshops Blind Shaker Onyxを割り当て。Confirmed Coffee Preparation Workflowをこれに合わせて更新。 |  
-| 2.6 | 2026-08 | 物理的なWorkflow調査を経て、Coffee Workflowを更新。Blind Shaker Onyxを、主たる粉移送・均質化容器として維持。LAGOM Mini Ground Transfer Cupは、直接受けが物理的に成立しない場合のSecondary Routeとしてのみ維持。2人分のEspresso運用を、2回の連続抽出サイクルとして明確に定義。Latte WorkflowについてWPM Handleless Pitcher Standard 450cc / #07 Sharp SpoutおよびWPM Pitcher Sleeveを正式採用し、1杯ずつスチームする2サイクル運用とした。Latte Workflowをこれに合わせて更新。 |  
-| 2.7 | 2026-08 | 現行の機材決定に基づき、Coffee Systemのbaselineを統合整理。 |  
-| 2.8 | 2026-08 | Varia EVO Hybrid Gen 2およびWeber Workshops MOONRAKER Ultra Editionについての過去の検討経緯を記録として追加。Variaは、過去に検討されたもののTHE THIRD PLACE Coffee Systemの機材性格・デザイン方向性との整合が不十分として不採用だった旨を記録。MOONRAKER Ultra Editionは高く評価されたものの、58mmバスケット向け設計であり現行の9Barista Workflowは53mmであるため、現時点での採用は見送られた旨を記録。 |  
-| 2.9 | 2026-08 | 9Barista Mk.2 Proに付属する標準アクセサリーを、独立EquipmentではなくIncluded Components / Accessoriesとして明確化。9Barista Magnetic Dosing Funnelおよび9Barista Stainless Steel Basket Cap Proは、独立したTP-004 / PX-005管理対象から明示的に除外。Alternative Basket CapのStatusを、Not Separately Acquiredとして明確化。 |  
-| 3.0 | 2026-08 | Puck Screenの配置を、Confirmed Puck Preparation Workflowへ明示的に追加。Water Transferは、既存の専用Water Bottleからの直接注入とし、追加の移送機材を必要としないことを確定。ALM KOPi Z1 Mini Steamerは、既存のキッチン用シングルバーナーを流用することを確定し、Coffee System専用バーナーは不要とした。 |  
-| 3.1 | 2026-09 | Coffee Zone Philosophy（Exception Clause）をDesign Principlesへ追加。Non-Rational Luxury PrincipleとCross-Brand Curation Principleを、THE THIRD PLACE全体のBaselineとは区別される、Coffee Zone固有の例外的Philosophyとして確立。これらはCoffee Zoneにのみ適用し、他のDomainには適用しない。 |  
-| 3.2 | 2026-09 | プロジェクトオーナーの直接指示に基づき、Relationshipセクションを明確化: Confirmed EquipmentのTP-004 Equipment Registryへの反映は、Confirmed時点ではなく、実際に購入（Owned Status）された時点で初めて行う。Confirmedだが未購入のEquipmentは、PX-004のみで管理を継続する。これは、Coffee Domain（COF-series）の登録タイミングルールを正式化した、関連するTP-004の更新（Version 7.10）に対応する。 |  
-| 3.3 | 2026-09 | WDT Toolセクション: Decision Contextを追加。当初の第一候補であったWeber Workshops MOONRAKER Ultra Editionが物理的に不適合（58mm専用のベースリング形状であり、9Barista Mk.2 Proの53mmバスケットと適合せず、公式アダプターも存在しない）と判明した後、Normcore Planetary WDT Tool 54mmが現実的な代替として選定された経緯を正式に記録。これは、それまでプロジェクトチャット履歴にのみ記録されていた理由を正式化するものであり、Coffee Zone Philosophy Reference CaseおよびVersion History 2.8と相互参照する。 |  
-| 3.4 | 2026-09 | Econtto Portawaveを、新規のWDT Tool候補としてRejected Equipmentへ追加。不採用理由: 54mm版は汎用54mm適合ではなく、Dalla Corte／Breville専用のポルタフィルター形状であり、9Barista 53mmとの適合が確認できないこと。当該54mm版（Dalla Corte／Breville）は現在在庫切れであること。公式マーケティング表記に仕様上の矛盾（ニード30本付属 vs. 14本駆動パターン）が存在すること。第三者レビューは58mm版のみを対象とし、53mm／9Baristaでの実使用実績が確認できなかったこと。Normcore Planetary WDT Tool 54mmが持つ、確認済みのKNODOS Tool Station適合性と53mm系での実績を、上回る・並ぶことはできなかった。 |  
-| 3.5 | 2026-09 | Category Tier Exceptionを、Coffee Zone Philosophyの項目3としてDesign Principlesへ追加。Milk Pitcher / Pitcher Sleeve（WPM）およびTool Station（KNODOS）が、Coffee Zoneの他部分に適用しているTier Aブランド水準に届いていないことを記録し、両者を無自覚な選定ではなく、機能・素材を根拠とした明示的な例外として位置付ける。両カテゴリともTier A相当のブランドが市場に存在しないことを確認した市場調査（2026-09）に基づく。 |  
-| 3.6 | 2026-09 | Coffee Beansを本文書の管理対象から除外。豆は消耗品としてPX-005 Acquisition Handbookの「Coffee Beans Procurement」セクションのみで管理する方針を確立し、Pending項目から削除（PX-005 Ver.2.0と対応）。 |  
-| 3.7 | 2026-09-18 | Espresso Machineセクションへ「Handle Material Decision」を新設。9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）を、9Barista公式スペアパーツのWalnut仕様へ変更することを正式決定。Design Bibleの核となる素材言語（Walnut・Brass・Black Steel）との整合を採用理由とした。MARI様の直接指示（2026-09-18）に基づく。 |  
-| 3.8 | 2026-09-19 | 誤字・脱字の訂正のみ（内容の変更なし）。「賅沢」→「贅沢」、「真鑑製」→「真鍮製」、「仈説」→「仮説」、「针」→「針」、「1泲2日」→「1泊2日」、「昇食後」→「昼食後」、「同ゆ」→「同じ」、「当詬」→「当該」、「含ゅ」→「含む」、「およど／およぱ」→「および」、「Shakerど」→「Shakerと」、「Workflowい」→「Workflowは」、「Bek Container」→「Beck Container」、「非気低減」→「静電気低減」、全角スペース→「、」（Version History内の該当行の誤字も同様に訂正。旧IDの表記は歴史的記録として保持）。 |  
-| 4.0 | 2026-09-24 | Volatility Restructureにより、Design PrinciplesとCoffee Zone Philosophy (Exception Clause)をOP-002 Design Bible §05. Coffeeへ逐語移設し、本節を参照1行へ置換。責任範囲の変更のためMajor Version。 |  
-| 4.1 | 2026-09-24 | MARI様のご指摘に基づき、OP-008 §11 Naming Conventionへ新設された文書名重複禁止ルールに伴い、タイトルをBarista CodexからBarista Canonへ変更（CZ-001 Deliberation Codexとの語重複を解消）。BR-003側もProcurement Handbookへ改名されたため、本書内の参照表記（SSOT・Purpose・Relationship・Included Components・Alternative Basket Cap各節）を同期。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持。ファイル名もBR-002_Barista_Canon.mdへ変更。内容（意思決定事項そのもの）に変更はない。 |
-| 4.2 | 2026-09-26 | 冒頭の重複H1見出しを是正。ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |  
-| 4.3 | 2026-09-28 | Espresso Machineセクションへ「Heat Source Decision」を新設。9Barista Mk.2 Pro（直火式）とALM KOPi Z1 Mini Steamerを並行運用（エスプレッソ抽出とミルクスチームの同時進行）するため、2台のバーナーを同時使用する構成を正式決定。9Barista側はSnow Peak ギガパワーストーブ レクタ（GS-150）を新規採用し、Z1側は既に所有しているSnow Peak ヤエンストーブ レギ（GS-370、MD-003 KIT-011）を流用する。従来「Coffee System専用のシングルバーナーは新たに採用しない」としていたMilk Steamer / Latte Workflow内の記述を、上記決定と整合する内容へ修正（9Barista用バーナーは新規採用のため）。MARI様の直接指示（2026-09-28）に基づく。 |  
-| 4.4 | 2026-09-28 | Heat Source Decision節に、Category / Brand / Model / Statusの正式なConfirmed Equipmentテーブル（Heat Source \| Snow Peak \| ギガパワーストーブ レクタ（GS-150） \| Confirmed）を追加。Ver.4.3で地の文のみに留まっていたGS-150採用決定を、他のConfirmed Equipmentと同じ正式テーブル形式へ落とし込み、BR-003 Product 30（Purchase Required）との同期漏れ（scripts/third_place_sync_validator.py検出）を解消した。意思決定事項そのもの（Ver.4.3の内容）に変更はない。 |  
-| 4.5 | 2026-09-28 | Relationship節の図に「（Confirmed後、実際に購入・Owned Statusとなった時点で登録）」という注記をMD-004の行へ追加し、流れがBR-002 → MD-004 → BR-003ではなくBR-002 → BR-003 → MD-004（購入後）であることを図で明示。BR-003・BR-001も同一趣旨で同期。意思決定事項そのものに変更はない。 |  
-  
----  
-
 ## Document Renumbering Note
 
 本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、PX-004からBR-002へ番号を変更した。本文中の他文書参照（TP-004・PX-005等）を新ID体系へ更新した。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Ver.3.7）に変更はない。旧ID: PX-004。2026-09-24付でタイトルをBarista CodexからBarista Canonへ変更した（Ver.4.1参照）。
