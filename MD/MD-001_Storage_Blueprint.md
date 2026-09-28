@@ -1,5 +1,5 @@
 # MD-001 Storage Blueprint
-## Ver.2.13
+## Ver.2.14
 
 Status : Active
 
@@ -246,15 +246,72 @@ Beck①・Beck②の蓋へ設置し、
 
 対象: Coffee Equipment 13点（食器類・Coffee専用水ボトルは対象外）
 
-- 奥左：Z1 Mini Steamer（横置き）
-- 奥右：9Barista Mk.2 Pro（直立）
-- 手前左：Bean Cellar → KNODOS → WeighMaster（積層。余白にPuck Stand＋Screen、RDT）
-- 手前中：The Bloc → LAGOM（横渡し）
-- 手前右：Pitcher＋Sleeve、Blind Shaker
+### 寸法一覧（W×D×H mm）
+
+| # | Item | Dimension | 備考 |
+|---|---|---|---|
+| 1 | Bean Cellar Bulk | 252×190×110 | |
+| 2 | RDT Spray Bottle | 25×25×115 | |
+| 3 | LAGOM mini 2 | 65×240×95 | 横置き、プラグ込みでD260 |
+| 4 | WeighMaster Ultra | 128×100×23 | |
+| 5 | Blind Shaker Onyx | 80×80×76 | |
+| 6 | KNODOS Tamping Mat with Tool Organiser | 178×178×76 | 金具込みで約180×180 |
+| 7 | Puck Screen | 53×53×2 | |
+| 8 | The Bloc | 140×190×70 | |
+| 9 | 9Barista Mk.2 Pro | 160×190×180 | 実寸未確定。安全側（大きい方）の数値を採用（下記参照） |
+| 10 | Puck Screen Stand | 60×60×50 | |
+| 11 | Handleless Pitcher 450cc | 85×110×110 | |
+| 12 | Pitcher Sleeve | 85×85×60 | #11へ装着 |
+| 13 | Z1 Mini Steamer | 140×140×370 | 非分解。突起込みで断面約160 |
+
+Wood Board：125×360×23mm／1セット＝2枚
+
+寸法根拠：GPT・Gemini双方によるWeb二重チェック結果を確定扱いとする。
+
+### 内寸の採用根拠
+
+GPT・Geminiのweb調査ではBeck②内寸540×340×250mmという結果が得られたが、MD-001の正本内寸は565×360×265mmである。本Layout検証ではMD-001の565×360×265mmを基準とし、540×340×250mmは参考値（最悪ケース）として扱う。
+
+### 9Barista Mk.2 Proの寸法採用根拠
+
+Web調査結果が「80×80×180（突起込みで平面90〜100）」と「160×190×180」の2説に割れており、公式ページに寸法記載がないため確定していない。本Layoutでは安全側をとり、160×190×180を採用する。
+
+### 不採用とした配置案
+
+- Mk.2 Proの上下分解収納
+- Z1 Mini Steamerの上へ他アイテムを積載
+- Blind ShakerをThe Bloc内へ収納
+
+### 配置
+
+- 奥左：Z1 Mini Steamer（横置き、370×160）
+- 奥右：9Barista Mk.2 Pro（直立、160×190×180）
+- 手前左：Bean Cellar → KNODOS → WeighMaster（積層。積層高 約209mm。余白にPuck Screen Stand＋Puck Screen、RDT Spray Bottle）
+- 手前中：The Bloc → LAGOM（横渡し。両端各35mmはみ出し）
+- 手前右：Pitcher＋Sleeve、Blind Shaker（奥行方向に並べて165/170mm）
 
 最大高: 約209mm
 
-Wood Board 3セットは最上層へ平置きする（フェルトケースは外す）。
+Wood Board 3セット（6枚）は最上層へ平置きする（フェルトケースは外す。4枚＋2枚の2層で厚み約46mm）。
+
+### 判定結果
+
+- 内寸565×360×265mmを基準とすれば、13点は寸法上成立する（各所の余裕は5〜10mm、緩衝材はほぼ入らない）。
+- 内寸540×340×250mm（参考値・最悪ケース）では不成立（Bean Cellar 190mm＋Z1 160mmで奥行合計350mmとなり、奥行340mmを超える）。
+- Wood Boardは3セットが現実的な上限。4セット目は理論上ぎりぎりだが非推奨。5〜7セットは不可。
+- 本判定は3D検証ではなく箱寸法による計算であり、最終確定は試し詰めによる。
+
+### 未決事項
+
+- Layer 2「Wood Board ×4 Sets」とLayer 3「Vapalux M320」の格納先が未解決（13点＋Wood Board 3セットで底面を使い切るため、両者の置き場所が現状ない）。
+- Coffee Sequence（使用順）は暫定であり、実際の手順に合わせた見直しが必要。
+
+### 必要な実測（試し詰め前に要確認）
+
+1. Beck②の内寸（底面と蓋の縁、W/D/H）
+2. 9Barista Mk.2 Proの実寸（ハンドル込み）
+3. Z1 Mini Steamerの断面（ノズルとダイヤルの位置も含む）
+4. フェルトケース1セットの実寸
 
 ---
 
@@ -878,7 +935,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.13
+Ver.2.14
 
 ---
 
@@ -945,7 +1002,7 @@ Wood Board ×7 Sets のうち4セット（STR-015・STR-018、各2組）は未�
 | Item | Result |
 |------|--------|
 | Beck② Storage | ✅ Verified |
-| Coffee Module | 🔶 Provisional（試し詰め前） |
+| Coffee Module | 🔶 Provisional（箱寸法計算では基準内寸565×360×265mmにて成立。試し詰め未了） |
 | Living Table Deployment | ✅ Verified |
 | Side Table Deployment | ✅ Verified |
 | ShellCon25② Storage | ✅ Verified |
@@ -1022,6 +1079,7 @@ Permanent Storage
 | 2.11 | 2026-09-28 | Layer 1 Coffee ModuleとCoffee Sequenceを、旧リスト（7品目）から現行の13点（暫定・試し詰め前）へ置換。Validation SummaryのCoffee ModuleをVerifiedからProvisionalへ修正。Layout節の「旧リスト未同期」注記を削除。Layer 2（Wood Board ×4 Sets）とLayer 3（Vapalux M320）は、本案との矛盾を未解決のまま残している |
 | 2.12 | 2026-09-28 | MARI様のご決定に基づき、Consumables & Sundries Module（STR-032 WHATNOT One Touch Bucket HD、通年の消耗品と小物の常備用）を新設。中身（消耗品：火まわり・洗い衛生・メンテナンス・香り・電池／小物：ハンガー・カラビナ等）、分類（補充ライン方式・定数チェック方式）、確認方法を記載。役割の要約はMD-004 STR-032のIndustrial Attributeへ記載し、詳細は本書のみで管理する（重複管理を回避）。Storage Rulesの「モジュールの混在は認めない」原則との整合は、ShellCon25②（Light & Aroma Module）の複数Domain統合運用の前例に基づき、本バケットを単一役割の1 Moduleとして位置付けることで確保した。 |
 | 2.13 | 2026-09-28 | MARI様のご決定に基づき（GitHub Issue #46）、Seasonal Slot Module（Seasonal Slot A：大型ギア用／B：バケット用）、Summer Kit（夏用ワンタッチバケットの中身・補充ライン）、Winter Kit（Equipment：FIR-036・FIR-029・FIR-032＋FIR-033／Bedding：FUR-032・FUR-035＋湯たんぽ・電気毛布／Consumables：CB缶／Clothing：ブーツ／Out of Scope：灯油・薪）、Weather Overlay（Rain、管理対象外）を新設。Consumables & Sundries Module §火まわりへCB缶（冬のみ）を追加。MD-004に未登録の物品（ポータブルエアコン・夏用ワンタッチバケット・湯たんぽ・電気毛布）は、Consumables & Sundries Moduleの前例に基づきMD-004へ新規登録せず、本書内でのみKit構成物として記載した。定義（Base／Season Kit／Weather Overlay、Seasonal Slotの位置づけ）はOP-006 Foundation Compassが管理し、本節では中身（データ）のみを記載する（重複管理を回避）。冬用暖房コンテナ・冬の小物の暫定位置は未決定のため本書には記載しない。 |
+| 2.14 | 2026-09-28 | 【引継ぎ】Beck②コーヒーギア13点収納設計を受け、Coffee Module Layout（暫定）節を拡充。13点＋Wood Boardの寸法一覧（GPT・Gemini web二重チェック確定値）、Beck②内寸の採用根拠（MD-001正本565×360×265mmを基準、540×340×250mmは参考値扱い）、9Barista Mk.2 Proの寸法採用根拠（実寸未確定のため安全側160×190×180を採用）、不採用配置案、配置詳細、判定結果（基準内寸では13点成立、参考値内寸では不成立、Wood Boardは3セットが上限・4セット目は非推奨・5〜7セットは不可）、未決事項（Layer 2 Wood Board×4 SetsとLayer 3 Vapalux M320の格納先が未解決のまま）、試し詰め前に必要な実測項目を追記した。Coffee ModuleのStatusは引き続きProvisional（試し詰め未了のため）。Validation Summaryの該当行へ判定根拠を追記。 |
 
 ---
 
