@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 3.2  
+**Version**: 3.3  
 **Status**: Active  
 **Owner**: THE THIRD PLACE
 
@@ -35,6 +35,7 @@
 | 3.0 | 2026-09-24 | Volatility Restructureにより、実行プロトコル各章（II〜VII、Watch List Structure、Watch List Maintenance Rules、Operational Directives）をOP-009 Search Doctrine §XVIII. Patrol Protocolへ逐語移設した。責任範囲の変更のためMajor Version。併せて、プロジェクトオーナーの確認により、エントリ003のBrandを「WANTKEY CAMP × LOCKFIELD EQUIPMENT」、Targetを「SC HANDLE WANTKEY Exclusive」へ確定（旧KN-004 Watch Listの表記を公式表記として採用）し、Required Keywordsに正式製品名を追加。 |
 | 3.1 | 2026-09-25 | MD-004 Version 7.57（FIR-036の呼称訂正：Fire Pit→Wood Stove）と連動。エントリ020（MT.SUMI Aura FG）のRequired Keywordsから誤った「fire pit」表記を削除し「薪ストーブ」関連キーワードへ修正。MD-004 ReferenceにFIR-036が薪ストーブ検討枠である旨を明記。Version 2.7でMD-004側の旧FIR-020レコード削除に伴い削除されていたFIREGRAPHIX BLISS-SPを、新設のFIR-036参照でエントリ024として復元登録。あわせて、Current Watch List冒頭の説明文にある旧称参照を「CZ-001 Deliberation Codex」から「CZ-001 Deliberation Dossier」へ更新し、エントリ022（Snow Peak システムオフトン）をMD-004/CZ-001側で確定済みのBD-070／ワイドマットセット表記へ同期した（従来はBD-060／スリムマットセット表記のまま更新漏れとなっていた）。 |
 | 3.2 | 2026-09-26 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
+| 3.3 | 2026-09-28 | OP-005 Pursuit Strategy Ver.1.5（Acquisition Priority／Acquisition StatusをCoffee Zoneのみ適用、Coffee以外は「買えるときに買う」）に伴い、I. Purpose「Relationship with Other Documents」内の「Vigil Patrolによって発見された内容は、購入判断のためOP-005 Pursuit Strategyへ引き継がれる」を、KN-004への報告・OP-005の基準に従う購入判断・CZ-001「Confirmed — Purchase Pending」による購入待ち管理へ差し替えた。KN-004の常設ダッシュボード改称（Must Buy Dashboard→Horizon、監視対象はCZ-002 Watch Listへ統一）と連動。MARI様のご決定に基づく。 |
 
 ---
 
@@ -88,7 +89,7 @@ KN-001 Heritage Chronicle
 （長期ナレッジアーカイブ）
 ```
 
-Vigil Patrolによって発見された内容は、購入判断のためOP-005 Pursuit Strategyへ引き継がれる。
+Vigil Patrolによって発見された内容は、KN-004 Atelier Discoveryへ報告される。購入判断はOP-005 Pursuit Strategyの基準（Decision Priority・Purchase Rules）に従い、購入待ちの管理はCZ-001 Deliberation Dossier「Confirmed — Purchase Pending」が担う。
 
 ---
 

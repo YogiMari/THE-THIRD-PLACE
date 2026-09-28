@@ -70,15 +70,17 @@ Atelier Discovery が扱う対象
 
 ---
 
-# Must Buy Dashboard
+# Horizon
 
 ## Purpose
 
-Must Buy Dashboard は、
+Horizon は、
 
-THE THIRD PLACE における最優先購入対象を継続監視し、
+CZ-002 Vigil Protocol の Watch List に登録された購入対象を継続監視し、
 
 購入機会を逃さないための常設ダッシュボードである。
+
+対象はCoffee以外のゾーンとする（Coffeeの調達はBR-003 Procurement Handbookが管轄）。
 
 Atelier Discovery の冒頭に掲載し、
 
@@ -242,11 +244,11 @@ Projectの購入判断を支援する。
 
 ---
 
-## Must Buy Watch
+## Vigil Watch
 
-OP-005 Pursuit Strategy に登録された
+CZ-002 Vigil Protocol の Watch List に登録された
 
-Must Buy Item を継続監視する。
+Equipment を継続監視する。
 
 対象
 
@@ -422,6 +424,12 @@ Projectへ届けるために存在する。
 ## Volatility Restructure Note
 
 本文書は、2026-09-24付のVolatility Restructureにより、§Watch Listの表を「Watch List は CZ-002 Vigil Protocol を唯一の正本とする」という参照文へ置換した（表データはCZ-002と重複していたため除去。CZ-002側に同一データが存在する）。
+
+---
+
+## Scope Alignment Note
+
+本文書は、2026-09-28付で、OP-005 Pursuit Strategy Ver.1.5（Acquisition Priority／Acquisition StatusはCoffee Zoneのみ適用、Coffee以外は「買えるときに買う」）に伴い、冒頭の常設ダッシュボード「Must Buy Dashboard」を「Horizon」へ改称し、監視対象の出どころをCZ-002 Vigil Protocol Watch Listへ統一した（MARI様のご決定）。対象はCoffee以外のゾーンとする。§Must Buy Watchは§Vigil Watchへ改題し、「OP-005に登録されたMust Buy Item」の記述をCZ-002 Watch List参照へ置換した。その他の内容に変更はない。
 
 ---
 
