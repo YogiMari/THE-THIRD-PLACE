@@ -10,11 +10,11 @@ Brew Care
 
 ## Version  
 
-1.1  
+1.2  
 
 ## Status  
 
-Official  
+Active  
 
 ## Authority  
 
@@ -1669,6 +1669,7 @@ READY（準備完了）
 | Version | Date | Description |
 |---|---|---|
 | 1.1 | 2026-09-26 | 冒頭の重複H1見出しを是正。Document Relationship図内の旧文書名（Barista Codex／Acquisition Handbook）を現行名（Barista Canon／Procurement Handbook）へ同期。 |
+| 1.2 | 2026-09-28 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
 
 ---
 
