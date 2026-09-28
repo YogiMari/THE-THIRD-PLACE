@@ -1,5 +1,5 @@
 # MD-001 Storage Blueprint
-## Ver.2.20
+## Ver.2.21
 
 Status : Active
 
@@ -292,6 +292,7 @@ Wood Board 3セット（6枚）は最上層へ平置きする（フェルトケ�
 
 - Layer 2「Wood Board ×4 Sets」とLayer 3「Vapalux M320」の格納先が未解決（13点＋Wood Board 3セットで底面を使い切るため、両者の置き場所が現状ない）。
 - Coffee Sequence（使用順）は暫定であり、実際の手順に合わせた見直しが必要。
+- Coffee Serviceware・専用水の定位置が未定（N-06）：HILLS FIELD Glass Case Single（KRUVE PROPEL＋ICOSA AERESSO）、DAMNGOOD × CATAPULT FACTORY FIKA12 ×2（専用ケース付き）、Coffee System専用水ボトル3本（計2,540mL）。BR-002・BR-003はFIKA12のケースを「Beck Container内」に収納するとしているが、Beck①はCoffee Equipment収納禁止、Beck②は13点＋Wood Board 3セットで底面を使い切るため、現状いずれにも受け入れ余地がない。試し詰めの結果を受けて定位置を決める。
 
 ### 必要な実測（試し詰め前に要確認）
 
@@ -391,7 +392,7 @@ STR-028（ANOBA フォールディングサイドテーブル）に、STR-029（
 
 ## 燃えるゴミ側
 
-STR-030（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリートセット）を単独で運用する。フォールディングサイドテーブルは介さない。使用頻度が高いため、取り出し動作の少ない単独設置とした。
+STR-030（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリートセット。未所有・MD-004 Status = Essential）を単独で運用する。フォールディングサイドテーブルは介さない。使用頻度が高いため、取り出し動作の少ない単独設置とした。
 
 ## Rule
 
@@ -474,14 +475,14 @@ STR-032（WHATNOT One Touch Bucket HD）を、通年の消耗品と小物の常�
 | Season | Contents |
 |---|---|
 | Summer | ポータブルエアコン |
-| Winter | FIR-036（薪ストーブ）、FIR-029（武井バーナー Purple Stove 501A）、FUR-035（冬用寝具のシーツ） |
+| Winter | FIR-036（薪ストーブ。未所有・Status = Essential）、FIR-029（武井バーナー Purple Stove 501A）、FUR-035（冬用寝具のシーツ。未所有・Status = Essential） |
 
 ## Seasonal Slot B（バケット用）
 
 | Season | Contents |
 |---|---|
 | Summer | 夏用ワンタッチバケット |
-| Winter | 冬用の大きな寝具（FUR-032）。バケットは自宅保管とする |
+| Winter | 冬用の大きな寝具（FUR-032。未所有・Status = Essential）。バケットは自宅保管とする |
 
 ### Rule
 
@@ -526,10 +527,14 @@ Seasonal Slot A・Bへ積む冬季の構成物を定義する。
 
 - 冬用の大きな寝具（FUR-032）
 - 冬用寝具のシーツ（FUR-035）
+- 冬用マット BLACK ZONE MAT（FUR-034。未所有・Status = Essential。FUR-032マット部の下に敷く本格雪中用の断熱補強）
+- オフトン ウォームアダプター（FUR-036。未所有・Status = Essential。FUR-032との併用が前提）
 - マルカの湯たんぽ
 - 膝掛けサイズの電気毛布
 
 湯たんぽ・電気毛布はMD-004へ未登録の物品であり、Seasonal Slot Module Ruleと同様の扱いとする。定位置は未定のため、本節では暫定位置を記載しない。
+
+FUR-034・FUR-036は冬用（Season Kit）として本Kitに含める（N-07、2026-09-28 Claude推奨案をMARI様の包括指示に基づき採用）。積載位置は未決だが、FUR-036はFUR-032と併用前提のため、FUR-032と同じSeasonal Slot Bへ同梱することを推奨する。FUR-034の積載位置、およびFIR-032＋FIR-033の積載位置（現状Seasonal Slot A・Bのいずれにも未割当）は、Vehicle Loading（本書§Vehicle）の試し積みで確定する。電気毛布の電源（ポータブル電源の有無）は未確認（DB-001 Project Inbox参照）。
 
 ## Consumables
 
@@ -548,6 +553,125 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 # Weather Overlay（Rain）
 
 雨天時に追加するのは服程度の少量であるため、Kitとしての管理対象外とする（OP-006 Foundation Compass Weather Overlay Scope参照）。
+
+---
+
+# Vehicle
+
+車両そのものの情報を記録する。MD-001は「Vehicle = Permanent Storage」を原則とするため、車両は収納システムの一部として扱う。
+
+| Item | Value | Source |
+|---|---|---|
+| Model | Land Rover Range Rover Sport（2026年型） | MARI様申告（2026-09-28） |
+| Luggage Capacity（後席使用時） | 647 L | メーカー公表値（英国仕様。Parkers・CarsGuide経由で確認、2026-09-28） |
+| Luggage Capacity（後席格納時） | 1,491 L | 同上 |
+| Rear Seat | 40:20:40分割可倒 | 同上 |
+| Powertrain / 座席数 | 未確認 | 荷室容量はMHEV・PHEVで同一とされる（Parkers） |
+| 荷室床寸法（奥行・幅・開口高・ホイールハウス間幅） | 未確認（実測待ち） | 日本仕様の公表値も未確認 |
+
+## Vehicle Loading Rule（暫定）
+
+OP-006 Foundation Compass §Vehicle Loadingの原則を、本車両へ適用した運用ルールである（2026-09-28 Claude推奨案をMARI様の包括指示に基づき暫定採用。実測・試し積みで確定する）。
+
+1. 乗車2名を標準とし、後席は全面格納して荷室として使う（1,491 L）。乗車人数が増える場合は例外として個別に構成を組む。
+2. 積む順は、現地で使う順の逆とする。最初に使うShelterを最後に積み、テールゲート側に置く。
+3. 重量物（Beck①・Beck②、STR-022 Roadie 24、冬のFIR-036一式）は床面かつ前寄り（後席背もたれ側）に置く。
+4. 雨天時に最初に必要な物（当日使うShelter）は、他の荷を動かさずにテールゲートから取り出せる位置に置く。
+5. 燃料の車載はOP-006 §Safety Principlesに従う。
+
+## Full Loading Order（暫定・未検証）
+
+奥（前寄り）からテールゲート側への順に記載する。既存の§Packing Sequence（コンテナ4箱の積載順）は、このうち①②の内部順序である。
+
+① 床・最奥：Beck①（Kitchen Module）→ Beck②（Living Core Module）
+
+② ①の上段・隙間：ShellCon25①（Bedding Module）→ ShellCon25②（Light & Aroma Module）
+
+③ 中段：Seasonal Slot A・B、STR-022 Roadie 24、Dust Management Module（STR-028〜030）、STR-032 Consumables & Sundries Module
+
+④ 中段：家具（Kermit Chair①②＋FUR-012 Carry Tote、FUR-015 EXTENMON TABLE＋FUR-024ケース、FUR-025 Butterfly D、FUR-030 IGT 1ユニットスタンド、FUR-028／029エア家具）、STR-019 Container Bridge Frame（約830mm長。保護ケースSTR-034は検討中）
+
+⑤ テールゲート側：当日使うShelter（SHL-001〜005のうち当日分）
+
+Seasonal Slot A・Bの車内の物理的な位置、Roadie 24の取り出しやすさ（走行中の保冷と現地での使用頻度）、長尺物（Bridge Frame・煙突）の置き方は、荷室実測と試し積みで確定する。
+
+---
+
+# Site Deployment Sequence（全体・暫定）
+
+現地到着から空間完成までの全体順序を定義する（N-03。2026-09-28 Claude推奨案をMARI様の包括指示に基づき暫定採用）。各Moduleの内部手順は、下記§Deployment Sequence（Beck②）・§Coffee Sequence・§Light Sequenceを参照する。
+
+① 到着・区画確認（地面、風向き、日の向き、車の位置）
+
+↓
+
+② Shelter設営（当日使うSHL。雨天時は他のすべてに優先する）
+
+↓
+
+③ Living Core：Beck②を開き、§Deployment Sequenceの①〜⑦（Bridge Table・Coffee Setup・サイドテーブル）
+
+↓
+
+④ Kitchen：Beck①、FUR-015 EXTENMON TABLE
+
+↓
+
+⑤ Furniture：チェア・サイドテーブル類
+
+↓
+
+⑥ Fire：焚き火（FIR-001系）、冬はFIR-036薪ストーブ（OP-006 §Safety Principlesに従う）
+
+↓
+
+⑦ Dust Management Module
+
+↓
+
+⑧ Light & Aroma：§Deployment Sequenceの⑧〜⑩（日没前に完了）
+
+↓
+
+⑨ Bedding：ShellCon25①、冬はWinter Kit Bedding（日没前に完了）
+
+Shelterの使い分け（どのSHLをどの条件で使うか）と、区画の広さ別の標準配置は未策定（OP-007 Habitat Architectureの原則に基づき、Field Log〈DB-001〉の記録を踏まえて定める）。
+
+---
+
+# Site Recovery Sequence（全体・暫定）
+
+撤収の全体順序を定義する。OP-006 Foundation Compass §Recovery Sequence（設営の逆順ではなく、保護・乾燥・メンテナンス・次回設営を考慮する）に基づき、乾燥に時間を要するShelterを最後に撤収する（N-03・C-19。2026-09-28 Claude推奨案をMARI様の包括指示に基づき暫定採用）。
+
+① 起床後：寝具を広げて結露・湿気を飛ばし、乾燥後にShellCon25①へ収納する
+
+↓
+
+② Coffee：最後の抽出後、BR-001 Brew Care §Camp Closure Protocolを完了し、Beck②へ収納する（§Return Sequence参照）
+
+↓
+
+③ Kitchen：洗浄・乾燥後、Beck①へ収納する
+
+↓
+
+④ Fire：完全消火と灰処理（OP-006 §Safety Principles）。冷えたことを確認してから収納する
+
+↓
+
+⑤ Light & Aroma：ShellCon25②へ収納する
+
+↓
+
+⑥ Furniture・Dust Management Module：ゴミを処理し、什器を畳む
+
+↓
+
+⑦ Shelter：最後に撤収し、乾燥時間を最大化する。濡れたまま撤収した場合は§Home Operationで帰宅後に乾燥させる
+
+↓
+
+⑧ 積載：§Vehicle Full Loading Orderに従う
 
 ---
 
@@ -773,6 +897,8 @@ CONPE10は
 
 車両内をPermanent Storageとして維持する。
 
+濡れたまま撤収したShelter・布製品は、帰宅後に取り出して完全に乾燥させてから車両へ戻す（OP-006 §Material Care Principles）。
+
 ---
 
 # Operation Master
@@ -910,7 +1036,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.19
+Ver.2.21
 
 ---
 
@@ -1059,6 +1185,7 @@ Permanent Storage
 | 2.18 | 2026-09-28 | MARI様のご指摘に基づき（課題C-19）、OP-006 Foundation Compass Recovery Sequence「撤収は、設営の逆順ではない」とMD-001の「収納順」に関する記述の間で、「積載・収納の層順（箱内の格納位置）」と「撤収作業の順序」という異なる2つの概念が同じ「順」という言葉で書かれ、矛盾して見えていた点を是正した。Fixed Principles「展開順と収納順は常に一致させる」は層順（箱内の格納位置）を指す原則であることを明記し、撤収作業の順序はOP-006 Recovery Sequenceに従う旨を追記した。Coffee Sequence「収納は、この逆順で行う」およびReturn Sequence本体（Deployment Sequenceのほぼ逆順）は、現状はOP-006の原則に未整合な暫定運用であることを明記し、正式な撤収手順の設計はN-03で別途扱うこととした。OP-006自体は変更不要（MARI様のご確認済み）。 |
 | 2.19 | 2026-09-28 | MARI様のご確認に基づき（課題C-20）、MD-001内の記述の揺れを是正。(1) Parent Documents（OP-001・OP-002・MD-004・OP-006・OP-007）とRelationship図（MD-004→MD-001→OP-007、OP-007は下流＝現地展開）が矛盾していたため、Parent DocumentsからOP-007を外した（OP-001・OP-002・MD-004・OP-006の4件に修正）。Relationship図・Position表は変更していない。(2) Beck②のPurpose「Coffee Equipment & Light Equipment」およびBeck② Principles「Coffee Equipment + Light Equipment + Living Table Module = Living Core Module」は、Fixed Position Rules Beck²の記述（Coffee Equipment + Living Table Module）および実際のFixed Contents（Beck②内の照明はVapalux M320のみ。DEVADEVA等の照明・香り一般はShellCon25②の担当）と不整合だったため、両箇所とも「Coffee Equipment & Living Table Module」「Coffee Equipment + Living Table Module = Living Core Module」へ修正し、Fixed Position Rulesの記述に統一した。Vapalux M320は引き続きLayer 3・Fixed Position Rulesの個別記載（Bridge Frame・Wood Board・Coffee Equipment・Vapaluxの収納位置は固定）でのみ扱う。Position表（S-08で削除予定）は本改訂の対象外。mainへ先行マージされていたRecovery Sequence訂正（C-19、Ver.2.18）とのマージコンフリクトを解消し、両変更を統合してVer.2.19とした。 |
 | 2.20 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Positionの文書一覧表（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。直後の§Relationship（MD-004→MD-001→OP-007のフロー図）は本書固有の情報のため変更していない。MARI様のご決定に基づく（S-08）。 |
+| 2.21 | 2026-09-28 | 整備バックログ（N-02・N-03・N-06・N-07）対応。§Vehicle（Range Rover Sport 2026年型、公表荷室容量647 L／1,491 L、実測待ち項目）、§Vehicle Loading Rule（暫定）、§Full Loading Order（暫定・未検証）、§Site Deployment Sequence（全体・暫定）、§Site Recovery Sequence（全体・暫定。乾燥に時間を要するShelterを最後に撤収）を新設。Winter Kit BeddingへFUR-034・FUR-036を追加し積載位置の未決事項を明記。Coffee Module Layout §未決事項へCoffee Serviceware・専用水の定位置未定を追記。Home Operationへ濡れたShelterの帰宅後乾燥を追記。Dust Management Module・Seasonal Slot Moduleの未所有Equipment（STR-030・FIR-036・FUR-035・FUR-032）へ未所有注記を付記（S-02バリデータ警告の解消）。ヘッダーと末尾Version欄の版数不一致（2.20／2.19）を是正。いずれもClaude推奨案をMARI様の包括指示（2026-09-28）に基づき暫定採用したもの。 |
 
 ---
 
