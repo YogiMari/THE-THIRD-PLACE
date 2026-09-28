@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.12
+**Version**: 3.13
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -31,6 +31,7 @@
 | 3.10 | 2026-09-28 | OP-005 Pursuit Strategy Ver.2.1（購入優先度・購入状態・月次購入計画はBR-003の管轄、Coffee以外は買えるときに買う、市場監視はCZ-002／OP-009の管轄という実態に合わせ、Purpose・Relationship to Other Core Documentsの「いつ・どの順序で」「取得順序・取得時期・市場監視」という残存記述を是正）に伴い、§8カタログのOP-005行のRoleおよびAppendix F（日英）のOP-005紹介文を同期。市場監視の管理元をCZ-002／OP-009へ明記した。MARI様のご決定に基づく（C-04）。 |
 | 3.11 | 2026-09-28 | CZ-002 Ver.3.0で実行プロトコル（Freshness Validation〜Operational Directives）がOP-009 §XVIII Patrol Protocolへ移設済みであるにもかかわらず、Appendix FのOP-009紹介文（日英）「実際の実行手順はCZ-002が別途管理する」、§8カタログのCZ-002 Summary「パトロールの実行手順」、Appendix FのCZ-002紹介文（日英）「鮮度を評価するリサーチ運用プロトコル」が逆の記述のまま残存していた点を是正。「OP-009＝方法論と実行手順（§XVIII）、CZ-002＝Watch List（監視対象・調査キーワード）」に統一。CZ-002 I. PurposeおよびOP-009 §XVIの同時改訂と連動。MARI様のご決定に基づく（C-05）。 |
 | 3.12 | 2026-09-28 | §15 Document Dependenciesが「依存関係はProject Ledgerにて管理する」としていたが、DB-001に該当節が存在せず、Rule DOC-06（文書一覧はOP-008 §8が唯一の正本、Project LedgerはCurrent Focus等の運用情報のみを管理）とも整合しなかった点を是正し、「依存関係は各文書のReferences（Related Documents）にて個別に表現し、一元的な依存関係台帳は持たない」へ書き換えた。§18.1手順5「Project Ledgerへ登録すること」も同じ矛盾があったため「OP-008 §8 Document Seriesへ登録すること」へ改めた。§18.2「Project Ledgerを運用している場合は、更新内容を反映する」は、DB-001が個別文書の更新内容を記録する節を持たない実態と整合しないため削除した。MARI様のご決定に基づく（C-13）。Patch Version。 |
+| 3.13 | 2026-09-28 | KN発行方針の参照先不在（DB-001が参照する「ways-of-working KN issuance rules」がリポジトリに実在しない不整合）を是正するため、§28 KN Publication Policyを新設（Minor Version：章追加）。KN-001〜004の本文はGitHubに置かず、Artifactとしてのみ発行する方針と、その理由（発行物が今後何百と増えていく見込みであるため）を明文化した。DB-001の参照を本節へ統一。MARI様のご決定に基づく（C-14）。 |
 
 ---
 
@@ -755,6 +756,30 @@ Drive → GitHub の自動化を導入する場合は、本節を先に改訂し
 ## 27.7 Out of Scope
 
 同期スクリプト（Google Apps Script）の実装、トリガー、フォルダIDは本書の対象外とする。
+
+---
+
+# 28. KN Publication Policy
+
+## 28.1 Position
+
+KN-001 Heritage Chronicle／KN-002 Cultural Pantheon／KN-003 Beyond Journey／KN-004 Atelier Discoveryの本文（発行物）は、GitHub Repositoryには置かない。
+
+## 28.2 Rule
+
+KN四系列の発行物は、Claude Artifactとしてのみ発行する。
+
+## 28.3 Reason
+
+KN四系列の発行物は、今後何百と増えていく見込みであるため、GitHub Repository上にmarkdownファイルとして蓄積する運用は行わない。
+
+## 28.4 Publication Log
+
+発行の記録（メタデータのみ。本文の複製ではない）は、DB-001 Project Ledger「KN Publication Log」に、Date・Series・Theme/Title・Artifact Linkの形式で記録する。Artifact Linkは、MARI様がご自身で共有設定にされた場合のみ記載する（共有を前提としない）。
+
+## 28.5 Out of Scope
+
+発行の頻度・タイミング・承認プロセスは本書の対象外とする。
 
 ---
 
