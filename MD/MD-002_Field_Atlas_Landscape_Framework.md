@@ -1,6 +1,38 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.3.3
+## Ver.3.4
+
+**Document ID**: MD-002  
+**Title**: Field Atlas Landscape Framework  
+**Series**: MD – Master Data (Record)  
+**Version**: 3.4  
+**Authority**: SSOT  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|---|---|---|
+| 1.0 | — | Field Atlas Landscape Framework 初版制定（6軸評価基準・表示フォーマット定義） |
+| 1.1 | 2026-09-01 | Field Atlas Database セクションを新設。評価済みキャンプ場 22件を記録。Database表記における Visited Status ルール（太字表記）を追加。 |
+| 1.2 | 2026-09-01 | 橘ふれあい公園にアーリーチェックイン不可の運用注意を追加。オートキャンプFUJICHUを訪問済みへ更新し再配置。大子広域公園グリンヴィラを訪問済みへ更新。キャンプガーデン印西に地面の水捌け・硬さに関する追記。昇仙峡オートキャンプ場を新規追加、全23件へ拡張。 |
+| 1.3 | 2026-09-02 | 全件のスコア・ランクを再評価。距離・移動時間をSurroundings軸のAccess Noteとして分離し、フィールド本来の質のみでスコアを算定する方針へ変更。新規キャンプ場24件を追加。大子広域公園グリンヴィラの訪問記録が日川浜オートキャンプ場との混同であったと判明し、未訪問へ差し戻し。全Identityコメントから相対比較表現を排除。訪問済み37件・未訪問12件、全49件へ拡張。 |
+| 1.4 | 2026-09-02 | moss camp field・KARUIZAWA CAMP GOLD・小田原フォレストキャンプ場・朝霧ジャンボリーの未訪問内順位を再配置（朝霧ジャンボリーを未訪問最下位としつつ、スコアは大原布施87.0と那須プレリー86.7の間の86.85に設定）。この結果、訪問済み・未訪問のスコアが交差したため、訪問済み・未訪問を分けていた2テーブル構成を廃止し、Field Atlas Databaseを**1本のスコア順テーブル**（太字＝訪問済み／通常＝未訪問）へ統合。 |
+| 1.5 | 2026-09-02 | 未訪問12件のスコア表記に「(暫定)」を付記し、訪問済み（太字）との視覚的な区別をスコア表記そのものでも明確化。 |
+| 1.6 | 2026-09-02 | 橘ふれあい公園（大子広域公園グリンヴィラの一つ下）・成田ゆめ牧場（TACO GLAMPの一つ下）・無印良品カンパーニャ嬬恋（那須プレリーの一つ上）・伊豆キャンファーム（シャトレーゼ小海の一つ下）・ラスタキャンプ白州（ウェルキャンプ西丹沢の一つ上）を再配置。 |
+| 1.7 | 2026-09-02 | 小田原フォレストキャンプ場をふもとっぱらとTACO GLAMP THE MEXICOの間（87.1暫定）へ再配置。未訪問12件について、アーリーチェックイン可否を公式サイトに加え予約サイト（なっぷ等）・第三者レビュー・口コミで裏付け確認し、確認根拠をIdentityコメントに明記。区画面積が確認できたフィールド（moss camp field 120㎡、JUTE CAMP FIELD 約100〜140㎡、大子広域公園グリンヴィラ 100㎡、富士高原トマトフィールド 185〜277㎡、小田原フォレストキャンプ場 80㎡）にTHE THIRD PLACE基準（車込み100㎡／車別80㎡）との対比を追記。Hillbilly Campingの区画面積を、公表値未確認だった「80㎡」から実測値「約8×8.5m＝68㎡（駐車スペース別）」へ訂正。 |
+| 1.8 | 2026-09-02 | 未訪問12件の移動時間を、東京都江戸川区小岩を起点とした実測値へ更新（Mariの実測報告に基づく）。KARUIZAWA CAMP GOLD 4h（変更なし）、Hillbilly Camping 4h→2.5h、moss camp field 2.5h→4h、JUTE CAMP FIELD 2h→3.5h、大子広域公園グリンヴィラ 3h→3.5h、富士高原トマトフィールド 3.5h→4h、ふもとっぱら 3.5h→4h、小田原フォレストキャンプ場 2.5h→3.5h、CAMPGROUND BREEZE TATEYAMA 2.5h（変更なし）、TACO GLAMP THE MEXICO 2h（変更なし）、朝霧ジャンボリーオートキャンプ場 3.5h→4h、成田ゆめ牧場 2h→1.5h。これにより未訪問12件全ての移動時間が小岩起点の実測値へ統一された。 |
+| 1.9 | 2026-09-07 | Relationship to Other Core Documentsの参照リストを現行の文書体系へ更新。TP-005〜007の名称誤り（Price Master／Storage Layout Master／Site Layout Master）を、正式名称（Acquisition Strategy／Foundation Compass／Habitat Architecture）へ修正し、欠落していたTP-008〜011（Affinity Lexicon／Aesthetic Grammar／Storage Blueprint／Galley Fare）を追加。 |
+| 2.0 | 2026-09-15 | Radar Sub-Scoresセクションを新設。可視化専用の7軸（Site／Facility／Surroundings／View／Identity／Partner Value／近さ）個別スコアDatabaseを追加し、レーダーチャート等の自動生成を可能にする基盤とした。「近さ」は正式ランキングスコアには算入しない可視化専用軸と明記。Render Fika・スノーピークヘッドクォーターズキャンプフィールドの2件をMariへのヒアリングにより記録、残り47件は未記録（—）のまま推測せず据え置き。 |
+| 2.1 | 2026-09-15 | Radar Sub-ScoresのRecording Ruleを改訂。未訪問フィールドについて、訪問後ヒアリングを待つ運用から、Field Atlas Database内に既に記録済みの調査情報（Identityコメント等）を根拠とした暫定スコア記入へ変更。可視化時に訪問済み（実測）と未訪問（暫定）を色・線種で明確に区別する表示ルールを追加。 |
+| 3.0 | 2026-09-15 | Evaluation Frameworkを全面改訂。旧Surroundings軸を廃止しIdentity軸（Surrounding Value）へ統合。新たにComfort軸（設備への場内距離・区画間隔・プライバシー等）を新設。Partner Valueを独立評価軸から、6軸（Site・Facility・Comfort・View・Identity・近さ）の合計による算出値（総合スコア）へ変更。Ranking Philosophyの「距離はスコアに含めない」という方針をMariの意思決定により正式に撤回し、近さ（Distance）を6軸の1つとして正式にスコアへ組み込む方針へ転換。Site軸に地面種別（砂利7点以上／芝4〜6点／土3点以下、ただし芝の質次第で例外あり）のスコアリング目安を追加。既存49サイトの統合スコアはVer.2.1までの旧フレームワークによる暫定値のまま据え置き、新フレームワークでの再評価は順次実施する方針を明記。Radar Sub-Scoresを6軸＋Partner Value（合計）の構成へ再設計。 |
+| 3.1 | 2026-09-15 | Facility軸の定義を明確化し、管理棟に併設されたショップ・温泉・サウナ・スパ等の体験価値はFacilityではなくIdentity（Experience Identity）で評価する旨を追記。Radar Sub-Scoresのスノーピークヘッドクォーターズ・Render Fika・RECAMP 富士スピードウェイの3件について、新6軸フレームワークで全軸を再ヒアリングし、Partner Value（合計）を算出。 |
+| 3.2 | 2026-09-15 | Radar Sub-Scoresのヒアリング方式を絶対値評価から**相対比較方式**へ変更し、全49件（訪問済み37件・未訪問12件）を最初から撮り直した。軸ごとの10点基準サイトを設定（Site：South One Village／Facility：スノーピークHQ・Render Fika／Comfort：Render Fika／View：浩庵キャンプ場／Identity：Render Fika・スノーピークHQ・スノーピーク鹿沼／近さ：Render Fika10点・スノーピークHQ1点）。View軸の基準として浩庵キャンプ場（山梨県身延町・本栖湖畔）を新規Reference Benchmark Siteとして追加。訪問済み37件はMariへの相対比較ヒアリング、未訪問12件はField Atlas Database記載の調査情報を根拠とした暫定値により、Partner Value（合計）を全件算出した。最高はRender Fika（54点）、最低はサンビレッジ金谷キャンプ場（18点）。 |
+| 3.3 | 2026-09-26 | 見出し『Registry Standard Reference』が2026-09-24付の改題（OP-010→Qualification Charter）に同期していなかった箇所を修正し、『Qualification Charter Reference』へ改題。本文（Part C参照）に変更はない。 |
+| 3.4 | 2026-09-28 | S-11（文書ヘッダーの統一）に伴い、Document ID／Title／Series／Authority／Status／Ownerのヘッダー項目を追加し、Revision Historyの位置を文書末尾から冒頭へ移動した。内容に変更はない。Patch Version。MARI様のご決定に基づく。 |
 
 ---
 
@@ -249,29 +281,6 @@ THE THIRD PLACE を実現するための
 > **A great Third Place begins with a great landscape.**
 
 **「優れた Third Place は、優れたランドスケープから始まる。」**
-
----
-
-# Revision History
-
-| Version | Date | Description |
-|---|---|---|
-| 1.0 | — | Field Atlas Landscape Framework 初版制定（6軸評価基準・表示フォーマット定義） |
-| 1.1 | 2026-09-01 | Field Atlas Database セクションを新設。評価済みキャンプ場 22件を記録。Database表記における Visited Status ルール（太字表記）を追加。 |
-| 1.2 | 2026-09-01 | 橘ふれあい公園にアーリーチェックイン不可の運用注意を追加。オートキャンプFUJICHUを訪問済みへ更新し再配置。大子広域公園グリンヴィラを訪問済みへ更新。キャンプガーデン印西に地面の水捌け・硬さに関する追記。昇仙峡オートキャンプ場を新規追加、全23件へ拡張。 |
-| 1.3 | 2026-09-02 | 全件のスコア・ランクを再評価。距離・移動時間をSurroundings軸のAccess Noteとして分離し、フィールド本来の質のみでスコアを算定する方針へ変更。新規キャンプ場24件を追加。大子広域公園グリンヴィラの訪問記録が日川浜オートキャンプ場との混同であったと判明し、未訪問へ差し戻し。全Identityコメントから相対比較表現を排除。訪問済み37件・未訪問12件、全49件へ拡張。 |
-| 1.4 | 2026-09-02 | moss camp field・KARUIZAWA CAMP GOLD・小田原フォレストキャンプ場・朝霧ジャンボリーの未訪問内順位を再配置（朝霧ジャンボリーを未訪問最下位としつつ、スコアは大原布施87.0と那須プレリー86.7の間の86.85に設定）。この結果、訪問済み・未訪問のスコアが交差したため、訪問済み・未訪問を分けていた2テーブル構成を廃止し、Field Atlas Databaseを**1本のスコア順テーブル**（太字＝訪問済み／通常＝未訪問）へ統合。 |
-| 1.5 | 2026-09-02 | 未訪問12件のスコア表記に「(暫定)」を付記し、訪問済み（太字）との視覚的な区別をスコア表記そのものでも明確化。 |
-| 1.6 | 2026-09-02 | 橘ふれあい公園（大子広域公園グリンヴィラの一つ下）・成田ゆめ牧場（TACO GLAMPの一つ下）・無印良品カンパーニャ嬬恋（那須プレリーの一つ上）・伊豆キャンファーム（シャトレーゼ小海の一つ下）・ラスタキャンプ白州（ウェルキャンプ西丹沢の一つ上）を再配置。 |
-| 1.7 | 2026-09-02 | 小田原フォレストキャンプ場をふもとっぱらとTACO GLAMP THE MEXICOの間（87.1暫定）へ再配置。未訪問12件について、アーリーチェックイン可否を公式サイトに加え予約サイト（なっぷ等）・第三者レビュー・口コミで裏付け確認し、確認根拠をIdentityコメントに明記。区画面積が確認できたフィールド（moss camp field 120㎡、JUTE CAMP FIELD 約100〜140㎡、大子広域公園グリンヴィラ 100㎡、富士高原トマトフィールド 185〜277㎡、小田原フォレストキャンプ場 80㎡）にTHE THIRD PLACE基準（車込み100㎡／車別80㎡）との対比を追記。Hillbilly Campingの区画面積を、公表値未確認だった「80㎡」から実測値「約8×8.5m＝68㎡（駐車スペース別）」へ訂正。 |
-| 1.8 | 2026-09-02 | 未訪問12件の移動時間を、東京都江戸川区小岩を起点とした実測値へ更新（Mariの実測報告に基づく）。KARUIZAWA CAMP GOLD 4h（変更なし）、Hillbilly Camping 4h→2.5h、moss camp field 2.5h→4h、JUTE CAMP FIELD 2h→3.5h、大子広域公園グリンヴィラ 3h→3.5h、富士高原トマトフィールド 3.5h→4h、ふもとっぱら 3.5h→4h、小田原フォレストキャンプ場 2.5h→3.5h、CAMPGROUND BREEZE TATEYAMA 2.5h（変更なし）、TACO GLAMP THE MEXICO 2h（変更なし）、朝霧ジャンボリーオートキャンプ場 3.5h→4h、成田ゆめ牧場 2h→1.5h。これにより未訪問12件全ての移動時間が小岩起点の実測値へ統一された。 |
-| 1.9 | 2026-09-07 | Relationship to Other Core Documentsの参照リストを現行の文書体系へ更新。TP-005〜007の名称誤り（Price Master／Storage Layout Master／Site Layout Master）を、正式名称（Acquisition Strategy／Foundation Compass／Habitat Architecture）へ修正し、欠落していたTP-008〜011（Affinity Lexicon／Aesthetic Grammar／Storage Blueprint／Galley Fare）を追加。 |
-| 2.0 | 2026-09-15 | Radar Sub-Scoresセクションを新設。可視化専用の7軸（Site／Facility／Surroundings／View／Identity／Partner Value／近さ）個別スコアDatabaseを追加し、レーダーチャート等の自動生成を可能にする基盤とした。「近さ」は正式ランキングスコアには算入しない可視化専用軸と明記。Render Fika・スノーピークヘッドクォーターズキャンプフィールドの2件をMariへのヒアリングにより記録、残り47件は未記録（—）のまま推測せず据え置き。 |
-| 2.1 | 2026-09-15 | Radar Sub-ScoresのRecording Ruleを改訂。未訪問フィールドについて、訪問後ヒアリングを待つ運用から、Field Atlas Database内に既に記録済みの調査情報（Identityコメント等）を根拠とした暫定スコア記入へ変更。可視化時に訪問済み（実測）と未訪問（暫定）を色・線種で明確に区別する表示ルールを追加。 |
-| 3.0 | 2026-09-15 | Evaluation Frameworkを全面改訂。旧Surroundings軸を廃止しIdentity軸（Surrounding Value）へ統合。新たにComfort軸（設備への場内距離・区画間隔・プライバシー等）を新設。Partner Valueを独立評価軸から、6軸（Site・Facility・Comfort・View・Identity・近さ）の合計による算出値（総合スコア）へ変更。Ranking Philosophyの「距離はスコアに含めない」という方針をMariの意思決定により正式に撤回し、近さ（Distance）を6軸の1つとして正式にスコアへ組み込む方針へ転換。Site軸に地面種別（砂利7点以上／芝4〜6点／土3点以下、ただし芝の質次第で例外あり）のスコアリング目安を追加。既存49サイトの統合スコアはVer.2.1までの旧フレームワークによる暫定値のまま据え置き、新フレームワークでの再評価は順次実施する方針を明記。Radar Sub-Scoresを6軸＋Partner Value（合計）の構成へ再設計。 |
-| 3.1 | 2026-09-15 | Facility軸の定義を明確化し、管理棟に併設されたショップ・温泉・サウナ・スパ等の体験価値はFacilityではなくIdentity（Experience Identity）で評価する旨を追記。Radar Sub-Scoresのスノーピークヘッドクォーターズ・Render Fika・RECAMP 富士スピードウェイの3件について、新6軸フレームワークで全軸を再ヒアリングし、Partner Value（合計）を算出。 |
-| 3.2 | 2026-09-15 | Radar Sub-Scoresのヒアリング方式を絶対値評価から**相対比較方式**へ変更し、全49件（訪問済み37件・未訪問12件）を最初から撮り直した。軸ごとの10点基準サイトを設定（Site：South One Village／Facility：スノーピークHQ・Render Fika／Comfort：Render Fika／View：浩庵キャンプ場／Identity：Render Fika・スノーピークHQ・スノーピーク鹿沼／近さ：Render Fika10点・スノーピークHQ1点）。View軸の基準として浩庵キャンプ場（山梨県身延町・本栖湖畔）を新規Reference Benchmark Siteとして追加。訪問済み37件はMariへの相対比較ヒアリング、未訪問12件はField Atlas Database記載の調査情報を根拠とした暫定値により、Partner Value（合計）を全件算出した。最高はRender Fika（54点）、最低はサンビレッジ金谷キャンプ場（18点）。 |
-| 3.3 | 2026-09-26 | 見出し『Registry Standard Reference』が2026-09-24付の改題（OP-010→Qualification Charter）に同期していなかった箇所を修正し、『Qualification Charter Reference』へ改題。本文（Part C参照）に変更はない。 |
 
 ---
 
