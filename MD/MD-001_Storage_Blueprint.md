@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.27
+## Ver.2.28
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.27  
+**Version**: 2.28  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -485,7 +485,7 @@ STR-032（WHATNOT One Touch Bucket HD）を、通年の消耗品と小物の常�
 ## Contents
 
 - STR-036 エアドライ ペグケース（本体）
-- SHL-006 DONKEY HAMMER（asimocrafts × サンゾー工務店）
+- SHL-006 DONKEY HAMMER_A（サンゾー工務店 × asimocrafts）
 - 鍛造ペグ 40cm ×6（タープ用）
 - 鍛造ペグ 30cm ×15
 - ロープ
@@ -641,7 +641,7 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 |---|---|---|---|
 | 左（倒す） | Kermit Chair（FUR-001・FUR-007のうち1脚） | STR-022 YETI Roadie 24 | FUR-028 TACTICAL AIR SOFA 2P |
 | 中央（倒す） | Kermit Chair（もう1脚） | Seasonal Slot A | Seasonal Slot A |
-| 右（起こす・座面） | STR-032 消耗品バケット、充電が必要な物だけを入れたバッグ（MD-004未登録）、Seasonal Slot B | | |
+| 右（起こす・座面） | STR-032 消耗品バケット、STR-037 Snow Peak Quilted Ripstop Duffle（充電が必要な物だけを入れる）、Seasonal Slot B | | |
 
 ### Seasonal Slotの車内位置
 
@@ -1093,7 +1093,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.27
+Ver.2.28
 
 ---
 
@@ -1249,6 +1249,7 @@ Permanent Storage
 | 2.25 | 2026-09-28 | MARI様提供の荷室データを§Vehicleへ記載（容量のVDA方式・Dry表記、奥行〈後席使用時・格納時〉、最大幅、ホイールハウス間幅、開口部〜天井高）。Coffee Module Layout §必要な実測へ、Coffee Equipment未購入のため試し詰めは購入後に行う旨を追記。 |
 | 2.26 | 2026-09-28 | MARI様の試し積み（写真2枚と区画ごとの申告）に基づき、§Vehicle Loading Rule（暫定）と§Full Loading Order（暫定・未検証）を、確認済みの§Vehicle Loading Ruleと§Loading Map（荷室・後席、Seasonal Slotの車内位置）へ置き換えた。後席は左40・中央20を倒し右40を起こす運用、EXTENMON TABLEを床に敷きコンテナを右寄せで積む構成、満載時にテールゲートを開けると手前の荷が倒れる注意を記載。Seasonal Slot Aへ春・秋の中身（SHL-003 CLOUDBREAK"D"）を追加。暫定案にあった「当日のShelterをテールゲート側に置く」ルールは、実際の構成（Shelterは奥の3段目）と異なるため削除した。 |
 | 2.27 | 2026-09-28 | MARI様のご決定に基づき、§Peg & Guyline Moduleを新設（STR-036 エアドライ ペグケースにSHL-006 DONKEY HAMMER、鍛造ペグ40cm ×6・30cm ×15、ロープ、ガイベルトをまとめて運用。車内位置は荷室・手前・右・床。本数確認などの点検方法を記載）。§Loading Mapの「ペグケース（MD-004未登録）」を本節への参照へ更新。MD-004 Version 7.71と連動。 |
+| 2.28 | 2026-09-28 | MD-004 Version 7.72と連動。§Loading Mapの「充電が必要な物だけを入れたバッグ（MD-004未登録）」をSTR-037 Snow Peak Quilted Ripstop Duffleへ更新。§Peg & Guyline ModuleのSHL-006表記を公式名（DONKEY HAMMER_A、サンゾー工務店 × asimocrafts）へ更新。 |
 
 ---
 
