@@ -1,7 +1,7 @@
 OP-006 Foundation Compass
 # OP-006
 # Foundation Compass
-## Ver.1.5
+## Ver.1.6
 
 ---
 
@@ -452,20 +452,7 @@ THE THIRD PLACE Core Documents の中で、
 
 運用基盤を担う文書である。
 
-| Document | Responsibility |
-|-----------|----------------|
-| DS-001 THE THIRD PLACE Original | プロジェクトの原典 |
-| OP-001 Constitution | プロジェクト全体の憲章 |
-| OP-002 Design Bible | 設計思想 |
-| MD-002 Field Atlas | 舞台の選定 |
-| MD-004 Equipment Registry | Equipment の唯一のマスターデータ |
-| OP-005 Pursuit Strategy | Equipment を迎える戦略 |
-| **OP-006 Foundation Compass** | Foundation を構成・維持するための指針 |
-| OP-007 Habitat Architecture | フィールドで完成する暮らしの設計 |
-| OP-003 Affinity Lexicon | 好み・美意識・親和性の語彙 |
-| OP-004 Aesthetic Grammar | 美しさを構成する法則 |
-| MD-001 Storage Blueprint | 収納設計・運用 |
-| MD-003 Galley Fare | キッチン機材の独立マスターデータ |
+文書一覧は OP-008 §8 Document Series を参照。
 
 Foundation Compass は、
 
@@ -508,6 +495,7 @@ Foundation Compass は、
 | 1.3 | 2026-09-26 | 本文内のOP-005表記が旧題『Acquisition Strategy』のままだった箇所をPursuit Strategyへ修正。 |
 | 1.4 | 2026-09-28 | MARI様のご決定に基づき、Seasonal Configuration節へ「Configuration Structure」（Base／Season Kit／Weather Overlayの3層定義）、「Seasonal Slot」（車内の季節入れ替え定位置の位置づけ。具体的な配置・中身はMD-001が管理し本書では重複記載しない）、「Tagging Policy」（個別Equipmentへの季節・天候タグは付与せず、運用単位はModule／Season Kitとする）、「Weather Overlay Scope」（雨のKitとしての管理は行わない）を新設。いずれも恒久ルールの定義のみであり、具体的な中身（どのギアがどのKitか）はMD-001 Storage Blueprintへ記載する（Static文書にLivingデータを置かない原則に基づく）。Minor Version。 |
 | 1.5 | 2026-09-28 | 「Relationship」節の後へ「Priority Principle」節を新設（Minor Version：章追加）。OP-002 Design Bible §Database Rulesにあった「Priorityは価格ではなく人気でもなく、Design Bibleとの一致度で決定する」という思想文を移設した。MD-004 Equipment Registry Object ReferenceにはPriority欄自体が存在しない（OP-010 Qualification Charter Part A Attribute Policy参照）ことを確認した上での移設であり、Coffee Zoneの具体的な購入優先度はBR-003 Procurement Handbookが別途管理する旨を明記した。MARI様のご決定に基づく（C-02）。 |
+| 1.6 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Relationship to Other Core Documentsの文書一覧表（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。表以外の固有の関係説明は変更していない。Patch Version。MARI様のご決定に基づく（S-08）。 |
 
 ---
 
