@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.24
+## Ver.2.25
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.24  
+**Version**: 2.25  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -305,6 +305,8 @@ Wood Board 3セット（6枚）は最上層へ平置きする（フェルトケ�
 
 ### 必要な実測（試し詰め前に要確認）
 
+Coffee Equipmentは未購入のため、試し詰めと以下の実測は購入後に行う（2026-09-28、MARI様確認）。
+
 1. Beck②の内寸（底面と蓋の縁、W/D/H）
 2. 9Barista Mk.2 Proの実寸（ハンドル込み）
 3. Z1 Mini Steamerの断面（ノズルとダイヤルの位置も含む）
@@ -573,12 +575,16 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 | Item | Value | Source |
 |---|---|---|
 | Model | Land Rover Range Rover Sport（2026年型） | MARI様申告（2026-09-28） |
-| Luggage Capacity（後席使用時） | 647 L | メーカー公表値（英国仕様。Parkers・CarsGuide経由で確認、2026-09-28） |
-| Luggage Capacity（後席格納時） | 1,491 L | 同上 |
+| Luggage Capacity（後席使用時・5名乗車） | 647 L（VDA方式）／約835 L（Dry・最大空間表記） | メーカー公表値（英国仕様。Parkers・CarsGuide経由で確認）、MARI様提供（実測値・メーカー公表概寸、2026-09-28） |
+| Luggage Capacity（後席格納時・2名乗車） | 1,491 L（VDA方式）／約1,860 L（Dry・最大空間表記） | 同上 |
 | Rear Seat | 40:20:40分割可倒 | 同上 |
 | Powertrain | マイルドハイブリッド（MHEV）3.0L 直列6気筒ディーゼル | MARI様申告（2026-09-28）。荷室容量はMHEV・PHEVで同一とされる（Parkers） |
 | 座席数 | 5人乗り | MARI様申告（2026-09-28） |
-| 荷室床寸法（奥行・幅・開口高・ホイールハウス間幅） | 未確認（実測待ち） | 日本仕様の公表値も未確認 |
+| 荷室奥行（後席使用時） | 約970〜1,090 mm（シート位置・リクライニング角による） | MARI様提供（実測値・メーカー公表概寸、2026-09-28） |
+| 荷室奥行（後席格納時） | 約1,825〜1,970 mm | MARI様提供（実測値・メーカー公表概寸、2026-09-28） |
+| 荷室幅（最大） | 約1,400〜1,440 mm（側面のくぼみ部分） | MARI様提供（実測値・メーカー公表概寸、2026-09-28） |
+| 荷室幅（ホイールハウス間） | 約1,050〜1,100 mm | MARI様提供（実測値・メーカー公表概寸、2026-09-28） |
+| 荷室高（開口部〜天井） | 約793〜845 mm | MARI様提供（実測値・メーカー公表概寸、2026-09-28） |
 
 ## Vehicle Loading Rule（暫定）
 
@@ -1047,7 +1053,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.24
+Ver.2.25
 
 ---
 
@@ -1200,6 +1206,7 @@ Permanent Storage
 | 2.22 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 | 2.23 | 2026-09-28 | MARI様のご回答（2026-09-28）を反映。Beck①のFixed ContentsへCoffee Serviceware（HILLS FIELD Glass Case Single、FIKA12 ×2）を追加し、Ruleの「Coffee Equipment収納禁止」は抽出・スチーム機材を指し、Servicewareは食器として収納する旨を明記。Coffee Module Layout §未決事項を専用水ボトルのみに更新。Winter Kitの電気毛布を「電源サイト利用時のみ持参」とした。§VehicleへPowertrain（MHEV 3.0L 直列6気筒ディーゼル）を記載。Consumables & Sundries ModuleのSundriesへ一酸化炭素警報器（所有済み）を追加。 |
 | 2.24 | 2026-09-28 | MARI様のご回答を反映。§Vehicleの座席数を5人乗りと記載。Coffee System専用水ボトル3本の収納先を食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ、MD-004 Version 7.70で新規登録）に決定し、Coffee Module Layout §未決事項を解消。§Full Loading Order ③へSTR-035を追加。 |
+| 2.25 | 2026-09-28 | MARI様提供の荷室データを§Vehicleへ記載（容量のVDA方式・Dry表記、奥行〈後席使用時・格納時〉、最大幅、ホイールハウス間幅、開口部〜天井高）。Coffee Module Layout §必要な実測へ、Coffee Equipment未購入のため試し詰めは購入後に行う旨を追記。 |
 
 ---
 
