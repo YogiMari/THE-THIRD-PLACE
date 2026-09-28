@@ -1,6 +1,6 @@
-OP-002 Design Bible Ver.5.7
+OP-002 Design Bible Ver.5.8
 # THE THIRD PLACE Design Bible
-## Ver.5.7 Official Complete Edition
+## Ver.5.8 Official Complete Edition
 
 ---
 
@@ -1507,6 +1507,8 @@ Equipment Registryとは独立した評価軸を持つ。
 
 人生との関係。
 
+キャンプという趣味を超え、分野横断でTHE THIRD PLACEの美意識を育てる。
+
 ---
 
 ## KN-002
@@ -2050,7 +2052,7 @@ THE THIRD PLACEは、
 
 **THE THIRD PLACE Design Bible**
 
-**Ver.5.6 Official Complete Edition**
+**Ver.5.8 Official Complete Edition**
 
 **End of Document**
 
@@ -2101,3 +2103,9 @@ THE THIRD PLACEは、
 ## Shelter Domain Completion Condition Note
 
 本文書は、2026-09-28付でVer.5.6からVer.5.7へ更新した（Minor Version：構成追加）。§Domain Completion（領域完成条件）にShelterの項目が欠けていたため、Fire等の既存項目と同一文体で追加した。「自然との境界が、一つの屋根として成立していること。内と外を分かち、Third Placeという居場所が、天候によらず成立していること。」は、§07 Shelter本文（空間の境界・屋根をつくる存在である）を踏まえた試案をMARI様に確認いただき、承認された内容である。MARI様のご決定に基づく（C-03）。
+
+---
+
+## KN-003 Editorial Series Role Sync Note
+
+本文書は、2026-09-28付でVer.5.7からVer.5.8へ更新した（Patch Version：既存記述の是正）。§Editorial SeriesのKN-003 Beyond Journey項目が「体験。価値観。人生との関係。」という管理対象の列挙に留まり、KN-003本文Purposeが定めるカルチャーマガジンとしての編集目的（キャンプという趣味に留まらず、分野横断でTHE THIRD PLACEの美意識を育てる）を欠いていたため、「キャンプという趣味を超え、分野横断でTHE THIRD PLACEの美意識を育てる。」を追記した。OP-008 §8 KN-003 Roleの同時改訂と連動。MARI様のご決定に基づく（C-17）。

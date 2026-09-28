@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.13
+**Version**: 3.14
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -32,6 +32,7 @@
 | 3.11 | 2026-09-28 | CZ-002 Ver.3.0で実行プロトコル（Freshness Validation〜Operational Directives）がOP-009 §XVIII Patrol Protocolへ移設済みであるにもかかわらず、Appendix FのOP-009紹介文（日英）「実際の実行手順はCZ-002が別途管理する」、§8カタログのCZ-002 Summary「パトロールの実行手順」、Appendix FのCZ-002紹介文（日英）「鮮度を評価するリサーチ運用プロトコル」が逆の記述のまま残存していた点を是正。「OP-009＝方法論と実行手順（§XVIII）、CZ-002＝Watch List（監視対象・調査キーワード）」に統一。CZ-002 I. PurposeおよびOP-009 §XVIの同時改訂と連動。MARI様のご決定に基づく（C-05）。 |
 | 3.12 | 2026-09-28 | §15 Document Dependenciesが「依存関係はProject Ledgerにて管理する」としていたが、DB-001に該当節が存在せず、Rule DOC-06（文書一覧はOP-008 §8が唯一の正本、Project LedgerはCurrent Focus等の運用情報のみを管理）とも整合しなかった点を是正し、「依存関係は各文書のReferences（Related Documents）にて個別に表現し、一元的な依存関係台帳は持たない」へ書き換えた。§18.1手順5「Project Ledgerへ登録すること」も同じ矛盾があったため「OP-008 §8 Document Seriesへ登録すること」へ改めた。§18.2「Project Ledgerを運用している場合は、更新内容を反映する」は、DB-001が個別文書の更新内容を記録する節を持たない実態と整合しないため削除した。MARI様のご決定に基づく（C-13）。Patch Version。 |
 | 3.13 | 2026-09-28 | KN発行方針の参照先不在（DB-001が参照する「ways-of-working KN issuance rules」がリポジトリに実在しない不整合）を是正するため、§28 KN Publication Policyを新設（Minor Version：章追加）。KN-001〜004の本文はGitHubに置かず、Artifactとしてのみ発行する方針と、その理由（発行物が今後何百と増えていく見込みであるため）を明文化した。DB-001の参照を本節へ統一。MARI様のご決定に基づく（C-14）。 |
+| 3.14 | 2026-09-28 | §8カタログのKN-003 Role列が「体験・価値観・人生との関係」の管理対象列挙に留まり、KN-003本文Purposeが定めるカルチャーマガジンとしての編集目的（キャンプという趣味に留まらず、建築・家具・照明・工業デザイン・自動車・写真・ライフスタイルなど分野横断でTHE THIRD PLACEの美意識を育てる）を欠いていた不整合を是正。KN-003本文Purposeを正として、Role列へ当該記述を追記した。Summary列は変更なし。OP-002 Editorial Series（KN-003）の同時改訂と連動。MARI様のご決定に基づく（C-17）。Patch Version。 |
 
 ---
 
@@ -249,7 +250,7 @@ Authority 列は本 Version（3.0）で新設された分類である。BR-001�
 | CZ-002 | Vigil Protocol | `CZ/CZ-002_Vigil_Protocol.md` | See Appendix F | SSOT | Living | 欲しいギアの市場監視Watch List（監視対象・調査キーワード） |
 | KN-001 | Heritage Chronicle | `KN/KN-001_Heritage_Chronicle.md` | 管理対象<br>・活動記録<br>・月次記録<br>・完成までの歩み<br>Chronicleは、<br>歴史を保存する文書である。<br>設計判断は記載しない。 | Archive | Static | プロジェクトの歴史・決定理由のアーカイブ |
 | KN-002 | Cultural Pantheon | `KN/KN-002_Cultural_Pantheon.md` | 管理対象<br>・ブランド文化<br>・Creator<br>・Community<br>・Gallery<br>・Shop<br>・Brand Tier（S〜D）<br>・Brand Lineage（系譜）<br>Cultural Pantheonは、<br>Equipment情報を保持しない。<br>ブランドの背景・思想のみを扱う。 | Reference | Static | ブランドの文化・背景・系譜のアーカイブ |
-| KN-003 | Beyond Journey | `KN/KN-003_Beyond_Journey.md` | 管理対象<br>・体験<br>・価値観<br>・人生との関係<br>Beyond Journeyは、<br>THE THIRD PLACEを通して得られた、<br>人生そのものの記録を管理する。 | Archive | Static | キャンプを超えたデザイン文化を紹介するカルチャーマガジン |
+| KN-003 | Beyond Journey | `KN/KN-003_Beyond_Journey.md` | 管理対象<br>・体験<br>・価値観<br>・人生との関係<br>Beyond Journeyは、<br>キャンプという趣味に留まらず、<br>建築・家具・照明・工業デザイン・自動車・写真・ライフスタイルなど分野横断で、<br>THE THIRD PLACEの美意識を育てるカルチャーマガジンである。 | Archive | Static | キャンプを超えたデザイン文化を紹介するカルチャーマガジン |
 | KN-004 | Atelier Discovery | `KN/KN-004_Atelier_Discovery.md` | 管理対象<br>・市場調査<br>・ブランド調査<br>・技術調査<br>・比較調査<br>Discoveryは、<br>研究記録である。<br>Discoveryに記載された内容は、<br>正式情報ではない。<br>採用された時点で、<br>各Master Documentへ反映される。 | Reference | Static | 市場・ブランドの「今」を観測するリサーチメディア |
 
 ---
