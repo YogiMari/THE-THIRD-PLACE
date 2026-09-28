@@ -1,5 +1,5 @@
 # MD-001 Storage Blueprint
-## Ver.2.14
+## Ver.2.15
 
 Status : Active
 
@@ -493,14 +493,14 @@ STR-032（WHATNOT One Touch Bucket HD）を、通年の消耗品と小物の常�
 | Season | Contents |
 |---|---|
 | Summer | ポータブルエアコン |
-| Winter | FIR-036（薪ストーブ）、FIR-029（武井バーナー Purple Stove 501A） |
+| Winter | FIR-036（薪ストーブ）、FIR-029（武井バーナー Purple Stove 501A）、FUR-035（冬用寝具のシーツ） |
 
 ## Seasonal Slot B（バケット用）
 
 | Season | Contents |
 |---|---|
 | Summer | 夏用ワンタッチバケット |
-| Winter | 冬用の大きな寝具（FUR-032）＋冬用寝具のシーツ（FUR-035）。バケットは自宅保管とする |
+| Winter | 冬用の大きな寝具（FUR-032）。バケットは自宅保管とする |
 
 ### Rule
 
@@ -935,7 +935,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.14
+Ver.2.15
 
 ---
 
@@ -1079,7 +1079,8 @@ Permanent Storage
 | 2.11 | 2026-09-28 | Layer 1 Coffee ModuleとCoffee Sequenceを、旧リスト（7品目）から現行の13点（暫定・試し詰め前）へ置換。Validation SummaryのCoffee ModuleをVerifiedからProvisionalへ修正。Layout節の「旧リスト未同期」注記を削除。Layer 2（Wood Board ×4 Sets）とLayer 3（Vapalux M320）は、本案との矛盾を未解決のまま残している |
 | 2.12 | 2026-09-28 | MARI様のご決定に基づき、Consumables & Sundries Module（STR-032 WHATNOT One Touch Bucket HD、通年の消耗品と小物の常備用）を新設。中身（消耗品：火まわり・洗い衛生・メンテナンス・香り・電池／小物：ハンガー・カラビナ等）、分類（補充ライン方式・定数チェック方式）、確認方法を記載。役割の要約はMD-004 STR-032のIndustrial Attributeへ記載し、詳細は本書のみで管理する（重複管理を回避）。Storage Rulesの「モジュールの混在は認めない」原則との整合は、ShellCon25②（Light & Aroma Module）の複数Domain統合運用の前例に基づき、本バケットを単一役割の1 Moduleとして位置付けることで確保した。 |
 | 2.13 | 2026-09-28 | MARI様のご決定に基づき（GitHub Issue #46）、Seasonal Slot Module（Seasonal Slot A：大型ギア用／B：バケット用）、Summer Kit（夏用ワンタッチバケットの中身・補充ライン）、Winter Kit（Equipment：FIR-036・FIR-029・FIR-032＋FIR-033／Bedding：FUR-032・FUR-035＋湯たんぽ・電気毛布／Consumables：CB缶／Clothing：ブーツ／Out of Scope：灯油・薪）、Weather Overlay（Rain、管理対象外）を新設。Consumables & Sundries Module §火まわりへCB缶（冬のみ）を追加。MD-004に未登録の物品（ポータブルエアコン・夏用ワンタッチバケット・湯たんぽ・電気毛布）は、Consumables & Sundries Moduleの前例に基づきMD-004へ新規登録せず、本書内でのみKit構成物として記載した。定義（Base／Season Kit／Weather Overlay、Seasonal Slotの位置づけ）はOP-006 Foundation Compassが管理し、本節では中身（データ）のみを記載する（重複管理を回避）。冬用暖房コンテナ・冬の小物の暫定位置は未決定のため本書には記載しない。 |
-| 2.14 | 2026-09-28 | 【引継ぎ】Beck②コーヒーギア13点収納設計を受け、Coffee Module Layout（暫定）節を拡充。13点＋Wood Boardの寸法一覧（GPT・Gemini web二重チェック確定値）、Beck②内寸の採用根拠（MD-001正本565×360×265mmを基準、540×340×250mmは参考値扱い）、9Barista Mk.2 Proの寸法採用根拠（実寸未確定のため安全側160×190×180を採用）、不採用配置案、配置詳細、判定結果（基準内寸では13点成立、参考値内寸では不成立、Wood Boardは3セットが上限・4セット目は非推奨・5〜7セットは不可）、未決事項（Layer 2 Wood Board×4 SetsとLayer 3 Vapalux M320の格納先が未解決のまま）、試し詰め前に必要な実測項目を追記した。Coffee ModuleのStatusは引き続きProvisional（試し詰め未了のため）。Validation Summaryの該当行へ判定根拠を追記。 |
+| 2.14 | 2026-09-28 | MARI様のご指摘に基づき、Seasonal Slot Moduleの冬季内容の誤りを訂正した。Seasonal Slot A（ポータブルエアコンの場所）の冬はFIR-036・FIR-029に加えFUR-035（冬用寝具のシーツ）も含む。Seasonal Slot B（夏用ワンタッチバケットの場所）の冬はFUR-032（冬用の大きな寝具、嵩張る方）のみであり、FUR-035はSlot Bには含まれない。Winter Kit § Equipment・Bedding自体（何が冬季に積まれるか）に変更はなく、Seasonal Slot Moduleの表（どちらのSlotに何が入るか）のみを訂正した。 |
+| 2.15 | 2026-09-28 | 【引継ぎ】Beck②コーヒーギア13点収納設計を受け、Coffee Module Layout（暫定）節を拡充。13点＋Wood Boardの寸法一覧（GPT・Gemini web二重チェック確定値）、Beck②内寸の採用根拠（MD-001正本565×360×265mmを基準、540×340×250mmは参考値扱い）、9Barista Mk.2 Proの寸法採用根拠（実寸未確定のため安全側160×190×180を採用）、不採用配置案、配置詳細、判定結果（基準内寸では13点成立、参考値内寸では不成立、Wood Boardは3セットが上限・4セット目は非推奨・5〜7セットは不可）、未決事項（Layer 2 Wood Board×4 SetsとLayer 3 Vapalux M320の格納先が未解決のまま）、試し詰め前に必要な実測項目を追記した。Coffee ModuleのStatusは引き続きProvisional（試し詰め未了のため）。Validation Summaryの該当行へ判定根拠を追記。mainへ先行反映されていたSeasonal Slot Module訂正（旧Ver.2.14）とのコンフリクトを解消し、両変更を統合してVer.2.15とした。 |
 
 ---
 
