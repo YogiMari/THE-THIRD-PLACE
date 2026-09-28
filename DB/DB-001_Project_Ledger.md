@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.13  
+**Version**: 4.14  
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -31,9 +31,6 @@
 
 ## Health Check
 
-- SSOT : ✓
-- Conversation Ledger : ✓
-- Documentation : ✓
 - Change Management : GitHub Issues（Kanban）を参照。ステータスはIssue側が正であり、本表へは転記しない
 
 ---
@@ -66,17 +63,7 @@
 
 # Project Overview
 
-| Series | Documents | Status |
-|:------:|:---------:|:------:|
-| DS | 1 | ✓ |
-| OP | 10 | ✓ |
-| DB | 1 | ✓ |
-| MD | 4 | ✓ |
-| BR | 3 | ✓ |
-| CZ | 2 | ✓ |
-| KN | 4 | ✓ |
-
-合計 25 文書。
+文書一覧・文書数は OP-008 §8 Document Series を参照。
 
 ---
 
@@ -149,6 +136,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.11 | 2026-09-28 | GitHub Issue #46に基づき、Project Inboxの該当行を、OP-006・MD-001へ正式反映された決定分を除いた未決定事項（冬用暖房コンテナの要否・定位置）のみへ書き直した。Patch Version。 |
 | 4.12 | 2026-09-28 | Conversation Ledgerへ、調達区分の整理（OP-005のCoffee限定化・Horizon改称）の会話を1行追加（MARI様ご指示）。Patch Version。 |
 | 4.13 | 2026-09-28 | KN Publication Logが参照していた「ways-of-working KN issuance rules」がリポジトリに実在しない不整合を是正し、OP-008 §28 KN Publication Policy（新設）への参照へ更新。MARI様のご決定に基づく（C-14）。Patch Version。 |
+| 4.14 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Project Overviewの系列別文書数表（OP-008 §8から導出可能な重複情報）を「文書一覧・文書数は OP-008 §8 Document Series を参照。」の1行へ置換した。あわせて、検証プロセスを伴わず常に✓固定だったHealth CheckのSSOT／Conversation Ledger／Documentation行を削除し、Change Management行のみを残した。MARI様のご決定に基づく（S-08）。Patch Version。 |
 
 ---
 

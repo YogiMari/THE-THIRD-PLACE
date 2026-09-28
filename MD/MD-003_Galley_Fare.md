@@ -1,5 +1,5 @@
 # MD-003 Galley Fare
-Version 2.17
+Version 2.18
 
 ---
 
@@ -3071,21 +3071,7 @@ THE THIRD PLACE Core Documents の中で、
 
 キッチン機材を担う独立したMaster Documentである。
 
-| Document | Responsibility |
-|-----------|----------------|
-| DS-001 Original | プロジェクトの原典 |
-| OP-001 Constitution | プロジェクト全体の憲章 |
-| OP-002 Design Bible | 設計思想 |
-| MD-002 Field Atlas | 舞台の選定 |
-| MD-004 Equipment Registry | Equipment の唯一のマスターデータ（キッチン機材を除く） |
-| OP-005 Pursuit Strategy | Equipment を迎える戦略 |
-| OP-006 Foundation Compass | Foundation を構成・維持するための指針 |
-| OP-007 Habitat Architecture | フィールドに完成する暮らしの空間を定義する |
-| OP-003 Affinity Lexicon | 好み・美意識・親和性の語彙 |
-| OP-004 Aesthetic Grammar | 美しさを構成する法則 |
-| MD-001 Storage Blueprint | 収納設計・運用 |
-| **MD-003 Galley Fare** | キッチン機材の独立マスターデータ |
-| OP-010 Qualification Charter | Selection Standard・Registry Rulesの登録規則 |
+文書一覧は OP-008 §8 Document Series を参照。
 
 ---
 
@@ -3377,6 +3363,17 @@ BR-002 Ver.4.3 Heat Source Decisionに基づき、9Barista Mk.2 ProおよびALM 
 ---
 
 ## Version 2.17
+
+OP-008 Rule DOC-06・Principle 003に基づき、§Relationship to Other Core Documentsの文書一覧表（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。
+
+### Changes
+
+- Relationship to Other Core Documentsの文書一覧表を参照1行へ置換。表以外の固有の関係説明は変更なし。
+- MARI様のご決定に基づく（S-08）。
+
+---
+
+## Version 2.18
 
 S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い、Version History のうち Version 1.0を archive/MD-003_Version_History_Archive.md へ移設した。移設した履歴は原文のまま保持し、要約・削除は行っていない。本文側の記録データそのものに変更はない。MARI様のご決定に基づく。
 
