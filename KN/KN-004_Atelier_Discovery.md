@@ -1,6 +1,27 @@
 KN-004 Atelier Discovery
 # KN-004 Atelier Discovery
 
+**Document ID**: KN-004  
+**Title**: Atelier Discovery  
+**Series**: KN – Knowledge (Record)  
+**Version**: 1.3  
+**Authority**: Reference  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 1.0 | 2026-09-24 | Volatility Restructureにより、§Watch Listの表を「Watch List は CZ-002 Vigil Protocol を唯一の正本とする」という参照文へ置換（詳細は本文Volatility Restructure Note参照）。 |
+| 1.1 | 2026-09-28 | OP-005 Pursuit Strategy Ver.1.5に伴い、冒頭の常設ダッシュボード「Must Buy Dashboard」を「Horizon」へ改称し、監視対象の出どころをCZ-002 Vigil Protocol Watch Listへ統一（詳細は本文Scope Alignment Note参照）。 |
+| 1.2 | 2026-09-28 | OP-005 Pursuit Strategy Ver.2.0に伴い、§Editorial Rulesの反映先リストを更新（詳細は本文Editorial Rules Reflection List Update Note参照）。 |
+| 1.3 | 2026-09-28 | S-11（文書ヘッダーの統一）に伴い、Document ID／Title／Series／Authority／Status／Ownerのヘッダー項目、およびRevision History章を新設した。既存の個別Note（Volatility Restructure Note等）は本文中に残置し、本表はそれらの版数・日付を集約したサマリーとする。内容に変更はない。MARI様のご決定に基づく。 |
+
+---
+
 ## Purpose
 
 Atelier Discovery は、
