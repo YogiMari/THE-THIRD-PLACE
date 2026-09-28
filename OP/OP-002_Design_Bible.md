@@ -1,6 +1,6 @@
-OP-002 Design Bible Ver.5.3
+OP-002 Design Bible Ver.5.4
 # THE THIRD PLACE Design Bible
-## Ver.5.3 Official Complete Edition
+## Ver.5.4 Official Complete Edition
 
 ---
 
@@ -1496,92 +1496,7 @@ Equipment Registry Object Referenceのみを、
 
 Equipment情報の正とする。
 
----
-
-## Official Name（正式名称）
-
-必ず正式名称を使用する。
-
-略称を、
-
-正式名称として登録しない。
-
----
-
-## Brand（ブランド）
-
-ブランド名は、
-
-正式表記を使用する。
-
----
-
-## Product Name（製品名）
-
-正式名称で統一する。
-
----
-
-## Color（カラー）
-
-Colorは、
-
-英語表記で統一する。
-
-例
-
-- Black
-- White
-- Brown
-- Gray
-- Gold
-- Silver
-
----
-
-上記はDesign Bible全体の基調色（Appearance §Color）としての例示であり、MD-004が記録する個々のEquipmentの実際の色をこの7色に限定するものではない。実際の色の記録方法はOP-010 §Color Ruleに従う。
-
----
-
-## Material（素材）
-
-Materialは、
-
-Colorと分離して管理する。
-
-例
-
-- Walnut
-- Brass
-- Aluminum
-- Steel
-- Leather
-- Ceramic
-- Glass
-
----
-
-## Status（状態）
-
-Statusは、
-
-以下のみ使用する。
-
-- Owned
-- Must Buy
-- Candidate
-
----
-
-## Priority（優先度）
-
-Priorityは、
-
-Design Bibleとの一致度で決定する。
-
-価格ではない。
-
-人気でもない。
+登録規則・評価基準（Official Name／Brand／Product Name／Color／Material／Status／Priority）は、OP-010 Qualification Charterを参照。
 
 ---
 
@@ -2096,7 +2011,7 @@ THE THIRD PLACEは、
 
 **THE THIRD PLACE Design Bible**
 
-**Ver.5.2 Official Complete Edition**
+**Ver.5.4 Official Complete Edition**
 
 **End of Document**
 
@@ -2123,3 +2038,9 @@ THE THIRD PLACEは、
 ## Color Palette Scope Clarification Note
 
 本文書は、2026-09-28付でVer.5.2からVer.5.3へ更新した（Minor Version：既存原則への解釈規定の追加）。§Appearance/Colorおよび§Database Rules/Colorへ、Colorパレット（Black／Brown／White／Gray／Silver／Gold／Copper）は空間全体の基調色の目安（Baseline）であり、個々のEquipmentの実際の色を制限するものではないことを明記した。MD-004には本パレット外の色（例：LGT-003 Amber、LGT-015 Multi、LGT-017b Khaki、LGT-019 Light Blue、LGT-020／FIR-021／FIR-022 Light Brown、LGT-026 Orange、FIR-033 Camouflage、FIR-034／FIR-035 Dark Brown、FUR-027／FUR-030 Dark Brown、FUR-031 Wood-grain Print、FUR-032 Taupe／Classic Brown、ARM-001／STR-023／STR-025 Blue 等）が実データとして多数存在しており、これらはOP-010 Qualification Charter §Color Rule（実際の物理的な色を記録し、主観的表現は認めない）に基づく正当な記録であることを確認した。OP-010は本方針と矛盾しないため修正しない。MD-004のデータ自体に変更はない。MARI様のご決定に基づく（Q-02）。
+
+---
+
+## Database Rules Duplication Resolution Note
+
+本文書は、2026-09-28付でVer.5.3からVer.5.4へ更新した（Minor Version：重複節の削除・参照化）。§Database Rulesは、OP-010 Qualification Charter Part A（MD-004登録規則・評価基準の正本）と重複していたため（OP-008 Documentation System Principle 003 Single Source of Truthに抵触）、節本文をOP-010 Qualification Charterへの参照1行へ置き換えた。従来の小節のうち、Official Name／Brand／Product Nameの命名規則はOP-010 Part A §Naming Ruleへ移設した。Statusの値（旧: Owned／Must Buy／Candidate）は、既にOP-010 Part A（Owned／Essential／Candidate／Upgrade。Wantedは廃止済み）と食い違っていたため、本節から削除しOP-010を正本として参照する形へ統一した。Priorityの思想文（価格・人気ではなくDesign Bibleとの一致度で決定する）は、MD-004にPriority欄自体が存在しないことを確認した上で、OP-006 Foundation Compass §Priority Principleへ移設した。Color／Materialの例示・注記はOP-010 §Color Rule／§Material Ruleへの参照に既に統一済みのため、今回あわせて本節から削除した。MARI様のご決定に基づく（C-02）。
