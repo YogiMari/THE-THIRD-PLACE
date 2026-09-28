@@ -1,5 +1,5 @@
 # MD-001 Storage Blueprint
-## Ver.2.18
+## Ver.2.19
 
 Status : Active
 
@@ -682,7 +682,7 @@ Z1 Mini Steamer
 
 Pitcher＋Sleeve
 
-収納は、この逆順で行う。
+収納は、現状はこの逆順で暫定運用している。OP-006 Foundation Compass Recovery Sequenceの原則（保護・乾燥・メンテナンス・次回設営を考慮した順序であり、設営の逆順ではない）への正式な整合はN-03で扱う。
 
 ---
 
@@ -715,6 +715,8 @@ Vapalux（必要時のみ）
 ---
 
 # Return Sequence
+
+現状はDeployment Sequenceのほぼ逆順で暫定運用している。OP-006 Foundation Compass Recovery Sequenceの原則（保護・乾燥・メンテナンス・次回設営を考慮した順序であり、設営の逆順ではない）に基づく正式な撤収手順の設計はN-03で扱う。
 
 Coffee Equipment
 
@@ -921,7 +923,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.18
+Ver.2.19
 
 ---
 
@@ -1041,7 +1043,7 @@ Permanent Storage
 - ShellCon25②はLight & Aroma Module専用。
 - CONPE10はSnow Peak Multi Containerへ固定収納。
 - Bridge Frame・Wood Board・Coffee Equipment・Vapaluxは固定位置を変更しない。
-- 展開順と収納順は常に一致させる。
+- 展開順と収納位置の層順（箱内でどの層に何を格納するか）は常に一致させる。これは箱内の格納位置に関する原則であり、撤収作業を行う順序を指すものではない。撤収作業の順序はOP-006 Foundation Compass Recovery Sequenceの原則（保護・乾燥・メンテナンス・次回設営を考慮した順序であり、設営の逆順ではない）に従う。
 - Temporary permanent locationsは禁止。
 - Duplicate storageは原則禁止（例外条件はDuplicate Storage Exceptionを参照。現時点で適用事例なし）。
 - ゴミ分別は、STR-028+STR-029（燃えないゴミ）とSTR-030（燃えるゴミ）の役割分化構成で運用する（Dust Management Module参照）。
@@ -1067,7 +1069,8 @@ Permanent Storage
 | 2.15 | 2026-09-28 | 【引継ぎ】Beck②コーヒーギア13点収納設計を受け、Coffee Module Layout（暫定）節を拡充。13点＋Wood Boardの寸法一覧（GPT・Gemini web二重チェック確定値）、Beck②内寸の採用根拠（MD-001正本565×360×265mmを基準、540×340×250mmは参考値扱い）、9Barista Mk.2 Proの寸法採用根拠（実寸未確定のため安全側160×190×180を採用）、不採用配置案、配置詳細、判定結果（基準内寸では13点成立、参考値内寸では不成立、Wood Boardは3セットが上限・4セット目は非推奨・5〜7セットは不可）、未決事項（Layer 2 Wood Board×4 SetsとLayer 3 Vapalux M320の格納先が未解決のまま）、試し詰め前に必要な実測項目を追記した。Coffee ModuleのStatusは引き続きProvisional（試し詰め未了のため）。Validation Summaryの該当行へ判定根拠を追記。mainへ先行反映されていたSeasonal Slot Module訂正（旧Ver.2.14）とのコンフリクトを解消し、両変更を統合してVer.2.15とした。 |
 | 2.16 | 2026-09-28 | MARI様のご確認に基づき、MD-004（SSOT）との矛盾を是正。Filoméla INCENSE CHAMBER Tokyo Limited（MD-004 ARM-004：Status = Upgrade）、RT-01AC01 / ECHO LAMP（LGT-040：Status = Essential）、KURASHI MADE DOME LOOK（LGT-041：Status = Essential）、MMM Pocket Shade（MD-004に登録なし。旧LGT-018はOTEBO CRAFTS BABELへ差し替え済み）はいずれも未所有であるにもかかわらず、ShellCon25②（Light & Aroma Module）のFixed Contents・Light Sequence・Fixed Position Rules・Validation Summaryの4箇所で、既に所有・実運用中の固定装備であるかのように記載されていた。Filoméla（Upgrade）・MMM Pocket Shade（未登録）はSSOT整合を優先し、該当4箇所から記載を削除した（Ver.2.9と同様の考え方）。一方、RT-01AC01 / ECHO LAMPとKURASHI MADE DOME LOOK（いずれもMD-004でStatus = Essential）は、購入決定済み装備として記録を残す必要があるため削除せず、該当4箇所に「未所有・MD-004 Status = Essential」の注記を付して維持した（Beck② Storage VerificationのWood Board未購入分と同様の扱い）。あわせて、Filomélaの「横置き固定収納」に関する個別ルール・検証行（Rule節、Validation Summary、Fixed Position Rulesまとめの計3箇所）も、対象がFixed Contentsから外れたことに伴い削除した。MD-004側のStatus（Upgrade／Essential）は変更なし。 |
 | 2.17 | 2026-09-28 | MARI様のご指摘に基づき（課題C-11）、Validation SummaryとCoffee Module Layout（暫定）§未決事項との矛盾を是正。Beck② Storage VerificationのResultは、13点のCoffee Module新構成（Wood Board 3セットで底面を使い切る）のもとではLayer 2（Wood Board ×4 Sets）・Layer 3（Vapalux M320）の格納先が未解決であるにもかかわらずVerifiedのままだったため、Provisionalへ修正し、該当箇所を格納先確定分（Wood Board ×3 Sets）と未解決分（Wood Board ×4 Sets・Vapalux M320）に分けて明記した。Storage Verification Result表のBeck² Storage・Side Table Deployment・Operation Sequenceの3行も✅VerifiedからProvisionalへ修正した（Living Table DeploymentはLayer 0が格納先確定済みのためVerifiedを維持）。Wood Board 4セット・Vapalux M320自体の格納先は本改訂では決定せず、未解決である旨の明記に留めた（格納先の決定はN-06で別途扱う）。 |
-| 2.18 | 2026-09-28 | MARI様のご確認に基づき（課題C-20）、MD-001内の記述の揺れを是正。(1) Parent Documents（OP-001・OP-002・MD-004・OP-006・OP-007）とRelationship図（MD-004→MD-001→OP-007、OP-007は下流＝現地展開）が矛盾していたため、Parent DocumentsからOP-007を外した（OP-001・OP-002・MD-004・OP-006の4件に修正）。Relationship図・Position表は変更していない。(2) Beck②のPurpose「Coffee Equipment & Light Equipment」およびBeck② Principles「Coffee Equipment + Light Equipment + Living Table Module = Living Core Module」は、Fixed Position Rules Beck²の記述（Coffee Equipment + Living Table Module）および実際のFixed Contents（Beck②内の照明はVapalux M320のみ。DEVADEVA等の照明・香り一般はShellCon25②の担当）と不整合だったため、両箇所とも「Coffee Equipment & Living Table Module」「Coffee Equipment + Living Table Module = Living Core Module」へ修正し、Fixed Position Rulesの記述に統一した。Vapalux M320は引き続きLayer 3・Fixed Position Rulesの個別記載（Bridge Frame・Wood Board・Coffee Equipment・Vapaluxの収納位置は固定）でのみ扱う。Position表（S-08で削除予定）は本改訂の対象外。 |
+| 2.18 | 2026-09-28 | MARI様のご指摘に基づき（課題C-19）、OP-006 Foundation Compass Recovery Sequence「撤収は、設営の逆順ではない」とMD-001の「収納順」に関する記述の間で、「積載・収納の層順（箱内の格納位置）」と「撤収作業の順序」という異なる2つの概念が同じ「順」という言葉で書かれ、矛盾して見えていた点を是正した。Fixed Principles「展開順と収納順は常に一致させる」は層順（箱内の格納位置）を指す原則であることを明記し、撤収作業の順序はOP-006 Recovery Sequenceに従う旨を追記した。Coffee Sequence「収納は、この逆順で行う」およびReturn Sequence本体（Deployment Sequenceのほぼ逆順）は、現状はOP-006の原則に未整合な暫定運用であることを明記し、正式な撤収手順の設計はN-03で別途扱うこととした。OP-006自体は変更不要（MARI様のご確認済み）。 |
+| 2.19 | 2026-09-28 | MARI様のご確認に基づき（課題C-20）、MD-001内の記述の揺れを是正。(1) Parent Documents（OP-001・OP-002・MD-004・OP-006・OP-007）とRelationship図（MD-004→MD-001→OP-007、OP-007は下流＝現地展開）が矛盾していたため、Parent DocumentsからOP-007を外した（OP-001・OP-002・MD-004・OP-006の4件に修正）。Relationship図・Position表は変更していない。(2) Beck②のPurpose「Coffee Equipment & Light Equipment」およびBeck② Principles「Coffee Equipment + Light Equipment + Living Table Module = Living Core Module」は、Fixed Position Rules Beck²の記述（Coffee Equipment + Living Table Module）および実際のFixed Contents（Beck②内の照明はVapalux M320のみ。DEVADEVA等の照明・香り一般はShellCon25②の担当）と不整合だったため、両箇所とも「Coffee Equipment & Living Table Module」「Coffee Equipment + Living Table Module = Living Core Module」へ修正し、Fixed Position Rulesの記述に統一した。Vapalux M320は引き続きLayer 3・Fixed Position Rulesの個別記載（Bridge Frame・Wood Board・Coffee Equipment・Vapaluxの収納位置は固定）でのみ扱う。Position表（S-08で削除予定）は本改訂の対象外。mainへ先行マージされていたRecovery Sequence訂正（C-19、Ver.2.18）とのマージコンフリクトを解消し、両変更を統合してVer.2.19とした。 |
 
 ---
 

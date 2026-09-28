@@ -24,8 +24,11 @@ Not required:
 
 Reason:
     BR-002 may contain equipment that has not yet been purchased.
-    MD-004 contains only equipment that has actually been purchased,
-    owned, and entered into operational use.
+    For the Coffee domain (COF-series), MD-004 contains only equipment
+    that has actually been purchased, owned, and entered into
+    operational use. (Other MD-004 domains may still carry
+    Essential/Candidate/Upgrade items that are not yet purchased;
+    this validator's scope is limited to the Coffee sync chain.)
 
 The validator never modifies source documents.
 

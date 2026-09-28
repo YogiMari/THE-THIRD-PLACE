@@ -10,7 +10,7 @@ Brew Care
 
 ## Version  
 
-1.2  
+1.3  
 
 ## Status  
 
@@ -97,7 +97,7 @@ Barista Canon
 MD-004  
 Equipment Registry Object Reference  
     ↓  
-何を所有しているか  
+何を所有しているか（Confirmed後、実際に購入・Owned Statusとなった時点で登録）  
 
 BR-003  
 Procurement Handbook  
@@ -1670,6 +1670,7 @@ READY（準備完了）
 |---|---|---|
 | 1.1 | 2026-09-26 | 冒頭の重複H1見出しを是正。Document Relationship図内の旧文書名（Barista Codex／Acquisition Handbook）を現行名（Barista Canon／Procurement Handbook）へ同期。 |
 | 1.2 | 2026-09-28 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
+| 1.3 | 2026-09-28 | Document Relationship図のMD-004行に「（Confirmed後、実際に購入・Owned Statusとなった時点で登録）」という注記を追加し、流れがBR-002 → MD-004 → BR-003ではなくBR-002 → BR-003 → MD-004（購入後）→ BR-001であることを図で明示。BR-002・BR-003と同期。 |
 
 ---
 
