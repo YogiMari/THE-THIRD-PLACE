@@ -7709,12 +7709,12 @@ MARI様のご指摘に基づき、C-06として指摘された3件の誤りを�
 
 ## Version 7.67
 
-MD-004の登録規則違反の整理（C-16）に伴い、Coffee節の空枠を削除した。AIR LIGHT群（LGT-04_1a〜LGT-04_3d）およびLGT-043（Vacant枠）は、OP-010 Qualification Charter Version 1.3で正式に追認されたため、MD-004側のデータ変更はない。
+MD-004の登録規則違反の整理（C-16）に伴い、Coffee節の空枠を削除した。AIR LIGHT群（LGT-04_1a〜LGT-04_3d）およびLGT-043（Vacant枠）は、OP-010 Qualification Charter Version 2.1で正式に追認されたため、MD-004側のデータ変更はない。
 
 ### Changes
 
 - Coffee節：Brand/Product/Status等がすべて空欄だったCOF-001〜019のテンプレート枠19件を削除。Coffee節冒頭の説明文に「採番は購入時にCOF-001から開始する。事前の空枠は設置しない（C-16）。」を追記。
-- Related Documents：OP-010 Qualification Charter（Ver.1.3、共通部品の子ID形式・Reserved Slotルール新設と連動）。
+- Related Documents：OP-010 Qualification Charter（Ver.2.1、共通部品の子ID形式・Reserved Slotルール新設と連動）。
 
 ---
 

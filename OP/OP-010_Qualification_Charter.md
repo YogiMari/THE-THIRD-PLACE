@@ -3,7 +3,7 @@
 **Document ID**: OP-010  
 **Title**: Qualification Charter  
 **Series**: OP – Operation (Definition)  
-**Version**: 1.3  
+**Version**: 2.1  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -17,7 +17,8 @@
 | 1.0 | 2026-09-24 | 新規発行。Volatility Restructureに伴い、MD-004・MD-003・MD-002から登録規則・評価基準（恒久ルール）を移設し、記録系列台帳の登録規則・評価基準を定義する文書として新設した。データ（具体的な登録内容・台帳）は移設元に残る。 |
 | 1.1 | 2026-09-24 | MARI様のご指摘に基づき、タイトルをRegistry StandardからQualification Charterへ変更（MD-004 Equipment Registry Object Referenceとの語重複を解消）。これに伴いOP-008 §11 Naming Conventionへ文書名重複禁止ルールを新設。ファイル名もOP-010_Qualification_Charter.mdへ変更。内容（Purpose以下の本文）に変更はない。 |
 | 1.2 | 2026-09-28 | Part Aへ§Naming Rule（Official Name／Brand／Product Name）を新設し、OP-002 Design Bible §Database Rulesから逐語移設した（Minor Version：章追加）。OP-002 §Database RulesがOP-010 Part A（登録規則・評価基準の正本）と重複していたため（OP-008 Principle 003 Single Source of Truth）、OP-002側は本書への参照1行へ置き換えた。MARI様のご決定に基づく（C-02）。 |
-| 1.3 | 2026-09-28 | MD-004の登録規則違反の整理（C-16）に伴い、Part Aへ「共通部品の子ID形式」（LGT-04_1a等、量産共通部品向けの子ID表記を正式追認）と「Reserved Slot（予約枠）」（Vacant枠とStatus非保持の扱いを正式化）を新設した（Minor Version：章追加）。既存の登録済みID（AIR LIGHT群、LGT-043）はID凍結原則（IDは変更されない）に基づき変更しない。MARI様のご決定に基づく。 |
+| 2.0 | 2026-09-28 | Part B Category Grouping Policyと実データ（MD-003 KIT-063／KIT-071〜086）の食い違いを是正。S-01（ID Freeze）方針を採用し、KIT-番号の用途別グルーピング・全面再採番義務を廃止（Equipment ID §に注記追加）。Category Grouping Policyのグループ一覧は登録規則からHistorical Referenceへ位置づけを変更し、番号範囲をKIT-071〜086の実データに一致させた（鍋・グリドル系にKIT-071〜074/076、バーナー・ストーブ系にKIT-075/077〜080/084/086、カトラリー系にKIT-083、シェラカップ系にKIT-081〜082を追加、鍋敷きをKIT-063aへ訂正、いずれにも属さない単品グループを新設しKIT-085を収容）。既存の登録規則を変更する仕様変更のためMajor Version。MARI様のご決定に基づく（C-15）。 |
+| 2.1 | 2026-09-28 | MD-004の登録規則違反の整理（C-16）に伴い、Part Aへ「共通部品の子ID形式」（LGT-04_1a等、量産共通部品向けの子ID表記を正式追認）と「Reserved Slot（予約枠）」（Vacant枠とStatus非保持の扱いを正式化）を新設した（Minor Version：章追加）。既存の登録済みID（AIR LIGHT群、LGT-043）は、Version 2.0で採用されたS-01（ID Freeze）方針に基づき変更しない。MARI様のご決定に基づく。 |
 
 ---
 
@@ -77,7 +78,7 @@ IDは変更されない。
 
 ブランチ接尾辞（小文字アルファベット、例: LGT-028a、LGT-028b）は、後続IDの番号をずらすことなく、同じ装備枠を競合する複数の製品候補を登録するために、親IDへ直接付与できる。これはChild Components（恒久的に付随する構成部品、同時に所有される）とは異なる: ブランチバリアントは、1つの枠に対する代替候補を表し、通常は最終的にどちらか一方だけが昇格（StatusがEssential/Ownedへ変更）し、もう一方は廃止または別枠へ分類される。  
 
-**共通部品の子ID形式（Version 1.3以降）**：同一の量産パーツ（例：CARGO CONTAINER AIR LIGHT）が複数のParentに共通の子部品として繰り返し登録される場合、`{PREFIX}-{連番グループ}_{枝番}`（例：LGT-04_1a、LGT-04_2b）の形式を用いることができる。連番グループは主番号を簡略化した識別子であり、枝番（a, b, c...）は同一グループ内の個体を識別する。本形式は、通常のChild ID（例：FUR-002）とは別に、共通部品が量産品として繰り返し出現するケースにのみ適用する。  
+**共通部品の子ID形式（Version 2.1以降）**：同一の量産パーツ（例：CARGO CONTAINER AIR LIGHT）が複数のParentに共通の子部品として繰り返し登録される場合、`{PREFIX}-{連番グループ}_{枝番}`（例：LGT-04_1a、LGT-04_2b）の形式を用いることができる。連番グループは主番号を簡略化した識別子であり、枝番（a, b, c...）は同一グループ内の個体を識別する。本形式は、通常のChild ID（例：FUR-002）とは別に、共通部品が量産品として繰り返し出現するケースにのみ適用する。  
 
 **運用注記（Version 7.14以降）**：新規に発生する検討中候補の比較については、原則としてBranch Variant形式（a/b/c...）をMD-004上で新設せず、単一の親ID（Brand/Product = Unconfirmed）のみを登録し、具体的な候補間比較はCZ-001 Deliberation Dossierで管理する。既存のBranch Variant（LGT-028a/b等）は、整理が完了するまでの間、現状の形式のまま維持する。  
 
@@ -96,7 +97,7 @@ IDは変更されない。
   
 ---  
   
-### Reserved Slot（予約枠）（Version 1.3以降）  
+### Reserved Slot（予約枠）（Version 2.1以降）  
   
 特定のChild Component（共通部品等）に対応するParentがまだ具体的に決定していない場合、当該Parent IDを「Vacant」として登録できる。Vacant枠はStatus語彙（Owned/Essential/Candidate/Upgrade）を持たない。  
   
@@ -317,6 +318,8 @@ IDは欠番不可。番号は原則として変更しない。
 
 ただし、プロジェクトオーナーの明示的な指示による全面的な再編成（Version 2.5：用途別グルーピングによる全件再採番）は、この原則の例外として記録する。再編成の詳細な新旧対応表はVersion Historyに記載する。
 
+S-01（ID Freeze）方針の採用（Version 2.0より）に伴い、Version 2.5の全面再採番を以後この原則の唯一の例外として固定し、これ以降は用途別グルーピングを理由とする全面再採番を行わない。
+
 他のMaster Document（MD-004等）へ管理を移管したIDは、欠番とせず、移管先を示す記録（Retired）として保持する（Version 2.8より）。
 
 複数の候補が同一カテゴリで併存する場合、同一メイン番号に対して枝番（a, b, c...）を付与する（例：KIT-015a, KIT-015b, KIT-015c）。
@@ -360,27 +363,26 @@ MD-004（所有物のみを記録）とは異なり、MD-003は「まだ選ば�
 
 いずれか一つが購入・確定した時点でStatusをOwnedへ更新し、MD-004には登録しない（MD-003で完結）。不採用となった候補はStatusをUpgrade等に変更するか、Version Historyに不採用の経緯を記録した上で扱いを決める。
 
-### Category Grouping Policy（Version 2.5新設）
+### Category Grouping Policy（Version 2.5新設、Version 2.0よりHistorical Referenceへ変更）
 
-Version 2.5より、KIT-番号は取得順の連番ではなく、用途別グループごとに連番として整理する。
+Version 2.5〜2.16の間、KIT-番号は用途別グループごとの連番として整理されていた。この期間の登録実績（グループと当時の番号範囲）は、以下にHistorical Referenceとして記録する。この一覧は登録規則ではなく、過去の登録実績の記録である。
 
-グループ順序は以下の通り（本書内の登場順と一致）。
-
-1. 鍋・グリドル・焚火系調理器具（KIT-001〜007）
-2. バーナー・ストーブ（KIT-008〜013）
+1. 鍋・グリドル・焚火系調理器具（KIT-001〜007、KIT-071〜074、KIT-076）
+2. バーナー・ストーブ（KIT-008〜013、KIT-075、KIT-077〜080、KIT-084、KIT-086）
 3. 刃物・まな板（KIT-014〜017）
 4. 汎用調理小道具（KIT-018〜025）
-5. 食事用カトラリー（KIT-026〜031）
+5. 食事用カトラリー（KIT-026〜031、KIT-083）
 6. 串・耐熱グローブ（KIT-032〜034）
 7. マグ・タンブラー（KIT-035〜040）
 8. 急須（KIT-041）
-9. シェラカップ・炊飯関連（KIT-042〜059）
+9. シェラカップ・炊飯関連（KIT-042〜059、KIT-081〜082）
 10. コーヒー器具（KIT-060〜062）
-11. 鍋敷き（KIT-063）
+11. 鍋敷き（KIT-063a。KIT-063は欠番のまま）
 12. 収納・スパイス（KIT-064〜069）
 13. ゴミ処理（KIT-070〜070b。Version 2.8よりMD-004 Storage Domainへ移管済み。移管記録のみ保持）
+14. いずれの用途グループにも属さない単品（例：KIT-085）
 
-新規カテゴリの追加時は、末尾（現状KIT-070の次）に新グループとして追加するか、既存グループ内に挿入する場合は当該グループ以降の番号をすべて繰り下げる全面再採番を伴う。番号変更を伴う再編成は、その都度Version Historyに新旧対応表を記録する。
+Version 2.0より、S-01（ID Freeze）方針を採用し、KIT-番号の用途別グルーピング・それに伴う全面再採番義務を廃止する。新規登録は取得順に末尾（現状KIT-086の次）へ追加し、番号自体を用途分類の指標として用いない。用途分類は各アイテムのIndustrial Attributeフィールドで表現する。既存の枝番ルール（同一枠の複数候補をa/b/c...で記録する運用）は変更しない。
 
 ### Domain Scope Note (Kitchen vs. Fire/Coffee)
 
