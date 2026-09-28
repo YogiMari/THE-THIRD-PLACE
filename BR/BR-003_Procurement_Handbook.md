@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-3.6  
+3.7  
   
 **Status**  
   
@@ -58,6 +58,7 @@ Barista Canon
 ▼  
 MD-004  
 Equipment Registry  
+（Confirmed後、実際に購入・Owned Statusとなった時点で登録）  
 │  
 ▼  
 BR-003  
@@ -2153,6 +2154,7 @@ Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The B
 | 3.4 | 2026-09-28 | BR-002 Ver.4.3 Heat Source Decisionに伴い、Coffee System熱源の調達情報を反映。Product 30「Snow Peak ギガパワーストーブ レクタ（GS-150）」を新設し、9Barista Mk.2 Pro専用熱源としてPurchase Requiredで登録（MD-003 KIT-086として管理、Final Acquisition Inventory #30）。Product 01（9Barista Mk.2 Pro）NotesへHeat Transfer Plate選択の根拠を追記。Product 15（ALM KOPi Z1 Mini Steamer）Notesの「別途シングルバーナーが必要」という記述を、既存所有のSnow Peak ヤエンストーブ レギ（MD-003 KIT-011）を流用する旨へ訂正し、BR-002との矛盾を解消。Purchase Groupingへ「Group I — 9Barista Heat Source」を新設し、Group F（Latte System）の旧「別途バーナー」記述も同様に訂正。Estimated Acquisition Budget（Core Espresso System: ¥409,000〜465,500 → ¥423,300〜480,800、Estimated Total: ¥628,270〜744,270 → ¥642,570〜759,570）、Monthly Acquisition Plan Month 1小計（¥135,000〜139,500 → ¥149,300〜154,800）、Plan Total（¥619,270〜721,270 → ¥633,570〜736,570）を整合。MARI様の直接指示（2026-09-28）に基づく。 |  
 | 3.5 | 2026-09-28 | Ver.3.3の書き込み時に生じた転記誤りを、書き込み前の原文に照らして訂正。Product 16 Notes（「連続すう2回」→「連続する2回」）、Japan Purchase Policy 7（「妃当」→「妥当」）、Version Control 2.1行（「月あたり目安¥1万」→原文どおり「¥10万」）、Version Control 3.3行内の旧誤記の引用（「Puck Screenン」→「Puck Screン」）、Document Renumbering Noteの一文（「内容（Ver.2.4）は、以降のバージョンに変更はない。」→原文どおり「内容（Ver.2.4）に変更はない。」）。調達データそのものに変更はない。MARI様のご指示に基づく。 |  
 | 3.6 | 2026-09-28 | Design RationaleのYETI Yonder 1L必要性の根拠記述を、BR-002 Coffee System Water Bottle Configuration（Operation Scenario／Required Water Volume、Espresso 6杯・Latte 6杯・必要水量2,340mL）への参照に統一。BR-003側の旧試算（Latte 4杯・必要水量約1,800mL）とBR-002運用シナリオとの食い違いを解消（決定の正本はBR-002、BR-003は調達情報）。過去のVersion Control行（2.1等）は歴史的記録として原文のまま保持。MARI様のご指示に基づく。 |  
+| 3.7 | 2026-09-28 | Relationship節の図に「（Confirmed後、実際に購入・Owned Statusとなった時点で登録）」という注記をMD-004の行へ追加し、流れがBR-002 → MD-004 → BR-003ではなくBR-002 → BR-003 → MD-004（購入後）であることを図で明示。BR-002・BR-001と同期。調達データそのものに変更はない。 |  
   
 ---  
 
