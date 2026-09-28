@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.9  
+**Version**: 4.10  
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -51,6 +51,7 @@
 | PX Documentation System 制作 | OP-008 | PX, Documentation, Standard | PXシリーズのDocumentation Systemを制作。 | Active | 2026-07-15 |
 | PX Project Ledger 制作 | DB-001 | PX, Ledger, Conversation, Chat | Conversation管理を中心としたProject Ledgerを設計。 | Active | 2026-07-15 |
 | Project Ledger 位置づけ整合 | OP-001, OP-008, DB-001, CZ-001 | Project Ledger, Decision, BR-002, CZ-001, 記録, 意思決定, 乖離, 不採用, ShellCon | OP-001 §9・§14とOP-008 §8のDB-001 Role記述の乖離を是正（OP-001 Ver.5.3、OP-008 Ver.3.4）。DB-001の空欄セクションを充填（Current Focus・Project Inbox運用ルール新設、KN Publication Logは未発行のため空欄が正と確認）。あわせてCZ-001に「不採用候補とその理由」を恒久保持する運用を新設（Ver.3.11）し、Wood Stove・ShellCon25 Bedding Module転用検討の2件を記録（Ver.3.12）。 | Active | 2026-09-27 |
+| パートナー貢献の扱いとDrive⇄GitHub同期運用 | OP-001, OP-008 | パートナー, 協力者, Gemini, Drive, Mirror, Contributions, GAS, 一方向ミラー, External Contribution Protocol, rclone | OP-001 §21.1 External Contribution Protocolを新設（Ver.5.5）。OP-008 §27 Drive Mirror Operationを新設（Ver.3.7）。GitHub→Driveの一方向ミラー（GAS、15分ごと）を稼働し、協力者の書き込み先をContributionsとした（自動反映なし・正式化はオーナーとAIが判断）。旧ミラーのワークフロー（mirror-to-drive.yml）を削除し、Driveの親フォルダの旧ミラー残骸を整理。GASソースをscripts/MirrorSync.gsとして保管。 | Active | 2026-09-28 |
 
 ---
 
@@ -143,6 +144,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.7 | 2026-09-27 | 「Conversation Complete」運用ルールに従い、本日の会話（Project Ledger 位置づけ整合）のConversation LedgerのSummaryを、CZ-001の不採用理由恒久保持ルール新設・Wood Stove/ShellCon記録の反映まで含めた最終形へ更新。Patch Version。 |
 | 4.8 | 2026-09-28 | MARI様のご決定（GitHub Issue #44）に基づき、Winter Sleeping Mat（FUR-034）・Pad Sheet（FUR-035）がMD-004・CZ-001へ正式反映されたため、Current FocusからFUR-034・FUR-035の2行を削除。Health Check（Change Management）の記載はそのまま維持。Minor Version。 |
 | 4.9 | 2026-09-28 | Project Inboxへ、Seasonal Configuration未定義（OP-006）に関する検討中案件を1行追加（MARI様ご指示）。Patch Version。 |
+| 4.10 | 2026-09-28 | Conversation Ledgerへ、パートナー貢献の扱いとDrive⇄GitHub同期運用の会話を1行追加（MARI様ご指示）。Patch Version。 |
 
 ---
 
