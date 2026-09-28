@@ -1,7 +1,7 @@
 OP-005 Pursuit Strategy
 # OP-005
 # Pursuit Strategy
-## Ver.2.0
+## Ver.2.1
 
 ---
 
@@ -14,6 +14,7 @@ OP-005 Pursuit Strategy
 | 1.4 | 2026-09-24 | MARI様のご指摘に基づき、OP-008 §11 Naming Conventionへ新設された文書名重複禁止ルールに伴い、タイトルをAcquisition StrategyからPursuit Strategyへ変更（BR-003 Acquisition Handbookとの語重複を解消）。BR-003側もProcurement Handbookへ改名されたため、本書内の参照表記を同期。Acquisition Priority／Acquisition Statusは、他文書（MD-004・BR-003等）でも使用される既存のデータ項目名であり、文書タイトルではないため変更していない。ファイル名もOP-005_Pursuit_Strategy.mdへ変更。 |
 | 1.5 | 2026-09-28 | MARI様のご決定に基づき、月間予算・Acquisition Priority・Acquisition Status・Monthly Planningの適用範囲をCoffee Zoneに限定した（実際の運用はBR-003 Procurement Handbook）。あわせて、Coffee以外のゾーンは「買えるときに買う」方針を新章§Non-Coffee Zones Acquisition Policyへ明記した。章追加のためMinor Version。OP-008 §8カタログのOP-005行（Role・Summary）を同期。 |
 | 2.0 | 2026-09-28 | MARI様のご決定に基づき、BR-003 Procurement HandbookがCoffee Zoneの購入優先度・購入状態・月次購入計画を自前で定義・運用している実態に合わせ、本書の§Acquisition Priority（Must Buy／High／Medium／Low）・§Acquisition Status（Planned／Watching／Ready／Acquired）・§Monthly Planning（Must Buy／Primary Target／Secondary Target／Waiting）を削除し、新章§Coffee Zone Classification Referenceによる参照へ置換した（二重定義の解消。OP-008 Principle 003）。あわせて、§Monthly Budgetの「Must Buyが市場へ現れた場合は予算超過を許容する」旨の記述を、対応区分の削除に伴い削除した。§Non-Coffee Zones Acquisition Policyの表現を同期。章削除・責任範囲の変更のためMajor Version。OP-008 §8カタログのOP-005行（Role）を同期。 |
+| 2.1 | 2026-09-28 | Ver.2.0以降の実態（購入優先度・購入状態・月次購入計画はBR-003の管轄、Coffee以外は買えるときに買う、市場監視はCZ-002 Vigil Protocol／OP-009 Search Doctrineの管轄）に、本書のPurposeおよびRelationship to Other Core Documents末尾の記述が追いついていなかった点をMARI様のご指摘に基づき是正した。Purposeから「いつ、どの順序で」を削除し判断基準の定義に絞った。Relationship to Other Core Documents末尾の「取得順序・取得時期・市場監視を管理する」を、実際の管理主体（判断基準：本書／Coffee Zoneの計画：BR-003／Coffee以外：買えるときに買う／市場監視：CZ-002・OP-009）を明示する記述へ置換した。文言修正のためMinor Version。OP-008 §8カタログのOP-005行・Appendix F（日英）を同期。DS-001は原典のため変更しない。MARI様のご決定に基づく（C-04）。 |
 
 ---
 
@@ -22,10 +23,6 @@ OP-005 Pursuit Strategy
 Pursuit Strategy は、
 
 THE THIRD PLACE を構成する Equipment を、
-
-いつ、
-
-どの順序で、
 
 どの判断基準によって迎えるかを定義する戦略文書である。
 
@@ -233,7 +230,13 @@ Pursuit Strategy は、
 
 Equipment Registry の情報を基準に、
 
-取得順序・取得時期・市場監視を管理する。
+迎える判断基準を管理する。
+
+Coffee Zone の購入優先度・購入状態・月次購入計画は BR-003 Procurement Handbook が管理する。
+
+Coffee 以外の全ゾーンは買えるときに買う（§Non-Coffee Zones Acquisition Policy参照）。
+
+市場監視は CZ-002 Vigil Protocol／OP-009 Search Doctrine が管理する。
 
 Equipment の詳細情報は保持しない。
 

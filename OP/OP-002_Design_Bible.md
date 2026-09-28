@@ -1,6 +1,6 @@
-OP-002 Design Bible Ver.5.6
+OP-002 Design Bible Ver.5.7
 # THE THIRD PLACE Design Bible
-## Ver.5.6 Official Complete Edition
+## Ver.5.7 Official Complete Edition
 
 ---
 
@@ -1371,15 +1371,11 @@ Equipment情報は、
 
 ### Pursuit Strategy（取得戦略）
 
-購入計画。
+迎える判断基準。
 
-価格。
+月間予算（Coffee Zoneのみ）。
 
-市場調査。
-
-優先順位。
-
-Must Buy管理。
+Coffee以外は買えるときに買う。
 
 ---
 
@@ -2054,7 +2050,7 @@ THE THIRD PLACEは、
 
 **THE THIRD PLACE Design Bible**
 
-**Ver.5.5 Official Complete Edition**
+**Ver.5.6 Official Complete Edition**
 
 **End of Document**
 
@@ -2096,6 +2092,12 @@ THE THIRD PLACEは、
 
 ---
 
+## Pursuit Strategy Role Sync Note
+
+本文書は、2026-09-28付でVer.5.5からVer.5.6へ更新した（Minor Version：他文書の役割記述への追随）。§Documentation ArchitectureのOP-005紹介文が、OP-005 Pursuit Strategy Ver.2.0（購入優先度・購入状態・月次購入計画はBR-003 Procurement Handbookの管轄、Statusの値からMust Buyは既に廃止済み）と食い違ったまま「購入計画。価格。市場調査。優先順位。Must Buy管理。」という記述で残っていたため、「迎える判断基準。月間予算（Coffee Zoneのみ）。Coffee以外は買えるときに買う。」へ修正した。MARI様のご決定に基づく（C-04）。
+
+---
+
 ## Shelter Domain Completion Condition Note
 
-本文書は、2026-09-28付でVer.5.5からVer.5.6へ更新した（Minor Version：構成追加）。§Domain Completion（領域完成条件）にShelterの項目が欠けていたため、Fire等の既存項目と同一文体で追加した。「自然との境界が、一つの屋根として成立していること。内と外を分かち、Third Placeという居場所が、天候によらず成立していること。」は、§07 Shelter本文（空間の境界・屋根をつくる存在である）を踏まえた試案をMARI様に確認いただき、承認された内容である。MARI様のご決定に基づく（C-03）。
+本文書は、2026-09-28付でVer.5.6からVer.5.7へ更新した（Minor Version：構成追加）。§Domain Completion（領域完成条件）にShelterの項目が欠けていたため、Fire等の既存項目と同一文体で追加した。「自然との境界が、一つの屋根として成立していること。内と外を分かち、Third Placeという居場所が、天候によらず成立していること。」は、§07 Shelter本文（空間の境界・屋根をつくる存在である）を踏まえた試案をMARI様に確認いただき、承認された内容である。MARI様のご決定に基づく（C-03）。

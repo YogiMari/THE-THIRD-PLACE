@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 3.3  
+**Version**: 3.4  
 **Status**: Active  
 **Owner**: THE THIRD PLACE
 
@@ -36,6 +36,7 @@
 | 3.1 | 2026-09-25 | MD-004 Version 7.57（FIR-036の呼称訂正：Fire Pit→Wood Stove）と連動。エントリ020（MT.SUMI Aura FG）のRequired Keywordsから誤った「fire pit」表記を削除し「薪ストーブ」関連キーワードへ修正。MD-004 ReferenceにFIR-036が薪ストーブ検討枠である旨を明記。Version 2.7でMD-004側の旧FIR-020レコード削除に伴い削除されていたFIREGRAPHIX BLISS-SPを、新設のFIR-036参照でエントリ024として復元登録。あわせて、Current Watch List冒頭の説明文にある旧称参照を「CZ-001 Deliberation Codex」から「CZ-001 Deliberation Dossier」へ更新し、エントリ022（Snow Peak システムオフトン）をMD-004/CZ-001側で確定済みのBD-070／ワイドマットセット表記へ同期した（従来はBD-060／スリムマットセット表記のまま更新漏れとなっていた）。 |
 | 3.2 | 2026-09-26 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
 | 3.3 | 2026-09-28 | OP-005 Pursuit Strategy Ver.1.5（Acquisition Priority／Acquisition StatusをCoffee Zoneのみ適用、Coffee以外は「買えるときに買う」）に伴い、I. Purpose「Relationship with Other Documents」内の「Vigil Patrolによって発見された内容は、購入判断のためOP-005 Pursuit Strategyへ引き継がれる」を、KN-004への報告・OP-005の基準に従う購入判断・CZ-001「Confirmed — Purchase Pending」による購入待ち管理へ差し替えた。KN-004の常設ダッシュボード改称（Must Buy Dashboard→Horizon、監視対象はCZ-002 Watch Listへ統一）と連動。MARI様のご決定に基づく。 |
+| 3.4 | 2026-09-28 | Ver.3.0で実行プロトコル（Freshness Validation〜Operational Directives）をOP-009 §XVIII Patrol Protocolへ移設済みであるにもかかわらず、I. Purpose（Mission／Origin／Relationship with Other Documents）が「本書は調達監視の実行運用を定義する」「CZ-002は調査がどう実行されるかを担う」など、実行主体がCZ-002であるかのような記述のまま残存していた点を是正。Missionを「Watch List（監視対象・調査キーワード）を管理する」旨へ、Originを「OP-009＝方法論と実行手順、CZ-002＝Watch List」へ、Relationship図をCZ-002→OP-009（監視対象を提供）の順へ描き直した。OP-008 §8／Appendix F、OP-009 §XVIの同時改訂と連動。MARI様のご決定に基づく（C-05）。 |
 
 ---
 
@@ -43,11 +44,11 @@
 
 ## Mission
 
-Vigil Protocolは、THE THIRD PLACEにおける調達監視の**実行運用**を定義する。
+Vigil Protocolは、THE THIRD PLACEにおける調達監視の**Watch List（監視対象・調査キーワード）**を管理する。
 
-調査の思想・方法論を定義することは目的としない。それは別途**OP-009 Search Doctrine**が管轄する。
+パトロールがどのように実行されるか（何を検索するか、鮮度と入手可否をどう検証するか、発見内容をどうスコアリングするか）を定義することは目的としない。それは別途**OP-009 Search Doctrine §XVIII. Patrol Protocol**が管轄する。
 
-本書の目的は、パトロールがどのように実行されるかを定義することである: 何を検索するか、鮮度と入手可否をどう検証するか、発見内容をどうスコアリングするか、Watch Listをどう維持するか。
+本書の目的は、監視対象として何を追跡するかを定義し、Watch Listをどう維持するかを定めることである。
 
 ---
 
@@ -57,21 +58,22 @@ Vigil ProtocolとOP-009 Search Doctrineは、もともと1つの文書であっ�
 
 方法論と実行をそれぞれ独立して管理・更新できるよう、後に分割された。
 
-OP-009は**調査がどう考えるべきか**を担う。
+OP-009は**調査がどう考えるべきか、およびどう実行されるか**（方法論と実行手順）を担う。
 
-CZ-002は**調査がどう実行されるか**を担う。
+CZ-002は**Watch List（監視対象・調査キーワード）**を担う。
 
 ---
 
 ## Relationship with Other Documents
 
 ```text
-OP-009 Search Doctrine
-（方法論・思想）
-        │
-        ▼
 CZ-002 Vigil Protocol
-（実行：Patrol、Watch List、Scoring）
+（Watch List：監視対象・調査キーワード）
+        │
+        │ 監視対象を提供
+        ▼
+OP-009 Search Doctrine
+（方法論・実行手順：Patrol Protocol §XVIII）
         │
         │ 検索を実行
         ▼

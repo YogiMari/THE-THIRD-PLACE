@@ -3,7 +3,7 @@ OP-009 Search Doctrine
 ### THE THIRD PLACE Search Philosophy & Research Methodology
 
 **Document ID:** OP-009  
-**Version:** 2.4  
+**Version:** 2.5  
 **Status:** Active  
 **Category:** OP (Operation — Definition)
 
@@ -18,6 +18,7 @@ OP-009 Search Doctrine
 | 2.2 | 2026-09-19 | プロジェクト全体の文書番号再編に伴い、TM-005からOP-009へ番号を変更。本文中のPX-003・TM-001・TM-002参照をCZ-002・KN-001・KN-004へ更新。調査方法論そのものの内容変更は無し。 |
 | 2.3 | 2026-09-24 | Volatility Restructureにより、CZ-002 Vigil Protocolの実行プロトコル（Freshness Validation〜Patrol Initiation、Watch List Structure、Watch List Maintenance Rules、Operational Directives）を、新章§XVIII. Patrol Protocolへ逐語移設した。章追加のためMinor Version。 |
 | 2.4 | 2026-09-26 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
+| 2.5 | 2026-09-28 | §XVI Relationship with Other Documentsが、Ver.2.3で実行プロトコルを§XVIIIへ移設済みであるにもかかわらず「CZ-002は調査がどう実行されるかを定義する」という逆の記述のまま残存していた点を是正。「OP-009＝方法論と実行手順（§XVIII Patrol Protocol）、CZ-002＝Watch List（監視対象・調査キーワード）」へ統一し、関係図をCZ-002→OP-009（監視対象を提供）の順へ描き直した。OP-008 §8／Appendix F、CZ-002 I. Purposeの同時改訂と連動。MARI様のご決定に基づく（C-05）。 |
 
 ---
 
@@ -675,14 +676,16 @@ Search Doctrineは、生きた文書である。
 
 ```text
 CZ-002 Vigil Protocol
+（Watch List：監視対象・調査キーワード）
+        │
+        │ 監視対象を提供
+        ▼
+OP-009 Search Doctrine
+（方法論・実行手順：Patrol Protocol §XVIII）
         │
         │ 検索を実行
         ▼
 Web Research
-        │
-        ▼
-OP-009 Search Doctrine
-（方法論・思想）
         │
         ▼
 Difference Analysis
@@ -698,8 +701,8 @@ KN-001 Heritage Chronicle
 
 各文書は明確な責任を持つ。
 
-- OP-009は**調査がどう考えるべきか**を定義する。
-- CZ-002は**調査がどう実行されるか**を定義する。
+- OP-009は**調査がどう考えるべきか、およびどう実行されるか**（方法論と実行手順、§XVIII Patrol Protocol）を定義する。
+- CZ-002は**Watch List（監視対象・調査キーワード）**を管理する。
 - KN-004は現在のインテリジェンスを伝える。
 - KN-001は蓄積された知識を保存する。
 
