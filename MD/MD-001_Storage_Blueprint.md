@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.23
+## Ver.2.24
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.23  
+**Version**: 2.24  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -301,7 +301,7 @@ Wood Board 3セット（6枚）は最上層へ平置きする（フェルトケ�
 
 - Layer 2「Wood Board ×4 Sets」とLayer 3「Vapalux M320」の格納先が未解決（13点＋Wood Board 3セットで底面を使い切るため、両者の置き場所が現状ない）。
 - Coffee Sequence（使用順）は暫定であり、実際の手順に合わせた見直しが必要。
-- Coffee System専用水ボトル3本（計2,540mL）の定位置が未定（N-06）。Coffee Serviceware（グラスケース・FIKA12）は、食器としてBeck①（Kitchen Module）へ収納することが決定済み（2026-09-28、MARI様のご決定。容量上の問題なしを確認済み）。
+- Coffee Serviceware（グラスケース・FIKA12）は食器としてBeck①（Kitchen Module）へ、Coffee System専用水ボトル3本（計2,540mL）は食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ）へ収納する（いずれも2026-09-28、MARI様のご決定）。
 
 ### 必要な実測（試し詰め前に要確認）
 
@@ -577,7 +577,7 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 | Luggage Capacity（後席格納時） | 1,491 L | 同上 |
 | Rear Seat | 40:20:40分割可倒 | 同上 |
 | Powertrain | マイルドハイブリッド（MHEV）3.0L 直列6気筒ディーゼル | MARI様申告（2026-09-28）。荷室容量はMHEV・PHEVで同一とされる（Parkers） |
-| 座席数 | 未確認 | |
+| 座席数 | 5人乗り | MARI様申告（2026-09-28） |
 | 荷室床寸法（奥行・幅・開口高・ホイールハウス間幅） | 未確認（実測待ち） | 日本仕様の公表値も未確認 |
 
 ## Vehicle Loading Rule（暫定）
@@ -598,7 +598,7 @@ OP-006 Foundation Compass §Vehicle Loadingの原則を、本車両へ適用し�
 
 ② ①の上段・隙間：ShellCon25①（Bedding Module）→ ShellCon25②（Light & Aroma Module）
 
-③ 中段：Seasonal Slot A・B、STR-022 Roadie 24、Dust Management Module（STR-028〜030）、STR-032 Consumables & Sundries Module
+③ 中段：Seasonal Slot A・B、STR-022 Roadie 24、STR-035 YETI Camino® 35（食品・Coffee専用水）、Dust Management Module（STR-028〜030）、STR-032 Consumables & Sundries Module
 
 ④ 中段：家具（Kermit Chair①②＋FUR-012 Carry Tote、FUR-015 EXTENMON TABLE＋FUR-024ケース、FUR-025 Butterfly D、FUR-030 IGT 1ユニットスタンド、FUR-028／029エア家具）、STR-019 Container Bridge Frame（約830mm長。保護ケースSTR-034は検討中）
 
@@ -1047,7 +1047,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.23
+Ver.2.24
 
 ---
 
@@ -1199,6 +1199,7 @@ Permanent Storage
 | 2.21 | 2026-09-28 | 整備バックログ（N-02・N-03・N-06・N-07）対応。§Vehicle（Range Rover Sport 2026年型、公表荷室容量647 L／1,491 L、実測待ち項目）、§Vehicle Loading Rule（暫定）、§Full Loading Order（暫定・未検証）、§Site Deployment Sequence（全体・暫定）、§Site Recovery Sequence（全体・暫定。乾燥に時間を要するShelterを最後に撤収）を新設。Winter Kit BeddingへFUR-034・FUR-036を追加し積載位置の未決事項を明記。Coffee Module Layout §未決事項へCoffee Serviceware・専用水の定位置未定を追記。Home Operationへ濡れたShelterの帰宅後乾燥を追記。Dust Management Module・Seasonal Slot Moduleの未所有Equipment（STR-030・FIR-036・FUR-035・FUR-032）へ未所有注記を付記（S-02バリデータ警告の解消）。ヘッダーと末尾Version欄の版数不一致（2.20／2.19）を是正。いずれもClaude推奨案をMARI様の包括指示（2026-09-28）に基づき暫定採用したもの。 |
 | 2.22 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 | 2.23 | 2026-09-28 | MARI様のご回答（2026-09-28）を反映。Beck①のFixed ContentsへCoffee Serviceware（HILLS FIELD Glass Case Single、FIKA12 ×2）を追加し、Ruleの「Coffee Equipment収納禁止」は抽出・スチーム機材を指し、Servicewareは食器として収納する旨を明記。Coffee Module Layout §未決事項を専用水ボトルのみに更新。Winter Kitの電気毛布を「電源サイト利用時のみ持参」とした。§VehicleへPowertrain（MHEV 3.0L 直列6気筒ディーゼル）を記載。Consumables & Sundries ModuleのSundriesへ一酸化炭素警報器（所有済み）を追加。 |
+| 2.24 | 2026-09-28 | MARI様のご回答を反映。§Vehicleの座席数を5人乗りと記載。Coffee System専用水ボトル3本の収納先を食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ、MD-004 Version 7.70で新規登録）に決定し、Coffee Module Layout §未決事項を解消。§Full Loading Order ③へSTR-035を追加。 |
 
 ---
 
