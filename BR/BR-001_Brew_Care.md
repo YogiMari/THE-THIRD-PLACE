@@ -1,30 +1,25 @@
 # BR-001 Brew Care  
 
-## Document ID  
+**Document ID**: BR-001  
+**Title**: Brew Care  
+**Series**: BR – Barista (Record)  
+**Version**: 1.4  
+**Authority**: Standard  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
 
-BR-001  
+---
 
-## Document Title  
+# Revision History
 
-Brew Care  
+| Version | Date | Description |
+|---|---|---|
+| 1.1 | 2026-09-26 | 冒頭の重複H1見出しを是正。Document Relationship図内の旧文書名（Barista Codex／Acquisition Handbook）を現行名（Barista Canon／Procurement Handbook）へ同期。 |
+| 1.2 | 2026-09-28 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
+| 1.3 | 2026-09-28 | Document Relationship図のMD-004行に「（Confirmed後、実際に購入・Owned Statusとなった時点で登録）」という注記を追加し、流れがBR-002 → MD-004 → BR-003ではなくBR-002 → BR-003 → MD-004（購入後）→ BR-001であることを図で明示。BR-002・BR-003と同期。 |
+| 1.4 | 2026-09-28 | S-11（文書ヘッダーの統一）に伴い、ヘッダーを##見出し形式からBold Key:Value形式へ統一し、Series項目を追加した。あわせてRevision Historyの位置を文書末尾から冒頭へ移動した。内容に変更はない。Patch Version。MARI様のご決定に基づく。 |
 
-## Version  
-
-1.3  
-
-## Status  
-
-Active  
-
-## Authority  
-
-Standard  
-
-## Owner  
-
-THE THIRD PLACE Project  
-
----  
+---
 
 # 1. Purpose  
 
@@ -1661,16 +1656,6 @@ READY（準備完了）
 目指す状態は、以下である:  
 
 > **必要な箇所は清潔に、必要な箇所は保護し、保管前には乾いており、次回使用の準備が整っているCoffee System。**  
-
----
-
-# Revision History
-
-| Version | Date | Description |
-|---|---|---|
-| 1.1 | 2026-09-26 | 冒頭の重複H1見出しを是正。Document Relationship図内の旧文書名（Barista Codex／Acquisition Handbook）を現行名（Barista Canon／Procurement Handbook）へ同期。 |
-| 1.2 | 2026-09-28 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
-| 1.3 | 2026-09-28 | Document Relationship図のMD-004行に「（Confirmed後、実際に購入・Owned Statusとなった時点で登録）」という注記を追加し、流れがBR-002 → MD-004 → BR-003ではなくBR-002 → BR-003 → MD-004（購入後）→ BR-001であることを図で明示。BR-002・BR-003と同期。 |
 
 ---
 
