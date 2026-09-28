@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.17
+**Version**: 4.18
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -77,8 +77,8 @@
 | Date | Topic |
 |------|-------|
 | 2026-09-28 | 冬用暖房コンテナ（湯たんぽ・電気毛布・シャンクヒーター用）の要否・定位置：優先度低、検討中 |
-| 2026-09-28 | Range Rover Sportの荷室床寸法の実測と試し積み（MD-001 §Vehicle・§Full Loading Order） |
-| 2026-09-28 | Beck②の試し詰めと実測（MD-001 Coffee Module Layout §必要な実測） |
+| 2026-09-28 | 車両への試し積み（MD-001 §Full Loading Orderの確定。荷室寸法は記載済み） |
+| 2026-09-28 | Beck②の試し詰めと実測（MD-001 Coffee Module Layout §必要な実測）。Coffee Equipment購入後に実施 |
 
 ---
 
@@ -160,6 +160,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.15 | 2026-09-28 | §Field Log（キャンプの計画と実施の記録、N-05・N-16）を新設。Project Inboxへ、整備バックログで判明した要確認事項5件（一酸化炭素警報器、電気毛布の電源、車両の確認・実測、Beck②の試し詰め、MD-002の移動時間）を追加。Conversation Ledgerへ本日の会話を1行追加。Claude推奨案をMARI様の包括指示に基づき採用。Minor Version。 |
 | 4.16 | 2026-09-28 | MARI様のご回答に基づき、Project Inboxのうち解決した2件（一酸化炭素警報器：所有済み、電気毛布の電源：電源サイト利用時のみ持参）を削除し、車両（パワートレイン確認済み）とBeck②試し詰め（Coffee Servicewareの定位置決定済み）の2件を残る未決事項のみへ更新。Patch Version。 |
 | 4.17 | 2026-09-28 | MARI様のご回答に基づき、Project Inboxを更新。MD-002の移動時間（17件記載済み）を削除し、車両（座席数確認済み）とBeck②試し詰め（専用水ボトルの収納先決定済み）の行を残る未決事項のみへ書き直した。Patch Version。 |
+| 4.18 | 2026-09-28 | MARI様のご回答に基づき、Project Inboxを更新。車両は荷室寸法の記載により試し積みのみを残し、Beck②の試し詰めはCoffee Equipment購入後に実施する旨を明記。Patch Version。 |
 
 ---
 
