@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.10
+**Version**: 3.11
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -29,6 +29,7 @@
 | 3.8 | 2026-09-28 | KN-004 Atelier Discoveryの常設ダッシュボードの改称（Must Buy Dashboard→Horizon、監視対象はCZ-002 Watch Listへ統一）に伴い、Appendix F — Document ProfilesのKN-004紹介文（日英）を同期。MARI様のご決定に基づく。 |
 | 3.9 | 2026-09-28 | OP-005 Pursuit Strategy Ver.2.0（Acquisition Priority／Acquisition Status／Monthly Planningの3章を削除しBR-003参照へ置換、月間予算とCoffee以外の調達方針のみを保持）に伴い、§8カタログのOP-005行のRoleを同期。MARI様のご決定に基づく。 |
 | 3.10 | 2026-09-28 | OP-005 Pursuit Strategy Ver.2.1（購入優先度・購入状態・月次購入計画はBR-003の管轄、Coffee以外は買えるときに買う、市場監視はCZ-002／OP-009の管轄という実態に合わせ、Purpose・Relationship to Other Core Documentsの「いつ・どの順序で」「取得順序・取得時期・市場監視」という残存記述を是正）に伴い、§8カタログのOP-005行のRoleおよびAppendix F（日英）のOP-005紹介文を同期。市場監視の管理元をCZ-002／OP-009へ明記した。MARI様のご決定に基づく（C-04）。 |
+| 3.11 | 2026-09-28 | CZ-002 Ver.3.0で実行プロトコル（Freshness Validation〜Operational Directives）がOP-009 §XVIII Patrol Protocolへ移設済みであるにもかかわらず、Appendix FのOP-009紹介文（日英）「実際の実行手順はCZ-002が別途管理する」、§8カタログのCZ-002 Summary「パトロールの実行手順」、Appendix FのCZ-002紹介文（日英）「鮮度を評価するリサーチ運用プロトコル」が逆の記述のまま残存していた点を是正。「OP-009＝方法論と実行手順（§XVIII）、CZ-002＝Watch List（監視対象・調査キーワード）」に統一。CZ-002 I. PurposeおよびOP-009 §XVIの同時改訂と連動。MARI様のご決定に基づく（C-05）。 |
 
 ---
 
@@ -243,7 +244,7 @@ Authority 列は本 Version（3.0）で新設された分類である。BR-001�
 | BR-002 | Barista Canon | `BR/BR-002_Barista_Canon.md` | See Appendix F | SSOT | Periodic | コーヒー機材の意思決定文書 |
 | BR-003 | Procurement Handbook | `BR/BR-003_Procurement_Handbook.md` | See Appendix F | SSOT | Living | コーヒー機材の調達先・価格・購入計画 |
 | CZ-001 | Deliberation Dossier | `CZ/CZ-001_Deliberation_Dossier.md` | See Appendix F | SSOT | Living | コーヒー以外のゾーンで検討中のギアの比較・検討記録 |
-| CZ-002 | Vigil Protocol | `CZ/CZ-002_Vigil_Protocol.md` | See Appendix F | SSOT | Living | 欲しいギアの市場監視・パトロールの実行手順 |
+| CZ-002 | Vigil Protocol | `CZ/CZ-002_Vigil_Protocol.md` | See Appendix F | SSOT | Living | 欲しいギアの市場監視Watch List（監視対象・調査キーワード） |
 | KN-001 | Heritage Chronicle | `KN/KN-001_Heritage_Chronicle.md` | 管理対象<br>・活動記録<br>・月次記録<br>・完成までの歩み<br>Chronicleは、<br>歴史を保存する文書である。<br>設計判断は記載しない。 | Archive | Static | プロジェクトの歴史・決定理由のアーカイブ |
 | KN-002 | Cultural Pantheon | `KN/KN-002_Cultural_Pantheon.md` | 管理対象<br>・ブランド文化<br>・Creator<br>・Community<br>・Gallery<br>・Shop<br>・Brand Tier（S〜D）<br>・Brand Lineage（系譜）<br>Cultural Pantheonは、<br>Equipment情報を保持しない。<br>ブランドの背景・思想のみを扱う。 | Reference | Static | ブランドの文化・背景・系譜のアーカイブ |
 | KN-003 | Beyond Journey | `KN/KN-003_Beyond_Journey.md` | 管理対象<br>・体験<br>・価値観<br>・人生との関係<br>Beyond Journeyは、<br>THE THIRD PLACEを通して得られた、<br>人生そのものの記録を管理する。 | Archive | Static | キャンプを超えたデザイン文化を紹介するカルチャーマガジン |
@@ -866,7 +867,7 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 | OP-006 | Foundation Compass | Equipmentを最も美しく、効率的に、一貫性を持って運用するための基盤指針。収納マニュアルではなく「運用の基盤」を定義する。 |
 | OP-007 | Habitat Architecture | Foundation Compassが定める基盤の上に築かれる、フィールドに完成する「暮らしの空間」そのものを設計する文書。 |
 | OP-008 | Documentation System | DS・OP・記録（DB・MD・BR・CZ・KN）の各系列が長期にわたり一貫した構造で運用されるための、文書の役割・分類・管理方法を定める文書体系全体の基準文書。 |
-| OP-009 | Search Doctrine | 情報をどのように発見・評価・解釈し、知識へ変換するかを定めるリサーチの哲学・方法論。実際の実行手順はCZ-002が別途管理する。 |
+| OP-009 | Search Doctrine | 情報をどのように発見・評価・解釈し、知識へ変換するかを定めるリサーチの哲学・方法論。パトロールの実行手順（§XVIII）も本書が管理する。監視対象（Watch List）自体はCZ-002が別途管理する。 |
 | OP-010 | Qualification Charter | 記録系列台帳（MD-002 Field Atlas／MD-003 Galley Fare／MD-004 Equipment Registry）の登録規則・評価基準を定義する文書。データそのものは各台帳が保持する。 |
 
 ---
@@ -913,7 +914,7 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 | ID | Document | どのような文書か |
 | --- | --- | --- |
 | CZ-001 | Deliberation Dossier | Coffee Domain（BR系列管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire／Shelter）における検討中ギアの評価哲学・比較検討・購入待ちリストを管理する文書。 |
-| CZ-002 | Vigil Protocol | ガレージブランドや市場の動向を継続的に監視し、入手機会の鮮度（Freshness）を評価するリサーチ運用プロトコル。 |
+| CZ-002 | Vigil Protocol | 欲しいギアの監視対象・調査キーワードを管理するWatch List。鮮度（Freshness）評価等のパトロール実行手順はOP-009 Search Doctrine §XVIIIが管理する。 |
 
 ---
 
@@ -957,7 +958,7 @@ The series defining THE THIRD PLACE's design philosophy, rules, and laws themsel
 | OP-006 | Foundation Compass | The operational foundation for running Equipment as beautifully, efficiently, and consistently as possible. Not a storage manual — it defines the "foundation of operation" itself. |
 | OP-007 | Habitat Architecture | Building on the foundation defined by Foundation Compass, this document designs the completed living space itself as it appears in the field. |
 | OP-008 | Documentation System | The foundational standard for the entire documentation system, defining the roles, classification, and management rules of documents so that the DS, OP, and Record (DB / MD / BR / CZ / KN) series remain structurally consistent over the long term. |
-| OP-009 | Search Doctrine | Defines the philosophy and methodology of research — how information should be discovered, evaluated, interpreted, and turned into knowledge. Actual operational execution is separately governed by CZ-002. |
+| OP-009 | Search Doctrine | Defines the philosophy and methodology of research — how information should be discovered, evaluated, interpreted, and turned into knowledge. Also governs the patrol operational procedure itself (§XVIII). The watch targets (Watch List) are separately managed by CZ-002. |
 | OP-010 | Qualification Charter | Defines the registration rules and evaluation criteria for the record-series ledgers (MD-002 Field Atlas / MD-003 Galley Fare / MD-004 Equipment Registry). The data itself remains held by each ledger. |
 
 ---
@@ -1004,7 +1005,7 @@ The series managing deliberation and market monitoring for zones outside coffee.
 | ID | Document | What this document is |
 | --- | --- | --- |
 | CZ-001 | Deliberation Dossier | Manages zone evaluation philosophy, in-progress equipment deliberation, and the purchase-pending list for all zones outside the Coffee Domain governed by the BR series (Furniture / Light / Aroma / Storage / Fire / Shelter). |
-| CZ-002 | Vigil Protocol | A research operations protocol for continuously monitoring garage brands and market trends, evaluating the freshness of acquisition opportunities. |
+| CZ-002 | Vigil Protocol | A Watch List managing the acquisition targets and search keywords under watch. The patrol operational procedure, including freshness evaluation, is governed by OP-009 Search Doctrine §XVIII. |
 
 ---
 
