@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.7
+**Version**: 3.8
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -26,6 +26,7 @@
 | 3.5 | 2026-09-27 | OP-001 Constitution §12 Information Hierarchy全面再構成、および同文書§27→§26への繰り上げ是正に伴い、本書内の相互参照2箇所（§11・Document Renumbering Note）をOP-001 §26参照へ更新。MARI様のご指摘に基づく。 |
 | 3.6 | 2026-09-28 | OP-005 Pursuit Strategy Ver.1.5（月間予算・Acquisition Priority・Acquisition Status・Monthly Planningの適用範囲をCoffee Zoneに限定、Coffee以外は買えるときに買う方針を新章で明記）に伴い、§8カタログのOP-005行のRole・Summaryを同期。MARI様のご決定に基づく。 |
 | 3.7 | 2026-09-28 | Drive⇄GitHub同期運用の決定に伴い、§27 Drive Mirror Operationを新設（Minor Version：章追加）。GitHub→Driveの一方向ミラー、協力者の書き込み先（Contributions）、取り込みの流れを定義。OP-001 §21.1（External Contribution Protocol）と連動。MARI様のご決定に基づく。 |
+| 3.8 | 2026-09-28 | KN-004 Atelier Discoveryの常設ダッシュボードの改称（Must Buy Dashboard→Horizon、監視対象はCZ-002 Watch Listへ統一）に伴い、Appendix F — Document ProfilesのKN-004紹介文（日英）を同期。MARI様のご決定に基づく。 |
 
 ---
 
@@ -923,7 +924,7 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 | KN-001 | Heritage Chronicle | プロジェクトの重要な意思決定・設計思想の変化・Equipment構成の変遷を時系列で記録する公式アーカイブ。「なぜその判断をしたのか」を未来の自分が理解するための知識資産。 |
 | KN-002 | Cultural Pantheon（旧題: Cultural Reference） | ブランドそのものではなく、ブランドを生み出した思想・人物・コミュニティ・ショップ・系譜を記録する公式カルチャーリファレンス。 |
 | KN-003 | Beyond Journey | キャンプという趣味に留まらず、建築・家具・照明・工業デザイン・自動車・写真・ライフスタイルなど分野横断でTHE THIRD PLACEの美意識を育てるカルチャーマガジン。 |
-| KN-004 | Atelier Discovery | ガレージブランド・アウトドアブランド・市場動向をリサーチするメディア。ブランドの宣伝ではなく、動向の観察を目的とする。冒頭に、最優先購入対象を継続監視するMust Buy Dashboardを常設する。 |
+| KN-004 | Atelier Discovery | ガレージブランド・アウトドアブランド・市場動向をリサーチするメディア。ブランドの宣伝ではなく、動向の観察を目的とする。冒頭に、CZ-002 Watch Listの購入対象を継続監視するHorizonを常設する。 |
 
 ---
 
@@ -1014,7 +1015,7 @@ The series managing accumulated knowledge and the cultural archive.
 | KN-001 | Heritage Chronicle | The official archive recording, in chronological order, the project's key decisions, shifts in design philosophy, and the evolution of its Equipment configuration — a knowledge asset for understanding, in the future, why a given decision was made. |
 | KN-002 | Cultural Pantheon (formerly titled Cultural Reference) | An official cultural reference recording not the brands themselves, but the philosophies, people, communities, shops, and lineages that gave rise to them. |
 | KN-003 | Beyond Journey | A culture magazine that grows THE THIRD PLACE's aesthetic sense by crossing disciplines — architecture, furniture, lighting, industrial design, automobiles, photography, lifestyle — beyond camping as a single hobby. |
-| KN-004 | Atelier Discovery | A research publication covering garage brands, outdoor brands, and market trends. Its aim is observation of trends, not brand promotion. It opens with a permanent Must Buy Dashboard that continuously monitors the highest-priority acquisition targets. |
+| KN-004 | Atelier Discovery | A research publication covering garage brands, outdoor brands, and market trends. Its aim is observation of trends, not brand promotion. It opens with a permanent Horizon dashboard that continuously monitors the acquisition targets on the CZ-002 Watch List. |
 
 ---
 
