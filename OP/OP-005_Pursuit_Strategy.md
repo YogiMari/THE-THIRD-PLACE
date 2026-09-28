@@ -1,7 +1,7 @@
 OP-005 Pursuit Strategy
 # OP-005
 # Pursuit Strategy
-## Ver.1.5
+## Ver.2.0
 
 ---
 
@@ -13,6 +13,7 @@ OP-005 Pursuit Strategy
 | 1.3 | 2026-09-24 | Volatility Restructureにより、BR-003 Acquisition Handbookの調達方針（Preferred Sources／Price Policy／Successor Model Policyの方針文）を、新章§Coffee Zone Acquisition Rulesへ逐語移設した。適用範囲はCoffee Zoneのまま。章追加のためMinor Version。 |
 | 1.4 | 2026-09-24 | MARI様のご指摘に基づき、OP-008 §11 Naming Conventionへ新設された文書名重複禁止ルールに伴い、タイトルをAcquisition StrategyからPursuit Strategyへ変更（BR-003 Acquisition Handbookとの語重複を解消）。BR-003側もProcurement Handbookへ改名されたため、本書内の参照表記を同期。Acquisition Priority／Acquisition Statusは、他文書（MD-004・BR-003等）でも使用される既存のデータ項目名であり、文書タイトルではないため変更していない。ファイル名もOP-005_Pursuit_Strategy.mdへ変更。 |
 | 1.5 | 2026-09-28 | MARI様のご決定に基づき、月間予算・Acquisition Priority・Acquisition Status・Monthly Planningの適用範囲をCoffee Zoneに限定した（実際の運用はBR-003 Procurement Handbook）。あわせて、Coffee以外のゾーンは「買えるときに買う」方針を新章§Non-Coffee Zones Acquisition Policyへ明記した。章追加のためMinor Version。OP-008 §8カタログのOP-005行（Role・Summary）を同期。 |
+| 2.0 | 2026-09-28 | MARI様のご決定に基づき、BR-003 Procurement HandbookがCoffee Zoneの購入優先度・購入状態・月次購入計画を自前で定義・運用している実態に合わせ、本書の§Acquisition Priority（Must Buy／High／Medium／Low）・§Acquisition Status（Planned／Watching／Ready／Acquired）・§Monthly Planning（Must Buy／Primary Target／Secondary Target／Waiting）を削除し、新章§Coffee Zone Classification Referenceによる参照へ置換した（二重定義の解消。OP-008 Principle 003）。あわせて、§Monthly Budgetの「Must Buyが市場へ現れた場合は予算超過を許容する」旨の記述を、対応区分の削除に伴い削除した。§Non-Coffee Zones Acquisition Policyの表現を同期。章削除・責任範囲の変更のためMajor Version。OP-008 §8カタログのOP-005行（Role）を同期。 |
 
 ---
 
@@ -122,107 +123,11 @@ Equipment は、
 
 100,000円 / 月
 
-ただし、
-
-Must Buy が市場へ現れた場合は、
-
-予算を超えても取得を優先する。
-
-一時的な予算超過は許容する。
-
 ---
 
-# Acquisition Priority
+# Coffee Zone Classification Reference
 
-適用範囲：Coffee Zoneのみ。実際の運用はBR-003 Procurement Handbookを参照。
-
-Equipment は、
-
-以下4段階で管理する。
-
-## Must Buy
-
-市場に現れた時点で取得する。
-
-価格より、
-
-機会を優先する。
-
----
-
-## High
-
-早期取得が望ましい。
-
----
-
-## Medium
-
-状況を見ながら取得する。
-
----
-
-## Low
-
-完成後でも問題ない。
-
----
-
-# Acquisition Status
-
-適用範囲：Coffee Zoneのみ。実際の運用はBR-003 Procurement Handbookを参照。
-
-Pursuit Strategy では、
-
-購入対象を以下の状態で管理する。
-
-## Planned
-
-取得予定。
-
-購入時期は未定。
-
----
-
-## Watching
-
-継続して市場を監視する。
-
-販売開始
-
-中古市場
-
-再販
-
-イベント販売
-
-を対象とする。
-
----
-
-## Ready
-
-購入条件が整っている。
-
-市場へ現れた場合、
-
-取得可能な状態。
-
----
-
-## Acquired
-
-取得完了。
-
-Equipment Registry Object Reference の
-
-Status を
-
-**Owned**
-
-へ更新し、
-
-本書から管理対象を外す。
+Coffee Zoneの購入優先度（Purchase Priority）・購入状態（Acquisition Status）・購入グルーピング（Purchase Grouping）・月次購入計画（Monthly Acquisition Plan）は、BR-003 Procurement Handbookが定義・管理する。本書では定義しない。
 
 ---
 
@@ -265,38 +170,6 @@ Design Bible を実現する価値があるかどうかである。
 
 ---
 
-# Monthly Planning
-
-適用範囲：Coffee Zoneのみ。実際の運用はBR-003 Procurement Handbookを参照。
-
-毎月、
-
-取得候補を整理する。
-
-### Must Buy
-
-最優先。
-
----
-
-### Primary Target
-
-今月取得を目指す。
-
----
-
-### Secondary Target
-
-状況に応じて取得する。
-
----
-
-### Waiting
-
-市場動向を見ながら待機する。
-
----
-
 # Review Cycle
 
 Pursuit Strategy は、
@@ -321,7 +194,7 @@ THE THIRD PLACE の成熟過程として記録する。
 
 # Non-Coffee Zones Acquisition Policy
 
-Coffee Zone以外の全ゾーン（Furniture／Light／Aroma／Storage／Fire／Shelter／Kitchen）では、月間予算・取得時期の計画・Acquisition Priority・Acquisition Statusによる管理を行わない。
+Coffee Zone以外の全ゾーン（Furniture／Light／Aroma／Storage／Fire／Shelter／Kitchen）では、月間予算・取得時期の計画・購入優先度・購入状態による管理を行わない。
 
 購入判断は、Core Philosophy・Decision Priority（1〜4）・Purchase Rulesに従い、買えるときに買う。
 
