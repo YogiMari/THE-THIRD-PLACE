@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.13
+3.14
 
 # Status
 
@@ -22,11 +22,13 @@ Active
 
 CZ-001 Deliberation Dossierは、Coffee Domain（BR-002管轄）を除く全ゾーン（Furniture／Light／Aroma／Storage／Fire／Shelter）における、検討中ギアの意思決定を支援する文書である。
 
-本書は3種類の内容を管理する。
+本書は4種類の内容を管理する。
 
-* **Zone Evaluation Philosophy**（恒久）：各ゾーンの評価哲学・評価軸。ゾーンの性格が変わらない限り、恒久的に保持する。
 * **Under Consideration**（可変）：現在検討中のギアの具体的製品情報・比較・評価記録。MD-004側のステータスが確定（Candidate → Essential/Owned）した時点で、当該記載を空欄化する。
 * **Confirmed — Purchase Pending**（可変）：製品・ブランドは確定済み（MD-004側のStatus = Essential）だが、まだ所有していないEquipmentの一覧。Coffee Domainを除く全ゾーン（Furniture／Light／Aroma／Storage／Fire／Shelter）が対象。本セクションは、購入リスト（買い物タスク管理）アーティファクトのソースとして使用する。
+* **Decision Log ＋ 詳細記録**（恒久）：確定・削除した項目の一行要約（Decision Log）と、不採用候補とその理由を含む詳細な比較内容（詳細記録）。2026-09-27付でCZ-001の標準運用となった。KN-001 Heritage Chronicle発行時の一次資料として使用する。
+
+各ゾーンのZone Evaluation Philosophy（評価哲学・評価軸）は、Ver.3.0でOP-002 Design Bible §Design Domainsへ移設済みである。CZ-001内には参照1行のみを保持する（後掲「Zone Evaluation Philosophy」節参照）。
 
 ### MD-004との役割分担
 
@@ -42,7 +44,7 @@ Candidateが確定（Essential/Owned）した時点でUnder Considerationから�
 ```
 CZ-001 Deliberation Dossier
 │
-├─ Zone Evaluation Philosophy（恒久）
+├─ Zone Evaluation Philosophy（恒久）→ OP-002 Design Bible §Design Domainsへ移設済み（Ver.3.0）。CZ-001には参照1行のみ保持
 │
 ├─ Under Consideration（可変）
 │       │ 検討が深まる
@@ -59,15 +61,15 @@ CZ-001 Deliberation Dossier
 │       ▼
 │  CZ-001 Under Considerationへ再登場
 │
-└─ Confirmed — Purchase Pending（可変）
-        │ 購入完了
-        ▼
-   MD-004 Status更新（Essential → Owned）
-        │
-        ▼
-   Confirmed — Purchase Pendingから削除
-
-Decision Log + 詳細記録（恒久保持）
+├─ Confirmed — Purchase Pending（可変）
+│       │ 購入完了
+│       ▼
+│  MD-004 Status更新（Essential → Owned）
+│       │
+│       ▼
+│  Confirmed — Purchase Pendingから削除
+│
+└─ Decision Log ＋ 詳細記録（恒久）
         │
         │（MARI様のご意向に応じて随時）
         ▼
@@ -363,7 +365,6 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 2.7 | 2026-09-19 | MD-004 Version 7.36（Furniture Domain番号整理・二回目）と連動し、FUR-022→FUR-032、FUR-023→FUR-033、FUR-021→FUR-031（2箇所）、FUR-024→FUR-034参照を更新。 |
 | 2.8 | 2026-09-19 | MD-004 Version 7.38（Fire Domain番号整理）と連動し、FIR-019→FIR-030（Fire Pit見出し・Confirmed — Purchase Pending表）、FIR-014→FIR-025・FIR-012→FIR-023（Confirmed — Purchase Pendingの表、Parent表記）参照を更新。旧FIR-020（BLISS-SP）に関するNoteを、MD-004側で当該レコード自体が削除されたことを反映した記述へ更新。Version 1.0・2.1の過去行は歴史的記録として遡及修正しない。 |
 | 2.9 | 2026-09-20 | MD-004 Version 7.25で新設されたShelter Domain（現在SHL-001〜SHL-005、すべてOwned）が、本書の対象ゾーン表記に反映されていなかったため補完。Purpose（対象ゾーン・Confirmed — Purchase Pendingの対象）へShelterを追加し、Zone Evaluation Philosophy・Under Consideration・Confirmed — Purchase Pendingへ Shelter 見出しを新設（いずれも現時点で該当項目なし）。Version 1.0〜2.8の過去行は歴史的記録として遡及修正しない。 |
-| 3.0 | 2026-09-24 | Volatility Restructureにより、Zone Evaluation Philosophy（恒久）の各ドメイン節をOP-002 Design Bible §Design Domainsへ逐語移設し、本節を参照1行へ置換。責任範囲の変更のためMajor Version。 |
 | 2.10 | 2026-09-20 | MD-004 Version 7.37（Storage Domain番号整理）と連動した点検で、Confirmed — Purchase Pending の Storage 表に、MD-004で Status = Essential でありながら未掲載だった STR-027（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリートセット。旧STR-028）を追加。表の収録は、MD-004 の Essential 全13件（Coffee除く）と一致した。 |
 | 2.11 | 2026-09-22 | MD-004 Light Zone再編（LGT-016・018〜020のLGT-035子化、LGT-027・028のLGT-036子化、AIR LIGHT群のa/b/c/d表記化、LGT-058クラッシュアイスのLGT-003移設に伴うLGT-003〜057全体繰り下げ）と連動し、Confirmed — Purchase Pending の Light 表を更新：LGT-037→LGT-038（RT-01AC01 / ECHO LAMP）、LGT-038→LGT-039（DOME LOOK）、LGT-039→LGT-040（Pivotshade）。 |
 | 2.12 | 2026-09-22 | MD-004 Version 7.49（Light Domain再修正：LGT-055〜058削除、LGT-003ブランド訂正、革シェード〈LGT-036〉のParent/Child解消、Glass Shade & Wood Stand Set/MMM Pocket ShadeのLGT-016子化、全体再連番）と連動し、Confirmed — Purchase Pending の Light 表を更新：LGT-038→LGT-048（RT-01AC01 / ECHO LAMP）、LGT-039→LGT-050（DOME LOOK）、LGT-040→LGT-052（Pivotshade）。 |
@@ -372,6 +373,7 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 2.15 | 2026-09-23 | MD-004（Version 7.53）との番号照合に基づき、プロジェクトオーナーの指示で参照を訂正。Furniture：Winter Top Quilt FUR-032→FUR-033、Winter Sleeping Mat FUR-033→FUR-034、Pad Sheet FUR-034→FUR-035、マット部参照 FUR-031→FUR-032（Under Consideration・Confirmed — Purchase Pending表）。Light：Portable LED Lantern（wildingout LF1984）の参照を削除済みの旧LGT-041から、空き枠LGT-043への充当検討へ変更。Storage：Wood Board（Oak）STR-014→STR-015、Wood Board（Walnut）STR-016→STR-018（Parent: STR-016）、Butterfly Under Shelf STR-019→STR-021（Parent: STR-019）。Fire：Fire Pit見出し・NoteをFIR-030（削除済み）からMD-004 Version 7.53新設の空き枠FIR-036へ更新。 |
 | 2.16 | 2026-09-23 | MD-004（Version 7.53）を正とした照合に基づき、Confirmed — Purchase Pending を訂正：Storage表のFolding Wire T-box 全面コンプリートセットをSTR-027→STR-030へ更新。Light表に、MD-004でStatus = Essentialでありながら未掲載だったLGT-017（OTEBO CRAFTS BABEL、MD-004 Version 7.50で登録）を追加。 |
 | 2.17 | 2026-09-23 | MD-004 Version 7.54と連動。Under ConsiderationからWinter Top Quilt（FUR-033）を削除し、Decision Logへ「Snow Peak ダウン システムオフトン（FUR-032）採用・FUR-033 Retired」を記録。Light欄の「LGT-028グループの親子構造は据え置き」の注記を削除（該当グループはMD-004上に存在しないため。プロジェクトオーナー確認）。 |
+| 3.0 | 2026-09-24 | Volatility Restructureにより、Zone Evaluation Philosophy（恒久）の各ドメイン節をOP-002 Design Bible §Design Domainsへ逐語移設し、本節を参照1行へ置換。責任範囲の変更のためMajor Version。 |
 | 3.1 | 2026-09-24 | MARI様のご指摘に基づき、OP-008 §11 Naming Conventionへ新設された文書名重複禁止ルールに伴い、タイトルをDeliberation CodexからDeliberation Dossierへ変更（BR-002 Barista Canonとの語重複を解消）。ファイル名もCZ-001_Deliberation_Dossier.mdへ変更。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持。内容（検討記録そのもの）に変更はない。 |
 | 3.2 | 2026-09-25 | MD-004 Version 7.56（Snow Peak公式ECサイト・価格.com・campreview.jp等の一次情報により、FUR-032の正しい型番はBD-070＝ワイドマットセットであると確定）と連動し、Confirmed — Purchase Pending の Furniture 表を「スリムマットセット（BD-060）」から「ワイドマットセット（BD-070）」へ訂正。Decision Log内の2026-09-23付の行（FUR-033関連）にある「スリムマットセット」表記は、当時の記録として遡及修正しない。 |
 | 3.3 | 2026-09-25 | MARI様のご指摘に基づき、Fire節の見出し誤り「Fire Pit」を「Wood Stove／薪ストーブ」へ訂正。焚き火台は既にFIR-001（RODAN BRICK、Owned）で充足済みであり、本検討中の候補（MT.SUMI Aura FG、FIREGRAPHIX BLISS-SP）はいずれも薪ストーブ（二次燃焼式ポータブルストーブ）であることをウェブ一次情報で確認した（MARI様確認）。MD-004 Version 7.57・CZ-002 Vigil Protocol Version 3.1と連動。 |
@@ -385,6 +387,7 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 3.11 | 2026-09-27 | MARI様のご指示に基づき、Decision Logの標準運用を変更。従来「詳細な比較内容そのものは、確定後は保持しない」としていたルールを廃止し、不採用候補とその理由を含む詳細記録を恒久的に保持する運用へ変更（Purpose・Decision Log見出し文・Relationship図を更新）。これに伴い、Wood Stove選定記録（Ver.3.7で「例外」として新設）を標準運用の一例として再定義。あわせてSSOTセクションへ、この詳細記録がKN-001 Heritage Chronicle発行時の一次資料となる旨を明記。Minor Version（運用ルール変更のためMajor Versionとの境界事例だが、既存の記録構造〈Decision Log＋詳細記録節〉自体は変更せず、保持方針の転換のみのためMinor Versionとした）。 |
 | 3.12 | 2026-09-27 | MARI様のご依頼に基づき、過去のチャット「Bedding Module収納検証」（2026-09-27）から、ShellCon25①／②をBedding Moduleへ転用する案の検討記録を遡って追記。床面積計算により全6点（Q×2／M×2／W×2）は2箱体制でも収まらないと判明し、転用を不採用としてShellCon25①②とも既存の収納割当を維持した経緯を、Ver.3.11で新設した標準運用（一行要約＋詳細記録）に沿ってDecision LogおよびStorage詳細記録節へ記録。 |
 | 3.13 | 2026-09-28 | MARI様のご決定（GitHub Issue #44）に基づき、Winter Sleeping Mat（FUR-034）・Pad Sheet（FUR-035）を正式決定として反映。MD-004 Version 7.64（Status: Candidate→Essential）と連動し、Furniture Under ConsiderationからFUR-034・FUR-035の検討記載を削除、Confirmed — Purchase Pendingへ両ID（BLACK ZONE MAT×2、HOTEL CAMPS リバーシブル ホットカバー×2）を追加。Decision Logへ確定日を記録し、Ver.3.11の標準運用に沿って「Furniture — Winter Sleeping Mat / Pad Sheet 選定記録」を新設して不採用候補の詳細比較を恒久保持。Pad Sheetの価格・正式品名はhotelcamps.jp公式サイトで一次情報確認済み（¥9,980）。 |
+| 3.14 | 2026-09-28 | MARI様のご指摘（Issue C-07）に基づき、PurposeとRelationship図を整合。Purposeの管理対象を「Under Consideration／Confirmed — Purchase Pending／Decision Log ＋ 詳細記録」の3項目へ改め、Zone Evaluation PhilosophyはVer.3.0でOP-002 Design Bible §Design Domainsへ移設済みである旨の参照注記へ変更（管理対象の列挙からは除外）。Relationship図もZone Evaluation Philosophyノードへ同旨の注記を追加し、独立ブロックだったDecision Log ＋ 詳細記録をCZ-001ツリーの4本目の枝として統合。あわせてVersion Historyの3.0の行を2.10〜2.17より後（2026-09-24、時系列順）へ並べ替え。構成追加のためMinor Version。 |
 
 ---
 
