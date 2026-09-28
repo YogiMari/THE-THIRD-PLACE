@@ -1,7 +1,7 @@
 OP-006 Foundation Compass
 # OP-006
 # Foundation Compass
-## Ver.1.3
+## Ver.1.4
 
 ---
 
@@ -298,6 +298,88 @@ Foundation 自体は変えない。
 
 ---
 
+## Configuration Structure
+
+季節構成は、
+
+以下の3層で表す。
+
+**Base**
+
+通年で車載したままのギア。
+
+季節で入れ替えない。
+
+**Season Kit**
+
+その季節だけ追加で積む単位。
+
+季節が変わるときは、
+
+Kit ごと積み降ろしする。
+
+Module の中身を詰め替えることはしない。
+
+**Weather Overlay**
+
+季節とは別軸の、
+
+天候のための追加分。
+
+---
+
+## Seasonal Slot
+
+季節ごとに入れ替えるのは、
+
+車内に固定された Seasonal Slot に置く物と、
+
+Season Kit の箱のみとする。
+
+入れ替えは最小限に留める。
+
+Seasonal Slot は、
+
+Temporary permanent location ではない。
+
+車内に定められた固定位置であり、
+
+置かれる中身が季節に応じて変わる。
+
+Seasonal Slot の具体的な配置・中身は、
+
+MD-001 Storage Blueprint が
+
+唯一のMaster Documentとして管理する。
+
+本書では重複して記載しない。
+
+---
+
+## Tagging Policy
+
+個々の Equipment に、
+
+季節・天候の属性を付与しない。
+
+運用の単位は、
+
+Module および Season Kit とする。
+
+---
+
+## Weather Overlay Scope
+
+雨天時に追加するのは、
+
+服程度の少量にとどまる。
+
+そのため、
+
+Weather Overlay は Kit として管理しない。
+
+---
+
 # Maintenance Principles
 
 Foundation は、
@@ -410,6 +492,7 @@ Foundation Compass は、
 | Version | Date | Description |
 |---|---|---|
 | 1.3 | 2026-09-26 | 本文内のOP-005表記が旧題『Acquisition Strategy』のままだった箇所をPursuit Strategyへ修正。 |
+| 1.4 | 2026-09-28 | MARI様のご決定に基づき、Seasonal Configuration節へ「Configuration Structure」（Base／Season Kit／Weather Overlayの3層定義）、「Seasonal Slot」（車内の季節入れ替え定位置の位置づけ。具体的な配置・中身はMD-001が管理し本書では重複記載しない）、「Tagging Policy」（個別Equipmentへの季節・天候タグは付与せず、運用単位はModule／Season Kitとする）、「Weather Overlay Scope」（雨のKitとしての管理は行わない）を新設。いずれも恒久ルールの定義のみであり、具体的な中身（どのギアがどのKitか）はMD-001 Storage Blueprintへ記載する（Static文書にLivingデータを置かない原則に基づく）。Minor Version。 |
 
 ---
 
