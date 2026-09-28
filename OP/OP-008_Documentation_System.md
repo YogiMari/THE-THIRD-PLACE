@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.15
+**Version**: 3.16
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -34,6 +34,7 @@
 | 3.13 | 2026-09-28 | KN発行方針の参照先不在（DB-001が参照する「ways-of-working KN issuance rules」がリポジトリに実在しない不整合）を是正するため、§28 KN Publication Policyを新設（Minor Version：章追加）。KN-001〜004の本文はGitHubに置かず、Artifactとしてのみ発行する方針と、その理由（発行物が今後何百と増えていく見込みであるため）を明文化した。DB-001の参照を本節へ統一。MARI様のご決定に基づく（C-14）。 |
 | 3.14 | 2026-09-28 | §8カタログのKN-003 Role列が「体験・価値観・人生との関係」の管理対象列挙に留まり、KN-003本文Purposeが定めるカルチャーマガジンとしての編集目的（キャンプという趣味に留まらず、建築・家具・照明・工業デザイン・自動車・写真・ライフスタイルなど分野横断でTHE THIRD PLACEの美意識を育てる）を欠いていた不整合を是正。KN-003本文Purposeを正として、Role列へ当該記述を追記した。Summary列は変更なし。OP-002 Editorial Series（KN-003）の同時改訂と連動。MARI様のご決定に基づく（C-17）。Patch Version。 |
 | 3.15 | 2026-09-28 | S-06（BR-003のルールとデータの分離）に伴い、BR-003 Procurement HandbookのLiving文書に置かれていた恒久ルール（Acquisition Status Policy・Purchasing Priority・Purchase List Definition・各種Purchase Policy等）をOP-005 Pursuit Strategy §Coffee Zone Acquisition Rulesへ移設する方針決定に合わせ、§8カタログのOP-005行RoleへCoffee Zone調達の恒久ルールを本書§Coffee Zone Acquisition Rulesが定義する旨を追記した（OP-008 §23 Change Managementに基づき、OP-005・BR-003本体の改訂に先行して反映）。責任範囲の管理主体（値の割り当てはBR-003、ルールの定義はOP-005）自体はOP-005 Ver.2.0の決定と矛盾しない。MARI様のご決定に基づく。 |
+| 3.16 | 2026-09-28 | S-10（改訂履歴の圧縮）に伴い、§19にRule DOC-09（Revision Historyの一定規模超過時、直近履歴を本文に残しそれ以前をarchive/へ移設できる旨）を新設し、§10 Document Lifecycleへ参照注記を追加した（OP-008 §23 Change Managementに基づき、MD-004・MD-003・CZ-001・CZ-002・BR-003本体の履歴移設に先行して反映）。MARI様のご決定に基づく。 |
 
 ---
 
@@ -338,6 +339,8 @@ Deprecated
 
 履歴を保持することを優先する。
 
+履歴が一定規模を超えた場合の移設ルールは Rule DOC-09 を参照。
+
 ---
 
 # 11. Naming Convention
@@ -613,6 +616,16 @@ Project Ledger 上では履歴を残すことを推奨する。
 Project Ledger は Living Document として運用する。
 
 Documentation System は Standard Document として運用する。
+
+---
+
+## Rule DOC-09
+
+文書の Revision History（Version History）が一定規模を超えた場合、直近の履歴のみを本文に残し、それ以前の履歴を `archive/{Document ID}_Version_History_Archive.md` へ移設できる。
+
+移設した履歴は原文のまま保持し、要約・削除はしない。
+
+本文側の Revision History冒頭に、移設先ファイルへの参照を明記する。
 
 ---
 
