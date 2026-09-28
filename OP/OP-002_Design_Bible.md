@@ -1,6 +1,6 @@
-OP-002 Design Bible Ver.5.2
+OP-002 Design Bible Ver.5.3
 # THE THIRD PLACE Design Bible
-## Ver.5.2 Official Complete Edition
+## Ver.5.3 Official Complete Edition
 
 ---
 
@@ -555,6 +555,10 @@ Colorは、
 色数を抑え、
 
 調和を維持する。
+
+---
+
+このColorパレットは、空間全体の基調色（Baseline）の目安であり、個々のEquipmentが取り得る実際の物理的な色を制限するものではない。個々のEquipmentの実際の色は、OP-010 Qualification Charter §Color Ruleに従い、ありのままMD-004へ記録する。
 
 ---
 
@@ -1535,6 +1539,10 @@ Colorは、
 
 ---
 
+上記はDesign Bible全体の基調色（Appearance §Color）としての例示であり、MD-004が記録する個々のEquipmentの実際の色をこの7色に限定するものではない。実際の色の記録方法はOP-010 §Color Ruleに従う。
+
+---
+
 ## Material（素材）
 
 Materialは、
@@ -2109,3 +2117,9 @@ THE THIRD PLACEは、
 ## Pursuit Strategy Reference Sync Note
 
 本文書は、2026-09-26付でVer.5.1からVer.5.2へ更新した。§内のOP-005見出しが旧題『Acquisition Strategy』のままだった箇所をPursuit Strategyへ修正した。
+
+---
+
+## Color Palette Scope Clarification Note
+
+本文書は、2026-09-28付でVer.5.2からVer.5.3へ更新した（Minor Version：既存原則への解釈規定の追加）。§Appearance/Colorおよび§Database Rules/Colorへ、Colorパレット（Black／Brown／White／Gray／Silver／Gold／Copper）は空間全体の基調色の目安（Baseline）であり、個々のEquipmentの実際の色を制限するものではないことを明記した。MD-004には本パレット外の色（例：LGT-003 Amber、LGT-015 Multi、LGT-017b Khaki、LGT-019 Light Blue、LGT-020／FIR-021／FIR-022 Light Brown、LGT-026 Orange、FIR-033 Camouflage、FIR-034／FIR-035 Dark Brown、FUR-027／FUR-030 Dark Brown、FUR-031 Wood-grain Print、FUR-032 Taupe／Classic Brown、ARM-001／STR-023／STR-025 Blue 等）が実データとして多数存在しており、これらはOP-010 Qualification Charter §Color Rule（実際の物理的な色を記録し、主観的表現は認めない）に基づく正当な記録であることを確認した。OP-010は本方針と矛盾しないため修正しない。MD-004のデータ自体に変更はない。MARI様のご決定に基づく（Q-02）。
