@@ -1,6 +1,14 @@
 KN-002 Cultural Pantheon
 # KN-002 Cultural Pantheon
-## Ver.1.3
+## Ver.1.4
+
+**Document ID**: KN-002  
+**Title**: Cultural Pantheon  
+**Series**: KN – Knowledge (Record)  
+**Version**: 1.4  
+**Authority**: Reference  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
 
 *(旧題: Cultural Reference。Ver.1.1にて "Cultural Pantheon" へ改題。評価基準・Tier構成・本文内容に変更は無い。Ver.1.3にて、Completion節（Equipment RegistryのMust Buyを完成条件とする旧記述）をOP-001 §3.6 Principle of Completion・OP-002 Completion Definitionへの参照文へ置換。Must BuyはOP-010で廃止済みのStatusであり、完成の定義はKN-002の管轄外（Authority: Reference、Equipment情報を保持しない）であるため。2026-09-28 MARI様承認。)*
 
@@ -4139,3 +4147,9 @@ THE THIRD PLACEが歩み続ける文化の地図として、
 **End of Document**
 
 **KN-002 Cultural Pantheon Ver.1.2**
+
+---
+
+## Header Standardization Note
+
+S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。

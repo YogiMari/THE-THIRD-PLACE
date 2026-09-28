@@ -1,6 +1,12 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.68  
+**Document ID**: MD-004  
+**Title**: Equipment Registry Object Reference  
+**Series**: MD – Master Data (Record)  
+**Version**: 7.69  
+**Authority**: SSOT  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project  
   
 ---  
   
@@ -6915,6 +6921,12 @@ MD-004の登録規則違反の整理（C-16）に伴い、Coffee節の空枠を�
 ## Version 7.68
 
 S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い、Version History のうち Version 7.0〜7.57（本Versionから見て直近10版より前）を archive/MD-004_Version_History_Archive.md へ移設した。移設した履歴は原文のまま保持し、要約・削除は行っていない。本文側の記録データそのものに変更はない。MARI様のご決定に基づく。
+
+---
+
+## Version 7.69
+
+S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。
 
 ---
 

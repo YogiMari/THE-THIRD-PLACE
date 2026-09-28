@@ -11,11 +11,15 @@ Procurement Handbook
   
 **Version**  
   
-4.2  
+4.3  
   
 **Status**  
   
 Active  
+  
+**Authority**  
+  
+SSOT  
   
 ---  
   
@@ -1812,6 +1816,7 @@ Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The B
 | 4.0 | 2026-09-28 | S-06（BR-003のルールとデータの分離）に基づき、CLAUDE.md／OP-008 §9.3「Living文書に恒久ルールを置かない」に反していた恒久ルール（Acquisition Status Policy・Purchasing Priority・Purchase List Definition・Purchase Completeness Ruleの一般原則1〜12・BR-002/BR-003 Synchronization Ruleの一般原則・Purchase Checklist・Overseas Purchase Policy・Japan Purchase Policy・Compatibility Policyの末尾原則・Price Integrity Rule）を、OP-005 Pursuit Strategy §Coffee Zone Acquisition Rulesへ逐語移設し、本書側は参照行へ置換した。個別製品固有の同期チェック項目（Purchase Completeness Rule 13〜36、Synchronization Rule 10〜16）、Compatibility Policyの具体的互換性一覧、Acquisition Completeness Rule、Acquisition Exceptionsは、この構成固有のデータとして本書に残置した（移設対象外）。調達データそのもの（価格・購入先・Purchase Grouping・Monthly Acquisition Plan等）に変更はない。Product Variant Integrity・Extraction Core Configuration等、BR-002との重複が疑われる節は今回対象外とし、別課題（S-07）で扱う。責任範囲の変更のためMajor Version。OP-008 Ver.3.15・OP-005 Ver.2.2の同時改訂と連動。MARI様のご決定に基づく（S-06）。 |  
 | 4.1 | 2026-09-28 | S-07（重複削減、Ver.4.0のDesign Rationaleで予告されたBR-002との重複解消）に基づき、BR-002/BR-003間および文書内の重複を削減。Coffee System Water Configuration・Espresso Glass Transport Configuration・Latte Cup Configuration・Coffee Tool Station Configuration・Extraction Core Configuration・Espresso System ConfigurationをBR-002の該当節への参照へ置換（BR-003はProcurement Authorityであり、Workflow・構成決定の重複記述はPurposeの管理範囲外）。Current Acquisition PriorityおよびFinal Acquisition InventoryのEstimated Total Cost列を削除し、Product NN（Confirmed Equipment Acquisition Registry）への参照に一本化。金額の正本をProduct NNの1箇所のみに限定し、複数箇所の金額不一致リスクを解消。「PX-004 v2.7 Synchronization」節（旧ID時代の同期記録、現行Version Controlに内容が上書き済み）を削除しDocument Renumbering Noteへ1行吸収。Confirmed Equipment・Acquisition Status・現行価格そのものに変更はない。MARI様の承認（2026-09-28）に基づく。 |  
 | 4.2 | 2026-09-28 | S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い、Version Control のうち Version 1.0〜3.7を archive/BR-003_Version_History_Archive.md へ移設した。移設した履歴は原文のまま保持し、要約・削除は行っていない。本文側の調達データそのものに変更はない。MARI様のご決定に基づく。 |  
+| 4.3 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
   
 ---  
 

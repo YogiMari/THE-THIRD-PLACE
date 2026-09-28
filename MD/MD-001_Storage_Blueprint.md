@@ -1,7 +1,13 @@
 # MD-001 Storage Blueprint
-## Ver.2.21
+## Ver.2.22
 
-Status : Active
+**Document ID**: MD-001  
+**Title**: Storage Blueprint  
+**Series**: MD – Master Data (Record)  
+**Version**: 2.22  
+**Authority**: SSOT  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
 
 ---
 
@@ -1036,7 +1042,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.21
+Ver.2.22
 
 ---
 
@@ -1186,6 +1192,7 @@ Permanent Storage
 | 2.19 | 2026-09-28 | MARI様のご確認に基づき（課題C-20）、MD-001内の記述の揺れを是正。(1) Parent Documents（OP-001・OP-002・MD-004・OP-006・OP-007）とRelationship図（MD-004→MD-001→OP-007、OP-007は下流＝現地展開）が矛盾していたため、Parent DocumentsからOP-007を外した（OP-001・OP-002・MD-004・OP-006の4件に修正）。Relationship図・Position表は変更していない。(2) Beck②のPurpose「Coffee Equipment & Light Equipment」およびBeck② Principles「Coffee Equipment + Light Equipment + Living Table Module = Living Core Module」は、Fixed Position Rules Beck²の記述（Coffee Equipment + Living Table Module）および実際のFixed Contents（Beck②内の照明はVapalux M320のみ。DEVADEVA等の照明・香り一般はShellCon25②の担当）と不整合だったため、両箇所とも「Coffee Equipment & Living Table Module」「Coffee Equipment + Living Table Module = Living Core Module」へ修正し、Fixed Position Rulesの記述に統一した。Vapalux M320は引き続きLayer 3・Fixed Position Rulesの個別記載（Bridge Frame・Wood Board・Coffee Equipment・Vapaluxの収納位置は固定）でのみ扱う。Position表（S-08で削除予定）は本改訂の対象外。mainへ先行マージされていたRecovery Sequence訂正（C-19、Ver.2.18）とのマージコンフリクトを解消し、両変更を統合してVer.2.19とした。 |
 | 2.20 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Positionの文書一覧表（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。直後の§Relationship（MD-004→MD-001→OP-007のフロー図）は本書固有の情報のため変更していない。MARI様のご決定に基づく（S-08）。 |
 | 2.21 | 2026-09-28 | 整備バックログ（N-02・N-03・N-06・N-07）対応。§Vehicle（Range Rover Sport 2026年型、公表荷室容量647 L／1,491 L、実測待ち項目）、§Vehicle Loading Rule（暫定）、§Full Loading Order（暫定・未検証）、§Site Deployment Sequence（全体・暫定）、§Site Recovery Sequence（全体・暫定。乾燥に時間を要するShelterを最後に撤収）を新設。Winter Kit BeddingへFUR-034・FUR-036を追加し積載位置の未決事項を明記。Coffee Module Layout §未決事項へCoffee Serviceware・専用水の定位置未定を追記。Home Operationへ濡れたShelterの帰宅後乾燥を追記。Dust Management Module・Seasonal Slot Moduleの未所有Equipment（STR-030・FIR-036・FUR-035・FUR-032）へ未所有注記を付記（S-02バリデータ警告の解消）。ヘッダーと末尾Version欄の版数不一致（2.20／2.19）を是正。いずれもClaude推奨案をMARI様の包括指示（2026-09-28）に基づき暫定採用したもの。 |
+| 2.22 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 
 ---
 

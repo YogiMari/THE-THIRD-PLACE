@@ -1,7 +1,15 @@
 OP-006 Foundation Compass
 # OP-006
 # Foundation Compass
-## Ver.1.7
+## Ver.1.8
+
+**Document ID**: OP-006  
+**Title**: Foundation Compass  
+**Series**: OP – Operation (Definition)  
+**Version**: 1.8  
+**Authority**: Standard  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
 
 ---
 
@@ -550,6 +558,7 @@ Foundation Compass は、
 | 1.5 | 2026-09-28 | 「Relationship」節の後へ「Priority Principle」節を新設（Minor Version：章追加）。OP-002 Design Bible §Database Rulesにあった「Priorityは価格ではなく人気でもなく、Design Bibleとの一致度で決定する」という思想文を移設した。MD-004 Equipment Registry Object ReferenceにはPriority欄自体が存在しない（OP-010 Qualification Charter Part A Attribute Policy参照）ことを確認した上での移設であり、Coffee Zoneの具体的な購入優先度はBR-003 Procurement Handbookが別途管理する旨を明記した。MARI様のご決定に基づく（C-02）。 |
 | 1.6 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Relationship to Other Core Documentsの文書一覧表（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。表以外の固有の関係説明は変更していない。Patch Version。MARI様のご決定に基づく（S-08）。 |
 | 1.7 | 2026-09-28 | 整備バックログ（N-01・N-04）対応。§Safety Principles（一酸化炭素・就寝時の暖房・薪ストーブ・火・燃料の恒久ルール）と§Material Care Principles（Coffee以外の素材別ケア。Routine／Periodic）を新設（Minor Version：章追加）。高温期の燃料の車内常備をVehicle = Permanent Storageの例外とした。Claude推奨案をMARI様の包括指示（2026-09-28）に基づき暫定採用。 |
+| 1.8 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 
 ---
 

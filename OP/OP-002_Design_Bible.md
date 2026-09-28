@@ -1,6 +1,14 @@
-OP-002 Design Bible Ver.5.10
+OP-002 Design Bible Ver.5.11
 # THE THIRD PLACE Design Bible
-## Ver.5.10 Official Complete Edition
+## Ver.5.11 Official Complete Edition
+
+**Document ID**: OP-002  
+**Title**: Design Bible  
+**Series**: OP – Operation (Definition)  
+**Version**: 5.11  
+**Authority**: SSOT  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
 
 ---
 
@@ -1867,7 +1875,7 @@ THE THIRD PLACEは、
 
 **THE THIRD PLACE Design Bible**
 
-**Ver.5.10 Official Complete Edition**
+**Ver.5.11 Official Complete Edition**
 
 **End of Document**
 
@@ -1936,3 +1944,9 @@ THE THIRD PLACEは、
 ## Zone Evaluation Philosophy Provisional Note
 
 本文書は、2026-09-28付でVer.5.9からVer.5.10へ更新した（Minor Version：構成追加）。§Design Domainsのうち「未策定」だったFurniture・Light・Aroma・Storage・ShelterのZone Evaluation Philosophyへ、各ドメイン節の本文（Furniture：家具品質・木工・温もり、Light：光の質感と陰影、Aroma：余白と時間、Storage：見せる建築・動線・積載・設営撤収効率、Shelter：空間の境界と屋根）から導いた4軸を、Fire Domainと同じ形式で追加した。いずれもClaude推奨案をMARI様の包括指示（2026-09-28）に基づき暫定採用したものであり、CZ-001 Deliberation Dossierでの比較検討を通じて確定する（N-09）。
+
+---
+
+## Header Standardization Note
+
+本文書は、2026-09-28付でVer.5.10からVer.5.11へ更新した。S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。

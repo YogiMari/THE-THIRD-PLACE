@@ -1,6 +1,14 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.3.5
+## Ver.3.6
+
+**Document ID**: MD-002  
+**Title**: Field Atlas Landscape Framework  
+**Series**: MD – Master Data (Record)  
+**Version**: 3.6  
+**Authority**: SSOT  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
 
 ---
 
@@ -263,6 +271,7 @@ THE THIRD PLACE を実現するための
 | 3.3 | 2026-09-26 | 見出し『Registry Standard Reference』が2026-09-24付の改題（OP-010→Qualification Charter）に同期していなかった箇所を修正し、『Qualification Charter Reference』へ改題。本文（Part C参照）に変更はない。 |
 | 3.4 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Relationship to Other Core Documentsの文書一覧（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。箇条書き以外の固有の説明は変更していない。MARI様のご決定に基づく（S-08）。 |
 | 3.5 | 2026-09-28 | OP-010 Qualification Charter Ver.2.2（Partner Valueの正式スコア化）に伴い、Field Atlas Databaseのスコアを旧フレームワークの統合スコアからPartner Value（6軸合計、60点満点）へ置き換え、掲載順をPartner Valueの降順（同点は旧スコアの降順）へ並べ替えた。旧スコアは各行末尾に参考値として併記。Radar Sub-Scoresの表も同じ順序へ並べ替え、総括を更新。あわせて、スノーピークヘッドクォーターズのIdentityコメントにあった他フィールドとの相対順位表現（OP-010 Part C §Identityで禁止）を是正。各軸のスコア値・Identityの内容自体は変更していない。Claude推奨案をMARI様の包括指示に基づき採用（N-10）。 |
+| 3.6 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 
 ---
 

@@ -1,5 +1,12 @@
 # MD-003 Galley Fare
-Version 2.18
+
+**Document ID**: MD-003  
+**Title**: Galley Fare  
+**Series**: MD – Master Data (Record)  
+**Version**: 2.19  
+**Authority**: SSOT  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
 
 ---
 
@@ -3376,6 +3383,12 @@ OP-008 Rule DOC-06・Principle 003に基づき、§Relationship to Other Core Do
 ## Version 2.18
 
 S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い、Version History のうち Version 1.0を archive/MD-003_Version_History_Archive.md へ移設した。移設した履歴は原文のまま保持し、要約・削除は行っていない。本文側の記録データそのものに変更はない。MARI様のご決定に基づく。
+
+---
+
+## Version 2.19
+
+S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。
 
 ---
 

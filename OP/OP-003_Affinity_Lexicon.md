@@ -1,6 +1,14 @@
 OP-003 Affinity Lexicon
 # OP-003 Affinity Lexicon
-## Ver.1.1
+## Ver.1.2
+
+**Document ID**: OP-003  
+**Title**: Affinity Lexicon  
+**Series**: OP – Operation (Definition)  
+**Version**: 1.2  
+**Authority**: Standard  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
 
 ---
 
@@ -4270,3 +4278,9 @@ Affinityは、他文書での言及頻度・中心性を基準とした初期評
 2026-09-19付で、一部語彙エントリのField列で「Definition」が誤って「定義」と表記されていた不具合を修正した（内容・定義文自体に変更はない）。
 
 # End of Document
+
+---
+
+## Header Standardization Note
+
+S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。

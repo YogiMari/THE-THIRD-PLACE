@@ -1,7 +1,15 @@
 OP-005 Pursuit Strategy
 # OP-005
 # Pursuit Strategy
-## Ver.2.4
+## Ver.2.5
+
+**Document ID**: OP-005  
+**Title**: Pursuit Strategy  
+**Series**: OP – Operation (Definition)  
+**Version**: 2.5  
+**Authority**: Standard  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
 
 ---
 
@@ -18,6 +26,7 @@ OP-005 Pursuit Strategy
 | 2.2 | 2026-09-28 | S-06（BR-003のルールとデータの分離）に伴い、CLAUDE.md／OP-008 §9.3「Living文書に恒久ルールを置かない」に反していたBR-003 Procurement Handbookの恒久ルール（Acquisition Status Policy・Purchasing Priority・Purchase List Definition・Purchase Completeness Ruleの一般原則部分・BR-002/BR-003 Synchronization Ruleの一般原則部分・Purchase Checklist・Overseas Purchase Policy・Japan Purchase Policy・Compatibility Principle・Price Integrity Rule）を、既存の§Coffee Zone Acquisition Rulesへ逐語移設した。個別製品固有のチェック項目・具体的互換性一覧・実際のAcquisition Status等の値の割り当ては、引き続きBR-003が管理する（Ver.2.0の二重定義解消の決定と矛盾しない）。章追加のためMinor Version。OP-008 §8カタログのOP-005行Roleの同時改訂（Ver.3.15）と連動。MARI様のご決定に基づく（S-06）。 |
 | 2.3 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Relationship to Other Core Documentsの文書一覧表（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。表以外の固有の関係説明は変更していない。Patch Version。MARI様のご決定に基づく（S-08）。 |
 | 2.4 | 2026-09-28 | 整備バックログ（N-14・N-15）対応。§Monthly Budgetへ「標準予算は上限ではなく目安であり、超過する月は計画に理由を記載する」旨を追記。§Coffee Zone Acquisition Rulesへ§Availability Check（Coffee機材の在庫確認は各月の購入着手時、流通限定品は前月）を新設。Claude推奨案をMARI様の包括指示に基づき暫定採用。Minor Version。 |
+| 2.5 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 
 ---
 

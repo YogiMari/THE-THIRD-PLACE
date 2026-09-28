@@ -10,11 +10,15 @@ Deliberation Dossier
 
 # Version
 
-3.16
+3.17
 
 # Status
 
 Active
+
+# Authority
+
+SSOT
 
 ---
 
@@ -375,6 +379,7 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 3.14 | 2026-09-28 | MARI様のご指摘（Issue C-07）に基づき、PurposeとRelationship図を整合。Purposeの管理対象を「Under Consideration／Confirmed — Purchase Pending／Decision Log ＋ 詳細記録」の3項目へ改め、Zone Evaluation PhilosophyはVer.3.0でOP-002 Design Bible §Design Domainsへ移設済みである旨の参照注記へ変更（管理対象の列挙からは除外）。Relationship図もZone Evaluation Philosophyノードへ同旨の注記を追加し、独立ブロックだったDecision Log ＋ 詳細記録をCZ-001ツリーの4本目の枝として統合。あわせてVersion Historyの3.0の行を2.10〜2.17より後（2026-09-24、時系列順）へ並べ替え。構成追加のためMinor Version。 |
 | 3.15 | 2026-09-28 | S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い、Version History のうち Version 1.0・2.0〜2.17を archive/CZ-001_Version_History_Archive.md へ移設した。移設した履歴は原文のまま保持し、要約・削除は行っていない。本文側の検討記録そのものに変更はない。MARI様のご決定に基づく。 |
 | 3.16 | 2026-09-28 | 整備バックログ（N-12）対応。Purposeへ「比較検討を経ない登録」の運用（1製品で即決した場合もDecision Logへ一行記録し、Under Considerationと詳細記録は不要）を追記。あわせてPurposeの「4種類の内容」を、実際に列挙されている3種類へ是正。Claude推奨案をMARI様の包括指示に基づき暫定採用。Minor Version。 |
+| 3.17 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 
 ---
 
