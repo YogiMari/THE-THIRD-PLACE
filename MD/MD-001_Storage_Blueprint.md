@@ -1,5 +1,5 @@
 # MD-001 Storage Blueprint
-## Ver.2.12
+## Ver.2.13
 
 Status : Active
 
@@ -384,6 +384,7 @@ STR-032（WHATNOT One Touch Bucket HD）を、通年の消耗品と小物の常�
 - パラフィンオイル
 - 着火剤
 - ガスライター充填用ガス
+- CB缶（冬のみ。Winter Kitの消耗品として追加。予備1本を持ち、使い切ったら買い物リストへ追加する）
 
 ### 洗い・衛生
 
@@ -423,6 +424,92 @@ STR-032（WHATNOT One Touch Bucket HD）を、通年の消耗品と小物の常�
 消耗品は補充ライン方式で確認する：残量が1/3前後になった、または予備の残数が1になった時点で買い物リストへ追加する。
 
 小物は定数チェック方式で確認する：使用後の点検時に、上記個数が揃っているかを確認する。
+
+---
+
+# Seasonal Slot Module
+
+車内には、季節の入れ替えに対応する定位置（Seasonal Slot）を2つ設ける。季節が変わるときは、Slotに置く物とSeason Kitの箱ごと積み降ろしする。Module内部の詰め替えは行わない。Seasonal Slotは一時的な固定位置ではなく、車内に定められた恒久的な位置であり、置かれる中身のみが季節に応じて変わる（OP-006 Foundation Compass Seasonal Configuration参照。定義そのものはOP-006が管理し、本節では重複して記載しない）。
+
+## Seasonal Slot A（大型ギア用）
+
+| Season | Contents |
+|---|---|
+| Summer | ポータブルエアコン |
+| Winter | FIR-036（薪ストーブ）、FIR-029（武井バーナー Purple Stove 501A） |
+
+## Seasonal Slot B（バケット用）
+
+| Season | Contents |
+|---|---|
+| Summer | 夏用ワンタッチバケット |
+| Winter | 冬用の大きな寝具（FUR-032）＋冬用寝具のシーツ（FUR-035）。バケットは自宅保管とする |
+
+### Rule
+
+ポータブルエアコン・夏用ワンタッチバケットは、MD-004へ未登録の物品である。OP-010 Qualification Charterに基づき、個別の消耗品・小物と同様にMD-004への新規登録は行わず、本節でのみ構成物として記載する（Consumables & Sundries Moduleの前例に基づく扱い）。
+
+---
+
+# Summer Kit
+
+夏用ワンタッチバケット（Seasonal Slot B）の中身を定義する。
+
+## Contents
+
+- 扇風機
+- 扇風機のバッテリー
+- 虫除けスプレー（地面用）
+- 虫除けスプレー（空間用）
+- 虫除けスプレー（肌用）
+- 殺虫剤
+- 蚊取り線香
+- 虫刺され薬
+- ドライシャンプー
+- クーリングスプレー
+
+## Confirmation Method
+
+スプレー類・ドライシャンプーは残り1/3、蚊取り線香は残り1箱になった時点で買い物リストへ追加する。虫刺され薬は使用後に残量を確認する。扇風機のバッテリーは消耗品として扱わず、帰宅後に充電状態を点検する。
+
+---
+
+# Winter Kit
+
+Seasonal Slot A・Bへ積む冬季の構成物を定義する。
+
+## Equipment
+
+- FIR-036（薪ストーブ）
+- FIR-029（武井バーナー Purple Stove 501A）
+- FIR-032（shank heater 百式改）＋FIR-033（専用ケース：shank container）
+
+## Bedding
+
+- 冬用の大きな寝具（FUR-032）
+- 冬用寝具のシーツ（FUR-035）
+- マルカの湯たんぽ
+- 膝掛けサイズの電気毛布
+
+湯たんぽ・電気毛布はMD-004へ未登録の物品であり、Seasonal Slot Module Ruleと同様の扱いとする。定位置は未定のため、本節では暫定位置を記載しない。
+
+## Consumables
+
+CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参照。本節では重複して記載しない）。
+
+## Clothing
+
+暖かいブーツ：フィールドで履き替える。固定収納は行わず、持ち物チェックのみとする。
+
+## Out of Scope
+
+灯油は道中で給油し、薪は現地調達する。いずれも本Kitの管理対象外とする。
+
+---
+
+# Weather Overlay（Rain）
+
+雨天時に追加するのは服程度の少量であるため、Kitとしての管理対象外とする（OP-006 Foundation Compass Weather Overlay Scope参照）。
 
 ---
 
@@ -791,7 +878,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.12
+Ver.2.13
 
 ---
 
@@ -934,6 +1021,7 @@ Permanent Storage
 | 2.10 | 2026-09-28 | Beck②にCoffee Module Layout（暫定）を追記。Layer 1旧リストは未同期 |
 | 2.11 | 2026-09-28 | Layer 1 Coffee ModuleとCoffee Sequenceを、旧リスト（7品目）から現行の13点（暫定・試し詰め前）へ置換。Validation SummaryのCoffee ModuleをVerifiedからProvisionalへ修正。Layout節の「旧リスト未同期」注記を削除。Layer 2（Wood Board ×4 Sets）とLayer 3（Vapalux M320）は、本案との矛盾を未解決のまま残している |
 | 2.12 | 2026-09-28 | MARI様のご決定に基づき、Consumables & Sundries Module（STR-032 WHATNOT One Touch Bucket HD、通年の消耗品と小物の常備用）を新設。中身（消耗品：火まわり・洗い衛生・メンテナンス・香り・電池／小物：ハンガー・カラビナ等）、分類（補充ライン方式・定数チェック方式）、確認方法を記載。役割の要約はMD-004 STR-032のIndustrial Attributeへ記載し、詳細は本書のみで管理する（重複管理を回避）。Storage Rulesの「モジュールの混在は認めない」原則との整合は、ShellCon25②（Light & Aroma Module）の複数Domain統合運用の前例に基づき、本バケットを単一役割の1 Moduleとして位置付けることで確保した。 |
+| 2.13 | 2026-09-28 | MARI様のご決定に基づき（GitHub Issue #46）、Seasonal Slot Module（Seasonal Slot A：大型ギア用／B：バケット用）、Summer Kit（夏用ワンタッチバケットの中身・補充ライン）、Winter Kit（Equipment：FIR-036・FIR-029・FIR-032＋FIR-033／Bedding：FUR-032・FUR-035＋湯たんぽ・電気毛布／Consumables：CB缶／Clothing：ブーツ／Out of Scope：灯油・薪）、Weather Overlay（Rain、管理対象外）を新設。Consumables & Sundries Module §火まわりへCB缶（冬のみ）を追加。MD-004に未登録の物品（ポータブルエアコン・夏用ワンタッチバケット・湯たんぽ・電気毛布）は、Consumables & Sundries Moduleの前例に基づきMD-004へ新規登録せず、本書内でのみKit構成物として記載した。定義（Base／Season Kit／Weather Overlay、Seasonal Slotの位置づけ）はOP-006 Foundation Compassが管理し、本節では中身（データ）のみを記載する（重複管理を回避）。冬用暖房コンテナ・冬の小物の暫定位置は未決定のため本書には記載しない。 |
 
 ---
 
