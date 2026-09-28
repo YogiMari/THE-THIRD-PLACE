@@ -338,12 +338,15 @@ Discoveryで得られた情報は、
 
 必要に応じて
 
-- OP-005 Pursuit Strategy
+- CZ-001 Deliberation Dossier
+- CZ-002 Vigil Protocol
 - MD-004 Equipment Registry
 - KN-001 Heritage Chronicle
 - KN-003 Beyond Journey
 
 へ反映される。
+
+Coffee Zoneに関する情報は、BR-002 Barista Canon／BR-003 Procurement Handbookへ反映される。
 
 ---
 
@@ -430,6 +433,12 @@ Projectへ届けるために存在する。
 ## Scope Alignment Note
 
 本文書は、2026-09-28付で、OP-005 Pursuit Strategy Ver.1.5（Acquisition Priority／Acquisition StatusはCoffee Zoneのみ適用、Coffee以外は「買えるときに買う」）に伴い、冒頭の常設ダッシュボード「Must Buy Dashboard」を「Horizon」へ改称し、監視対象の出どころをCZ-002 Vigil Protocol Watch Listへ統一した（MARI様のご決定）。対象はCoffee以外のゾーンとする。§Must Buy Watchは§Vigil Watchへ改題し、「OP-005に登録されたMust Buy Item」の記述をCZ-002 Watch List参照へ置換した。その他の内容に変更はない。
+
+---
+
+## Editorial Rules Reflection List Update Note
+
+本文書は、2026-09-28付で、OP-005 Pursuit Strategy Ver.2.0（購入優先度・購入状態・月次購入計画・市場監視をOP-005が管理しなくなった実態）に伴い、§Editorial Rulesの反映先リストからOP-005 Pursuit Strategyを削除し、CZ-001 Deliberation DossierおよびCZ-002 Vigil Protocolを追加した。あわせて、Coffee Zoneに関する情報はBR-002 Barista Canon／BR-003 Procurement Handbookへ反映される旨を明記した。MARI様のご決定に基づく（C-04）。
 
 ---
 
