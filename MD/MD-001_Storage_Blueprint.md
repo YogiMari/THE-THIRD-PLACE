@@ -1,5 +1,5 @@
 # MD-001 Storage Blueprint
-## Ver.2.15
+## Ver.2.16
 
 Status : Active
 
@@ -376,13 +376,11 @@ Internal Size
 
 ### Fixed Contents
 
-- Filoméla INCENSE CHAMBER（Horizontal）
 - DEVADEVA
-- KURASHI MADE DOME LOOK
-- RT-01AC01 / ECHO LAMP
 - VALO SHADE
 - TARP to TARP × Lampup Glass Shade
-- MMM Pocket Shade
+- RT-01AC01 / ECHO LAMP（未所有・MD-004 LGT-040 Status = Essential）
+- KURASHI MADE DOME LOOK（未所有・MD-004 LGT-041 Status = Essential）
 - その他Light Accessories
 
 ### Stored Separately
@@ -394,9 +392,9 @@ Internal Size
 
 Light EquipmentとAroma Equipment専用。
 
-Filomélaは必ず横置き収納。
-
 CONPE10はShellCon25へ収納しない。
+
+RT-01AC01 / ECHO LAMPとKURASHI MADE DOME LOOKは、購入後にShellCon25②へ収納予定（現時点で未所有）。
 
 ---
 
@@ -694,11 +692,11 @@ Pitcher＋Sleeve
 
 # Light Sequence
 
-RT-01AC01 / ECHO LAMP
+RT-01AC01 / ECHO LAMP（未所有・MD-004 LGT-040 Status = Essential）
 
 ↓
 
-KURASHI MADE DOME LOOK
+KURASHI MADE DOME LOOK（未所有・MD-004 LGT-041 Status = Essential）
 
 ↓
 
@@ -714,15 +712,9 @@ TARP to TARP × Lampup Glass Shade
 
 ↓
 
-MMM Pocket Shade
-
-↓
-
-Filoméla INCENSE CHAMBER
-
-↓
-
 Vapalux（必要時のみ）
+
+本Sequenceのうち、RT-01AC01 / ECHO LAMPとKURASHI MADE DOME LOOKは未購入（MD-004 Status = Essential）。本SequenceはMD-004購入決定後の想定手順であり、実運用は未了。
 
 ---
 
@@ -866,13 +858,11 @@ Light & Aroma Module専用。
 
 ### Fixed Contents
 
-- Filoméla INCENSE CHAMBER（Horizontal）
 - DEVADEVA
-- KURASHI MADE DOME LOOK
-- RT-01AC01 / ECHO LAMP
 - VALO SHADE
 - TARP to TARP × Lampup Glass Shade
-- MMM Pocket Shade
+- RT-01AC01 / ECHO LAMP（未所有・MD-004 LGT-040 Status = Essential）
+- KURASHI MADE DOME LOOK（未所有・MD-004 LGT-041 Status = Essential）
 
 ### Separate Storage
 
@@ -935,7 +925,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.15
+Ver.2.16
 
 ---
 
@@ -982,13 +972,13 @@ Wood Board ×7 Sets のうち4セット（STR-015・STR-018、各2組）は未�
 
 ### Verified Equipment
 
-- Filoméla INCENSE CHAMBER（Horizontal）
 - DEVADEVA
-- KURASHI MADE DOME LOOK
-- RT-01AC01 / ECHO LAMP
 - VALO SHADE
 - TARP to TARP × Lampup Glass Shade
-- MMM Pocket Shade
+- RT-01AC01 / ECHO LAMP
+- KURASHI MADE DOME LOOK
+
+RT-01AC01 / ECHO LAMPとKURASHI MADE DOME LOOKは未購入（MD-004 Status = Essential）。本検証結果は未購入分を含む。実物での確認は未了。
 
 ### Separate Storage
 
@@ -1006,7 +996,6 @@ Wood Board ×7 Sets のうち4セット（STR-015・STR-018、各2組）は未�
 | Living Table Deployment | ✅ Verified |
 | Side Table Deployment | ✅ Verified |
 | ShellCon25② Storage | ✅ Verified |
-| Filoméla Horizontal Storage | ✅ Verified |
 | CONPE10 Relocation | ✅ Verified |
 | Operation Sequence | ✅ Verified |
 
@@ -1055,7 +1044,6 @@ Permanent Storage
 - ShellCon25①はBedding専用。
 - ShellCon25②はLight & Aroma Module専用。
 - CONPE10はSnow Peak Multi Containerへ固定収納。
-- Filomélaは横置き固定収納。
 - Bridge Frame・Wood Board・Coffee Equipment・Vapaluxは固定位置を変更しない。
 - 展開順と収納順は常に一致させる。
 - Temporary permanent locationsは禁止。
@@ -1081,6 +1069,7 @@ Permanent Storage
 | 2.13 | 2026-09-28 | MARI様のご決定に基づき（GitHub Issue #46）、Seasonal Slot Module（Seasonal Slot A：大型ギア用／B：バケット用）、Summer Kit（夏用ワンタッチバケットの中身・補充ライン）、Winter Kit（Equipment：FIR-036・FIR-029・FIR-032＋FIR-033／Bedding：FUR-032・FUR-035＋湯たんぽ・電気毛布／Consumables：CB缶／Clothing：ブーツ／Out of Scope：灯油・薪）、Weather Overlay（Rain、管理対象外）を新設。Consumables & Sundries Module §火まわりへCB缶（冬のみ）を追加。MD-004に未登録の物品（ポータブルエアコン・夏用ワンタッチバケット・湯たんぽ・電気毛布）は、Consumables & Sundries Moduleの前例に基づきMD-004へ新規登録せず、本書内でのみKit構成物として記載した。定義（Base／Season Kit／Weather Overlay、Seasonal Slotの位置づけ）はOP-006 Foundation Compassが管理し、本節では中身（データ）のみを記載する（重複管理を回避）。冬用暖房コンテナ・冬の小物の暫定位置は未決定のため本書には記載しない。 |
 | 2.14 | 2026-09-28 | MARI様のご指摘に基づき、Seasonal Slot Moduleの冬季内容の誤りを訂正した。Seasonal Slot A（ポータブルエアコンの場所）の冬はFIR-036・FIR-029に加えFUR-035（冬用寝具のシーツ）も含む。Seasonal Slot B（夏用ワンタッチバケットの場所）の冬はFUR-032（冬用の大きな寝具、嵩張る方）のみであり、FUR-035はSlot Bには含まれない。Winter Kit § Equipment・Bedding自体（何が冬季に積まれるか）に変更はなく、Seasonal Slot Moduleの表（どちらのSlotに何が入るか）のみを訂正した。 |
 | 2.15 | 2026-09-28 | 【引継ぎ】Beck②コーヒーギア13点収納設計を受け、Coffee Module Layout（暫定）節を拡充。13点＋Wood Boardの寸法一覧（GPT・Gemini web二重チェック確定値）、Beck②内寸の採用根拠（MD-001正本565×360×265mmを基準、540×340×250mmは参考値扱い）、9Barista Mk.2 Proの寸法採用根拠（実寸未確定のため安全側160×190×180を採用）、不採用配置案、配置詳細、判定結果（基準内寸では13点成立、参考値内寸では不成立、Wood Boardは3セットが上限・4セット目は非推奨・5〜7セットは不可）、未決事項（Layer 2 Wood Board×4 SetsとLayer 3 Vapalux M320の格納先が未解決のまま）、試し詰め前に必要な実測項目を追記した。Coffee ModuleのStatusは引き続きProvisional（試し詰め未了のため）。Validation Summaryの該当行へ判定根拠を追記。mainへ先行反映されていたSeasonal Slot Module訂正（旧Ver.2.14）とのコンフリクトを解消し、両変更を統合してVer.2.15とした。 |
+| 2.16 | 2026-09-28 | MARI様のご確認に基づき、MD-004（SSOT）との矛盾を是正。Filoméla INCENSE CHAMBER Tokyo Limited（MD-004 ARM-004：Status = Upgrade）、RT-01AC01 / ECHO LAMP（LGT-040：Status = Essential）、KURASHI MADE DOME LOOK（LGT-041：Status = Essential）、MMM Pocket Shade（MD-004に登録なし。旧LGT-018はOTEBO CRAFTS BABELへ差し替え済み）はいずれも未所有であるにもかかわらず、ShellCon25②（Light & Aroma Module）のFixed Contents・Light Sequence・Fixed Position Rules・Validation Summaryの4箇所で、既に所有・実運用中の固定装備であるかのように記載されていた。Filoméla（Upgrade）・MMM Pocket Shade（未登録）はSSOT整合を優先し、該当4箇所から記載を削除した（Ver.2.9と同様の考え方）。一方、RT-01AC01 / ECHO LAMPとKURASHI MADE DOME LOOK（いずれもMD-004でStatus = Essential）は、購入決定済み装備として記録を残す必要があるため削除せず、該当4箇所に「未所有・MD-004 Status = Essential」の注記を付して維持した（Beck② Storage VerificationのWood Board未購入分と同様の扱い）。あわせて、Filomélaの「横置き固定収納」に関する個別ルール・検証行（Rule節、Validation Summary、Fixed Position Rulesまとめの計3箇所）も、対象がFixed Contentsから外れたことに伴い削除した。MD-004側のStatus（Upgrade／Essential）は変更なし。 |
 
 ---
 
