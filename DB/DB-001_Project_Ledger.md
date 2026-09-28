@@ -3,9 +3,10 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.13  
+**Version**: 4.14  
 **Authority**: Standard  
-**Status**: Active (Living Document)
+**Status**: Active (Living Document)  
+**Owner**: THE THIRD PLACE Project
 
 ---
 
@@ -149,6 +150,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.11 | 2026-09-28 | GitHub Issue #46に基づき、Project Inboxの該当行を、OP-006・MD-001へ正式反映された決定分を除いた未決定事項（冬用暖房コンテナの要否・定位置）のみへ書き直した。Patch Version。 |
 | 4.12 | 2026-09-28 | Conversation Ledgerへ、調達区分の整理（OP-005のCoffee限定化・Horizon改称）の会話を1行追加（MARI様ご指示）。Patch Version。 |
 | 4.13 | 2026-09-28 | KN Publication Logが参照していた「ways-of-working KN issuance rules」がリポジトリに実在しない不整合を是正し、OP-008 §28 KN Publication Policy（新設）への参照へ更新。MARI様のご決定に基づく（C-14）。Patch Version。 |
+| 4.14 | 2026-09-28 | S-11（文書ヘッダーの統一）に伴い、欠落していたOwnerヘッダー項目を追加した。内容に変更はない。Patch Version。MARI様のご決定に基づく。 |
 
 ---
 
