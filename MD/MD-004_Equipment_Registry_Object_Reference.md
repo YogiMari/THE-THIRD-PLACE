@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.72  
+**Version**: 7.73  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -6790,11 +6790,11 @@ Owned
 
 ### Color  
 
-Unconfirmed  
+Brown（グリップ）／Black（鉄部分）  
 
 ### Material  
 
-Cast Metal（ヘッド。サンゾー工務店 通常モデルの販売店掲載情報に基づく）／Natural Wood（asigripグリップ。3zo.online公式商品ページ）  
+Oak（グリップ）／Iron（ヘッド）  
 
 ### Graphic Attribute  
 
@@ -7089,6 +7089,12 @@ MARI様のご申告（2026-09-28）に基づき、STR-036 TOKYO CRAFTS エアド
 ## Version 7.72
 
 MARI様提示の公式商品ページ（2026-09-28）に基づき、SHL-006のBrandをCLAUDE.md作業原則7（コラボ表記は「販売元 × コラボブランド」）に従い「サンゾー工務店 × asimocrafts」へ訂正し、Productを公式名「DONKEY HAMMER_A」、Priceを¥16,500（3zo.online公式価格）、Material・Industrial Attributeを公式情報（asigripグリップ・天然木）に合わせて更新した。Color・Graphic Attributeは公式情報に記載がないためUnconfirmedのまま。あわせて、充電が必要な物を入れるバッグとしてSTR-037 Snow Peak Quilted Ripstop Duffle（AC-25AU012、Black、購入価格¥19,800、Owned）を新規登録した。
+
+---
+
+## Version 7.73
+
+MARI様のご申告（2026-09-28）に基づき、SHL-006 DONKEY HAMMER_AのColorをBrown（グリップ）／Black（鉄部分）、MaterialをOak（グリップ）／Iron（ヘッド）へ更新した（従来は通常モデルの販売店情報に基づく暫定記載とUnconfirmed）。Graphic Attributeは引き続きUnconfirmed。
 
 ---
 
