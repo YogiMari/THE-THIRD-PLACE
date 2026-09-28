@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.6
+**Version**: 3.7
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -25,6 +25,7 @@
 | 3.4 | 2026-09-27 | MARI様のご指摘に基づき、§8カタログのDB-001 Role列にあった「Project Ledgerは、重要な判断の記録先として、本Constitution §9（記録）で参照される」という記述を是正。実際の意思決定記録先はCoffee Domain：BR-002 Barista Canon、Coffee以外の全ゾーン：CZ-001 Deliberation Dossierであり、DB-001は運用ダッシュボードとして会話管理・進捗管理等のみを担う旨へ更新。OP-001 Constitution §9・§14の同時改訂（Ver.5.3）と連動。 |
 | 3.5 | 2026-09-27 | OP-001 Constitution §12 Information Hierarchy全面再構成、および同文書§27→§26への繰り上げ是正に伴い、本書内の相互参照2箇所（§11・Document Renumbering Note）をOP-001 §26参照へ更新。MARI様のご指摘に基づく。 |
 | 3.6 | 2026-09-28 | OP-005 Pursuit Strategy Ver.1.5（月間予算・Acquisition Priority・Acquisition Status・Monthly Planningの適用範囲をCoffee Zoneに限定、Coffee以外は買えるときに買う方針を新章で明記）に伴い、§8カタログのOP-005行のRole・Summaryを同期。MARI様のご決定に基づく。 |
+| 3.7 | 2026-09-28 | Drive⇄GitHub同期運用の決定に伴い、§27 Drive Mirror Operationを新設（Minor Version：章追加）。GitHub→Driveの一方向ミラー、協力者の書き込み先（Contributions）、取り込みの流れを定義。OP-001 §21.1（External Contribution Protocol）と連動。MARI様のご決定に基づく。 |
 
 ---
 
@@ -718,6 +719,41 @@ THE THIRD PLACE Project の運用状況に応じて拡張する。
 Reserved IDs は必要時のみ使用する。
 
 不要な文書は追加しない。
+
+---
+
+# 27. Drive Mirror Operation
+
+## 27.1 Position
+
+GitHubを扱わない協力者が正式文書を参照できるよう、GitHub Repositoryの内容をGoogle Driveへ一方向に複製する。Drive上のファイルは正式文書ではない（OP-001 §13.1）。
+
+## 27.2 Structure
+
+| Folder | Role | Rule |
+|---|---|---|
+| Mirror | GitHubの複製（参照用） | 協力者は編集しない。GitHubの内容で一方向に更新される |
+| Contributions | 協力者の書き込み先 | ミラーは触れない。内容はDiscovery扱い（OP-001 §21.1） |
+
+## 27.3 Direction
+
+自動同期は GitHub → Drive のみとする。Drive → GitHub の自動反映は行わない。
+
+## 27.4 Intake
+
+Contributionsの内容は、オーナーのAIが読み取り、反映先を提案する。GitHubへの正式反映は、オーナーの承認後に行う（OP-001 §21.1）。
+
+## 27.5 Scope
+
+同期対象の種別は md・png・py とする。
+
+## 27.6 Future Change
+
+Drive → GitHub の自動化を導入する場合は、本節を先に改訂し（§23）、OP-001 §21.1に適合させる（mainへ直接書き込まない）。
+
+## 27.7 Out of Scope
+
+同期スクリプト（Google Apps Script）の実装、トリガー、フォルダIDは本書の対象外とする。
 
 ---
 
