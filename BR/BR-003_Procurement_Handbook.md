@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-3.4  
+3.5  
   
 **Status**  
   
@@ -672,7 +672,7 @@ BR-002でConfirmedとなったEquipmentは、原則としてBR-003に登録す�
 * #07 Sharp Spout。  
 * Sharp Spout仕様に確定。  
 * Round Spoutは採用しない。  
-* 1個のPitcherを、連続すう2回のLatteサイクル双方で使用する。  
+* 1個のPitcherを、連続する2回のLatteサイクル双方で使用する。  
 * 2個目のPitcherは不要。  
   
 ---  
@@ -1623,7 +1623,7 @@ BR-002が改訂された場合:
 4. 国内保証を確認する。  
 5. 現行の在庫を確認する。  
 6. 正確な型番を確認する。  
-7. 正規品が妃当な総コストで入手可能な場合、非公式な並行輸入品は避ける。  
+7. 正規品が妥当な総コストで入手可能な場合、非公式な並行輸入品は避ける。  
   
 ---  
   
@@ -2142,21 +2142,22 @@ Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The B
 | 1.8 | 2026-08-21 | 調達ポリシーを改訂。後継関係が明確に確立されている場合、現行の後継モデルをPX-005の購入対象として採用するようにした。すべての現行Equipmentに、現行価格または現実的な調達目安を設定。海外製品には、保守的な日本到着後コスト目安を設定。LAGOM mini 2およびMantaBrew WeighMaster Ultraを、現行の調達モデルとして採用。Pullman Chiselを、現行の53.3mm Wood構成へ更新。KRUVE PROPELの市販パッケージ数量を、PX-004上のシステム割当と区別。調達完了までの見積予算を追加。 |  
 | 1.9 | 2026-09-07 | 9Barista Magnetic Dosing Funnelを、PX-004 Ver.2.9で明確化された「Mk.2 Pro標準付属品」の扱いへ整合。独立Purchase Required項目（旧Product 12）からIncluded Equipment（Included 04）へ移動し、Priority表・Purchase Grouping・Final Inventory・Estimated Acquisition Budgetを整合させた（Core Espresso System見積を¥7,900減額）。 |  
 | 2.0 | 2026-09 | Coffee Beans Procurementセクションを新設。コーヒー豆を消耗品として、Equipment Acquisition Registryから独立させて管理する方針を確立。Current RotationにOnibus Coffee「ONIBUS Blend」（Primary）とApril Coffee Roasters「Sustainable Profile Espresso」（Aesthetic Exception）を登録。Estimated Acquisition Budgetの除外リストから「コーヒー豆」の記載を削除（本セクションで独立管理するため除外リストへの言及自体が不要になったことによる整理）。Purposeセクションへ本方針を明記。 |  
-| 2.1 | 2026-09 | Monthly Acquisition Plan（Confirmed）セクションを新設。MARI様との合意に基づく月次購入計画（Month 1〜7、月あたり目安¥1万・Month 1のみ上限なし）を正式反映。Straight Espresso Workflow完成を優先し、エスプレッソグラス一式（PROPEL／AERESSO／HILLS FIELD Case／AION Coaster）とLatte System（ALM KOPi／WPM Pitcher／WPM Sleeve／FIKA12）を後半（Month 6・7）へ配置する方針を明記。YETI Yonderの必要性について、実飲用計画（Straight Espresso 6杯／Latte 4杯）に基づく水量試算（必要量約1,800mL、YETI除くと1,540mLで約260mL不足）を記録し、Month 5での確保を確定。 |  
+| 2.1 | 2026-09 | Monthly Acquisition Plan（Confirmed）セクションを新設。MARI様との合意に基づく月次購入計画（Month 1〜7、月あたり目安¥10万・Month 1のみ上限なし）を正式反映。Straight Espresso Workflow完成を優先し、エスプレッソグラス一式（PROPEL／AERESSO／HILLS FIELD Case／AION Coaster）とLatte System（ALM KOPi／WPM Pitcher／WPM Sleeve／FIKA12）を後半（Month 6・7）へ配置する方針を明記。YETI Yonderの必要性について、実飲用計画（Straight Espresso 6杯／Latte 4杯）に基づく水量試算（必要量約1,800mL、YETI除くと1,540mLで約260mL不足）を記録し、Month 5での確保を確定。 |  
 | 2.2 | 2026-09-18 | 「9Barista Official Spare Parts (Preventive Stock)」セクションを新設。9Barista公式サイト（9barista.com）一次情報に基づき、本体標準付属品（Spare Boiler O-ring・Spare Safety Ring・汎用53mm Tamper等）を記録し、重複購入防止の基準とした。推奨予備部品としてSafety Ring and Seals・Boiler O-ring Seal Mk.2を、任意項目としてOverheat Repair Kit Mk.2を追加。通常使用下では交換頻度が低いとされる個別Valve部品・構造部品は見送りとした。Descalerは2026-09時点で9Barista公式ストアの取扱いがないことを確認し、PX-006記載の第三者ブランド（Puly／Urnex Dezcal／Durgol）調達方針を維持。Purchase Grouping Group Aおよび Monthly Acquisition Plan Month 1へOptional項目として反映。Estimated Acquisition BudgetおよびPlan Totalの除外リストに本セクションを明記。 |  
 | 2.3 | 2026-09-18 | Product 26「9Barista Handle - Walnut」を新設。PX-004 Ver.3.7のHandle Material Decision（MARI様の直接指示、2026-09-18）と同期し、9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）をWalnut仕様へ変更する購入をConfirmed / Purchase Requiredとして正式登録。数量2（Upper・Lower各1、公式スペアパーツは単品$15.00販売）、参考価格¥4,500〜6,000。Group A（9Barista）およびMonth 1へ統合し、Current Acquisition Priority・Estimated Acquisition Budget（Core Espresso System: ¥404,500〜459,500 → ¥409,000〜465,500、Estimated Total: ¥623,770〜738,270 → ¥628,270〜744,270）・Plan Total（¥614,770〜714,270 → ¥619,270〜720,270）・Final Acquisition Inventory（Included項目を26〜28から27〜29へ繰り下げ）・Product Variant Integrity・Purchase Completeness Rule・PX-004/PX-005 Synchronization Ruleへ反映。 |  
 | 2.4 | 2026-09-18 | MARI様の直接指示に基づき、Monthly Acquisition Plan（Confirmed）を全面再編成。7ヶ月構成（Workflow順グルーピング）から6ヶ月構成（予算均等化グルーピング）へ変更。9Barista（Month 1・上限なし）とMilk System（Month 6・最終月）を固定端点とし、Month 2〜5はドメイン横断で月あたり¥93,000〜117,000程度に予算バランスさせたグループへ再編成（Month 2: LAGOM mini 2＋Puck Screen Stand＋Aurora Bottle＋AION Coaster、Month 3: Pullman Chisel＋Blind Shaker Onyx＋酒筒Titanium＋KRUVE PROPEL、Month 4: Force Tamper＋The Bloc＋KNODOS＋WDT、Month 5: WeighMaster Ultra＋Bean Cellar＋ICOSA AERESSO＋YETI Yonder＋HILLS FIELD Case＋RDT Bottle）。Plan Total（¥619,270〜720,270 → ¥619,270〜721,270）を再計算。Straight Espresso Workflowの機能的完成時期はMonth 5終了時点のまま変わらない旨をDesign Rationaleに明記。 |  
 | 3.0 | 2026-09-24 | Volatility Restructureにより、調達方針（Preferred Sources／Price Policy／Successor Model Policyの方針文）をOP-005 Acquisition Strategy §Coffee Zone Acquisition Rulesへ逐語移設した。責任範囲の変更のためMajor Version。 |  
 | 3.1 | 2026-09-24 | MARI様のご指摘に基づき、OP-008 §11 Naming Conventionへ新設された文書名重複禁止ルールに伴い、タイトルをAcquisition HandbookからProcurement Handbookへ変更（OP-005 Pursuit Strategyとの語重複を解消）。連動してBR-002 Barista Canon、OP-005 Pursuit Strategyへの参照表記を同期。Version Control内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持。ファイル名もBR-003_Procurement_Handbook.mdへ変更。内容（調達データそのもの）に変更はない。 |  
 | 3.2 | 2026-09-26 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |  
-| 3.3 | 2026-09-28 | OP-005 Pursuit Strategy Ver.2.0（Acquisition Priority／Acquisition Status／Monthly Planningの定義を削除しBR-003へ一本化）に伴い、Purposeの管理項目へMonthly Acquisition Planを追加。Purchase List DefinitionのExclude欄にあった、Status表に定義のない`Rejected`を削除（不採用Equipmentは現行registryから除去する運用のため。BR-002 / BR-003 Synchronization Rule 6参照）。Product 22・Compatibility Policyの「Bek Container」を「Beck Container」へ、Product 26 Notesの「Puck Screenン」を「Puck Screen」へ訂正。MARI様のご指示に基づく。 |  
+| 3.3 | 2026-09-28 | OP-005 Pursuit Strategy Ver.2.0（Acquisition Priority／Acquisition Status／Monthly Planningの定義を削除しBR-003へ一本化）に伴い、Purposeの管理項目へMonthly Acquisition Planを追加。Purchase List DefinitionのExclude欄にあった、Status表に定義のない`Rejected`を削除（不採用Equipmentは現行registryから除去する運用のため。BR-002 / BR-003 Synchronization Rule 6参照）。Product 22・Compatibility Policyの「Bek Container」を「Beck Container」へ、Product 26 Notesの「Puck Screン」を「Puck Screen」へ訂正。MARI様のご指示に基づく。 |  
 | 3.4 | 2026-09-28 | BR-002 Ver.4.3 Heat Source Decisionに伴い、Coffee System熱源の調達情報を反映。Product 30「Snow Peak ギガパワーストーブ レクタ（GS-150）」を新設し、9Barista Mk.2 Pro専用熱源としてPurchase Requiredで登録（MD-003 KIT-086として管理、Final Acquisition Inventory #30）。Product 01（9Barista Mk.2 Pro）NotesへHeat Transfer Plate選択の根拠を追記。Product 15（ALM KOPi Z1 Mini Steamer）Notesの「別途シングルバーナーが必要」という記述を、既存所有のSnow Peak ヤエンストーブ レギ（MD-003 KIT-011）を流用する旨へ訂正し、BR-002との矛盾を解消。Purchase Groupingへ「Group I — 9Barista Heat Source」を新設し、Group F（Latte System）の旧「別途バーナー」記述も同様に訂正。Estimated Acquisition Budget（Core Espresso System: ¥409,000〜465,500 → ¥423,300〜480,800、Estimated Total: ¥628,270〜744,270 → ¥642,570〜759,570）、Monthly Acquisition Plan Month 1小計（¥135,000〜139,500 → ¥149,300〜154,800）、Plan Total（¥619,270〜721,270 → ¥633,570〜736,570）を整合。MARI様の直接指示（2026-09-28）に基づく。 |  
+| 3.5 | 2026-09-28 | Ver.3.3書き込み時に生じた転記誤りを、元データとの照合に基づき訂正（内容の実質的な変更はない）。Product 16 Notesの「連続すう2回」を「連続する2回」へ、Japan Purchase Policy 7の「妃当」を「妥当」へ、Version Control 2.1行の「月あたり目安¥1万」を原文の「¥10万」へ、Document Renumbering Noteの一文を原文の「内容（Ver.2.4）に変更はない」へ復元。Version Control 3.3行の旧誤記の引用（Puck Screン）を訂正。MARI様のご指示に基づく。 |  
   
 ---  
 
 ## Document Renumbering Note
 
-本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、PX-005からBR-003へ番号を変更した。本文中の他文書参照（PX-004・TP-004等）を新ID体系へ更新した。「PX-004 v2.7 Synchronization」セクションおよびVersion Control表内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Ver.2.4）は、以降のバージョンに変更はない。旧ID: PX-005。2026-09-24付でタイトルをAcquisition HandbookからProcurement Handbookへ変更した（Ver.3.1）。
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、PX-005からBR-003へ番号を変更した。本文中の他文書参照（PX-004・TP-004等）を新ID体系へ更新した。「PX-004 v2.7 Synchronization」セクションおよびVersion Control表内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Ver.2.4）に変更はない。旧ID: PX-005。2026-09-24付でタイトルをAcquisition HandbookからProcurement Handbookへ変更した（Ver.3.1）。
 
 ---  
   
