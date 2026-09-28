@@ -48,7 +48,10 @@ THE-THIRD-PLACE/
 │   └── banner.PNG
 │
 ├── scripts/
-│   └── third_place_sync_validator.py   # SSOT同期バリデータ
+│   ├── third_place_sync_validator.py   # SSOT同期バリデータ
+│   └── MirrorSync.gs                   # GitHub → Drive 一方向ミラー（OP-008 §27）
+│
+├── archive/   # 移設済みVersion History（OP-008 §19 Rule DOC-09）
 │
 ├── DS/    # Design（設計）
 ├── OP/    # Operation（運用）
@@ -231,7 +234,10 @@ THE-THIRD-PLACE/
 │   └── banner.PNG
 │
 ├── scripts/
-│   └── third_place_sync_validator.py   # SSOT sync validator
+│   ├── third_place_sync_validator.py   # SSOT sync validator
+│   └── MirrorSync.gs                   # One-way GitHub → Drive mirror (OP-008 §27)
+│
+├── archive/   # Relocated Version History (OP-008 §19 Rule DOC-09)
 │
 ├── DS/    # Design
 ├── OP/    # Operation
