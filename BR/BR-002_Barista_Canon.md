@@ -10,7 +10,7 @@ Barista Canon
     
 # Version    
     
-4.3    
+4.4    
     
 # Status    
     
@@ -132,6 +132,10 @@ Handle（Upper / Lower）については、上記Handle Material Decisionに基�
 純正アクセサリーとの統一されたWorkflowを構築できることも採用理由とする。    
     
 ### Heat Source Decision    
+    
+| Category | Brand | Model | Status |  
+|---|---|---|---|  
+| Heat Source | Snow Peak | ギガパワーストーブ レクタ（GS-150） | Confirmed |  
     
 9Barista Mk.2 Proは直火式（Flame Powered）であり、稼働にバーナーを要する。    
     
@@ -1806,6 +1810,7 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 4.1 | 2026-09-24 | MARI様のご指摘に基づき、OP-008 §11 Naming Conventionへ新設された文書名重複禁止ルールに伴い、タイトルをBarista CodexからBarista Canonへ変更（CZ-001 Deliberation Codexとの語重複を解消）。BR-003側もProcurement Handbookへ改名されたため、本書内の参照表記（SSOT・Purpose・Relationship・Included Components・Alternative Basket Cap各節）を同期。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持。ファイル名もBR-002_Barista_Canon.mdへ変更。内容（意思決定事項そのもの）に変更はない。 |
 | 4.2 | 2026-09-26 | 冒頭の重複H1見出しを是正。ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |  
 | 4.3 | 2026-09-28 | Espresso Machineセクションへ「Heat Source Decision」を新設。9Barista Mk.2 Pro（直火式）とALM KOPi Z1 Mini Steamerを並行運用（エスプレッソ抽出とミルクスチームの同時進行）するため、2台のバーナーを同時使用する構成を正式決定。9Barista側はSnow Peak ギガパワーストーブ レクタ（GS-150）を新規採用し、Z1側は既に所有しているSnow Peak ヤエンストーブ レギ（GS-370、MD-003 KIT-011）を流用する。従来「Coffee System専用のシングルバーナーは新たに採用しない」としていたMilk Steamer / Latte Workflow内の記述を、上記決定と整合する内容へ修正（9Barista用バーナーは新規採用のため）。MARI様の直接指示（2026-09-28）に基づく。 |  
+| 4.4 | 2026-09-28 | Heat Source Decision節に、Category / Brand / Model / Statusの正式なConfirmed Equipmentテーブル（Heat Source \| Snow Peak \| ギガパワーストーブ レクタ（GS-150） \| Confirmed）を追加。Ver.4.3で地の文のみに留まっていたGS-150採用決定を、他のConfirmed Equipmentと同じ正式テーブル形式へ落とし込み、BR-003 Product 30（Purchase Required）との同期漏れ（scripts/third_place_sync_validator.py検出）を解消した。意思決定事項そのもの（Ver.4.3の内容）に変更はない。 |  
   
 ---  
 
