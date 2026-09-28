@@ -2,7 +2,7 @@ OP-001 THE THIRD PLACE Constitution
   
   
 # THE THIRD PLACE Constitution  
-## Ver.5.5  
+## Ver.5.6  
   
 ---  
   
@@ -1273,7 +1273,7 @@ Affinity Lexiconは、
   
 Project Ledgerは、  
   
-その思想を意思決定へ翻訳する。  
+その思想の歩みを運用として翻訳する。  
   
 GitHub Repositoryは、  
   
@@ -1593,6 +1593,10 @@ MARI様のご指摘に基づき、§12 Information Hierarchyの図を、2026-09-
 ### Ver.5.5
 
 MARI様のご指示に基づき、Drive⇄GitHub同期におけるパートナー（プロジェクトオーナー以外の協力者）の貢献の扱いが、Constitution本文およびOP-008のいずれにも定義されていなかった空白を解消するため、§21直下に「21.1 External Contribution Protocol」を新設した。協力者由来の情報の地位（Discovery＝Canonではない）、正式化の判断権者（オーナーとオーナーのAI）、競合時の優先順位（オーナーの明示的決定＞GitHub最新版＞GitHub外の協力者由来の内容）、貢献の範囲（調査を主とするがこれに限らない）を定めた。既存の§13.1・§17・§19の原則を敷衍するものであり、新たな権限体系の追加ではない（Minor Version：運用ルール追加）。Drive⇄GitHubミラー運用そのものの文書化は本改訂の対象外とする。
+
+### Ver.5.6
+
+MARI様のご指摘に基づき、§25 Closing Statementの「Project Ledgerは、その思想を意思決定へ翻訳する。」が、Ver.5.3で改訂済みの§9 Decision Philosophy ⑤・§14 Document Relationships（意思決定の記録先はBR-002／CZ-001であり、Project Ledger（DB-001）は運用状況の管理のみを担う）と矛盾していた点を是正した。該当行を「Project Ledgerは、その思想の歩みを運用として翻訳する。」へ改め、§4 Project Vision「Project Ledgerは、この思想を継続的な開発へ変換する。」との整合を維持した（Minor Version：定義の明確化）。
 
 ---
 
