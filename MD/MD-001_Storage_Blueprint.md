@@ -1,5 +1,5 @@
 # MD-001 Storage Blueprint
-## Ver.2.10
+## Ver.2.11
 
 Status : Active
 
@@ -184,17 +184,23 @@ Bridge Table完成まで、
 
 ## Layer 1
 
-### Coffee Module
+### Coffee Module（13点・暫定）
 
 Bridge Table完成後に展開
 
-- 9Barista Espresso Machine
-- Bellman CX-25P
-- Weber Workshops BEAN CELLAR Glass
-- ALM Case
-- Geimori T38
-- WPM Handleless Pitcher
-- Aieve WDT Tool
+- KNODOS Tamping Mat with Tool Organiser
+- WeighMaster Ultra
+- Bean Cellar Bulk
+- RDT Spray Bottle
+- LAGOM mini 2
+- Blind Shaker Onyx
+- 9Barista Mk.2 Pro
+- The Bloc
+- Puck Screen＋Puck Screen Stand
+- Z1 Mini Steamer
+- Handleless Pitcher 450cc＋Pitcher Sleeve
+
+※食器類・Coffee専用水ボトルは対象外
 
 ### Rule
 
@@ -239,8 +245,6 @@ Beck①・Beck②の蓋へ設置し、
 基準内寸: 565 × 360 × 265 mm
 
 対象: Coffee Equipment 13点（食器類・Coffee専用水ボトルは対象外）
-
-※Layer 1の旧リストは、本案の確定時に置換する。
 
 - 奥左：Z1 Mini Steamer（横置き）
 - 奥右：9Barista Mk.2 Pro（直立）
@@ -423,35 +427,57 @@ STR-030（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリ�
 
 # Coffee Sequence
 
+（使用順は暫定）
+
 Bridge Table完成
 
 ↓
 
-9Barista
+KNODOS
 
 ↓
 
-Bellman
+WeighMaster
 
 ↓
 
-BEAN CELLAR
+Bean Cellar
 
 ↓
 
-Geimori T38
+RDT
 
 ↓
 
-WPM Handleless Pitcher
+LAGOM
 
 ↓
 
-Aieve WDT Tool
+Blind Shaker
+
+↓
+
+Mk.2 Pro
+
+↓
+
+The Bloc
+
+↓
+
+Puck Screen＋Stand
 
 ↓
 
 抽出
+
+↓
+
+Z1 Mini Steamer
+
+↓
+
+Pitcher＋Sleeve
 
 収納は、この逆順で行う。
 
@@ -700,7 +726,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.10
+Ver.2.11
 
 ---
 
@@ -767,7 +793,7 @@ Wood Board ×7 Sets のうち4セット（STR-015・STR-018、各2組）は未�
 | Item | Result |
 |------|--------|
 | Beck② Storage | ✅ Verified |
-| Coffee Module | ✅ Verified |
+| Coffee Module | 🔶 Provisional（試し詰め前） |
 | Living Table Deployment | ✅ Verified |
 | Side Table Deployment | ✅ Verified |
 | ShellCon25② Storage | ✅ Verified |
@@ -841,6 +867,7 @@ Permanent Storage
 | 2.8 | 2026-09-26 | Position表内のOP-005表記が旧題『Acquisition Strategy』のままだった箇所をPursuit Strategyへ修正。OP-001表記もOP-008 §8カタログのTitle表記へ統一。加えて、ヘッダーStatus値『Planning』をOP-008 §9.2準拠の『Active』へ更新（MARI様確認：収納設計は実運用中のため）。 |
 | 2.9 | 2026-09-28 | MARI様のご指摘に基づき、MD-004（SSOT）・CZ-001との矛盾を是正。LGT-043はMD-004上でVacant（未確定）であり、wildingout LF1984はCZ-001でStatus: Candidate（LGT-043への充当を検討中）に留まる未所有装備であるにもかかわらず、本文書ではLight Sequence冒頭・Home Operation「取り外すもののみ」・Maintenanceの3箇所で、既に所有・実運用中の固定装備であるかのように記載されていた。該当3箇所からLF1984関連の記載を削除し、MD-004・CZ-001とのSSOT整合を回復した。 |
 | 2.10 | 2026-09-28 | Beck②にCoffee Module Layout（暫定）を追記。Layer 1旧リストは未同期 |
+| 2.11 | 2026-09-28 | Layer 1 Coffee ModuleとCoffee Sequenceを、旧リスト（7品目）から現行の13点（暫定・試し詰め前）へ置換。Validation SummaryのCoffee ModuleをVerifiedからProvisionalへ修正。Layout節の「旧リスト未同期」注記を削除。Layer 2（Wood Board ×4 Sets）とLayer 3（Vapalux M320）は、本案との矛盾を未解決のまま残している |
 
 ---
 
