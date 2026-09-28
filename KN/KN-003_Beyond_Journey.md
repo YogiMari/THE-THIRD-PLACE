@@ -1,6 +1,24 @@
 # KN-003 Beyond Journey  
 **KN-003 Beyond Journey**  
-  
+
+**Document ID**: KN-003  
+**Title**: Beyond Journey  
+**Series**: KN – Knowledge (Record)  
+**Version**: 1.0  
+**Authority**: Archive  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|----------|------|-------------|
+| 1.0 | 2026-09-28 | S-11（文書ヘッダーの統一）に伴い、Document ID／Title／Series／Authority／Status／Ownerのヘッダー項目、およびRevision History章を新設した。それ以前の改訂履歴は本書に記録が存在せず、遡及して復元しない。MARI様のご決定に基づく。 |
+
+---
+
 **Purpose**  
   
 Beyond Journey は、  
