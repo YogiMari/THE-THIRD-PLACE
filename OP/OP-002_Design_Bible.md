@@ -1,6 +1,6 @@
-OP-002 Design Bible Ver.5.4
+OP-002 Design Bible Ver.5.5
 # THE THIRD PLACE Design Bible
-## Ver.5.4 Official Complete Edition
+## Ver.5.5 Official Complete Edition
 
 ---
 
@@ -148,6 +148,7 @@ THE THIRD PLACEは、
 - Storage
 - Coffee
 - Fire
+- Shelter
 
 ## Layer 02
 
@@ -366,7 +367,7 @@ Coffee Zoneは、THE THIRD PLACE全体のBaselineに対する明示的な例外�
     
 THE THIRD PLACE全体では、Popularity・SNS・Rarity・Collector Value・Priceを評価対象とせず、Workflow最適化と機能的合理性を優先する。    
     
-Coffee Zoneに限り、以下の独自Philosophyを正式に適用する。他ドメイン（Furniture / Light / Aroma / Storage / Fire）には適用しない。    
+Coffee Zoneに限り、以下の独自Philosophyを正式に適用する。他ドメイン（Furniture / Light / Aroma / Storage / Fire / Shelter）には適用しない。    
     
 ---    
     
@@ -462,6 +463,24 @@ Fire DomainはCoffee Zoneのような「非合理的ラグジュアリー原則�
 
 
 ## 07. Shelter（シェルター）
+
+Shelterは、
+
+ただの雨よけではない。
+
+空間の境界をつくる存在である。
+
+自然の中に、
+
+Third Placeという一つの領域を成立させる、
+
+屋根である。
+
+Shelter Domainは、
+
+空間を外の自然から分かち、
+
+一つの居場所として完成させるための境界を担う。
 
 
 ### Zone Evaluation Philosophy（CZ-001 Deliberation Dossierから移設）
@@ -867,7 +886,9 @@ Coffee。
 
 Fire。
 
-六つのDesign Domainが、
+Shelter。
+
+七つのDesign Domainが、
 
 一つの思想として成立した時、
 
@@ -1080,6 +1101,8 @@ Harmonyを損なうものは、
 
 炎。
 
+シェルター。
+
 そしてDesign Languageが、
 
 一つの建築として成立した状態をいう。
@@ -1109,6 +1132,8 @@ Harmonyを損なうものは、
 コーヒー。
 
 炎。
+
+シェルター。
 
 それぞれが、
 
@@ -1213,6 +1238,8 @@ Harmonyを損なうものは、
 コーヒーがあり、
 
 炎があり、
+
+シェルターがあり、
 
 工業製品があり、
 
@@ -1957,6 +1984,8 @@ THE THIRD PLACEが完成する日は、
 
 炎、
 
+シェルター、
+
 そして思想が、
 
 一つの建築として調和した日である。
@@ -2011,7 +2040,7 @@ THE THIRD PLACEは、
 
 **THE THIRD PLACE Design Bible**
 
-**Ver.5.4 Official Complete Edition**
+**Ver.5.5 Official Complete Edition**
 
 **End of Document**
 
@@ -2044,3 +2073,9 @@ THE THIRD PLACEは、
 ## Database Rules Duplication Resolution Note
 
 本文書は、2026-09-28付でVer.5.3からVer.5.4へ更新した（Minor Version：重複節の削除・参照化）。§Database Rulesは、OP-010 Qualification Charter Part A（MD-004登録規則・評価基準の正本）と重複していたため（OP-008 Documentation System Principle 003 Single Source of Truthに抵触）、節本文をOP-010 Qualification Charterへの参照1行へ置き換えた。従来の小節のうち、Official Name／Brand／Product Nameの命名規則はOP-010 Part A §Naming Ruleへ移設した。Statusの値（旧: Owned／Must Buy／Candidate）は、既にOP-010 Part A（Owned／Essential／Candidate／Upgrade。Wantedは廃止済み）と食い違っていたため、本節から削除しOP-010を正本として参照する形へ統一した。Priorityの思想文（価格・人気ではなくDesign Bibleとの一致度で決定する）は、MD-004にPriority欄自体が存在しないことを確認した上で、OP-006 Foundation Compass §Priority Principleへ移設した。Color／Materialの例示・注記はOP-010 §Color Rule／§Material Ruleへの参照に既に統一済みのため、今回あわせて本節から削除した。MARI様のご決定に基づく（C-02）。
+
+---
+
+## Shelter Domain Completion Note
+
+本文書は、2026-09-28付でVer.5.4からVer.5.5へ更新した（Minor Version：既存原則への抜け漏れ修正）。OP-010 Qualification Charter Part AおよびMD-004 Equipment Registry Object Referenceは既に7ドメイン（Furniture／Light／Aroma／Storage／Coffee／Fire／Shelter）を採用していたが、本書内の以下箇所がShelterを含まない6ドメイン表記のまま残っていたため、Shelterを追加して整合させた：§Design Framework Layer 01のDesign Domains一覧、§Harmony/Unity（「六つの」→「七つの」Design Domain）、§Completion Definition、§100 Point Definition、§Ultimate Goal、§Completion Statement、§Coffee Zone Philosophy (Exception Clause)の他ドメイン列挙。あわせて§07 Shelterに本文（ドメインの役割説明）を新設した。本文は「空間の境界・屋根をつくる存在である」というMARI様のご指示に基づき、他ドメイン（Furniture・Fire等）と同一の文体で書き起こした。Domain Completion節へのShelter完成条件の追加は、MARI様のご意向により現時点では保留とし、今回は追加していない（今後の別課題で対応）。MARI様のご決定に基づく（C-03）。
