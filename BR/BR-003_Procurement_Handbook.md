@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-3.5  
+3.6  
   
 **Status**  
   
@@ -2121,7 +2121,7 @@ Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The B
 * 9Barista（Month 1）とMilk System（Month 6）の位置づけは、MARI様の指示に基づく固定端点とする。Month 1は上限なし（公式まとめ買い優先）、Month 6はLatte Workflow一式を完結させる最終月とする。  
 * Month 2〜5は、従来のWorkflow順グルーピング（Grinder→Station→抽出Tool→Bean Storage→Glassという段階的配置）を廃し、月あたり予算をおおむね¥93,000〜117,000の範囲に均等化したグループへ再編成した。各グループの中身はドメインを横断する（例：Month 2はGrinder・Puck Screen Stand・水ボトル・コースターを混在）。  
 * この再編成により、月ごとの支出額のばらつきが小さくなる一方、Straight Espresso Workflowの機能的完成はMonth 5終了時点までかかる（旧計画ではMonth 5時点で完成していたため、完成時期自体は変わらない）。  
-* YETI Yonder 1Lの必要性は、MARI様の実飲用計画（2名・1泊・Straight Espresso 6杯・Latte 4杯、必要水量約1,800mL）に基づく従来の試算を維持する。  
+* YETI Yonder 1Lの必要性は、BR-002 Coffee System Water Bottle Configuration（Operation Scenario／Required Water Volume）に基づく必要水量2,340mLの試算に基づく。  
 * 9Barista Official Spare Parts (Preventive Stock)は、Group A（9Barista）注文に同梱可能な任意項目として、Month 1の小計とは別枠で記録する。  
 * 9Barista Handle - Walnutは、PX-004 Ver.3.7のHandle Material Decisionに基づく確定購入品として、Month 1の本体・Puck Screen注文へ統合する。  
 * Snow Peak ギガパワーストーブ レクタ（GS-150、Group I）は、BR-002 Ver.4.3 Heat Source Decisionに基づく確定購入品として、9Barista稼働の前提条件であるためMonth 1へ統合する（発注自体はSnow Peak公式ストアへの別注文）。  
@@ -2152,6 +2152,7 @@ Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The B
 | 3.3 | 2026-09-28 | OP-005 Pursuit Strategy Ver.2.0（Acquisition Priority／Acquisition Status／Monthly Planningの定義を削除しBR-003へ一本化）に伴い、Purposeの管理項目へMonthly Acquisition Planを追加。Purchase List DefinitionのExclude欄にあった、Status表に定義のない`Rejected`を削除（不採用Equipmentは現行registryから除去する運用のため。BR-002 / BR-003 Synchronization Rule 6参照）。Product 22・Compatibility Policyの「Bek Container」を「Beck Container」へ、Product 26 Notesの「Puck Screン」を「Puck Screen」へ訂正。MARI様のご指示に基づく。 |  
 | 3.4 | 2026-09-28 | BR-002 Ver.4.3 Heat Source Decisionに伴い、Coffee System熱源の調達情報を反映。Product 30「Snow Peak ギガパワーストーブ レクタ（GS-150）」を新設し、9Barista Mk.2 Pro専用熱源としてPurchase Requiredで登録（MD-003 KIT-086として管理、Final Acquisition Inventory #30）。Product 01（9Barista Mk.2 Pro）NotesへHeat Transfer Plate選択の根拠を追記。Product 15（ALM KOPi Z1 Mini Steamer）Notesの「別途シングルバーナーが必要」という記述を、既存所有のSnow Peak ヤエンストーブ レギ（MD-003 KIT-011）を流用する旨へ訂正し、BR-002との矛盾を解消。Purchase Groupingへ「Group I — 9Barista Heat Source」を新設し、Group F（Latte System）の旧「別途バーナー」記述も同様に訂正。Estimated Acquisition Budget（Core Espresso System: ¥409,000〜465,500 → ¥423,300〜480,800、Estimated Total: ¥628,270〜744,270 → ¥642,570〜759,570）、Monthly Acquisition Plan Month 1小計（¥135,000〜139,500 → ¥149,300〜154,800）、Plan Total（¥619,270〜721,270 → ¥633,570〜736,570）を整合。MARI様の直接指示（2026-09-28）に基づく。 |  
 | 3.5 | 2026-09-28 | Ver.3.3の書き込み時に生じた転記誤りを、書き込み前の原文に照らして訂正。Product 16 Notes（「連続すう2回」→「連続する2回」）、Japan Purchase Policy 7（「妃当」→「妥当」）、Version Control 2.1行（「月あたり目安¥1万」→原文どおり「¥10万」）、Version Control 3.3行内の旧誤記の引用（「Puck Screenン」→「Puck Screン」）、Document Renumbering Noteの一文（「内容（Ver.2.4）は、以降のバージョンに変更はない。」→原文どおり「内容（Ver.2.4）に変更はない。」）。調達データそのものに変更はない。MARI様のご指示に基づく。 |  
+| 3.6 | 2026-09-28 | Design RationaleのYETI Yonder 1L必要性の根拠記述を、BR-002 Coffee System Water Bottle Configuration（Operation Scenario／Required Water Volume、Espresso 6杯・Latte 6杯・必要水量2,340mL）への参照に統一。BR-003側の旧試算（Latte 4杯・必要水量約1,800mL）とBR-002運用シナリオとの食い違いを解消（決定の正本はBR-002、BR-003は調達情報）。過去のVersion Control行（2.1等）は歴史的記録として原文のまま保持。MARI様のご指示に基づく。 |  
   
 ---  
 
