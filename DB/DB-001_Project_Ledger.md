@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.10  
+**Version**: 4.11  
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -87,7 +87,7 @@
 
 | Date | Topic |
 |------|-------|
-| 2026-09-28 | Seasonal Configuration未定義（OP-006）。Season Kit（夏・冬）・Weather Overlay（雨）の定義と、冬用暖房コンテナ（湯たんぽ・電気毛布・シャンクヒーター用）の定位置を検討中 |
+| 2026-09-28 | 冬用暖房コンテナ（湯たんぽ・電気毛布・シャンクヒーター用）の要否・定位置：優先度低、検討中 |
 
 ---
 
@@ -145,6 +145,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.8 | 2026-09-28 | MARI様のご決定（GitHub Issue #44）に基づき、Winter Sleeping Mat（FUR-034）・Pad Sheet（FUR-035）がMD-004・CZ-001へ正式反映されたため、Current FocusからFUR-034・FUR-035の2行を削除。Health Check（Change Management）の記載はそのまま維持。Minor Version。 |
 | 4.9 | 2026-09-28 | Project Inboxへ、Seasonal Configuration未定義（OP-006）に関する検討中案件を1行追加（MARI様ご指示）。Patch Version。 |
 | 4.10 | 2026-09-28 | Conversation Ledgerへ、パートナー貢献の扱いとDrive⇄GitHub同期運用の会話を1行追加（MARI様ご指示）。Patch Version。 |
+| 4.11 | 2026-09-28 | GitHub Issue #46に基づき、Project Inboxの該当行を、OP-006・MD-001へ正式反映された決定分を除いた未決定事項（冬用暖房コンテナの要否・定位置）のみへ書き直した。Patch Version。 |
 
 ---
 
