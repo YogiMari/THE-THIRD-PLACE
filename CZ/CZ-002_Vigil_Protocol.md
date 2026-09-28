@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 3.5  
+**Version**: 3.6  
 **Status**: Active  
 **Owner**: THE THIRD PLACE
 
@@ -15,29 +15,14 @@
 
 | Version | Date | Description |
 |----------|------|-------------|
-| 2.0 | — | 旧バージョン。正確な公開日は未記録。 |
-| 2.1 | 2026-09-07 | 分割起源の修復。PX-003とTM-005 Search Doctrineはもともと1つの文書だったが、後に方法論（TM-005）と実行（PX-003）へ分割された際、章番号の振り直しやヘッダーセクションの復元が行われず、PX-003が第XXXII章から始まり、それ以前の章もPurposeセクションも存在しない状態になっていた。「I. Purpose」（Relationship with Other Documentsを含む）を追加し、全章をI〜VIIIへ振り直し、文書ヘッダーにSeriesフィールドを追加した。 |
-| 2.2 | 2026-09-08 | Watch Listにエントリ008〜022を追加。TP-004 Equipment Registryのうち、Status = Essential / Candidate / Upgradeで既存エントリに含まれていない全アイテムを抽出（各エントリにTP-004 Reference IDを付記）。Coffee Domainは意図的に除外（PX-004/PX-005が管轄）。 |
-| 2.3 | 2026-09-08 | エントリ018（Wood Board）を、プロジェクトオーナーの確認に基づき修正: nodel designがこの製品を「Wood Board」という正確な名称で単品販売していることを確認。入手可否に関する不確実性の注記を削除し、キーワードを整理した。 |
-| 2.4 | 2026-09-18 | TP-004 Version 7.28（Furniture Domain番号整理）と連動し、Butterfly Table M Black LookのTP-004 ReferenceをFUR-017からFUR-018へ更新。 |
-| 2.5 | 2026-09-19 | MD-004 Version 7.34（Aroma番号入替）と連動し、エントリ014（Filoméla INCENSE CHAMBER）のMD-004 ReferenceをARM-003（Status: Essential）からARM-004（Status: Upgrade）へ、エントリ015（SCENT TOWER）のMD-004 ReferenceをARM-004からARM-003へ更新。エントリ015のStatus表記（Candidate）は、MD-004 Version 7.14（Essential化）以降の更新漏れであったため、あわせてEssentialへ訂正した。 |
-| 2.6 | 2026-09-19 | MD-004 Version 7.36（Furniture Domain番号整理・二回目）と連動し、Butterfly Table M Black LookのMD-004 ReferenceをFUR-018からFUR-026へ更新。 |
-| 2.7 | 2026-09-19 | MD-004 Version 7.38（Fire Domain番号整理）と連動し、エントリ019（copper250）のMD-004 ReferenceをFIR-014からFIR-025へ、エントリ020（FT no BARREL）をFIR-015からFIR-026へ、エントリ021（MT.SUMI Aura FG）をFIR-019からFIR-030へ更新。エントリ022（FIREGRAPHIX BLISS-SP、MD-004 Reference: 旧FIR-020）は、参照先の旧FIR-020レコード自体がMD-004側で削除されたため削除した。 |
-| 2.8 | 2026-09-19 | MD-004 Version 7.40（Fire Domain検討中案件の表記整理）と連動し、Watch List説明文の「エントリ008〜022」の表記をエントリ022削除後の実態に合わせて「エントリ008〜021」に訂正。 |
-| 2.9 | 2026-09-19 | 文書番号再編時の Series 表記更新漏れを訂正。Series: PX – Project → CZ – Cross-Zone Ops。内容に変更なし。 |
-| 2.10 | 2026-09-22 | MD-004 Light Zone再編（LGT-016・018〜020のLGT-035子化、LGT-027・028のLGT-036子化、AIR LIGHT群のa/b/c/d表記化、LGT-058クラッシュアイスのLGT-003移設に伴うLGT-003〜057全体繰り下げ）と連動し、MD-004 Referenceを更新：エントリ009（MIYABI RICH Alumi Frozen）をLGT-015からLGT-016へ、エントリ010（メッシュシェード）をLGT-028aからLGT-029aへ、エントリ011（POCKET SHADE M）をLGT-028bからLGT-029bへ、エントリ012（Pivotshade）をLGT-039からLGT-040へ更新。 |
-| 2.11 | 2026-09-22 | MD-004 Version 7.49（Light Domain再修正）と連動し、MD-004 Referenceを更新：エントリ010（メッシュシェード）をLGT-029aからLGT-018aへ、エントリ011（POCKET SHADE M）をLGT-029bからLGT-018bへ、エントリ012（Pivotshade）をLGT-040からLGT-052へ更新。エントリ009（MIYABI RICH Alumi Frozen、LGT-016）は今回の再編後も番号に変更がないため更新なし。 |
-| 2.12 | 2026-09-23 | MD-004 Version 7.50（LGT-017のLGT-016子化解消、LGT-018をOTEBO CRAFTS BABELへ差し替え、LGT-018a/018bをLGT-019a/019bへ改番、以降のLight Domain番号を1つずつ繰り下げ）と連動し、MD-004 Referenceを更新：エントリ010（メッシュシェード）をLGT-018aからLGT-019aへ、エントリ011（POCKET SHADE M）をLGT-018bからLGT-019bへ、エントリ012（Pivotshade）をLGT-052からLGT-053へ更新。エントリ009（MIYABI RICH Alumi Frozen、LGT-016）は今回の再編後も番号に変更がないため更新なし。 |
-| 2.13 | 2026-09-23 | MD-004 Version 7.51（LGT-018/BABELの独立親化、LGT-034〜046ブロックの移動・並べ替え、AIR LIGHT群の4個単位グループ化、全体再連番）と連動し、MD-004 Referenceを更新：エントリ010（メッシュシェード）をLGT-019aからLGT-017aへ、エントリ011（POCKET SHADE M）をLGT-019bからLGT-017bへ、エントリ012（Pivotshade）をLGT-053からLGT-042へ更新。エントリ009（MIYABI RICH Alumi Frozen、LGT-016）は今回の再編後も番号に変更がないため更新なし。 |
-| 2.14 | 2026-09-23 | MD-004（Version 7.53）との番号照合に基づき、プロジェクトオーナーの指示でMD-004 Referenceを訂正：エントリ017（Butterfly Under Shelf）をSTR-019からSTR-021へ、エントリ018（Wood Board）をSTR-014, STR-016からSTR-015, STR-018へ（Notes内の記述も同期）、エントリ021（MT.SUMI Aura FG）を削除済みのFIR-030からMD-004 Version 7.53新設の空き枠FIR-036へ更新。 |
-| 2.15 | 2026-09-23 | MD-004（Version 7.53）を正とした照合に基づき、エントリ009（MIYABI RICH Alumi Frozen）のMD-004 Reference のStatus表記をEssentialからOwnedへ訂正（MD-004上はOwned）。エントリ自体の扱い（Watch Listからの除外要否）は変更していない。 |
-| 2.16 | 2026-09-23 | MD-004（Version 7.54）を正としたWatch Listの整理（プロジェクトオーナー指示）。MD-004上でOwnedとなっている旧エントリ009（MIYABI RICH Alumi Frozen、LGT-016）を削除し、旧エントリ010〜021を009〜020へ繰り上げ。MD-004でStatus = Essentialながら未掲載だった3件を追加：021 OTEBO CRAFTS BABEL（LGT-017）、022 Snow Peak ダウン システムオフトン スリムマットセット（FUR-032）、023 KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリートセット（STR-030）。エントリ001・002・004・005・006・007にMD-004 Referenceを付記し、Brand表記をMD-004の公式表記へ統一（001 DEVISE WORKS × ANCAM、002 DEVISE WORKS × WANTKEY CAMP、004 rove troupe、006 wildingout、007 nodel design）。 |
+| — | — | Version 2.0〜2.16の履歴は archive/CZ-002_Version_History_Archive.md を参照。 |
 | 3.0 | 2026-09-24 | Volatility Restructureにより、実行プロトコル各章（II〜VII、Watch List Structure、Watch List Maintenance Rules、Operational Directives）をOP-009 Search Doctrine §XVIII. Patrol Protocolへ逐語移設した。責任範囲の変更のためMajor Version。併せて、プロジェクトオーナーの確認により、エントリ003のBrandを「WANTKEY CAMP × LOCKFIELD EQUIPMENT」、Targetを「SC HANDLE WANTKEY Exclusive」へ確定（旧KN-004 Watch Listの表記を公式表記として採用）し、Required Keywordsに正式製品名を追加。 |
 | 3.1 | 2026-09-25 | MD-004 Version 7.57（FIR-036の呼称訂正：Fire Pit→Wood Stove）と連動。エントリ020（MT.SUMI Aura FG）のRequired Keywordsから誤った「fire pit」表記を削除し「薪ストーブ」関連キーワードへ修正。MD-004 ReferenceにFIR-036が薪ストーブ検討枠である旨を明記。Version 2.7でMD-004側の旧FIR-020レコード削除に伴い削除されていたFIREGRAPHIX BLISS-SPを、新設のFIR-036参照でエントリ024として復元登録。あわせて、Current Watch List冒頭の説明文にある旧称参照を「CZ-001 Deliberation Codex」から「CZ-001 Deliberation Dossier」へ更新し、エントリ022（Snow Peak システムオフトン）をMD-004/CZ-001側で確定済みのBD-070／ワイドマットセット表記へ同期した（従来はBD-060／スリムマットセット表記のまま更新漏れとなっていた）。 |
 | 3.2 | 2026-09-26 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
 | 3.3 | 2026-09-28 | OP-005 Pursuit Strategy Ver.1.5（Acquisition Priority／Acquisition StatusをCoffee Zoneのみ適用、Coffee以外は「買えるときに買う」）に伴い、I. Purpose「Relationship with Other Documents」内の「Vigil Patrolによって発見された内容は、購入判断のためOP-005 Pursuit Strategyへ引き継がれる」を、KN-004への報告・OP-005の基準に従う購入判断・CZ-001「Confirmed — Purchase Pending」による購入待ち管理へ差し替えた。KN-004の常設ダッシュボード改称（Must Buy Dashboard→Horizon、監視対象はCZ-002 Watch Listへ統一）と連動。MARI様のご決定に基づく。 |
 | 3.4 | 2026-09-28 | Ver.3.0で実行プロトコル（Freshness Validation〜Operational Directives）をOP-009 §XVIII Patrol Protocolへ移設済みであるにもかかわらず、I. Purpose（Mission／Origin／Relationship with Other Documents）が「本書は調達監視の実行運用を定義する」「CZ-002は調査がどう実行されるかを担う」など、実行主体がCZ-002であるかのような記述のまま残存していた点を是正。Missionを「Watch List（監視対象・調査キーワード）を管理する」旨へ、Originを「OP-009＝方法論と実行手順、CZ-002＝Watch List」へ、Relationship図をCZ-002→OP-009（監視対象を提供）の順へ描き直した。OP-008 §8／Appendix F、OP-009 §XVIの同時改訂と連動。MARI様のご決定に基づく（C-05）。 |
 | 3.5 | 2026-09-28 | MD-004の現状に合わせてWatch Listを整理（C-08、MARI様のご決定に基づく）。旧エントリ020 MT.SUMI Aura FGを削除（CZ-001 Decision Log 2026-09-26により不採用確定、MD-004に登録なし）。これに伴い旧021〜024（BABEL／FUR-032／T-box／BLISS-SP）を020〜023へ繰り上げ。エントリ023（FIREGRAPHIX BLISS-SP）のMD-004 Reference・Notesを、「購入時に登録予定・エントリ020と競合」から「MD-004上でStatus: Essential登録済み、2026-09-26付でMT.SUMI Aura FGとの比較検討の末に正式採用」へ訂正。MD-004でStatus = Essentialながら未掲載だった9件を新規追加：024 FUR-034（BlackishGear BLACK ZONE MAT）、025 FUR-035（HOTEL CAMPS リバーシブルホットカバー）、026 FUR-036（Snow Peak BD-066 オフトン ウォームアダプター）、027〜032 FIR-037〜042（FIREGRAPHIX BLISS-SPの付属品6点、Parent: FIR-036、個別エントリとして管理）。Current Watch List冒頭の説明文を「エントリ008〜023」から「エントリ008〜032」へ、Unconfirmed除外枠の例示を「FUR-034 Sleeping Mat、FUR-035 Pad Sheet」（2026-09-28にEssential確定済みのため該当しなくなった）から「STR-034 Container Bridge Frame保護ケース」へ更新。 |
+| 3.6 | 2026-09-28 | S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い、Revision History のうち Version 2.0〜2.16を archive/CZ-002_Version_History_Archive.md へ移設した。移設した履歴は原文のまま保持し、要約・削除は行っていない。本文側のWatch Listデータそのものに変更はない。MARI様のご決定に基づく。 |
 
 ---
 
