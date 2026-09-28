@@ -2,7 +2,15 @@ OP-001 THE THIRD PLACE Constitution
   
   
 # THE THIRD PLACE Constitution  
-## Ver.5.6  
+## Ver.5.7  
+  
+**Document ID**: OP-001  
+**Title**: Constitution  
+**Series**: OP – Operation (Definition)  
+**Version**: 5.7  
+**Authority**: Standard  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project  
   
 ---  
   
@@ -1406,7 +1414,9 @@ Document Architectureを反映したものである。
 ---  
   
 # Appendix C  
-## Version History  
+## Revision History  
+
+（S-11：見出し名をVersion HistoryからRevision Historyへ統一。位置は§26 Document Renumbering Policyからの参照整合性を保つためAppendix Cのまま維持。内容に変更はない。）
   
 ### Ver.1.x  
   
@@ -1597,6 +1607,10 @@ MARI様のご指示に基づき、Drive⇄GitHub同期におけるパートナ�
 ### Ver.5.6
 
 MARI様のご指摘に基づき、§25 Closing Statementの「Project Ledgerは、その思想を意思決定へ翻訳する。」が、Ver.5.3で改訂済みの§9 Decision Philosophy ⑤・§14 Document Relationships（意思決定の記録先はBR-002／CZ-001であり、Project Ledger（DB-001）は運用状況の管理のみを担う）と矛盾していた点を是正した。該当行を「Project Ledgerは、その思想の歩みを運用として翻訳する。」へ改め、§4 Project Vision「Project Ledgerは、この思想を継続的な開発へ変換する。」との整合を維持した（Minor Version：定義の明確化）。
+
+### Ver.5.7
+
+S-11（文書ヘッダーの統一）に伴い、Document ID／Title／Series／Authority／Status／Ownerのヘッダー項目を新設し、Appendix Cの見出し名をVersion HistoryからRevision Historyへ統一した。位置は§26 Document Renumbering Policyからの参照整合性を保つためAppendix Cのまま維持。本文の実質的な内容に変更はない。MARI様のご決定に基づく。
 
 ---
 
