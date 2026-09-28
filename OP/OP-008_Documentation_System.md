@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.16
+**Version**: 3.17
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -35,6 +35,7 @@
 | 3.14 | 2026-09-28 | §8カタログのKN-003 Role列が「体験・価値観・人生との関係」の管理対象列挙に留まり、KN-003本文Purposeが定めるカルチャーマガジンとしての編集目的（キャンプという趣味に留まらず、建築・家具・照明・工業デザイン・自動車・写真・ライフスタイルなど分野横断でTHE THIRD PLACEの美意識を育てる）を欠いていた不整合を是正。KN-003本文Purposeを正として、Role列へ当該記述を追記した。Summary列は変更なし。OP-002 Editorial Series（KN-003）の同時改訂と連動。MARI様のご決定に基づく（C-17）。Patch Version。 |
 | 3.15 | 2026-09-28 | S-06（BR-003のルールとデータの分離）に伴い、BR-003 Procurement HandbookのLiving文書に置かれていた恒久ルール（Acquisition Status Policy・Purchasing Priority・Purchase List Definition・各種Purchase Policy等）をOP-005 Pursuit Strategy §Coffee Zone Acquisition Rulesへ移設する方針決定に合わせ、§8カタログのOP-005行RoleへCoffee Zone調達の恒久ルールを本書§Coffee Zone Acquisition Rulesが定義する旨を追記した（OP-008 §23 Change Managementに基づき、OP-005・BR-003本体の改訂に先行して反映）。責任範囲の管理主体（値の割り当てはBR-003、ルールの定義はOP-005）自体はOP-005 Ver.2.0の決定と矛盾しない。MARI様のご決定に基づく。 |
 | 3.16 | 2026-09-28 | S-10（改訂履歴の圧縮）に伴い、§19にRule DOC-09（Revision Historyの一定規模超過時、直近履歴を本文に残しそれ以前をarchive/へ移設できる旨）を新設し、§10 Document Lifecycleへ参照注記を追加した（OP-008 §23 Change Managementに基づき、MD-004・MD-003・CZ-001・CZ-002・BR-003本体の履歴移設に先行して反映）。MARI様のご決定に基づく。 |
+| 3.17 | 2026-09-28 | 整備バックログ（N-01・N-04・N-05）で新設された内容に合わせ、§8カタログのOP-006 Role（Safety・Material Care）とDB-001 Role（Field Log）、Appendix FのOP-006・DB-001紹介文（日英）を同期。DB-001紹介文に残っていたProject Overview（S-08で削除済み）の記述をProject Inbox・Field Logへ置き換えた。MARI様の包括指示に基づく。Patch Version。 |
 
 ---
 
@@ -235,12 +236,12 @@ Authority 列は本 Version（3.0）で新設された分類である。BR-001�
 | OP-003 | Affinity Lexicon | `OP/OP-003_Affinity_Lexicon.md` | 管理対象<br>Affinity Lexiconは、<br>Human Principlesから派生する<br>「好み」<br>を管理する文書である。<br>対象は、<br>ブランドではない。<br>美意識でもない。<br>人生を通して蓄積される<br>嗜好、<br>感性、<br>建築、<br>家具、<br>文化、<br>色、<br>素材、<br>音、<br>香り、<br>思想、<br>世界観<br>などを体系的に記録する。<br>Affinity Lexiconは、<br>Design Bibleを変更する権限を持たない。<br>Human Principlesを説明する補助資料として扱う。 | Standard | Static | 好み・美意識を表す語彙辞典 |
 | OP-004 | Aesthetic Grammar | `OP/OP-004_Aesthetic_Grammar.md` | 管理対象<br>・比率<br>・余白<br>・光と陰影<br>・素材と質感<br>・色<br>・構成と動線<br>・調和<br>Aesthetic Grammarは、<br>Affinity Lexiconが定義する語彙に、<br>「なぜ美しいのか」という法則を与える。 | Standard | Static | 「なぜそれが美しいのか」を説明する法則集 |
 | OP-005 | Pursuit Strategy | `OP/OP-005_Pursuit_Strategy.md` | 管理対象<br>・迎える判断基準（Decision Priority・Purchase Rules）<br>・月間予算（Coffee Zoneのみ）<br>・Coffee以外のゾーンの調達方針（買えるときに買う）<br>・Coffee Zone調達の恒久ルール（Acquisition Status定義／Purchasing Priority／Purchase List Definition／各種Purchase Policy等。詳細は本書§Coffee Zone Acquisition Rules）<br>Coffee Zoneの購入優先度・購入状態・月次購入計画の実際の値の割り当ては、<br>BR-003 Procurement Handbookが管理する。<br>市場監視は、<br>CZ-002 Vigil Protocol／OP-009 Search Doctrineが管理する。<br>Equipmentの詳細情報は保持しない。 | Standard | Static | 何を・どんな基準で迎えるかの戦略。月間予算はCoffee Zoneのみ |
-| OP-006 | Foundation Compass | `OP/OP-006_Foundation_Compass.md` | 管理対象<br>・Equipment Module<br>・Vehicle Loading<br>・Deployment Sequence<br>・Recovery Sequence<br>・Seasonal Configuration<br>・Maintenance Cycle<br>Containerごとの具体的な役割・固定収納物は、<br>MD-001 Storage Blueprintが管理する。<br>本書では重複して記載しない。 | Standard | Static | 積載・設営・撤収・季節ごとの運用のしかた |
+| OP-006 | Foundation Compass | `OP/OP-006_Foundation_Compass.md` | 管理対象<br>・Equipment Module<br>・Vehicle Loading<br>・Deployment Sequence<br>・Recovery Sequence<br>・Seasonal Configuration<br>・Maintenance Cycle<br>・Safety（火・燃料・シェルターの安全原則）<br>・Material Care（Coffee以外の素材別ケア）<br>Containerごとの具体的な役割・固定収納物は、<br>MD-001 Storage Blueprintが管理する。<br>本書では重複して記載しない。 | Standard | Static | 積載・設営・撤収・季節ごとの運用のしかた |
 | OP-007 | Habitat Architecture | `OP/OP-007_Habitat_Architecture.md` | 管理対象<br>・居住空間<br>・サイト構成<br>・ゾーニング<br>・空間構成 | Standard | Static | 現地で完成する暮らしの空間そのものの設計思想 |
 | OP-008 | Documentation System | `OP/OP-008_Documentation_System.md` | See Appendix F | Standard | Static | 文書運用ルールそのものの基準書 |
 | OP-009 | Search Doctrine | `OP/OP-009_Search_Doctrine.md` | 管理対象<br>・調査の哲学・方法論<br>・情報源の優先順位<br>・Difference Analysis手法<br>監視対象（Watch List）・調査キーワード自体は、<br>CZ-002 Vigil Protocolが管理する。 | Standard | Static | 調査の哲学・方法論 |
 | OP-010 | Qualification Charter | `OP/OP-010_Qualification_Charter.md` | OP-010 Qualification Charter は、記録系列台帳（MD-002／MD-003／MD-004）の登録規則・評価基準を定義する。 | Standard | Static | 台帳（MD-002／003／004）の登録規則・評価基準の基準書 |
-| DB-001 | Project Ledger | `DB/DB-001_Project_Ledger.md` | 管理対象<br>・Conversation Ledger（会話記録・検索用ワード）<br>・Active Conversations<br>・Quick Access<br>Project Ledgerは、<br>会話管理・進捗管理等の運用状況を扱う運用ダッシュボードであり、<br>個別の意思決定内容そのものは保持しない（意思決定はCoffee Domain：BR-002、Coffee以外の全ゾーン：CZ-001が担う。OP-001 Constitution §9・§14参照）。 | Standard | Living | この文書。会話履歴・早見表・運用ダッシュボード |
+| DB-001 | Project Ledger | `DB/DB-001_Project_Ledger.md` | 管理対象<br>・Conversation Ledger（会話記録・検索用ワード）<br>・Active Conversations<br>・Quick Access<br>・Field Log（キャンプの計画と実施の記録）<br>Project Ledgerは、<br>会話管理・進捗管理等の運用状況を扱う運用ダッシュボードであり、<br>個別の意思決定内容そのものは保持しない（意思決定はCoffee Domain：BR-002、Coffee以外の全ゾーン：CZ-001が担う。OP-001 Constitution §9・§14参照）。 | Standard | Living | この文書。会話履歴・早見表・運用ダッシュボード |
 | MD-001 | Storage Blueprint | `MD/MD-001_Storage_Blueprint.md` | 管理対象<br>・収納<br>・収納ルール<br>・Container Assignment | SSOT | Living | 収納・コンテナの割り当てルール |
 | MD-002 | Field Atlas Landscape Framework | `MD/MD-002_Field_Atlas_Landscape_Framework.md` | 管理対象<br>・キャンプ場<br>・ロケーション<br>・適性評価<br>・運用条件 | SSOT | Periodic | キャンプ場・ロケーションの選定と評価 |
 | MD-003 | Galley Fare | `MD/MD-003_Galley_Fare.md` | 管理対象<br>・キッチン調理器具<br>・調理の機能的必然性に基づく選定基準<br>Galley Fareは、<br>Equipment Registryとは異なる評価軸を持つ、<br>独立したMaster Databaseである。<br>所作、<br>デザイン、<br>ブランドの格を、<br>必須条件としない。<br>実際に調理が成立する機能性を、<br>最優先とする。 | SSOT | Living | キッチン道具だけの独立した台帳 |
@@ -901,7 +902,7 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 | OP-003 | Affinity Lexicon | 「好き」を判断のための共通言語として体系化する嗜好辞典。ブランドや製品そのものを管理する文書ではない。 |
 | OP-004 | Aesthetic Grammar | 比率・余白・光・素材・配置・所作など、美しさを成立させる法則を定義する美意識文法。Design Languageを補完する。 |
 | OP-005 | Pursuit Strategy | Equipmentを「どのような判断基準で迎えるか」を定める調達戦略文書。月間予算の管理はCoffee Zoneのみ。 |
-| OP-006 | Foundation Compass | Equipmentを最も美しく、効率的に、一貫性を持って運用するための基盤指針。収納マニュアルではなく「運用の基盤」を定義する。 |
+| OP-006 | Foundation Compass | Equipmentを最も美しく、効率的に、一貫性を持って運用するための基盤指針。収納マニュアルではなく「運用の基盤」を定義する。安全と素材別ケアの原則も定める。 |
 | OP-007 | Habitat Architecture | Foundation Compassが定める基盤の上に築かれる、フィールドに完成する「暮らしの空間」そのものを設計する文書。 |
 | OP-008 | Documentation System | DS・OP・記録（DB・MD・BR・CZ・KN）の各系列が長期にわたり一貫した構造で運用されるための、文書の役割・分類・管理方法を定める文書体系全体の基準文書。 |
 | OP-009 | Search Doctrine | 情報をどのように発見・評価・解釈し、知識へ変換するかを定めるリサーチの哲学・方法論。パトロールの実行手順（§XVIII）も本書が管理する。監視対象（Watch List）自体はCZ-002が別途管理する。 |
@@ -915,7 +916,7 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 
 | ID | Document | どのような文書か |
 | --- | --- | --- |
-| DB-001 | Project Ledger | プロジェクトの唯一の運用ダッシュボード。Current Focus・Active Conversationsに加え、目的のチャットを最短で探すConversation Ledger、番号を覚えていなくても文書を特定できるQuick Access（早見表）、系列別の文書数を示すProject Overviewを管理する「生きた文書（Living Document）」。 |
+| DB-001 | Project Ledger | プロジェクトの唯一の運用ダッシュボード。Current Focus・Active Conversationsに加え、目的のチャットを最短で探すConversation Ledger、番号を覚えていなくても文書を特定できるQuick Access（早見表）、未整理の相談を受け止めるProject Inbox、キャンプの計画と実施を記録するField Logを管理する「生きた文書（Living Document）」。 |
 
 ---
 
@@ -992,7 +993,7 @@ The series defining THE THIRD PLACE's design philosophy, rules, and laws themsel
 | OP-003 | Affinity Lexicon | A dictionary that systematizes "what is liked" as a shared vocabulary for judgment. It does not manage brands or products themselves. |
 | OP-004 | Aesthetic Grammar | Defines the laws that constitute beauty — proportion, margin, light, material, composition, gesture — complementing the Design Language. |
 | OP-005 | Pursuit Strategy | Defines the criteria by which Equipment is acquired. The monthly budget it manages applies to the Coffee Zone only. |
-| OP-006 | Foundation Compass | The operational foundation for running Equipment as beautifully, efficiently, and consistently as possible. Not a storage manual — it defines the "foundation of operation" itself. |
+| OP-006 | Foundation Compass | The operational foundation for running Equipment as beautifully, efficiently, and consistently as possible. Not a storage manual — it defines the "foundation of operation" itself, including the principles for safety and material care. |
 | OP-007 | Habitat Architecture | Building on the foundation defined by Foundation Compass, this document designs the completed living space itself as it appears in the field. |
 | OP-008 | Documentation System | The foundational standard for the entire documentation system, defining the roles, classification, and management rules of documents so that the DS, OP, and Record (DB / MD / BR / CZ / KN) series remain structurally consistent over the long term. |
 | OP-009 | Search Doctrine | Defines the philosophy and methodology of research — how information should be discovered, evaluated, interpreted, and turned into knowledge. Also governs the patrol operational procedure itself (§XVIII). The watch targets (Watch List) are separately managed by CZ-002. |
@@ -1006,7 +1007,7 @@ The series recording the project's current state of progress.
 
 | ID | Document | What this document is |
 | --- | --- | --- |
-| DB-001 | Project Ledger | The project's single operational dashboard. Alongside Current Focus and Active Conversations, it manages the Conversation Ledger (for finding the right chat fastest), Quick Access (a quick-reference table that identifies documents without memorizing their numbers), and the Project Overview (document counts by series) — a living document. |
+| DB-001 | Project Ledger | The project's single operational dashboard. Alongside Current Focus and Active Conversations, it manages the Conversation Ledger (for finding the right chat fastest), Quick Access (a quick-reference table that identifies documents without memorizing their numbers), the Project Inbox for unsorted topics, and the Field Log recording planned and completed camps — a living document. |
 
 ---
 
