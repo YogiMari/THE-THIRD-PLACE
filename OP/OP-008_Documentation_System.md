@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.9
+**Version**: 3.10
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -28,6 +28,7 @@
 | 3.7 | 2026-09-28 | Drive⇄GitHub同期運用の決定に伴い、§27 Drive Mirror Operationを新設（Minor Version：章追加）。GitHub→Driveの一方向ミラー、協力者の書き込み先（Contributions）、取り込みの流れを定義。OP-001 §21.1（External Contribution Protocol）と連動。MARI様のご決定に基づく。 |
 | 3.8 | 2026-09-28 | KN-004 Atelier Discoveryの常設ダッシュボードの改称（Must Buy Dashboard→Horizon、監視対象はCZ-002 Watch Listへ統一）に伴い、Appendix F — Document ProfilesのKN-004紹介文（日英）を同期。MARI様のご決定に基づく。 |
 | 3.9 | 2026-09-28 | OP-005 Pursuit Strategy Ver.2.0（Acquisition Priority／Acquisition Status／Monthly Planningの3章を削除しBR-003参照へ置換、月間予算とCoffee以外の調達方針のみを保持）に伴い、§8カタログのOP-005行のRoleを同期。MARI様のご決定に基づく。 |
+| 3.10 | 2026-09-28 | OP-005 Pursuit Strategy Ver.2.1（購入優先度・購入状態・月次購入計画はBR-003の管轄、Coffee以外は買えるときに買う、市場監視はCZ-002／OP-009の管轄という実態に合わせ、Purpose・Relationship to Other Core Documentsの「いつ・どの順序で」「取得順序・取得時期・市場監視」という残存記述を是正）に伴い、§8カタログのOP-005行のRoleおよびAppendix F（日英）のOP-005紹介文を同期。市場監視の管理元をCZ-002／OP-009へ明記した。MARI様のご決定に基づく（C-04）。 |
 
 ---
 
@@ -227,7 +228,7 @@ Authority 列は本 Version（3.0）で新設された分類である。BR-001�
 | OP-002 | Design Bible | `OP/OP-002_Design_Bible.md` | 管理対象<br>・空間思想<br>・デザイン原理<br>・空間全体の完成定義 | SSOT | Static | 空間づくりの設計思想 |
 | OP-003 | Affinity Lexicon | `OP/OP-003_Affinity_Lexicon.md` | 管理対象<br>Affinity Lexiconは、<br>Human Principlesから派生する<br>「好み」<br>を管理する文書である。<br>対象は、<br>ブランドではない。<br>美意識でもない。<br>人生を通して蓄積される<br>嗜好、<br>感性、<br>建築、<br>家具、<br>文化、<br>色、<br>素材、<br>音、<br>香り、<br>思想、<br>世界観<br>などを体系的に記録する。<br>Affinity Lexiconは、<br>Design Bibleを変更する権限を持たない。<br>Human Principlesを説明する補助資料として扱う。 | Standard | Static | 好み・美意識を表す語彙辞典 |
 | OP-004 | Aesthetic Grammar | `OP/OP-004_Aesthetic_Grammar.md` | 管理対象<br>・比率<br>・余白<br>・光と陰影<br>・素材と質感<br>・色<br>・構成と動線<br>・調和<br>Aesthetic Grammarは、<br>Affinity Lexiconが定義する語彙に、<br>「なぜ美しいのか」という法則を与える。 | Standard | Static | 「なぜそれが美しいのか」を説明する法則集 |
-| OP-005 | Pursuit Strategy | `OP/OP-005_Pursuit_Strategy.md` | 管理対象<br>・月間予算（Coffee Zoneのみ）<br>・市場監視<br>・Coffee以外のゾーンの調達方針（買えるときに買う）<br>Coffee Zoneの購入優先度・購入状態・月次購入計画は、<br>BR-003 Procurement Handbookが管理する。<br>Pursuit Strategyは、<br>Equipment Registryの情報を基準に、<br>取得順序・取得時期を管理する。<br>Equipmentの詳細情報は保持しない。 | Standard | Static | 何を・どんな基準で迎えるかの戦略。月間予算はCoffee Zoneのみ |
+| OP-005 | Pursuit Strategy | `OP/OP-005_Pursuit_Strategy.md` | 管理対象<br>・迎える判断基準（Decision Priority・Purchase Rules）<br>・月間予算（Coffee Zoneのみ）<br>・Coffee以外のゾーンの調達方針（買えるときに買う）<br>Coffee Zoneの購入優先度・購入状態・月次購入計画は、<br>BR-003 Procurement Handbookが管理する。<br>市場監視は、<br>CZ-002 Vigil Protocol／OP-009 Search Doctrineが管理する。<br>Equipmentの詳細情報は保持しない。 | Standard | Static | 何を・どんな基準で迎えるかの戦略。月間予算はCoffee Zoneのみ |
 | OP-006 | Foundation Compass | `OP/OP-006_Foundation_Compass.md` | 管理対象<br>・Equipment Module<br>・Vehicle Loading<br>・Deployment Sequence<br>・Recovery Sequence<br>・Seasonal Configuration<br>・Maintenance Cycle<br>Containerごとの具体的な役割・固定収納物は、<br>MD-001 Storage Blueprintが管理する。<br>本書では重複して記載しない。 | Standard | Static | 積載・設営・撤収・季節ごとの運用のしかた |
 | OP-007 | Habitat Architecture | `OP/OP-007_Habitat_Architecture.md` | 管理対象<br>・居住空間<br>・サイト構成<br>・ゾーニング<br>・空間構成 | Standard | Static | 現地で完成する暮らしの空間そのものの設計思想 |
 | OP-008 | Documentation System | `OP/OP-008_Documentation_System.md` | See Appendix F | Standard | Static | 文書運用ルールそのものの基準書 |
@@ -861,7 +862,7 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 | OP-002 | Design Bible | 設計思想・評価基準・完成定義を定めるプロジェクトの根幹文書。空間を構成するDesign Domains（Furniture／Light／Aroma／Storage／Coffee／Fire）と、それを統一するDesign Language（Appearance／Industrial／Graphic／Harmony）の二層で設計体系を構成する。 |
 | OP-003 | Affinity Lexicon | 「好き」を判断のための共通言語として体系化する嗜好辞典。ブランドや製品そのものを管理する文書ではない。 |
 | OP-004 | Aesthetic Grammar | 比率・余白・光・素材・配置・所作など、美しさを成立させる法則を定義する美意識文法。Design Languageを補完する。 |
-| OP-005 | Pursuit Strategy | Equipmentを「いつ・どの順序で・どのような判断基準で迎えるか」を定める調達戦略文書。 |
+| OP-005 | Pursuit Strategy | Equipmentを「どのような判断基準で迎えるか」を定める調達戦略文書。月間予算の管理はCoffee Zoneのみ。 |
 | OP-006 | Foundation Compass | Equipmentを最も美しく、効率的に、一貫性を持って運用するための基盤指針。収納マニュアルではなく「運用の基盤」を定義する。 |
 | OP-007 | Habitat Architecture | Foundation Compassが定める基盤の上に築かれる、フィールドに完成する「暮らしの空間」そのものを設計する文書。 |
 | OP-008 | Documentation System | DS・OP・記録（DB・MD・BR・CZ・KN）の各系列が長期にわたり一貫した構造で運用されるための、文書の役割・分類・管理方法を定める文書体系全体の基準文書。 |
@@ -952,7 +953,7 @@ The series defining THE THIRD PLACE's design philosophy, rules, and laws themsel
 | OP-002 | Design Bible | The project's foundational document, defining design philosophy, evaluation criteria, and the definition of completion. Its design framework has two layers: the Design Domains that compose the space (Furniture / Light / Aroma / Storage / Coffee / Fire) and the Design Language that unifies them (Appearance / Industrial / Graphic / Harmony). |
 | OP-003 | Affinity Lexicon | A dictionary that systematizes "what is liked" as a shared vocabulary for judgment. It does not manage brands or products themselves. |
 | OP-004 | Aesthetic Grammar | Defines the laws that constitute beauty — proportion, margin, light, material, composition, gesture — complementing the Design Language. |
-| OP-005 | Pursuit Strategy | Defines when, in what order, and by what criteria Equipment is acquired. |
+| OP-005 | Pursuit Strategy | Defines the criteria by which Equipment is acquired. The monthly budget it manages applies to the Coffee Zone only. |
 | OP-006 | Foundation Compass | The operational foundation for running Equipment as beautifully, efficiently, and consistently as possible. Not a storage manual — it defines the "foundation of operation" itself. |
 | OP-007 | Habitat Architecture | Building on the foundation defined by Foundation Compass, this document designs the completed living space itself as it appears in the field. |
 | OP-008 | Documentation System | The foundational standard for the entire documentation system, defining the roles, classification, and management rules of documents so that the DS, OP, and Record (DB / MD / BR / CZ / KN) series remain structurally consistent over the long term. |

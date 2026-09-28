@@ -1,6 +1,6 @@
-OP-002 Design Bible Ver.5.5
+OP-002 Design Bible Ver.5.6
 # THE THIRD PLACE Design Bible
-## Ver.5.5 Official Complete Edition
+## Ver.5.6 Official Complete Edition
 
 ---
 
@@ -1357,15 +1357,11 @@ Equipment情報は、
 
 ### Pursuit Strategy（取得戦略）
 
-購入計画。
+迎える判断基準。
 
-価格。
+月間予算（Coffee Zoneのみ）。
 
-市場調査。
-
-優先順位。
-
-Must Buy管理。
+Coffee以外は買えるときに買う。
 
 ---
 
@@ -2040,7 +2036,7 @@ THE THIRD PLACEは、
 
 **THE THIRD PLACE Design Bible**
 
-**Ver.5.5 Official Complete Edition**
+**Ver.5.6 Official Complete Edition**
 
 **End of Document**
 
@@ -2079,3 +2075,9 @@ THE THIRD PLACEは、
 ## Shelter Domain Completion Note
 
 本文書は、2026-09-28付でVer.5.4からVer.5.5へ更新した（Minor Version：既存原則への抜け漏れ修正）。OP-010 Qualification Charter Part AおよびMD-004 Equipment Registry Object Referenceは既に7ドメイン（Furniture／Light／Aroma／Storage／Coffee／Fire／Shelter）を採用していたが、本書内の以下箇所がShelterを含まない6ドメイン表記のまま残っていたため、Shelterを追加して整合させた：§Design Framework Layer 01のDesign Domains一覧、§Harmony/Unity（「六つの」→「七つの」Design Domain）、§Completion Definition、§100 Point Definition、§Ultimate Goal、§Completion Statement、§Coffee Zone Philosophy (Exception Clause)の他ドメイン列挙。あわせて§07 Shelterに本文（ドメインの役割説明）を新設した。本文は「空間の境界・屋根をつくる存在である」というMARI様のご指示に基づき、他ドメイン（Furniture・Fire等）と同一の文体で書き起こした。Domain Completion節へのShelter完成条件の追加は、MARI様のご意向により現時点では保留とし、今回は追加していない（今後の別課題で対応）。MARI様のご決定に基づく（C-03）。
+
+---
+
+## Pursuit Strategy Role Sync Note
+
+本文書は、2026-09-28付でVer.5.5からVer.5.6へ更新した（Minor Version：他文書の役割記述への追随）。§Documentation ArchitectureのOP-005紹介文が、OP-005 Pursuit Strategy Ver.2.0（購入優先度・購入状態・月次購入計画はBR-003 Procurement Handbookの管轄、Statusの値からMust Buyは既に廃止済み）と食い違ったまま「購入計画。価格。市場調査。優先順位。Must Buy管理。」という記述で残っていたため、「迎える判断基準。月間予算（Coffee Zoneのみ）。Coffee以外は買えるときに買う。」へ修正した。MARI様のご決定に基づく（C-04）。
