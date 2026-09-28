@@ -10,7 +10,7 @@ Barista Canon
     
 # Version    
     
-4.5    
+4.6    
     
 # Status    
     
@@ -748,35 +748,9 @@ ALM KOPi Z1 Mini Steamerを正式採用する。
     
 ### Workflow    
     
-1杯目：    
+1杯目・2杯目の具体的な注液・スチーム手順は、Workflow Configuration > Latteを参照。    
     
-9Barista    
-↓    
-WPM Handleless Pitcher    
-↓    
-ALM KOPi Z1 Mini Steamer    
-↓    
-FIKA12    
-    
-2杯目：    
-    
-9Barista    
-↓    
-WPM Handleless Pitcher    
-↓    
-ALM KOPi Z1 Mini Steamer    
-↓    
-FIKA12    
-    
-2人分を必ず作る。    
-    
-1杯ずつスチームして完成させる2サイクル運用とする。    
-    
-Z1 Mini Steamerは、既に所有しているSnow Peak ヤエンストーブ レギ（GS-370、MD-003 KIT-011）を流用して使用する。    
-    
-9Barista Mk.2 Pro用に、Snow Peak ギガパワーストーブ レクタ（GS-150）をCoffee System専用バーナーとして新規採用する。詳細はEspresso Machineセクション「Heat Source Decision」を参照。    
-    
-9Barista側とZ1側のバーナーは並行運用（エスプレッソ抽出とミルクスチームの同時進行）のため、それぞれ独立して同時稼働させる。    
+熱源（GS-150新規採用・GS-370流用・並行運用）の詳細は、Espresso Machineセクション「Heat Source Decision」を参照。    
     
 ---    
     
@@ -1588,33 +1562,7 @@ ALM KOPi Z1 Mini Steamerは、既に所有しているSnow Peak ヤエンスト�
   
 # Station Configuration  
   
-## KNODOS Tamping Mat with Tool Organiser - Walnut 54mm  
-  
-* Normcore Planetary WDT Tool 54mm  
-* Pullman Chisel Redistribution Tool Wood 53mm  
-* The Force Tamper 53mm  
-  
-KNODOSはCoffee SystemにおけるTool Stationとして使用する。  
-  
----  
-  
-## The Bloc  
-  
-* Portafilter  
-* Knock Box  
-* Normcore RDT Spray Bottle  
-* Weber Workshops Blind Shaker Onyx  
-  
-The Blocの2つのTool cutoutは、  
-  
-1. RDT  
-2. Blind Shaker  
-  
-のWorkflow上の定位置として活用する。  
-  
-RDTは専用スタンドを追加せず、The Bloc上で横置きする。  
-  
-Distributor、Tamper、WDTはThe Blocに常設しない。  
+KNODOS（Tool Station）とThe Bloc（Extraction Core）の構成・収納割当は、それぞれ「KNODOS Tool Station」節・各Tool（Tamper／Distribution Tool／WDT Tool／RDT Spray Bottle／Blind Shaker）のStorage記述を正本として参照する。  
   
 ---  
   
@@ -1644,15 +1592,7 @@ Latteは、
   
 ## Minimal Workflow  
   
-Coffee Workflowは、  
-  
-**Minimal Steps**    
-**Minimal Objects**    
-**Maximum Repeatability**  
-  
-を基本とする。  
-  
-単体製品として優れていても、既存Workflowに明確な改善をもたらさないEquipmentは追加しない。  
+→ Workflow Philosophy節を参照。  
   
 ---  
   
@@ -1669,15 +1609,7 @@ Coffee Systemでは家具レベルのウォールナット天板を使用する�
   
 ことをWorkflow設計に含める。  
   
-The BlocとKNODOSをそれぞれ、  
-  
-The Bloc    
-→ Extraction Core  
-  
-KNODOS    
-→ Tool Station  
-  
-として使用することで、専用家具や追加Tool Standを増やさずにTool管理と天板保護を成立させる。  
+The BlocとKNODOSの役割分担（Workflow Philosophy節を参照）により、専用家具や追加Tool Standを増やさずにTool管理と天板保護を成立させる。  
   
 ---  
   
@@ -1740,32 +1672,7 @@ KNODOS
   
 Confirmed  
   
-**Configuration**  
-  
-- Snow Peak オーロラボトル 1L ×1  
-- YETI Yonder 1L ×1  
-- Snow Peak 酒筒 Titanium 540mL ×1  
-  
-**Total Capacity**  
-  
-2,540mL  
-  
-**Purpose**  
-  
-THE THIRD PLACE Coffee System専用水の携行。  
-  
-用途は以下に限定する。  
-  
-- 9Barista Espresso  
-- ALM KOPi Z1 MiniによるMilk Steaming  
-  
-飲料水・調理用水には使用しない。  
-  
-**Water Transfer**  
-  
-Coffee System専用水は、専用のWater Transfer Toolを使用せず、各Water Bottleから9BaristaおよびALM KOPi Z1 Miniへ直接注ぐ。  
-  
-そのため、独立したWater Dosing Cup、Water Pouring Vessel、Water Transfer Tool等は追加採用しない。  
+構成・容量・用途・Water Transferの詳細は、本文書「Water Bottle Configuration」節（Official Water Bottle Configuration）を正本として参照する。  
   
 ---  
   
@@ -1813,6 +1720,7 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 4.3 | 2026-09-28 | Espresso Machineセクションへ「Heat Source Decision」を新設。9Barista Mk.2 Pro（直火式）とALM KOPi Z1 Mini Steamerを並行運用（エスプレッソ抽出とミルクスチームの同時進行）するため、2台のバーナーを同時使用する構成を正式決定。9Barista側はSnow Peak ギガパワーストーブ レクタ（GS-150）を新規採用し、Z1側は既に所有しているSnow Peak ヤエンストーブ レギ（GS-370、MD-003 KIT-011）を流用する。従来「Coffee System専用のシングルバーナーは新たに採用しない」としていたMilk Steamer / Latte Workflow内の記述を、上記決定と整合する内容へ修正（9Barista用バーナーは新規採用のため）。MARI様の直接指示（2026-09-28）に基づく。 |  
 | 4.4 | 2026-09-28 | Heat Source Decision節に、Category / Brand / Model / Statusの正式なConfirmed Equipmentテーブル（Heat Source \| Snow Peak \| ギガパワーストーブ レクタ（GS-150） \| Confirmed）を追加。Ver.4.3で地の文のみに留まっていたGS-150採用決定を、他のConfirmed Equipmentと同じ正式テーブル形式へ落とし込み、BR-003 Product 30（Purchase Required）との同期漏れ（scripts/third_place_sync_validator.py検出）を解消した。意思決定事項そのもの（Ver.4.3の内容）に変更はない。 |  
 | 4.5 | 2026-09-28 | Relationship節の図に「（Confirmed後、実際に購入・Owned Statusとなった時点で登録）」という注記をMD-004の行へ追加し、流れがBR-002 → MD-004 → BR-003ではなくBR-002 → BR-003 → MD-004（購入後）であることを図で明示。BR-003・BR-001も同一趣旨で同期。意思決定事項そのものに変更はない。 |  
+| 4.6 | 2026-09-28 | S-07（重複削減）に基づき、文書内の重複節を正本への参照へ置換。Water Management節をWater Bottle Configuration節への参照へ置換。Milk Steamer > Workflowの手順詳細をWorkflow Configuration > Latteへの参照へ置換（熱源詳細はHeat Source Decision参照のまま維持）。Station Configuration節をKNODOS Tool Station節・各Toolの Storage記述への参照へ置換。Minimal Workflow節をWorkflow Philosophy節への参照へ置換。Tabletop Protection節内のThe Bloc/KNODOS役割分担の重複記述をWorkflow Philosophy節への参照へ簡略化。意思決定事項・Confirmed Equipment・Decision・Reasonの内容そのものに変更はない。MARI様の承認（2026-09-28）に基づく。 |  
   
 ---  
 

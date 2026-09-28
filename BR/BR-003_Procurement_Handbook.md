@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-4.0  
+4.1  
   
 **Status**  
   
@@ -1225,196 +1225,37 @@ Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（
   
 # Coffee System Water Configuration  
   
-| Product | Quantity | Capacity | Estimated Acquisition Cost | Acquisition Status |  
-|---|---:|---:|---:|---|  
-| Snow Peak オーロラボトル 1L | 1 | 1,000 mL | ¥8,000〜13,000 | Purchase Required |  
-| YETI Yonder 1L | 1 | 1,000 mL | ¥5,000〜7,000 | Purchase Required |  
-| Snow Peak 酒筒 Titanium | 1 | 540 mL | ¥20,790〜21,790 | Purchase Required |  
-| **Total** | **3** | **2,540 mL** | **¥33,790〜41,790** | **Confirmed** |  
-  
-### Purpose  
-  
-Coffee System専用水のみを対象とする。  
-  
-* 9Barista Espresso  
-* ALM KOPi Z1 Mini Milk Steaming  
-  
-以下の用途には使用しない：  
-  
-* 飲料水  
-* 調理用水  
+構成・容量・用途はBR-002 Barista Canon「Water Bottle Configuration」節を正本として参照する。現行調達価格はProduct 23〜25を参照。  
   
 ---  
   
 # Espresso Glass Transport Configuration  
   
-正式な運搬構成は以下の通り：  
-  
-* KRUVE PROPEL ×1  
-* ICOSA Brewhouse AERESSO ×1  
-* AION Seine Super Absorbent Coaster 801-BL ×1 as separator  
-* HILLS FIELD Glass Case Single ×1  
-  
-### Transport Policy  
-  
-* ケースは1つのみ。  
-* 2つ目のグラスケースは持たない。  
-* ハードケースは使用しない。  
-* ケースの改造は行わない。  
-* セパレーターはAION 801-BL。  
-* 予備のコースターは、必要になるまで未使用のまま保持する。  
+構成・運搬方針はBR-002 Barista Canon「Final Cup / Transport Configuration > Espresso Glass Transport」節を正本として参照する。現行調達価格はProduct 18〜21を参照。  
   
 ---  
   
 # Latte Cup Configuration  
   
-正式なLatte構成は以下の通り：  
-  
-* DAMNGOOD × CATAPULT FACTORY FIKA12 ×2  
-* FIKA12 dedicated case ×2  
-* WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout ×1  
-* WPM Pitcher Sleeve ×1  
-* ALM KOPi Z1 Mini Steamer ×1  
-  
-### Operation  
-  
-常に2杯分を用意する。  
-  
-#### Cycle 1  
-  
-9Barista  
-↓  
-Espresso  
-↓  
-WPM Handleless Pitcher  
-↓  
-ALM KOPi Z1 Mini  
-↓  
-Steam  
-↓  
-FIKA12  
-  
-#### Cycle 2  
-  
-9Barista  
-↓  
-Espresso  
-↓  
-WPM Handleless Pitcher  
-↓  
-ALM KOPi Z1 Mini  
-↓  
-Steam  
-↓  
-FIKA12  
-  
-1個のPitcherで十分。  
-  
-1台のSteamerで十分。  
-  
-2個目のPitcherや2台目のSteamerは不要。  
+構成・WorkflowはBR-002 Barista Canon「Latte Cup Configuration」節および「Workflow Configuration > Latte」節を正本として参照する。現行調達価格はProduct 15〜17, 22を参照。  
   
 ---  
   
 # Coffee Tool Station Configuration  
   
-正式なTool Station構成は以下の通り：  
-  
-* KNODOS Tamping Mat with Tool Organiser - Walnut 54mm ×1  
-* Normcore Planetary WDT Tool 54mm ×1  
-* Pullman Chisel Redistribution Tool Wood 53.3mm ×1  
-* The Force Tamper 53mm ×1  
-  
-### Tool Placement  
-  
-| Tool | Storage |  
-|---|---|  
-| Normcore Planetary WDT Tool 54mm | KNODOS large Tool Organiser |  
-| Pullman Chisel Redistribution Tool Wood 53.3mm | KNODOS Tool Organiser |  
-| The Force Tamper 53mm | KNODOS Tool Organiser |  
-  
-The Blocは、これら3つのToolの常設収納場所としては使用しない。  
+構成・収納割当はBR-002 Barista Canon「KNODOS Tool Station」節を正本として参照する。現行調達価格はProduct 06〜08, 10を参照。  
   
 ---  
   
 # Extraction Core Configuration  
   
-正式なExtraction Coreは以下の通り：  
-  
-* Saint Anthony Industries The Bloc ×1  
-* 9Barista Mk.2 Pro ×1  
-* Weber Workshops Blind Shaker Onyx ×1  
-* Normcore RDT Spray Bottle ×1  
-  
-### The Bloc Tool Cutouts  
-  
-1. Normcore RDT Spray Bottle  
-2. Weber Workshops Blind Shaker Onyx  
-  
-Distributor・Tamper・WDTはThe Blocに収納しない。  
+構成・収納割当はBR-002 Barista Canon「Tamping Station」節（Confirmed Role）および各Tool（RDT Spray Bottle・Blind Shaker）のStorage記述を正本として参照する。現行調達価格はProduct 01, 05, 09, 11を参照。  
   
 ---  
   
 # Espresso System Configuration  
   
-正式なEspresso Systemは以下の通り：  
-  
-* Weber Workshops Bean Cellar Bulk ×1  
-* MantaBrew WeighMaster Ultra ×1  
-* Option-O LAGOM mini 2 ×1  
-* Weber Workshops Blind Shaker Onyx ×1  
-* 9Barista Magnetic Dosing Funnel ×1  
-* Normcore Planetary WDT Tool 54mm ×1  
-* Pullman Chisel Redistribution Tool Wood 53.3mm ×1  
-* The Force Tamper 53mm ×1  
-* 9Barista Puck Screen ×1  
-* 9Barista Mk.2 Pro ×1  
-* KRUVE PROPEL ×1  
-* ICOSA Brewhouse AERESSO ×1  
-  
-### Operation  
-  
-2杯分を順に用意する。  
-  
-#### Cycle 1  
-  
-Bean Cellar  
-↓  
-MantaBrew  
-↓  
-LAGOM mini 2  
-↓  
-Blind Shaker  
-↓  
-9Barista Magnetic Dosing Funnel  
-↓  
-Normcore Planetary WDT  
-↓  
-Pullman Chisel  
-↓  
-The Force Tamper  
-↓  
-9Barista Mk.2 Pro  
-↓  
-Puck Screen  
-↓  
-PROPEL / AERESSO  
-  
-#### Cycle 2  
-  
-同じWorkflowを繰り返す。  
-  
-2台目のGrinderは不要。  
-  
-2台目のBlind Shakerは不要。  
-  
-2台目のDosing Funnelは不要。  
-  
-2台目のWDTは不要。  
-  
-2台目のDistributorは不要。  
-  
-2台目のTamperは不要。  
+構成・WorkflowはBR-002 Barista Canon「Workflow Configuration」節（Confirmed Coffee Preparation Workflow）を正本として参照する。現行調達価格はProduct 01〜11, 13, 18〜19（Included 04含む）を参照。  
   
 ---  
   
@@ -1599,55 +1440,57 @@ LAGOM mini 2 Ground Transfer Cupは、Weber Workshops Blind Shaker Onyxへの直
   
 # Current Acquisition Priority  
   
+現行価格・Estimated Total CostはProduct NN（Confirmed Equipment Acquisition Registry）の1箇所のみを正本とする。以下は優先順位の一覧であり、金額はProduct番号を参照。  
+  
 ## Core Espresso System  
   
-| Priority | Equipment | Quantity | Estimated Total Cost | Acquisition Status |  
-|---|---|---:|---:|---|  
-| ★★★★★ | 9Barista Mk.2 Pro | 1 | ¥126,500 | Purchase Required |  
-| ★★★★★ | 9Barista Handle - Walnut | 2 | ¥4,500〜6,000 | Purchase Required |  
-| ★★★★★ | Option-O LAGOM mini 2 | 1 | ¥70,000〜78,000 | Purchase Required |  
-| ★★★★★ | MantaBrew WeighMaster Ultra | 1 | ¥40,000〜45,000 | Purchase Required |  
-| ★★★★★ | Weber Workshops Bean Cellar Bulk | 1 | ¥38,000〜42,000 | Purchase Required |  
-| ★★★★★ | Weber Workshops Blind Shaker Onyx | 1 | ¥20,000〜24,000 | Purchase Required |  
-| ★★★★★ | Normcore Planetary WDT Tool 54mm | 1 | ¥12,000〜18,000 | Purchase Required |  
-| ★★★★★ | Pullman Chisel Redistribution Tool Wood 53.3mm | 1 | ¥45,000〜50,000 | Purchase Required |  
-| ★★★★★ | The Force Tamper 53mm | 1 | ¥40,000〜47,000 | Purchase Required |  
-| ★★★★★ | 9Barista Puck Screen | 1 | ¥4,000〜7,000 | Purchase Required |  
+| Priority | Equipment | Quantity | Product | Acquisition Status |  
+|---|---|---:|---|---|  
+| ★★★★★ | 9Barista Mk.2 Pro | 1 | Product 01 | Purchase Required |  
+| ★★★★★ | 9Barista Handle - Walnut | 2 | Product 26 | Purchase Required |  
+| ★★★★★ | Option-O LAGOM mini 2 | 1 | Product 02 | Purchase Required |  
+| ★★★★★ | MantaBrew WeighMaster Ultra | 1 | Product 03 | Purchase Required |  
+| ★★★★★ | Weber Workshops Bean Cellar Bulk | 1 | Product 04 | Purchase Required |  
+| ★★★★★ | Weber Workshops Blind Shaker Onyx | 1 | Product 11 | Purchase Required |  
+| ★★★★★ | Normcore Planetary WDT Tool 54mm | 1 | Product 08 | Purchase Required |  
+| ★★★★★ | Pullman Chisel Redistribution Tool Wood 53.3mm | 1 | Product 07 | Purchase Required |  
+| ★★★★★ | The Force Tamper 53mm | 1 | Product 06 | Purchase Required |  
+| ★★★★★ | 9Barista Puck Screen | 1 | Product 13 | Purchase Required |  
   
 ## Station / Workflow  
   
-| Priority | Equipment | Quantity | Estimated Total Cost | Acquisition Status |  
-|---|---|---:|---:|---|  
-| ★★★★★ | Saint Anthony Industries The Bloc | 1 | ¥25,000〜30,000 | Purchase Required |  
-| ★★★★★ | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm | 1 | ¥16,000〜22,000 | Purchase Required |  
-| ★★★★★ | Normcore RDT Spray Bottle | 1 | ¥2,000〜4,000 | Purchase Required |  
-| ★★★★☆ | Weber Workshops Puck Screen Stand | 1 | ¥15,000〜22,000 | Purchase Required |  
+| Priority | Equipment | Quantity | Product | Acquisition Status |  
+|---|---|---:|---|---|  
+| ★★★★★ | Saint Anthony Industries The Bloc | 1 | Product 05 | Purchase Required |  
+| ★★★★★ | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm | 1 | Product 10 | Purchase Required |  
+| ★★★★★ | Normcore RDT Spray Bottle | 1 | Product 09 | Purchase Required |  
+| ★★★★☆ | Weber Workshops Puck Screen Stand | 1 | Product 14 | Purchase Required |  
   
 ## Latte System  
   
-| Priority | Equipment | Quantity | Estimated Total Cost | Acquisition Status |  
-|---|---|---:|---:|---|  
-| ★★★★★ | ALM KOPi Z1 Mini Steamer | 1 | ¥70,000〜82,000 | Purchase Required |  
-| ★★★★★ | WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout | 1 | ¥6,000〜9,000 | Purchase Required |  
-| ★★★★★ | WPM Pitcher Sleeve | 1 | ¥1,000〜2,500 | Purchase Required |  
-| ★★★★★ | DAMNGOOD × CATAPULT FACTORY FIKA12 | 2 | ¥25,000〜34,000 | Purchase Required |  
+| Priority | Equipment | Quantity | Product | Acquisition Status |  
+|---|---|---:|---|---|  
+| ★★★★★ | ALM KOPi Z1 Mini Steamer | 1 | Product 15 | Purchase Required |  
+| ★★★★★ | WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout | 1 | Product 16 | Purchase Required |  
+| ★★★★★ | WPM Pitcher Sleeve | 1 | Product 17 | Purchase Required |  
+| ★★★★★ | DAMNGOOD × CATAPULT FACTORY FIKA12 | 2 | Product 22 | Purchase Required |  
   
 ## Espresso Glass / Transport  
   
-| Priority | Equipment | Quantity | Estimated Total Cost | Acquisition Status |  
-|---|---|---:|---:|---|  
-| ★★★★★ | KRUVE PROPEL | 1 system allocation / 1 set purchase | ¥11,000〜14,000 | Purchase Required |  
-| ★★★★★ | ICOSA Brewhouse AERESSO | 1 | ¥8,000〜10,000 | Purchase Required |  
-| ★★★★★ | HILLS FIELD Glass Case Single | 1 | ¥5,480 | Purchase Required |  
-| ★★★★☆ | AION Seine Super Absorbent Coaster 801-BL | 1 package | ¥1,000〜2,000 | Purchase Required |  
+| Priority | Equipment | Quantity | Product | Acquisition Status |  
+|---|---|---:|---|---|  
+| ★★★★★ | KRUVE PROPEL | 1 system allocation / 1 set purchase | Product 18 | Purchase Required |  
+| ★★★★★ | ICOSA Brewhouse AERESSO | 1 | Product 19 | Purchase Required |  
+| ★★★★★ | HILLS FIELD Glass Case Single | 1 | Product 20 | Purchase Required |  
+| ★★★★☆ | AION Seine Super Absorbent Coaster 801-BL | 1 package | Product 21 | Purchase Required |  
   
 ## Dedicated Water  
   
-| Priority | Equipment | Quantity | Estimated Total Cost | Acquisition Status |  
-|---|---|---:|---:|---|  
-| ★★★★☆ | Snow Peak オーロラボトル 1L | 1 | ¥8,000〜13,000 | Purchase Required |  
-| ★★★★☆ | YETI Yonder 1L | 1 | ¥5,000〜7,000 | Purchase Required |  
-| ★★★★☆ | Snow Peak 酒筒 Titanium | 1 | ¥20,790〜21,790 | Purchase Required |  
+| Priority | Equipment | Quantity | Product | Acquisition Status |  
+|---|---|---:|---|---|  
+| ★★★★☆ | Snow Peak オーロラボトル 1L | 1 | Product 23 | Purchase Required |  
+| ★★★★☆ | YETI Yonder 1L | 1 | Product 24 | Purchase Required |  
+| ★★★★☆ | Snow Peak 酒筒 Titanium | 1 | Product 25 | Purchase Required |  
   
 ---  
   
@@ -1850,77 +1693,40 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
   
 # Final Acquisition Inventory  
   
-| # | Equipment | Qty | Estimated Total Cost | Status |  
-|---:|---|---:|---:|---|  
-| 01 | 9Barista Mk.2 Pro | 1 | ¥126,500 | Purchase Required |  
-| 02 | Option-O LAGOM mini 2 | 1 | ¥70,000〜78,000 | Purchase Required |  
-| 03 | MantaBrew WeighMaster Ultra | 1 | ¥40,000〜45,000 | Purchase Required |  
-| 04 | Weber Workshops Bean Cellar Bulk | 1 | ¥38,000〜42,000 | Purchase Required |  
-| 05 | Saint Anthony Industries The Bloc | 1 | ¥25,000〜30,000 | Purchase Required |  
-| 06 | The Force Tamper 53mm | 1 | ¥40,000〜47,000 | Purchase Required |  
-| 07 | Pullman Chisel Redistribution Tool Wood 53.3mm | 1 | ¥45,000〜50,000 | Purchase Required |  
-| 08 | Normcore Planetary WDT Tool 54mm | 1 | ¥12,000〜18,000 | Purchase Required |  
-| 09 | Normcore RDT Spray Bottle | 1 | ¥2,000〜4,000 | Purchase Required |  
-| 10 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm | 1 | ¥16,000〜22,000 | Purchase Required |  
-| 11 | Weber Workshops Blind Shaker Onyx | 1 | ¥20,000〜24,000 | Purchase Required |  
-| 12 | 9Barista Magnetic Dosing Funnel | 1 | Included | Included |  
-| 13 | 9Barista Puck Screen | 1 | ¥4,000〜7,000 | Purchase Required |  
-| 14 | Weber Workshops Puck Screen Stand | 1 | ¥15,000〜22,000 | Purchase Required |  
-| 15 | ALM KOPi Z1 Mini Steamer | 1 | ¥70,000〜82,000 | Purchase Required |  
-| 16 | WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout | 1 | ¥6,000〜9,000 | Purchase Required |  
-| 17 | WPM Pitcher Sleeve | 1 | ¥1,000〜2,500 | Purchase Required |  
-| 18 | KRUVE PROPEL | 1 system allocation / 1 set purchase | ¥11,000〜14,000 | Purchase Required |  
-| 19 | ICOSA Brewhouse AERESSO | 1 | ¥8,000〜10,000 | Purchase Required |  
-| 20 | HILLS FIELD Glass Case Single | 1 | ¥5,480 | Purchase Required |  
-| 21 | AION Seine Super Absorbent Coaster 801-BL | 1 package | ¥1,000〜2,000 | Purchase Required |  
-| 22 | DAMNGOOD × CATAPULT FACTORY FIKA12 | 2 | ¥25,000〜34,000 | Purchase Required |  
-| 23 | Snow Peak オーロラボトル 1L | 1 | ¥8,000〜13,000 | Purchase Required |  
-| 24 | YETI Yonder 1L | 1 | ¥5,000〜7,000 | Purchase Required |  
-| 25 | Snow Peak 酒筒 Titanium | 1 | ¥20,790〜21,790 | Purchase Required |  
-| 26 | 9Barista Handle - Walnut | 2 | ¥4,500〜6,000 | Purchase Required |  
-| 27 | IMS Precision Basket 53 mm | 1 | Included | Included |  
-| 28 | 9Barista Stainless Steel Basket Cap Pro | 1 | Included | Included |  
-| 29 | LAGOM mini 2 Ground Transfer Cup | 1 | Included | Included / Secondary Route |  
-| 30 | Snow Peak ギガパワーストーブ レクタ（GS-150） | 1 | ¥14,300〜15,300 | Purchase Required |  
+`#`はConfirmed Equipment Acquisition RegistryのProduct番号と一致する。現行価格・Estimated Total Costは各Product NNの記載を正本とする（ここでは繰り返さない）。  
   
----  
-  
-# PX-004 v2.7 Synchronization  
-  
-本バージョンは、以下と同期している:  
-  
-**PX-004 Barista Codex Version 2.7**  
-  
-主要な同期確認事項:  
-  
-1. 9Barista Puck Screenは、引き続きConfirmed / Purchase Required。  
-2. Weber Workshops Puck Screen Standは、引き続きConfirmed / Purchase Required。  
-3. Normcore Planetary WDTは、引き続き54mmに固定。  
-4. Pullman Chiselは、調達上、現行の53.3mm Wood構成で表す。  
-5. The Force Tamperは、引き続き53mm。  
-6. KNODOSは、引き続きWalnut 54mm。  
-7. Weber Blind Shakerは、引き続きOnyx。  
-8. WPM Pitcherは、引き続きHandleless 450cc / #07 Sharp Spout。  
-9. WPM Pitcher Sleeveは、引き続きConfirmed。  
-10. ALM KOPi Z1 Miniは、引き続きConfirmed。  
-11. 2人分のLatteは、引き続き2回の連続サイクル。  
-12. Pitcherは引き続き1個で十分。  
-13. Steamerは引き続き1台で十分。  
-14. Coffee System水構成は、引き続き2,540mL。  
-15. PROPEL ×1は、引き続きシステム割当としてConfirmed。  
-16. AERESSO ×1は、引き続きConfirmed。  
-17. HILLS FIELD Glass Case Single ×1は、引き続きConfirmed。  
-18. AION 801-BL ×1パッケージは、引き続きConfirmed。  
-19. FIKA12 ×2は、引き続きConfirmed。  
-20. The Blocは、引き続きExtraction Core。  
-21. KNODOSは、引き続きTool Station。  
-22. RDTとBlind Shakerは、引き続きThe BlocのTool cutout割当。  
-23. Distributor・Tamper・WDTは、引き続きThe Blocの常設収納の対象外。  
-24. 不採用となったEquipmentは再導入されていない。  
-25. LAGOM mini 2は、PX-004記載のLAGOM Miniに対応する現行の調達モデル。  
-26. WeighMaster Ultraは、PX-004記載のMantaBrew Master Kitに対応する現行の調達モデル。  
-27. 現行の市販パッケージ数量は、PX-004上のシステム割当数量と区別されている。  
-28. すべての現行調達記録に、現行価格または現実的な調達目安が含まれている。  
+| # | Equipment | Qty | Status |  
+|---:|---|---:|---|  
+| 01 | 9Barista Mk.2 Pro | 1 | Purchase Required |  
+| 02 | Option-O LAGOM mini 2 | 1 | Purchase Required |  
+| 03 | MantaBrew WeighMaster Ultra | 1 | Purchase Required |  
+| 04 | Weber Workshops Bean Cellar Bulk | 1 | Purchase Required |  
+| 05 | Saint Anthony Industries The Bloc | 1 | Purchase Required |  
+| 06 | The Force Tamper 53mm | 1 | Purchase Required |  
+| 07 | Pullman Chisel Redistribution Tool Wood 53.3mm | 1 | Purchase Required |  
+| 08 | Normcore Planetary WDT Tool 54mm | 1 | Purchase Required |  
+| 09 | Normcore RDT Spray Bottle | 1 | Purchase Required |  
+| 10 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm | 1 | Purchase Required |  
+| 11 | Weber Workshops Blind Shaker Onyx | 1 | Purchase Required |  
+| 12 | 9Barista Magnetic Dosing Funnel | 1 | Included |  
+| 13 | 9Barista Puck Screen | 1 | Purchase Required |  
+| 14 | Weber Workshops Puck Screen Stand | 1 | Purchase Required |  
+| 15 | ALM KOPi Z1 Mini Steamer | 1 | Purchase Required |  
+| 16 | WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout | 1 | Purchase Required |  
+| 17 | WPM Pitcher Sleeve | 1 | Purchase Required |  
+| 18 | KRUVE PROPEL | 1 system allocation / 1 set purchase | Purchase Required |  
+| 19 | ICOSA Brewhouse AERESSO | 1 | Purchase Required |  
+| 20 | HILLS FIELD Glass Case Single | 1 | Purchase Required |  
+| 21 | AION Seine Super Absorbent Coaster 801-BL | 1 package | Purchase Required |  
+| 22 | DAMNGOOD × CATAPULT FACTORY FIKA12 | 2 | Purchase Required |  
+| 23 | Snow Peak オーロラボトル 1L | 1 | Purchase Required |  
+| 24 | YETI Yonder 1L | 1 | Purchase Required |  
+| 25 | Snow Peak 酒筒 Titanium | 1 | Purchase Required |  
+| 26 | 9Barista Handle - Walnut | 2 | Purchase Required |  
+| 27 | IMS Precision Basket 53 mm | 1 | Included |  
+| 28 | 9Barista Stainless Steel Basket Cap Pro | 1 | Included |  
+| 29 | LAGOM mini 2 Ground Transfer Cup | 1 | Included / Secondary Route |  
+| 30 | Snow Peak ギガパワーストーブ レクタ（GS-150） | 1 | Purchase Required |  
   
 ---  
   
@@ -2023,14 +1829,15 @@ Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The B
 | 3.4 | 2026-09-28 | BR-002 Ver.4.3 Heat Source Decisionに伴い、Coffee System熱源の調達情報を反映。Product 30「Snow Peak ギガパワーストーブ レクタ（GS-150）」を新設し、9Barista Mk.2 Pro専用熱源としてPurchase Requiredで登録（MD-003 KIT-086として管理、Final Acquisition Inventory #30）。Product 01（9Barista Mk.2 Pro）NotesへHeat Transfer Plate選択の根拠を追記。Product 15（ALM KOPi Z1 Mini Steamer）Notesの「別途シングルバーナーが必要」という記述を、既存所有のSnow Peak ヤエンストーブ レギ（MD-003 KIT-011）を流用する旨へ訂正し、BR-002との矛盾を解消。Purchase Groupingへ「Group I — 9Barista Heat Source」を新設し、Group F（Latte System）の旧「別途バーナー」記述も同様に訂正。Estimated Acquisition Budget（Core Espresso System: ¥409,000〜465,500 → ¥423,300〜480,800、Estimated Total: ¥628,270〜744,270 → ¥642,570〜759,570）、Monthly Acquisition Plan Month 1小計（¥135,000〜139,500 → ¥149,300〜154,800）、Plan Total（¥619,270〜721,270 → ¥633,570〜736,570）を整合。MARI様の直接指示（2026-09-28）に基づく。 |  
 | 3.5 | 2026-09-28 | Ver.3.3の書き込み時に生じた転記誤りを、書き込み前の原文に照らして訂正。Product 16 Notes（「連続すう2回」→「連続する2回」）、Japan Purchase Policy 7（「妃当」→「妥当」）、Version Control 2.1行（「月あたり目安¥1万」→原文どおり「¥10万」）、Version Control 3.3行内の旧誤記の引用（「Puck Screenン」→「Puck Screン」）、Document Renumbering Noteの一文（「内容（Ver.2.4）は、以降のバージョンに変更はない。」→原文どおり「内容（Ver.2.4）に変更はない。」）。調達データそのものに変更はない。MARI様のご指示に基づく。 |  
 | 3.6 | 2026-09-28 | Design RationaleのYETI Yonder 1L必要性の根拠記述を、BR-002 Coffee System Water Bottle Configuration（Operation Scenario／Required Water Volume、Espresso 6杯・Latte 6杯・必要水量2,340mL）への参照に統一。BR-003側の旧試算（Latte 4杯・必要水量約1,800mL）とBR-002運用シナリオとの食い違いを解消（決定の正本はBR-002、BR-003は調達情報）。過去のVersion Control行（2.1等）は歴史的記録として原文のまま保持。MARI様のご指示に基づく。 |  
-| 3.7 | 2026-09-28 | Relationship節の図に「（Confirmed後、実際に購入・Owned Statusとなった時点で登録）」という注記をMD-004の行へ追加し、流れがBR-002 → MD-004 → BR-003ではなくBR-002 → BR-003 → MD-004（購入後）であることを図で明示。BR-002・BR-001と同期。調達データそのものに変更はない。 |
+| 3.7 | 2026-09-28 | Relationship節の図に「（Confirmed後、実際に購入・Owned Statusとなった時点で登録）」という注記をMD-004の行へ追加し、流れがBR-002 → MD-004 → BR-003ではなくBR-002 → BR-003 → MD-004（購入後）であることを図で明示。BR-002・BR-001と同期。調達データそのものに変更はない。 |  
 | 4.0 | 2026-09-28 | S-06（BR-003のルールとデータの分離）に基づき、CLAUDE.md／OP-008 §9.3「Living文書に恒久ルールを置かない」に反していた恒久ルール（Acquisition Status Policy・Purchasing Priority・Purchase List Definition・Purchase Completeness Ruleの一般原則1〜12・BR-002/BR-003 Synchronization Ruleの一般原則・Purchase Checklist・Overseas Purchase Policy・Japan Purchase Policy・Compatibility Policyの末尾原則・Price Integrity Rule）を、OP-005 Pursuit Strategy §Coffee Zone Acquisition Rulesへ逐語移設し、本書側は参照行へ置換した。個別製品固有の同期チェック項目（Purchase Completeness Rule 13〜36、Synchronization Rule 10〜16）、Compatibility Policyの具体的互換性一覧、Acquisition Completeness Rule、Acquisition Exceptionsは、この構成固有のデータとして本書に残置した（移設対象外）。調達データそのもの（価格・購入先・Purchase Grouping・Monthly Acquisition Plan等）に変更はない。Product Variant Integrity・Extraction Core Configuration等、BR-002との重複が疑われる節は今回対象外とし、別課題（S-07）で扱う。責任範囲の変更のためMajor Version。OP-008 Ver.3.15・OP-005 Ver.2.2の同時改訂と連動。MARI様のご決定に基づく（S-06）。 |  
+| 4.1 | 2026-09-28 | S-07（重複削減、Ver.4.0のDesign Rationaleで予告されたBR-002との重複解消）に基づき、BR-002/BR-003間および文書内の重複を削減。Coffee System Water Configuration・Espresso Glass Transport Configuration・Latte Cup Configuration・Coffee Tool Station Configuration・Extraction Core Configuration・Espresso System ConfigurationをBR-002の該当節への参照へ置換（BR-003はProcurement Authorityであり、Workflow・構成決定の重複記述はPurposeの管理範囲外）。Current Acquisition PriorityおよびFinal Acquisition InventoryのEstimated Total Cost列を削除し、Product NN（Confirmed Equipment Acquisition Registry）への参照に一本化。金額の正本をProduct NNの1箇所のみに限定し、複数箇所の金額不一致リスクを解消。「PX-004 v2.7 Synchronization」節（旧ID時代の同期記録、現行Version Controlに内容が上書き済み）を削除しDocument Renumbering Noteへ1行吸収。Confirmed Equipment・Acquisition Status・現行価格そのものに変更はない。MARI様の承認（2026-09-28）に基づく。 |  
   
 ---  
 
 ## Document Renumbering Note
 
-本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、PX-005からBR-003へ番号を変更した。本文中の他文書参照（PX-004・TP-004等）を新ID体系へ更新した。「PX-004 v2.7 Synchronization」セクションおよびVersion Control表内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Ver.2.4）に変更はない。旧ID: PX-005。2026-09-24付でタイトルをAcquisition HandbookからProcurement Handbookへ変更した（Ver.3.1）。
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、PX-005からBR-003へ番号を変更した。本文中の他文書参照（PX-004・TP-004等）を新ID体系へ更新した。Version Control表内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。内容（Ver.2.4）に変更はない。旧ID: PX-005。2026-09-24付でタイトルをAcquisition HandbookからProcurement Handbookへ変更した（Ver.3.1）。「PX-004 v2.7 Synchronization」セクション（旧ID時代のPX-004 v2.7との同期確認記録）は、現行Version Control（Ver.3.0〜3.7）に内容が完全に上書きされたため、S-07（重複削減、Ver.3.8）にて削除した。
 
 ---  
   
