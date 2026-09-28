@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.14  
+**Version**: 4.15  
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -50,6 +50,7 @@
 | Project Ledger 位置づけ整合 | OP-001, OP-008, DB-001, CZ-001 | Project Ledger, Decision, BR-002, CZ-001, 記録, 意思決定, 乖離, 不採用, ShellCon | OP-001 §9・§14とOP-008 §8のDB-001 Role記述の乖離を是正（OP-001 Ver.5.3、OP-008 Ver.3.4）。DB-001の空欄セクションを充填（Current Focus・Project Inbox運用ルール新設、KN Publication Logは未発行のため空欄が正と確認）。あわせてCZ-001に「不採用候補とその理由」を恒久保持する運用を新設（Ver.3.11）し、Wood Stove・ShellCon25 Bedding Module転用検討の2件を記録（Ver.3.12）。 | Active | 2026-09-27 |
 | パートナー貢献の扱いとDrive⇄GitHub同期運用 | OP-001, OP-008 | パートナー, 協力者, Gemini, Drive, Mirror, Contributions, GAS, 一方向ミラー, External Contribution Protocol, rclone | OP-001 §21.1 External Contribution Protocolを新設（Ver.5.5）。OP-008 §27 Drive Mirror Operationを新設（Ver.3.7）。GitHub→Driveの一方向ミラー（GAS、15分ごと）を稼働し、協力者の書き込み先をContributionsとした（自動反映なし・正式化はオーナーとAIが判断）。旧ミラーのワークフロー（mirror-to-drive.yml）を削除し、Driveの親フォルダの旧ミラー残骸を整理。GASソースをscripts/MirrorSync.gsとして保管。 | Active | 2026-09-28 |
 | 調達区分の整理（OP-005のCoffee限定化・Horizon改称） | OP-005, OP-008, KN-004, CZ-002, BR-003 | Pursuit Strategy, Acquisition Priority, Acquisition Status, Monthly Planning, Must Buy Dashboard, Horizon, Watch List, 買えるときに買う, Purchase Priority, Purchase Grouping, Monthly Acquisition Plan, 二重定義 | OP-005 Ver.2.0：Coffee以外は「買えるときに買う」と明記し、Coffeeの購入優先度・購入状態・月次計画の定義をBR-003へ一本化（Acquisition Priority／Acquisition Status／Monthly Planningの3章を削除）。KN-004のMust Buy DashboardをHorizonへ改称し、監視対象をCZ-002 Watch Listへ統一（CZ-002 Ver.3.3）。OP-008 Ver.3.8・3.9で同期。BR-003 Ver.3.3でPurposeへMonthly Acquisition Plan追加・未定義のRejected削除・表記訂正（Ver.3.5で転記誤りを訂正）。 | Active | 2026-09-28 |
+| 全文書レビューと整備バックログの消化 | 全文書 | 整備バックログ, 矛盾, 重複, 未策定, Sonnet, Safety, 一酸化炭素, Material Care, Vehicle, Range Rover Sport, Field Log, Zone Evaluation Philosophy, Partner Value, Retirement, ID Freeze | 全25文書をレビューし、矛盾・重複・未策定事項を課題化（整備バックログArtifact）。Sonnetで大半を解消後、残りの未策定事項をClaudeの推奨案で暫定採用：OP-006 Safety／Material Care、MD-001 Vehicle・全体設営撤収手順、DB-001 Field Log、OP-002 Zone Evaluation Philosophy（5ゾーン）、OP-010 退役ルール・Coffee境界・Candidate方式・Field Atlas基準、MD-002 Partner Value正式化、OP-005 予算の性格・Coffee在庫確認、CZ-001 経由ルール、ヘッダー統一。文書数は減らさない方針（MARI様指示）。 | Active | 2026-09-28 |
 
 ---
 
@@ -76,6 +77,28 @@
 | Date | Topic |
 |------|-------|
 | 2026-09-28 | 冬用暖房コンテナ（湯たんぽ・電気毛布・シャンクヒーター用）の要否・定位置：優先度低、検討中 |
+| 2026-09-28 | 一酸化炭素警報器の所有有無の確認（OP-006 §Safety Principlesにより、シェルター内で燃焼器具を使う場合は必須） |
+| 2026-09-28 | 電気毛布の電源（ポータブル電源の有無）の確認（MD-001 Winter Kit） |
+| 2026-09-28 | Range Rover Sportのパワートレイン・座席数の確認と荷室床寸法の実測、試し積み（MD-001 §Vehicle・§Full Loading Order） |
+| 2026-09-28 | Beck②の試し詰めと実測（MD-001 Coffee Module Layout §必要な実測）。結果を受けてCoffee Serviceware・専用水の定位置を決める |
+| 2026-09-28 | MD-002 Field Atlasで移動時間が未記録のフィールドの実測値（起点：江戸川区小岩） |
+
+---
+
+# Field Log
+
+キャンプの計画と実施の記録。MD-002 Field Atlasの再評価、OP-006 Foundation Compass・MD-001 Storage Blueprint・BR-001 Brew Careの改善の入力として使う（2026-09-28新設。N-05・N-16）。
+
+| Date | Status | Field | Weather / Temp | Configuration | Went Well | Issues | Follow-up |
+|------|--------|-------|----------------|---------------|-----------|--------|-----------|
+| — | — | — | — | — | — | — | — |
+
+運用ルール：
+
+- 行き先と日程が決まったら、Status = Plannedで1行追加する（Fieldの表記はMD-002に合わせる。予約状況・チェックイン時刻はConfiguration欄に記入する）
+- 帰宅後、Status = Doneへ更新し、天候・気温、使った構成（Season Kit・Shelter等）、うまくいった点、困った点を記入する
+- 困った点の対応先となる文書IDをFollow-upに記入し、対応したら当該文書へ反映する（本表は判断そのものを保持しない）
+- 季節ごとのフィールドの向き不向きは、本表の記録が蓄積した時点でMD-002へ反映する
 
 ---
 
@@ -137,6 +160,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.12 | 2026-09-28 | Conversation Ledgerへ、調達区分の整理（OP-005のCoffee限定化・Horizon改称）の会話を1行追加（MARI様ご指示）。Patch Version。 |
 | 4.13 | 2026-09-28 | KN Publication Logが参照していた「ways-of-working KN issuance rules」がリポジトリに実在しない不整合を是正し、OP-008 §28 KN Publication Policy（新設）への参照へ更新。MARI様のご決定に基づく（C-14）。Patch Version。 |
 | 4.14 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Project Overviewの系列別文書数表（OP-008 §8から導出可能な重複情報）を「文書一覧・文書数は OP-008 §8 Document Series を参照。」の1行へ置換した。あわせて、検証プロセスを伴わず常に✓固定だったHealth CheckのSSOT／Conversation Ledger／Documentation行を削除し、Change Management行のみを残した。MARI様のご決定に基づく（S-08）。Patch Version。 |
+| 4.15 | 2026-09-28 | §Field Log（キャンプの計画と実施の記録、N-05・N-16）を新設。Project Inboxへ、整備バックログで判明した要確認事項5件（一酸化炭素警報器、電気毛布の電源、車両の確認・実測、Beck②の試し詰め、MD-002の移動時間）を追加。Conversation Ledgerへ本日の会話を1行追加。Claude推奨案をMARI様の包括指示に基づき採用。Minor Version。 |
 
 ---
 
