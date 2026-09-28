@@ -10,7 +10,7 @@ Barista Canon
     
 # Version    
     
-4.2    
+4.3    
     
 # Status    
     
@@ -130,6 +130,19 @@ Handle（Upper / Lower）については、上記Handle Material Decisionに基�
 を最も高い水準で実現する。    
     
 純正アクセサリーとの統一されたWorkflowを構築できることも採用理由とする。    
+    
+### Heat Source Decision    
+    
+9Barista Mk.2 Proは直火式（Flame Powered）であり、稼働にバーナーを要する。    
+    
+THE THIRD PLACEでは、9Barista Mk.2 ProおよびALM KOPi Z1 Mini Steamerを並行運用（エスプレッソ抽出とミルクスチームの同時進行）するため、2台のバーナーを同時使用する構成を正式決定する。    
+    
+* 9Barista Mk.2 Pro：Snow Peak ギガパワーストーブ レクタ（GS-150）を新規採用する。    
+* ALM KOPi Z1 Mini Steamer：既に所有しているSnow Peak ヤエンストーブ レギ（GS-370、MD-003 KIT-011）を流用する。    
+    
+Coffee System専用バーナーの新規採用は、9Barista側のみとする。    
+    
+MARI様の直接指示（2026-09-28）に基づく。    
     
 ---    
     
@@ -754,9 +767,11 @@ FIKA12
     
 1杯ずつスチームして完成させる2サイクル運用とする。    
     
-Z1 Mini Steamerは、既に所有しているキッチン用シングルバーナーを流用して使用する。    
+Z1 Mini Steamerは、既に所有しているSnow Peak ヤエンストーブ レギ（GS-370、MD-003 KIT-011）を流用して使用する。    
     
-Coffee System専用のシングルバーナーは新たに採用しない。    
+9Barista Mk.2 Pro用に、Snow Peak ギガパワーストーブ レクタ（GS-150）をCoffee System専用バーナーとして新規採用する。詳細はEspresso Machineセクション「Heat Source Decision」を参照。    
+    
+9Barista側とZ1側のバーナーは並行運用（エスプレッソ抽出とミルクスチームの同時進行）のため、それぞれ独立して同時稼働させる。    
     
 ---    
     
@@ -1562,7 +1577,7 @@ FIKA12
   
 WPM Handleless Pitcherは1個を2サイクルで使用する。  
   
-ALM KOPi Z1 Mini Steamerは、既に所有しているキッチン用シングルバーナーを流用して使用する。  
+ALM KOPi Z1 Mini Steamerは、既に所有しているSnow Peak ヤエンストーブ レギ（GS-370、MD-003 KIT-011）を流用して使用する。9Barista Mk.2 Pro側はSnow Peak ギガパワーストーブ レクタ（GS-150）を専用熱源として並行使用する（詳細はEspresso Machineセクション「Heat Source Decision」を参照）。  
   
 ---  
   
@@ -1790,6 +1805,7 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 4.0 | 2026-09-24 | Volatility Restructureにより、Design PrinciplesとCoffee Zone Philosophy (Exception Clause)をOP-002 Design Bible §05. Coffeeへ逐語移設し、本節を参照1行へ置換。責任範囲の変更のためMajor Version。 |  
 | 4.1 | 2026-09-24 | MARI様のご指摘に基づき、OP-008 §11 Naming Conventionへ新設された文書名重複禁止ルールに伴い、タイトルをBarista CodexからBarista Canonへ変更（CZ-001 Deliberation Codexとの語重複を解消）。BR-003側もProcurement Handbookへ改名されたため、本書内の参照表記（SSOT・Purpose・Relationship・Included Components・Alternative Basket Cap各節）を同期。Version History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持。ファイル名もBR-002_Barista_Canon.mdへ変更。内容（意思決定事項そのもの）に変更はない。 |
 | 4.2 | 2026-09-26 | 冒頭の重複H1見出しを是正。ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |  
+| 4.3 | 2026-09-28 | Espresso Machineセクションへ「Heat Source Decision」を新設。9Barista Mk.2 Pro（直火式）とALM KOPi Z1 Mini Steamerを並行運用（エスプレッソ抽出とミルクスチームの同時進行）するため、2台のバーナーを同時使用する構成を正式決定。9Barista側はSnow Peak ギガパワーストーブ レクタ（GS-150）を新規採用し、Z1側は既に所有しているSnow Peak ヤエンストーブ レギ（GS-370、MD-003 KIT-011）を流用する。従来「Coffee System専用のシングルバーナーは新たに採用しない」としていたMilk Steamer / Latte Workflow内の記述を、上記決定と整合する内容へ修正（9Barista用バーナーは新規採用のため）。MARI様の直接指示（2026-09-28）に基づく。 |  
   
 ---  
 

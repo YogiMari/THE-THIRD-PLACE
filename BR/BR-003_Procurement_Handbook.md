@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-3.3  
+3.4  
   
 **Status**  
   
@@ -173,6 +173,7 @@ BR-002でConfirmedとなったEquipmentは、原則としてBR-003に登録す�
 * 付属品は、予備として必要な場合を除き、別途購入しない。  
 * 本体標準付属品：53mm Tamper（9Barista純正・汎用）、Heat Transfer PlateまたはInduction Adaptor Plate（選択したコンロ種別に応じて1点）、Spare Boiler O-ring ×1、Spare Safety Ring ×1、User Guide。THE THIRD PLACEではThe Force Tamper 53mmを主力Tamperとするため、付属の汎用Tamperは予備として保持する。  
 * Upper / Lower Handleは標準でAnodised Aluminium仕様。BR-002 Ver.3.7のHandle Material Decisionに基づき、Walnut仕様へ変更する（詳細はProduct 26を参照）。  
+* 本体標準付属品の「Heat Transfer PlateまたはInduction Adaptor Plate」は、Heat Transfer Plateを選択する。THE THIRD PLACEはBR-002 Ver.4.3 Heat Source Decisionに基づき、Snow Peak ギガパワーストーブ レクタ（GS-150、ガスカートリッジ式）を熱源とするため、非IHのHeat Transfer Plateが適合する（詳細はProduct 30を参照）。  
   
 ---  
   
@@ -635,7 +636,7 @@ BR-002でConfirmedとなったEquipmentは、原則としてBR-003に登録す�
 * コンパクト。  
 * 1台で十分。  
 * 2人分のLatte運用は、2回の連続スチームサイクルで行う。  
-* 別途シングルバーナーが必要。  
+* 熱源は既に所有しているSnow Peak ヤエンストーブ レギ（GS-370、MD-003 KIT-011）を流用する。バーナーの追加購入は不要（BR-002 Ver.4.3 Heat Source Decisionに基づく）。  
 * 購入前に電圧・動作要件を確認すること。  
 * 2台目のSteamerは不要。  
   
@@ -1031,6 +1032,40 @@ BR-002でConfirmedとなったEquipmentは、原則としてBR-003に登録す�
 * Mk.1・Mk.2共通対応品。  
 * 9Barista Mk.2 Pro本体・9Barista Puck Screenと同時注文し、Group A（9Barista）へ統合する。  
 * サードパーティ製Handleは不採用。  
+  
+---  
+  
+## Product 30  
+  
+### Snow Peak ギガパワーストーブ レクタ（GS-150）  
+  
+| Item | Details |  
+|---|---|  
+| Manufacturer | Snow Peak |  
+| Model | ギガパワーストーブ レクタ（GS-150） |  
+| Current Purchase Model | ギガパワーストーブ レクタ（GS-150） |  
+| Category | Burner (Heat Source) |  
+| Acquisition Status | Purchase Required |  
+| Quantity | 1 |  
+| Purchase Type | Domestic |  
+| Primary Purchase Source | Snow Peak Official Store |  
+| Purchase URL | Official Store |  
+| Japan Shipping | Available |  
+| Warranty | Manufacturer Policy |  
+| Current Product Price | ¥14,300 |  
+| Estimated Shipping | ¥0〜1,000 |  
+| Estimated Total Cost | ¥14,300〜15,300 |  
+| Currency | JPY |  
+| Purchase Priority | ★★★★★ |  
+  
+### Notes  
+  
+* BR-002 Ver.4.3「Heat Source Decision」にて正式決定。MARI様の直接指示（2026-09-28）に基づく。  
+* 9Barista Mk.2 Pro専用熱源として新規採用する。  
+* ガスカートリッジ式、2,500kcal/h。  
+* MD-003 KIT-086として登録（CLAUDE.md原則9：Kitchen Domain（KIT-series）はMD-004対象外のため、MD-003で完結管理する）。  
+* 9Barista Mk.2 Pro購入時に選択する「Heat Transfer PlateまたはInduction Adaptor Plate」は、本バーナーが非IH（ガスカートリッジ式）であるため、Heat Transfer Plateを選択する（Product 01参照）。  
+* ALM KOPi Z1 Mini Steamer用の熱源（既存所有のSnow Peak ヤエンストーブ レギ、MD-003 KIT-011）とは別個体であり、並行運用（エスプレッソ抽出とミルクスチームの同時進行）のために2台を同時使用する。  
   
 ---  
   
@@ -1815,7 +1850,7 @@ Optional項目は「9Barista Official Spare Parts (Preventive Stock)」セクシ
   
 Latte Systemは、完結したWorkflowとして購入する。  
   
-ALM KOPi Z1 Miniは、別途バーナーでの運用が必要。  
+ALM KOPi Z1 Miniは、既存所有のSnow Peak ヤエンストーブ レギ（GS-370、MD-003 KIT-011）を熱源として流用する。追加購入は発生しない（BR-002 Ver.4.3 Heat Source Decisionに基づく）。  
   
 購入前に電圧・動作要件を確認すること。  
   
@@ -1850,18 +1885,32 @@ ALM KOPi Z1 Miniは、別途バーナーでの運用が必要。
   
 ---  
   
+## Group I — 9Barista Heat Source  
+  
+* Snow Peak ギガパワーストーブ レクタ（GS-150）  
+  
+### Principle  
+  
+9Barista Mk.2 Pro専用熱源（BR-002 Ver.4.3 Heat Source Decision）。  
+  
+Snow Peak公式ストアでの単独購入となるため、Group A（9Barista）とは別注文とする。  
+  
+9Barista本体が稼働可能な状態になるためには、本Groupの到着が前提となる。  
+  
+---  
+  
 # Estimated Acquisition Budget  
   
 以下は、Purchase Required（購入対象）となっている全Equipmentを調達するための、保守的な計画目安である。  
   
 | Group | Estimated Cost |  
 |---|---:|  
-| Core Espresso System | ¥409,000〜465,500 |  
+| Core Espresso System | ¥423,300〜480,800 |  
 | Station / Workflow | ¥58,000〜78,000 |  
 | Latte System | ¥102,000〜127,500 |  
 | Espresso Glass / Transport | ¥25,480〜31,480 |  
 | Dedicated Water | ¥33,790〜41,790 |  
-| **Estimated Total** | **¥628,270〜744,270** |  
+| **Estimated Total** | **¥642,570〜759,570** |  
   
 ### Budget Policy  
   
@@ -1869,10 +1918,12 @@ ALM KOPi Z1 Miniは、別途バーナーでの運用が必要。
   
 該当する場合、海外配送・輸入関連費用について保守的な余裕を含む。  
   
+Core Espresso Systemには、BR-002 Ver.4.3 Heat Source Decisionに基づく9Barista Mk.2 Pro専用熱源（Product 30: Snow Peak ギガパワーストーブ レクタ GS-150、¥14,300〜15,300）を含む。  
+  
 以下は含まない:  
   
 * 燃料  
-* ALM KOPi Z1 Mini用の別途バーナー  
+* ALM KOPi Z1 Mini用の別途バーナー（既存所有のSnow Peak ヤエンストーブ レギ、MD-003 KIT-011を流用するため、追加購入は発生しない）  
 * 消耗品としての清掃用品  
 * 9Barista Official Spare Parts (Preventive Stock)（任意購入のため別枠管理）  
 * BR-002に含まれない追加Equipment  
@@ -1960,6 +2011,7 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
 | 27 | IMS Precision Basket 53 mm | 1 | Included | Included |  
 | 28 | 9Barista Stainless Steel Basket Cap Pro | 1 | Included | Included |  
 | 29 | LAGOM mini 2 Ground Transfer Cup | 1 | Included | Included / Secondary Route |  
+| 30 | Snow Peak ギガパワーストーブ レクタ（GS-150） | 1 | ¥14,300〜15,300 | Purchase Required |  
   
 ---  
   
@@ -2012,8 +2064,9 @@ MARI様との合意に基づく、月次購入計画である。**9Baristaを最
 * 9Barista Puck Screen  
 * 9Barista Handle - Walnut ×2  
 * （任意）Safety Ring and Seals／Boiler O-ring Seal Mk.2／Overheat Repair Kit Mk.2  
-* 小計：¥135,000〜139,500（Optional Preventive Stockを除く）  
-* 上限なし（9Barista本体は公式まとめ買いを優先し、月次上限の例外とする）  
+* Snow Peak ギガパワーストーブ レクタ（GS-150）※Group I、9Barista本体とは別店舗（Snow Peak公式）での注文  
+* 小計：¥149,300〜154,800（Optional Preventive Stockを除く）  
+* 上限なし（9Barista本体は公式まとめ買いを優先し、月次上限の例外とする。Group Iも9Barista稼働の前提として同月に含める）  
   
 ## Month 2  
   
@@ -2061,7 +2114,7 @@ Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The B
   
 ## Plan Total  
   
-総額目安：¥619,270〜721,270（Estimated Acquisition Budgetの目安¥628,270〜744,270の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
+総額目安：¥633,570〜736,570（Estimated Acquisition Budgetの目安¥642,570〜759,570の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
   
 ### Design Rationale  
   
@@ -2071,6 +2124,7 @@ Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The B
 * YETI Yonder 1Lの必要性は、MARI様の実飲用計画（2名・1泊・Straight Espresso 6杯・Latte 4杯、必要水量約1,800mL）に基づく従来の試算を維持する。  
 * 9Barista Official Spare Parts (Preventive Stock)は、Group A（9Barista）注文に同梱可能な任意項目として、Month 1の小計とは別枠で記録する。  
 * 9Barista Handle - Walnutは、PX-004 Ver.3.7のHandle Material Decisionに基づく確定購入品として、Month 1の本体・Puck Screen注文へ統合する。  
+* Snow Peak ギガパワーストーブ レクタ（GS-150、Group I）は、BR-002 Ver.4.3 Heat Source Decisionに基づく確定購入品として、9Barista稼働の前提条件であるためMonth 1へ統合する（発注自体はSnow Peak公式ストアへの別注文）。  
   
 ---  
   
@@ -2096,6 +2150,7 @@ Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The B
 | 3.1 | 2026-09-24 | MARI様のご指摘に基づき、OP-008 §11 Naming Conventionへ新設された文書名重複禁止ルールに伴い、タイトルをAcquisition HandbookからProcurement Handbookへ変更（OP-005 Pursuit Strategyとの語重複を解消）。連動してBR-002 Barista Canon、OP-005 Pursuit Strategyへの参照表記を同期。Version Control内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持。ファイル名もBR-003_Procurement_Handbook.mdへ変更。内容（調達データそのもの）に変更はない。 |  
 | 3.2 | 2026-09-26 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |  
 | 3.3 | 2026-09-28 | OP-005 Pursuit Strategy Ver.2.0（Acquisition Priority／Acquisition Status／Monthly Planningの定義を削除しBR-003へ一本化）に伴い、Purposeの管理項目へMonthly Acquisition Planを追加。Purchase List DefinitionのExclude欄にあった、Status表に定義のない`Rejected`を削除（不採用Equipmentは現行registryから除去する運用のため。BR-002 / BR-003 Synchronization Rule 6参照）。Product 22・Compatibility Policyの「Bek Container」を「Beck Container」へ、Product 26 Notesの「Puck Screenン」を「Puck Screen」へ訂正。MARI様のご指示に基づく。 |  
+| 3.4 | 2026-09-28 | BR-002 Ver.4.3 Heat Source Decisionに伴い、Coffee System熱源の調達情報を反映。Product 30「Snow Peak ギガパワーストーブ レクタ（GS-150）」を新設し、9Barista Mk.2 Pro専用熱源としてPurchase Requiredで登録（MD-003 KIT-086として管理、Final Acquisition Inventory #30）。Product 01（9Barista Mk.2 Pro）NotesへHeat Transfer Plate選択の根拠を追記。Product 15（ALM KOPi Z1 Mini Steamer）Notesの「別途シングルバーナーが必要」という記述を、既存所有のSnow Peak ヤエンストーブ レギ（MD-003 KIT-011）を流用する旨へ訂正し、BR-002との矛盾を解消。Purchase Groupingへ「Group I — 9Barista Heat Source」を新設し、Group F（Latte System）の旧「別途バーナー」記述も同様に訂正。Estimated Acquisition Budget（Core Espresso System: ¥409,000〜465,500 → ¥423,300〜480,800、Estimated Total: ¥628,270〜744,270 → ¥642,570〜759,570）、Monthly Acquisition Plan Month 1小計（¥135,000〜139,500 → ¥149,300〜154,800）、Plan Total（¥619,270〜721,270 → ¥633,570〜736,570）を整合。MARI様の直接指示（2026-09-28）に基づく。 |  
   
 ---  
 

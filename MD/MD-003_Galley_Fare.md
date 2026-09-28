@@ -1,5 +1,5 @@
 # MD-003 Galley Fare
-Version 2.15
+Version 2.16
 
 ---
 
@@ -391,7 +391,7 @@ None
 
 ### Industrial Attribute
 
-Cartridge Gas Burner（Integrated Low-Center-of-Gravity Design, 2900kcal/h）
+Cartridge Gas Burner（Integrated Low-Center-of-Gravity Design, 2900kcal/h。ALM KOPi Z1 Mini Steamer Coffee System専用熱源として使用。BR-002 Ver.4.3 Heat Source Decisionに基づく）
 
 ---
 
@@ -3006,6 +3006,42 @@ Wet Tissue Case（BALLISTICSウエットティッシュカバーと組み合わ�
 ¥5,390
 
 ---
+
+## KIT-086
+
+**Brand**
+
+Snow Peak
+
+**Product**
+
+ギガパワーストーブ レクタ（GS-150）
+
+**Status**
+
+Essential
+
+### Color
+
+Silver（製品画像に基づく外観確認。公式ページにカラー名の明記なし）
+
+### Material
+
+Stainless Steel／Aluminum Alloy／Brass／Rubber（Body）／Nylon（Storage Case）
+
+### Graphic Attribute
+
+None
+
+### Industrial Attribute
+
+Cartridge Gas Burner（2,500kcal/h、156×122×121mm〈収納時156×82×35mm〉、495g。9Barista Mk.2 Pro Coffee System専用熱源として選定。BR-002 Ver.4.3 Heat Source Decisionに基づく。Purchase Decided, Not Yet Owned）
+
+### Price
+
+¥14,300
+
+---
 # Single Source of Truth
 
 MD-003 Galley Fareは、キッチン機材（調理器具・刃物・調理小物）に関する唯一のMaster Databaseである。
@@ -3462,6 +3498,18 @@ MARI様の追加確認に基づき、Version 2.14時点で残っていたKIT-033
 - KIT-085（EWT CAP）：Colorを展開色4色中のBlack（BK）へ確定（MARI様確認）。
 - これにより、MD-003全Owned項目のBrand・Color・Materialが確定した（KIT-033のQuantity/Color更新に伴う枝番Candidate等への影響なし）。
 
+- Related Documents：変更なし。
+
+---
+
+## Version 2.16
+
+BR-002 Ver.4.3 Heat Source Decisionに基づき、9Barista Mk.2 ProおよびALM KOPi Z1 Mini SteamerのCoffee System熱源を確定。MARI様の直接指示（2026-09-28）に基づく。
+
+### Changes
+
+- KIT-086を新規登録。Snow Peak ギガパワーストーブ レクタ（GS-150）、9Barista Mk.2 Pro専用熱源、Status = Essential（Purchase Decided, Not Yet Owned）。Color・MaterialはSnow Peak公式ページ（ec.snowpeak.co.jp）確認に基づき記載。
+- KIT-011（ヤエンストーブ レギ）のIndustrial Attributeへ、ALM KOPi Z1 Mini Steamer Coffee System専用熱源としての用途を追記。
 - Related Documents：変更なし。
 
 ---
