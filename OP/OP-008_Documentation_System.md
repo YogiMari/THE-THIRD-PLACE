@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.14
+**Version**: 3.15
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -33,6 +33,7 @@
 | 3.12 | 2026-09-28 | §15 Document Dependenciesが「依存関係はProject Ledgerにて管理する」としていたが、DB-001に該当節が存在せず、Rule DOC-06（文書一覧はOP-008 §8が唯一の正本、Project LedgerはCurrent Focus等の運用情報のみを管理）とも整合しなかった点を是正し、「依存関係は各文書のReferences（Related Documents）にて個別に表現し、一元的な依存関係台帳は持たない」へ書き換えた。§18.1手順5「Project Ledgerへ登録すること」も同じ矛盾があったため「OP-008 §8 Document Seriesへ登録すること」へ改めた。§18.2「Project Ledgerを運用している場合は、更新内容を反映する」は、DB-001が個別文書の更新内容を記録する節を持たない実態と整合しないため削除した。MARI様のご決定に基づく（C-13）。Patch Version。 |
 | 3.13 | 2026-09-28 | KN発行方針の参照先不在（DB-001が参照する「ways-of-working KN issuance rules」がリポジトリに実在しない不整合）を是正するため、§28 KN Publication Policyを新設（Minor Version：章追加）。KN-001〜004の本文はGitHubに置かず、Artifactとしてのみ発行する方針と、その理由（発行物が今後何百と増えていく見込みであるため）を明文化した。DB-001の参照を本節へ統一。MARI様のご決定に基づく（C-14）。 |
 | 3.14 | 2026-09-28 | §8カタログのKN-003 Role列が「体験・価値観・人生との関係」の管理対象列挙に留まり、KN-003本文Purposeが定めるカルチャーマガジンとしての編集目的（キャンプという趣味に留まらず、建築・家具・照明・工業デザイン・自動車・写真・ライフスタイルなど分野横断でTHE THIRD PLACEの美意識を育てる）を欠いていた不整合を是正。KN-003本文Purposeを正として、Role列へ当該記述を追記した。Summary列は変更なし。OP-002 Editorial Series（KN-003）の同時改訂と連動。MARI様のご決定に基づく（C-17）。Patch Version。 |
+| 3.15 | 2026-09-28 | S-06（BR-003のルールとデータの分離）に伴い、BR-003 Procurement HandbookのLiving文書に置かれていた恒久ルール（Acquisition Status Policy・Purchasing Priority・Purchase List Definition・各種Purchase Policy等）をOP-005 Pursuit Strategy §Coffee Zone Acquisition Rulesへ移設する方針決定に合わせ、§8カタログのOP-005行RoleへCoffee Zone調達の恒久ルールを本書§Coffee Zone Acquisition Rulesが定義する旨を追記した（OP-008 §23 Change Managementに基づき、OP-005・BR-003本体の改訂に先行して反映）。責任範囲の管理主体（値の割り当てはBR-003、ルールの定義はOP-005）自体はOP-005 Ver.2.0の決定と矛盾しない。MARI様のご決定に基づく。 |
 
 ---
 
@@ -232,7 +233,7 @@ Authority 列は本 Version（3.0）で新設された分類である。BR-001�
 | OP-002 | Design Bible | `OP/OP-002_Design_Bible.md` | 管理対象<br>・空間思想<br>・デザイン原理<br>・空間全体の完成定義 | SSOT | Static | 空間づくりの設計思想 |
 | OP-003 | Affinity Lexicon | `OP/OP-003_Affinity_Lexicon.md` | 管理対象<br>Affinity Lexiconは、<br>Human Principlesから派生する<br>「好み」<br>を管理する文書である。<br>対象は、<br>ブランドではない。<br>美意識でもない。<br>人生を通して蓄積される<br>嗜好、<br>感性、<br>建築、<br>家具、<br>文化、<br>色、<br>素材、<br>音、<br>香り、<br>思想、<br>世界観<br>などを体系的に記録する。<br>Affinity Lexiconは、<br>Design Bibleを変更する権限を持たない。<br>Human Principlesを説明する補助資料として扱う。 | Standard | Static | 好み・美意識を表す語彙辞典 |
 | OP-004 | Aesthetic Grammar | `OP/OP-004_Aesthetic_Grammar.md` | 管理対象<br>・比率<br>・余白<br>・光と陰影<br>・素材と質感<br>・色<br>・構成と動線<br>・調和<br>Aesthetic Grammarは、<br>Affinity Lexiconが定義する語彙に、<br>「なぜ美しいのか」という法則を与える。 | Standard | Static | 「なぜそれが美しいのか」を説明する法則集 |
-| OP-005 | Pursuit Strategy | `OP/OP-005_Pursuit_Strategy.md` | 管理対象<br>・迎える判断基準（Decision Priority・Purchase Rules）<br>・月間予算（Coffee Zoneのみ）<br>・Coffee以外のゾーンの調達方針（買えるときに買う）<br>Coffee Zoneの購入優先度・購入状態・月次購入計画は、<br>BR-003 Procurement Handbookが管理する。<br>市場監視は、<br>CZ-002 Vigil Protocol／OP-009 Search Doctrineが管理する。<br>Equipmentの詳細情報は保持しない。 | Standard | Static | 何を・どんな基準で迎えるかの戦略。月間予算はCoffee Zoneのみ |
+| OP-005 | Pursuit Strategy | `OP/OP-005_Pursuit_Strategy.md` | 管理対象<br>・迎える判断基準（Decision Priority・Purchase Rules）<br>・月間予算（Coffee Zoneのみ）<br>・Coffee以外のゾーンの調達方針（買えるときに買う）<br>・Coffee Zone調達の恒久ルール（Acquisition Status定義／Purchasing Priority／Purchase List Definition／各種Purchase Policy等。詳細は本書§Coffee Zone Acquisition Rules）<br>Coffee Zoneの購入優先度・購入状態・月次購入計画の実際の値の割り当ては、<br>BR-003 Procurement Handbookが管理する。<br>市場監視は、<br>CZ-002 Vigil Protocol／OP-009 Search Doctrineが管理する。<br>Equipmentの詳細情報は保持しない。 | Standard | Static | 何を・どんな基準で迎えるかの戦略。月間予算はCoffee Zoneのみ |
 | OP-006 | Foundation Compass | `OP/OP-006_Foundation_Compass.md` | 管理対象<br>・Equipment Module<br>・Vehicle Loading<br>・Deployment Sequence<br>・Recovery Sequence<br>・Seasonal Configuration<br>・Maintenance Cycle<br>Containerごとの具体的な役割・固定収納物は、<br>MD-001 Storage Blueprintが管理する。<br>本書では重複して記載しない。 | Standard | Static | 積載・設営・撤収・季節ごとの運用のしかた |
 | OP-007 | Habitat Architecture | `OP/OP-007_Habitat_Architecture.md` | 管理対象<br>・居住空間<br>・サイト構成<br>・ゾーニング<br>・空間構成 | Standard | Static | 現地で完成する暮らしの空間そのものの設計思想 |
 | OP-008 | Documentation System | `OP/OP-008_Documentation_System.md` | See Appendix F | Standard | Static | 文書運用ルールそのものの基準書 |
