@@ -2,10 +2,13 @@ OP-009 Search Doctrine
 # OP-009 Search Doctrine
 ### THE THIRD PLACE Search Philosophy & Research Methodology
 
-**Document ID:** OP-009  
-**Version:** 2.5  
-**Status:** Active  
-**Category:** OP (Operation — Definition)
+**Document ID**: OP-009  
+**Title**: Search Doctrine  
+**Series**: OP – Operation (Definition)  
+**Version**: 2.6  
+**Authority**: Standard  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
 
 ---
 
@@ -19,6 +22,7 @@ OP-009 Search Doctrine
 | 2.3 | 2026-09-24 | Volatility Restructureにより、CZ-002 Vigil Protocolの実行プロトコル（Freshness Validation〜Patrol Initiation、Watch List Structure、Watch List Maintenance Rules、Operational Directives）を、新章§XVIII. Patrol Protocolへ逐語移設した。章追加のためMinor Version。 |
 | 2.4 | 2026-09-26 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
 | 2.5 | 2026-09-28 | §XVI Relationship with Other Documentsが、Ver.2.3で実行プロトコルを§XVIIIへ移設済みであるにもかかわらず「CZ-002は調査がどう実行されるかを定義する」という逆の記述のまま残存していた点を是正。「OP-009＝方法論と実行手順（§XVIII Patrol Protocol）、CZ-002＝Watch List（監視対象・調査キーワード）」へ統一し、関係図をCZ-002→OP-009（監視対象を提供）の順へ描き直した。OP-008 §8／Appendix F、CZ-002 I. Purposeの同時改訂と連動。MARI様のご決定に基づく（C-05）。 |
+| 2.6 | 2026-09-28 | S-11（文書ヘッダーの統一）に伴い、Title／Series／Authority／Ownerのヘッダー項目を追加し、Category欄をSeriesへ統合した。内容に変更はない。Patch Version。MARI様のご決定に基づく。 |
 
 ---
 
