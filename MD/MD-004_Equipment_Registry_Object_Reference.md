@@ -1,6 +1,6 @@
 # MD-004 Equipment Registry Object Reference  
   
-Version 7.64  
+Version 7.65  
   
 ---  
   
@@ -4828,7 +4828,7 @@ Canvas
 
 ### Industrial Attribute  
 
-Consumables Storage  
+Consumables & Sundries Storage（詳細はMD-001 Storage Blueprint Consumables & Sundries Module参照）  
 
 ### Price  
 
@@ -8013,6 +8013,17 @@ MARI様のご決定に基づき、Winter Sleeping Mat（FUR-034）とPad Sheet�
 - FUR-034：StatusをCandidateからEssentialへ更新。Brand: BlackishGear、Product: BLACK ZONE MAT。CZ-001 Deliberation DossierでTherm-a-Rest Zライトソル・NEMOスイッチバックとの比較検討の結果、採用決定。
 - FUR-035：StatusをCandidateからEssentialへ更新。Brand: HOTEL CAMPS、Product: リバーシブル ホットカバー（コットカバー）。公式サイト（hotelcamps.jp）にて価格・素材・サイズを一次情報確認済み。CZ-001 Deliberation Dossierでの比較検討の結果、採用決定。
 - Related Documents：CZ-001 Deliberation Dossier（Under ConsiderationからConfirmed — Purchase Pendingへの移動と連動）。
+
+---
+
+## Version 7.65
+
+MARI様のご決定に基づき、STR-032（WHATNOT One Touch Bucket HD、通年運用の消耗品入れ）の役割を明確化した。詳細な中身（消耗品・小物の内訳、補充ライン方式・定数チェック方式）はMD-001 Storage Blueprintへ新設したConsumables & Sundries Moduleで管理し、本書には役割の要約のみを記載する（OP-010 Qualification Charter Part A Attribute Policyに基づき、個別の消耗品・小物はMD-004へ登録しない）。
+
+### Changes
+
+- STR-032：Industrial Attributeを「Consumables Storage」から「Consumables & Sundries Storage（詳細はMD-001 Storage Blueprint Consumables & Sundries Module参照）」へ更新。Brand・Product・Status・Color・Materialに変更はない。
+- Related Documents：MD-001 Storage Blueprint（Ver.2.12、Consumables & Sundries Module新設と連動）。
 
 ---
 
