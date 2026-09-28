@@ -1,5 +1,5 @@
 # MD-001 Storage Blueprint
-## Ver.2.11
+## Ver.2.12
 
 Status : Active
 
@@ -358,6 +358,71 @@ STR-030（KAZE_TO_MORI × WINDY AND RAINY Folding Wire T-box 全面コンプリ�
 ## Rule
 
 2つの什器は、いずれも黒いスチールフレーム＋黒系ファブリックという共通のデザイン言語を持つため、並べて設置した際の視覚的統一感（Aesthetic Grammar Consistency原則）を保つ。
+
+---
+
+# Consumables & Sundries Module
+
+STR-032（WHATNOT One Touch Bucket HD）を、通年の消耗品と小物の常備用として運用する。MD-004上のStatus・Industrial AttributeはSTR-032の登録情報を参照する（本節では書き写さない）。
+
+## Purpose
+
+通年運用の常備収納である。
+
+## Rule
+
+火まわり・洗い衛生・メンテナンス・香り・電池といった複数カテゴリの消耗品と、汎用小物を1つのバケットへ集約する構成である。ShellCon25②（Light & Aroma Module）が複数Domainを1つのModuleとして統合運用する前例と同様に、本バケットも「消耗品と小物の常備」という単一の役割を持つ1つのModuleとして機能するため、Storage Rulesの「モジュールの混在は認めない」原則には抵触しない。
+
+個別の消耗品・小物はMD-004へは登録しない。バケット本体のみがSTR-032としてMD-004へ登録される。
+
+## Consumables（補充ライン方式：残量1/3前後、または予備が1になったら買い物リストへ）
+
+### 火まわり
+
+- OD缶 ×3
+- プレヒート用アルコール
+- パラフィンオイル
+- 着火剤
+- ガスライター充填用ガス
+
+### 洗い・衛生
+
+- 洗剤・スポンジ・ダッチオーブン用タワシのセット
+- ハンドソープ
+- ウエス ×4枚
+
+### メンテナンス
+
+- 木製品メンテナンスオイル
+- 木製品メンテナンスワックス
+- 鉄製品メンテナンスオイル
+
+### 香り
+
+- パロサント ×3種類
+- 空間リフレッシュナー
+- 衣服用リフレッシュナー
+
+### 電池
+
+- 単2
+- 単3
+- 単4
+
+## Sundries（定数チェック方式：数が揃っているかを確認）
+
+- ハンガー ×2
+- カラビナ ×20個
+- 予備ロープ ×10m
+- 予備の自在金具
+- 洗濯バサミ ×2
+- レスキューポーチ（絆創膏・薬類）
+
+## Confirmation Method
+
+消耗品は補充ライン方式で確認する：残量が1/3前後になった、または予備の残数が1になった時点で買い物リストへ追加する。
+
+小物は定数チェック方式で確認する：使用後の点検時に、上記個数が揃っているかを確認する。
 
 ---
 
@@ -726,7 +791,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.11
+Ver.2.12
 
 ---
 
@@ -868,6 +933,7 @@ Permanent Storage
 | 2.9 | 2026-09-28 | MARI様のご指摘に基づき、MD-004（SSOT）・CZ-001との矛盾を是正。LGT-043はMD-004上でVacant（未確定）であり、wildingout LF1984はCZ-001でStatus: Candidate（LGT-043への充当を検討中）に留まる未所有装備であるにもかかわらず、本文書ではLight Sequence冒頭・Home Operation「取り外すもののみ」・Maintenanceの3箇所で、既に所有・実運用中の固定装備であるかのように記載されていた。該当3箇所からLF1984関連の記載を削除し、MD-004・CZ-001とのSSOT整合を回復した。 |
 | 2.10 | 2026-09-28 | Beck②にCoffee Module Layout（暫定）を追記。Layer 1旧リストは未同期 |
 | 2.11 | 2026-09-28 | Layer 1 Coffee ModuleとCoffee Sequenceを、旧リスト（7品目）から現行の13点（暫定・試し詰め前）へ置換。Validation SummaryのCoffee ModuleをVerifiedからProvisionalへ修正。Layout節の「旧リスト未同期」注記を削除。Layer 2（Wood Board ×4 Sets）とLayer 3（Vapalux M320）は、本案との矛盾を未解決のまま残している |
+| 2.12 | 2026-09-28 | MARI様のご決定に基づき、Consumables & Sundries Module（STR-032 WHATNOT One Touch Bucket HD、通年の消耗品と小物の常備用）を新設。中身（消耗品：火まわり・洗い衛生・メンテナンス・香り・電池／小物：ハンガー・カラビナ等）、分類（補充ライン方式・定数チェック方式）、確認方法を記載。役割の要約はMD-004 STR-032のIndustrial Attributeへ記載し、詳細は本書のみで管理する（重複管理を回避）。Storage Rulesの「モジュールの混在は認めない」原則との整合は、ShellCon25②（Light & Aroma Module）の複数Domain統合運用の前例に基づき、本バケットを単一役割の1 Moduleとして位置付けることで確保した。 |
 
 ---
 
