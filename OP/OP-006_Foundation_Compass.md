@@ -1,7 +1,26 @@
 OP-006 Foundation Compass
 # OP-006
 # Foundation Compass
-## Ver.1.5
+## Ver.1.6
+
+**Document ID**: OP-006  
+**Title**: Foundation Compass  
+**Series**: OP – Operation (Definition)  
+**Version**: 1.6  
+**Authority**: Standard  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|---|---|---|
+| 1.3 | 2026-09-26 | 本文内のOP-005表記が旧題『Acquisition Strategy』のままだった箇所をPursuit Strategyへ修正。 |
+| 1.4 | 2026-09-28 | MARI様のご決定に基づき、Seasonal Configuration節へ「Configuration Structure」（Base／Season Kit／Weather Overlayの3層定義）、「Seasonal Slot」（車内の季節入れ替え定位置の位置づけ。具体的な配置・中身はMD-001が管理し本書では重複記載しない）、「Tagging Policy」（個別Equipmentへの季節・天候タグは付与せず、運用単位はModule／Season Kitとする）、「Weather Overlay Scope」（雨のKitとしての管理は行わない）を新設。いずれも恒久ルールの定義のみであり、具体的な中身（どのギアがどのKitか）はMD-001 Storage Blueprintへ記載する（Static文書にLivingデータを置かない原則に基づく）。Minor Version。 |
+| 1.5 | 2026-09-28 | 「Relationship」節の後へ「Priority Principle」節を新設（Minor Version：章追加）。OP-002 Design Bible §Database Rulesにあった「Priorityは価格ではなく人気でもなく、Design Bibleとの一致度で決定する」という思想文を移設した。MD-004 Equipment Registry Object ReferenceにはPriority欄自体が存在しない（OP-010 Qualification Charter Part A Attribute Policy参照）ことを確認した上での移設であり、Coffee Zoneの具体的な購入優先度はBR-003 Procurement Handbookが別途管理する旨を明記した。MARI様のご決定に基づく（C-02）。 |
+| 1.6 | 2026-09-28 | S-11（文書ヘッダーの統一）に伴い、Document ID／Title／Series／Authority／Status／Ownerのヘッダー項目を追加し、Revision Historyの位置を文書末尾から冒頭へ移動した。内容に変更はない。Patch Version。MARI様のご決定に基づく。 |
 
 ---
 
@@ -498,16 +517,6 @@ Foundation Compass は、
 > **A lasting habitat begins with a disciplined foundation.**
 
 **「永く愛せる居場所は、整えられた基盤から始まる。」**
-
----
-
-## Revision History
-
-| Version | Date | Description |
-|---|---|---|
-| 1.3 | 2026-09-26 | 本文内のOP-005表記が旧題『Acquisition Strategy』のままだった箇所をPursuit Strategyへ修正。 |
-| 1.4 | 2026-09-28 | MARI様のご決定に基づき、Seasonal Configuration節へ「Configuration Structure」（Base／Season Kit／Weather Overlayの3層定義）、「Seasonal Slot」（車内の季節入れ替え定位置の位置づけ。具体的な配置・中身はMD-001が管理し本書では重複記載しない）、「Tagging Policy」（個別Equipmentへの季節・天候タグは付与せず、運用単位はModule／Season Kitとする）、「Weather Overlay Scope」（雨のKitとしての管理は行わない）を新設。いずれも恒久ルールの定義のみであり、具体的な中身（どのギアがどのKitか）はMD-001 Storage Blueprintへ記載する（Static文書にLivingデータを置かない原則に基づく）。Minor Version。 |
-| 1.5 | 2026-09-28 | 「Relationship」節の後へ「Priority Principle」節を新設（Minor Version：章追加）。OP-002 Design Bible §Database Rulesにあった「Priorityは価格ではなく人気でもなく、Design Bibleとの一致度で決定する」という思想文を移設した。MD-004 Equipment Registry Object ReferenceにはPriority欄自体が存在しない（OP-010 Qualification Charter Part A Attribute Policy参照）ことを確認した上での移設であり、Coffee Zoneの具体的な購入優先度はBR-003 Procurement Handbookが別途管理する旨を明記した。MARI様のご決定に基づく（C-02）。 |
 
 ---
 
