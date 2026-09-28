@@ -1,7 +1,15 @@
 OP-007 Habitat Architecture
 # OP-007
 # Habitat Architecture
-## Ver.1.2
+## Ver.1.3
+
+**Document ID**: OP-007  
+**Title**: Habitat Architecture  
+**Series**: OP – Operation (Definition)  
+**Version**: 1.3  
+**Authority**: Standard  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
 
 ---
 
@@ -418,3 +426,9 @@ Habitat Architecture は、
 ## Documentation Catalog Duplication Resolution Note
 
 本文書は、2026-09-28付でVer.1.1からVer.1.2へ更新した（Patch Version：重複節の削除・参照化）。OP-008 Rule DOC-06・Principle 003に基づき、§Relationship to Other Core Documentsの文書一覧表（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。表以外の固有の関係説明は変更していない。MARI様のご決定に基づく（S-08）。
+
+---
+
+## Header Standardization Note
+
+S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。

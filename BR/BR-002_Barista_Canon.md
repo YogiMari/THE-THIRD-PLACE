@@ -10,11 +10,15 @@ Barista Canon
     
 # Version    
     
-4.6    
+4.8    
     
 # Status    
     
 Active    
+    
+# Authority    
+    
+SSOT    
     
 ---    
     
@@ -1433,9 +1437,15 @@ LAGOM MiniからBlind Shakerへの直接受けが物理的に成立する場合�
   
 ## Storage & Organization  
   
+**Status**  
+  
+In Progress（2026-09-28、Deferredから検討中へ移行）  
+  
 **Reason**  
   
 Coffee Station全体のレイアウト確定後に検討する。  
+  
+Coffee Equipment 13点のBeck②への収納設計は、MD-001 Storage Blueprint §Coffee Module Layout（暫定）で進行中である。Coffee Serviceware（グラス・ラテカップ）と専用水ボトルの定位置は、同節の未決事項として扱う。  
   
 ただし、BR-002で正式採用したKNODOS Tamping Mat with Tool Organiser - Walnut 54mmは、Coffee Tool Workflowを成立させるためのEquipmentとしてConfirmedとする。  
   
@@ -1443,9 +1453,15 @@ Coffee Station全体のレイアウト確定後に検討する。
   
 ## Travel Carry System  
   
+**Status**  
+  
+In Progress（2026-09-28、Deferredから検討中へ移行）  
+  
 **Reason**  
   
 Coffee Equipment一式が完成した後に検討する。  
+  
+運搬はBeck②への固定収納（MD-001 Storage Blueprint §Coffee Module Layout）を基本として検討が進んでいる。専用の運搬ケースを追加するかは、試し詰めの結果を受けて判断する。  
   
 ---  
   
@@ -1454,6 +1470,8 @@ Coffee Equipment一式が完成した後に検討する。
 **Reason**  
   
 Equipment構成が完全確定した後に設計する。  
+  
+現状は、Beck②から展開するBridge Table（MD-001 Storage Blueprint §Deployment Sequence）をCoffee Stationの天板として運用する想定であり、専用家具の追加は予定しない。  
   
 ---  
   
@@ -1721,6 +1739,8 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 4.4 | 2026-09-28 | Heat Source Decision節に、Category / Brand / Model / Statusの正式なConfirmed Equipmentテーブル（Heat Source \| Snow Peak \| ギガパワーストーブ レクタ（GS-150） \| Confirmed）を追加。Ver.4.3で地の文のみに留まっていたGS-150採用決定を、他のConfirmed Equipmentと同じ正式テーブル形式へ落とし込み、BR-003 Product 30（Purchase Required）との同期漏れ（scripts/third_place_sync_validator.py検出）を解消した。意思決定事項そのもの（Ver.4.3の内容）に変更はない。 |  
 | 4.5 | 2026-09-28 | Relationship節の図に「（Confirmed後、実際に購入・Owned Statusとなった時点で登録）」という注記をMD-004の行へ追加し、流れがBR-002 → MD-004 → BR-003ではなくBR-002 → BR-003 → MD-004（購入後）であることを図で明示。BR-003・BR-001も同一趣旨で同期。意思決定事項そのものに変更はない。 |  
 | 4.6 | 2026-09-28 | S-07（重複削減）に基づき、文書内の重複節を正本への参照へ置換。Water Management節をWater Bottle Configuration節への参照へ置換。Milk Steamer > Workflowの手順詳細をWorkflow Configuration > Latteへの参照へ置換（熱源詳細はHeat Source Decision参照のまま維持）。Station Configuration節をKNODOS Tool Station節・各Toolの Storage記述への参照へ置換。Minimal Workflow節をWorkflow Philosophy節への参照へ置換。Tabletop Protection節内のThe Bloc/KNODOS役割分担の重複記述をWorkflow Philosophy節への参照へ簡略化。意思決定事項・Confirmed Equipment・Decision・Reasonの内容そのものに変更はない。MARI様の承認（2026-09-28）に基づく。 |  
+| 4.7 | 2026-09-28 | 整備バックログ（N-06）対応。Deferredのうち、MD-001 Coffee Module Layoutで実際に検討が進んでいるStorage & OrganizationとTravel Carry SystemをIn Progressへ移行し、MD-001の該当節を参照先として明記。Coffee Station FurnitureへBridge Tableを天板とする現状の想定を追記。Confirmed Equipmentの決定内容に変更はない。Claude推奨案をMARI様の包括指示に基づき採用。 |
+| 4.8 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
   
 ---  
 

@@ -1,4 +1,15 @@
 # KN-003 Beyond Journey  
+
+**Document ID**: KN-003  
+**Title**: Beyond Journey  
+**Series**: KN – Knowledge (Record)  
+**Version**: 1.1  
+**Authority**: Archive  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
+
+---
+
 **KN-003 Beyond Journey**  
   
 **Purpose**  
@@ -759,3 +770,12 @@ Project全体の記憶を管理する。
 ## Document Renumbering Note
 
 本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TM-003からKN-003へ番号を変更した。自己ID・タイトル表記を新ID体系へ更新した。その他の内容に変更はない。旧ID: TM-003。
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|---|---|---|
+| 1.0 | — | 初版（版数・日付は記録されていない）。 |
+| 1.1 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。あわせて、本書に欠けていた版数とRevision Historyを新設した。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |

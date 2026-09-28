@@ -1,6 +1,14 @@
 KN-004 Atelier Discovery
 # KN-004 Atelier Discovery
 
+**Document ID**: KN-004  
+**Title**: Atelier Discovery  
+**Series**: KN – Knowledge (Record)  
+**Version**: 1.1  
+**Authority**: Reference  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
+
 ## Purpose
 
 Atelier Discovery は、
@@ -439,6 +447,16 @@ Projectへ届けるために存在する。
 ## Editorial Rules Reflection List Update Note
 
 本文書は、2026-09-28付で、OP-005 Pursuit Strategy Ver.2.0（購入優先度・購入状態・月次購入計画・市場監視をOP-005が管理しなくなった実態）に伴い、§Editorial Rulesの反映先リストからOP-005 Pursuit Strategyを削除し、CZ-001 Deliberation DossierおよびCZ-002 Vigil Protocolを追加した。あわせて、Coffee Zoneに関する情報はBR-002 Barista Canon／BR-003 Procurement Handbookへ反映される旨を明記した。MARI様のご決定に基づく（C-04）。
+
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|---|---|---|
+| 1.0 | — | 初版（版数・日付は記録されていない）。 |
+| 1.1 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。あわせて、本書に欠けていた版数とRevision Historyを新設した。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 
 ---
 

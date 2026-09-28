@@ -1,6 +1,14 @@
 KN-001 Heritage Chronicle
 # KN-001 Heritage Chronicle
 
+**Document ID**: KN-001  
+**Title**: Heritage Chronicle  
+**Series**: KN – Knowledge (Record)  
+**Version**: 1.1  
+**Authority**: Archive  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
+
 ## Purpose
 
 Heritage Chronicle は、
@@ -253,3 +261,12 @@ THE THIRD PLACEの時間を継承する、
 ## Document Renumbering Note
 
 本文書は、2026-09-19付のプロジェクト全体の文書番号再編により、TM-001からKN-001へ番号を変更した。Scope及びDocumentation History内の旧シリーズ名（TP・TM）の記述を新系列名へ更新した。その他の内容に変更はない。旧ID: TM-001。
+
+---
+
+# Revision History
+
+| Version | Date | Description |
+|---|---|---|
+| 1.0 | — | 初版（版数・日付は記録されていない）。 |
+| 1.1 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。あわせて、本書に欠けていた版数とRevision Historyを新設した。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |

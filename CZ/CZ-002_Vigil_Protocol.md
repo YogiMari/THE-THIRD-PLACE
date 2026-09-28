@@ -5,7 +5,8 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 3.6  
+**Version**: 3.7  
+**Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE
 
@@ -23,6 +24,7 @@
 | 3.4 | 2026-09-28 | Ver.3.0で実行プロトコル（Freshness Validation〜Operational Directives）をOP-009 §XVIII Patrol Protocolへ移設済みであるにもかかわらず、I. Purpose（Mission／Origin／Relationship with Other Documents）が「本書は調達監視の実行運用を定義する」「CZ-002は調査がどう実行されるかを担う」など、実行主体がCZ-002であるかのような記述のまま残存していた点を是正。Missionを「Watch List（監視対象・調査キーワード）を管理する」旨へ、Originを「OP-009＝方法論と実行手順、CZ-002＝Watch List」へ、Relationship図をCZ-002→OP-009（監視対象を提供）の順へ描き直した。OP-008 §8／Appendix F、OP-009 §XVIの同時改訂と連動。MARI様のご決定に基づく（C-05）。 |
 | 3.5 | 2026-09-28 | MD-004の現状に合わせてWatch Listを整理（C-08、MARI様のご決定に基づく）。旧エントリ020 MT.SUMI Aura FGを削除（CZ-001 Decision Log 2026-09-26により不採用確定、MD-004に登録なし）。これに伴い旧021〜024（BABEL／FUR-032／T-box／BLISS-SP）を020〜023へ繰り上げ。エントリ023（FIREGRAPHIX BLISS-SP）のMD-004 Reference・Notesを、「購入時に登録予定・エントリ020と競合」から「MD-004上でStatus: Essential登録済み、2026-09-26付でMT.SUMI Aura FGとの比較検討の末に正式採用」へ訂正。MD-004でStatus = Essentialながら未掲載だった9件を新規追加：024 FUR-034（BlackishGear BLACK ZONE MAT）、025 FUR-035（HOTEL CAMPS リバーシブルホットカバー）、026 FUR-036（Snow Peak BD-066 オフトン ウォームアダプター）、027〜032 FIR-037〜042（FIREGRAPHIX BLISS-SPの付属品6点、Parent: FIR-036、個別エントリとして管理）。Current Watch List冒頭の説明文を「エントリ008〜023」から「エントリ008〜032」へ、Unconfirmed除外枠の例示を「FUR-034 Sleeping Mat、FUR-035 Pad Sheet」（2026-09-28にEssential確定済みのため該当しなくなった）から「STR-034 Container Bridge Frame保護ケース」へ更新。 |
 | 3.6 | 2026-09-28 | S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い、Revision History のうち Version 2.0〜2.16を archive/CZ-002_Version_History_Archive.md へ移設した。移設した履歴は原文のまま保持し、要約・削除は行っていない。本文側のWatch Listデータそのものに変更はない。MARI様のご決定に基づく。 |
+| 3.7 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 
 ---
 

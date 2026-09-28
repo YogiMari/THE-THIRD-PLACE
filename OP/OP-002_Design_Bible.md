@@ -1,6 +1,14 @@
-OP-002 Design Bible Ver.5.9
+OP-002 Design Bible Ver.5.11
 # THE THIRD PLACE Design Bible
-## Ver.5.9 Official Complete Edition
+## Ver.5.11 Official Complete Edition
+
+**Document ID**: OP-002  
+**Title**: Design Bible  
+**Series**: OP – Operation (Definition)  
+**Version**: 5.11  
+**Authority**: SSOT  
+**Status**: Active  
+**Owner**: THE THIRD PLACE Project
 
 ---
 
@@ -200,7 +208,16 @@ THE THIRD PLACEにおいて
 
 ### Zone Evaluation Philosophy（CZ-001 Deliberation Dossierから移設）
 
-未策定。
+Furniture Domainの機材は、以下4軸で評価する。
+
+1. **Furniture Quality（家具品質）** — キャンプ用品ではなく、家具として成立する造形と仕上げ
+2. **Craft & Material（木工と素材）** — 木工技術・素材の質、経年変化を楽しめるか
+3. **Comfort（居心地）** — 人が長く過ごしたくなるか（座り心地・高さ・温もり）
+4. **Transport（積載のしやすさ）** — 車両への積載・収納の一体性
+
+以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）：Popularity／SNS／Review Count／Rarity／Collector Value／Price。
+
+本評価軸は暫定である（2026-09-28、本ドメイン節の本文から導いたClaude推奨案を、MARI様の包括指示に基づき暫定採用。CZ-001での比較検討を通じて確定する）。
 
 ---
 
@@ -231,7 +248,16 @@ Lightingは、
 
 ### Zone Evaluation Philosophy（CZ-001 Deliberation Dossierから移設）
 
-未策定。
+Light Domainの機材は、以下4軸で評価する。
+
+1. **Light Quality（光の質）** — 光量ではなく、光の質感・色の温かさ
+2. **Shadow（陰影）** — 陰影を生み、複数の光源の重なりに寄与するか
+3. **Form（意匠美）** — 灯していない昼の佇まいを含む、器具そのものの造形
+4. **Transport（積載のしやすさ）** — 車両への積載・収納の一体性
+
+以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）：Popularity／SNS／Review Count／Rarity／Collector Value／Price。
+
+本評価軸は暫定である（2026-09-28、本ドメイン節の本文から導いたClaude推奨案を、MARI様の包括指示に基づき暫定採用。CZ-001での比較検討を通じて確定する）。
 
 ---
 
@@ -260,7 +286,16 @@ Aromaは、
 
 ### Zone Evaluation Philosophy（CZ-001 Deliberation Dossierから移設）
 
-未策定。
+Aroma Domainの機材は、以下4軸で評価する。
+
+1. **Scent Quality（香りの質）** — 空間へ余白を与え、火やコーヒーの時間を妨げないか
+2. **Ritual（所作）** — 焚く・灯すという行為が、静かな時間をつくるか
+3. **Form（意匠美）** — 器具そのものの造形的な美しさ
+4. **Ease of Clean-up（撤収容易性）** — 灰・残り香の処理にかかる手間
+
+以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）：Popularity／SNS／Review Count／Rarity／Collector Value／Price。
+
+本評価軸は暫定である（2026-09-28、本ドメイン節の本文から導いたClaude推奨案を、MARI様の包括指示に基づき暫定採用。CZ-001での比較検討を通じて確定する）。
 
 ---
 
@@ -299,7 +334,18 @@ Storage Domainに所属する。
 
 ### Zone Evaluation Philosophy（CZ-001 Deliberation Dossierから移設）
 
-未策定（現時点でCandidate項目なし）。
+Storage Domainの機材は、以下4軸で評価する。
+
+1. **Furniture Presence（家具としての佇まい）** — 隠すための箱ではなく、見せる建築・家具として成立するか
+2. **Access（取り出しやすさ）** — 動線・視線を妨げず、必要な物を少ない動作で取り出せるか
+3. **Transport（積載性）** — 車両への積載と、他のModuleとの寸法の整合
+4. **Setup & Recovery Efficiency（設営・撤収効率）** — 設営・撤収の手間と判断回数を減らすか
+
+前提として、収納の数を増やさない（§Domain Completion Storage）。
+
+以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）：Popularity／SNS／Review Count／Rarity／Collector Value／Price。
+
+本評価軸は暫定である（2026-09-28、本ドメイン節の本文から導いたClaude推奨案を、MARI様の包括指示に基づき暫定採用。CZ-001での比較検討を通じて確定する）。
 
 ---
 
@@ -485,7 +531,16 @@ Shelter Domainは、
 
 ### Zone Evaluation Philosophy（CZ-001 Deliberation Dossierから移設）
 
-未策定（現時点でCandidate項目なし）。
+Shelter Domainの機材は、以下4軸で評価する。
+
+1. **Enclosure（境界の質）** — 自然から一つの領域を分かちつつ、景色と風を遮りすぎないか
+2. **Weather Resilience（天候への強さ）** — 雨・風・寒さの中でも居場所を成立させるか
+3. **Form（意匠美）** — 幕体・フレームの造形と、他ドメインとの調和
+4. **Setup & Transport（設営と積載）** — 設営・撤収・乾燥の手間と、車両への積載の一体性
+
+以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）：Popularity／SNS／Review Count／Rarity／Collector Value／Price。
+
+本評価軸は暫定である（2026-09-28、本ドメイン節の本文から導いたClaude推奨案を、MARI様の包括指示に基づき暫定採用。CZ-001での比較検討を通じて確定する）。
 
 
 # Design Language（設計言語）
@@ -1820,7 +1875,7 @@ THE THIRD PLACEは、
 
 **THE THIRD PLACE Design Bible**
 
-**Ver.5.9 Official Complete Edition**
+**Ver.5.11 Official Complete Edition**
 
 **End of Document**
 
@@ -1883,3 +1938,15 @@ THE THIRD PLACEは、
 ## Documentation Catalog Duplication Resolution Note
 
 本文書は、2026-09-28付でVer.5.8からVer.5.9へ更新した（Patch Version：重複節の削除・参照化）。OP-008 Rule DOC-06（文書カタログはOP-008 §8が唯一の正本）およびPrinciple 003（Single Source of Truth）に基づき、§Documentation Architectureおよび§Editorial Seriesが個別に保持していた文書一覧（各文書の役割説明の重複。OP-008 §8とのズレを含む）を、それぞれ「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。MARI様のご決定に基づく（S-08）。
+
+---
+
+## Zone Evaluation Philosophy Provisional Note
+
+本文書は、2026-09-28付でVer.5.9からVer.5.10へ更新した（Minor Version：構成追加）。§Design Domainsのうち「未策定」だったFurniture・Light・Aroma・Storage・ShelterのZone Evaluation Philosophyへ、各ドメイン節の本文（Furniture：家具品質・木工・温もり、Light：光の質感と陰影、Aroma：余白と時間、Storage：見せる建築・動線・積載・設営撤収効率、Shelter：空間の境界と屋根）から導いた4軸を、Fire Domainと同じ形式で追加した。いずれもClaude推奨案をMARI様の包括指示（2026-09-28）に基づき暫定採用したものであり、CZ-001 Deliberation Dossierでの比較検討を通じて確定する（N-09）。
+
+---
+
+## Header Standardization Note
+
+本文書は、2026-09-28付でVer.5.10からVer.5.11へ更新した。S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。

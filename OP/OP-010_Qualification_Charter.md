@@ -3,7 +3,7 @@
 **Document ID**: OP-010  
 **Title**: Qualification Charter  
 **Series**: OP – Operation (Definition)  
-**Version**: 2.1  
+**Version**: 2.2  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -19,6 +19,7 @@
 | 1.2 | 2026-09-28 | Part Aへ§Naming Rule（Official Name／Brand／Product Name）を新設し、OP-002 Design Bible §Database Rulesから逐語移設した（Minor Version：章追加）。OP-002 §Database RulesがOP-010 Part A（登録規則・評価基準の正本）と重複していたため（OP-008 Principle 003 Single Source of Truth）、OP-002側は本書への参照1行へ置き換えた。MARI様のご決定に基づく（C-02）。 |
 | 2.0 | 2026-09-28 | Part B Category Grouping Policyと実データ（MD-003 KIT-063／KIT-071〜086）の食い違いを是正。S-01（ID Freeze）方針を採用し、KIT-番号の用途別グルーピング・全面再採番義務を廃止（Equipment ID §に注記追加）。Category Grouping Policyのグループ一覧は登録規則からHistorical Referenceへ位置づけを変更し、番号範囲をKIT-071〜086の実データに一致させた（鍋・グリドル系にKIT-071〜074/076、バーナー・ストーブ系にKIT-075/077〜080/084/086、カトラリー系にKIT-083、シェラカップ系にKIT-081〜082を追加、鍋敷きをKIT-063aへ訂正、いずれにも属さない単品グループを新設しKIT-085を収容）。既存の登録規則を変更する仕様変更のためMajor Version。MARI様のご決定に基づく（C-15）。 |
 | 2.1 | 2026-09-28 | MD-004の登録規則違反の整理（C-16）に伴い、Part Aへ「共通部品の子ID形式」（LGT-04_1a等、量産共通部品向けの子ID表記を正式追認）と「Reserved Slot（予約枠）」（Vacant枠とStatus非保持の扱いを正式化）を新設した（Minor Version：章追加）。既存の登録済みID（AIR LIGHT群、LGT-043）は、Version 2.0で採用されたS-01（ID Freeze）方針に基づき変更しない。MARI様のご決定に基づく。 |
+| 2.2 | 2026-09-28 | 整備バックログ（N-08・N-10・N-11・N-13）対応。Part Aへ§Retirement（退役：Merged／Transferred／Sold／Given／Discarded、IDは再利用しない、MD-003にも適用）と§Coffee Domain Scope（COF-seriesの対象と登録範囲）を新設。Part B §Domain Scope NoteへCoffee System機材の除外を追記し、§Candidate Recording PolicyへMD-004との方式の違い（意図された併存）を明記。Part Cへ§Site Requirements（区画面積・アーリーチェックイン・温水）を新設し、移行注記を「Partner Valueを正式スコアとし、Database掲載順をPartner Value降順とする」へ改めた。いずれもClaude推奨案をMARI様の包括指示に基づき暫定採用。Minor Version（章追加）。 |
 
 ---
 
@@ -96,6 +97,26 @@ IDは変更されない。
 「Wanted」は廃止され、その意味は「Essential」へ統合された。  
   
 ---  
+
+### Retirement（退役）（Version 2.2以降）
+
+所有をやめた、または他の枠・台帳へ移ったEquipmentは、IDとレコードを削除せず「Retired」として保持する。Retiredは上記Status語彙とは別の、レコードの終了状態を表す。IDは再利用しない（OP-008 §17）（2026-09-28、Claude推奨案をMARI様の包括指示に基づき暫定採用）。
+
+| Retired Reason | 意味 |
+|---|---|
+| Merged | 他の枠へ統合した（例：FUR-033→FUR-032） |
+| Transferred | 他のMaster Documentへ移管した（例：MD-003 KIT-070a→MD-004 STR-029） |
+| Sold | 売却した |
+| Given | 譲渡した |
+| Discarded | 廃棄した |
+
+記録形式：「Retired（Reason）. YYYY-MM-DD. 経緯・行き先」をレコード本文の冒頭に記載し、Brand・Product等の旧登録情報は残す。
+
+Upgradeにより置き換えが完了した場合、旧品はSold／Given／DiscardedのいずれかでRetiredとするか、予備として保持する場合はOwnedのままIndustrial Attributeに「予備（置き換え済み）」と付記する。
+
+本規則はMD-003 Galley Fare（Part B）にも適用する。
+
+---  
   
 ### Reserved Slot（予約枠）（Version 2.1以降）  
   
@@ -107,6 +128,14 @@ Vacant枠は、具体的な検討対象がCZ-001 Deliberation Dossier等で特�
   
 ---  
   
+### Coffee Domain Scope（Coffee Domainの範囲）（Version 2.2以降）
+
+Coffee Domain（COF-series）は、BR-002 Barista Canonが意思決定を管轄するCoffee System（エスプレッソ抽出とミルクスチーム、そのためのServiceware〈グラス・カップ・運搬ケース〉と専用水ボトル）を対象とする。ハンドドリップ等、キッチンでの調理行為としてのコーヒー器具は、Part B §Domain Scope Noteに従いMD-003で管理する（2026-09-28、Claude推奨案をMARI様の包括指示に基づき暫定採用）。
+
+COF-seriesへ登録するのは、BR-003 Procurement HandbookでAcquisition Status = Purchase Requiredとなっている品目のうち、購入してOwnedになったものとする。Included（他の機材の付属品）、Coffee Beans、9Barista Official Spare Parts（Preventive Stock）は登録しない。
+
+---
+
 ### Attribute Policy（属性ポリシー）  
   
 Appearance（外観）は保存**しない**。  
@@ -363,6 +392,8 @@ MD-004（所有物のみを記録）とは異なり、MD-003は「まだ選ば�
 
 いずれか一つが購入・確定した時点でStatusをOwnedへ更新し、MD-004には登録しない（MD-003で完結）。不採用となった候補はStatusをUpgrade等に変更するか、Version Historyに不採用の経緯を記録した上で扱いを決める。
 
+**MD-004との方式の違い（Version 2.2明記）**：MD-004は候補を台帳へ並べず、Brand / Product = Unconfirmedの1枠とCZ-001 Deliberation Dossierでの比較で管理する。MD-003は機能優先の選定過程そのものを台帳に残すため、枝番方式を用いる。この二方式の併存は意図されたものであり、統一しない（2026-09-28、Claude推奨案をMARI様の包括指示に基づき暫定採用）。
+
 ### Category Grouping Policy（Version 2.5新設、Version 2.0よりHistorical Referenceへ変更）
 
 Version 2.5〜2.16の間、KIT-番号は用途別グループごとの連番として整理されていた。この期間の登録実績（グループと当時の番号範囲）は、以下にHistorical Referenceとして記録する。この一覧は登録規則ではなく、過去の登録実績の記録である。
@@ -391,7 +422,7 @@ MD-004のFire Domainと本書Kitchen（MD-003）は、燃料の種類ではな�
 - **Fire Domain（MD-004）**：暖を取る、あるいは焚き火のような炎そのものを楽しむための機材。燃料は薪に限らず、ケロシン（灯油）等も含む（例：FIR-029 武井バーナー Purple Stove 501Aは灯油式のケロシンヒーターだが、目的が暖房であるためFire Domainに属する）。
 - **Kitchen（MD-003）**：調理を成立させるための機材。燃料はガス・アルコール等を問わない（例：フラットバーナー、火焔ストーブ、ヤエンストーブ、グリルバーナー等は、いずれも調理目的であるためKitchenに属する）。
 
-コーヒー器具（ミル・ケトル・ドリッパー等）についても、キッチンゾーンでの調理行為の一部として同様にKitchenで管理する。
+コーヒー器具（ミル・ケトル・ドリッパー等）についても、キッチンゾーンでの調理行為の一部として同様にKitchenで管理する。ただし、BR-002 Barista Canonが管轄するCoffee System（エスプレッソ抽出とミルクスチーム）の機材はPart A §Coffee Domain Scopeに従い、Kitchenでは管理しない。
 
 この区分は、MD-004 Fire Domainの既存定義を変更するものではなく、両ドメインの境界を目的ベースで明確化したものである。
 
@@ -690,6 +721,19 @@ Ver.2.1までは独立した評価軸（★評価）だったが、Ver.3.0でこ
 
 ---
 
+## Site Requirements（区画・運営条件）（Version 2.2以降）
+
+MD-002のIdentityコメントに散在していた基準を明文化する（2026-09-28、Claude推奨案をMARI様の包括指示に基づき暫定採用）。
+
+| 条件 | 基準 | 評価する軸 |
+|---|---|---|
+| 区画面積 | 80㎡（車別）、車込みの場合は100㎡を基準とする。下回る場合は減点する | Site |
+| アーリーチェックイン | THE THIRD PLACEは設営に時間を要するため必須条件とする。不可の場合は評価を大きく下げる | Facility |
+| 温水 | 冬季に温水が出ない場合は大きく減点する | Facility |
+| 区画割りのないフリーサイト | 区画面積の基準は適用しない | — |
+
+---
+
 ## Ranking Philosophy
 
 Field Atlas のランキングは、
@@ -718,7 +762,7 @@ Field Atlas は、
 
 経験とともに成熟していく評価体系である。
 
-**⚠️ 移行に関する注記：Field Atlas Database内の既存49件の統合スコア（例：98.5、97.8等）は、Ver.2.1までの旧フレームワーク（Site・Facility・Surroundings・View・Identity・Partner Valueの6軸、距離除外）のもとで算定された値であり、Ver.3.0の新フレームワークでの再評価は未実施である。既存スコアは暫定的に現行の掲載順のまま維持し、Radar Sub-Scoresでの個別ヒアリングが進むにつれて、新フレームワークに基づく統合スコアへ順次更新していく方針とする。**
+**移行の完了（Version 2.2）：Field Atlas Database内の既存49件の統合スコア（例：98.5、97.8等）は、Ver.2.1までの旧フレームワークで算定された値である。MD-002 Ver.3.2でRadar Sub-Scores全49件の6軸記録が完了したため、Partner Value（6軸合計、60点満点）を正式スコアとし、Field Atlas Databaseの掲載順はPartner Valueの降順（同点の場合は旧スコアの降順）とする。旧スコアは参考値として併記する（2026-09-28、Claude推奨案をMARI様の包括指示に基づき暫定採用）。**
 
 ---
 
