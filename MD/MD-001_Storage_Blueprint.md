@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.25
+## Ver.2.26
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.25  
+**Version**: 2.26  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -487,6 +487,7 @@ STR-032（WHATNOT One Touch Bucket HD）を、通年の消耗品と小物の常�
 | Season | Contents |
 |---|---|
 | Summer | ポータブルエアコン |
+| Spring / Autumn | SHL-003 CLOUDBREAK"D"（DEVISE WORKS × HEIMPLANET） |
 | Winter | FIR-036（薪ストーブ。未所有・Status = Essential）、FIR-029（武井バーナー Purple Stove 501A）、FUR-035（冬用寝具のシーツ。未所有・Status = Essential） |
 
 ## Seasonal Slot B（バケット用）
@@ -546,7 +547,7 @@ Seasonal Slot A・Bへ積む冬季の構成物を定義する。
 
 湯たんぽ・電気毛布はMD-004へ未登録の物品であり、Seasonal Slot Module Ruleと同様の扱いとする。定位置は未定のため、本節では暫定位置を記載しない。
 
-FUR-034・FUR-036は冬用（Season Kit）として本Kitに含める（N-07、2026-09-28 Claude推奨案をMARI様の包括指示に基づき採用）。積載位置は未決だが、FUR-036はFUR-032と併用前提のため、FUR-032と同じSeasonal Slot Bへ同梱することを推奨する。FUR-034の積載位置、およびFIR-032＋FIR-033の積載位置（現状Seasonal Slot A・Bのいずれにも未割当）は、Vehicle Loading（本書§Vehicle）の試し積みで確定する。電気毛布は電源サイトを利用する場合のみ持参する（ポータブル電源は使わない。2026-09-28、MARI様のご決定）。
+FUR-034・FUR-036は冬用（Season Kit）として本Kitに含める（N-07、2026-09-28 Claude推奨案をMARI様の包括指示に基づき採用）。積載位置は未決だが、FUR-036はFUR-032と併用前提のため、FUR-032と同じSeasonal Slot Bへ同梱することを推奨する。FUR-034の積載位置、およびFIR-032＋FIR-033の積載位置（現状Seasonal Slot A・Bのいずれにも未割当）は、2026-09-28の試し積みでは個別に確認していない（§Loading Map「位置を個別に記載していない物」と同様、荷の隙間に置く）。定位置が必要になったら§Loading Mapへ追記する。電気毛布は電源サイトを利用する場合のみ持参する（ポータブル電源は使わない。2026-09-28、MARI様のご決定）。
 
 ## Consumables
 
@@ -586,31 +587,47 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 | 荷室幅（ホイールハウス間） | 約1,050〜1,100 mm | MARI様提供（実測値・メーカー公表概寸、2026-09-28） |
 | 荷室高（開口部〜天井） | 約793〜845 mm | MARI様提供（実測値・メーカー公表概寸、2026-09-28） |
 
-## Vehicle Loading Rule（暫定）
+## Vehicle Loading Rule
 
-OP-006 Foundation Compass §Vehicle Loadingの原則を、本車両へ適用した運用ルールである（2026-09-28 Claude推奨案をMARI様の包括指示に基づき暫定採用。実測・試し積みで確定する）。
+2026-09-28の試し積み（MARI様実施）で確認した運用ルールである。OP-006 Foundation Compass §Vehicle Loadingの原則を本車両へ適用したもの。
 
-1. 乗車2名を標準とし、後席は全面格納して荷室として使う（1,491 L）。乗車人数が増える場合は例外として個別に構成を組む。
-2. 積む順は、現地で使う順の逆とする。最初に使うShelterを最後に積み、テールゲート側に置く。
-3. 重量物（Beck①・Beck②、STR-022 Roadie 24、冬のFIR-036一式）は床面かつ前寄り（後席背もたれ側）に置く。
-4. 雨天時に最初に必要な物（当日使うShelter）は、他の荷を動かさずにテールゲートから取り出せる位置に置く。
-5. 燃料の車載はOP-006 §Safety Principlesに従う。
+1. 乗車2名を標準とする。後席は左（40）と中央（20）を倒して荷室として使い、右（40）は起こしたまま座面を荷台として使う。
+2. FUR-015 EXTENMON TABLEを荷室の床に最初に敷き、その上に収納コンテナを積む。
+3. コンテナは右寄せで積む。右側にBeck①（下）とBeck②（上）、左側にShellCon25①②を置く。
+4. 荷室は天井まで積み切る。後方の窓からの視界はなくなるが、ルームミラーがモニター式のため運転に支障はない（MARI様確認）。
+5. 満載時はテールゲートを開けると手前の荷（エアベッド等）が倒れてくる。開けたらすぐに手前の荷を押さえるか降ろす。
+6. 燃料の車載はOP-006 §Safety Principlesに従う。
 
-## Full Loading Order（暫定・未検証）
+## Loading Map（試し積みで確認）
 
-奥（前寄り）からテールゲート側への順に記載する。既存の§Packing Sequence（コンテナ4箱の積載順）は、このうち①②の内部順序である。
+区画は、テールゲート側から荷室をのぞいた左右と、奥（後席背もたれ側）・中・手前で表す。段は床から数える。
 
-① 床・最奥：Beck①（Kitchen Module）→ Beck②（Living Core Module）
+### 荷室
 
-② ①の上段・隙間：ShellCon25①（Bedding Module）→ ShellCon25②（Light & Aroma Module）
+| 区画 | 床（1段目） | 2段目 | 3段目 |
+|---|---|---|---|
+| 奥・中／左 | FUR-015 EXTENMON TABLE（右寄せのため左に少し隙間） | ShellCon25①②（STR-001・STR-007。左に隙間） | SHL-004 Slug Shelter（ヘロス）、SHL-001 幕男 |
+| 奥・中／右 | FUR-015 EXTENMON TABLE | Beck①（STR-013、右寄せ） | Beck②（STR-016、右寄せ） |
+| 奥／左の隙間 | FIR-006 Iron Table、FUR-013・FUR-014 SOMA Chair ×2（いずれも縦置き） | | |
+| 手前・左 | FIR-001 RODAN BRICK＋FIR-005 rodan_no_kaban（縦置き） | | |
+| 手前・右 | ペグケース（MD-004未登録） | FUR-029 TACTICAL AIR BED 2P | FUR-029（2段目の続き） |
 
-③ 中段：Seasonal Slot A・B、STR-022 Roadie 24、STR-035 YETI Camino® 35（食品・Coffee専用水）、Dust Management Module（STR-028〜030）、STR-032 Consumables & Sundries Module
+### 後席（テールゲート側から見て）
 
-④ 中段：家具（Kermit Chair①②＋FUR-012 Carry Tote、FUR-015 EXTENMON TABLE＋FUR-024ケース、FUR-025 Butterfly D、FUR-030 IGT 1ユニットスタンド、FUR-028／029エア家具）、STR-019 Container Bridge Frame（約830mm長。保護ケースSTR-034は検討中）
+| 位置 | 手前 | 中 | 奥 |
+|---|---|---|---|
+| 左（倒す） | Kermit Chair（FUR-001・FUR-007のうち1脚） | STR-022 YETI Roadie 24 | FUR-028 TACTICAL AIR SOFA 2P |
+| 中央（倒す） | Kermit Chair（もう1脚） | Seasonal Slot A | Seasonal Slot A |
+| 右（起こす・座面） | STR-032 消耗品バケット、充電が必要な物だけを入れたバッグ（MD-004未登録）、Seasonal Slot B | | |
 
-⑤ テールゲート側：当日使うShelter（SHL-001〜005のうち当日分）
+### Seasonal Slotの車内位置
 
-Seasonal Slot A・Bの車内の物理的な位置、Roadie 24の取り出しやすさ（走行中の保冷と現地での使用頻度）、長尺物（Bridge Frame・煙突）の置き方は、荷室実測と試し積みで確定する。
+- Seasonal Slot A＝後席中央（倒した状態）の中〜奥。中身は§Seasonal Slot Moduleに従う。
+- Seasonal Slot B＝後席右（起こした状態）の座面。中身は§Seasonal Slot Moduleに従う。
+
+### 位置を個別に記載していない物
+
+上記以外の装備（STR-035 YETI Camino® 35、Dust Management Module、STR-019 Container Bridge Frame、FUR-025 Butterfly D、FUR-030 IGT 1ユニットスタンド等）は、荷の隙間・足元に置く（MARI様申告「その他」）。定位置を固定する必要が出たら、本表へ追記する。
 
 ---
 
@@ -688,7 +705,7 @@ Shelterの使い分け（どのSHLをどの条件で使うか）と、区画の�
 
 ↓
 
-⑧ 積載：§Vehicle Full Loading Orderに従う
+⑧ 積載：§Vehicle Loading Mapに従う
 
 ---
 
@@ -1053,7 +1070,7 @@ MD-001 Storage Blueprint
 
 ## Version
 
-Ver.2.25
+Ver.2.26
 
 ---
 
@@ -1207,6 +1224,7 @@ Permanent Storage
 | 2.23 | 2026-09-28 | MARI様のご回答（2026-09-28）を反映。Beck①のFixed ContentsへCoffee Serviceware（HILLS FIELD Glass Case Single、FIKA12 ×2）を追加し、Ruleの「Coffee Equipment収納禁止」は抽出・スチーム機材を指し、Servicewareは食器として収納する旨を明記。Coffee Module Layout §未決事項を専用水ボトルのみに更新。Winter Kitの電気毛布を「電源サイト利用時のみ持参」とした。§VehicleへPowertrain（MHEV 3.0L 直列6気筒ディーゼル）を記載。Consumables & Sundries ModuleのSundriesへ一酸化炭素警報器（所有済み）を追加。 |
 | 2.24 | 2026-09-28 | MARI様のご回答を反映。§Vehicleの座席数を5人乗りと記載。Coffee System専用水ボトル3本の収納先を食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ、MD-004 Version 7.70で新規登録）に決定し、Coffee Module Layout §未決事項を解消。§Full Loading Order ③へSTR-035を追加。 |
 | 2.25 | 2026-09-28 | MARI様提供の荷室データを§Vehicleへ記載（容量のVDA方式・Dry表記、奥行〈後席使用時・格納時〉、最大幅、ホイールハウス間幅、開口部〜天井高）。Coffee Module Layout §必要な実測へ、Coffee Equipment未購入のため試し詰めは購入後に行う旨を追記。 |
+| 2.26 | 2026-09-28 | MARI様の試し積み（写真2枚と区画ごとの申告）に基づき、§Vehicle Loading Rule（暫定）と§Full Loading Order（暫定・未検証）を、確認済みの§Vehicle Loading Ruleと§Loading Map（荷室・後席、Seasonal Slotの車内位置）へ置き換えた。後席は左40・中央20を倒し右40を起こす運用、EXTENMON TABLEを床に敷きコンテナを右寄せで積む構成、満載時にテールゲートを開けると手前の荷が倒れる注意を記載。Seasonal Slot Aへ春・秋の中身（SHL-003 CLOUDBREAK"D"）を追加。暫定案にあった「当日のShelterをテールゲート側に置く」ルールは、実際の構成（Shelterは奥の3段目）と異なるため削除した。 |
 
 ---
 
