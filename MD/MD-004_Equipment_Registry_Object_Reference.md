@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.69  
+**Version**: 7.70  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -4910,6 +4910,42 @@ Unconfirmed
 Carrying Case（STR-019 Container Bridge Frame用。約830×383×50mmの黒皮鉄フレームを保護する市販ケースを検討中。将来的にFUR-026 Butterfly Table M Black Look（Upgrade、未購入）との共用も視野。具体的な製品比較はCZ-001 Deliberation Dossierで管理）  
 
 ---  
+
+## STR-035  
+
+**Brand**  
+
+YETI  
+
+**Product**  
+
+Camino® 35キャリーオール トートバッグ  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black（MARI様提示の公式商品ページ〈ブラック〉に基づく）  
+
+### Material  
+
+ThickSkin Shell / EVA（底面）  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Carryall Tote（容量35L、自立式・防水。食品の運搬用。Coffee System専用水ボトル3本もここへ収納する。詳細はMD-001 Storage Blueprint参照）  
+
+### Price  
+
+¥25,630（yeti.co.jp公式サイト現行価格、2026-09-28確認）  
+
+---  
 # Coffee  
 
 Coffee Domainは、抽出に関する一連のワークフロー全体を管理する。  
@@ -6927,6 +6963,12 @@ S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い�
 ## Version 7.69
 
 S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。
+
+---
+
+## Version 7.70
+
+MARI様のご申告（2026-09-28）に基づき、STR-035 YETI Camino® 35キャリーオール トートバッグ（Owned）を新規登録した。食品の運搬用バッグであり、Coffee System専用水ボトル3本の収納先となる（MD-001と連動）。Color・Price・Materialは、MARI様提示のyeti.co.jp公式商品ページ（ブラック）で確認した。
 
 ---
 

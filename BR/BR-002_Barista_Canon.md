@@ -10,7 +10,7 @@ Barista Canon
     
 # Version    
     
-4.9    
+4.10    
     
 # Status    
     
@@ -1445,7 +1445,7 @@ In Progress（2026-09-28、Deferredから検討中へ移行）
   
 Coffee Station全体のレイアウト確定後に検討する。  
   
-Coffee Equipment 13点のBeck②への収納設計は、MD-001 Storage Blueprint §Coffee Module Layout（暫定）で進行中である。Coffee Serviceware（HILLS FIELD Glass Case Single・FIKA12 ×2）は、食器としてBeck①（Kitchen Module）へ収納することが決定済み（2026-09-28、MARI様のご決定）。専用水ボトルの定位置は、同節の未決事項として扱う。  
+Coffee Equipment 13点のBeck②への収納設計は、MD-001 Storage Blueprint §Coffee Module Layout（暫定）で進行中である。Coffee Serviceware（HILLS FIELD Glass Case Single・FIKA12 ×2）は、食器としてBeck①（Kitchen Module）へ収納することが決定済み（2026-09-28、MARI様のご決定）。Coffee System専用水ボトル3本は、食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ）へ収納する（2026-09-28、MARI様のご決定）。  
   
 ただし、BR-002で正式採用したKNODOS Tamping Mat with Tool Organiser - Walnut 54mmは、Coffee Tool Workflowを成立させるためのEquipmentとしてConfirmedとする。  
   
@@ -1742,6 +1742,7 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 4.7 | 2026-09-28 | 整備バックログ（N-06）対応。Deferredのうち、MD-001 Coffee Module Layoutで実際に検討が進んでいるStorage & OrganizationとTravel Carry SystemをIn Progressへ移行し、MD-001の該当節を参照先として明記。Coffee Station FurnitureへBridge Tableを天板とする現状の想定を追記。Confirmed Equipmentの決定内容に変更はない。Claude推奨案をMARI様の包括指示に基づき採用。 |
 | 4.8 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 | 4.9 | 2026-09-28 | Deferred §Storage & Organizationへ、Coffee Serviceware（グラスケース・FIKA12）をBeck①（Kitchen Module）へ収納する決定を反映（MD-001 Ver.2.23と連動）。MARI様のご決定に基づく。 |
+| 4.10 | 2026-09-28 | Deferred §Storage & OrganizationへCoffee System専用水ボトルの収納先（STR-035 YETI Camino® 35）を反映（MD-001 Ver.2.24・MD-004 Version 7.70と連動）。MARI様のご決定に基づく。 |
   
 ---  
 
