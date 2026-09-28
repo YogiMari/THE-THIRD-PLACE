@@ -3,8 +3,13 @@
 """
 THE THIRD PLACE — SSOT Sync Validator
 
-Synchronization authority:
+Synchronization authority (Coffee chain):
     BR-002 <-> BR-003
+
+Synchronization authority (Cross-Zone chain, non-Coffee/non-Kitchen):
+    MD-004 (Status = Essential)      <-> CZ-001 Confirmed — Purchase Pending
+    MD-004 (Status != Owned)         <-> CZ-002 Current Watch List
+    MD-001 (Equipment ID references) -> MD-004 (must exist)
 
 Operational registry:
     MD-004
@@ -13,10 +18,26 @@ Document roles:
     BR-002 = Coffee System Decision Authority
     BR-003 = Acquisition / Purchase Authority
     MD-004 = Purchased / Owned / Operational Equipment Registry
+    CZ-001 = Deliberation Dossier (Confirmed — Purchase Pending list)
+    CZ-002 = Vigil Protocol (Watch List)
+    MD-001 = Storage Blueprint (references Equipment IDs by name)
 
 Required synchronization:
     BR-002 -> BR-003 : REQUIRED
     BR-003 -> BR-002 : REQUIRED
+
+    MD-004 Essential (non-Coffee/non-Kitchen)
+        -> CZ-001 Confirmed — Purchase Pending : REQUIRED
+    CZ-001 Confirmed — Purchase Pending
+        -> MD-004 Essential : REQUIRED
+
+    MD-004 Status != Owned (non-Coffee/non-Kitchen, excluding
+    Brand/Product = "Unconfirmed", per CZ-002's own exclusion rule)
+        -> CZ-002 Current Watch List : REQUIRED
+    CZ-002 Current Watch List (MD-004 Reference)
+        -> MD-004 Status != Owned : REQUIRED
+
+    MD-001 Equipment ID references -> must exist in MD-004 : REQUIRED
 
 Not required:
     BR-002 -> MD-004
@@ -30,11 +51,24 @@ Reason:
     Essential/Candidate/Upgrade items that are not yet purchased;
     this validator's scope is limited to the Coffee sync chain.)
 
+    Coffee (COF-series) and Kitchen (KIT-series) equipment are excluded
+    from the MD-004/CZ-001/CZ-002 cross-zone checks: Coffee is managed
+    by BR-002/BR-003 until purchased, and Kitchen is managed entirely
+    by MD-003 (see CLAUDE.md §作業原則 9).
+
+MD-001 name-only references (no Equipment ID, e.g. Coffee items listed
+by product name in Coffee Module Layout) are not mechanically checked:
+matching free-text product names against MD-004 is not reliable, so
+this validator only checks references that carry an explicit Equipment
+ID. A mismatch between an MD-001 Equipment ID reference and its
+MD-004 ownership status is reported as a WARNING (not an error), since
+the "is this annotated as unowned nearby" heuristic can misfire.
+
 The validator never modifies source documents.
 
 Exit codes:
-    0 = PASS
-    1 = Validation failure
+    0 = PASS (no errors; warnings may still be printed)
+    1 = Validation failure (one or more errors)
     2 = Configuration / input error
 """
 
@@ -91,6 +125,291 @@ def strip_quantity_suffix(model: str) -> str:
 
 def equipment_key(brand: str, model: str) -> tuple[str, str]:
     return normalize(brand), normalize(strip_quantity_suffix(model))
+
+
+# ============================================================
+# Cross-Zone Ops constants (MD-004 / CZ-001 / CZ-002 / MD-001)
+# ============================================================
+
+# Equipment domain prefixes actually registered in MD-004.
+# COF (Coffee) and KIT (Kitchen) are listed defensively even though
+# CLAUDE.md §作業原則 9-10 keeps them out of MD-004 entirely; if either
+# ever appeared, the exclusion below must still hold.
+EXCLUDED_DOMAINS = ("COF", "KIT")
+
+EQUIPMENT_DOMAINS = (
+    "FUR",
+    "LGT",
+    "ARM",
+    "STR",
+    "FIR",
+    "SHL",
+    "COF",
+    "KIT",
+)
+
+MD004_ID_HEADER_RE = re.compile(
+    r"^##\s+([A-Z]{2,4}-[0-9A-Za-z_]+)\s*$"
+)
+
+# ASCII-only lookaround instead of \b: Python's \w is Unicode-aware,
+# so a boundary between an ID's trailing digit/letter and adjacent
+# Japanese text (e.g. "FUR-032の") would otherwise not be recognized
+# as a word boundary and the match would be missed.
+EQUIPMENT_ID_TOKEN_RE = re.compile(
+    r"(?<![A-Za-z0-9_])"
+    r"(?:" + "|".join(EQUIPMENT_DOMAINS) + r")"
+    r"-[0-9A-Za-z_]+"
+    r"(?![A-Za-z0-9_])"
+)
+
+UNOWNED_STATUSES = {"essential", "candidate", "upgrade"}
+
+MD001_UNOWNED_ANNOTATION_MARKERS = (
+    "未所有",
+    "未購入",
+    "vacant",
+    "retired",
+    "検討中",
+)
+
+
+@dataclass(frozen=True)
+class RegistryEntry:
+    id: str
+    domain: str
+    brand: str | None
+    product: str | None
+    status: str | None
+
+
+def is_unconfirmed_entry(entry: RegistryEntry) -> bool:
+    return (
+        normalize(entry.brand or "") == "unconfirmed"
+        or normalize(entry.product or "") == "unconfirmed"
+    )
+
+
+def parse_md004_registry(text: str) -> dict[str, RegistryEntry]:
+    """
+    Parse MD-004 into a dict keyed by Equipment ID.
+
+    Unlike parse_md004() (used for the BR-002/BR-003 report count),
+    this captures every declared "## ID" heading, including Vacant
+    and Retired entries that carry no Brand/Product/Status fields
+    (their RegistryEntry.status is None). This is required so that
+    MD-001 references to such IDs are recognized as existing, and so
+    that Vacant/Retired IDs are not mistaken for missing acquisition
+    targets in the CZ-001/CZ-002 checks.
+    """
+
+    entries: dict[str, RegistryEntry] = {}
+
+    current_id: str | None = None
+    current_field: str | None = None
+
+    brand: str | None = None
+    model: str | None = None
+    status: str | None = None
+
+    def flush() -> None:
+        nonlocal brand, model, status
+
+        if current_id:
+            entries[current_id] = RegistryEntry(
+                id=current_id,
+                domain=current_id.split("-", 1)[0],
+                brand=brand,
+                product=model,
+                status=status,
+            )
+
+        brand = None
+        model = None
+        status = None
+
+    for line in text.splitlines():
+        stripped = line.strip()
+
+        match = MD004_ID_HEADER_RE.match(stripped)
+
+        if match:
+            flush()
+            current_id = match.group(1)
+            current_field = None
+            continue
+
+        if stripped.startswith("#"):
+            current_field = None
+            continue
+
+        if stripped in ("**Brand**", "**Manufacturer**"):
+            current_field = "brand"
+            continue
+
+        if stripped in ("**Product**", "**Model**"):
+            current_field = "model"
+            continue
+
+        if stripped == "**Status**":
+            current_field = "status"
+            continue
+
+        if (
+            current_field
+            and stripped
+            and not stripped.startswith("**")
+        ):
+            if current_field == "brand":
+                brand = stripped
+            elif current_field == "model":
+                model = stripped
+            elif current_field == "status":
+                status = stripped
+
+            current_field = None
+
+    flush()
+
+    return entries
+
+
+def extract_top_level_section(
+    text: str,
+    heading_prefix: str,
+) -> str:
+    """
+    Return the body of the first "# <heading_prefix>..." section
+    (a single-#, top-level heading), up to (not including) the next
+    single-# heading. "##" subsection headings inside are kept.
+    """
+
+    lines = text.splitlines()
+
+    start: int | None = None
+    end = len(lines)
+
+    for index, line in enumerate(lines):
+        stripped = line.strip()
+
+        if start is None:
+            if re.match(
+                rf"^#\s+{re.escape(heading_prefix)}",
+                stripped,
+            ):
+                start = index + 1
+
+            continue
+
+        if re.match(r"^#\s+\S", stripped) and not stripped.startswith("##"):
+            end = index
+            break
+
+    if start is None:
+        return ""
+
+    return "\n".join(lines[start:end])
+
+
+def parse_cz001_confirmed_pending(text: str) -> set[str]:
+    """
+    Extract the Equipment IDs listed in CZ-001's
+    "Confirmed — Purchase Pending" tables (ID column, first cell).
+    """
+
+    section = extract_top_level_section(
+        text,
+        "Confirmed — Purchase Pending",
+    )
+
+    ids: set[str] = set()
+
+    for line in section.splitlines():
+        stripped = line.strip()
+
+        if not stripped.startswith("|"):
+            continue
+
+        cells = [
+            cell.strip()
+            for cell in stripped.strip("|").split("|")
+        ]
+
+        if not cells:
+            continue
+
+        candidate = cells[0]
+
+        if re.fullmatch(r"-+", candidate):
+            continue
+
+        if re.fullmatch(
+            r"(?:" + "|".join(EQUIPMENT_DOMAINS) + r")-[0-9A-Za-z_]+",
+            candidate,
+        ):
+            ids.add(candidate)
+
+    return ids
+
+
+def parse_cz002_watch_list(text: str) -> set[str]:
+    """
+    Extract the Equipment IDs listed in CZ-002's "**MD-004 Reference**"
+    fields under "Current Watch List".
+
+    Only the ID(s) preceding a parenthesis are taken, so an inline
+    note such as "FIR-037（Parent: FIR-036）" contributes FIR-037 only
+    — the parenthetical "Parent: FIR-036" is metadata about a
+    different, already independently tracked entry, not a second
+    reference to be required here.
+    """
+
+    section = extract_top_level_section(
+        text,
+        "Current Watch List",
+    )
+
+    ids: set[str] = set()
+
+    current_field: str | None = None
+
+    for line in section.splitlines():
+        stripped = line.strip()
+
+        if stripped == "**MD-004 Reference**":
+            current_field = "reference"
+            continue
+
+        if stripped.startswith("**"):
+            current_field = None
+            continue
+
+        if current_field == "reference" and stripped:
+            primary = re.split(r"[（(]", stripped)[0]
+            ids.update(EQUIPMENT_ID_TOKEN_RE.findall(primary))
+            current_field = None
+
+    return ids
+
+
+def extract_equipment_id_references(text: str) -> dict[str, int]:
+    """
+    Extract every Equipment ID token referenced in free text (e.g.
+    MD-001), mapped to the 1-based line number of its first
+    occurrence (used to look up surrounding context for the
+    ownership-annotation warning check).
+    """
+
+    first_line: dict[str, int] = {}
+
+    for line_number, line in enumerate(text.splitlines(), start=1):
+        for match in EQUIPMENT_ID_TOKEN_RE.finditer(line):
+            token = match.group(0)
+
+            if token not in first_line:
+                first_line[token] = line_number
+
+    return first_line
 
 
 # ============================================================
@@ -731,6 +1050,206 @@ def check_model_drift(
 
 
 # ============================================================
+# Cross-Zone Ops checks (MD-004 / CZ-001 / CZ-002 / MD-001)
+# ============================================================
+
+def check_md004_essential_vs_cz001(
+    md004: dict[str, RegistryEntry],
+    cz001_ids: set[str],
+) -> list[str]:
+    """
+    MD-004 Status = Essential (non-Coffee/non-Kitchen) must equal
+    CZ-001's "Confirmed — Purchase Pending" ID set, in both
+    directions.
+    """
+
+    essential_ids = {
+        entry.id
+        for entry in md004.values()
+        if entry.domain not in EXCLUDED_DOMAINS
+        and normalize(entry.status or "") == "essential"
+    }
+
+    errors: list[str] = []
+
+    for equipment_id in sorted(essential_ids - cz001_ids):
+        errors.append(
+            "MD-004 Status = Essential missing from CZ-001 "
+            f"Confirmed — Purchase Pending: {equipment_id}"
+        )
+
+    for equipment_id in sorted(cz001_ids - essential_ids):
+        entry = md004.get(equipment_id)
+
+        if entry is None:
+            errors.append(
+                "CZ-001 Confirmed — Purchase Pending references an "
+                f"ID that does not exist in MD-004: {equipment_id}"
+            )
+
+        elif entry.status is None:
+            # Vacant / Retired placeholder — not a sync error.
+            continue
+
+        else:
+            errors.append(
+                "CZ-001 Confirmed — Purchase Pending references "
+                f"{equipment_id}, but MD-004 Status = "
+                f"{entry.status} (expected Essential)"
+            )
+
+    return errors
+
+
+def check_md004_unowned_vs_cz002(
+    md004: dict[str, RegistryEntry],
+    cz002_ids: set[str],
+) -> list[str]:
+    """
+    MD-004 Status != Owned (non-Coffee/non-Kitchen, excluding
+    Brand/Product = "Unconfirmed") must equal CZ-002's Current Watch
+    List MD-004 Reference ID set, in both directions.
+
+    Unconfirmed-brand entries are excluded per CZ-002's own stated
+    rule ("MD-004上の製品が未確定…の枠は…本リストの対象外とし、
+    CZ-001…で管理する"): the search target isn't determined yet, so
+    it cannot be patrolled.
+    """
+
+    unowned_ids = {
+        entry.id
+        for entry in md004.values()
+        if entry.domain not in EXCLUDED_DOMAINS
+        and normalize(entry.status or "") in UNOWNED_STATUSES
+        and not is_unconfirmed_entry(entry)
+    }
+
+    errors: list[str] = []
+
+    for equipment_id in sorted(unowned_ids - cz002_ids):
+        errors.append(
+            "MD-004 Status != Owned missing from CZ-002 "
+            f"Current Watch List: {equipment_id}"
+        )
+
+    for equipment_id in sorted(cz002_ids - unowned_ids):
+        entry = md004.get(equipment_id)
+
+        if entry is None:
+            errors.append(
+                "CZ-002 Current Watch List references an ID that "
+                f"does not exist in MD-004: {equipment_id}"
+            )
+
+        elif entry.status is None:
+            # Vacant / Retired placeholder — not a sync error.
+            continue
+
+        elif entry.domain in EXCLUDED_DOMAINS:
+            errors.append(
+                "CZ-002 Current Watch List references "
+                f"{equipment_id}, which is a Coffee/Kitchen "
+                "domain ID and must not be tracked here"
+            )
+
+        elif is_unconfirmed_entry(entry):
+            errors.append(
+                "CZ-002 Current Watch List references "
+                f"{equipment_id}, but its Brand/Product is still "
+                "Unconfirmed in MD-004 (should be managed via "
+                "CZ-001 instead)"
+            )
+
+        else:
+            errors.append(
+                "CZ-002 Current Watch List references "
+                f"{equipment_id}, but MD-004 Status = "
+                f"{entry.status} (expected Essential/Candidate/"
+                "Upgrade)"
+            )
+
+    return errors
+
+
+def check_md001_equipment_id_existence(
+    md004: dict[str, RegistryEntry],
+    md001_references: dict[str, int],
+) -> list[str]:
+    """
+    Every Equipment ID referenced by MD-001 must exist in MD-004.
+    """
+
+    errors: list[str] = []
+
+    for equipment_id, line_number in sorted(
+        md001_references.items(),
+        key=lambda item: item[1],
+    ):
+        if equipment_id not in md004:
+            errors.append(
+                f"MD-001 line {line_number} references "
+                f"{equipment_id}, which does not exist in MD-004"
+            )
+
+    return errors
+
+
+def check_md001_ownership_annotation(
+    md004: dict[str, RegistryEntry],
+    md001_text: str,
+    md001_references: dict[str, int],
+) -> list[str]:
+    """
+    WARNING-tier check: when MD-001 references an Equipment ID whose
+    MD-004 Status is Essential/Candidate/Upgrade (i.e. not yet
+    Owned), the same line should carry an explicit non-ownership
+    annotation (e.g. "未所有", "Status = Essential"), matching the
+    pattern already used elsewhere in MD-001 (e.g. "RT-01AC01 / ECHO
+    LAMP（未所有・MD-004 LGT-040 Status = Essential）").
+
+    This is a line-proximity heuristic and can misfire (e.g. if the
+    annotation is on an adjacent line rather than the same one), so
+    it is reported as a warning, never as an error.
+    """
+
+    lines = md001_text.splitlines()
+
+    warnings: list[str] = []
+
+    for equipment_id, line_number in sorted(
+        md001_references.items(),
+        key=lambda item: item[1],
+    ):
+        entry = md004.get(equipment_id)
+
+        if entry is None or entry.status is None:
+            continue
+
+        status_norm = normalize(entry.status)
+
+        if status_norm not in UNOWNED_STATUSES:
+            continue
+
+        line_text = lines[line_number - 1]
+        haystack = normalize(line_text)
+
+        annotated = entry.status.lower() in haystack or any(
+            marker in haystack
+            for marker in MD001_UNOWNED_ANNOTATION_MARKERS
+        )
+
+        if not annotated:
+            warnings.append(
+                f"MD-001 line {line_number} references "
+                f"{equipment_id} (MD-004 Status = {entry.status}) "
+                "without an explicit unowned annotation on that "
+                "line"
+            )
+
+    return warnings
+
+
+# ============================================================
 # Main
 # ============================================================
 
@@ -761,14 +1280,32 @@ def main() -> int:
         help="Path to BR-003",
     )
 
+    parser.add_argument(
+        "--cz001",
+        required=True,
+        help="Path to CZ-001",
+    )
+
+    parser.add_argument(
+        "--cz002",
+        required=True,
+        help="Path to CZ-002",
+    )
+
+    parser.add_argument(
+        "--md001",
+        required=True,
+        help="Path to MD-001",
+    )
+
     args = parser.parse_args()
 
     try:
-        md004 = parse_md004(
-            read_text(
-                Path(args.md004)
-            )
-        )
+        md004_text = read_text(Path(args.md004))
+
+        md004 = parse_md004(md004_text)
+
+        md004_registry = parse_md004_registry(md004_text)
 
         br002 = parse_br002(
             read_text(
@@ -782,12 +1319,26 @@ def main() -> int:
             )
         )
 
+        cz001_text = read_text(Path(args.cz001))
+        cz001_confirmed_pending_ids = parse_cz001_confirmed_pending(
+            cz001_text
+        )
+
+        cz002_text = read_text(Path(args.cz002))
+        cz002_watch_list_ids = parse_cz002_watch_list(cz002_text)
+
+        md001_text = read_text(Path(args.md001))
+        md001_references = extract_equipment_id_references(
+            md001_text
+        )
+
     except Exception as error:
         print("CONFIG ERROR")
         print(str(error))
         return 2
 
     errors: list[str] = []
+    warnings: list[str] = []
 
     # --------------------------------------------------------
     # BR-002 <-> BR-003 is the mandatory synchronization pair.
@@ -827,8 +1378,37 @@ def main() -> int:
     )
 
     # --------------------------------------------------------
-    # MD-004 is intentionally NOT used for synchronization.
+    # Cross-Zone Ops: MD-004 <-> CZ-001 / CZ-002, MD-001 -> MD-004
     # --------------------------------------------------------
+
+    errors.extend(
+        check_md004_essential_vs_cz001(
+            md004_registry,
+            cz001_confirmed_pending_ids,
+        )
+    )
+
+    errors.extend(
+        check_md004_unowned_vs_cz002(
+            md004_registry,
+            cz002_watch_list_ids,
+        )
+    )
+
+    errors.extend(
+        check_md001_equipment_id_existence(
+            md004_registry,
+            md001_references,
+        )
+    )
+
+    warnings.extend(
+        check_md001_ownership_annotation(
+            md004_registry,
+            md001_text,
+            md001_references,
+        )
+    )
 
     print(
         "THE THIRD PLACE — SSOT Sync Validator"
@@ -847,18 +1427,22 @@ def main() -> int:
     )
 
     print(
-        "Operational Registry:"
+        "  MD-004 (Essential) <-> CZ-001 Confirmed — Purchase Pending"
     )
 
     print(
-        "  MD-004"
+        "  MD-004 (!= Owned) <-> CZ-002 Current Watch List"
+    )
+
+    print(
+        "  MD-001 (Equipment ID references) -> MD-004"
     )
 
     print()
 
     print(
-        f"MD-004 operational records: "
-        f"{len(md004)}"
+        f"MD-004 registry records: "
+        f"{len(md004_registry)}"
     )
 
     print(
@@ -871,7 +1455,40 @@ def main() -> int:
         f"{len(br003)}"
     )
 
+    print(
+        f"CZ-001 Confirmed — Purchase Pending IDs: "
+        f"{len(cz001_confirmed_pending_ids)}"
+    )
+
+    print(
+        f"CZ-002 Current Watch List IDs: "
+        f"{len(cz002_watch_list_ids)}"
+    )
+
+    print(
+        f"MD-001 Equipment ID references: "
+        f"{len(md001_references)}"
+    )
+
     print()
+
+    if warnings:
+        print(
+            f"WARNINGS — {len(warnings)} "
+            "advisory finding(s) (does not fail validation)"
+        )
+
+        print()
+
+        for index, warning in enumerate(
+            warnings,
+            start=1,
+        ):
+            print(
+                f"{index}. {warning}"
+            )
+
+        print()
 
     if errors:
         print(
@@ -892,13 +1509,8 @@ def main() -> int:
         return 1
 
     print(
-        "PASS — BR-002 and BR-003 "
-        "are synchronized."
-    )
-
-    print(
-        "MD-004 is treated as the "
-        "purchased / operational registry."
+        "PASS — all required SSOT "
+        "synchronization checks passed."
     )
 
     return 0
