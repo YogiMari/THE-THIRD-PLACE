@@ -1,6 +1,6 @@
-OP-002 Design Bible Ver.5.8
+OP-002 Design Bible Ver.5.9
 # THE THIRD PLACE Design Bible
-## Ver.5.8 Official Complete Edition
+## Ver.5.9 Official Complete Edition
 
 ---
 
@@ -1287,245 +1287,13 @@ Single Source of Truthを維持する。
 
 # Documentation Architecture（文書体系）
 
-## OP-001
-
-### THE THIRD PLACE Constitution（憲章）
-
-プロジェクト全体の憲章。
-
-最上位文書。
-
-思想、
-
-運営原則、
-
-ルールを定義する。
-
----
-
-## OP-002
-
-### THE THIRD PLACE Design Bible（デザインバイブル）
-
-思想。
-
-設計哲学。
-
-評価基準。
-
-Design Language。
-
-完成条件。
-
-THE THIRD PLACEの根幹となる文書。
-
----
-
-## MD-002
-
-### Field Atlas（フィールドアトラス）
-
-舞台。
-
-キャンプ場。
-
-ロケーション。
-
-フィールド研究。
-
-自然環境。
-
-立地。
-
-レイアウト。
-
----
-
-## MD-004
-
-### Equipment Registry Object Reference（所有物マスター）
-
-唯一の所有物マスターデータ。
-
-所有状況。
-
-Brand。
-
-Product Name。
-
-Color。
-
-Material。
-
-Status。
-
-Priority。
-
-Equipment情報は、
-
-この文書のみ更新する。
-
----
-
-## OP-005
-
-### Pursuit Strategy（取得戦略）
-
-迎える判断基準。
-
-月間予算（Coffee Zoneのみ）。
-
-Coffee以外は買えるときに買う。
-
----
-
-## OP-006
-
-### Foundation Compass（価値基準）
-
-判断基準。
-
-価値観。
-
-Design Compass。
-
-優先順位。
-
----
-
-## OP-007
-
-### Habitat Architecture（空間設計）
-
-サイトレイアウト。
-
-居住空間。
-
-ゾーニング。
-
-設営。
-
-撤収。
-
-動線。
-
----
-
-## OP-003
-
-### Affinity Lexicon（嗜好辞典）
-
-好き。
-
-嫌い。
-
-素材。
-
-ブランド。
-
-色。
-
-世界観。
-
-Design Taste。
-
----
-
-## OP-004
-
-### Aesthetic Grammar（美意識文法）
-
-美しさを構成する法則。
-
-Design Languageを補完する文書。
-
----
-
-## MD-001
-
-### Storage Blueprint（収納設計）
-
-収納設計。
-
-固定位置。
-
-積載順。
-
-展開順。
-
-撤収順。
-
-運用体系。
-
----
-
-## MD-003
-
-### Galley Fare（キッチン機材台帳）
-
-キッチン機材（調理器具・刃物・調理小物）の唯一のマスターデータ。
-
-Equipment Registryとは独立した評価軸を持つ。
+文書一覧は OP-008 §8 Document Series を参照。
 
 ---
 
 # Editorial Series（刊行物）
 
-## KN-001
-
-### Heritage Chronicle（クロニクル）
-
-活動記録。
-
-月次記録。
-
-完成までの歩み。
-
----
-
-## KN-004
-
-### Atelier Discovery（ディスカバリー）
-
-市場調査。
-
-ブランド調査。
-
-技術調査。
-
-比較調査。
-
----
-
-## KN-003
-
-### Beyond Journey（ジャーニー）
-
-体験。
-
-価値観。
-
-人生との関係。
-
-キャンプという趣味を超え、分野横断でTHE THIRD PLACEの美意識を育てる。
-
----
-
-## KN-002
-
-### Cultural Pantheon（カルチュラル・パンテオン）
-
-文化的背景。
-
-世界観の源流。
-
----
-
-## OP-009
-
-### Search Doctrine（サーチ・ドクトリン）
-
-情報収集・検証の方法論。
+文書一覧は OP-008 §8 Document Series を参照。
 
 ---
 
@@ -2052,7 +1820,7 @@ THE THIRD PLACEは、
 
 **THE THIRD PLACE Design Bible**
 
-**Ver.5.8 Official Complete Edition**
+**Ver.5.9 Official Complete Edition**
 
 **End of Document**
 
@@ -2109,3 +1877,9 @@ THE THIRD PLACEは、
 ## KN-003 Editorial Series Role Sync Note
 
 本文書は、2026-09-28付でVer.5.7からVer.5.8へ更新した（Patch Version：既存記述の是正）。§Editorial SeriesのKN-003 Beyond Journey項目が「体験。価値観。人生との関係。」という管理対象の列挙に留まり、KN-003本文Purposeが定めるカルチャーマガジンとしての編集目的（キャンプという趣味に留まらず、分野横断でTHE THIRD PLACEの美意識を育てる）を欠いていたため、「キャンプという趣味を超え、分野横断でTHE THIRD PLACEの美意識を育てる。」を追記した。OP-008 §8 KN-003 Roleの同時改訂と連動。MARI様のご決定に基づく（C-17）。
+
+---
+
+## Documentation Catalog Duplication Resolution Note
+
+本文書は、2026-09-28付でVer.5.8からVer.5.9へ更新した（Patch Version：重複節の削除・参照化）。OP-008 Rule DOC-06（文書カタログはOP-008 §8が唯一の正本）およびPrinciple 003（Single Source of Truth）に基づき、§Documentation Architectureおよび§Editorial Seriesが個別に保持していた文書一覧（各文書の役割説明の重複。OP-008 §8とのズレを含む）を、それぞれ「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。MARI様のご決定に基づく（S-08）。
