@@ -1,7 +1,7 @@
 OP-006 Foundation Compass
 # OP-006
 # Foundation Compass
-## Ver.1.6
+## Ver.1.7
 
 ---
 
@@ -87,6 +87,8 @@ Foundation Compass が対象とするもの
 - Site Recovery
 - Seasonal Configuration
 - Maintenance Cycle
+- Safety
+- Material Care
 
 収納そのものではなく、
 
@@ -420,6 +422,57 @@ Equipment は、
 
 ---
 
+# Safety Principles
+
+本節は、火・燃料・シェルターに関する安全の恒久ルールを定める。個々の器具の置き場所・積載位置は MD-001 Storage Blueprint が管理する（2026-09-28 Claude推奨案をMARI様の包括指示に基づき暫定採用。N-01）。
+
+## Carbon Monoxide
+
+- シェルター内で燃焼器具（薪ストーブ・灯油ストーブ・ガス器具・アルコール器具）を使う場合は、一酸化炭素警報器を設置し、使用前に作動を確認する。
+- 警報器がない状態では、シェルター内で燃焼器具を使わない。
+- 燃焼器具の使用中は、シェルターのベンチレーションを開けて換気する。
+
+## Sleeping
+
+- 就寝前に、燃焼式の暖房（薪ストーブ・灯油ストーブ・ガス暖房）を消火する。
+- 就寝中の暖は、寝具・湯たんぽ・電気毛布で確保する（MD-001 Winter Kit）。
+
+## Wood Stove
+
+- 煙突と屋根面の離隔は、メーカー基準に従う。基準がない場合は60cm以上とする（CZ-001 Wood Stove選定記録で用いた基準）。
+- 煙突ガード・スパークアレスターを使用し、ストーブの周囲に可燃物を置かない。
+
+## Fire
+
+- 焚き火・薪ストーブの設営時に、消火手段（消火用の水など）を手の届く位置に用意する。
+- 焚き火はShelterの風下側に、火の粉が届かない距離をとって設ける。
+- 撤収時は完全消火を確認し、熱の残る灰・器具を収納・積載しない。灰の処理はフィールドの規則に従う。
+
+## Fuel
+
+- 燃料は、メーカー指定の容器で密閉して保管する。
+- 高温期は、ガス缶（OD缶・CB缶）・アルコール・パラフィンオイル・灯油を車内に常備せず自宅で保管し、出発時に積む。車内が高温になる時期にはVehicle = Permanent Storageの原則の例外とする。
+- 灯油は道中で必要量のみ購入し、使い残しは専用容器で持ち帰る。
+
+---
+
+# Material Care Principles
+
+本節は、Coffee System以外のEquipmentの素材別ケアの恒久ルールを定める。Coffee SystemのケアはBR-001 Brew Careが管理する。メーカーの手入れ指示がある場合はそれを優先する（情報の優先順位はBR-001 Brew Care §Manufacturer Information Hierarchyに準じる）。使用する手入れ用品はMD-001 Storage Blueprint §Consumables & Sundries Moduleが管理する（2026-09-28 Claude推奨案をMARI様の包括指示に基づき暫定採用。N-04）。
+
+| Material | Routine（毎回） | Periodic（季節の入れ替え時） |
+|---|---|---|
+| Shelter（ナイロン・ポリエステル・コットン混紡） | 濡れたまま長期保管しない。濡れて撤収した場合は帰宅後なるべく早く完全に乾燥させる。泥は乾いてからブラシで落とす | 縫い目・コーティングの劣化、ポールと付属品の点検 |
+| Leather | 濡れたら陰干しし、直射日光と熱源を避ける | 保革剤で手入れする |
+| Walnut・Oak等の無垢材 | 水濡れと汚れを拭き取り、乾燥させる | 木製品メンテナンスオイル・ワックスで手入れする |
+| Iron（黒皮鉄・鋳鉄・鉄鍋） | 使用後に水分を除き、鉄製品メンテナンスオイルを薄く塗る | 錆の点検と除去 |
+| Brass | 経年変化を楽しむ（OP-002 Rule 10）。原則として研磨しない | 可動部・ネジの緩みを点検する |
+| Down（寝具） | 使用後は広げて湿気を飛ばす | オフシーズンは圧縮せず、自宅で広げて保管する |
+
+季節の入れ替え（OP-006 §Seasonal Configuration）のたびに、全Equipmentの点検とPeriodic Careを行う。
+
+---
+
 # Continuous Improvement
 
 Foundation Compass は、
@@ -496,6 +549,7 @@ Foundation Compass は、
 | 1.4 | 2026-09-28 | MARI様のご決定に基づき、Seasonal Configuration節へ「Configuration Structure」（Base／Season Kit／Weather Overlayの3層定義）、「Seasonal Slot」（車内の季節入れ替え定位置の位置づけ。具体的な配置・中身はMD-001が管理し本書では重複記載しない）、「Tagging Policy」（個別Equipmentへの季節・天候タグは付与せず、運用単位はModule／Season Kitとする）、「Weather Overlay Scope」（雨のKitとしての管理は行わない）を新設。いずれも恒久ルールの定義のみであり、具体的な中身（どのギアがどのKitか）はMD-001 Storage Blueprintへ記載する（Static文書にLivingデータを置かない原則に基づく）。Minor Version。 |
 | 1.5 | 2026-09-28 | 「Relationship」節の後へ「Priority Principle」節を新設（Minor Version：章追加）。OP-002 Design Bible §Database Rulesにあった「Priorityは価格ではなく人気でもなく、Design Bibleとの一致度で決定する」という思想文を移設した。MD-004 Equipment Registry Object ReferenceにはPriority欄自体が存在しない（OP-010 Qualification Charter Part A Attribute Policy参照）ことを確認した上での移設であり、Coffee Zoneの具体的な購入優先度はBR-003 Procurement Handbookが別途管理する旨を明記した。MARI様のご決定に基づく（C-02）。 |
 | 1.6 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Relationship to Other Core Documentsの文書一覧表（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。表以外の固有の関係説明は変更していない。Patch Version。MARI様のご決定に基づく（S-08）。 |
+| 1.7 | 2026-09-28 | 整備バックログ（N-01・N-04）対応。§Safety Principles（一酸化炭素・就寝時の暖房・薪ストーブ・火・燃料の恒久ルール）と§Material Care Principles（Coffee以外の素材別ケア。Routine／Periodic）を新設（Minor Version：章追加）。高温期の燃料の車内常備をVehicle = Permanent Storageの例外とした。Claude推奨案をMARI様の包括指示（2026-09-28）に基づき暫定採用。 |
 
 ---
 
