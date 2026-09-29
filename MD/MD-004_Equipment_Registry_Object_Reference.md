@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.75  
+**Version**: 7.76  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -2022,7 +2022,7 @@ Lantern Stand（木工旋盤仕上げ。Goal Zero・38灯・ZIG対応。支柱�
 
 ### Price  
 
-¥20,000  
+¥20,000（実勢価格。未購入のため、OP-010 Part AのPrice規定に基づき実勢価格で記載〈2026-09-29、MARI様のご決定〉。購入後は実際の購入価格へ更新する）  
 
 ---  
 
@@ -7127,6 +7127,12 @@ MARI様のご申告（2026-09-28）に基づき、SHL-006 DONKEY HAMMER_AのColo
 ## Version 7.75
 
 MARI様のご回答（2026-09-29）を反映。FUR-036のColorをCharcoal Grayへ確定。STR-030のX-PACグレードをVX21と記載。OP-010 Version 2.3で新設されたGraphic Attributeの特筆性の基準に基づき、SHL-006（サンゾー工務店ロゴのみ）とFUR-017（刻印ロゴのみ）のGraphic AttributeをNoneへ変更。LGT-017の価格注記を整理した。
+
+---
+
+## Version 7.76
+
+MARI様のご決定（2026-09-29）を反映。LGT-017のPrice ¥20,000を実勢価格として確定し、その旨を注記した（購入後は実際の購入価格へ更新）。FUR-016のGraphic Attribute（Street Graffiti-style Brand Logo〈Cutout〉）は、天板の切り抜き形状として意匠を大きく左右するため、OP-010の特筆性の基準を満たすものとして現行記載を維持した。STR-034は未定のため変更なし。
 
 ---
 
