@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.76  
+**Version**: 7.77  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -2006,7 +2006,6 @@ Essential
 ### Child Components  
 
 - LGT-017a  
-- LGT-017b  
 
 ### Color  
 
@@ -2030,11 +2029,11 @@ Lantern Stand（木工旋盤仕上げ。Goal Zero・38灯・ZIG対応。支柱�
 
 **Brand**  
 
-neru design works  
+Unconfirmed  
 
 **Product**  
 
-メッシュシェード  
+Unconfirmed  
 
 **Status**  
 
@@ -2046,55 +2045,21 @@ LGT-017
 
 ### Color  
 
-Copper  
+Unconfirmed  
 
 ### Material  
 
-Copper（Mesh Fabric）  
-
-### Graphic Attribute  
-
-None  
+Unconfirmed  
 
 ### Industrial Attribute  
 
-Portable LED Lantern（38-kT Shade）  
+Portable LED Lantern（38-kT Shade, Foldable。フィールドでの設営時に開いてLGT-017 BABELの上に載せて使用する。具体的な製品比較はCZ-001 Deliberation Dossierで管理）  
 
 ---  
 
 ## LGT-017b  
 
-**Brand**  
-
-neru design works × CALMA STORE  
-
-**Product**  
-
-POCKET SHADE  
-
-**Status**  
-
-Candidate  
-
-**Parent**  
-
-LGT-017  
-
-### Color  
-
-Khaki  
-
-### Material  
-
-Fabric  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Portable LED Lantern（38-kT Shade, Foldable）  
+Retired. 38-kT用シェードの候補枠（Candidate）。MD-004 §Purposeの候補記録ルール（競合する複数の候補IDは1件の決定枠IDへ統合する）に基づき、LGT-017aへ統合した（2026-09-29、MARI様のご決定）。候補製品の比較はCZ-001 Deliberation Dossierで管理する。本IDは統合記録として保持する。  
 
 ---  
 
@@ -7133,6 +7098,12 @@ MARI様のご回答（2026-09-29）を反映。FUR-036のColorをCharcoal Gray�
 ## Version 7.76
 
 MARI様のご決定（2026-09-29）を反映。LGT-017のPrice ¥20,000を実勢価格として確定し、その旨を注記した（購入後は実際の購入価格へ更新）。FUR-016のGraphic Attribute（Street Graffiti-style Brand Logo〈Cutout〉）は、天板の切り抜き形状として意匠を大きく左右するため、OP-010の特筆性の基準を満たすものとして現行記載を維持した。STR-034は未定のため変更なし。
+
+---
+
+## Version 7.77
+
+MARI様のご決定（2026-09-29）に基づき、38-kT用シェードの候補2件（LGT-017a neru design works メッシュシェード、LGT-017b neru design works × CALMA STORE POCKET SHADE）を、MD-004 §Purposeの候補記録ルールに合わせて整理した。LGT-017aをBrand / Product = Unconfirmedの1枠（Candidate）とし、LGT-017bはLGT-017aへ統合してRetiredとした。LGT-017のChild ComponentsからLGT-017bを外した。両候補の比較はCZ-001 Deliberation Dossierへ移した（CZ-001 Ver.3.19・CZ-002 Ver.3.8と連動）。
 
 ---
 

@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 3.7  
+**Version**: 3.8  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE
@@ -25,6 +25,7 @@
 | 3.5 | 2026-09-28 | MD-004の現状に合わせてWatch Listを整理（C-08、MARI様のご決定に基づく）。旧エントリ020 MT.SUMI Aura FGを削除（CZ-001 Decision Log 2026-09-26により不採用確定、MD-004に登録なし）。これに伴い旧021〜024（BABEL／FUR-032／T-box／BLISS-SP）を020〜023へ繰り上げ。エントリ023（FIREGRAPHIX BLISS-SP）のMD-004 Reference・Notesを、「購入時に登録予定・エントリ020と競合」から「MD-004上でStatus: Essential登録済み、2026-09-26付でMT.SUMI Aura FGとの比較検討の末に正式採用」へ訂正。MD-004でStatus = Essentialながら未掲載だった9件を新規追加：024 FUR-034（BlackishGear BLACK ZONE MAT）、025 FUR-035（HOTEL CAMPS リバーシブルホットカバー）、026 FUR-036（Snow Peak BD-066 オフトン ウォームアダプター）、027〜032 FIR-037〜042（FIREGRAPHIX BLISS-SPの付属品6点、Parent: FIR-036、個別エントリとして管理）。Current Watch List冒頭の説明文を「エントリ008〜023」から「エントリ008〜032」へ、Unconfirmed除外枠の例示を「FUR-034 Sleeping Mat、FUR-035 Pad Sheet」（2026-09-28にEssential確定済みのため該当しなくなった）から「STR-034 Container Bridge Frame保護ケース」へ更新。 |
 | 3.6 | 2026-09-28 | S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い、Revision History のうち Version 2.0〜2.16を archive/CZ-002_Version_History_Archive.md へ移設した。移設した履歴は原文のまま保持し、要約・削除は行っていない。本文側のWatch Listデータそのものに変更はない。MARI様のご決定に基づく。 |
 | 3.7 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
+| 3.8 | 2026-09-29 | MD-004 Version 7.77（LGT-017aをBrand / Product = Unconfirmedの候補枠へ整理、LGT-017bをRetired）と連動し、旧エントリ009（neru design works メッシュシェード、LGT-017a）と旧エントリ010（CALMA STORE × neru design works POCKET SHADE M、LGT-017b）を削除した。両候補の比較はCZ-001 Deliberation Dossierで管理する。これに伴い旧011〜032を009〜030へ繰り上げ、Current Watch List冒頭の説明文を「エントリ008〜032」から「エントリ008〜030」へ、Unconfirmed除外枠の例示へLGT-017aを追加した。MARI様のご決定に基づく。 |
 
 ---
 
@@ -141,9 +142,9 @@ Watch Listを維持する際、それ以前のプロトコルの各セクショ�
 
 エントリ001〜007は、本改訂以前から存在する。
 
-エントリ008〜032は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、BR-002 Barista Canon / BR-003 Procurement Handbookが引き続き管轄する。
+エントリ008〜030は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、BR-002 Barista Canon / BR-003 Procurement Handbookが引き続き管轄する。
 
-エントリ001〜007にも、MD-004上の該当IDが存在するものについては**MD-004 Reference**を付記している（003 WANTKEY CAMP × LOCKFIELD EQUIPMENT SC HANDLE WANTKEY ExclusiveはMD-004に該当IDなし）。MD-004上の製品が未確定（Brand / Product = Unconfirmed）の枠（STR-034 Container Bridge Frame保護ケース）は、検索対象の製品が定まらないため本リストの対象外とし、CZ-001 Deliberation Dossierで管理する。
+エントリ001〜007にも、MD-004上の該当IDが存在するものについては**MD-004 Reference**を付記している（003 WANTKEY CAMP × LOCKFIELD EQUIPMENT SC HANDLE WANTKEY ExclusiveはMD-004に該当IDなし）。MD-004上の製品が未確定（Brand / Product = Unconfirmed）の枠（STR-034 Container Bridge Frame保護ケース、LGT-017a 38-kT用シェード）は、検索対象の製品が定まらないため本リストの対象外とし、CZ-001 Deliberation Dossierで管理する。
 
 ## 001
 
@@ -353,52 +354,6 @@ FUR-026
 
 **Brand**
 
-neru design works
-
-**Target**
-
-メッシュシェード (Mesh Shade, 38-kT)
-
-**MD-004 Reference**
-
-LGT-017a
-
-**Required Keywords**
-
-- メッシュシェード
-- Mesh Shade neru design works
-- 38-kT メッシュシェード
-- ネルデザインワークス メッシュ
-
----
-
-## 010
-
-**Brand**
-
-CALMA STORE × neru design works
-
-**Target**
-
-POCKET SHADE M（neru design works柄）
-
-**MD-004 Reference**
-
-LGT-017b
-
-**Required Keywords**
-
-- POCKET SHADE M
-- Pocket Shade neru design works
-- CALMA STORE ポケットシェード
-- ポケットシェード M
-
----
-
-## 011
-
-**Brand**
-
 IFA
 
 **Target**
@@ -418,7 +373,7 @@ LGT-042
 
 ---
 
-## 012
+## 010
 
 **Brand**
 
@@ -441,7 +396,7 @@ ARM-002
 
 ---
 
-## 013
+## 011
 
 **Brand**
 
@@ -464,7 +419,7 @@ ARM-004
 
 ---
 
-## 014
+## 012
 
 **Brand**
 
@@ -487,7 +442,7 @@ ARM-003
 
 ---
 
-## 015
+## 013
 
 **Brand**
 
@@ -511,7 +466,7 @@ STR-006, STR-012
 
 ---
 
-## 016
+## 014
 
 **Brand**
 
@@ -534,7 +489,7 @@ STR-021
 
 ---
 
-## 017
+## 015
 
 **Brand**
 
@@ -562,7 +517,7 @@ nodel designが「Wood Board」という製品名でそのまま単品販売し�
 
 ---
 
-## 018
+## 016
 
 **Brand**
 
@@ -584,7 +539,7 @@ FIR-025
 
 ---
 
-## 019
+## 017
 
 **Brand**
 
@@ -607,7 +562,7 @@ FIR-026
 
 ---
 
-## 020
+## 018
 
 **Brand**
 
@@ -634,7 +589,7 @@ LGT-017
 
 ---
 
-## 021
+## 019
 
 **Brand**
 
@@ -661,7 +616,7 @@ FUR-032
 
 ---
 
-## 022
+## 020
 
 **Brand**
 
@@ -688,7 +643,7 @@ STR-030
 
 ---
 
-## 023
+## 021
 
 **Brand**
 
@@ -715,7 +670,7 @@ FIR-036
 
 ---
 
-## 024
+## 022
 
 **Brand**
 
@@ -738,7 +693,7 @@ FUR-034
 
 ---
 
-## 025
+## 023
 
 **Brand**
 
@@ -761,7 +716,7 @@ FUR-035
 
 ---
 
-## 026
+## 024
 
 **Brand**
 
@@ -784,7 +739,7 @@ FUR-036
 
 ---
 
-## 027
+## 025
 
 **Brand**
 
@@ -807,7 +762,7 @@ FIR-037（Parent: FIR-036）
 
 ---
 
-## 028
+## 026
 
 **Brand**
 
@@ -830,7 +785,7 @@ FIR-038（Parent: FIR-036）
 
 ---
 
-## 029
+## 027
 
 **Brand**
 
@@ -853,7 +808,7 @@ FIR-039（Parent: FIR-036）
 
 ---
 
-## 030
+## 028
 
 **Brand**
 
@@ -876,7 +831,7 @@ FIR-040（Parent: FIR-036）
 
 ---
 
-## 031
+## 029
 
 **Brand**
 
@@ -899,7 +854,7 @@ FIR-041（Parent: FIR-036）
 
 ---
 
-## 032
+## 030
 
 **Brand**
 
