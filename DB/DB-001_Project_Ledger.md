@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.19
+**Version**: 4.20
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -51,6 +51,7 @@
 | パートナー貢献の扱いとDrive⇄GitHub同期運用 | OP-001, OP-008 | パートナー, 協力者, Gemini, Drive, Mirror, Contributions, GAS, 一方向ミラー, External Contribution Protocol, rclone | OP-001 §21.1 External Contribution Protocolを新設（Ver.5.5）。OP-008 §27 Drive Mirror Operationを新設（Ver.3.7）。GitHub→Driveの一方向ミラー（GAS、15分ごと）を稼働し、協力者の書き込み先をContributionsとした（自動反映なし・正式化はオーナーとAIが判断）。旧ミラーのワークフロー（mirror-to-drive.yml）を削除し、Driveの親フォルダの旧ミラー残骸を整理。GASソースをscripts/MirrorSync.gsとして保管。 | Active | 2026-09-28 |
 | 調達区分の整理（OP-005のCoffee限定化・Horizon改称） | OP-005, OP-008, KN-004, CZ-002, BR-003 | Pursuit Strategy, Acquisition Priority, Acquisition Status, Monthly Planning, Must Buy Dashboard, Horizon, Watch List, 買えるときに買う, Purchase Priority, Purchase Grouping, Monthly Acquisition Plan, 二重定義 | OP-005 Ver.2.0：Coffee以外は「買えるときに買う」と明記し、Coffeeの購入優先度・購入状態・月次計画の定義をBR-003へ一本化（Acquisition Priority／Acquisition Status／Monthly Planningの3章を削除）。KN-004のMust Buy DashboardをHorizonへ改称し、監視対象をCZ-002 Watch Listへ統一（CZ-002 Ver.3.3）。OP-008 Ver.3.8・3.9で同期。BR-003 Ver.3.3でPurposeへMonthly Acquisition Plan追加・未定義のRejected削除・表記訂正（Ver.3.5で転記誤りを訂正）。 | Active | 2026-09-28 |
 | 全文書レビューと整備バックログの消化 | 全文書 | 整備バックログ, 矛盾, 重複, 未策定, Sonnet, Safety, 一酸化炭素, Material Care, Vehicle, Range Rover Sport, Field Log, Zone Evaluation Philosophy, Partner Value, Retirement, ID Freeze | 全25文書をレビューし、矛盾・重複・未策定事項を課題化（整備バックログArtifact）。Sonnetで大半を解消後、残りの未策定事項をClaudeの推奨案で暫定採用：OP-006 Safety／Material Care、MD-001 Vehicle・全体設営撤収手順、DB-001 Field Log、OP-002 Zone Evaluation Philosophy（5ゾーン）、OP-010 退役ルール・Coffee境界・Candidate方式・Field Atlas基準、MD-002 Partner Value正式化、OP-005 予算の性格・Coffee在庫確認、CZ-001 経由ルール、ヘッダー統一。文書数は減らさない方針（MARI様指示）。 | Active | 2026-09-28 |
+| 暫定採用項目の個別確認 | OP-002, OP-005, OP-006, OP-010, MD-001, BR-002, CZ-001, CZ-002, DB-001 | 暫定採用, 正式採用, N-01, N-03, N-05, N-08, N-09, N-10, N-12, N-13, N-14, 一酸化炭素チェッカー, 設営順序, Partner Value, Coffee Watch Scope, 比較検討の必須化, FUR-036 | 整備バックログで暫定採用した15件をMARI様が個別に確認。14件を正式採用（N-01はチェッカー2個へ修正、N-03は設営順序を変更、N-06は収納・運搬をDeferredへ戻す、N-12は比較検討の必須化へ変更しFUR-036をさかのぼって比較、N-14はCoffee機材もCZ-002で監視へ変更）。N-05・N-16（Field Log）は初回キャンプの試行後に決定。 | Active | 2026-09-29 |
 
 ---
 
@@ -78,12 +79,13 @@
 |------|-------|
 | 2026-09-28 | 冬用暖房コンテナ（湯たんぽ・電気毛布・シャンクヒーター用）の要否・定位置：優先度低、検討中 |
 | 2026-09-28 | Beck②の試し詰めと実測（MD-001 Coffee Module Layout §必要な実測）。Coffee Equipment購入後に実施 |
+| 2026-09-29 | 一酸化炭素チェッカーの2個目を購入予定（OP-006 §Safety Principlesで2個設置を定めたため。現在1個所有）。2個そろうまで、シェルター内で燃焼器具を使わない |
 
 ---
 
 # Field Log
 
-キャンプの計画と実施の記録。MD-002 Field Atlasの再評価、OP-006 Foundation Compass・MD-001 Storage Blueprint・BR-001 Brew Careの改善の入力として使う（2026-09-28新設。N-05・N-16）。
+キャンプの計画と実施の記録。MD-002 Field Atlasの再評価、OP-006 Foundation Compass・MD-001 Storage Blueprint・BR-001 Brew Careの改善の入力として使う（2026-09-28新設。N-05・N-16）。本表の運用は暫定であり、初回のキャンプを試しに記録した後、継続するかをMARI様が決定する（2026-09-29、MARI様のご決定）。
 
 | Date | Status | Field | Weather / Temp | Configuration | Went Well | Issues | Follow-up |
 |------|--------|-------|----------------|---------------|-----------|--------|-----------|
@@ -161,6 +163,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.17 | 2026-09-28 | MARI様のご回答に基づき、Project Inboxを更新。MD-002の移動時間（17件記載済み）を削除し、車両（座席数確認済み）とBeck②試し詰め（専用水ボトルの収納先決定済み）の行を残る未決事項のみへ書き直した。Patch Version。 |
 | 4.18 | 2026-09-28 | MARI様のご回答に基づき、Project Inboxを更新。車両は荷室寸法の記載により試し積みのみを残し、Beck②の試し詰めはCoffee Equipment購入後に実施する旨を明記。Patch Version。 |
 | 4.19 | 2026-09-28 | MARI様の試し積み結果をMD-001 §Loading Map（Ver.2.26）へ反映したため、Project Inboxの「車両への試し積み」を削除。Patch Version。 |
+| 4.20 | 2026-09-29 | 暫定採用項目の個別確認（MARI様のご決定）を記録。Conversation Ledgerへ本会話を追加。Project Inboxへ一酸化炭素チェッカー2個目の購入予定を追加（OP-006 Ver.1.9と連動）。§Field Logへ、運用は暫定であり初回キャンプの試行後に継続を決定する旨を追記（N-05・N-16）。 |
 
 ---
 

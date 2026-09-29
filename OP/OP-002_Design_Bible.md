@@ -1,11 +1,11 @@
-OP-002 Design Bible Ver.5.11
+OP-002 Design Bible Ver.5.12
 # THE THIRD PLACE Design Bible
-## Ver.5.11 Official Complete Edition
+## Ver.5.12 Official Complete Edition
 
 **Document ID**: OP-002  
 **Title**: Design Bible  
 **Series**: OP – Operation (Definition)  
-**Version**: 5.11  
+**Version**: 5.12  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -217,7 +217,7 @@ Furniture Domainの機材は、以下4軸で評価する。
 
 以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）：Popularity／SNS／Review Count／Rarity／Collector Value／Price。
 
-本評価軸は暫定である（2026-09-28、本ドメイン節の本文から導いたClaude推奨案を、MARI様の包括指示に基づき暫定採用。CZ-001での比較検討を通じて確定する）。
+本評価軸は、2026-09-28に本ドメイン節の本文から導いて追加し、2026-09-29にMARI様のご決定により正式採用した（N-09）。
 
 ---
 
@@ -257,7 +257,7 @@ Light Domainの機材は、以下4軸で評価する。
 
 以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）：Popularity／SNS／Review Count／Rarity／Collector Value／Price。
 
-本評価軸は暫定である（2026-09-28、本ドメイン節の本文から導いたClaude推奨案を、MARI様の包括指示に基づき暫定採用。CZ-001での比較検討を通じて確定する）。
+本評価軸は、2026-09-28に本ドメイン節の本文から導いて追加し、2026-09-29にMARI様のご決定により正式採用した（N-09）。
 
 ---
 
@@ -295,7 +295,7 @@ Aroma Domainの機材は、以下4軸で評価する。
 
 以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）：Popularity／SNS／Review Count／Rarity／Collector Value／Price。
 
-本評価軸は暫定である（2026-09-28、本ドメイン節の本文から導いたClaude推奨案を、MARI様の包括指示に基づき暫定採用。CZ-001での比較検討を通じて確定する）。
+本評価軸は、2026-09-28に本ドメイン節の本文から導いて追加し、2026-09-29にMARI様のご決定により正式採用した（N-09）。
 
 ---
 
@@ -345,7 +345,7 @@ Storage Domainの機材は、以下4軸で評価する。
 
 以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）：Popularity／SNS／Review Count／Rarity／Collector Value／Price。
 
-本評価軸は暫定である（2026-09-28、本ドメイン節の本文から導いたClaude推奨案を、MARI様の包括指示に基づき暫定採用。CZ-001での比較検討を通じて確定する）。
+本評価軸は、2026-09-28に本ドメイン節の本文から導いて追加し、2026-09-29にMARI様のご決定により正式採用した（N-09）。
 
 ---
 
@@ -540,7 +540,7 @@ Shelter Domainの機材は、以下4軸で評価する。
 
 以下は評価対象としない（THE THIRD PLACE全体のBaselineに準拠）：Popularity／SNS／Review Count／Rarity／Collector Value／Price。
 
-本評価軸は暫定である（2026-09-28、本ドメイン節の本文から導いたClaude推奨案を、MARI様の包括指示に基づき暫定採用。CZ-001での比較検討を通じて確定する）。
+本評価軸は、2026-09-28に本ドメイン節の本文から導いて追加し、2026-09-29にMARI様のご決定により正式採用した（N-09）。
 
 
 # Design Language（設計言語）
@@ -1875,7 +1875,7 @@ THE THIRD PLACEは、
 
 **THE THIRD PLACE Design Bible**
 
-**Ver.5.11 Official Complete Edition**
+**Ver.5.12 Official Complete Edition**
 
 **End of Document**
 
@@ -1950,3 +1950,9 @@ THE THIRD PLACEは、
 ## Header Standardization Note
 
 本文書は、2026-09-28付でVer.5.10からVer.5.11へ更新した。S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。
+
+---
+
+## Zone Evaluation Philosophy Adoption Note
+
+本文書は、2026-09-29付でVer.5.11からVer.5.12へ更新した（Patch Version：暫定採用の解除）。Ver.5.10で暫定採用したFurniture・Light・Aroma・Storage・ShelterのZone Evaluation Philosophy（各4軸）を、MARI様のご決定（2026-09-29、暫定採用項目の個別確認）により原文のまま正式採用とし、各ドメイン節の「本評価軸は暫定である」の注記を正式採用の記録へ改めた（N-09）。評価軸の内容に変更はない。

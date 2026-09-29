@@ -3,7 +3,7 @@
 **Document ID**: OP-010  
 **Title**: Qualification Charter  
 **Series**: OP – Operation (Definition)  
-**Version**: 2.3  
+**Version**: 2.4  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -21,6 +21,7 @@
 | 2.1 | 2026-09-28 | MD-004の登録規則違反の整理（C-16）に伴い、Part Aへ「共通部品の子ID形式」（LGT-04_1a等、量産共通部品向けの子ID表記を正式追認）と「Reserved Slot（予約枠）」（Vacant枠とStatus非保持の扱いを正式化）を新設した（Minor Version：章追加）。既存の登録済みID（AIR LIGHT群、LGT-043）は、Version 2.0で採用されたS-01（ID Freeze）方針に基づき変更しない。MARI様のご決定に基づく。 |
 | 2.2 | 2026-09-28 | 整備バックログ（N-08・N-10・N-11・N-13）対応。Part Aへ§Retirement（退役：Merged／Transferred／Sold／Given／Discarded、IDは再利用しない、MD-003にも適用）と§Coffee Domain Scope（COF-seriesの対象と登録範囲）を新設。Part B §Domain Scope NoteへCoffee System機材の除外を追記し、§Candidate Recording PolicyへMD-004との方式の違い（意図された併存）を明記。Part Cへ§Site Requirements（区画面積・アーリーチェックイン・温水）を新設し、移行注記を「Partner Valueを正式スコアとし、Database掲載順をPartner Value降順とする」へ改めた。いずれもClaude推奨案をMARI様の包括指示に基づき暫定採用。Minor Version（章追加）。 |
 | 2.3 | 2026-09-29 | MARI様のご決定に基づき、Part A §Graphic Attributeへ特筆性の基準（意匠を大きく左右するグラフィックのみ記録し、ロゴ・小さな刻印のみの場合はNone。欄がない場合もNoneと同じ扱い。MD-003にも適用）を追加。Part A・Part BのPrice項目へ、購入済みは実際の購入価格（実売価格）を優先し、未購入・不明の場合は公式価格または実勢価格を出典付きで記載する旨を追加。Minor Version。 |
+| 2.4 | 2026-09-29 | 暫定採用項目の個別確認（N-08・N-10・N-11・N-13）。MARI様のご決定に基づき、Version 2.2で暫定採用したPart A §Retirement・§Coffee Domain Scope、Part B §Candidate Recording Policyの「MD-004との方式の違い」、Part C §Site Requirements・§Ranking Philosophyの移行注記（Partner Valueを正式スコアとし、旧スコアは参考値として併記）を、いずれも原文のまま正式採用とし、暫定採用の注記を正式採用の記録へ改めた。規則の内容に変更はない。Patch Version。 |
 
 ---
 
@@ -101,7 +102,7 @@ IDは変更されない。
 
 ### Retirement（退役）（Version 2.2以降）
 
-所有をやめた、または他の枠・台帳へ移ったEquipmentは、IDとレコードを削除せず「Retired」として保持する。Retiredは上記Status語彙とは別の、レコードの終了状態を表す。IDは再利用しない（OP-008 §17）（2026-09-28、Claude推奨案をMARI様の包括指示に基づき暫定採用）。
+所有をやめた、または他の枠・台帳へ移ったEquipmentは、IDとレコードを削除せず「Retired」として保持する。Retiredは上記Status語彙とは別の、レコードの終了状態を表す。IDは再利用しない（OP-008 §17）（2026-09-28新設、2026-09-29 MARI様のご決定により正式採用。N-08）。
 
 | Retired Reason | 意味 |
 |---|---|
@@ -131,7 +132,7 @@ Vacant枠は、具体的な検討対象がCZ-001 Deliberation Dossier等で特�
   
 ### Coffee Domain Scope（Coffee Domainの範囲）（Version 2.2以降）
 
-Coffee Domain（COF-series）は、BR-002 Barista Canonが意思決定を管轄するCoffee System（エスプレッソ抽出とミルクスチーム、そのためのServiceware〈グラス・カップ・運搬ケース〉と専用水ボトル）を対象とする。ハンドドリップ等、キッチンでの調理行為としてのコーヒー器具は、Part B §Domain Scope Noteに従いMD-003で管理する（2026-09-28、Claude推奨案をMARI様の包括指示に基づき暫定採用）。
+Coffee Domain（COF-series）は、BR-002 Barista Canonが意思決定を管轄するCoffee System（エスプレッソ抽出とミルクスチーム、そのためのServiceware〈グラス・カップ・運搬ケース〉と専用水ボトル）を対象とする。ハンドドリップ等、キッチンでの調理行為としてのコーヒー器具は、Part B §Domain Scope Noteに従いMD-003で管理する（2026-09-28新設、2026-09-29 MARI様のご決定により正式採用。N-11）。
 
 COF-seriesへ登録するのは、BR-003 Procurement HandbookでAcquisition Status = Purchase Requiredとなっている品目のうち、購入してOwnedになったものとする。Included（他の機材の付属品）、Coffee Beans、9Barista Official Spare Parts（Preventive Stock）は登録しない。
 
@@ -395,7 +396,7 @@ MD-004（所有物のみを記録）とは異なり、MD-003は「まだ選ば�
 
 いずれか一つが購入・確定した時点でStatusをOwnedへ更新し、MD-004には登録しない（MD-003で完結）。不採用となった候補はStatusをUpgrade等に変更するか、Version Historyに不採用の経緯を記録した上で扱いを決める。
 
-**MD-004との方式の違い（Version 2.2明記）**：MD-004は候補を台帳へ並べず、Brand / Product = Unconfirmedの1枠とCZ-001 Deliberation Dossierでの比較で管理する。MD-003は機能優先の選定過程そのものを台帳に残すため、枝番方式を用いる。この二方式の併存は意図されたものであり、統一しない（2026-09-28、Claude推奨案をMARI様の包括指示に基づき暫定採用）。
+**MD-004との方式の違い（Version 2.2明記）**：MD-004は候補を台帳へ並べず、Brand / Product = Unconfirmedの1枠とCZ-001 Deliberation Dossierでの比較で管理する。MD-003は機能優先の選定過程そのものを台帳に残すため、枝番方式を用いる。この二方式の併存は意図されたものであり、統一しない（2026-09-28新設、2026-09-29 MARI様のご決定により正式採用。N-13）。
 
 ### Category Grouping Policy（Version 2.5新設、Version 2.0よりHistorical Referenceへ変更）
 
@@ -726,7 +727,7 @@ Ver.2.1までは独立した評価軸（★評価）だったが、Ver.3.0でこ
 
 ## Site Requirements（区画・運営条件）（Version 2.2以降）
 
-MD-002のIdentityコメントに散在していた基準を明文化する（2026-09-28、Claude推奨案をMARI様の包括指示に基づき暫定採用）。
+MD-002のIdentityコメントに散在していた基準を明文化する（2026-09-28新設、2026-09-29 MARI様のご決定により正式採用。N-10）。
 
 | 条件 | 基準 | 評価する軸 |
 |---|---|---|
@@ -765,7 +766,7 @@ Field Atlas は、
 
 経験とともに成熟していく評価体系である。
 
-**移行の完了（Version 2.2）：Field Atlas Database内の既存49件の統合スコア（例：98.5、97.8等）は、Ver.2.1までの旧フレームワークで算定された値である。MD-002 Ver.3.2でRadar Sub-Scores全49件の6軸記録が完了したため、Partner Value（6軸合計、60点満点）を正式スコアとし、Field Atlas Databaseの掲載順はPartner Valueの降順（同点の場合は旧スコアの降順）とする。旧スコアは参考値として併記する（2026-09-28、Claude推奨案をMARI様の包括指示に基づき暫定採用）。**
+**移行の完了（Version 2.2）：Field Atlas Database内の既存49件の統合スコア（例：98.5、97.8等）は、Ver.2.1までの旧フレームワークで算定された値である。MD-002 Ver.3.2でRadar Sub-Scores全49件の6軸記録が完了したため、Partner Value（6軸合計、60点満点）を正式スコアとし、Field Atlas Databaseの掲載順はPartner Valueの降順（同点の場合は旧スコアの降順）とする。旧スコアは参考値として併記する（2026-09-28新設、2026-09-29 MARI様のご決定により正式採用。N-10）。**
 
 ---
 

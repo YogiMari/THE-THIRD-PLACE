@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.29
+## Ver.2.30
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.29  
+**Version**: 2.30  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -526,7 +526,7 @@ STR-032（WHATNOT One Touch Bucket HD）を、通年の消耗品と小物の常�
 | Season | Contents |
 |---|---|
 | Summer | 夏用ワンタッチバケット |
-| Winter | 冬用の大きな寝具（FUR-032。未所有・Status = Essential）。バケットは自宅保管とする |
+| Winter | 冬用の大きな寝具（FUR-032。未所有・Status = Essential）、オフトン ウォームアダプター（FUR-036。未所有・Status = Essential。FUR-032と同梱）。バケットは自宅保管とする |
 
 ### Rule
 
@@ -578,7 +578,7 @@ Seasonal Slot A・Bへ積む冬季の構成物を定義する。
 
 湯たんぽ・電気毛布はMD-004へ未登録の物品であり、Seasonal Slot Module Ruleと同様の扱いとする。定位置は未定のため、本節では暫定位置を記載しない。
 
-FUR-034・FUR-036は冬用（Season Kit）として本Kitに含める（N-07、2026-09-28 Claude推奨案をMARI様の包括指示に基づき採用）。積載位置は未決だが、FUR-036はFUR-032と併用前提のため、FUR-032と同じSeasonal Slot Bへ同梱することを推奨する。FUR-034の積載位置、およびFIR-032＋FIR-033の積載位置（現状Seasonal Slot A・Bのいずれにも未割当）は、2026-09-28の試し積みでは個別に確認していない（§Loading Map「位置を個別に記載していない物」と同様、荷の隙間に置く）。定位置が必要になったら§Loading Mapへ追記する。電気毛布は電源サイトを利用する場合のみ持参する（ポータブル電源は使わない。2026-09-28、MARI様のご決定）。
+FUR-034・FUR-036は冬用（Season Kit）として本Kitに含める（N-07、2026-09-28新設、2026-09-29 MARI様のご決定により正式採用）。FUR-036はFUR-032と併用前提のため、FUR-032と同じSeasonal Slot Bへ同梱する（2026-09-29、MARI様のご決定）。FUR-034の積載位置、およびFIR-032＋FIR-033の積載位置（現状Seasonal Slot A・Bのいずれにも未割当）は、2026-09-28の試し積みでは個別に確認していない（§Loading Map「位置を個別に記載していない物」と同様、荷の隙間に置く）。定位置が必要になったら§Loading Mapへ追記する。電気毛布は電源サイトを利用する場合のみ持参する（ポータブル電源は使わない。2026-09-28、MARI様のご決定）。
 
 ## Consumables
 
@@ -662,9 +662,9 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 
 ---
 
-# Site Deployment Sequence（全体・暫定）
+# Site Deployment Sequence（全体）
 
-現地到着から空間完成までの全体順序を定義する（N-03。2026-09-28 Claude推奨案をMARI様の包括指示に基づき暫定採用）。各Moduleの内部手順は、下記§Deployment Sequence（Beck②）・§Coffee Sequence・§Light Sequenceを参照する。
+現地到着から空間完成までの全体順序を定義する（N-03。2026-09-28新設、2026-09-29 MARI様のご決定により順序を改めて正式採用）。各Moduleの内部手順は、下記§Deployment Sequence（Beck②）・§Coffee Sequence・§Light Sequenceを参照する。
 
 ① 到着・区画確認（地面、風向き、日の向き、車の位置）
 
@@ -674,19 +674,19 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 
 ↓
 
-③ Living Core：Beck②を開き、§Deployment Sequenceの①〜⑦（Bridge Table・Coffee Setup・サイドテーブル）
+③ Furniture：チェア・サイドテーブル類
 
 ↓
 
-④ Kitchen：Beck①、FUR-015 EXTENMON TABLE
+④ Bedding：ShellCon25①、冬はWinter Kit Bedding（日没前に完了）
 
 ↓
 
-⑤ Furniture：チェア・サイドテーブル類
+⑤ Kitchen：Beck①、FUR-015 EXTENMON TABLE
 
 ↓
 
-⑥ Fire：焚き火（FIR-001系）、冬はFIR-036薪ストーブ（OP-006 §Safety Principlesに従う）
+⑥ Living Core：Beck②を開き、§Deployment Sequenceの①〜⑦（Bridge Table・Coffee Setup・サイドテーブル）
 
 ↓
 
@@ -694,19 +694,19 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 
 ↓
 
-⑧ Light & Aroma：§Deployment Sequenceの⑧〜⑩（日没前に完了）
+⑧ Fire：焚き火（FIR-001系）、冬はFIR-036薪ストーブ（OP-006 §Safety Principlesに従う）
 
 ↓
 
-⑨ Bedding：ShellCon25①、冬はWinter Kit Bedding（日没前に完了）
+⑨ Light & Aroma：§Deployment Sequenceの⑧〜⑩（日没前に完了）
 
 Shelterの使い分け（どのSHLをどの条件で使うか）と、区画の広さ別の標準配置は未策定（OP-007 Habitat Architectureの原則に基づき、Field Log〈DB-001〉の記録を踏まえて定める）。
 
 ---
 
-# Site Recovery Sequence（全体・暫定）
+# Site Recovery Sequence（全体）
 
-撤収の全体順序を定義する。OP-006 Foundation Compass §Recovery Sequence（設営の逆順ではなく、保護・乾燥・メンテナンス・次回設営を考慮する）に基づき、乾燥に時間を要するShelterを最後に撤収する（N-03・C-19。2026-09-28 Claude推奨案をMARI様の包括指示に基づき暫定採用）。
+撤収の全体順序を定義する。OP-006 Foundation Compass §Recovery Sequence（設営の逆順ではなく、保護・乾燥・メンテナンス・次回設営を考慮する）に基づき、乾燥に時間を要するShelterを最後に撤収する（N-03・C-19。2026-09-28新設、2026-09-29 MARI様のご決定により正式採用）。
 
 ① 起床後：寝具を広げて結露・湿気を飛ばし、乾燥後にShellCon25①へ収納する
 
@@ -858,7 +858,7 @@ Z1 Mini Steamer
 
 Pitcher＋Sleeve
 
-収納は、現状はこの逆順で暫定運用している。OP-006 Foundation Compass Recovery Sequenceの原則（保護・乾燥・メンテナンス・次回設営を考慮した順序であり、設営の逆順ではない）への正式な整合はN-03で扱う。
+収納は、現状はこの逆順で運用している。サイト全体の撤収順序は、OP-006 Foundation Compass Recovery Sequenceの原則（保護・乾燥・メンテナンス・次回設営を考慮した順序であり、設営の逆順ではない）に基づき§Site Recovery Sequenceで定めた（N-03、2026-09-29正式採用）。
 
 ---
 
@@ -892,7 +892,7 @@ Vapalux（必要時のみ）
 
 # Return Sequence
 
-現状はDeployment Sequenceのほぼ逆順で暫定運用している。OP-006 Foundation Compass Recovery Sequenceの原則（保護・乾燥・メンテナンス・次回設営を考慮した順序であり、設営の逆順ではない）に基づく正式な撤収手順の設計はN-03で扱う。
+現状はDeployment Sequenceのほぼ逆順で運用している。サイト全体の撤収順序は、OP-006 Foundation Compass Recovery Sequenceの原則（保護・乾燥・メンテナンス・次回設営を考慮した順序であり、設営の逆順ではない）に基づき§Site Recovery Sequenceで定めた（N-03、2026-09-29正式採用）。
 
 Coffee Equipment
 
@@ -1263,6 +1263,7 @@ Permanent Storage
 | 2.27 | 2026-09-28 | MARI様のご決定に基づき、§Peg & Guyline Moduleを新設（STR-036 エアドライ ペグケースにSHL-006 DONKEY HAMMER、鍛造ペグ40cm ×6・30cm ×15、ロープ、ガイベルトをまとめて運用。車内位置は荷室・手前・右・床。本数確認などの点検方法を記載）。§Loading Mapの「ペグケース（MD-004未登録）」を本節への参照へ更新。MD-004 Version 7.71と連動。 |
 | 2.28 | 2026-09-28 | MD-004 Version 7.72と連動。§Loading Mapの「充電が必要な物だけを入れたバッグ（MD-004未登録）」をSTR-037 Snow Peak Quilted Ripstop Duffleへ更新。§Peg & Guyline ModuleのSHL-006表記を公式名（DONKEY HAMMER_A、サンゾー工務店 × asimocrafts）へ更新。 |
 | 2.29 | 2026-09-29 | MARI様のご決定・ご希望に基づき、Beck②のLayer 2・Layer 3の格納先を更新。Wood Board ×4 Sets（Layer 2）はBeck②外のFUR-024 EXTENSIONTABLE CASE（neru design works × WHAT WE WANT）へ並べて収納する（同ケースは6セット程度まで収納可能、MARI様のご申告）。Vapalux M320（Layer 3）は、Coffee Equipment 13点を収納して余裕があればBeck②最下層へ収納し、可否は試し詰めで判断する。§Layer 2・§Layer 3・§Coffee Module Layout（暫定）§未決事項・§Beck② Principles・§Home Operation・§Fixed Position Rules・§Validation Summaryを連動して更新。 |
+| 2.30 | 2026-09-29 | 暫定採用項目の個別確認（N-03・N-07）。MARI様のご決定に基づき、§Site Deployment Sequenceの順序を「到着・区画確認→Shelter→Furniture→Bedding→Kitchen→Living Core→Dust Management→Fire→Light & Aroma」へ改めて正式採用し、§Site Recovery Sequenceは原文のまま正式採用した（見出しの「暫定」と暫定採用の注記を削除）。Coffee Return・Return Sequenceの「正式な撤収手順はN-03で扱う」旨を、§Site Recovery Sequenceへの参照へ改めた。Winter Kit BeddingのFUR-034・FUR-036を正式採用とし、FUR-036の積載位置をSeasonal Slot B（FUR-032と同梱）に確定し、§Seasonal Slot ModuleのSlot B冬季へ追記した。Minor Version。 |
 
 ---
 

@@ -1,12 +1,12 @@
 OP-006 Foundation Compass
 # OP-006
 # Foundation Compass
-## Ver.1.8
+## Ver.1.9
 
 **Document ID**: OP-006  
 **Title**: Foundation Compass  
 **Series**: OP – Operation (Definition)  
-**Version**: 1.8  
+**Version**: 1.9  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -432,12 +432,12 @@ Equipment は、
 
 # Safety Principles
 
-本節は、火・燃料・シェルターに関する安全の恒久ルールを定める。個々の器具の置き場所・積載位置は MD-001 Storage Blueprint が管理する（2026-09-28 Claude推奨案をMARI様の包括指示に基づき暫定採用。N-01）。
+本節は、火・燃料・シェルターに関する安全の恒久ルールを定める。個々の器具の置き場所・積載位置は MD-001 Storage Blueprint が管理する（2026-09-28新設、2026-09-29 MARI様のご決定により正式採用。N-01）。
 
 ## Carbon Monoxide
 
-- シェルター内で燃焼器具（薪ストーブ・灯油ストーブ・ガス器具・アルコール器具）を使う場合は、一酸化炭素警報器を設置し、使用前に作動を確認する。
-- 警報器がない状態では、シェルター内で燃焼器具を使わない。
+- シェルター内で燃焼器具（薪ストーブ・灯油ストーブ・ガス器具・アルコール器具）を使う場合は、一酸化炭素チェッカーを2個設置し、使用前に作動を確認する。
+- チェッカーが2個そろっていない状態では、シェルター内で燃焼器具を使わない。
 - 燃焼器具の使用中は、シェルターのベンチレーションを開けて換気する。
 
 ## Sleeping
@@ -466,7 +466,7 @@ Equipment は、
 
 # Material Care Principles
 
-本節は、Coffee System以外のEquipmentの素材別ケアの恒久ルールを定める。Coffee SystemのケアはBR-001 Brew Careが管理する。メーカーの手入れ指示がある場合はそれを優先する（情報の優先順位はBR-001 Brew Care §Manufacturer Information Hierarchyに準じる）。使用する手入れ用品はMD-001 Storage Blueprint §Consumables & Sundries Moduleが管理する（2026-09-28 Claude推奨案をMARI様の包括指示に基づき暫定採用。N-04）。
+本節は、Coffee System以外のEquipmentの素材別ケアの恒久ルールを定める。Coffee SystemのケアはBR-001 Brew Careが管理する。メーカーの手入れ指示がある場合はそれを優先する（情報の優先順位はBR-001 Brew Care §Manufacturer Information Hierarchyに準じる）。使用する手入れ用品はMD-001 Storage Blueprint §Consumables & Sundries Moduleが管理する（2026-09-28新設、2026-09-29 MARI様のご決定により正式採用。N-04）。
 
 | Material | Routine（毎回） | Periodic（季節の入れ替え時） |
 |---|---|---|
@@ -559,6 +559,7 @@ Foundation Compass は、
 | 1.6 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Relationship to Other Core Documentsの文書一覧表（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。表以外の固有の関係説明は変更していない。Patch Version。MARI様のご決定に基づく（S-08）。 |
 | 1.7 | 2026-09-28 | 整備バックログ（N-01・N-04）対応。§Safety Principles（一酸化炭素・就寝時の暖房・薪ストーブ・火・燃料の恒久ルール）と§Material Care Principles（Coffee以外の素材別ケア。Routine／Periodic）を新設（Minor Version：章追加）。高温期の燃料の車内常備をVehicle = Permanent Storageの例外とした。Claude推奨案をMARI様の包括指示（2026-09-28）に基づき暫定採用。 |
 | 1.8 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
+| 1.9 | 2026-09-29 | 暫定採用項目の個別確認（N-01・N-04）。MARI様のご決定に基づき、§Safety Principles・§Material Care Principlesを正式採用へ改め、暫定採用の注記を外した。§Carbon Monoxideのみ修正し、一酸化炭素チェッカーを2個設置すること、2個そろっていない状態ではシェルター内で燃焼器具を使わないことを定めた（2個目は未所有、DB-001 Project Inboxで管理）。他の条文は原文のまま。Minor Version。 |
 
 ---
 

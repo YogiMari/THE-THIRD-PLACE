@@ -10,7 +10,7 @@ Barista Canon
     
 # Version    
     
-4.10    
+4.11    
     
 # Status    
     
@@ -1437,15 +1437,11 @@ LAGOM MiniからBlind Shakerへの直接受けが物理的に成立する場合�
   
 ## Storage & Organization  
   
-**Status**  
-  
-In Progress（2026-09-28、Deferredから検討中へ移行）  
-  
 **Reason**  
   
 Coffee Station全体のレイアウト確定後に検討する。  
   
-Coffee Equipment 13点のBeck②への収納設計は、MD-001 Storage Blueprint §Coffee Module Layout（暫定）で進行中である。Coffee Serviceware（HILLS FIELD Glass Case Single・FIKA12 ×2）は、食器としてBeck①（Kitchen Module）へ収納することが決定済み（2026-09-28、MARI様のご決定）。Coffee System専用水ボトル3本は、食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ）へ収納する（2026-09-28、MARI様のご決定）。  
+Coffee Serviceware（HILLS FIELD Glass Case Single・FIKA12 ×2）は、食器としてBeck①（Kitchen Module）へ収納することが決定済み（2026-09-28、MARI様のご決定）。Coffee System専用水ボトル3本は、食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ）へ収納する（2026-09-28、MARI様のご決定）。  
   
 ただし、BR-002で正式採用したKNODOS Tamping Mat with Tool Organiser - Walnut 54mmは、Coffee Tool Workflowを成立させるためのEquipmentとしてConfirmedとする。  
   
@@ -1453,15 +1449,9 @@ Coffee Equipment 13点のBeck②への収納設計は、MD-001 Storage Blueprint
   
 ## Travel Carry System  
   
-**Status**  
-  
-In Progress（2026-09-28、Deferredから検討中へ移行）  
-  
 **Reason**  
   
 Coffee Equipment一式が完成した後に検討する。  
-  
-運搬はBeck②への固定収納（MD-001 Storage Blueprint §Coffee Module Layout）を基本として検討が進んでいる。専用の運搬ケースを追加するかは、試し詰めの結果を受けて判断する。  
   
 ---  
   
@@ -1469,9 +1459,7 @@ Coffee Equipment一式が完成した後に検討する。
   
 **Reason**  
   
-Equipment構成が完全確定した後に設計する。  
-  
-現状は、Beck②から展開するBridge Table（MD-001 Storage Blueprint §Deployment Sequence）をCoffee Stationの天板として運用する想定であり、専用家具の追加は予定しない。  
+Beck②から展開するBridge Table（MD-001 Storage Blueprint §Deployment Sequence）をCoffee Stationの天板として運用し、Coffee Station専用の家具は持たない（2026-09-29、MARI様のご決定により正式採用。N-06）。  
   
 ---  
   
@@ -1743,6 +1731,7 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 4.8 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 | 4.9 | 2026-09-28 | Deferred §Storage & Organizationへ、Coffee Serviceware（グラスケース・FIKA12）をBeck①（Kitchen Module）へ収納する決定を反映（MD-001 Ver.2.23と連動）。MARI様のご決定に基づく。 |
 | 4.10 | 2026-09-28 | Deferred §Storage & OrganizationへCoffee System専用水ボトルの収納先（STR-035 YETI Camino® 35）を反映（MD-001 Ver.2.24・MD-004 Version 7.70と連動）。MARI様のご決定に基づく。 |
+| 4.11 | 2026-09-29 | 暫定採用項目の個別確認（N-06）。MARI様のご決定に基づき、Deferred §Storage & Organization・§Travel Carry SystemのStatus（In Progress）を削除して保留（Deferred）へ戻し、Claude推奨案で追記した説明文（Beck②収納設計の進行中の旨、運搬ケースの判断時期）を削除した。MARI様のご決定済み事項（Coffee ServicewareのBeck①収納、専用水ボトルのSTR-035収納）は維持した。§Coffee Station Furnitureは「Bridge Tableを天板として運用し、専用家具は持たない」を正式採用とした。Patch Version。 |
   
 ---  
 

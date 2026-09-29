@@ -1,12 +1,12 @@
 OP-005 Pursuit Strategy
 # OP-005
 # Pursuit Strategy
-## Ver.2.5
+## Ver.2.6
 
 **Document ID**: OP-005  
 **Title**: Pursuit Strategy  
 **Series**: OP – Operation (Definition)  
-**Version**: 2.5  
+**Version**: 2.6  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -27,6 +27,7 @@ OP-005 Pursuit Strategy
 | 2.3 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Relationship to Other Core Documentsの文書一覧表（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。表以外の固有の関係説明は変更していない。Patch Version。MARI様のご決定に基づく（S-08）。 |
 | 2.4 | 2026-09-28 | 整備バックログ（N-14・N-15）対応。§Monthly Budgetへ「標準予算は上限ではなく目安であり、超過する月は計画に理由を記載する」旨を追記。§Coffee Zone Acquisition Rulesへ§Availability Check（Coffee機材の在庫確認は各月の購入着手時、流通限定品は前月）を新設。Claude推奨案をMARI様の包括指示に基づき暫定採用。Minor Version。 |
 | 2.5 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
+| 2.6 | 2026-09-29 | 暫定採用項目の個別確認（N-14・N-15）。MARI様のご決定に基づき、§Monthly Budget（標準予算は上限ではなく目安）を原文のまま正式採用した。§Availability Checkは暫定案（CZ-002では監視せず、各月の購入着手時に確認）を採らず、Coffee Zoneの機材もCZ-002 Vigil Protocolで監視する（対象はBR-003のPurchase Required全品目）へ改めた（CZ-002 Version 3.9 §Coffee Watch Scope新設と連動）。Minor Version。 |
 
 ---
 
@@ -132,7 +133,7 @@ Equipment は、
 
 100,000円 / 月
 
-標準予算は上限ではなく目安である。BR-003 Monthly Acquisition Planで月ごとに超過する場合は、その月の計画に超過の理由を記載する（例：公式まとめ買いの優先）。Decision Priorityにおいて月間予算は最下位の判断材料であり、Design Bibleとの一致・空間完成度への貢献・入手機会を損なってまで予算内に収めることはしない（2026-09-28、Claude推奨案をMARI様の包括指示に基づき暫定採用）。
+標準予算は上限ではなく目安である。BR-003 Monthly Acquisition Planで月ごとに超過する場合は、その月の計画に超過の理由を記載する（例：公式まとめ買いの優先）。Decision Priorityにおいて月間予算は最下位の判断材料であり、Design Bibleとの一致・空間完成度への貢献・入手機会を損なってまで予算内に収めることはしない（2026-09-28新設、2026-09-29 MARI様のご決定により正式採用。N-15）。
 
 ---
 
@@ -420,7 +421,7 @@ BR-002が改訂された場合:
 
 ## Availability Check
 
-Coffee Zoneの機材は、CZ-002 Vigil Protocol Watch List（Coffee以外が対象）では監視しない。代わりに、BR-003 Monthly Acquisition Planの各月の購入に着手する時点で、その月の品目の在庫・販売状況を確認する。流通が限られる品目（BR-003のNotesに入手可否の制約が記載された品目）は、前月のうちに在庫を確認する（2026-09-28、Claude推奨案をMARI様の包括指示に基づき暫定採用）。
+Coffee Zoneの機材も、CZ-002 Vigil Protocolで監視する。対象はBR-003 Procurement HandbookでAcquisition Status = Purchase Requiredの全品目とし、CZ-002 §Coffee Watch Scopeが範囲を定める。Patrolで得た在庫・販売状況は購入判断の材料とし、購入の順序と時期はBR-003 Monthly Acquisition Planに従う（2026-09-29、MARI様のご決定。N-14）。
 
 ---
 

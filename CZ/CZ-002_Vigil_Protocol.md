@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 3.8  
+**Version**: 3.9  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE
@@ -26,6 +26,7 @@
 | 3.6 | 2026-09-28 | S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い、Revision History のうち Version 2.0〜2.16を archive/CZ-002_Version_History_Archive.md へ移設した。移設した履歴は原文のまま保持し、要約・削除は行っていない。本文側のWatch Listデータそのものに変更はない。MARI様のご決定に基づく。 |
 | 3.7 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 | 3.8 | 2026-09-29 | MD-004 Version 7.77（LGT-017aをBrand / Product = Unconfirmedの候補枠へ整理、LGT-017bをRetired）と連動し、旧エントリ009（neru design works メッシュシェード、LGT-017a）と旧エントリ010（CALMA STORE × neru design works POCKET SHADE M、LGT-017b）を削除した。両候補の比較はCZ-001 Deliberation Dossierで管理する。これに伴い旧011〜032を009〜030へ繰り上げ、Current Watch List冒頭の説明文を「エントリ008〜032」から「エントリ008〜030」へ、Unconfirmed除外枠の例示へLGT-017aを追加した。MARI様のご決定に基づく。 |
+| 3.9 | 2026-09-29 | 暫定採用項目の個別確認（N-14）。MARI様のご決定に基づき、Coffee Zoneの機材もVigil Protocolの監視対象とし、§Coffee Watch Scope（BR-003でAcquisition Status = Purchase Requiredの全品目をProduct番号で参照して監視）を新設した。Current Watch List冒頭の「Coffee Domainは意図的に除外」の記述と、I. Purpose「Relationship with Other Documents」を合わせて改めた。OP-005 Pursuit Strategy Ver.2.6と連動。Minor Version。 |
 
 ---
 
@@ -80,7 +81,7 @@ KN-001 Heritage Chronicle
 （長期ナレッジアーカイブ）
 ```
 
-Vigil Patrolによって発見された内容は、KN-004 Atelier Discoveryへ報告される。購入判断はOP-005 Pursuit Strategyの基準（Decision Priority・Purchase Rules）に従い、購入待ちの管理はCZ-001 Deliberation Dossier「Confirmed — Purchase Pending」が担う。
+Vigil Patrolによって発見された内容は、KN-004 Atelier Discoveryへ報告される。購入判断はOP-005 Pursuit Strategyの基準（Decision Priority・Purchase Rules）に従い、購入待ちの管理はCZ-001 Deliberation Dossier「Confirmed — Purchase Pending」が担う。Coffee Zoneの機材（§Coffee Watch Scope）は、購入の順序と時期をBR-003 Procurement Handbook Monthly Acquisition Planが管理する。
 
 ---
 
@@ -142,7 +143,7 @@ Watch Listを維持する際、それ以前のプロトコルの各セクショ�
 
 エントリ001〜007は、本改訂以前から存在する。
 
-エントリ008〜030は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは意図的に除外している — 購入されるまでは、BR-002 Barista Canon / BR-003 Procurement Handbookが引き続き管轄する。
+エントリ008〜030は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは、購入されるまではMD-004に登録されないため本エントリ群には含めず、下記§Coffee Watch Scopeで監視する。
 
 エントリ001〜007にも、MD-004上の該当IDが存在するものについては**MD-004 Reference**を付記している（003 WANTKEY CAMP × LOCKFIELD EQUIPMENT SC HANDLE WANTKEY ExclusiveはMD-004に該当IDなし）。MD-004上の製品が未確定（Brand / Product = Unconfirmed）の枠（STR-034 Container Bridge Frame保護ケース、LGT-017a 38-kT用シェード）は、検索対象の製品が定まらないため本リストの対象外とし、CZ-001 Deliberation Dossierで管理する。
 
@@ -874,6 +875,17 @@ FIR-042（Parent: FIR-036）
 - ソフトコンテナL
 - FIREGRAPHIX 収納バッグ
 - FG034 soft container
+
+---
+
+# Coffee Watch Scope
+
+Coffee Zoneの機材は、BR-003 Procurement HandbookでAcquisition Status = Purchase Requiredとなっている全品目を監視対象とする（2026-09-29、MARI様のご決定。OP-005 Pursuit Strategy §Availability Check。N-14）。
+
+- 対象品目はBR-003 Confirmed Equipment Acquisition RegistryのProduct番号で参照し、本書へ品目を転記しない（記録文書は他文書のデータを書き写さない）。購入してAcquisition StatusがPurchase Requiredでなくなった品目は、自動的に対象外となる。
+- Targetおよび検索キーワードは、BR-003に記載された製品名・ブランド名とする。BR-003のNotesに入手可否・在庫・カラーの確認に関する注記がある品目は、その点を重点的に確認する。
+- Patrolで得た在庫・販売状況は、BR-003 Monthly Acquisition Planに沿った購入判断の材料とする。
+- 本節の品目はMD-004 Referenceを持たないため、Current Watch List（MD-004 Reference照合の対象）とは別の節として管理する。
 
 ---
 
