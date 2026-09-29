@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.18
+3.19
 
 # Status
 
@@ -112,11 +112,29 @@ CZ-001 Deliberation Dossier
 
 ### Portable LED Lantern（MD-004: LGT-043 空き枠への充当を検討中）
 
-**Status**：Candidate（比較対象なし）
+**Status**：Candidate（比較対象なし・保留中）
 
 検討中製品：wildingout「LF1984」。Brown、Walnut。
 
 MD-004 Light Domain末尾の空き枠LGT-043（吊り下げ型ランタン用に確保）へ充当するかどうかを検討中。
+
+**Hold Reasons**（2026-09-29、MARI様のご説明）：LF1984はAirlightを使わない、独立したLEDランタンである。見た目はTHE THIRD PLACEに非常に合うが、次の2点が解決していないため決定を保留している。
+
+- 独立した充電管理が必要になる（Airlight本体と充電を共通化できない）。
+- 積載時の収納先が決まらない（充電が必要な物を入れるSTR-037 Snow Peak Quilted Ripstop Duffleに入らない）。
+
+### 38-kT Shade（MD-004: LGT-017a）
+
+**Status**：Candidate（2候補を比較中）
+
+LGT-017 OTEBO CRAFTS BABEL（Essential）の上に載せる38-kT用シェード。どちらも折りたたみ式で、フィールドでの設営時に開いてBABELの上に載せて使う。枠は1つのため、どちらか一方を選ぶ。2026-09-29、MD-004のLGT-017a／LGT-017bから本節へ移した（MD-004 Version 7.77）。
+
+| 候補 | ブランド | 評価 |
+|---|---|---|
+| メッシュシェード | neru design works | Color：Copper、Material：Copper（Mesh Fabric）。THE THIRD PLACEに相応しい（MARI様） |
+| POCKET SHADE M（neru design works柄） | CALMA STORE × neru design works | Color：Khaki、Material：Fabric。THE THIRD PLACEに相応しい（MARI様） |
+
+**Decision**：未決定（MARI様が検討中）。
 
 ---
 
@@ -386,6 +404,7 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 3.16 | 2026-09-28 | 整備バックログ（N-12）対応。Purposeへ「比較検討を経ない登録」の運用（1製品で即決した場合もDecision Logへ一行記録し、Under Considerationと詳細記録は不要）を追記。あわせてPurposeの「4種類の内容」を、実際に列挙されている3種類へ是正。Claude推奨案をMARI様の包括指示に基づき暫定採用。Minor Version。 |
 | 3.17 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 | 3.18 | 2026-09-29 | MARI様のご指示に基づき、Storage Under ConsiderationのCarrying Case for STR-019 Container Bridge Frame（MD-004: STR-034）へSearch Criteriaを追記（Color：Black最優先、次点Gray等のモノトーン、その次にBrown系。Material：優先度は低いが安っぽく見えないもの）。Unresolved Gapsを新しい条件に合わせて改め、素材を理由に除外した候補を再評価の対象とした。Decisionは未決定のまま。 |
+| 3.19 | 2026-09-29 | MARI様のご決定・ご説明に基づき、Light Under Considerationを更新。(1) LGT-043のwildingout LF1984について、Airlightを使わない独立したLEDランタンであること、独立した充電管理が必要なことと積載時の収納先（STR-037に入らない）が未解決のため決定を保留していることを記録。(2) MD-004 Version 7.77と連動し、38-kT Shade（MD-004: LGT-017a）の節を新設。メッシュシェード（neru design works）とPOCKET SHADE M（CALMA STORE × neru design works）の2候補をMD-004から移した。どちらも折りたたみ式で、設営時に開いてBABELの上に載せて使う。 |
 
 ---
 
