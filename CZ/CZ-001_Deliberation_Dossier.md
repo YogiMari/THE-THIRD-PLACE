@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.20
+3.21
 
 # Status
 
@@ -42,7 +42,7 @@ CZ-001 Deliberation Dossierは、Coffee Domain（BR-002管轄）を除く全ゾ�
 Candidateが確定（Essential/Owned）した時点でUnder Considerationから削除し、Decision Logへ一行要約を残す。あわせて、不採用候補とその理由を含む詳細な比較内容を、Decision Log直下の「詳細記録」として恒久的に保持する（一行要約のみで、詳細を破棄することはしない。2026-09-27付でCZ-001の標準運用となった）。この詳細記録は、KN-001 Heritage Chronicle発行時の一次資料として使用する。Essentialになったアイテムは同時にConfirmed — Purchase Pendingへ追加し、購入完了（Owned）した時点でそこから削除する。
 
 
-**比較検討の必須化（2026-09-29、MARI様のご決定。N-12）**：MD-004へEssentialとして登録するEquipmentは、候補が1つしか想定されない場合も、必ず本書のUnder Considerationへ掲載し、他の候補がないかを確認してから決定する。確認の結果、比較候補がなかった場合は、その旨と採用理由をDecision Logへ記録する。本規則の制定前に比較を経ずに登録されたFUR-036は、さかのぼって比較を行う（Status = Essentialのまま。下記Under Consideration／Furniture）。
+**比較検討の必須化（2026-09-29、MARI様のご決定。N-12）**：MD-004へEssentialとして登録するEquipmentは、候補が1つしか想定されない場合も、必ず本書のUnder Considerationへ掲載し、他の候補がないかを確認してから決定する。確認の結果、比較候補がなかった場合は、その旨と採用理由をDecision Logへ記録する。本規則の制定前に比較を経ずに登録されたFUR-036は、さかのぼって比較を行う（Status = Essentialのまま。2026-09-30、比較の結果FUR-036の継続採用を決定。Decision Log参照）。
 
 ---
 
@@ -104,15 +104,7 @@ CZ-001 Deliberation Dossier
 
 ## Furniture
 
-Winter Sleeping Mat〈FUR-034〉・Pad Sheet〈FUR-035〉は正式決定済み（Decision Logおよび下記「Furniture — Winter Sleeping Mat / Pad Sheet 選定記録」を参照。2026-09-28、BLACK ZONE MAT×2・HOTEL CAMPS リバーシブルホットカバー×2で決定）。
-
-### Ofuton Warm Adapter（MD-004: FUR-036）
-
-**Status**：Essential（さかのぼっての比較中）
-
-Snow Peak オフトン ウォームアダプター（BD-066）は、2026-09-27に比較を経ずMD-004へ直接登録された。§Purpose「比較検討の必須化」（2026-09-29、MARI様のご決定。N-12）に基づき、Status = Essentialのまま、同じ役割（FUR-032 ダウン システムオフトンと併用する冬用の保温補助）を果たす他の候補がないかを確認する。
-
-**Decision**：未決定（他候補の調査前）。
+現時点でCandidate項目なし（Winter Sleeping Mat〈FUR-034〉・Pad Sheet〈FUR-035〉は正式決定済み。Decision Logおよび下記「Furniture — Winter Sleeping Mat / Pad Sheet 選定記録」を参照。2026-09-28、BLACK ZONE MAT×2・HOTEL CAMPS リバーシブルホットカバー×2で決定。FUR-036はさかのぼっての比較を終え、2026-09-30に継続採用を決定。下記「Furniture — Ofuton Warm Adapter 再比較記録」を参照）。
 
 ---
 
@@ -194,7 +186,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | FUR-032 | ダウン システムオフトン ワイドマットセット（BD-070、掛け布団+マット一式） | Snow Peak | 数量2 |
 | FUR-034 | BLACK ZONE MAT | BlackishGear | 数量2 |
 | FUR-035 | リバーシブル ホットカバー（コットカバー） | HOTEL CAMPS | 数量2 |
-| FUR-036 | オフトン ウォームアダプター（BD-066） | Snow Peak | 数量2。他候補の有無をさかのぼって確認中（Under Consideration／Furniture） |
+| FUR-036 | オフトン ウォームアダプター（BD-066） | Snow Peak | 数量2 |
 
 ## Light
 
@@ -256,6 +248,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | 2026-09-27 | Storage | ShellCon25①／②のBedding Module転用検討 | ShellCon25①単独、および①＋②の2箱体制の両方で「FUR-032（掛け布団収納ケース×2・マット収納ケース×2）＋FUR-036（ウォームアダプター×2）」全6点の収納可否を検証したが、床面積不足により不採用。既存の収納割当（①＝Bedding Module、②＝Light & Aroma Module）を維持。詳細は下記「Storage — Bedding Module収納検証」を参照。 |
 | 2026-09-28 | Furniture | Winter Sleeping Mat（FUR-034）／Pad Sheet（FUR-035） | BLACK ZONE MAT×2（FUR-034）・HOTEL CAMPS リバーシブルホットカバー×2（FUR-035）を正式決定（Status: Essential、MARI様決定）。MD-004 Version 7.64と連動。詳細な検討記録は下記「Furniture — Winter Sleeping Mat / Pad Sheet 選定記録」を参照。 |
 | 2026-09-29 | Furniture | FUR-036 Ofuton Warm Adapter | §Purpose「比較検討の必須化」（N-12）の制定に伴い、比較を経ずに登録されていたFUR-036を、Status = Essentialのままさかのぼって比較する対象としてUnder Considerationへ掲載（MARI様決定）。 |
+| 2026-09-30 | Furniture | FUR-036 Ofuton Warm Adapter | さかのぼっての比較（Sea to Summit Reactor Fleeceweight／Coleman フリースインナー 封筒型）の結果、FUR-032専用設計でマットへ固定できる唯一の候補であるSnow Peak オフトン ウォームアダプター（BD-066）の継続採用を決定（Status: Essentialのまま、MARI様決定）。詳細な検討記録は下記「Furniture — Ofuton Warm Adapter 再比較記録」を参照。 |
 
 ---
 
@@ -379,6 +372,31 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 ---
 
+## Furniture — Ofuton Warm Adapter 再比較記録（2026-09-30、詳細保持）
+
+**注記**：本節は、Decision Logの該当行に対応する詳細記録（不採用候補とその理由を含む）である。§Purpose「比較検討の必須化」（N-12）に基づき、比較を経ずに登録されていたFUR-036をさかのぼって比較した。
+
+**決定**：Snow Peak オフトン ウォームアダプター（BD-066、FUR-036）を継続採用（Status: Essential、数量2）。
+
+**比較の基準**：FUR-032 ダウン システムオフトン ワイドマットセットと併用し、冬の保温を底上げするインナー。
+
+| | FUR-036 オフトン ウォームアダプター（**採用**） | Sea to Summit Reactor Fleeceweight | Coleman フリースインナー 封筒型 |
+|---|---|---|---|
+| 形状 | 長方形（布団型） | マミー型・フード付き・腕の開口あり | 封筒型（長方形） |
+| サイズ | 75×180cm | — | 使用時約190×84cm |
+| 重量 | 800g | 未確認（同社旧Reactor Fleece Linerは379g） | 約700g |
+| 収納サイズ | φ16×25cm | 未確認 | 約φ16×30cm |
+| 保温の目安 | 公表なし | 最大+8℃／14°F（メーカー公表） | 公表なし |
+| マットへの固定 | 可能（掛け布団と同様に固定できる） | 不可（付属スナップはSea to Summit寝袋用） | 不可 |
+| 価格 | ¥7,480（税込） | 未確認 | 未確認 |
+| 備考 | FUR-032と同日発売のオプション品 | 風が通りやすい生地のため、隙間風のない場所での使用が前提（メーカー説明） | バンダナデザイン。現行販売の有無は未確認（情報は2022年の記事） |
+
+**不採用理由**：Sea to Summit Reactor Fleeceweightは、寝袋の中に入れる前提のマミー型で、オフトン（掛け布団式）の下では位置が定まらない。Colemanは形状は近いが、マットへ固定できず、現行販売とデザインの適合が確認できない。FUR-036は、FUR-032のために設計され、マットへ固定できる唯一の候補であるため、ずれによる保温効果の低下を避けられる。
+
+**一次情報確認**：FUR-036の仕様・価格はcampreview.jp（2025-10-31、Snow Peak システムオフトン シリーズ紹介記事）、Sea to Summit Reactor Fleeceweightの仕様はseatosummit.com公式商品ページ、Colemanの仕様はhappycamper.jp（2022-08-28）による（2026-09-30確認）。
+
+---
+
 # SSOT
 
 各ゾーンの評価哲学・比較記録・決定理由に関する正式情報は、**CZ-001 Deliberation Dossier**を基準とする。
@@ -415,6 +433,7 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 3.18 | 2026-09-29 | MARI様のご指示に基づき、Storage Under ConsiderationのCarrying Case for STR-019 Container Bridge Frame（MD-004: STR-034）へSearch Criteriaを追記（Color：Black最優先、次点Gray等のモノトーン、その次にBrown系。Material：優先度は低いが安っぽく見えないもの）。Unresolved Gapsを新しい条件に合わせて改め、素材を理由に除外した候補を再評価の対象とした。Decisionは未決定のまま。 |
 | 3.19 | 2026-09-29 | MARI様のご決定・ご説明に基づき、Light Under Considerationを更新。(1) LGT-043のwildingout LF1984について、Airlightを使わない独立したLEDランタンであること、独立した充電管理が必要なことと積載時の収納先（STR-037に入らない）が未解決のため決定を保留していることを記録。(2) MD-004 Version 7.77と連動し、38-kT Shade（MD-004: LGT-017a）の節を新設。メッシュシェード（neru design works）とPOCKET SHADE M（CALMA STORE × neru design works）の2候補をMD-004から移した。どちらも折りたたみ式で、設営時に開いてBABELの上に載せて使う。 |
 | 3.20 | 2026-09-29 | 暫定採用項目の個別確認（N-12）。MARI様のご決定に基づき、Version 3.16で暫定採用した「比較検討を経ない登録」（即決時はDecision Logへ一行のみ）を採らず、§Purposeを「比較検討の必須化」（候補が1つでも必ずUnder Considerationへ掲載し、他候補の有無を確認してから決定する）へ改めた。あわせて、比較を経ずに登録されていたFUR-036をStatus = Essentialのままさかのぼって比較する対象としてFurniture Under Considerationへ掲載し、Confirmed — Purchase PendingのNoteとDecision Logへ記録した。Minor Version。 |
+| 3.21 | 2026-09-30 | FUR-036のさかのぼっての比較を完了。MARI様のご決定に基づき、Snow Peak オフトン ウォームアダプター（BD-066）の継続採用をDecision Logへ記録し、詳細記録「Furniture — Ofuton Warm Adapter 再比較記録」（Sea to Summit Reactor Fleeceweight・Coleman フリースインナー 封筒型との比較）を新設した。Furniture Under ConsiderationからFUR-036を外し、Confirmed — Purchase PendingのNoteと§Purposeの記述を比較完了に合わせて改めた。Patch Version。 |
 
 ---
 
