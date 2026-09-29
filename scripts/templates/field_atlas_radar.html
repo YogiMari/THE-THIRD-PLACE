@@ -1,0 +1,214 @@
+<title>Field Atlas Radar</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans+JP:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  /* Layout: one 760px column — picker, radar with score panel, then the full ranking ledger. */
+  :root{
+    --bg:#EDEEE6; --card:#F5F5EE; --surface:#E3E4D9; --ink:#22251E; --ink-soft:#54574B; --ink-faint:#8B8C7E;
+    --line:#CBCCBE; --grid:#D6D7CA; --a:#A85A28; --b:#1668A0; --focus:#1668A0;
+    --display:"Fraunces",Georgia,serif; --body:"IBM Plex Sans JP","Hiragino Sans",sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+  }
+  @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+    --bg:#1B1D17; --card:#22241C; --surface:#2A2C23; --ink:#ECEBE1; --ink-soft:#B7B6A8; --ink-faint:#82816F;
+    --line:#3A3C30; --grid:#34362B; --a:#C98048; --b:#3E94D8; --focus:#3E94D8; color-scheme:dark; } }
+  :root[data-theme="dark"]{
+    --bg:#1B1D17; --card:#22241C; --surface:#2A2C23; --ink:#ECEBE1; --ink-soft:#B7B6A8; --ink-faint:#82816F;
+    --line:#3A3C30; --grid:#34362B; --a:#C98048; --b:#3E94D8; --focus:#3E94D8; color-scheme:dark; }
+  *{box-sizing:border-box}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;margin:0}
+  .wrap{max-width:760px;margin:0 auto;padding-inline:20px;padding-block:28px 80px}
+  h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
+  h1{font-size:28px;font-weight:600}
+  .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;margin-bottom:4px}
+  .lede{font-size:13.5px;color:var(--ink-soft);margin:6px 0 0;max-width:62ch}
+  .badge{display:inline-block;font-family:var(--mono);font-size:11px;border:1px solid var(--line);border-radius:2px;padding:1px 6px;color:var(--ink-soft);background:var(--card)}
+  .controls{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+  .ctl{display:flex;flex-direction:column;gap:4px;min-width:0}
+  .ctl label{font-size:11.5px;color:var(--ink-faint);letter-spacing:.06em;text-transform:uppercase;font-weight:500;display:flex;align-items:center;gap:6px}
+  .sw{width:14px;height:3px;border-radius:2px;display:inline-block}
+  select{font:inherit;font-size:14px;color:var(--ink);background:var(--card);border:1px solid var(--line);border-radius:2px;padding:8px 10px;width:100%;min-width:0}
+  select:focus-visible,button:focus-visible,tr:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  .stage{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:20px;margin-top:18px;align-items:start}
+  .chart{background:var(--card);border:1px solid var(--line);border-radius:2px;padding:8px;position:relative}
+  .chart svg{display:block;width:100%;height:auto}
+  .tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12px;padding:6px 8px;border-radius:2px;white-space:nowrap;font-family:var(--mono)}
+  .panel{display:flex;flex-direction:column;gap:14px;min-width:0}
+  .site-name{font-family:var(--display);font-size:20px;font-weight:600;line-height:1.3}
+  .site-meta{font-family:var(--mono);font-size:11.5px;color:var(--ink-faint)}
+  .site-note{font-size:13px;color:var(--ink-soft)}
+  .nums{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:2px;overflow:hidden}
+  .num{background:var(--card);padding:8px;text-align:center}
+  .num .n{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:18px;font-weight:500}
+  .num .l{font-size:10.5px;color:var(--ink-faint)}
+  .axes-table{width:100%;border-collapse:collapse;font-size:13px}
+  .axes-table td{padding:4px 0;border-bottom:1px dashed var(--line)}
+  .axes-table td.v{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums;width:3.5em}
+  .axes-table td.v.b{color:var(--ink-soft)}
+  .axes-table th{font-size:10.5px;color:var(--ink-faint);font-weight:500;text-align:right;padding-bottom:2px}
+  .axes-table th:first-child{text-align:left}
+  section{margin-top:40px}
+  .sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:8px}
+  .sec-head h2{font-family:var(--body);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+  .seg{display:inline-flex;border:1px solid var(--line);border-radius:2px;overflow:hidden}
+  .seg button{font:inherit;font-size:12px;background:var(--card);color:var(--ink-soft);border:0;padding:5px 10px;cursor:pointer}
+  .seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
+  .scroll{overflow-x:auto;margin-top:6px}
+  table.rank{width:100%;border-collapse:collapse;font-size:13px;min-width:560px}
+  table.rank th{font-size:10.5px;color:var(--ink-faint);font-weight:500;text-align:right;padding:6px 6px;letter-spacing:.04em;white-space:nowrap}
+  table.rank th.l{text-align:left}
+  table.rank td{padding:7px 6px;border-top:1px solid var(--line);text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
+  table.rank td.l{text-align:left;font-family:var(--body);white-space:normal}
+  table.rank tr{cursor:pointer}
+  table.rank tbody tr:hover{background:var(--surface)}
+  table.rank tr.sel{background:var(--surface)}
+  table.rank tr.sel td.l:nth-child(2){box-shadow:inset 3px 0 0 var(--a)}
+  .un{font-size:10.5px;color:var(--ink-faint);margin-left:6px;font-family:var(--mono)}
+  .delta{color:var(--ink-faint)}
+  .chip{display:inline-block;font-family:var(--body);font-size:11px;line-height:1.5;padding:0 6px;border-radius:2px;border:1px solid var(--line);color:var(--ink-soft);white-space:nowrap}
+  .chip.A{border-color:var(--b);color:var(--b)} .chip.D{border-color:var(--a);color:var(--a);font-weight:600}
+  .early{font-size:12.5px;color:var(--ink-soft);display:grid;gap:2px}
+  .early .src{font-family:var(--mono);font-size:11px;color:var(--ink-faint)}
+  .method{margin-top:14px;font-size:13px;color:var(--ink-soft);display:grid;gap:8px;max-width:66ch}
+  .method b{color:var(--ink);font-weight:600}
+  .method code{font-family:var(--mono);font-size:12px}
+  footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11px;color:var(--ink-faint)}
+  @media (max-width:640px){ .stage{grid-template-columns:1fr} .controls{grid-template-columns:1fr} }
+</style>
+<div class="wrap">
+<header>
+  <div class="eyebrow">THE THIRD PLACE · MD-002 Field Atlas</div>
+  <h1>Field Atlas Radar</h1>
+  <p class="lede">MD-002 Field Atlasの全フィールドを6軸で描いたレーダーです。データはMD-002の Radar Sub-Scores と Early Check-in Record から生成しています。</p>
+  <p style="margin:8px 0 0"><span class="badge">MD-002 Ver.__MD002_VERSION__ · 生成 __GENERATED__</span> <span class="badge">点線＝未訪問（調査ベース）</span></p>
+</header>
+
+<div class="controls">
+  <div class="ctl">
+    <label for="selA"><span class="sw" style="background:var(--a)"></span>フィールド</label>
+    <select id="selA"></select>
+  </div>
+  <div class="ctl">
+    <label for="selB"><span class="sw" style="background:var(--b)"></span>比べる相手</label>
+    <select id="selB"></select>
+  </div>
+</div>
+
+<div class="stage">
+  <div class="chart" id="chart">
+    <svg id="radar" viewBox="0 0 400 380" role="img" aria-labelledby="radarTitle"><title id="radarTitle">6軸レーダーチャート</title></svg>
+    <div class="tip" id="tip" hidden></div>
+  </div>
+  <div class="panel">
+    <div>
+      <div class="site-name" id="pName"></div>
+      <div class="site-meta" id="pMeta"></div>
+    </div>
+    <div class="nums">
+      <div class="num"><div class="n" id="nQ"></div><div class="l">品質（5軸）/50</div></div>
+      <div class="num"><div class="n" id="nD"></div><div class="l">近さ /10</div></div>
+      <div class="num"><div class="n" id="nPV"></div><div class="l">Partner Value /60</div></div>
+    </div>
+    <table class="axes-table" id="axesTable"></table>
+    <div class="early" id="pEarly"></div>
+    <div class="site-note" id="pNote"></div>
+  </div>
+</div>
+
+<section>
+  <div class="sec-head">
+    <h2>ランキング</h2>
+    <div class="seg" role="group" aria-label="並び順">
+      <button type="button" id="sortQ" aria-pressed="true">品質順</button>
+      <button type="button" id="sortPV" aria-pressed="false">距離込み（Partner Value）</button>
+    </div>
+  </div>
+  <div class="scroll"><table class="rank" id="rank"></table></div>
+</section>
+
+<section>
+  <div class="sec-head"><h2>採点のしかた</h2></div>
+  <div class="method">
+    <p><b>6軸。</b>Site・Facility・Comfort・View・Identity・近さ。定義と採点基準はOP-010 Qualification Charter Part Cにあります。Partner Valueは6軸の合計（60点満点）です。</p>
+    <p><b>アーリーチェックイン。</b>OP-010 §Early Check-in ScoringにしたがってFacility軸で評価しています（早い+1、可±0、条件付き−1、不可−4）。</p>
+    <p><b>近さ。</b>小岩発の移動時間から <code>12 − 2 × 時間</code>（1〜10点）で計算しています。</p>
+    <p><b>未訪問。</b>点線で描いています。調査ベースの暫定値です。</p>
+    <p><b>採点の経緯。</b>MD-002の§Radar Sub-Scores §Methodologyを参照してください。</p>
+  </div>
+</section>
+
+<footer>Source: MD-002 Field Atlas Landscape Framework Ver.__MD002_VERSION__ · 生成：scripts/field_atlas_radar.py</footer>
+</div>
+<script>
+const DATA=/*__DATA__*/[];
+const AX=["Site","Facility","Comfort","View","Identity","近さ"];
+const AXJ=["サイト","設備","居心地","景観","個性","近さ"];
+const byRank=[...DATA];
+const get=r=>byRank.find(d=>d.rank==r);
+const q=d=>d.axes.slice(0,5).reduce((a,b)=>a+b,0);
+const pv=d=>q(d)+d.axes[5];
+const selA=document.getElementById("selA"), selB=document.getElementById("selB");
+function opt(v,t){const o=document.createElement("option");o.value=v;o.textContent=t;return o;}
+byRank.forEach(d=>selA.appendChild(opt(d.rank,`${d.rank}. ${d.name}${d.visited?"":"（未訪問）"}`)));
+selB.appendChild(opt("none","比べない"));
+byRank.forEach(d=>selB.appendChild(opt(d.rank,`${d.rank}. ${d.name}`)));
+let state={a:1,b:"none",sort:"q"};
+try{const s=JSON.parse(localStorage.getItem("fa-radar2")||"null");if(s&&s.a&&get(s.a)&&(s.b==="none"||get(s.b)))state=Object.assign(state,s);}catch(e){}
+function save(){try{localStorage.setItem("fa-radar2",JSON.stringify(state));}catch(e){}}
+
+const NS="http://www.w3.org/2000/svg", svg=document.getElementById("radar");
+const CX=200,CY=192,R=140;
+function pt(i,v){const ang=-Math.PI/2+i*2*Math.PI/6;return[CX+Math.cos(ang)*R*v/10,CY+Math.sin(ang)*R*v/10];}
+function el(n,a,p){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e;}
+function draw(){
+  [...svg.querySelectorAll(":scope > :not(title)")].forEach(n=>n.remove());
+  const g=el("g",{});
+  [2,4,6,8,10].forEach(v=>el("polygon",{points:AX.map((_,i)=>pt(i,v).join(",")).join(" "),fill:"none",stroke:"var(--grid)","stroke-width":v===10?1.25:1},g));
+  AX.forEach((a,i)=>{const[x,y]=pt(i,10);el("line",{x1:CX,y1:CY,x2:x,y2:y,stroke:"var(--grid)","stroke-width":1},g);
+    const[lx,ly]=pt(i,11.9);const t=el("text",{x:lx,y:ly+4,"text-anchor":Math.abs(lx-CX)<4?"middle":(lx>CX?"start":"end"),fill:"var(--ink-soft)","font-size":12,"font-family":"var(--body)"},g);t.textContent=AXJ[i];});
+  [5,10].forEach(v=>{const[x,y]=pt(0,v);const t=el("text",{x:x+5,y:y+4,fill:"var(--ink-faint)","font-size":10,"font-family":"var(--mono)"},g);t.textContent=v;});
+  const A=get(state.a);let B=null,bLabel="";
+  if(state.b!=="none"&&get(state.b)){B=get(state.b);bLabel=B.name;}
+  if(B)series(B,"var(--b)",bLabel,0.10);
+  series(A,"var(--a)",A.name,0.18);
+  panel(A,B,bLabel);
+}
+function series(d,color,label,fillOp){
+  const pts=d.axes.map((v,i)=>pt(i,v));
+  el("polygon",{points:pts.map(p=>p.join(",")).join(" "),fill:color,"fill-opacity":fillOp,stroke:color,"stroke-width":2,"stroke-linejoin":"round","stroke-dasharray":d.visited?"none":"5 4"});
+  pts.forEach((p,i)=>{
+    el("circle",{cx:p[0],cy:p[1],r:4.5,fill:color,stroke:"var(--card)","stroke-width":2});
+    const hit=el("circle",{cx:p[0],cy:p[1],r:13,fill:"transparent",tabindex:0,"aria-label":`${label} ${AXJ[i]} ${d.axes[i]}`});
+    const show=()=>tip(p,`${label}｜${AXJ[i]} ${d.axes[i]}`);
+    hit.addEventListener("mouseenter",show);hit.addEventListener("focus",show);
+    hit.addEventListener("mouseleave",hideTip);hit.addEventListener("blur",hideTip);
+  });
+}
+const tipEl=document.getElementById("tip");
+function tip(p,txt){const box=svg.getBoundingClientRect(),s=box.width/400;tipEl.textContent=txt;tipEl.hidden=false;
+  let x=8+p[0]*s+12,y=8+p[1]*s-30;const w=tipEl.offsetWidth;if(x+w>box.width)x=x-w-24;tipEl.style.left=x+"px";tipEl.style.top=y+"px";}
+function hideTip(){tipEl.hidden=true;}
+function panel(A,B,bLabel){
+  document.getElementById("pName").textContent=A.name;
+  document.getElementById("pMeta").textContent=`旧ランキング ${A.rank}位 · 旧スコア ${A.old} · ${A.pref} · 小岩から${A.hours}h · ${A.visited?"訪問済み":"未訪問（調査ベース）"}`;
+  document.getElementById("nQ").textContent=q(A);document.getElementById("nD").textContent=A.axes[5];document.getElementById("nPV").textContent=pv(A);
+  const t=document.getElementById("axesTable");t.innerHTML="";
+  const hr=t.insertRow();hr.innerHTML=`<th>軸</th><th>新</th>${B?`<th>相手</th>`:""}`;
+  AX.forEach((a,i)=>{const r=t.insertRow();r.innerHTML=`<td>${AXJ[i]}${a!==AXJ[i]?` <span class="un">${a}</span>`:""}</td><td class="v">${A.axes[i]}</td>${B?`<td class="v b">${B.axes[i]}</td>`:""}`;});
+  document.getElementById("pNote").textContent=`${A.tag}：${A.note}`;
+  const e=A.early;document.getElementById("pEarly").innerHTML=`<div>アーリーチェックイン <span class="chip ${e.tier}">${e.label}</span></div><div>${e.detail}</div><div class="src">出典：${e.source}</div>`;
+}
+function table(){
+  const t=document.getElementById("rank");
+  const rows=[...byRank].sort(state.sort==="q"?(x,y)=>q(y)-q(x)||x.rank-y.rank:(x,y)=>pv(y)-pv(x)||x.rank-y.rank);
+  let h=`<thead><tr><th>#</th><th class="l">フィールド</th>${AXJ.map(a=>`<th>${a}</th>`).join("")}<th>品質</th><th>PV</th><th>旧</th><th class="l">アーリー</th></tr></thead><tbody>`;
+  rows.forEach((d,i)=>{h+=`<tr data-r="${d.rank}" tabindex="0" class="${d.rank==state.a?"sel":""}"><td>${i+1}</td><td class="l">${d.name}${d.visited?"":'<span class="un">未訪問</span>'}</td>${d.axes.map(v=>`<td>${v}</td>`).join("")}<td>${q(d)}</td><td>${pv(d)}</td><td class="delta">${d.old}</td><td class="l"><span class="chip ${d.early.tier}">${d.early.label}</span></td></tr>`;});
+  t.innerHTML=h+"</tbody>";
+  t.querySelectorAll("tbody tr").forEach(tr=>{const go=()=>{state.a=+tr.dataset.r;sync();window.scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});};
+    tr.addEventListener("click",go);tr.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}});});
+}
+function sync(){selA.value=state.a;selB.value=state.b;document.getElementById("sortQ").setAttribute("aria-pressed",state.sort==="q");document.getElementById("sortPV").setAttribute("aria-pressed",state.sort==="pv");draw();table();save();}
+selA.addEventListener("change",()=>{state.a=+selA.value;sync();});
+selB.addEventListener("change",()=>{state.b=selB.value;sync();});
+document.getElementById("sortQ").addEventListener("click",()=>{state.sort="q";sync();});
+document.getElementById("sortPV").addEventListener("click",()=>{state.sort="pv";sync();});
+sync();
+</script>

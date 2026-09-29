@@ -49,6 +49,8 @@ THE-THIRD-PLACE/
 │
 ├── scripts/
 │   ├── third_place_sync_validator.py   # SSOT同期バリデータ
+│   ├── field_atlas_radar.py            # MD-002 → Field Atlas Radar（レーダーチャート）生成
+│   ├── templates/                      # 生成用HTMLテンプレート
 │   └── MirrorSync.gs                   # GitHub → Drive 一方向ミラー（OP-008 §27）
 │
 ├── archive/   # 移設済みVersion History（OP-008 §19 Rule DOC-09）
@@ -235,6 +237,8 @@ THE-THIRD-PLACE/
 │
 ├── scripts/
 │   ├── third_place_sync_validator.py   # SSOT sync validator
+│   ├── field_atlas_radar.py            # Generates the Field Atlas Radar page from MD-002
+│   ├── templates/                      # HTML templates for generators
 │   └── MirrorSync.gs                   # One-way GitHub → Drive mirror (OP-008 §27)
 │
 ├── archive/   # Relocated Version History (OP-008 §19 Rule DOC-09)
