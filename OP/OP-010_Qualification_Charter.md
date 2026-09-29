@@ -3,7 +3,7 @@
 **Document ID**: OP-010  
 **Title**: Qualification Charter  
 **Series**: OP – Operation (Definition)  
-**Version**: 2.2  
+**Version**: 2.3  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -20,6 +20,7 @@
 | 2.0 | 2026-09-28 | Part B Category Grouping Policyと実データ（MD-003 KIT-063／KIT-071〜086）の食い違いを是正。S-01（ID Freeze）方針を採用し、KIT-番号の用途別グルーピング・全面再採番義務を廃止（Equipment ID §に注記追加）。Category Grouping Policyのグループ一覧は登録規則からHistorical Referenceへ位置づけを変更し、番号範囲をKIT-071〜086の実データに一致させた（鍋・グリドル系にKIT-071〜074/076、バーナー・ストーブ系にKIT-075/077〜080/084/086、カトラリー系にKIT-083、シェラカップ系にKIT-081〜082を追加、鍋敷きをKIT-063aへ訂正、いずれにも属さない単品グループを新設しKIT-085を収容）。既存の登録規則を変更する仕様変更のためMajor Version。MARI様のご決定に基づく（C-15）。 |
 | 2.1 | 2026-09-28 | MD-004の登録規則違反の整理（C-16）に伴い、Part Aへ「共通部品の子ID形式」（LGT-04_1a等、量産共通部品向けの子ID表記を正式追認）と「Reserved Slot（予約枠）」（Vacant枠とStatus非保持の扱いを正式化）を新設した（Minor Version：章追加）。既存の登録済みID（AIR LIGHT群、LGT-043）は、Version 2.0で採用されたS-01（ID Freeze）方針に基づき変更しない。MARI様のご決定に基づく。 |
 | 2.2 | 2026-09-28 | 整備バックログ（N-08・N-10・N-11・N-13）対応。Part Aへ§Retirement（退役：Merged／Transferred／Sold／Given／Discarded、IDは再利用しない、MD-003にも適用）と§Coffee Domain Scope（COF-seriesの対象と登録範囲）を新設。Part B §Domain Scope NoteへCoffee System機材の除外を追記し、§Candidate Recording PolicyへMD-004との方式の違い（意図された併存）を明記。Part Cへ§Site Requirements（区画面積・アーリーチェックイン・温水）を新設し、移行注記を「Partner Valueを正式スコアとし、Database掲載順をPartner Value降順とする」へ改めた。いずれもClaude推奨案をMARI様の包括指示に基づき暫定採用。Minor Version（章追加）。 |
+| 2.3 | 2026-09-29 | MARI様のご決定に基づき、Part A §Graphic Attributeへ特筆性の基準（意匠を大きく左右するグラフィックのみ記録し、ロゴ・小さな刻印のみの場合はNone。欄がない場合もNoneと同じ扱い。MD-003にも適用）を追加。Part A・Part BのPrice項目へ、購入済みは実際の購入価格（実売価格）を優先し、未購入・不明の場合は公式価格または実勢価格を出典付きで記載する旨を追加。Minor Version。 |
 
 ---
 
@@ -153,7 +154,7 @@ Appearanceは、OP-002 Design Bibleにより、以下を用いて決定される
 - Color  
 - Graphic Attribute  
 - Industrial Attribute  
-- Price（Version 7.25より、任意項目として再導入。既存登録済みアイテムへの遡及記載は別途対応）  
+- Price（Version 7.25より、任意項目として再導入。購入済みのアイテムは実際の購入価格〈実売価格〉を優先して記載する。未購入または購入価格が不明な場合は公式価格または実勢価格を記載し、出典を付記する〈2026-09-29、MARI様のご決定〉）  
   
 ---  
 
@@ -210,6 +211,8 @@ Examples
 グラフィックが存在しない場合、  
 
 Graphic Attribute = None  
+
+**特筆性の基準（Version 2.3以降）**：記録するのは、装備の意匠を大きく左右する特筆すべきグラフィックに限る（例：DEVISE WORKSの紋章柄のように、前面に紋章が入り見た目の印象を決めるもの）。ブランドロゴや小さな刻印が入っているだけの場合は記録せず、Noneとする。Graphic Attribute欄がないレコードは、Noneと同じ扱いとする。本基準はMD-003 Galley Fare（Part B）にも適用する（2026-09-29、MARI様のご決定）。  
 
 ---  
 
@@ -376,7 +379,7 @@ MD-004と同一のフィールド構成を用いる。
 - Graphic Attribute
 - Industrial Attribute
 - Parent / Child relationships（該当する場合）
-- Price（Version 2.7より、任意項目として再導入。既存登録済みアイテムへの遡及記載は別途対応）
+- Price（Version 2.7より、任意項目として再導入。購入済みのアイテムは実際の購入価格〈実売価格〉を優先して記載する。未購入または購入価格が不明な場合は公式価格または実勢価格を記載し、出典を付記する〈2026-09-29、MARI様のご決定〉）
 
 ### Candidate Recording Policy
 
