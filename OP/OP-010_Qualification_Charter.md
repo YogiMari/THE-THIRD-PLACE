@@ -3,7 +3,7 @@
 **Document ID**: OP-010  
 **Title**: Qualification Charter  
 **Series**: OP – Operation (Definition)  
-**Version**: 2.4  
+**Version**: 2.5  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -22,6 +22,7 @@
 | 2.2 | 2026-09-28 | 整備バックログ（N-08・N-10・N-11・N-13）対応。Part Aへ§Retirement（退役：Merged／Transferred／Sold／Given／Discarded、IDは再利用しない、MD-003にも適用）と§Coffee Domain Scope（COF-seriesの対象と登録範囲）を新設。Part B §Domain Scope NoteへCoffee System機材の除外を追記し、§Candidate Recording PolicyへMD-004との方式の違い（意図された併存）を明記。Part Cへ§Site Requirements（区画面積・アーリーチェックイン・温水）を新設し、移行注記を「Partner Valueを正式スコアとし、Database掲載順をPartner Value降順とする」へ改めた。いずれもClaude推奨案をMARI様の包括指示に基づき暫定採用。Minor Version（章追加）。 |
 | 2.3 | 2026-09-29 | MARI様のご決定に基づき、Part A §Graphic Attributeへ特筆性の基準（意匠を大きく左右するグラフィックのみ記録し、ロゴ・小さな刻印のみの場合はNone。欄がない場合もNoneと同じ扱い。MD-003にも適用）を追加。Part A・Part BのPrice項目へ、購入済みは実際の購入価格（実売価格）を優先し、未購入・不明の場合は公式価格または実勢価格を出典付きで記載する旨を追加。Minor Version。 |
 | 2.4 | 2026-09-29 | 暫定採用項目の個別確認（N-08・N-10・N-11・N-13）。MARI様のご決定に基づき、Version 2.2で暫定採用したPart A §Retirement・§Coffee Domain Scope、Part B §Candidate Recording Policyの「MD-004との方式の違い」、Part C §Site Requirements・§Ranking Philosophyの移行注記（Partner Valueを正式スコアとし、旧スコアは参考値として併記）を、いずれも原文のまま正式採用とし、暫定採用の注記を正式採用の記録へ改めた。規則の内容に変更はない。Patch Version。 |
+| 2.5 | 2026-09-29 | MARI様のご決定に基づき、Part C §Site Requirementsのアーリーチェックインを「トイレの数・近さと同等の重みを持つ要素」と明記し、§Early Check-in Scoring（早い+1／可±0／条件付き−1／不可−4。不可の減点は他の軸で相殺せず合計と順位に反映）を新設。§2. Facilityの評価対象へアーリーチェックインを追加。Minor Version。 |
 
 ---
 
@@ -548,6 +549,7 @@ Field Atlas は
 - 電源
 - 清掃状況
 - メンテナンス品質
+- アーリーチェックイン（運営条件。§Early Check-in Scoring参照）
 
 設備数ではなく、
 
@@ -732,9 +734,24 @@ MD-002のIdentityコメントに散在していた基準を明文化する（202
 | 条件 | 基準 | 評価する軸 |
 |---|---|---|
 | 区画面積 | 80㎡（車別）、車込みの場合は100㎡を基準とする。下回る場合は減点する | Site |
-| アーリーチェックイン | THE THIRD PLACEは設営に時間を要するため必須条件とする。不可の場合は評価を大きく下げる | Facility |
+| アーリーチェックイン | THE THIRD PLACEは設営に時間を要するため必須条件とする。トイレの数・近さと同等の重みを持つ要素として扱い、下記§Early Check-in Scoringに従って採点する | Facility |
 | 温水 | 冬季に温水が出ない場合は大きく減点する | Facility |
 | 区画割りのないフリーサイト | 区画面積の基準は適用しない | — |
+
+### Early Check-in Scoring（Version 2.5以降）
+
+アーリーチェックインは、Facility軸の中で、トイレの数・近さと同等の重みを持つ要素として評価する（2026-09-29、MARI様のご決定）。
+
+| 区分 | 判定 | Facility軸への加減 |
+|---|---|---|
+| 早い | 通常のチェックイン、またはアーリーチェックインで9〜10時台に入場できる | +1 |
+| 可 | アーリーチェックインで11〜12時台に入場できる（有料・予約制を含む） | ±0 |
+| 条件付き | 前泊者の状況次第・前日確認・1時間前までに限る等、事前に当てにできない | −1 |
+| 不可 | アーリーチェックインを受け付けていない | −4 |
+
+- 加減は、Facility軸の0〜10点の範囲内で行う。
+- 不可の減点は他の軸で相殺せず、Partner Value（合計）と順位にそのまま反映する。
+- 可否は、公式サイト・予約サイト（なっぷ・楽天トラベルキャンプ等）の記載、またはMARI様の確認に基づいて判定する。確認できない場合は加減しない。
 
 ---
 
