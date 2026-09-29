@@ -6,10 +6,11 @@ THE THIRD PLACE — Field Atlas Radar generator
 Builds the Field Atlas Radar page (a single self-contained HTML file)
 from MD-002 Field Atlas Landscape Framework:
 
-    Field Atlas Database         -> name, prefecture, travel time,
-                                    visited status, 旧スコア, Identity
-    Radar Sub-Scores
-        Sub-Score Table          -> 6-axis scores
+    Field Atlas Database         -> rank (document order), name,
+                                    prefecture, travel time,
+                                    visited status, Atlas Resonance, Identity
+    Sub-Scores
+        Sub-Score Table          -> 10-axis scores
         Early Check-in Record    -> early check-in category, detail, source
 
 MD-002 is the only data source. The page carries no data of its own, so
@@ -31,7 +32,10 @@ from pathlib import Path
 
 TEMPLATE = Path(__file__).parent / "templates" / "field_atlas_radar.html"
 
-AXES = ["Site", "Facility", "Comfort", "View", "Identity", "近さ"]
+AXES = [
+    "Ground", "Layout", "Facility", "Operation", "Comfort",
+    "View", "Place", "Experience", "近さ", "Partner",
+]
 
 EARLY_TIERS = {
     "早い": "A",
@@ -80,7 +84,7 @@ def parse_database(text: str) -> list[dict]:
         identity = " | ".join(cells[1:]).replace("**", "").strip()
 
         match = re.match(
-            r"^(\d+)(\(暫定\))?／60｜(.+)（旧スコア ([\d.]+)）$", left
+            r"^(\d+)(\(暫定\))?／100｜(.+)$", left
         )
         if not match:
             sys.exit(f"MD-002 Field Atlas Database: unreadable row: {left}")
@@ -98,7 +102,7 @@ def parse_database(text: str) -> list[dict]:
                 "pref": place.group(2).strip(),
                 "hours": float(place.group(3)) if place.group(3) else None,
                 "visited": match.group(2) is None,
-                "old": float(match.group(4)),
+                "total": int(match.group(1)),
                 "tag": tag.strip(),
                 "note": note.strip(),
             }
@@ -157,12 +161,14 @@ def build(md002: Path) -> tuple[list[dict], str]:
             f"Early Check-in Record: {missing}"
         )
 
-    # rank = 旧ランキング（旧スコア順）. Database order breaks ties.
-    ordered = sorted(
-        enumerate(fields), key=lambda pair: (-pair[1]["old"], pair[0])
-    )
+    # rank = Field Atlas Database order (OP-010 Part C §Ranking Philosophy).
     data = []
-    for rank, (_, field) in enumerate(ordered, 1):
+    for rank, field in enumerate(fields, 1):
+        if sum(scores[field["name"]]) != field["total"]:
+            sys.exit(
+                f"MD-002: Atlas Resonance {field['total']} does not match "
+                f"the Sub-Score Table for {field['name']}"
+            )
         data.append(
             {
                 **field,

@@ -77,7 +77,7 @@
 <header>
   <div class="eyebrow">THE THIRD PLACE · MD-002 Field Atlas</div>
   <h1>Field Atlas Radar</h1>
-  <p class="lede">MD-002 Field Atlasの全フィールドを6軸で描いたレーダーです。データはMD-002の Radar Sub-Scores と Early Check-in Record から生成しています。</p>
+  <p class="lede">MD-002 Field Atlasの全フィールドを10軸で描いたレーダーです。データはMD-002の Sub-Scores と Early Check-in Record から生成しています。</p>
   <p style="margin:8px 0 0"><span class="badge">MD-002 Ver.__MD002_VERSION__ · 生成 __GENERATED__</span> <span class="badge">点線＝未訪問（調査ベース）</span></p>
 </header>
 
@@ -94,7 +94,7 @@
 
 <div class="stage">
   <div class="chart" id="chart">
-    <svg id="radar" viewBox="0 0 400 380" role="img" aria-labelledby="radarTitle"><title id="radarTitle">6軸レーダーチャート</title></svg>
+    <svg id="radar" viewBox="0 0 400 380" role="img" aria-labelledby="radarTitle"><title id="radarTitle">10軸レーダーチャート</title></svg>
     <div class="tip" id="tip" hidden></div>
   </div>
   <div class="panel">
@@ -103,9 +103,9 @@
       <div class="site-meta" id="pMeta"></div>
     </div>
     <div class="nums">
-      <div class="num"><div class="n" id="nQ"></div><div class="l">品質（5軸）/50</div></div>
+      <div class="num"><div class="n" id="nQ"></div><div class="l">フィールド（8軸）/80</div></div>
       <div class="num"><div class="n" id="nD"></div><div class="l">近さ /10</div></div>
-      <div class="num"><div class="n" id="nPV"></div><div class="l">Partner Value /60</div></div>
+      <div class="num"><div class="n" id="nPV"></div><div class="l">Atlas Resonance /100</div></div>
     </div>
     <table class="axes-table" id="axesTable"></table>
     <div class="early" id="pEarly"></div>
@@ -117,8 +117,8 @@
   <div class="sec-head">
     <h2>ランキング</h2>
     <div class="seg" role="group" aria-label="並び順">
-      <button type="button" id="sortQ" aria-pressed="true">品質順</button>
-      <button type="button" id="sortPV" aria-pressed="false">距離込み（Partner Value）</button>
+      <button type="button" id="sortPV" aria-pressed="true">Atlas Resonance順</button>
+      <button type="button" id="sortQ" aria-pressed="false">フィールド8軸順</button>
     </div>
   </div>
   <div class="scroll"><table class="rank" id="rank"></table></div>
@@ -127,11 +127,11 @@
 <section>
   <div class="sec-head"><h2>採点のしかた</h2></div>
   <div class="method">
-    <p><b>6軸。</b>Site・Facility・Comfort・View・Identity・近さ。定義と採点基準はOP-010 Qualification Charter Part Cにあります。Partner Valueは6軸の合計（60点満点）です。</p>
-    <p><b>アーリーチェックイン。</b>OP-010 §Early Check-in ScoringにしたがってFacility軸で評価しています（早い+1、可±0、条件付き−1、不可−4）。</p>
+    <p><b>10軸。</b>Ground・Layout・Facility・Operation・Comfort・View・Place・Experience・近さ・Partner。定義と採点基準はOP-010 Qualification Charter Part Cにあります。Atlas Resonanceは10軸の合計（100点満点）です。フィールド8軸は、近さとPartnerを除いた合計です。</p>
+    <p><b>アーリーチェックイン。</b>Operation軸の点数を区分で決めています（早い10、可8、条件付き6、不可2）。</p>
     <p><b>近さ。</b>小岩発の移動時間から <code>12 − 2 × 時間</code>（1〜10点）で計算しています。</p>
-    <p><b>未訪問。</b>点線で描いています。調査ベースの暫定値です。</p>
-    <p><b>採点の経緯。</b>MD-002の§Radar Sub-Scores §Methodologyを参照してください。</p>
+    <p><b>未訪問。</b>点線で描いています。調査ベースの暫定値です（Partnerは全件がClaudeによる暫定値で、パートナーのご感想を伺い次第置き換えます）。</p>
+    <p><b>採点の経緯。</b>MD-002の§Sub-Scores §Calibration Recordを参照してください。</p>
   </div>
 </section>
 
@@ -139,24 +139,24 @@
 </div>
 <script>
 const DATA=/*__DATA__*/[];
-const AX=["Site","Facility","Comfort","View","Identity","近さ"];
-const AXJ=["サイト","設備","居心地","景観","個性","近さ"];
+const AX=["Ground","Layout","Facility","Operation","Comfort","View","Place","Experience","近さ","Partner"];
+const AXJ=["地面","区画","設備","運営","居心地","景観","場所","体験","近さ","パートナー"];
 const byRank=[...DATA];
 const get=r=>byRank.find(d=>d.rank==r);
-const q=d=>d.axes.slice(0,5).reduce((a,b)=>a+b,0);
-const pv=d=>q(d)+d.axes[5];
+const q=d=>d.axes.slice(0,8).reduce((a,b)=>a+b,0);
+const pv=d=>d.axes.reduce((a,b)=>a+b,0);
 const selA=document.getElementById("selA"), selB=document.getElementById("selB");
 function opt(v,t){const o=document.createElement("option");o.value=v;o.textContent=t;return o;}
 byRank.forEach(d=>selA.appendChild(opt(d.rank,`${d.rank}. ${d.name}${d.visited?"":"（未訪問）"}`)));
 selB.appendChild(opt("none","比べない"));
 byRank.forEach(d=>selB.appendChild(opt(d.rank,`${d.rank}. ${d.name}`)));
-let state={a:1,b:"none",sort:"q"};
-try{const s=JSON.parse(localStorage.getItem("fa-radar2")||"null");if(s&&s.a&&get(s.a)&&(s.b==="none"||get(s.b)))state=Object.assign(state,s);}catch(e){}
-function save(){try{localStorage.setItem("fa-radar2",JSON.stringify(state));}catch(e){}}
+let state={a:1,b:"none",sort:"pv"};
+try{const s=JSON.parse(localStorage.getItem("fa-radar3")||"null");if(s&&s.a&&get(s.a)&&(s.b==="none"||get(s.b)))state=Object.assign(state,s);}catch(e){}
+function save(){try{localStorage.setItem("fa-radar3",JSON.stringify(state));}catch(e){}}
 
 const NS="http://www.w3.org/2000/svg", svg=document.getElementById("radar");
 const CX=200,CY=192,R=140;
-function pt(i,v){const ang=-Math.PI/2+i*2*Math.PI/6;return[CX+Math.cos(ang)*R*v/10,CY+Math.sin(ang)*R*v/10];}
+function pt(i,v){const ang=-Math.PI/2+i*2*Math.PI/AX.length;return[CX+Math.cos(ang)*R*v/10,CY+Math.sin(ang)*R*v/10];}
 function el(n,a,p){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e;}
 function draw(){
   [...svg.querySelectorAll(":scope > :not(title)")].forEach(n=>n.remove());
@@ -188,8 +188,8 @@ function tip(p,txt){const box=svg.getBoundingClientRect(),s=box.width/400;tipEl.
 function hideTip(){tipEl.hidden=true;}
 function panel(A,B,bLabel){
   document.getElementById("pName").textContent=A.name;
-  document.getElementById("pMeta").textContent=`旧ランキング ${A.rank}位 · 旧スコア ${A.old} · ${A.pref} · 小岩から${A.hours}h · ${A.visited?"訪問済み":"未訪問（調査ベース）"}`;
-  document.getElementById("nQ").textContent=q(A);document.getElementById("nD").textContent=A.axes[5];document.getElementById("nPV").textContent=pv(A);
+  document.getElementById("pMeta").textContent=`${A.rank}位 · ${A.pref} · 小岩から${A.hours}h · ${A.visited?"訪問済み":"未訪問（調査ベース）"}`;
+  document.getElementById("nQ").textContent=q(A);document.getElementById("nD").textContent=A.axes[8];document.getElementById("nPV").textContent=pv(A);
   const t=document.getElementById("axesTable");t.innerHTML="";
   const hr=t.insertRow();hr.innerHTML=`<th>軸</th><th>新</th>${B?`<th>相手</th>`:""}`;
   AX.forEach((a,i)=>{const r=t.insertRow();r.innerHTML=`<td>${AXJ[i]}${a!==AXJ[i]?` <span class="un">${a}</span>`:""}</td><td class="v">${A.axes[i]}</td>${B?`<td class="v b">${B.axes[i]}</td>`:""}`;});
@@ -199,8 +199,8 @@ function panel(A,B,bLabel){
 function table(){
   const t=document.getElementById("rank");
   const rows=[...byRank].sort(state.sort==="q"?(x,y)=>q(y)-q(x)||x.rank-y.rank:(x,y)=>pv(y)-pv(x)||x.rank-y.rank);
-  let h=`<thead><tr><th>#</th><th class="l">フィールド</th>${AXJ.map(a=>`<th>${a}</th>`).join("")}<th>品質</th><th>PV</th><th>旧</th><th class="l">アーリー</th></tr></thead><tbody>`;
-  rows.forEach((d,i)=>{h+=`<tr data-r="${d.rank}" tabindex="0" class="${d.rank==state.a?"sel":""}"><td>${i+1}</td><td class="l">${d.name}${d.visited?"":'<span class="un">未訪問</span>'}</td>${d.axes.map(v=>`<td>${v}</td>`).join("")}<td>${q(d)}</td><td>${pv(d)}</td><td class="delta">${d.old}</td><td class="l"><span class="chip ${d.early.tier}">${d.early.label}</span></td></tr>`;});
+  let h=`<thead><tr><th>#</th><th class="l">フィールド</th>${AXJ.map(a=>`<th>${a}</th>`).join("")}<th>8軸</th><th>計</th><th class="l">アーリー</th></tr></thead><tbody>`;
+  rows.forEach((d,i)=>{h+=`<tr data-r="${d.rank}" tabindex="0" class="${d.rank==state.a?"sel":""}"><td>${i+1}</td><td class="l">${d.name}${d.visited?"":'<span class="un">未訪問</span>'}</td>${d.axes.map(v=>`<td>${v}</td>`).join("")}<td>${q(d)}</td><td>${pv(d)}</td><td class="l"><span class="chip ${d.early.tier}">${d.early.label}</span></td></tr>`;});
   t.innerHTML=h+"</tbody>";
   t.querySelectorAll("tbody tr").forEach(tr=>{const go=()=>{state.a=+tr.dataset.r;sync();window.scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});};
     tr.addEventListener("click",go);tr.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}});});
