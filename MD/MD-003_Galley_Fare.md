@@ -3,7 +3,7 @@
 **Document ID**: MD-003  
 **Title**: Galley Fare  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.19  
+**Version**: 2.20  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -1558,7 +1558,7 @@ Stainless Steel
 
 ### Graphic Attribute
 
-Snow Peak Way Event Logo（Year Edition Unspecified）
+None（イベントロゴのみ。OP-010 §Graphic Attributeの特筆性の基準によりNone）
 
 ### Industrial Attribute
 
@@ -2466,7 +2466,7 @@ Steel（Wire, Presumed）
 
 ### Graphic Attribute
 
-Logo Plate
+None（ロゴプレートのみ。OP-010 §Graphic Attributeの特筆性の基準によりNone）
 
 ### Industrial Attribute
 
@@ -3389,6 +3389,12 @@ S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い�
 ## Version 2.19
 
 S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。
+
+---
+
+## Version 2.20
+
+OP-010 Version 2.3で新設されたGraphic Attributeの特筆性の基準（2026-09-29、MARI様のご決定）に基づき、ロゴのみのKIT-040（Snow Peak Way Event Logo）とKIT-068（Logo Plate）のGraphic AttributeをNoneへ変更した。
 
 ---
 
