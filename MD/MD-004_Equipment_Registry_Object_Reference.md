@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.74  
+**Version**: 7.75  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -716,7 +716,7 @@ Walnut
 
 ### Graphic Attribute  
 
-Engraved Logo  
+None（刻印ロゴのみ。OP-010 §Graphic Attributeの特筆性の基準によりNone）  
 
 ### Industrial Attribute  
 
@@ -1373,7 +1373,7 @@ Essential
 
 ### Color  
 
-Unconfirmed（Snow Peak公式サイトのカラー表記は「その他」で具体的な色名の記載なし〈2026-09-28確認〉。Blackではないことはプロジェクトオーナー確認済み。購入後に実物で確定する）  
+Charcoal Gray（MARI様確認。Snow Peak公式サイトのカラー表記は「その他」）  
 
 ### Material  
 
@@ -2018,7 +2018,7 @@ Walnut（Black Walnut）
 
 ### Industrial Attribute  
 
-Lantern Stand（木工旋盤仕上げ。Goal Zero・38灯・ZIG対応。支柱高約13cm、全高約15cm、約130g。uyan.base.shop〈OTEBO CRAFTS公式ショップ〉で確認、2026-09-28。公式ショップの現行掲載価格は¥12,500〈SOLD OUT〉で、本レコードのPriceとは異なる）  
+Lantern Stand（木工旋盤仕上げ。Goal Zero・38灯・ZIG対応。支柱高約13cm、全高約15cm、約130g。uyan.base.shop〈OTEBO CRAFTS公式ショップ〉で確認、2026-09-28。公式ショップの定価は¥12,500〈SOLD OUT〉）  
 
 ### Price  
 
@@ -4782,7 +4782,7 @@ Black（デジタルカモフラージュ柄。本体側はスチールメッキ
 
 ### Material  
 
-Steel（メッキ加工、ワイヤー部）／Steel + Plastic（メッキ加工、脚部）／X-PAC（Dimension-Polyant社製。表地＋X-Ply補強層＋防水フィルムから成る3〜4層ラミネート。元来ヨット用セイルクロスの技術を応用したもので、アウトドア・バッグ業界で広く採用される汎用素材。KAZE_TO_MORI製COVER・FUTA部に使用。本製品固有の表地デニールやグレード（X3/X4等）は未確認）  
+Steel（メッキ加工、ワイヤー部）／Steel + Plastic（メッキ加工、脚部）／X-PAC（Dimension-Polyant社製。表地＋X-Ply補強層＋防水フィルムから成る3〜4層ラミネート。元来ヨット用セイルクロスの技術を応用したもので、アウトドア・バッグ業界で広く採用される汎用素材。KAZE_TO_MORI製COVER・FUTA部に使用。本製品のX-PACのグレードはVX21〈MARI様確認〉）  
 
 ### Graphic Attribute  
 
@@ -6818,7 +6818,7 @@ Oak（グリップ）／Iron（ヘッド）
 
 ### Graphic Attribute  
 
-Unconfirmed  
+None（サンゾー工務店のロゴのみ。OP-010 §Graphic Attributeの特筆性の基準によりNone）  
 
 ### Industrial Attribute  
 
@@ -7121,6 +7121,12 @@ MARI様のご申告（2026-09-28）に基づき、SHL-006 DONKEY HAMMER_AのColo
 ## Version 7.74
 
 未確認・欠落項目をWeb上の公式情報で補完した（2026-09-28）。LGT-017（OTEBO CRAFTS BABEL）へColor・Industrial Attributeを追加（公式ショップの現行価格¥12,500と本レコードのPrice ¥20,000の相違を注記）。FUR-036のColorへSnow Peak公式の表記（「その他」）を注記し、購入後に確定する扱いとした。FIR-037・FIR-042の収納に関する類推記述を、メーカー公式ショップの記載（スタンドは本体と同等サイズに折りたためて一緒に収納できる）に基づく記述へ更新。STR-015・STR-018・STR-020（Wood Board）へ、MD-001の運用に基づくIndustrial Attributeを追加した。
+
+---
+
+## Version 7.75
+
+MARI様のご回答（2026-09-29）を反映。FUR-036のColorをCharcoal Grayへ確定。STR-030のX-PACグレードをVX21と記載。OP-010 Version 2.3で新設されたGraphic Attributeの特筆性の基準に基づき、SHL-006（サンゾー工務店ロゴのみ）とFUR-017（刻印ロゴのみ）のGraphic AttributeをNoneへ変更。LGT-017の価格注記を整理した。
 
 ---
 
