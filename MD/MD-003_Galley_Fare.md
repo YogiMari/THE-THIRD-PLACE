@@ -3,7 +3,7 @@
 **Document ID**: MD-003  
 **Title**: Galley Fare  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.20  
+**Version**: 2.21  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -898,11 +898,11 @@ Brown（Presumed, Handle, Series-Consistent）／Black（Tip, Silicone。MARI様
 
 ### Material
 
-Wood（Handle, Engraved, Exact Species Unconfirmed）／Silicone（Tip。MARI様確認）
+Walnut（Handle。MARI様確認）／Silicone（Tip。MARI様確認）
 
 ### Graphic Attribute
 
-Laser-Engraved Design（Presumed, Series-Consistent）
+Emblem（紋章柄, Black。MARI様確認）
 
 ### Industrial Attribute
 
@@ -3395,6 +3395,12 @@ S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAut
 ## Version 2.20
 
 OP-010 Version 2.3で新設されたGraphic Attributeの特筆性の基準（2026-09-29、MARI様のご決定）に基づき、ロゴのみのKIT-040（Snow Peak Way Event Logo）とKIT-068（Logo Plate）のGraphic AttributeをNoneへ変更した。
+
+---
+
+## Version 2.21
+
+MARI様のご回答（2026-09-29）に基づき、KIT-023（DEVISE WORKS BURABURA ターナー）のHandleのMaterialを「Wood（Exact Species Unconfirmed）」からWalnutへ確定し、Graphic Attributeを推定記載の「Laser-Engraved Design（Presumed）」から黒の紋章柄（Emblem, Black）へ更新した。紋章柄は意匠を大きく左右するため、OP-010 Version 2.3の特筆性の基準を満たすものとして記録する。Colorは変更していない。
 
 ---
 

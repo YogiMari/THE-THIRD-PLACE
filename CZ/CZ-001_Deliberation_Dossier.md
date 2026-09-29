@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.17
+3.18
 
 # Status
 
@@ -134,11 +134,16 @@ MD-004 Light Domain末尾の空き枠LGT-043（吊り下げ型ランタン用に
 
 STR-019 Container Bridge Frame（nodel design、830×383×50mm、黒皮鉄）は、角があり周囲を傷つける恐れがあるため、保護ケースが必須と判明（MARI様確認）。将来的に未購入のFUR-026 Butterfly Table M Black Look（nodel design、Upgrade）との共用も視野に入れている。市販品を条件に、ブランド不問・デザイン重視で探索中。
 
+**Search Criteria**（2026-09-29、MARI様のご指示）
+
+- Color：Blackを最優先。次点でGray等のモノトーン、その次にBrown系。
+- Material：優先度は低い。ただし安っぽく見えないものに限る。
+
 | 候補 | ブランド | 評価 |
 |---|---|---|
 | Tactical Bag / M【+AS2OV】 | nodel design × AS2OV | ノデルデザイン純正、Butterfly Table Mを felt bag ごと2枚まで収納可能な公式設計（1000×500×50mm）で、サイズ・共用要件は最適。ただし素材がBllisstic CORDURA・カラーがSandで、Design Bibleの素材・色リストに非該当。MOLLE仕様のタクティカルな意匠もTHE THIRD PLACEの世界観と不調和。現在SOLD OUT。サイズ面の妥協候補として保持するが、美意識面で不採用寄り |
 
-**Unresolved Gaps**：Design Bible準拠（黒・茶／帆布・レザー）で、かつ830mm超の長さに対応する既製品がまだ見つかっていない。asimocrafts×横濱帆布鞄系（FIR-005・FIR-007と同系統）は最大68cm止まり、TEMBEAは該当サイズ未確認、レザーキャディバッグ系は円筒形状で不適合、スキーケースは素材が不適合と判明済み。FIR-007（table_no_kaban）の流用も検討したが、収納対象であるIron Table本体の公式収納時サイズが665mmであることから、長さ不足と判断。
+**Unresolved Gaps**：上記Search Criteriaを満たし、かつ830mm超の長さに対応する既製品がまだ見つかっていない。以下は、Search Criteria設定前（黒・茶／帆布・レザーを条件としていた時点）の探索結果である。素材を理由に除外した候補（スキーケース等）は、素材の優先度が下がったため、色と質感の条件で再評価の対象とする。asimocrafts×横濱帆布鞄系（FIR-005・FIR-007と同系統）は最大68cm止まり、TEMBEAは該当サイズ未確認、レザーキャディバッグ系は円筒形状で不適合、スキーケースは素材が不適合と判明済み。FIR-007（table_no_kaban）の流用も検討したが、収納対象であるIron Table本体の公式収納時サイズが665mmであることから、長さ不足と判断。
 
 **Decision**：未決定。引き続き市販品を探索中。
 
@@ -380,6 +385,7 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 3.15 | 2026-09-28 | S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い、Version History のうち Version 1.0・2.0〜2.17を archive/CZ-001_Version_History_Archive.md へ移設した。移設した履歴は原文のまま保持し、要約・削除は行っていない。本文側の検討記録そのものに変更はない。MARI様のご決定に基づく。 |
 | 3.16 | 2026-09-28 | 整備バックログ（N-12）対応。Purposeへ「比較検討を経ない登録」の運用（1製品で即決した場合もDecision Logへ一行記録し、Under Considerationと詳細記録は不要）を追記。あわせてPurposeの「4種類の内容」を、実際に列挙されている3種類へ是正。Claude推奨案をMARI様の包括指示に基づき暫定採用。Minor Version。 |
 | 3.17 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
+| 3.18 | 2026-09-29 | MARI様のご指示に基づき、Storage Under ConsiderationのCarrying Case for STR-019 Container Bridge Frame（MD-004: STR-034）へSearch Criteriaを追記（Color：Black最優先、次点Gray等のモノトーン、その次にBrown系。Material：優先度は低いが安っぽく見えないもの）。Unresolved Gapsを新しい条件に合わせて改め、素材を理由に除外した候補を再評価の対象とした。Decisionは未決定のまま。 |
 
 ---
 
