@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.28
+## Ver.2.29
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.28  
+**Version**: 2.29  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -210,6 +210,10 @@ Coffee EquipmentはBridge Table完成後に取り出す。
 
 - Wood Board ×4 Sets（8 Boards）
 
+### Storage
+
+Beck②には格納しない。FUR-024 EXTENSIONTABLE CASE（neru design works × WHAT WE WANT、FUR-015 EXTENMON TABLE用）に並べて収納する（2026-09-29、MARI様のご決定。同ケースには6セット程度まで収納できる〈MARI様のご申告〉）。
+
 ### Purpose
 
 Bridge Table完成後、
@@ -225,6 +229,10 @@ Beck①・Beck②の蓋へ設置し、
 ### Heavy Fixed Layer
 
 - Vapalux M320（Original Case）
+
+### Storage
+
+Coffee Equipment 13点を収納して余裕がある場合に、Beck②最下層へ収納する（2026-09-29、MARI様のご希望）。収納できるかは、Coffee Equipment購入後の試し詰めで判断する。
 
 ### Rule
 
@@ -299,7 +307,7 @@ Wood Board 3セット（6枚）は最上層へ平置きする（フェルトケ�
 
 ### 未決事項
 
-- Layer 2「Wood Board ×4 Sets」とLayer 3「Vapalux M320」の格納先が未解決（13点＋Wood Board 3セットで底面を使い切るため、両者の置き場所が現状ない）。
+- Layer 3「Vapalux M320」の格納先が未確定（13点＋Wood Board 3セットで底面を使い切る計算のため）。試し詰めでBeck②に余裕があればBeck②最下層へ収納する（2026-09-29、MARI様のご希望）。Layer 2「Wood Board ×4 Sets」はFUR-024 EXTENSIONTABLE CASEへの収納に決定した（2026-09-29、MARI様のご決定。§Layer 2参照）。
 - Coffee Sequence（使用順）は暫定であり、実際の手順に合わせた見直しが必要。
 - Coffee Serviceware（グラスケース・FIKA12）は食器としてBeck①（Kitchen Module）へ、Coffee System専用水ボトル3本（計2,540mL）は食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ）へ収納する（いずれも2026-09-28、MARI様のご決定）。
 
@@ -331,8 +339,8 @@ Living Core Module
 - Bridge Frameは最優先で取り出す。
 - 最初のWood Boardは3セットのみ使用する。
 - Coffee EquipmentはBridge Table完成後に取り出す。
-- 残り4セットはサイドテーブル展開用とする。
-- Vapaluxは最下層固定。
+- 残り4セットはサイドテーブル展開用とし、FUR-024 EXTENSIONTABLE CASEに収納する。
+- Vapaluxは、Beck②に余裕がある場合に最下層へ固定する（試し詰めで判断）。
 - 収納位置は、メンテナンス時を除き変更しない。
 
 ---
@@ -938,9 +946,13 @@ Beck②を閉じる
 
 定位置へ戻す
 
-Bridge Frame・Wood Board・Coffee Equipmentは
+Bridge Frame・Wood Board（3 Sets）・Coffee Equipmentは
 
 **Beck②へ固定収納**とする。
+
+Wood Board（4 Sets）は
+
+**FUR-024 EXTENSIONTABLE CASEへ固定収納**とする。
 
 Light Equipment・Aroma Equipmentは
 
@@ -1010,7 +1022,7 @@ Coffee Equipment
 
 Living Table Module
 
-Bridge Frame・Wood Board・Coffee Equipment・Vapaluxの収納位置は固定とする。
+Bridge Frame・Wood Board（3 Sets）・Coffee Equipment・Vapaluxの収納位置は固定とする。Wood Board（4 Sets）はBeck②外（FUR-024 EXTENSIONTABLE CASE）へ固定収納する。VapaluxのBeck②への収納可否は、試し詰めで確認する。
 
 ---
 
@@ -1118,17 +1130,17 @@ Active
 
 ### Result
 
-Provisional（Wood Board Layer 2・Layer 3の格納先未解決のため）
+Provisional（Layer 3 Vapalux M320の格納先が試し詰め待ちのため）
 
 - Bridge Frame
 - Wood Board ×3 Sets（Layer 0・格納先確定）
 - Coffee Module
-- Wood Board ×4 Sets（Layer 2・格納先未解決）
-- Vapalux M320（Layer 3・格納先未解決）
+- Wood Board ×4 Sets（Layer 2・Beck②外。FUR-024 EXTENSIONTABLE CASEへ格納）
+- Vapalux M320（Layer 3・試し詰めでBeck②への収納可否を判断）
 - Living Table Deployment
 - Side Table Deployment
 
-Coffee Module Layout（暫定）の判定により、Wood Board 3セット＋Coffee Equipment 13点でBeck②底面を使い切るため、Layer 2（Wood Board ×4 Sets）とLayer 3（Vapalux M320）の格納先は未解決である（詳細はCoffee Module Layout（暫定）§未決事項を参照。格納先自体の決定は本修正の対象外）。Wood Board ×7 Sets のうち4セット（STR-015・STR-018、各2組）は未購入（MD-004 Status = Essential）。本検証結果は未購入分・格納先未解決分を含む。実物での確認は未了。
+Coffee Module Layout（暫定）の判定により、Wood Board 3セット＋Coffee Equipment 13点でBeck②底面を使い切るため、Layer 2（Wood Board ×4 Sets）はBeck②外のFUR-024 EXTENSIONTABLE CASEへ格納する（2026-09-29、MARI様のご決定）。Layer 3（Vapalux M320）は、試し詰めでBeck②に余裕があればBeck②最下層へ格納する（詳細はCoffee Module Layout（暫定）§未決事項を参照）。Wood Board ×7 Sets のうち4セット（STR-015・STR-018、各2組）は未購入（MD-004 Status = Essential）。本検証結果は未購入分・格納先が試し詰め待ちの分を含む。実物での確認は未了。
 
 ---
 
@@ -1159,13 +1171,13 @@ RT-01AC01 / ECHO LAMPとKURASHI MADE DOME LOOKは未購入（MD-004 Status = Ess
 
 | Item | Result |
 |------|--------|
-| Beck② Storage | 🔶 Provisional（Wood Board ×4 Sets・Vapalux M320の格納先未解決。Coffee Module Layout §未決事項参照） |
+| Beck② Storage | 🔶 Provisional（Vapalux M320の格納先が試し詰め待ち。Coffee Module Layout §未決事項参照） |
 | Coffee Module | 🔶 Provisional（箱寸法計算では基準内寸565×360×265mmにて成立。試し詰め未了） |
 | Living Table Deployment | ✅ Verified |
-| Side Table Deployment | 🔶 Provisional（サイドテーブル用Wood Board ×4 Setsの格納先未解決のため） |
+| Side Table Deployment | 🔶 Provisional（Wood Board ×4 SetsはFUR-024 EXTENSIONTABLE CASEへ格納決定。うち未購入分〈STR-015・STR-018〉を含むため実物確認未了） |
 | ShellCon25② Storage | ✅ Verified |
 | CONPE10 Relocation | ✅ Verified |
-| Operation Sequence | 🔶 Provisional（Wood Board ×4 Sets・Vapalux格納先未解決のため） |
+| Operation Sequence | 🔶 Provisional（Vapaluxの格納先が試し詰め待ちのため） |
 
 ---
 
@@ -1250,6 +1262,7 @@ Permanent Storage
 | 2.26 | 2026-09-28 | MARI様の試し積み（写真2枚と区画ごとの申告）に基づき、§Vehicle Loading Rule（暫定）と§Full Loading Order（暫定・未検証）を、確認済みの§Vehicle Loading Ruleと§Loading Map（荷室・後席、Seasonal Slotの車内位置）へ置き換えた。後席は左40・中央20を倒し右40を起こす運用、EXTENMON TABLEを床に敷きコンテナを右寄せで積む構成、満載時にテールゲートを開けると手前の荷が倒れる注意を記載。Seasonal Slot Aへ春・秋の中身（SHL-003 CLOUDBREAK"D"）を追加。暫定案にあった「当日のShelterをテールゲート側に置く」ルールは、実際の構成（Shelterは奥の3段目）と異なるため削除した。 |
 | 2.27 | 2026-09-28 | MARI様のご決定に基づき、§Peg & Guyline Moduleを新設（STR-036 エアドライ ペグケースにSHL-006 DONKEY HAMMER、鍛造ペグ40cm ×6・30cm ×15、ロープ、ガイベルトをまとめて運用。車内位置は荷室・手前・右・床。本数確認などの点検方法を記載）。§Loading Mapの「ペグケース（MD-004未登録）」を本節への参照へ更新。MD-004 Version 7.71と連動。 |
 | 2.28 | 2026-09-28 | MD-004 Version 7.72と連動。§Loading Mapの「充電が必要な物だけを入れたバッグ（MD-004未登録）」をSTR-037 Snow Peak Quilted Ripstop Duffleへ更新。§Peg & Guyline ModuleのSHL-006表記を公式名（DONKEY HAMMER_A、サンゾー工務店 × asimocrafts）へ更新。 |
+| 2.29 | 2026-09-29 | MARI様のご決定・ご希望に基づき、Beck②のLayer 2・Layer 3の格納先を更新。Wood Board ×4 Sets（Layer 2）はBeck②外のFUR-024 EXTENSIONTABLE CASE（neru design works × WHAT WE WANT）へ並べて収納する（同ケースは6セット程度まで収納可能、MARI様のご申告）。Vapalux M320（Layer 3）は、Coffee Equipment 13点を収納して余裕があればBeck②最下層へ収納し、可否は試し詰めで判断する。§Layer 2・§Layer 3・§Coffee Module Layout（暫定）§未決事項・§Beck② Principles・§Home Operation・§Fixed Position Rules・§Validation Summaryを連動して更新。 |
 
 ---
 
