@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.21
+3.22
 
 # Status
 
@@ -110,13 +110,13 @@ CZ-001 Deliberation Dossier
 
 ## Light
 
-### Portable LED Lantern（MD-004: LGT-043 空き枠への充当を検討中）
+### Portable LED Lantern（MD-004未登録）
 
 **Status**：Candidate（比較対象なし・保留中）
 
 検討中製品：wildingout「LF1984」。Brown、Walnut。
 
-MD-004 Light Domain末尾の空き枠LGT-043（吊り下げ型ランタン用に確保）へ充当するかどうかを検討中。
+Airlightを使わない独立したLEDランタンのため、Airlightシェード用の空き枠LGT-043には充当しない。検討中は本文書（とCZ-002 Watch List）にのみ記載し、MD-004へは登録しない。購入した時点で、MD-004 Light DomainにLGT-04番台の新規IDを付番して登録する（2026-09-29、MARI様のご決定）。
 
 **Hold Reasons**（2026-09-29、MARI様のご説明）：LF1984はAirlightを使わない、独立したLEDランタンである。見た目はTHE THIRD PLACEに非常に合うが、次の2点が解決していないため決定を保留している。
 
@@ -156,6 +156,7 @@ STR-019 Container Bridge Frame（nodel design、830×383×50mm、黒皮鉄）は
 
 - Color：Blackを最優先。次点でGray等のモノトーン、その次にBrown系。
 - Material：優先度は低い。ただし安っぽく見えないものに限る。
+- Size：フレーム（830×383×50mm）はマチがほとんど無いため、薄型のケースで可。内寸の横幅（830mm以上）と高さ（383mm以上）が合えば収まる（2026-09-29、MARI様のご指示）。
 
 | 候補 | ブランド | 評価 |
 |---|---|---|
@@ -434,6 +435,7 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 3.19 | 2026-09-29 | MARI様のご決定・ご説明に基づき、Light Under Considerationを更新。(1) LGT-043のwildingout LF1984について、Airlightを使わない独立したLEDランタンであること、独立した充電管理が必要なことと積載時の収納先（STR-037に入らない）が未解決のため決定を保留していることを記録。(2) MD-004 Version 7.77と連動し、38-kT Shade（MD-004: LGT-017a）の節を新設。メッシュシェード（neru design works）とPOCKET SHADE M（CALMA STORE × neru design works）の2候補をMD-004から移した。どちらも折りたたみ式で、設営時に開いてBABELの上に載せて使う。 |
 | 3.20 | 2026-09-29 | 暫定採用項目の個別確認（N-12）。MARI様のご決定に基づき、Version 3.16で暫定採用した「比較検討を経ない登録」（即決時はDecision Logへ一行のみ）を採らず、§Purposeを「比較検討の必須化」（候補が1つでも必ずUnder Considerationへ掲載し、他候補の有無を確認してから決定する）へ改めた。あわせて、比較を経ずに登録されていたFUR-036をStatus = Essentialのままさかのぼって比較する対象としてFurniture Under Considerationへ掲載し、Confirmed — Purchase PendingのNoteとDecision Logへ記録した。Minor Version。 |
 | 3.21 | 2026-09-30 | FUR-036のさかのぼっての比較を完了。MARI様のご決定に基づき、Snow Peak オフトン ウォームアダプター（BD-066）の継続採用をDecision Logへ記録し、詳細記録「Furniture — Ofuton Warm Adapter 再比較記録」（Sea to Summit Reactor Fleeceweight・Coleman フリースインナー 封筒型との比較）を新設した。Furniture Under ConsiderationからFUR-036を外し、Confirmed — Purchase PendingのNoteと§Purposeの記述を比較完了に合わせて改めた。Patch Version。 |
+| 3.22 | 2026-09-30 | MARI様のご決定・ご指示に基づき、(1) Light Under ConsiderationのLF1984を「LGT-043への充当を検討中」から「MD-004未登録。検討中は本文書とCZ-002にのみ記載し、購入時にLGT-04番台の新規IDを付番」へ改めた。(2) Carrying Case for STR-019（MD-004: STR-034）のSearch CriteriaへSizeを追加（マチはほぼ不要で薄型で可、内寸の横幅830mm以上・高さ383mm以上）。 |
 
 ---
 

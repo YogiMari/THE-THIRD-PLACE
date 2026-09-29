@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 3.9  
+**Version**: 3.10  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE
@@ -27,6 +27,7 @@
 | 3.7 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 | 3.8 | 2026-09-29 | MD-004 Version 7.77（LGT-017aをBrand / Product = Unconfirmedの候補枠へ整理、LGT-017bをRetired）と連動し、旧エントリ009（neru design works メッシュシェード、LGT-017a）と旧エントリ010（CALMA STORE × neru design works POCKET SHADE M、LGT-017b）を削除した。両候補の比較はCZ-001 Deliberation Dossierで管理する。これに伴い旧011〜032を009〜030へ繰り上げ、Current Watch List冒頭の説明文を「エントリ008〜032」から「エントリ008〜030」へ、Unconfirmed除外枠の例示へLGT-017aを追加した。MARI様のご決定に基づく。 |
 | 3.9 | 2026-09-29 | 暫定採用項目の個別確認（N-14）。MARI様のご決定に基づき、Coffee Zoneの機材もVigil Protocolの監視対象とし、§Coffee Watch Scope（BR-003でAcquisition Status = Purchase Requiredの全品目をProduct番号で参照して監視）を新設した。Current Watch List冒頭の「Coffee Domainは意図的に除外」の記述と、I. Purpose「Relationship with Other Documents」を合わせて改めた。OP-005 Pursuit Strategy Ver.2.6と連動。Minor Version。 |
+| 3.10 | 2026-09-30 | CZ-001 Ver.3.22と連動し、エントリ006（wildingout LF1984）のMD-004 Referenceを、Airlightシェード用の空き枠への充当検討から「なし（MD-004未登録。購入時にLight Domainの新規IDを付番）」へ改め、Current Watch List冒頭の「MD-004に該当IDなし」の例示へ006を追加した。MARI様のご決定に基づく。 |
 
 ---
 
@@ -145,7 +146,7 @@ Watch Listを維持する際、それ以前のプロトコルの各セクショ�
 
 エントリ008〜030は、**MD-004 Equipment Registry**を照合し、Status = Essential / Candidate / Upgrade（つまり未Owned）で、かつ既存エントリに含まれていないすべてのアイテムを追加したものである。各エントリには、追跡可能性のため**MD-004 Reference** IDを記載する。Coffee Domain（COF-series）のアイテムは、購入されるまではMD-004に登録されないため本エントリ群には含めず、下記§Coffee Watch Scopeで監視する。
 
-エントリ001〜007にも、MD-004上の該当IDが存在するものについては**MD-004 Reference**を付記している（003 WANTKEY CAMP × LOCKFIELD EQUIPMENT SC HANDLE WANTKEY ExclusiveはMD-004に該当IDなし）。MD-004上の製品が未確定（Brand / Product = Unconfirmed）の枠（STR-034 Container Bridge Frame保護ケース、LGT-017a 38-kT用シェード）は、検索対象の製品が定まらないため本リストの対象外とし、CZ-001 Deliberation Dossierで管理する。
+エントリ001〜007にも、MD-004上の該当IDが存在するものについては**MD-004 Reference**を付記している（003 WANTKEY CAMP × LOCKFIELD EQUIPMENT SC HANDLE WANTKEY Exclusiveと006 wildingout LF1984はMD-004に該当IDなし）。MD-004上の製品が未確定（Brand / Product = Unconfirmed）の枠（STR-034 Container Bridge Frame保護ケース、LGT-017a 38-kT用シェード）は、検索対象の製品が定まらないため本リストの対象外とし、CZ-001 Deliberation Dossierで管理する。
 
 ## 001
 
@@ -285,7 +286,7 @@ LF1984
 
 **MD-004 Reference**
 
-LGT-043（本製品を充当するか検討中。CZ-001参照）
+なし（MD-004未登録。購入時にLight Domainの新規IDを付番する。CZ-001参照）
 
 **Required Keywords**
 
