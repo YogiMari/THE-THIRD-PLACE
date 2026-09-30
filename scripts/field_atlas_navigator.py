@@ -14,13 +14,12 @@ a 3D map of Kanto centred on Koiwa, with each field's road route, photo,
         locations.json           -> each field's position (lon/lat)
         routes.json              -> road route from Koiwa (lon/lat path, km, via)
         images.json              -> each field's photo source (page, image URL)
-        images/                  -> downloaded photos (not committed; fetch first)
+        images/                  -> each field's photo (600 px JPEG, committed)
 
 Scores always come from MD-002. The data files only hold geography and photo
 sources, keyed by field name. Refresh them with field_atlas_navigator_fetch.py.
 
 Usage:
-    python3 scripts/field_atlas_navigator_fetch.py images
     python3 scripts/field_atlas_navigator.py \
         --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md \
         --out field-atlas-navigator.html
@@ -72,7 +71,7 @@ def load(name: str):
     return json.loads((DATA_DIR / name).read_text(encoding="utf-8"))
 
 
-def build(md002: Path) -> tuple[str, list[str]]:
+def build(md002: Path, template: Path = TEMPLATE) -> tuple[str, list[str]]:
     data, version = field_atlas_radar.build(md002)
     locations = load("locations.json")
     routes = load("routes.json")
@@ -125,7 +124,7 @@ def build(md002: Path) -> tuple[str, list[str]]:
         return json.dumps(o, ensure_ascii=False, separators=(",", ":"))
 
     html = (
-        TEMPLATE.read_text(encoding="utf-8")
+        template.read_text(encoding="utf-8")
         .replace("/*__DATA__*/[]", js(data))
         .replace("/*__JAPAN__*/[]", js(jp))
         .replace("/*__GEO__*/{}", js(geo))

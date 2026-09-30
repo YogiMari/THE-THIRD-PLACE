@@ -50,6 +50,10 @@ THE-THIRD-PLACE/
 ├── scripts/
 │   ├── third_place_sync_validator.py   # SSOT同期バリデータ
 │   ├── field_atlas_radar.py            # MD-002 → Field Atlas Radar（レーダーチャート）生成
+│   ├── field_atlas_navigator.py        # MD-002 → Field Atlas Navigator（3D地図・ダーク版）生成
+│   ├── field_atlas_ivory.py            # MD-002 → Field Atlas Ivory（3D地図・ライト版）生成
+│   ├── field_atlas_navigator_fetch.py  # 地図用データ（位置・道路ルート・写真）の取得
+│   ├── data/field_atlas_navigator/     # 地図用データと、両版のデザイン・再生成の記録（README.md）
 │   ├── templates/                      # 生成用HTMLテンプレート
 │   └── MirrorSync.gs                   # GitHub → Drive 一方向ミラー（OP-008 §27）
 │
@@ -238,6 +242,10 @@ THE-THIRD-PLACE/
 ├── scripts/
 │   ├── third_place_sync_validator.py   # SSOT sync validator
 │   ├── field_atlas_radar.py            # Generates the Field Atlas Radar page from MD-002
+│   ├── field_atlas_navigator.py        # Generates Field Atlas Navigator (3D map, dark edition) from MD-002
+│   ├── field_atlas_ivory.py            # Generates Field Atlas Ivory (3D map, light edition) from MD-002
+│   ├── field_atlas_navigator_fetch.py  # Fetches map data (positions, road routes, photos)
+│   ├── data/field_atlas_navigator/     # Map data, plus design and rebuild notes for both editions (README.md)
 │   ├── templates/                      # HTML templates for generators
 │   └── MirrorSync.gs                   # One-way GitHub → Drive mirror (OP-008 §27)
 │

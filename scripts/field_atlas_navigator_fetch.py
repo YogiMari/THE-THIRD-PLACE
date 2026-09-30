@@ -6,8 +6,9 @@ THE THIRD PLACE — Field Atlas Navigator data fetcher
 Refreshes the geography and photos that field_atlas_navigator.py embeds.
 Needs network access. Photos need Pillow (pip install pillow).
 
-    images    download each field's photo from images.json into images/
-              (600 px wide JPEG; the folder is not committed)
+    images    download every field's photo from images.json into images/
+              (600 px wide JPEG). The photos are committed, so run this
+              only for a new field or to refresh them, then commit images/
     geocode   add a position for every MD-002 field missing from
               locations.json, using the GSI address search with the
               field's municipality (edit "query" to a street address and
