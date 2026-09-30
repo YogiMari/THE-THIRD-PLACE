@@ -1,11 +1,11 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.4.0
+## Ver.4.1
 
 **Document ID**: MD-002  
 **Title**: Field Atlas Landscape Framework  
 **Series**: MD – Master Data (Record)  
-**Version**: 4.0  
+**Version**: 4.1  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -256,6 +256,8 @@ OP-010 Part C §Early Check-in Scoringの区分（早い／可／条件付き／
 
 ## Visualization
 
+### Field Atlas Radar
+
 レーダーチャートは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。本文書を更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
 
 ```
@@ -264,6 +266,19 @@ python3 scripts/field_atlas_radar.py --md002 MD/MD-002_Field_Atlas_Landscape_Fra
 
 - 公開先：https://claude.ai/artifact/WjHqjyXoKLRxfTvxTsDaov
 - ページはデータを持たない。数値の正本は本文書である。
+
+### Field Atlas Navigator
+
+関東の3D地図で、各フィールドの小岩からの道路経路・写真・10軸の分析・アーリーチェックインを表示するページである。点数・掲載順・アーリーチェックインは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。位置・道路経路・写真の出典は `scripts/data/field_atlas_navigator/` に置き、デザインと再現の手順は同フォルダのREADME.mdに記す。写真そのものは公開リポジトリに置かず、生成の前に出典から取得する。本文書を更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
+
+```
+python3 scripts/field_atlas_navigator_fetch.py images
+python3 scripts/field_atlas_navigator.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-navigator.html
+```
+
+- 公開先：https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm
+- 点数の正本は本文書である。ページが持つのは地理情報（位置・道路経路）と写真の出典のみである。
+- フィールドを追加したときは、同README.mdの手順で位置・道路経路・写真の出典を追加する。
 
 ---
 
@@ -342,6 +357,7 @@ THE THIRD PLACE を実現するための
 | 3.8 | 2026-09-29 | MARI様のご判断に基づき、Radar Sub-Scoresの全49件をClaudeが付け直した（§Methodology（Ver.3.8））。旧ランキング（Ver.1.9の旧スコア順）を品質5軸合計の順位の基準とし、近さは移動時間から算出、アーリーチェックインはOP-010 Version 2.5 §Early Check-in Scoringに従ってFacility軸で評価した。Sub-Score Tableへアーリー列を追加し、§Early Check-in Record（区分・内容・出典）と§Visualization（scripts/field_atlas_radar.pyによる生成と公開先）を新設。Field Atlas DatabaseのPartner Valueと掲載順を更新した。§Recording Rulesは改訂せず、今回に限る例外として§Methodology（Ver.3.8）に記録した。 |
 | 3.9 | 2026-09-30 | MARI様のご確認・ご指摘に基づき、(1) リバーサイドキャンプフィールド秩父のアーリーチェックインを不可から可へ訂正し、Facilityを元に戻した（Partner Value 25→29）。(2) 橘ふれあい公園キャンプ場・小田原フォレストキャンプ場は、旧ランキングに既にアーリー不可が織り込まれていたため、Ver.3.8で合計から−4を重ねたのは二重減点だった。Facilityの−4は維持し、その分を他の軸へ戻して旧ランキングに基づく合計（31・29）に戻した。§Methodology（Ver.3.8）のアーリーチェックインの記述を改め、Field Atlas DatabaseのPartner Valueと掲載順、Sub-Score Table、Early Check-in Recordを更新。 |
 | 4.0 | 2026-09-29 | MARI様のご決定に基づき、Evaluation Frameworkを10軸・100点満点へ改めた（OP-010 Qualification Charter Version 3.0）。Site→Ground＋Layout、Facility→Facility＋Operation（アーリーチェックイン）、Identity→Place＋Experienceへ分け、パートナーの感想を採点するPartner軸を新設した。総合スコアの名称をPartner ValueからAtlas Resonanceへ改めた。Ver.3.9の掲載順を固定したまま全49件を付け直し（§Calibration Record（Ver.4.0））、これをもって旧スコアの逆算によるスコアを正式とした。旧スコアはDatabaseから削除し、参考値としても用いない（Gitの履歴にのみ残る）。Ver.3.8・3.9の例外処理（Recording Rulesの例外、アーリーチェックインの加減をComfortで相殺する処理、不可の減点を他の軸へ戻す処理）を廃止した。Radar Sub-Scoresを§Sub-Scores（10軸個別スコア）へ改め、§Methodology（Ver.3.8・Ver.3.2）を§Calibration Recordへ置き換えた。Major Version。 |
+| 4.1 | 2026-09-30 | MARI様のご指示に基づき、§Visualizationへ Field Atlas Navigator（関東の3D地図で道路経路・写真・10軸の分析を表示するページ）を追加した。生成は scripts/field_atlas_navigator.py、位置・道路経路・写真の出典とデザイン・再現手順は scripts/data/field_atlas_navigator/ に置く。既存のレーダーチャートの記述は「Field Atlas Radar」の小見出しの下にまとめた（内容の変更なし）。スコア・掲載順・アーリーチェックインに変更はない。Minor Version。 |
 
 ---
 
