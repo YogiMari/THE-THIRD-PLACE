@@ -8,6 +8,25 @@ Field Atlas Navigator is a single-page viewer for MD-002 Field Atlas. It has two
 - Data fetcher: `scripts/field_atlas_navigator_fetch.py` (network; Pillow for photos)
 - Scores: always read from MD-002. These data files hold only geography and photos.
 
+## What the page shows
+
+Both editions show the same information. Each item comes from the source named here; nothing is typed into the templates.
+
+| Item | Source |
+|---|---|
+| Rank, name, prefecture, travel time, visited status, Identity (tag and text), Atlas Resonance | MD-002 §Field Atlas Database |
+| Ground surface icons (🪨 Gravel, 🌱 Grass, 🌲 Wood Deck, 🟫 Soil), shown only where the Database row has them | MD-002 §Field Atlas Database, meaning from OP-010 Part C §Display Rules |
+| 10-axis scores, lineage subtotals (Site, Infrastructure, Stay, Identity, Relation; /20 each), all-field averages | MD-002 §Sub-Score Table (grouping from OP-010 Part C §Evaluation Framework) |
+| What each axis is scored from (fact, judgement, calculation, partner), Distance formula 12 − 2 × hours, early check-in tier points 10 / 8 / 6 / 2, Partner shown as provisional | OP-010 Part C and MD-002 §Calibration Record (the page carries these fixed texts) |
+| Early check-in category, detail and source | MD-002 §Early Check-in Record |
+| Next camp and camp records (date, status, configuration, weather, went well, issues) | DB-001 Project Ledger §Field Log (the Field name before its bracket must match MD-002) |
+| View 10 benchmark site (浩庵キャンプ場: tag, text, note), shown as a separate marker, not ranked, no route | MD-002 §Reference Benchmark Site; position in `locations.json` |
+| Position, road route, photo | this folder |
+
+The index can be sorted by Resonance, Field 8 or travel time, and filtered by visited / unvisited and by one ground surface. Filtered-out pins leave the map (the selected and compared fields stay). The next camp gets a card at the top of the index, a NEXT tag, a ripple ring and a countdown label on the map (days counted in JST from the viewer's clock).
+
+When DB-001 §Field Log or MD-002 changes, rebuild and republish both editions.
+
 ## Rebuild
 
 ```
@@ -32,7 +51,7 @@ The generator prints a warning for every field that lacks a location, route or p
 | File | Content | Source |
 |---|---|---|
 | `japan_prefectures.json` | 47 prefecture outlines, lon/lat. Simplified to 0.006° within about 3° of Koiwa and 0.02° elsewhere; small islands dropped. | [dataofjapan/land](https://github.com/dataofjapan/land) `japan.geojson` (based on 国土数値情報 行政区域データ) |
-| `locations.json` | Position of each field, keyed by MD-002 field name. `source` is `address` (street address, GSI hit at lot level), `map` (the facility's own point on Yahoo!地図, used where GSI resolves the address only to its 大字) or `municipality` (municipal representative point). `query` is the address. | 国土地理院 住所検索 API (msearch.gsi.go.jp); Yahoo!地図 place pages for `map`. Addresses came from each field's official or booking site. |
+| `locations.json` | Position of each field, keyed by MD-002 field name. `source` is `address` (street address, GSI hit at lot level), `map` (the facility's own point on Yahoo!地図, used where GSI resolves the address only to its 大字) or `municipality` (municipal representative point). `query` is the address. The entry with `"benchmark": true` is MD-002's Reference Benchmark Site (浩庵キャンプ場, 山梨県南巨摩郡身延町中ノ倉2926 per kouan-motosuko.com; GSI gives only 中ノ倉, so the Yahoo!地図 point is used). It gets no route. | 国土地理院 住所検索 API (msearch.gsi.go.jp); Yahoo!地図 place pages for `map`. Addresses came from each field's official or booking site. |
 | `routes.json` | Fastest driving route from Koiwa Station area: `path` (lon/lat), `km`, `via` (main roads in order of travel). | OSRM public server (router.project-osrm.org) on OpenStreetMap data © OpenStreetMap contributors, ODbL |
 | `images.json` | Photo source per field: `page` (credit link) and `image` (the file). Mostly each site's og:image; logos and flyers were swapped for a photo from the same site by hand. | Official sites and booking sites (nap-camp.com, hinata, etc.) |
 | `images/` | Each field's photo, 600 px JPEG, named by a hash of the field name. Committed (MARI様のご判断, 2026-09-30) so the pages rebuild without network access. The photos belong to the sites credited in `images.json`. | Created by `fetch images` |
@@ -76,13 +95,14 @@ Fonts: Michroma (wide display labels), Saira Condensed 200–500 (large numbers)
 
 - Full-bleed WebGL map (three.js r128 from cdnjs). The panels float over it as thin-line instruments with corner brackets and tick rulers.
 - Top strip: logo, OBLIQUE / TOP VIEW, telemetry (cursor lat/lon, view altitude, field count, JST clock).
-- Left: FIELD INDEX (rank, name, score, mini bar, VS button). Right: ANALYSIS (Resonance / Field 8 / Distance, radar with rotating sweep, segmented axis bars, early check-in LEDs, compare select, method notes). Bottom: TARGET and VS cards (photo, tag, name, TRAVEL / ROAD / BRG, VIA, description, credit).
+- Left: FIELD INDEX (NEXT CAMP card with a T− countdown and a sweeping amber scan line; sort RESONANCE / FIELD 8 / TRAVEL; filter ALL / 訪問済 / 未訪問 and ground icons; rows with rank, name, score, mini bar, early check-in dot, hours, ground icons, NEXT tag, VS button). Right: ANALYSIS (Resonance / Field 8 / Distance with AVG or the Distance formula underneath, radar with rotating sweep, segmented axis bars grouped by lineage with subtotals and an average tick, Partner dimmed as provisional, early check-in LEDs with the four-tier scale, FIELD LOG from DB-001, compare select, axis definitions table, method notes). Bottom: TARGET and VS cards (photo with ground in the photo HUD, tag, name, TRAVEL / ROAD / DIRECT / BRG, VIA, description, NEXT CAMP line, credit).
+- Map legend (top left of the free area): visited, unvisited, next camp (amber), benchmark (magenta crystal), distance rings. The benchmark label opens to its MD-002 text on click.
 - Map furniture: extruded prefectures (field prefectures brighter), 0.5° graticule labelled on whole degrees, 50/100/150/200 km rings around Koiwa, all 49 routes drawn faintly as a road network, light pillars for fields (height from Atlas Resonance; unvisited = wireframe head, dim flicker).
 - Below 900 px the instruments stack under the map in the order: cards, analysis, index.
 
 ### Motion
 
-1. Boot: a mono log types MD-002 version, field count, axes, geodata, imagery and home coordinates. Click skips it.
+1. Boot: a mono log types MD-002 version, field count, axes, geodata, imagery, field log, benchmark and home coordinates. Click skips it.
 2. Map print: a scan bar sweeps north to south and reveals each prefecture as it passes. Then the pillars rise in rank order and the camera eases into the Kanto oblique view: Niigata, Nagano and Shizuoka on the left and bottom, Fukushima down to Chiba on the top and right.
 3. Lock-on: corner brackets shrink and rotate onto the target, "LOCK" blinks, and crosshair lines with lat/lon tags follow the target.
 4. Selecting a field (dive):
@@ -101,7 +121,7 @@ Fonts: Michroma (wide display labels), Saira Condensed 200–500 (large numbers)
 - Mouse: drag = pan (the point under the cursor stays under it), right-drag or Shift+drag = rotate, wheel = zoom toward the cursor, click a pillar = select, ← → = next or previous field.
 - Touch (Touch Events, with browser zoom blocked on the map): one finger = pan, two fingers = pinch zoom around their midpoint and twist to rotate, tap = select.
 - Zoom buttons + / − / KANTO (KANTO returns to the oblique Kanto view).
-- The last selection, comparison and sort order are kept in the viewer's browser (`localStorage` key `fa-nav1`).
+- The last selection, comparison, sort order and filters are kept in the viewer's browser (`localStorage` key `fa-nav1`).
 
 ## Field Atlas Ivory
 
@@ -117,7 +137,7 @@ python3 scripts/field_atlas_ivory.py \
     --out field-atlas-ivory.html
 ```
 
-Publish `field-atlas-ivory.html` to the Artifact URL above. The template keeps the Navigator's placeholders (`/*__DATA__*/[]`, `/*__JAPAN__*/[]`, `/*__GEO__*/{}`, `/*__LL__*/{}`, `/*__IMG__*/{}`, `/*__IMGSRC__*/{}`, `/*__ROUTES__*/{}`, `__MD002_VERSION__`, `__GENERATED__`). Change one of them in both templates at once.
+Publish `field-atlas-ivory.html` to the Artifact URL above. The template keeps the Navigator's placeholders (`/*__DATA__*/[]`, `/*__JAPAN__*/[]`, `/*__GEO__*/{}`, `/*__LL__*/{}`, `/*__IMG__*/{}`, `/*__IMGSRC__*/{}`, `/*__ROUTES__*/{}`, `/*__EXTRA__*/{}` (Field Log per rank and the benchmark site), `__MD002_VERSION__`, `__GENERATED__`). Change one of them in both templates at once.
 
 ### Tokens
 
@@ -138,11 +158,11 @@ Fonts (Google Fonts): Newsreader (display serif, italics for labels and small he
 
 ### Layout
 
-Same frame as the Navigator: header bar (logo, Oblique / Top view, cursor, view altitude, field count, JST clock), Field Index on the left, Analysis on the right, Destination and Compare cards docked at the bottom. Cards show TRAVEL / ROAD / DIRECT / BRG and a VIA line of main roads. A small hint pill under the header lists the gestures. Below 900 px the sheets stack under the map (cards, analysis, index).
+Same frame and content as the Navigator: header bar (logo, Oblique / Top view, cursor, view altitude, field count, JST clock), Field Index on the left (Next camp card with a days-to-go figure and a light sheen, sort Resonance / Field 8 / 近い順, filter 全件 / 訪問済 / 未訪問 and ground icons), Analysis on the right (lineage headings in italic serif with /20 subtotals, average ticks, Partner bar hatched as provisional, early check-in tier scale, Field Log, axis definitions), Destination and Compare cards docked at the bottom. Cards show TRAVEL / ROAD / DIRECT / BRG and a VIA line of main roads. A small hint pill under the header lists the gestures; the legend sits below it on the left and the + / − / Kanto zoom buttons on the right. The next camp has a clay pill label and a slow clay ripple; the benchmark is a gold gem whose label opens to its MD-002 text. Below 900 px the sheets stack under the map (cards, analysis, index).
 
 ### Motion
 
-1. Intro veil: a clay sunburst draws its 24 rays and turns, "Field Atlas *Navigator*" rises letter by letter out of a blur, the source lines (MD-002 version, fields, axes, geodata, roads, imagery, home) appear one by one, then the veil lifts like a curtain. Click skips it.
+1. Intro veil: a clay sunburst draws its 24 rays and turns, "Field Atlas *Navigator*" rises letter by letter out of a blur, the source lines (MD-002 version, fields, axes, geodata, roads, imagery, field log, benchmark, home) appear one by one, then the veil lifts like a curtain. Click skips it.
 2. Map print: a soft band of warm light sweeps north to south and lays each prefecture down. Pillars rise in rank order. Clay pollen drifts through the air above the map (fades in top view). A warm spotlight follows the pointer.
 3. Reticle: a dotted ring turns while a sunburst blooms from a spin, two ripples ping outward and an italic "Destination" / "Compare" tag fades up. Dotted clay crosshairs with lat/lon tags follow the destination.
 4. Selecting a field (chase):
@@ -159,4 +179,5 @@ Same frame as the Navigator: header bar (logo, Oblique / Top view, cursor, view 
 
 - Mouse (Pointer Events): drag = pan (the point under the cursor stays under it), right-drag or Shift / Alt + drag = rotate and tilt, wheel = zoom toward the cursor, click a pillar = select, ← → = next or previous field.
 - Touch: one finger = pan, two fingers = pinch zoom around their midpoint and twist to rotate, tap = select. The map has `touch-action: none`, so on phones the page scrolls from the sheets, not the map.
-- The last selection, comparison and sort order are kept in the viewer's browser (`localStorage` key `fa-nav1`).
+- Zoom buttons + / − / Kanto.
+- The last selection, comparison, sort order and filters are kept in the viewer's browser (`localStorage` key `fa-nav1`).

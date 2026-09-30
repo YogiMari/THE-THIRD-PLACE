@@ -1,11 +1,11 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.4.3
+## Ver.4.4
 
 **Document ID**: MD-002  
 **Title**: Field Atlas Landscape Framework  
 **Series**: MD – Master Data (Record)  
-**Version**: 4.3  
+**Version**: 4.4  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -269,26 +269,26 @@ python3 scripts/field_atlas_radar.py --md002 MD/MD-002_Field_Atlas_Landscape_Fra
 
 ### Field Atlas Navigator
 
-関東の3D地図で、各フィールドの小岩からの道路経路・写真・10軸の分析・アーリーチェックインを表示するページである。点数・掲載順・アーリーチェックインは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。位置・道路経路・写真（600pxのJPEG）とその出典は `scripts/data/field_atlas_navigator/` に置き、デザインと再現の手順は同フォルダのREADME.mdに記す。写真は各施設・予約サイトのものであり、出典は同フォルダのimages.jsonに記す。本文書を更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
+関東の3D地図で、各フィールドの小岩からの道路経路・写真・10軸の分析・アーリーチェックイン・地面・次のキャンプを表示するページである。点数・掲載順・アーリーチェックイン・地面のアイコンは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。View軸の基準地点（§Reference Benchmark Site）は、ランキングと区別した印として地図に示す。次のキャンプと訪問の記録は、DB-001 Project Ledger §Field Logから生成する（Fieldの表記は本文書に合わせる）。位置・道路経路・写真（600pxのJPEG）とその出典は `scripts/data/field_atlas_navigator/` に置き、デザインと再現の手順は同フォルダのREADME.mdに記す。写真は各施設・予約サイトのものであり、出典は同フォルダのimages.jsonに記す。本文書またはDB-001 §Field Logを更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
 
 ```
 python3 scripts/field_atlas_navigator.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-navigator.html
 ```
 
 - 公開先：https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm
-- 点数の正本は本文書である。ページが持つのは地理情報（位置・道路経路）と写真のみである。
+- 点数の正本は本文書、キャンプの記録の正本はDB-001である。ページが持つのは地理情報（位置・道路経路）と写真のみである。
 - フィールドを追加したときは、同README.mdの手順で位置・道路経路・写真を追加し、Field Atlas Ivoryも再生成する。
 
 ### Field Atlas Ivory
 
-Field Atlas Navigatorのライト版である。表示する内容・地図・道路経路・操作はNavigatorと同じで、デザイン（アイボリーの紙と磁器のような地図、演出）だけが異なる。データは `scripts/data/field_atlas_navigator/` をNavigatorと共有し、テンプレートは `scripts/templates/field_atlas_ivory.html`、デザインの仕様と再現の手順は同README.mdの「Field Atlas Ivory」に記す。本文書を更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
+Field Atlas Navigatorのライト版である。表示する内容・地図・道路経路・操作はNavigatorと同じで、デザイン（アイボリーの紙と磁器のような地図、演出）だけが異なる。データは `scripts/data/field_atlas_navigator/` をNavigatorと共有し、テンプレートは `scripts/templates/field_atlas_ivory.html`、デザインの仕様と再現の手順は同README.mdの「Field Atlas Ivory」に記す。本文書またはDB-001 §Field Logを更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
 
 ```
 python3 scripts/field_atlas_ivory.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-ivory.html
 ```
 
 - 公開先：https://claude.ai/artifact/GmW1EhhdcDLNaG7GcuMAZH
-- 点数の正本は本文書である。ページが持つのは地理情報（位置・道路経路）と写真のみである。
+- 点数の正本は本文書、キャンプの記録の正本はDB-001である。ページが持つのは地理情報（位置・道路経路）と写真のみである。
 
 ---
 
@@ -370,6 +370,7 @@ THE THIRD PLACE を実現するための
 | 4.1 | 2026-09-30 | MARI様のご指示に基づき、§Visualizationへ Field Atlas Navigator（関東の3D地図で道路経路・写真・10軸の分析を表示するページ）を追加した。生成は scripts/field_atlas_navigator.py、位置・道路経路・写真の出典とデザイン・再現手順は scripts/data/field_atlas_navigator/ に置く。既存のレーダーチャートの記述は「Field Atlas Radar」の小見出しの下にまとめた（内容の変更なし）。スコア・掲載順・アーリーチェックインに変更はない。Minor Version。 |
 | 4.2 | 2026-09-30 | MARI様のご依頼に基づき、§VisualizationへField Atlas Ivory（Field Atlas Navigatorのライト版）を追加した。生成は scripts/field_atlas_ivory.py、テンプレートは scripts/templates/field_atlas_ivory.html で、位置・道路経路・写真のデータはNavigatorと共有する。MARI様のご判断により写真（600pxのJPEG、49件）もリポジトリに置くこととし、Field Atlas Navigatorの記述から写真取得の手順を外した。地図用データでは、市町村の代表点で表示していた5件を施設の住所へ改め、道路経路を再計算した（詳細は scripts/data/field_atlas_navigator/README.md）。スコア・掲載順・アーリーチェックインに変更はない。Minor Version。 |
 | 4.3 | 2026-09-30 | MARI様のご指示に基づき、公式サイト・予約サイトで確認した正式な表記へ改めた（Field Atlas Database・Sub-Score Table・Early Check-in Record）。(1) オートキャンプFUJICHUの所在地を「山梨県南都留郡富士河口湖町」から「山梨県富士吉田市」へ訂正（所在地 富士吉田市新屋724番1、なっぷで確認）。(2)「大原布施オートキャンプ場」を正式名称「大原上布施オートキャンプ場」へ訂正（いすみ市上布施593、なっぷで確認）。(3)「小田原フォレストキャンプ場」を「RECAMPおだわら」へ訂正（小田原市いこいの森を株式会社Recampが運営する施設。小田原市久野4294-1、運営元公式サイト・なっぷで確認。表記は運営元公式サイトの見出しに従い、RECAMP館山・RECAMPしょうなんと揃えた）。スコア・掲載順・本文の評価内容に変更はない。 |
+| 4.4 | 2026-09-30 | MARI様のご依頼に基づき、§VisualizationのField Atlas NavigatorとField Atlas Ivoryに表示する事柄を追加した。本文書からは、地面のアイコン（OP-010 Part C §Display Rules）、10軸の系統別小計と全件平均、§Reference Benchmark Site（浩庵キャンプ場、ランキングと区別した印。位置は所在地 身延町中ノ倉2926、運営元公式サイトで確認）。OP-010 Part Cからは、各軸の採点の根拠・近さの算出式・アーリーチェックイン区分の点数。DB-001 §Field Logからは、次のキャンプと訪問の記録。あわせて、一覧に近い順の並べ替えと、訪問済み／未訪問・地面での絞り込みを加えた。生成スクリプトはDB-001 §Field Logも読むようにした。スコア・掲載順・アーリーチェックイン・本文の評価内容に変更はない。Minor Version。 |
 
 ---
 

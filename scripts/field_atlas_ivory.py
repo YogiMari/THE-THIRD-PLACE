@@ -10,7 +10,9 @@ sunlit porcelain atlas on ivory paper.
 
 It shares everything except the page template with the Navigator:
 
-    MD-002 Field Atlas Landscape Framework   -> fields, scores, early check-in
+    MD-002 Field Atlas Landscape Framework   -> fields, scores, early check-in,
+                                                ground, benchmark site
+    DB-001 Project Ledger §Field Log         -> next camp and camp records
     scripts/data/field_atlas_navigator/      -> prefectures, locations,
                                                 routes, photos
     scripts/templates/field_atlas_ivory.html -> this page's design

@@ -15,7 +15,8 @@ Needs network access. Photos need Pillow (pip install pillow).
               delete "lonlat" to re-geocode one field more precisely)
     routes    compute the road route from Koiwa for every field missing
               from routes.json, using the public OSRM server
-              (OpenStreetMap data); --all recomputes every route
+              (OpenStreetMap data); --all recomputes every route. The
+              Reference Benchmark Site ("benchmark": true) gets no route
 
 Usage:
     python3 scripts/field_atlas_navigator_fetch.py images
@@ -98,7 +99,8 @@ def cmd_routes(args) -> None:
     locations = load("locations.json")
     routes = load("routes.json")
     for name, loc in locations.items():
-        if name in routes and not args.all:
+        # the Reference Benchmark Site is shown as a point only (no route)
+        if loc.get("benchmark") or (name in routes and not args.all):
             continue
         lon, lat = loc["lonlat"]
         url = (f"https://router.project-osrm.org/route/v1/driving/{LON0},{LAT0};{lon},{lat}"

@@ -7,7 +7,7 @@ Builds the Field Atlas Radar page (a single self-contained HTML file)
 from MD-002 Field Atlas Landscape Framework:
 
     Field Atlas Database         -> rank (document order), name,
-                                    prefecture, travel time,
+                                    prefecture, travel time, ground icons,
                                     visited status, Atlas Resonance, Identity
     Sub-Scores
         Sub-Score Table          -> 10-axis scores
@@ -46,6 +46,9 @@ EARLY_TIERS = {
 }
 
 UNVISITED_SUFFIX = "（未訪問・調査ベース暫定値）"
+
+# Ground surface icons (OP-010 Part C §Display Rules, Ground Surface)
+GROUND_ICONS = {"🪨": "Gravel", "🌱": "Grass", "🌲": "Wood Deck", "🟫": "Soil"}
 
 
 def section(text: str, heading: str, next_heading_prefix: str) -> str:
@@ -95,6 +98,10 @@ def parse_database(text: str) -> list[dict]:
             sys.exit(f"MD-002 Field Atlas Database: unreadable field: {body}")
 
         tag, _, note = identity.partition("<br>")
+        icons = place.group(4).strip()
+        ground = [c for c in icons if c in GROUND_ICONS]
+        if any(c not in GROUND_ICONS and not c.isspace() and c != "️" for c in icons):
+            sys.exit(f"MD-002 Field Atlas Database: unknown ground icon: {body}")
 
         fields.append(
             {
@@ -105,6 +112,7 @@ def parse_database(text: str) -> list[dict]:
                 "total": int(match.group(1)),
                 "tag": tag.strip(),
                 "note": note.strip(),
+                "ground": ground,
             }
         )
 

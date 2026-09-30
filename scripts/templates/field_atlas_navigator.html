@@ -140,7 +140,12 @@
   .pick .nm{grid-column:2;grid-row:1;font-size:12.5px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
   .pick .nm em{display:inline-block;width:7px;height:7px;border:1px dashed var(--ink-soft);transform:rotate(45deg);margin-left:7px;vertical-align:1px}
   .pick .sc{grid-column:3;grid-row:1/3;font-family:var(--cond);font-weight:300;font-size:19px;line-height:1;text-align:right;font-variant-numeric:tabular-nums;color:var(--ink)}
-  .pick .mb{grid-column:2;grid-row:2;height:2px;background:rgba(63,240,255,.1);position:relative;margin-top:3px}
+  .pick .mm{grid-column:2;grid-row:2;display:flex;align-items:center;gap:8px;margin-top:3px;min-width:0}
+  .pick .mb{flex:1;min-width:20px;height:2px;background:rgba(63,240,255,.1);position:relative}
+  .pick .meta{flex:none;display:flex;align-items:center;gap:5px;font-family:var(--mono);font-size:9px;color:var(--ink-faint)}
+  .pick .meta .dot{width:5px;height:5px;border-radius:50%;background:var(--t);box-shadow:0 0 5px var(--t)}
+  .pick .meta .gi{font-size:9px;letter-spacing:1px}
+  .pick .nx{font-family:var(--display);font-size:6.5px;letter-spacing:.2em;color:var(--void);background:var(--warn);padding:1px 4px;box-shadow:0 0 8px rgba(255,209,102,.6)}
   .pick .mb i{position:absolute;left:0;top:0;bottom:0;background:var(--line3)}
   .row.on .pick .mb i{background:var(--a);box-shadow:0 0 6px var(--a)}
   .vsb{background:transparent;border:0;padding:0 12px;font-family:var(--display);font-size:7px;letter-spacing:.2em;color:var(--ink-faint);cursor:pointer;opacity:.4}
@@ -216,19 +221,80 @@
   .tc-b{padding:10px 12px 10px;display:flex;flex-direction:column;gap:4px;min-width:0}
   .tc-n{font-weight:700;font-size:15.5px;line-height:1.35;color:var(--ice);text-wrap:balance}
   .tc-tag{font-family:var(--display);font-size:7.5px;letter-spacing:.28em;color:var(--c);text-transform:uppercase}
-  .tc-m{display:grid;grid-template-columns:repeat(3,auto);justify-content:start;gap:2px 14px;font-family:var(--mono);font-size:10px;color:var(--ink-soft);margin-top:2px}
+  .tc-m{display:grid;grid-template-columns:repeat(4,auto);justify-content:start;gap:2px 14px;font-family:var(--mono);font-size:10px;color:var(--ink-soft);margin-top:2px}
   .tc-m b{display:block;font-weight:400;font-size:8px;letter-spacing:.24em;color:var(--ink-faint)}
   .tc-d{margin:4px 0 0;font-size:12px;line-height:1.75;color:var(--ink-soft);max-height:7.2em;overflow:auto;min-height:3.5em;scrollbar-width:thin}
   .tc-d .g{color:var(--c);opacity:.8}
   .tc-s{margin-top:auto;padding-top:4px;font-family:var(--mono);font-size:9px;color:var(--ink-faint);display:flex;gap:12px;flex-wrap:wrap}
   .tc-x{position:absolute;top:3px;right:6px;z-index:5;background:transparent;border:0;color:var(--ink-faint);font-family:var(--mono);font-size:12px;cursor:pointer;padding:2px 6px}
   .tc-x:hover{color:var(--ice)}
+  .tc-s .nxs{color:var(--warn)}
+
+  /* ---------- next camp, filters, lineages, field log, legend, benchmark ---------- */
+  .index>.nextc,.index>.seg,.index>.hh,.index>.foot{flex:none}
+  .nextc{position:relative;overflow:hidden;display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:1px 12px;margin:8px 14px 0;padding:8px 10px;border:1px solid rgba(255,209,102,.4);background:linear-gradient(90deg,rgba(255,209,102,.1),rgba(255,209,102,0));text-align:left;cursor:pointer;font:inherit;color:inherit}
+  .nextc::after{content:"";position:absolute;left:0;right:0;height:1px;top:0;background:var(--warn);box-shadow:0 0 10px 1px var(--warn);opacity:.7;animation:sweepv 2.8s linear infinite}
+  @keyframes sweepv{0%{top:0;opacity:0}10%{opacity:.8}100%{top:100%;opacity:0}}
+  .nextc:hover{border-color:var(--warn)}
+  .nextc .k{grid-column:1;color:var(--warn)}
+  .nextc .nn{grid-column:1;font-weight:700;font-size:13px;color:var(--ice);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .nextc .dt{grid-column:1;font-family:var(--mono);font-size:9.5px;color:var(--ink-soft)}
+  .nextc .dd{grid-column:2;grid-row:1/4;font-family:var(--cond);font-weight:200;font-size:34px;line-height:1;color:var(--warn);text-shadow:0 0 14px rgba(255,209,102,.5);text-align:right;font-variant-numeric:tabular-nums}
+  .nextc .dd small{display:block;font-family:var(--mono);font-size:7.5px;letter-spacing:.22em;color:var(--ink-faint);text-shadow:none}
+  .seg+.seg{padding-top:0}
+  .seg button{white-space:nowrap}
+  #filt button{font-family:var(--body);font-size:10px;letter-spacing:.04em}
+  .seg .gb{flex:0 0 28px;font-size:11px;padding:1px 0}
+  .seg .sep{flex:0 0 6px}
+  .lg{display:flex;align-items:baseline;gap:8px;margin-top:4px;padding-top:6px;border-top:1px solid var(--line)}
+  .lg:first-child{margin-top:0;padding-top:0;border-top:0}
+  .lg .ln{font-family:var(--display);font-size:7.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--a)}
+  .lg .lt{margin-left:auto;font-family:var(--cond);font-size:16px;color:var(--ice);font-variant-numeric:tabular-nums}
+  .lg .lt small{font-family:var(--mono);font-size:9px;color:var(--ink-faint)}
+  .lg .lv{font-family:var(--mono);font-size:10px;color:var(--b);min-width:3.6em;text-align:right}
+  .br .l{cursor:help}
+  .br .l small{font-size:7.5px;letter-spacing:.1em;color:var(--warn);margin-left:4px}
+  .br .t b{position:absolute;top:-3px;bottom:-3px;width:1px;background:var(--ice);opacity:.55}
+  .br.prov .t i{opacity:.55}
+  .bkey{display:flex;gap:14px;flex-wrap:wrap;font-family:var(--mono);font-size:8.5px;letter-spacing:.06em;color:var(--ink-faint);margin-top:2px}
+  .bkey span{display:inline-flex;align-items:center;gap:5px}
+  .bkey i{display:inline-block;width:10px;height:4px;background:var(--a);box-shadow:0 0 4px var(--a)}
+  .bkey i.av{width:1px;height:9px;background:var(--ice);box-shadow:none;opacity:.6}
+  .bkey i.vs{width:2px;height:9px;background:var(--b)}
+  .tiers{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:3px}
+  .tier{display:flex;justify-content:space-between;align-items:baseline;gap:4px;padding:2px 6px;border:1px solid var(--line);font-family:var(--mono);font-size:9.5px;color:var(--ink-faint);white-space:nowrap}
+  .tier.on{color:var(--t);border-color:var(--t);background:color-mix(in srgb,var(--t) 10%,transparent);box-shadow:0 0 10px color-mix(in srgb,var(--t) 35%,transparent)}
+  .flog .ent{display:grid;gap:4px;padding:8px 10px;border:1px solid rgba(255,209,102,.3);background:rgba(255,209,102,.05)}
+  .flog .hd{display:flex;align-items:center;gap:10px;font-family:var(--mono);font-size:10px;color:var(--ice)}
+  .flog .hd .dd{margin-left:auto;font-family:var(--cond);font-size:20px;line-height:1;color:var(--warn)}
+  .flog .cf{font-size:11.5px;line-height:1.7;color:var(--ink)}
+  .flog dl{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 10px;font-size:11px}
+  .flog dt{font-family:var(--mono);font-size:8.5px;letter-spacing:.18em;color:var(--ink-faint)} .flog dd{margin:0}
+  .axg{width:100%;border-collapse:collapse;margin-top:8px;font-size:11px}
+  .axg th,.axg td{text-align:left;padding:4px;border-bottom:1px solid var(--line);vertical-align:top}
+  .axg th{font-family:var(--mono);font-weight:400;font-size:8.5px;letter-spacing:.2em;color:var(--ink-faint)}
+  .axg td:first-child{font-family:var(--mono);font-size:9px;letter-spacing:.14em;color:var(--a);white-space:nowrap}
+  .legend{position:absolute;left:322px;top:72px;z-index:3;display:grid;gap:3px;padding:8px 12px;background:var(--glass);border:1px solid var(--line);font-family:var(--mono);font-size:9px;letter-spacing:.06em;color:var(--ink-soft);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);pointer-events:none}
+  .legend span{display:flex;align-items:center;gap:8px;white-space:nowrap}
+  .legend i{flex:none;width:8px;height:8px}
+  .legend .lv{background:var(--ice);transform:rotate(45deg);box-shadow:0 0 6px var(--ice)} .legend .lu{border:1px dashed var(--ink-soft);transform:rotate(45deg)}
+  .legend .ln{border-radius:50%;background:var(--warn);box-shadow:0 0 8px var(--warn)} .legend .lbm{background:#FF7AD9;transform:rotate(45deg);box-shadow:0 0 8px #FF7AD9}
+  .legend .lr{border:1px dashed var(--a);border-radius:50%}
+  .lb-next{display:flex;align-items:center;gap:6px;font-family:var(--display);font-size:7.5px;letter-spacing:.26em;color:var(--warn);border:1px solid var(--warn);background:rgba(1,4,9,.75);padding:3px 8px;box-shadow:0 0 12px rgba(255,209,102,.35)}
+  .lb-next::before{content:"";width:5px;height:5px;background:var(--warn);box-shadow:0 0 6px var(--warn);animation:blink3 1.2s steps(1) infinite}
+  .lb-bm{pointer-events:auto;cursor:pointer;width:max-content;max-width:250px;white-space:normal;font-family:var(--display);font-size:7px;letter-spacing:.26em;color:#FF7AD9;background:rgba(1,4,9,.8);border-left:1px solid #FF7AD9;padding:4px 10px 5px}
+  .lb-bm .n{display:block;margin-top:2px;font-family:var(--body);font-size:12.5px;font-weight:700;letter-spacing:.02em;color:var(--ice)}
+  .lb-bm .x{display:none;margin-top:4px;font-family:var(--body);font-size:11px;letter-spacing:0;line-height:1.65;color:var(--ink-soft)}
+  .lb-bm .x em{display:block;font-style:normal;font-family:var(--display);font-size:7.5px;letter-spacing:.26em;color:#FF7AD9;margin-bottom:3px;text-transform:uppercase}
+  .lb-bm.open{z-index:2}
+  .lb-bm.open .x{display:block}
 
   @media (max-width:1240px){
     .index{width:250px} .analysis{width:308px}
     .dock{left:286px;right:344px;flex-direction:column;align-items:stretch}
     .tc{max-width:none} .tc-frame{grid-template-columns:34% minmax(0,1fr)} .tc-d{max-height:5.3em}
     .tele .opt{display:none}
+    .legend{left:286px}
   }
   @media (max-width:900px){
     .app{height:auto;overflow:visible;display:flex;flex-direction:column;gap:12px;padding-inline:16px;padding-block:0 28px}
@@ -239,12 +305,13 @@
     .hud,.dock{position:relative;inset:auto;left:auto;right:auto;top:auto;bottom:auto;width:auto}
     .dock{order:1;flex-direction:column;align-items:stretch}
     .tc{max-width:none} .tc-frame{grid-template-columns:40% minmax(0,1fr)} .tc-d{max-height:none}
-    .analysis{order:2} .index{order:3;max-height:440px}
+    .analysis{order:2} .index{order:3;max-height:620px}
     .hint{display:none}
     .zoom{right:10px;top:10px}
+    .legend{left:10px;top:10px;font-size:8.5px;padding:6px 9px}
   }
   @media (max-width:540px){ .tc-frame{grid-template-columns:1fr} .ph-img{aspect-ratio:16/9;border-right:0;border-bottom:1px solid var(--line)} .logo h1{font-size:11px;letter-spacing:.3em} }
-  @media (prefers-reduced-motion:reduce){ .warp.go,.flash.go,.acqfx.go,#gl.shake{animation:none} .ret .spin,.sweep{animation:none} .ret.lock .br,.ret.lock .tag,.ph-img.acq .scan,.ph-img.glitch img{animation:none} }
+  @media (prefers-reduced-motion:reduce){ .warp.go,.flash.go,.acqfx.go,#gl.shake{animation:none} .ret .spin,.sweep{animation:none} .ret.lock .br,.ret.lock .tag,.ph-img.acq .scan,.ph-img.glitch img{animation:none} .nextc::after,.lb-next::before{animation:none} }
 </style>
 
 <div class="app" id="app">
@@ -280,6 +347,7 @@
     <div class="warp" id="warp"></div><div class="flash" id="flash"></div>
     <div class="acqfx" id="acqfx"><div class="t1" id="acq1">TARGET ACQUIRED</div><div class="bar"></div><div class="t2" id="acq2"></div><div class="t3" id="acq3"></div></div>
     <div class="fx"></div>
+    <div class="legend" id="legend" aria-hidden="true"><span><i class="lv"></i>訪問済み · 高さ＝RESONANCE</span><span><i class="lu"></i>未訪問（暫定値）</span><span id="lgN" hidden><i class="ln"></i>次のキャンプ（DB-001）</span><span id="lgB" hidden><i class="lbm"></i>VIEW 10の基準地点</span><span><i class="lr"></i>小岩から50/100/150/200 KM</span></div>
     <div class="zoom" role="group" aria-label="ズーム"><button type="button" id="zIn" aria-label="拡大">+</button><button type="button" id="zOut" aria-label="縮小">−</button><button type="button" id="zHome" aria-label="関東全体に戻る">KANTO</button></div>
     <div class="nogl" id="nogl" hidden>3D地図を読み込めませんでした。パネルの情報は使えます。</div>
     <div class="boot" id="boot"><pre id="bootLog"></pre><span class="skip">CLICK TO SKIP</span></div>
@@ -287,9 +355,11 @@
 
   <aside class="hud index" aria-label="フィールド一覧">
     <div class="hh"><h2>FIELD INDEX</h2><span class="rule"></span><span class="code" id="cnt"></span></div>
-    <div class="seg" role="group" aria-label="並び順"><button type="button" id="sPV" aria-pressed="true">RESONANCE</button><button type="button" id="sQ" aria-pressed="false">FIELD 8</button></div>
+    <button type="button" class="nextc" id="nextc" hidden></button>
+    <div class="seg" role="group" aria-label="並び順"><button type="button" id="sPV" aria-pressed="true">RESONANCE</button><button type="button" id="sQ" aria-pressed="false">FIELD 8</button><button type="button" id="sT" aria-pressed="false">TRAVEL</button></div>
+    <div class="seg" role="group" aria-label="絞り込み" id="filt"><button type="button" data-v="all" aria-pressed="true">ALL</button><button type="button" data-v="v" aria-pressed="false">訪問済</button><button type="button" data-v="u" aria-pressed="false">未訪問</button><span class="sep"></span></div>
     <div class="rows" id="rows"></div>
-    <div class="foot">SRC · MD-002 Field Atlas Landscape Framework Ver.__MD002_VERSION__ · 生成 __GENERATED__<br>行で目的地、VS で比較。← → でも移動。<br>地図：ドラッグ・1本指で移動、右ドラッグ・2本指のひねりで回転、ホイール・ピンチ・＋−ボタンでズーム。</div>
+    <div class="foot">SRC · MD-002 Field Atlas Landscape Framework Ver.__MD002_VERSION__ · DB-001 Field Log · 生成 __GENERATED__<br>行で目的地、VS で比較。← → でも移動。<br>地図：ドラッグ・1本指で移動、右ドラッグ・2本指のひねりで回転、ホイール・ピンチ・＋−ボタンでズーム。</div>
   </aside>
 
   <aside class="hud analysis" aria-label="分析">
@@ -302,12 +372,23 @@
     <div class="radarw"><div class="sweepw"><div class="sweep"></div></div><svg id="radar" viewBox="-40 -24 380 368" role="img" aria-label="10軸レーダーチャート"></svg></div>
     <div class="bars" id="bars"></div>
     <div class="sec" id="early"></div>
+    <div class="sec flog" id="flog" hidden></div>
     <div class="sec"><label class="k" for="selB">COMPARE · 比べる相手</label><select id="selB"></select></div>
     <details>
+      <summary>10軸の定義</summary>
+      <table class="axg" id="axg"><thead><tr><th>系統</th><th>軸</th><th>採点の根拠</th></tr></thead><tbody></tbody></table>
+      <p>10軸は5つの系統に2軸ずつ属します（OP-010 Qualification Charter Part C）。各軸0〜10点、合計がAtlas Resonance（100点満点）です。Place・Experienceは、そのフィールドだけが持つ価値を評価する最も重要な2軸です。どの軸も、他の軸の点数を理由に上げ下げしません（相殺の禁止）。</p>
+    </details>
+    <details>
       <summary>採点と表示について</summary>
-      <p><b>10軸。</b>Ground・Layout・Facility・Operation・Comfort・View・Place・Experience・Distance（近さ）・Partner。定義と採点基準はOP-010 Qualification Charter Part Cにあります。Resonanceは10軸の合計（Atlas Resonance）、Field 8は近さとPartnerを除いた合計です。</p>
-      <p><b>未訪問。</b>点線・菱形の印で示しています。調査ベースの暫定値です（Partnerは全件がClaudeによる暫定値です）。</p>
-      <p><b>地図と線。</b>位置は各フィールドの住所（一部は市町村の代表点）を国土地理院の住所検索で求めたものです。光る線は、OpenStreetMapの道路データからOSRMで求めた小岩駅付近からの最速経路で、ROADはその距離、VIAは経路の主な道路、BRGは方位です。実際に走る道と異なる場合があります。移動時間（H）はMD-002の値です。</p>
+      <p><b>10軸。</b>Resonanceは10軸の合計（Atlas Resonance）、Field 8は近さとPartnerを除いた合計です。バーの細い縦線は全フィールドの平均、系統の数字は2軸の小計（20点満点）です。</p>
+      <p><b>近さ。</b>小岩からの移動時間（MD-002の値）から「12 − 2 × 移動時間」で求め、1〜10点に収めます。</p>
+      <p><b>アーリーチェックイン。</b>区分がOperation軸の点数を決めます（早い10・可8・条件付き6・不可2）。THE THIRD PLACEは設営に時間を要するため、必須の条件です。</p>
+      <p><b>未訪問。</b>点線・菱形の印で示しています。調査ベースの暫定値です。Partnerは全件がClaudeによる暫定値で、パートナーのご感想を伺い次第置き換えます（バーを淡く表示）。</p>
+      <p><b>地面。</b>🪨 Gravel・🌱 Grass・🌲 Wood Deck・🟫 Soil（OP-010の表示規則）。MD-002に記録のあるフィールドだけに付いています。一覧のアイコンで絞り込めます。</p>
+      <p><b>次のキャンプ。</b>DB-001 Project Ledger §Field Logの予定（Planned）と記録（Done）です。</p>
+      <p><b>基準地点。</b>マゼンタの菱形は浩庵キャンプ場（MD-002 §Reference Benchmark Site）で、View軸10点の基準としてのみ用いる地点です。ランキングの対象ではありません。位置は所在地（身延町中ノ倉2926）のYahoo!地図の地点です。</p>
+      <p><b>地図と線。</b>位置は各フィールドの住所を国土地理院の住所検索で求めたものです（住所が大字までしか当たらない2件は、Yahoo!地図の施設の地点）。光る線は、OpenStreetMapの道路データからOSRMで求めた小岩駅付近からの最速経路で、ROADはその距離、VIAは経路の主な道路、BRGは方位です。実際に走る道と異なる場合があります。移動時間（H）はMD-002の値です。</p>
       <p><b>写真。</b>各施設の公式サイトや予約サイトが紹介用に掲げている画像を、ページ作成時にWeb検索で集めて埋め込んでいます。出典はカードに記しています。</p>
     </details>
   </aside>
@@ -337,6 +418,7 @@ const LL=/*__LL__*/{};
 const IMG=/*__IMG__*/{};
 const IMGSRC=/*__IMGSRC__*/{};
 const ROUTES=/*__ROUTES__*/{};
+const EXTRA=/*__EXTRA__*/{};
 const LON0=139.8827,LAT0=35.7331,KX=Math.cos(LAT0*Math.PI/180)*10,KZ=10;
 const AXE=["GROUND","LAYOUT","FACILITY","OPERATION","COMFORT","VIEW","PLACE","EXPERIENCE","DISTANCE","PARTNER"];
 const $=s=>document.querySelector(s);
@@ -349,17 +431,35 @@ const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2, eout=t=>1-Math.pow(1-t,3);
 const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
 const pad=(n,k=2)=>String(n).padStart(k,"0");
 // straight-line distance (km) and bearing (deg) from Koiwa
-function nav(r){const p=LL[r];if(!p)return null;const R=6371,toR=Math.PI/180,[lon,lat]=p,f1=LAT0*toR,f2=lat*toR,dl=(lon-LON0)*toR;
+function nav(r){return navLL(LL[r]);}
+function navLL(p){if(!p)return null;const R=6371,toR=Math.PI/180,[lon,lat]=p,f1=LAT0*toR,f2=lat*toR,dl=(lon-LON0)*toR;
   const a=Math.sin((f2-f1)/2)**2+Math.cos(f1)*Math.cos(f2)*Math.sin(dl/2)**2,km=2*R*Math.asin(Math.sqrt(a));
   const y=Math.sin(dl)*Math.cos(f2),x=Math.cos(f1)*Math.sin(f2)-Math.sin(f1)*Math.cos(f2)*Math.cos(dl),brg=(Math.atan2(y,x)/toR+360)%360;
   return{km,brg,lat,lon};}
 const fmtLL=(lat,lon)=>`${lat.toFixed(3)}N ${lon.toFixed(3)}E`;
+// OP-010 Part C: ground icons, the five lineages, what each axis is scored from, early check-in tiers
+const GROUND={"🪨":"Gravel","🌱":"Grass","🌲":"Wood Deck","🟫":"Soil"};
+const gtxt=d=>(d.ground||[]).map(g=>g+" "+GROUND[g]).join(" · ");
+const LINE=[["Site",0],["Infrastructure",2],["Stay",4],["Identity",6],["Relation",8]];
+const BASIS=["事実（地面の種類・状態）","事実（区画面積・車の横付け等）","事実と品質の判断（設備・清潔さ・温水）","事実（アーリーチェックインの区分から決まる）","判断（場内動線・区画間隔・静けさ）","判断（景観）","判断（土地の個性・周辺環境）","判断（その場所でしかできない体験）","計算（移動時間）","パートナーの感想"];
+const TIERS=[["A","早い",10],["B","可",8],["C","条件付き",6],["D","不可",2]];
+const AVG=AXE.map((_,i)=>DATA.reduce((s,d)=>s+d.axes[i],0)/Math.max(DATA.length,1));
+const avgSum=(a,b)=>AVG.slice(a,b).reduce((x,y)=>x+y,0);
+// DB-001 Field Log: the nearest planned camp
+const LOG=EXTRA.log||{},BENCH=EXTRA.bench||[];
+const today=()=>new Date(Date.now()+9*3600e3).toISOString().slice(0,10);
+const day0=s=>(String(s).match(/\d{4}-\d{2}-\d{2}/)||[])[0];
+const daysTo=s=>Math.round((Date.parse(s+"T00:00:00Z")-Date.parse(today()+"T00:00:00Z"))/864e5);
+const dLabel=n=>n>0?"D-"+n:n===0?"TODAY":"D+"+(-n);
+const NEXT=(()=>{let best=null;for(const r in LOG)LOG[r].forEach(e=>{const d=day0(e.date);if(e.status==="Planned"&&d&&get(+r)&&(!best||d<best.d))best={r:+r,d,e};});return best;})();
 
-let state={a:1,b:null,sort:"pv",view:"oblique"};
-try{const s=JSON.parse(localStorage.getItem("fa-nav1")||"null");if(s){if(get(s.a))state.a=s.a;if(s.b===null||get(s.b))state.b=s.b;if(s.sort==="q"||s.sort==="pv")state.sort=s.sort;}}catch(e){}
+let state={a:1,b:null,sort:"pv",view:"oblique",vis:"all",gr:null};
+try{const s=JSON.parse(localStorage.getItem("fa-nav1")||"null");if(s){if(get(s.a))state.a=s.a;if(s.b===null||get(s.b))state.b=s.b;if(["q","pv","t"].includes(s.sort))state.sort=s.sort;if(["all","v","u"].includes(s.vis))state.vis=s.vis;if(GROUND[s.gr])state.gr=s.gr;}}catch(e){}
 if(state.b===state.a)state.b=null;
-function save(){try{localStorage.setItem("fa-nav1",JSON.stringify({a:state.a,b:state.b,sort:state.sort}));}catch(e){}}
-function sorted(){return [...DATA].sort(state.sort==="q"?(x,y)=>q8(y)-q8(x)||x.rank-y.rank:(x,y)=>pv(y)-pv(x)||x.rank-y.rank);}
+function save(){try{localStorage.setItem("fa-nav1",JSON.stringify({a:state.a,b:state.b,sort:state.sort,vis:state.vis,gr:state.gr}));}catch(e){}}
+const shown=d=>(state.vis==="all"||(state.vis==="v")===d.visited)&&(!state.gr||(d.ground||[]).includes(state.gr));
+const SORTS={pv:(x,y)=>pv(y)-pv(x)||x.rank-y.rank,q:(x,y)=>q8(y)-q8(x)||x.rank-y.rank,t:(x,y)=>x.hours-y.hours||x.rank-y.rank};
+function sorted(){return DATA.filter(shown).sort(SORTS[state.sort]);}
 
 /* ---------- telemetry ---------- */
 $("#tFld").textContent=`${DATA.length} · VISITED ${DATA.filter(d=>d.visited).length}`;
@@ -367,15 +467,26 @@ function clock(){try{$("#tClk").textContent=new Date().toLocaleString("sv-SE",{t
 clock();setInterval(clock,1000);
 
 /* ---------- index ---------- */
-const rows=$("#rows");$("#cnt").textContent=`${DATA.length} ENTRIES`;
-function buildRows(){rows.innerHTML=sorted().map((d,i)=>{const v=state.sort==="q"?q8(d):pv(d),mx=state.sort==="q"?80:100;
-  return `<div class="row" data-r="${d.rank}"><button type="button" class="pick" data-r="${d.rank}"><span class="i">${pad(i+1)}</span><span class="nm">${esc(d.name)}${d.visited?"":'<em title="未訪問"><span class="vh">未訪問</span></em>'}</span><span class="sc">${v}</span><span class="mb"><i style="width:${v/mx*100}%"></i></span></button><button type="button" class="vsb" data-r="${d.rank}" aria-label="${esc(d.name)}と比べる">VS</button></div>`;}).join("");}
+const rows=$("#rows");
+function buildRows(){const l=sorted();$("#cnt").textContent=l.length===DATA.length?`${DATA.length} ENTRIES`:`${l.length} / ${DATA.length}`;
+  rows.innerHTML=l.map((d,i)=>{const v=state.sort==="q"?q8(d):pv(d),mx=state.sort==="q"?80:100;
+  return `<div class="row" data-r="${d.rank}"><button type="button" class="pick" data-r="${d.rank}"><span class="i">${pad(i+1)}</span><span class="nm">${esc(d.name)}${d.visited?"":'<em title="未訪問"><span class="vh">未訪問</span></em>'}</span><span class="sc">${v}</span><span class="mm"><span class="mb"><i style="width:${v/mx*100}%"></i></span><span class="meta t-${d.early.tier}"><span class="dot" title="アーリーチェックイン：${esc(d.early.label)}"></span>${d.hours.toFixed(1)}H${d.ground&&d.ground.length?`<span class="gi" title="${esc(gtxt(d))}">${d.ground.join("")}</span>`:""}${NEXT&&NEXT.r===d.rank?'<span class="nx">NEXT</span>':""}</span></span></button><button type="button" class="vsb" data-r="${d.rank}" aria-label="${esc(d.name)}と比べる">VS</button></div>`;}).join("")||`<p class="foot" style="border:0">NO MATCH · 条件に合うフィールドがありません。</p>`;}
 function markRows(){rows.querySelectorAll(".row").forEach(r=>{const k=+r.dataset.r;r.classList.toggle("on",k===state.a);r.classList.toggle("vs",k===state.b);r.querySelector(".pick").setAttribute("aria-pressed",String(k===state.a));r.querySelector(".vsb").setAttribute("aria-pressed",String(k===state.b));});
   const on=rows.querySelector(".row.on");if(on){const t=on.offsetTop,h=on.offsetHeight;if(t<rows.scrollTop)rows.scrollTop=t-8;else if(t+h>rows.scrollTop+rows.clientHeight)rows.scrollTop=t+h-rows.clientHeight+8;}}
 rows.addEventListener("click",e=>{const p=e.target.closest(".pick"),v=e.target.closest(".vsb");
   if(p)setA(+p.dataset.r);else if(v){const r=+v.dataset.r;setB(state.b===r||r===state.a?null:r);}});
-$("#sPV").onclick=()=>{state.sort="pv";resort();};$("#sQ").onclick=()=>{state.sort="q";resort();};
-function resort(){$("#sPV").setAttribute("aria-pressed",String(state.sort==="pv"));$("#sQ").setAttribute("aria-pressed",String(state.sort==="q"));buildRows();markRows();save();}
+$("#sPV").onclick=()=>{state.sort="pv";resort();};$("#sQ").onclick=()=>{state.sort="q";resort();};$("#sT").onclick=()=>{state.sort="t";resort();};
+// filters: visited / unvisited, and one ground surface
+const filt=$("#filt");
+filt.insertAdjacentHTML("beforeend",Object.keys(GROUND).map(g=>`<button type="button" class="gb" data-g="${g}" aria-pressed="false" title="${GROUND[g]}" aria-label="地面：${GROUND[g]}">${g}</button>`).join(""));
+filt.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;if(b.dataset.v)state.vis=b.dataset.v;else state.gr=state.gr===b.dataset.g?null:b.dataset.g;resort();});
+function resort(){[["#sPV","pv"],["#sQ","q"],["#sT","t"]].forEach(([s,k])=>$(s).setAttribute("aria-pressed",String(state.sort===k)));
+  filt.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v?b.dataset.v===state.vis:b.dataset.g===state.gr)));
+  buildRows();markRows();save();}
+// the next planned camp from DB-001 Field Log
+if(NEXT){const d=get(NEXT.r),n=daysTo(NEXT.d),nc=$("#nextc");nc.hidden=false;$("#lgN").hidden=false;
+  nc.innerHTML=`<span class="k">NEXT CAMP · DB-001</span><span class="nn">${esc(d.name)}</span><span class="dt">${esc(NEXT.e.date)} · ${esc(NEXT.e.status.toUpperCase())}</span><span class="dd">${n>0?"T−"+n:n===0?"T·0":"T+"+(-n)}<small>${n>0?"DAYS TO GO":n===0?"TODAY":"DAYS AGO"}</small></span>`;
+  nc.setAttribute("aria-label",`次のキャンプ：${d.name}、${NEXT.e.date}`);nc.onclick=()=>setA(NEXT.r);}
 const selB=$("#selB");
 selB.innerHTML=`<option value="none">比べない</option>`+DATA.map(d=>`<option value="${d.rank}">${d.rank}. ${esc(d.name)}</option>`).join("");
 selB.addEventListener("change",()=>{const v=selB.value==="none"?null:+selB.value;setB(v===state.a?null:v);});
@@ -385,7 +496,7 @@ $("#xB").onclick=()=>setB(null);
 function setA(r){if(r===state.a&&state.view==="top")return;state.a=r;if(state.b===r)state.b=null;save();markRows();selB.value=state.b?String(state.b):"none";
   showCard("A");if(!state.b)showCard("B");startRadar(true,false);lock("A");if(GL){buildRoute("a",true);buildRoute("b",true);dive("a");}}
 function setB(r){state.b=r;save();markRows();selB.value=r?String(r):"none";showCard("B");startRadar(false,true);if(r)lock("B");if(GL){buildRoute("b",!!r);if(r)dive("b");else if(state.view==="top")frameTop();}}
-function step(d){const l=sorted(),i=l.findIndex(x=>x.rank===state.a);setA(l[(i+d+l.length)%l.length].rank);}
+function step(d){const l=sorted();if(!l.length)return;const i=l.findIndex(x=>x.rank===state.a);setA(l[i<0?0:(i+d+l.length)%l.length].rank);}
 document.addEventListener("keydown",e=>{if(e.altKey||e.ctrlKey||e.metaKey)return;const t=(e.target.tagName||"").toLowerCase();if(t==="select"||t==="input")return;
   if(e.key==="ArrowRight"||e.key==="ArrowDown"){e.preventDefault();step(1);}else if(e.key==="ArrowLeft"||e.key==="ArrowUp"){e.preventDefault();step(-1);}});
 function lock(S){const el=$("#ret"+S);el.classList.remove("lock");void el.offsetWidth;el.classList.add("lock");}
@@ -432,14 +543,15 @@ function showCard(S){
   $("#g"+S).textContent=d.tag;
   $("#n"+S).textContent=d.name;
   const rt=ROUTES[r];
-  $("#m"+S).innerHTML=`<span><b>TRAVEL</b>${d.hours.toFixed(1)} H</span><span><b>ROAD</b>${rt?rt.km+" KM":"—"}</span><span><b>BRG</b>${n?pad(Math.round(n.brg),3)+"°":"—"}</span>`;
+  $("#m"+S).innerHTML=`<span><b>TRAVEL</b>${d.hours.toFixed(1)} H</span><span><b>ROAD</b>${rt?rt.km+" KM":"—"}</span><span><b>DIRECT</b>${n?Math.round(n.km)+" KM":"—"}</span><span><b>BRG</b>${n?pad(Math.round(n.brg),3)+"°":"—"}</span>`;
   $("#v"+S).innerHTML=rt?`<b>VIA</b>${rt.via.length?rt.via.map(esc).join(" › "):"一般道"}`:"";
-  $("#hl"+S).textContent=`IMG-${pad(d.rank)} · ${d.visited?"VISITED":"UNVISITED"}`;
+  $("#hl"+S).textContent=`IMG-${pad(d.rank)} · ${d.visited?"VISITED":"UNVISITED"}${d.ground&&d.ground.length?" · "+gtxt(d).toUpperCase():""}`;
   $("#hb"+S).textContent=n?fmtLL(n.lat,n.lon):"";
   $("#img"+S).alt=d.name+"のイメージ写真";
   acquire(S,IMG[r]);
   const src=IMGSRC[r],q=encodeURIComponent(d.name+" キャンプ場");
-  $("#s"+S).innerHTML=`<span>${esc(d.pref)}</span>`+(src?`<span>IMG · <a href="${esc(src)}" target="_blank" rel="noopener">${esc(domain(src))}</a></span>`:"")+`<a href="https://www.google.com/search?tbm=isch&q=${q}" target="_blank" rel="noopener">画像検索</a>`;
+  const lg=(LOG[r]||[]).map(e=>{const k=day0(e.date);return `<span class="nxs">${e.status==="Planned"?"NEXT CAMP":"FIELD LOG"} ${esc(e.date)}${e.status==="Planned"&&k?" · "+dLabel(daysTo(k)):" · "+esc(e.status)}</span>`;}).join("");
+  $("#s"+S).innerHTML=lg+`<span>${esc(d.pref)}</span>`+(src?`<span>IMG · <a href="${esc(src)}" target="_blank" rel="noopener">${esc(domain(src))}</a></span>`:"")+`<a href="https://www.google.com/search?tbm=isch&q=${q}" target="_blank" rel="noopener">画像検索</a>`;
   decode(S,$("#d"+S),d.note,S==="A"?350:550);
 }
 
@@ -455,8 +567,12 @@ AXE.forEach((a,i)=>{const p=pt(i,10);el("line",{class:"rg",x1:CX,y1:CY,x2:p[0],y
 const polyB=el("polygon",{class:"rpb"}),polyA=el("polygon",{class:"rpa"});
 const dotsA=AXE.map(()=>el("circle",{class:"rda",r:2.4})),dotsB=AXE.map(()=>el("circle",{class:"rdb",r:2}));
 const bars=$("#bars");
-bars.innerHTML=AXE.map(a=>`<div class="br"><span class="l">${a}</span><span class="t"><i></i><em></em></span><span class="va"></span><span class="vb"></span></div>`).join("");
+// bars grouped by lineage (two axes each, subtotal /20); the thin tick is the all-field average
+const barHTML=i=>`<div class="br${i===9?" prov":""}"><span class="l" title="${esc(BASIS[i])} · 全${DATA.length}件の平均 ${AVG[i].toFixed(1)}">${AXE[i]}${i===9?"<small>暫定</small>":""}</span><span class="t"><i></i><b style="left:${AVG[i]*10}%"></b><em></em></span><span class="va"></span><span class="vb"></span></div>`;
+bars.innerHTML=LINE.map(([n,s],k)=>`<div class="lg"><span class="ln">${n}</span><span class="lt" id="lt${k}"></span><span class="lv" id="lv${k}"></span></div>`+barHTML(s)+barHTML(s+1)).join("")+
+  `<div class="bkey"><span><i></i>THIS FIELD</span><span><i class="av"></i>AVG ${DATA.length}</span><span><i class="vs"></i>VS</span></div>`;
 const barRows=[...bars.querySelectorAll(".br")];
+$("#axg tbody").innerHTML=AXE.map((a,i)=>`<tr><td>${i%2?"":LINE[i>>1][0].toUpperCase()}</td><td>${a}${i===8?"（近さ）":""}</td><td>${esc(BASIS[i])}</td></tr>`).join("");
 const mk=()=>({cur:new Array(10).fill(0),from:new Array(10).fill(0),to:new Array(10).fill(0),t0:0});
 let RA=mk(),RB=mk(),radRaf=0,scrUntil=0;
 function startRadar(resetA,resetB){
@@ -466,8 +582,14 @@ function startRadar(resetA,resetB){
   scrUntil=now+380;
   polyA.classList.toggle("dash",!A.visited);polyB.classList.toggle("dash",!!B&&!B.visited);polyB.style.display=B?"":"none";dotsB.forEach(d=>d.style.display=B?"":"none");
   $("#aRank").textContent=`RANK ${pad(A.rank)} / ${DATA.length}`;
-  const e=A.early;$("#early").innerHTML=`<span class="k">EARLY CHECK-IN</span><div><span class="led t-${e.tier}">${esc(e.label)}</span></div><div>${esc(e.detail)}</div><span class="srcl">出典：${esc(e.source)}</span>`+
+  const e=A.early;$("#early").innerHTML=`<span class="k">EARLY CHECK-IN · OPERATION</span><div><span class="led t-${e.tier}">${esc(e.label)}</span></div><div>${esc(e.detail)}</div><span class="srcl">出典：${esc(e.source)}</span>`+
+    `<div class="tiers" aria-label="区分とOperation軸の点数">${TIERS.map(([t,l,p])=>`<span class="tier t-${t}${e.tier===t?" on":""}"><b>${l}</b>${p}</span>`).join("")}</div>`+
     (B?`<div style="color:var(--ink-soft);margin-top:4px"><span class="led t-${B.early.tier}">VS · ${esc(B.early.label)}</span><div>${esc(B.early.detail)}</div></div>`:"");
+  const fl=$("#flog"),lg=LOG[A.rank]||[];fl.hidden=!lg.length;
+  fl.innerHTML=`<span class="k">FIELD LOG · DB-001</span>`+lg.map(x=>{const k=day0(x.date),n=k?daysTo(k):null,dash=v=>v&&v!=="—";
+    return `<div class="ent"><div class="hd"><span>${esc(x.date)}</span><span class="led t-${x.status==="Done"?"A":"C"}">${esc(x.status.toUpperCase())}</span>${x.status==="Planned"&&n!==null?`<span class="dd">${dLabel(n)}</span>`:""}</div>`+
+      (dash(x.config)?`<div class="cf">${esc(x.config)}</div>`:"")+
+      `<dl>${[["WEATHER",x.weather],["WENT WELL",x.well],["ISSUES",x.issues]].filter(([,v])=>dash(v)).map(([k2,v])=>`<dt>${k2}</dt><dd>${esc(v)}</dd>`).join("")}</dl></div>`;}).join("");
   if(RM){RA.cur=[...RA.to];RB.cur=[...RB.to];scrUntil=0;drawRadar(now);return;}
   cancelAnimationFrame(radRaf);radRaf=requestAnimationFrame(radarFrame);
 }
@@ -485,12 +607,13 @@ function drawRadar(now){
   const sum=(R,a,b)=>Math.round(R.cur.slice(a,b).reduce((x,y)=>x+y,0));
   $("#mPV").textContent=scr?pad(rd()*10+rd()):sum(RA,0,10);$("#mQ").textContent=scr?pad(rd()*10+rd()):sum(RA,0,8);$("#mD").textContent=scr?rd():Math.round(RA.cur[8]);
   if(B){$("#mPVb").textContent="VS "+sum(RB,0,10);$("#mQb").textContent="VS "+sum(RB,0,8);$("#mDb").textContent="VS "+Math.round(RB.cur[8]);}
-  else{$("#mPVb").textContent="";$("#mQb").textContent="";$("#mDb").textContent="";}
+  else{const A=get(state.a);$("#mPVb").textContent="AVG "+avgSum(0,10).toFixed(1);$("#mQb").textContent="AVG "+avgSum(0,8).toFixed(1);$("#mDb").textContent=A.hours!=null?`12−2×${A.hours.toFixed(1)}H`:"";}
+  LINE.forEach(([,s],k)=>{$("#lt"+k).innerHTML=`${scr?pad(rd()*2):sum(RA,s,s+2)}<small>/20</small>`;$("#lv"+k).textContent=B?"VS "+sum(RB,s,s+2):"";});
 }
 
 /* ---------- 3D map ---------- */
 const canvas=$("#gl"),mapEl=$("#map"),labBox=$("#labels");
-let GL=false,renderer,scene,camera,mapG,pinG,pins=[],hits=[],routes={},home,homeRings=[],scanBar,mapParts=[],bootT0=Infinity,bootDone=false,FR=null,FRt=0;
+let nextRing=null,benchM=[],GL=false,renderer,scene,camera,mapG,pinG,pins=[],hits=[],routes={},home,homeRings=[],scanBar,mapParts=[],bootT0=Infinity,bootDone=false,FR=null,FRt=0;
 const DEPTH=.5,FLAT=.08,KM=10/111.2;
 const cam={tx:0,ty:0,tz:0,dist:60,phi:.82,theta:0};
 let OBL=null,tw=null,queue=[],flatT=1,userMoved=false;
@@ -610,7 +733,22 @@ function initGL(){
     const base=new THREE.Mesh(new THREE.RingGeometry(.16,.22,24),new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:.6,side:THREE.DoubleSide,depthWrite:false}));base.rotation.x=-Math.PI/2;base.position.y=.02;grp.add(base);
     const ring=new THREE.Mesh(new THREE.RingGeometry(.5,.56,48),new THREE.MeshBasicMaterial({color:0x3ff0ff,transparent:true,opacity:0,side:THREE.DoubleSide,depthWrite:false}));ring.rotation.x=-Math.PI/2;ring.position.y=.03;grp.add(ring);
     const hit=new THREE.Mesh(hitG,new THREE.MeshBasicMaterial());hit.visible=false;hit.userData.rank=d.rank;grp.add(hit);hits.push(hit);
-    grp.scale.setScalar(.001);pinG.add(grp);pins.push({rank:d.rank,grp,hd,gl,ring,h,visited:d.visited,delay:d.rank*18});});
+    grp.scale.setScalar(.001);pinG.add(grp);pins.push({d,rank:d.rank,grp,hd,gl,ring,h,visited:d.visited,delay:d.rank*18});});
+  // the next planned camp (DB-001): an amber sonar ring under its pin
+  if(NEXT&&GEO[NEXT.r]){const [x,z]=GEO[NEXT.r];nextRing=new THREE.Mesh(new THREE.RingGeometry(.92,1,64),new THREE.MeshBasicMaterial({color:0xffd166,transparent:true,opacity:0,side:THREE.DoubleSide,depthWrite:false,blending:THREE.AdditiveBlending}));
+    nextRing.rotation.x=-Math.PI/2;nextRing.position.set(x,.025,z);pinG.add(nextRing);L.next=mkLabel("lb-next","NEXT CAMP · "+dLabel(daysTo(NEXT.d)));}
+  // the View benchmark (MD-002 §Reference Benchmark Site): a magenta crystal, not ranked
+  BENCH.forEach(b=>{const [x,z]=b.p,g=new THREE.Group();g.position.set(x,0,z);
+    const bm=new THREE.Mesh(beamG,new THREE.MeshBasicMaterial({color:0xff7ad9,transparent:true,opacity:.7,blending:THREE.AdditiveBlending,depthWrite:false}));bm.scale.y=.95;g.add(bm);
+    const gem=new THREE.Mesh(new THREE.OctahedronGeometry(.17),new THREE.MeshBasicMaterial({color:0xff9be4,wireframe:true}));gem.position.y=.95;g.add(gem);
+    const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:GLOW,color:0xff7ad9,transparent:true,opacity:.6,depthWrite:false,blending:THREE.AdditiveBlending}));sp.position.y=.95;g.add(sp);
+    const base=new THREE.Mesh(new THREE.RingGeometry(.2,.26,4),new THREE.MeshBasicMaterial({color:0xff7ad9,transparent:true,opacity:.8,side:THREE.DoubleSide,depthWrite:false}));base.rotation.x=-Math.PI/2;base.position.y=.02;g.add(base);
+    pinG.add(g);const n=navLL(b.ll);
+    const el=mkLabel("lb-bm",`VIEW 10 · BENCHMARK<span class="n">${esc(b.name)}</span><span class="x"><em>${esc(b.tag)}</em>${esc(b.note)}<br>${esc(b.info)}${n?` · 小岩から直線 ${Math.round(n.km)} KM`:""}</span>`);
+    el.tabIndex=0;el.setAttribute("role","button");el.setAttribute("aria-label",b.name+"（View 10の基準地点）の説明を開く");
+    const tg=()=>el.classList.toggle("open");el.addEventListener("click",tg);el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();tg();}});
+    benchM.push({gem,sp,el,v:V(x,0,z)});});
+  $("#lgB").hidden=!benchM.length;
   routes.a={group:new THREE.Group(),color:0x3ff0ff,sign:1};routes.b={group:new THREE.Group(),color:0xffa24a,sign:-1};
   pinG.add(routes.a.group,routes.b.group);
   L.home=mkLabel("lb-home","KOIWA<small>HOME · 35.733N 139.883E</small>");
@@ -663,7 +801,8 @@ const ray=window.THREE?new THREE.Raycaster():null,mv=window.THREE?new THREE.Vect
 function applyCam(){const sp=Math.sin(cam.phi);camera.position.set(cam.tx+cam.dist*sp*Math.sin(cam.theta),cam.ty+cam.dist*Math.cos(cam.phi),cam.tz+cam.dist*sp*Math.cos(cam.theta));camera.lookAt(cam.tx,cam.ty,cam.tz);camera.updateMatrixWorld();}
 function groundAt(x,y){const r=canvas.getBoundingClientRect();mv.set((x-r.left)/r.width*2-1,-((y-r.top)/r.height)*2+1);ray.setFromCamera(mv,camera);ground.constant=-(pinG?pinG.position.y:0);const p=new THREE.Vector3();return ray.ray.intersectPlane(ground,p)?p:null;}
 function setRay(e){const r=canvas.getBoundingClientRect();mv.set((e.clientX-r.left)/r.width*2-1,-((e.clientY-r.top)/r.height)*2+1);ray.setFromCamera(mv,camera);}
-function pick(e){setRay(e);const h=ray.intersectObjects(hits)[0];return h?h.object.userData.rank:null;}
+const live=r=>r===state.a||r===state.b||shown(get(r));
+function pick(e){setRay(e);const h=ray.intersectObjects(hits.filter(o=>live(o.userData.rank)))[0];return h?h.object.userData.rank:null;}
 function hover(e){const r=pick(e),hp=new THREE.Vector3();
   ground.constant=-pinG.position.y;if(ray.ray.intersectPlane(ground,hp))$("#tCur").textContent=fmtLL(LAT0-hp.z/KZ,LON0+hp.x/KX);
   canvas.classList.toggle("hot",!!r);hovered=r&&r!==state.a&&r!==state.b?r:null;L.h.hidden=!hovered;
@@ -709,11 +848,13 @@ function frame(now){
   applyCam();
   $("#tAlt").textContent=Math.round(camera.position.y*11.12)+" KM";
   const s=clamp(cam.dist/40,.4,2.4);
-  pins.forEach(p=>{const isA=p.rank===state.a,isB=p.rank===state.b;
+  pins.forEach(p=>{const isA=p.rank===state.a,isB=p.rank===state.b;p.grp.visible=isA||isB||shown(p.d);
     const gs=RM?1:eout(clamp((now-bootT0-1000-p.delay)/500,0,1));p.grp.scale.set(1,Math.max(gs,.001),1);
     p.hd.scale.setScalar(s*(isA||isB?1.6:1));p.gl.scale.set(1.1*s*(isA||isB?2.2:1),1.1*s*(isA||isB?2.2:1),1);
     if(!p.visited)p.gl.material.opacity=.12+.1*Math.sin(now/300+p.rank);
     p.ring.material.opacity=isA||isB?.95:0;p.ring.material.color.setHex(isA?0x3ff0ff:0xffa24a);p.ring.scale.setScalar(s*(1+.3*Math.sin(now/240)));});
+  if(nextRing){const t=(now/1900)%1;nextRing.scale.setScalar(s*(.25+t*1.7));nextRing.material.opacity=(1-t)*.85;}
+  benchM.forEach(b=>{b.gem.rotation.y+=dt*1.4;b.gem.scale.set(s,1.5*s,s);b.sp.scale.set(1.6*s,1.6*s,1);});
   home.scale.setScalar(s);home.rotation.y+=dt*1.2;home.userData.s.scale.set(3*s,3*s,1);
   homeRings.forEach((r,i)=>{const t=((now/2400)+i/3)%1;r.scale.setScalar(s*(.4+t*3.6));r.material.opacity=(1-t)*.55;});
   ["a","b"].forEach(k=>{const R=routes[k];if(!R.curve)return;const p=clamp((now-R.t0)/R.dur,0,1),e=eout(p);if(e!==R.prog)setProg(R,e);
@@ -727,6 +868,8 @@ function frame(now){
   gratL.forEach(g=>place(g.el,g.pin?V(g.v.x,g.v.y+lift,g.v.z):g.v,"translate(-50%,-50%)"));
   place(L.home,V(0,lift+.4,0),"translate(-50%,calc(-100% - 16px))");
   overlay("A",state.a,L.a,lift);overlay("B",state.b,L.b,lift);
+  if(L.next){const g=GEO[NEXT.r];L.next.hidden=!bootDone&&!RM||!live(NEXT.r);if(!L.next.hidden)place(L.next,V(g[0],lift,g[1]),"translate(-50%,14px)");}
+  benchM.forEach(b=>{b.el.hidden=!bootDone&&!RM;if(!b.el.hidden)place(b.el,V(b.v.x,lift+1.25,b.v.z),"translate(-50%,calc(-100% - 4px))");});
   if(hovered&&GEO[hovered]){const ph=GEO[hovered];place(L.h,V(ph[0],lift+1.2,ph[1]),"translate(18px,-50%)");}
 }
 function overlay(S,r,lab,lift){
@@ -748,7 +891,7 @@ function xhair(p,n){const on=!!p;["#xh","#xv","#xtH","#xtV"].forEach(s=>$(s).cla
 
 /* ---------- boot ---------- */
 const bootEl=$("#boot"),logEl=$("#bootLog");
-const LINES=[["FIELD ATLAS NAVIGATOR","BOOT"],["LINK MD-002 VER.__MD002_VERSION__",""],["FIELDS",DATA.length+" / "+DATA.filter(d=>d.visited).length+" VISITED"],["AXES","10 · OP-010 PART C"],["GEODATA","GSI ADDRESS SEARCH"],["IMAGERY",Object.keys(IMG).length+" / "+DATA.length],["HOME","KOIWA 35.733N 139.883E"]];
+const LINES=[["FIELD ATLAS NAVIGATOR","BOOT"],["LINK MD-002 VER.__MD002_VERSION__",""],["FIELDS",DATA.length+" / "+DATA.filter(d=>d.visited).length+" VISITED"],["AXES","10 · OP-010 PART C"],["GEODATA","GSI ADDRESS SEARCH"],["IMAGERY",Object.keys(IMG).length+" / "+DATA.length],["FIELD LOG",NEXT?"NEXT "+NEXT.d:"DB-001"],["BENCHMARK",BENCH.length?"VIEW 10 · "+BENCH[0].name:"—"],["HOME","KOIWA 35.733N 139.883E"]];
 function boot(){
   if(RM){bootEl.hidden=true;bootDone=true;return;}
   let i=0,t=null;const out=[];
@@ -761,7 +904,7 @@ function boot(){
 }
 
 /* ---------- start ---------- */
-buildRows();markRows();selB.value=state.b?String(state.b):"none";
+resort();selB.value=state.b?String(state.b):"none";
 GL=initGL();$("#nogl").hidden=GL;
 if(!GL){$("#vObl").disabled=true;$("#vTop").disabled=true;bootEl.hidden=true;}
 if(RM||!GL){bootT0=performance.now()-9000;bootDone=true;}
