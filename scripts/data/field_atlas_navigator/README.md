@@ -37,13 +37,15 @@ The generator prints a warning for every field that lacks a location, route or p
 | `images.json` | Photo source per field: `page` (credit link) and `image` (the file). Mostly each site's og:image; logos and flyers were swapped for a photo from the same site by hand. | Official sites and booking sites (nap-camp.com, hinata, etc.) |
 | `images/` | Each field's photo, 600 px JPEG, named by a hash of the field name. Committed (MARI様のご判断, 2026-09-30) so the pages rebuild without network access. The photos belong to the sites credited in `images.json`. | Created by `fetch images` |
 
-Positions that were checked by hand and are worth re-checking:
+Names and positions corrected by hand (MD-002 Ver.4.3, 2026-09-30):
 
-- オートキャンプFUJICHU: the official site gives 富士吉田市新屋724-1. MD-002 lists 富士河口湖町. The map uses the official address.
-- 大原布施オートキャンプ場: the search found 大原上布施オートキャンプ場 (いすみ市上布施). It was treated as the same field.
-- 小田原フォレストキャンプ場: matched to 小田原市いこいの森 (RECAMPおだわら, 久野4294-1), because MD-002's note cites its 80 m² 林間オートサイト on nap-camp. No facility named 小田原フォレストキャンプ場 was found.
+- オートキャンプFUJICHU: MD-002 listed 富士河口湖町; the field is at 富士吉田市新屋724番1 (nap-camp.com). MD-002 now lists 山梨県富士吉田市.
+- 大原上布施オートキャンプ場 (formerly listed as 大原布施オートキャンプ場): いすみ市上布施593 (nap-camp.com). MD-002 now uses the official name.
+- RECAMPおだわら (formerly listed as 小田原フォレストキャンプ場, a name no facility uses): 小田原市いこいの森, run by Recamp, 久野4294-1 (recamp.co.jp, nap-camp.com). Identified by MD-002's note on its 80 m² 林間オートサイト. MD-002 now uses the operator's heading, like RECAMP館山 and RECAMPしょうなん.
 
-The three points above were re-checked on 2026-09-30 (nap-camp.com, 小田原市 official page) and kept. On the same day the five fields that used their municipality point were moved to their facility (routes recomputed):
+The data files are keyed by the MD-002 name, and each photo file is named by a hash of it. When a field is renamed in MD-002, rename its key in `locations.json`, `routes.json` and `images.json` and rename its file in `images/` (`git mv`), or the generator warns that the field has no location, route or photo.
+
+On the same day the five fields that used their municipality point were moved to their facility (routes recomputed):
 
 | Field | Address | Checked on | Point |
 |---|---|---|---|
