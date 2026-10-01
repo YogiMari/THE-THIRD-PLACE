@@ -193,6 +193,6 @@ Same frame and content as the Navigator: header bar (logo, Oblique / Top view, c
 - Mouse (Pointer Events): drag = pan (the point under the cursor stays under it), right-drag or Shift / Alt + drag = rotate and tilt, wheel = zoom toward the cursor, click a pillar = select, ← → = next or previous field.
 - Touch: one finger = pan, two fingers = pinch zoom around their midpoint and twist to rotate, tap = select. The map has `touch-action: none`, so on phones the page scrolls from the sheets, not the map.
 - Zoom buttons + / − / Kanto.
-- Tapping or clicking the NEXT CAMP label on the map selects that field (both editions).
+- Tapping or clicking the NEXT CAMP label on the map, or the legend's 次のキャンプ line, selects that field and replays the flight if it is already selected. The label reacts on pointer-up (iOS may not turn a tap on an overlay into a click) and has a hit area 12 px larger than it looks (both editions).
 - On phones the analysis panel, the index list and the card text move only up and down (`touch-action: pan-y`, no sideways overflow), in both editions.
 - The last selection, comparison, sort order and filters are kept in the viewer's browser (`localStorage` key `fa-nav1`).
