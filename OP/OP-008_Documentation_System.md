@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.17
+**Version**: 3.18
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -36,6 +36,7 @@
 | 3.15 | 2026-09-28 | S-06（BR-003のルールとデータの分離）に伴い、BR-003 Procurement HandbookのLiving文書に置かれていた恒久ルール（Acquisition Status Policy・Purchasing Priority・Purchase List Definition・各種Purchase Policy等）をOP-005 Pursuit Strategy §Coffee Zone Acquisition Rulesへ移設する方針決定に合わせ、§8カタログのOP-005行RoleへCoffee Zone調達の恒久ルールを本書§Coffee Zone Acquisition Rulesが定義する旨を追記した（OP-008 §23 Change Managementに基づき、OP-005・BR-003本体の改訂に先行して反映）。責任範囲の管理主体（値の割り当てはBR-003、ルールの定義はOP-005）自体はOP-005 Ver.2.0の決定と矛盾しない。MARI様のご決定に基づく。 |
 | 3.16 | 2026-09-28 | S-10（改訂履歴の圧縮）に伴い、§19にRule DOC-09（Revision Historyの一定規模超過時、直近履歴を本文に残しそれ以前をarchive/へ移設できる旨）を新設し、§10 Document Lifecycleへ参照注記を追加した（OP-008 §23 Change Managementに基づき、MD-004・MD-003・CZ-001・CZ-002・BR-003本体の履歴移設に先行して反映）。MARI様のご決定に基づく。 |
 | 3.17 | 2026-09-28 | 整備バックログ（N-01・N-04・N-05）で新設された内容に合わせ、§8カタログのOP-006 Role（Safety・Material Care）とDB-001 Role（Field Log）、Appendix FのOP-006・DB-001紹介文（日英）を同期。DB-001紹介文に残っていたProject Overview（S-08で削除済み）の記述をProject Inbox・Field Logへ置き換えた。MARI様の包括指示に基づく。Patch Version。 |
+| 3.18 | 2026-10-01 | Document Renumbering Noteの旧IDを「TP-001」から「PX-001」へ訂正した。新旧ID対応の正式な参照先であるOP-001 Constitution Appendix C Ver.5.0（OP-001 §26）は「PX-001→OP-008」「TP-001→OP-001」と定めており、OP-001 §26本文も「PX-001（新ID：OP-008）」と記している。本書Version 1.0の「Documentation SystemをPXシリーズへ移行」とも整合する。Revision History内のVersion 2.0・3.3の行にある「TP-001」の記述は、歴史的記録として原文のまま保持する。プロジェクトオーナーのご指示に基づく。Patch Version。 |
 
 ---
 
@@ -1062,7 +1063,7 @@ The series managing accumulated knowledge and the cultural archive.
 
 ## Document Renumbering Note
 
-本文書は、2026-09-19付のプロジェクト全体の文書番号再編（Constitution OP-001 Ver.5.0 §26参照）により、TP-001からOP-008へ番号を変更した。本書が定義する文書体系そのものを、旧TP／PX／TM 3系列から、新DS／OP／記録（DB・MD・BR・CZ・KN）系列へ全面的に再構築した詳細は、Revision History（Version 2.0）を参照。Revision History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。旧ID: TP-001。
+本文書は、2026-09-19付のプロジェクト全体の文書番号再編（Constitution OP-001 Ver.5.0 §26参照）により、PX-001からOP-008へ番号を変更した。本書が定義する文書体系そのものを、旧TP／PX／TM 3系列から、新DS／OP／記録（DB・MD・BR・CZ・KN）系列へ全面的に再構築した詳細は、Revision History（Version 2.0）を参照。Revision History内の過去の行（旧ID・過去バージョン時点の記述を含む）は歴史的記録として原文のまま保持した。旧ID: PX-001。
 
 ---
 
