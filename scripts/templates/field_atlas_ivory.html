@@ -299,7 +299,7 @@
   .legend i{flex:none;width:9px;height:9px;border-radius:50%}
   .legend .lv{background:var(--a)} .legend .lu{border:1px dashed var(--ink-soft)} .legend .ln{background:var(--a);box-shadow:0 0 0 3px rgba(217,119,87,.25)}
   .legend .lbm{width:8px;height:8px;border-radius:1px;background:var(--warn);transform:rotate(45deg)} .legend .lr{border:1px dashed var(--ink-faint);border-radius:50%}
-  .lb-next{display:flex;align-items:center;gap:6px;font-family:var(--ui);font-size:9.5px;font-weight:700;letter-spacing:.12em;color:#fff;background:var(--a);padding:2px 10px 2px 8px;border-radius:99px;box-shadow:0 6px 16px -6px rgba(181,83,47,.9)}
+  .lb-next{pointer-events:auto;cursor:pointer;touch-action:manipulation;display:flex;align-items:center;gap:6px;font-family:var(--ui);font-size:9.5px;font-weight:700;letter-spacing:.12em;color:#fff;background:var(--a);padding:2px 10px 2px 8px;border-radius:99px;box-shadow:0 6px 16px -6px rgba(181,83,47,.9)}
   .lb-next::before{content:"";width:6px;height:6px;border-radius:50%;background:#fff;animation:blink 1.4s ease-in-out infinite}
   @keyframes blink{50%{opacity:.2}}
   .lb-bm{pointer-events:auto;cursor:pointer;width:max-content;max-width:250px;white-space:normal;font-family:var(--ui);font-size:9px;font-weight:600;letter-spacing:.12em;color:#8A6A1F;background:rgba(255,255,255,.92);border:1px solid rgba(200,149,44,.45);padding:5px 10px 6px;border-radius:10px;box-shadow:var(--shadow)}
@@ -832,7 +832,10 @@ function initGL(){
     grp.scale.setScalar(.001);pinG.add(grp);pins.push({d,rank:d.rank,grp,hd,gl,ring,h,visited:d.visited,delay:d.rank*18});});
   // the next planned camp (DB-001): a slow clay ripple under its pin
   if(NEXT&&GEO[NEXT.r]){const [x,z]=GEO[NEXT.r];nextRing=new THREE.Mesh(new THREE.RingGeometry(.9,1,64),new THREE.MeshBasicMaterial({color:0xD97757,transparent:true,opacity:0,side:THREE.DoubleSide,depthWrite:false}));
-    nextRing.rotation.x=-Math.PI/2;nextRing.position.set(x,.025,z);pinG.add(nextRing);L.next=mkLabel("lb-next","NEXT CAMP · "+dLabel(daysTo(NEXT.d)));}
+    nextRing.rotation.x=-Math.PI/2;nextRing.position.set(x,.025,z);pinG.add(nextRing);L.next=mkLabel("lb-next","NEXT CAMP · "+dLabel(daysTo(NEXT.d)));
+    // tapping the label selects the next camp's field
+    const go=()=>setA(NEXT.r);L.next.tabIndex=0;L.next.setAttribute("role","button");L.next.setAttribute("aria-label",get(NEXT.r).name+"（次のキャンプ）を選ぶ");
+    L.next.addEventListener("click",go);L.next.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}});}
   // the View benchmark (MD-002 §Reference Benchmark Site): a gold gem, not ranked
   BENCH.forEach(b=>{const [x,z]=b.p,g=new THREE.Group();g.position.set(x,0,z);
     const bm=new THREE.Mesh(beamG,new THREE.MeshBasicMaterial({color:0xC8952C,transparent:true,opacity:.55,depthWrite:false}));bm.scale.y=.95;g.add(bm);

@@ -294,7 +294,7 @@
   .legend .lv{background:var(--ice);transform:rotate(45deg);box-shadow:0 0 6px var(--ice)} .legend .lu{border:1px dashed var(--ink-soft);transform:rotate(45deg)}
   .legend .ln{border-radius:50%;background:var(--warn);box-shadow:0 0 8px var(--warn)} .legend .lbm{background:#FF7AD9;transform:rotate(45deg);box-shadow:0 0 8px #FF7AD9}
   .legend .lr{border:1px dashed var(--a);border-radius:50%}
-  .lb-next{display:flex;align-items:center;gap:6px;font-family:var(--display);font-size:7.5px;letter-spacing:.26em;color:var(--warn);border:1px solid var(--warn);background:rgba(1,4,9,.75);padding:3px 8px;box-shadow:0 0 12px rgba(255,209,102,.35)}
+  .lb-next{pointer-events:auto;cursor:pointer;touch-action:manipulation;display:flex;align-items:center;gap:6px;font-family:var(--display);font-size:7.5px;letter-spacing:.26em;color:var(--warn);border:1px solid var(--warn);background:rgba(1,4,9,.75);padding:3px 8px;box-shadow:0 0 12px rgba(255,209,102,.35)}
   .lb-next::before{content:"";width:5px;height:5px;background:var(--warn);box-shadow:0 0 6px var(--warn);animation:blink3 1.2s steps(1) infinite}
   .lb-bm{pointer-events:auto;cursor:pointer;width:max-content;max-width:250px;white-space:normal;font-family:var(--display);font-size:7px;letter-spacing:.26em;color:#FF7AD9;background:rgba(1,4,9,.8);border-left:1px solid #FF7AD9;padding:4px 10px 5px}
   .lb-bm .n{display:block;margin-top:2px;font-family:var(--body);font-size:12.5px;font-weight:700;letter-spacing:.02em;color:var(--ice)}
@@ -807,7 +807,10 @@ function initGL(){
     grp.scale.setScalar(.001);pinG.add(grp);pins.push({d,rank:d.rank,grp,hd,gl,ring,h,visited:d.visited,delay:d.rank*18});});
   // the next planned camp (DB-001): an amber sonar ring under its pin
   if(NEXT&&GEO[NEXT.r]){const [x,z]=GEO[NEXT.r];nextRing=new THREE.Mesh(new THREE.RingGeometry(.92,1,64),new THREE.MeshBasicMaterial({color:0xffd166,transparent:true,opacity:0,side:THREE.DoubleSide,depthWrite:false,blending:THREE.AdditiveBlending}));
-    nextRing.rotation.x=-Math.PI/2;nextRing.position.set(x,.025,z);pinG.add(nextRing);L.next=mkLabel("lb-next","NEXT CAMP · "+dLabel(daysTo(NEXT.d)));}
+    nextRing.rotation.x=-Math.PI/2;nextRing.position.set(x,.025,z);pinG.add(nextRing);L.next=mkLabel("lb-next","NEXT CAMP · "+dLabel(daysTo(NEXT.d)));
+    // tapping the label selects the next camp's field
+    const go=()=>setA(NEXT.r);L.next.tabIndex=0;L.next.setAttribute("role","button");L.next.setAttribute("aria-label",get(NEXT.r).name+"（次のキャンプ）を選ぶ");
+    L.next.addEventListener("click",go);L.next.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}});}
   // the View benchmark (MD-002 §Reference Benchmark Site): a magenta crystal, not ranked
   BENCH.forEach(b=>{const [x,z]=b.p,g=new THREE.Group();g.position.set(x,0,z);
     const bm=new THREE.Mesh(beamG,new THREE.MeshBasicMaterial({color:0xff7ad9,transparent:true,opacity:.7,blending:THREE.AdditiveBlending,depthWrite:false}));bm.scale.y=.95;g.add(bm);
