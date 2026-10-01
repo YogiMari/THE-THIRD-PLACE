@@ -1,0 +1,1965 @@
+<title>Arbor of the Third Place</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,500;1,6..96,400;1,6..96,500&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400;1,500&family=Jost:wght@300;400;500&family=Shippori+Mincho+B1:wght@400;500;600&family=UnifrakturMaguntia&display=swap">
+<style>
+/* Layout: an illuminated codex adrift in a photographic night. A framed title folio, eight Libri (books) with
+   illuminated initials, running heads and marginal glosses; Liber II is the living tree plate with a dossier.
+   Thumb-index tabs on the right edge, as in a bound scripture. Deliberately single dark theme. */
+:root{
+  color-scheme: dark;
+  --night:#07080d;
+  --fg:#f1e8d8;
+  --muted:#aaa293;
+  --faint:#736d62;
+  --gold:#d6a74e;
+  --gold-hi:#f6dca0;
+  --rubric:#e25b45;           /* rubrication: verse numbers, initials' ground */
+  --oxblood:#4a1510;
+  --hair:rgba(241,232,216,.14);
+  --hair-gold:rgba(214,167,78,.32);
+  --folio:rgba(9,9,13,.80);
+  --s-DS:#f3e3b8; --s-OP:#d6a74e; --s-DB:#8fb3d9; --s-MD:#f07a3a; --s-BR:#b85a9a; --s-CZ:#6fb08e; --s-KN:#a38ad6;
+  --f-black:"UnifrakturMaguntia","Old English Text MT","Bodoni Moda",serif;
+  --f-display:"Bodoni Moda","Didot","Bodoni 72","Times New Roman",serif;
+  --f-book:"Cormorant Garamond","Garamond","Times New Roman",serif;
+  --f-label:"Jost","Futura","Avenir Next","Helvetica Neue",sans-serif;
+  --f-ja:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+}
+html{background:var(--night)}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+body{background:var(--night);color:var(--fg);font-family:var(--f-ja);font-size:15px;line-height:1.85;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+::selection{background:rgba(214,167,78,.35)}
+a{color:inherit}
+#sky,#motes{position:fixed;inset:0;width:100%;height:100%;display:block;pointer-events:none}
+#sky{z-index:0;background:radial-gradient(120% 80% at 70% 90%,#3a2416 0%,#141726 45%,#07080d 80%)}
+#motes{z-index:1}
+.grain{position:fixed;inset:-50%;z-index:3;pointer-events:none;opacity:.10;mix-blend-mode:overlay;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 1.2 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  animation:grain 1.2s steps(6) infinite}
+@keyframes grain{0%{transform:translate(0,0)}20%{transform:translate(-3%,2%)}40%{transform:translate(2%,-4%)}60%{transform:translate(-4%,-1%)}80%{transform:translate(3%,3%)}100%{transform:translate(0,0)}}
+.vignette{position:fixed;inset:0;z-index:2;pointer-events:none;background:radial-gradient(130% 95% at 50% 45%,transparent 55%,rgba(0,0,0,.55) 100%)}
+.page{position:relative;z-index:4;padding-inline:clamp(16px,4vw,56px);padding-block:0 64px;max-width:1440px;margin:0 auto}
+
+/* ---------- shared type ---------- */
+.lab{font-family:var(--f-label);font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.gild{background:linear-gradient(180deg,#fff7e6 0%,#f0d9a6 40%,#b88a3e 76%,#6d4d22 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.rub{color:var(--rubric)}
+.en{font-family:var(--f-book);font-style:italic}
+.src{font-family:var(--f-label);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+
+/* ---------- running head ---------- */
+.rail{display:flex;flex-wrap:wrap;gap:6px 22px;justify-content:space-between;padding-block:22px 14px;border-bottom:1px solid var(--hair);
+  font-family:var(--f-label);font-size:10.5px;letter-spacing:.32em;text-transform:uppercase;color:var(--muted)}
+.rail b{font-weight:500;color:var(--fg)}
+
+/* ---------- folio (a codex page) ---------- */
+.folio{position:relative;background:var(--folio);border:1px solid var(--hair-gold);outline:1px solid rgba(214,167,78,.14);outline-offset:-9px;
+  padding:clamp(22px,4vw,56px)}
+.folio::before,.folio::after{content:"";position:absolute;top:-5px;width:9px;height:9px;border:1px solid var(--gold);background:var(--night);transform:rotate(45deg)}
+.folio::before{left:-5px}.folio::after{right:-5px}
+
+/* ---------- frontispiece ---------- */
+.front{margin-top:clamp(28px,5vw,64px);text-align:center;padding-block:clamp(40px,7vw,96px) clamp(30px,5vw,60px)}
+.front .over{font-family:var(--f-label);font-size:11px;letter-spacing:.62em;text-transform:uppercase;color:var(--gold);padding-left:.62em}
+.front h1{margin:.1em 0 0;font-weight:400;line-height:.9}
+.front h1 .black{display:block;font-family:var(--f-black);font-size:clamp(96px,19vw,272px);letter-spacing:.01em;filter:drop-shadow(0 0 30px rgba(246,220,160,.22))}
+.front h1 .sub{display:block;margin-top:.1em;font-family:var(--f-display);font-style:italic;font-size:clamp(22px,3.2vw,42px);color:var(--fg)}
+.front .ja{margin:18px 0 0;font-size:clamp(14px,1.5vw,17px);letter-spacing:.5em;padding-left:.5em;color:var(--fg)}
+.orn{display:flex;align-items:center;justify-content:center;gap:14px;margin:30px auto;max-width:520px;color:var(--gold)}
+.orn::before,.orn::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,transparent,var(--gold))}
+.orn::after{background:linear-gradient(90deg,var(--gold),transparent)}
+.orn i{width:7px;height:7px;border:1px solid var(--gold);transform:rotate(45deg)}
+.orn i:nth-child(2){width:11px;height:11px;background:var(--gold)}
+.front .epigraph{margin:0 auto;font-size:clamp(18px,2vw,24px);line-height:2.1;max-width:24em;text-wrap:balance}
+.front .epigraph cite{display:block;margin-top:8px;font-style:normal}
+.front .dek{margin:26px auto 0;color:var(--muted);max-width:40em;font-size:14px;text-wrap:pretty}
+.figures{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-block:1px solid var(--hair);margin-top:clamp(30px,5vw,56px);text-align:left}
+.figures div{padding:16px 14px 14px;border-left:1px solid var(--hair);min-width:0}
+.figures div:first-child{border-left:0}
+.figures strong{display:block;font-family:var(--f-display);font-weight:400;font-size:clamp(28px,3.6vw,48px);line-height:1;font-variant-numeric:lining-nums tabular-nums}
+.figures span{display:block;margin-top:8px;font-family:var(--f-label);font-size:9.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.index{margin-top:clamp(34px,5vw,60px);text-align:left}
+.index h2{margin:0 0 14px;text-align:center;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:26px}
+.index ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));column-gap:48px}
+.index a{display:grid;grid-template-columns:44px minmax(0,1fr) auto;gap:14px;align-items:baseline;padding:12px 0;border-top:1px solid var(--hair);text-decoration:none}
+.index a:hover .nm,.index a:focus-visible .nm{color:var(--gold-hi)}
+.index a:focus-visible{outline:1px solid var(--gold);outline-offset:2px}
+.index .rn{font-family:var(--f-display);font-size:22px;color:var(--rubric);text-align:right}
+.index .nm{font-family:var(--f-display);font-style:italic;font-size:22px;transition:color .3s}
+.index .nm small{font-family:var(--f-ja);font-style:normal;font-size:13px;color:var(--muted);margin-left:10px;letter-spacing:.1em}
+.index .ct{display:block;font-size:12.5px;color:var(--muted);grid-column:2/-1;margin-top:-4px}
+.index .pg{font-family:var(--f-label);font-size:10px;letter-spacing:.2em;color:var(--faint)}
+
+/* ---------- thumb index ---------- */
+.thumbs{position:fixed;right:8px;top:50%;transform:translateY(-50%);z-index:12;display:grid;gap:4px}
+.thumbs a{display:grid;place-items:center;width:32px;height:40px;text-decoration:none;font-family:var(--f-display);font-size:13px;color:var(--muted);
+  background:rgba(9,9,13,.72);border:1px solid var(--hair);border-right:0;transition:color .3s,background .3s,width .3s}
+.thumbs a:hover,.thumbs a:focus-visible{color:var(--fg);outline:none;border-color:var(--gold)}
+.thumbs a.on{color:var(--night);background:linear-gradient(180deg,#f6dca0,#b88a3e);border-color:var(--gold);width:38px}
+
+/* ---------- liber head ---------- */
+.liber{margin-top:clamp(90px,12vw,170px);scroll-margin-top:24px}
+.runhead{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-bottom:10px;border-bottom:1px solid var(--hair);margin-bottom:28px;
+  font-family:var(--f-label);font-size:10px;letter-spacing:.34em;text-transform:uppercase;color:var(--faint)}
+.lhead{display:grid;grid-template-columns:auto minmax(0,1fr) minmax(0,1.1fr);gap:18px 34px;align-items:end;margin-bottom:34px}
+.initial{position:relative;width:clamp(78px,9vw,120px);aspect-ratio:1;max-width:100%;display:grid;place-items:center;
+  background:radial-gradient(circle at 30% 25%,#7a241a,var(--oxblood) 70%),var(--oxblood);
+  border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:3px;box-shadow:0 0 50px rgba(226,91,69,.18)}
+.initial::before{content:"";position:absolute;inset:6px;border:1px solid rgba(246,220,160,.35);
+  background:repeating-linear-gradient(45deg,rgba(246,220,160,.07) 0 1px,transparent 1px 9px),repeating-linear-gradient(-45deg,rgba(246,220,160,.07) 0 1px,transparent 1px 9px)}
+.initial span{position:relative;font-family:var(--f-black);font-size:clamp(58px,7vw,92px);line-height:1;transform:translateY(4%)}
+.lhead .k{display:block;font-family:var(--f-label);font-size:10.5px;letter-spacing:.34em;text-transform:uppercase;color:var(--rubric)}
+.lhead h2{margin:4px 0 0;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:clamp(40px,5.4vw,76px);line-height:.95;letter-spacing:-.01em}
+.lhead h2 small{display:block;margin-top:10px;font-family:var(--f-ja);font-style:normal;font-size:clamp(15px,1.5vw,19px);letter-spacing:.4em;color:var(--fg)}
+.lhead p{margin:0;color:var(--muted);font-size:14px;max-width:38em;text-wrap:pretty}
+
+/* ---------- gloss rows (verse with marginal source) ---------- */
+.sub-h{display:flex;align-items:baseline;gap:14px;margin:0 0 16px;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:clamp(24px,2.6vw,32px);line-height:1.1}
+.sub-h .src{font-style:normal}
+.block + .block{margin-top:clamp(40px,5vw,64px)}
+.two{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(28px,4vw,56px)}
+.three{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(22px,3vw,40px)}
+.two > *,.three > *{min-width:0}
+.verses{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.verses li{display:grid;grid-template-columns:70px minmax(0,1fr);gap:14px;padding:11px 0;border-top:1px solid var(--hair);font-size:14.5px;line-height:1.8}
+.verses li:last-child{border-bottom:1px solid var(--hair)}
+.verses .vn{font-family:var(--f-display);font-size:14px;color:var(--rubric);font-variant-numeric:lining-nums;padding-top:2px;letter-spacing:.04em}
+.verses .vn small{display:block;font-family:var(--f-label);font-size:9px;letter-spacing:.18em;color:var(--faint);text-transform:uppercase;margin-top:2px}
+.verses b{font-weight:500}
+.verses .en{display:block;color:var(--muted);font-size:15px;line-height:1.4}
+.quote{margin:0;font-size:clamp(17px,1.9vw,22px);line-height:2;text-wrap:balance}
+.quote .src{display:block;margin-top:8px}
+.note{font-size:13px;color:var(--muted);line-height:1.9;margin:14px 0 0}
+.gloss{border-left:1px solid var(--rubric);padding:6px 0 6px 16px;margin-top:18px;font-size:12.5px;color:var(--muted);line-height:1.9}
+.gloss b{display:block;font-family:var(--f-label);font-weight:500;font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--rubric);margin-bottom:2px}
+
+/* procession (ordered flows) */
+.proc{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;align-items:stretch;gap:0}
+.proc li{position:relative;flex:1 1 120px;min-width:0;padding:14px 18px 14px 0;margin-right:18px;border-top:1px solid var(--gold)}
+.proc li:not(:last-child)::after{content:"";position:absolute;top:-4px;right:-13px;width:7px;height:7px;border-top:1px solid var(--gold);border-right:1px solid var(--gold);transform:rotate(45deg)}
+.proc .n{font-family:var(--f-display);font-size:13px;color:var(--rubric)}
+.proc b{display:block;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:20px;line-height:1.2}
+.proc span{display:block;font-size:12.5px;color:var(--muted);line-height:1.7;margin-top:4px}
+
+/* tables */
+.tbl-wrap{overflow-x:auto}
+table.codex{width:100%;border-collapse:collapse;font-size:13.5px;line-height:1.7}
+table.codex th{font-family:var(--f-label);font-weight:500;font-size:9.5px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold);text-align:left;padding:8px 14px 8px 0;border-bottom:1px solid var(--hair-gold)}
+table.codex td{padding:9px 14px 9px 0;border-bottom:1px solid var(--hair);vertical-align:top}
+table.codex td.id{font-family:var(--f-label);font-size:11px;letter-spacing:.18em;white-space:nowrap}
+table.codex td.t{font-family:var(--f-display);font-style:italic;font-size:16px}
+table.codex .strike{color:var(--faint);text-decoration:line-through;text-decoration-color:var(--rubric)}
+
+/* ---------- Liber I : Genesis ---------- */
+.hp{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:0;direction:rtl;border-block:1px solid var(--hair-gold)}
+.hp > div{direction:ltr;min-width:0;padding:20px 14px 24px;border-left:1px solid var(--hair);display:flex;flex-direction:column;align-items:center;gap:14px}
+.hp > div:last-child{border-left:0}
+.hp .hn{font-family:var(--f-display);font-size:15px;color:var(--rubric)}
+.hp .he{font-family:var(--f-book);font-style:italic;font-size:15px;line-height:1.25;text-align:center;color:var(--gold-hi);min-height:2.5em}
+.hp .vt{writing-mode:vertical-rl;text-orientation:mixed;inline-size:19em;margin:0;font-size:16px;line-height:2;letter-spacing:.14em}
+.hp .vt b{font-weight:600;color:var(--gold-hi)}
+.ten{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(5,minmax(0,1fr));border-top:1px solid var(--hair)}
+.ten li{padding:14px 14px 14px 0;border-bottom:1px solid var(--hair);min-width:0}
+.ten .n{font-family:var(--f-display);font-size:13px;color:var(--rubric)}
+.ten b{display:block;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:18px;line-height:1.25}
+.litany{list-style:none;margin:0;padding:0;display:grid;gap:0}
+.litany li{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.2fr);gap:18px;align-items:baseline;padding:10px 0;border-top:1px solid var(--hair)}
+.litany .who{font-family:var(--f-display);font-style:italic;font-size:19px;text-align:right}
+.litany .who small{font-family:var(--f-label);font-style:normal;font-size:9.5px;letter-spacing:.2em;color:var(--faint);margin-left:8px}
+.litany .what{font-size:15px}
+.litany .what em{font-style:normal;color:var(--gold-hi);font-weight:600}
+
+/* ---------- Liber II : Arbor (tree plate) ---------- */
+.arbor{display:grid;grid-template-columns:minmax(0,1fr) 380px;gap:32px;align-items:start}
+.tree-wrap{position:relative;min-width:0}
+#tree{display:block;width:100%;height:auto;overflow:visible}
+#tree text{font-family:var(--f-label)}
+.tier{fill:var(--muted);font-size:10px;letter-spacing:.28em}
+.tier .num{font-family:var(--f-display);font-size:22px;letter-spacing:0;fill:var(--rubric)}
+.pillar-label{fill:var(--faint);font-size:9.5px;letter-spacing:.34em}
+.edge .glow{fill:none;stroke-width:7;opacity:.10;filter:url(#soft)}
+.edge .line{fill:none;stroke-width:1;opacity:.55}
+.edge .spark{fill:none;stroke-width:2.2;stroke-linecap:round;stroke-dasharray:1.5 160;opacity:.9;animation:spark 7s linear infinite}
+.edge.hier .line{stroke-dasharray:2 5;opacity:.35}
+@keyframes spark{to{stroke-dashoffset:-322}}
+.thread{fill:none;stroke-linecap:round;opacity:0;transition:opacity .5s}
+.node{cursor:pointer;outline:none}
+.node .hit{fill:transparent}
+.node .halo{transform-box:fill-box;transform-origin:center;opacity:.26}
+.node .ring{fill:none;stroke:var(--gold-hi);stroke-width:.9;opacity:.55}
+.node .id{font-size:11px;letter-spacing:.3em;font-weight:500}
+.node .ttl{font-family:var(--f-display)!important;font-style:italic;font-size:17px;fill:var(--fg)}
+.node .ttl.pre{font-family:var(--f-label)!important;font-style:normal;font-size:9px;letter-spacing:.34em;fill:var(--muted)}
+.v-Periodic .halo{animation:breath 7s ease-in-out infinite}
+.v-Living .halo{animation:flicker 3.1s ease-in-out infinite}
+@keyframes breath{0%,100%{opacity:.18;transform:scale(.92)}50%{opacity:.34;transform:scale(1.06)}}
+@keyframes flicker{0%{opacity:.30}13%{opacity:.20}21%{opacity:.36}34%{opacity:.24}52%{opacity:.40}61%{opacity:.22}77%{opacity:.34}100%{opacity:.30}}
+.node .orb,.node .spec,.node .ring,.node text{transition:opacity .45s}
+#tree.focus .node:not(.lit) .orb,#tree.focus .node:not(.lit) .spec{opacity:.28}
+#tree.focus .node:not(.lit) .halo{opacity:.06;animation:none}
+#tree.focus .node:not(.lit) text,#tree.focus .node:not(.lit) .ring{opacity:.28}
+#tree.focus .edge:not(.lit){opacity:.18}
+#tree .edge{transition:opacity .45s}
+#tree.focus .edge.lit .line{opacity:.95}
+#tree.focus .edge.lit .glow{opacity:.3}
+.node.sel .ring{opacity:1;stroke-width:1.3}
+.node:focus-visible .ring{stroke:#fff;opacity:1;stroke-width:1.6}
+.hint{position:absolute;top:6px;left:0;font-family:var(--f-label);font-size:10.5px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+
+/* dossier */
+.dossier{position:sticky;top:calc(env(safe-area-inset-top,0px) + 20px);max-height:calc(100vh - 40px);overflow:auto;
+  background:linear-gradient(180deg,rgba(14,13,18,.84),rgba(9,9,13,.90));backdrop-filter:blur(14px) saturate(120%);-webkit-backdrop-filter:blur(14px) saturate(120%);
+  border:1px solid var(--hair-gold);outline:1px solid rgba(214,167,78,.12);outline-offset:-7px;padding:26px 26px 30px;scrollbar-width:thin}
+.dossier .close{display:none}
+.d-eyebrow{display:flex;justify-content:space-between;gap:12px;font-family:var(--f-label);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
+.d-eyebrow .sw{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;vertical-align:1px;box-shadow:0 0 10px currentColor}
+.d-id{margin:18px 0 0;font-family:var(--f-label);font-weight:400;font-size:13px;letter-spacing:.42em}
+.d-title{margin:4px 0 0;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:40px;line-height:1.04;text-wrap:balance}
+.d-former{margin:6px 0 0;font-family:var(--f-label);font-size:10px;letter-spacing:.2em;color:var(--faint);text-transform:uppercase}
+.d-sum{margin:16px 0 0;font-size:16px;line-height:1.85;color:var(--fg)}
+.d-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));margin:20px 0 0;border-top:1px solid var(--hair)}
+.d-meta div{padding:10px 0 10px 12px;border-left:1px solid var(--hair);border-bottom:1px solid var(--hair);min-width:0}
+.d-meta div:nth-child(3n+1){border-left:0;padding-left:0}
+.d-meta dt{font-family:var(--f-label);font-size:9px;letter-spacing:.28em;text-transform:uppercase;color:var(--muted)}
+.d-meta dd{margin:2px 0 0;font-family:var(--f-display);font-size:18px;font-variant-numeric:lining-nums tabular-nums;overflow-wrap:anywhere}
+.d-acts{display:flex;flex-wrap:wrap;gap:6px;margin-top:12px}
+.d-path{margin:10px 0 0;font-family:var(--f-label);font-size:11px;letter-spacing:.04em;color:var(--faint);overflow-wrap:anywhere}
+.d-h{margin:24px 0 8px;font-family:var(--f-label);font-weight:500;font-size:10px;letter-spacing:.32em;text-transform:uppercase;color:var(--gold)}
+.d-prof{margin:0;font-size:13.5px;line-height:1.95;color:var(--fg)}
+.d-prof.en{margin-top:10px;font-family:var(--f-book);font-style:italic;font-size:16px;line-height:1.5;color:var(--muted)}
+.d-holds{margin:0;padding:0;list-style:none;display:flex;flex-wrap:wrap;gap:6px}
+.d-holds li{font-size:12px;line-height:1.5;padding:4px 10px;border:1px solid var(--hair);color:var(--fg)}
+.d-toc{margin:0;padding:0;list-style:none;counter-reset:c;columns:2;column-gap:18px}
+.d-toc li{counter-increment:c;break-inside:avoid;font-size:12px;line-height:1.55;padding:3px 0 3px 26px;position:relative;color:var(--fg)}
+.d-toc li::before{content:counter(c);position:absolute;left:0;top:4px;font-family:var(--f-display);font-size:11px;color:var(--rubric);font-variant-numeric:lining-nums}
+.d-rel{margin:0;padding:0;list-style:none;display:grid;gap:10px}
+.d-rel li{display:grid;grid-template-columns:auto minmax(0,1fr);gap:2px 12px;font-size:13px;line-height:1.6}
+.d-rel button{grid-row:span 2}
+.d-rel .src{letter-spacing:.14em;color:var(--faint)}
+.chip{appearance:none;background:transparent;border:1px solid var(--hair);color:var(--fg);font-family:var(--f-label);font-size:10.5px;letter-spacing:.2em;padding:5px 9px;cursor:pointer;white-space:nowrap;display:inline-flex;align-items:center;gap:7px}
+.chip i{width:6px;height:6px;border-radius:50%;display:inline-block}
+.chip:hover,.chip:focus-visible{border-color:var(--gold);outline:none}
+.more{margin-top:8px}
+.bars{display:grid;gap:5px}
+.bar{display:grid;grid-template-columns:62px minmax(0,1fr) 30px;gap:10px;align-items:center;font-family:var(--f-label);font-size:10.5px;letter-spacing:.14em;cursor:pointer;background:none;border:0;color:var(--fg);padding:2px 0;text-align:left}
+.bar.static{cursor:default}
+.bar:hover .track b,.bar:focus-visible .track b{filter:brightness(1.35)}
+.bar:focus-visible{outline:1px solid var(--gold)}
+.track{height:4px;background:rgba(241,232,216,.07);position:relative}
+.track b{position:absolute;inset:0 auto 0 0;border-radius:0 2px 2px 0}
+.bar .n{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
+.d-empty{color:var(--faint);font-size:12.5px;margin:0}
+
+/* legend */
+.legend{margin-top:clamp(48px,7vw,90px);display:grid;grid-template-columns:repeat(4,minmax(0,1fr));border-top:1px solid var(--hair)}
+.legend > div{padding:22px 22px 8px;border-left:1px solid var(--hair);min-width:0}
+.legend > div:first-child{border-left:0;padding-left:0}
+.legend h3{margin:0 0 4px;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:24px}
+.legend .k{font-family:var(--f-label);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--rubric)}
+.legend p{margin:8px 0 12px;color:var(--muted);font-size:13px;line-height:1.85}
+.legend ul{list-style:none;margin:0;padding:0;display:grid;gap:9px}
+.legend li{display:grid;grid-template-columns:30px minmax(0,1fr);gap:10px;align-items:center;font-size:12.5px;line-height:1.5}
+.legend li small{display:block;color:var(--faint);font-family:var(--f-label);letter-spacing:.12em;font-size:10px}
+.legend svg{display:block;overflow:visible}
+
+/* ---------- Liber III : Canon ---------- */
+.canon{display:grid}
+.tier-h{display:grid;grid-template-columns:70px minmax(0,1fr);gap:14px;align-items:baseline;padding:22px 0 8px;border-bottom:1px solid var(--hair-gold)}
+.tier-h .rn{font-family:var(--f-display);font-size:26px;color:var(--rubric);text-align:right}
+.tier-h b{font-family:var(--f-display);font-style:italic;font-weight:400;font-size:22px}
+.tier-h small{font-family:var(--f-ja);font-size:12.5px;color:var(--muted);margin-left:12px;letter-spacing:.15em}
+.crow{appearance:none;width:100%;background:none;border:0;border-bottom:1px solid var(--hair);color:var(--fg);text-align:left;cursor:pointer;
+  display:grid;grid-template-columns:70px minmax(0,1fr) 90px 80px 54px 62px;gap:14px;align-items:baseline;padding:13px 0;font:inherit;transition:background .3s}
+.crow:hover,.crow:focus-visible{background:rgba(214,167,78,.06);outline:none}
+.crow:focus-visible{box-shadow:inset 2px 0 0 var(--gold)}
+.crow .cid{font-family:var(--f-label);font-size:11px;letter-spacing:.2em;text-align:right;font-weight:500}
+.crow .ct{min-width:0}
+.crow .ct b{font-family:var(--f-display);font-style:italic;font-weight:400;font-size:19px;line-height:1.2}
+.crow .ct span{display:block;font-size:13px;color:var(--muted);line-height:1.75;margin-top:2px}
+.crow .meta{display:contents}
+.crow .meta span{font-family:var(--f-label);font-size:10.5px;letter-spacing:.12em;color:var(--fg);font-variant-numeric:tabular-nums}
+.crow .meta span.ver,.crow .meta span.ln{text-align:right;color:var(--muted)}
+.canon-head{display:grid;grid-template-columns:70px minmax(0,1fr) 90px 80px 54px 62px;gap:14px;padding:0 0 8px;font-family:var(--f-label);font-size:9px;letter-spacing:.26em;text-transform:uppercase;color:var(--gold)}
+.canon-head span:nth-child(5),.canon-head span:nth-child(6){text-align:right}
+.census{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(22px,3vw,40px)}
+.census > div{min-width:0}
+.census .big{font-family:var(--f-display);font-size:clamp(44px,5vw,64px);line-height:1;font-variant-numeric:lining-nums}
+.census .cap{margin:6px 0 14px}
+.census .bar{cursor:default;grid-template-columns:92px minmax(0,1fr) 30px}
+
+/* ---------- Liber IV : Strata ---------- */
+.strata-grid{display:grid;grid-template-columns:1fr 1.4fr 2fr;gap:0;border-top:1px solid var(--hair)}
+.stratum{padding:26px 26px 30px;border-left:1px solid var(--hair);min-width:0;position:relative}
+.stratum:first-child{border-left:0;padding-left:0}
+.stratum .glyph{font-family:var(--f-black);font-size:64px;line-height:1}
+.stratum h3{margin:10px 0 2px;font-size:22px;font-weight:500;letter-spacing:.08em}
+.stratum h3 small{font-family:var(--f-label);font-weight:400;font-size:10px;letter-spacing:.3em;color:var(--muted);margin-left:10px;text-transform:uppercase}
+.stratum p{margin:8px 0 16px;color:var(--muted);font-size:13.5px}
+.stratum .chips{display:flex;flex-wrap:wrap;gap:6px}
+.laws{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-block:1px solid var(--hair)}
+.laws blockquote{margin:0;padding:22px 24px 22px 0;font-size:16px;line-height:1.9;border-right:1px solid var(--hair);min-width:0}
+.laws blockquote + blockquote{padding-left:24px}
+.laws blockquote:last-child{border-right:0}
+.laws cite{display:block;margin-top:8px;font-style:normal}
+
+/* ---------- Liber V : Lex ---------- */
+.principles{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:18px}
+.principles div{min-width:0;border-top:1px solid var(--gold);padding-top:12px}
+.principles b{display:block;font-family:var(--f-label);font-weight:400;font-size:10px;letter-spacing:.3em;color:var(--rubric)}
+.principles span{display:block;font-family:var(--f-display);font-style:italic;font-size:19px;line-height:1.2;margin-top:4px}
+.principles em{display:block;font-style:normal;font-size:12.5px;color:var(--muted);margin-top:6px}
+.classes h4{margin:0 0 4px;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:24px}
+.classes .note{margin:0 0 10px}
+.kv{list-style:none;margin:0;padding:0}
+.kv li{display:grid;grid-template-columns:96px minmax(0,1fr) auto;gap:12px;align-items:baseline;padding:8px 0;border-top:1px solid var(--hair);font-size:13px}
+.kv li b{font-family:var(--f-label);font-weight:500;font-size:11px;letter-spacing:.14em}
+.kv li i{font-style:normal;font-family:var(--f-display);font-size:15px;color:var(--gold-hi);font-variant-numeric:lining-nums}
+.code{display:inline-block;font-family:var(--f-label);font-size:13px;letter-spacing:.08em;padding:6px 12px;border:1px solid var(--hair-gold);color:var(--gold-hi);background:rgba(214,167,78,.05);overflow-wrap:anywhere}
+.versions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-top:1px solid var(--hair)}
+.versions div{padding:14px 16px 14px 0;min-width:0}
+.versions div + div{padding-left:16px;border-left:1px solid var(--hair)}
+.versions b{display:block;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:20px}
+.versions code{font-family:var(--f-display);font-size:15px;color:var(--gold-hi)}
+.versions span{display:block;font-size:12.5px;color:var(--muted)}
+.dos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.dos div{border:1px solid var(--hair);padding:12px 14px;min-width:0}
+.dos .lab{display:block;margin-bottom:4px}
+.dos .yes .lab{color:var(--gold)}.dos .no .lab{color:var(--rubric)}
+.qual{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--f-display);font-style:italic;font-size:22px}
+.qual span:not(:last-child)::after{content:"·";margin-left:22px;color:var(--gold)}
+
+/* ---------- Liber VI : Foedus ---------- */
+.repo{list-style:none;margin:0;padding:0;font-size:13px}
+.repo li{display:grid;grid-template-columns:minmax(0,210px) minmax(0,1fr);gap:14px;padding:7px 0;border-top:1px solid var(--hair)}
+.repo code{font-family:var(--f-label);font-size:12px;letter-spacing:.06em;color:var(--gold-hi);overflow-wrap:anywhere}
+.repo span{color:var(--muted)}
+.ai{list-style:none;margin:0;padding:0;columns:2;column-gap:32px}
+.ai li{break-inside:avoid;padding:7px 0 7px 22px;position:relative;font-size:13.5px;line-height:1.75;border-top:1px solid var(--hair)}
+.ai li::before{content:"";position:absolute;left:2px;top:15px;width:6px;height:6px;border:1px solid var(--rubric);transform:rotate(45deg)}
+
+/* ---------- Liber VII : Textus ---------- */
+.matrix-grid{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:40px;align-items:start}
+.matrix-scroll{overflow-x:auto;min-width:0;padding-bottom:6px}
+#matrix{display:block;min-width:700px;width:100%;height:auto}
+#matrix text{font-family:var(--f-label);font-size:9.5px;letter-spacing:.08em;fill:var(--muted)}
+#matrix text.on{fill:var(--fg)}
+#matrix .cell{stroke:var(--night);stroke-width:2;cursor:pointer}
+#matrix .cell:hover{stroke:var(--gold-hi);stroke-width:1}
+#matrix .diag{fill:rgba(241,232,216,.05)}
+.tip{position:fixed;z-index:20;pointer-events:none;padding:8px 12px;background:rgba(8,9,14,.92);border:1px solid var(--hair);font-family:var(--f-label);font-size:11px;letter-spacing:.1em;color:var(--fg);white-space:nowrap}
+.tip b{font-family:var(--f-display);font-weight:400;font-size:18px;letter-spacing:0;margin-left:6px}
+.notes{display:grid;gap:22px}
+.tnote .big{font-family:var(--f-display);font-size:48px;line-height:1;font-variant-numeric:lining-nums}
+.tnote .lab{color:var(--gold);margin-top:6px;letter-spacing:.24em}
+.tnote p{margin:6px 0 0;font-size:13px;color:var(--muted);line-height:1.8}
+.scale{display:flex;align-items:center;gap:10px;font-family:var(--f-label);font-size:10px;letter-spacing:.14em;color:var(--muted)}
+.scale i{flex:1;height:6px;background:linear-gradient(90deg,#241d12,#6d4f22,#b98a3e,#e8c47c,#fff1cf)}
+.source{margin-top:14px;font-size:12px;color:var(--faint);line-height:1.8}
+
+/* ---------- Liber VIII : Chronica ---------- */
+.timeline{list-style:none;margin:0;padding:0;position:relative}
+.timeline::before{content:"";position:absolute;left:118px;top:6px;bottom:6px;width:1px;background:linear-gradient(180deg,var(--gold),rgba(214,167,78,.1))}
+.timeline li{display:grid;grid-template-columns:100px minmax(0,1fr);gap:36px;padding:12px 0;position:relative}
+.timeline li::before{content:"";position:absolute;left:114px;top:21px;width:8px;height:8px;background:var(--night);border:1px solid var(--gold);transform:rotate(45deg)}
+.timeline time{font-family:var(--f-display);font-size:15px;text-align:right;color:var(--gold-hi);font-variant-numeric:lining-nums tabular-nums;padding-top:3px}
+.timeline b{display:block;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:20px;line-height:1.25}
+.timeline span{display:block;font-size:13px;color:var(--muted);line-height:1.8;margin-top:2px}
+.concord{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(22px,3vw,40px)}
+.concord > div{min-width:0}
+.concord h4{margin:0 0 8px;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:22px}
+.concord h4 small{font-family:var(--f-label);font-style:normal;font-size:10px;letter-spacing:.24em;color:var(--muted);margin-left:8px}
+.concord ul{list-style:none;margin:0;padding:0}
+.concord li{display:grid;grid-template-columns:62px 18px 62px minmax(0,1fr);gap:6px;align-items:baseline;padding:6px 0;border-top:1px solid var(--hair);font-family:var(--f-label);font-size:11px;letter-spacing:.12em}
+.concord .o{color:var(--faint);text-decoration:line-through;text-decoration-color:rgba(226,91,69,.7)}
+.concord .ar{color:var(--gold);text-align:center}
+.concord .t{font-family:var(--f-display);font-style:italic;font-size:14px;letter-spacing:0;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.concord button{appearance:none;background:none;border:0;padding:0;font:inherit;letter-spacing:inherit;cursor:pointer;text-align:left}
+.concord button:hover,.concord button:focus-visible{text-decoration:underline;outline:none}
+
+/* ---------- finale ---------- */
+.finale{margin-top:clamp(100px,13vw,190px);display:grid;justify-items:center;gap:26px;text-align:center}
+.finale .law{writing-mode:vertical-rl;font-family:var(--f-ja);font-weight:500;font-size:clamp(40px,6vw,76px);line-height:1.2;letter-spacing:.24em;margin:0;
+  filter:drop-shadow(0 0 30px rgba(246,220,160,.18))}
+.finale p{margin:0 auto;max-width:30em;color:var(--muted);font-size:14px}
+.finale .black{font-family:var(--f-black);font-size:40px;line-height:1}
+.colophon{margin-top:60px;padding-top:18px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between;font-family:var(--f-label);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--faint)}
+
+/* ---------- Liber IV : Thesaurus (gallery) ---------- */
+.g-bar{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:end;justify-content:space-between}
+.g-tabs{display:flex;flex-wrap:wrap;border-bottom:1px solid var(--hair-gold)}
+.g-tab{appearance:none;background:none;border:0;border-bottom:2px solid transparent;margin:0 22px -1px 0;color:var(--muted);cursor:pointer;padding:4px 0 10px;text-align:left;font:inherit}
+.g-tab b{display:block;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:24px;line-height:1.1}
+.g-tab span{font-family:var(--f-label);font-size:9.5px;letter-spacing:.24em;text-transform:uppercase}
+.g-tab[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--gold)}
+.g-tab:focus-visible{outline:1px solid var(--gold);outline-offset:2px}
+.g-search{display:grid;gap:4px;min-width:0;flex:0 1 320px}
+input[type=search]{appearance:none;width:100%;background:rgba(241,232,216,.04);border:1px solid var(--hair-gold);color:var(--fg);font:inherit;font-size:14px;padding:9px 12px;border-radius:0}
+input[type=search]::placeholder{color:var(--faint)}
+input[type=search]:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(214,167,78,.15)}
+.g-filters{display:grid;gap:10px;margin-top:20px}
+.g-chips{display:flex;flex-wrap:wrap;gap:6px}
+.chip[aria-pressed="true"]{border-color:var(--gold);background:rgba(214,167,78,.14);color:var(--gold-hi)}
+.chip small{color:var(--muted);letter-spacing:.08em}
+.g-count{margin:18px 0 12px;font-family:var(--f-label);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
+.g-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:12px}
+.obj{position:relative;min-width:0;border:1px solid var(--hair);background:linear-gradient(180deg,rgba(241,232,216,.035),rgba(241,232,216,0));padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;transition:border-color .3s,box-shadow .6s;scroll-margin:90px}
+.obj:hover{border-color:var(--hair-gold)}
+.obj.flash{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold),0 0 40px rgba(214,167,78,.25)}
+.obj header{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.oid{font-family:var(--f-label);font-size:11px;letter-spacing:.2em;font-weight:500;color:var(--s-MD)}
+.odom{font-family:var(--f-label);font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--faint)}
+.obj h4{margin:4px 0 0;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:19px;line-height:1.2;overflow-wrap:anywhere}
+.obr{margin:0;font-family:var(--f-label);font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
+.obj dl{margin:6px 0 0;display:grid;gap:3px}
+.obj dl div{display:grid;grid-template-columns:72px minmax(0,1fr);gap:8px;font-size:12px;line-height:1.55}
+.obj dt{font-family:var(--f-label);font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--faint);padding-top:2px}
+.obj dd{margin:0;color:var(--fg);overflow-wrap:anywhere}
+.obj .rel{display:flex;flex-wrap:wrap;gap:4px;margin-top:auto;padding-top:8px}
+.obj .rel .chip{font-size:9.5px;padding:3px 7px;letter-spacing:.12em}
+.obj .rel .lab{font-size:9px;letter-spacing:.2em;align-self:center;margin-right:2px}
+.obj .onote{margin:6px 0 0;font-size:12px;line-height:1.8;color:var(--muted)}
+.obj.dim{opacity:.62}
+.pill{display:inline-block;font-style:normal;font-family:var(--f-label);font-size:9px;letter-spacing:.2em;text-transform:uppercase;padding:3px 8px;border:1px solid var(--hair);color:var(--muted);white-space:nowrap}
+.pill.st-Owned{background:linear-gradient(180deg,#f6dca0,#b88a3e);color:var(--night);border-color:var(--gold)}
+.pill.st-Essential{border-color:var(--rubric);color:var(--rubric)}
+.pill.st-Candidate{border-style:dashed;border-color:var(--gold);color:var(--gold-hi)}
+.pill.st-Upgrade{border-color:var(--hair-gold);color:var(--fg)}
+.kv.g-def li{grid-template-columns:120px minmax(0,1fr)}
+.g-empty{grid-column:1/-1;color:var(--faint);font-size:13px;padding:24px 0;margin:0}
+
+/* ---------- Concordantia (full-text search) ---------- */
+.seek-fab{position:fixed;z-index:25;right:16px;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);display:flex;align-items:center;gap:8px;appearance:none;cursor:pointer;
+  background:rgba(9,9,13,.86);border:1px solid var(--hair-gold);color:var(--fg);padding:9px 12px 9px 14px;font-family:var(--f-label);font-size:10px;letter-spacing:.26em;text-transform:uppercase;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.seek-fab small{font-family:var(--f-ja);letter-spacing:.1em;text-transform:none;color:var(--muted);font-size:11px}
+.seek-fab:hover,.seek-fab:focus-visible{border-color:var(--gold);outline:none}
+kbd{font-family:var(--f-label);font-size:10px;border:1px solid var(--hair);padding:1px 6px;color:var(--muted)}
+.seek-cta{appearance:none;cursor:pointer;margin:26px auto 0;display:flex;align-items:center;gap:14px;background:none;border:1px solid var(--hair-gold);color:var(--gold-hi);padding:12px 20px;font-family:var(--f-display);font-style:italic;font-size:19px}
+.seek-cta:hover,.seek-cta:focus-visible{border-color:var(--gold);background:rgba(214,167,78,.08);outline:none}
+.seek{position:fixed;inset:0;z-index:40;background:rgba(5,5,8,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);overflow:auto;overscroll-behavior:contain;
+  padding:calc(env(safe-area-inset-top,0px) + clamp(16px,4vw,48px)) 16px calc(env(safe-area-inset-bottom,0px) + 40px)}
+.seek-inner{max-width:980px;margin:0 auto;background:var(--folio);border:1px solid var(--hair-gold);outline:1px solid rgba(214,167,78,.14);outline-offset:-8px;padding:clamp(20px,3.5vw,40px)}
+.seek-head{display:flex;justify-content:space-between;align-items:start;gap:16px;margin-bottom:18px}
+.seek-head h2{margin:0;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:clamp(32px,4vw,48px);line-height:1}
+.seek-head h2 small{display:block;margin-top:6px;font-family:var(--f-ja);font-style:normal;font-size:14px;letter-spacing:.3em;color:var(--muted)}
+#seek-q{font-size:18px;padding:12px 14px;font-family:var(--f-ja)}
+.seek-scope{margin-top:12px}
+.seek-sum{margin:16px 0 8px;font-family:var(--f-label);font-size:10.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.seek-docs{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px}
+.seek-res{list-style:none;margin:0;padding:0}
+.seek-res > li{border-top:1px solid var(--hair)}
+.seek-res > li:last-child{border-bottom:1px solid var(--hair)}
+.s-hit{appearance:none;width:100%;background:none;border:0;color:var(--fg);text-align:left;cursor:pointer;display:grid;grid-template-columns:76px minmax(0,1fr);gap:2px 14px;padding:11px 4px 11px 0;font:inherit}
+.s-hit:hover,.s-hit:focus-visible{background:rgba(214,167,78,.05);outline:none}
+.s-hit:focus-visible{box-shadow:inset 2px 0 0 var(--gold)}
+.h-id{font-family:var(--f-label);font-size:10.5px;letter-spacing:.16em;font-weight:500;padding-top:3px;grid-row:span 2}
+.h-loc{font-family:var(--f-label);font-size:9.5px;letter-spacing:.14em;color:var(--faint);overflow-wrap:anywhere}
+.h-txt{font-size:14px;line-height:1.75;overflow-wrap:anywhere}
+mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:inset 0 -1px 0 var(--rubric)}
+.ctx{margin:0 0 14px 90px;border-left:1px solid var(--rubric);padding:6px 0 6px 14px}
+.ctx pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font-family:var(--f-ja);font-size:12.5px;line-height:1.75;color:var(--muted)}
+.ctx pre b{font-weight:400;color:var(--fg)}
+.ctx pre i{font-style:normal;font-family:var(--f-label);font-size:9.5px;color:var(--faint);display:inline-block;min-width:44px}
+.ctx .acts{display:flex;flex-wrap:wrap;gap:8px;margin-top:10px}
+.ctx .acts a{text-decoration:none}
+.seek-more{display:flex;justify-content:center;margin-top:16px}
+
+/* ---------- responsive ---------- */
+@media (max-width:1180px){
+  .thumbs{display:none}
+  .arbor{grid-template-columns:minmax(0,1fr)}
+  .dossier{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:30;max-height:72vh;border-width:1px 0 0;outline:0;padding:22px 20px calc(26px + env(safe-area-inset-bottom,0px));
+    transform:translateY(105%);transition:transform .45s cubic-bezier(.2,.7,.2,1);background:rgba(9,10,15,.95)}
+  .dossier.open{transform:none}
+  .dossier .close{display:inline-flex;position:absolute;top:14px;right:16px}
+  .legend{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .legend > div:nth-child(3){border-left:0;padding-left:0}
+  .matrix-grid{grid-template-columns:minmax(0,1fr)}
+  .notes{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .principles{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .ten{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .hp{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .hp > div:nth-child(3){border-left:0}
+  .hp > div:nth-child(-n+3){border-bottom:1px solid var(--hair)}
+}
+@media (max-width:900px){
+  .lhead{grid-template-columns:auto minmax(0,1fr)}
+  .lhead p{grid-column:1/-1}
+  .figures{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .figures div:nth-child(4){border-left:0}
+  .figures div:nth-child(n+4){border-top:1px solid var(--hair)}
+  .two,.three,.census,.concord,.versions{grid-template-columns:minmax(0,1fr)}
+  .versions div + div{padding-left:0;border-left:0;border-top:1px solid var(--hair)}
+  .index ol{grid-template-columns:minmax(0,1fr)}
+  .strata-grid,.laws{grid-template-columns:minmax(0,1fr)}
+  .stratum{border-left:0;padding-left:0;border-top:1px solid var(--hair)}
+  .stratum:first-child{border-top:0}
+  .laws blockquote,.laws blockquote + blockquote{border-right:0;padding-left:0;border-top:1px solid var(--hair)}
+  .laws blockquote:first-child{border-top:0}
+  .canon-head{display:none}
+  .crow{grid-template-columns:62px minmax(0,1fr);row-gap:6px}
+  .crow .meta{display:flex;flex-wrap:wrap;gap:4px 14px;grid-column:2}
+  .crow .meta span.ver,.crow .meta span.ln{text-align:left}
+  .tier-h{grid-template-columns:62px minmax(0,1fr)}
+  .ai{columns:1}
+  .notes{grid-template-columns:minmax(0,1fr)}
+  #tree .ttl,#tree .tier .lbl,#tree .pillar-label{display:none}
+  #tree .node .id{font-size:24px;letter-spacing:.12em}
+  #tree .tier .num{font-size:34px}
+  .hint{position:static;margin-bottom:10px}
+  .litany li{grid-template-columns:minmax(0,1fr);gap:2px}
+  .litany .who{text-align:left}
+}
+@media (max-width:600px){
+  .hp{grid-template-columns:minmax(0,1fr);direction:ltr}
+  .hp > div,.hp > div:nth-child(3){border-left:0;border-bottom:1px solid var(--hair);flex-direction:row;flex-wrap:wrap;align-items:baseline;gap:4px 12px;padding:16px 0}
+  .hp > div:last-child{border-bottom:0}
+  .hp .he{min-height:0;text-align:left}
+  .hp .vt{writing-mode:horizontal-tb;inline-size:auto;letter-spacing:.04em;flex-basis:100%;font-size:15px}
+  .ten,.principles{grid-template-columns:minmax(0,1fr)}
+  .legend{grid-template-columns:minmax(0,1fr)}
+  .legend > div{border-left:0;padding-left:0;border-top:1px solid var(--hair)}
+  .legend > div:first-child{border-top:0}
+  .d-title{font-size:32px}
+  .d-toc{columns:1}
+  .dos{grid-template-columns:minmax(0,1fr)}
+  .repo li{grid-template-columns:minmax(0,1fr);gap:0}
+  .kv li{grid-template-columns:84px minmax(0,1fr) auto}
+  .timeline::before{left:6px}
+  .timeline li{grid-template-columns:minmax(0,1fr);gap:2px;padding-left:28px}
+  .timeline li::before{left:2px}
+  .timeline time{text-align:left}
+  .index a{grid-template-columns:36px minmax(0,1fr)}
+  .index .pg{display:none}
+  .verses li{grid-template-columns:54px minmax(0,1fr)}
+  .seek-fab small,.seek-fab kbd,.seek-cta kbd{display:none}
+  .s-hit{grid-template-columns:minmax(0,1fr)}
+  .h-id{grid-row:auto}
+  .ctx{margin-left:0}
+  .kv.g-def li{grid-template-columns:minmax(0,1fr)}
+}
+@media (prefers-reduced-motion:reduce){
+  .grain,.edge .spark,.v-Periodic .halo,.v-Living .halo{animation:none}
+  .dossier{transition:none}
+}
+</style>
+
+<canvas id="sky" aria-hidden="true"></canvas>
+<canvas id="motes" aria-hidden="true"></canvas>
+<div class="vignette" aria-hidden="true"></div>
+<div class="grain" aria-hidden="true"></div>
+
+<nav class="thumbs" aria-label="書の索引">
+  <a href="#liber-1" title="Liber I · Genesis 原典">I</a>
+  <a href="#liber-2" title="Liber II · Arbor 樹">II</a>
+  <a href="#liber-3" title="Liber III · Canon 書目">III</a>
+  <a href="#liber-4" title="Liber IV · Thesaurus 宝物庫">IV</a>
+  <a href="#liber-5" title="Liber V · Strata 地層">V</a>
+  <a href="#liber-6" title="Liber VI · Lex 文書律">VI</a>
+  <a href="#liber-7" title="Liber VII · Foedus 契約">VII</a>
+  <a href="#liber-8" title="Liber VIII · Textus 織物">VIII</a>
+  <a href="#liber-9" title="Liber IX · Chronica 年代記">IX</a>
+</nav>
+
+<main class="page">
+  <div class="rail"><b>The Third Place</b><span>Codex Arboris</span><span class="m-date"></span><span>main · <span class="m-commit"></span></span></div>
+
+  <!-- ===================== FRONTISPIECE ===================== -->
+  <header class="folio front">
+    <div class="over">The Third Place · A Movable Outdoor Living Room</div>
+    <h1><span class="black gild">Arbor</span><span class="sub">Codex of the Third Place</span></h1>
+    <p class="ja">第三の場所　<span class="m-nk"></span>書の聖典</p>
+    <div class="orn" aria-hidden="true"><i></i><i></i><i></i></div>
+    <p class="epigraph">空間は最後に現れる。<br>最初に存在するのは、判断である。<cite class="src">DS-001 Original · Foreword</cite></p>
+    <p class="dek">THE THIRD PLACE を形づくる<span class="m-nk"></span>の文書を、原典から記録まで一冊の写本として綴じた。九つの書が、思想の源、文書の樹、書目、宝物庫、地層、文書律、外との契約、言及の織物、そして改訂の年代記を収める。記載はすべて、リポジトリ main の文書本文から生成している。</p>
+    <div class="figures" id="figures"></div>
+    <nav class="index" aria-labelledby="h-index">
+      <h2 id="h-index">Index Librorum · 書の目次</h2>
+      <ol>
+        <li><a href="#liber-1"><span class="rn">I</span><span class="nm">Genesis<small>原典</small></span><span class="pg">DS-001 · OP-001</span><span class="ct">Human Principles、原典十部、公理と原則、翻訳の連祷</span></a></li>
+        <li><a href="#liber-2"><span class="rn">II</span><span class="nm">Arbor<small>樹</small></span><span class="pg">OP-001 §12</span><span class="ct">情報階層に沿って二十五の光を配した樹と、各書の文書録</span></a></li>
+        <li><a href="#liber-3"><span class="rn">III</span><span class="nm">Canon<small>書目</small></span><span class="pg">OP-008 §8</span><span class="ct">全文書のカタログと、台帳に収められた項目の数</span></a></li>
+        <li><a href="#liber-4"><span class="rn">IV</span><span class="nm">Thesaurus<small>宝物庫</small></span><span class="pg">MD-004 · MD-003</span><span class="ct">台帳に登録されたオブジェクトを一点ずつ札にした目録</span></a></li>
+        <li><a href="#liber-5"><span class="rn">V</span><span class="nm">Strata<small>地層</small></span><span class="pg">OP-008 §4–6</span><span class="ct">設計・運用・記録の三層と、それぞれが負わない責任</span></a></li>
+        <li><a href="#liber-6"><span class="rn">VI</span><span class="nm">Lex<small>文書律</small></span><span class="pg">OP-008 §7–26</span><span class="ct">五原則、分類、ライフサイクル、命名、版、SSOT、DOC規則</span></a></li>
+        <li><a href="#liber-7"><span class="rn">VII</span><span class="nm">Foedus<small>契約</small></span><span class="pg">OP-001 · OP-008 §27–28</span><span class="ct">判断の手順、Canon、AI の務め、協力者、Drive、KN 発行</span></a></li>
+        <li><a href="#liber-8"><span class="rn">VIII</span><span class="nm">Textus<small>織物</small></span><span class="pg">main · <span class="m-commit"></span></span><span class="ct">本文中で交わされる文書ID の言及、25 × 25</span></a></li>
+        <li><a href="#liber-9"><span class="rn">IX</span><span class="nm">Chronica<small>年代記</small></span><span class="pg">OP-001 §26</span><span class="ct">番号再編、改名、履歴の移設、新旧ID 対照表</span></a></li>
+      </ol>
+      <button class="seek-cta" type="button" data-seek-open>Concordantia · 全書を検索する<kbd>/</kbd></button>
+    </nav>
+  </header>
+
+  <!-- ===================== LIBER I : GENESIS ===================== -->
+  <section class="liber" id="liber-1" aria-labelledby="h-l1">
+    <div class="runhead"><span>Liber I · Genesis</span><span>DS-001 Original · OP-001 Constitution</span></div>
+    <div class="lhead">
+      <div class="initial" aria-hidden="true"><span class="gild">G</span></div>
+      <div><span class="k">Liber I</span><h2 id="h-l1">Genesis<small>原典</small></h2></div>
+      <p>すべての文書は、一つの思想から生まれる（OP-001 §25）。その思想を記した不変の原典が DS-001 であり、それをプロジェクト運営の条文として再定義したものが OP-001 §3 の Human Principles である。DS-001 は情報階層の外側、最上流に置かれる（OP-001 §13.0）。</p>
+    </div>
+
+    <div class="folio">
+      <div class="block two">
+        <p class="quote">THE THIRD PLACEは、人生を豊かに過ごすための「第三の場所」を設計・構築・運用するライフワークである。<span class="src">OP-001 · Preamble</span></p>
+        <p class="quote">人間・空間・道具・文化が、それぞれの役割を保ったまま、一つの世界として成立すること。<span class="src">OP-001 §2 · Core Philosophy</span></p>
+      </div>
+
+      <div class="block">
+        <h3 class="sub-h">Human Principles<span class="src">OP-001 §3</span></h3>
+        <div class="hp">
+          <div><span class="hn">3.1</span><span class="he">Rational Satisfaction</span><p class="vt">私は、正しい答えを求めない。私は、<b>自分自身が理性的に納得できる答え</b>を求める。</p></div>
+          <div><span class="hn">3.2</span><span class="he">Independent Judgment</span><p class="vt">私は、判断を他人へ委ねない。最後に判断するのは、<b>常に自分自身</b>である。</p></div>
+          <div><span class="hn">3.3</span><span class="he">Accumulation</span><p class="vt">価値観は、書き換えない。否定しない。消さない。新しい価値観は、<b>世界を広げる</b>。</p></div>
+          <div><span class="hn">3.4</span><span class="he">Ordered Integration</span><p class="vt">異なる文化・思想・素材・機能・時代が、それぞれの役割を失うことなく、<b>一つの秩序</b>として成立している状態。</p></div>
+          <div><span class="hn">3.5</span><span class="he">Clear Purpose</span><p class="vt">ロマンとは、<b>存在理由が極端に明確であること</b>である。</p></div>
+          <div><span class="hn">3.6</span><span class="he">Completion</span><p class="vt">完成とは、モノが揃うことではない。完成とは、<b>思考のノイズが消えること</b>である。</p></div>
+        </div>
+        <p class="note">縦書きの列は右から読む。Human Principles は THE THIRD PLACE 全体の Single Source of Truth とされる（OP-001 §4）。</p>
+      </div>
+
+      <div class="block">
+        <h3 class="sub-h">The Original in Ten Parts<span class="src">DS-001 · <span id="m-ds-lines"></span> lines</span></h3>
+        <ol class="ten" id="ds-parts"></ol>
+      </div>
+
+      <div class="block two">
+        <div>
+          <h3 class="sub-h">Axioms<span class="src">DS-001 Chapter IV</span></h3>
+          <ol class="verses">
+            <li><span class="vn">I</span><span>認識は、すべての判断に先立つ。</span></li>
+            <li><span class="vn">II</span><span>感性は、最初の真実である。</span></li>
+            <li><span class="vn">III</span><span>理解とは、自分自身を確認する行為である。</span></li>
+            <li><span class="vn">IV</span><span>判断は、責任である。</span></li>
+            <li><span class="vn">V</span><span>時間は、判断を成熟させる。</span></li>
+            <li><span class="vn">VI</span><span>美しさは、一致の結果である。</span></li>
+            <li><span class="vn">VII</span><span>所有とは、人生へ統合することである。</span></li>
+            <li><span class="vn">VIII</span><span>原理は、削ることで現れる。</span></li>
+            <li><span class="vn">IX</span><span>空間は、判断の表現である。</span></li>
+            <li><span class="vn">X</span><span>原理は、未来の自由を守る。</span></li>
+          </ol>
+          <div class="gloss"><b>The First Law</b>すべての公理は、一つの法則へ収束する。判断は、人生になる。</div>
+        </div>
+        <div>
+          <h3 class="sub-h">Principles<span class="src">DS-001 Chapter V</span></h3>
+          <ol class="verses">
+            <li><span class="vn">I</span><span>判断を急がない。</span></li>
+            <li><span class="vn">II</span><span>理由を持てないものは、人生へ迎え入れない。</span></li>
+            <li><span class="vn">III</span><span>一つの判断は、全体と調和しなければならない。</span></li>
+            <li><span class="vn">IV</span><span>評価ではなく、思想を見る。</span></li>
+            <li><span class="vn">V</span><span>比較は、優劣ではなく理解のために行う。</span></li>
+            <li><span class="vn">VI</span><span>所有した瞬間から、育てる責任が始まる。</span></li>
+            <li><span class="vn">VII</span><span>空間は、足して完成しない。</span></li>
+            <li><span class="vn">VIII</span><span>美しさは、説明できる。</span></li>
+            <li><span class="vn">IX</span><span>原理を守り、表現を更新する。</span></li>
+            <li><span class="vn">X</span><span>完成とは、意識から判断が消えることである。</span></li>
+          </ol>
+          <div class="gloss"><b>Principle of Consistency</b>すべての原理は、一つの原則へ収束する。人生に矛盾を残さない。</div>
+        </div>
+      </div>
+
+      <div class="block two">
+        <div>
+          <h3 class="sub-h">Human Blueprint<span class="src">DS-001 Chapter III</span></h3>
+          <ol class="proc">
+            <li><span class="n">第一層</span><b>Perception</b></li>
+            <li><span class="n">第二層</span><b>Question</b></li>
+            <li><span class="n">第三層</span><b>Understanding</b></li>
+            <li><span class="n">第四層</span><b>Conviction</b></li>
+            <li><span class="n">第五層</span><b>Integration</b></li>
+            <li><span class="n">第六層</span><b>Time</b></li>
+          </ol>
+        </div>
+        <div>
+          <h3 class="sub-h">Decision Flow<span class="src">DS-001 Chapter VI</span></h3>
+          <ol class="proc">
+            <li><span class="n">Stage I</span><b>Recognition</b></li>
+            <li><span class="n">Stage II</span><b>Question</b></li>
+            <li><span class="n">Stage III</span><b>Investigation</b></li>
+            <li><span class="n">Stage IV</span><b>Verification</b></li>
+            <li><span class="n">Stage V</span><b>Integration</b></li>
+            <li><span class="n">Stage VI</span><b>Maturity</b></li>
+          </ol>
+        </div>
+      </div>
+
+      <div class="block two">
+        <div>
+          <h3 class="sub-h">Design Principles<span class="src">OP-001 §5</span></h3>
+          <ol class="verses">
+            <li><span class="vn">5.1</span><span><span class="en">Space before Objects</span>最初に存在するべきものは、空間である。</span></li>
+            <li><span class="vn">5.2</span><span><span class="en">Objects must have Purpose</span>所有する理由を説明できない物は、THE THIRD PLACEには存在しない。</span></li>
+            <li><span class="vn">5.3</span><span><span class="en">Identity over Versatility</span>多機能よりも、役割を極めた道具を評価する。</span></li>
+            <li><span class="vn">5.4</span><span><span class="en">Ordered Integration</span>統合とは、それぞれの個性を消すことではない。</span></li>
+            <li><span class="vn">5.5</span><span><span class="en">Timeless Design</span>時間によって価値が失われないものを選択する。</span></li>
+          </ol>
+        </div>
+        <div>
+          <h3 class="sub-h">The Litany of Translation<span class="src">OP-001 §25</span></h3>
+          <ol class="litany" id="litany"></ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LIBER II : ARBOR ===================== -->
+  <section class="liber" id="liber-2" aria-labelledby="h-l2">
+    <div class="runhead"><span>Liber II · Arbor</span><span>OP-001 §12 Information Hierarchy</span></div>
+    <div class="lhead">
+      <div class="initial" aria-hidden="true"><span class="gild">A</span></div>
+      <div><span class="k">Liber II</span><h2 id="h-l2">Arbor<small>文書の樹</small></h2></div>
+      <p>高さは OP-001 §12 の情報階層に従う。上位の文書ほど優先され、下位の文書は上位を変更できない。光の粒がひとつの文書、金の枝は文書が明記する責任の受け渡し。光に触れると、その書の文書録が開く。</p>
+    </div>
+    <div class="arbor">
+      <div class="tree-wrap">
+        <div class="hint">光を選ぶと文書録 · Select a light</div>
+        <svg id="tree" viewBox="0 0 1000 1790" role="group" aria-label="THE THIRD PLACE の文書の関係図"></svg>
+      </div>
+      <aside class="dossier" id="dossier" aria-live="polite"></aside>
+    </div>
+
+    <div class="legend" aria-label="読み方">
+      <div>
+        <span class="k">Colour · 光の色</span>
+        <h3>Series</h3>
+        <p>光の色は系列を表す。原典は月光、運用は真鍮、記録の五系列はそれぞれ固有の色を持つ。</p>
+        <ul id="lg-series"></ul>
+      </div>
+      <div>
+        <span class="k">Rings · 輪</span>
+        <h3>Authority</h3>
+        <p>光を囲む輪は権限区分（OP-008 §9.1）。唯一の正本だけが二重の輪を持つ。</p>
+        <ul id="lg-auth"></ul>
+      </div>
+      <div>
+        <span class="k">Breath · 明滅</span>
+        <h3>Volatility</h3>
+        <p>光のゆらぎは変動性（OP-008 §9.3）。台帳ほど炎のように揺らぎ、規則と原典は静止する。</p>
+        <ul id="lg-vol"></ul>
+      </div>
+      <div>
+        <span class="k">Branches · 枝</span>
+        <h3>Paths</h3>
+        <p>金の枝は文書が明記する責任の受け渡し。選択時に現れる細い糸は、本文中で互いの文書IDに触れた回数。左右の柱の配置は、この写本による解釈である。</p>
+        <ul id="lg-paths"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LIBER III : CANON ===================== -->
+  <section class="liber" id="liber-3" aria-labelledby="h-l3">
+    <div class="runhead"><span>Liber III · Canon</span><span>OP-008 §8 Document Series · Appendix F</span></div>
+    <div class="lhead">
+      <div class="initial" aria-hidden="true"><span class="gild">C</span></div>
+      <div><span class="k">Liber III</span><h2 id="h-l3">Canon<small>書目</small></h2></div>
+      <p>OP-008 §8 が唯一の正本とする文書カタログを、情報階層の段ごとに並べた。行を選ぶと、樹の上でその書の文書録が開く。版は各文書冒頭の Version、行数は main 上の本文の行数。</p>
+    </div>
+    <div class="folio">
+      <div class="canon-head" aria-hidden="true"><span></span><span>Title · Summary</span><span>Authority</span><span>Volatility</span><span>Ver.</span><span>Lines</span></div>
+      <div class="canon" id="canon"></div>
+
+      <div class="block">
+        <h3 class="sub-h">Census · 収蔵<span class="src">MD-004 · MD-003 · OP-003</span></h3>
+        <div class="census" id="census"></div>
+        <p class="note">数は各文書の見出し単位で数えた登録項目。枝番（例：LGT-028a）はそれぞれ一件として数える。</p>
+      </div>
+
+      <div class="block two">
+        <div>
+          <h3 class="sub-h">Master Database<span class="src">README · CLAUDE.md</span></h3>
+          <ol class="verses">
+            <li><span class="vn">i</span><span>MD-004 Equipment Registry Object Reference を、唯一の Master Database として扱う。美意識ドメインに属する装備の参照・追加・更新・ライフサイクル管理は MD-004 を起点とする。</span></li>
+            <li><span class="vn">ii</span><span>Kitchen Domain（KIT-series）は MD-004 の対象外。MD-003 Galley Fare が、実用性を優先した別基準のもとで完結管理する。</span></li>
+            <li><span class="vn">iii</span><span>Fire / Kitchen の境界判断は「用途基準」であり、燃料種別では判断しない。</span></li>
+            <li><span class="vn">iv</span><span>他の文書は装備データを重複管理せず、MD-004 または MD-003 を参照する。</span></li>
+          </ol>
+        </div>
+        <div>
+          <h3 class="sub-h">Measure of Worth<span class="src">CLAUDE.md · OP-001 §16</span></h3>
+          <ol class="verses">
+            <li><span class="vn">i</span><span>評価基準は Design Bible と Foundation Compass に基づく。</span></li>
+            <li><span class="vn">ii</span><span>Popularity・SNS 映え・レビュー数・希少性は、評価基準にしない。</span></li>
+            <li><span class="vn">iii</span><span>Popularity、市場価値、流行、SNS、限定性を理由に、設計思想を変更してはならない。</span></li>
+            <li><span class="vn">iv</span><span>ブランドを選ぶのではない。思想を選ぶ（OP-001 §8）。</span></li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LIBER IV : THESAURUS ===================== -->
+  <section class="liber" id="liber-4" aria-labelledby="h-l4">
+    <div class="runhead"><span>Liber IV · Thesaurus</span><span>MD-004 Equipment Registry · MD-003 Galley Fare</span></div>
+    <div class="lhead">
+      <div class="initial" aria-hidden="true"><span class="gild">T</span></div>
+      <div><span class="k">Liber IV</span><h2 id="h-l4">Thesaurus<small>宝物庫</small></h2></div>
+      <p>THE THIRD PLACE を構成する物理的なオブジェクトを、台帳から一点ずつ札に起こした。MD-004 は Human Principles による美意識的整合を、MD-003 は機能優先の別基準を選定の条件とする。親子の札をたどると、構成部品の関係が見える。</p>
+    </div>
+    <div class="folio">
+      <div class="g-bar">
+        <div class="g-tabs" role="tablist" aria-label="台帳" id="g-tabs"></div>
+        <label class="g-search"><span class="lab">Filter</span><input id="g-q" type="search" placeholder="ブランド・製品・素材・色・ID" autocomplete="off"></label>
+      </div>
+      <div class="g-filters">
+        <div class="g-chips" id="g-dom" aria-label="Domain"></div>
+        <div class="g-chips" id="g-st" aria-label="Status"></div>
+      </div>
+      <p class="g-count" id="g-count" aria-live="polite"></p>
+      <div class="g-grid" id="g-grid"></div>
+      <div class="block">
+        <h3 class="sub-h">Status<span class="src">OP-010 Qualification Charter</span></h3>
+        <ul class="kv g-def">
+          <li><b><i class="pill st-Owned">Owned</i></b><span>現在所有している</span><i></i></li>
+          <li><b><i class="pill st-Essential">Essential</i></b><span>必要であり、購入が決定している（購入待ち）</span><i></i></li>
+          <li><b><i class="pill st-Candidate">Candidate</i></b><span>必要だが、具体的な製品はまだ決まっていない（検討中）。Brand / Product は Unconfirmed とする</span><i></i></li>
+          <li><b><i class="pill st-Upgrade">Upgrade</i></b><span>既に所有しているものの置き換え、または「あれば良い」アイテム</span><i></i></li>
+          <li><b><i class="pill st-Retired">Retired</i></b><span>統合・移管の記録として ID のみを保持する枠</span><i></i></li>
+        </ul>
+        <p class="note">Coffee 機材は BR-002 で意思決定し、購入されて Owned になった時点で初めて MD-004（COF-series）へ登録される（MD-004 §Purpose）。</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LIBER IV : STRATA ===================== -->
+  <section class="liber" id="liber-5" aria-labelledby="h-l5">
+    <div class="runhead"><span>Liber V · Strata</span><span>OP-008 §4–6 · OP-001 §12</span></div>
+    <div class="lhead">
+      <div class="initial" aria-hidden="true"><span class="gild">S</span></div>
+      <div><span class="k">Liber V</span><h2 id="h-l5">Strata<small>三つの地層</small></h2></div>
+      <p>文書は可変性の度合いで三つに分かれる（OP-008 §4）。樹の高さが示す「重み」とは別の軸であり、両者は並び立つ（OP-001 §12）。各系列は独立した責任範囲を持ち、互いの役割を侵害してはならない。</p>
+    </div>
+    <div class="folio">
+      <div class="strata-grid" id="strata"></div>
+      <div class="block">
+        <h3 class="sub-h">Responsibility Matrix<span class="src">OP-008 §6</span></h3>
+        <div class="tbl-wrap">
+          <table class="codex">
+            <thead><tr><th>Series</th><th>Responsibility</th><th>Not Responsible For</th></tr></thead>
+            <tbody>
+              <tr><td class="id">DS</td><td>不変の思想原典</td><td>Project Operation / Records</td></tr>
+              <tr><td class="id">OP</td><td>設計・規則の定義</td><td>Project Operation Data</td></tr>
+              <tr><td class="id">DB · MD · BR · CZ · KN</td><td>Project Operation / Records</td><td>Design Philosophy</td></tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="note">各系列は自身の責任範囲のみを保持する。機能重複は禁止する。</p>
+      </div>
+      <div class="block laws">
+        <blockquote>Static 文書に Living データを置かない。<cite class="src">OP-008 §9.3</cite></blockquote>
+        <blockquote>Living 文書に恒久ルールを置かない。<cite class="src">OP-008 §9.3</cite></blockquote>
+        <blockquote>記録文書は他文書の Status を書き写さず、ID参照のみとする。<cite class="src">OP-008 §9.3</cite></blockquote>
+      </div>
+      <div class="block">
+        <h3 class="sub-h">Scope<span class="src">OP-008 §2</span></h3>
+        <div class="dos">
+          <div class="yes"><span class="lab">Included · 対象</span>DS Series ・ OP Series ・ 記録（DB・MD・BR・CZ・KN Series）</div>
+          <div class="no"><span class="lab">Excluded · 対象外</span>一時メモ ・ 作業メモ ・ 個人的なメモ ・ 試験用ドラフト ・ 非公開作業資料</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LIBER V : LEX ===================== -->
+  <section class="liber" id="liber-6" aria-labelledby="h-l6">
+    <div class="runhead"><span>Liber VI · Lex</span><span>OP-008 Documentation System · v<span id="m-op8v"></span></span></div>
+    <div class="lhead">
+      <div class="initial" aria-hidden="true"><span class="gild">L</span></div>
+      <div><span class="k">Liber VI</span><h2 id="h-l6">Lex<small>文書律</small></h2></div>
+      <p>OP-008 Documentation System は、文書の役割・分類・管理方法・運用ルールを定める、文書体系そのものの基準文書である。本書と矛盾する運用がある場合は、Documentation System を優先する（§25）。</p>
+    </div>
+    <div class="folio">
+      <div class="block">
+        <h3 class="sub-h">Five Principles<span class="src">OP-008 §7</span></h3>
+        <div class="principles">
+          <div><b>Principle 001</b><span>One Document, One Responsibility</span><em>一つの文書は、一つの責任のみを持つ。</em></div>
+          <div><b>Principle 002</b><span>No Functional Overlap</span><em>既存文書と役割が重複する新規文書を作成してはならない。</em></div>
+          <div><b>Principle 003</b><span>Single Source of Truth</span><em>同一情報は一箇所のみで管理する。重複管理は禁止する。</em></div>
+          <div><b>Principle 004</b><span>Human First</span><em>人が迷わず利用できる構造を最優先とする。</em></div>
+          <div><b>Principle 005</b><span>AI Friendly</span><em>見出し・用語・構造を統一し、AIが一貫して解釈できる構造を維持する。</em></div>
+        </div>
+      </div>
+
+      <div class="block three classes">
+        <div>
+          <h4>Authority</h4><p class="note">文書の役割。発行後、原則として変更しない。<span class="src"> §9.1</span></p>
+          <ul class="kv" id="kv-auth"></ul>
+        </div>
+        <div>
+          <h4>Status</h4><p class="note">文書の現在の状態。ライフサイクルに従って変更する。<span class="src"> §9.2</span></p>
+          <ul class="kv">
+            <li><b>Draft</b><span>作成中</span><i></i></li>
+            <li><b>Review</b><span>レビュー中</span><i></i></li>
+            <li><b>Active</b><span>正式運用中</span><i></i></li>
+            <li><b>Archive</b><span>保存済み</span><i></i></li>
+            <li><b>Deprecated</b><span>廃止済み</span><i></i></li>
+          </ul>
+        </div>
+        <div>
+          <h4>Volatility</h4><p class="note">内容がどの程度の頻度で更新される前提か。<span class="src"> §9.3</span></p>
+          <ul class="kv" id="kv-vol"></ul>
+        </div>
+      </div>
+
+      <div class="block">
+        <h3 class="sub-h">Lifecycle<span class="src">OP-008 §10 · Appendix D</span></h3>
+        <ol class="proc">
+          <li><span class="n">i</span><b>Draft</b><span>作成中</span></li>
+          <li><span class="n">ii</span><b>Review</b><span>レビュー中</span></li>
+          <li><span class="n">iii</span><b>Active</b><span>正式運用中</span></li>
+          <li><span class="n">iv</span><b>Archive</b><span>保存</span></li>
+          <li><span class="n">v</span><b>Deprecated</b><span>廃止。Active から直接移ることもある</span></li>
+        </ol>
+        <p class="note">文書は削除しない。履歴を保持することを優先する。不要となった文書は Status を Archive または Deprecated に変更し、履歴として保持する（§18.3）。</p>
+      </div>
+
+      <div class="block two">
+        <div>
+          <h3 class="sub-h">Naming<span class="src">OP-008 §11 · CLAUDE.md</span></h3>
+          <p><span class="code">Series-Number Document Title</span></p>
+          <p><span class="code">{SERIES}-{NUM}_Word_Word_Word.md</span></p>
+          <p class="note">文書番号はシリーズごとに採番する。公開後は Document ID を変更してはならない。Title の変更は必要最小限とする。未使用番号は将来のために保持し、不要になった番号も再利用しない。Document ID は永続的な識別子である（§17）。</p>
+          <div class="gloss"><b>§11.1 Title Uniqueness · 2026-09-24</b>文書タイトルは、既存の他文書のタイトルと同じ単語を含んではならない。新規文書の発行前に、全タイトルとの語の重複がないことを確認する。</div>
+        </div>
+        <div>
+          <h3 class="sub-h">Renamed under §11.1<span class="src">OP-008 v3.1</span></h3>
+          <div class="tbl-wrap">
+            <table class="codex">
+              <thead><tr><th>Word</th><th>ID</th><th>Former</th><th>Now</th></tr></thead>
+              <tbody>
+                <tr><td>Registry</td><td class="id">OP-010</td><td class="strike">Registry Standard</td><td class="t">Qualification Charter</td></tr>
+                <tr><td>Acquisition</td><td class="id">OP-005</td><td class="strike">Acquisition Strategy</td><td class="t">Pursuit Strategy</td></tr>
+                <tr><td>Acquisition</td><td class="id">BR-003</td><td class="strike">Acquisition Handbook</td><td class="t">Procurement Handbook</td></tr>
+                <tr><td>Codex</td><td class="id">BR-002</td><td class="strike">Barista Codex</td><td class="t">Barista Canon</td></tr>
+                <tr><td>Codex</td><td class="id">CZ-001</td><td class="strike">Deliberation Codex</td><td class="t">Deliberation Dossier</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="block">
+        <h3 class="sub-h">Version Policy<span class="src">OP-008 §12 · Semantic Versioning</span></h3>
+        <div class="versions">
+          <div><b>Major</b><code>1.0 → 2.0</code><span>文書構造・責任範囲・仕様の変更</span></div>
+          <div><b>Minor</b><code>2.0 → 2.1</code><span>章追加・機能追加・構成追加</span></div>
+          <div><b>Patch</b><code>2.1.0 → 2.1.1</code><span>誤字修正・文章修正・軽微修正</span></div>
+        </div>
+        <p class="note">文書を更新した場合は Version を更新し、更新内容を Revision History に記録する（§18.2）。</p>
+      </div>
+
+      <div class="block two">
+        <div>
+          <h3 class="sub-h">Single Source of Truth<span class="src">OP-008 §13</span></h3>
+          <p class="quote">情報は一つの SSOT のみが保持する。参照は自由に行ってよい。複製は禁止する。</p>
+          <div class="tbl-wrap" style="margin-top:14px">
+            <table class="codex">
+              <thead><tr><th>Information</th><th>SSOT</th></tr></thead>
+              <tbody>
+                <tr><td>Equipment</td><td class="id">MD-004</td></tr>
+                <tr><td>Design Philosophy</td><td class="id">OP-002</td></tr>
+                <tr><td>Project Documentation</td><td class="id">OP-008</td></tr>
+                <tr><td>Project Status</td><td class="id">DB-001</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <div>
+          <h3 class="sub-h">Order of Truth<span class="src">README · SSOT</span></h3>
+          <ol class="verses">
+            <li><span class="vn">1</span><span>GitHub リポジトリ</span></li>
+            <li><span class="vn">2</span><span>公式 DS・OP 文書（設計・運用）</span></li>
+            <li><span class="vn">3</span><span>公式記録文書（DB・MD・BR・CZ・KN）</span></li>
+            <li><span class="vn">4</span><span>一時的な議論</span></li>
+            <li><span class="vn">5</span><span>作業中の草稿（Working Drafts）</span></li>
+          </ol>
+          <p class="note">会話・アップロードされたファイル・ローカルのコピーのいずれも、GitHub リポジトリの内容を上書きすることはない。</p>
+        </div>
+      </div>
+
+      <div class="block two">
+        <div>
+          <h3 class="sub-h">Cross References<span class="src">OP-008 §14–16</span></h3>
+          <div class="dos">
+            <div class="yes"><span class="lab">Allowed · 許可</span><span class="en">See MD-004 Equipment Registry Object Reference.</span></div>
+            <div class="no"><span class="lab">Forbidden · 禁止</span>MD-004 の内容を別文書へコピーして保持すること。</div>
+          </div>
+          <p class="note">依存関係は各文書の References（Related Documents）で個別に表現し、一元的な依存関係台帳は持たない（§15）。複数文書が同じ責任を持ってはならず、責任が重複する場合は新規文書ではなく既存文書を更新する（§16）。</p>
+        </div>
+        <div>
+          <h3 class="sub-h">Document Creation<span class="src">OP-008 §18.1 · OP-001 §15</span></h3>
+          <ol class="verses">
+            <li><span class="vn">1</span><span>既存文書で対応できないこと</span></li>
+            <li><span class="vn">2</span><span>DS・OP・記録（DB/MD/BR/CZ/KN）のいずれに属するか</span></li>
+            <li><span class="vn">3</span><span>責任範囲が既存文書と重複しないこと</span></li>
+            <li><span class="vn">4</span><span>Document ID を採番すること</span></li>
+            <li><span class="vn">5</span><span>OP-008 §8 Document Series へ登録すること</span></li>
+          </ol>
+          <p class="note">新しい文書は Purpose・Single Source of Truth・管理対象・管理対象外・更新条件・参照文書を必ず定義する（OP-001 §15）。</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <h3 class="sub-h">Operating Rules<span class="src">OP-008 §19</span></h3>
+        <ol class="verses" id="doc-rules"></ol>
+      </div>
+
+      <div class="block two">
+        <div>
+          <h3 class="sub-h">Quality<span class="src">OP-008 §20</span></h3>
+          <div class="qual"><span>Readability</span><span>Consistency</span><span>Maintainability</span><span>Traceability</span><span>Scalability</span></div>
+          <p class="note">これらを満たすことを優先し、文書量を増やすことを目的としない。</p>
+          <div class="gloss"><b>§21 Documentation Principles</b>記録系列は「読むため」ではなく「運用するため」の文書である。曖昧な表現、解釈が複数存在する表現、感想、思想、コラムは記載しない。</div>
+        </div>
+        <div>
+          <h3 class="sub-h">Change Management<span class="src">OP-008 §22–23</span></h3>
+          <ol class="proc">
+            <li><span class="n">1</span><b>Documentation System</b><span>最初に更新する</span></li>
+            <li><span class="n">2</span><b>Project Ledger</b></li>
+            <li><span class="n">3</span><b>関連文書</b></li>
+            <li><span class="n">4</span><b>Reference</b></li>
+          </ol>
+          <p class="note">Documentation System を更新せずに構造変更を行ってはならない。新規文書を追加する前に、既存文書への統合を優先する。</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <p class="quote" style="text-align:center">Documentation は資産であり、Project を長期的に維持するための基盤である。<span class="src">OP-008 Appendix E · Documentation Philosophy</span></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LIBER VI : FOEDUS ===================== -->
+  <section class="liber" id="liber-7" aria-labelledby="h-l7">
+    <div class="runhead"><span>Liber VII · Foedus</span><span>OP-001 §9 · §17 · §19–21 · OP-008 §27–28</span></div>
+    <div class="lhead">
+      <div class="initial" aria-hidden="true"><span class="gild">F</span></div>
+      <div><span class="k">Liber VII</span><h2 id="h-l7">Foedus<small>契約</small></h2></div>
+      <p>判断の手順、正本の在処、AI と協力者の務め。文書の外側との約束を、OP-001 と OP-008、README が定めている。</p>
+    </div>
+    <div class="folio">
+      <div class="block">
+        <h3 class="sub-h">Decision Philosophy<span class="src">OP-001 §9</span></h3>
+        <ol class="proc">
+          <li><span class="n">①</span><b>情報収集</b><span>一次情報を最優先とする</span></li>
+          <li><span class="n">②</span><b>検証</b><span>推測を事実として扱わない</span></li>
+          <li><span class="n">③</span><b>照合</b><span>Human Principles・Design Bible・空間全体への貢献</span></li>
+          <li><span class="n">④</span><b>判断</b><span>最後に判断するのは、常に自分自身</span></li>
+          <li><span class="n">⑤</span><b>記録</b><span>Coffee は BR-002、それ以外の全ゾーンは CZ-001。判断理由も保存する</span></li>
+        </ol>
+        <p class="note">Project Ledger（DB-001）は会話管理・進捗管理等の運用状況を担い、個別の意思決定内容そのものは保持しない。</p>
+      </div>
+
+      <div class="block">
+        <h3 class="sub-h">Development Workflow<span class="src">README</span></h3>
+        <ol class="proc">
+          <li><b>Research</b><span>調査</span></li>
+          <li><b>Investigation</b><span>検証</span></li>
+          <li><b>Discussion</b><span>議論</span></li>
+          <li><b>Decision</b><span>決定</span></li>
+          <li><b>Document Revision</b><span>文書改訂</span></li>
+          <li><b>GitHub Repository</b><span>SSOT</span></li>
+        </ol>
+      </div>
+
+      <div class="block two">
+        <div>
+          <h3 class="sub-h">Canon<span class="src">OP-001 §17</span></h3>
+          <p class="quote">GitHub Repositoryへ正式反映された文書のみが、Canonとなる。</p>
+          <p class="note">Canon とは、十分な検証を経て正式採用された内容である。Discovery も、調査途中の情報も、Canon ではない。</p>
+          <div class="gloss"><b>§21 GitHub Operating Principles</b>Repository は、正式文書の保管場所ではない。THE THIRD PLACE そのものである。</div>
+        </div>
+        <div>
+          <h3 class="sub-h">Decision Authority<span class="src">OP-001 §19</span></h3>
+          <p class="quote">最終意思決定者は、プロジェクトオーナーである。AIは、設計者ではない。</p>
+          <p class="note">AI は調査、分析、制作、文書整理、事実確認、言語化、体系化を担当する。最終判断は必ず Human Principles に基づき、プロジェクトオーナー自身が行う。</p>
+        </div>
+      </div>
+
+      <div class="block">
+        <h3 class="sub-h">AI Operating Principles<span class="src">OP-001 §20</span></h3>
+        <ul class="ai">
+          <li>推測を事実として扱わない。</li>
+          <li>事実と解釈を明確に区別する。</li>
+          <li>GitHub Repository を正式な Single Source of Truth として扱う。</li>
+          <li>GitHub 最新版を最優先で参照する。</li>
+          <li>責務が重複する文書を作らない。</li>
+          <li>既存思想を独断で変更しない。</li>
+          <li>Popularity を判断基準にしない。</li>
+          <li>Human Principles に反する提案を行わない。</li>
+          <li>Design Bible を Constitution より優先しない。</li>
+          <li>制作依頼では設計変更を行わない。</li>
+          <li>設計提案を行う場合は、必ず提案であることを明示する。</li>
+          <li>正式文書は GitHub Repository へ反映することを前提とする。</li>
+          <li>チャット内の文章は、GitHub へ反映されるまで正式文書としない。</li>
+          <li>GitHub とチャット内容が矛盾する場合は、GitHub を優先する。</li>
+        </ul>
+      </div>
+
+      <div class="block two">
+        <div>
+          <h3 class="sub-h">External Contribution<span class="src">OP-001 §21.1</span></h3>
+          <p class="note" style="margin-top:0">協力者由来の情報は Discovery として扱い、GitHub へ正式反映されるまで Canon ではない。正式化の可否・時期・反映先は、オーナーとオーナーの AI が判断する。競合時の優先順位は次の通り。</p>
+          <ol class="verses">
+            <li><span class="vn">①</span><span>オーナーの明示的決定</span></li>
+            <li><span class="vn">②</span><span>GitHub 最新版</span></li>
+            <li><span class="vn">③</span><span>GitHub 外の協力者由来の内容</span></li>
+          </ol>
+        </div>
+        <div>
+          <h3 class="sub-h">Drive Mirror<span class="src">OP-008 §27</span></h3>
+          <div class="tbl-wrap">
+            <table class="codex">
+              <thead><tr><th>Folder</th><th>Role</th><th>Rule</th></tr></thead>
+              <tbody>
+                <tr><td class="t">Mirror</td><td>GitHub の複製（参照用）</td><td>協力者は編集しない。GitHub の内容で一方向に更新される</td></tr>
+                <tr><td class="t">Contributions</td><td>協力者の書き込み先</td><td>ミラーは触れない。内容は Discovery 扱い</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p class="note">自動同期は GitHub → Drive のみ。同期対象は md・png・py。Drive 上のファイルは正式文書ではない。</p>
+        </div>
+      </div>
+
+      <div class="block two">
+        <div>
+          <h3 class="sub-h">KN Publication<span class="src">OP-008 §28</span></h3>
+          <p class="quote">KN 四系列の発行物は、Claude Artifact としてのみ発行する。</p>
+          <p class="note">KN-001〜004 の本文（発行物）はリポジトリに置かない。今後何百と増えていく見込みのためである。発行の記録はメタデータのみを DB-001「KN Publication Log」に Date・Series・Theme/Title・Artifact Link の形式で残す。Artifact Link は、オーナー自身が共有設定にした場合のみ記載する。</p>
+        </div>
+        <div>
+          <h3 class="sub-h">The Repository<span class="src">README · Repository Structure</span></h3>
+          <ul class="repo">
+            <li><code>DS/ OP/</code><span>設計・運用</span></li>
+            <li><code>DB/ MD/ BR/ CZ/ KN/</code><span>記録の五系列</span></li>
+            <li><code>archive/</code><span>移設済み Version History（Rule DOC-09）· <span id="m-arch-n"></span> files</span></li>
+            <li><code>scripts/third_place_sync_validator.py</code><span>SSOT 同期バリデータ</span></li>
+            <li><code>.github/workflows/third-place-sync.yml</code><span>MD-004 / BR-002 / BR-003 の整合性を CI で自動検証</span></li>
+            <li><code>scripts/field_atlas_radar.py</code><span>MD-002 から Field Atlas Radar を生成</span></li>
+            <li><code>scripts/MirrorSync.gs</code><span>GitHub → Drive 一方向ミラー（OP-008 §27）</span></li>
+            <li><code>assets/banner.PNG</code><span>README のバナー</span></li>
+            <li><code>CLAUDE.md</code><span>Claude Code 運用指示書（自動読込）</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== LIBER VII : TEXTUS ===================== -->
+  <section class="liber" id="liber-8" aria-labelledby="h-l8">
+    <div class="runhead"><span>Liber VIII · Textus</span><span>Mentions across main · <span class="m-commit"></span></span></div>
+    <div class="lhead">
+      <div class="initial" aria-hidden="true"><span class="gild">T</span></div>
+      <div><span class="k">Liber VIII</span><h2 id="h-l8">Textus<small>言及の織物</small></h2></div>
+      <p>行の文書が、列の文書のIDを本文中で何回書いているか。枝が「定められた関係」なら、糸は「実際に交わされている言葉」である。セルを選ぶと、行の文書が樹の上で開く。</p>
+    </div>
+    <div class="matrix-grid">
+      <div class="matrix-scroll"><svg id="matrix" role="img" aria-label="文書間の言及回数マトリクス"></svg></div>
+      <div class="notes" id="notes"></div>
+    </div>
+    <p class="source">集計元：リポジトリ main（<span class="m-commit"></span>）の各文書本文に現れる他文書IDの出現回数。改訂履歴内の言及も含む。自身のIDは数えない。文書の役割・Authority・Volatility・要約は OP-008 §8 と Appendix F、階層は OP-001 §12、関係は OP-001 §13–14 と OP-008 §8 / §27 / §28 による。</p>
+  </section>
+
+  <!-- ===================== LIBER VIII : CHRONICA ===================== -->
+  <section class="liber" id="liber-9" aria-labelledby="h-l9">
+    <div class="runhead"><span>Liber IX · Chronica</span><span>OP-001 §26 · Appendix C · OP-008 Revision History</span></div>
+    <div class="lhead">
+      <div class="initial" aria-hidden="true"><span class="gild">C</span></div>
+      <div><span class="k">Liber IX</span><h2 id="h-l9">Chronica<small>年代記</small></h2></div>
+      <p>文書体系の主な改訂を、文書に記された日付で辿る。価値観は書き換えず、積み重ねる（OP-001 §3.3）。改訂もまた、履歴として残される。</p>
+    </div>
+    <div class="folio">
+      <div class="block">
+        <ol class="timeline">
+          <li><time>2026-07-15</time><div><b>Documentation System, first edition</b><span>Documentation System を PX シリーズへ移行し、プロジェクトの正式な運用標準として採用。OP-008 v1.0。</span></div></li>
+          <li><time>2026-09-19</time><div><b>The Renumbering</b><span>旧 TP／PX／TM 3系列を、可変性の度合いで再定義した DS／OP／記録（DB・MD・BR・CZ・KN）へ再編。オーナー自身による意図的な Document Architecture の変更として記録された。OP-001 Ver.5.0・§26。</span></div></li>
+          <li><time>2026-09-24</time><div><b>Volatility Restructure</b><span>OP-008 §8 を唯一の文書カタログへ拡張し、Static／Periodic／Living の区分を新設。OP-010 を登録、Appendix F に全文書のプロフィール（日英）を移設。OP-008 v3.0。</span></div></li>
+          <li><time>2026-09-24</time><div><b>Title Uniqueness Rule</b><span>§11.1 を新設し、語が重複していた五文書を改名。OP-008 v3.1。</span></div></li>
+          <li><time>2026-09-27</time><div><b>The Hierarchy Recomposed</b><span>OP-001 §12 Information Hierarchy を現行系列へ全面再構成。OP-008・OP-010・BR・CZ を各段として加え、OP-009 を Master Documents 段へ移した。OP-001 Ver.5.4。</span></div></li>
+          <li><time>2026-09-28</time><div><b>Mirror, Contribution, Publication</b><span>§27 Drive Mirror Operation（v3.7）と OP-001 §21.1 External Contribution Protocol、§28 KN Publication Policy（v3.13）を新設。</span></div></li>
+          <li><time>2026-09-28</time><div><b>The Archive Opened</b><span>Rule DOC-09 を新設（v3.16）。一定規模を超えた Revision History を archive/ へ原文のまま移設できるようになった。</span></div></li>
+          <li><time id="m-gen"></time><div><b>This Codex</b><span>main（<span class="m-commit"></span>）の<span class="m-nk"></span>書から、この写本を生成した。</span></div></li>
+        </ol>
+      </div>
+
+      <div class="block">
+        <h3 class="sub-h">Concordance · 新旧ID 対照<span class="src">OP-001 Appendix C Ver.5.0</span></h3>
+        <div class="concord" id="concord"></div>
+        <div class="gloss"><b>Marginalia · 注記</b>OP-001 §26 は Appendix C Ver.5.0 を新旧ID 対応の正式な参照先と定める。本表はその記載から生成している。旧ID を持たない書は、再編の後に登録された文書である。</div>
+      </div>
+
+      <div class="block">
+        <h3 class="sub-h">Archive · 移設された履歴<span class="src">OP-008 §19 Rule DOC-09</span></h3>
+        <ul class="repo" id="archive-list"></ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FINALE ===================== -->
+  <section class="finale" aria-label="The First Law">
+    <div class="black gild" aria-hidden="true">Explicit</div>
+    <p class="law gild">判断は、人生になる。</p>
+    <span class="src">DS-001 · Chapter IV · The First Law</span>
+    <p>すべての公理は、一つの法則へ収束する。どれほど小さな判断であっても、時間を重ねれば、必ず人生の一部となる。</p>
+  </section>
+
+  <div class="colophon"><span>THE THIRD PLACE · A Movable Outdoor Living Room</span><span>SSOT · YogiMari/THE-THIRD-PLACE</span><span>Catalogue per OP-008 §8</span></div>
+</main>
+<div class="tip" id="tip" hidden></div>
+<button class="seek-fab" type="button" data-seek-open aria-haspopup="dialog"><span>Search</span><small>全書検索</small><kbd>/</kbd></button>
+<div class="seek" id="seek" role="dialog" aria-modal="true" aria-labelledby="seek-h" hidden>
+  <div class="seek-inner">
+    <div class="seek-head">
+      <h2 id="seek-h">Concordantia<small>全書検索</small></h2>
+      <button class="chip" type="button" data-seek-close>Close · Esc</button>
+    </div>
+    <input id="seek-q" type="search" placeholder="語を入力。空白で区切ると、すべてを含む行を探す" autocomplete="off" spellcheck="false">
+    <div class="g-chips seek-scope" id="seek-scope" aria-label="範囲"></div>
+    <p class="seek-sum" id="seek-sum" aria-live="polite"></p>
+    <div class="seek-docs" id="seek-docs"></div>
+    <ol class="seek-res" id="seek-res"></ol>
+    <div class="seek-more"><button class="chip" type="button" id="seek-more" hidden>さらに表示</button></div>
+  </div>
+</div>
+
+<script>
+const DATA = /*__DATA__*/{};
+const reduce=matchMedia("(prefers-reduced-motion:reduce)").matches;
+
+const SERIES = {
+  DS:{name:"Design",ja:"設計",note:"絶対不変の思想原典",stratum:"design"},
+  OP:{name:"Operation",ja:"運用",note:"設計思想・規則・法則の定義",stratum:"op"},
+  DB:{name:"Dashboard",ja:"ダッシュボード",note:"運用管理そのもの",stratum:"rec"},
+  MD:{name:"Master Data",ja:"マスターデータ",note:"所有物・場所の台帳",stratum:"rec"},
+  BR:{name:"Barista",ja:"バリスタ",note:"コーヒー機材の意思決定・調達・手入れ",stratum:"rec"},
+  CZ:{name:"Cross-Zone Ops",ja:"クロスゾーン",note:"コーヒー以外のゾーンの検討・市場監視",stratum:"rec"},
+  KN:{name:"Knowledge",ja:"ナレッジ",note:"知の蓄積・文化アーカイブ",stratum:"rec"}
+};
+const COLOR = {DS:"#f3e3b8",OP:"#d6a74e",DB:"#8fb3d9",MD:"#f07a3a",BR:"#b85a9a",CZ:"#6fb08e",KN:"#a38ad6"};
+const DOMAINS = {FUR:"Furniture",LGT:"Light",ARM:"Aroma",STR:"Storage",FIR:"Fire",SHL:"Shelter",KIT:"Kitchen"};
+
+/* Information Hierarchy per OP-001 §12 */
+const TIERS = {
+  "I":{ja:"原典",en:"Original"}, "II":{ja:"憲法",en:"Constitution"}, "III":{ja:"設計思想",en:"Design Bible"},
+  "IV":{ja:"文書体系",en:"Documentation"}, "V":{ja:"台帳",en:"Ledger"}, "VI":{ja:"マスター文書",en:"Master Documents"},
+  "VII":{ja:"バリスタ文書",en:"Barista Documents"}, "VIII":{ja:"クロスゾーン",en:"Cross-Zone Ops"}, "IX":{ja:"ナレッジ文書",en:"Knowledge Documents"}
+};
+const HIER = ["DS-001","OP-001","OP-002","OP-008","DB-001","OP-003","OP-004","OP-005","OP-006","OP-007","OP-009","OP-010","MD-001","MD-002","MD-003","MD-004","BR-001","BR-002","BR-003","CZ-001","CZ-002","KN-001","KN-002","KN-003","KN-004"];
+const L = {
+  "DS-001":{x:500,y:130,r:44,t:"I",lines:["Original"],pre:"THE THIRD PLACE"},
+  "OP-001":{x:500,y:300,r:34,t:"II",lines:["Constitution"]},
+  "OP-002":{x:290,y:420,r:30,t:"III",lines:["Design Bible"]},
+  "OP-008":{x:710,y:470,r:30,t:"IV",lines:["Documentation System"]},
+  "DB-001":{x:500,y:585,r:24,t:"V",lines:["Project Ledger"]},
+  "OP-003":{x:140,y:690,r:22,t:"VI",lines:["Affinity Lexicon"]},
+  "OP-005":{x:860,y:690,r:22,t:"VI",lines:["Pursuit Strategy"]},
+  "OP-004":{x:305,y:785,r:22,t:"VI",lines:["Aesthetic Grammar"]},
+  "OP-006":{x:500,y:760,r:25,t:"VI",lines:["Foundation Compass"]},
+  "OP-009":{x:695,y:785,r:22,t:"VI",lines:["Search Doctrine"]},
+  "OP-007":{x:175,y:905,r:22,t:"VI",lines:["Habitat Architecture"]},
+  "OP-010":{x:825,y:905,r:24,t:"VI",lines:["Qualification Charter"]},
+  "MD-004":{x:500,y:1000,r:38,t:"VI",lines:["Equipment Registry","Object Reference"]},
+  "MD-001":{x:335,y:1090,r:24,t:"VI",lines:["Storage Blueprint"]},
+  "MD-003":{x:665,y:1090,r:24,t:"VI",lines:["Galley Fare"]},
+  "MD-002":{x:165,y:1110,r:24,t:"VI",lines:["Field Atlas","Landscape Framework"]},
+  "BR-002":{x:285,y:1265,r:25,t:"VII",lines:["Barista Canon"]},
+  "BR-001":{x:135,y:1345,r:20,t:"VII",lines:["Brew Care"]},
+  "BR-003":{x:405,y:1365,r:23,t:"VII",lines:["Procurement","Handbook"]},
+  "CZ-001":{x:715,y:1300,r:24,t:"VIII",lines:["Deliberation Dossier"]},
+  "CZ-002":{x:870,y:1395,r:22,t:"VIII",lines:["Vigil Protocol"]},
+  "KN-001":{x:195,y:1565,r:20,t:"IX",lines:["Heritage Chronicle"]},
+  "KN-002":{x:400,y:1615,r:20,t:"IX",lines:["Cultural Pantheon"]},
+  "KN-003":{x:600,y:1615,r:20,t:"IX",lines:["Beyond Journey"]},
+  "KN-004":{x:805,y:1565,r:20,t:"IX",lines:["Atelier Discovery"]},
+  "ARCHIVE":{x:420,y:1745,r:9,t:null,lines:["archive/"],root:true},
+  "SCRIPTS":{x:580,y:1745,r:9,t:null,lines:["scripts/"],root:true}
+};
+const ROOTS = {
+  "ARCHIVE":{id:"ARCHIVE",title:"Version History Archive",series:"root",path:"archive/",
+    summary:"改訂履歴が一定規模を超えた文書の、過去の履歴を移設する場所。本文には直近の履歴だけが残る。",
+    ja:"OP-008 §19 Rule DOC-09 に基づき、Revision History のうち古い行を移設した保管庫。移設した履歴は原文のまま保持し、要約・削除はしない。",
+    en:"Where older Revision History rows are relocated under OP-008 Rule DOC-09, kept verbatim, never summarised or deleted.",
+    holds:DATA.archive.map(f=>f.replace(".md",""))},
+  "SCRIPTS":{id:"SCRIPTS",title:"Scripts & Automation",series:"root",path:"scripts/",
+    summary:"文書を支える道具。SSOTの同期検証、Field Atlas のレーダー生成、Google Drive への一方向ミラー。",
+    ja:"third_place_sync_validator.py が MD-004・BR-002・BR-003 の整合性を CI で検証し、field_atlas_radar.py が MD-002 から Field Atlas Radar を生成し、MirrorSync.gs が GitHub から Drive へ一方向に複製する（OP-008 §27）。",
+    en:"Tools that serve the documents: a CI sync validator for MD-004 / BR-002 / BR-003, a Field Atlas radar generator for MD-002, and a one-way GitHub → Drive mirror (OP-008 §27).",
+    holds:["third_place_sync_validator.py","field_atlas_radar.py","MirrorSync.gs","templates/field_atlas_radar.html"]}
+};
+
+/* Relations stated in the documents themselves */
+const EDGES = [
+  ["DS-001","OP-001","原典の原理を、運営の条文として再定義する","OP-001 §13.0"],
+  ["OP-001","OP-002","Human Principles から Design Bible が生まれる","OP-001 §14"],
+  ["OP-001","OP-008","各文書の役割と一覧は OP-008 §8 が正本","OP-001 §13.1"],
+  ["OP-002","OP-008","情報階層 III から IV へ","OP-001 §12","hier"],
+  ["OP-008","DB-001","KN の発行記録を Project Ledger に残す","OP-008 §28.4"],
+  ["DB-001","OP-006","情報階層 V から マスター文書へ","OP-001 §12","hier"],
+  ["OP-001","OP-003","Human Principles から派生する「好み」を記録する","OP-008 §8"],
+  ["OP-003","OP-004","語彙に「なぜ美しいのか」という法則を与える","OP-008 §8"],
+  ["OP-004","OP-002","Design Language を補完する","OP-008 Appendix F"],
+  ["OP-006","OP-007","基盤の上に、フィールドの暮らしの空間を築く","OP-008 Appendix F"],
+  ["OP-006","MD-001","Container の具体的な役割・固定収納物は MD-001 が管理","OP-008 §8"],
+  ["OP-002","MD-004","Design Bible との美意識的整合が登録条件","OP-008 Appendix F"],
+  ["OP-010","MD-004","登録規則・評価基準を定義する","OP-008 §8"],
+  ["OP-010","MD-003","登録規則・評価基準を定義する","OP-008 §8"],
+  ["OP-010","MD-002","登録規則・評価基準を定義する","OP-008 §8"],
+  ["MD-004","MD-003","Kitchen Domain は MD-004 の対象外。用途基準で独立管理","OP-008 §8"],
+  ["OP-005","BR-003","Coffee Zone 調達の恒久ルールを定義し、値の割り当ては BR-003","OP-008 §8"],
+  ["OP-005","CZ-002","市場監視は CZ-002 と OP-009 が管理する","OP-008 §8"],
+  ["OP-009","CZ-002","Patrol Protocol（§XVIII）で Watch List を巡回する","OP-008 Appendix F"],
+  ["BR-002","BR-003","正式採用した機材の価格・購入先・輸送・関税を管理","OP-008 Appendix F"],
+  ["BR-002","BR-001","コーヒー機材の意思決定と、お手入れの基準","OP-008 Appendix F"],
+  ["BR-002","MD-004","Coffee Domain の正式な意思決定を経て更新。Owned 時点で登録","OP-001 §14"],
+  ["CZ-001","MD-004","Coffee 以外の全ゾーンの正式な意思決定を経て更新","OP-001 §14"],
+  ["CZ-002","CZ-001","監視対象と、検討中ギアの比較・購入待ちリスト","OP-008 Appendix F"],
+  ["CZ-002","KN-004","Horizon が Watch List の購入対象を継続監視する","OP-008 Appendix F"],
+  ["OP-008","ARCHIVE","Rule DOC-09 により過去の改訂履歴を移設","OP-008 §19"],
+  ["OP-008","SCRIPTS","Drive Mirror Operation（GitHub → Drive 一方向）","OP-008 §27"]
+];
+
+const DOCS = {};
+DATA.docs.forEach(d=>{d.series=d.id.slice(0,2);DOCS[d.id]=d});
+Object.values(ROOTS).forEach(d=>DOCS[d.id]=d);
+const IDS = DATA.docs.map(d=>d.id);
+const ORDER = HIER.filter(id=>DOCS[id]).concat(IDS.filter(id=>!HIER.includes(id)));
+const tierOf = id => (L[id]&&L[id].t)||null;
+const INC = {}; IDS.forEach(i=>INC[i]={});
+DATA.docs.forEach(d=>Object.entries(d.refs).forEach(([k,v])=>{INC[k][d.id]=v}));
+const colorOf = id => DOCS[id].series==="root" ? "#e8dcc4" : COLOR[DOCS[id].series];
+const NS="http://www.w3.org/2000/svg";
+const el=(tag,attrs={},parent)=>{const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e};
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const $=id=>document.getElementById(id);
+
+/* ---------- meta (all from the build) ---------- */
+(function(){
+  const M=DATA.meta, n=DATA.docs.length;
+  const kanji=k=>{const d="〇一二三四五六七八九";if(k<10)return d[k];const t=Math.floor(k/10),o=k%10;return (t>1?d[t]:"")+"十"+(o?d[o]:"")};
+  const fmt=s=>{if(!s)return "";const [y,m,dd]=s.split("-").map(Number);return `${dd} ${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][m-1]} ${y}`};
+  document.querySelectorAll(".m-commit").forEach(e=>e.textContent=M.commit);
+  document.querySelectorAll(".m-date").forEach(e=>e.textContent=fmt(M.generated));
+  document.querySelectorAll(".m-nk").forEach(e=>e.textContent=n<100?kanji(n):String(n));
+  const ds=DATA.docs.find(d=>d.id==="DS-001"), op8=DATA.docs.find(d=>d.id==="OP-008");
+  if(ds)$("m-ds-lines").textContent=ds.lines.toLocaleString("en");
+  if(op8)$("m-op8v").textContent=op8.version;
+  $("m-arch-n").textContent=DATA.archive.length;
+  $("m-gen").textContent=M.generated;
+})();
+
+/* ---------- figures ---------- */
+(function(){
+  const total = DATA.docs.reduce((s,d)=>s+Object.values(d.refs).reduce((a,b)=>a+b,0),0);
+  const lines = DATA.docs.reduce((s,d)=>s+d.lines,0);
+  const f=[[DATA.docs.length,"Books · 文書"],[7,"Series · 系列"],[3,"Strata · 地層"],[9,"Tiers · 階層"],[total.toLocaleString("en"),"Mentions · 言及"],[lines.toLocaleString("en"),"Lines · 総行数"]];
+  $("figures").innerHTML=f.map(([n,l])=>`<div><strong>${n}</strong><span>${l}</span></div>`).join("");
+})();
+
+/* ---------- Liber I builders ---------- */
+(function(){
+  const parts=DOCS["DS-001"].chapters;
+  $("ds-parts").innerHTML=parts.map(p=>{
+    const m=p.match(/^Chapter ([IVX]+) · (.*)$/);
+    return m?`<li><span class="n">Chapter ${m[1]}</span><b>${esc(m[2])}</b></li>`:`<li><span class="n">&nbsp;</span><b>${esc(p)}</b></li>`}).join("");
+  const lit=[
+    ["Design Bible","OP-002","空間"],["Equipment Registry","MD-004","所有物"],["Field Atlas","MD-002","場所"],
+    ["Habitat Architecture","OP-007","空間構成"],["Storage Blueprint","MD-001","運用"],["Affinity Lexicon","OP-003","感性"],
+    ["Project Ledger","DB-001","歩み"],["GitHub Repository","SSOT","永続的な知識体系"]];
+  $("litany").innerHTML=lit.map(([w,id,to],i)=>`<li><span class="who">${w}<small>${id}</small></span><span class="what">${i===6?`その思想の<em>歩み</em>を運用として翻訳する。`:i===7?`その思想を、<em>${to}</em>として保存する。`:`その思想を<em>${to}</em>へ翻訳する。`}</span></li>`).join("");
+})();
+
+/* ---------- tree ---------- */
+const svg=$("tree");
+const defs=el("defs",{},svg);
+defs.innerHTML=`
+  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
+  <filter id="halo" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="14"/></filter>
+  <filter id="spec" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6"/></filter>
+  <linearGradient id="flare" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#ffe9c0" stop-opacity="0"/><stop offset=".5" stop-color="#fff6e2" stop-opacity=".85"/><stop offset="1" stop-color="#ffe9c0" stop-opacity="0"/></linearGradient>
+  <linearGradient id="pillar" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f6dca0" stop-opacity="0"/><stop offset=".25" stop-color="#f6dca0" stop-opacity=".07"/><stop offset=".8" stop-color="#f6dca0" stop-opacity=".04"/><stop offset="1" stop-color="#f6dca0" stop-opacity="0"/></linearGradient>
+  <radialGradient id="crown" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff6e0" stop-opacity=".35"/><stop offset=".4" stop-color="#f3e3b8" stop-opacity=".09"/><stop offset="1" stop-color="#f3e3b8" stop-opacity="0"/></radialGradient>`;
+Object.entries(COLOR).concat([["root","#e8dcc4"]]).forEach(([k,c])=>{
+  const g=el("radialGradient",{id:"orb-"+k,cx:".5",cy:".5",r:".5",fx:".36",fy:".32"},defs);
+  [["0","#fffdf6",1],[".16",c,1],[".58",c,.55],[".86","#0a0b10",.85],["1","#05060a",.95]].forEach(([o,sc,so])=>el("stop",{offset:o,"stop-color":sc,"stop-opacity":so},g));
+});
+
+const gBack=el("g",{},svg), gEdges=el("g",{},svg), gThreads=el("g",{},svg), gNodes=el("g",{},svg);
+
+/* crown glow, sacred rings + pillars */
+el("circle",{cx:500,cy:130,r:210,fill:"url(#crown)"},gBack);
+[150,178].forEach(r=>el("circle",{cx:500,cy:130,r,fill:"none",stroke:"#d6a74e","stroke-opacity":r===150?.18:.10,"stroke-width":.8,"stroke-dasharray":r===150?"":"2 6"},gBack));
+[[240,"PILLAR OF SENSE · 感性"],[500,"PILLAR OF ORIGIN · 原点"],[760,"PILLAR OF ORDER · 規律"]].forEach(([x,t])=>{
+  el("rect",{x:x-46,y:360,width:92,height:820,fill:"url(#pillar)"},gBack);
+  const tx=el("text",{x, y:x===500?1180:600,"text-anchor":"middle",class:"pillar-label"},gBack); tx.textContent=t;
+});
+/* tier markers */
+const tierMarks=[["I",130,"l"],["II",300,"l"],["III",420,"l"],["IV",470,"r"],["V",585,"l"],["VI",650,"l"],["VII",1235,"l"],["VIII",1250,"r"],["IX",1520,"l"]];
+tierMarks.forEach(([n,y,side])=>{
+  const x=side==="l"?18:982, anchor=side==="l"?"start":"end";
+  const t=el("text",{x,y,"text-anchor":anchor,class:"tier"},gBack);
+  const a=el("tspan",{class:"num"},t); a.textContent=n;
+  const b=el("tspan",{class:"lbl",dx:"8",dy:"-4"},t); b.textContent=TIERS[n].en.toUpperCase();
+  if(side==="r"){ t.textContent=""; const b2=el("tspan",{class:"lbl",dy:"-4"},t); b2.textContent=TIERS[n].en.toUpperCase(); const a2=el("tspan",{class:"num",dx:"8",dy:"4"},t); a2.textContent=n; }
+});
+
+/* edges */
+function curve(a,b){
+  const dx=b.x-a.x, dy=b.y-a.y, len=Math.hypot(dx,dy);
+  const ux=dx/len, uy=dy/len;
+  const s={x:a.x+ux*(a.r+6),y:a.y+uy*(a.r+6)}, e={x:b.x-ux*(b.r+6),y:b.y-uy*(b.r+6)};
+  const bend=Math.min(40,len*.12), nx=-uy*bend, ny=ux*bend;
+  return `M${s.x.toFixed(1)},${s.y.toFixed(1)} Q${((s.x+e.x)/2+nx).toFixed(1)},${((s.y+e.y)/2+ny).toFixed(1)} ${e.x.toFixed(1)},${e.y.toFixed(1)}`;
+}
+const edgeEls=EDGES.filter(([f,t])=>L[f]&&L[t]&&DOCS[f]&&DOCS[t]).map(([f,t,label,src,kind],i)=>{
+  const g=el("g",{class:"edge"+(kind?" "+kind:"")},gEdges);
+  const gradId="eg"+i;
+  const lg=el("linearGradient",{id:gradId,gradientUnits:"userSpaceOnUse",x1:L[f].x,y1:L[f].y,x2:L[t].x,y2:L[t].y},defs);
+  el("stop",{offset:"0","stop-color":colorOf(f)},lg); el("stop",{offset:"1","stop-color":colorOf(t)},lg);
+  const d=curve(L[f],L[t]);
+  el("path",{d,class:"glow",stroke:`url(#${gradId})`},g);
+  el("path",{d,class:"line",stroke:`url(#${gradId})`},g);
+  if(!kind){const sp=el("path",{d,class:"spark",stroke:"#fff3d6"},g); sp.style.animationDelay=(-(i*0.83)%7)+"s";}
+  return {g,f,t,label,src,kind};
+});
+
+/* nodes */
+const nodeEls={};
+Object.entries(L).forEach(([id,p])=>{
+  if(!DOCS[id])return;
+  const d=DOCS[id], c=colorOf(id), s=d.series;
+  const g=el("g",{class:`node v-${d.volatility||"Static"}`,transform:`translate(${p.x},${p.y})`,tabindex:"0",role:"button","aria-label":`${id} ${d.title}`,"data-id":id},gNodes);
+  el("circle",{class:"hit",r:p.r+18},g);
+  el("circle",{class:"halo",r:p.r*2.4,fill:c,filter:"url(#halo)"},g);
+  if(id==="DS-001"||id==="MD-004"){
+    const w=id==="DS-001"?300:170;
+    el("rect",{x:-w/2,y:-1.2,width:w,height:2.4,fill:"url(#flare)",opacity:id==="DS-001"?.8:.45,class:"spec"},g);
+  }
+  el("circle",{class:"orb",r:p.r,fill:`url(#orb-${s==="root"?"root":s})`},g);
+  el("ellipse",{class:"spec",cx:-p.r*.32,cy:-p.r*.42,rx:p.r*.34,ry:p.r*.18,fill:"#fff",opacity:.38,filter:"url(#spec)"},g);
+  const a=d.authority;
+  if(p.root){ el("rect",{class:"ring",x:-p.r-5,y:-p.r-5,width:2*p.r+10,height:2*p.r+10,transform:"rotate(45)"},g); }
+  else if(a==="SSOT"){ el("circle",{class:"ring",r:p.r+6},g); el("circle",{class:"ring",r:p.r+10},g); }
+  else if(a==="Standard"){ el("circle",{class:"ring",r:p.r+6},g); }
+  else if(a==="Reference"){ el("circle",{class:"ring",r:p.r+6,"stroke-dasharray":"6 5"},g); }
+  else if(a==="Archive"){ el("circle",{class:"ring",r:p.r+6,"stroke-dasharray":"1 4","stroke-linecap":"round","stroke-width":"1.6"},g); }
+  let y=p.r+(a==="SSOT"?30:26);
+  if(p.pre){const t=el("text",{y:-p.r-26,"text-anchor":"middle",class:"ttl pre"},g); t.textContent=p.pre;}
+  const idt=el("text",{y,"text-anchor":"middle",class:"id",fill:c},g); idt.textContent=p.root?"ROOT":id;
+  p.lines.forEach((ln,i)=>{const t=el("text",{y:y+20+i*19,"text-anchor":"middle",class:"ttl"},g); t.textContent=ln;});
+  g.addEventListener("click",()=>select(id,true));
+  g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(id,true)}});
+  g.addEventListener("mouseenter",()=>{if(matchMedia("(hover:hover)").matches)highlight(id)});
+  g.addEventListener("mouseleave",()=>{if(matchMedia("(hover:hover)").matches)highlight(current)});
+  nodeEls[id]=g;
+});
+
+/* threads */
+function drawThreads(id){
+  gThreads.innerHTML="";
+  if(!IDS.includes(id)||!L[id])return;
+  const a=L[id];
+  const peers=new Set([...Object.keys(DOCS[id].refs),...Object.keys(INC[id])]);
+  peers.forEach(pid=>{
+    const b=L[pid]; if(!b)return; const n=(DOCS[id].refs[pid]||0)+(INC[id][pid]||0);
+    const mx=(a.x+b.x)/2, my=(a.y+b.y)/2, dx=b.x-a.x, dy=b.y-a.y, len=Math.hypot(dx,dy)||1;
+    const side=(b.x>=a.x?1:-1), bow=Math.min(160,len*.35)*side;
+    const p=el("path",{class:"thread",d:`M${a.x},${a.y} Q${mx-dy/len*bow},${my+dx/len*bow} ${b.x},${b.y}`,stroke:colorOf(pid),"stroke-width":(0.5+Math.sqrt(n)*0.42).toFixed(2)},gThreads);
+    requestAnimationFrame(()=>p.style.opacity=.42);
+  });
+}
+let current=null;
+function neighbours(id){
+  const s=new Set([id]);
+  edgeEls.forEach(e=>{if(e.f===id||e.t===id){s.add(e.f);s.add(e.t)}});
+  if(DOCS[id].refs){Object.keys(DOCS[id].refs).forEach(k=>s.add(k));Object.keys(INC[id]).forEach(k=>s.add(k));}
+  return s;
+}
+function highlight(id){
+  if(!id){svg.classList.remove("focus");return}
+  svg.classList.add("focus");
+  const n=neighbours(id);
+  Object.entries(nodeEls).forEach(([k,g])=>{g.classList.toggle("lit",n.has(k));g.classList.toggle("sel",k===id)});
+  edgeEls.forEach(e=>e.g.classList.toggle("lit",e.f===id||e.t===id));
+  drawThreads(id);
+}
+
+/* ---------- dossier ---------- */
+const dossier=$("dossier");
+const chip=id=>`<button class="chip" data-go="${id}"><i style="background:${colorOf(id)}"></i>${id==="ARCHIVE"||id==="SCRIPTS"?DOCS[id].path:id}</button>`;
+function bars(obj,go=true,labels){
+  const arr=Object.entries(obj).sort((a,b)=>b[1]-a[1]);
+  if(!arr.length)return `<p class="d-empty">なし</p>`;
+  const max=Math.max(...arr.map(a=>a[1]));
+  return `<div class="bars">${arr.map(([k,v])=>{
+    const c=go?colorOf(k):labels.c, lab=go?k:(labels.map[k]||k);
+    const inner=`<span style="color:${go?c:"var(--fg)"}">${esc(lab)}</span><span class="track"><b style="width:${(v/max*100).toFixed(1)}%;background:${c}"></b></span><span class="n">${v}</span>`;
+    return go?`<button class="bar" data-go="${k}" aria-label="${k} ${v}回">${inner}</button>`:`<div class="bar static">${inner}</div>`;
+  }).join("")}</div>`;
+}
+let tocAll=false;
+function render(id){
+  const d=DOCS[id], s=d.series, p=L[id]||{t:null};
+  const serName = s==="root" ? "Repository · 支え" : `${SERIES[s].name} · ${SERIES[s].ja}`;
+  const tier = p.t ? `Tier ${p.t} · ${TIERS[p.t].en}` : (s==="root"?"Roots":"Unplaced");
+  const rels=edgeEls.filter(e=>e.f===id||e.t===id).map(e=>{
+    const other=e.f===id?e.t:e.f; const dir=e.f===id?"→":"←";
+    return `<li>${chip(other)}<span>${dir} ${esc(e.label)}</span><span class="src">${esc(e.src)}</span></li>`}).join("");
+  const meta = s==="root"
+    ? `<div><dt>Files</dt><dd>${d.holds.length}</dd></div><div><dt>Kind</dt><dd>Support</dd></div><div><dt>Doc</dt><dd>—</dd></div>`
+    : `<div><dt>Authority</dt><dd>${d.authority}</dd></div><div><dt>Volatility</dt><dd>${d.volatility}</dd></div><div><dt>Version</dt><dd>${d.version}</dd></div>
+       <div><dt>Former ID</dt><dd>${d.old||"—"}</dd></div><div><dt>Lines</dt><dd>${d.lines.toLocaleString("en")}</dd></div><div><dt>Last commit</dt><dd>${d.touched?d.touched.slice(5).replace("-","/"):"—"}</dd></div>`;
+  const ch=d.chapters||[], LIM=14;
+  const toc = s==="root" ? "" : `<h4 class="d-h">Contents · 章立て（${ch.length}）</h4>${ch.length
+      ? `<ol class="d-toc">${ch.slice(0,tocAll?ch.length:LIM).map(c=>`<li>${esc(c)}</li>`).join("")}</ol>${ch.length>LIM?`<button class="chip more" data-more>${tocAll?"一部だけ表示":`全 ${ch.length} 章を表示`}</button>`:""}`
+      : `<p class="d-empty">リポジトリ上の本文は章立てを持たない。発行物は Artifact として発行される（OP-008 §28）。</p>`}`;
+  const ents=d.entries&&Object.keys(d.entries).length
+    ? `<h4 class="d-h">Entries · 登録項目（${Object.values(d.entries).reduce((a,b)=>a+b,0)}）</h4>${bars(d.entries,false,{c:COLOR[s],map:DOMAINS})}` : "";
+  dossier.innerHTML=`
+    <button class="chip close" data-close aria-label="閉じる">Close</button>
+    <div class="d-eyebrow"><span><i class="sw" style="background:${colorOf(id)};color:${colorOf(id)}"></i>${esc(serName)}</span><span>${esc(tier)}</span></div>
+    <p class="d-id" style="color:${colorOf(id)}">${s==="root"?esc(d.path):id}</p>
+    <h3 class="d-title">${esc(d.title)}</h3>
+    ${d.formerTitle?`<p class="d-former">Formerly · ${esc(d.formerTitle)}（OP-008 §11.1）</p>`:""}
+    <p class="d-sum">${esc(d.summary)}</p>
+    <dl class="d-meta">${meta}</dl>
+    <p class="d-path">${esc(d.path)}</p>
+    ${s!=="root"?`<div class="d-acts"><button class="chip" type="button" data-seek-doc="${id}">この書の中を検索</button>${DATA.gallery[id]?`<button class="chip" type="button" data-gallery="${id}">宝物庫で見る</button>`:""}</div>`:""}
+    <h4 class="d-h">Profile · どのような文書か</h4>
+    <p class="d-prof">${esc(d.ja)}</p>
+    <p class="d-prof en">${esc(d.en)}</p>
+    ${d.holds&&d.holds.length?`<h4 class="d-h">${s==="root"?"Contents · 収録":"Holds · 管理対象"}</h4><ul class="d-holds">${d.holds.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>`:""}
+    ${ents}
+    ${toc}
+    ${s==="KN"?`<h4 class="d-h">Publication · 発行</h4><p class="d-prof">KN 四系列の発行物は Claude Artifact としてのみ発行し、記録は DB-001 の KN Publication Log に残す（OP-008 §28）。</p>`:""}
+    ${rels?`<h4 class="d-h">Branches · 定められた関係</h4><ul class="d-rel">${rels}</ul>`:""}
+    ${s!=="root"?`<h4 class="d-h">Mentions out · この文書が触れる</h4>${bars(d.refs)}<h4 class="d-h">Mentions in · この文書に触れる</h4>${bars(INC[id])}`:""}`;
+}
+function select(id,user){
+  if(current!==id)tocAll=false;
+  current=id; render(id); highlight(id);
+  if(user){
+    if(matchMedia("(max-width:1180px)").matches) dossier.classList.add("open");
+    dossier.scrollTop=0;
+    try{history.replaceState(null,"","#"+id)}catch(e){}
+  }
+}
+document.addEventListener("click",e=>{
+  const go=e.target.closest("[data-go]");
+  if(go){
+    if(typeof S!=="undefined"&&S.open)sClose();
+    select(go.dataset.go,true);
+    if(!e.target.closest("#liber-2") && !matchMedia("(max-width:1180px)").matches){
+      $("liber-2").scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"});
+    }
+    return;
+  }
+  if(e.target.closest("[data-more]")){const st=dossier.scrollTop;tocAll=!tocAll;render(current);dossier.scrollTop=st;return}
+  if(e.target.closest("[data-close]")) dossier.classList.remove("open");
+});
+document.addEventListener("keydown",e=>{if(e.key==="Escape")dossier.classList.remove("open")});
+
+/* ---------- legend ---------- */
+(function(){
+  const orb=(c,ring)=>`<svg width="30" height="30" viewBox="-15 -15 30 30"><circle r="7" fill="${c}" opacity=".95"/><circle r="12" fill="${c}" opacity=".16"/>${ring||""}</svg>`;
+  $("lg-series").innerHTML=Object.entries(SERIES).map(([k,v])=>`<li>${orb(COLOR[k])}<span>${k} · ${v.name}<small>${v.ja} · ${v.note}</small></span></li>`).join("");
+  const R=(extra)=>`<circle r="11" fill="none" stroke="#f6dca0" stroke-width="1" ${extra||""}/>`;
+  $("lg-auth").innerHTML=[
+    ["SSOT","唯一の正本",R()+`<circle r="14.5" fill="none" stroke="#f6dca0" stroke-width="1"/>`],
+    ["Standard","プロジェクト標準",R()],
+    ["Reference","補足・参考資料",R('stroke-dasharray="4 3"')],
+    ["Archive","履歴として保存",R('stroke-dasharray="1 3" stroke-linecap="round" stroke-width="1.6"')]
+  ].map(([a,j,r])=>`<li>${orb("#d6a74e",r)}<span>${a}<small>${j} · ${DATA.docs.filter(d=>d.authority===a).length} docs</small></span></li>`).join("");
+  $("lg-vol").innerHTML=[
+    ["Static","静止","原則更新されない（規則・原典・編集方針）"],
+    ["Periodic","ゆっくり呼吸する","決定の変化時に更新する"],
+    ["Living","炎のように揺らぐ","台帳・リスト。頻繁に更新される"]
+  ].map(([v,a,j])=>`<li><svg width="30" height="30" viewBox="-15 -15 30 30"><g class="v-${v}"><circle class="halo" r="13" fill="#f07a3a" opacity=".26" style="transform-box:fill-box;transform-origin:center"/></g><circle r="6" fill="#f7c79a"/></svg><span>${v} · ${a}<small>${j} · ${DATA.docs.filter(d=>d.volatility===v).length} docs</small></span></li>`).join("");
+  $("lg-paths").innerHTML=`
+    <li><svg width="30" height="12" viewBox="0 0 30 12"><path d="M1,9 Q15,1 29,9" fill="none" stroke="#d6a74e" stroke-width="1.2"/></svg><span>責任の受け渡し<small>文書に明記された関係 · ${EDGES.filter(e=>!e[4]).length} branches</small></span></li>
+    <li><svg width="30" height="12" viewBox="0 0 30 12"><path d="M1,9 Q15,1 29,9" fill="none" stroke="#d6a74e" stroke-width="1.2" stroke-dasharray="2 3"/></svg><span>情報階層の流れ<small>OP-001 §12</small></span></li>
+    <li><svg width="30" height="12" viewBox="0 0 30 12"><path d="M1,10 Q15,-4 29,10" fill="none" stroke="#a38ad6" stroke-width="2" opacity=".6"/></svg><span>言及の糸<small>太さは言及回数の平方根</small></span></li>
+    <li><svg width="30" height="30" viewBox="-15 -15 30 30"><rect x="-7" y="-7" width="14" height="14" transform="rotate(45)" fill="none" stroke="#f6dca0"/></svg><span>Roots · 支え<small>archive/ と scripts/</small></span></li>`;
+  /* Lex class counts */
+  const cnt=(k,v)=>DATA.docs.filter(d=>d[k]===v).length;
+  $("kv-auth").innerHTML=[["SSOT","唯一の正本。唯一の管理元となる文書"],["Standard","プロジェクト標準を定義する文書"],["Reference","補足資料・参考資料"],["Archive","過去の履歴として保存する文書"]]
+    .map(([a,j])=>`<li><b>${a}</b><span>${j}</span><i>${cnt("authority",a)}</i></li>`).join("");
+  $("kv-vol").innerHTML=[["Static","原則更新されない（規則・原典・編集方針）"],["Periodic","決定の変化時に更新する"],["Living","台帳・リスト。頻繁に更新される前提"]]
+    .map(([a,j])=>`<li><b>${a}</b><span>${j}</span><i>${cnt("volatility",a)}</i></li>`).join("");
+})();
+
+/* ---------- Canon (catalogue) ---------- */
+(function(){
+  let html="", lastTier=null;
+  ORDER.forEach(id=>{
+    const d=DOCS[id], t=tierOf(id);
+    if(t!==lastTier){lastTier=t;const th=t?TIERS[t]:{en:"Unplaced",ja:"樹に未配置"};html+=`<div class="tier-h"><span class="rn">${t||"—"}</span><span><b>${th.en}</b><small>${th.ja}</small></span></div>`}
+    html+=`<button class="crow" data-go="${id}" aria-label="${id} ${esc(d.title)} を樹で開く">
+      <span class="cid" style="color:${COLOR[d.series]}">${id}</span>
+      <span class="ct"><b>${esc(d.title)}</b><span>${esc(d.summary)}</span></span>
+      <span class="meta"><span>${d.authority}</span><span>${d.volatility}</span><span class="ver">v${d.version}</span><span class="ln">${d.lines.toLocaleString("en")}</span></span>
+    </button>`;
+  });
+  $("canon").innerHTML=html;
+  /* census */
+  const e4=DOCS["MD-004"].entries, e3=DOCS["MD-003"].entries, lex=DATA.lexicon;
+  const sum=o=>Object.values(o).reduce((a,b)=>a+b,0);
+  const lexObj={}; lex.forEach(([k,v])=>lexObj[k]=v);
+  $("census").innerHTML=`
+    <div><div class="big">${sum(e4)}</div><div class="lab cap">MD-004 · objects in six domains</div>${bars(e4,false,{c:COLOR.MD,map:DOMAINS})}</div>
+    <div><div class="big">${sum(e3)}</div><div class="lab cap">MD-003 · kitchen items (KIT)</div>${bars(e3,false,{c:COLOR.MD,map:DOMAINS})}
+      <p class="note">Kitchen Domain は MD-004 の対象外。実用性を優先した別基準で、MD-003 が完結管理する。</p></div>
+    <div><div class="big">${sum(lexObj)}</div><div class="lab cap">OP-003 · words in ${lex.length} vocabularies</div>${bars(lexObj,false,{c:COLOR.OP,map:{}})}</div>`;
+})();
+
+/* ---------- strata ---------- */
+(function(){
+  const S=[
+    ["D","設計","Design","DS","絶対不変。THE THIRD PLACE の不変の思想原典を保持する。通常の意思決定プロセスによる改訂を前提としない。",["DS"]],
+    ["O","運用","Operation","OP","定義。不変だが改訂の可能性あり。Constitution・Design Philosophy・Design Rules・Vocabulary / Grammar・Documentation Governance・Research Methodology を定義し、個別データの入れ替えは伴わない。",["OP"]],
+    ["R","記録","Record","DB · MD · BR · CZ · KN","可変。運用データ・所有物・意思決定・アーカイブを保持する。設計思想そのものは定義しない。",["DB","MD","BR","CZ","KN"]]
+  ];
+  $("strata").innerHTML=S.map(([g,ja,en,ser,p,list])=>{
+    const docs=ORDER.map(i=>DOCS[i]).filter(d=>list.includes(d.series));
+    return `<div class="stratum"><div class="glyph gild">${g}</div><h3>${ja}<small>${en} · ${ser}</small></h3><p>${p}</p><div class="chips">${docs.map(d=>chip(d.id)).join("")}</div></div>`}).join("");
+})();
+
+/* ---------- DOC rules ---------- */
+(function(){
+  const R=[
+    ["記録系列は、プロジェクト運用のみを対象とする。設計思想・原典は保持しない。"],
+    ["DS・OP・記録の責任範囲を侵害してはならない。"],
+    ["Project Ledger はプロジェクトの運用状況を、Documentation System は運用ルールを管理する。両者の役割を混在させてはならない。"],
+    ["正式文書は必ず Documentation System に従う。例外を設けない。"],
+    ["すべての文書は References を用いて相互参照する。本文の複製は禁止する。"],
+    ["文書カタログは OP-008 §8 を唯一の正本とする。Project Ledger は Current Focus・Conversation・Inbox 等の運用情報を管理する。"],
+    ["Conversation は履歴として保持する。チャットを削除した場合でも、Project Ledger 上では履歴を残すことを推奨する。"],
+    ["Project Ledger は Living Document として、Documentation System は Standard Document として運用する。"],
+    ["Revision History が一定規模を超えた場合、直近の履歴のみを本文に残し、それ以前を archive/{Document ID}_Version_History_Archive.md へ移設できる。原文のまま保持し、要約・削除はしない。"]
+  ];
+  $("doc-rules").innerHTML=R.map(([t],i)=>`<li><span class="vn">DOC-0${i+1}</span><span>${esc(t)}</span></li>`).join("");
+})();
+
+/* ---------- concordance + archive ---------- */
+(function(){
+  const groups={TP:[],PX:[],TM:[]};
+  ORDER.forEach(id=>{const o=DOCS[id].old; if(o&&groups[o.slice(0,2)])groups[o.slice(0,2)].push([o,id])});
+  const name={TP:"TP 系列",PX:"PX 系列",TM:"TM 系列"};
+  const fresh=ORDER.filter(id=>!DOCS[id].old);
+  $("concord").innerHTML=Object.entries(groups).map(([k,arr])=>{
+    arr.sort((a,b)=>a[0].localeCompare(b[0]));
+    return `<div><h4>${k}<small>${name[k]} · ${arr.length}</small></h4><ul>${arr.map(([o,n])=>`<li><span class="o">${o}</span><span class="ar">→</span><button data-go="${n}" style="color:${colorOf(n)}">${n}</button><span class="t">${esc(DOCS[n].title)}</span></li>`).join("")}</ul>
+      ${k==="TM"&&fresh.length?`<ul style="margin-top:18px">${fresh.map(n=>`<li><span class="o" style="text-decoration:none">—</span><span class="ar">→</span><button data-go="${n}" style="color:${colorOf(n)}">${n}</button><span class="t">${esc(DOCS[n].title)}</span></li>`).join("")}</ul>`:""}</div>`}).join("");
+  $("archive-list").innerHTML=DATA.archive.map(f=>{const id=f.slice(0,6);return `<li><code>archive/${esc(f)}</code><span>${esc(id)} ${esc(DOCS[id]?DOCS[id].title:"")} の旧 Revision History</span></li>`}).join("");
+})();
+
+/* ---------- matrix ---------- */
+(function(){
+  const m=$("matrix"), N=IDS.length, cs=24, off=64, top=64;
+  const W=off+N*cs+8, H=top+N*cs+8;
+  m.setAttribute("viewBox",`0 0 ${W} ${H}`);
+  let max=0; DATA.docs.forEach(d=>Object.values(d.refs).forEach(v=>max=Math.max(max,v)));
+  const ramp=["#241d12","#6d4f22","#b98a3e","#e8c47c","#fff1cf"];
+  const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+  const mix=(t)=>{const s=t*(ramp.length-1), i=Math.min(ramp.length-2,Math.floor(s)), f=s-i, a=hex(ramp[i]), b=hex(ramp[i+1]);return `rgb(${a.map((v,k)=>Math.round(v+(b[k]-v)*f)).join(",")})`};
+  const rowLab=[], colLab=[];
+  IDS.forEach((id,i)=>{
+    const r=el("text",{x:off-8,y:top+i*cs+cs/2+3.5,"text-anchor":"end"},m); r.textContent=id; rowLab.push(r);
+    const c=el("text",{transform:`translate(${off+i*cs+cs/2+3},${top-8}) rotate(-60)`},m); c.textContent=id; colLab.push(c);
+    el("rect",{x:off-4,y:top+i*cs+cs/2-3,width:3,height:6,fill:COLOR[id.slice(0,2)]},m);
+    el("rect",{x:off+i*cs+cs/2-3,y:top-4,width:6,height:3,fill:COLOR[id.slice(0,2)]},m);
+  });
+  const tip=$("tip");
+  IDS.forEach((a,i)=>IDS.forEach((b,j)=>{
+    if(i===j){el("rect",{x:off+j*cs,y:top+i*cs,width:cs,height:cs,class:"diag"},m);return}
+    const v=DOCS[a].refs[b]||0; if(!v)return;
+    const r=el("rect",{x:off+j*cs,y:top+i*cs,width:cs,height:cs,rx:2,class:"cell",fill:mix(Math.sqrt(v/max))},m);
+    const show=e=>{tip.hidden=false;tip.innerHTML=`${a} → ${b}<b>${v}</b>`;tip.style.left=Math.min(innerWidth-190,e.clientX+14)+"px";tip.style.top=(e.clientY+14)+"px";rowLab[i].classList.add("on");colLab[j].classList.add("on")};
+    r.addEventListener("mousemove",show);
+    r.addEventListener("mouseleave",()=>{tip.hidden=true;rowLab[i].classList.remove("on");colLab[j].classList.remove("on")});
+    r.addEventListener("click",()=>{tip.hidden=true;select(a,true);if(!matchMedia("(max-width:1180px)").matches)$("liber-2").scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"})});
+  }));
+  const inc={}; IDS.forEach(i=>inc[i]=Object.values(INC[i]).reduce((x,y)=>x+y,0));
+  const most=Object.entries(inc).sort((x,y)=>y[1]-x[1])[0];
+  let pair=["","",0]; DATA.docs.forEach(d=>Object.entries(d.refs).forEach(([k,v])=>{if(v>pair[2])pair=[d.id,k,v]}));
+  const reach=DATA.docs.filter(d=>Object.keys(d.refs).length===N-1).map(d=>d.id);
+  $("notes").innerHTML=`
+    <div class="tnote"><div class="big">${most[1]}</div><div class="lab">${most[0]} · most mentioned</div><p>${DOCS[most[0]].title}。他の文書から最も多く名を呼ばれる書。</p></div>
+    <div class="tnote"><div class="big">${pair[2]}</div><div class="lab">${pair[0]} → ${pair[1]} · strongest thread</div><p>${DOCS[pair[0]].title} から ${DOCS[pair[1]].title} へ。最も太い一本の糸。</p></div>
+    <div class="tnote"><div class="big">${reach.length}</div><div class="lab">${reach.length?reach.join(" · "):"—"} · reach all</div><p>${reach.length?`他の ${N-1} 文書すべてに触れる書。`:`他のすべての文書に触れる書は、いまはない。`}</p></div>
+    <div class="scale"><span>1</span><i></i><span>${max}</span></div>`;
+})();
+
+/* ---------- Thesaurus (gallery) ---------- */
+const G={reg:"MD-004",dom:"All",st:"All",q:""};
+const REGS={"MD-004":{name:"Objects",ja:"装備"},"MD-003":{name:"Galley",ja:"キッチン"}};
+const ST_ORDER=["Owned","Essential","Candidate","Upgrade"];
+const normT=s=>String(s||"").normalize("NFKC").toLowerCase();
+const stKey=s=>ST_ORDER.includes(s)?s:"Retired";
+function gRender(){
+  const all=DATA.gallery[G.reg]||[];
+  $("g-tabs").innerHTML=Object.entries(REGS).filter(([k])=>DATA.gallery[k]).map(([k,v])=>`<button class="g-tab" role="tab" type="button" aria-selected="${k===G.reg}" data-greg="${k}"><b>${v.name}</b><span>${k} · ${v.ja} · ${DATA.gallery[k].length}</span></button>`).join("");
+  const doms=[...new Set(all.map(e=>e.domain))];
+  if(G.dom!=="All"&&!doms.includes(G.dom))G.dom="All";
+  const count=(arr,f)=>arr.filter(f).length;
+  $("g-dom").innerHTML=(doms.length>1?["All",...doms]:[]).map(d=>`<button class="chip" type="button" aria-pressed="${G.dom===d}" data-gdom="${esc(d)}">${d==="All"?"All domains":esc(d)} <small>${d==="All"?all.length:count(all,e=>e.domain===d)}</small></button>`).join("");
+  const inDom=all.filter(e=>G.dom==="All"||e.domain===G.dom);
+  const sts=["All",...ST_ORDER.filter(s=>inDom.some(e=>e.status===s)),...(inDom.some(e=>stKey(e.status)==="Retired")?["Retired"]:[])];
+  if(!sts.includes(G.st))G.st="All";
+  $("g-st").innerHTML=sts.map(s=>`<button class="chip" type="button" aria-pressed="${G.st===s}" data-gst="${s}">${s==="All"?"All statuses":s} <small>${s==="All"?inDom.length:count(inDom,e=>stKey(e.status)===s)}</small></button>`).join("");
+  const q=normT(G.q).split(/\s+/).filter(Boolean);
+  const list=inDom.filter(e=>(G.st==="All"||stKey(e.status)===G.st)&&(!q.length||q.every(w=>normT([e.id,e.brand,e.product,e.material,e.color,e.industrial,e.graphic,e.domain,e.status,e.note,e.alias].join(" ")).includes(w))));
+  $("g-count").textContent=`${list.length} / ${all.length} entries · ${G.reg}`;
+  $("g-grid").innerHTML=list.length?list.map(objCard).join(""):`<p class="g-empty">条件に合う札はない。絞り込みを緩めてください。</p>`;
+}
+function objCard(e){
+  const k=stKey(e.status), arch=k==="Retired";
+  const row=(l,v)=>v&&v!=="None"?`<div><dt>${l}</dt><dd>${esc(v)}</dd></div>`:"";
+  const btns=arr=>arr.map(x=>`<button class="chip" type="button" data-obj="${esc(x)}">${esc(x)}</button>`).join("");
+  const rel=[];
+  if(e.parent)rel.push(`<span class="lab">Parent</span>${btns(e.parent.split(/\s*\/\s*/))}`);
+  if(e.children&&e.children.length)rel.push(`<span class="lab">Children</span>${btns(e.children)}`);
+  return `<article class="obj${arch?" dim":""}" id="obj-${esc(e.id)}">
+    <header><span class="oid">${esc(e.id)}</span><i class="pill st-${arch?"Retired":k}">${esc(e.status)}</i></header>
+    ${arch?`<p class="onote">${esc(e.note||"")}</p>`:`<h4>${esc(e.product||"—")}</h4><p class="obr">${esc(e.brand||"")}</p>
+    <dl>${row("Material",e.material)}${row("Colour",e.color)}${row("Industrial",e.industrial)}${row("Graphic",e.graphic)}${row("Quantity",e.quantity)}${row("Price",e.price)}</dl>`}
+    <p class="odom">${esc(e.domain||"")}</p>
+    ${rel.length?`<div class="rel">${rel.join("")}</div>`:""}
+  </article>`;
+}
+function gotoObj(id){
+  const reg=Object.keys(DATA.gallery).find(k=>DATA.gallery[k].some(e=>e.id===id));
+  if(!reg){$("g-count").textContent=`${id} は台帳に見当たらない`;return}
+  Object.assign(G,{reg,dom:"All",st:"All",q:""}); $("g-q").value=""; gRender();
+  const card=$("obj-"+id); if(!card)return;
+  card.scrollIntoView({behavior:reduce?"auto":"smooth",block:"center"});
+  card.classList.add("flash"); setTimeout(()=>card.classList.remove("flash"),1800);
+}
+$("g-q").addEventListener("input",e=>{G.q=e.target.value;gRender()});
+gRender();
+
+/* ---------- Concordantia (full-text search) ---------- */
+const S={scope:"All",doc:null,limit:120,index:null,hits:[],terms:[],per:{},shown:0,open:false};
+const SCOPES=["All","DS","OP","DB","MD","BR","CZ","KN","ARCHIVE"];
+const EXAMPLES=["SSOT","Human Principles","Kermit","判断"];
+function sIndex(){
+  if(S.index)return S.index;
+  S.index=DATA.corpus.map(c=>{
+    const lines=c.text.split("\n"), head=[]; let h="";
+    lines.forEach(l=>{const m=l.match(/^#{1,4}\s+(.*)$/); if(m)h=m[1].replace(/\*\*/g,"").trim(); head.push(h)});
+    return {id:c.id,path:c.path,key:c.id==="ARCHIVE"?c.path:c.id,series:c.id==="ARCHIVE"?"ARCHIVE":c.id.slice(0,2),lines,head,norm:lines.map(l=>l.normalize("NFKC").toLowerCase())};
+  });
+  return S.index;
+}
+const cleanLine=l=>l.replace(/^#{1,6}\s+/,"").replace(/\*\*/g,"").replace(/`/g,"").replace(/^\s*[-*]\s+/,"").replace(/^\s*\|\s*|\s*\|\s*$/g,"").replace(/\s*\|\s*/g," · ").trim();
+function hl(s,terms){
+  const low=s.toLowerCase(), marks=[];
+  terms.forEach(w=>{let i=0;while((i=low.indexOf(w,i))>-1){marks.push([i,i+w.length]);i+=w.length}});
+  marks.sort((a,b)=>a[0]-b[0]); let out="",p=0;
+  for(const [a,b] of marks){if(a<p)continue;out+=esc(s.slice(p,a))+"<mark>"+esc(s.slice(a,b))+"</mark>";p=b}
+  return out+esc(s.slice(p));
+}
+function snip(s,terms){
+  if(s.length<=180)return s;
+  const low=s.toLowerCase(); let i=Math.min(...terms.map(w=>{const k=low.indexOf(w);return k<0?Infinity:k})); if(!isFinite(i))i=0;
+  const st=Math.max(0,i-60); return (st>0?"…":"")+s.slice(st,st+180)+(st+180<s.length?"…":"");
+}
+const hitColor=d=>d.id==="ARCHIVE"?"#e8dcc4":COLOR[d.series];
+function sScope(){
+  $("seek-scope").innerHTML=(S.doc?[`<button class="chip" type="button" aria-pressed="true" data-sdoc="">${esc(S.doc)} のみ ×</button>`]:[])
+    .concat(SCOPES.map(s=>`<button class="chip" type="button" aria-pressed="${!S.doc&&S.scope===s}" data-sscope="${s}">${s==="All"?"All books":s==="ARCHIVE"?"archive/":s}</button>`)).join("");
+}
+function sRun(){
+  const idx=sIndex();
+  S.terms=$("seek-q").value.normalize("NFKC").toLowerCase().split(/\s+/).filter(Boolean);
+  S.hits=[]; S.per={};
+  if(S.terms.length) idx.forEach((d,di)=>{
+    if(S.doc&&d.key!==S.doc)return;
+    if(!S.doc&&S.scope!=="All"&&d.series!==S.scope)return;
+    d.norm.forEach((l,i)=>{if(S.terms.every(w=>l.includes(w))&&cleanLine(d.lines[i])){S.per[d.key]=(S.per[d.key]||0)+1;S.hits.push([di,i])}});
+  });
+  sScope(); sRender(true);
+}
+function sRender(reset){
+  const res=$("seek-res"), idx=S.index;
+  if(reset){res.innerHTML="";S.shown=0}
+  if(!S.terms.length){
+    $("seek-sum").innerHTML=`${DATA.corpus.length} files · ${idx.reduce((a,d)=>a+d.lines.length,0).toLocaleString("en")} lines を検索できる`;
+    $("seek-docs").innerHTML=`<span class="lab" style="align-self:center">例</span>`+EXAMPLES.map(w=>`<button class="chip" type="button" data-sq="${esc(w)}">${esc(w)}</button>`).join("");
+    $("seek-more").hidden=true; return;
+  }
+  const books=Object.keys(S.per).length;
+  $("seek-sum").textContent=S.hits.length?`${S.hits.length.toLocaleString("en")} lines · ${books} ${books===1?"book":"books"}`:"見つからない。語を減らすか、範囲を広げてください。";
+  if(reset){
+    const byKey={}; idx.forEach(d=>byKey[d.key]=d);
+    $("seek-docs").innerHTML=Object.entries(S.per).sort((a,b)=>b[1]-a[1]).map(([k,n])=>`<button class="chip" type="button" data-sdoc="${esc(k)}" aria-pressed="${S.doc===k}"><i style="background:${hitColor(byKey[k])}"></i>${esc(byKey[k].id==="ARCHIVE"?k.replace("archive/","").replace("_Version_History_Archive.md"," archive"):k)} <small>${n}</small></button>`).join("");
+  }
+  const chunk=S.hits.slice(S.shown,S.shown+S.limit);
+  res.insertAdjacentHTML("beforeend",chunk.map(([di,i],k)=>{const d=idx[di];
+    return `<li><button class="s-hit" type="button" data-hit="${S.shown+k}" aria-expanded="false"><span class="h-id" style="color:${hitColor(d)}">${esc(d.id)}</span><span class="h-loc">${esc(d.head[i]||d.path)} · L${i+1}</span><span class="h-txt">${hl(snip(cleanLine(d.lines[i]),S.terms),S.terms)}</span></button></li>`}).join(""));
+  S.shown+=chunk.length; $("seek-more").hidden=S.shown>=S.hits.length;
+}
+function sContext(btn){
+  const li=btn.parentElement, open=btn.getAttribute("aria-expanded")==="true";
+  const old=li.querySelector(".ctx"); if(old)old.remove();
+  btn.setAttribute("aria-expanded",String(!open)); if(open)return;
+  const [di,i]=S.hits[+btn.dataset.hit], d=S.index[di];
+  const from=Math.max(0,i-4), to=Math.min(d.lines.length,i+7);
+  const lines=d.lines.slice(from,to).map((l,k)=>{const n=from+k, txt=hl(l,S.terms);return `<i>${n+1}</i>${n===i?`<b>${txt}</b>`:txt}`}).join("\n");
+  const gh=`https://github.com/${DATA.meta.repo}/blob/main/${d.path.split("/").map(encodeURIComponent).join("/")}#L${i+1}`;
+  li.insertAdjacentHTML("beforeend",`<div class="ctx"><pre>${lines}</pre><div class="acts">${d.id!=="ARCHIVE"?`<button class="chip" type="button" data-go="${d.id}">樹で開く</button>`:""}<a class="chip" href="${gh}" target="_blank" rel="noopener">GitHub で開く · L${i+1}</a></div></div>`);
+}
+let sReturn=null, sTimer=0;
+function sOpen(doc){
+  S.open=true; sReturn=document.activeElement; S.doc=doc||null;
+  $("seek").hidden=false; document.documentElement.style.overflow="hidden";
+  const q=$("seek-q"); q.focus(); q.select(); sRun();
+}
+function sClose(){
+  if(!S.open)return; S.open=false; $("seek").hidden=true; document.documentElement.style.overflow="";
+  if(sReturn&&sReturn.focus&&document.contains(sReturn))sReturn.focus();
+}
+$("seek-q").addEventListener("input",()=>{clearTimeout(sTimer);sTimer=setTimeout(sRun,140)});
+$("seek-more").addEventListener("click",()=>sRender(false));
+$("seek").addEventListener("click",e=>{if(e.target===$("seek"))sClose()});
+
+document.addEventListener("click",e=>{
+  const b=e.target.closest("[data-greg],[data-gdom],[data-gst],[data-obj],[data-gallery],[data-seek-open],[data-seek-close],[data-seek-doc],[data-sscope],[data-sdoc],[data-sq],[data-hit]");
+  if(!b)return;
+  const ds=b.dataset;
+  if(ds.greg!==undefined){Object.assign(G,{reg:ds.greg,dom:"All",st:"All"});gRender();return}
+  if(ds.gdom!==undefined){G.dom=ds.gdom;gRender();return}
+  if(ds.gst!==undefined){G.st=ds.gst;gRender();return}
+  if(ds.obj!==undefined){gotoObj(ds.obj);return}
+  if(ds.gallery!==undefined){Object.assign(G,{reg:ds.gallery,dom:"All",st:"All",q:""});$("g-q").value="";gRender();dossier.classList.remove("open");$("liber-4").scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"});return}
+  if(ds.seekOpen!==undefined){sOpen(null);return}
+  if(ds.seekDoc!==undefined){sOpen(ds.seekDoc);return}
+  if(ds.seekClose!==undefined){sClose();return}
+  if(ds.sscope!==undefined){S.scope=ds.sscope;S.doc=null;sRun();return}
+  if(ds.sdoc!==undefined){S.doc=ds.sdoc&&S.doc!==ds.sdoc?ds.sdoc:null;sRun();return}
+  if(ds.sq!==undefined){$("seek-q").value=ds.sq;sRun();return}
+  if(ds.hit!==undefined){sContext(b);return}
+});
+document.addEventListener("keydown",e=>{
+  if(S.open&&e.key==="Escape"){e.preventDefault();sClose();return}
+  const typing=/^(INPUT|TEXTAREA|SELECT)$/.test((e.target.tagName||""))||e.target.isContentEditable;
+  if(!S.open&&((e.key==="/"&&!typing)||((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"))){e.preventDefault();sOpen(null)}
+});
+
+/* ---------- thumb index: mark the book in view ---------- */
+(function(){
+  const tabs=[...document.querySelectorAll(".thumbs a")];
+  if(!("IntersectionObserver" in window))return;
+  const io=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){const id=en.target.id;tabs.forEach(t=>t.classList.toggle("on",t.getAttribute("href")==="#"+id))}})},{rootMargin:"-45% 0px -50% 0px"});
+  document.querySelectorAll(".liber").forEach(s=>io.observe(s));
+})();
+
+/* initial selection */
+(function(){
+  let h=""; try{h=decodeURIComponent(location.hash.slice(1))}catch(e){}
+  if(DOCS[h]) select(h,false); else { current=null; render("DS-001"); }
+})();
+
+/* ---------- photographic sky (WebGL) ---------- */
+(function(){
+  const c=$("sky");
+  const gl=c.getContext("webgl",{antialias:false,premultipliedAlpha:false});
+  if(!gl)return;
+  const vs=`attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}`;
+  const fs=`precision highp float;
+  uniform vec2 R;uniform float T;uniform float S;
+  float h(vec2 p){p=fract(p*vec2(123.34,456.21));p+=dot(p,p+45.32);return fract(p.x*p.y);}
+  float n(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h(i),h(i+vec2(1,0)),f.x),mix(h(i+vec2(0,1)),h(i+vec2(1,1)),f.x),f.y);}
+  float fbm(vec2 p){float v=0.,a=.5;for(int i=0;i<6;i++){v+=a*n(p);p=p*2.03+vec2(1.7,9.2);a*=.5;}return v;}
+  float ridge(float x,float seed,float amp,float fr){float v=0.,a=1.;for(int i=0;i<5;i++){float k=n(vec2(x*fr+seed,seed));v+=a*(1.-abs(k*2.-1.));x*=2.1;a*=.45;}return v*amp;}
+  void main(){
+    vec2 uv=gl_FragCoord.xy/R; float asp=R.x/R.y;
+    float cam=mix(.62,-.02,S);
+    float y=uv.y+cam; vec2 q=vec2(uv.x*asp,y);
+    vec3 zen=vec3(.020,.024,.045), mid=vec3(.060,.070,.115), hor=vec3(.42,.22,.11);
+    float hy=.30;
+    vec3 col=mix(mid,zen,smoothstep(.35,1.25,y));
+    col=mix(hor*.9,col,smoothstep(hy-.05,hy+.36,y));
+    vec2 sun=vec2(.80*asp,hy-.01);
+    float sd=length((q-sun)*vec2(.55,1.2));
+    col+=vec3(1.,.55,.24)*.55*exp(-sd*5.5)+vec3(1.,.8,.5)*.35*exp(-sd*28.);
+    vec2 sg=q*vec2(180.,180.); vec2 id=floor(sg); float st=h(id);
+    float tw=.6+.4*sin(T*1.7+st*40.);
+    float star=step(.9965,st)*smoothstep(.5,.0,length(fract(sg)-.5))*tw;
+    col+=vec3(.95,.92,1.)*star*smoothstep(.38,.7,y)*1.4;
+    float mw=fbm(q*2.2+vec2(T*.004,0.))*smoothstep(.5,1.1,y);
+    col+=vec3(.16,.15,.22)*pow(mw,2.4)*.9;
+    float cl=fbm(vec2(q.x*1.6+T*.012,y*4.2));
+    float band=smoothstep(.34,.62,y)*(1.-smoothstep(.62,.86,y));
+    float cm=smoothstep(.48,.78,cl)*band;
+    vec3 lit=mix(vec3(.10,.08,.10),vec3(.95,.52,.26),exp(-abs(q.x-sun.x)*1.1)*smoothstep(.62,.36,y));
+    col=mix(col,lit,cm*.78);
+    float x=uv.x*asp;
+    float m1=hy+.03+ridge(x,3.1,.10,1.2);
+    float m2=hy-.01+ridge(x+.4,7.7,.085,1.8);
+    float m3=hy-.07+ridge(x+1.3,12.3,.09,2.6);
+    vec3 fog=vec3(.30,.20,.16);
+    col=mix(col,mix(vec3(.09,.08,.11),fog,.55),smoothstep(m1+.002,m1-.002,y));
+    col=mix(col,mix(vec3(.05,.05,.07),fog,.28),smoothstep(m2+.002,m2-.002,y));
+    col=mix(col,vec3(.018,.019,.026),smoothstep(m3+.002,m3-.002,y));
+    col+=vec3(.35,.22,.16)*smoothstep(.006,0.,abs(y-m1+.004))*.25;
+    float mist=fbm(vec2(x*1.4-T*.018,y*6.+T*.01));
+    float mz=smoothstep(hy+.02,hy-.22,y);
+    col=mix(col,vec3(.22,.20,.24),mist*mz*.55);
+    float lake=smoothstep(m3-.03,m3-.05,y)*smoothstep(hy-.40,hy-.20,y);
+    col+=vec3(1.,.58,.28)*lake*.10*exp(-abs(q.x-sun.x)*2.)*(.6+.4*n(vec2(x*40.,y*300.+T)));
+    vec2 v=uv-.5; col*=1.-dot(v,v)*.9;
+    col=pow(col,vec3(.92)); col=col/(1.+col*.25);
+    gl_FragColor=vec4(col,1.);
+  }`;
+  const sh=(t,s)=>{const o=gl.createShader(t);gl.shaderSource(o,s);gl.compileShader(o);return o};
+  const pr=gl.createProgram();gl.attachShader(pr,sh(gl.VERTEX_SHADER,vs));gl.attachShader(pr,sh(gl.FRAGMENT_SHADER,fs));gl.linkProgram(pr);
+  if(!gl.getProgramParameter(pr,gl.LINK_STATUS))return;
+  gl.useProgram(pr);
+  const b=gl.createBuffer();gl.bindBuffer(gl.ARRAY_BUFFER,b);gl.bufferData(gl.ARRAY_BUFFER,new Float32Array([-1,-1,3,-1,-1,3]),gl.STATIC_DRAW);
+  const loc=gl.getAttribLocation(pr,"p");gl.enableVertexAttribArray(loc);gl.vertexAttribPointer(loc,2,gl.FLOAT,false,0,0);
+  const uR=gl.getUniformLocation(pr,"R"),uT=gl.getUniformLocation(pr,"T"),uS=gl.getUniformLocation(pr,"S");
+  let sc=0, target=0;
+  const size=()=>{const k=.55;c.width=Math.max(2,Math.round(innerWidth*k));c.height=Math.max(2,Math.round(innerHeight*k));gl.viewport(0,0,c.width,c.height)};
+  const prog=()=>{const m=document.documentElement.scrollHeight-innerHeight;target=m>0?Math.min(1,Math.max(0,scrollY/m)):0};
+  size();prog();sc=target;
+  addEventListener("resize",()=>{size();prog()});addEventListener("scroll",prog,{passive:true});
+  const t0=performance.now();
+  const frame=now=>{
+    sc+=(target-sc)*.06;
+    gl.uniform2f(uR,c.width,c.height);gl.uniform1f(uT,(now-t0)/1000);gl.uniform1f(uS,sc);
+    gl.drawArrays(gl.TRIANGLES,0,3);
+    if(!reduce)requestAnimationFrame(frame);
+  };
+  if(reduce){addEventListener("scroll",()=>{prog();sc=target;frame(performance.now())},{passive:true});addEventListener("resize",()=>frame(performance.now()))}
+  requestAnimationFrame(frame);
+})();
+
+/* ---------- bokeh motes ---------- */
+(function(){
+  const c=$("motes"), x=c.getContext("2d"); if(!x)return;
+  let W,H,dpr; const P=[];
+  const size=()=>{dpr=Math.min(2,devicePixelRatio||1);W=innerWidth;H=innerHeight;c.width=W*dpr;c.height=H*dpr;x.setTransform(dpr,0,0,dpr,0,0)};
+  size(); addEventListener("resize",size);
+  const hues=["255,196,120","255,160,90","246,220,160","200,210,255"];
+  for(let i=0;i<46;i++){
+    const far=Math.random()<.72;
+    P.push({x:Math.random()*W,y:Math.random()*H,r:far?1+Math.random()*2.4:14+Math.random()*34,a:far?.35+Math.random()*.5:.035+Math.random()*.06,
+      vx:(Math.random()-.5)*.12,vy:-(.05+Math.random()*.22),c:hues[i%hues.length],ph:Math.random()*6.28});
+  }
+  const draw=t=>{
+    x.clearRect(0,0,W,H);
+    x.globalCompositeOperation="lighter";
+    for(const p of P){
+      p.x+=p.vx+Math.sin(t/3000+p.ph)*.08; p.y+=p.vy;
+      if(p.y<-60){p.y=H+60;p.x=Math.random()*W}
+      if(p.x<-60)p.x=W+60; if(p.x>W+60)p.x=-60;
+      const fl=p.a*(.75+.25*Math.sin(t/700+p.ph));
+      const g=x.createRadialGradient(p.x,p.y,0,p.x,p.y,p.r);
+      if(p.r>10){g.addColorStop(0,`rgba(${p.c},${fl})`);g.addColorStop(.82,`rgba(${p.c},${fl*.8})`);g.addColorStop(1,`rgba(${p.c},0)`);}
+      else{g.addColorStop(0,`rgba(${p.c},${fl})`);g.addColorStop(1,`rgba(${p.c},0)`);}
+      x.fillStyle=g;x.beginPath();x.arc(p.x,p.y,p.r,0,6.283);x.fill();
+    }
+    if(!reduce)requestAnimationFrame(draw);
+  };
+  requestAnimationFrame(draw);
+})();
+</script>
