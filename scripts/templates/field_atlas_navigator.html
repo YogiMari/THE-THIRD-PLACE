@@ -242,6 +242,28 @@
   .gear dd small{margin-left:8px;font-family:var(--mono);font-size:8.5px;letter-spacing:.16em;color:var(--ok)}
   .cpy{background:transparent;border:1px solid var(--line2);padding:0 8px;font-family:var(--mono);font-size:9px;letter-spacing:.1em;color:var(--ink-soft);cursor:pointer}
   .cpy:hover{color:var(--a);border-color:var(--a)}
+  /* info bubble over the target */
+  .bub{position:absolute;left:0;top:0;z-index:6;width:min(290px,calc(100% - 16px));pointer-events:auto;will-change:transform;--tx:0px}
+  .bub-in{position:relative;background:var(--glass2);border:1px solid var(--line3);padding:11px 13px 10px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 0 24px rgba(63,240,255,.18);animation:bubin .55s steps(6) both}
+  @keyframes bubin{0%{clip-path:inset(0 0 100% 0);opacity:.3}100%{clip-path:inset(0 0 0 0);opacity:1}}
+  .bub-in::before{content:"";position:absolute;left:0;right:0;top:0;height:1px;background:var(--a);box-shadow:0 0 10px var(--a);animation:sc .9s linear both}
+  .bub-tail{position:absolute;left:calc(50% + var(--tx));bottom:-30px;width:1px;height:30px;background:linear-gradient(var(--a),transparent);box-shadow:0 0 6px var(--a)}
+  .bub[data-mode="below"] .bub-tail{bottom:auto;top:-30px;background:linear-gradient(transparent,var(--a))}
+  .bub[data-mode="right"] .bub-tail{bottom:auto;left:-30px;top:calc(50% + var(--ty));width:30px;height:1px;background:linear-gradient(90deg,transparent,var(--a))}
+  .bub[data-mode="left"] .bub-tail{bottom:auto;left:auto;right:-30px;top:calc(50% + var(--ty));width:30px;height:1px;background:linear-gradient(90deg,var(--a),transparent)}
+  .bx{position:absolute;top:3px;right:5px;background:transparent;border:0;color:var(--ink-faint);font-family:var(--mono);font-size:13px;cursor:pointer;padding:2px 6px}
+  .bx:hover{color:var(--ice)}
+  .bh{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:center;padding-right:16px}
+  .bh img{width:56px;height:56px;object-fit:cover;display:block;border:1px solid var(--line2)}
+  .bk{display:block;font-family:var(--mono);font-size:8.5px;letter-spacing:.18em;color:var(--a)}
+  .bn{display:block;font-size:14.5px;line-height:1.35;color:var(--ice)}
+  .bg{display:block;font-family:var(--display);font-size:7px;letter-spacing:.28em;text-transform:uppercase;color:var(--ink-soft);margin-top:2px}
+  .bnx{margin-top:8px;font-family:var(--display);font-size:7px;letter-spacing:.14em;color:var(--warn);border:1px solid var(--warn);padding:3px 8px;width:max-content;max-width:100%;box-shadow:0 0 10px rgba(255,209,102,.3)}
+  .bub dl{margin:8px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:3px 10px;font-size:11px;line-height:1.55;color:var(--ink)}
+  .bub dt{font-family:var(--mono);font-size:8px;letter-spacing:.2em;color:var(--ink-faint);padding-top:3px}
+  .bub dd{margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .bub .led{font-size:7.5px}
+  @media (prefers-reduced-motion:reduce){.bub-in,.bub-in::before{animation:none}}
   .tc-s .nxs{color:var(--warn)}
 
   /* ---------- next camp, filters, lineages, field log, legend, benchmark ---------- */
@@ -366,6 +388,7 @@
     <div class="warp" id="warp"></div><div class="flash" id="flash"></div>
     <div class="acqfx" id="acqfx"><div class="t1" id="acq1">TARGET ACQUIRED</div><div class="bar"></div><div class="t2" id="acq2"></div><div class="t3" id="acq3"></div></div>
     <div class="fx"></div>
+    <div class="bub" id="bub" role="dialog" hidden></div>
     <div class="legend" id="legend" aria-hidden="true"><span><i class="lv"></i>訪問済み · 高さ＝RESONANCE</span><span><i class="lu"></i>未訪問（暫定値）</span><span id="lgN" hidden role="button" tabindex="0" aria-label="次のキャンプのフィールドを選ぶ"><i class="ln"></i>次のキャンプ（DB-001）</span><span id="lgB" hidden><i class="lbm"></i>VIEW 10の基準地点</span><span><i class="lr"></i>小岩から50/100/150/200 KM</span></div>
     <div class="zoom" role="group" aria-label="ズーム"><button type="button" id="zIn" aria-label="拡大">+</button><button type="button" id="zOut" aria-label="縮小">−</button><button type="button" id="zHome" aria-label="関東全体に戻る">KANTO</button></div>
     <div class="nogl" id="nogl" hidden>3D地図を読み込めませんでした。パネルの情報は使えます。</div>
@@ -532,6 +555,37 @@ async function copyLink(btn){const u=PAGE_URL+"#f="+state.a,lab=btn.textContent;
   try{await navigator.clipboard.writeText(u);btn.textContent="コピーしました";}catch(e){try{window.prompt("このリンクをコピーしてください",u);}catch(_){}}
   setTimeout(()=>{btn.textContent=lab;},1800);}
 
+/* ---------- info bubble: opens over the destination when the selection flight lands ---------- */
+let bubOn=false,bubAt=0;
+function bubbleHTML(d){
+  const r=d.rank,rt=ROUTES[r],el=ELEV[r],td=tempDiff(el),st=SITE[r],sv=SURR[r],e=d.early,lg=(LOG[r]||[]).find(x=>x.status==="Planned"),k=lg&&day0(lg.date);
+  const row=(a,b)=>b?`<dt>${a}</dt><dd>${b}</dd>`:"";
+  return `<button type="button" class="bx" aria-label="閉じる">×</button>
+  <div class="bh">${IMG[r]?`<img src="${IMG[r]}" alt="">`:""}<div><span class="bk">RANK ${pad(r)} · ${pv(d)}/100${d.visited?"":" · 未訪問"}</span><b class="bn">${esc(d.name)}</b><span class="bg">${esc(d.tag)}</span></div></div>
+  ${lg?`<div class="bnx">NEXT CAMP · ${esc(lg.date)}${k?" · "+dLabel(daysTo(k)):""}</div>`:""}
+  <dl>${row("TRAVEL",`${d.hours.toFixed(1)} H${rt?` · ROAD ${rt.km} KM`:""}`)}${row("GROUND",d.ground&&d.ground.length?esc(gtxt(d)):"")}${row("EARLY",`<span class="led t-${e.tier}">${esc(e.label)}</span> ${esc(e.detail)}`)}${row("AREA",st&&st.area?esc(st.area):"")}${row("ELEV",el!=null?`${el.toLocaleString()} m${td!=null?` · 小岩より約 ${fmtT(td)}`:""}`:"")}${row("ONSEN",sv&&sv.bath?`${esc((sv.bath.name||"（名称未登録）").replace(/;/g,"・"))} · ${sv.bath.km} km · ${sv.bath.min}分`:"")}</dl>`;}
+function showBubble(){const d=get(state.a);if(!GL||!d||!GEO[d.rank])return;const bub=$("#bub");
+  bub.innerHTML=`<div class="bub-in">${bubbleHTML(d)}</div><i class="bub-tail" aria-hidden="true"></i>`;bub.setAttribute("aria-label",d.name+"の情報");
+  bub.hidden=false;bub.style.visibility="hidden";bubOn=true;bub.querySelector(".bx").onclick=e=>{e.stopPropagation();hideBubble();};}
+function hideBubble(){bubOn=false;bubAt=0;const bub=$("#bub");bub.hidden=true;bub.innerHTML="";}
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&bubOn)hideBubble();});
+// keeps the bubble on the destination pin; flips below the pin near the top edge and stays inside the map sideways
+function placeBubble(lift){
+  if(bubAt&&performance.now()>=bubAt){bubAt=0;showBubble();}
+  if(!bubOn)return;const g=GEO[state.a],bub=$("#bub");if(!g){hideBubble();return;}
+  const p=proj(V(g[0],lift+.05,g[1]));if(!p.ok){bub.style.visibility="hidden";return;}
+  // stay within the part of the map not covered by the header, panels and cards
+  if(!FR||performance.now()-FRt>500){FR=freeRect();FRt=performance.now();}
+  const f=FR,bw=bub.offsetWidth,bh=bub.offsetHeight,L=Math.max(8,f.L0-22),R=Math.min(f.w-8,f.R0+22),top=Math.max(8,f.T0-22),bot=Math.min(f.h-8,f.B0+22),gap=30;
+  // above the pin if it fits, else below, else beside it (whichever side has room)
+  let mode="above";
+  if(p.y-bh-gap<top){mode=p.y+gap+bh<=bot?"below":p.x+gap+bw<=R?"right":p.x-gap-bw>=L?"left":(p.y-top<bot-p.y?"below":"above");}
+  let bx,by;
+  if(mode==="above"||mode==="below"){const lo=L+bw/2,x=clamp(p.x,lo,Math.max(lo,R-bw/2));bx=x-bw/2;by=mode==="above"?p.y-bh-gap:p.y+gap;bub.style.setProperty("--tx",(p.x-x).toFixed(1)+"px");bub.style.setProperty("--ty","0px");}
+  else{by=clamp(p.y-bh/2,top,Math.max(top,bot-bh));bx=mode==="right"?p.x+gap:p.x-gap-bw;bub.style.setProperty("--ty",(p.y-(by+bh/2)).toFixed(1)+"px");bub.style.setProperty("--tx","0px");}
+  if(bub.dataset.mode!==mode)bub.dataset.mode=mode;
+  bub.style.transform=`translate(${bx.toFixed(1)}px,${by.toFixed(1)}px)`;bub.style.visibility="";}
+
 /* ---------- telemetry ---------- */
 $("#tFld").textContent=`${DATA.length} · VISITED ${DATA.filter(d=>d.visited).length}`;
 function clock(){try{$("#tClk").textContent=new Date().toLocaleString("sv-SE",{timeZone:"Asia/Tokyo"}).replace(",","");}catch(e){$("#tClk").textContent=new Date().toISOString().slice(0,19).replace("T"," ");}}
@@ -564,7 +618,7 @@ selB.addEventListener("change",()=>{const v=selB.value==="none"?null:+selB.value
 $("#xB").onclick=()=>setB(null);
 
 /* ---------- selection flow ---------- */
-function setA(r){if(r===state.a&&state.view==="top")return;state.a=r;setHash();if(state.b===r)state.b=null;save();markRows();selB.value=state.b?String(state.b):"none";
+function setA(r){if(r===state.a&&state.view==="top")return;hideBubble();state.a=r;setHash();if(state.b===r)state.b=null;save();markRows();selB.value=state.b?String(state.b):"none";
   showCard("A");if(!state.b)showCard("B");startRadar(true,false);lock("A");if(GL){buildRoute("a",true);buildRoute("b",true);dive("a");}}
 function setB(r){state.b=r;save();markRows();selB.value=r?String(r):"none";showCard("B");startRadar(false,true);if(r)lock("B");if(GL){buildRoute("b",!!r);if(r)dive("b");else if(state.view==="top")frameTop();}}
 function step(d){const l=sorted();if(!l.length)return;const i=l.findIndex(x=>x.rank===state.a);setA(l[i<0?0:(i+d+l.length)%l.length].rank);}
@@ -726,14 +780,14 @@ function routeFrame(){const pts=[[0,0]];[state.a,state.b].forEach(r=>{if(r&&GEO[
 function dive(slot){
   const r=slot==="a"?state.a:state.b,g=GEO[r];state.view="top";viewBtns();userMoved=false;
   const startRoutes=()=>{const t=performance.now()+80;["a","b"].forEach(k=>{if(routes[k]&&routes[k].curve&&routes[k].t0===Infinity)routes[k].t0=t+(k===slot?0:250);});};
-  if(RM||!g){flatT=FLAT;startRoutes();flyTo(routeFrame(),1);return;}
+  if(RM||!g){flatT=FLAT;startRoutes();flyTo(routeFrame(),1);if(slot==="a")bubAt=performance.now();return;}
   const d=get(r),c=slot==="a"?"var(--a)":"var(--b)";
   const close={tx:g[0],ty:0,tz:g[1],dist:5.2,phi:.42,theta:cam.theta+.7};
   runSeq([
     {to:{...cam,dist:cam.dist*1.2,phi:Math.min(1.05,cam.phi+.14)},dur:360,e:eOutQ},
     {to:close,dur:1150,e:eInOutExpo,fov:28,start:()=>fxAt("warp",g,c)},
     {to:{...close,dist:4.4,theta:close.theta+.16},dur:900,e:lin,start:()=>{fxAt("flash",g,c);acqfx(d,slot,c);shock(slot,g);canvas.classList.remove("shake");void canvas.offsetWidth;canvas.classList.add("shake");flatT=FLAT;}},
-    {to:()=>routeFrame(),dur:1900,e:ease,start:startRoutes}
+    {to:()=>routeFrame(),dur:1900,e:ease,start:startRoutes,done:slot==="a"?()=>{bubAt=performance.now()+150;}:null}
   ]);
 }
 function fxAt(id,g,c){const el=$("#"+id),p=proj(V(g[0],pinG.position.y,g[1]));el.style.setProperty("--x",p.x+"px");el.style.setProperty("--y",p.y+"px");el.style.color=c;el.classList.remove("go");void el.offsetWidth;el.classList.add("go");}
@@ -949,6 +1003,7 @@ function frame(now){
   gratL.forEach(g=>place(g.el,g.pin?V(g.v.x,g.v.y+lift,g.v.z):g.v,"translate(-50%,-50%)"));
   place(L.home,V(0,lift+.4,0),"translate(-50%,calc(-100% - 16px))");
   overlay("A",state.a,L.a,lift);overlay("B",state.b,L.b,lift);
+  placeBubble(lift);if(bubOn)L.a.hidden=true;
   if(L.next){const g=GEO[NEXT.r];L.next.hidden=!bootDone&&!RM||!live(NEXT.r);if(!L.next.hidden)place(L.next,V(g[0],lift,g[1]),"translate(-50%,14px)");}
   benchM.forEach(b=>{b.el.hidden=!bootDone&&!RM;if(!b.el.hidden)place(b.el,V(b.v.x,lift+1.25,b.v.z),"translate(-50%,calc(-100% - 4px))");});
   if(hovered&&GEO[hovered]){const ph=GEO[hovered];place(L.h,V(ph[0],lift+1.2,ph[1]),"translate(18px,-50%)");}

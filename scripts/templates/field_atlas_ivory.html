@@ -249,6 +249,31 @@
   .gear dd small{margin-left:8px;font-family:var(--ui);font-size:9px;font-weight:600;letter-spacing:.1em;color:var(--ok)}
   .cpy{background:transparent;border:1px solid var(--line2);border-radius:99px;padding:0 9px;font-family:var(--ui);font-size:10px;color:var(--ink-soft);cursor:pointer}
   .cpy:hover{color:var(--a-deep);border-color:var(--a)}
+  /* info bubble over the destination */
+  .bub{position:absolute;left:0;top:0;z-index:6;width:min(290px,calc(100% - 16px));pointer-events:auto;will-change:transform;--tx:0px}
+  .bub-in{position:relative;background:var(--sheet-solid);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow-lift);padding:11px 13px 10px;transform-origin:calc(50% + var(--tx)) 100%;animation:bubin .7s cubic-bezier(.2,.9,.25,1.15) both}
+  @keyframes bubin{0%{opacity:0;transform:scale(.4) translateY(14px);filter:blur(6px)}60%{opacity:1;filter:none}100%{opacity:1;transform:none}}
+  .bub-in::before{content:"";position:absolute;left:0;right:0;top:0;height:3px;border-radius:16px 16px 0 0;background:linear-gradient(90deg,#EFB597,var(--a))}
+  .bub-tail{position:absolute;left:calc(50% + var(--tx) - 8px);bottom:-7px;width:16px;height:16px;background:var(--sheet-solid);border-right:1px solid var(--line);border-bottom:1px solid var(--line);transform:rotate(45deg);animation:fadeup .5s .25s both}
+  .bub[data-mode="below"] .bub-in{transform-origin:calc(50% + var(--tx)) 0}
+  .bub[data-mode="right"] .bub-in{transform-origin:0 calc(50% + var(--ty))}
+  .bub[data-mode="left"] .bub-in{transform-origin:100% calc(50% + var(--ty))}
+  .bub[data-mode="below"] .bub-tail{bottom:auto;top:-7px;transform:rotate(225deg)}
+  .bub[data-mode="right"] .bub-tail{bottom:auto;left:-7px;top:calc(50% + var(--ty) - 8px);transform:rotate(135deg)}
+  .bub[data-mode="left"] .bub-tail{bottom:auto;left:auto;right:-7px;top:calc(50% + var(--ty) - 8px);transform:rotate(-45deg)}
+  .bx{position:absolute;top:4px;right:6px;background:transparent;border:0;border-radius:8px;color:var(--ink-soft);font-size:16px;line-height:1;cursor:pointer;padding:4px 7px}
+  .bx:hover{color:var(--ink);background:var(--paper2)}
+  .bh{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:center;padding-right:18px}
+  .bh img{width:56px;height:56px;object-fit:cover;border-radius:10px;display:block}
+  .bk{display:block;font-family:var(--ui);font-size:9px;font-weight:600;letter-spacing:.14em;color:var(--a-deep)}
+  .bn{display:block;font-family:var(--mincho);font-size:15px;line-height:1.35;color:var(--ink)}
+  .bg{display:block;font-family:var(--display);font-style:italic;font-size:12.5px;color:var(--ink-soft)}
+  .bnx{margin-top:8px;font-family:var(--ui);font-size:10px;font-weight:700;letter-spacing:.12em;color:#fff;background:var(--a);border-radius:99px;padding:2px 10px;width:max-content}
+  .bub dl{margin:8px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:3px 10px;font-size:11px;line-height:1.55;color:var(--ink-2)}
+  .bub dt{font-family:var(--ui);font-size:8.5px;font-weight:600;letter-spacing:.12em;color:var(--ink-faint);padding-top:2px}
+  .bub dd{margin:0;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+  .bub .led{font-size:9.5px;padding:0 8px 0 6px}
+  @media (prefers-reduced-motion:reduce){.bub-in,.bub-tail{animation:none}}
   .tc-s .nxs{color:var(--a-deep);font-weight:700}
 
   /* ---------- next camp, filters, lineages, field log, legend, benchmark, zoom ---------- */
@@ -381,6 +406,7 @@
     <div class="warp"></div><div class="flash"></div>
     <div class="fx"></div>
     <div class="hint" id="hint"></div>
+    <div class="bub" id="bub" role="dialog" hidden></div>
     <div class="legend" id="legend" aria-hidden="true"><span><i class="lv"></i>訪問済み · 高さ＝Resonance</span><span><i class="lu"></i>未訪問（暫定値）</span><span id="lgN" hidden role="button" tabindex="0" aria-label="次のキャンプのフィールドを選ぶ"><i class="ln"></i>次のキャンプ（DB-001）</span><span id="lgB" hidden><i class="lbm"></i>View 10の基準地点</span><span><i class="lr"></i>小岩から50・100・150・200 km</span></div>
     <div class="zoom" role="group" aria-label="ズーム"><button type="button" id="zIn" aria-label="拡大">+</button><button type="button" id="zOut" aria-label="縮小">−</button><button type="button" id="zHome" aria-label="関東全体に戻る">Kanto</button></div>
     <div class="grain"></div>
@@ -553,6 +579,37 @@ async function copyLink(btn){const u=PAGE_URL+"#f="+state.a,lab=btn.textContent;
   try{await navigator.clipboard.writeText(u);btn.textContent="コピーしました";}catch(e){try{window.prompt("このリンクをコピーしてください",u);}catch(_){}}
   setTimeout(()=>{btn.textContent=lab;},1800);}
 
+/* ---------- info bubble: opens over the destination when the selection flight lands ---------- */
+let bubOn=false,bubAt=0;
+function bubbleHTML(d){
+  const r=d.rank,rt=ROUTE[r],el=ELEV[r],td=tempDiff(el),st=SITE[r],sv=SURR[r],e=d.early,lg=(LOG[r]||[]).find(x=>x.status==="Planned"),k=lg&&day0(lg.date);
+  const row=(a,b)=>b?`<dt>${a}</dt><dd>${b}</dd>`:"";
+  return `<button type="button" class="bx" aria-label="閉じる">×</button>
+  <div class="bh">${IMG[r]?`<img src="${IMG[r]}" alt="">`:""}<div><span class="bk">RANK ${pad(r)} · ${pv(d)}/100${d.visited?"":" · 未訪問"}</span><b class="bn">${esc(d.name)}</b><span class="bg">${esc(d.tag)}</span></div></div>
+  ${lg?`<div class="bnx">NEXT CAMP · ${esc(lg.date)}${k?" · "+dLabel(daysTo(k)):""}</div>`:""}
+  <dl>${row("TRAVEL",`${d.hours.toFixed(1)} H${rt?` · ROAD ${rt.km} KM`:""}`)}${row("GROUND",d.ground&&d.ground.length?esc(gtxt(d)):"")}${row("EARLY",`<span class="led t-${e.tier}">${esc(e.label)}</span> ${esc(e.detail)}`)}${row("AREA",st&&st.area?esc(st.area):"")}${row("ELEV",el!=null?`${el.toLocaleString()} m${td!=null?` · 小岩より約 ${fmtT(td)}`:""}`:"")}${row("ONSEN",sv&&sv.bath?`${esc((sv.bath.name||"（名称未登録）").replace(/;/g,"・"))} · ${sv.bath.km} km · ${sv.bath.min}分`:"")}</dl>`;}
+function showBubble(){const d=get(state.a);if(!GL||!d||!GEO[d.rank])return;const bub=$("#bub");
+  bub.innerHTML=`<div class="bub-in">${bubbleHTML(d)}</div><i class="bub-tail" aria-hidden="true"></i>`;bub.setAttribute("aria-label",d.name+"の情報");
+  bub.hidden=false;bub.style.visibility="hidden";bubOn=true;bub.querySelector(".bx").onclick=e=>{e.stopPropagation();hideBubble();};}
+function hideBubble(){bubOn=false;bubAt=0;const bub=$("#bub");bub.hidden=true;bub.innerHTML="";}
+document.addEventListener("keydown",e=>{if(e.key==="Escape"&&bubOn)hideBubble();});
+// keeps the bubble on the destination pin; flips below the pin near the top edge and stays inside the map sideways
+function placeBubble(lift){
+  if(bubAt&&performance.now()>=bubAt){bubAt=0;showBubble();}
+  if(!bubOn)return;const g=GEO[state.a],bub=$("#bub");if(!g){hideBubble();return;}
+  const p=proj(V(g[0],lift+.05,g[1]));if(!p.ok){bub.style.visibility="hidden";return;}
+  // stay within the part of the map not covered by the header, panels and cards
+  if(!FR||performance.now()-FRt>500){FR=freeRect();FRt=performance.now();}
+  const f=FR,bw=bub.offsetWidth,bh=bub.offsetHeight,L=Math.max(8,f.L0-22),R=Math.min(f.w-8,f.R0+22),top=Math.max(8,f.T0-22),bot=Math.min(f.h-8,f.B0+22),gap=30;
+  // above the pin if it fits, else below, else beside it (whichever side has room)
+  let mode="above";
+  if(p.y-bh-gap<top){mode=p.y+gap+bh<=bot?"below":p.x+gap+bw<=R?"right":p.x-gap-bw>=L?"left":(p.y-top<bot-p.y?"below":"above");}
+  let bx,by;
+  if(mode==="above"||mode==="below"){const lo=L+bw/2,x=clamp(p.x,lo,Math.max(lo,R-bw/2));bx=x-bw/2;by=mode==="above"?p.y-bh-gap:p.y+gap;bub.style.setProperty("--tx",(p.x-x).toFixed(1)+"px");bub.style.setProperty("--ty","0px");}
+  else{by=clamp(p.y-bh/2,top,Math.max(top,bot-bh));bx=mode==="right"?p.x+gap:p.x-gap-bw;bub.style.setProperty("--ty",(p.y-(by+bh/2)).toFixed(1)+"px");bub.style.setProperty("--tx","0px");}
+  if(bub.dataset.mode!==mode)bub.dataset.mode=mode;
+  bub.style.transform=`translate(${bx.toFixed(1)}px,${by.toFixed(1)}px)`;bub.style.visibility="";}
+
 /* ---------- telemetry ---------- */
 $("#tFld").textContent=`${DATA.length} · VISITED ${DATA.filter(d=>d.visited).length}`;
 function clock(){try{$("#tClk").textContent=new Date().toLocaleString("sv-SE",{timeZone:"Asia/Tokyo"}).replace(",","");}catch(e){$("#tClk").textContent=new Date().toISOString().slice(0,19).replace("T"," ");}}
@@ -585,7 +642,7 @@ selB.addEventListener("change",()=>{const v=selB.value==="none"?null:+selB.value
 $("#xB").onclick=()=>setB(null);
 
 /* ---------- selection flow ---------- */
-function setA(r){if(r===state.a&&chase)return;state.a=r;setHash();if(state.b===r)state.b=null;save();markRows();selB.value=state.b?String(state.b):"none";
+function setA(r){hideBubble();if(r===state.a&&chase)return;state.a=r;setHash();if(state.b===r)state.b=null;save();markRows();selB.value=state.b?String(state.b):"none";
   showCard("A");if(!state.b)showCard("B");startRadar(true,false);if(GL){buildRoute("a");buildRoute("b");focus();}else lock("A");}
 function setB(r){state.b=r;save();markRows();selB.value=r?String(r):"none";showCard("B");startRadar(false,true);if(r)lock("B");if(GL){buildRoute("b");if(r){chase=null;if(state.view==="top")frameTop();else frameBoth();}}}
 function step(d){const l=sorted();if(!l.length)return;const i=l.findIndex(x=>x.rank===state.a);setA(l[i<0?0:(i+d+l.length)%l.length].rank);}
@@ -748,7 +805,7 @@ function focus(){
   const [x,z]=GEO[r],len=Math.hypot(x,z)||1;
   userCam=false;state.view="focus";viewBtns();flatT=1;
   const th=.55*Math.atan2(-x,-z),D0=clamp(len*1.05,13,34);
-  if(RM||!bootDone){chase=null;const t=aimExact(x,z,6,.9,th);if(RM){Object.assign(cam,t);tw=null;}else flyTo(t,1600);lock("A");return;}
+  if(RM||!bootDone){chase=null;const t=aimExact(x,z,6,.9,th);if(RM){Object.assign(cam,t);tw=null;}else flyTo(t,1600);lock("A");if(bootDone||RM)bubAt=performance.now()+(RM?0:1600);return;}
   const now=performance.now(),lead=900,dur=clamp(1500+len*95,1900,3900);
   flyTo(aim(0,0,D0,.58,th),lead);
   R.t0=now+lead;R.dur=dur;if(routes.b.curve)routes.b.t0=now+lead+200;
@@ -941,7 +998,7 @@ function frame(now){
     if(!R.curve){chase=null;mapEl.classList.remove("warping");}
     else{const p=Math.max(R.prog,0),h=R.curve.getPointAt(clamp(p,0,1));
       Object.assign(cam,aim(h.x,h.z,chase.D0+(9-chase.D0)*ease(p),.58+.14*p,chase.th+.12*Math.sin(p*Math.PI)));
-      if(R.prog>=1){const c=chase;chase=null;arrive();flyTo(aimExact(c.x,c.z,5.4,.94,c.th+.6),2400);}}}
+      if(R.prog>=1){const c=chase;chase=null;arrive();flyTo(aimExact(c.x,c.z,5.4,.94,c.th+.6),2400);bubAt=now+2300;}}}
   else if(state.view==="oblique"&&!RM&&OBL&&!userCam)cam.theta=OBL.theta+Math.sin(now/7000)*.035;
   const sy=mapG.scale.y+(flatT-mapG.scale.y)*(RM?1:Math.min(1,dt*2.4));mapG.scale.y=sy;pinG.position.y=DEPTH*sy;
   applyCam();
@@ -970,6 +1027,7 @@ function frame(now){
   gratL.forEach(g=>place(g.el,g.pin?V(g.v.x,g.v.y+lift,g.v.z):g.v,"translate(-50%,-50%)"));
   place(L.home,V(0,lift+.4,0),"translate(-50%,calc(-100% - 16px))");
   overlay("A",state.a,L.a,lift);overlay("B",state.b,L.b,lift);
+  placeBubble(lift);if(bubOn)L.a.hidden=true;
   if(L.next){const g=GEO[NEXT.r];L.next.hidden=!bootDone&&!RM||!live(NEXT.r);if(!L.next.hidden)place(L.next,V(g[0],lift,g[1]),"translate(-50%,14px)");}
   benchM.forEach(b=>{b.el.hidden=!bootDone&&!RM;if(!b.el.hidden)place(b.el,V(b.v.x,lift+1.25,b.v.z),"translate(-50%,calc(-100% - 4px))");});
   if(hovered&&GEO[hovered]){const ph=GEO[hovered];place(L.h,V(ph[0],lift+1.2,ph[1]),"translate(18px,-50%)");}
