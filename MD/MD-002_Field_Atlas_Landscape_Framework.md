@@ -1,11 +1,11 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.4.8
+## Ver.4.9
 
 **Document ID**: MD-002  
 **Title**: Field Atlas Landscape Framework  
 **Series**: MD – Master Data (Record)  
-**Version**: 4.8  
+**Version**: 4.9  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -318,7 +318,7 @@ OP-010 Part C §Site Requirements（区画面積：80㎡（車別）、車込み
 
 ### Field Atlas Radar
 
-レーダーチャートは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。本文書を更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
+レーダーチャートは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。Field Atlas Navigator・Ivoryと同じく、地面・§Site Record・次のキャンプと訪問の記録（DB-001 §Field Log、装備名はMD-004）・標高・周辺環境・日の出・日の入り・月齢も示す（地図と写真は持たない）。本文書・DB-001 §Field Log・MD-004を更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
 
 ```
 python3 scripts/field_atlas_radar.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-radar.html
@@ -435,6 +435,7 @@ THE THIRD PLACE を実現するための
 | 4.6 | 2026-10-01 | MARI様のご確認に基づき、Field Atlas Databaseで地面のアイコンが無かった訪問済み10件にアイコンを加え、§Site RecordのGroundを同じ内容へ改めた（スノーピーク白河高原🌲、スノーピーク赤城🌱🌲、プラネットキャンプフィールド🌱🟫、伊豆キャンファーム🌱🟫、リキャンプ勝浦🟫、昭和の森フォレストビレッジ🟫🌲、秩父ファームステイ🧱、Bonfirebase 富津キャンプビレッジ🪨🌱、サンビレッジ金谷キャンプ場🟫、キャンプ ざ カントリー🟫）。🌲は林間、🧱はレンガチップを示す（OP-010 Qualification Charter Version 3.1・3.2）。ウェルキャンプ西丹沢は未確認のまま。スコア・掲載順に変更はない。Minor Version。 |
 | 4.7 | 2026-10-01 | MARI様のご確認に基づき、ウェルキャンプ西丹沢の地面を🟫⛰️（土・岩場）としてField Atlas Databaseと§Site Recordへ記録した。⛰️は岩場を示す（OP-010 Qualification Charter Version 3.3）。🪨は引き続き砂利を示す。これで全49件の地面が記録された。スコア・掲載順に変更はない。Patch Version。 |
 | 4.8 | 2026-10-01 | MARI様のご確認に基づき、富士山オートキャンプ場GENSHIJINの地面を🪨（砂利）から⛰️（岩場）へ改めた（Field Atlas Database・§Site Record）。スコア・掲載順に変更はない。Patch Version。 |
+| 4.9 | 2026-10-01 | MARI様のご依頼に基づき、§VisualizationのField Atlas Radarに、Field Atlas Navigator・Ivoryと同じ情報（地面・系統別小計と全件平均・アーリーチェックイン区分の点数・§Site Record・標高と気温差・日の出・日の入り・月齢・周辺環境・次のキャンプと訪問の記録・装備の正式名称・View軸の基準地点・フィールドへの直接リンク）と、近い順の並べ替え・訪問済み／未訪問・地面での絞り込みを加えた。生成は scripts/field_atlas_radar.py で、追加の情報は scripts/field_atlas_navigator.py の extras() を共用する。スコア・掲載順・アーリーチェックインに変更はない。Minor Version。 |
 
 ---
 

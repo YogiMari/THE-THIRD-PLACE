@@ -13,7 +13,13 @@ from MD-002 Field Atlas Landscape Framework:
         Sub-Score Table          -> 10-axis scores
         Early Check-in Record    -> early check-in category, detail, source
 
-MD-002 is the only data source. The page carries no data of its own, so
+It also carries the same field information as Field Atlas Navigator and
+Ivory (ground, Site Record, Field Log with gear names, elevation,
+surroundings, positions for sunrise and sunset), built by
+field_atlas_navigator.extras() from MD-002, DB-001, MD-004 and
+scripts/data/field_atlas_navigator/. No map or photos.
+
+Scores come only from MD-002. The page carries no data of its own, so
 any conversation can regenerate it after MD-002 changes and republish it
 to the same Artifact URL (recorded in MD-002 §Visualization).
 
@@ -188,21 +194,34 @@ def build(md002: Path) -> tuple[list[dict], str]:
     return data, version
 
 
+def render(md002: Path) -> tuple[str, list[str], int, str]:
+    """The Radar page, its warnings, the field count and the MD-002 version."""
+    import field_atlas_navigator as nav  # imported here: it imports this module
+
+    data, version = build(md002)
+    warnings: list[str] = []
+    extra = nav.extras(md002, data, nav.load("locations.json"), warnings)
+    html = (
+        TEMPLATE.read_text(encoding="utf-8")
+        .replace("/*__DATA__*/[]", json.dumps(data, ensure_ascii=False))
+        .replace("/*__EXTRA__*/{}", json.dumps(extra, ensure_ascii=False, separators=(",", ":")))
+        .replace("__MD002_VERSION__", version)
+        .replace("__GENERATED__", datetime.date.today().isoformat())
+    )
+    return html, warnings, len(data), version
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[1])
     parser.add_argument("--md002", required=True, type=Path)
     parser.add_argument("--out", required=True, type=Path)
     args = parser.parse_args()
 
-    data, version = build(args.md002)
-    html = (
-        TEMPLATE.read_text(encoding="utf-8")
-        .replace("/*__DATA__*/[]", json.dumps(data, ensure_ascii=False))
-        .replace("__MD002_VERSION__", version)
-        .replace("__GENERATED__", datetime.date.today().isoformat())
-    )
+    html, warnings, n, version = render(args.md002)
     args.out.write_text(html, encoding="utf-8")
-    print(f"Field Atlas Radar: {len(data)} fields from MD-002 Ver.{version} -> {args.out}")
+    for w in warnings:
+        print("warning:", w, file=sys.stderr)
+    print(f"Field Atlas Radar: {n} fields from MD-002 Ver.{version} -> {args.out}")
 
 
 if __name__ == "__main__":

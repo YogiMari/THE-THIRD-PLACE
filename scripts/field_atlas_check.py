@@ -14,8 +14,7 @@ notation drift between documents and data files:
     data     locations, routes, photos, elevation and surroundings exist for
              every field, and no data key is left over from an old name
              (surroundings gaps are reported but do not fail the check)
-    pages    the Navigator and Ivory generators build without warnings (the
-             Radar uses the same MD-002 parser checked above)
+    pages    the Navigator, Ivory and Radar generators build without warnings
 
 Exits 1 and lists every problem when anything is out of step. Runs in CI.
 
@@ -92,6 +91,11 @@ def main() -> None:
         left = re.findall(r"/\*__[A-Z]+__\*/|__MD002_VERSION__|__GENERATED__", html)
         if left:
             problems.append(f"{t.name}: placeholders left: {sorted(set(left))}")
+    html, warnings, _, _ = radar.render(MD002)
+    problems += [f"field_atlas_radar.html: {w}" for w in warnings]
+    left = re.findall(r"/\*__[A-Z]+__\*/|__MD002_VERSION__|__GENERATED__", html)
+    if left:
+        problems.append(f"field_atlas_radar.html: placeholders left: {sorted(set(left))}")
 
     # surroundings come from OpenStreetMap and are best-effort reference data: report, do not fail
     notes = [p for p in problems if "surroundings" in p]

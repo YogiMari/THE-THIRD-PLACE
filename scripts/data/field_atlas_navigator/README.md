@@ -32,7 +32,9 @@ The index can be sorted by Resonance, Field 8 or travel time, and filtered by vi
 
 A field can be opened directly with `#f=<rank>` at the end of the page URL (rank = MD-002 Database order); the page updates the hash on every selection, and "リンクをコピー" on the Destination / TARGET card copies the published URL with it. Whether claude.ai passes the hash through to the page has not been checked.
 
-When DB-001 §Field Log, MD-002 or MD-004 changes, rebuild and republish both editions.
+Field Atlas Radar (`scripts/field_atlas_radar.py`, https://claude.ai/artifact/WjHqjyXoKLRxfTvxTsDaov) shows the same field information without the map and photos: it calls `field_atlas_navigator.extras()`, which builds the Field Log, benchmark, Site Record, elevation, surroundings, gear names and positions for all three pages (placeholder `/*__EXTRA__*/{}`).
+
+When DB-001 §Field Log, MD-002 or MD-004 changes, rebuild and republish all three pages (Navigator, Ivory, Radar).
 
 `python3 scripts/field_atlas_check.py` checks MD-002, DB-001, MD-004, the data files and both generators against each other, and runs in CI (`.github/workflows/third-place-sync.yml`). Run it after renaming a field or editing the Field Log.
 

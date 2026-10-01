@@ -155,6 +155,45 @@ def parse_field_log(db001: Path, names: set[str], warnings: list[str]) -> dict[s
     return log
 
 
+def extras(md002: Path, data: list[dict], locations: dict, warnings: list[str],
+           db001: Path = DB001, md004: Path = MD004) -> dict:
+    """Field Log, benchmark, Site Record, elevation, surroundings and gear names,
+    keyed by rank. Shared by the Navigator, Ivory and Radar pages."""
+    field_log = parse_field_log(db001, {d["name"] for d in data}, warnings)
+    bench = []
+    for b in parse_benchmark(md002):
+        loc = locations.get(b["name"])
+        if not loc:
+            warnings.append(f"no location for benchmark: {b['name']}")
+            continue
+        bench.append({**b, "ll": loc["lonlat"], "p": project(*loc["lonlat"])})
+    site = parse_site_record(md002)
+    elev = load("elevation.json") if (DATA_DIR / "elevation.json").exists() else {}
+    surr = load("surroundings.json") if (DATA_DIR / "surroundings.json").exists() else {}
+    ids = {g for rows in field_log.values() for e in rows for g in GEAR_ID.findall(e["config"])}
+    gear = parse_gear(md004, ids)
+    for g in sorted(ids - set(gear)):
+        warnings.append(f"Field Log gear ID not in MD-004: {g}")
+    for d in data:
+        for what, table in (("Site Record", site), ("elevation", elev), ("surroundings", surr)):
+            if table and d["name"] not in table:
+                warnings.append(f"no {what}: {d['name']}")
+    for b in bench:
+        if b["name"] in elev:
+            b["elev"] = elev[b["name"]]["m"]
+    return {
+        "log": {d["rank"]: field_log[d["name"]] for d in data if d["name"] in field_log},
+        "bench": bench,
+        "site": {d["rank"]: site[d["name"]] for d in data if d["name"] in site},
+        "elev": {d["rank"]: elev[d["name"]]["m"] for d in data if d["name"] in elev},
+        "home_elev": elev.get("小岩（起点）", {}).get("m"),
+        "surr": {d["rank"]: surr[d["name"]] for d in data if d["name"] in surr},
+        "gear": gear,
+        "ll": {d["rank"]: locations[d["name"]]["lonlat"] for d in data if d["name"] in locations},
+    }
+
+
+
 def build(md002: Path, template: Path = TEMPLATE, db001: Path = DB001, md004: Path = MD004) -> tuple[str, list[str]]:
     data, version = field_atlas_radar.build(md002)
     locations = load("locations.json")
@@ -199,37 +238,7 @@ def build(md002: Path, template: Path = TEMPLATE, db001: Path = DB001, md004: Pa
         else:
             warnings.append(f"no photo (run the fetch script): {name}")
 
-    field_log = parse_field_log(db001, {d["name"] for d in data}, warnings)
-    bench = []
-    for b in parse_benchmark(md002):
-        loc = locations.get(b["name"])
-        if not loc:
-            warnings.append(f"no location for benchmark: {b['name']}")
-            continue
-        bench.append({**b, "ll": loc["lonlat"], "p": project(*loc["lonlat"])})
-    site = parse_site_record(md002)
-    elev = load("elevation.json") if (DATA_DIR / "elevation.json").exists() else {}
-    surr = load("surroundings.json") if (DATA_DIR / "surroundings.json").exists() else {}
-    ids = {g for rows in field_log.values() for e in rows for g in GEAR_ID.findall(e["config"])}
-    gear = parse_gear(md004, ids)
-    for g in sorted(ids - set(gear)):
-        warnings.append(f"Field Log gear ID not in MD-004: {g}")
-    for d in data:
-        for what, table in (("Site Record", site), ("elevation", elev), ("surroundings", surr)):
-            if table and d["name"] not in table:
-                warnings.append(f"no {what}: {d['name']}")
-    for b in bench:
-        if b["name"] in elev:
-            b["elev"] = elev[b["name"]]["m"]
-    extra = {
-        "log": {d["rank"]: field_log[d["name"]] for d in data if d["name"] in field_log},
-        "bench": bench,
-        "site": {d["rank"]: site[d["name"]] for d in data if d["name"] in site},
-        "elev": {d["rank"]: elev[d["name"]]["m"] for d in data if d["name"] in elev},
-        "home_elev": elev.get("小岩（起点）", {}).get("m"),
-        "surr": {d["rank"]: surr[d["name"]] for d in data if d["name"] in surr},
-        "gear": gear,
-    }
+    extra = extras(md002, data, locations, warnings, db001, md004)
 
     jp = [
         {"n": p["name"], "r": [[v for lon, lat in ring for v in project(lon, lat)] for ring in p["rings"]]}

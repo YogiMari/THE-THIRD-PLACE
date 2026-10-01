@@ -1,27 +1,35 @@
 <title>Field Atlas Radar</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Sans+JP:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-  /* Layout: one 760px column — picker, radar with score panel, then the full ranking ledger. */
+  /* Layout: one 760px column — next camp, picker, radar with score panel, field details (site, sky, surroundings, field log), then the full ranking ledger. */
   :root{
     --bg:#EDEEE6; --card:#F5F5EE; --surface:#E3E4D9; --ink:#22251E; --ink-soft:#54574B; --ink-faint:#8B8C7E;
-    --line:#CBCCBE; --grid:#D6D7CA; --a:#A85A28; --b:#1668A0; --focus:#1668A0;
+    --line:#CBCCBE; --grid:#D6D7CA; --a:#A85A28; --b:#1668A0; --focus:#1668A0; --ok:#4F7A3A; --warn:#A87A16;
     --display:"Fraunces",Georgia,serif; --body:"IBM Plex Sans JP","Hiragino Sans",sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
   }
   @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
     --bg:#1B1D17; --card:#22241C; --surface:#2A2C23; --ink:#ECEBE1; --ink-soft:#B7B6A8; --ink-faint:#82816F;
-    --line:#3A3C30; --grid:#34362B; --a:#C98048; --b:#3E94D8; --focus:#3E94D8; color-scheme:dark; } }
+    --line:#3A3C30; --grid:#34362B; --a:#C98048; --b:#3E94D8; --focus:#3E94D8; --ok:#8DBB6E; --warn:#D9AE4A; color-scheme:dark; } }
   :root[data-theme="dark"]{
     --bg:#1B1D17; --card:#22241C; --surface:#2A2C23; --ink:#ECEBE1; --ink-soft:#B7B6A8; --ink-faint:#82816F;
-    --line:#3A3C30; --grid:#34362B; --a:#C98048; --b:#3E94D8; --focus:#3E94D8; color-scheme:dark; }
+    --line:#3A3C30; --grid:#34362B; --a:#C98048; --b:#3E94D8; --focus:#3E94D8; --ok:#8DBB6E; --warn:#D9AE4A; color-scheme:dark; }
   *{box-sizing:border-box}
-  body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;margin:0}
+  [hidden]{display:none!important}
+  body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;margin:0;overflow-x:hidden}
   .wrap{max-width:760px;margin:0 auto;padding-inline:20px;padding-block:28px 80px}
   h1,h2{font-family:var(--display);text-wrap:balance;margin:0}
   h1{font-size:28px;font-weight:600}
   .eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);font-weight:500;margin-bottom:4px}
   .lede{font-size:13.5px;color:var(--ink-soft);margin:6px 0 0;max-width:62ch}
   .badge{display:inline-block;font-family:var(--mono);font-size:11px;border:1px solid var(--line);border-radius:2px;padding:1px 6px;color:var(--ink-soft);background:var(--card)}
-  .controls{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:22px}
+  .nextc{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:0 14px;width:100%;margin-top:18px;padding:10px 14px;background:var(--card);border:1px solid var(--line);border-left:3px solid var(--a);border-radius:2px;text-align:left;font:inherit;color:inherit;cursor:pointer}
+  .nextc:hover{background:var(--surface)}
+  .nextc .k{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--a);font-weight:600}
+  .nextc .nn{font-family:var(--display);font-size:18px;font-weight:600;line-height:1.3}
+  .nextc .dt{font-family:var(--mono);font-size:11.5px;color:var(--ink-faint)}
+  .nextc .dd{grid-column:2;grid-row:1/4;font-family:var(--mono);font-size:26px;color:var(--a);text-align:right;line-height:1}
+  .nextc .dd small{display:block;font-size:10px;color:var(--ink-faint);margin-top:2px}
+  .controls{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:18px}
   .ctl{display:flex;flex-direction:column;gap:4px;min-width:0}
   .ctl label{font-size:11.5px;color:var(--ink-faint);letter-spacing:.06em;text-transform:uppercase;font-weight:500;display:flex;align-items:center;gap:6px}
   .sw{width:14px;height:3px;border-radius:2px;display:inline-block}
@@ -34,52 +42,94 @@
   .panel{display:flex;flex-direction:column;gap:14px;min-width:0}
   .site-name{font-family:var(--display);font-size:20px;font-weight:600;line-height:1.3}
   .site-meta{font-family:var(--mono);font-size:11.5px;color:var(--ink-faint)}
+  .site-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
   .site-note{font-size:13px;color:var(--ink-soft)}
   .nums{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:2px;overflow:hidden}
   .num{background:var(--card);padding:8px;text-align:center}
   .num .n{font-family:var(--mono);font-variant-numeric:tabular-nums;font-size:18px;font-weight:500}
   .num .l{font-size:10.5px;color:var(--ink-faint)}
+  .num .s{font-family:var(--mono);font-size:10.5px;color:var(--ink-faint)}
   .axes-table{width:100%;border-collapse:collapse;font-size:13px}
-  .axes-table td{padding:4px 0;border-bottom:1px dashed var(--line)}
-  .axes-table td.v{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums;width:3.5em}
-  .axes-table td.v.b{color:var(--ink-soft)}
+  .axes-table td{padding:3px 0;border-bottom:1px dashed var(--line)}
+  .axes-table td.v{font-family:var(--mono);text-align:right;font-variant-numeric:tabular-nums;width:3em}
+  .axes-table td.v.b{color:var(--b)}
+  .axes-table td.v.avg{color:var(--ink-faint);font-size:11.5px}
   .axes-table th{font-size:10.5px;color:var(--ink-faint);font-weight:500;text-align:right;padding-bottom:2px}
   .axes-table th:first-child{text-align:left}
+  .axes-table tr.lg td{padding-top:8px;border-bottom:1px solid var(--line);font-family:var(--display);font-weight:600}
+  .axes-table tr.lg td.v{font-family:var(--mono);font-weight:500;color:var(--a)}
+  .axes-table tr.lg td.v.avg{color:var(--ink-faint);font-weight:400}
+  .axes-table tr.lg td.v.b{color:var(--b)}
+  .axes-table td[title]{cursor:help}
+  .prov{font-size:10px;color:var(--a);margin-left:4px}
+  .tiers{display:flex;gap:4px;flex-wrap:wrap;margin-top:2px}
+  .tier{font-family:var(--mono);font-size:11px;border:1px solid var(--line);border-radius:2px;padding:0 6px;color:var(--ink-faint)}
+  .tier.on{border-color:var(--ink);color:var(--ink);background:var(--surface)}
+  .cpy{align-self:flex-start;font:inherit;font-size:12px;background:var(--card);color:var(--ink-soft);border:1px solid var(--line);border-radius:2px;padding:3px 10px;cursor:pointer}
+  .cpy:hover{color:var(--ink)}
+  .info{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}
+  .box{background:var(--card);border:1px solid var(--line);border-radius:2px;padding:12px 14px;min-width:0}
+  .box h3{margin:0 0 6px;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);font-weight:600}
+  .box.wide{grid-column:1/-1}
+  .kv{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;font-size:13px;line-height:1.6}
+  .kv dt{font-size:11px;color:var(--ink-faint);font-weight:500;padding-top:2px}
+  .kv dd{margin:0}
+  .kv small{color:var(--ink-faint);font-size:11px;margin-left:6px}
+  .sv{list-style:none;margin:0;padding:0}
+  .sv li{display:grid;grid-template-columns:5.6em minmax(0,1fr) auto;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px dashed var(--line);font-size:13px}
+  .sv li:last-child{border-bottom:0}
+  .sv b{font-size:11px;font-weight:500;color:var(--ink-faint)}
+  .sv span{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .sv em{font-style:normal;font-family:var(--mono);font-size:12px;color:var(--a);white-space:nowrap}
+  .src{font-family:var(--mono);font-size:11px;color:var(--ink-faint);margin-top:6px}
+  .ent{border-left:3px solid var(--a);padding-left:10px}
+  .ent+.ent{margin-top:10px}
+  .ent .hd{display:flex;gap:10px;align-items:baseline;font-family:var(--mono);font-size:12px}
+  .ent .hd .dd{margin-left:auto;font-size:16px;color:var(--a)}
+  .ent .cf{font-size:13px;color:var(--ink-soft);margin-top:2px}
   section{margin-top:40px}
   .sec-head{display:flex;justify-content:space-between;align-items:baseline;gap:12px;flex-wrap:wrap;border-bottom:1px solid var(--line);padding-bottom:8px}
   .sec-head h2{font-family:var(--body);font-size:13px;font-weight:600;letter-spacing:.08em;text-transform:uppercase}
+  .tools{display:flex;gap:8px;flex-wrap:wrap}
   .seg{display:inline-flex;border:1px solid var(--line);border-radius:2px;overflow:hidden}
-  .seg button{font:inherit;font-size:12px;background:var(--card);color:var(--ink-soft);border:0;padding:5px 10px;cursor:pointer}
+  .seg button{font:inherit;font-size:12px;background:var(--card);color:var(--ink-soft);border:0;padding:5px 10px;cursor:pointer;white-space:nowrap}
+  .seg button+button{border-left:1px solid var(--line)}
   .seg button[aria-pressed="true"]{background:var(--ink);color:var(--bg)}
-  .scroll{overflow-x:auto;margin-top:6px}
-  table.rank{width:100%;border-collapse:collapse;font-size:13px;min-width:560px}
+  .seg .gb{padding:5px 7px}
+  .cnt{font-family:var(--mono);font-size:11px;color:var(--ink-faint)}
+  .scroll{overflow-x:auto;margin-top:6px;overscroll-behavior-x:contain}
+  table.rank{width:100%;border-collapse:collapse;font-size:13px;min-width:640px}
   table.rank th{font-size:10.5px;color:var(--ink-faint);font-weight:500;text-align:right;padding:6px 6px;letter-spacing:.04em;white-space:nowrap}
   table.rank th.l{text-align:left}
   table.rank td{padding:7px 6px;border-top:1px solid var(--line);text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums;white-space:nowrap}
   table.rank td.l{text-align:left;font-family:var(--body);white-space:normal}
+  table.rank td.g{text-align:left;letter-spacing:1px}
   table.rank tr{cursor:pointer}
   table.rank tbody tr:hover{background:var(--surface)}
   table.rank tr.sel{background:var(--surface)}
   table.rank tr.sel td.l:nth-child(2){box-shadow:inset 3px 0 0 var(--a)}
   .un{font-size:10.5px;color:var(--ink-faint);margin-left:6px;font-family:var(--mono)}
-  .delta{color:var(--ink-faint)}
+  .nx{font-family:var(--mono);font-size:10px;color:var(--bg);background:var(--a);border-radius:2px;padding:0 5px;margin-left:6px}
   .chip{display:inline-block;font-family:var(--body);font-size:11px;line-height:1.5;padding:0 6px;border-radius:2px;border:1px solid var(--line);color:var(--ink-soft);white-space:nowrap}
   .chip.A{border-color:var(--b);color:var(--b)} .chip.D{border-color:var(--a);color:var(--a);font-weight:600}
+  .chip.nx2{border-color:var(--a);color:var(--a)}
   .early{font-size:12.5px;color:var(--ink-soft);display:grid;gap:2px}
-  .early .src{font-family:var(--mono);font-size:11px;color:var(--ink-faint)}
+  .early .src{margin-top:0}
   .method{margin-top:14px;font-size:13px;color:var(--ink-soft);display:grid;gap:8px;max-width:66ch}
   .method b{color:var(--ink);font-weight:600}
   .method code{font-family:var(--mono);font-size:12px}
   footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11px;color:var(--ink-faint)}
-  @media (max-width:640px){ .stage{grid-template-columns:1fr} .controls{grid-template-columns:1fr} }
+  @media (max-width:640px){ .stage{grid-template-columns:1fr} .controls{grid-template-columns:1fr} .info{grid-template-columns:1fr} }
 </style>
 <div class="wrap">
 <header>
   <div class="eyebrow">THE THIRD PLACE · MD-002 Field Atlas</div>
   <h1>Field Atlas Radar</h1>
-  <p class="lede">MD-002 Field Atlasの全フィールドを10軸で描いたレーダーです。データはMD-002の Sub-Scores と Early Check-in Record から生成しています。</p>
+  <p class="lede">MD-002 Field Atlasの全フィールドを10軸で描いたレーダーです。点数はMD-002の Sub-Scores と Early Check-in Record、区画・地面は Site Record、次のキャンプは DB-001 Field Log から生成しています。</p>
   <p style="margin:8px 0 0"><span class="badge">MD-002 Ver.__MD002_VERSION__ · 生成 __GENERATED__</span> <span class="badge">点線＝未訪問（調査ベース）</span></p>
 </header>
+
+<button type="button" class="nextc" id="nextc" hidden></button>
 
 <div class="controls">
   <div class="ctl">
@@ -101,60 +151,125 @@
     <div>
       <div class="site-name" id="pName"></div>
       <div class="site-meta" id="pMeta"></div>
+      <div class="site-tags" id="pTags"></div>
     </div>
     <div class="nums">
-      <div class="num"><div class="n" id="nQ"></div><div class="l">フィールド（8軸）/80</div></div>
-      <div class="num"><div class="n" id="nD"></div><div class="l">近さ /10</div></div>
-      <div class="num"><div class="n" id="nPV"></div><div class="l">Atlas Resonance /100</div></div>
+      <div class="num"><div class="n" id="nQ"></div><div class="l">フィールド（8軸）/80</div><div class="s" id="sQ"></div></div>
+      <div class="num"><div class="n" id="nD"></div><div class="l">近さ /10</div><div class="s" id="sD"></div></div>
+      <div class="num"><div class="n" id="nPV"></div><div class="l">Atlas Resonance /100</div><div class="s" id="sPV"></div></div>
     </div>
     <table class="axes-table" id="axesTable"></table>
     <div class="early" id="pEarly"></div>
     <div class="site-note" id="pNote"></div>
+    <button type="button" class="cpy" id="cpy">このフィールドへのリンクをコピー</button>
   </div>
+</div>
+
+<div class="info">
+  <div class="box" id="bSite"></div>
+  <div class="box" id="bSky"></div>
+  <div class="box wide" id="bSurr"></div>
+  <div class="box wide" id="bLog" hidden></div>
 </div>
 
 <section>
   <div class="sec-head">
-    <h2>ランキング</h2>
-    <div class="seg" role="group" aria-label="並び順">
-      <button type="button" id="sortPV" aria-pressed="true">Atlas Resonance順</button>
-      <button type="button" id="sortQ" aria-pressed="false">フィールド8軸順</button>
+    <h2>ランキング <span class="cnt" id="cnt"></span></h2>
+    <div class="tools">
+      <div class="seg" role="group" aria-label="並び順">
+        <button type="button" id="sortPV" aria-pressed="true">Atlas Resonance順</button>
+        <button type="button" id="sortQ" aria-pressed="false">フィールド8軸順</button>
+        <button type="button" id="sortT" aria-pressed="false">近い順</button>
+      </div>
+      <div class="seg" role="group" aria-label="絞り込み" id="filt">
+        <button type="button" data-v="all" aria-pressed="true">全件</button>
+        <button type="button" data-v="v" aria-pressed="false">訪問済</button>
+        <button type="button" data-v="u" aria-pressed="false">未訪問</button>
+      </div>
     </div>
   </div>
   <div class="scroll"><table class="rank" id="rank"></table></div>
 </section>
 
 <section>
-  <div class="sec-head"><h2>採点のしかた</h2></div>
+  <div class="sec-head"><h2>採点と表示について</h2></div>
   <div class="method">
-    <p><b>10軸。</b>Ground・Layout・Facility・Operation・Comfort・View・Place・Experience・近さ・Partner。定義と採点基準はOP-010 Qualification Charter Part Cにあります。Atlas Resonanceは10軸の合計（100点満点）です。フィールド8軸は、近さとPartnerを除いた合計です。</p>
+    <p><b>10軸。</b>10軸は5つの系統に2軸ずつ属します（Site・Infrastructure・Stay・Identity・Relation）。定義と採点基準はOP-010 Qualification Charter Part Cにあります。Atlas Resonanceは10軸の合計（100点満点）、フィールド8軸は近さとPartnerを除いた合計です。軸名にカーソルを当てると採点の根拠が出ます。「平均」は全フィールドの平均です。</p>
     <p><b>アーリーチェックイン。</b>Operation軸の点数を区分で決めています（早い10、可8、条件付き6、不可2）。</p>
     <p><b>近さ。</b>小岩発の移動時間から <code>12 − 2 × 時間</code>（1〜10点）で計算しています。</p>
     <p><b>未訪問。</b>点線で描いています。調査ベースの暫定値です（Partnerは全件がClaudeによる暫定値で、パートナーのご感想を伺い次第置き換えます）。</p>
+    <p><b>地面。</b>🪨 Gravel・⛰️ Rock（岩場）・🌱 Grass・🌲 Forest（林間）・🟫 Soil・🧱 Brick Chips（OP-010の表示規則）。ランキングのアイコンで絞り込めます。</p>
+    <p><b>区画・標高・空・周辺。</b>区画の広さと駐車の扱いはMD-002 §Site Record、標高は国土地理院の標高データ（気温差は標高差×0.6℃/100mの目安）、日の出・日の入り・月齢はページ内の計算値、周辺環境はOpenStreetMapの登録とOSRMの道のりです。周辺環境は登録のない施設が出ない参考値です。</p>
+    <p><b>次のキャンプ。</b>DB-001 Project Ledger §Field Logの予定（Planned）と記録（Done）です。装備IDはMD-004の正式名称で示します。</p>
+    <p><b>基準地点。</b><span id="benchTxt">MD-002 §Reference Benchmark Siteの地点は、View軸10点の基準としてのみ用い、ランキングの対象ではありません。</span></p>
+    <p><b>リンク。</b>ページのURLの末尾に「#f=順位」を付けると、そのフィールドを開きます。</p>
     <p><b>採点の経緯。</b>MD-002の§Sub-Scores §Calibration Recordを参照してください。</p>
   </div>
 </section>
 
-<footer>Source: MD-002 Field Atlas Landscape Framework Ver.__MD002_VERSION__ · 生成：scripts/field_atlas_radar.py</footer>
+<footer>Source: MD-002 Field Atlas Landscape Framework Ver.__MD002_VERSION__ · DB-001 Field Log · MD-004 · 生成：scripts/field_atlas_radar.py</footer>
 </div>
 <script>
 const DATA=/*__DATA__*/[];
+const EXTRA=/*__EXTRA__*/{};
+const PAGE_URL="https://claude.ai/artifact/WjHqjyXoKLRxfTvxTsDaov";
 const AX=["Ground","Layout","Facility","Operation","Comfort","View","Place","Experience","近さ","Partner"];
 const AXJ=["地面","区画","設備","運営","居心地","景観","場所","体験","近さ","パートナー"];
+const $=s=>document.querySelector(s);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const pad=(n,k=2)=>String(n).padStart(k,"0");
 const byRank=[...DATA];
 const get=r=>byRank.find(d=>d.rank==r);
 const q=d=>d.axes.slice(0,8).reduce((a,b)=>a+b,0);
 const pv=d=>d.axes.reduce((a,b)=>a+b,0);
-const selA=document.getElementById("selA"), selB=document.getElementById("selB");
+// OP-010 Part C: ground icons, the five lineages, what each axis is scored from, early check-in tiers
+const GROUND={"🪨":"Gravel","⛰":"Rock","🌱":"Grass","🌲":"Forest","🟫":"Soil","🧱":"Brick Chips"};
+const EMO=g=>g==="⛰"?"⛰️":g;
+const gtxt=d=>(d.ground||[]).map(g=>EMO(g)+" "+GROUND[g]).join(" · ");
+const LINE=[["Site",0],["Infrastructure",2],["Stay",4],["Identity",6],["Relation",8]];
+const BASIS=["事実（地面の種類・状態）","事実（区画面積・車の横付け等）","事実と品質の判断（設備・清潔さ・温水）","事実（アーリーチェックインの区分から決まる）","判断（場内動線・区画間隔・静けさ）","判断（景観）","判断（土地の個性・周辺環境）","判断（その場所でしかできない体験）","計算（移動時間）","パートナーの感想"];
+const TIERS=[["A","早い",10],["B","可",8],["C","条件付き",6],["D","不可",2]];
+const AVG=AX.map((_,i)=>DATA.reduce((s,d)=>s+d.axes[i],0)/Math.max(DATA.length,1));
+const avgSum=(a,b)=>AVG.slice(a,b).reduce((x,y)=>x+y,0);
+// DB-001 Field Log, MD-002 Site Record, elevation, surroundings, gear names (shared with Navigator / Ivory)
+const LOG=EXTRA.log||{},BENCH=EXTRA.bench||[],SITE=EXTRA.site||{},ELEV=EXTRA.elev||{},SURR=EXTRA.surr||{},GEAR=EXTRA.gear||{},LL=EXTRA.ll||{},HOME_ELEV=EXTRA.home_elev;
+const today=()=>new Date(Date.now()+9*3600e3).toISOString().slice(0,10);
+const day0=s=>(String(s).match(/\d{4}-\d{2}-\d{2}/)||[])[0];
+const daysTo=s=>Math.round((Date.parse(s+"T00:00:00Z")-Date.parse(today()+"T00:00:00Z"))/864e5);
+const dLabel=n=>n>0?"D-"+n:n===0?"TODAY":"D+"+(-n);
+const NEXT=(()=>{let best=null;for(const r in LOG)LOG[r].forEach(e=>{const d=day0(e.date);if(e.status==="Planned"&&d&&get(+r)&&(!best||d<best.d))best={r:+r,d,e};});return best;})();
+const tempDiff=m=>HOME_ELEV==null||m==null?null:-(m-HOME_ELEV)*.6/100;
+const fmtT=t=>`${t>=0?"+":"−"}${Math.abs(t).toFixed(1)}℃`;
+const gearIds=t=>[...new Set(String(t).match(/\b[A-Z]{3}-\d{3}[a-z]?\b/g)||[])];
+const SURR_L=[["ic","高速IC"],["conv","コンビニ"],["super","スーパー"],["bath","温泉・入浴"],["hosp","病院"]];
+function sunTimes(ds,lat,lon){
+  const [Y,M,D]=ds.split("-").map(Number),N=Math.round((Date.UTC(Y,M-1,D)-Date.UTC(Y,0,0))/864e5),g=2*Math.PI/365*(N-1+(3-12)/24);
+  const eq=229.18*(.000075+.001868*Math.cos(g)-.032077*Math.sin(g)-.014615*Math.cos(2*g)-.040849*Math.sin(2*g));
+  const dec=.006918-.399912*Math.cos(g)+.070257*Math.sin(g)-.006758*Math.cos(2*g)+.000907*Math.sin(2*g)-.002697*Math.cos(3*g)+.00148*Math.sin(3*g);
+  const r=Math.PI/180,c=Math.cos(90.833*r)/(Math.cos(lat*r)*Math.cos(dec))-Math.tan(lat*r)*Math.tan(dec);
+  if(c<-1||c>1)return null;const ha=Math.acos(c)/r;
+  return{rise:720-4*(lon+ha)-eq+540,set:720-4*(lon-ha)-eq+540};
+}
+const hm=m=>{const t=Math.round(m);return `${Math.floor(t/60)}:${pad(t%60)}`;};
+function moonAt(ds){const age=(((Date.parse(ds+"T12:00:00Z")-Date.UTC(2000,0,6,18,14))/864e5)%29.530588853+29.530588853)%29.530588853;
+  const lit=(1-Math.cos(2*Math.PI*age/29.530588853))/2;
+  const nm=age<1.85||age>=27.68?"新月":age<5.54?"三日月":age<9.23?"上弦":age<12.92?"十日夜":age<16.61?"満月":age<20.3?"寝待月":age<23.99?"下弦":"有明月";
+  return{age,lit,nm};}
+
+const selA=$("#selA"), selB=$("#selB");
 function opt(v,t){const o=document.createElement("option");o.value=v;o.textContent=t;return o;}
 byRank.forEach(d=>selA.appendChild(opt(d.rank,`${d.rank}. ${d.name}${d.visited?"":"（未訪問）"}`)));
 selB.appendChild(opt("none","比べない"));
 byRank.forEach(d=>selB.appendChild(opt(d.rank,`${d.rank}. ${d.name}`)));
-let state={a:1,b:"none",sort:"pv"};
-try{const s=JSON.parse(localStorage.getItem("fa-radar3")||"null");if(s&&s.a&&get(s.a)&&(s.b==="none"||get(s.b)))state=Object.assign(state,s);}catch(e){}
-function save(){try{localStorage.setItem("fa-radar3",JSON.stringify(state));}catch(e){}}
+let state={a:1,b:"none",sort:"pv",vis:"all",gr:null};
+try{const s=JSON.parse(localStorage.getItem("fa-radar3")||"null");if(s&&s.a&&get(s.a)&&(s.b==="none"||get(s.b)))state=Object.assign(state,s);if(!["pv","q","t"].includes(state.sort))state.sort="pv";if(!["all","v","u"].includes(state.vis))state.vis="all";if(!GROUND[state.gr])state.gr=null;}catch(e){}
+// deep link: #f=<rank> opens that field
+try{const m=location.hash.match(/f=(\d+)/);if(m&&get(+m[1]))state.a=+m[1];}catch(e){}
+function save(){try{localStorage.setItem("fa-radar3",JSON.stringify(state));}catch(e){}try{history.replaceState(null,"","#f="+state.a);}catch(e){}}
+const shown=d=>(state.vis==="all"||(state.vis==="v")===d.visited)&&(!state.gr||(d.ground||[]).includes(state.gr));
+const SORTS={pv:(x,y)=>pv(y)-pv(x)||x.rank-y.rank,q:(x,y)=>q(y)-q(x)||x.rank-y.rank,t:(x,y)=>x.hours-y.hours||x.rank-y.rank};
 
-const NS="http://www.w3.org/2000/svg", svg=document.getElementById("radar");
+const NS="http://www.w3.org/2000/svg", svg=$("#radar");
 const CX=200,CY=192,R=140;
 function pt(i,v){const ang=-Math.PI/2+i*2*Math.PI/AX.length;return[CX+Math.cos(ang)*R*v/10,CY+Math.sin(ang)*R*v/10];}
 function el(n,a,p){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e;}
@@ -165,11 +280,13 @@ function draw(){
   AX.forEach((a,i)=>{const[x,y]=pt(i,10);el("line",{x1:CX,y1:CY,x2:x,y2:y,stroke:"var(--grid)","stroke-width":1},g);
     const[lx,ly]=pt(i,11.9);const t=el("text",{x:lx,y:ly+4,"text-anchor":Math.abs(lx-CX)<4?"middle":(lx>CX?"start":"end"),fill:"var(--ink-soft)","font-size":12,"font-family":"var(--body)"},g);t.textContent=AXJ[i];});
   [5,10].forEach(v=>{const[x,y]=pt(0,v);const t=el("text",{x:x+5,y:y+4,fill:"var(--ink-faint)","font-size":10,"font-family":"var(--mono)"},g);t.textContent=v;});
+  // all-field average as a faint outline
+  el("polygon",{points:AVG.map((v,i)=>pt(i,v).join(",")).join(" "),fill:"none",stroke:"var(--ink-faint)","stroke-width":1,"stroke-dasharray":"2 3"},g);
   const A=get(state.a);let B=null,bLabel="";
   if(state.b!=="none"&&get(state.b)){B=get(state.b);bLabel=B.name;}
   if(B)series(B,"var(--b)",bLabel,0.10);
   series(A,"var(--a)",A.name,0.18);
-  panel(A,B,bLabel);
+  panel(A,B);details(A);
 }
 function series(d,color,label,fillOp){
   const pts=d.axes.map((v,i)=>pt(i,v));
@@ -177,38 +294,86 @@ function series(d,color,label,fillOp){
   pts.forEach((p,i)=>{
     el("circle",{cx:p[0],cy:p[1],r:4.5,fill:color,stroke:"var(--card)","stroke-width":2});
     const hit=el("circle",{cx:p[0],cy:p[1],r:13,fill:"transparent",tabindex:0,"aria-label":`${label} ${AXJ[i]} ${d.axes[i]}`});
-    const show=()=>tip(p,`${label}｜${AXJ[i]} ${d.axes[i]}`);
+    const show=()=>tip(p,`${label}｜${AXJ[i]} ${d.axes[i]}（平均 ${AVG[i].toFixed(1)}）`);
     hit.addEventListener("mouseenter",show);hit.addEventListener("focus",show);
     hit.addEventListener("mouseleave",hideTip);hit.addEventListener("blur",hideTip);
   });
 }
-const tipEl=document.getElementById("tip");
+const tipEl=$("#tip");
 function tip(p,txt){const box=svg.getBoundingClientRect(),s=box.width/400;tipEl.textContent=txt;tipEl.hidden=false;
   let x=8+p[0]*s+12,y=8+p[1]*s-30;const w=tipEl.offsetWidth;if(x+w>box.width)x=x-w-24;tipEl.style.left=x+"px";tipEl.style.top=y+"px";}
 function hideTip(){tipEl.hidden=true;}
-function panel(A,B,bLabel){
-  document.getElementById("pName").textContent=A.name;
-  document.getElementById("pMeta").textContent=`${A.rank}位 · ${A.pref} · 小岩から${A.hours}h · ${A.visited?"訪問済み":"未訪問（調査ベース）"}`;
-  document.getElementById("nQ").textContent=q(A);document.getElementById("nD").textContent=A.axes[8];document.getElementById("nPV").textContent=pv(A);
-  const t=document.getElementById("axesTable");t.innerHTML="";
-  const hr=t.insertRow();hr.innerHTML=`<th>軸</th><th>新</th>${B?`<th>相手</th>`:""}`;
-  AX.forEach((a,i)=>{const r=t.insertRow();r.innerHTML=`<td>${AXJ[i]}${a!==AXJ[i]?` <span class="un">${a}</span>`:""}</td><td class="v">${A.axes[i]}</td>${B?`<td class="v b">${B.axes[i]}</td>`:""}`;});
-  document.getElementById("pNote").textContent=`${A.tag}：${A.note}`;
-  const e=A.early;document.getElementById("pEarly").innerHTML=`<div>アーリーチェックイン <span class="chip ${e.tier}">${e.label}</span></div><div>${e.detail}</div><div class="src">出典：${e.source}</div>`;
+function panel(A,B){
+  $("#pName").textContent=A.name;
+  $("#pMeta").textContent=`${A.rank}位 · ${A.pref} · 小岩から${A.hours}h · ${A.visited?"訪問済み":"未訪問（調査ベース）"}`;
+  const lg=(LOG[A.rank]||[]).find(e=>e.status==="Planned"),k=lg&&day0(lg.date);
+  $("#pTags").innerHTML=(A.ground&&A.ground.length?`<span class="chip">${esc(gtxt(A))}</span>`:"")+`<span class="chip">${esc(A.tag)}</span>`+(lg?`<span class="chip nx2">NEXT CAMP ${esc(lg.date)}${k?" · "+dLabel(daysTo(k)):""}</span>`:"");
+  $("#nQ").textContent=q(A);$("#nD").textContent=A.axes[8];$("#nPV").textContent=pv(A);
+  $("#sQ").textContent=B?"相手 "+q(B):"平均 "+avgSum(0,8).toFixed(1);
+  $("#sD").textContent=B?"相手 "+B.axes[8]:`12−2×${A.hours.toFixed(1)}h`;
+  $("#sPV").textContent=B?"相手 "+pv(B):"平均 "+avgSum(0,10).toFixed(1);
+  // axes grouped by lineage, with subtotals and the all-field average
+  let h=`<tr><th>軸</th><th>点</th><th>平均</th>${B?"<th>相手</th>":""}</tr>`;
+  LINE.forEach(([n,s])=>{h+=`<tr class="lg"><td>${n}</td><td class="v">${A.axes[s]+A.axes[s+1]}<span style="font-size:10px;color:var(--ink-faint)">/20</span></td><td class="v avg">${(AVG[s]+AVG[s+1]).toFixed(1)}</td>${B?`<td class="v b">${B.axes[s]+B.axes[s+1]}</td>`:""}</tr>`;
+    [s,s+1].forEach(i=>{h+=`<tr><td title="${esc(BASIS[i])}">${AXJ[i]}${AX[i]!==AXJ[i]?` <span class="un">${AX[i]}</span>`:""}${i===9?'<span class="prov">暫定</span>':""}</td><td class="v">${A.axes[i]}</td><td class="v avg">${AVG[i].toFixed(1)}</td>${B?`<td class="v b">${B.axes[i]}</td>`:""}</tr>`;});});
+  $("#axesTable").innerHTML=h;
+  $("#pNote").textContent=`${A.tag}：${A.note}`;
+  const e=A.early;$("#pEarly").innerHTML=`<div>アーリーチェックイン <span class="chip ${e.tier}">${esc(e.label)}</span></div><div>${esc(e.detail)}</div><div class="src">出典：${esc(e.source)}</div><div class="tiers" aria-label="区分とOperation軸の点数">${TIERS.map(([t,l,p])=>`<span class="tier${e.tier===t?" on":""}">${l} ${p}</span>`).join("")}</div>`;
+}
+function details(A){
+  const r=A.rank,st=SITE[r],el2=ELEV[r],td=tempDiff(el2),ll=LL[r],sv=SURR[r];
+  // site
+  const gn=st?st.ground.replace(/^[🪨⛰🌱🌲🟫🧱️\s]+/u,"").replace("（MD-002既記録）","").replace(/^[。・\s]+/,""):"";
+  const gl=[gtxt(A),gn].filter(x=>x&&x!=="—").join(" · ")||(st?st.ground:"");
+  $("#bSite").innerHTML=`<h3>区画・標高 · MD-002 Site Record</h3><dl class="kv">${st?`<dt>地面</dt><dd>${esc(gl)}</dd><dt>区画</dt><dd>${esc(st.area)}</dd><dt>駐車</dt><dd>${esc(st.parking)}</dd>`:""}${el2!=null?`<dt>標高</dt><dd>${el2.toLocaleString()} m${td!=null?`<small>小岩より約 ${fmtT(td)}</small>`:""}</dd>`:""}</dl><div class="src">${st?"出典："+esc(st.source)+" · ":""}基準 80㎡（車別）／100㎡（車込）</div>`;
+  // sky
+  const plan=(LOG[r]||[]).map(e=>e.status==="Planned"?day0(e.date):null).find(Boolean),ds=plan||today();
+  if(ll){const s=sunTimes(ds,ll[1],ll[0]),m=moonAt(ds);
+    $("#bSky").innerHTML=`<h3>空 · ${esc(ds)}${plan?"（次のキャンプ）":"（今日）"}</h3><dl class="kv"><dt>日の出</dt><dd>${s?hm(s.rise):"—"}</dd><dt>日の入り</dt><dd>${s?hm(s.set):"—"}</dd><dt>月齢</dt><dd>${m.age.toFixed(1)}（${m.nm}・明るさ ${Math.round(m.lit*100)}%）${m.lit<.25?"<small>月明かりが少ない夜</small>":""}</dd></dl><div class="src">計算値（日の出・日の入りは海面基準、月齢は21時）</div>`;}
+  else $("#bSky").innerHTML="";
+  $("#bSky").hidden=!ll;
+  // surroundings
+  $("#bSurr").hidden=!sv;
+  if(sv)$("#bSurr").innerHTML=`<h3>周辺環境</h3><ul class="sv">${SURR_L.map(([k,l])=>{const v=sv[k];return `<li><b>${l}</b><span>${v?esc((v.name||"（名称未登録）").replace(/;/g,"・"))+(v.onsen?" ♨":""):"—"}</span><em>${v?`${v.km} km · ${v.min}分`:"30km圏に登録なし"}</em></li>`;}).join("")}</ul><div class="src">OpenStreetMapに登録された最寄り（直線で近い3件のうち車で最短）。道のりと時間はOSRM（渋滞なし）。参考値</div>`;
+  // field log with gear names
+  const lg=LOG[r]||[];$("#bLog").hidden=!lg.length;
+  $("#bLog").innerHTML=`<h3>フィールドログ · DB-001</h3>`+lg.map(x=>{const k=day0(x.date),n=k?daysTo(k):null,dash=v=>v&&v!=="—",ids=gearIds(x.config).filter(g=>GEAR[g]);
+    return `<div class="ent"><div class="hd"><span>${esc(x.date)}</span><span class="chip">${esc(x.status)}</span>${x.status==="Planned"&&n!==null?`<span class="dd">${dLabel(n)}</span>`:""}</div>`+
+      (dash(x.config)?`<div class="cf">${esc(x.config)}</div>`:"")+
+      (ids.length?`<dl class="kv" style="margin-top:6px">${ids.map(g=>`<dt>${g}</dt><dd>${esc(GEAR[g].brand||"")} ${esc(GEAR[g].product||"")}<small>${esc(GEAR[g].status||"")}</small></dd>`).join("")}</dl><div class="src">装備名：MD-004 Equipment Registry</div>`:"")+
+      `<dl class="kv" style="margin-top:4px">${[["天候",x.weather],["良かった点",x.well],["困った点",x.issues]].filter(([,v])=>dash(v)).map(([k2,v])=>`<dt>${k2}</dt><dd>${esc(v)}</dd>`).join("")}</dl></div>`;}).join("");
 }
 function table(){
-  const t=document.getElementById("rank");
-  const rows=[...byRank].sort(state.sort==="q"?(x,y)=>q(y)-q(x)||x.rank-y.rank:(x,y)=>pv(y)-pv(x)||x.rank-y.rank);
-  let h=`<thead><tr><th>#</th><th class="l">フィールド</th>${AXJ.map(a=>`<th>${a}</th>`).join("")}<th>8軸</th><th>計</th><th class="l">アーリー</th></tr></thead><tbody>`;
-  rows.forEach((d,i)=>{h+=`<tr data-r="${d.rank}" tabindex="0" class="${d.rank==state.a?"sel":""}"><td>${i+1}</td><td class="l">${d.name}${d.visited?"":'<span class="un">未訪問</span>'}</td>${d.axes.map(v=>`<td>${v}</td>`).join("")}<td>${q(d)}</td><td>${pv(d)}</td><td class="l"><span class="chip ${d.early.tier}">${d.early.label}</span></td></tr>`;});
+  const t=$("#rank");
+  const rows=byRank.filter(shown).sort(SORTS[state.sort]);
+  $("#cnt").textContent=rows.length===byRank.length?`${byRank.length}件`:`${rows.length} / ${byRank.length}件`;
+  let h=`<thead><tr><th>#</th><th class="l">フィールド</th><th class="l">地面</th>${AXJ.map((a,i)=>`<th title="${esc(BASIS[i])}">${a}</th>`).join("")}<th>8軸</th><th>計</th><th>時間</th><th class="l">アーリー</th></tr></thead><tbody>`;
+  rows.forEach((d,i)=>{h+=`<tr data-r="${d.rank}" tabindex="0" class="${d.rank==state.a?"sel":""}"><td>${i+1}</td><td class="l">${esc(d.name)}${d.visited?"":'<span class="un">未訪問</span>'}${NEXT&&NEXT.r===d.rank?'<span class="nx">NEXT</span>':""}</td><td class="g" title="${esc(gtxt(d))}">${(d.ground||[]).map(EMO).join("")}</td>${d.axes.map(v=>`<td>${v}</td>`).join("")}<td>${q(d)}</td><td>${pv(d)}</td><td>${d.hours.toFixed(1)}h</td><td class="l"><span class="chip ${d.early.tier}">${esc(d.early.label)}</span></td></tr>`;});
+  if(!rows.length)h+=`<tr><td colspan="17" class="l">条件に合うフィールドがありません。</td></tr>`;
   t.innerHTML=h+"</tbody>";
-  t.querySelectorAll("tbody tr").forEach(tr=>{const go=()=>{state.a=+tr.dataset.r;sync();window.scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});};
+  t.querySelectorAll("tbody tr[data-r]").forEach(tr=>{const go=()=>{state.a=+tr.dataset.r;if(state.b==state.a)state.b="none";sync();window.scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});};
     tr.addEventListener("click",go);tr.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}});});
 }
-function sync(){selA.value=state.a;selB.value=state.b;document.getElementById("sortQ").setAttribute("aria-pressed",state.sort==="q");document.getElementById("sortPV").setAttribute("aria-pressed",state.sort==="pv");draw();table();save();}
-selA.addEventListener("change",()=>{state.a=+selA.value;sync();});
+const filt=$("#filt");
+filt.insertAdjacentHTML("beforeend",Object.keys(GROUND).map(g=>`<button type="button" class="gb" data-g="${g}" aria-pressed="false" title="${GROUND[g]}" aria-label="地面：${GROUND[g]}">${EMO(g)}</button>`).join(""));
+filt.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;if(b.dataset.v)state.vis=b.dataset.v;else state.gr=state.gr===b.dataset.g?null:b.dataset.g;sync();});
+function sync(){selA.value=state.a;selB.value=state.b;
+  [["#sortPV","pv"],["#sortQ","q"],["#sortT","t"]].forEach(([s,k])=>$(s).setAttribute("aria-pressed",String(state.sort===k)));
+  filt.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v?b.dataset.v===state.vis:b.dataset.g===state.gr)));
+  draw();table();save();}
+selA.addEventListener("change",()=>{state.a=+selA.value;if(state.b==state.a)state.b="none";sync();});
 selB.addEventListener("change",()=>{state.b=selB.value;sync();});
-document.getElementById("sortQ").addEventListener("click",()=>{state.sort="q";sync();});
-document.getElementById("sortPV").addEventListener("click",()=>{state.sort="pv";sync();});
+$("#sortQ").addEventListener("click",()=>{state.sort="q";sync();});
+$("#sortPV").addEventListener("click",()=>{state.sort="pv";sync();});
+$("#sortT").addEventListener("click",()=>{state.sort="t";sync();});
+$("#cpy").addEventListener("click",async e=>{const btn=e.currentTarget,lab=btn.textContent,u=PAGE_URL+"#f="+state.a;
+  try{await navigator.clipboard.writeText(u);btn.textContent="コピーしました";}catch(_){try{window.prompt("このリンクをコピーしてください",u);}catch(__){}}
+  setTimeout(()=>{btn.textContent=lab;},1800);});
+// the next planned camp from DB-001 Field Log
+if(NEXT){const d=get(NEXT.r),n=daysTo(NEXT.d),nc=$("#nextc");nc.hidden=false;
+  nc.innerHTML=`<span class="k">Next camp · DB-001</span><span class="nn">${esc(d.name)}</span><span class="dt">${esc(NEXT.e.date)} · ${esc(NEXT.e.status)}</span><span class="dd">${n>0?n:n===0?"0":"+"+(-n)}<small>${n>0?"日後":n===0?"今日":"日前"}</small></span>`;
+  nc.setAttribute("aria-label",`次のキャンプ：${d.name}、${NEXT.e.date}`);
+  nc.addEventListener("click",()=>{state.a=NEXT.r;if(state.b==state.a)state.b="none";sync();});}
+if(BENCH.length){const b=BENCH[0];$("#benchTxt").textContent=`${b.name}（${b.info}${b.elev!=null?`・標高 ${b.elev} m`:""}）は、MD-002 §Reference Benchmark Siteに記録したView軸10点の基準地点です（${b.tag}）。ランキングの対象ではありません。`;}
 sync();
 </script>
