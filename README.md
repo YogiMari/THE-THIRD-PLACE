@@ -170,6 +170,7 @@ python3 scripts/codex_arbor.py --out codex-arbor.html
 
 - 公開先：https://claude.ai/artifact/WbRbrmERdD1n6tfA92U2Eb
 - 生成スクリプト：`scripts/codex_arbor.py`／テンプレート：`scripts/templates/codex_arbor.html`
+- 写真図版（Tabula）は、生成時に`assets/banner.PNG`から切り出して埋め込む（Pillowが必要。無い環境では図版なしで生成される）。切り出し範囲はスクリプトの`PLATES`に記している。
 - 樹の配置と、文書が明記する関係（枝）は、出典とともにテンプレートに記している。§8に新しい文書が加わった場合、書目・全書検索・言及マトリクスには自動で現れる。樹への配置は、テンプレートに追記する。
 
 ---
@@ -380,6 +381,7 @@ python3 scripts/codex_arbor.py --out codex-arbor.html
 
 - Published at: https://claude.ai/artifact/WbRbrmERdD1n6tfA92U2Eb
 - Generator: `scripts/codex_arbor.py` / Template: `scripts/templates/codex_arbor.html`
+- The photographic plates (Tabulae) are cropped from `assets/banner.PNG` at build time and embedded (requires Pillow; without it the page builds with no plates). The crop boxes are listed in `PLATES` in the script.
 - The tree layout and the relations stated by the documents (branches) live in the template, each with its source. A document newly added to §8 appears in the catalogue, search and mention matrix automatically; its place in the tree is added to the template.
 
 ---

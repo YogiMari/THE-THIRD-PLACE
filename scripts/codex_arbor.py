@@ -20,6 +20,8 @@ Every figure on the page is read from the repository at build time:
     MD-004 / MD-003                -> registry entries (gallery)
     OP-003                         -> vocabulary counts
     archive/                       -> relocated Version History files
+    assets/banner.PNG              -> photographic plates (Tabulae),
+                                      cropped at build time (Pillow)
     git                            -> commit and last commit per file
 
 The page carries no data of its own, so any conversation can regenerate
@@ -31,7 +33,9 @@ Usage:
 """
 
 import argparse
+import base64
 import datetime
+import io
 import json
 import re
 import subprocess
@@ -253,6 +257,38 @@ def parse_lexicon(op003: str) -> list[list]:
     return out
 
 
+# Plates cut from the project banner: (left, top, right, bottom) in banner pixels.
+# The top band of the banner carries its title lettering and is never used.
+PLATES = {
+    "hero": (0, 262, 1774, 887),
+    "fire": (600, 560, 1110, 860),
+    "chairs": (300, 540, 720, 800),
+    "rover": (1160, 370, 1774, 770),
+    "lanterns": (330, 300, 1010, 640),
+    "vista": (700, 258, 1150, 520),
+}
+
+
+def build_plates(banner: Path) -> dict[str, str]:
+    """JPEG data URIs for each plate. Without Pillow or the banner the page
+    simply shows no plates."""
+    try:
+        from PIL import Image
+    except ImportError:
+        print("warning: Pillow not installed — building without plates", file=sys.stderr)
+        return {}
+    if not banner.exists():
+        print(f"warning: {banner} not found — building without plates", file=sys.stderr)
+        return {}
+    image = Image.open(banner).convert("RGB")
+    plates = {}
+    for name, box in PLATES.items():
+        buffer = io.BytesIO()
+        image.crop(box).save(buffer, "JPEG", quality=84, optimize=True, progressive=True)
+        plates[name] = "data:image/jpeg;base64," + base64.b64encode(buffer.getvalue()).decode()
+    return plates
+
+
 def git(*args: str) -> str:
     try:
         return subprocess.run(
@@ -326,6 +362,7 @@ def build(root: Path) -> dict:
         "lexicon": parse_lexicon(read(root / "OP/OP-003_Affinity_Lexicon.md")),
         "gallery": gallery,
         "corpus": corpus,
+        "plates": build_plates(root / "assets" / "banner.PNG"),
         "meta": {
             "commit": git("rev-parse", "--short", "HEAD") or "unknown",
             "commitDate": git("log", "-1", "--format=%cs") or None,
