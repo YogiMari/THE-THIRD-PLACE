@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.21
+**Version**: 4.22
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -53,6 +53,7 @@
 | 全文書レビューと整備バックログの消化 | 全文書 | 整備バックログ, 矛盾, 重複, 未策定, Sonnet, Safety, 一酸化炭素, Material Care, Vehicle, Range Rover Sport, Field Log, Zone Evaluation Philosophy, Partner Value, Retirement, ID Freeze | 全25文書をレビューし、矛盾・重複・未策定事項を課題化（整備バックログArtifact）。Sonnetで大半を解消後、残りの未策定事項をClaudeの推奨案で暫定採用：OP-006 Safety／Material Care、MD-001 Vehicle・全体設営撤収手順、DB-001 Field Log、OP-002 Zone Evaluation Philosophy（5ゾーン）、OP-010 退役ルール・Coffee境界・Candidate方式・Field Atlas基準、MD-002 Partner Value正式化、OP-005 予算の性格・Coffee在庫確認、CZ-001 経由ルール、ヘッダー統一。文書数は減らさない方針（MARI様指示）。 | Active | 2026-09-28 |
 | 暫定採用項目の個別確認 | OP-002, OP-005, OP-006, OP-010, MD-001, BR-002, CZ-001, CZ-002, DB-001 | 暫定採用, 正式採用, N-01, N-03, N-05, N-08, N-09, N-10, N-12, N-13, N-14, 一酸化炭素チェッカー, 設営順序, Partner Value, Coffee Watch Scope, 比較検討の必須化, FUR-036 | 整備バックログで暫定採用した15件をMARI様が個別に確認。14件を正式採用（N-01はチェッカー2個へ修正、N-03は設営順序を変更、N-06は収納・運搬をDeferredへ戻す、N-12は比較検討の必須化へ変更しFUR-036をさかのぼって比較、N-14はCoffee機材もCZ-002で監視へ変更）。N-05・N-16（Field Log）は初回キャンプの試行後に決定。 | Active | 2026-09-29 |
 | 初回キャンプの計画（moss camp field） | DB-001, MD-002, MD-001, OP-006, OP-010 | 初回キャンプ, moss camp field, BOTANICAL, Field Log, Planned, 秋構成, SHL-001, SHL-004, Seasonal Slot A, アーリーチェックイン, 山中湖, Site Requirements | MD-002 Partner ValueとOP-010 Part C §Site Requirementsをもとに行き先を絞り込み、MARI様がmoss camp fieldのBOTANICALオートサイトを2026-10-17〜18に予約（アーリー12:00）。秋構成（Season Kitなし、Seasonal Slot A空け）、Shelter：SHL-001＋SHL-004、寒さ対策は寝具のみ。シェルター内では燃焼器具を使わない（OP-006 §Safety Principles）。§Field LogへPlanned行を追加。 | Active | 2026-09-30 |
+| KN四誌の創刊号発行（Artifact） | KN-001, KN-002, KN-003, KN-004, OP-008, DB-001 | KN, Heritage Chronicle, Cultural Pantheon, Beyond Journey, Atelier Discovery, 創刊号, Artifact, ファッション誌, 参考図版, KN Publication Log | KN四誌の創刊号を、それぞれ別テイストのファッション誌デザインでArtifactとして発行（本文はOP-008 §28によりGitHubに置かない）。Atelier Discoveryの横スクロールを修正し、四誌のデザインを全面改訂、CC BY／CC BY-SA／パブリックドメインの実写写真を参考図版として追加（クレジットは各誌巻末）。誤って作成した重複Artifact 4件は削除。§KN Publication Logへ4誌の発行記録を追加。 | Active | 2026-10-01 |
 
 ---
 
@@ -109,7 +110,10 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 
 | Date | Series | Theme / Title | Artifact Link |
 |------|--------|----------------|----------------|
-| — | — | — | — |
+| 2026-09-30 | KN-001 | Heritage Chronicle Vol. I — The Wood Stove Dossier ほか | — |
+| 2026-09-30 | KN-002 | Cultural Pantheon Issue No. 1 — Before Need | — |
+| 2026-09-30 | KN-003 | Beyond Journey No. 01 — Beauty before Need | — |
+| 2026-09-30 | KN-004 | Atelier Discovery Bulletin No. 01 — Horizon / Price Anatomy | — |
 
 運用ルール：
 
@@ -166,6 +170,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.19 | 2026-09-28 | MARI様の試し積み結果をMD-001 §Loading Map（Ver.2.26）へ反映したため、Project Inboxの「車両への試し積み」を削除。Patch Version。 |
 | 4.20 | 2026-09-29 | 暫定採用項目の個別確認（MARI様のご決定）を記録。Conversation Ledgerへ本会話を追加。Project Inboxへ一酸化炭素チェッカー2個目の購入予定を追加（OP-006 Ver.1.9と連動）。§Field Logへ、運用は暫定であり初回キャンプの試行後に継続を決定する旨を追記（N-05・N-16）。 |
 | 4.21 | 2026-09-30 | 初回キャンプの計画（MARI様のご決定）を記録。§Field Logへ、moss camp field（2026-10-17〜18、BOTANICALオートサイト、アーリー12:00）のStatus = Planned行を追加。Conversation Ledgerへ本会話を追加。Field Logの運用は引き続き暫定であり、帰宅後にDoneへ更新した上で継続の可否を決定する。Patch Version。 |
+| 4.22 | 2026-10-01 | §KN Publication Logへ、KN-001〜004創刊号（2026-09-30発行）の4行を追加。Artifact Linkは共有設定前のため「—」とした（運用ルールどおり）。Conversation Ledgerへ本会話を追加。MARI様のご指示に基づく。Patch Version。 |
 
 ---
 
