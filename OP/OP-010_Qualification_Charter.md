@@ -3,7 +3,7 @@
 **Document ID**: OP-010  
 **Title**: Qualification Charter  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.1  
+**Version**: 3.2  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -25,6 +25,7 @@
 | 2.5 | 2026-09-29 | MARI様のご決定に基づき、Part C §Site Requirementsのアーリーチェックインを「トイレの数・近さと同等の重みを持つ要素」と明記し、§Early Check-in Scoring（早い+1／可±0／条件付き−1／不可−4。不可の減点は他の軸で相殺せず合計と順位に反映）を新設。§2. Facilityの評価対象へアーリーチェックインを追加。Minor Version。 |
 | 3.0 | 2026-09-29 | MARI様のご決定に基づき、Part C（Field Atlas Evaluation）の評価体系を改めた。評価軸を6軸（60点満点）から10軸（100点満点）へ再編し（Site→Ground＋Layout、Facility→Facility＋Operation、Identity→Place＋Experience）、パートナーの感想を採点するPartner軸を新設した。総合スコアの名称をPartner ValueからAtlas Resonanceへ改めた。Facilityへ清潔さの加減（汚ければ大きく減点、特筆するほど綺麗なら加点）を追加した。アーリーチェックインはFacilityの加減からOperation軸の点数（早い10／可8／条件付き6／不可2）へ移し、近さの算出式（12 − 2 × 移動時間）を明文化した。相殺の禁止を明記し、同点時の順位規則（Partner→Place＋Experience）を定めた。§Ranking Philosophyの移行注記を、旧スコアの廃止とMD-002 Ver.4.0の1回限りの較正の記録へ置き換えた。評価仕様の変更のためMajor Version。 |
 | 3.1 | 2026-10-01 | MARI様のご決定に基づき、Part C §Display Rules（Ground Surface）の🌲を「Wood Deck」から「Forest（林間）」へ改め、地面のアイコンと併記できる旨を加えた。MD-002 Field Atlas Databaseでは🌲が林間の意味で使われており（6件）、表記と定義を一致させるため。評価軸・採点基準に変更はない。Minor Version。 |
+| 3.2 | 2026-10-01 | MARI様のご決定に基づき、Part C §Display Rules（Ground Surface）へ🧱 Brick Chips（レンガチップ）を加えた。砂利・土のどちらにも当たらないレンガチップの地面（MD-002 秩父ファームステイ）を表すため。§1. Groundの採点の目安に変更はない。Minor Version。 |
 
 ---
 
@@ -900,6 +901,8 @@ Ver.3.0より、この移動時間は「近さ」軸の根拠情報としても�
 🌲 Forest（林間）
 
 🟫 Soil
+
+🧱 Brick Chips（レンガチップ）
 
 複数ある場合は、
 

@@ -15,7 +15,7 @@ Both editions show the same information. Each item comes from the source named h
 | Item | Source |
 |---|---|
 | Rank, name, prefecture, travel time, visited status, Identity (tag and text), Atlas Resonance | MD-002 §Field Atlas Database |
-| Ground surface icons (🪨 Gravel, 🌱 Grass, 🌲 Forest (林間, OP-010 Ver.3.1), 🟫 Soil), shown only where the Database row has them | MD-002 §Field Atlas Database, meaning from OP-010 Part C §Display Rules |
+| Ground surface icons (🪨 Gravel, 🌱 Grass, 🌲 Forest (林間, OP-010 Ver.3.1), 🟫 Soil, 🧱 Brick Chips), shown only where the Database row has them | MD-002 §Field Atlas Database, meaning from OP-010 Part C §Display Rules |
 | 10-axis scores, lineage subtotals (Site, Infrastructure, Stay, Identity, Relation; /20 each), all-field averages | MD-002 §Sub-Score Table (grouping from OP-010 Part C §Evaluation Framework) |
 | What each axis is scored from (fact, judgement, calculation, partner), Distance formula 12 − 2 × hours, early check-in tier points 10 / 8 / 6 / 2, Partner shown as provisional | OP-010 Part C and MD-002 §Calibration Record (the page carries these fixed texts) |
 | Early check-in category, detail and source | MD-002 §Early Check-in Record |
