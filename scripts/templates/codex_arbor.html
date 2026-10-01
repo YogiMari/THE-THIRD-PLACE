@@ -61,7 +61,7 @@ a{color:inherit}
 
 /* ---------- frontispiece ---------- */
 .front{margin-top:clamp(28px,5vw,64px);text-align:center;padding-block:clamp(40px,7vw,96px) clamp(30px,5vw,60px)}
-.front .over{font-family:var(--f-label);font-size:11px;letter-spacing:.62em;text-transform:uppercase;color:var(--gold);padding-left:.62em}
+.front .over{margin-top:22px;font-family:var(--f-label);font-size:11px;letter-spacing:.62em;text-transform:uppercase;color:var(--gold);padding-left:.62em}
 .front h1{margin:.1em 0 0;font-weight:400;line-height:.9}
 .front h1 .black{display:block;font-family:var(--f-black);font-size:clamp(96px,19vw,272px);letter-spacing:.01em;filter:drop-shadow(0 0 30px rgba(246,220,160,.22))}
 .front h1 .sub{display:block;margin-top:.1em;font-family:var(--f-display);font-style:italic;font-size:clamp(22px,3.2vw,42px);color:var(--fg)}
@@ -380,7 +380,7 @@ table.codex .strike{color:var(--faint);text-decoration:line-through;text-decorat
 /* ---------- finale ---------- */
 .finale{margin-top:clamp(100px,13vw,190px);display:grid;justify-items:center;gap:26px;text-align:center}
 .finale .law{writing-mode:vertical-rl;font-family:var(--f-ja);font-weight:500;font-size:clamp(40px,6vw,76px);line-height:1.2;letter-spacing:.24em;margin:0;
-  filter:drop-shadow(0 0 30px rgba(246,220,160,.18))}
+  color:var(--gold-hi);text-shadow:0 0 28px rgba(246,220,160,.35),0 0 2px rgba(255,240,210,.6)}
 .finale p{margin:0 auto;max-width:30em;color:var(--muted);font-size:14px}
 .finale .black{font-family:var(--f-black);font-size:40px;line-height:1}
 .colophon{margin-top:60px;padding-top:18px;border-top:1px solid var(--hair);display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between;font-family:var(--f-label);font-size:10px;letter-spacing:.22em;text-transform:uppercase;color:var(--faint)}
@@ -464,6 +464,35 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 .ctx .acts a{text-decoration:none}
 .seek-more{display:flex;justify-content:center;margin-top:16px}
 
+/* ---------- Tabulae (photographic plates from assets/banner.PNG) ---------- */
+[hidden]{display:none!important}
+.ph{position:relative;overflow:hidden;aspect-ratio:var(--ar,16/9);max-width:100%;background:#0b0b10;border:1px solid var(--hair-gold);box-shadow:0 50px 90px -30px rgba(0,0,0,.85)}
+.ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:translate3d(0,var(--py,0%),0) scale(1.1);filter:contrast(1.06) saturate(1.06)}
+.ph img.bloom{filter:blur(16px) brightness(1.25) saturate(1.3);mix-blend-mode:screen;opacity:.38}
+.ph::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
+  background:radial-gradient(120% 90% at 50% 45%,transparent 50%,rgba(4,4,8,.62) 100%),linear-gradient(180deg,rgba(255,170,90,.06),rgba(20,30,60,.10))}
+.ph::after{content:"";position:absolute;inset:8px;z-index:3;border:1px solid rgba(246,220,160,.22);pointer-events:none}
+.cover{margin:0;position:relative}
+.ph-hero{--ar:1774/625}
+.ph-hero::before{background:radial-gradient(120% 90% at 50% 40%,transparent 48%,rgba(4,4,8,.6) 100%),linear-gradient(180deg,rgba(9,9,13,.25) 0%,transparent 30%,transparent 52%,rgba(9,9,13,.94) 100%)}
+.ph-hero img{animation:kenburns 40s ease-in-out infinite alternate}
+@keyframes kenburns{from{transform:scale(1.03)}to{transform:scale(1.12) translate3d(-1.6%,-1%,0)}}
+.cover .cap{position:absolute;z-index:4;top:20px;left:24px;right:24px;display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;
+  font-family:var(--f-label);font-size:9.5px;letter-spacing:.28em;text-transform:uppercase;color:rgba(241,232,216,.75);text-align:left}
+.front .cover + h1{position:relative;z-index:5;margin-top:calc(-1 * clamp(58px,10.5vw,160px))}
+.tabula{margin:clamp(90px,12vw,170px) 0 0;display:grid;grid-template-columns:minmax(0,1.55fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:end}
+.tabula.rev{grid-template-columns:minmax(0,1fr) minmax(0,1.55fr)}
+.tabula.rev .ph{order:2}
+.tabula figcaption{min-width:0;padding-bottom:6px}
+.tn{display:block;font-family:var(--f-black);font-size:clamp(34px,3.6vw,50px);line-height:1;margin-bottom:18px}
+.tq{margin:0 0 14px;font-size:clamp(18px,1.9vw,24px);line-height:2;text-wrap:balance}
+.tc{display:block;margin-top:8px;font-family:var(--f-label);font-size:9.5px;letter-spacing:.2em;color:var(--faint);text-transform:uppercase}
+.tabula + .liber{margin-top:clamp(60px,8vw,110px)}
+.finale{position:relative;isolation:isolate}
+.finale .ph-bg{position:absolute;z-index:-1;left:50%;top:50%;width:min(1100px,100%);transform:translate(-50%,-50%);aspect-ratio:450/262;max-width:100%;opacity:.5;
+  -webkit-mask-image:radial-gradient(ellipse at center,#000 25%,transparent 70%);mask-image:radial-gradient(ellipse at center,#000 25%,transparent 70%)}
+.finale .ph-bg img{width:100%;height:100%;object-fit:cover;filter:saturate(1.1)}
+
 /* ---------- responsive ---------- */
 @media (max-width:1180px){
   .thumbs{display:none}
@@ -497,6 +526,8 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
   .laws blockquote,.laws blockquote + blockquote{border-right:0;padding-left:0;border-top:1px solid var(--hair)}
   .laws blockquote:first-child{border-top:0}
   .canon-head{display:none}
+  .tabula,.tabula.rev{grid-template-columns:minmax(0,1fr)}
+  .tabula.rev .ph{order:0}
   .crow{grid-template-columns:62px minmax(0,1fr);row-gap:6px}
   .crow .meta{display:flex;flex-wrap:wrap;gap:4px 14px;grid-column:2}
   .crow .meta span.ver,.crow .meta span.ln{text-align:left}
@@ -533,13 +564,16 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
   .index .pg{display:none}
   .verses li{grid-template-columns:54px minmax(0,1fr)}
   .seek-fab small,.seek-fab kbd,.seek-cta kbd{display:none}
+  .ph-hero{--ar:5/4}
+  .cover .cap span + span{display:none}
+  .front .cover + h1{margin-top:-46px}
   .s-hit{grid-template-columns:minmax(0,1fr)}
   .h-id{grid-row:auto}
   .ctx{margin-left:0}
   .kv.g-def li{grid-template-columns:minmax(0,1fr)}
 }
 @media (prefers-reduced-motion:reduce){
-  .grain,.edge .spark,.v-Periodic .halo,.v-Living .halo{animation:none}
+  .grain,.edge .spark,.v-Periodic .halo,.v-Living .halo,.ph-hero img{animation:none}
   .dossier{transition:none}
 }
 </style>
@@ -566,8 +600,12 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 
   <!-- ===================== FRONTISPIECE ===================== -->
   <header class="folio front">
-    <div class="over">The Third Place · A Movable Outdoor Living Room</div>
+    <figure class="cover">
+      <div class="ph ph-hero"><img data-plate="hero" alt="夕暮れの山並みと湖を背に、ドームテント、灯したランタン、革張りのチェア、焚き火台、白い車が並ぶ THE THIRD PLACE の全景"><img class="bloom" data-plate="hero" alt="" aria-hidden="true"></div>
+      <figcaption class="cap"><span>Tabula Prima · Frontispiece</span><span>assets/banner.PNG</span></figcaption>
+    </figure>
     <h1><span class="black gild">Arbor</span><span class="sub">Codex of the Third Place</span></h1>
+    <div class="over">The Third Place · A Movable Outdoor Living Room</div>
     <p class="ja">第三の場所　<span class="m-nk"></span>書の聖典</p>
     <div class="orn" aria-hidden="true"><i></i><i></i><i></i></div>
     <p class="epigraph">空間は最後に現れる。<br>最初に存在するのは、判断である。<cite class="src">DS-001 Original · Foreword</cite></p>
@@ -589,6 +627,16 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
       <button class="seek-cta" type="button" data-seek-open>Concordantia · 全書を検索する<kbd>/</kbd></button>
     </nav>
   </header>
+
+  <figure class="tabula">
+    <div class="ph" style="--ar:510/300"><img data-plate="fire" alt="透かし彫りの焚き火台に燃え立つ炎と、その奥の真鍮のケトルが並ぶテーブル"><img class="bloom" data-plate="fire" alt="" aria-hidden="true"></div>
+    <figcaption>
+      <span class="tn gild">Tabula I</span>
+      <p class="tq">家具も、光も、香りも、コーヒーも、焚き火も、<br>主役ではない。それらはすべて、<br>人生を味わうための環境である。</p>
+      <span class="src">OP-001 §1 · Purpose</span>
+      <span class="tc">assets/banner.PNG · detail</span>
+    </figcaption>
+  </figure>
 
   <!-- ===================== LIBER I : GENESIS ===================== -->
   <section class="liber" id="liber-1" aria-labelledby="h-l1">
@@ -787,6 +835,16 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
     </div>
   </section>
 
+  <figure class="tabula rev">
+    <div class="ph" style="--ar:420/260"><img data-plate="chairs" alt="ランタンの光を受ける、黒い革張りの二脚のチェアとテーブル"><img class="bloom" data-plate="chairs" alt="" aria-hidden="true"></div>
+    <figcaption>
+      <span class="tn gild">Tabula II</span>
+      <p class="tq">すべての道具は、<br>空間のために存在する。</p>
+      <span class="src">OP-001 §5.1 · Space before Objects</span>
+      <span class="tc">assets/banner.PNG · detail</span>
+    </figcaption>
+  </figure>
+
   <!-- ===================== LIBER IV : THESAURUS ===================== -->
   <section class="liber" id="liber-4" aria-labelledby="h-l4">
     <div class="runhead"><span>Liber IV · Thesaurus</span><span>MD-004 Equipment Registry · MD-003 Galley Fare</span></div>
@@ -820,7 +878,7 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
     </div>
   </section>
 
-  <!-- ===================== LIBER IV : STRATA ===================== -->
+  <!-- ===================== LIBER V : STRATA ===================== -->
   <section class="liber" id="liber-5" aria-labelledby="h-l5">
     <div class="runhead"><span>Liber V · Strata</span><span>OP-008 §4–6 · OP-001 §12</span></div>
     <div class="lhead">
@@ -859,7 +917,7 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
     </div>
   </section>
 
-  <!-- ===================== LIBER V : LEX ===================== -->
+  <!-- ===================== LIBER VI : LEX ===================== -->
   <section class="liber" id="liber-6" aria-labelledby="h-l6">
     <div class="runhead"><span>Liber VI · Lex</span><span>OP-008 Documentation System · v<span id="m-op8v"></span></span></div>
     <div class="lhead">
@@ -1028,7 +1086,17 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
     </div>
   </section>
 
-  <!-- ===================== LIBER VI : FOEDUS ===================== -->
+  <figure class="tabula">
+    <div class="ph" style="--ar:614/400"><img data-plate="rover" alt="夕暮れの湖畔に停まる白い車。ナンバープレートの位置に THE THIRD PLACE の銘板"><img class="bloom" data-plate="rover" alt="" aria-hidden="true"></div>
+    <figcaption>
+      <span class="tn gild">Tabula III</span>
+      <p class="tq">移動するその居場所の中で、<br>風の香りや光の傾きとともに歳月を重ね、<br>思想そのものを住まわせること。</p>
+      <span class="src">README · Overview</span>
+      <span class="tc">assets/banner.PNG · detail</span>
+    </figcaption>
+  </figure>
+
+  <!-- ===================== LIBER VII : FOEDUS ===================== -->
   <section class="liber" id="liber-7" aria-labelledby="h-l7">
     <div class="runhead"><span>Liber VII · Foedus</span><span>OP-001 §9 · §17 · §19–21 · OP-008 §27–28</span></div>
     <div class="lhead">
@@ -1144,7 +1212,7 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
     </div>
   </section>
 
-  <!-- ===================== LIBER VII : TEXTUS ===================== -->
+  <!-- ===================== LIBER VIII : TEXTUS ===================== -->
   <section class="liber" id="liber-8" aria-labelledby="h-l8">
     <div class="runhead"><span>Liber VIII · Textus</span><span>Mentions across main · <span class="m-commit"></span></span></div>
     <div class="lhead">
@@ -1159,7 +1227,17 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
     <p class="source">集計元：リポジトリ main（<span class="m-commit"></span>）の各文書本文に現れる他文書IDの出現回数。改訂履歴内の言及も含む。自身のIDは数えない。文書の役割・Authority・Volatility・要約は OP-008 §8 と Appendix F、階層は OP-001 §12、関係は OP-001 §13–14 と OP-008 §8 / §27 / §28 による。</p>
   </section>
 
-  <!-- ===================== LIBER VIII : CHRONICA ===================== -->
+  <figure class="tabula rev">
+    <div class="ph" style="--ar:680/340"><img data-plate="lanterns" alt="タープの下に灯るオイルランタンと、その奥で光を受けるテントの内部"><img class="bloom" data-plate="lanterns" alt="" aria-hidden="true"></div>
+    <figcaption>
+      <span class="tn gild">Tabula IV</span>
+      <p class="tq">時間は、判断を成熟させる。</p>
+      <span class="src">DS-001 Axiom V</span>
+      <span class="tc">assets/banner.PNG · detail</span>
+    </figcaption>
+  </figure>
+
+  <!-- ===================== LIBER IX : CHRONICA ===================== -->
   <section class="liber" id="liber-9" aria-labelledby="h-l9">
     <div class="runhead"><span>Liber IX · Chronica</span><span>OP-001 §26 · Appendix C · OP-008 Revision History</span></div>
     <div class="lhead">
@@ -1196,8 +1274,9 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 
   <!-- ===================== FINALE ===================== -->
   <section class="finale" aria-label="The First Law">
+    <div class="ph-bg" aria-hidden="true"><img data-plate="vista" alt=""></div>
     <div class="black gild" aria-hidden="true">Explicit</div>
-    <p class="law gild">判断は、人生になる。</p>
+    <p class="law">判断は、人生になる。</p>
     <span class="src">DS-001 · Chapter IV · The First Law</span>
     <p>すべての公理は、一つの法則へ収束する。どれほど小さな判断であっても、時間を重ねれば、必ず人生の一部となる。</p>
   </section>
@@ -1843,6 +1922,24 @@ document.addEventListener("keydown",e=>{
   const typing=/^(INPUT|TEXTAREA|SELECT)$/.test((e.target.tagName||""))||e.target.isContentEditable;
   if(!S.open&&((e.key==="/"&&!typing)||((e.metaKey||e.ctrlKey)&&e.key.toLowerCase()==="k"))){e.preventDefault();sOpen(null)}
 });
+
+/* ---------- Tabulae: plates and parallax ---------- */
+(function(){
+  const P=DATA.plates||{};
+  document.querySelectorAll("img[data-plate]").forEach(img=>{
+    const s=P[img.dataset.plate];
+    if(s){img.decoding="async";img.src=s}
+    else{const f=img.closest(".tabula,.cover,.ph-bg");if(f)f.hidden=true}
+  });
+  const phs=[...document.querySelectorAll(".tabula .ph")];
+  if(reduce||!phs.length)return;
+  let ticking=false;
+  const upd=()=>{ticking=false;const vh=innerHeight;
+    phs.forEach(ph=>{const r=ph.getBoundingClientRect();if(r.bottom<0||r.top>vh)return;
+      const p=(r.top+r.height/2-vh/2)/(vh/2+r.height/2);ph.style.setProperty("--py",(p*-4).toFixed(2)+"%")})};
+  addEventListener("scroll",()=>{if(!ticking){ticking=true;requestAnimationFrame(upd)}},{passive:true});
+  addEventListener("resize",upd); upd();
+})();
 
 /* ---------- thumb index: mark the book in view ---------- */
 (function(){
