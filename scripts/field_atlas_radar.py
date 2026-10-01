@@ -48,7 +48,7 @@ EARLY_TIERS = {
 UNVISITED_SUFFIX = "（未訪問・調査ベース暫定値）"
 
 # Ground surface icons (OP-010 Part C §Display Rules, Ground Surface)
-GROUND_ICONS = {"🪨": "Gravel", "🌱": "Grass", "🌲": "Forest", "🟫": "Soil", "🧱": "Brick Chips"}
+GROUND_ICONS = {"🪨": "Gravel", "⛰": "Rock", "🌱": "Grass", "🌲": "Forest", "🟫": "Soil", "🧱": "Brick Chips"}
 
 
 def section(text: str, heading: str, next_heading_prefix: str) -> str:

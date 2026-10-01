@@ -258,7 +258,7 @@
   .seg+.seg{padding-top:0}
   .seg button{white-space:nowrap}
   #filt button{font-family:var(--body);font-size:10px;letter-spacing:.04em}
-  .seg .gb{flex:0 0 24px;font-size:11px;padding:1px 0}
+  .seg .gb{flex:0 0 22px;font-size:11px;padding:1px 0}
   .seg .sep{flex:0 0 6px}
   .lg{display:flex;align-items:baseline;gap:8px;margin-top:4px;padding-top:6px;border-top:1px solid var(--line)}
   .lg:first-child{margin-top:0;padding-top:0;border-top:0}
@@ -402,7 +402,7 @@
       <p><b>近さ。</b>小岩からの移動時間（MD-002の値）から「12 − 2 × 移動時間」で求め、1〜10点に収めます。</p>
       <p><b>アーリーチェックイン。</b>区分がOperation軸の点数を決めます（早い10・可8・条件付き6・不可2）。THE THIRD PLACEは設営に時間を要するため、必須の条件です。</p>
       <p><b>未訪問。</b>点線・菱形の印で示しています。調査ベースの暫定値です。Partnerは全件がClaudeによる暫定値で、パートナーのご感想を伺い次第置き換えます（バーを淡く表示）。</p>
-      <p><b>地面。</b>🪨 Gravel・🌱 Grass・🌲 Forest（林間）・🟫 Soil・🧱 Brick Chips（OP-010の表示規則。🌲は林間を示し、地面のアイコンと併記されます）。MD-002に記録のあるフィールドだけに付いています。一覧のアイコンで絞り込めます。</p>
+      <p><b>地面。</b>🪨 Gravel・⛰️ Rock（岩場）・🌱 Grass・🌲 Forest（林間）・🟫 Soil・🧱 Brick Chips（OP-010の表示規則。🌲は林間を示し、地面のアイコンと併記されます）。MD-002に記録のあるフィールドだけに付いています。一覧のアイコンで絞り込めます。</p>
       <p><b>次のキャンプ。</b>DB-001 Project Ledger §Field Logの予定（Planned）と記録（Done）です。装備IDはMD-004の正式名称で示します。</p>
       <p><b>区画・標高・空・周辺。</b>区画の広さと駐車の扱いはMD-002 §Site Record、標高は国土地理院の標高データ（気温差は標高差×0.6℃/100mの目安）、日の出・日の入り・月齢はページ内の計算値、周辺環境はOpenStreetMapの登録とOSRMの道のりです。周辺環境は登録のない施設が出ない参考値です。</p>
       <p><b>リンク。</b>ページのURLの末尾に「#f=順位」を付けると、そのフィールドを開きます。カードの「リンクをコピー」で取得できます。</p>
@@ -457,8 +457,9 @@ function navLL(p){if(!p)return null;const R=6371,toR=Math.PI/180,[lon,lat]=p,f1=
   return{km,brg,lat,lon};}
 const fmtLL=(lat,lon)=>`${lat.toFixed(3)}N ${lon.toFixed(3)}E`;
 // OP-010 Part C: ground icons, the five lineages, what each axis is scored from, early check-in tiers
-const GROUND={"🪨":"Gravel","🌱":"Grass","🌲":"Forest","🟫":"Soil","🧱":"Brick Chips"};
-const gtxt=d=>(d.ground||[]).map(g=>g+" "+GROUND[g]).join(" · ");
+const GROUND={"🪨":"Gravel","⛰":"Rock","🌱":"Grass","🌲":"Forest","🟫":"Soil","🧱":"Brick Chips"};
+const EMO=g=>g==="⛰"?"⛰\uFE0F":g; // ⛰ needs the emoji selector to draw in colour
+const gtxt=d=>(d.ground||[]).map(g=>EMO(g)+" "+GROUND[g]).join(" · ");
 const LINE=[["Site",0],["Infrastructure",2],["Stay",4],["Identity",6],["Relation",8]];
 const BASIS=["事実（地面の種類・状態）","事実（区画面積・車の横付け等）","事実と品質の判断（設備・清潔さ・温水）","事実（アーリーチェックインの区分から決まる）","判断（場内動線・区画間隔・静けさ）","判断（景観）","判断（土地の個性・周辺環境）","判断（その場所でしかできない体験）","計算（移動時間）","パートナーの感想"];
 const TIERS=[["A","早い",10],["B","可",8],["C","条件付き",6],["D","不可",2]];
@@ -503,7 +504,7 @@ function moonAt(ds){const age=(((Date.parse(ds+"T12:00:00Z")-Date.UTC(2000,0,6,1
   return{age,lit,nm};}
 function siteHTML(A){
   const r=A.rank,st=SITE[r],el=ELEV[r],td=tempDiff(el);
-  const gn=st?st.ground.replace(/^[🪨🌱🌲🟫🧱\s]+/u,"").replace("（MD-002既記録）","").replace(/^[。・\s]+/,""):"";
+  const gn=st?st.ground.replace(/^[🪨⛰🌱🌲🟫🧱\uFE0F\s]+/u,"").replace("（MD-002既記録）","").replace(/^[。・\s]+/,""):"";
   const gl=[gtxt(A),gn].filter(x=>x&&x!=="—").join(" · ")||(st?st.ground:"");
   const rows=(st?[["GROUND",gl],["AREA",st.area],["PARKING",st.parking]]:[]).map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")+
     (el!=null?`<dt>ELEV</dt><dd>${el.toLocaleString()} m${td!=null?` · 小岩より約 ${fmtT(td)}`:""}</dd>`:"");
@@ -535,7 +536,7 @@ clock();setInterval(clock,1000);
 const rows=$("#rows");
 function buildRows(){const l=sorted();$("#cnt").textContent=l.length===DATA.length?`${DATA.length} ENTRIES`:`${l.length} / ${DATA.length}`;
   rows.innerHTML=l.map((d,i)=>{const v=state.sort==="q"?q8(d):pv(d),mx=state.sort==="q"?80:100;
-  return `<div class="row" data-r="${d.rank}"><button type="button" class="pick" data-r="${d.rank}"><span class="i">${pad(i+1)}</span><span class="nm">${esc(d.name)}${d.visited?"":'<em title="未訪問"><span class="vh">未訪問</span></em>'}</span><span class="sc">${v}</span><span class="mm"><span class="mb"><i style="width:${v/mx*100}%"></i></span><span class="meta t-${d.early.tier}"><span class="dot" title="アーリーチェックイン：${esc(d.early.label)}"></span>${d.hours.toFixed(1)}H${d.ground&&d.ground.length?`<span class="gi" title="${esc(gtxt(d))}">${d.ground.join("")}</span>`:""}${NEXT&&NEXT.r===d.rank?'<span class="nx">NEXT</span>':""}</span></span></button><button type="button" class="vsb" data-r="${d.rank}" aria-label="${esc(d.name)}と比べる">VS</button></div>`;}).join("")||`<p class="foot" style="border:0">NO MATCH · 条件に合うフィールドがありません。</p>`;}
+  return `<div class="row" data-r="${d.rank}"><button type="button" class="pick" data-r="${d.rank}"><span class="i">${pad(i+1)}</span><span class="nm">${esc(d.name)}${d.visited?"":'<em title="未訪問"><span class="vh">未訪問</span></em>'}</span><span class="sc">${v}</span><span class="mm"><span class="mb"><i style="width:${v/mx*100}%"></i></span><span class="meta t-${d.early.tier}"><span class="dot" title="アーリーチェックイン：${esc(d.early.label)}"></span>${d.hours.toFixed(1)}H${d.ground&&d.ground.length?`<span class="gi" title="${esc(gtxt(d))}">${d.ground.map(EMO).join("")}</span>`:""}${NEXT&&NEXT.r===d.rank?'<span class="nx">NEXT</span>':""}</span></span></button><button type="button" class="vsb" data-r="${d.rank}" aria-label="${esc(d.name)}と比べる">VS</button></div>`;}).join("")||`<p class="foot" style="border:0">NO MATCH · 条件に合うフィールドがありません。</p>`;}
 function markRows(){rows.querySelectorAll(".row").forEach(r=>{const k=+r.dataset.r;r.classList.toggle("on",k===state.a);r.classList.toggle("vs",k===state.b);r.querySelector(".pick").setAttribute("aria-pressed",String(k===state.a));r.querySelector(".vsb").setAttribute("aria-pressed",String(k===state.b));});
   const on=rows.querySelector(".row.on");if(on){const t=on.offsetTop,h=on.offsetHeight;if(t<rows.scrollTop)rows.scrollTop=t-8;else if(t+h>rows.scrollTop+rows.clientHeight)rows.scrollTop=t+h-rows.clientHeight+8;}}
 rows.addEventListener("click",e=>{const p=e.target.closest(".pick"),v=e.target.closest(".vsb");
@@ -543,7 +544,7 @@ rows.addEventListener("click",e=>{const p=e.target.closest(".pick"),v=e.target.c
 $("#sPV").onclick=()=>{state.sort="pv";resort();};$("#sQ").onclick=()=>{state.sort="q";resort();};$("#sT").onclick=()=>{state.sort="t";resort();};
 // filters: visited / unvisited, and one ground surface
 const filt=$("#filt");
-filt.insertAdjacentHTML("beforeend",Object.keys(GROUND).map(g=>`<button type="button" class="gb" data-g="${g}" aria-pressed="false" title="${GROUND[g]}" aria-label="地面：${GROUND[g]}">${g}</button>`).join(""));
+filt.insertAdjacentHTML("beforeend",Object.keys(GROUND).map(g=>`<button type="button" class="gb" data-g="${g}" aria-pressed="false" title="${GROUND[g]}" aria-label="地面：${GROUND[g]}">${EMO(g)}</button>`).join(""));
 filt.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;if(b.dataset.v)state.vis=b.dataset.v;else state.gr=state.gr===b.dataset.g?null:b.dataset.g;resort();});
 function resort(){[["#sPV","pv"],["#sQ","q"],["#sT","t"]].forEach(([s,k])=>$(s).setAttribute("aria-pressed",String(state.sort===k)));
   filt.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v?b.dataset.v===state.vis:b.dataset.g===state.gr)));
