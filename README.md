@@ -54,6 +54,7 @@ THE-THIRD-PLACE/
 │   ├── field_atlas_ivory.py            # MD-002 → Field Atlas Ivory（3D地図・ライト版）生成
 │   ├── field_atlas_navigator_fetch.py  # 地図用データ（位置・道路ルート・写真・標高・周辺環境）の取得
 │   ├── field_atlas_check.py            # MD-002・DB-001・MD-004・地図用データ・両版の整合チェック（CIで実行）
+│   ├── codex_arbor.py                  # 全文書 → Arbor of the Third Place（文書アトラス・全書検索・宝物庫）生成
 │   ├── data/field_atlas_navigator/     # 地図用データと、両版のデザイン・再生成の記録（README.md）
 │   ├── templates/                      # 生成用HTMLテンプレート
 │   └── MirrorSync.gs                   # GitHub → Drive 一方向ミラー（OP-008 §27）
@@ -157,6 +158,22 @@ GitHub Repository（SSOT）
 
 ---
 
+## 📜 文書アトラス（Codex）
+
+**Arbor of the Third Place**は、すべての正式文書を一冊の写本として描く文書アトラスである。情報階層に沿った文書の樹、OP-008 §8のカタログ、MD-004・MD-003の全登録項目を札にした宝物庫（ギャラリー）、全文書を横断する全書検索、文書間の言及マトリクス、新旧ID対照を収める。
+
+ページはデータを持たない。数値・一覧・本文はすべて、生成時にリポジトリの文書から読み取る（カタログと文書プロフィールはOP-008、新旧IDはOP-001 Appendix C Ver.5.0）。文書を更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
+
+```
+python3 scripts/codex_arbor.py --out codex-arbor.html
+```
+
+- 公開先：https://claude.ai/artifact/WbRbrmERdD1n6tfA92U2Eb
+- 生成スクリプト：`scripts/codex_arbor.py`／テンプレート：`scripts/templates/codex_arbor.html`
+- 樹の配置と、文書が明記する関係（枝）は、出典とともにテンプレートに記している。§8に新しい文書が加わった場合、書目・全書検索・言及マトリクスには自動で現れる。樹への配置は、テンプレートに追記する。
+
+---
+
 ## 🚀 開発状況（Development Status）
 
 THE THIRD PLACEは、現在も活発に進化を続けている長期プロジェクトである。
@@ -247,6 +264,7 @@ THE-THIRD-PLACE/
 │   ├── field_atlas_ivory.py            # Generates Field Atlas Ivory (3D map, light edition) from MD-002
 │   ├── field_atlas_navigator_fetch.py  # Fetches map data (positions, road routes, photos, elevation, surroundings)
 │   ├── field_atlas_check.py            # Checks MD-002, DB-001, MD-004, map data and both pages agree (runs in CI)
+│   ├── codex_arbor.py                  # Generates Arbor of the Third Place (document atlas, full-text search, gallery) from all documents
 │   ├── data/field_atlas_navigator/     # Map data, plus design and rebuild notes for both editions (README.md)
 │   ├── templates/                      # HTML templates for generators
 │   └── MirrorSync.gs                   # One-way GitHub → Drive mirror (OP-008 §27)
@@ -347,6 +365,22 @@ All aesthetic-domain equipment references, additions, updates, and lifecycle man
 Kitchen cooking equipment is governed separately, under a function-first selection standard, by **MD-003 Galley Fare**.
 
 Other documents reference MD-004 or MD-003 rather than maintaining duplicate equipment data.
+
+---
+
+## 📜 Codex (Document Atlas)
+
+**Arbor of the Third Place** renders every official document as a single illuminated codex: the document tree along the Information Hierarchy, the OP-008 §8 catalogue, a gallery of every MD-004 and MD-003 registry entry, a full-text search across all documents, the cross-mention matrix, and the old/new ID concordance.
+
+The page carries no data of its own. Every figure, list and passage is read from the repository's documents at build time (catalogue and profiles from OP-008, former IDs from OP-001 Appendix C Ver.5.0). After the documents change, regenerate it with the command below and republish it to the same Artifact (from another conversation, pass the URL below to update it).
+
+```
+python3 scripts/codex_arbor.py --out codex-arbor.html
+```
+
+- Published at: https://claude.ai/artifact/WbRbrmERdD1n6tfA92U2Eb
+- Generator: `scripts/codex_arbor.py` / Template: `scripts/templates/codex_arbor.html`
+- The tree layout and the relations stated by the documents (branches) live in the template, each with its source. A document newly added to §8 appears in the catalogue, search and mention matrix automatically; its place in the tree is added to the template.
 
 ---
 
