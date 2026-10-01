@@ -79,3 +79,6 @@ jobs:
             --cz001 "$CZ001" \
             --cz002 "$CZ002" \
             --md001 "$MD001"
+
+      - name: Check Field Atlas consistency (MD-002, DB-001, MD-004, map data, pages)
+        run: python scripts/field_atlas_check.py

@@ -236,6 +236,19 @@
   .tc-s{margin-top:auto;padding-top:4px;font-size:10.5px;color:var(--ink-faint);display:flex;gap:12px;flex-wrap:wrap}
   .tc-x{position:absolute;top:6px;right:8px;z-index:5;background:transparent;border:0;border-radius:8px;color:var(--ink-soft);font-size:16px;line-height:1;cursor:pointer;padding:4px 8px}
   .tc-x:hover{color:var(--ink);background:var(--paper2)}
+  .kv{margin:0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:4px 12px;font-size:11.5px;line-height:1.65}
+  .kv dt,.gear dt{font-family:var(--ui);font-size:9.5px;font-weight:600;letter-spacing:.12em;color:var(--ink-faint);padding-top:2px}
+  .kv dd,.gear dd{margin:0;color:var(--ink-2)}
+  .sv{list-style:none;margin:0;padding:0;display:grid;gap:2px}
+  .sv li{display:grid;grid-template-columns:5.6em minmax(0,1fr) auto;gap:8px;align-items:baseline;padding:4px 0;border-bottom:1px dashed var(--line);font-size:11.5px}
+  .sv li:last-child{border-bottom:0}
+  .sv b{font-family:var(--ui);font-size:9.5px;font-weight:600;letter-spacing:.08em;color:var(--ink-soft)}
+  .sv span{color:var(--ink-2);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+  .sv em{font-style:normal;font-family:var(--display);font-size:13px;color:var(--a-deep);font-variant-numeric:tabular-nums;white-space:nowrap}
+  .gear{margin:4px 0 0;display:grid;grid-template-columns:auto minmax(0,1fr);gap:3px 10px;font-size:11.5px;padding-top:6px;border-top:1px dashed rgba(217,119,87,.3)}
+  .gear dd small{margin-left:8px;font-family:var(--ui);font-size:9px;font-weight:600;letter-spacing:.1em;color:var(--ok)}
+  .cpy{background:transparent;border:1px solid var(--line2);border-radius:99px;padding:0 9px;font-family:var(--ui);font-size:10px;color:var(--ink-soft);cursor:pointer}
+  .cpy:hover{color:var(--a-deep);border-color:var(--a)}
   .tc-s .nxs{color:var(--a-deep);font-weight:700}
 
   /* ---------- next camp, filters, lineages, field log, legend, benchmark, zoom ---------- */
@@ -394,6 +407,9 @@
     <div class="bars" id="bars"></div>
     <div class="sec" id="early"></div>
     <div class="sec flog" id="flog" hidden></div>
+    <div class="sec" id="siteS" hidden></div>
+    <div class="sec" id="skyS" hidden></div>
+    <div class="sec" id="surrS" hidden></div>
     <div class="sec"><label class="k" for="selB">Compare · 比べる相手</label><select id="selB"></select></div>
     <details>
       <summary>10軸の定義</summary>
@@ -407,7 +423,9 @@
       <p><b>アーリーチェックイン。</b>区分がOperation軸の点数を決めます（早い10・可8・条件付き6・不可2）。THE THIRD PLACEは設営に時間を要するため、必須の条件です。</p>
       <p><b>未訪問。</b>点線・白抜きの印で示しています。調査ベースの暫定値です。Partnerは全件がClaudeによる暫定値で、パートナーのご感想を伺い次第置き換えます（バーの破線）。</p>
       <p><b>地面。</b>🪨 Gravel・🌱 Grass・🌲 Wood Deck・🟫 Soil（OP-010の表示規則）。MD-002に記録のあるフィールドだけに付いています。一覧のアイコンで絞り込めます。</p>
-      <p><b>次のキャンプ。</b>DB-001 Project Ledger §Field Logの予定（Planned）と記録（Done）です。</p>
+      <p><b>次のキャンプ。</b>DB-001 Project Ledger §Field Logの予定（Planned）と記録（Done）です。装備IDはMD-004の正式名称で示します。</p>
+      <p><b>区画・標高・空・周辺。</b>区画の広さと駐車の扱いはMD-002 §Site Record、標高は国土地理院の標高データ（気温差は標高差×0.6℃/100mの目安）、日の出・日の入り・月齢はページ内の計算値、周辺環境はOpenStreetMapの登録とOSRMの道のりです。周辺環境は登録のない施設が出ない参考値です。</p>
+      <p><b>リンク。</b>ページのURLの末尾に「#f=順位」を付けると、そのフィールドを開きます。カードの「リンクをコピー」で取得できます。</p>
       <p><b>基準地点。</b>金色の菱形は浩庵キャンプ場（MD-002 §Reference Benchmark Site）で、View軸10点の基準としてのみ用いる地点です。ランキングの対象ではありません。位置は所在地（身延町中ノ倉2926）のYahoo!地図の地点です。</p>
       <p><b>地図と線。</b>位置は各フィールドの住所を国土地理院の住所検索で求めたものです（住所が大字までしか当たらない2件は、Yahoo!地図の施設の地点）。同じ地点を共有するフィールドは少しずらして置いています。色の線は、小岩駅付近からの車での最短時間ルートです。OSRM（OpenStreetMapの道路データ）で計算しました。渋滞や通行規制は反映していません。ROADはこのルートの道のり、DIRECT（KM）は直線距離、BRGは方位で、点線が直線を表します。移動時間（H）はMD-002の値です。道路データ © OpenStreetMap contributors。</p>
       <p><b>写真。</b>各施設の公式サイトや予約サイトが紹介用に掲げている画像を、ページ作成時にWeb検索で集めて埋め込んでいます。出典はカードに記しています。</p>
@@ -482,6 +500,52 @@ function save(){try{localStorage.setItem("fa-nav1",JSON.stringify({a:state.a,b:s
 const shown=d=>(state.vis==="all"||(state.vis==="v")===d.visited)&&(!state.gr||(d.ground||[]).includes(state.gr));
 const SORTS={pv:(x,y)=>pv(y)-pv(x)||x.rank-y.rank,q:(x,y)=>q8(y)-q8(x)||x.rank-y.rank,t:(x,y)=>x.hours-y.hours||x.rank-y.rank};
 function sorted(){return DATA.filter(shown).sort(SORTS[state.sort]);}
+const PAGE_URL="https://claude.ai/artifact/GmW1EhhdcDLNaG7GcuMAZH";
+// MD-002 §Site Record, elevation (GSI), surroundings (OSM + OSRM), gear names (MD-004)
+const SITE=EXTRA.site||{},ELEV=EXTRA.elev||{},SURR=EXTRA.surr||{},GEAR=EXTRA.gear||{},HOME_ELEV=EXTRA.home_elev;
+const tempDiff=m=>HOME_ELEV==null||m==null?null:-(m-HOME_ELEV)*.6/100; // 0.6 ℃ per 100 m, a rough guide
+const fmtT=t=>`${t>=0?"+":"−"}${Math.abs(t).toFixed(1)}℃`;
+const gearIds=t=>[...new Set(String(t).match(/\b[A-Z]{3}-\d{3}[a-z]?\b/g)||[])];
+const SURR_L=[["ic","高速IC"],["conv","コンビニ"],["super","スーパー"],["bath","温泉・入浴"],["hosp","病院"]];
+// sunrise and sunset (NOAA approximation, sea-level horizon) in minutes from JST midnight
+function sunTimes(ds,lat,lon){
+  const [Y,M,D]=ds.split("-").map(Number),N=Math.round((Date.UTC(Y,M-1,D)-Date.UTC(Y,0,0))/864e5),g=2*Math.PI/365*(N-1+(3-12)/24);
+  const eq=229.18*(.000075+.001868*Math.cos(g)-.032077*Math.sin(g)-.014615*Math.cos(2*g)-.040849*Math.sin(2*g));
+  const dec=.006918-.399912*Math.cos(g)+.070257*Math.sin(g)-.006758*Math.cos(2*g)+.000907*Math.sin(2*g)-.002697*Math.cos(3*g)+.00148*Math.sin(3*g);
+  const r=Math.PI/180,c=Math.cos(90.833*r)/(Math.cos(lat*r)*Math.cos(dec))-Math.tan(lat*r)*Math.tan(dec);
+  if(c<-1||c>1)return null;const ha=Math.acos(c)/r;
+  return{rise:720-4*(lon+ha)-eq+540,set:720-4*(lon-ha)-eq+540};
+}
+const hm=m=>{const t=Math.round(m);return `${Math.floor(t/60)}:${pad(t%60)}`;};
+// moon age at 21:00 JST of the date, from the new moon of 2000-01-06 18:14 UTC
+function moonAt(ds){const age=(((Date.parse(ds+"T12:00:00Z")-Date.UTC(2000,0,6,18,14))/864e5)%29.530588853+29.530588853)%29.530588853;
+  const lit=(1-Math.cos(2*Math.PI*age/29.530588853))/2;
+  const nm=age<1.85||age>=27.68?"新月":age<5.54?"三日月":age<9.23?"上弦":age<12.92?"十日夜":age<16.61?"満月":age<20.3?"寝待月":age<23.99?"下弦":"有明月";
+  return{age,lit,nm};}
+function siteHTML(A){
+  const r=A.rank,st=SITE[r],el=ELEV[r],td=tempDiff(el);
+  const gn=st?st.ground.replace(/^[🪨🌱🌲🟫\s]+/u,"").replace("（MD-002既記録）","").replace(/^[。・\s]+/,""):"";
+  const gl=[gtxt(A),gn].filter(x=>x&&x!=="—").join(" · ")||(st?st.ground:"");
+  const rows=(st?[["GROUND",gl],["AREA",st.area],["PARKING",st.parking]]:[]).map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")+
+    (el!=null?`<dt>ELEV</dt><dd>${el.toLocaleString()} m${td!=null?` · 小岩より約 ${fmtT(td)}`:""}</dd>`:"");
+  return rows?`<span class="k">SITE · MD-002 SITE RECORD</span><dl class="kv">${rows}</dl><span class="srcl">${st?"出典："+esc(st.source)+" · ":""}基準 80㎡（車別）／100㎡（車込）。気温差は標高差×0.6℃/100mの目安（標高：国土地理院）</span>`:"";}
+function skyHTML(A){
+  const ll=LL[A.rank];if(!ll)return "";
+  const plan=(LOG[A.rank]||[]).map(e=>e.status==="Planned"?day0(e.date):null).find(Boolean),ds=plan||today();
+  const s=sunTimes(ds,ll[1],ll[0]),m=moonAt(ds);
+  return `<span class="k">SKY · ${esc(ds)}${plan?" · NEXT CAMP":" · TODAY"}</span><dl class="kv"><dt>SUN</dt><dd>${s?`日の出 ${hm(s.rise)} · 日の入り ${hm(s.set)}`:"—"}</dd><dt>MOON</dt><dd>月齢 ${m.age.toFixed(1)}（${m.nm}・明るさ ${Math.round(m.lit*100)}%）${m.lit<.25?" · 月明かりが少ない夜":""}</dd></dl><span class="srcl">計算値（日の出・日の入りは海面基準、月齢は21時）。山の陰や天候は含みません</span>`;}
+function surrHTML(A){
+  const sv=SURR[A.rank];if(!sv)return "";
+  const li=SURR_L.map(([k,l])=>{const v=sv[k];return `<li><b>${l}</b><span>${v?esc(v.name||"（名称未登録）")+(v.onsen?" ♨":""):"—"}</span><em>${v?`${v.km} km · ${v.min}分`:"30km圏に登録なし"}</em></li>`;}).join("");
+  return `<span class="k">SURROUNDINGS · 周辺環境</span><ul class="sv">${li}</ul><span class="srcl">OpenStreetMapに登録された最寄り（直線で近い3件のうち車で最短）。道のりと時間はOSRM（渋滞なし）。登録の無い施設は出ない参考値です</span>`;}
+function gearHTML(cfg){const ids=gearIds(cfg).filter(g=>GEAR[g]);
+  return ids.length?`<dl class="gear">${ids.map(g=>`<dt>${g}</dt><dd>${esc(GEAR[g].brand||"")} ${esc(GEAR[g].product||"")}<small>${esc(GEAR[g].status||"")}</small></dd>`).join("")}</dl><span class="srcl">装備名：MD-004 Equipment Registry</span>`:"";}
+// deep link: #f=<rank> opens that field
+try{const m=location.hash.match(/f=(\d+)/);if(m&&get(+m[1])){state.a=+m[1];if(state.b===state.a)state.b=null;}}catch(e){}
+function setHash(){try{history.replaceState(null,"","#f="+state.a);}catch(e){}}
+async function copyLink(btn){const u=PAGE_URL+"#f="+state.a,lab=btn.textContent;
+  try{await navigator.clipboard.writeText(u);btn.textContent="コピーしました";}catch(e){try{window.prompt("このリンクをコピーしてください",u);}catch(_){}}
+  setTimeout(()=>{btn.textContent=lab;},1800);}
 
 /* ---------- telemetry ---------- */
 $("#tFld").textContent=`${DATA.length} · VISITED ${DATA.filter(d=>d.visited).length}`;
@@ -515,7 +579,7 @@ selB.addEventListener("change",()=>{const v=selB.value==="none"?null:+selB.value
 $("#xB").onclick=()=>setB(null);
 
 /* ---------- selection flow ---------- */
-function setA(r){if(r===state.a&&chase)return;state.a=r;if(state.b===r)state.b=null;save();markRows();selB.value=state.b?String(state.b):"none";
+function setA(r){if(r===state.a&&chase)return;state.a=r;setHash();if(state.b===r)state.b=null;save();markRows();selB.value=state.b?String(state.b):"none";
   showCard("A");if(!state.b)showCard("B");startRadar(true,false);if(GL){buildRoute("a");buildRoute("b");focus();}else lock("A");}
 function setB(r){state.b=r;save();markRows();selB.value=r?String(r):"none";showCard("B");startRadar(false,true);if(r)lock("B");if(GL){buildRoute("b");if(r){chase=null;if(state.view==="top")frameTop();else frameBoth();}}}
 function step(d){const l=sorted();if(!l.length)return;const i=l.findIndex(x=>x.rank===state.a);setA(l[i<0?0:(i+d+l.length)%l.length].rank);}
@@ -551,12 +615,13 @@ function showCard(S){
   $("#m"+S).innerHTML=`<span><b>TRAVEL</b>${d.hours.toFixed(1)} H</span><span><b>ROAD</b>${rt?rt.km+" KM":"—"}</span><span><b>DIRECT</b>${n?Math.round(n.km)+" KM":"—"}</span><span><b>BRG</b>${n?pad(Math.round(n.brg),3)+"°":"—"}</span>`;
   $("#v"+S).innerHTML=rt&&rt.via.length?`<b>VIA</b>${rt.via.map(esc).join('<i>→</i>')}`:"";
   $("#hl"+S).textContent=(d.visited?"訪問済み":"未訪問")+(d.ground&&d.ground.length?" · "+gtxt(d):"");
-  $("#hb"+S).textContent=n?fmtLL(n.lat,n.lon):"";
+  $("#hb"+S).textContent=n?fmtLL(n.lat,n.lon)+(ELEV[r]!=null?" · "+ELEV[r]+" M":""):"";
   $("#img"+S).alt=d.name+"のイメージ写真";
   acquire(S,IMG[r]);
   const src=IMGSRC[r],q=encodeURIComponent(d.name+" キャンプ場");
   const lg=(LOG[r]||[]).map(e=>{const k=day0(e.date);return `<span class="nxs">${e.status==="Planned"?"NEXT CAMP":"FIELD LOG"} ${esc(e.date)}${e.status==="Planned"&&k?" · "+dLabel(daysTo(k)):" · "+esc(e.status)}</span>`;}).join("");
-  $("#s"+S).innerHTML=lg+`<span>${esc(d.pref)}</span>`+(src?`<span>IMG · <a href="${esc(src)}" target="_blank" rel="noopener">${esc(domain(src))}</a></span>`:"")+`<a href="https://www.google.com/search?tbm=isch&q=${q}" target="_blank" rel="noopener">画像検索</a>`;
+  $("#s"+S).innerHTML=lg+`<span>${esc(d.pref)}</span>`+(src?`<span>IMG · <a href="${esc(src)}" target="_blank" rel="noopener">${esc(domain(src))}</a></span>`:"")+`<a href="https://www.google.com/search?tbm=isch&q=${q}" target="_blank" rel="noopener">画像検索</a>`+(S==="A"?`<button type="button" class="cpy">リンクをコピー</button>`:"");
+  if(S==="A")$("#s"+S).querySelector(".cpy").onclick=e=>copyLink(e.currentTarget);
   decode(S,$("#d"+S),d.note,S==="A"?350:550);
 }
 
@@ -593,8 +658,9 @@ function startRadar(resetA,resetB){
   const fl=$("#flog"),lg=LOG[A.rank]||[];fl.hidden=!lg.length;
   fl.innerHTML=`<span class="k">FIELD LOG · DB-001</span>`+lg.map(x=>{const k=day0(x.date),n=k?daysTo(k):null,dash=v=>v&&v!=="—";
     return `<div class="ent"><div class="hd"><span>${esc(x.date)}</span><span class="led t-${x.status==="Done"?"A":"B"}">${esc(x.status)}</span>${x.status==="Planned"&&n!==null?`<span class="dd">${dLabel(n)}</span>`:""}</div>`+
-      (dash(x.config)?`<div class="cf">${esc(x.config)}</div>`:"")+
+      (dash(x.config)?`<div class="cf">${esc(x.config)}</div>`+gearHTML(x.config):"")+
       `<dl>${[["WEATHER",x.weather],["WENT WELL",x.well],["ISSUES",x.issues]].filter(([,v])=>dash(v)).map(([k2,v])=>`<dt>${k2}</dt><dd>${esc(v)}</dd>`).join("")}</dl></div>`;}).join("");
+  [["#siteS",siteHTML],["#skyS",skyHTML],["#surrS",surrHTML]].forEach(([id,f])=>{const h=f(A);$(id).innerHTML=h;$(id).hidden=!h;});
   if(RM){RA.cur=[...RA.to];RB.cur=[...RB.to];scrUntil=0;drawRadar(now);return;}
   cancelAnimationFrame(radRaf);radRaf=requestAnimationFrame(radarFrame);
 }
@@ -933,7 +999,7 @@ function boot(){
 mapEl.addEventListener("pointermove",e=>{const r=mapEl.getBoundingClientRect();mapEl.style.setProperty("--mx",(e.clientX-r.left)+"px");mapEl.style.setProperty("--my",(e.clientY-r.top)+"px");});
 
 /* ---------- start ---------- */
-resort();selB.value=state.b?String(state.b):"none";
+resort();setHash();selB.value=state.b?String(state.b):"none";
 GL=initGL();$("#nogl").hidden=GL;
 if(!GL){$("#vObl").disabled=true;$("#vTop").disabled=true;bootEl.hidden=true;}
 if(RM||!GL){bootT0=performance.now()-9000;bootDone=true;}

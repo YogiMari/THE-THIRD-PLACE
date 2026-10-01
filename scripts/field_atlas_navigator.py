@@ -11,12 +11,18 @@ a 3D map of Kanto centred on Koiwa, with each field's road route, photo,
                                                 ground surface (parsed by
                                                 field_atlas_radar.py) and the
                                                 Reference Benchmark Site
+                                                and §Site Record (ground, site
+                                                area, parking, source)
     DB-001 Project Ledger §Field Log         -> planned and done camps per field
+    MD-004 Equipment Registry                -> brand and product of the gear IDs
+                                                named in the Field Log
     scripts/data/field_atlas_navigator/
         japan_prefectures.json   -> prefecture outlines (lon/lat, simplified)
         locations.json           -> each field's position (lon/lat), and the
                                     benchmark site's ("benchmark": true)
         routes.json              -> road route from Koiwa (lon/lat path, km, via)
+        elevation.json           -> ground height at each point (GSI DEM)
+        surroundings.json        -> nearest IC, shops, bath, hospital (OSM, OSRM)
         images.json              -> each field's photo source (page, image URL)
         images/                  -> each field's photo (600 px JPEG, committed)
 
@@ -46,6 +52,8 @@ HERE = Path(__file__).parent
 TEMPLATE = HERE / "templates" / "field_atlas_navigator.html"
 DATA_DIR = HERE / "data" / "field_atlas_navigator"
 DB001 = HERE.parent / "DB" / "DB-001_Project_Ledger.md"
+MD004 = HERE.parent / "MD" / "MD-004_Equipment_Registry_Object_Reference.md"
+GEAR_ID = re.compile(r"\b([A-Z]{3}-\d{3}[a-z]?)\b")
 
 # Koiwa (home base). The map is projected around this point:
 # x = east, z = south, 1 unit = 0.1° of latitude (about 11.1 km).
@@ -89,6 +97,40 @@ def parse_benchmark(md002: Path) -> list[dict]:
     return out
 
 
+def parse_site_record(md002: Path) -> dict[str, dict]:
+    """MD-002 §Site Record: ground, site area, parking and source per field."""
+    text = md002.read_text(encoding="utf-8")
+    if "## Site Record" not in text:
+        return {}
+    rows = field_atlas_radar.table_rows(field_atlas_radar.section(text, "## Site Record", "##"))
+    return {c[0]: {"ground": c[1], "area": c[2], "parking": c[3], "source": c[4]} for c in rows[1:] if len(c) >= 5}
+
+
+def parse_gear(md004: Path, ids: set[str]) -> dict[str, dict]:
+    """MD-004 entries (## ID, then **Brand** / **Product** / **Status**) for the given IDs."""
+    if not ids or not md004.exists():
+        return {}
+    out, cur, key = {}, None, None
+    for line in md004.read_text(encoding="utf-8").splitlines():
+        t = line.strip()
+        m = re.match(r"^## ([A-Z]{3}-\d{3}[a-z]?)$", t)
+        if m:
+            cur = m.group(1) if m.group(1) in ids else None
+            key = None
+            if cur:
+                out[cur] = {}
+            continue
+        if not cur or not t or t == "---":
+            continue
+        m = re.match(r"^\*\*(Brand|Product|Status)\*\*$", t)
+        if m:
+            key = m.group(1).lower()
+        elif key and key not in out[cur]:
+            out[cur][key] = t
+            key = None
+    return out
+
+
 def parse_field_log(db001: Path, names: set[str], warnings: list[str]) -> dict[str, list[dict]]:
     """DB-001 §Field Log rows, keyed by the MD-002 field name."""
     if not db001.exists():
@@ -113,7 +155,7 @@ def parse_field_log(db001: Path, names: set[str], warnings: list[str]) -> dict[s
     return log
 
 
-def build(md002: Path, template: Path = TEMPLATE, db001: Path = DB001) -> tuple[str, list[str]]:
+def build(md002: Path, template: Path = TEMPLATE, db001: Path = DB001, md004: Path = MD004) -> tuple[str, list[str]]:
     data, version = field_atlas_radar.build(md002)
     locations = load("locations.json")
     routes = load("routes.json")
@@ -165,9 +207,28 @@ def build(md002: Path, template: Path = TEMPLATE, db001: Path = DB001) -> tuple[
             warnings.append(f"no location for benchmark: {b['name']}")
             continue
         bench.append({**b, "ll": loc["lonlat"], "p": project(*loc["lonlat"])})
+    site = parse_site_record(md002)
+    elev = load("elevation.json") if (DATA_DIR / "elevation.json").exists() else {}
+    surr = load("surroundings.json") if (DATA_DIR / "surroundings.json").exists() else {}
+    ids = {g for rows in field_log.values() for e in rows for g in GEAR_ID.findall(e["config"])}
+    gear = parse_gear(md004, ids)
+    for g in sorted(ids - set(gear)):
+        warnings.append(f"Field Log gear ID not in MD-004: {g}")
+    for d in data:
+        for what, table in (("Site Record", site), ("elevation", elev), ("surroundings", surr)):
+            if table and d["name"] not in table:
+                warnings.append(f"no {what}: {d['name']}")
+    for b in bench:
+        if b["name"] in elev:
+            b["elev"] = elev[b["name"]]["m"]
     extra = {
         "log": {d["rank"]: field_log[d["name"]] for d in data if d["name"] in field_log},
         "bench": bench,
+        "site": {d["rank"]: site[d["name"]] for d in data if d["name"] in site},
+        "elev": {d["rank"]: elev[d["name"]]["m"] for d in data if d["name"] in elev},
+        "home_elev": elev.get("小岩（起点）", {}).get("m"),
+        "surr": {d["rank"]: surr[d["name"]] for d in data if d["name"] in surr},
+        "gear": gear,
     }
 
     jp = [

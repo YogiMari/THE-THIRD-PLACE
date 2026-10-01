@@ -21,11 +21,20 @@ Both editions show the same information. Each item comes from the source named h
 | Early check-in category, detail and source | MD-002 §Early Check-in Record |
 | Next camp and camp records (date, status, configuration, weather, went well, issues) | DB-001 Project Ledger §Field Log (the Field name before its bracket must match MD-002) |
 | View 10 benchmark site (浩庵キャンプ場: tag, text, note), shown as a separate marker, not ranked, no route | MD-002 §Reference Benchmark Site; position in `locations.json` |
+| Ground, site area, parking and their sources | MD-002 §Site Record |
+| Brand and product of the gear IDs named in a Field Log row (e.g. SHL-001 → The Arth 幕男) | MD-004 Equipment Registry |
+| Elevation and the rough temperature difference from Koiwa (0.6 ℃ per 100 m of height difference) | `elevation.json` (GSI DEM) |
+| Sunrise, sunset and moon age (on the planned camp date, otherwise today in JST) | computed in the page (NOAA approximation, sea-level horizon; moon age at 21:00 JST) |
+| Nearest expressway IC, convenience store, supermarket, bathhouse / onsen and hospital, with driving distance and time | `surroundings.json` (OpenStreetMap via Overpass; OSRM) |
 | Position, road route, photo | this folder |
 
 The index can be sorted by Resonance, Field 8 or travel time, and filtered by visited / unvisited and by one ground surface. Filtered-out pins leave the map (the selected and compared fields stay). The next camp gets a card at the top of the index, a NEXT tag, a ripple ring and a countdown label on the map (days counted in JST from the viewer's clock).
 
-When DB-001 §Field Log or MD-002 changes, rebuild and republish both editions.
+A field can be opened directly with `#f=<rank>` at the end of the page URL (rank = MD-002 Database order); the page updates the hash on every selection, and "リンクをコピー" on the Destination / TARGET card copies the published URL with it. Whether claude.ai passes the hash through to the page has not been checked.
+
+When DB-001 §Field Log, MD-002 or MD-004 changes, rebuild and republish both editions.
+
+`python3 scripts/field_atlas_check.py` checks MD-002, DB-001, MD-004, the data files and both generators against each other, and runs in CI (`.github/workflows/third-place-sync.yml`). Run it after renaming a field or editing the Field Log.
 
 ## Rebuild
 
@@ -42,7 +51,9 @@ When MD-002 gains a field:
 1. `python3 scripts/field_atlas_navigator_fetch.py geocode --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md` places it at its municipality. For a more exact point, set `query` in `locations.json` to the street address, delete `lonlat`, and run it again.
 2. `python3 scripts/field_atlas_navigator_fetch.py routes` adds its road route.
 3. Add its photo source to `images.json` (`page` = the page shown as credit, `image` = the image file URL), then run `images` and commit `images/`.
-4. Rebuild and republish both editions (Navigator and Ivory).
+4. `python3 scripts/field_atlas_navigator_fetch.py elevation` and `surroundings` add its elevation and surroundings.
+5. Add its row to MD-002 §Site Record.
+6. Run `python3 scripts/field_atlas_check.py`, then rebuild and republish both editions (Navigator and Ivory).
 
 The generator prints a warning for every field that lacks a location, route or photo. The page still builds; that field shows no line or "NO IMAGE".
 
@@ -53,6 +64,8 @@ The generator prints a warning for every field that lacks a location, route or p
 | `japan_prefectures.json` | 47 prefecture outlines, lon/lat. Simplified to 0.006° within about 3° of Koiwa and 0.02° elsewhere; small islands dropped. | [dataofjapan/land](https://github.com/dataofjapan/land) `japan.geojson` (based on 国土数値情報 行政区域データ) |
 | `locations.json` | Position of each field, keyed by MD-002 field name. `source` is `address` (street address, GSI hit at lot level), `map` (the facility's own point on Yahoo!地図, used where GSI resolves the address only to its 大字) or `municipality` (municipal representative point). `query` is the address. The entry with `"benchmark": true` is MD-002's Reference Benchmark Site (浩庵キャンプ場, 山梨県南巨摩郡身延町中ノ倉2926 per kouan-motosuko.com; GSI gives only 中ノ倉, so the Yahoo!地図 point is used). It gets no route. | 国土地理院 住所検索 API (msearch.gsi.go.jp); Yahoo!地図 place pages for `map`. Addresses came from each field's official or booking site. |
 | `routes.json` | Fastest driving route from Koiwa Station area: `path` (lon/lat), `km`, `via` (main roads in order of travel). | OSRM public server (router.project-osrm.org) on OpenStreetMap data © OpenStreetMap contributors, ODbL |
+| `elevation.json` | Ground height (m) at each point in `locations.json`, plus `小岩（起点）`. `src` is the DEM used. | 国土地理院 標高API (cyberjapandata2.gsi.go.jp/general/dem) |
+| `surroundings.json` | Per field, for `ic`, `conv`, `super`, `bath`, `hosp`: `name`, driving `km` and `min`, `osm` id, `onsen` when tagged `bath:type=onsen`. Candidates are the three nearest by straight line within a small radius (widened once if none), and the one with the shortest drive is kept. Missing tags mean missing results, so treat it as a reference. | OpenStreetMap © OpenStreetMap contributors, ODbL, via Overpass API (maps.mail.ru mirror); OSRM table service |
 | `images.json` | Photo source per field: `page` (credit link) and `image` (the file). Mostly each site's og:image; logos and flyers were swapped for a photo from the same site by hand. | Official sites and booking sites (nap-camp.com, hinata, etc.) |
 | `images/` | Each field's photo, 600 px JPEG, named by a hash of the field name. Committed (MARI様のご判断, 2026-09-30) so the pages rebuild without network access. The photos belong to the sites credited in `images.json`. | Created by `fetch images` |
 
@@ -95,7 +108,7 @@ Fonts: Michroma (wide display labels), Saira Condensed 200–500 (large numbers)
 
 - Full-bleed WebGL map (three.js r128 from cdnjs). The panels float over it as thin-line instruments with corner brackets and tick rulers.
 - Top strip: logo, OBLIQUE / TOP VIEW, telemetry (cursor lat/lon, view altitude, field count, JST clock).
-- Left: FIELD INDEX (NEXT CAMP card with a T− countdown and a sweeping amber scan line; sort RESONANCE / FIELD 8 / TRAVEL; filter ALL / 訪問済 / 未訪問 and ground icons; rows with rank, name, score, mini bar, early check-in dot, hours, ground icons, NEXT tag, VS button). Right: ANALYSIS (Resonance / Field 8 / Distance with AVG or the Distance formula underneath, radar with rotating sweep, segmented axis bars grouped by lineage with subtotals and an average tick, Partner dimmed as provisional, early check-in LEDs with the four-tier scale, FIELD LOG from DB-001, compare select, axis definitions table, method notes). Bottom: TARGET and VS cards (photo with ground in the photo HUD, tag, name, TRAVEL / ROAD / DIRECT / BRG, VIA, description, NEXT CAMP line, credit).
+- Left: FIELD INDEX (NEXT CAMP card with a T− countdown and a sweeping amber scan line; sort RESONANCE / FIELD 8 / TRAVEL; filter ALL / 訪問済 / 未訪問 and ground icons; rows with rank, name, score, mini bar, early check-in dot, hours, ground icons, NEXT tag, VS button). Right: ANALYSIS (Resonance / Field 8 / Distance with AVG or the Distance formula underneath, radar with rotating sweep, segmented axis bars grouped by lineage with subtotals and an average tick, Partner dimmed as provisional, early check-in LEDs with the four-tier scale, FIELD LOG from DB-001 with gear names from MD-004, SITE (ground, area, parking, elevation and temperature difference), SKY (sunrise, sunset, moon age), SURROUNDINGS (IC, convenience store, supermarket, onsen, hospital with km and minutes), compare select, axis definitions table, method notes). Bottom: TARGET and VS cards (photo with ground in the photo HUD, tag, name, TRAVEL / ROAD / DIRECT / BRG, VIA, description, NEXT CAMP line, credit, リンクをコピー). The photo HUD shows coordinates and elevation.
 - Map legend (top left of the free area): visited, unvisited, next camp (amber), benchmark (magenta crystal), distance rings. The benchmark label opens to its MD-002 text on click.
 - Map furniture: extruded prefectures (field prefectures brighter), 0.5° graticule labelled on whole degrees, 50/100/150/200 km rings around Koiwa, all 49 routes drawn faintly as a road network, light pillars for fields (height from Atlas Resonance; unvisited = wireframe head, dim flicker).
 - Below 900 px the instruments stack under the map in the order: cards, analysis, index.
@@ -137,7 +150,7 @@ python3 scripts/field_atlas_ivory.py \
     --out field-atlas-ivory.html
 ```
 
-Publish `field-atlas-ivory.html` to the Artifact URL above. The template keeps the Navigator's placeholders (`/*__DATA__*/[]`, `/*__JAPAN__*/[]`, `/*__GEO__*/{}`, `/*__LL__*/{}`, `/*__IMG__*/{}`, `/*__IMGSRC__*/{}`, `/*__ROUTES__*/{}`, `/*__EXTRA__*/{}` (Field Log per rank and the benchmark site), `__MD002_VERSION__`, `__GENERATED__`). Change one of them in both templates at once.
+Publish `field-atlas-ivory.html` to the Artifact URL above. The template keeps the Navigator's placeholders (`/*__DATA__*/[]`, `/*__JAPAN__*/[]`, `/*__GEO__*/{}`, `/*__LL__*/{}`, `/*__IMG__*/{}`, `/*__IMGSRC__*/{}`, `/*__ROUTES__*/{}`, `/*__EXTRA__*/{}` (Field Log per rank, benchmark site, Site Record, elevation, surroundings, gear names), `__MD002_VERSION__`, `__GENERATED__`). Change one of them in both templates at once.
 
 ### Tokens
 
