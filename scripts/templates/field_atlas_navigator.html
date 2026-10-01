@@ -303,6 +303,8 @@
   .lb-bm.open{z-index:2}
   .lb-bm.open .x{display:block}
 
+  /* touch: these boxes scroll only up and down (iOS lets a box drift sideways when it can scroll on both axes) */
+  .analysis,.rows,.tc-d{overflow-x:hidden;overscroll-behavior-x:none;touch-action:pan-y}
   @media (max-width:1240px){
     .index{width:250px} .analysis{width:308px}
     .dock{left:286px;right:344px;flex-direction:column;align-items:stretch}
@@ -311,6 +313,7 @@
     .legend{left:286px}
   }
   @media (max-width:900px){
+    .analysis{overflow:hidden}
     .app{height:auto;overflow:visible;display:flex;flex-direction:column;gap:12px;padding-inline:16px;padding-block:0 28px}
     .strip{position:relative;height:auto;flex-wrap:wrap;gap:10px 16px;padding:12px 0 10px;background:none;margin-inline:0}
     .tele{display:none}
