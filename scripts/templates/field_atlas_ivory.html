@@ -323,16 +323,19 @@
   .legend span{display:flex;align-items:center;gap:8px;white-space:nowrap}
   .legend i{flex:none;width:9px;height:9px;border-radius:50%}
   .legend .lv{background:var(--a)} .legend .lu{border:1px dashed var(--ink-soft)} .legend .ln{background:var(--a);box-shadow:0 0 0 3px rgba(217,119,87,.25)}
-  .legend .lbm{width:8px;height:8px;border-radius:1px;background:var(--warn);transform:rotate(45deg)} .legend .lr{border:1px dashed var(--ink-faint);border-radius:50%}
+  .legend .lbm{width:7px;height:7px;border-radius:1px;background:#C9B48A;transform:rotate(45deg)} .legend .lr{border:1px dashed var(--ink-faint);border-radius:50%}
   .lb-next::after{content:"";position:absolute;inset:-12px -8px}
   #lgN{pointer-events:auto;cursor:pointer;touch-action:manipulation;text-decoration:underline;text-decoration-style:dotted;text-underline-offset:3px}
   .lb-next{pointer-events:auto;cursor:pointer;touch-action:manipulation;-webkit-tap-highlight-color:transparent;user-select:none;-webkit-user-select:none;display:flex;align-items:center;gap:6px;font-family:var(--ui);font-size:9.5px;font-weight:700;letter-spacing:.12em;color:#fff;background:var(--a);padding:2px 10px 2px 8px;border-radius:99px;box-shadow:0 6px 16px -6px rgba(181,83,47,.9)}
   .lb-next::before{content:"";width:6px;height:6px;border-radius:50%;background:#fff;animation:blink 1.4s ease-in-out infinite}
   @keyframes blink{50%{opacity:.2}}
-  .lb-bm{pointer-events:auto;cursor:pointer;width:max-content;max-width:250px;white-space:normal;font-family:var(--ui);font-size:9px;font-weight:600;letter-spacing:.12em;color:#8A6A1F;background:rgba(255,255,255,.92);border:1px solid rgba(200,149,44,.45);padding:5px 10px 6px;border-radius:10px;box-shadow:var(--shadow)}
-  .lb-bm .n{display:block;font-family:var(--mincho);font-size:12.5px;font-weight:700;letter-spacing:.02em;color:var(--ink)}
+  /* the View benchmark stays quiet: a small "◇ View 10" tag; its name on hover, its MD-002 text on tap */
+  .lb-bm{pointer-events:auto;cursor:pointer;width:max-content;max-width:240px;white-space:normal;font-family:var(--ui);font-size:8.5px;font-weight:600;letter-spacing:.14em;color:#9C8A66;background:rgba(250,249,245,.62);border:1px solid rgba(156,138,102,.25);padding:1px 7px 2px;border-radius:99px;opacity:.85;transition:opacity .3s,background .3s,border-radius .3s,padding .3s}
+  .lb-bm:hover,.lb-bm:focus-visible,.lb-bm.open{opacity:1;background:rgba(255,255,255,.94);border-radius:10px;padding:4px 10px 6px}
+  .lb-bm .n{display:none;font-family:var(--mincho);font-size:12px;font-weight:700;letter-spacing:.02em;color:var(--ink-2)}
+  .lb-bm:hover .n,.lb-bm:focus-visible .n,.lb-bm.open .n{display:block}
   .lb-bm .x{display:none;margin-top:4px;font-family:var(--body);font-size:11px;font-weight:400;letter-spacing:0;line-height:1.65;color:var(--ink-2)}
-  .lb-bm .x em{display:block;font-family:var(--display);font-size:13px;color:#8A6A1F;margin-bottom:2px}
+  .lb-bm .x em{display:block;font-family:var(--display);font-size:13px;color:#8A7550;margin-bottom:2px}
   .lb-bm.open{z-index:2}
   .lb-bm.open .x{display:block}
   .zoom{position:absolute;right:392px;top:80px;z-index:4;display:flex;flex-direction:column;background:var(--sheet);border:1px solid var(--line);border-radius:12px;box-shadow:var(--shadow);overflow:hidden;backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
@@ -458,7 +461,7 @@
       <p><b>次のキャンプ。</b>DB-001 Project Ledger §Field Logの予定（Planned）と記録（Done）です。装備IDはMD-004の正式名称で示します。</p>
       <p><b>区画・標高・空・周辺。</b>区画の広さと駐車の扱いはMD-002 §Site Record、標高は国土地理院の標高データ（気温差は標高差×0.6℃/100mの目安）、日の出・日の入り・月齢はページ内の計算値、周辺環境はOpenStreetMapの登録とOSRMの道のりです。周辺環境は登録のない施設が出ない参考値です。</p>
       <p><b>リンク。</b>ページのURLの末尾に「#f=順位」を付けると、そのフィールドを開きます。カードの「リンクをコピー」で取得できます。</p>
-      <p><b>基準地点。</b>金色の菱形は浩庵キャンプ場（MD-002 §Reference Benchmark Site）で、View軸10点の基準としてのみ用いる地点です。ランキングの対象ではありません。位置は所在地（身延町中ノ倉2926）のYahoo!地図の地点です。</p>
+      <p><b>基準地点。</b>小さな「◇ View 10」の印は浩庵キャンプ場（MD-002 §Reference Benchmark Site）で、View軸10点の基準としてのみ用いる地点です。ランキングの対象ではありません。位置は所在地（身延町中ノ倉2926）のYahoo!地図の地点です。</p>
       <p><b>地図と線。</b>位置は各フィールドの住所を国土地理院の住所検索で求めたものです（住所が大字までしか当たらない2件は、Yahoo!地図の施設の地点）。同じ地点を共有するフィールドは少しずらして置いています。色の線は、小岩駅付近からの車での最短時間ルートです。OSRM（OpenStreetMapの道路データ）で計算しました。渋滞や通行規制は反映していません。ROADはこのルートの道のり、DIRECT（KM）は直線距離、BRGは方位で、点線が直線を表します。移動時間（H）はMD-002の値です。道路データ © OpenStreetMap contributors。</p>
       <p><b>写真。</b>各施設の公式サイトや予約サイトが紹介用に掲げている画像を、ページ作成時にWeb検索で集めて埋め込んでいます。出典はカードに記しています。</p>
     </details>
@@ -742,12 +745,13 @@ function initGL(){
     [L.next,$("#lgN")].forEach(tapTo(()=>{if(state.a===NEXT.r){chase=null;if(GL){buildRoute("a");focus();}else lock("A");return;}setA(NEXT.r);}));}
   // the View benchmark (MD-002 §Reference Benchmark Site): a gold gem, not ranked
   BENCH.forEach(b=>{const [x,z]=b.p,g=new THREE.Group();g.position.set(x,0,z);
-    const bm=new THREE.Mesh(beamG,new THREE.MeshBasicMaterial({color:0xC8952C,transparent:true,opacity:.55,depthWrite:false}));bm.scale.y=.95;g.add(bm);
-    const gem=new THREE.Mesh(new THREE.OctahedronGeometry(.17),new THREE.MeshStandardMaterial({color:0xD4A23A,roughness:.3,metalness:.35,emissive:0x4A3000,emissiveIntensity:.35}));gem.position.y=.95;g.add(gem);
-    const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:GLOW,color:0xF2CD7A,transparent:true,opacity:.55,depthWrite:false}));sp.position.y=.95;g.add(sp);
-    const base=new THREE.Mesh(new THREE.RingGeometry(.2,.26,4),new THREE.MeshBasicMaterial({color:0xC8952C,transparent:true,opacity:.8,side:THREE.DoubleSide,depthWrite:false}));base.rotation.x=-Math.PI/2;base.position.y=.02;g.add(base);
+    // kept below the next camp in emphasis: a short faint stem, a small matte gem, almost no glow
+    const bm=new THREE.Mesh(beamG,new THREE.MeshBasicMaterial({color:0xB8A47E,transparent:true,opacity:.3,depthWrite:false}));bm.scale.y=.45;g.add(bm);
+    const gem=new THREE.Mesh(new THREE.OctahedronGeometry(.11),new THREE.MeshStandardMaterial({color:0xC9B48A,roughness:.75,metalness:0}));gem.position.y=.45;g.add(gem);
+    const sp=new THREE.Sprite(new THREE.SpriteMaterial({map:GLOW,color:0xE8DCC0,transparent:true,opacity:.15,depthWrite:false}));sp.position.y=.45;g.add(sp);
+    const base=new THREE.Mesh(new THREE.RingGeometry(.16,.2,4),new THREE.MeshBasicMaterial({color:0xB8A47E,transparent:true,opacity:.35,side:THREE.DoubleSide,depthWrite:false}));base.rotation.x=-Math.PI/2;base.position.y=.02;g.add(base);
     pinG.add(g);const n=navLL(b.ll);
-    const el=mkLabel("lb-bm",`VIEW 10 · BENCHMARK<span class="n">${esc(b.name)}</span><span class="x"><em>${esc(b.tag)}</em>${esc(b.note)}<br>${esc(b.info)}${n?` · 小岩から直線 ${Math.round(n.km)} km`:""}</span>`);
+    const el=mkLabel("lb-bm",`◇ View 10<span class="n">${esc(b.name)}</span><span class="x"><em>${esc(b.tag)}</em>${esc(b.note)}<br>${esc(b.info)}${n?` · 小岩から直線 ${Math.round(n.km)} km`:""}</span>`);
     el.tabIndex=0;el.setAttribute("role","button");el.setAttribute("aria-label",b.name+"（View 10の基準地点）の説明を開く");
     const tg=()=>el.classList.toggle("open");el.addEventListener("click",tg);el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();tg();}});
     benchM.push({gem,sp,el,v:V(x,0,z)});});
@@ -841,7 +845,7 @@ function frame(now){
     if(!p.visited)p.gl.material.opacity=.12+.1*Math.sin(now/300+p.rank);
     p.ring.material.opacity=isA||isB?.95:0;p.ring.material.color.setHex(isA?0xD97757:0x6A9BCC);p.ring.scale.setScalar(s*(1+.3*Math.sin(now/240)));});
   if(nextRing){const t=(now/2600)%1;nextRing.scale.setScalar(s*(.25+t*1.6));nextRing.material.opacity=(1-t)*.7;}
-  benchM.forEach(b=>{b.gem.rotation.y+=dt*.9;b.gem.scale.set(s,1.5*s,s);b.sp.scale.set(1.6*s,1.6*s,1);});
+  benchM.forEach(b=>{b.gem.rotation.y+=dt*.35;b.gem.scale.set(s,1.4*s,s);b.sp.scale.set(1.1*s,1.1*s,1);});
   home.scale.setScalar(s);home.rotation.y+=dt*1.2;home.userData.s.scale.set(3*s,3*s,1);
   homeRings.forEach((r,i)=>{const t=((now/2400)+i/3)%1;r.scale.setScalar(s*(.4+t*3.6));r.material.opacity=(1-t)*.55;});
   ["a","b"].forEach(k=>{const R=routes[k];if(!R.curve)return;const p=clamp((now-R.t0)/R.dur,0,1),e=eout(p);if(e!==R.prog)setProg(R,e);
@@ -860,7 +864,7 @@ function frame(now){
   overlay("A",state.a,L.a,lift);overlay("B",state.b,L.b,lift);
   placeBubble(lift);if(bubOn)L.a.hidden=true;
   if(L.next){const g=GEO[NEXT.r];L.next.hidden=!bootDone&&!RM||!live(NEXT.r);if(!L.next.hidden)place(L.next,V(g[0],lift,g[1]),"translate(-50%,14px)");}
-  benchM.forEach(b=>{b.el.hidden=!bootDone&&!RM;if(!b.el.hidden)place(b.el,V(b.v.x,lift+1.25,b.v.z),"translate(-50%,calc(-100% - 4px))");});
+  benchM.forEach(b=>{b.el.hidden=!bootDone&&!RM;if(!b.el.hidden)place(b.el,V(b.v.x,lift+.7,b.v.z),"translate(-50%,calc(-100% - 4px))");});
   if(hovered&&GEO[hovered]){const ph=GEO[hovered];place(L.h,V(ph[0],lift+1.2,ph[1]),"translate(18px,-50%)");}
 }
 function overlay(S,r,lab,lift){
