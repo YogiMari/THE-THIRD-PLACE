@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.77  
+**Version**: 7.78  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -2671,7 +2671,7 @@ Slider
 
 ### Price  
 
-¥11,800  
+¥11,800（3個合計。MARI様確認）  
 
 ---  
 
@@ -4389,7 +4389,7 @@ Top Board（STR-019 Container Bridge Frameに載せるBridge Tableの天板。MD
 
 ### Price  
 
-¥16,500  
+¥49,500（3組合計。1組¥16,500。MARI様確認）  
 
 ---  
 
@@ -4860,7 +4860,7 @@ Storage Container Base / Leg（汎用スタンド）
 
 ### Price  
 
-¥55,500  
+¥55,500（4個合計。MARI様確認）  
 
 ---  
 
@@ -5359,7 +5359,7 @@ Hook
 
 ### Price  
 
-¥3,200  
+¥6,400（2個合計。1個¥3,200。MARI様確認）  
 
 ---  
 ## FIR-010  
@@ -6314,7 +6314,7 @@ Hook
 
 ### Price  
 
-¥7,040  
+¥7,040（7個合計。MARI様確認）  
 
 ---  
 
@@ -7104,6 +7104,12 @@ MARI様のご決定（2026-09-29）を反映。LGT-017のPrice ¥20,000を実勢
 ## Version 7.77
 
 MARI様のご決定（2026-09-29）に基づき、38-kT用シェードの候補2件（LGT-017a neru design works メッシュシェード、LGT-017b neru design works × CALMA STORE POCKET SHADE）を、MD-004 §Purposeの候補記録ルールに合わせて整理した。LGT-017aをBrand / Product = Unconfirmedの1枠（Candidate）とし、LGT-017bはLGT-017aへ統合してRetiredとした。LGT-017のChild ComponentsからLGT-017bを外した。両候補の比較はCZ-001 Deliberation Dossierへ移した（CZ-001 Ver.3.19・CZ-002 Ver.3.8と連動）。
+
+---
+
+## Version 7.78
+
+MARI様のご確認（2026-10-02）に基づき、数量が複数の品のPriceを「合計」で統一した。LGT-028（3個）、STR-033（4個）、FIR-035（7個）は記載額が合計であることを確認し、注記を追記した。STR-020は記載の¥16,500が1組の価格であったため、3組合計の¥49,500へ更新した。FIR-009は記載の¥3,200が1個の価格であったため、2個合計の¥6,400へ更新した。SHL-002（2個）は未確認のため変更なし。
 
 ---
 
