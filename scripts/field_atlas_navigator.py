@@ -16,6 +16,9 @@ a 3D map of Kanto centred on Koiwa, with each field's road route, photo,
     DB-001 Project Ledger §Field Log         -> planned and done camps per field
     MD-004 Equipment Registry                -> brand and product of the gear IDs
                                                 named in the Field Log
+    scripts/templates/field_atlas_shared.js -> the script the Navigator and Ivory
+                                                pages have in common (inserted at
+                                                the /*__SHARED_JS__*/ marker)
     scripts/data/field_atlas_navigator/
         japan_prefectures.json   -> prefecture outlines (lon/lat, simplified)
         locations.json           -> each field's position (lon/lat), and the
@@ -23,6 +26,8 @@ a 3D map of Kanto centred on Koiwa, with each field's road route, photo,
         routes.json              -> road route from Koiwa (lon/lat path, km, via)
         elevation.json           -> ground height at each point (GSI DEM)
         surroundings.json        -> nearest IC, shops, bath, hospital (OSM, OSRM)
+        climate.json             -> JMA AMeDAS normal of the daily lowest temperature
+                                    for the field of the next camp (by hand)
         images.json              -> each field's photo source (page, image URL)
         images/                  -> each field's photo (600 px JPEG, committed)
 
@@ -50,6 +55,7 @@ import field_atlas_radar  # noqa: E402  (MD-002 parser shared with the radar)
 
 HERE = Path(__file__).parent
 TEMPLATE = HERE / "templates" / "field_atlas_navigator.html"
+SHARED_JS = HERE / "templates" / "field_atlas_shared.js"  # script common to the Navigator and Ivory templates
 DATA_DIR = HERE / "data" / "field_atlas_navigator"
 DB001 = HERE.parent / "DB" / "DB-001_Project_Ledger.md"
 MD004 = HERE.parent / "MD" / "MD-004_Equipment_Registry_Object_Reference.md"
@@ -157,8 +163,8 @@ def parse_field_log(db001: Path, names: set[str], warnings: list[str]) -> dict[s
 
 def extras(md002: Path, data: list[dict], locations: dict, warnings: list[str],
            db001: Path = DB001, md004: Path = MD004) -> dict:
-    """Field Log, benchmark, Site Record, elevation, surroundings and gear names,
-    keyed by rank. Shared by the Navigator, Ivory and Radar pages."""
+    """Field Log, benchmark, Site Record, elevation, surroundings, gear names and the
+    cold guide (JMA normal of the daily lowest temperature), keyed by rank. Shared by the Navigator, Ivory and Radar pages."""
     field_log = parse_field_log(db001, {d["name"] for d in data}, warnings)
     bench = []
     for b in parse_benchmark(md002):
@@ -170,6 +176,7 @@ def extras(md002: Path, data: list[dict], locations: dict, warnings: list[str],
     site = parse_site_record(md002)
     elev = load("elevation.json") if (DATA_DIR / "elevation.json").exists() else {}
     surr = load("surroundings.json") if (DATA_DIR / "surroundings.json").exists() else {}
+    clim = load("climate.json") if (DATA_DIR / "climate.json").exists() else {}
     ids = {g for rows in field_log.values() for e in rows for g in GEAR_ID.findall(e["config"])}
     gear = parse_gear(md004, ids)
     for g in sorted(ids - set(gear)):
@@ -181,6 +188,20 @@ def extras(md002: Path, data: list[dict], locations: dict, warnings: list[str],
     for b in bench:
         if b["name"] in elev:
             b["elev"] = elev[b["name"]]["m"]
+    cold = {}
+    for d in data:
+        key = clim.get("fields", {}).get(d["name"])
+        if not key:
+            continue
+        st = clim.get("stations", {}).get(key)
+        if not st or len(st.get("tmin_normal", [])) != 12:
+            warnings.append(f"climate.json: no 12-month station record for {d['name']} ({key})")
+            continue
+        cold[d["rank"]] = {
+            "station": key, "pref": st["prefecture"], "elev": st["elev_m"], "tmin": st["tmin_normal"],
+            "period": st["period"], "url": st["sources"]["normals"]["url"],
+            "list_url": st["sources"]["elevation"]["url"],
+        }
     return {
         "log": {d["rank"]: field_log[d["name"]] for d in data if d["name"] in field_log},
         "bench": bench,
@@ -189,6 +210,7 @@ def extras(md002: Path, data: list[dict], locations: dict, warnings: list[str],
         "home_elev": elev.get("小岩（起点）", {}).get("m"),
         "surr": {d["rank"]: surr[d["name"]] for d in data if d["name"] in surr},
         "gear": gear,
+        "climate": cold,
         "ll": {d["rank"]: locations[d["name"]]["lonlat"] for d in data if d["name"] in locations},
     }
 
@@ -250,6 +272,7 @@ def build(md002: Path, template: Path = TEMPLATE, db001: Path = DB001, md004: Pa
 
     html = (
         template.read_text(encoding="utf-8")
+        .replace("/*__SHARED_JS__*/", SHARED_JS.read_text(encoding="utf-8"))
         .replace("/*__DATA__*/[]", js(data))
         .replace("/*__JAPAN__*/[]", js(jp))
         .replace("/*__GEO__*/{}", js(geo))

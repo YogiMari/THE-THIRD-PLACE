@@ -13,8 +13,12 @@ notation drift between documents and data files:
              in its Configuration exists in MD-004
     data     locations, routes, photos, elevation and surroundings exist for
              every field, and no data key is left over from an old name
-             (surroundings gaps are reported but do not fail the check)
-    pages    the Navigator, Ivory and Radar generators build without warnings
+             (surroundings gaps are reported but do not fail the check);
+             climate.json names only MD-002 fields and defines every station
+             it uses, with 12 values (first dekad of each month) and JMA sources
+    pages    the Navigator, Ivory and Radar generators build without warnings, the
+             Navigator and Ivory templates each take the shared script once, and
+             no placeholder is left in any page
 
 Exits 1 and lists every problem when anything is out of step. Runs in CI.
 
@@ -77,6 +81,28 @@ def main() -> None:
             problems.append(f"{file}: missing: {n}")
         for n in sorted(keys - names):
             problems.append(f"{file}: no such MD-002 field (renamed?): {n}")
+    # climate.json: the JMA normal of the daily lowest temperature, per station, and the field each station stands for
+    clim = nav.load("climate.json") if (nav.DATA_DIR / "climate.json").exists() else {}
+    stations = clim.get("stations", {})
+    for f, key in sorted(clim.get("fields", {}).items()):
+        if f not in names:
+            problems.append(f"climate.json: no such MD-002 field (renamed?): {f}")
+        if key not in stations:
+            problems.append(f"climate.json: station not defined: {key} (for {f})")
+    for key, st in sorted(stations.items()):
+        tmin = st.get("tmin_normal", [])
+        if len(tmin) != 12 or not all(isinstance(v, (int, float)) for v in tmin):
+            problems.append(f"climate.json: {key}: tmin_normal must be 12 numbers (first dekad, January to December)")
+        for k in ("prefecture", "elev_m", "period"):
+            if k not in st:
+                problems.append(f"climate.json: {key}: missing {k}")
+        for k in ("normals", "elevation"):
+            if not st.get("sources", {}).get(k, {}).get("url", "").startswith("https://www.jma.go.jp/") \
+                    and not st.get("sources", {}).get(k, {}).get("url", "").startswith("https://www.data.jma.go.jp/"):
+                problems.append(f"climate.json: {key}: sources.{k}.url must be a JMA page")
+    for n, rows in sorted(log.items()):
+        if any(e["status"] == "Planned" for e in rows) and n not in clim.get("fields", {}):
+            print(f"note — no cold guide for the planned camp at {n} (add it to climate.json)")
     for d in data:
         if not nav.image_path(d["name"]).exists():
             problems.append(f"images/: missing photo: {d['name']}")
@@ -85,15 +111,21 @@ def main() -> None:
             problems.append(f"locations.json: Reference Benchmark Site not marked benchmark: {b['name']}")
 
     # the pages themselves
+    if not nav.SHARED_JS.exists():
+        problems.append(f"{nav.SHARED_JS.name}: missing (the script shared by the Navigator and Ivory templates)")
+    for t in TEMPLATES:
+        marks = t.read_text(encoding="utf-8").count("/*__SHARED_JS__*/")
+        if marks != 1:
+            problems.append(f"{t.name}: expected one /*__SHARED_JS__*/ marker, found {marks}")
     for t in TEMPLATES:
         html, warnings = nav.build(MD002, t)
         problems += [f"{t.name}: {w}" for w in warnings]
-        left = re.findall(r"/\*__[A-Z]+__\*/|__MD002_VERSION__|__GENERATED__", html)
+        left = re.findall(r"/\*__[A-Z_]+__\*/|__MD002_VERSION__|__GENERATED__", html)
         if left:
             problems.append(f"{t.name}: placeholders left: {sorted(set(left))}")
     html, warnings, _, _ = radar.render(MD002)
     problems += [f"field_atlas_radar.html: {w}" for w in warnings]
-    left = re.findall(r"/\*__[A-Z]+__\*/|__MD002_VERSION__|__GENERATED__", html)
+    left = re.findall(r"/\*__[A-Z_]+__\*/|__MD002_VERSION__|__GENERATED__", html)
     if left:
         problems.append(f"field_atlas_radar.html: placeholders left: {sorted(set(left))}")
 

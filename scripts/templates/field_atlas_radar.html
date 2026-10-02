@@ -168,6 +168,7 @@
 <div class="info">
   <div class="box" id="bSite"></div>
   <div class="box" id="bSky"></div>
+  <div class="box wide" id="bCold" hidden></div>
   <div class="box wide" id="bSurr"></div>
   <div class="box wide" id="bLog" hidden></div>
 </div>
@@ -232,7 +233,7 @@ const TIERS=[["A","早い",10],["B","可",8],["C","条件付き",6],["D","不可
 const AVG=AX.map((_,i)=>DATA.reduce((s,d)=>s+d.axes[i],0)/Math.max(DATA.length,1));
 const avgSum=(a,b)=>AVG.slice(a,b).reduce((x,y)=>x+y,0);
 // DB-001 Field Log, MD-002 Site Record, elevation, surroundings, gear names (shared with Navigator / Ivory)
-const LOG=EXTRA.log||{},BENCH=EXTRA.bench||[],SITE=EXTRA.site||{},ELEV=EXTRA.elev||{},SURR=EXTRA.surr||{},GEAR=EXTRA.gear||{},LL=EXTRA.ll||{},HOME_ELEV=EXTRA.home_elev;
+const LOG=EXTRA.log||{},BENCH=EXTRA.bench||[],SITE=EXTRA.site||{},ELEV=EXTRA.elev||{},SURR=EXTRA.surr||{},GEAR=EXTRA.gear||{},LL=EXTRA.ll||{},CLIM=EXTRA.climate||{},HOME_ELEV=EXTRA.home_elev;
 const today=()=>new Date(Date.now()+9*3600e3).toISOString().slice(0,10);
 const day0=s=>(String(s).match(/\d{4}-\d{2}-\d{2}/)||[])[0];
 const daysTo=s=>Math.round((Date.parse(s+"T00:00:00Z")-Date.parse(today()+"T00:00:00Z"))/864e5);
@@ -240,6 +241,10 @@ const dLabel=n=>n>0?"D-"+n:n===0?"TODAY":"D+"+(-n);
 const NEXT=(()=>{let best=null;for(const r in LOG)LOG[r].forEach(e=>{const d=day0(e.date);if(e.status==="Planned"&&d&&get(+r)&&(!best||d<best.d))best={r:+r,d,e};});return best;})();
 const tempDiff=m=>HOME_ELEV==null||m==null?null:-(m-HOME_ELEV)*.6/100;
 const fmtT=t=>`${t>=0?"+":"−"}${Math.abs(t).toFixed(1)}℃`;
+// cold guide: JMA normal (1991-2020) of the daily lowest temperature in the month of the planned camp, and the same moved by the height difference (0.6 ℃ per 100 m, a rough guide)
+const fmtC=v=>`${v<0?"−":""}${Math.abs(v).toFixed(1)}℃`;
+function coldOf(r){const c=CLIM[r],ds=(LOG[r]||[]).map(e=>e.status==="Planned"?day0(e.date):null).find(Boolean);if(!c||!ds)return null;const mo=+ds.slice(5,7),t=c.tmin[mo-1];if(t==null)return null;
+  const el=ELEV[r],dh=el==null?null:el-c.elev;return{c,ds,mo,t,el,dh,adj:dh==null?null:t-dh*.6/100};}
 const gearIds=t=>[...new Set(String(t).match(/\b[A-Z]{3}-\d{3}[a-z]?\b/g)||[])];
 const SURR_L=[["ic","高速IC"],["conv","コンビニ"],["super","スーパー"],["bath","温泉・入浴"],["hosp","病院"]];
 function sunTimes(ds,lat,lon){
@@ -332,6 +337,9 @@ function details(A){
     $("#bSky").innerHTML=`<h3>空 · ${esc(ds)}${plan?"（次のキャンプ）":"（今日）"}</h3><dl class="kv"><dt>日の出</dt><dd>${s?hm(s.rise):"—"}</dd><dt>日の入り</dt><dd>${s?hm(s.set):"—"}</dd><dt>月齢</dt><dd>${m.age.toFixed(1)}（${m.nm}・明るさ ${Math.round(m.lit*100)}%）${m.lit<.25?"<small>月明かりが少ない夜</small>":""}</dd></dl><div class="src">計算値（日の出・日の入りは海面基準、月齢は21時）</div>`;}
   else $("#bSky").innerHTML="";
   $("#bSky").hidden=!ll;
+  // cold guide
+  const co=coldOf(r);$("#bCold").hidden=!co;
+  if(co)$("#bCold").innerHTML=`<h3>寒さの目安 · ${esc(co.ds)}（次のキャンプ）</h3><dl class="kv"><dt>観測所</dt><dd>気象庁アメダス ${esc(co.c.station)}（${esc(co.c.pref)}・標高 ${co.c.elev.toLocaleString()} m）</dd><dt>${co.mo}月上旬の平年</dt><dd>日最低気温 ${fmtC(co.t)}</dd>${co.adj!=null?`<dt>標高差の補正</dt><dd>約 ${fmtC(co.adj)}<small>標高差 ${co.dh>=0?"+":"−"}${Math.abs(co.dh)} m の補正・目安</small></dd>`:""}</dl><div class="src">${esc(co.c.period)}年の平年値（${co.mo}月上旬＝1〜10日の日最低気温の平均）。補正は標高差×0.6℃/100mの目安で、当日の気温や天気予報ではありません。出典：<a href="${esc(co.c.url)}" target="_blank" rel="noopener">気象庁 平年値（${esc(co.c.station)}）</a></div>`;
   // surroundings
   $("#bSurr").hidden=!sv;
   if(sv)$("#bSurr").innerHTML=`<h3>周辺環境</h3><ul class="sv">${SURR_L.map(([k,l])=>{const v=sv[k];return `<li><b>${l}</b><span>${v?esc((v.name||"（名称未登録）").replace(/;/g,"・"))+(v.onsen?" ♨":""):"—"}</span><em>${v?`${v.km} km · ${v.min}分`:"30km圏に登録なし"}</em></li>`;}).join("")}</ul><div class="src">OpenStreetMapに登録された最寄り（直線で近い3件のうち車で最短）。道のりと時間はOSRM（渋滞なし）。参考値</div>`;

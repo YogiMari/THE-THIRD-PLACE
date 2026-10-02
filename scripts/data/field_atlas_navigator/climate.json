@@ -1,0 +1,45 @@
+{
+ "_note": "JMA (気象庁) AMeDAS normals of the daily lowest temperature, 1991-2020, per station: the first dekad (上旬, 1st-10th) of each month, taken as the guide for the first half of the month. Filled by hand from the JMA pages named in each station's sources (no fetch command). Fields are keyed by MD-002 field name; a field without an entry shows no cold guide.",
+ "stations": {
+  "山中": {
+   "prefecture": "山梨県",
+   "amedas_no": "49256",
+   "prec_no": 49,
+   "block_no": "0438",
+   "elev_m": 992,
+   "lat": 35.43667,
+   "lon": 138.83667,
+   "tmin_normal": [
+    -8.4,
+    -9.0,
+    -4.6,
+    -0.5,
+    5.2,
+    9.7,
+    15.6,
+    17.2,
+    15.4,
+    9.4,
+    1.9,
+    -3.7
+   ],
+   "tmin_unit": "℃ (daily lowest temperature, normal of the first dekad 上旬 = 1st-10th of each month; index 0 = January)",
+   "period": "1991-2020",
+   "sources": {
+    "normals": {
+     "title": "気象庁｜過去の気象データ検索 平年値（旬ごとの値）山中（山梨県）日最低気温 各月の上旬",
+     "url": "https://www.data.jma.go.jp/stats/etrn/view/nml_amd_10d.php?prec_no=49&block_no=0438",
+     "checked": "2026-10-02"
+    },
+    "elevation": {
+     "title": "気象庁 地域気象観測所一覧（令和8年3月24日現在）山梨 49256 山中 海面上の高さ 992 m",
+     "url": "https://www.jma.go.jp/jma/kishou/know/amedas/ame_master.pdf",
+     "checked": "2026-10-02"
+    }
+   }
+  }
+ },
+ "fields": {
+  "moss camp field": "山中"
+ }
+}

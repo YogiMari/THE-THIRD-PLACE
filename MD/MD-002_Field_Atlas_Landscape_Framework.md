@@ -1,11 +1,11 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.4.9
+## Ver.4.10
 
 **Document ID**: MD-002  
 **Title**: Field Atlas Landscape Framework  
 **Series**: MD – Master Data (Record)  
-**Version**: 4.9  
+**Version**: 4.10  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -318,7 +318,7 @@ OP-010 Part C §Site Requirements（区画面積：80㎡（車別）、車込み
 
 ### Field Atlas Radar
 
-レーダーチャートは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。Field Atlas Navigator・Ivoryと同じく、地面・§Site Record・次のキャンプと訪問の記録（DB-001 §Field Log、装備名はMD-004）・標高・周辺環境・日の出・日の入り・月齢も示す（地図と写真は持たない）。本文書・DB-001 §Field Log・MD-004を更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
+レーダーチャートは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。Field Atlas Navigator・Ivoryと同じく、地面・§Site Record・次のキャンプと訪問の記録（DB-001 §Field Log、装備名はMD-004）・標高・周辺環境・日の出・日の入り・月齢・寒さの目安も示す（地図と写真は持たない）。本文書・DB-001 §Field Log・MD-004を更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
 
 ```
 python3 scripts/field_atlas_radar.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-radar.html
@@ -329,7 +329,7 @@ python3 scripts/field_atlas_radar.py --md002 MD/MD-002_Field_Atlas_Landscape_Fra
 
 ### Field Atlas Navigator
 
-関東の3D地図で、各フィールドの小岩からの道路経路・写真・10軸の分析・アーリーチェックイン・地面・次のキャンプを表示するページである。点数・掲載順・アーリーチェックイン・地面のアイコンは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。View軸の基準地点（§Reference Benchmark Site）は、ランキングと区別した印として地図に示す。次のキャンプと訪問の記録は、DB-001 Project Ledger §Field Logから生成する（Fieldの表記は本文書に合わせる）。Field Logの構成に書かれた装備IDは、MD-004から正式名称を引いて示す。区画の広さ・駐車の扱いは本文書の§Site Record、標高・周辺環境（高速IC・コンビニ・スーパー・温泉・病院）は `scripts/data/field_atlas_navigator/` のデータ（国土地理院・OpenStreetMap）から示し、日の出・日の入り・月齢はページ内で計算する。位置・道路経路・写真（600pxのJPEG）とその出典は `scripts/data/field_atlas_navigator/` に置き、デザインと再現の手順は同フォルダのREADME.mdに記す。写真は各施設・予約サイトのものであり、出典は同フォルダのimages.jsonに記す。本文書・DB-001 §Field Log・MD-004を更新したら、`python3 scripts/field_atlas_check.py` で文書とデータの整合を確かめ（CIでも実行される）、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
+関東の3D地図で、各フィールドの小岩からの道路経路・写真・10軸の分析・アーリーチェックイン・地面・次のキャンプを表示するページである。点数・掲載順・アーリーチェックイン・地面のアイコンは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。View軸の基準地点（§Reference Benchmark Site）は、ランキングと区別した印として地図に示す。次のキャンプと訪問の記録は、DB-001 Project Ledger §Field Logから生成する（Fieldの表記は本文書に合わせる）。Field Logの構成に書かれた装備IDは、MD-004から正式名称を引いて示す。区画の広さ・駐車の扱いは本文書の§Site Record、標高・周辺環境（高速IC・コンビニ・スーパー・温泉・病院）は `scripts/data/field_atlas_navigator/` のデータ（国土地理院・OpenStreetMap）から示し、日の出・日の入り・月齢はページ内で計算する。次のキャンプのフィールドには、気象庁アメダス（moss camp fieldは「山中」）の平年値（1991〜2020年）のうちキャンプ月の上旬（1〜10日。月の前半の目安）の日最低気温と、観測所との標高差による補正値（0.6℃/100mの目安）を「寒さの目安」として示す（データは同フォルダのclimate.json。当日の気温や天気予報ではない）。位置・道路経路・写真（600pxのJPEG）とその出典は `scripts/data/field_atlas_navigator/` に置き、デザインと再現の手順は同フォルダのREADME.mdに記す。写真は各施設・予約サイトのものであり、出典は同フォルダのimages.jsonに記す。本文書・DB-001 §Field Log・MD-004を更新したら、`python3 scripts/field_atlas_check.py` で文書とデータの整合を確かめ（CIでも実行される）、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
 
 ```
 python3 scripts/field_atlas_navigator.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-navigator.html
@@ -338,10 +338,11 @@ python3 scripts/field_atlas_navigator.py --md002 MD/MD-002_Field_Atlas_Landscape
 - 公開先：https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm
 - 点数の正本は本文書、キャンプの記録の正本はDB-001である。ページが持つのは地理情報（位置・道路経路）と写真のみである。
 - フィールドを追加したときは、同README.mdの手順で位置・道路経路・写真を追加し、Field Atlas Ivoryも再生成する。
+- NavigatorとIvoryで共通のスクリプトは `scripts/templates/field_atlas_shared.js` に置き、各テンプレートの `/*__SHARED_JS__*/` の位置へ生成時に差し込む（両版に及ぶ変更はここを直す。CSS・演出は各テンプレートに残す）。
 
 ### Field Atlas Ivory
 
-Field Atlas Navigatorのライト版である。表示する内容・地図・道路経路・操作はNavigatorと同じで、デザイン（アイボリーの紙と磁器のような地図、演出）だけが異なる。データは `scripts/data/field_atlas_navigator/` をNavigatorと共有し、テンプレートは `scripts/templates/field_atlas_ivory.html`、デザインの仕様と再現の手順は同README.mdの「Field Atlas Ivory」に記す。本文書またはDB-001 §Field Logを更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
+Field Atlas Navigatorのライト版である。表示する内容・地図・道路経路・操作はNavigatorと同じで、デザイン（アイボリーの紙と磁器のような地図、演出）だけが異なる。データ（`scripts/data/field_atlas_navigator/`）と共通のスクリプト（`scripts/templates/field_atlas_shared.js`）をNavigatorと共有し、テンプレートは `scripts/templates/field_atlas_ivory.html`、デザインの仕様と再現の手順は同README.mdの「Field Atlas Ivory」に記す。本文書またはDB-001 §Field Logを更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
 
 ```
 python3 scripts/field_atlas_ivory.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-ivory.html
@@ -436,6 +437,7 @@ THE THIRD PLACE を実現するための
 | 4.7 | 2026-10-01 | MARI様のご確認に基づき、ウェルキャンプ西丹沢の地面を🟫⛰️（土・岩場）としてField Atlas Databaseと§Site Recordへ記録した。⛰️は岩場を示す（OP-010 Qualification Charter Version 3.3）。🪨は引き続き砂利を示す。これで全49件の地面が記録された。スコア・掲載順に変更はない。Patch Version。 |
 | 4.8 | 2026-10-01 | MARI様のご確認に基づき、富士山オートキャンプ場GENSHIJINの地面を🪨（砂利）から⛰️（岩場）へ改めた（Field Atlas Database・§Site Record）。スコア・掲載順に変更はない。Patch Version。 |
 | 4.9 | 2026-10-01 | MARI様のご依頼に基づき、§VisualizationのField Atlas Radarに、Field Atlas Navigator・Ivoryと同じ情報（地面・系統別小計と全件平均・アーリーチェックイン区分の点数・§Site Record・標高と気温差・日の出・日の入り・月齢・周辺環境・次のキャンプと訪問の記録・装備の正式名称・View軸の基準地点・フィールドへの直接リンク）と、近い順の並べ替え・訪問済み／未訪問・地面での絞り込みを加えた。生成は scripts/field_atlas_radar.py で、追加の情報は scripts/field_atlas_navigator.py の extras() を共用する。スコア・掲載順・アーリーチェックインに変更はない。Minor Version。 |
+| 4.10 | 2026-10-02 | MARI様のご依頼に基づき、§Visualizationの3ページ（Field Atlas Navigator・Ivory・Radar）に、次のキャンプのフィールド（moss camp field）の「寒さの目安」を加えた。気象庁アメダス「山中」（山梨県・標高992m）の10月上旬（月の前半の目安）の平年値（1991〜2020年）の日最低気温9.4℃と、キャンプ場（標高993m）との標高差による補正値（0.6℃/100mの目安）を示す。データは scripts/data/field_atlas_navigator/climate.json（出典は同README.mdのData files）で、scripts/field_atlas_check.py の対象とした。あわせて、NavigatorとIvoryで重複していたスクリプトを scripts/templates/field_atlas_shared.js に一本化した（表示と操作に変更はない）。スコア・掲載順・アーリーチェックインに変更はない。Minor Version。 |
 
 ---
 

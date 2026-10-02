@@ -417,6 +417,7 @@
     <div class="sec flog" id="flog" hidden></div>
     <div class="sec" id="siteS" hidden></div>
     <div class="sec" id="skyS" hidden></div>
+    <div class="sec" id="coldS" hidden></div>
     <div class="sec" id="surrS" hidden></div>
     <div class="sec"><label class="k" for="selB">COMPARE · 比べる相手</label><select id="selB"></select></div>
     <details>
@@ -466,138 +467,14 @@ const IMG=/*__IMG__*/{};
 const IMGSRC=/*__IMGSRC__*/{};
 const ROUTES=/*__ROUTES__*/{};
 const EXTRA=/*__EXTRA__*/{};
-const LON0=139.8827,LAT0=35.7331,KX=Math.cos(LAT0*Math.PI/180)*10,KZ=10;
-const AXE=["GROUND","LAYOUT","FACILITY","OPERATION","COMFORT","VIEW","PLACE","EXPERIENCE","DISTANCE","PARTNER"];
-const $=s=>document.querySelector(s);
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const RM=matchMedia("(prefers-reduced-motion: reduce)").matches;
-const get=r=>DATA.find(d=>d.rank===r);
-const q8=d=>d.axes.slice(0,8).reduce((a,b)=>a+b,0);
-const pv=d=>d.axes.reduce((a,b)=>a+b,0);
-const ease=t=>t<.5?4*t*t*t:1-Math.pow(-2*t+2,3)/2, eout=t=>1-Math.pow(1-t,3);
-const clamp=(v,a,b)=>Math.max(a,Math.min(b,v));
-const pad=(n,k=2)=>String(n).padStart(k,"0");
-// straight-line distance (km) and bearing (deg) from Koiwa
-function nav(r){return navLL(LL[r]);}
-function navLL(p){if(!p)return null;const R=6371,toR=Math.PI/180,[lon,lat]=p,f1=LAT0*toR,f2=lat*toR,dl=(lon-LON0)*toR;
-  const a=Math.sin((f2-f1)/2)**2+Math.cos(f1)*Math.cos(f2)*Math.sin(dl/2)**2,km=2*R*Math.asin(Math.sqrt(a));
-  const y=Math.sin(dl)*Math.cos(f2),x=Math.cos(f1)*Math.sin(f2)-Math.sin(f1)*Math.cos(f2)*Math.cos(dl),brg=(Math.atan2(y,x)/toR+360)%360;
-  return{km,brg,lat,lon};}
-const fmtLL=(lat,lon)=>`${lat.toFixed(3)}N ${lon.toFixed(3)}E`;
-// OP-010 Part C: ground icons, the five lineages, what each axis is scored from, early check-in tiers
-const GROUND={"🪨":"Gravel","⛰":"Rock","🌱":"Grass","🌲":"Forest","🟫":"Soil","🧱":"Brick Chips"};
-const EMO=g=>g==="⛰"?"⛰\uFE0F":g; // ⛰ needs the emoji selector to draw in colour
-const gtxt=d=>(d.ground||[]).map(g=>EMO(g)+" "+GROUND[g]).join(" · ");
-const LINE=[["Site",0],["Infrastructure",2],["Stay",4],["Identity",6],["Relation",8]];
-const BASIS=["事実（地面の種類・状態）","事実（区画面積・車の横付け等）","事実と品質の判断（設備・清潔さ・温水）","事実（アーリーチェックインの区分から決まる）","判断（場内動線・区画間隔・静けさ）","判断（景観）","判断（土地の個性・周辺環境）","判断（その場所でしかできない体験）","計算（移動時間）","パートナーの感想"];
-const TIERS=[["A","早い",10],["B","可",8],["C","条件付き",6],["D","不可",2]];
-const AVG=AXE.map((_,i)=>DATA.reduce((s,d)=>s+d.axes[i],0)/Math.max(DATA.length,1));
-const avgSum=(a,b)=>AVG.slice(a,b).reduce((x,y)=>x+y,0);
-// DB-001 Field Log: the nearest planned camp
-const LOG=EXTRA.log||{},BENCH=EXTRA.bench||[];
-const today=()=>new Date(Date.now()+9*3600e3).toISOString().slice(0,10);
-const day0=s=>(String(s).match(/\d{4}-\d{2}-\d{2}/)||[])[0];
-const daysTo=s=>Math.round((Date.parse(s+"T00:00:00Z")-Date.parse(today()+"T00:00:00Z"))/864e5);
-const dLabel=n=>n>0?"D-"+n:n===0?"TODAY":"D+"+(-n);
-const NEXT=(()=>{let best=null;for(const r in LOG)LOG[r].forEach(e=>{const d=day0(e.date);if(e.status==="Planned"&&d&&get(+r)&&(!best||d<best.d))best={r:+r,d,e};});return best;})();
-
-let state={a:1,b:null,sort:"pv",view:"oblique",vis:"all",gr:null};
-try{const s=JSON.parse(localStorage.getItem("fa-nav1")||"null");if(s){if(get(s.a))state.a=s.a;if(s.b===null||get(s.b))state.b=s.b;if(["q","pv","t"].includes(s.sort))state.sort=s.sort;if(["all","v","u"].includes(s.vis))state.vis=s.vis;if(GROUND[s.gr])state.gr=s.gr;}}catch(e){}
-if(state.b===state.a)state.b=null;
-function save(){try{localStorage.setItem("fa-nav1",JSON.stringify({a:state.a,b:state.b,sort:state.sort,vis:state.vis,gr:state.gr}));}catch(e){}}
-const shown=d=>(state.vis==="all"||(state.vis==="v")===d.visited)&&(!state.gr||(d.ground||[]).includes(state.gr));
-const SORTS={pv:(x,y)=>pv(y)-pv(x)||x.rank-y.rank,q:(x,y)=>q8(y)-q8(x)||x.rank-y.rank,t:(x,y)=>x.hours-y.hours||x.rank-y.rank};
-function sorted(){return DATA.filter(shown).sort(SORTS[state.sort]);}
 const PAGE_URL="https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm";
-// MD-002 §Site Record, elevation (GSI), surroundings (OSM + OSRM), gear names (MD-004)
-const SITE=EXTRA.site||{},ELEV=EXTRA.elev||{},SURR=EXTRA.surr||{},GEAR=EXTRA.gear||{},HOME_ELEV=EXTRA.home_elev;
-const tempDiff=m=>HOME_ELEV==null||m==null?null:-(m-HOME_ELEV)*.6/100; // 0.6 ℃ per 100 m, a rough guide
-const fmtT=t=>`${t>=0?"+":"−"}${Math.abs(t).toFixed(1)}℃`;
-const gearIds=t=>[...new Set(String(t).match(/\b[A-Z]{3}-\d{3}[a-z]?\b/g)||[])];
-const SURR_L=[["ic","高速IC"],["conv","コンビニ"],["super","スーパー"],["bath","温泉・入浴"],["hosp","病院"]];
-// sunrise and sunset (NOAA approximation, sea-level horizon) in minutes from JST midnight
-function sunTimes(ds,lat,lon){
-  const [Y,M,D]=ds.split("-").map(Number),N=Math.round((Date.UTC(Y,M-1,D)-Date.UTC(Y,0,0))/864e5),g=2*Math.PI/365*(N-1+(3-12)/24);
-  const eq=229.18*(.000075+.001868*Math.cos(g)-.032077*Math.sin(g)-.014615*Math.cos(2*g)-.040849*Math.sin(2*g));
-  const dec=.006918-.399912*Math.cos(g)+.070257*Math.sin(g)-.006758*Math.cos(2*g)+.000907*Math.sin(2*g)-.002697*Math.cos(3*g)+.00148*Math.sin(3*g);
-  const r=Math.PI/180,c=Math.cos(90.833*r)/(Math.cos(lat*r)*Math.cos(dec))-Math.tan(lat*r)*Math.tan(dec);
-  if(c<-1||c>1)return null;const ha=Math.acos(c)/r;
-  return{rise:720-4*(lon+ha)-eq+540,set:720-4*(lon-ha)-eq+540};
-}
-const hm=m=>{const t=Math.round(m);return `${Math.floor(t/60)}:${pad(t%60)}`;};
-// moon age at 21:00 JST of the date, from the new moon of 2000-01-06 18:14 UTC
-function moonAt(ds){const age=(((Date.parse(ds+"T12:00:00Z")-Date.UTC(2000,0,6,18,14))/864e5)%29.530588853+29.530588853)%29.530588853;
-  const lit=(1-Math.cos(2*Math.PI*age/29.530588853))/2;
-  const nm=age<1.85||age>=27.68?"新月":age<5.54?"三日月":age<9.23?"上弦":age<12.92?"十日夜":age<16.61?"満月":age<20.3?"寝待月":age<23.99?"下弦":"有明月";
-  return{age,lit,nm};}
-function siteHTML(A){
-  const r=A.rank,st=SITE[r],el=ELEV[r],td=tempDiff(el);
-  const gn=st?st.ground.replace(/^[🪨⛰🌱🌲🟫🧱\uFE0F\s]+/u,"").replace("（MD-002既記録）","").replace(/^[。・\s]+/,""):"";
-  const gl=[gtxt(A),gn].filter(x=>x&&x!=="—").join(" · ")||(st?st.ground:"");
-  const rows=(st?[["GROUND",gl],["AREA",st.area],["PARKING",st.parking]]:[]).map(([k,v])=>`<dt>${k}</dt><dd>${esc(v)}</dd>`).join("")+
-    (el!=null?`<dt>ELEV</dt><dd>${el.toLocaleString()} m${td!=null?` · 小岩より約 ${fmtT(td)}`:""}</dd>`:"");
-  return rows?`<span class="k">SITE · MD-002 SITE RECORD</span><dl class="kv">${rows}</dl><span class="srcl">${st?"出典："+esc(st.source)+" · ":""}基準 80㎡（車別）／100㎡（車込）。気温差は標高差×0.6℃/100mの目安（標高：国土地理院）</span>`:"";}
-function skyHTML(A){
-  const ll=LL[A.rank];if(!ll)return "";
-  const plan=(LOG[A.rank]||[]).map(e=>e.status==="Planned"?day0(e.date):null).find(Boolean),ds=plan||today();
-  const s=sunTimes(ds,ll[1],ll[0]),m=moonAt(ds);
-  return `<span class="k">SKY · ${esc(ds)}${plan?" · NEXT CAMP":" · TODAY"}</span><dl class="kv"><dt>SUN</dt><dd>${s?`日の出 ${hm(s.rise)} · 日の入り ${hm(s.set)}`:"—"}</dd><dt>MOON</dt><dd>月齢 ${m.age.toFixed(1)}（${m.nm}・明るさ ${Math.round(m.lit*100)}%）${m.lit<.25?" · 月明かりが少ない夜":""}</dd></dl><span class="srcl">計算値（日の出・日の入りは海面基準、月齢は21時）。山の陰や天候は含みません</span>`;}
-function surrHTML(A){
-  const sv=SURR[A.rank];if(!sv)return "";
-  const li=SURR_L.map(([k,l])=>{const v=sv[k];return `<li><b>${l}</b><span>${v?esc((v.name||"（名称未登録）").replace(/;/g,"・"))+(v.onsen?" ♨":""):"—"}</span><em>${v?`${v.km} km · ${v.min}分`:"30km圏に登録なし"}</em></li>`;}).join("");
-  return `<span class="k">SURROUNDINGS · 周辺環境</span><ul class="sv">${li}</ul><span class="srcl">OpenStreetMapに登録された最寄り（直線で近い3件のうち車で最短）。道のりと時間はOSRM（渋滞なし）。登録の無い施設は出ない参考値です</span>`;}
-function gearHTML(cfg){const ids=gearIds(cfg).filter(g=>GEAR[g]);
-  return ids.length?`<dl class="gear">${ids.map(g=>`<dt>${g}</dt><dd>${esc(GEAR[g].brand||"")} ${esc(GEAR[g].product||"")}<small>${esc(GEAR[g].status||"")}</small></dd>`).join("")}</dl><span class="srcl">装備名：MD-004 Equipment Registry</span>`:"";}
-// deep link: #f=<rank> opens that field
-try{const m=location.hash.match(/f=(\d+)/);if(m&&get(+m[1])){state.a=+m[1];if(state.b===state.a)state.b=null;}}catch(e){}
-function setHash(){try{history.replaceState(null,"","#f="+state.a);}catch(e){}}
-async function copyLink(btn){const u=PAGE_URL+"#f="+state.a,lab=btn.textContent;
-  try{await navigator.clipboard.writeText(u);btn.textContent="コピーしました";}catch(e){try{window.prompt("このリンクをコピーしてください",u);}catch(_){}}
-  setTimeout(()=>{btn.textContent=lab;},1800);}
-
-/* ---------- info bubble: opens over the destination when the selection flight lands ---------- */
-let bubOn=false,bubAt=0;
-function bubbleHTML(d){
-  const r=d.rank,rt=ROUTES[r],el=ELEV[r],td=tempDiff(el),st=SITE[r],sv=SURR[r],e=d.early,lg=(LOG[r]||[]).find(x=>x.status==="Planned"),k=lg&&day0(lg.date);
-  const row=(a,b)=>b?`<dt>${a}</dt><dd>${b}</dd>`:"";
-  return `<button type="button" class="bx" aria-label="閉じる">×</button>
-  <div class="bh">${IMG[r]?`<img src="${IMG[r]}" alt="">`:""}<div><span class="bk">RANK ${pad(r)} · ${pv(d)}/100${d.visited?"":" · 未訪問"}</span><b class="bn">${esc(d.name)}</b><span class="bg">${esc(d.tag)}</span></div></div>
-  ${lg?`<div class="bnx">NEXT CAMP · ${esc(lg.date)}${k?" · "+dLabel(daysTo(k)):""}</div>`:""}
-  <dl>${row("TRAVEL",`${d.hours.toFixed(1)} H${rt?` · ROAD ${rt.km} KM`:""}`)}${row("GROUND",d.ground&&d.ground.length?esc(gtxt(d)):"")}${row("EARLY",`<span class="led t-${e.tier}">${esc(e.label)}</span> ${esc(e.detail)}`)}${row("AREA",st&&st.area?esc(st.area):"")}${row("ELEV",el!=null?`${el.toLocaleString()} m${td!=null?` · 小岩より約 ${fmtT(td)}`:""}`:"")}${row("ONSEN",sv&&sv.bath?`${esc((sv.bath.name||"（名称未登録）").replace(/;/g,"・"))} · ${sv.bath.km} km · ${sv.bath.min}分`:"")}</dl>`;}
-function showBubble(){const d=get(state.a);if(!GL||!d||!GEO[d.rank])return;const bub=$("#bub");
-  bub.innerHTML=`<div class="bub-in">${bubbleHTML(d)}</div><i class="bub-tail" aria-hidden="true"></i>`;bub.setAttribute("aria-label",d.name+"の情報");
-  bub.hidden=false;bub.style.visibility="hidden";bubOn=true;bub.querySelector(".bx").onclick=e=>{e.stopPropagation();hideBubble();};}
-function hideBubble(){bubOn=false;bubAt=0;const bub=$("#bub");bub.hidden=true;bub.innerHTML="";}
-document.addEventListener("keydown",e=>{if(e.key==="Escape"&&bubOn)hideBubble();});
-// keeps the bubble on the destination pin; flips below the pin near the top edge and stays inside the map sideways
-function placeBubble(lift){
-  if(bubAt&&performance.now()>=bubAt){bubAt=0;showBubble();}
-  if(!bubOn)return;const g=GEO[state.a],bub=$("#bub");if(!g){hideBubble();return;}
-  const p=proj(V(g[0],lift+.05,g[1]));if(!p.ok){bub.style.visibility="hidden";return;}
-  // stay within the part of the map not covered by the header, panels and cards
-  if(!FR||performance.now()-FRt>500){FR=freeRect();FRt=performance.now();}
-  const f=FR,bw=bub.offsetWidth,bh=bub.offsetHeight,L=Math.max(8,f.L0-22),R=Math.min(f.w-8,f.R0+22),top=Math.max(8,f.T0-22),bot=Math.min(f.h-8,f.B0+22),gap=30;
-  // above the pin if it fits, else below, else beside it (whichever side has room)
-  let mode="above";
-  if(p.y-bh-gap<top){mode=p.y+gap+bh<=bot?"below":p.x+gap+bw<=R?"right":p.x-gap-bw>=L?"left":(p.y-top<bot-p.y?"below":"above");}
-  let bx,by;
-  if(mode==="above"||mode==="below"){const lo=L+bw/2,x=clamp(p.x,lo,Math.max(lo,R-bw/2));bx=x-bw/2;by=mode==="above"?p.y-bh-gap:p.y+gap;bub.style.setProperty("--tx",(p.x-x).toFixed(1)+"px");bub.style.setProperty("--ty","0px");}
-  else{by=clamp(p.y-bh/2,top,Math.max(top,bot-bh));bx=mode==="right"?p.x+gap:p.x-gap-bw;bub.style.setProperty("--ty",(p.y-(by+bh/2)).toFixed(1)+"px");bub.style.setProperty("--tx","0px");}
-  if(bub.dataset.mode!==mode)bub.dataset.mode=mode;
-  bub.style.transform=`translate(${bx.toFixed(1)}px,${by.toFixed(1)}px)`;bub.style.visibility="";}
-
-/* ---------- telemetry ---------- */
-$("#tFld").textContent=`${DATA.length} · VISITED ${DATA.filter(d=>d.visited).length}`;
-function clock(){try{$("#tClk").textContent=new Date().toLocaleString("sv-SE",{timeZone:"Asia/Tokyo"}).replace(",","");}catch(e){$("#tClk").textContent=new Date().toISOString().slice(0,19).replace("T"," ");}}
-clock();setInterval(clock,1000);
+/*__SHARED_JS__*/
 
 /* ---------- index ---------- */
 const rows=$("#rows");
 function buildRows(){const l=sorted();$("#cnt").textContent=l.length===DATA.length?`${DATA.length} ENTRIES`:`${l.length} / ${DATA.length}`;
   rows.innerHTML=l.map((d,i)=>{const v=state.sort==="q"?q8(d):pv(d),mx=state.sort==="q"?80:100;
   return `<div class="row" data-r="${d.rank}"><button type="button" class="pick" data-r="${d.rank}"><span class="i">${pad(i+1)}</span><span class="nm">${esc(d.name)}${d.visited?"":'<em title="未訪問"><span class="vh">未訪問</span></em>'}</span><span class="sc">${v}</span><span class="mm"><span class="mb"><i style="width:${v/mx*100}%"></i></span><span class="meta t-${d.early.tier}"><span class="dot" title="アーリーチェックイン：${esc(d.early.label)}"></span>${d.hours.toFixed(1)}H${d.ground&&d.ground.length?`<span class="gi" title="${esc(gtxt(d))}">${d.ground.map(EMO).join("")}</span>`:""}${NEXT&&NEXT.r===d.rank?'<span class="nx">NEXT</span>':""}</span></span></button><button type="button" class="vsb" data-r="${d.rank}" aria-label="${esc(d.name)}と比べる">VS</button></div>`;}).join("")||`<p class="foot" style="border:0">NO MATCH · 条件に合うフィールドがありません。</p>`;}
-function markRows(){rows.querySelectorAll(".row").forEach(r=>{const k=+r.dataset.r;r.classList.toggle("on",k===state.a);r.classList.toggle("vs",k===state.b);r.querySelector(".pick").setAttribute("aria-pressed",String(k===state.a));r.querySelector(".vsb").setAttribute("aria-pressed",String(k===state.b));});
-  const on=rows.querySelector(".row.on");if(on){const t=on.offsetTop,h=on.offsetHeight;if(t<rows.scrollTop)rows.scrollTop=t-8;else if(t+h>rows.scrollTop+rows.clientHeight)rows.scrollTop=t+h-rows.clientHeight+8;}}
 rows.addEventListener("click",e=>{const p=e.target.closest(".pick"),v=e.target.closest(".vsb");
   if(p)setA(+p.dataset.r);else if(v){const r=+v.dataset.r;setB(state.b===r||r===state.a?null:r);}});
 $("#sPV").onclick=()=>{state.sort="pv";resort();};$("#sQ").onclick=()=>{state.sort="q";resort();};$("#sT").onclick=()=>{state.sort="t";resort();};
@@ -605,9 +482,6 @@ $("#sPV").onclick=()=>{state.sort="pv";resort();};$("#sQ").onclick=()=>{state.so
 const filt=$("#filt");
 filt.insertAdjacentHTML("beforeend",Object.keys(GROUND).map(g=>`<button type="button" class="gb" data-g="${g}" aria-pressed="false" title="${GROUND[g]}" aria-label="地面：${GROUND[g]}">${EMO(g)}</button>`).join(""));
 filt.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;if(b.dataset.v)state.vis=b.dataset.v;else state.gr=state.gr===b.dataset.g?null:b.dataset.g;resort();});
-function resort(){[["#sPV","pv"],["#sQ","q"],["#sT","t"]].forEach(([s,k])=>$(s).setAttribute("aria-pressed",String(state.sort===k)));
-  filt.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v?b.dataset.v===state.vis:b.dataset.g===state.gr)));
-  buildRows();markRows();save();}
 // the next planned camp from DB-001 Field Log
 if(NEXT){const d=get(NEXT.r),n=daysTo(NEXT.d),nc=$("#nextc");nc.hidden=false;$("#lgN").hidden=false;
   nc.innerHTML=`<span class="k">NEXT CAMP · DB-001</span><span class="nn">${esc(d.name)}</span><span class="dt">${esc(NEXT.e.date)} · ${esc(NEXT.e.status.toUpperCase())}</span><span class="dd">${n>0?"T−"+n:n===0?"T·0":"T+"+(-n)}<small>${n>0?"DAYS TO GO":n===0?"TODAY":"DAYS AGO"}</small></span>`;
@@ -621,11 +495,8 @@ $("#xB").onclick=()=>setB(null);
 function setA(r){if(r===state.a&&state.view==="top")return;hideBubble();state.a=r;setHash();if(state.b===r)state.b=null;save();markRows();selB.value=state.b?String(state.b):"none";
   showCard("A");if(!state.b)showCard("B");startRadar(true,false);lock("A");if(GL){buildRoute("a",true);buildRoute("b",true);dive("a");}}
 function setB(r){state.b=r;save();markRows();selB.value=r?String(r):"none";showCard("B");startRadar(false,true);if(r)lock("B");if(GL){buildRoute("b",!!r);if(r)dive("b");else if(state.view==="top")frameTop();}}
-function step(d){const l=sorted();if(!l.length)return;const i=l.findIndex(x=>x.rank===state.a);setA(l[i<0?0:(i+d+l.length)%l.length].rank);}
 document.addEventListener("keydown",e=>{if(e.altKey||e.ctrlKey||e.metaKey)return;const t=(e.target.tagName||"").toLowerCase();if(t==="select"||t==="input")return;
   if(e.key==="ArrowRight"||e.key==="ArrowDown"){e.preventDefault();step(1);}else if(e.key==="ArrowLeft"||e.key==="ArrowUp"){e.preventDefault();step(-1);}});
-function lock(S){const el=$("#ret"+S);el.classList.remove("lock");void el.offsetWidth;el.classList.add("lock");}
-
 /* ---------- target cards: decode text, acquire image ---------- */
 const GLY="アイウエオカキクケコサシスセソタチツテトナニヌネノハヒフヘホ0123456789ΞΣΛΔ#%&*+/<>";
 const rnd=n=>{let s="";for(let i=0;i<n;i++)s+=GLY[Math.floor(Math.random()*GLY.length)];return s;};
@@ -659,7 +530,6 @@ function acquire(S,src){
     jobs["i"+S]=setTimeout(()=>go(i+1),i<2?160:105);};
   jobs["i"+S]=setTimeout(()=>go(0),200);
 }
-function domain(u){try{return new URL(u).hostname.replace(/^www\./,"");}catch(e){return "";}}
 function showCard(S){
   const card=$("#card"+S),r=S==="A"?state.a:state.b;
   if(!r){card.hidden=true;cancelAnimationFrame(jobs[S]);return;}
@@ -684,7 +554,6 @@ function showCard(S){
 /* ---------- analysis ---------- */
 const svg=$("#radar"),NS="http://www.w3.org/2000/svg",CX=150,CY=160,RR=112;
 const pt=(i,v)=>{const a=-Math.PI/2+i*2*Math.PI/10;return[CX+Math.cos(a)*RR*v/10,CY+Math.sin(a)*RR*v/10];};
-function el(n,a,p){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e;}
 [2,4,6,8,10].forEach(v=>el("polygon",{class:"rg"+(v===10?" o":""),points:AXE.map((_,i)=>pt(i,v).join(",")).join(" ")}));
 el("circle",{class:"rg",cx:CX,cy:CY,r:RR+8});
 for(let i=0;i<60;i++){const a=i/60*Math.PI*2,r1=RR+8,r2=RR+(i%6===0?14:11);el("line",{class:"rtk",x1:CX+Math.cos(a)*r1,y1:CY+Math.sin(a)*r1,x2:CX+Math.cos(a)*r2,y2:CY+Math.sin(a)*r2});}
@@ -716,12 +585,10 @@ function startRadar(resetA,resetB){
     return `<div class="ent"><div class="hd"><span>${esc(x.date)}</span><span class="led t-${x.status==="Done"?"A":"C"}">${esc(x.status.toUpperCase())}</span>${x.status==="Planned"&&n!==null?`<span class="dd">${dLabel(n)}</span>`:""}</div>`+
       (dash(x.config)?`<div class="cf">${esc(x.config)}</div>`+gearHTML(x.config):"")+
       `<dl>${[["WEATHER",x.weather],["WENT WELL",x.well],["ISSUES",x.issues]].filter(([,v])=>dash(v)).map(([k2,v])=>`<dt>${k2}</dt><dd>${esc(v)}</dd>`).join("")}</dl></div>`;}).join("");
-  [["#siteS",siteHTML],["#skyS",skyHTML],["#surrS",surrHTML]].forEach(([id,f])=>{const h=f(A);$(id).innerHTML=h;$(id).hidden=!h;});
+  [["#siteS",siteHTML],["#skyS",skyHTML],["#coldS",coldHTML],["#surrS",surrHTML]].forEach(([id,f])=>{const h=f(A);$(id).innerHTML=h;$(id).hidden=!h;});
   if(RM){RA.cur=[...RA.to];RB.cur=[...RB.to];scrUntil=0;drawRadar(now);return;}
   cancelAnimationFrame(radRaf);radRaf=requestAnimationFrame(radarFrame);
 }
-function adv(R,now){let done=true;for(let i=0;i<10;i++){const t=clamp((now-R.t0-i*75)/900,0,1);if(t<1)done=false;R.cur[i]=R.from[i]+(R.to[i]-R.from[i])*eout(t);}return done;}
-function radarFrame(now){const d1=adv(RA,now),d2=adv(RB,now);drawRadar(now);if(!(d1&&d2)||now<scrUntil)radRaf=requestAnimationFrame(radarFrame);}
 const rd=()=>Math.floor(Math.random()*10);
 function drawRadar(now){
   const B=state.b?get(state.b):null,scr=now<scrUntil;
@@ -749,26 +616,9 @@ function flyTo(t,dur,o={}){const from={...cam};let dt=t.theta-from.theta;dt=Math
 function runSeq(stages){queue=stages.slice(1);startStage(stages[0]);}
 function startStage(st){if(st.start)st.start();flyTo(typeof st.to==="function"?st.to():st.to,st.dur,st);}
 function stopCam(){tw=null;queue=[];if(camera){camera.fov=40;camera.updateProjectionMatrix();}}
-function viewBtns(){$("#vObl").setAttribute("aria-pressed",String(state.view==="oblique"));$("#vTop").setAttribute("aria-pressed",String(state.view==="top"));}
 const vis=2*Math.tan(20*Math.PI/180);
-// the part of the map not covered by instruments
-function freeRect(){
-  const w=mapEl.clientWidth||1,h=mapEl.clientHeight||1,wide=window.innerWidth>900;
-  let L0=16,R0=w-16,T0=16,B0=h-16;
-  if(wide){const mr=mapEl.getBoundingClientRect(),lr=$(".index").getBoundingClientRect(),ar=$(".analysis").getBoundingClientRect();
-    L0=lr.right-mr.left+30;R0=ar.left-mr.left-30;T0=$(".strip").getBoundingClientRect().bottom-mr.top+30;
-    const tops=[...document.querySelectorAll(".tc")].filter(c=>!c.hidden).map(c=>c.getBoundingClientRect().top);B0=(tops.length?Math.min(...tops):h)-mr.top-30;}
-  return{w,h,L0,R0,T0,B0,aw:Math.max(120,R0-L0),ah:Math.max(120,B0-T0)};
-}
-function frameBox(x0,x1,z0,z1,phi,pad){
-  const f=freeRect(),asp=f.w/f.h,ex=Math.max(x1-x0,4),ez=Math.max(z1-z0,4)*Math.max(.55,Math.cos(phi));
-  const dist=Math.max(ex/(vis*asp*f.aw/f.w),ez/(vis*f.ah/f.h),9)*pad,wpp=dist*vis/f.h;
-  const cx=(x0+x1)/2-((f.L0+f.R0)/2-f.w/2)*wpp,cz=(z0+z1)/2-((f.T0+f.B0)/2-f.h/2)*wpp/Math.max(.55,Math.cos(phi));
-  return{tx:cx,ty:0,tz:cz,dist,phi,theta:0};
-}
 // Kanto view: Niigata, Nagano and Shizuoka on the left and bottom; Fukushima down to Chiba on the top and right
 const P=(lon,lat)=>[(lon-LON0)*KX,-(lat-LAT0)*KZ];
-function kanto(){const [x0,z1]=P(137.75,34.72),[x1,z0]=P(140.95,37.75);return frameBox(x0,x1,z0,z1,.84,1.0);}
 function frameTop(){
   const pts=[[0,0]];[state.a,state.b].forEach(r=>{if(r&&GEO[r])pts.push(GEO[r]);});
   let x0=Infinity,x1=-Infinity,z0=Infinity,z1=-Infinity;pts.forEach(([x,z])=>{x0=Math.min(x0,x);x1=Math.max(x1,x);z0=Math.min(z0,z);z1=Math.max(z1,z);});
@@ -801,18 +651,8 @@ $("#vObl").onclick=()=>{if(GL)oblique();};
 function zoomBy(f){if(!GL)return;stopCam();userMoved=true;flyTo({...cam,dist:clamp(cam.dist*f,2.2,170)},RM?1:420,{e:eOutQ});}
 $("#zIn").onclick=()=>zoomBy(.6);$("#zOut").onclick=()=>zoomBy(1.65);$("#zHome").onclick=()=>{if(GL)oblique();};$("#vTop").onclick=()=>{if(GL)frameTop();};
 
-function glowTex(){const c=document.createElement("canvas");c.width=c.height=64;const g=c.getContext("2d"),gr=g.createRadialGradient(32,32,0,32,32,32);
-  gr.addColorStop(0,"rgba(255,255,255,1)");gr.addColorStop(.2,"rgba(255,255,255,.6)");gr.addColorStop(1,"rgba(255,255,255,0)");g.fillStyle=gr;g.fillRect(0,0,64,64);return new THREE.CanvasTexture(c);}
 let GLOW;
-function tapTo(fn){return el=>{if(!el)return;let x=0,y=0,t=0,last=0;const run=()=>{const n=performance.now();if(n-last<600)return;last=n;fn();};
-  el.addEventListener("pointerdown",e=>{x=e.clientX;y=e.clientY;t=1;e.stopPropagation();});
-  el.addEventListener("pointerup",e=>{if(t&&Math.hypot(e.clientX-x,e.clientY-y)<12){e.preventDefault();run();}t=0;e.stopPropagation();});
-  el.addEventListener("click",e=>{e.preventDefault();run();});
-  el.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();run();}});};}
-function mkLabel(cls,html){const e=document.createElement("div");e.className="lb "+cls;e.innerHTML=html;labBox.appendChild(e);return e;}
 const tv=window.THREE?new THREE.Vector3():null,V=(x,y,z)=>new THREE.Vector3(x,y,z);
-function proj(v){tv.copy(v).project(camera);return{x:(tv.x*.5+.5)*mapEl.clientWidth,y:(-tv.y*.5+.5)*mapEl.clientHeight,ok:tv.z<1&&Math.abs(tv.x)<1.25&&Math.abs(tv.y)<1.25};}
-function place(e,v,anchor){const p=proj(v);if(!p.ok){e.style.visibility="hidden";return p;}e.style.visibility="";e.style.transform=`translate(${p.x.toFixed(1)}px,${p.y.toFixed(1)}px) ${anchor||""}`;return p;}
 const L={},gratL=[];
 
 function initGL(){
@@ -933,16 +773,8 @@ function initGL(){
   return true;
 }
 const ray=window.THREE?new THREE.Raycaster():null,mv=window.THREE?new THREE.Vector2():null,ground=window.THREE?new THREE.Plane(new THREE.Vector3(0,1,0),0):null;let hovered=null;
-function applyCam(){const sp=Math.sin(cam.phi);camera.position.set(cam.tx+cam.dist*sp*Math.sin(cam.theta),cam.ty+cam.dist*Math.cos(cam.phi),cam.tz+cam.dist*sp*Math.cos(cam.theta));camera.lookAt(cam.tx,cam.ty,cam.tz);camera.updateMatrixWorld();}
 function groundAt(x,y){const r=canvas.getBoundingClientRect();mv.set((x-r.left)/r.width*2-1,-((y-r.top)/r.height)*2+1);ray.setFromCamera(mv,camera);ground.constant=-(pinG?pinG.position.y:0);const p=new THREE.Vector3();return ray.ray.intersectPlane(ground,p)?p:null;}
-function setRay(e){const r=canvas.getBoundingClientRect();mv.set((e.clientX-r.left)/r.width*2-1,-((e.clientY-r.top)/r.height)*2+1);ray.setFromCamera(mv,camera);}
 const live=r=>r===state.a||r===state.b||shown(get(r));
-function pick(e){setRay(e);const h=ray.intersectObjects(hits.filter(o=>live(o.userData.rank)))[0];return h?h.object.userData.rank:null;}
-function hover(e){const r=pick(e),hp=new THREE.Vector3();
-  ground.constant=-pinG.position.y;if(ray.ray.intersectPlane(ground,hp))$("#tCur").textContent=fmtLL(LAT0-hp.z/KZ,LON0+hp.x/KX);
-  canvas.classList.toggle("hot",!!r);hovered=r&&r!==state.a&&r!==state.b?r:null;L.h.hidden=!hovered;
-  if(hovered){const d=get(hovered),n=nav(hovered);L.h.innerHTML=`<span class="n">${esc(d.name)}</span><span class="s">${pv(d)}/100 · ${d.hours.toFixed(1)}H${ROUTES[hovered]?" · ROAD "+ROUTES[hovered].km+"KM":""}</span>`;}}
-
 function seedRand(n){const x=Math.sin(n*12.9898)*43758.5453;return x-Math.floor(x);}
 function buildRoute(slot,hold){
   const R=routes[slot];if(!R)return;
@@ -966,7 +798,6 @@ function buildRoute(slot,hold){
 }
 function setProg(R,p){R.prog=p;const n=Math.floor(p*R.seg);R.core.geometry.setDrawRange(0,n*30);R.glow.geometry.setDrawRange(0,n*36);R.halo.geometry.setDrawRange(0,n*36);R.head.visible=p>0&&p<1;if(p>0)R.head.position.copy(R.curve.getPointAt(Math.min(p,1)));}
 
-function resize(){if(!GL)return;const w=mapEl.clientWidth,h=mapEl.clientHeight;if(!w||!h)return;renderer.setSize(w,h,false);camera.aspect=w/h;camera.updateProjectionMatrix();}
 let last=performance.now();
 function frame(now){
   requestAnimationFrame(frame);const dt=Math.min(.05,(now-last)/1000);last=now;if(!GL||document.hidden)return;
@@ -1019,12 +850,6 @@ function overlay(S,r,lab,lift){
   lab.style.visibility="";lab.style.transform=`translate(${(p.x+(S==="A"?54:42)).toFixed(1)}px,${(p.y-22).toFixed(1)}px)`;
   if(S==="A")xhair(p,n);
 }
-function xhair(p,n){const on=!!p;["#xh","#xv","#xtH","#xtV"].forEach(s=>$(s).classList.toggle("on",on));if(!p)return;
-  $("#xh").style.transform=`translateY(${p.y.toFixed(1)}px)`;$("#xv").style.transform=`translateX(${p.x.toFixed(1)}px)`;
-  const w=mapEl.clientWidth,h=mapEl.clientHeight;
-  $("#xtH").textContent=n?n.lat.toFixed(3)+"N":"";$("#xtV").textContent=n?n.lon.toFixed(3)+"E":"";
-  if(!FR||performance.now()-FRt>500){FR=freeRect();FRt=performance.now();}const f=FR;$("#xtH").style.transform=`translate(${(f.L0-20).toFixed(0)}px,${(p.y-16).toFixed(1)}px)`;$("#xtV").style.transform=`translate(${(p.x+6).toFixed(1)}px,${(f.T0-18).toFixed(0)}px)`;}
-
 /* ---------- boot ---------- */
 const bootEl=$("#boot"),logEl=$("#bootLog");
 const LINES=[["FIELD ATLAS NAVIGATOR","BOOT"],["LINK MD-002 VER.__MD002_VERSION__",""],["FIELDS",DATA.length+" / "+DATA.filter(d=>d.visited).length+" VISITED"],["AXES","10 · OP-010 PART C"],["GEODATA","GSI ADDRESS SEARCH"],["IMAGERY",Object.keys(IMG).length+" / "+DATA.length],["FIELD LOG",NEXT?"NEXT "+NEXT.d:"DB-001"],["BENCHMARK",BENCH.length?"VIEW 10 · "+BENCH[0].name:"—"],["HOME","KOIWA 35.733N 139.883E"]];
