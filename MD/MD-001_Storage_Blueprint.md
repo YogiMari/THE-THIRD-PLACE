@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.30
+## Ver.2.33
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.32  
+**Version**: 2.33  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -1266,6 +1266,7 @@ Permanent Storage
 | 2.30 | 2026-09-29 | 暫定採用項目の個別確認（N-03・N-07）。MARI様のご決定に基づき、§Site Deployment Sequenceの順序を「到着・区画確認→Shelter→Furniture→Bedding→Kitchen→Living Core→Dust Management→Fire→Light & Aroma」へ改めて正式採用し、§Site Recovery Sequenceは原文のまま正式採用した（見出しの「暫定」と暫定採用の注記を削除）。Coffee Return・Return Sequenceの「正式な撤収手順はN-03で扱う」旨を、§Site Recovery Sequenceへの参照へ改めた。Winter Kit BeddingのFUR-034・FUR-036を正式採用とし、FUR-036の積載位置をSeasonal Slot B（FUR-032と同梱）に確定し、§Seasonal Slot ModuleのSlot B冬季へ追記した。Minor Version。 |
 | 2.31 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |
 | 2.32 | 2026-10-02 | MD-004 Ver.7.83（カスタムベロの4分解と、Fire Domainの旧4番以降の+3繰り下げ）と連動し、本文のFIR参照を新番号へ更新した。検証スクリプトが改訂履歴の行もEquipment ID参照として読むため、改訂履歴（2.13・2.14・2.21）のFIR参照も新番号へ揃えた。MARI様のご決定に基づく。Patch Version。 |
+| 2.33 | 2026-10-02 | 文書冒頭の見出し「Ver.」表記が本文のVersionと食い違っていたため（見出しのみVer.2.30のまま残存）、見出しを現行Versionへ揃えた。内容に変更はない。Patch Version。 |
 
 ---
 
