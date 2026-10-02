@@ -3,7 +3,7 @@
 **Document ID**: OP-010  
 **Title**: Qualification Charter  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.3  
+**Version**: 3.4  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -27,6 +27,7 @@
 | 3.1 | 2026-10-01 | MARI様のご決定に基づき、Part C §Display Rules（Ground Surface）の🌲を「Wood Deck」から「Forest（林間）」へ改め、地面のアイコンと併記できる旨を加えた。MD-002 Field Atlas Databaseでは🌲が林間の意味で使われており（6件）、表記と定義を一致させるため。評価軸・採点基準に変更はない。Minor Version。 |
 | 3.2 | 2026-10-01 | MARI様のご決定に基づき、Part C §Display Rules（Ground Surface）へ🧱 Brick Chips（レンガチップ）を加えた。砂利・土のどちらにも当たらないレンガチップの地面（MD-002 秩父ファームステイ）を表すため。§1. Groundの採点の目安に変更はない。Minor Version。 |
 | 3.3 | 2026-10-01 | MARI様のご決定に基づき、Part C §Display Rules（Ground Surface）へ⛰️ Rock（岩場）を加え、砂利（🪨）と岩場を区別できるようにした（MD-002 ウェルキャンプ西丹沢）。§1. Groundの採点の目安に変更はない。Minor Version。 |
+| 3.4 | 2026-10-02 | MD-004 Ver.7.83（FIR-003のカスタムベロ4分解、旧FIR-004〜042の+3繰り下げ）と連動し、本文のFIR参照（例示）を新番号へ更新した。評価基準・特筆性の基準に変更はない。MARI様のご決定に基づく。 |
 
 ---
 
@@ -428,7 +429,7 @@ Version 2.0より、S-01（ID Freeze）方針を採用し、KIT-番号の用途�
 
 MD-004のFire Domainと本書Kitchen（MD-003）は、燃料の種類ではなく、機材の**目的**によって区分される。
 
-- **Fire Domain（MD-004）**：暖を取る、あるいは焚き火のような炎そのものを楽しむための機材。燃料は薪に限らず、ケロシン（灯油）等も含む（例：FIR-029 武井バーナー Purple Stove 501Aは灯油式のケロシンヒーターだが、目的が暖房であるためFire Domainに属する）。
+- **Fire Domain（MD-004）**：暖を取る、あるいは焚き火のような炎そのものを楽しむための機材。燃料は薪に限らず、ケロシン（灯油）等も含む（例：FIR-032 武井バーナー Purple Stove 501Aは灯油式のケロシンヒーターだが、目的が暖房であるためFire Domainに属する）。
 - **Kitchen（MD-003）**：調理を成立させるための機材。燃料はガス・アルコール等を問わない（例：フラットバーナー、火焔ストーブ、ヤエンストーブ、グリルバーナー等は、いずれも調理目的であるためKitchenに属する）。
 
 コーヒー器具（ミル・ケトル・ドリッパー等）についても、キッチンゾーンでの調理行為の一部として同様にKitchenで管理する。ただし、BR-002 Barista Canonが管轄するCoffee System（エスプレッソ抽出とミルクスチーム）の機材はPart A §Coffee Domain Scopeに従い、Kitchenでは管理しない。

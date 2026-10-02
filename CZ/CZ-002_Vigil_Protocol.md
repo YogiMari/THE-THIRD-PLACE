@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 3.11  
+**Version**: 3.12  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE
@@ -29,6 +29,7 @@
 | 3.9 | 2026-09-29 | 暫定採用項目の個別確認（N-14）。MARI様のご決定に基づき、Coffee Zoneの機材もVigil Protocolの監視対象とし、§Coffee Watch Scope（BR-003でAcquisition Status = Purchase Requiredの全品目をProduct番号で参照して監視）を新設した。Current Watch List冒頭の「Coffee Domainは意図的に除外」の記述と、I. Purpose「Relationship with Other Documents」を合わせて改めた。OP-005 Pursuit Strategy Ver.2.6と連動。Minor Version。 |
 | 3.10 | 2026-09-30 | CZ-001 Ver.3.22と連動し、エントリ006（wildingout LF1984）のMD-004 Referenceを、Airlightシェード用の空き枠への充当検討から「なし（MD-004未登録。購入時にLight Domainの新規IDを付番）」へ改め、Current Watch List冒頭の「MD-004に該当IDなし」の例示へ006を追加した。MARI様のご決定に基づく。 |
 | 3.11 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |
+| 3.12 | 2026-10-02 | MD-004 Ver.7.83（FIR-003のカスタムベロ4分解、旧FIR-004〜042の+3繰り下げ）と連動し、本文のFIR参照（MD-004 Reference等）を新番号へ更新した。MARI様のご決定に基づく。改訂履歴の過去の行は原文のまま。Patch Version。 |
 
 ---
 
@@ -532,7 +533,7 @@ copper250
 
 **MD-004 Reference**
 
-FIR-025
+FIR-028
 
 **Required Keywords**
 
@@ -554,7 +555,7 @@ FT no BARREL
 
 **MD-004 Reference**
 
-FIR-026
+FIR-029
 
 **Required Keywords**
 
@@ -658,11 +659,11 @@ BLISS-SP
 
 **MD-004 Reference**
 
-FIR-036
+FIR-039
 
 **Notes**
 
-薪ストーブ検討枠。2026-09-26付でMT.SUMI Aura FGとの比較検討の結果、FIREGRAPHIX BLISS-SPを正式採用（CZ-001 Deliberation Dossier「Fire — Wood Stove選定記録」参照）。MD-004上でStatus: Essentialとして登録済み（不採用となった旧MT.SUMI Aura FGのエントリ〈旧020〉は本改訂で削除）。付属品（アルミポータブルスタンド・チムニー2種・チムニートップ・チムニーガード・収納バッグ）は、エントリ027〜032でFIR-037〜042として個別管理する。
+薪ストーブ検討枠。2026-09-26付でMT.SUMI Aura FGとの比較検討の結果、FIREGRAPHIX BLISS-SPを正式採用（CZ-001 Deliberation Dossier「Fire — Wood Stove選定記録」参照）。MD-004上でStatus: Essentialとして登録済み（不採用となった旧MT.SUMI Aura FGのエントリ〈旧020〉は本改訂で削除）。付属品（アルミポータブルスタンド・チムニー2種・チムニートップ・チムニーガード・収納バッグ）は、エントリ027〜032でFIR-040〜045として個別管理する。
 
 **Required Keywords**
 
@@ -754,7 +755,7 @@ FIREGRAPHIX
 
 **MD-004 Reference**
 
-FIR-037（Parent: FIR-036）
+FIR-040（Parent: FIR-039）
 
 **Required Keywords**
 
@@ -777,7 +778,7 @@ FIREGRAPHIX
 
 **MD-004 Reference**
 
-FIR-038（Parent: FIR-036）
+FIR-041（Parent: FIR-039）
 
 **Required Keywords**
 
@@ -800,7 +801,7 @@ FIREGRAPHIX
 
 **MD-004 Reference**
 
-FIR-039（Parent: FIR-036）
+FIR-042（Parent: FIR-039）
 
 **Required Keywords**
 
@@ -823,7 +824,7 @@ FIREGRAPHIX
 
 **MD-004 Reference**
 
-FIR-040（Parent: FIR-036）
+FIR-043（Parent: FIR-039）
 
 **Required Keywords**
 
@@ -846,7 +847,7 @@ FIREGRAPHIX
 
 **MD-004 Reference**
 
-FIR-041（Parent: FIR-036）
+FIR-044（Parent: FIR-039）
 
 **Required Keywords**
 
@@ -869,7 +870,7 @@ FIREGRAPHIX
 
 **MD-004 Reference**
 
-FIR-042（Parent: FIR-036）
+FIR-045（Parent: FIR-039）
 
 **Required Keywords**
 

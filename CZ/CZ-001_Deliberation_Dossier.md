@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.24
+3.25
 
 # Status
 
@@ -162,7 +162,7 @@ STR-019 Container Bridge Frame（nodel design、830×383×50mm、黒皮鉄）は
 |---|---|---|
 | Tactical Bag / M【+AS2OV】 | nodel design × AS2OV | ノデルデザイン純正、Butterfly Table Mを felt bag ごと2枚まで収納可能な公式設計（1000×500×50mm）で、サイズ・共用要件は最適。ただし素材がBllisstic CORDURA・カラーがSandで、Design Bibleの素材・色リストに非該当。MOLLE仕様のタクティカルな意匠もTHE THIRD PLACEの世界観と不調和。現在SOLD OUT。サイズ面の妥協候補として保持するが、美意識面で不採用寄り |
 
-**Unresolved Gaps**：上記Search Criteriaを満たし、かつ830mm超の長さに対応する既製品がまだ見つかっていない。以下は、Search Criteria設定前（黒・茶／帆布・レザーを条件としていた時点）の探索結果である。素材を理由に除外した候補（スキーケース等）は、素材の優先度が下がったため、色と質感の条件で再評価の対象とする。asimocrafts×横濱帆布鞄系（FIR-005・FIR-007と同系統）は最大68cm止まり、TEMBEAは該当サイズ未確認、レザーキャディバッグ系は円筒形状で不適合、スキーケースは素材が不適合と判明済み。FIR-007（table_no_kaban）の流用も検討したが、収納対象であるIron Table本体の公式収納時サイズが665mmであることから、長さ不足と判断。
+**Unresolved Gaps**：上記Search Criteriaを満たし、かつ830mm超の長さに対応する既製品がまだ見つかっていない。以下は、Search Criteria設定前（黒・茶／帆布・レザーを条件としていた時点）の探索結果である。素材を理由に除外した候補（スキーケース等）は、素材の優先度が下がったため、色と質感の条件で再評価の対象とする。asimocrafts×横濱帆布鞄系（FIR-008・FIR-010と同系統）は最大68cm止まり、TEMBEAは該当サイズ未確認、レザーキャディバッグ系は円筒形状で不適合、スキーケースは素材が不適合と判明済み。FIR-010（table_no_kaban）の流用も検討したが、収納対象であるIron Table本体の公式収納時サイズが665mmであることから、長さ不足と判断。
 
 **Decision**：未決定。引き続き市販品を探索中。
 
@@ -220,14 +220,14 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 | ID | Product | Brand | Note |
 |---|---|---|---|
-| FIR-025 | copper250 | neru design works | Parent: FIR-023 |
-| FIR-036 | BLISS-SP | FIREGRAPHIX | Parent（本体） |
-| FIR-037 | アルミポータブルスタンド（FG057） | FIREGRAPHIX | Parent: FIR-036 |
-| FIR-038 | オーバーレイチムニー（FG004） | FIREGRAPHIX | Parent: FIR-036 |
-| FIR-039 | オーバーレイチムニー80・5連（FG017） | FIREGRAPHIX | Parent: FIR-036 |
-| FIR-040 | チムニートップ フレキシブル（FG024） | FIREGRAPHIX | Parent: FIR-036 |
-| FIR-041 | スライドチムニーガード700（FG013） | FIREGRAPHIX | Parent: FIR-036 |
-| FIR-042 | ソフトコンテナL（FG034） | FIREGRAPHIX | Parent: FIR-036 |
+| FIR-028 | copper250 | neru design works | Parent: FIR-026 |
+| FIR-039 | BLISS-SP | FIREGRAPHIX | Parent（本体） |
+| FIR-040 | アルミポータブルスタンド（FG057） | FIREGRAPHIX | Parent: FIR-039 |
+| FIR-041 | オーバーレイチムニー（FG004） | FIREGRAPHIX | Parent: FIR-039 |
+| FIR-042 | オーバーレイチムニー80・5連（FG017） | FIREGRAPHIX | Parent: FIR-039 |
+| FIR-043 | チムニートップ フレキシブル（FG024） | FIREGRAPHIX | Parent: FIR-039 |
+| FIR-044 | スライドチムニーガード700（FG013） | FIREGRAPHIX | Parent: FIR-039 |
+| FIR-045 | ソフトコンテナL（FG034） | FIREGRAPHIX | Parent: FIR-039 |
 
 ## Shelter
 
@@ -244,7 +244,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | 2026-09 | Aroma | ARM-003 Vertical Diffuser | UNIT/04 × KUNST・BAUM SCENT TOWERを正式決定（Status: Essential）。詳細はMD-004参照。（決定当時のIDはARM-004。2026-09-19のMD-004 Version 7.34で番号入替） |
 | 2026-09-19 | Aroma | ARM-004 Incense Chamber | Filoméla INCENSE CHAMBER Tokyo LimitedのStatusをEssentialからUpgradeへ変更（MD-004 Version 7.34、MARI様のご指示）。Confirmed — Purchase Pendingから除外。旧ID: ARM-003。 |
 | 2026-09-23 | Furniture | FUR-033 Winter Top Quilt | 候補（Enlightened Equipment Accomplice／UGQ Outdoor Tango Duo）の検討を終了。冬用キルトはSnow Peak ダウン システムオフトン スリムマットセット（FUR-032）を採用（プロジェクトオーナー決定）。FUR-033はMD-004 Version 7.54でRetired（FUR-032へ統合）。※本行は標準運用化（2026-09-27）以前の記録のため、詳細記録は保持していない。 |
-| 2026-09-26 | Fire | Wood Stove（FIR-036〜042） | FIREGRAPHIX BLISS-SPを正式採用（MARI様決定）。MT.SUMI Aura FGとの比較検討を経て決定。詳細な検討記録は下記「Fire — Wood Stove 選定記録」を参照。 |
+| 2026-09-26 | Fire | Wood Stove（FIR-039〜045） | FIREGRAPHIX BLISS-SPを正式採用（MARI様決定）。MT.SUMI Aura FGとの比較検討を経て決定。詳細な検討記録は下記「Fire — Wood Stove 選定記録」を参照。 |
 | 2026-09-27 | Furniture | FUR-036 Ofuton Warm Adapter | Snow Peak オフトン ウォームアダプター（BD-066）を正式決定（Status: Essential、数量2、MARI様決定）。CZ-001での事前検討記録は無く、MD-004へ直接新規登録された。詳細はMD-004参照。 |
 | 2026-09-27 | Storage | ShellCon25 HEXA／TCのBedding Module転用検討 | ShellCon25 HEXA単独、およびシェルコン2台体制（HEXA・TC）の両方で「FUR-032（掛け布団収納ケース×2・マット収納ケース×2）＋FUR-036（ウォームアダプター×2）」全6点の収納可否を検証したが、床面積不足により不採用。既存の収納割当（HEXA＝Bedding Module、TC＝Light & Aroma Module）を維持。詳細は下記「Storage — Bedding Module収納検証」を参照。 |
 | 2026-09-28 | Furniture | Winter Sleeping Mat（FUR-034）／Pad Sheet（FUR-035） | BLACK ZONE MAT×2（FUR-034）・HOTEL CAMPS リバーシブルホットカバー×2（FUR-035）を正式決定（Status: Essential、MARI様決定）。MD-004 Version 7.64と連動。詳細な検討記録は下記「Furniture — Winter Sleeping Mat / Pad Sheet 選定記録」を参照。 |
@@ -257,7 +257,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 **注記**：本節は、Decision Logの該当行に対応する詳細記録（不採用候補とその理由を含む）である。2026-09-27付でCZ-001の標準運用となった（従来は例外運用だった）。
 
-**決定**：FIREGRAPHIX BLISS-SPを正式採用（Status: Essential、MD-004: FIR-036〜FIR-042）。
+**決定**：FIREGRAPHIX BLISS-SPを正式採用（Status: Essential、MD-004: FIR-039〜FIR-045）。
 
 **最終比較表（OP-002 Design Bible Fire Domain 4軸）**
 
@@ -280,13 +280,13 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 **BLISS-SP側の検討詳細（採用・確定記録）**
 
-- 本体：FIREGRAPHIX BLISS-SP、W429×H359×D535mm、16kg、煙突径Φ106、薪長35cm、¥107,800（MD-004: FIR-036）
-- スタンド：アルミポータブルスタンド（FG057）、4分割式、組立時W436×H255×D395mm、2.5kg、¥30,800（FIR-037）
-- 基本煙突：オーバーレイチムニー（FG004）、入れ子式5分割、収納時350×Φ108mm、¥18,700（FIR-038）
-- 延長煙突：オーバーレイチムニー80・5連（FG017）、収納時350×Φ82mm、使用時1550mm、¥16,500（FIR-039）。標準＋延長を合わせるとヘロスの必要高さ2.3m・60cmクリアランス基準を計算上クリア
-- トップ：チムニートップ フレキシブル（FG024）、Φ67〜80mm対応・全煙突種に取付可、¥6,600（FIR-040）
-- ガード：スライドチムニーガード700（FG013）、Φ67〜106mm対応、使用時70cm／収納時39cm、BLISS-SP炉内収納可（公式明記）、¥14,300（FIR-041）
-- 収納バッグ：ソフトコンテナL（FG034）、内寸610×450×400mm、本体専用設計、¥14,300（FIR-042）
+- 本体：FIREGRAPHIX BLISS-SP、W429×H359×D535mm、16kg、煙突径Φ106、薪長35cm、¥107,800（MD-004: FIR-039）
+- スタンド：アルミポータブルスタンド（FG057）、4分割式、組立時W436×H255×D395mm、2.5kg、¥30,800（FIR-040）
+- 基本煙突：オーバーレイチムニー（FG004）、入れ子式5分割、収納時350×Φ108mm、¥18,700（FIR-041）
+- 延長煙突：オーバーレイチムニー80・5連（FG017）、収納時350×Φ82mm、使用時1550mm、¥16,500（FIR-042）。標準＋延長を合わせるとヘロスの必要高さ2.3m・60cmクリアランス基準を計算上クリア
+- トップ：チムニートップ フレキシブル（FG024）、Φ67〜80mm対応・全煙突種に取付可、¥6,600（FIR-043）
+- ガード：スライドチムニーガード700（FG013）、Φ67〜106mm対応、使用時70cm／収納時39cm、BLISS-SP炉内収納可（公式明記）、¥14,300（FIR-044）
+- 収納バッグ：ソフトコンテナL（FG034）、内寸610×450×400mm、本体専用設計、¥14,300（FIR-045）
 - 総額：¥209,000
 - 庫内収納：FIREGRAPHIX公式パッキング図により、基本煙突・延長煙突・トップ・ガード一式がすべて庫内（炉内）に収納可能であることを確認。庫外に出るのはスタンドのみ
 - スタンド収納：分解したアルミポータブルスタンドをソフトコンテナL内で本体の下に敷く形での同梱を検討。公式の分解時サイズ記載はないが、同社の鉄製旧型スタンド（FG002）の実測値（収納時330×434×厚み9mm）から類推し、寸法上は収納可能と推定（高さ・幅・奥行きいずれも計算上矛盾なし。ただし公式数値ではなく類推である旨を明記）
@@ -438,6 +438,7 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 3.22 | 2026-09-30 | MARI様のご決定・ご指示に基づき、(1) Light Under ConsiderationのLF1984を「LGT-043への充当を検討中」から「MD-004未登録。検討中は本文書とCZ-002にのみ記載し、購入時にLGT-04番台の新規IDを付番」へ改めた。(2) Carrying Case for STR-019（MD-004: STR-034）のSearch CriteriaへSizeを追加（マチはほぼ不要で薄型で可、内寸の横幅830mm以上・高さ383mm以上）。 |
 | 3.23 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |
 | 3.24 | 2026-10-02 | MARI様のご指示に基づき、ShellCon25の収納検証（2026-09-27、Storage — Bedding Module収納検証）の記述から「箱」の表現をやめ、「シェルコン」「HEXA／TC」へ改めた。「①＋②の2箱体制」を「シェルコン2台体制（HEXA・TC）」、「箱①」「箱②」を「HEXA」「TC」、「箱1個あたり」「箱2個合計」を「シェルコン1台あたり」「シェルコン2台合計」へ変更した。検証内容・数値・結論に変更はない。Version History内の過去の記述は原文のまま保持した。Patch Version。 |
+| 3.25 | 2026-10-02 | MD-004 Ver.7.83（FIR-003のカスタムベロ4分解、旧FIR-004〜042の+3繰り下げ）と連動し、本文のFIR参照（FIR-025→028、FIR-036〜042→039〜045 ほか）を新番号へ更新した。MARI様のご決定に基づく。改訂履歴の過去の行は原文のまま。Patch Version。 |
 
 ---
 

@@ -4,7 +4,7 @@
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.31  
+**Version**: 2.32  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -519,7 +519,7 @@ STR-032（WHATNOT One Touch Bucket HD）を、通年の消耗品と小物の常�
 |---|---|
 | Summer | ポータブルエアコン |
 | Spring / Autumn | SHL-003 CLOUDBREAK"D"（DEVISE WORKS × HEIMPLANET） |
-| Winter | FIR-036（薪ストーブ。未所有・Status = Essential）、FIR-029（武井バーナー Purple Stove 501A）、FUR-035（冬用寝具のシーツ。未所有・Status = Essential） |
+| Winter | FIR-039（薪ストーブ。未所有・Status = Essential）、FIR-032（武井バーナー Purple Stove 501A）、FUR-035（冬用寝具のシーツ。未所有・Status = Essential） |
 
 ## Seasonal Slot B（バケット用）
 
@@ -563,9 +563,9 @@ Seasonal Slot A・Bへ積む冬季の構成物を定義する。
 
 ## Equipment
 
-- FIR-036（薪ストーブ）
-- FIR-029（武井バーナー Purple Stove 501A）
-- FIR-032（shank heater 百式改）＋FIR-033（専用ケース：shank container）
+- FIR-039（薪ストーブ）
+- FIR-032（武井バーナー Purple Stove 501A）
+- FIR-035（shank heater 百式改）＋FIR-036（専用ケース：shank container）
 
 ## Bedding
 
@@ -578,7 +578,7 @@ Seasonal Slot A・Bへ積む冬季の構成物を定義する。
 
 湯たんぽ・電気毛布はMD-004へ未登録の物品であり、Seasonal Slot Module Ruleと同様の扱いとする。定位置は未定のため、本節では暫定位置を記載しない。
 
-FUR-034・FUR-036は冬用（Season Kit）として本Kitに含める（N-07、2026-09-28新設、2026-09-29 MARI様のご決定により正式採用）。FUR-036はFUR-032と併用前提のため、FUR-032と同じSeasonal Slot Bへ同梱する（2026-09-29、MARI様のご決定）。FUR-034の積載位置、およびFIR-032＋FIR-033の積載位置（現状Seasonal Slot A・Bのいずれにも未割当）は、2026-09-28の試し積みでは個別に確認していない（§Loading Map「位置を個別に記載していない物」と同様、荷の隙間に置く）。定位置が必要になったら§Loading Mapへ追記する。電気毛布は電源サイトを利用する場合のみ持参する（ポータブル電源は使わない。2026-09-28、MARI様のご決定）。
+FUR-034・FUR-036は冬用（Season Kit）として本Kitに含める（N-07、2026-09-28新設、2026-09-29 MARI様のご決定により正式採用）。FUR-036はFUR-032と併用前提のため、FUR-032と同じSeasonal Slot Bへ同梱する（2026-09-29、MARI様のご決定）。FUR-034の積載位置、およびFIR-035＋FIR-036の積載位置（現状Seasonal Slot A・Bのいずれにも未割当）は、2026-09-28の試し積みでは個別に確認していない（§Loading Map「位置を個別に記載していない物」と同様、荷の隙間に置く）。定位置が必要になったら§Loading Mapへ追記する。電気毛布は電源サイトを利用する場合のみ持参する（ポータブル電源は使わない。2026-09-28、MARI様のご決定）。
 
 ## Consumables
 
@@ -639,8 +639,8 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 |---|---|---|---|
 | 奥・中／左 | FUR-015 EXTENMON TABLE（右寄せのため左に少し隙間） | ShellCon25 HEXA・TC（STR-001・STR-007。左に隙間） | SHL-004 Slug Shelter（ヘロス）、SHL-001 幕男 |
 | 奥・中／右 | FUR-015 EXTENMON TABLE | Beck #1（STR-013、右寄せ） | Beck #2（STR-016、右寄せ） |
-| 奥／左の隙間 | FIR-006 Iron Table、FUR-013・FUR-014 SOMA Chair ×2（いずれも縦置き） | | |
-| 手前・左 | FIR-001 RODAN BRICK＋FIR-005 rodan_no_kaban（縦置き） | | |
+| 奥／左の隙間 | FIR-009 Iron Table、FUR-013・FUR-014 SOMA Chair ×2（いずれも縦置き） | | |
+| 手前・左 | FIR-001 RODAN BRICK＋FIR-008 rodan_no_kaban（縦置き） | | |
 | 手前・右 | Peg & Guyline Module（STR-036 ペグケース。§Peg & Guyline Module） | FUR-029 TACTICAL AIR BED 2P | FUR-029（2段目の続き） |
 
 ### 後席（テールゲート側から見て）
@@ -694,7 +694,7 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 
 ↓
 
-⑧ Fire：焚き火（FIR-001系）、冬はFIR-036薪ストーブ（OP-006 §Safety Principlesに従う）
+⑧ Fire：焚き火（FIR-001系）、冬はFIR-039薪ストーブ（OP-006 §Safety Principlesに従う）
 
 ↓
 
@@ -1246,15 +1246,15 @@ Permanent Storage
 | 2.10 | 2026-09-28 | Beck②にCoffee Module Layout（暫定）を追記。Layer 1旧リストは未同期 |
 | 2.11 | 2026-09-28 | Layer 1 Coffee ModuleとCoffee Sequenceを、旧リスト（7品目）から現行の13点（暫定・試し詰め前）へ置換。Validation SummaryのCoffee ModuleをVerifiedからProvisionalへ修正。Layout節の「旧リスト未同期」注記を削除。Layer 2（Wood Board ×4 Sets）とLayer 3（Vapalux M320）は、本案との矛盾を未解決のまま残している |
 | 2.12 | 2026-09-28 | MARI様のご決定に基づき、Consumables & Sundries Module（STR-032 WHATNOT One Touch Bucket HD、通年の消耗品と小物の常備用）を新設。中身（消耗品：火まわり・洗い衛生・メンテナンス・香り・電池／小物：ハンガー・カラビナ等）、分類（補充ライン方式・定数チェック方式）、確認方法を記載。役割の要約はMD-004 STR-032のIndustrial Attributeへ記載し、詳細は本書のみで管理する（重複管理を回避）。Storage Rulesの「モジュールの混在は認めない」原則との整合は、ShellCon25②（Light & Aroma Module）の複数Domain統合運用の前例に基づき、本バケットを単一役割の1 Moduleとして位置付けることで確保した。 |
-| 2.13 | 2026-09-28 | MARI様のご決定に基づき（GitHub Issue #46）、Seasonal Slot Module（Seasonal Slot A：大型ギア用／B：バケット用）、Summer Kit（夏用ワンタッチバケットの中身・補充ライン）、Winter Kit（Equipment：FIR-036・FIR-029・FIR-032＋FIR-033／Bedding：FUR-032・FUR-035＋湯たんぽ・電気毛布／Consumables：CB缶／Clothing：ブーツ／Out of Scope：灯油・薪）、Weather Overlay（Rain、管理対象外）を新設。Consumables & Sundries Module §火まわりへCB缶（冬のみ）を追加。MD-004に未登録の物品（ポータブルエアコン・夏用ワンタッチバケット・湯たんぽ・電気毛布）は、Consumables & Sundries Moduleの前例に基づきMD-004へ新規登録せず、本書内でのみKit構成物として記載した。定義（Base／Season Kit／Weather Overlay、Seasonal Slotの位置づけ）はOP-006 Foundation Compassが管理し、本節では中身（データ）のみを記載する（重複管理を回避）。冬用暖房コンテナ・冬の小物の暫定位置は未決定のため本書には記載しない。 |
-| 2.14 | 2026-09-28 | MARI様のご指摘に基づき、Seasonal Slot Moduleの冬季内容の誤りを訂正した。Seasonal Slot A（ポータブルエアコンの場所）の冬はFIR-036・FIR-029に加えFUR-035（冬用寝具のシーツ）も含む。Seasonal Slot B（夏用ワンタッチバケットの場所）の冬はFUR-032（冬用の大きな寝具、嵩張る方）のみであり、FUR-035はSlot Bには含まれない。Winter Kit § Equipment・Bedding自体（何が冬季に積まれるか）に変更はなく、Seasonal Slot Moduleの表（どちらのSlotに何が入るか）のみを訂正した。 |
+| 2.13 | 2026-09-28 | MARI様のご決定に基づき（GitHub Issue #46）、Seasonal Slot Module（Seasonal Slot A：大型ギア用／B：バケット用）、Summer Kit（夏用ワンタッチバケットの中身・補充ライン）、Winter Kit（Equipment：FIR-039・FIR-032・FIR-035＋FIR-036／Bedding：FUR-032・FUR-035＋湯たんぽ・電気毛布／Consumables：CB缶／Clothing：ブーツ／Out of Scope：灯油・薪）、Weather Overlay（Rain、管理対象外）を新設。Consumables & Sundries Module §火まわりへCB缶（冬のみ）を追加。MD-004に未登録の物品（ポータブルエアコン・夏用ワンタッチバケット・湯たんぽ・電気毛布）は、Consumables & Sundries Moduleの前例に基づきMD-004へ新規登録せず、本書内でのみKit構成物として記載した。定義（Base／Season Kit／Weather Overlay、Seasonal Slotの位置づけ）はOP-006 Foundation Compassが管理し、本節では中身（データ）のみを記載する（重複管理を回避）。冬用暖房コンテナ・冬の小物の暫定位置は未決定のため本書には記載しない。 |
+| 2.14 | 2026-09-28 | MARI様のご指摘に基づき、Seasonal Slot Moduleの冬季内容の誤りを訂正した。Seasonal Slot A（ポータブルエアコンの場所）の冬はFIR-039・FIR-032に加えFUR-035（冬用寝具のシーツ）も含む。Seasonal Slot B（夏用ワンタッチバケットの場所）の冬はFUR-032（冬用の大きな寝具、嵩張る方）のみであり、FUR-035はSlot Bには含まれない。Winter Kit § Equipment・Bedding自体（何が冬季に積まれるか）に変更はなく、Seasonal Slot Moduleの表（どちらのSlotに何が入るか）のみを訂正した。 |
 | 2.15 | 2026-09-28 | 【引継ぎ】Beck②コーヒーギア13点収納設計を受け、Coffee Module Layout（暫定）節を拡充。13点＋Wood Boardの寸法一覧（GPT・Gemini web二重チェック確定値）、Beck②内寸の採用根拠（MD-001正本565×360×265mmを基準、540×340×250mmは参考値扱い）、9Barista Mk.2 Proの寸法採用根拠（実寸未確定のため安全側160×190×180を採用）、不採用配置案、配置詳細、判定結果（基準内寸では13点成立、参考値内寸では不成立、Wood Boardは3セットが上限・4セット目は非推奨・5〜7セットは不可）、未決事項（Layer 2 Wood Board×4 SetsとLayer 3 Vapalux M320の格納先が未解決のまま）、試し詰め前に必要な実測項目を追記した。Coffee ModuleのStatusは引き続きProvisional（試し詰め未了のため）。Validation Summaryの該当行へ判定根拠を追記。mainへ先行反映されていたSeasonal Slot Module訂正（旧Ver.2.14）とのコンフリクトを解消し、両変更を統合してVer.2.15とした。 |
 | 2.16 | 2026-09-28 | MARI様のご確認に基づき、MD-004（SSOT）との矛盾を是正。Filoméla INCENSE CHAMBER Tokyo Limited（MD-004 ARM-004：Status = Upgrade）、RT-01AC01 / ECHO LAMP（LGT-040：Status = Essential）、KURASHI MADE DOME LOOK（LGT-041：Status = Essential）、MMM Pocket Shade（MD-004に登録なし。旧LGT-018はOTEBO CRAFTS BABELへ差し替え済み）はいずれも未所有であるにもかかわらず、ShellCon25②（Light & Aroma Module）のFixed Contents・Light Sequence・Fixed Position Rules・Validation Summaryの4箇所で、既に所有・実運用中の固定装備であるかのように記載されていた。Filoméla（Upgrade）・MMM Pocket Shade（未登録）はSSOT整合を優先し、該当4箇所から記載を削除した（Ver.2.9と同様の考え方）。一方、RT-01AC01 / ECHO LAMPとKURASHI MADE DOME LOOK（いずれもMD-004でStatus = Essential）は、購入決定済み装備として記録を残す必要があるため削除せず、該当4箇所に「未所有・MD-004 Status = Essential」の注記を付して維持した（Beck② Storage VerificationのWood Board未購入分と同様の扱い）。あわせて、Filomélaの「横置き固定収納」に関する個別ルール・検証行（Rule節、Validation Summary、Fixed Position Rulesまとめの計3箇所）も、対象がFixed Contentsから外れたことに伴い削除した。MD-004側のStatus（Upgrade／Essential）は変更なし。 |
 | 2.17 | 2026-09-28 | MARI様のご指摘に基づき（課題C-11）、Validation SummaryとCoffee Module Layout（暫定）§未決事項との矛盾を是正。Beck② Storage VerificationのResultは、13点のCoffee Module新構成（Wood Board 3セットで底面を使い切る）のもとではLayer 2（Wood Board ×4 Sets）・Layer 3（Vapalux M320）の格納先が未解決であるにもかかわらずVerifiedのままだったため、Provisionalへ修正し、該当箇所を格納先確定分（Wood Board ×3 Sets）と未解決分（Wood Board ×4 Sets・Vapalux M320）に分けて明記した。Storage Verification Result表のBeck² Storage・Side Table Deployment・Operation Sequenceの3行も✅VerifiedからProvisionalへ修正した（Living Table DeploymentはLayer 0が格納先確定済みのためVerifiedを維持）。Wood Board 4セット・Vapalux M320自体の格納先は本改訂では決定せず、未解決である旨の明記に留めた（格納先の決定はN-06で別途扱う）。 |
 | 2.18 | 2026-09-28 | MARI様のご指摘に基づき（課題C-19）、OP-006 Foundation Compass Recovery Sequence「撤収は、設営の逆順ではない」とMD-001の「収納順」に関する記述の間で、「積載・収納の層順（箱内の格納位置）」と「撤収作業の順序」という異なる2つの概念が同じ「順」という言葉で書かれ、矛盾して見えていた点を是正した。Fixed Principles「展開順と収納順は常に一致させる」は層順（箱内の格納位置）を指す原則であることを明記し、撤収作業の順序はOP-006 Recovery Sequenceに従う旨を追記した。Coffee Sequence「収納は、この逆順で行う」およびReturn Sequence本体（Deployment Sequenceのほぼ逆順）は、現状はOP-006の原則に未整合な暫定運用であることを明記し、正式な撤収手順の設計はN-03で別途扱うこととした。OP-006自体は変更不要（MARI様のご確認済み）。 |
 | 2.19 | 2026-09-28 | MARI様のご確認に基づき（課題C-20）、MD-001内の記述の揺れを是正。(1) Parent Documents（OP-001・OP-002・MD-004・OP-006・OP-007）とRelationship図（MD-004→MD-001→OP-007、OP-007は下流＝現地展開）が矛盾していたため、Parent DocumentsからOP-007を外した（OP-001・OP-002・MD-004・OP-006の4件に修正）。Relationship図・Position表は変更していない。(2) Beck②のPurpose「Coffee Equipment & Light Equipment」およびBeck② Principles「Coffee Equipment + Light Equipment + Living Table Module = Living Core Module」は、Fixed Position Rules Beck²の記述（Coffee Equipment + Living Table Module）および実際のFixed Contents（Beck②内の照明はVapalux M320のみ。DEVADEVA等の照明・香り一般はShellCon25②の担当）と不整合だったため、両箇所とも「Coffee Equipment & Living Table Module」「Coffee Equipment + Living Table Module = Living Core Module」へ修正し、Fixed Position Rulesの記述に統一した。Vapalux M320は引き続きLayer 3・Fixed Position Rulesの個別記載（Bridge Frame・Wood Board・Coffee Equipment・Vapaluxの収納位置は固定）でのみ扱う。Position表（S-08で削除予定）は本改訂の対象外。mainへ先行マージされていたRecovery Sequence訂正（C-19、Ver.2.18）とのマージコンフリクトを解消し、両変更を統合してVer.2.19とした。 |
 | 2.20 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Positionの文書一覧表（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。直後の§Relationship（MD-004→MD-001→OP-007のフロー図）は本書固有の情報のため変更していない。MARI様のご決定に基づく（S-08）。 |
-| 2.21 | 2026-09-28 | 整備バックログ（N-02・N-03・N-06・N-07）対応。§Vehicle（Range Rover Sport 2026年型、公表荷室容量647 L／1,491 L、実測待ち項目）、§Vehicle Loading Rule（暫定）、§Full Loading Order（暫定・未検証）、§Site Deployment Sequence（全体・暫定）、§Site Recovery Sequence（全体・暫定。乾燥に時間を要するShelterを最後に撤収）を新設。Winter Kit BeddingへFUR-034・FUR-036を追加し積載位置の未決事項を明記。Coffee Module Layout §未決事項へCoffee Serviceware・専用水の定位置未定を追記。Home Operationへ濡れたShelterの帰宅後乾燥を追記。Dust Management Module・Seasonal Slot Moduleの未所有Equipment（STR-030・FIR-036・FUR-035・FUR-032）へ未所有注記を付記（S-02バリデータ警告の解消）。ヘッダーと末尾Version欄の版数不一致（2.20／2.19）を是正。いずれもClaude推奨案をMARI様の包括指示（2026-09-28）に基づき暫定採用したもの。 |
+| 2.21 | 2026-09-28 | 整備バックログ（N-02・N-03・N-06・N-07）対応。§Vehicle（Range Rover Sport 2026年型、公表荷室容量647 L／1,491 L、実測待ち項目）、§Vehicle Loading Rule（暫定）、§Full Loading Order（暫定・未検証）、§Site Deployment Sequence（全体・暫定）、§Site Recovery Sequence（全体・暫定。乾燥に時間を要するShelterを最後に撤収）を新設。Winter Kit BeddingへFUR-034・FUR-036を追加し積載位置の未決事項を明記。Coffee Module Layout §未決事項へCoffee Serviceware・専用水の定位置未定を追記。Home Operationへ濡れたShelterの帰宅後乾燥を追記。Dust Management Module・Seasonal Slot Moduleの未所有Equipment（STR-030・FIR-039・FUR-035・FUR-032）へ未所有注記を付記（S-02バリデータ警告の解消）。ヘッダーと末尾Version欄の版数不一致（2.20／2.19）を是正。いずれもClaude推奨案をMARI様の包括指示（2026-09-28）に基づき暫定採用したもの。 |
 | 2.22 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 | 2.23 | 2026-09-28 | MARI様のご回答（2026-09-28）を反映。Beck①のFixed ContentsへCoffee Serviceware（HILLS FIELD Glass Case Single、FIKA12 ×2）を追加し、Ruleの「Coffee Equipment収納禁止」は抽出・スチーム機材を指し、Servicewareは食器として収納する旨を明記。Coffee Module Layout §未決事項を専用水ボトルのみに更新。Winter Kitの電気毛布を「電源サイト利用時のみ持参」とした。§VehicleへPowertrain（MHEV 3.0L 直列6気筒ディーゼル）を記載。Consumables & Sundries ModuleのSundriesへ一酸化炭素警報器（所有済み）を追加。 |
 | 2.24 | 2026-09-28 | MARI様のご回答を反映。§Vehicleの座席数を5人乗りと記載。Coffee System専用水ボトル3本の収納先を食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ、MD-004 Version 7.70で新規登録）に決定し、Coffee Module Layout §未決事項を解消。§Full Loading Order ③へSTR-035を追加。 |
@@ -1265,6 +1265,7 @@ Permanent Storage
 | 2.29 | 2026-09-29 | MARI様のご決定・ご希望に基づき、Beck②のLayer 2・Layer 3の格納先を更新。Wood Board ×4 Sets（Layer 2）はBeck②外のFUR-024 EXTENSIONTABLE CASE（neru design works × WHAT WE WANT）へ並べて収納する（同ケースは6セット程度まで収納可能、MARI様のご申告）。Vapalux M320（Layer 3）は、Coffee Equipment 13点を収納して余裕があればBeck②最下層へ収納し、可否は試し詰めで判断する。§Layer 2・§Layer 3・§Coffee Module Layout（暫定）§未決事項・§Beck② Principles・§Home Operation・§Fixed Position Rules・§Validation Summaryを連動して更新。 |
 | 2.30 | 2026-09-29 | 暫定採用項目の個別確認（N-03・N-07）。MARI様のご決定に基づき、§Site Deployment Sequenceの順序を「到着・区画確認→Shelter→Furniture→Bedding→Kitchen→Living Core→Dust Management→Fire→Light & Aroma」へ改めて正式採用し、§Site Recovery Sequenceは原文のまま正式採用した（見出しの「暫定」と暫定採用の注記を削除）。Coffee Return・Return Sequenceの「正式な撤収手順はN-03で扱う」旨を、§Site Recovery Sequenceへの参照へ改めた。Winter Kit BeddingのFUR-034・FUR-036を正式採用とし、FUR-036の積載位置をSeasonal Slot B（FUR-032と同梱）に確定し、§Seasonal Slot ModuleのSlot B冬季へ追記した。Minor Version。 |
 | 2.31 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |
+| 2.32 | 2026-10-02 | MD-004 Ver.7.83（カスタムベロの4分解と、Fire Domainの旧4番以降の+3繰り下げ）と連動し、本文のFIR参照を新番号へ更新した。検証スクリプトが改訂履歴の行もEquipment ID参照として読むため、改訂履歴（2.13・2.14・2.21）のFIR参照も新番号へ揃えた。MARI様のご決定に基づく。Patch Version。 |
 
 ---
 
