@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.80  
+**Version**: 7.81  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -536,7 +536,7 @@ DEVISE WORKS × SomAbito
 
 **Product**  
 
-SOMA Chair ①  
+SOMA CHAIR DEVISE MODEL  
 
 **Status**  
 
@@ -572,7 +572,7 @@ SomAbito
 
 **Product**  
 
-SOMA Chair ②  
+SOMA Chair  
 
 **Status**  
 
@@ -7122,6 +7122,12 @@ MARI様のご確認（2026-10-02）に基づき、SHL-002（W3.8 ROPE〈DEVISE v
 ## Version 7.80
 
 MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。
+
+---
+
+## Version 7.81
+
+MARI様のご指示（2026-10-02）に基づき、SOMA Chairの名称末尾の丸数字を改めた。FUR-013（DEVISE WORKS × SomAbito）の旧名称「SOMA Chair ①」をSOMA CHAIR DEVISE MODELへ、FUR-014（SomAbito単体）の旧名称「SOMA Chair ②」をSOMA Chairへ変更した。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。Patch Version。
 
 ---
 
