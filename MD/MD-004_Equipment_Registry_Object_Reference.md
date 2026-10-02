@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.84  
+**Version**: 7.85  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -6714,7 +6714,7 @@ The Arth
 
 **Product**  
 
-幕男  
+幕男 4th.ver  
 
 **Status**  
 
@@ -7273,6 +7273,12 @@ MARI様のご決定（2026-10-02）に基づき、FIR-003「カスタムベロ�
 ## Version 7.84
 
 MARI様のご指示（2026-10-02）に基づき、FUR-009（DEVISE WORKS × INAVANCE）のProductを、DEVISE WORKS公式オンラインショップの商品名に合わせて「KURO Bolt & Plate」から「NEW KURO金具」へ変更した。Brand・Color・Material・Price・Parent・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
+
+---
+
+## Version 7.85
+
+MARI様のご指示（2026-10-02）に基づき、SHL-001（The Arth）のProductを、The Arth_six公式ストアの正式名称に合わせて「幕男」から「幕男 4th.ver」へ変更した。MD-001 Ver.2.34と連動する。Brand・Color・Material・Price・Child Components・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
 
 ---
 
