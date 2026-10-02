@@ -3,7 +3,7 @@
 **Document ID**: MD-003  
 **Title**: Galley Fare  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.21  
+**Version**: 2.22  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -80,6 +80,10 @@ None
 
 Dutch Oven（Whole Chicken Capacity）
 
+### Price
+
+¥34,100（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-002
@@ -111,6 +115,10 @@ None
 ### Industrial Attribute
 
 Compact Dutch Oven Set
+
+### Price
+
+¥31,350（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -144,6 +152,10 @@ None
 
 Campfire Steak Griddle（Detachable Handle）
 
+### Price
+
+¥23,760（Snow Peak公式EC現行価格、2026-10-02確認。福山限定Griddle 22の価格。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-004
@@ -175,6 +187,10 @@ None
 ### Industrial Attribute
 
 Multi Griddle
+
+### Price
+
+¥9,300（JHQ公式サイト現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -208,6 +224,10 @@ None
 
 Hot Sandwich Cooker（Dual-Sandwich, 880g）
 
+### Price
+
+¥9,570（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-006
@@ -239,6 +259,10 @@ None
 ### Industrial Attribute
 
 Wok（43.5cm Overall Length × 25cm Width, 790g, Requires Seasoning Before Use）
+
+### Price
+
+¥7,980（Boottonation公式ショップ現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -272,6 +296,10 @@ None
 
 Ladle（38cm Overall Length, 200g, asigrip-Compatible）
 
+### Price
+
+¥3,980（Boottonation公式ショップ現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-008
@@ -303,6 +331,10 @@ None
 ### Industrial Attribute
 
 Cartridge Gas Burner（IGT-Compatible, 270×410×110mm, 1.9kg）
+
+### Price
+
+¥14,520（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -336,6 +368,10 @@ None
 
 Alcohol Stove with Cooker Set（Max Φ23cm Pot Compatible, Bioethanol Fuel）
 
+### Price
+
+¥4,290（Snow Peak公式EC現行価格、2026-10-02確認。クッカーセット（BS-010CS）の価格。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-010
@@ -367,6 +403,10 @@ None
 ### Industrial Attribute
 
 Alcohol Stove（Tabletop, 200ml Capacity, ~70min Burn Time, Bioethanol Fuel）
+
+### Price
+
+¥10,890（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -400,6 +440,10 @@ None
 
 Cartridge Gas Burner（Integrated Low-Center-of-Gravity Design, 2900kcal/h。ALM KOPi Z1 Mini Steamer Coffee System専用熱源として使用。BR-002 Ver.4.3 Heat Source Decisionに基づく）
 
+### Price
+
+¥13,200（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-012
@@ -432,6 +476,10 @@ None
 
 Cartridge Gas Burner（Integrated Windscreen, 2800kcal/h）
 
+### Price
+
+¥17,160（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-013
@@ -463,6 +511,10 @@ None
 ### Industrial Attribute
 
 Cast Iron Griddle Grill Burner（Yakiniku-Style, 1700kcal/h, 5.0kg）
+
+### Price
+
+¥29,040（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -499,6 +551,10 @@ None
 ### Industrial Attribute
 
 Plate / Cutting Board Dual-Use
+
+### Price
+
+¥9,504（Snow Peak公式EC現行価格、2026-10-02確認。1個¥4,752×2個の合計。実購入額は別途確認が必要）
 
 ---
 
@@ -619,6 +675,10 @@ Graffiti-style Graphic（Engraved, Handle & Blade）
 ### Industrial Attribute
 
 Folding Cooking Knife
+
+### Price
+
+¥20,900（購入価格。MARI様申告）
 
 ---
 
@@ -748,6 +808,10 @@ None
 
 Tong（U-shaped, spring/hinge-less structure, 235mm）
 
+### Price
+
+¥7,700（FEDECA公式ストア現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-019
@@ -779,6 +843,10 @@ None
 ### Industrial Attribute
 
 Tong（Standard, 240mm）
+
+### Price
+
+¥6,600（FEDECA公式ストア現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -812,6 +880,10 @@ None
 
 Tong（Mini, 150mm）
 
+### Price
+
+¥6,050（FEDECA公式ストア現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-021
@@ -843,6 +915,10 @@ None
 ### Industrial Attribute
 
 Tong（Mini, 150mm）
+
+### Price
+
+¥6,050（FEDECA公式ストア現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -876,6 +952,10 @@ Laser-Engraved Design
 
 Ladle（Hangable, Not Fire-Safe due to Nylon Tip）
 
+### Price
+
+¥8,470（DEVISE WORKS公式オンラインショップ現行価格、2026-10-02確認。送料込みの表示価格。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-023
@@ -908,6 +988,10 @@ Emblem（紋章柄, Black。MARI様確認）
 
 Turner（Hangable, BURABURA Series）
 
+### Price
+
+¥8,470（DEVISE WORKS公式オンラインショップ現行価格、2026-10-02確認。送料込みの表示価格。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-024
@@ -939,6 +1023,10 @@ Laser-Engraved Design
 ### Industrial Attribute
 
 Cooking Chopsticks（Hangable, Also Usable as Skewer）
+
+### Price
+
+¥6,600（DEVISE WORKS公式オンラインショップ現行価格、2026-10-02確認。送料込みの表示価格。実購入額は別途確認が必要）
 
 ---
 
@@ -994,6 +1082,10 @@ None
 
 Spork（Spoon/Fork Combo）
 
+### Price
+
+¥1,430（Snow Peak公式EC現行価格、2026-10-02確認。リサイクルチタン先割れスプーン¥1,430とONLINE¥1,320のうち高い方。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-027
@@ -1025,6 +1117,10 @@ None
 ### Industrial Attribute
 
 Spork（Spoon/Fork Combo）
+
+### Price
+
+¥1,430（Snow Peak公式EC現行価格、2026-10-02確認。リサイクルチタン先割れスプーン¥1,430とONLINE¥1,320のうち高い方。実購入額は別途確認が必要）
 
 ---
 
@@ -1058,6 +1154,10 @@ None
 
 Spork（Spoon/Fork Combo）
 
+### Price
+
+¥1,430（Snow Peak公式EC現行価格、2026-10-02確認。リサイクルチタン先割れスプーン¥1,430とONLINE¥1,320のうち高い方。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-029
@@ -1089,6 +1189,10 @@ None
 ### Industrial Attribute
 
 Chopsticks（Tapered Tip, Cold-Forged）
+
+### Price
+
+¥5,016（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -1122,6 +1226,10 @@ None
 
 Chopsticks（Tapered Tip, Cold-Forged）
 
+### Price
+
+¥5,016（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-031
@@ -1153,6 +1261,10 @@ None
 ### Industrial Attribute
 
 Chopsticks（Tapered Tip, Cold-Forged）
+
+### Price
+
+¥5,016（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -1190,6 +1302,10 @@ None
 
 Fire-Resistant Cooking Mitten（Lobster-Claw Shape, One Size, Made in Japan）
 
+### Price
+
+¥3,696（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-033
@@ -1226,6 +1342,10 @@ None
 
 Collaboration BBQ Skewer（asimocrafts×サンゾー工務店コラボ品A394。CAN FEEL取扱ページで正式名称確認、旧表記「a384」を訂正。1ID管理で複数色を包括）
 
+### Price
+
+¥10,560（4本の合計。2本で¥5,280。購入価格。MARI様申告）
+
 ---
 
 ## KIT-034
@@ -1257,6 +1377,10 @@ None
 ### Industrial Attribute
 
 Skewer Deep-Frying Plate & Thermometer Set（Donut-Shaped Plate φ155mm／Center Hole φ50mm, Sierra Cup Sold Separately — Used with Owner's Own Cup）
+
+### Price
+
+¥4,890（CAMPOOPARTS公式ショップ現行価格、2026-10-02確認。シェラカップ無しのセットの価格。実購入額は別途確認が必要）
 
 ---
 
@@ -1290,6 +1414,10 @@ None
 
 Single-Wall Mug（Direct-Fire Safe, 220ml）
 
+### Price
+
+¥2,970（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-036
@@ -1321,6 +1449,10 @@ None
 ### Industrial Attribute
 
 Double-Wall Mug（300ml, stackable with MG-153）
+
+### Price
+
+¥5,280（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -1386,6 +1518,10 @@ None
 
 Double-Wall Mug（450ml, renewed model, stacks with MG-152）
 
+### Price
+
+¥5,940（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-037a
@@ -1439,6 +1575,10 @@ None
 ### Industrial Attribute
 
 Vacuum-Insulated Tumbler（470ml, φ84×150mm, 215g）
+
+### Price
+
+¥5,544（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -1502,6 +1642,10 @@ None
 
 Vacuum-Insulated Tumbler（470ml, φ84×150mm, 215g）
 
+### Price
+
+¥5,544（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-039a
@@ -1564,6 +1708,10 @@ None（イベントロゴのみ。OP-010 §Graphic Attributeの特筆性の基�
 
 Stacking Cup（500cc, φ85×H125mm）
 
+### Price
+
+¥2,420（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-041
@@ -1595,6 +1743,10 @@ None
 ### Industrial Attribute
 
 Teapot Set（600ml Pot + 2× 150ml Cups, Furoshiki-Style Storage Case）
+
+### Price
+
+¥15,400（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -1628,6 +1780,10 @@ None
 
 Sierra Cup（Used as Plate, 310ml, Interior Measurement Markings）
 
+### Price
+
+¥1,584（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-043
@@ -1659,6 +1815,10 @@ None
 ### Industrial Attribute
 
 Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
+
+### Price
+
+¥6,000（購入価格。MARI様申告（1つ¥6,000））
 
 ---
 
@@ -1692,6 +1852,10 @@ None
 
 Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
 
+### Price
+
+¥6,000（購入価格。MARI様申告（1つ¥6,000））
+
 ---
 
 ## KIT-045
@@ -1723,6 +1887,10 @@ None
 ### Industrial Attribute
 
 Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
+
+### Price
+
+¥6,000（購入価格。MARI様申告（1つ¥6,000））
 
 ---
 
@@ -1756,6 +1924,10 @@ None
 
 Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
 
+### Price
+
+¥6,000（購入価格。MARI様申告（1つ¥6,000））
+
 ---
 
 ## KIT-047
@@ -1787,6 +1959,10 @@ None
 ### Industrial Attribute
 
 Sierra Cup（Used as Plate, Store-Limited Color, 310ml, φ120×45mm, ~37g）
+
+### Price
+
+¥6,000（購入価格。MARI様申告（1つ¥6,000））
 
 ---
 
@@ -1820,6 +1996,10 @@ None
 
 Sierra Cup（Used as Plate, Facility-Limited Color, 310ml, φ120×45mm, ~37g）
 
+### Price
+
+¥6,000（購入価格。MARI様申告（1つ¥6,000））
+
 ---
 
 ## KIT-049
@@ -1851,6 +2031,10 @@ None
 ### Industrial Attribute
 
 Sierra Cup（Used as Plate, Handmade in Japan, Enamel Finish）
+
+### Price
+
+¥4,950（nodel design公式ストア現行価格、2026-10-02確認。Online限定品の価格。実購入額は別途確認が必要）
 
 ---
 
@@ -1884,6 +2068,10 @@ None
 
 Sierra Cup（Used as Plate, Vintage-Inspired Design）
 
+### Price
+
+¥3,850（OLD MOUNTAIN公式サイト現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-051
@@ -1915,6 +2103,10 @@ None
 ### Industrial Attribute
 
 Sierra Cup（Used as Plate, Deep Type, 480ml, Rice/Water Line Markings for Rice Cooking, Body Only — No Lid/Grip/Steamer Rack）
+
+### Price
+
+¥1,980（OLD MOUNTAIN公式サイト現行価格、2026-10-02確認。M16メモリ付き深型の価格。実購入額は別途確認が必要）
 
 ---
 
@@ -1948,6 +2140,10 @@ None
 
 Sierra Cup（Used as Plate, Deep Type, 480ml, Rice/Water Line Markings for Rice Cooking, Body Only）
 
+### Price
+
+¥3,003（OLD MOUNTAIN公式サイト現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-053
@@ -1979,6 +2175,10 @@ Geometric Pattern（Engraved, Reverse Side）
 ### Industrial Attribute
 
 Kamado-Style Rice Cooking Lid（For Use with Deep-Type Sierra Cups, φ10cm, Not a Standalone Cooker — Requires Separate Deep Sierra Cup, Companion Item for KIT-051/052）
+
+### Price
+
+¥7,150（OLD MOUNTAIN公式サイト現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -2012,6 +2212,10 @@ Geometric Pattern（Engraved, Reverse Side）
 
 Kamado-Style Rice Cooking Lid（For Use with Deep-Type Sierra Cups, φ10cm, Not a Standalone Cooker — Requires Separate Deep Sierra Cup, Companion Item for KIT-051/052）
 
+### Price
+
+¥7,150（OLD MOUNTAIN公式サイト現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-055
@@ -2044,6 +2248,10 @@ None
 
 Sierra Cup（Used as Plate, RAVEN Series, 480ml, W95mm(Bottom)/W120mm(Top)×H60mm, 113g）
 
+### Price
+
+¥5,480（CALMA STORE公式サイト現行価格、2026-10-02確認。完売品の最終掲載価格。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-056
@@ -2075,6 +2283,10 @@ None
 ### Industrial Attribute
 
 Sierra Cup（Used as Plate, RAVEN Series, 480ml, W95mm(Bottom)/W120mm(Top)×H60mm, 113g）
+
+### Price
+
+¥5,280（購入価格。MARI様申告）
 
 ---
 
@@ -2204,6 +2416,10 @@ None
 
 Manual Coffee Mill（Foldable Handle/Lid Integrated, 225g）
 
+### Price
+
+¥11,550（Snow Peak公式EC現行価格、2026-10-02確認。後継型CS-116Rの価格。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-061
@@ -2236,6 +2452,10 @@ None
 
 Pour-Over Kettle（Detachable Handle, 3-Hole Spout for Flow Control, 1.0L）
 
+### Price
+
+¥18,700（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-062
@@ -2267,6 +2487,10 @@ None
 ### Industrial Attribute
 
 Folding Coffee Dripper（Firepit-Style, Uses Standard Paper Filters, 140g）
+
+### Price
+
+¥4,620（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -2336,6 +2560,10 @@ Emblem（Silver Print）
 
 Storage Box（0.5 Unit Size, for Cutlery/Cookware Organization）
 
+### Price
+
+¥30,250（DEVISE WORKS公式オンラインショップ現行価格、2026-10-02確認。送料込みの表示価格。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-065
@@ -2371,6 +2599,10 @@ Laser-Engraved Design（MONSHO or LOGO type, wraparound）
 ### Industrial Attribute
 
 Spice Bottle（3-Stage Adjustable Spout, φ49×H82.5mm, Not Waterproof）
+
+### Price
+
+¥7,590（DEVISE WORKS公式オンラインショップ現行価格、2026-10-02確認。1本¥3,795×2本の合計。送料込みの表示価格。実購入額は別途確認が必要）
 
 ---
 
@@ -2408,6 +2640,10 @@ Kindan Collab Graphic（Wraparound, YOKOHAMA BAYOUT vol.2 Limited）
 
 Spice Bottle（Same Base as SPICE BOTTLE BOYS, Event-Limited Graphic Variant）
 
+### Price
+
+¥10,000（2個合計。1つ¥5,000。購入価格。MARI様申告）
+
 ---
 
 ## KIT-067
@@ -2439,6 +2675,10 @@ Occult Emblem（Engraved, Black Ink Inlay）
 ### Industrial Attribute
 
 Spice Bottle Rack（Holds 4 Spice Bottles, Used Size W140×D140×H65mm, 10mm Rod Screw Thread for Tripod Compatibility）
+
+### Price
+
+¥15,180（DEVISE WORKS公式オンラインショップ現行価格、2026-10-02確認。送料込みの表示価格。実購入額は別途確認が必要）
 
 ---
 
@@ -2472,6 +2712,10 @@ None（ロゴプレートのみ。OP-010 §Graphic Attributeの特筆性の基�
 
 Folding Wire Basket（IGT 1-Unit Compatible, approx. 24×35×25cm, Used as Dish-Washing / Storage Basket）
 
+### Price
+
+¥6,000（ANOBA公式サイト現行価格、2026-10-02確認。実購入額は別途確認が必要）
+
 ---
 
 ## KIT-069
@@ -2503,6 +2747,10 @@ None
 ### Industrial Attribute
 
 Cutlery / Kitchen Tool Storage Pouch（Mesh, Breathable, S Size）
+
+### Price
+
+¥2,970（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
 
 ---
 
@@ -3401,6 +3649,12 @@ OP-010 Version 2.3で新設されたGraphic Attributeの特筆性の基準（202
 ## Version 2.21
 
 MARI様のご回答（2026-09-29）に基づき、KIT-023（DEVISE WORKS BURABURA ターナー）のHandleのMaterialを「Wood（Exact Species Unconfirmed）」からWalnutへ確定し、Graphic Attributeを推定記載の「Laser-Engraved Design（Presumed）」から黒の紋章柄（Emblem, Black）へ更新した。紋章柄は意匠を大きく左右するため、OP-010 Version 2.3の特筆性の基準を満たすものとして記録する。Colorは変更していない。
+
+---
+
+## Version 2.22
+
+MARI様のご指示（2026-10-02）に基づき、価格が未記載だったKIT系列の62件にPriceを記載した。購入価格はMARI様のご申告に基づき、10件（KIT-016、KIT-033、KIT-043〜KIT-048、KIT-056、KIT-066）を確定値として記載した。数量が複数の品は、既存の書式（2個合計）に合わせて合計額を記載し、1個あたりの価格を注記した。残る52件は購入額の申告がないため、各社の公式サイトの現行価格（2026-10-02確認）を暫定値として注記付きで記載した。複数の候補価格がある場合は高い方を採用した（MARI様のご指示）。購入価格が分かった時点で、実購入額へ置き換える。KIT-074は、台帳の記載どおり価格不明（KIT-073本体価格に含まれる）のままとした。
 
 ---
 
