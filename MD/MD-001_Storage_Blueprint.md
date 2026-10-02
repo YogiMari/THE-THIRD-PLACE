@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.33
+## Ver.2.34
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.33  
+**Version**: 2.34  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -637,7 +637,7 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 
 | 区画 | 床（1段目） | 2段目 | 3段目 |
 |---|---|---|---|
-| 奥・中／左 | FUR-015 EXTENMON TABLE（右寄せのため左に少し隙間） | ShellCon25 HEXA・TC（STR-001・STR-007。左に隙間） | SHL-004 Slug Shelter（ヘロス）、SHL-001 幕男 |
+| 奥・中／左 | FUR-015 EXTENMON TABLE（右寄せのため左に少し隙間） | ShellCon25 HEXA・TC（STR-001・STR-007。左に隙間） | SHL-004 Slug Shelter（ヘロス）、SHL-001 幕男 4th.ver |
 | 奥・中／右 | FUR-015 EXTENMON TABLE | Beck #1（STR-013、右寄せ） | Beck #2（STR-016、右寄せ） |
 | 奥／左の隙間 | FIR-009 Iron Table、FUR-013・FUR-014 SOMA Chair ×2（いずれも縦置き） | | |
 | 手前・左 | FIR-001 RODAN BRICK＋FIR-008 rodan_no_kaban（縦置き） | | |
@@ -1267,6 +1267,7 @@ Permanent Storage
 | 2.31 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |
 | 2.32 | 2026-10-02 | MD-004 Ver.7.83（カスタムベロの4分解と、Fire Domainの旧4番以降の+3繰り下げ）と連動し、本文のFIR参照を新番号へ更新した。検証スクリプトが改訂履歴の行もEquipment ID参照として読むため、改訂履歴（2.13・2.14・2.21）のFIR参照も新番号へ揃えた。MARI様のご決定に基づく。Patch Version。 |
 | 2.33 | 2026-10-02 | 文書冒頭の見出し「Ver.」表記が本文のVersionと食い違っていたため（見出しのみVer.2.30のまま残存）、見出しを現行Versionへ揃えた。内容に変更はない。Patch Version。 |
+| 2.34 | 2026-10-02 | MD-004 Ver.7.85（SHL-001のProductを正式名称「幕男 4th.ver」へ変更）と連動し、Vehicle Loading MapのSHL-001の表記を「幕男 4th.ver」へ改めた。収納・積載の内容に変更はない。Patch Version。 |
 
 ---
 
