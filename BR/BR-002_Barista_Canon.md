@@ -10,7 +10,7 @@ Barista Canon
     
 # Version    
     
-4.11    
+4.12    
     
 # Status    
     
@@ -1441,7 +1441,7 @@ LAGOM MiniからBlind Shakerへの直接受けが物理的に成立する場合�
   
 Coffee Station全体のレイアウト確定後に検討する。  
   
-Coffee Serviceware（HILLS FIELD Glass Case Single・FIKA12 ×2）は、食器としてBeck①（Kitchen Module）へ収納することが決定済み（2026-09-28、MARI様のご決定）。Coffee System専用水ボトル3本は、食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ）へ収納する（2026-09-28、MARI様のご決定）。  
+Coffee Serviceware（HILLS FIELD Glass Case Single・FIKA12 ×2）は、食器としてBeck #1（Kitchen Module）へ収納することが決定済み（2026-09-28、MARI様のご決定）。Coffee System専用水ボトル3本は、食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ）へ収納する（2026-09-28、MARI様のご決定）。  
   
 ただし、BR-002で正式採用したKNODOS Tamping Mat with Tool Organiser - Walnut 54mmは、Coffee Tool Workflowを成立させるためのEquipmentとしてConfirmedとする。  
   
@@ -1459,7 +1459,7 @@ Coffee Equipment一式が完成した後に検討する。
   
 **Reason**  
   
-Beck②から展開するBridge Table（MD-001 Storage Blueprint §Deployment Sequence）をCoffee Stationの天板として運用し、Coffee Station専用の家具は持たない（2026-09-29、MARI様のご決定により正式採用。N-06）。  
+Beck #2から展開するBridge Table（MD-001 Storage Blueprint §Deployment Sequence）をCoffee Stationの天板として運用し、Coffee Station専用の家具は持たない（2026-09-29、MARI様のご決定により正式採用。N-06）。  
   
 ---  
   
@@ -1732,6 +1732,7 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 4.9 | 2026-09-28 | Deferred §Storage & Organizationへ、Coffee Serviceware（グラスケース・FIKA12）をBeck①（Kitchen Module）へ収納する決定を反映（MD-001 Ver.2.23と連動）。MARI様のご決定に基づく。 |
 | 4.10 | 2026-09-28 | Deferred §Storage & OrganizationへCoffee System専用水ボトルの収納先（STR-035 YETI Camino® 35）を反映（MD-001 Ver.2.24・MD-004 Version 7.70と連動）。MARI様のご決定に基づく。 |
 | 4.11 | 2026-09-29 | 暫定採用項目の個別確認（N-06）。MARI様のご決定に基づき、Deferred §Storage & Organization・§Travel Carry SystemのStatus（In Progress）を削除して保留（Deferred）へ戻し、Claude推奨案で追記した説明文（Beck②収納設計の進行中の旨、運搬ケースの判断時期）を削除した。MARI様のご決定済み事項（Coffee ServicewareのBeck①収納、専用水ボトルのSTR-035収納）は維持した。§Coffee Station Furnitureは「Bridge Tableを天板として運用し、専用家具は持たない」を正式採用とした。Patch Version。 |
+| 4.12 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |  
   
 ---  
 

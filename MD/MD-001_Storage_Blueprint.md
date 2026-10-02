@@ -4,7 +4,7 @@
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.30  
+**Version**: 2.31  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -77,14 +77,14 @@ Vehicle = Permanent Storage
 
 | Storage | Role |
 |---|---|
-| Beck① | Kitchen Module |
-| Beck② | Living Core Module |
-| ShellCon25① | Bedding Module |
-| ShellCon25② | Light & Aroma Module |
+| Beck #1 | Kitchen Module |
+| Beck #2 | Living Core Module |
+| ShellCon25 HEXA | Bedding Module |
+| ShellCon25 TC | Light & Aroma Module |
 
 ---
 
-# Beck①
+# Beck #1
 
 ## Internal Size
 
@@ -131,7 +131,7 @@ Mixed Storage
 
 ---
 
-# Beck②
+# Beck #2
 
 ## Living Core Module
 
@@ -149,7 +149,7 @@ Living Core Module
 
 ## Storage Concept
 
-Beck②は
+Beck #2は
 
 **Living Table Module**
 
@@ -212,13 +212,13 @@ Coffee EquipmentはBridge Table完成後に取り出す。
 
 ### Storage
 
-Beck②には格納しない。FUR-024 EXTENSIONTABLE CASE（neru design works × WHAT WE WANT、FUR-015 EXTENMON TABLE用）に並べて収納する（2026-09-29、MARI様のご決定。同ケースには6セット程度まで収納できる〈MARI様のご申告〉）。
+Beck #2には格納しない。FUR-024 EXTENSIONTABLE CASE（neru design works × WHAT WE WANT、FUR-015 EXTENMON TABLE用）に並べて収納する（2026-09-29、MARI様のご決定。同ケースには6セット程度まで収納できる〈MARI様のご申告〉）。
 
 ### Purpose
 
 Bridge Table完成後、
 
-Beck①・Beck②の蓋へ設置し、
+Beck #1・Beck #2の蓋へ設置し、
 
 左右サイドテーブルとして使用する。
 
@@ -232,7 +232,7 @@ Beck①・Beck②の蓋へ設置し、
 
 ### Storage
 
-Coffee Equipment 13点を収納して余裕がある場合に、Beck②最下層へ収納する（2026-09-29、MARI様のご希望）。収納できるかは、Coffee Equipment購入後の試し詰めで判断する。
+Coffee Equipment 13点を収納して余裕がある場合に、Beck #2最下層へ収納する（2026-09-29、MARI様のご希望）。収納できるかは、Coffee Equipment購入後の試し詰めで判断する。
 
 ### Rule
 
@@ -274,7 +274,7 @@ Wood Board：125×360×23mm／1セット＝2枚
 
 ### 内寸の採用根拠
 
-GPT・Geminiのweb調査ではBeck②内寸540×340×250mmという結果が得られたが、MD-001の正本内寸は565×360×265mmである。本Layout検証ではMD-001の565×360×265mmを基準とし、540×340×250mmは参考値（最悪ケース）として扱う。
+GPT・Geminiのweb調査ではBeck #2内寸540×340×250mmという結果が得られたが、MD-001の正本内寸は565×360×265mmである。本Layout検証ではMD-001の565×360×265mmを基準とし、540×340×250mmは参考値（最悪ケース）として扱う。
 
 ### 9Barista Mk.2 Proの寸法採用根拠
 
@@ -307,22 +307,22 @@ Wood Board 3セット（6枚）は最上層へ平置きする（フェルトケ�
 
 ### 未決事項
 
-- Layer 3「Vapalux M320」の格納先が未確定（13点＋Wood Board 3セットで底面を使い切る計算のため）。試し詰めでBeck②に余裕があればBeck②最下層へ収納する（2026-09-29、MARI様のご希望）。Layer 2「Wood Board ×4 Sets」はFUR-024 EXTENSIONTABLE CASEへの収納に決定した（2026-09-29、MARI様のご決定。§Layer 2参照）。
+- Layer 3「Vapalux M320」の格納先が未確定（13点＋Wood Board 3セットで底面を使い切る計算のため）。試し詰めでBeck #2に余裕があればBeck #2最下層へ収納する（2026-09-29、MARI様のご希望）。Layer 2「Wood Board ×4 Sets」はFUR-024 EXTENSIONTABLE CASEへの収納に決定した（2026-09-29、MARI様のご決定。§Layer 2参照）。
 - Coffee Sequence（使用順）は暫定であり、実際の手順に合わせた見直しが必要。
-- Coffee Serviceware（グラスケース・FIKA12）は食器としてBeck①（Kitchen Module）へ、Coffee System専用水ボトル3本（計2,540mL）は食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ）へ収納する（いずれも2026-09-28、MARI様のご決定）。
+- Coffee Serviceware（グラスケース・FIKA12）は食器としてBeck #1（Kitchen Module）へ、Coffee System専用水ボトル3本（計2,540mL）は食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ）へ収納する（いずれも2026-09-28、MARI様のご決定）。
 
 ### 必要な実測（試し詰め前に要確認）
 
 Coffee Equipmentは未購入のため、試し詰めと以下の実測は購入後に行う（2026-09-28、MARI様確認）。
 
-1. Beck②の内寸（底面と蓋の縁、W/D/H）
+1. Beck #2の内寸（底面と蓋の縁、W/D/H）
 2. 9Barista Mk.2 Proの実寸（ハンドル込み）
 3. Z1 Mini Steamerの断面（ノズルとダイヤルの位置も含む）
 4. フェルトケース1セットの実寸
 
 ---
 
-## Beck② Principles
+## Beck #2 Principles
 
 Coffee Equipment
 
@@ -340,12 +340,12 @@ Living Core Module
 - 最初のWood Boardは3セットのみ使用する。
 - Coffee EquipmentはBridge Table完成後に取り出す。
 - 残り4セットはサイドテーブル展開用とし、FUR-024 EXTENSIONTABLE CASEに収納する。
-- Vapaluxは、Beck②に余裕がある場合に最下層へ固定する（試し詰めで判断）。
+- Vapaluxは、Beck #2に余裕がある場合に最下層へ固定する（試し詰めで判断）。
 - 収納位置は、メンテナンス時を除き変更しない。
 
 ---
 
-# ShellCon25①
+# ShellCon25 HEXA
 
 ## Bedding Module
 
@@ -369,7 +369,7 @@ Internal Size
 
 ---
 
-# ShellCon25②
+# ShellCon25 TC
 
 ## Light & Aroma Module
 
@@ -397,7 +397,7 @@ Light EquipmentとAroma Equipment専用。
 
 CONPE10はShellCon25へ収納しない。
 
-RT-01AC01 / ECHO LAMPとKURASHI MADE DOME LOOKは、購入後にShellCon25②へ収納予定（現時点で未所有）。
+RT-01AC01 / ECHO LAMPとKURASHI MADE DOME LOOKは、購入後にShellCon25 TCへ収納予定（現時点で未所有）。
 
 ---
 
@@ -429,7 +429,7 @@ STR-032（WHATNOT One Touch Bucket HD）を、通年の消耗品と小物の常�
 
 ## Rule
 
-火まわり・洗い衛生・メンテナンス・香り・電池といった複数カテゴリの消耗品と、汎用小物を1つのバケットへ集約する構成である。ShellCon25②（Light & Aroma Module）が複数Domainを1つのModuleとして統合運用する前例と同様に、本バケットも「消耗品と小物の常備」という単一の役割を持つ1つのModuleとして機能するため、Storage Rulesの「モジュールの混在は認めない」原則には抵触しない。
+火まわり・洗い衛生・メンテナンス・香り・電池といった複数カテゴリの消耗品と、汎用小物を1つのバケットへ集約する構成である。ShellCon25 TC（Light & Aroma Module）が複数Domainを1つのModuleとして統合運用する前例と同様に、本バケットも「消耗品と小物の常備」という単一の役割を持つ1つのModuleとして機能するため、Storage Rulesの「モジュールの混在は認めない」原則には抵触しない。
 
 個別の消耗品・小物はMD-004へは登録しない。バケット本体のみがSTR-032としてMD-004へ登録される。
 
@@ -624,7 +624,7 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 
 1. 乗車2名を標準とする。後席は左（40）と中央（20）を倒して荷室として使い、右（40）は起こしたまま座面を荷台として使う。
 2. FUR-015 EXTENMON TABLEを荷室の床に最初に敷き、その上に収納コンテナを積む。
-3. コンテナは右寄せで積む。右側にBeck①（下）とBeck②（上）、左側にShellCon25①②を置く。
+3. コンテナは右寄せで積む。右側にBeck #1（下）とBeck #2（上）、左側にShellCon25 HEXA・TCを置く。
 4. 荷室は天井まで積み切る。後方の窓からの視界はなくなるが、ルームミラーがモニター式のため運転に支障はない（MARI様確認）。
 5. 満載時はテールゲートを開けると手前の荷（エアベッド等）が倒れてくる。開けたらすぐに手前の荷を押さえるか降ろす。
 6. 燃料の車載はOP-006 §Safety Principlesに従う。
@@ -637,8 +637,8 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 
 | 区画 | 床（1段目） | 2段目 | 3段目 |
 |---|---|---|---|
-| 奥・中／左 | FUR-015 EXTENMON TABLE（右寄せのため左に少し隙間） | ShellCon25①②（STR-001・STR-007。左に隙間） | SHL-004 Slug Shelter（ヘロス）、SHL-001 幕男 |
-| 奥・中／右 | FUR-015 EXTENMON TABLE | Beck①（STR-013、右寄せ） | Beck②（STR-016、右寄せ） |
+| 奥・中／左 | FUR-015 EXTENMON TABLE（右寄せのため左に少し隙間） | ShellCon25 HEXA・TC（STR-001・STR-007。左に隙間） | SHL-004 Slug Shelter（ヘロス）、SHL-001 幕男 |
+| 奥・中／右 | FUR-015 EXTENMON TABLE | Beck #1（STR-013、右寄せ） | Beck #2（STR-016、右寄せ） |
 | 奥／左の隙間 | FIR-006 Iron Table、FUR-013・FUR-014 SOMA Chair ×2（いずれも縦置き） | | |
 | 手前・左 | FIR-001 RODAN BRICK＋FIR-005 rodan_no_kaban（縦置き） | | |
 | 手前・右 | Peg & Guyline Module（STR-036 ペグケース。§Peg & Guyline Module） | FUR-029 TACTICAL AIR BED 2P | FUR-029（2段目の続き） |
@@ -664,7 +664,7 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 
 # Site Deployment Sequence（全体）
 
-現地到着から空間完成までの全体順序を定義する（N-03。2026-09-28新設、2026-09-29 MARI様のご決定により順序を改めて正式採用）。各Moduleの内部手順は、下記§Deployment Sequence（Beck②）・§Coffee Sequence・§Light Sequenceを参照する。
+現地到着から空間完成までの全体順序を定義する（N-03。2026-09-28新設、2026-09-29 MARI様のご決定により順序を改めて正式採用）。各Moduleの内部手順は、下記§Deployment Sequence（Beck #2）・§Coffee Sequence・§Light Sequenceを参照する。
 
 ① 到着・区画確認（地面、風向き、日の向き、車の位置）
 
@@ -678,15 +678,15 @@ CB缶を冬のみ追加する（Consumables & Sundries Module §火まわり参�
 
 ↓
 
-④ Bedding：ShellCon25①、冬はWinter Kit Bedding（日没前に完了）
+④ Bedding：ShellCon25 HEXA、冬はWinter Kit Bedding（日没前に完了）
 
 ↓
 
-⑤ Kitchen：Beck①、FUR-015 EXTENMON TABLE
+⑤ Kitchen：Beck #1、FUR-015 EXTENMON TABLE
 
 ↓
 
-⑥ Living Core：Beck②を開き、§Deployment Sequenceの①〜⑦（Bridge Table・Coffee Setup・サイドテーブル）
+⑥ Living Core：Beck #2を開き、§Deployment Sequenceの①〜⑦（Bridge Table・Coffee Setup・サイドテーブル）
 
 ↓
 
@@ -708,15 +708,15 @@ Shelterの使い分け（どのSHLをどの条件で使うか）と、区画の�
 
 撤収の全体順序を定義する。OP-006 Foundation Compass §Recovery Sequence（設営の逆順ではなく、保護・乾燥・メンテナンス・次回設営を考慮する）に基づき、乾燥に時間を要するShelterを最後に撤収する（N-03・C-19。2026-09-28新設、2026-09-29 MARI様のご決定により正式採用）。
 
-① 起床後：寝具を広げて結露・湿気を飛ばし、乾燥後にShellCon25①へ収納する
+① 起床後：寝具を広げて結露・湿気を飛ばし、乾燥後にShellCon25 HEXAへ収納する
 
 ↓
 
-② Coffee：最後の抽出後、BR-001 Brew Care §Camp Closure Protocolを完了し、Beck②へ収納する（§Return Sequence参照）
+② Coffee：最後の抽出後、BR-001 Brew Care §Camp Closure Protocolを完了し、Beck #2へ収納する（§Return Sequence参照）
 
 ↓
 
-③ Kitchen：洗浄・乾燥後、Beck①へ収納する
+③ Kitchen：洗浄・乾燥後、Beck #1へ収納する
 
 ↓
 
@@ -724,7 +724,7 @@ Shelterの使い分け（どのSHLをどの条件で使うか）と、区画の�
 
 ↓
 
-⑤ Light & Aroma：ShellCon25②へ収納する
+⑤ Light & Aroma：ShellCon25 TCへ収納する
 
 ↓
 
@@ -744,19 +744,19 @@ Shelterの使い分け（どのSHLをどの条件で使うか）と、区画の�
 
 ## Vehicle Loading Order
 
-① Beck①
+① Beck #1
 
 ↓
 
-② Beck②
+② Beck #2
 
 ↓
 
-③ ShellCon25①
+③ ShellCon25 HEXA
 
 ↓
 
-④ ShellCon25②
+④ ShellCon25 TC
 
 ### Rule
 
@@ -766,7 +766,7 @@ Shelterの使い分け（どのSHLをどの条件で使うか）と、区画の�
 
 # Deployment Sequence
 
-① Beck②を開く
+① Beck #2を開く
 
 ↓
 
@@ -790,7 +790,7 @@ Shelterの使い分け（どのSHLをどの条件で使うか）と、区画の�
 
 ↓
 
-⑦ Beck①・Beck②サイドテーブル完成
+⑦ Beck #1・Beck #2サイドテーブル完成
 
 ↓
 
@@ -922,7 +922,7 @@ Aroma Equipment
 
 ↓
 
-Beck②を閉じる
+Beck #2を閉じる
 
 ↓
 
@@ -948,7 +948,7 @@ Beck②を閉じる
 
 Bridge Frame・Wood Board（3 Sets）・Coffee Equipmentは
 
-**Beck②へ固定収納**とする。
+**Beck #2へ固定収納**とする。
 
 Wood Board（4 Sets）は
 
@@ -956,7 +956,7 @@ Wood Board（4 Sets）は
 
 Light Equipment・Aroma Equipmentは
 
-**ShellCon25②へ固定収納**とする。
+**ShellCon25 TCへ固定収納**とする。
 
 CONPE10は
 
@@ -1006,13 +1006,13 @@ CONPE10は
 
 # Fixed Position Rules
 
-## Beck①
+## Beck #1
 
 Kitchen Module専用。
 
 ---
 
-## Beck②
+## Beck #2
 
 Living Core Module専用。
 
@@ -1022,17 +1022,17 @@ Coffee Equipment
 
 Living Table Module
 
-Bridge Frame・Wood Board（3 Sets）・Coffee Equipment・Vapaluxの収納位置は固定とする。Wood Board（4 Sets）はBeck②外（FUR-024 EXTENSIONTABLE CASE）へ固定収納する。VapaluxのBeck②への収納可否は、試し詰めで確認する。
+Bridge Frame・Wood Board（3 Sets）・Coffee Equipment・Vapaluxの収納位置は固定とする。Wood Board（4 Sets）はBeck #2外（FUR-024 EXTENSIONTABLE CASE）へ固定収納する。VapaluxのBeck #2への収納可否は、試し詰めで確認する。
 
 ---
 
-## ShellCon25①
+## ShellCon25 HEXA
 
 Bedding専用。
 
 ---
 
-## ShellCon25②
+## ShellCon25 TC
 
 Light & Aroma Module専用。
 
@@ -1126,7 +1126,7 @@ Active
 
 # Validation Summary
 
-## Beck② Storage Verification
+## Beck #2 Storage Verification
 
 ### Result
 
@@ -1135,16 +1135,16 @@ Provisional（Layer 3 Vapalux M320の格納先が試し詰め待ちのため）
 - Bridge Frame
 - Wood Board ×3 Sets（Layer 0・格納先確定）
 - Coffee Module
-- Wood Board ×4 Sets（Layer 2・Beck②外。FUR-024 EXTENSIONTABLE CASEへ格納）
-- Vapalux M320（Layer 3・試し詰めでBeck②への収納可否を判断）
+- Wood Board ×4 Sets（Layer 2・Beck #2外。FUR-024 EXTENSIONTABLE CASEへ格納）
+- Vapalux M320（Layer 3・試し詰めでBeck #2への収納可否を判断）
 - Living Table Deployment
 - Side Table Deployment
 
-Coffee Module Layout（暫定）の判定により、Wood Board 3セット＋Coffee Equipment 13点でBeck②底面を使い切るため、Layer 2（Wood Board ×4 Sets）はBeck②外のFUR-024 EXTENSIONTABLE CASEへ格納する（2026-09-29、MARI様のご決定）。Layer 3（Vapalux M320）は、試し詰めでBeck②に余裕があればBeck②最下層へ格納する（詳細はCoffee Module Layout（暫定）§未決事項を参照）。Wood Board ×7 Sets のうち4セット（STR-015・STR-018、各2組）は未購入（MD-004 Status = Essential）。本検証結果は未購入分・格納先が試し詰め待ちの分を含む。実物での確認は未了。
+Coffee Module Layout（暫定）の判定により、Wood Board 3セット＋Coffee Equipment 13点でBeck #2底面を使い切るため、Layer 2（Wood Board ×4 Sets）はBeck #2外のFUR-024 EXTENSIONTABLE CASEへ格納する（2026-09-29、MARI様のご決定）。Layer 3（Vapalux M320）は、試し詰めでBeck #2に余裕があればBeck #2最下層へ格納する（詳細はCoffee Module Layout（暫定）§未決事項を参照）。Wood Board ×7 Sets のうち4セット（STR-015・STR-018、各2組）は未購入（MD-004 Status = Essential）。本検証結果は未購入分・格納先が試し詰め待ちの分を含む。実物での確認は未了。
 
 ---
 
-## ShellCon25② Storage Verification
+## ShellCon25 TC Storage Verification
 
 ### Internal Size
 
@@ -1171,11 +1171,11 @@ RT-01AC01 / ECHO LAMPとKURASHI MADE DOME LOOKは未購入（MD-004 Status = Ess
 
 | Item | Result |
 |------|--------|
-| Beck② Storage | 🔶 Provisional（Vapalux M320の格納先が試し詰め待ち。Coffee Module Layout §未決事項参照） |
+| Beck #2 Storage | 🔶 Provisional（Vapalux M320の格納先が試し詰め待ち。Coffee Module Layout §未決事項参照） |
 | Coffee Module | 🔶 Provisional（箱寸法計算では基準内寸565×360×265mmにて成立。試し詰め未了） |
 | Living Table Deployment | ✅ Verified |
 | Side Table Deployment | 🔶 Provisional（Wood Board ×4 SetsはFUR-024 EXTENSIONTABLE CASEへ格納決定。うち未購入分〈STR-015・STR-018〉を含むため実物確認未了） |
-| ShellCon25② Storage | ✅ Verified |
+| ShellCon25 TC Storage | ✅ Verified |
 | CONPE10 Relocation | ✅ Verified |
 | Operation Sequence | 🔶 Provisional（Vapaluxの格納先が試し詰め待ちのため） |
 
@@ -1219,10 +1219,10 @@ Permanent Storage
 
 ## Fixed Principles
 
-- Beck①はKitchen Module専用。
-- Beck②はLiving Core Module専用。
-- ShellCon25①はBedding専用。
-- ShellCon25②はLight & Aroma Module専用。
+- Beck #1はKitchen Module専用。
+- Beck #2はLiving Core Module専用。
+- ShellCon25 HEXAはBedding専用。
+- ShellCon25 TCはLight & Aroma Module専用。
 - CONPE10はSnow Peak Multi Containerへ固定収納。
 - Bridge Frame・Wood Board・Coffee Equipment・Vapaluxは固定位置を変更しない。
 - 展開順と収納位置の層順（箱内でどの層に何を格納するか）は常に一致させる。これは箱内の格納位置に関する原則であり、撤収作業を行う順序を指すものではない。撤収作業の順序はOP-006 Foundation Compass Recovery Sequenceの原則（保護・乾燥・メンテナンス・次回設営を考慮した順序であり、設営の逆順ではない）に従う。
@@ -1264,6 +1264,7 @@ Permanent Storage
 | 2.28 | 2026-09-28 | MD-004 Version 7.72と連動。§Loading Mapの「充電が必要な物だけを入れたバッグ（MD-004未登録）」をSTR-037 Snow Peak Quilted Ripstop Duffleへ更新。§Peg & Guyline ModuleのSHL-006表記を公式名（DONKEY HAMMER_A、サンゾー工務店 × asimocrafts）へ更新。 |
 | 2.29 | 2026-09-29 | MARI様のご決定・ご希望に基づき、Beck②のLayer 2・Layer 3の格納先を更新。Wood Board ×4 Sets（Layer 2）はBeck②外のFUR-024 EXTENSIONTABLE CASE（neru design works × WHAT WE WANT）へ並べて収納する（同ケースは6セット程度まで収納可能、MARI様のご申告）。Vapalux M320（Layer 3）は、Coffee Equipment 13点を収納して余裕があればBeck②最下層へ収納し、可否は試し詰めで判断する。§Layer 2・§Layer 3・§Coffee Module Layout（暫定）§未決事項・§Beck② Principles・§Home Operation・§Fixed Position Rules・§Validation Summaryを連動して更新。 |
 | 2.30 | 2026-09-29 | 暫定採用項目の個別確認（N-03・N-07）。MARI様のご決定に基づき、§Site Deployment Sequenceの順序を「到着・区画確認→Shelter→Furniture→Bedding→Kitchen→Living Core→Dust Management→Fire→Light & Aroma」へ改めて正式採用し、§Site Recovery Sequenceは原文のまま正式採用した（見出しの「暫定」と暫定採用の注記を削除）。Coffee Return・Return Sequenceの「正式な撤収手順はN-03で扱う」旨を、§Site Recovery Sequenceへの参照へ改めた。Winter Kit BeddingのFUR-034・FUR-036を正式採用とし、FUR-036の積載位置をSeasonal Slot B（FUR-032と同梱）に確定し、§Seasonal Slot ModuleのSlot B冬季へ追記した。Minor Version。 |
+| 2.31 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |
 
 ---
 

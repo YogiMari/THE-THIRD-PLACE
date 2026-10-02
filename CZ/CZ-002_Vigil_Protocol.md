@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 3.10  
+**Version**: 3.11  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE
@@ -28,6 +28,7 @@
 | 3.8 | 2026-09-29 | MD-004 Version 7.77（LGT-017aをBrand / Product = Unconfirmedの候補枠へ整理、LGT-017bをRetired）と連動し、旧エントリ009（neru design works メッシュシェード、LGT-017a）と旧エントリ010（CALMA STORE × neru design works POCKET SHADE M、LGT-017b）を削除した。両候補の比較はCZ-001 Deliberation Dossierで管理する。これに伴い旧011〜032を009〜030へ繰り上げ、Current Watch List冒頭の説明文を「エントリ008〜032」から「エントリ008〜030」へ、Unconfirmed除外枠の例示へLGT-017aを追加した。MARI様のご決定に基づく。 |
 | 3.9 | 2026-09-29 | 暫定採用項目の個別確認（N-14）。MARI様のご決定に基づき、Coffee Zoneの機材もVigil Protocolの監視対象とし、§Coffee Watch Scope（BR-003でAcquisition Status = Purchase Requiredの全品目をProduct番号で参照して監視）を新設した。Current Watch List冒頭の「Coffee Domainは意図的に除外」の記述と、I. Purpose「Relationship with Other Documents」を合わせて改めた。OP-005 Pursuit Strategy Ver.2.6と連動。Minor Version。 |
 | 3.10 | 2026-09-30 | CZ-001 Ver.3.22と連動し、エントリ006（wildingout LF1984）のMD-004 Referenceを、Airlightシェード用の空き枠への充当検討から「なし（MD-004未登録。購入時にLight Domainの新規IDを付番）」へ改め、Current Watch List冒頭の「MD-004に該当IDなし」の例示へ006を追加した。MARI様のご決定に基づく。 |
+| 3.11 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |
 
 ---
 
@@ -507,7 +508,7 @@ STR-015, STR-018
 
 **Notes**
 
-nodel designが「Wood Board」という製品名でそのまま単品販売している。Beck Container ①（STR-013）用のOak（STR-015）およびBeck Container ②（STR-016）用のWalnut（STR-018）。
+nodel designが「Wood Board」という製品名でそのまま単品販売している。Beck Container #1（STR-013）用のOak（STR-015）およびBeck Container #2（STR-016）用のWalnut（STR-018）。
 
 **Required Keywords**
 

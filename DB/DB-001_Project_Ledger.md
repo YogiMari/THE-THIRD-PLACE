@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.22
+**Version**: 4.23
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -80,7 +80,7 @@
 | Date | Topic |
 |------|-------|
 | 2026-09-28 | 冬用暖房コンテナ（湯たんぽ・電気毛布・シャンクヒーター用）の要否・定位置：優先度低、検討中 |
-| 2026-09-28 | Beck②の試し詰めと実測（MD-001 Coffee Module Layout §必要な実測）。Coffee Equipment購入後に実施 |
+| 2026-09-28 | Beck #2の試し詰めと実測（MD-001 Coffee Module Layout §必要な実測）。Coffee Equipment購入後に実施 |
 | 2026-09-29 | 一酸化炭素チェッカーの2個目を購入予定（OP-006 §Safety Principlesで2個設置を定めたため。現在1個所有）。2個そろうまで、シェルター内で燃焼器具を使わない |
 
 ---
@@ -171,6 +171,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.20 | 2026-09-29 | 暫定採用項目の個別確認（MARI様のご決定）を記録。Conversation Ledgerへ本会話を追加。Project Inboxへ一酸化炭素チェッカー2個目の購入予定を追加（OP-006 Ver.1.9と連動）。§Field Logへ、運用は暫定であり初回キャンプの試行後に継続を決定する旨を追記（N-05・N-16）。 |
 | 4.21 | 2026-09-30 | 初回キャンプの計画（MARI様のご決定）を記録。§Field Logへ、moss camp field（2026-10-17〜18、BOTANICALオートサイト、アーリー12:00）のStatus = Planned行を追加。Conversation Ledgerへ本会話を追加。Field Logの運用は引き続き暫定であり、帰宅後にDoneへ更新した上で継続の可否を決定する。Patch Version。 |
 | 4.22 | 2026-10-01 | §KN Publication Logへ、KN-001〜004創刊号（2026-09-30発行）の4行を追加。Artifact Linkは共有設定前のため「—」とした（運用ルールどおり）。Conversation Ledgerへ本会話を追加。MARI様のご指示に基づく。Patch Version。 |
+| 4.23 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |
 
 ---
 
