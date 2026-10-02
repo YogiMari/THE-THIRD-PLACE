@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.83  
+**Version**: 7.84  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -384,7 +384,7 @@ DEVISE WORKS × INAVANCE
 
 **Product**  
 
-KURO Bolt & Plate  
+NEW KURO金具  
 
 **Status**  
 
@@ -7267,6 +7267,12 @@ MARI様のご指示(2026-10-02)に基づき、購入履歴と台帳のPriceを�
 ## Version 7.83
 
 MARI様のご決定（2026-10-02）に基づき、FIR-003「カスタムベロ（ナターシャ・マチルダ・アンナ・ジェーン）」（¥11,800）を、FIR-003 カスタムベロ（マチルダ）／FIR-004 カスタムベロ（ジェーン）／FIR-005 カスタムベロ（ナターシャ）／FIR-006 カスタムベロ（アンナ）の4件へ分解した。各件のPriceは4枚合計¥11,800の折半で¥2,950。4件ともGraphic Attributeに Bunny Girl Series（Cutout）を追加し、Industrial Attributeへ「半月スタイル時の前框〈カマチ〉押さえ部分に使用」を加えた。これに伴い、旧FIR-004〜FIR-042をFIR-007〜FIR-045へ+3繰り下げ、FIR-001のChild ComponentsをFIR-002〜FIR-008へ更新した（FUR-012の前例と同じ形式）。CZ-001 Ver.3.25・CZ-002 Ver.3.12・MD-001 Ver.2.32・OP-010 Ver.3.4が連動して本文のFIR参照を新番号へ更新した。Version History内の過去の記述は原文のまま保持している。Patch Version。
+
+---
+
+## Version 7.84
+
+MARI様のご指示（2026-10-02）に基づき、FUR-009（DEVISE WORKS × INAVANCE）のProductを、DEVISE WORKS公式オンラインショップの商品名に合わせて「KURO Bolt & Plate」から「NEW KURO金具」へ変更した。Brand・Color・Material・Price・Parent・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
 
 ---
 
