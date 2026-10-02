@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.79  
+**Version**: 7.80  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -57,7 +57,7 @@ Kermit Chair USA
 
 **Product**  
 
-Kermit Chair ①  
+Kermit Chair Chesterfield  
 
 **Status**  
 
@@ -301,7 +301,7 @@ Kermit Chair USA
 
 **Product**  
 
-Kermit Chair ②  
+Kermit Chair SANDANBARA  
 
 **Status**  
 
@@ -520,7 +520,7 @@ Black
 
 ### Industrial Attribute  
 
-Carrying Tote（Kermit Chair①②共通使用、2脚収納可。Version 7.28にて、MARI様のご指示によりKermit Chair②の子部品群（FUR-008〜FUR-011）の直後の番号へ移動。以降のFurniture IDを1つずつ繰り下げ）  
+Carrying Tote（Kermit Chair Chesterfield・SANDANBARA共通使用、2脚収納可。Version 7.28にて、MARI様のご指示によりKermit Chair SANDANBARAの子部品群（FUR-008〜FUR-011）の直後の番号へ移動。以降のFurniture IDを1つずつ繰り下げ）  
 
 ### Price  
 
@@ -4097,7 +4097,7 @@ nodel design
 
 **Product**  
 
-Beck Container ①  
+Beck Container #1  
 
 **Status**  
 
@@ -4154,7 +4154,7 @@ Iron
 
 ### Industrial Attribute  
 
-Leg（Beck Container①用）  
+Leg（Beck Container #1用）  
 
 ### Price  
 
@@ -4194,7 +4194,7 @@ Oak
 
 ### Industrial Attribute  
 
-Top Board（STR-013 Beck Container①の蓋へ設置するサイドテーブル天板。MD-001 Storage Blueprint参照）  
+Top Board（STR-013 Beck Container #1の蓋へ設置するサイドテーブル天板。MD-001 Storage Blueprint参照）  
 
 ### Price  
 
@@ -4210,7 +4210,7 @@ nodel design
 
 **Product**  
 
-Beck Container ②  
+Beck Container #2  
 
 **Status**  
 
@@ -4267,7 +4267,7 @@ Iron
 
 ### Industrial Attribute  
 
-Leg（Beck Container②用）  
+Leg（Beck Container #2用）  
 
 ### Price  
 
@@ -4307,7 +4307,7 @@ Walnut
 
 ### Industrial Attribute  
 
-Top Board（STR-016 Beck Container②の蓋へ設置するサイドテーブル天板。MD-001 Storage Blueprint参照）  
+Top Board（STR-016 Beck Container #2の蓋へ設置するサイドテーブル天板。MD-001 Storage Blueprint参照）  
 
 ### Price  
 
@@ -4345,7 +4345,7 @@ Black Skin Iron
 
 ### Industrial Attribute  
 
-Container Extension Frame（Beck Container①・②間の拡張フレーム。公式サイズ830×383×50mm、重量3kg、耐荷重20kg。出典：nodeldesign.com/project-container-bridge）  
+Container Extension Frame（Beck Container #1・#2間の拡張フレーム。公式サイズ830×383×50mm、重量3kg、耐荷重20kg。出典：nodeldesign.com/project-container-bridge）  
 
 ### Price  
 
@@ -7116,6 +7116,12 @@ MARI様のご確認（2026-10-02）に基づき、数量が複数の品のPrice�
 ## Version 7.79
 
 MARI様のご確認（2026-10-02）に基づき、SHL-002（W3.8 ROPE〈DEVISE ver.〉、2個）の記載額¥21,780が2個の合計であることを確認し、注記を追記した。金額は変わらない。これで数量が複数の品のPriceは、すべて合計で統一された。
+
+---
+
+## Version 7.80
+
+MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。
 
 ---
 
