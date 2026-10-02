@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.23
+3.24
 
 # Status
 
@@ -246,7 +246,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | 2026-09-23 | Furniture | FUR-033 Winter Top Quilt | 候補（Enlightened Equipment Accomplice／UGQ Outdoor Tango Duo）の検討を終了。冬用キルトはSnow Peak ダウン システムオフトン スリムマットセット（FUR-032）を採用（プロジェクトオーナー決定）。FUR-033はMD-004 Version 7.54でRetired（FUR-032へ統合）。※本行は標準運用化（2026-09-27）以前の記録のため、詳細記録は保持していない。 |
 | 2026-09-26 | Fire | Wood Stove（FIR-036〜042） | FIREGRAPHIX BLISS-SPを正式採用（MARI様決定）。MT.SUMI Aura FGとの比較検討を経て決定。詳細な検討記録は下記「Fire — Wood Stove 選定記録」を参照。 |
 | 2026-09-27 | Furniture | FUR-036 Ofuton Warm Adapter | Snow Peak オフトン ウォームアダプター（BD-066）を正式決定（Status: Essential、数量2、MARI様決定）。CZ-001での事前検討記録は無く、MD-004へ直接新規登録された。詳細はMD-004参照。 |
-| 2026-09-27 | Storage | ShellCon25 HEXA／TCのBedding Module転用検討 | ShellCon25 HEXA単独、および①＋②の2箱体制の両方で「FUR-032（掛け布団収納ケース×2・マット収納ケース×2）＋FUR-036（ウォームアダプター×2）」全6点の収納可否を検証したが、床面積不足により不採用。既存の収納割当（①＝Bedding Module、②＝Light & Aroma Module）を維持。詳細は下記「Storage — Bedding Module収納検証」を参照。 |
+| 2026-09-27 | Storage | ShellCon25 HEXA／TCのBedding Module転用検討 | ShellCon25 HEXA単独、およびシェルコン2台体制（HEXA・TC）の両方で「FUR-032（掛け布団収納ケース×2・マット収納ケース×2）＋FUR-036（ウォームアダプター×2）」全6点の収納可否を検証したが、床面積不足により不採用。既存の収納割当（HEXA＝Bedding Module、TC＝Light & Aroma Module）を維持。詳細は下記「Storage — Bedding Module収納検証」を参照。 |
 | 2026-09-28 | Furniture | Winter Sleeping Mat（FUR-034）／Pad Sheet（FUR-035） | BLACK ZONE MAT×2（FUR-034）・HOTEL CAMPS リバーシブルホットカバー×2（FUR-035）を正式決定（Status: Essential、MARI様決定）。MD-004 Version 7.64と連動。詳細な検討記録は下記「Furniture — Winter Sleeping Mat / Pad Sheet 選定記録」を参照。 |
 | 2026-09-29 | Furniture | FUR-036 Ofuton Warm Adapter | §Purpose「比較検討の必須化」（N-12）の制定に伴い、比較を経ずに登録されていたFUR-036を、Status = Essentialのままさかのぼって比較する対象としてUnder Considerationへ掲載（MARI様決定）。 |
 | 2026-09-30 | Furniture | FUR-036 Ofuton Warm Adapter | さかのぼっての比較（Sea to Summit Reactor Fleeceweight／Coleman フリースインナー 封筒型）の結果、FUR-032専用設計でマットへ固定できる唯一の候補であるSnow Peak オフトン ウォームアダプター（BD-066）の継続採用を決定（Status: Essentialのまま、MARI様決定）。詳細な検討記録は下記「Furniture — Ofuton Warm Adapter 再比較記録」を参照。 |
@@ -299,7 +299,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 **決定**：ShellCon25 HEXA／TCをBedding Module（寝具収納）へ転用する案は不採用。既存の収納割当（ShellCon25 HEXA＝Bedding Module、ShellCon25 TC＝Light & Aroma Module〈MD-001でVerified済み〉）を維持する。
 
-**検討の発端**：FUR-032（ダウン システムオフトン ワイドマットセット、掛け布団収納ケース×2＋マット収納ケース×2）とFUR-036（オフトン ウォームアダプター×2）の合計6点が、ShellCon25 HEXA（内寸405×290×195mm）単体に収まるかを検証したのが起点。単体では収まらないと判明したため、ShellCon25 TC（同サイズ）も動員した2箱体制での収納も追加検証した。
+**検討の発端**：FUR-032（ダウン システムオフトン ワイドマットセット、掛け布団収納ケース×2＋マット収納ケース×2）とFUR-036（オフトン ウォームアダプター×2）の合計6点が、ShellCon25 HEXA（内寸405×290×195mm）単体に収まるかを検証したのが起点。単体では収まらないと判明したため、ShellCon25 TC（同サイズ）も動員したシェルコン2台体制での収納も追加検証した。
 
 **アイテムの床面積・高さ（円柱状収納袋、寝かせて1層で収める前提）**
 
@@ -311,18 +311,18 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 
 **容量計算**
 
-- 箱1個あたりの床面積：40.5×29.0＝1,174.5cm²
-- 箱2個合計：2,349cm²
+- シェルコン1台あたりの床面積：40.5×29.0＝1,174.5cm²
+- シェルコン2台合計：2,349cm²
 - 全アイテム（Q×2、M×2、W×2）の床面積合計：700×2＋390×2＋400×2＝2,980cm²
-- **不足**：2,980cm² − 2,349cm² ＝ 約631cm²（約27%不足）。2箱体制でも全6点は収まらない。
+- **不足**：2,980cm² − 2,349cm² ＝ 約631cm²（約27%不足）。シェルコン2台体制でも全6点は収まらない。
 
-**組み合わせパターンの検証（2箱体制）**
+**組み合わせパターンの検証（シェルコン2台体制）**
 
-- パターンA（掛け布団を諦める）：箱①＝M×2（66%）、箱②＝W×2（68%）→どちらも余裕で収まるが、Q×2の行き場がなくなる
-- パターンB（掛け布団を活かす）：箱①＝Q×1＋M×1（93%）、箱②＝Q×1＋M×1（93%）→Qは2個とも収まる見込みだが、W×2の行き場がなくなる
-- **結論**：どの組み合わせでも、必ず2点が行き場を失う。6点全部を2箱に収める組み合わせは存在しない。
+- パターンA（掛け布団を諦める）：HEXA＝M×2（66%）、TC＝W×2（68%）→どちらも余裕で収まるが、Q×2の行き場がなくなる
+- パターンB（掛け布団を活かす）：HEXA＝Q×1＋M×1（93%）、TC＝Q×1＋M×1（93%）→Qは2個とも収まる見込みだが、W×2の行き場がなくなる
+- **結論**：どの組み合わせでも、必ず2点が行き場を失う。6点全部を2台に収める組み合わせは存在しない。
 
-**付随する制約**：掛け布団収納ケース（Q）は直径20cmで、箱の内寸19.5cmを単体でも0.5cm超過しており、この時点で常にリスクを抱えている。また、ShellCon25 TCは現状Light & Aroma Module（Filoméla INCENSE CHAMBER、DEVADEVA、KURASHI MADE DOME LOOK、RT-01AC01／ECHO LAMP、VALO SHADE、TARP to TARP×Lampup Glass Shade、MMM Pocket Shade等）の固定収納先としてMD-001でVerified済みであり、転用する場合はこれらの照明・香り系装備一式の新しい収納先を別途用意する必要がある。
+**付随する制約**：掛け布団収納ケース（Q）は直径20cmで、シェルコンの内寸19.5cmを単体でも0.5cm超過しており、この時点で常にリスクを抱えている。また、ShellCon25 TCは現状Light & Aroma Module（Filoméla INCENSE CHAMBER、DEVADEVA、KURASHI MADE DOME LOOK、RT-01AC01／ECHO LAMP、VALO SHADE、TARP to TARP×Lampup Glass Shade、MMM Pocket Shade等）の固定収納先としてMD-001でVerified済みであり、転用する場合はこれらの照明・香り系装備一式の新しい収納先を別途用意する必要がある。
 
 **MARI様のご判断**：「結局全部入らないのなら、やめておく」として転用を見送り。ShellCon25 HEXA・TCとも既存の収納割当のまま据え置く。
 
@@ -437,6 +437,7 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 3.21 | 2026-09-30 | FUR-036のさかのぼっての比較を完了。MARI様のご決定に基づき、Snow Peak オフトン ウォームアダプター（BD-066）の継続採用をDecision Logへ記録し、詳細記録「Furniture — Ofuton Warm Adapter 再比較記録」（Sea to Summit Reactor Fleeceweight・Coleman フリースインナー 封筒型との比較）を新設した。Furniture Under ConsiderationからFUR-036を外し、Confirmed — Purchase PendingのNoteと§Purposeの記述を比較完了に合わせて改めた。Patch Version。 |
 | 3.22 | 2026-09-30 | MARI様のご決定・ご指示に基づき、(1) Light Under ConsiderationのLF1984を「LGT-043への充当を検討中」から「MD-004未登録。検討中は本文書とCZ-002にのみ記載し、購入時にLGT-04番台の新規IDを付番」へ改めた。(2) Carrying Case for STR-019（MD-004: STR-034）のSearch CriteriaへSizeを追加（マチはほぼ不要で薄型で可、内寸の横幅830mm以上・高さ383mm以上）。 |
 | 3.23 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |
+| 3.24 | 2026-10-02 | MARI様のご指示に基づき、ShellCon25の収納検証（2026-09-27、Storage — Bedding Module収納検証）の記述から「箱」の表現をやめ、「シェルコン」「HEXA／TC」へ改めた。「①＋②の2箱体制」を「シェルコン2台体制（HEXA・TC）」、「箱①」「箱②」を「HEXA」「TC」、「箱1個あたり」「箱2個合計」を「シェルコン1台あたり」「シェルコン2台合計」へ変更した。検証内容・数値・結論に変更はない。Version History内の過去の記述は原文のまま保持した。Patch Version。 |
 
 ---
 
