@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.81  
+**Version**: 7.82  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -1424,7 +1424,7 @@ Lantern Stand
 
 ### Price  
 
-¥95,000  
+¥99,500  
 
 ---  
 
@@ -1985,7 +1985,7 @@ Portable LED Lantern
 
 ### Price  
 
-¥48,890  
+¥48,990  
 
 ---  
 
@@ -2707,7 +2707,7 @@ Portable LED Lantern
 
 ### Price  
 
-¥13,970  
+¥14,300  
 
 ---  
 
@@ -2923,7 +2923,7 @@ Airlight Shade
 
 ### Price  
 
-¥50,000  
+¥52,999  
 
 ---  
 
@@ -3657,7 +3657,7 @@ Storage Container
 
 ### Price  
 
-¥27,500  
+¥42,900  
 
 ---  
 
@@ -7128,6 +7128,12 @@ MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改
 ## Version 7.81
 
 MARI様のご指示（2026-10-02）に基づき、SOMA Chairの名称末尾の丸数字を改めた。FUR-013（DEVISE WORKS × SomAbito）の旧名称「SOMA Chair ①」をSOMA CHAIR DEVISE MODELへ、FUR-014（SomAbito単体）の旧名称「SOMA Chair ②」をSOMA Chairへ変更した。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。Patch Version。
+
+---
+
+## Version 7.82
+
+MARI様のご指示(2026-10-02)に基づき、購入履歴と台帳のPriceを照合し、高い方の金額を採用した。STR-001、LGT-001、LGT-035、LGT-016、LGT-029の5件を更新。Furnitureドメインは照合の結果、現行記載で確定。Patch Version。
 
 ---
 
