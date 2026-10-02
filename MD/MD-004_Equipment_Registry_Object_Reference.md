@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.82  
+**Version**: 7.83  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -5039,6 +5039,9 @@ Owned
 - FIR-003  
 - FIR-004  
 - FIR-005  
+- FIR-006  
+- FIR-007  
+- FIR-008  
 
 ### Color  
 
@@ -5105,7 +5108,7 @@ Trivet（五徳）
 
 **Product**  
 
-カスタムベロ（ナターシャ・マチルダ・アンナ・ジェーン）  
+カスタムベロ（マチルダ）  
 
 **Status**  
 
@@ -5124,16 +5127,140 @@ Gray
 
 Nitrided Iron（窒化処理）  
 
+### Graphic Attribute  
+
+Bunny Girl Series（Cutout）  
+
 ### Industrial Attribute  
 
-Rodan Custom Option Part（ベロ）  
+Rodan Custom Option Part（ベロ。半月スタイル時の前框〈カマチ〉押さえ部分に使用）  
 
 ### Price  
 
-¥11,800  
+¥2,950  
 
 ---  
 ## FIR-004  
+
+**Brand**  
+
+サンゾー工務店  
+
+**Product**  
+
+カスタムベロ（ジェーン）  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-001  
+
+
+### Color  
+
+Gray  
+
+### Material  
+
+Nitrided Iron（窒化処理）  
+
+### Graphic Attribute  
+
+Bunny Girl Series（Cutout）  
+
+### Industrial Attribute  
+
+Rodan Custom Option Part（ベロ。半月スタイル時の前框〈カマチ〉押さえ部分に使用）  
+
+### Price  
+
+¥2,950  
+
+---  
+## FIR-005  
+
+**Brand**  
+
+サンゾー工務店  
+
+**Product**  
+
+カスタムベロ（ナターシャ）  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-001  
+
+
+### Color  
+
+Gray  
+
+### Material  
+
+Nitrided Iron（窒化処理）  
+
+### Graphic Attribute  
+
+Bunny Girl Series（Cutout）  
+
+### Industrial Attribute  
+
+Rodan Custom Option Part（ベロ。半月スタイル時の前框〈カマチ〉押さえ部分に使用）  
+
+### Price  
+
+¥2,950  
+
+---  
+## FIR-006  
+
+**Brand**  
+
+サンゾー工務店  
+
+**Product**  
+
+カスタムベロ（アンナ）  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-001  
+
+
+### Color  
+
+Gray  
+
+### Material  
+
+Nitrided Iron（窒化処理）  
+
+### Graphic Attribute  
+
+Bunny Girl Series（Cutout）  
+
+### Industrial Attribute  
+
+Rodan Custom Option Part（ベロ。半月スタイル時の前框〈カマチ〉押さえ部分に使用）  
+
+### Price  
+
+¥2,950  
+
+---  
+## FIR-007  
 
 **Brand**  
 
@@ -5169,7 +5296,7 @@ Rodan Custom Option Part（半月）
 ¥23,650  
 
 ---  
-## FIR-005  
+## FIR-008  
 
 **Brand**  
 
@@ -5205,7 +5332,7 @@ Fire Pit Carrying Case（Storageドメインより移設。Version 7.25）
 ¥20,900  
 
 ---  
-## FIR-006  
+## FIR-009  
 
 **Brand**  
 
@@ -5221,7 +5348,7 @@ Owned
 
 ### Child Components  
 
-- FIR-007  
+- FIR-010  
 
 ### Color  
 
@@ -5245,7 +5372,7 @@ Fire Table (stand for FIR-001 RODAN BRICK)
 
 ---  
 
-## FIR-007  
+## FIR-010  
 
 **Brand**  
 
@@ -5261,7 +5388,7 @@ Owned
 
 **Parent**  
 
-FIR-006  
+FIR-009  
 
 
 ### Color  
@@ -5282,7 +5409,7 @@ Iron Table Carrying Case（Storageドメインより移設。Version 7.25）
 
 ---  
 
-## FIR-008  
+## FIR-011  
 
 **Brand**  
 
@@ -5298,7 +5425,7 @@ Owned
 
 ### Child Components  
 
-- FIR-009  
+- FIR-012  
 
 ### Color  
 
@@ -5322,7 +5449,7 @@ Fire Tool Stand
 
 ---  
 
-## FIR-009  
+## FIR-012  
 
 **Brand**  
 
@@ -5338,7 +5465,7 @@ Owned
 
 **Parent**  
 
-FIR-008  
+FIR-011  
 
 ### Quantity  
 
@@ -5362,7 +5489,7 @@ Hook
 ¥6,400（2個合計。1個¥3,200。MARI様確認）  
 
 ---  
-## FIR-010  
+## FIR-013  
 
 **Brand**  
 
@@ -5398,7 +5525,7 @@ Axe
 
 ---  
 
-## FIR-011  
+## FIR-014  
 
 **Brand**  
 
@@ -5434,7 +5561,7 @@ Machete
 
 ---  
 
-## FIR-012  
+## FIR-015  
 
 **Brand**  
 
@@ -5465,7 +5592,7 @@ Fire Knife
 ¥54,450  
 
 ---  
-## FIR-013  
+## FIR-016  
 
 **Brand**  
 
@@ -5481,8 +5608,8 @@ Owned
 
 ### Child Components  
 
-- FIR-014  
-- FIR-015  
+- FIR-017  
+- FIR-018  
 
 ### Color  
 
@@ -5503,122 +5630,6 @@ Fire Tongs
 ### Price  
 
 ¥10,780  
-
----  
-
-## FIR-014  
-
-**Brand**  
-
-asimocrafts  
-
-**Product**  
-
-asigrip  
-
-**Parent**  
-
-FIR-013  
-
-**Status**  
-
-Owned  
-
-### Color  
-
-Brown  
-
-### Material  
-
-Wood  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Grip Custom  
-
-### Price  
-
-¥6,380  
-
----  
-
-## FIR-015  
-
-**Brand**  
-
-WHAT WE WANT  
-
-**Product**  
-
-WWW_SAYA  
-
-**Status**  
-
-Owned  
-
-**Parent**  
-
-FIR-013  
-
-
-### Color  
-
-Brown  
-
-### Material  
-
-Walnut  
-
-### Industrial Attribute  
-
-Sheath Case（PULSE用）  
-
-### Price  
-
-¥9,900  
-
----  
-## FIR-016  
-
-**Brand**  
-
-Snow Peak  
-
-**Product**  
-
-焚き火ツールPro  
-
-**Status**  
-
-Owned  
-
-### Child Components  
-
-- FIR-017  
-
-### Color  
-
-Black  
-
-### Material  
-
-Steel  
-
-### Graphic Attribute  
-
-None  
-
-### Industrial Attribute  
-
-Ash Scoop  
-
-### Price  
-
-¥13,200  
 
 ---  
 
@@ -5658,11 +5669,127 @@ Grip Custom
 
 ### Price  
 
-¥4,810  
+¥6,380  
 
 ---  
 
 ## FIR-018  
+
+**Brand**  
+
+WHAT WE WANT  
+
+**Product**  
+
+WWW_SAYA  
+
+**Status**  
+
+Owned  
+
+**Parent**  
+
+FIR-016  
+
+
+### Color  
+
+Brown  
+
+### Material  
+
+Walnut  
+
+### Industrial Attribute  
+
+Sheath Case（PULSE用）  
+
+### Price  
+
+¥9,900  
+
+---  
+## FIR-019  
+
+**Brand**  
+
+Snow Peak  
+
+**Product**  
+
+焚き火ツールPro  
+
+**Status**  
+
+Owned  
+
+### Child Components  
+
+- FIR-020  
+
+### Color  
+
+Black  
+
+### Material  
+
+Steel  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Ash Scoop  
+
+### Price  
+
+¥13,200  
+
+---  
+
+## FIR-020  
+
+**Brand**  
+
+asimocrafts  
+
+**Product**  
+
+asigrip  
+
+**Parent**  
+
+FIR-019  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Brown  
+
+### Material  
+
+Wood  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Grip Custom  
+
+### Price  
+
+¥4,810  
+
+---  
+
+## FIR-021  
 
 **Brand**  
 
@@ -5698,7 +5825,7 @@ Fire Blower
 
 ---  
 
-## FIR-019  
+## FIR-022  
 
 **Brand**  
 
@@ -5734,7 +5861,7 @@ Fire Poker
 
 ---  
 
-## FIR-020  
+## FIR-023  
 
 **Brand**  
 
@@ -5770,7 +5897,7 @@ Roasting Fork（全長約42cm、先端保護用レザーケース付き）
 
 ---  
 
-## FIR-021  
+## FIR-024  
 
 **Brand**  
 
@@ -5801,7 +5928,7 @@ Fireside Fork
 ¥11,800  
 
 ---  
-## FIR-022  
+## FIR-025  
 
 **Brand**  
 
@@ -5832,7 +5959,7 @@ Fireside Spatula
 ¥11,800  
 
 ---  
-## FIR-023  
+## FIR-026  
 
 **Brand**  
 
@@ -5848,11 +5975,11 @@ Owned
 
 ### Child Components  
 
-- FIR-024  
-- FIR-025  
-- FIR-026  
 - FIR-027  
 - FIR-028  
+- FIR-029  
+- FIR-030  
+- FIR-031  
 
 ### Color  
 
@@ -5876,7 +6003,7 @@ Torch
 
 ---  
 
-## FIR-024  
+## FIR-027  
 
 **Brand**  
 
@@ -5892,7 +6019,7 @@ Owned
 
 **Parent**  
 
-FIR-023  
+FIR-026  
 
 ### Color  
 
@@ -5916,7 +6043,7 @@ Grip Custom
 
 ---  
 
-## FIR-025  
+## FIR-028  
 
 **Brand**  
 
@@ -5932,7 +6059,7 @@ Essential
 
 **Parent**  
 
-FIR-023  
+FIR-026  
 
 ### Color  
 
@@ -5956,7 +6083,7 @@ Gas Tube Cover
 
 ---  
 
-## FIR-026  
+## FIR-029  
 
 **Brand**  
 
@@ -5972,7 +6099,7 @@ Upgrade
 
 **Parent**  
 
-FIR-023  
+FIR-026  
 
 ### Color  
 
@@ -5996,7 +6123,7 @@ Torch Barrel
 
 ---  
 
-## FIR-027  
+## FIR-030  
 
 **Brand**  
 
@@ -6012,7 +6139,7 @@ Owned
 
 **Parent**  
 
-FIR-023  
+FIR-026  
 
 ### Color  
 
@@ -6036,7 +6163,7 @@ Torch Barrel
 
 ---  
 
-## FIR-028  
+## FIR-031  
 
 **Brand**  
 
@@ -6052,7 +6179,7 @@ Owned
 
 **Parent**  
 
-FIR-023  
+FIR-026  
 
 ### Color  
 
@@ -6076,7 +6203,7 @@ Torch Knob
 
 ---  
 
-## FIR-029  
+## FIR-032  
 
 **Brand**  
 
@@ -6112,7 +6239,7 @@ Kerosene Heater
 
 ---  
 
-## FIR-030  
+## FIR-033  
 
 **Brand**  
 
@@ -6143,7 +6270,7 @@ Fire-Resistant Sheet
 ¥7,480  
 
 ---  
-## FIR-031  
+## FIR-034  
 
 **Brand**  
 
@@ -6178,7 +6305,7 @@ Fireside Stand
 ¥39,050  
 
 ---  
-## FIR-032  
+## FIR-035  
 
 **Brand**  
 
@@ -6194,7 +6321,7 @@ Owned
 
 ### Child Components  
 
-- FIR-033  
+- FIR-036  
 
 
 ### Color  
@@ -6214,7 +6341,7 @@ Gas Stove
 ¥38,500  
 
 ---  
-## FIR-033  
+## FIR-036  
 
 **Brand**  
 
@@ -6230,7 +6357,7 @@ Owned
 
 **Parent**  
 
-FIR-032  
+FIR-035  
 
 
 ### Color  
@@ -6250,7 +6377,7 @@ Stove Bag
 ¥8,800  
 
 ---  
-## FIR-034  
+## FIR-037  
 
 **Brand**  
 
@@ -6281,7 +6408,7 @@ Fire Starter Case
 ¥9,020  
 
 ---  
-## FIR-035  
+## FIR-038  
 
 **Brand**  
 
@@ -6318,7 +6445,7 @@ Hook
 
 ---  
 
-## FIR-036  
+## FIR-039  
 
 **Brand**  
 
@@ -6334,12 +6461,12 @@ Essential
 
 ### Child Components  
 
-- FIR-037  
-- FIR-038  
-- FIR-039  
 - FIR-040  
 - FIR-041  
 - FIR-042  
+- FIR-043  
+- FIR-044  
+- FIR-045  
 
 ### Color  
 
@@ -6359,7 +6486,7 @@ Wood Stove（薪ストーブ、二次燃焼式。W429×H359×D535mm、16kg、煙
 
 ---  
 
-## FIR-037  
+## FIR-040  
 
 **Brand**  
 
@@ -6375,7 +6502,7 @@ Essential
 
 **Parent**  
 
-FIR-036  
+FIR-039  
 
 ### Color  
 
@@ -6387,7 +6514,7 @@ Aluminum
 
 ### Industrial Attribute  
 
-Stove Stand（4分割組み立て式、組立時W436×H255×D395mm、2.5kg。分解時はFIR-042ソフトコンテナへ本体と重ねて収納予定。メーカー公式ショップに「薪ストーブ本体と同等のサイズに折りたためて一緒に収納できる」旨の記載あり〈FIREGRAPHIX公式Yahoo!ショッピング、2026-09-28確認〉。収納時の具体寸法は公式未記載）  
+Stove Stand（4分割組み立て式、組立時W436×H255×D395mm、2.5kg。分解時はFIR-045ソフトコンテナへ本体と重ねて収納予定。メーカー公式ショップに「薪ストーブ本体と同等のサイズに折りたためて一緒に収納できる」旨の記載あり〈FIREGRAPHIX公式Yahoo!ショッピング、2026-09-28確認〉。収納時の具体寸法は公式未記載）  
 
 ### Price  
 
@@ -6395,7 +6522,7 @@ Stove Stand（4分割組み立て式、組立時W436×H255×D395mm、2.5kg。分
 
 ---  
 
-## FIR-038  
+## FIR-041  
 
 **Brand**  
 
@@ -6411,7 +6538,7 @@ Essential
 
 **Parent**  
 
-FIR-036  
+FIR-039  
 
 ### Color  
 
@@ -6423,7 +6550,7 @@ Stainless Steel（SUS304）
 
 ### Industrial Attribute  
 
-Chimney, Base（入れ子式5分割、収納時350mm×Φ108mm、組立後1535mm、1.2kg。FIR-041と共にFIR-036庫内へ収納可能、公式パッキング図で確認済み）  
+Chimney, Base（入れ子式5分割、収納時350mm×Φ108mm、組立後1535mm、1.2kg。FIR-044と共にFIR-039庫内へ収納可能、公式パッキング図で確認済み）  
 
 ### Price  
 
@@ -6431,7 +6558,7 @@ Chimney, Base（入れ子式5分割、収納時350mm×Φ108mm、組立後1535mm�
 
 ---  
 
-## FIR-039  
+## FIR-042  
 
 **Brand**  
 
@@ -6447,7 +6574,7 @@ Essential
 
 **Parent**  
 
-FIR-036  
+FIR-039  
 
 ### Color  
 
@@ -6459,7 +6586,7 @@ Stainless Steel（SUS304）
 
 ### Industrial Attribute  
 
-Chimney, Extension（入れ子式5分割、収納時350mm×Φ82mm、使用時1550mm、960g。ヘロスシェルター〈SHL-004〉運用に必要な延長煙突。FIR-036庫内へ収納可能、公式パッキング図で確認済み）  
+Chimney, Extension（入れ子式5分割、収納時350mm×Φ82mm、使用時1550mm、960g。ヘロスシェルター〈SHL-004〉運用に必要な延長煙突。FIR-039庫内へ収納可能、公式パッキング図で確認済み）  
 
 ### Price  
 
@@ -6467,7 +6594,7 @@ Chimney, Extension（入れ子式5分割、収納時350mm×Φ82mm、使用時155
 
 ---  
 
-## FIR-040  
+## FIR-043  
 
 **Brand**  
 
@@ -6483,7 +6610,7 @@ Essential
 
 **Parent**  
 
-FIR-036  
+FIR-039  
 
 ### Color  
 
@@ -6495,7 +6622,7 @@ Stainless Steel（SUS304）
 
 ### Industrial Attribute  
 
-Chimney Top / Spark Arrester（Φ67〜80mmフレキシブル対応、基本煙突・延長煙突いずれのトップにも取付可能。長さ230mm×径85mm、190g。FIR-036庫内へ収納可能）  
+Chimney Top / Spark Arrester（Φ67〜80mmフレキシブル対応、基本煙突・延長煙突いずれのトップにも取付可能。長さ230mm×径85mm、190g。FIR-039庫内へ収納可能）  
 
 ### Price  
 
@@ -6503,7 +6630,7 @@ Chimney Top / Spark Arrester（Φ67〜80mmフレキシブル対応、基本煙�
 
 ---  
 
-## FIR-041  
+## FIR-044  
 
 **Brand**  
 
@@ -6519,7 +6646,7 @@ Essential
 
 **Parent**  
 
-FIR-036  
+FIR-039  
 
 ### Color  
 
@@ -6531,7 +6658,7 @@ Stainless Steel（SUS304）
 
 ### Industrial Attribute  
 
-Chimney Contact Guard（Φ67〜106mm対応、使用時約70cmにスライド、収納時約39cm、1.3kg。シルナイロン製シェルター〈SHL-004〉のチャック式煙突穴通過部における生地との接触・焦げを防止。FIR-036庫内収納可、メーカー公式明記）  
+Chimney Contact Guard（Φ67〜106mm対応、使用時約70cmにスライド、収納時約39cm、1.3kg。シルナイロン製シェルター〈SHL-004〉のチャック式煙突穴通過部における生地との接触・焦げを防止。FIR-039庫内収納可、メーカー公式明記）  
 
 ### Price  
 
@@ -6539,7 +6666,7 @@ Chimney Contact Guard（Φ67〜106mm対応、使用時約70cmにスライド、�
 
 ---  
 
-## FIR-042  
+## FIR-045  
 
 **Brand**  
 
@@ -6555,7 +6682,7 @@ Essential
 
 **Parent**  
 
-FIR-036  
+FIR-039  
 
 ### Color  
 
@@ -6567,7 +6694,7 @@ Nylon
 
 ### Industrial Attribute  
 
-Carrying Bag（本体専用、内寸610×450×400mm。FIR-036本体〈535×429×359mm〉が収まる設計。分解したFIR-037ポータブルスタンドを本体の下に敷いて重ねる形での同時収納が可能（FIR-037がストーブ本体と同等サイズに折りたためる旨のメーカー公式記載に基づく。現物での収納確認は購入後））  
+Carrying Bag（本体専用、内寸610×450×400mm。FIR-039本体〈535×429×359mm〉が収まる設計。分解したFIR-040ポータブルスタンドを本体の下に敷いて重ねる形での同時収納が可能（FIR-040がストーブ本体と同等サイズに折りたためる旨のメーカー公式記載に基づく。現物での収納確認は購入後））  
 
 ### Price  
 
@@ -7134,6 +7261,12 @@ MARI様のご指示（2026-10-02）に基づき、SOMA Chairの名称末尾の�
 ## Version 7.82
 
 MARI様のご指示(2026-10-02)に基づき、購入履歴と台帳のPriceを照合し、高い方の金額を採用した(STR-002・STR-008はMARI様の指定額)。Storage 8件(STR-001、002、007、008、014、015、017、018)とLight 5件(LGT-001、016、019、029、035)を更新。STR-015・STR-018は2組合計で統一。Furniture・Storage・Lightは、照合の結果、上記以外は現行記載で確定。Patch Version。
+
+---
+
+## Version 7.83
+
+MARI様のご決定（2026-10-02）に基づき、FIR-003「カスタムベロ（ナターシャ・マチルダ・アンナ・ジェーン）」（¥11,800）を、FIR-003 カスタムベロ（マチルダ）／FIR-004 カスタムベロ（ジェーン）／FIR-005 カスタムベロ（ナターシャ）／FIR-006 カスタムベロ（アンナ）の4件へ分解した。各件のPriceは4枚合計¥11,800の折半で¥2,950。4件ともGraphic Attributeに Bunny Girl Series（Cutout）を追加し、Industrial Attributeへ「半月スタイル時の前框〈カマチ〉押さえ部分に使用」を加えた。これに伴い、旧FIR-004〜FIR-042をFIR-007〜FIR-045へ+3繰り下げ、FIR-001のChild ComponentsをFIR-002〜FIR-008へ更新した（FUR-012の前例と同じ形式）。CZ-001 Ver.3.25・CZ-002 Ver.3.12・MD-001 Ver.2.32・OP-010 Ver.3.4が連動して本文のFIR参照を新番号へ更新した。Version History内の過去の記述は原文のまま保持している。Patch Version。
 
 ---
 
