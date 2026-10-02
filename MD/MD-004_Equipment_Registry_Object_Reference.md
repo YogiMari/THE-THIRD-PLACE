@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.78  
+**Version**: 7.79  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -6652,7 +6652,7 @@ Guy Rope（ガイロープ）
 
 ### Price  
 
-¥21,780  
+¥21,780（2個合計。MARI様確認）  
 
 ---  
 ## SHL-003  
@@ -7110,6 +7110,12 @@ MARI様のご決定（2026-09-29）に基づき、38-kT用シェードの候補2
 ## Version 7.78
 
 MARI様のご確認（2026-10-02）に基づき、数量が複数の品のPriceを「合計」で統一した。LGT-028（3個）、STR-033（4個）、FIR-035（7個）は記載額が合計であることを確認し、注記を追記した。STR-020は記載の¥16,500が1組の価格であったため、3組合計の¥49,500へ更新した。FIR-009は記載の¥3,200が1個の価格であったため、2個合計の¥6,400へ更新した。SHL-002（2個）は未確認のため変更なし。
+
+---
+
+## Version 7.79
+
+MARI様のご確認（2026-10-02）に基づき、SHL-002（W3.8 ROPE〈DEVISE ver.〉、2個）の記載額¥21,780が2個の合計であることを確認し、注記を追記した。金額は変わらない。これで数量が複数の品のPriceは、すべて合計で統一された。
 
 ---
 
