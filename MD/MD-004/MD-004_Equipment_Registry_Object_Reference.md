@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 8.1  
+**Version**: 8.2  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -243,6 +243,17 @@ MARI様のご決定（2026-10-03）に基づき、Quantityが2のFUR-032・FUR-0
 - FUR-034：Priceを「¥3,564（セール価格）」から「¥7,128（2個合計。1個¥3,564、セール価格。MARI様確認）」へ変更。
 - FUR-035：Priceを「¥9,980（公式サイト価格）」から「¥19,960（2個合計。1個¥9,980、公式サイト価格。MARI様確認）」へ変更。
 - FUR-036：Priceを「¥7,480」から「¥14,960（2個合計。1個¥7,480。MARI様確認）」へ変更。
+
+---
+
+## Version 8.2
+
+MARI様のご指示（2026-10-03）に基づき、Retired記録のFUR-033・LGT-017bの冒頭を、OP-010 Part A §Retirementの記録形式「Retired（Reason）. YYYY-MM-DD.」へ改めた。2件とも、Reasonは他の枠への統合（Merged）である。経緯の本文・Equipment ID・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
+
+### Changes
+
+- FUR-033：冒頭を「Retired.」から「Retired（Merged）. 2026-09-23.」へ変更。日付は、FUR-032への統合を記録したCZ-001 Deliberation Dossier Decision Log（2026-09-23付、プロジェクトオーナー決定）による。MD-004上の反映はVersion 7.54である。
+- LGT-017b：冒頭を「Retired.」から「Retired（Merged）. 2026-09-29.」へ変更。日付は、本文に記載済みのLGT-017aへの統合日（2026-09-29、MARI様のご決定）による。
 
 ---
 
