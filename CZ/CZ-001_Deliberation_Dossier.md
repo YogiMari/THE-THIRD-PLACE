@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.25
+3.26
 
 # Status
 
@@ -322,7 +322,7 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 - パターンB（掛け布団を活かす）：HEXA＝Q×1＋M×1（93%）、TC＝Q×1＋M×1（93%）→Qは2個とも収まる見込みだが、W×2の行き場がなくなる
 - **結論**：どの組み合わせでも、必ず2点が行き場を失う。6点全部を2台に収める組み合わせは存在しない。
 
-**付随する制約**：掛け布団収納ケース（Q）は直径20cmで、シェルコンの内寸19.5cmを単体でも0.5cm超過しており、この時点で常にリスクを抱えている。また、ShellCon25 TCは現状Light & Aroma Module（Filoméla INCENSE CHAMBER、DEVADEVA、KURASHI MADE DOME LOOK、RT-01AC01／ECHO LAMP、VALO SHADE、TARP to TARP×Lampup Glass Shade、MMM Pocket Shade等）の固定収納先としてMD-001でVerified済みであり、転用する場合はこれらの照明・香り系装備一式の新しい収納先を別途用意する必要がある。
+**付随する制約**：掛け布団収納ケース（Q）は直径20cmで、シェルコンの内寸19.5cmを単体でも0.5cm超過しており、この時点で常にリスクを抱えている。また、ShellCon25 TCは現状Light & Aroma Module（Filoméla INCENSE CHAMBER、DEVA DEVA、KURASHI MADE DOME LOOK、RT-01AC01／ECHO LAMP、VALO SHADE、TARP to TARP×Lampup Glass Shade、MMM Pocket Shade等）の固定収納先としてMD-001でVerified済みであり、転用する場合はこれらの照明・香り系装備一式の新しい収納先を別途用意する必要がある。
 
 **MARI様のご判断**：「結局全部入らないのなら、やめておく」として転用を見送り。ShellCon25 HEXA・TCとも既存の収納割当のまま据え置く。
 
@@ -439,6 +439,7 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 3.23 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |
 | 3.24 | 2026-10-02 | MARI様のご指示に基づき、ShellCon25の収納検証（2026-09-27、Storage — Bedding Module収納検証）の記述から「箱」の表現をやめ、「シェルコン」「HEXA／TC」へ改めた。「①＋②の2箱体制」を「シェルコン2台体制（HEXA・TC）」、「箱①」「箱②」を「HEXA」「TC」、「箱1個あたり」「箱2個合計」を「シェルコン1台あたり」「シェルコン2台合計」へ変更した。検証内容・数値・結論に変更はない。Version History内の過去の記述は原文のまま保持した。Patch Version。 |
 | 3.25 | 2026-10-02 | MD-004 Ver.7.83（FIR-003のカスタムベロ4分解、旧FIR-004〜042の+3繰り下げ）と連動し、本文のFIR参照（FIR-025→028、FIR-036〜042→039〜045 ほか）を新番号へ更新した。MARI様のご決定に基づく。改訂履歴の過去の行は原文のまま。Patch Version。 |
+| 3.26 | 2026-10-03 | MD-004 Ver.7.86（LGT-021のProductを「DEVA DEVAの実」へ訂正）と連動し、ShellCon25 TCの現状構成を述べる本文中の略記「DEVADEVA」を「DEVA DEVA」へ改めた。検討内容・Decisionに変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。 |
 
 ---
 
