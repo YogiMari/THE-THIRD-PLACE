@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.23
+**Version**: 4.24
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -54,6 +54,7 @@
 | 暫定採用項目の個別確認 | OP-002, OP-005, OP-006, OP-010, MD-001, BR-002, CZ-001, CZ-002, DB-001 | 暫定採用, 正式採用, N-01, N-03, N-05, N-08, N-09, N-10, N-12, N-13, N-14, 一酸化炭素チェッカー, 設営順序, Partner Value, Coffee Watch Scope, 比較検討の必須化, FUR-036 | 整備バックログで暫定採用した15件をMARI様が個別に確認。14件を正式採用（N-01はチェッカー2個へ修正、N-03は設営順序を変更、N-06は収納・運搬をDeferredへ戻す、N-12は比較検討の必須化へ変更しFUR-036をさかのぼって比較、N-14はCoffee機材もCZ-002で監視へ変更）。N-05・N-16（Field Log）は初回キャンプの試行後に決定。 | Active | 2026-09-29 |
 | 初回キャンプの計画（moss camp field） | DB-001, MD-002, MD-001, OP-006, OP-010 | 初回キャンプ, moss camp field, BOTANICAL, Field Log, Planned, 秋構成, SHL-001, SHL-004, Seasonal Slot A, アーリーチェックイン, 山中湖, Site Requirements | MD-002 Partner ValueとOP-010 Part C §Site Requirementsをもとに行き先を絞り込み、MARI様がmoss camp fieldのBOTANICALオートサイトを2026-10-17〜18に予約（アーリー12:00）。秋構成（Season Kitなし、Seasonal Slot A空け）、Shelter：SHL-001＋SHL-004、寒さ対策は寝具のみ。シェルター内では燃焼器具を使わない（OP-006 §Safety Principles）。§Field LogへPlanned行を追加。 | Active | 2026-09-30 |
 | KN四誌の創刊号発行（Artifact） | KN-001, KN-002, KN-003, KN-004, OP-008, DB-001 | KN, Heritage Chronicle, Cultural Pantheon, Beyond Journey, Atelier Discovery, 創刊号, Artifact, ファッション誌, 参考図版, KN Publication Log | KN四誌の創刊号を、それぞれ別テイストのファッション誌デザインでArtifactとして発行（本文はOP-008 §28によりGitHubに置かない）。Atelier Discoveryの横スクロールを修正し、四誌のデザインを全面改訂、CC BY／CC BY-SA／パブリックドメインの実写写真を参考図版として追加（クレジットは各誌巻末）。誤って作成した重複Artifact 4件は削除。§KN Publication Logへ4誌の発行記録を追加。 | Active | 2026-10-01 |
+| Field Atlas 訪問反映（KARUIZAWA CAMP GOLD）と橘ふれあい公園の採り直し | MD-002, DB-001 | Field Atlas, KARUIZAWA CAMP GOLD, 橘ふれあい公園, 訪問, Atlas Resonance, 10軸, Field Log, 採り直し, 同点, Partner, 軽井沢 | KARUIZAWA CAMP GOLD（2026-09-26〜27）の訪問をMARI様が報告し、10軸を採点して72点・訪問済みへ更新（MD-002 Ver.4.11）。橘ふれあい公園キャンプ場を実感で採り直し（72→66点）、同点の清里オーベルジュとはPartner軸で順位を決めた。順位13〜19位を並べ替え、Field Atlas Radar／Navigator／Ivoryは公開済みページのデータを書き換えて再公開。§Field LogへDone行を追加。 | Active | 2026-10-03 |
 
 ---
 
@@ -91,6 +92,7 @@
 
 | Date | Status | Field | Weather / Temp | Configuration | Went Well | Issues | Follow-up |
 |------|--------|-------|----------------|---------------|-----------|--------|-----------|
+| 2026-09-26〜27 | Done | KARUIZAWA CAMP GOLD（長野県北佐久郡軽井沢町） | — | 林間サイトに宿泊／11:00のアーリーチェックインを予約／使った構成（Season Kit・Shelter等）は未記入 | 薪が高品質／管理棟が綺麗／居心地が良かった／近隣に軽井沢らしい魅力的な買い物スポットがある | 近場のトイレ・炊事場は質が低く（トイレ4・炊事場4）、質の高い設備（トイレ8・お湯が出る炊事場6）は遠い | MD-002 Ver.4.11へ反映済み（72点・訪問済み） |
 | 2026-10-17〜18 | Planned | moss camp field（山梨県南都留郡山中湖村） | — | BOTANICALオートサイト（予約済み）／アーリーチェックイン12:00／秋構成（Season Kitなし、Seasonal Slot A空け）／Shelter：SHL-001＋SHL-004／寒さ対策は寝具のみ／シェルター内で燃焼器具を使わない | — | — | — |
 
 運用ルール：
@@ -172,6 +174,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.21 | 2026-09-30 | 初回キャンプの計画（MARI様のご決定）を記録。§Field Logへ、moss camp field（2026-10-17〜18、BOTANICALオートサイト、アーリー12:00）のStatus = Planned行を追加。Conversation Ledgerへ本会話を追加。Field Logの運用は引き続き暫定であり、帰宅後にDoneへ更新した上で継続の可否を決定する。Patch Version。 |
 | 4.22 | 2026-10-01 | §KN Publication Logへ、KN-001〜004創刊号（2026-09-30発行）の4行を追加。Artifact Linkは共有設定前のため「—」とした（運用ルールどおり）。Conversation Ledgerへ本会話を追加。MARI様のご指示に基づく。Patch Version。 |
 | 4.23 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |
+| 4.24 | 2026-10-03 | MARI様のご報告（KARUIZAWA CAMP GOLD、2026-09-26〜27）に基づき、§Field LogへStatus = Doneの行を追加した（天候・気温と、使った構成〈Season Kit・Shelter等〉は報告がないため記入していない）。Conversation Ledgerへ本会話を追加。MD-002 Ver.4.11（訪問済みへの更新と橘ふれあい公園の採り直し）と連動。Field Logの運用は引き続き暫定であり、継続の可否は初回キャンプ（moss camp field）の後に決定する。Patch Version。 |
 
 ---
 
