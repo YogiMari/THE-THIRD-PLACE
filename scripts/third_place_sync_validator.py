@@ -99,6 +99,36 @@ def read_text(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
+def read_md004_text(path: Path) -> str:
+    """
+    MD-004 is split by domain (OP-008 §11.2): a directory holds the entry
+    file and one file per domain. A single file is read as is. An ID
+    declared in more than one file is a configuration error.
+    """
+    if not path.is_dir():
+        return read_text(path)
+
+    files = sorted(path.glob("MD-004_*.md"))
+    if not files:
+        raise FileNotFoundError(f"No MD-004 files in: {path}")
+
+    seen: dict[str, str] = {}
+    parts: list[str] = []
+    for file in files:
+        text = file.read_text(encoding="utf-8")
+        for line in text.splitlines():
+            match = MD004_ID_HEADER_RE.match(line.strip())
+            if match:
+                if match.group(1) in seen:
+                    raise ValueError(
+                        f"MD-004 ID declared twice: {match.group(1)} "
+                        f"({seen[match.group(1)]}, {file.name})"
+                    )
+                seen[match.group(1)] = file.name
+        parts.append(text)
+    return "\n".join(parts)
+
+
 def normalize(value: str) -> str:
     value = value.strip()
     value = value.replace("　", " ")
@@ -1265,7 +1295,7 @@ def main() -> int:
     parser.add_argument(
         "--md004",
         required=True,
-        help="Path to MD-004",
+        help="Path to MD-004 (the MD/MD-004 folder, or a single file)",
     )
 
     parser.add_argument(
@@ -1301,7 +1331,7 @@ def main() -> int:
     args = parser.parse_args()
 
     try:
-        md004_text = read_text(Path(args.md004))
+        md004_text = read_md004_text(Path(args.md004))
 
         md004 = parse_md004(md004_text)
 

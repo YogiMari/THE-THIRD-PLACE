@@ -63,6 +63,19 @@ def read(path: Path) -> str:
     return path.read_text(encoding="utf-8")
 
 
+def read_doc(root: Path, path: str, doc_id: str) -> str:
+    """A document's text. MD-004 is split by domain (OP-008 §11.2): its entry
+    file is followed by the domain files of the same folder, in domain order."""
+    entry = root / path
+    text = read(entry)
+    if doc_id == "MD-004":
+        order = ("FUR", "LGT", "ARM", "STR", "FIR", "SHL")
+        parts = [p for p in entry.parent.glob("MD-004_*.md") if p != entry]
+        parts.sort(key=lambda p: (order.index(p.stem.split("_")[1]) if p.stem.split("_")[1] in order else len(order), p.name))
+        text += "".join("\n" + read(p) for p in parts)
+    return text
+
+
 def section(text: str, heading: str) -> str:
     """Return the text under a `# ` heading up to the next `# ` heading."""
     start = text.index(heading)
@@ -306,7 +319,10 @@ def last_commits(paths: list[str]) -> dict[str, str]:
         if git("rev-parse", "--is-shallow-repository") == "true" else set()
     out = {}
     for path in paths:
-        line = git("log", "-1", "--format=%H %cs", "--", path)
+        # A Multi-file Document (OP-008 §11.2) lives in a `{SERIES}/{ID}/` folder.
+        parent = Path(path).parent
+        spec = str(parent) if re.fullmatch(ID, parent.name) else path
+        line = git("log", "-1", "--format=%H %cs", "--", spec)
         if line:
             sha, date = line.split()
             if sha not in boundary:
@@ -326,7 +342,7 @@ def build(root: Path) -> dict:
 
     corpus = []
     for d in docs:
-        text = read(root / d["path"])
+        text = read_doc(root, d["path"], d["id"])
         d.update(profiles.get(d["id"], {}))
         d["version"] = parse_version(text)
         d["lines"] = text.count("\n")
@@ -352,7 +368,7 @@ def build(root: Path) -> dict:
         corpus.append({"id": "ARCHIVE", "path": f"archive/{name}", "text": read(root / "archive" / name)})
 
     gallery = {
-        "MD-004": parse_registry(read(root / "MD/MD-004_Equipment_Registry_Object_Reference.md")),
+        "MD-004": parse_registry(read_doc(root, "MD/MD-004/MD-004_Equipment_Registry_Object_Reference.md", "MD-004")),
         "MD-003": parse_registry(read(root / "MD/MD-003_Galley_Fare.md")),
     }
 

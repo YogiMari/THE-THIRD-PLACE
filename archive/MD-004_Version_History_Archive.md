@@ -1,10 +1,10 @@
 # MD-004 Version History Archive
 
-本ファイルは、MD-004 Equipment Registry Object Reference の Version History のうち、Version 7.0〜7.57（本文に残る直近10版〈Version 7.58〜〉より前の履歴）を保持する。
+本ファイルは、MD-004 Equipment Registry Object Reference の Version History のうち、Version 7.0〜7.82（本文に残る直近の版〈Version 7.83〜〉より前の履歴）を保持する。
 
-OP-008 §19 Rule DOC-09に基づき、S-10（改訂履歴の圧縮）により本文から移設した。原文のまま保持し、要約・削除は行っていない。
+OP-008 §19 Rule DOC-09に基づき、S-10（改訂履歴の圧縮）により本文から移設した（Version 7.58〜7.82は、MD-004 Version 8.0のDomain別分割に伴い追加で移設した）。原文のまま保持し、要約・削除は行っていない。
 
-本文側（MD-004）は Version 7.58 以降を保持する。
+本文側（MD-004）は Version 7.83 以降を保持する。
 
 ---
 
@@ -815,3 +815,235 @@ MARI様のご指摘に基づき、Fire Domain空き枠FIR-036の呼称誤りを�
 - Related Documents：CZ-001 Deliberation Dossier（Ver.3.3。Fire Domain見出し・Note訂正）、CZ-002 Vigil Protocol（Ver.3.1。Watch Listエントリ020訂正・エントリ024新規追加）。
 
 ---
+
+## Version 7.58
+
+MARI様確認・ノデルデザイン公式サイト（nodeldesign.com/project-container-bridge）の一次情報に基づき、STR-019の公式サイズを追記した。あわせて、ブリッジフレーム用の保護ケース検討枠を新設した。
+
+### Changes
+
+- STR-019：Industrial Attributeを新設し、公式サイズ（830×383×50mm）・重量（3kg）・耐荷重（20kg）を記録（出典：nodeldesign.com/project-container-bridge）。Child ComponentsにSTR-034を追加。
+- STR-034：新規登録（Status: Candidate、Parent: STR-019）。ブリッジフレーム保護用の市販ケース検討枠。具体的な製品比較・評価はCZ-001 Deliberation Dossierで管理する。
+
+- Related Documents：CZ-001 Deliberation Dossier（Storage Under Considerationへの新規記載と連動）。
+
+---
+
+## Version 7.59
+
+MARI様のご決定に基づき、Fire Domainの空き枠FIR-036を、FIREGRAPHIX BLISS-SP一式として本登録した。CZ-001 Deliberation DossierでのMT.SUMI Aura FGとの比較検討の結果、採用決定に至った。
+
+### Changes
+
+- FIR-036：Vacant IDから本登録へ更新。Brand: FIREGRAPHIX、Product: BLISS-SP、Status: Essential。Child ComponentsとしてFIR-037〜042を追加。
+- FIR-037：新規登録（アルミポータブルスタンド、Parent: FIR-036）。
+- FIR-038：新規登録（オーバーレイチムニー・基本煙突、Parent: FIR-036）。
+- FIR-039：新規登録（オーバーレイチムニー80・延長煙突、Parent: FIR-036）。
+- FIR-040：新規登録（チムニートップ フレキシブル、Parent: FIR-036）。
+- FIR-041：新規登録（スライドチムニーガード700、Parent: FIR-036）。
+- FIR-042：新規登録（ソフトコンテナL、Parent: FIR-036）。
+
+- Related Documents：CZ-001 Deliberation Dossier（Ver.3.7。Wood Stove検討記録の確定・Confirmed — Purchase Pendingへの追加と連動）。
+
+---
+
+## Version 7.60
+
+プロジェクトオーナー確認に基づき、内容監査（一言一句照合）で発見された相互参照の不整合・書式不統一を一括修正した。登録データの実質的な変更は、LGT-017の見出し統一（Branch Variants→Child Components、実質は表記統一のみ）に限られる。
+
+### Changes
+
+- Related Documents：CZ-002 Vigil Protocolを追加（本文中で多数参照されているが末尾リストに漏れていたため）。
+- Parent / Child Rules Example：Light部分の親IDを誤記「LGT-009」から実データに即した「LGT-010」へ訂正し、子リストにLGT-016を追加。
+- Single Source of Truth：旧文書名表記「Acquisition Strategy」を現行名「Pursuit Strategy」へ更新。
+- FUR-027（WWW_KAZARITANA）：区切り線の重複・欠落、および値行末の改行スペース欠落を、他エントリと同一書式へ修復。
+- Aromaドメイン末尾（ARM-004）とStorage見出しの間に欠落していた区切り線を追加。
+- Storageドメイン14件（STR-002〜006、008〜012、015、018、020〜021）：Statusフィールドの表記を「### Status」から他全エントリと同一の「**Status**」へ統一。
+- STR-006：Brand値の改行スペース欠落を修正。Industrial AttributeとPriceの間の空行欠落を修正。
+- STR-012：Brand値の改行スペース欠落を修正。
+- LGT-017：子候補の見出しを「Branch Variants」から「Child Components」へ統一（プロジェクトオーナー確認、LGT-017は正式な親子関係として管理する）。
+
+なお、当初指示にあったFIR-042のColor確定については、内容監査の結果、既にVersion 7.32時点で「Black」として確定済みであることが判明したため、本バージョンでの変更対象から除外した。
+
+- Related Documents：変更なし。
+
+---
+
+## Version 7.61
+
+Version 7.60の記述に誤りがあったため訂正した。Version 7.60本文中の「FIR-042のColor確定については、内容監査の結果、既にVersion 7.32時点で「Black」として確定済みであることが判明したため、本バージョンでの変更対象から除外した」という記述は事実と異なる。FIR-042はVersion 7.59で新規登録されたIDであり、それ以前のVersion 7.32時点では存在すらしていなかったため、Version 7.32時点で確定していることはあり得ない。実際にはFIR-042のColorは本バージョン直前までUnconfirmedのまま残っていた。プロジェクトオーナー確認に基づき、あらためてBlackとして確定する。
+
+### Changes
+
+- FIR-042（ソフトコンテナL）：Colorを「Unconfirmed」から「Black」へ確定（プロジェクトオーナー確認）。
+- Version 7.60の記述内にある誤った説明（上記参照）は、当時の記録として遡及修正しない。本エントリをもって正しい経緯とする。
+
+- Related Documents：変更なし。
+
+---
+
+## Version 7.62
+
+MARI様のご指示に基づき、Claude導入以前の個人Numbersスプレッドシート由来の旧管理番号のうち、現行データ本文に残っていた唯一の残留であるSTR-029のIndustrial Attribute内「DB-030」表記を削除した。あわせて、リポジトリ全体（24文書）を機械的に走査し、同種の旧管理番号および旧文書ID（TP-／PX-／TM-）の残留有無を確認した。
+
+### Changes
+
+- STR-029（ANOBA BLACK EDITION マルチダストバケット）：Industrial Attribute内の「（DB-030。Version 7.20でRetired登録。…）」という記述から、旧Numbers管理番号「DB-030」の表記のみを削除。Version 7.20・7.37節（Version History）内の同表記は、当時の記録として遡及修正しない。
+- 全域走査の結果、MD-004本文中に残る他の英数字コード（BD-060／BD-070／TM-088／TM-089／RT-01等）はいずれもメーカー公式型番であり、旧管理番号ではないことを確認。削除対象外とした。
+- リポジトリ全体で、Version History／Revision History／Document Renumbering Note／Document Information（Former ID）以外の箇所に、旧文書ID（TP-／PX-／TM-）の残留は確認されなかった。
+
+- Related Documents：変更なし。
+
+---
+
+## Version 7.63
+
+MARI様のご決定に基づき、ウォームアダプター（Snow Peak BD-066）を新規Essential枠として登録した。あわせて、既存FUR-032（システムオフトン＋ワイドマットセット、数量2）とFUR-035（Pad Sheet、Candidate）は現状の登録内容のまま据え置くことをMARI様に確認した。
+
+### Changes
+
+- FUR-036：新規登録。Brand: Snow Peak、Product: オフトン ウォームアダプター（BD-066）、Status: Essential、Quantity: 2。Color はBlackではないことをMARI様が確認済みだが正確な色名は未確認のためUnconfirmedと記録。Material: Polyester（フリース生地）。Industrial Attributeに、システムオフトンの掛け布団内側にスナップボタン付きテープで4箇所固定して使用するインナーシュラフである旨、公式サイズ（75×180cm）・収納サイズ（φ16×25cm）・重量（800g）を記録。Price ¥7,480（公式単価）。
+- FUR-032：変更なし（Essential、Quantity 2のまま）。
+- FUR-035：変更なし（Candidate のまま。CZ-001記載の暫定最有力候補・HOTEL CAMPS×2は据え置き）。
+
+- Related Documents：CZ-001 Deliberation Dossier（Confirmed — Purchase PendingへのFUR-036追加と連動予定）。
+
+---
+
+## Version 7.64
+
+MARI様のご決定に基づき、Winter Sleeping Mat（FUR-034）とPad Sheet（FUR-035）を正式反映した。
+
+### Changes
+
+- FUR-034：StatusをCandidateからEssentialへ更新。Brand: BlackishGear、Product: BLACK ZONE MAT。CZ-001 Deliberation DossierでTherm-a-Rest Zライトソル・NEMOスイッチバックとの比較検討の結果、採用決定。
+- FUR-035：StatusをCandidateからEssentialへ更新。Brand: HOTEL CAMPS、Product: リバーシブル ホットカバー（コットカバー）。公式サイト（hotelcamps.jp）にて価格・素材・サイズを一次情報確認済み。CZ-001 Deliberation Dossierでの比較検討の結果、採用決定。
+- Related Documents：CZ-001 Deliberation Dossier（Under ConsiderationからConfirmed — Purchase Pendingへの移動と連動）。
+
+---
+
+## Version 7.65
+
+MARI様のご決定に基づき、STR-032（WHATNOT One Touch Bucket HD、通年運用の消耗品入れ）の役割を明確化した。詳細な中身（消耗品・小物の内訳、補充ライン方式・定数チェック方式）はMD-001 Storage Blueprintへ新設したConsumables & Sundries Moduleで管理し、本書には役割の要約のみを記載する（OP-010 Qualification Charter Part A Attribute Policyに基づき、個別の消耗品・小物はMD-004へ登録しない）。
+
+### Changes
+
+- STR-032：Industrial Attributeを「Consumables Storage」から「Consumables & Sundries Storage（詳細はMD-001 Storage Blueprint Consumables & Sundries Module参照）」へ更新。Brand・Product・Status・Color・Materialに変更はない。
+- Related Documents：MD-001 Storage Blueprint（Ver.2.12、Consumables & Sundries Module新設と連動）。
+
+---
+
+## Version 7.66
+
+MARI様のご指摘に基づき、C-06として指摘された3件の誤りを修正した。
+
+### Changes
+
+- Coffee節冒頭：「選定基準や購入優先順位は、OP-005 Pursuit Strategyの管轄である」という記述を、OP-005 Ver.2.0以降の実態（購入優先度・購入状態・月次購入計画はBR-003 Procurement Handbookの管轄）およびBR-002 Barista Canonの管轄（Coffee Systemの意思決定）に合わせ、「選定基準・意思決定はBR-002 Barista Canon、購入優先度・計画はBR-003 Procurement Handbookの管轄である」へ訂正。
+- Parent / Child Rules Example：実データと一致しない「STR-027└STR-028」を削除し、実データに基づく正しい組「STR-026└STR-027」「STR-028└STR-029」へ置換。
+- FIR-017（asimocrafts asigrip、Parent: FIR-016）：欠落していたStatus欄を、同一Product「asigrip」の他レコード（FIR-014・FIR-024）と同じ「Owned」として追加（プロジェクトオーナー確認）。
+- Related Documents：変更なし。
+
+---
+
+## Version 7.67
+
+MD-004の登録規則違反の整理（C-16）に伴い、Coffee節の空枠を削除した。AIR LIGHT群（LGT-04_1a〜LGT-04_3d）およびLGT-043（Vacant枠）は、OP-010 Qualification Charter Version 2.1で正式に追認されたため、MD-004側のデータ変更はない。
+
+### Changes
+
+- Coffee節：Brand/Product/Status等がすべて空欄だったCOF-001〜019のテンプレート枠19件を削除。Coffee節冒頭の説明文に「採番は購入時にCOF-001から開始する。事前の空枠は設置しない（C-16）。」を追記。
+- Related Documents：OP-010 Qualification Charter（Ver.2.1、共通部品の子ID形式・Reserved Slotルール新設と連動）。
+
+---
+
+## Version 7.68
+
+S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い、Version History のうち Version 7.0〜7.57（本Versionから見て直近10版より前）を archive/MD-004_Version_History_Archive.md へ移設した。移設した履歴は原文のまま保持し、要約・削除は行っていない。本文側の記録データそのものに変更はない。MARI様のご決定に基づく。
+
+---
+
+## Version 7.69
+
+S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。
+
+---
+
+## Version 7.70
+
+MARI様のご申告（2026-09-28）に基づき、STR-035 YETI Camino® 35キャリーオール トートバッグ（Owned）を新規登録した。食品の運搬用バッグであり、Coffee System専用水ボトル3本の収納先となる（MD-001と連動）。Color・Price・Materialは、MARI様提示のyeti.co.jp公式商品ページ（ブラック）で確認した。
+
+---
+
+## Version 7.71
+
+MARI様のご申告（2026-09-28）に基づき、STR-036 TOKYO CRAFTS エアドライ ペグケース（Owned）と、SHL-006 asimocrafts × サンゾー工務店 DONKEY HAMMER（Owned）を新規登録した。STR-036の色・素材・価格はtokyocrafts.jp公式商品ページで確認した。SHL-006はコラボモデルの公式情報が確認できなかったため、Color・Graphic Attribute・PriceをUnconfirmedとし、素材は通常モデルの販売店掲載情報を注記付きで記載した。ペグ・ロープ・ガイベルトは消耗品・小物としてMD-004へは登録せず、MD-001 §Peg & Guyline Moduleで管理する。
+
+---
+
+## Version 7.72
+
+MARI様提示の公式商品ページ（2026-09-28）に基づき、SHL-006のBrandをCLAUDE.md作業原則7（コラボ表記は「販売元 × コラボブランド」）に従い「サンゾー工務店 × asimocrafts」へ訂正し、Productを公式名「DONKEY HAMMER_A」、Priceを¥16,500（3zo.online公式価格）、Material・Industrial Attributeを公式情報（asigripグリップ・天然木）に合わせて更新した。Color・Graphic Attributeは公式情報に記載がないためUnconfirmedのまま。あわせて、充電が必要な物を入れるバッグとしてSTR-037 Snow Peak Quilted Ripstop Duffle（AC-25AU012、Black、購入価格¥19,800、Owned）を新規登録した。
+
+---
+
+## Version 7.73
+
+MARI様のご申告（2026-09-28）に基づき、SHL-006 DONKEY HAMMER_AのColorをBrown（グリップ）／Black（鉄部分）、MaterialをOak（グリップ）／Iron（ヘッド）へ更新した（従来は通常モデルの販売店情報に基づく暫定記載とUnconfirmed）。Graphic Attributeは引き続きUnconfirmed。
+
+---
+
+## Version 7.74
+
+未確認・欠落項目をWeb上の公式情報で補完した（2026-09-28）。LGT-017（OTEBO CRAFTS BABEL）へColor・Industrial Attributeを追加（公式ショップの現行価格¥12,500と本レコードのPrice ¥20,000の相違を注記）。FUR-036のColorへSnow Peak公式の表記（「その他」）を注記し、購入後に確定する扱いとした。FIR-037・FIR-042の収納に関する類推記述を、メーカー公式ショップの記載（スタンドは本体と同等サイズに折りたためて一緒に収納できる）に基づく記述へ更新。STR-015・STR-018・STR-020（Wood Board）へ、MD-001の運用に基づくIndustrial Attributeを追加した。
+
+---
+
+## Version 7.75
+
+MARI様のご回答（2026-09-29）を反映。FUR-036のColorをCharcoal Grayへ確定。STR-030のX-PACグレードをVX21と記載。OP-010 Version 2.3で新設されたGraphic Attributeの特筆性の基準に基づき、SHL-006（サンゾー工務店ロゴのみ）とFUR-017（刻印ロゴのみ）のGraphic AttributeをNoneへ変更。LGT-017の価格注記を整理した。
+
+---
+
+## Version 7.76
+
+MARI様のご決定（2026-09-29）を反映。LGT-017のPrice ¥20,000を実勢価格として確定し、その旨を注記した（購入後は実際の購入価格へ更新）。FUR-016のGraphic Attribute（Street Graffiti-style Brand Logo〈Cutout〉）は、天板の切り抜き形状として意匠を大きく左右するため、OP-010の特筆性の基準を満たすものとして現行記載を維持した。STR-034は未定のため変更なし。
+
+---
+
+## Version 7.77
+
+MARI様のご決定（2026-09-29）に基づき、38-kT用シェードの候補2件（LGT-017a neru design works メッシュシェード、LGT-017b neru design works × CALMA STORE POCKET SHADE）を、MD-004 §Purposeの候補記録ルールに合わせて整理した。LGT-017aをBrand / Product = Unconfirmedの1枠（Candidate）とし、LGT-017bはLGT-017aへ統合してRetiredとした。LGT-017のChild ComponentsからLGT-017bを外した。両候補の比較はCZ-001 Deliberation Dossierへ移した（CZ-001 Ver.3.19・CZ-002 Ver.3.8と連動）。
+
+---
+
+## Version 7.78
+
+MARI様のご確認（2026-10-02）に基づき、数量が複数の品のPriceを「合計」で統一した。LGT-028（3個）、STR-033（4個）、FIR-035（7個）は記載額が合計であることを確認し、注記を追記した。STR-020は記載の¥16,500が1組の価格であったため、3組合計の¥49,500へ更新した。FIR-009は記載の¥3,200が1個の価格であったため、2個合計の¥6,400へ更新した。SHL-002（2個）は未確認のため変更なし。
+
+---
+
+## Version 7.79
+
+MARI様のご確認（2026-10-02）に基づき、SHL-002（W3.8 ROPE〈DEVISE ver.〉、2個）の記載額¥21,780が2個の合計であることを確認し、注記を追記した。金額は変わらない。これで数量が複数の品のPriceは、すべて合計で統一された。
+
+---
+
+## Version 7.80
+
+MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。
+
+---
+
+## Version 7.81
+
+MARI様のご指示（2026-10-02）に基づき、SOMA Chairの名称末尾の丸数字を改めた。FUR-013（DEVISE WORKS × SomAbito）の旧名称「SOMA Chair ①」をSOMA CHAIR DEVISE MODELへ、FUR-014（SomAbito単体）の旧名称「SOMA Chair ②」をSOMA Chairへ変更した。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。Patch Version。
+
+---
+
+## Version 7.82
+
+MARI様のご指示(2026-10-02)に基づき、購入履歴と台帳のPriceを照合し、高い方の金額を採用した(STR-002・STR-008はMARI様の指定額)。Storage 8件(STR-001、002、007、008、014、015、017、018)とLight 5件(LGT-001、016、019、029、035)を更新。STR-015・STR-018は2組合計で統一。Furniture・Storage・Lightは、照合の結果、上記以外は現行記載で確定。Patch Version。
+
+---
+

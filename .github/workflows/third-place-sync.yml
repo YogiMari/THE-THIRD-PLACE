@@ -63,7 +63,12 @@ jobs:
             printf '%s' "$result"
           }
 
-          echo "MD004=$(find_file MD-004)" >> "$GITHUB_ENV"
+          # MD-004 is split by domain (OP-008 §11.2): pass the folder, not one file.
+          if [ ! -d MD/MD-004 ] || ! ls MD/MD-004/MD-004_*.md >/dev/null 2>&1; then
+            echo "ERROR: Could not locate MD/MD-004" >&2
+            exit 2
+          fi
+          echo "MD004=MD/MD-004" >> "$GITHUB_ENV"
           echo "BR002=$(find_file BR-002)" >> "$GITHUB_ENV"
           echo "BR003=$(find_file BR-003)" >> "$GITHUB_ENV"
           echo "CZ001=$(find_file CZ-001)" >> "$GITHUB_ENV"
