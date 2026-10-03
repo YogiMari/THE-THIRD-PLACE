@@ -60,7 +60,9 @@ RETIRED_RE = re.compile(
 )
 PRICE_RE = re.compile(r"^¥[\d,]+")
 CHILD_RE = re.compile(r"^-\s*([A-Z]{3}-[0-9A-Za-z_]+)")
-ID_IN_TEXT_RE = re.compile(r"(?<![A-Za-z0-9])([A-Z]{3})-(\d+)(?![0-9A-Za-z_])")
+ID_IN_TEXT_RE = re.compile(
+    r"(?<![A-Za-z0-9])([A-Z]{3}-\d+(?:_\d+)?[a-z]?)(?![0-9A-Za-z_])"
+)
 ID_RANGE_RE = re.compile(
     r"(?<![A-Za-z0-9])([A-Z]{3})-(\d+)\s*[〜~～–-]\s*(?:([A-Z]{3})-)?(\d+)"
 )
@@ -260,7 +262,7 @@ def history_section(entry_text: str, version: str) -> str | None:
 
 
 def mentioned_ids(section: str) -> set[str]:
-    mentioned = {f"{p}-{n}" for p, n in ID_IN_TEXT_RE.findall(section)}
+    mentioned = set(ID_IN_TEXT_RE.findall(section))
     for prefix, low, prefix2, high in ID_RANGE_RE.findall(section):
         if prefix2 and prefix2 != prefix:
             continue
