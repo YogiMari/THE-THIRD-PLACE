@@ -58,7 +58,7 @@ TEMPLATE = HERE / "templates" / "field_atlas_navigator.html"
 SHARED_JS = HERE / "templates" / "field_atlas_shared.js"  # script common to the Navigator and Ivory templates
 DATA_DIR = HERE / "data" / "field_atlas_navigator"
 DB001 = HERE.parent / "DB" / "DB-001_Project_Ledger.md"
-MD004 = HERE.parent / "MD" / "MD-004_Equipment_Registry_Object_Reference.md"
+MD004 = HERE.parent / "MD" / "MD-004"  # folder: entry file + one file per domain
 GEAR_ID = re.compile(r"\b([A-Z]{3}-\d{3}[a-z]?)\b")
 
 # Koiwa (home base). The map is projected around this point:
@@ -112,12 +112,19 @@ def parse_site_record(md002: Path) -> dict[str, dict]:
     return {c[0]: {"ground": c[1], "area": c[2], "parking": c[3], "source": c[4]} for c in rows[1:] if len(c) >= 5}
 
 
+def read_md004(md004: Path) -> str:
+    """MD-004 text: every MD-004_*.md in the folder (sorted), or the single file."""
+    if md004.is_dir():
+        return "\n".join(p.read_text(encoding="utf-8") for p in sorted(md004.glob("MD-004_*.md")))
+    return md004.read_text(encoding="utf-8")
+
+
 def parse_gear(md004: Path, ids: set[str]) -> dict[str, dict]:
     """MD-004 entries (## ID, then **Brand** / **Product** / **Status**) for the given IDs."""
     if not ids or not md004.exists():
         return {}
     out, cur, key = {}, None, None
-    for line in md004.read_text(encoding="utf-8").splitlines():
+    for line in read_md004(md004).splitlines():
         t = line.strip()
         m = re.match(r"^## ([A-Z]{3}-\d{3}[a-z]?)$", t)
         if m:
