@@ -39,6 +39,8 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # the MD-004 integrity check compares with the base commit
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -87,3 +89,31 @@ jobs:
 
       - name: Check Field Atlas consistency (MD-002, DB-001, MD-004, map data, pages)
         run: python scripts/field_atlas_check.py
+
+      - name: Check MD-004 integrity (records, parent/child, Version on change)
+        env:
+          EVENT_NAME: ${{ github.event_name }}
+          PR_BASE_SHA: ${{ github.event.pull_request.base.sha }}
+          PUSH_BEFORE: ${{ github.event.before }}
+        run: |
+          set -euo pipefail
+
+          # Base commit to compare with: a pull request's base, or the previous
+          # tip of main on push. Without one (manual run, first push), only the
+          # structure checks run.
+          BASE=""
+          if [ "$EVENT_NAME" = "pull_request" ]; then
+            BASE="$PR_BASE_SHA"
+          elif [ "$EVENT_NAME" = "push" ] \
+            && [ -n "$PUSH_BEFORE" ] \
+            && [ "$PUSH_BEFORE" != "0000000000000000000000000000000000000000" ] \
+            && git cat-file -e "${PUSH_BEFORE}^{commit}" 2>/dev/null; then
+            BASE="$PUSH_BEFORE"
+          fi
+
+          if [ -n "$BASE" ]; then
+            python scripts/md004_integrity_check.py --md004 "$MD004" --base-ref "$BASE"
+          else
+            echo "::notice::No base commit; running the structure checks only."
+            python scripts/md004_integrity_check.py --md004 "$MD004"
+          fi

@@ -42,13 +42,15 @@ THE THIRD PLACEは、「可動式アウトドアリビング」という一つ�
 THE-THIRD-PLACE/
 ├── .github/
 │   └── workflows/
-│       └── third-place-sync.yml   # MD-004 / BR-002 / BR-003 整合性自動検証（CI）
+│       └── third-place-sync.yml   # MD-004 / BR-002 / BR-003 整合性・MD-004記録の点検（CI）
 │
 ├── assets/
 │   └── banner.PNG
 │
 ├── scripts/
 │   ├── third_place_sync_validator.py   # SSOT同期バリデータ
+│   ├── md004_integrity_check.py        # MD-004の記録そのものの点検（親子・ID・Status・変更時のVersion更新。CIで実行）
+│   ├── md004_records.py                # MD-004の全項目リーダー（上記が使用）
 │   ├── field_atlas_radar.py            # MD-002 → Field Atlas Radar（レーダーチャート）生成
 │   ├── field_atlas_navigator.py        # MD-002 → Field Atlas Navigator（3D地図・ダーク版）生成
 │   ├── field_atlas_ivory.py            # MD-002 → Field Atlas Ivory（3D地図・ライト版）生成
