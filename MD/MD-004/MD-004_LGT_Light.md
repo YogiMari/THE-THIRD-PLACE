@@ -867,7 +867,7 @@ DEVISE WORKS × WHAT WE WANT
 
 **Product**  
 
-DEVA DEVAの実  
+DEVA DEVA no MI  
 
 **Status**  
 
