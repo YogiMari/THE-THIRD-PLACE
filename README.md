@@ -54,6 +54,7 @@ THE-THIRD-PLACE/
 │   ├── field_atlas_ivory.py            # MD-002 → Field Atlas Ivory（3D地図・ライト版）生成
 │   ├── field_atlas_navigator_fetch.py  # 地図用データ（位置・道路ルート・写真・標高・周辺環境）の取得
 │   ├── field_atlas_check.py            # MD-002・DB-001・MD-004・地図用データ・両版の整合チェック（CIで実行）
+│   ├── doc_catalogue_check.py          # OP-008 §8 の文書一覧と各文書のヘッダー・ファイルの突き合わせ。MD-004のStatus別一覧（--status-list）。CIで実行
 │   ├── codex_arbor.py                  # 全文書 → Arbor of the Third Place（文書アトラス・全書検索・宝物庫）生成
 │   ├── data/field_atlas_navigator/     # 地図用データと、両版のデザイン・再生成の記録（README.md）
 │   ├── templates/                      # 生成用HTMLテンプレート
