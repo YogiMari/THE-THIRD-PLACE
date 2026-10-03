@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 7.85  
+**Version**: 7.86  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -221,7 +221,7 @@ natural mountain monkeys
 
 **Product**  
 
-NOVITA  
+NOVITA neo BRASS  
 
 **Status**  
 
@@ -424,7 +424,7 @@ DEVISE WORKS × natural mountain monkeys
 
 **Product**  
 
-WARU NOVITA  
+NEW WARU NOVITA  
 
 **Status**  
 
@@ -1817,7 +1817,7 @@ neru design works × 1/f SPACE
 
 **Product**  
 
-MIYABI RICH 0/f Copper Glove  
+MIYABI RICH 0/f Brass Glove  
 
 **Status**  
 
@@ -1829,11 +1829,11 @@ LGT-010
 
 ### Color  
 
-Copper  
+Gold  
 
 ### Material  
 
-Copper  
+Brass  
 
 ### Industrial Attribute  
 
@@ -2251,7 +2251,7 @@ DEVISE WORKS × WHAT WE WANT
 
 **Product**  
 
-デバデバの実  
+DEVA DEVAの実  
 
 **Status**  
 
@@ -4449,7 +4449,7 @@ Owned
 
 ### Color  
 
-Gray  
+Charcoal  
 
 ### Material  
 
@@ -6433,7 +6433,7 @@ Brown / Dark Brown
 
 ### Material  
 
-Walnut / Oak  
+Vegetable-Tanned Leather（Body） / Brass（S-Hook）  
 
 ### Industrial Attribute  
 
@@ -7279,6 +7279,21 @@ MARI様のご指示（2026-10-02）に基づき、FUR-009（DEVISE WORKS × INAV
 ## Version 7.85
 
 MARI様のご指示（2026-10-02）に基づき、SHL-001（The Arth）のProductを、The Arth_six公式ストアの正式名称に合わせて「幕男」から「幕男 4th.ver」へ変更した。MD-001 Ver.2.34と連動する。Brand・Color・Material・Price・Child Components・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
+
+---
+
+## Version 7.86
+
+MARI様のご指示（2026-10-03）に基づき、以下6件のレコードを訂正した。いずれもBrand・Price・Parent・Child Components・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
+
+### Changes
+
+- FIR-038（WHAT WE WANT WWW_HANGER）：Materialを「Walnut / Oak」から「Vegetable-Tanned Leather（Body） / Brass（S-Hook）」へ訂正（WHAT WE WANT公式ページの素材表記「本体：革（ヌメ革）／S字フック：真鍮」に基づく）。
+- FUR-005：Productを、natural mountain monkeys公式ストアの商品名に合わせて「NOVITA」から「NOVITA neo BRASS」へ変更。
+- FUR-010：Productを、DEVISE WORKS公式オンラインショップの商品名に合わせて「WARU NOVITA」から「NEW WARU NOVITA」へ変更。
+- LGT-012：「MIYABI RICH 0/f Copper Glove」から「MIYABI RICH 0/f Brass Glove」へ変更し、Colorを「Copper」から「Gold」、Materialを「Copper」から「Brass」へ訂正。
+- LGT-021：Productを「デバデバの実」から「DEVA DEVAの実」へ訂正。
+- STR-022：Colorを「Gray」から「Charcoal」へ訂正。
 
 ---
 
