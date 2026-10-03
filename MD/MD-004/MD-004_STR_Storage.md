@@ -844,7 +844,7 @@ Owned
 
 ### Color  
 
-Gray  
+Charcoal  
 
 ### Material  
 

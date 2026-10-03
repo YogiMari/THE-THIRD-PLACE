@@ -180,7 +180,7 @@ natural mountain monkeys
 
 **Product**  
 
-NOVITA  
+NOVITA neo BRASS  
 
 **Status**  
 
@@ -383,7 +383,7 @@ DEVISE WORKS × natural mountain monkeys
 
 **Product**  
 
-WARU NOVITA  
+NEW WARU NOVITA  
 
 **Status**  
 

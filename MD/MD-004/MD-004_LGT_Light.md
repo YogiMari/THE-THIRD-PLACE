@@ -433,7 +433,7 @@ neru design works × 1/f SPACE
 
 **Product**  
 
-MIYABI RICH 0/f Copper Glove  
+MIYABI RICH 0/f Brass Glove  
 
 **Status**  
 
@@ -445,11 +445,11 @@ LGT-010
 
 ### Color  
 
-Copper  
+Gold  
 
 ### Material  
 
-Copper  
+Brass  
 
 ### Industrial Attribute  
 
@@ -867,7 +867,7 @@ DEVISE WORKS × WHAT WE WANT
 
 **Product**  
 
-デバデバの実  
+DEVA DEVAの実  
 
 **Status**  
 

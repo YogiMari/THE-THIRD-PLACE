@@ -204,16 +204,31 @@ MARI様のご指示（2026-10-02）に基づき、SHL-001（The Arth）のProduc
 
 ---
 
+## Version 7.86
+
+MARI様のご指示（2026-10-03）に基づき、以下6件のレコードを訂正した。いずれもBrand・Price・Parent・Child Components・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
+
+### Changes
+
+- FIR-038（WHAT WE WANT WWW_HANGER）：Materialを「Walnut / Oak」から「Vegetable-Tanned Leather（Body） / Brass（S-Hook）」へ訂正（WHAT WE WANT公式ページの素材表記「本体：革（ヌメ革）／S字フック：真鍮」に基づく）。
+- FUR-005：Productを、natural mountain monkeys公式ストアの商品名に合わせて「NOVITA」から「NOVITA neo BRASS」へ変更。
+- FUR-010：Productを、DEVISE WORKS公式オンラインショップの商品名に合わせて「WARU NOVITA」から「NEW WARU NOVITA」へ変更。
+- LGT-012：「MIYABI RICH 0/f Copper Glove」から「MIYABI RICH 0/f Brass Glove」へ変更し、Colorを「Copper」から「Gold」、Materialを「Copper」から「Brass」へ訂正。
+- LGT-021：Productを「デバデバの実」から「DEVA DEVAの実」へ訂正。
+- STR-022：Colorを「Gray」から「Charcoal」へ訂正。
+
+---
+
 ## Version 8.0
 
-MARI様のご決定（2026-10-03）に基づき、AIが必要なDomainのみを読めるよう、MD-004をDomain別のファイルへ分割した（OP-008 Ver.3.19 §11.2 Multi-file Documentに基づく。文書構造の変更のためMajor Version）。登録内容（Equipment ID・Brand・Product・Status・Price・各属性）は一字も変更していない。
+MARI様のご決定（2026-10-03）に基づき、AIが必要なDomainのみを読めるよう、MD-004をDomain別のファイルへ分割した（OP-008 Ver.3.19 §11.2 Multi-file Documentに基づく。文書構造の変更のためMajor Version）。分割はVersion 7.86（PR #106：FIR-038・FUR-005・FUR-010・LGT-012・LGT-021・STR-022の6件の訂正）を取り込んだ上で行った。分割にあたり、登録内容（Equipment ID・Brand・Product・Status・Price・各属性）は一字も変更していない。
 
 ### Changes
 
 - ファイル配置：単一ファイル `MD/MD-004_Equipment_Registry_Object_Reference.md` を、`MD/MD-004/` フォルダへ移した。入口ファイル（本書）の名称は従来のまま。
 - 本書（入口）：Document Information・Purpose・Registry Rules・Coffee・Parent / Child Rules・Graphic / Industrial Attribute・Color Rule・Material Rule・Single Source of Truth・Related Documents・Version Historyを保持する。Domain Files節を新設した。
-- Domain別ファイル6本：Furniture（FUR）・Light（LGT）・Aroma（ARM）・Storage（STR）・Fire（FIR）・Shelter（SHL）の各Domain節を、原文のまま `MD-004_{Prefix}_{Domain}.md` へ移した。各ファイルの先頭に、Document IDと入口ファイルを示す参照ヘッダー（3行）を追加した。これ以外の文言は追加していない。
-- Version History：Version 7.58〜7.82を `archive/MD-004_Version_History_Archive.md` へ原文のまま移設し（OP-008 §19 Rule DOC-09）、本文にはVersion 7.83以降を残した。archive冒頭の範囲記述を更新した。
+- Domain別ファイル6本：Furniture（FUR）・Light（LGT）・Aroma（ARM）・Storage（STR）・Fire（FIR）・Shelter（SHL）の各Domain節を、Version 7.86反映後の内容のまま `MD-004_{Prefix}_{Domain}.md` へ移した。各ファイルの先頭に、Document IDと入口ファイルを示す参照ヘッダー（3行）を追加した。これ以外の文言は追加していない。
+- Version History：Version 7.58〜7.82を `archive/MD-004_Version_History_Archive.md` へ原文のまま移設し（OP-008 §19 Rule DOC-09）、本文にはVersion 7.83以降（7.86を含む）を残した。archive冒頭の範囲記述を更新した。
 - 連動：OP-008 Ver.3.19（§8カタログのPath、§11.2新設）、CLAUDE.md（Master Databaseのパス）、third_place_sync_validator.py・field_atlas_navigator.py・codex_arbor.py・third-place-sync.yml（複数ファイルの読み込み）。
 
 ---

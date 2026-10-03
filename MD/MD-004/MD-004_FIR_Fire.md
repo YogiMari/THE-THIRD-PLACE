@@ -1422,7 +1422,7 @@ Brown / Dark Brown
 
 ### Material  
 
-Walnut / Oak  
+Vegetable-Tanned Leather（Body） / Brass（S-Hook）  
 
 ### Industrial Attribute  
 
