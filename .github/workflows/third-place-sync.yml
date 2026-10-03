@@ -87,6 +87,13 @@ jobs:
             --cz002 "$CZ002" \
             --md001 "$MD001"
 
+      - name: Check document catalogue (OP-008 §8 against files and headers)
+        run: python scripts/doc_catalogue_check.py
+
+      - name: MD-004 by Status (job summary only; not committed)
+        if: always()
+        run: python scripts/doc_catalogue_check.py --status-list >> "$GITHUB_STEP_SUMMARY"
+
       - name: Check Field Atlas consistency (MD-002, DB-001, MD-004, map data, pages)
         run: python scripts/field_atlas_check.py
 
