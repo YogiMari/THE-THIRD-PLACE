@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 8.0  
+**Version**: 8.1  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -230,6 +230,19 @@ MARI様のご決定（2026-10-03）に基づき、AIが必要なDomainのみを�
 - Domain別ファイル6本：Furniture（FUR）・Light（LGT）・Aroma（ARM）・Storage（STR）・Fire（FIR）・Shelter（SHL）の各Domain節を、Version 7.86反映後の内容のまま `MD-004_{Prefix}_{Domain}.md` へ移した。各ファイルの先頭に、Document IDと入口ファイルを示す参照ヘッダー（3行）を追加した。これ以外の文言は追加していない。
 - Version History：Version 7.58〜7.82を `archive/MD-004_Version_History_Archive.md` へ原文のまま移設し（OP-008 §19 Rule DOC-09）、本文にはVersion 7.83以降（7.86を含む）を残した。archive冒頭の範囲記述を更新した。
 - 連動：OP-008 Ver.3.19（§8カタログのPath、§11.2新設）、CLAUDE.md（Master Databaseのパス）、third_place_sync_validator.py・field_atlas_navigator.py・codex_arbor.py・third-place-sync.yml（複数ファイルの読み込み）。
+
+---
+
+## Version 8.1
+
+MARI様のご決定（2026-10-03）に基づき、Quantityが2のFUR-032・FUR-034・FUR-035・FUR-036のPriceを、単価から合計額の記載へ改めた（数量が2以上の記録のPriceは合計額で記載し、合計である旨を注記する）。4件とも、改訂前のPriceは1個（1組）あたりの単価であることをMARI様が確認された。Brand・Product・Status・Color・Material・Parent・Quantity・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
+
+### Changes
+
+- FUR-032：Priceを「¥45,100」から「¥90,200（2組合計。1組¥45,100。MARI様確認）」へ変更。
+- FUR-034：Priceを「¥3,564（セール価格）」から「¥7,128（2個合計。1個¥3,564、セール価格。MARI様確認）」へ変更。
+- FUR-035：Priceを「¥9,980（公式サイト価格）」から「¥19,960（2個合計。1個¥9,980、公式サイト価格。MARI様確認）」へ変更。
+- FUR-036：Priceを「¥7,480」から「¥14,960（2個合計。1個¥7,480。MARI様確認）」へ変更。
 
 ---
 
