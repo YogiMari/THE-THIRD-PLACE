@@ -3,7 +3,7 @@
 **Document ID**: OP-010  
 **Title**: Qualification Charter  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.4  
+**Version**: 3.5  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -28,6 +28,7 @@
 | 3.2 | 2026-10-01 | MARI様のご決定に基づき、Part C §Display Rules（Ground Surface）へ🧱 Brick Chips（レンガチップ）を加えた。砂利・土のどちらにも当たらないレンガチップの地面（MD-002 秩父ファームステイ）を表すため。§1. Groundの採点の目安に変更はない。Minor Version。 |
 | 3.3 | 2026-10-01 | MARI様のご決定に基づき、Part C §Display Rules（Ground Surface）へ⛰️ Rock（岩場）を加え、砂利（🪨）と岩場を区別できるようにした（MD-002 ウェルキャンプ西丹沢）。§1. Groundの採点の目安に変更はない。Minor Version。 |
 | 3.4 | 2026-10-02 | MD-004 Ver.7.83（FIR-003のカスタムベロ4分解、旧FIR-004〜042の+3繰り下げ）と連動し、本文のFIR参照（例示）を新番号へ更新した。評価基準・特筆性の基準に変更はない。MARI様のご決定に基づく。 |
+| 3.5 | 2026-10-03 | MARI様のご決定に基づき、Part A §Attribute Policyへ、Quantityが2以上のアイテムのPriceは合計額で記載し、合計である旨を注記する規定を追加した（Minor Version：規則の追加）。従来は合計か単価かを定める規定がなく、MD-004にも単価のまま記載された記録（FUR-032・034・035・036）があったが、同日MD-004 Ver.8.1で合計額へ改めた。MD-004の既存記録の書式（「（2個合計。1個¥X）」）を追認するもので、評価基準に変更はない。 |
 
 ---
 
@@ -162,6 +163,8 @@ Appearanceは、OP-002 Design Bibleにより、以下を用いて決定される
 - Graphic Attribute  
 - Industrial Attribute  
 - Price（Version 7.25より、任意項目として再導入。購入済みのアイテムは実際の購入価格〈実売価格〉を優先して記載する。未購入または購入価格が不明な場合は公式価格または実勢価格を記載し、出典を付記する〈2026-09-29、MARI様のご決定〉）  
+  
+**数量が複数のPrice（Version 3.5以降）**：Quantityが2以上のアイテムのPriceは、1個あたりの単価ではなく合計額で記載し、合計である旨を注記する（例：「¥33,000（2組合計。1組¥16,500。MARI様確認）」）。購入価格・公式価格・実勢価格のいずれの場合も同じ（2026-10-03、MARI様のご決定）。  
   
 ---  
 
