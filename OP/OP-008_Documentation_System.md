@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.18
+**Version**: 3.19
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -37,6 +37,7 @@
 | 3.16 | 2026-09-28 | S-10（改訂履歴の圧縮）に伴い、§19にRule DOC-09（Revision Historyの一定規模超過時、直近履歴を本文に残しそれ以前をarchive/へ移設できる旨）を新設し、§10 Document Lifecycleへ参照注記を追加した（OP-008 §23 Change Managementに基づき、MD-004・MD-003・CZ-001・CZ-002・BR-003本体の履歴移設に先行して反映）。MARI様のご決定に基づく。 |
 | 3.17 | 2026-09-28 | 整備バックログ（N-01・N-04・N-05）で新設された内容に合わせ、§8カタログのOP-006 Role（Safety・Material Care）とDB-001 Role（Field Log）、Appendix FのOP-006・DB-001紹介文（日英）を同期。DB-001紹介文に残っていたProject Overview（S-08で削除済み）の記述をProject Inbox・Field Logへ置き換えた。MARI様の包括指示に基づく。Patch Version。 |
 | 3.18 | 2026-10-01 | Document Renumbering Noteの旧IDを「TP-001」から「PX-001」へ訂正した。新旧ID対応の正式な参照先であるOP-001 Constitution Appendix C Ver.5.0（OP-001 §26）は「PX-001→OP-008」「TP-001→OP-001」と定めており、OP-001 §26本文も「PX-001（新ID：OP-008）」と記している。本書Version 1.0の「Documentation SystemをPXシリーズへ移行」とも整合する。Revision History内のVersion 2.0・3.3の行にある「TP-001」の記述は、歴史的記録として原文のまま保持する。プロジェクトオーナーのご指示に基づく。Patch Version。 |
+| 3.19 | 2026-10-03 | MD-004 Equipment Registry Object ReferenceのDomain別分割（AIが必要なDomainのみを読めるようにするためのファイル再構成）に伴い、§11.2 Multi-file Documentを新設した（Minor Version：節追加）。あわせて§8カタログのMD-004のPathを、分割後の入口ファイル `MD/MD-004/MD-004_Equipment_Registry_Object_Reference.md` へ更新した。Document ID・Title・Authority・Volatilityは変更しない。MARI様のご決定に基づく。 |
 
 ---
 
@@ -246,7 +247,7 @@ Authority 列は本 Version（3.0）で新設された分類である。BR-001�
 | MD-001 | Storage Blueprint | `MD/MD-001_Storage_Blueprint.md` | 管理対象<br>・収納<br>・収納ルール<br>・Container Assignment | SSOT | Living | 収納・コンテナの割り当てルール |
 | MD-002 | Field Atlas Landscape Framework | `MD/MD-002_Field_Atlas_Landscape_Framework.md` | 管理対象<br>・キャンプ場<br>・ロケーション<br>・適性評価<br>・運用条件 | SSOT | Periodic | キャンプ場・ロケーションの選定と評価 |
 | MD-003 | Galley Fare | `MD/MD-003_Galley_Fare.md` | 管理対象<br>・キッチン調理器具<br>・調理の機能的必然性に基づく選定基準<br>Galley Fareは、<br>Equipment Registryとは異なる評価軸を持つ、<br>独立したMaster Databaseである。<br>所作、<br>デザイン、<br>ブランドの格を、<br>必須条件としない。<br>実際に調理が成立する機能性を、<br>最優先とする。 | SSOT | Living | キッチン道具だけの独立した台帳 |
-| MD-004 | Equipment Registry Object Reference | `MD/MD-004_Equipment_Registry_Object_Reference.md` | 管理対象<br>・所有物<br>・購入予定<br>・Status<br>・Zone<br>・Category<br>・Official Name<br>Equipment Registryは、<br>Human Principlesとの美意識的整合を条件とする所有物の、<br>唯一のMaster Databaseである。<br>調理の機能的必然性に基づくキッチン機材は、<br>MD-003 Galley Fareが独立して管理する。 | SSOT | Living | 所有物・購入予定ギアの唯一の台帳（キッチン以外） |
+| MD-004 | Equipment Registry Object Reference | `MD/MD-004/MD-004_Equipment_Registry_Object_Reference.md` | 管理対象<br>・所有物<br>・購入予定<br>・Status<br>・Zone<br>・Category<br>・Official Name<br>Equipment Registryは、<br>Human Principlesとの美意識的整合を条件とする所有物の、<br>唯一のMaster Databaseである。<br>調理の機能的必然性に基づくキッチン機材は、<br>MD-003 Galley Fareが独立して管理する。 | SSOT | Living | 所有物・購入予定ギアの唯一の台帳（キッチン以外） |
 | BR-001 | Brew Care | `BR/BR-001_Brew_Care.md` | See Appendix F | Standard | Static | コーヒー機材のお手入れ・洗浄・保管ルール |
 | BR-002 | Barista Canon | `BR/BR-002_Barista_Canon.md` | See Appendix F | SSOT | Periodic | コーヒー機材の意思決定文書 |
 | BR-003 | Procurement Handbook | `BR/BR-003_Procurement_Handbook.md` | See Appendix F | SSOT | Living | コーヒー機材の調達先・価格・購入計画 |
@@ -388,6 +389,16 @@ Title の変更は必要最小限とする。
 | Codex | CZ-001 Deliberation Codex | CZ-001 Deliberation Dossier |
 
 新規文書を発行する際は、既存の全文書タイトル（§8参照）と語が重複しないことを、発行前に確認する。
+
+## 11.2 Multi-file Document（2026-10-03新設）
+
+1つの文書の内容が大きく、利用者（人・AI）が必要な部分のみを読む方が適切な場合、その文書を複数のファイルへ分割できる。分割しても文書は1つであり、以下に従う。
+
+- Document ID・Title・Authority・Volatilityは分割前と同一とし、新しいDocument IDを増やさない。
+- ファイルは `{SERIES}/{Document ID}/` フォルダに置く。
+- 入口ファイル（`{Document ID}_{Title}.md`、従来のファイル名）が、文書のヘッダー・Version・Revision History（またはVersion History）・総則を保持する。§8カタログのPath列には入口ファイルのパスを記載する。
+- 部品ファイル（`{Document ID}_{Part}_{Word}.md`）は、入口ファイルと同じフォルダに置く。先頭に、Document IDと入口ファイルへの参照を明記する。部品ファイルはVersionを持たず、変更履歴は入口ファイルへ記録する。
+- 分割前後で記録の内容は変更しない。分割は置き場所の変更であり、Documentの内容改訂ではない。
 
 ---
 
