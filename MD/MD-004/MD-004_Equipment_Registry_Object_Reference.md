@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 8.2  
+**Version**: 8.3  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -254,6 +254,16 @@ MARI様のご指示（2026-10-03）に基づき、Retired記録のFUR-033・LGT-
 
 - FUR-033：冒頭を「Retired.」から「Retired（Merged）. 2026-09-23.」へ変更。日付は、FUR-032への統合を記録したCZ-001 Deliberation Dossier Decision Log（2026-09-23付、プロジェクトオーナー決定）による。MD-004上の反映はVersion 7.54である。
 - LGT-017b：冒頭を「Retired.」から「Retired（Merged）. 2026-09-29.」へ変更。日付は、本文に記載済みのLGT-017aへの統合日（2026-09-29、MARI様のご決定）による。
+
+---
+
+## Version 8.3
+
+MARI様のご指示（2026-10-03）に基づき、LGT-021（DEVISE WORKS × WHAT WE WANT）のProductを、正式な製品名「DEVA DEVA no MI」へ訂正した（Version 7.86で「DEVA DEVAの実」としていた）。Brand・Color・Material・Price・Child Components・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
+
+### Changes
+
+- LGT-021：Productを「DEVA DEVAの実」から「DEVA DEVA no MI」へ訂正。
 
 ---
 
