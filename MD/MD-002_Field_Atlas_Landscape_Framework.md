@@ -59,7 +59,7 @@ Field Atlas Evaluation Framework（10軸評価、OP-010 Qualification Charter Pa
 | **75／100｜朝霧キャンプベース そらいろ（静岡県富士宮市） 3.5h 🌱** | **Premium Mt. Fuji Camp**<br>富士山と高規格設備を高いレベルで両立。他になかなか無い、食べ物の物販の充実が魅力。 |
 | **74／100｜スノーピーク赤城キャンプフィールド（群馬県前橋市） 3h 🌱🌲** | **Alpine Trailer Camp**<br>赤城山山頂エリア標高1,350m、市街地より8-10℃低い涼しさが魅力。スノーピーク製トレーラーハウスも完備されている。 |
 | 73(暫定)／100｜Hillbilly Camping（茨城県東茨城郡茨城町） 2.5h 🪨 | **Lakeside Hideaway**<br>涸沼湖畔を一望する8区画のみの小規模フィールド。区画は約8×8.5m＝68㎡（駐車スペース別、いばらきキャンプ公式データで確認）とTHE THIRD PLACE基準の80㎡（車別）にも届かない狭さ。標準チェックインは11時、アーリーチェックインの可否は公式サイト・予約サイト・口コミのいずれでも明記が確認できず未確認。 |
-| **72／100｜KARUIZAWA CAMP GOLD（長野県北佐久郡軽井沢町） 4h 🌱🌲** | **Highland Sauna Camp**<br>貸切サウナと小川のある穴場リゾート。林間サイトに宿泊し、地面は砂利と芝から選べた。トイレは近場と遠い場所の2か所、炊事場は水のみの近場とお湯が出るやや遠い場所があり、質は遠い方が高い。薪が高品質で、管理棟は綺麗。近隣には軽井沢らしい魅力的な買い物スポットがある。標準チェックイン13時、アーリーチェックインは11時から入場可能（グランピングプランは対象外、予約サイト掲載の公式案内で確認）。区画面積の公表値は未確認。 |
+| **72／100｜KARUIZAWA CAMP GOLD（長野県北佐久郡軽井沢町） 4h 🪨🌱🌲** | **Highland Sauna Camp**<br>貸切サウナと小川のある穴場リゾート。林間サイトに宿泊し、地面は砂利と芝から選べた。トイレは近場と遠い場所の2か所、炊事場は水のみの近場とお湯が出るやや遠い場所があり、質は遠い方が高い。薪が高品質で、管理棟は綺麗。近隣には軽井沢らしい魅力的な買い物スポットがある。標準チェックイン13時、アーリーチェックインは11時から入場可能（グランピングプランは対象外、予約サイト掲載の公式案内で確認）。区画面積の公表値は未確認。 |
 | **71／100｜CREST northKaruizawa（群馬県吾妻郡長野原町） 4h 🌱🌲** | **Grand Lawn**<br>圧倒的な天然芝の素晴らしさが際立つ。気になる点は遠さくらい。 |
 | **70／100｜昇仙峡オートキャンプ場（山梨県甲府市） 4h 🪨** | **White Gravel Estate**<br>白い砂利で丁寧に整備された、屈指の広さを誇る区画。1泊では使い切れないほどの薪が安価に用意され、焚き火好きには理想的。水回りはお湯が出るものの至って標準的。 |
 | 69(暫定)／100｜成田ゆめ牧場ファミリーオートキャンプ場（千葉県成田市） 1.5h 🌱 | **Family Resort**<br>高規格設備で快適性は高い。標準チェックインが9時（冬10時）と好条件（口コミで土日9時前受付開始を確認）。区画面積の公表値は未確認。 |
@@ -280,7 +280,7 @@ OP-010 Part C §Site Requirements（区画面積：80㎡（車別）、車込み
 | CREST northKaruizawa | 🌱🌲（MD-002既記録）。芝生サイトは天然芝 | 芝生サイト約130㎡（10m×13m） | — | 公式 |
 | 昇仙峡オートキャンプ場 | 🪨（MD-002既記録）。全区画砕石 | 約50〜174㎡（A〜W区画） | 車込 | なっぷ |
 | 成田ゆめ牧場ファミリーオートキャンプ場 | 🌱（MD-002既記録） | 電源区画サイト約9m×9m。一般サイトはフリーサイト | — | 紹介記事 |
-| KARUIZAWA CAMP GOLD | 🌱🌲（MD-002既記録）。地面は砂利と芝を選べた。宿泊は林間サイト（MARI様の確認、2026-10-03） | オートサイト約8.5m×8.5m、林間サイト10m×10m | — | 紹介記事・MARI様の訪問 |
+| KARUIZAWA CAMP GOLD | 🪨🌱🌲 砂利・芝を選択可。宿泊は林間サイト（MARI様の確認、2026-10-03） | オートサイト約8.5m×8.5m、林間サイト10m×10m | — | 紹介記事・MARI様の訪問 |
 | JUTE CAMP FIELD | 🪨（MD-002既記録） | ソロワイドサイト約140㎡、スカイサイト約100㎡ | 車込 | 公式（MD-002既記録） |
 | 清里オーベルジュ コート・ドゥ・ヴェール（緑の丘） | 🌱 芝 | 8m×16m＝128㎡ | 車込（乗り入れ可） | なっぷ |
 | CAMPGROUND BREEZE TATEYAMA | 🪨🌱（MD-002既記録） | プレミアムサイト9m×10m（90㎡）、グリーンサイト5m×10m（50㎡） | — | 紹介記事 |
@@ -438,7 +438,7 @@ THE THIRD PLACE を実現するための
 | 4.8 | 2026-10-01 | MARI様のご確認に基づき、富士山オートキャンプ場GENSHIJINの地面を🪨（砂利）から⛰️（岩場）へ改めた（Field Atlas Database・§Site Record）。スコア・掲載順に変更はない。Patch Version。 |
 | 4.9 | 2026-10-01 | MARI様のご依頼に基づき、§VisualizationのField Atlas Radarに、Field Atlas Navigator・Ivoryと同じ情報（地面・系統別小計と全件平均・アーリーチェックイン区分の点数・§Site Record・標高と気温差・日の出・日の入り・月齢・周辺環境・次のキャンプと訪問の記録・装備の正式名称・View軸の基準地点・フィールドへの直接リンク）と、近い順の並べ替え・訪問済み／未訪問・地面での絞り込みを加えた。生成は scripts/field_atlas_radar.py で、追加の情報は scripts/field_atlas_navigator.py の extras() を共用する。スコア・掲載順・アーリーチェックインに変更はない。Minor Version。 |
 | 4.10 | 2026-10-02 | MARI様のご依頼に基づき、§Visualizationの3ページ（Field Atlas Navigator・Ivory・Radar）に、次のキャンプのフィールド（moss camp field）の「寒さの目安」を加えた。気象庁アメダス「山中」（山梨県・標高992m）の10月上旬（月の前半の目安）の平年値（1991〜2020年）の日最低気温9.4℃と、キャンプ場（標高993m）との標高差による補正値（0.6℃/100mの目安）を示す。データは scripts/data/field_atlas_navigator/climate.json（出典は同README.mdのData files）で、scripts/field_atlas_check.py の対象とした。あわせて、NavigatorとIvoryで重複していたスクリプトを scripts/templates/field_atlas_shared.js に一本化した（表示と操作に変更はない）。スコア・掲載順・アーリーチェックインに変更はない。Minor Version。 |
-| 4.11 | 2026-10-03 | MARI様のご訪問（2026-09-26〜27、林間サイトに宿泊、11:00のアーリーチェックインを予約）に基づき、KARUIZAWA CAMP GOLDを訪問済みへ更新した。MARI様の採点（Ground 8／Layout 7／Facility 6／Comfort 7／View 7／Place 10／Experience 8）とパートナー様のご感想（Partner 7）に、既存のOperation 8（アーリー「可」）・近さ 4を加え、Atlas Resonanceを68（暫定）から72へ更新した。Facilityは、トイレ（近場4・遠方8の平均6）と炊事場（水のみ4・お湯が出る所6の平均5）の平均5.5を繰り上げた6点とした（管理棟の清潔さを含む）。あわせて、MARI様のご指示により橘ふれあい公園キャンプ場を実感で採り直した（Ground 6→5／Layout 9→10／Facility 7→6／View 7→6／Place 8→6／Experience 6→5／Partner 9→8。Comfort 9・Operation 2・近さ 9は変更なし）。合計は72から66となった。この結果、KARUIZAWA CAMP GOLDをHillbilly Campingの下、CREST northKaruizawaの上へ移し、橘ふれあい公園キャンプ場は清里オーベルジュとの同点をPartner軸（清里9・橘8）で決めて、JUTE CAMP FIELDの下、CAMPGROUND BREEZE TATEYAMAの上へ並べ替えた。Field Atlas Database・Sub-Score Table・Early Check-in Record・§Site Recordを更新した。Minor Version。 |
+| 4.11 | 2026-10-03 | MARI様のご訪問（2026-09-26〜27、林間サイトに宿泊、11:00のアーリーチェックインを予約）に基づき、KARUIZAWA CAMP GOLDを訪問済みへ更新した。MARI様の採点（Ground 8／Layout 7／Facility 6／Comfort 7／View 7／Place 10／Experience 8）とパートナー様のご感想（Partner 7）に、既存のOperation 8（アーリー「可」）・近さ 4を加え、Atlas Resonanceを68（暫定）から72へ更新した。Facilityは、トイレ（近場4・遠方8の平均6）と炊事場（水のみ4・お湯が出る所6の平均5）の平均5.5を繰り上げた6点とした（管理棟の清潔さを含む）。地面は砂利と芝を選べたため、アイコンを🌱🌲から🪨🌱🌲へ改めた（Field Atlas Database・§Site Record）。あわせて、MARI様のご指示により橘ふれあい公園キャンプ場を実感で採り直した（Ground 6→5／Layout 9→10／Facility 7→6／View 7→6／Place 8→6／Experience 6→5／Partner 9→8。Comfort 9・Operation 2・近さ 9は変更なし）。合計は72から66となった。この結果、KARUIZAWA CAMP GOLDをHillbilly Campingの下、CREST northKaruizawaの上へ移し、橘ふれあい公園キャンプ場は清里オーベルジュとの同点をPartner軸（清里9・橘8）で決めて、JUTE CAMP FIELDの下、CAMPGROUND BREEZE TATEYAMAの上へ並べ替えた。Field Atlas Database・Sub-Score Table・Early Check-in Record・§Site Recordを更新した。Minor Version。 |
 
 ---
 
