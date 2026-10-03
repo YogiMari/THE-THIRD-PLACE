@@ -940,7 +940,7 @@
   "pos": "50% 50%",
   "credit": "YETI Japan",
   "url": "https://www.yeti.co.jp/products/roadie-24-cool-box-charcoal",
-  "kind": "Reference image: shown in Charcoal; registry colour is Gray",
+  "kind": "Official store image (Charcoal)",
   "bg": "white"
  },
  "FUR-010": {
@@ -948,7 +948,7 @@
   "pos": "50% 50%",
   "credit": "DEVISE WORKS Online Shop",
   "url": "https://onlineshop.dwcamp.com/view/item/000000000720",
-  "kind": "Reference image: store lists NEW WARU NOVITA",
+  "kind": "Official store image",
   "bg": null
  },
  "LGT-001": {
@@ -964,7 +964,7 @@
   "pos": "50% 50%",
   "credit": "NATURAL MOUNTAIN MONKEYS",
   "url": "https://nmmonkeys.official.ec/items/20873457",
-  "kind": "Reference image: store lists NOVITA neo BRASS",
+  "kind": "Official store image",
   "bg": null
  },
  "LGT-014": {
@@ -1058,26 +1058,26 @@
  "LGT-006": {
   "f": "img/LGT-006.jpg",
   "pos": "50% 50%",
-  "credit": "NODEL DESIGN",
-  "url": "https://www.nodeldesign.com/post/38kt-miyabi-wood-%E7%99%BA%E5%A3%B2",
-  "kind": "Reference image: launch announcement for 38kt miyabi wood KING / QUEEN",
+  "credit": "WAW Editions",
+  "url": "https://www.waweditions.com/products/nodeldesign-38kt-king",
+  "kind": "Retailer image (KING walnut)",
   "bg": null
  },
  "LGT-007": {
   "f": "img/LGT-007.jpg",
   "pos": "50% 50%",
-  "credit": "NODEL DESIGN",
-  "url": "https://www.nodeldesign.com/post/38kt-miyabi-wood-%E7%99%BA%E5%A3%B2",
-  "kind": "Reference image: launch announcement for 38kt miyabi wood KING / QUEEN",
+  "credit": "WAW Editions",
+  "url": "https://www.waweditions.com/products/nodeldesign-38kt-queenzebra",
+  "kind": "Retailer image (QUEEN zebra)",
   "bg": null
  },
  "LGT-012": {
   "f": "img/LGT-012.jpg",
   "pos": "50% 50%",
-  "credit": "CALMA STORE",
-  "url": "https://calmastore.online/products/neru-ndw-miyabi-copper",
-  "kind": "Reference image: store lists neru NDW MIYABI Copper",
-  "bg": null
+  "credit": "Calma Store",
+  "url": "https://calmastore.online/zh-usa/products/1fspace-miyabi-rich",
+  "kind": "Retailer image (0/f brass glove, shade only)",
+  "bg": "white"
  },
  "LGT-013": {
   "f": "img/LGT-013.jpg",
@@ -1146,10 +1146,10 @@
  "STR-007": {
   "f": "img/STR-007.jpg",
   "pos": "50% 50%",
-  "credit": "GARAGE CAMP STORE",
-  "url": "https://www.garagecampstore.com/shopdetail/000000005831/",
-  "kind": "Reference image: シェルフコンテナ25 ブラック (雪峰祭 edition)",
-  "bg": "white"
+  "credit": "Supplied by the owner (original source not stated)",
+  "url": null,
+  "kind": "Image supplied by the owner (original source not stated)",
+  "bg": null
  },
  "STR-025": {
   "f": "img/STR-025.jpg",
@@ -1436,7 +1436,7 @@
   "pos": "50% 50%",
   "credit": "WHAT WE WANT",
   "url": "https://whatwewant.jp/products/www_hanger",
-  "kind": "Reference image: leather and brass shown; registry material is Walnut / Oak",
+  "kind": "Official store image",
   "bg": "white"
  },
  "FIR-007": {
@@ -1586,9 +1586,9 @@
  "KIT-026": {
   "f": "img/KIT-026.jpg",
   "pos": "50% 50%",
-  "credit": "Snow Peak Official Online Store",
-  "url": "https://ec.snowpeak.co.jp/item/SNP0123A0508",
-  "kind": "Reference image: SCT-004 ONLINE edition (titanium blue)",
+  "credit": "Snow Peak (via SISUCA)",
+  "url": "https://shopsisuca.com/products/titanium-spork-green-anodized",
+  "kind": "Retailer image (Snow Peak USA anodised green, SCT-004GR)",
   "bg": "white"
  },
  "KIT-027": {
