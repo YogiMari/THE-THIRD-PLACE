@@ -34,10 +34,10 @@ def parse(path, stop_heads):
     if cur: items.append(cur)
     return items
 
-MD004='MD/MD-004_Equipment_Registry_Object_Reference.md'
+MD004_FILES=[f'MD/MD-004/MD-004_{n}.md' for n in ('FUR_Furniture','LGT_Light','ARM_Aroma','STR_Storage','FIR_Fire','SHL_Shelter')]  # Domain files, in registry order (OP-008 §11.2)
 MD003='MD/MD-003_Galley_Fare.md'
 ZONES_004=['Furniture','Light','Aroma','Storage','Coffee','Fire','Shelter']
-d=parse(MD004,ZONES_004)+parse(MD003,['Kitchen'])
+d=[i for f in MD004_FILES for i in parse(f,ZONES_004)]+parse(MD003,['Kitchen'])
 own=[i for i in d if i.get('Status')=='Owned']
 ids={i['id'] for i in own}
 PV_YES=re.compile(r'公式.{0,12}価格|現行価格|実勢価格|別途確認'); PV_NO=re.compile(r'購入価格|申告')

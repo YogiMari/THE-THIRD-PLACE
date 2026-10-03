@@ -33,7 +33,7 @@ photos = json.load(open(os.path.join(HERE, 'photos.json'), encoding='utf-8'))
 
 today = datetime.date.today()
 meta = dict(date=a.date or f'{today.day} {today.strftime("%B %Y")}',
-            md004=version('MD/MD-004_Equipment_Registry_Object_Reference.md'),
+            md004=version('MD/MD-004/MD-004_Equipment_Registry_Object_Reference.md'),
             md003=version('MD/MD-003_Galley_Fare.md'))
 
 s = open(os.path.join(HERE, 'template.html'), encoding='utf-8').read()
