@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.34
+## Ver.2.35
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.34  
+**Version**: 2.35  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -379,7 +379,7 @@ Internal Size
 
 ### Fixed Contents
 
-- DEVADEVA
+- DEVA DEVA
 - VALO SHADE
 - TARP to TARP × Lampup Glass Shade
 - RT-01AC01 / ECHO LAMP（未所有・MD-004 LGT-040 Status = Essential）
@@ -872,7 +872,7 @@ KURASHI MADE DOME LOOK（未所有・MD-004 LGT-041 Status = Essential）
 
 ↓
 
-DEVADEVA
+DEVA DEVA
 
 ↓
 
@@ -1038,7 +1038,7 @@ Light & Aroma Module専用。
 
 ### Fixed Contents
 
-- DEVADEVA
+- DEVA DEVA
 - VALO SHADE
 - TARP to TARP × Lampup Glass Shade
 - RT-01AC01 / ECHO LAMP（未所有・MD-004 LGT-040 Status = Essential）
@@ -1152,7 +1152,7 @@ Coffee Module Layout（暫定）の判定により、Wood Board 3セット＋Cof
 
 ### Verified Equipment
 
-- DEVADEVA
+- DEVA DEVA
 - VALO SHADE
 - TARP to TARP × Lampup Glass Shade
 - RT-01AC01 / ECHO LAMP
@@ -1268,6 +1268,7 @@ Permanent Storage
 | 2.32 | 2026-10-02 | MD-004 Ver.7.83（カスタムベロの4分解と、Fire Domainの旧4番以降の+3繰り下げ）と連動し、本文のFIR参照を新番号へ更新した。検証スクリプトが改訂履歴の行もEquipment ID参照として読むため、改訂履歴（2.13・2.14・2.21）のFIR参照も新番号へ揃えた。MARI様のご決定に基づく。Patch Version。 |
 | 2.33 | 2026-10-02 | 文書冒頭の見出し「Ver.」表記が本文のVersionと食い違っていたため（見出しのみVer.2.30のまま残存）、見出しを現行Versionへ揃えた。内容に変更はない。Patch Version。 |
 | 2.34 | 2026-10-02 | MD-004 Ver.7.85（SHL-001のProductを正式名称「幕男 4th.ver」へ変更）と連動し、Vehicle Loading MapのSHL-001の表記を「幕男 4th.ver」へ改めた。収納・積載の内容に変更はない。Patch Version。 |
+| 2.35 | 2026-10-03 | MD-004 Ver.7.86（LGT-021のProductを「DEVA DEVAの実」へ訂正）と連動し、本文中の略記「DEVADEVA」4箇所（ShellCon25 TCのFixed Contents・Verified Equipment、Light Sequenceほか）を「DEVA DEVA」へ改めた。収納・積載の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。 |
 
 ---
 
