@@ -675,7 +675,7 @@ Portable LED Lantern（38-kT Shade, Foldable。フィールドでの設営時に
 
 ## LGT-017b  
 
-Retired. 38-kT用シェードの候補枠（Candidate）。MD-004 §Purposeの候補記録ルール（競合する複数の候補IDは1件の決定枠IDへ統合する）に基づき、LGT-017aへ統合した（2026-09-29、MARI様のご決定）。候補製品の比較はCZ-001 Deliberation Dossierで管理する。本IDは統合記録として保持する。  
+Retired（Merged）. 2026-09-29. 38-kT用シェードの候補枠（Candidate）。MD-004 §Purposeの候補記録ルール（競合する複数の候補IDは1件の決定枠IDへ統合する）に基づき、LGT-017aへ統合した（2026-09-29、MARI様のご決定）。候補製品の比較はCZ-001 Deliberation Dossierで管理する。本IDは統合記録として保持する。  
 
 ---  
 
