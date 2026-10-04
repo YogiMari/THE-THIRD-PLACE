@@ -1806,5 +1806,21 @@
   "url": "",
   "kind": "Image supplied by the owner (original source not stated)",
   "bg": null
+ },
+ "KIT-087": {
+  "f": "img/KIT-087.jpg",
+  "pos": "50% 55%",
+  "credit": "Supplied by the owner",
+  "url": "",
+  "kind": "Image supplied by the owner (original source not stated)",
+  "bg": null
+ },
+ "STR-038": {
+  "f": "img/STR-038.jpg",
+  "pos": "50% 50%",
+  "credit": "Supplied by the owner",
+  "url": "",
+  "kind": "Image supplied by the owner (original source not stated)",
+  "bg": "white"
  }
 }
