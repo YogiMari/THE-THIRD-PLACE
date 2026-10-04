@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 8.4  
+**Version**: 8.5  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -278,6 +278,16 @@ MARI様のご確認・ご指示（2026-10-04）に基づき、公式サイト価
 - SHL-006：Priceの注記を「3zo.online公式サイト価格、2026-09-28確認」から「購入価格」へ変更。¥16,500のまま。
 - FUR-036：Colorの注記から「MARI様確認」を削除。STR-030：Materialの注記から「MARI様確認」を削除。内容は変更なし。
 - Priceの注記から「MARI様確認」「MARI様申告」を削除（13件）：FIR-012、FIR-038、FUR-032、FUR-034、FUR-035、FUR-036、LGT-028、SHL-002、STR-015、STR-018、STR-020、STR-033、STR-037。
+
+---
+
+## Version 8.5
+
+MARI様のご指示（2026-10-04）に基づき、Snow Peak Recycled Cordura Tote Bag（BB-26SU002）をSTR-038として新規登録した（Status: Owned）。購入価格はSnow Peakオンラインストアの注文確認メール（注文日2026-10-04、数量1）による。Material・寸法・仕様はSnow Peak公式ページで確認した。親子関係・他IDへの変更はない。Minor Version。
+
+### Changes
+
+- STR-038（新規）：Snow Peak Recycled Cordura Tote Bag（BB-26SU002）。Owned、Black、¥15,840（購入価格）。
 
 ---
 

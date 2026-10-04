@@ -1398,3 +1398,39 @@ Duffle Bag（L380×W230×H340mm。充電が必要な物だけを入れて運用�
 ¥19,800（購入価格）  
 
 ---  
+
+## STR-038  
+
+**Brand**  
+
+Snow Peak  
+
+**Product**  
+
+Recycled Cordura Tote Bag（BB-26SU002）  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black  
+
+### Material  
+
+Nylon 100%（Recycled Cordura）  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Tote Bag（W600×D250×H400mm。二重底で自立、内ポケット1・外側ポケット4、取り外し可能なショルダーストラップ、MOLLE対応。Snow Peak公式ページ確認）  
+
+### Price  
+
+¥15,840（購入価格）  
+
+---  
