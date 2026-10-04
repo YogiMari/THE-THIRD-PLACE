@@ -154,7 +154,7 @@ Campfire Steak Griddle（Detachable Handle）
 
 ### Price
 
-¥23,760（購入価格）
+¥23,760（購入価格。福山限定品）
 
 ---
 
@@ -974,15 +974,15 @@ Owned
 
 ### Color
 
-Brown（Presumed, Handle, Series-Consistent）／Black（Tip, Silicone。MARI様確認）
+Brown（Presumed, Handle, Series-Consistent）／Black（Tip, Silicone）
 
 ### Material
 
-Walnut（Handle。MARI様確認）／Silicone（Tip。MARI様確認）
+Walnut（Handle）／Silicone（Tip）
 
 ### Graphic Attribute
 
-Emblem（紋章柄, Black。MARI様確認）
+Emblem（紋章柄, Black）
 
 ### Industrial Attribute
 
@@ -1328,7 +1328,7 @@ Owned
 
 ### Color
 
-Silver（Blade）／Red・Blue・Beige・Gray（Grip, 4色。MARI様確認）
+Silver（Blade）／Red・Blue・Beige・Gray（Grip, 4色）
 
 ### Material
 
@@ -2034,7 +2034,7 @@ Sierra Cup（Used as Plate, Handmade in Japan, Enamel Finish）
 
 ### Price
 
-¥4,950（購入価格）
+¥4,950（購入価格。Online限定品）
 
 ---
 
@@ -2833,7 +2833,7 @@ KIT-001
 
 ### Color
 
-Tan（MARI様確認）
+Tan
 
 ### Material
 
@@ -2873,7 +2873,7 @@ KIT-001
 
 ### Color
 
-Black（Iron部。MARI様確認）
+Black（Iron部）
 
 ### Material
 
@@ -2909,7 +2909,7 @@ KIT-073
 
 ### Color
 
-Light Brown（MARI様確認）
+Light Brown
 
 ### Material
 
@@ -2940,11 +2940,11 @@ Owned
 
 ### Color
 
-Black（MARI様確認）
+Black
 
 ### Material
 
-Iron（MARI様確認）
+Iron
 
 ### Industrial Attribute
 
@@ -3064,7 +3064,7 @@ Owned
 
 ### Color
 
-Black（MARI様確認）
+Black
 
 ### Material
 
@@ -3095,11 +3095,11 @@ Owned
 
 ### Color
 
-Gold（MARI様確認）
+Gold
 
 ### Material
 
-Brass（MARI様確認）
+Brass
 
 ### Industrial Attribute
 
@@ -3250,7 +3250,7 @@ Owned
 
 ### Color
 
-Black（BK。MARI様確認）
+Black（BK）
 
 ### Material
 
@@ -3668,7 +3668,7 @@ MARI様のご申告（2026-10-02）に基づき、KIT-084（アシナガプレ�
 
 ## Version 2.24
 
-MARI様のご申告・ご確認（2026-10-04）に基づき、暫定価格だったKIT系列の52件のPriceを購入価格へ確定した。暫定の文言（公式…現行価格／実購入額は別途確認が必要）と、公式価格の対象を説明していた付記は外した。金額が変わったのは次の2件。KIT-051（OLD MOUNTAIN RICECOOKER 480深型 STAINLESS）：¥1,980から¥3,960へ変更（1個の購入価格）。KIT-062（Snow Peak フォールディングコーヒードリッパー「焚火台型」）：2個所有のため、Quantity 2を追加し、¥4,620から¥9,240（2個合計。1個¥4,620）へ変更した。残る50件は、金額はそのまま注記のみを「購入価格」へ改めた。数量2のKIT-014とKIT-065は「2個合計。1個¥X」の形とした。KIT-042を含め、MD-003のOwned記録に暫定価格は残っていない。あわせて、MARI様のご指示（2026-10-04）に基づき、既存のPrice注記にあった「MARI様確認」「MARI様申告」の文言を外した（KIT-016・033・043〜048・056・066・084の11件。金額は変更なし）。
+MARI様のご申告・ご確認（2026-10-04）に基づき、暫定価格だったKIT系列の52件のPriceを購入価格へ確定した。暫定の文言（公式…現行価格／実購入額は別途確認が必要）と、公式価格の対象を説明していた付記は外した（「送料込み」は全て削除。限定品であることを示すKIT-003「福山限定品」・KIT-049「Online限定品」は残した）。金額が変わったのは次の2件。KIT-051（OLD MOUNTAIN RICECOOKER 480深型 STAINLESS）：¥1,980から¥3,960へ変更（1個の購入価格）。KIT-062（Snow Peak フォールディングコーヒードリッパー「焚火台型」）：2個所有のため、Quantity 2を追加し、¥4,620から¥9,240（2個合計。1個¥4,620）へ変更した。残る50件は、金額はそのまま注記のみを「購入価格」へ改めた。数量2のKIT-014とKIT-065は「2個合計。1個¥X」の形とした。KIT-042を含め、MD-003のOwned記録に暫定価格は残っていない。あわせて、MARI様のご指示（2026-10-04）に基づき、既存のPrice注記にあった「MARI様確認」「MARI様申告」の文言を外した（KIT-016・033・043〜048・056・066・084の11件。金額は変更なし）。さらにColor・Material・Graphic Attributeの各欄にあった「MARI様確認」の文言も外した（KIT-023・033・072・073・074・075・079・080・085の9件。内容は変更なし）。
 
 ---
 
