@@ -3,7 +3,7 @@
 **Document ID**: MD-003  
 **Title**: Galley Fare  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.23  
+**Version**: 2.24  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -1782,7 +1782,7 @@ Sierra Cup（Used as Plate, 310ml, Interior Measurement Markings）
 
 ### Price
 
-¥1,584（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥1,584（購入価格）
 
 ---
 
@@ -2106,7 +2106,7 @@ Sierra Cup（Used as Plate, Deep Type, 480ml, Rice/Water Line Markings for Rice 
 
 ### Price
 
-¥1,980（OLD MOUNTAIN公式サイト現行価格、2026-10-02確認。M16メモリ付き深型の価格。実購入額は別途確認が必要）
+¥3,960（購入価格）
 
 ---
 
@@ -2472,6 +2472,10 @@ Snow Peak
 
 Owned
 
+### Quantity
+
+2
+
 ### Color
 
 Silver
@@ -2490,7 +2494,7 @@ Folding Coffee Dripper（Firepit-Style, Uses Standard Paper Filters, 140g）
 
 ### Price
 
-¥4,620（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥9,240（2個合計。1個¥4,620）
 
 ---
 
@@ -3661,6 +3665,12 @@ MARI様のご指示（2026-10-02）に基づき、価格が未記載だったKIT
 ## Version 2.23
 
 MARI様のご申告（2026-10-02）に基づき、KIT-084（アシナガプレート Geek ver.）のPriceを、公式販売価格の暫定値から購入価格の¥3,600（1個）へ確定した。金額は変わらず、「実購入額は別途確認が必要」の注記を外した。
+
+## Version 2.24
+
+MARI様のご申告（2026-10-04）に基づき、暫定価格だった次の3件のPriceを購入価格へ確定した。暫定の文言（公式価格の現行価格・実購入額は別途確認が必要）は外した。KIT-042（Snow Peak ステンレスシェラカップ）：¥1,584。金額は変わらない。KIT-051（OLD MOUNTAIN RICECOOKER 480深型 STAINLESS）：¥1,980から¥3,960へ変更。1個の購入価格。KIT-062（Snow Peak フォールディングコーヒードリッパー「焚火台型」）：2個所有のため、Quantity 2を追加し、¥4,620から¥9,240（2個合計。1個¥4,620）へ変更した。
+
+---
 
 ---
 
