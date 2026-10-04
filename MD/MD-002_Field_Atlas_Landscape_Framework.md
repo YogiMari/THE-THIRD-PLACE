@@ -1,11 +1,11 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.4.11
+## Ver.4.12
 
 **Document ID**: MD-002  
 **Title**: Field Atlas Landscape Framework  
 **Series**: MD – Master Data (Record)  
-**Version**: 4.11  
+**Version**: 4.12  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -95,7 +95,7 @@ Field Atlas Evaluation Framework（10軸評価、OP-010 Qualification Charter Pa
 | **39／100｜Bonfirebase 富津キャンプビレッジ（千葉県富津市） 1.5h 🪨🌱** | **Terraced Forest Camp**<br>棚田を活かした段差区画の林間サイト。都内から1時間強とアクセスも良い。 |
 | **38／100｜神栖市営日川浜オートキャンプ場（茨城県神栖市） 1.5h 🌱** | **Standard Beach Camp**<br>特に良かった点も気になった点もなし。再訪予定はない。 |
 | **37／100｜サンビレッジ金谷キャンプ場（千葉県富津市） 1.5h 🟫** | **Owner's Handmade Camp**<br>オーナーが場内に常駐し、手作りの設備が随所にある。あまり綺麗ではない点が気になる。 |
-| **36／100｜キャンプ ざ カントリー（茨城県鹿嶋市） 1.5h 🟫** | **Forest Wind Break**<br>記憶に残る特徴が無い。鹿嶋神の道に隣接する森林サイト。 |
+| **36／100｜九十九里浜シーサイドオートキャンプ（千葉県匝瑳市） 1.5h 🟫** | **Forest Wind Break**<br>記憶に残る特徴が無い。鹿嶋神の道に隣接する森林サイト。 |
 
 ---
 
@@ -193,9 +193,9 @@ Ver.3.9までの旧スコア（Ver.2.1までのフレームワークによる統
 | Bonfirebase 富津キャンプビレッジ | 3 | 3 | 4 | 8 | 2 | 3 | 3 | 1 | 9 | 3 | 39 | 可 |
 | 神栖市営日川浜オートキャンプ場 | 4 | 4 | 4 | 8 | 3 | 2 | 1 | 1 | 9 | 2 | 38 | 可 |
 | サンビレッジ金谷キャンプ場 | 3 | 3 | 2 | 8 | 2 | 2 | 3 | 3 | 9 | 2 | 37 | 可 |
-| キャンプ ざ カントリー | 4 | 4 | 4 | 8 | 3 | 1 | 1 | 1 | 9 | 1 | 36 | 可 |
+| 九十九里浜シーサイドオートキャンプ | 4 | 4 | 4 | 8 | 3 | 1 | 1 | 1 | 9 | 1 | 36 | 可 |
 
-**総括：** 全49件の記録が完了した。Ver.4.0のAtlas Resonanceが最も高いのはRender Fika（88点）、次いでスノーピークヘッドクォーターズキャンプフィールド（85点）。最も低いのはキャンプ ざ カントリー（36点）。掲載順はVer.3.9から変わっていない。
+**総括：** 全49件の記録が完了した。Ver.4.0のAtlas Resonanceが最も高いのはRender Fika（88点）、次いでスノーピークヘッドクォーターズキャンプフィールド（85点）。最も低いのは九十九里浜シーサイドオートキャンプ（36点）。掲載順はVer.3.9から変わっていない。
 
 
 ## Early Check-in Record
@@ -252,7 +252,7 @@ OP-010 Part C §Early Check-in Scoringの区分（早い／可／条件付き／
 | Bonfirebase 富津キャンプビレッジ | 可 | アーリー10:00〜（¥1,000/人、繁忙日は原則不可） | 公式予約ページ |
 | 神栖市営日川浜オートキャンプ場 | 可 | 通常IN 13:00。混雑時以外はアーリー10:00〜（¥1,570） | 検索結果（なっぷ） |
 | サンビレッジ金谷キャンプ場 | 可 | 通常IN 12:00。アーリー¥1,000/h（混雑時不可） | 公式・なっぷ |
-| キャンプ ざ カントリー | 可 | アーリーオプション（¥1,000/人） | 公式・なっぷ |
+| 九十九里浜シーサイドオートキャンプ | 可 | アーリーオプション（¥1,000/人） | 公式・なっぷ |
 
 ## Site Record
 
@@ -312,7 +312,7 @@ OP-010 Part C §Site Requirements（区画面積：80㎡（車別）、車込み
 | Bonfirebase 富津キャンプビレッジ | 🪨🌱 砂利・芝（MARI様の確認、2026-10-01） | オートサイト120㎡以上 | 車込 | 公式 |
 | 神栖市営日川浜オートキャンプ場 | 🌱 芝 | 100㎡〜 | 車込（台数制限なし） | なっぷ |
 | サンビレッジ金谷キャンプ場 | 🟫 土（MARI様の確認、2026-10-01） | 区画オートサイト約8m×8m | 車込 | なっぷ |
-| キャンプ ざ カントリー | 🟫 土（MARI様の確認、2026-10-01） | 約140〜1,000㎡（サイトにより異なる） | 車込（サイトにより2〜4台） | なっぷ |
+| 九十九里浜シーサイドオートキャンプ | 🟫 土（MARI様の確認、2026-10-01） | 約140〜1,000㎡（サイトにより異なる） | 車込（サイトにより2〜4台） | なっぷ |
 
 ## Visualization
 
@@ -439,6 +439,7 @@ THE THIRD PLACE を実現するための
 | 4.9 | 2026-10-01 | MARI様のご依頼に基づき、§VisualizationのField Atlas Radarに、Field Atlas Navigator・Ivoryと同じ情報（地面・系統別小計と全件平均・アーリーチェックイン区分の点数・§Site Record・標高と気温差・日の出・日の入り・月齢・周辺環境・次のキャンプと訪問の記録・装備の正式名称・View軸の基準地点・フィールドへの直接リンク）と、近い順の並べ替え・訪問済み／未訪問・地面での絞り込みを加えた。生成は scripts/field_atlas_radar.py で、追加の情報は scripts/field_atlas_navigator.py の extras() を共用する。スコア・掲載順・アーリーチェックインに変更はない。Minor Version。 |
 | 4.10 | 2026-10-02 | MARI様のご依頼に基づき、§Visualizationの3ページ（Field Atlas Navigator・Ivory・Radar）に、次のキャンプのフィールド（moss camp field）の「寒さの目安」を加えた。気象庁アメダス「山中」（山梨県・標高992m）の10月上旬（月の前半の目安）の平年値（1991〜2020年）の日最低気温9.4℃と、キャンプ場（標高993m）との標高差による補正値（0.6℃/100mの目安）を示す。データは scripts/data/field_atlas_navigator/climate.json（出典は同README.mdのData files）で、scripts/field_atlas_check.py の対象とした。あわせて、NavigatorとIvoryで重複していたスクリプトを scripts/templates/field_atlas_shared.js に一本化した（表示と操作に変更はない）。スコア・掲載順・アーリーチェックインに変更はない。Minor Version。 |
 | 4.11 | 2026-10-03 | MARI様のご訪問（2026-09-26〜27、林間サイトに宿泊、11:00のアーリーチェックインを予約）に基づき、KARUIZAWA CAMP GOLDを訪問済みへ更新した。MARI様の採点（Ground 8／Layout 7／Facility 6／Comfort 7／View 7／Place 10／Experience 8）とパートナー様のご感想（Partner 7）に、既存のOperation 8（アーリー「可」）・近さ 4を加え、Atlas Resonanceを68（暫定）から72へ更新した。Facilityは、トイレ（近場4・遠方8の平均6）と炊事場（水のみ4・お湯が出る所6の平均5）の平均5.5を繰り上げた6点とした（管理棟の清潔さを含む）。地面は砂利と芝を選べたため、アイコンを🌱🌲から🪨🌱🌲へ改めた（Field Atlas Database・§Site Record）。あわせて、MARI様のご指示により橘ふれあい公園キャンプ場を実感で採り直した（Ground 6→5／Layout 9→10／Facility 7→6／View 7→6／Place 8→6／Experience 6→5／Partner 9→8。Comfort 9・Operation 2・近さ 9は変更なし）。合計は72から66となった。この結果、KARUIZAWA CAMP GOLDをHillbilly Campingの下、CREST northKaruizawaの上へ移し、橘ふれあい公園キャンプ場は清里オーベルジュとの同点をPartner軸（清里9・橘8）で決めて、JUTE CAMP FIELDの下、CAMPGROUND BREEZE TATEYAMAの上へ並べ替えた。Field Atlas Database・Sub-Score Table・Early Check-in Record・§Site Recordを更新した。Minor Version。 |
+| 4.12 | 2026-10-04 | MARI様のご指示（GitHub Issue #121）に基づき、旧「キャンプ ざ カントリー（茨城県鹿嶋市）」を「九十九里浜シーサイドオートキャンプ（千葉県匝瑳市）」へ差し替えた（名称と所在地のみ。評価は元々九十九里浜シーサイドオートキャンプについてのものである）。 |
 
 ---
 
