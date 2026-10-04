@@ -453,14 +453,14 @@ function coverHTML(){
   <section class="toc">
     <div class="toc-h label"><span>Contents</span><span>Zone · Series · Source · Count / Total · Principal material</span></div>
     ${rows}
-    <div class="row tot"><span class="num">Σ</span><span class="nm">Recorded total</span><span class="mono ct">${yen(sumP(DATA))}<small>${nP(DATA)} of ${all} objects carry a price · ‡ ${pvOf(DATA).length} are official list prices (${yen(sumP(pvOf(DATA)))})</small></span></div>
+    <div class="row tot"><span class="num">Σ</span><span class="nm">Recorded total</span><span class="mono ct">${yen(sumP(DATA))}<small>${nP(DATA)} of ${all} objects carry a price</small></span></div>
     <div class="row muted"><span class="num">—</span><span class="nm">Coffee</span><span class="mono cd">COF · MD-004</span><span class="mono ct">00 objects</span><span class="label pm">Registered on purchase</span><span></span></div>
   </section>
   <footer class="colophon">
     <div><h4 class="label">Sources</h4>MD-004 Equipment Registry Object Reference, v${META.md004}. MD-003 Galley Fare, v${META.md003} (Kitchen).</div>
     <div><h4 class="label">Scope</h4>Status = Owned only. Essential, Candidate and Upgrade records are not shown. Components appear under their parent.</div>
     <div><h4 class="label">Plates</h4>${Object.keys(PHOTOS).length} of ${DATA.length} objects are photographed, using images from each maker's store, a retailer, or the owner's own camera, credited on the object's page. They print in monochrome: with a pointer they turn to colour on hover, on touch as they cross the middle of the screen. The square in the corner is the material study. The rest keep a material study generated from the record's Material and Color.</div>
-    <div><h4 class="label">Prices</h4>Each figure is the record's Price field as written in the registry, summed per zone. Records without a price are left out of the sum; † marks a zone where that happens, and the priced count is shown with each total. Quantities are not multiplied, and apportioned prices keep their note. ‡ marks a provisional figure: the maker's or retailer's official list price on 2 October 2026 (the higher one where several matched), standing in until the purchase price is recorded. Purchase prices take precedence.</div>
+    <div><h4 class="label">Prices</h4>Each figure is the record's Price field as written in the registry, summed per zone. Records without a price are left out of the sum; † marks a zone where that happens, and the priced count is shown with each total. Quantities are not multiplied, and apportioned prices keep their note.</div>
   </footer>`;
 }
 function zoneHTML(z,zi){
