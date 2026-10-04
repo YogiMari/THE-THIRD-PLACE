@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-4.3  
+4.4  
   
 **Status**  
   
@@ -1632,7 +1632,7 @@ ALM KOPi Z1 Miniは、既存所有のSnow Peak ヤエンストーブ レギ（GS
   
 Snow Peak公式ストアでの単独購入となるため、Group A（9Barista）とは別注文とする。  
   
-9Barista本体が稼働可能な状態になるためには、本Groupの到着が前提となる。  
+9Barista本体が稼働可能な状態になるためには、本Groupの到着が前提となる。Monthly Acquisition Planでは本GroupをMonth 6に配置している（Snow Peak公式の別注文）。国内調達で送料が小さいため、9Barista本体の稼働を早めたい場合は前倒しが可能である。  
   
 ---  
   
@@ -1736,76 +1736,81 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
   
 # Monthly Acquisition Plan (Confirmed)  
   
-MARI様との合意に基づく、月次購入計画である。**9Baristaを最初（Month 1）、Milk Systemを最後（Month 6）に配置**し、その間の月は個別ドメインのWorkflow順ではなく、**コーヒーギア全体を対象に、月あたり目安「10万円をわずかに超える程度」で予算バランスさせたグループ**として再編成する。  
+MARI様のご決定（2026-10-04）に基づく、月次購入計画である。**9BaristaをMonth 1、グラス・水ボトルを最終月（Month 6）に配置**し、その間の月は個別ドメインのWorkflow順ではなく、**コーヒーギア全体を対象に、月あたり目安「10万円をわずかに超える程度」で予算バランスさせたグループ**として構成する。ProductはConfirmed Equipment Acquisition Registryの番号に一致する。  
   
-## Month 1 — 9Barista一式  
+## Month 1 — 9Barista  
   
-* 9Barista Mk.2 Pro  
-* 9Barista Puck Screen  
-* 9Barista Handle - Walnut ×2  
-* （任意）Safety Ring and Seals／Boiler O-ring Seal Mk.2／Overheat Repair Kit Mk.2  
-* Snow Peak ギガパワーストーブ レクタ（GS-150）※Group I、9Barista本体とは別店舗（Snow Peak公式）での注文  
-* 小計：¥149,300〜154,800（Optional Preventive Stockを除く）  
-* 上限なし（9Barista本体は公式まとめ買いを優先し、月次上限の例外とする。Group Iも9Barista稼働の前提として同月に含める）  
+* Product 01：9Barista Mk.2 Pro  
+* Product 13：9Barista Puck Screen  
+* Product 26：9Barista Handle - Walnut ×2  
+* （任意）Safety Ring and Seals／Boiler O-ring Seal Mk.2／Overheat Repair Kit Mk.2（9Barista Official Spare Parts (Preventive Stock)。小計とは別枠）  
+* 小計：¥135,000〜139,500（Optional Preventive Stockを除く）  
+* 上限なし（本体¥126,500のため、月次上限の例外とする）  
   
 ## Month 2  
   
-* Option-O LAGOM mini 2  
-* Weber Workshops Puck Screen Stand  
-* Snow Peak オーロラボトル 1L  
-* AION Seine Super Absorbent Coaster 801-BL  
-* 小計：¥94,000〜115,000  
+* Product 02：Option-O LAGOM mini 2  
+* Product 03：MantaBrew WeighMaster Ultra  
+* 小計：¥110,000〜123,000  
   
 ## Month 3  
   
-* Pullman Chisel Redistribution Tool Wood 53.3mm  
-* Weber Workshops Blind Shaker Onyx  
-* Snow Peak 酒筒 Titanium  
-* KRUVE PROPEL  
-* 小計：¥96,790〜109,790  
+* Product 07：Pullman Chisel Redistribution Tool Wood 53.3mm  
+* Product 06：The Force Tamper 53mm  
+* Product 08：Normcore Planetary WDT Tool 54mm  
+* Product 10：KNODOS Tamping Mat with Tool Organiser - Walnut 54mm  
+* 小計：¥113,000〜137,000  
   
-## Month 4  
+## Month 4 — Weber Workshops  
   
-* The Force Tamper 53mm  
-* Saint Anthony Industries The Bloc  
-* KNODOS Tamping Mat with Tool Organiser - Walnut 54mm  
-* Normcore Planetary WDT Tool 54mm  
-* 小計：¥93,000〜117,000  
+* Product 04：Weber Workshops Bean Cellar Bulk  
+* Product 11：Weber Workshops Blind Shaker Onyx  
+* Product 14：Weber Workshops Puck Screen Stand  
+* Product 22：DAMNGOOD × CATAPULT FACTORY FIKA12 ×2  
+* Product 09：Normcore RDT Spray Bottle  
+* 小計：¥100,000〜126,000  
   
-## Month 5  
+## Month 5 — ミルク  
   
-* MantaBrew WeighMaster Ultra  
-* Weber Workshops Bean Cellar Bulk  
-* ICOSA Brewhouse AERESSO  
-* YETI Yonder 1L  
-* HILLS FIELD Glass Case Single  
-* Normcore RDT Spray Bottle  
-* 小計：¥98,480〜113,480  
+* Product 15：ALM KOPi Z1 Mini Steamer  
+* Product 16：WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout  
+* Product 17：WPM Pitcher Sleeve  
+* Product 05：Saint Anthony Industries The Bloc  
+* 小計：¥102,000〜123,500  
   
-Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The Bloc／KNODOS）・抽出Tool（Chisel／WDT／Force Tamper）・エスプレッソグラス（PROPEL／AERESSO／HILLS FIELD Case）・専用水（Aurora Bottle／YETI／酒筒）がすべて揃い、Straight Espresso Workflowが完成する。予算バランスを優先した結果、個々の機能グループ（Station一式、Glass一式等）が複数月にまたがって到着する構成になるため、Workflowの全パーツが揃うMonth 5終了時点までは、未到着パーツをキッチン用品等で代用する必要がある。  
+## Month 6 — グラス・水ボトル（最終月）  
   
-## Month 6 — Latte System（最終月）  
+* Product 18：KRUVE PROPEL  
+* Product 19：ICOSA Brewhouse AERESSO  
+* Product 20：HILLS FIELD Glass Case Single  
+* Product 21：AION Seine Super Absorbent Coaster 801-BL  
+* Product 23：Snow Peak オーロラボトル 1L  
+* Product 24：YETI Yonder 1L  
+* Product 25：Snow Peak 酒筒 Titanium  
+* Product 30：Snow Peak ギガパワーストーブ レクタ（GS-150）※Group I、Snow Peak公式での別注文  
+* 小計：¥73,570〜88,570  
   
-* ALM KOPi Z1 Mini Steamer  
-* WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout  
-* WPM Pitcher Sleeve  
-* DAMNGOOD × CATAPULT FACTORY FIKA12 ×2  
-* 小計：¥102,000〜126,500  
+Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso Workflowが機能的に完成する。Month 6が最終月のため、Month 6だけは月あたり目安の10万円を下回る。予算バランスを優先した結果、個々の機能グループ（Station一式、Glass一式等）が複数月にまたがって到着する構成になるため、Workflowの全パーツが揃うMonth 6終了時点までは、未到着パーツをキッチン用品等で代用する必要がある。  
   
 ## Plan Total  
   
-総額目安：¥633,570〜736,570（Estimated Acquisition Budgetの目安¥642,570〜759,570の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
+総額目安：¥633,570〜737,570（Estimated Acquisition Budgetの目安¥642,570〜759,570の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
   
 ### Design Rationale  
   
-* 9Barista（Month 1）とMilk System（Month 6）の位置づけは、MARI様の指示に基づく固定端点とする。Month 1は上限なし（公式まとめ買い優先）、Month 6はLatte Workflow一式を完結させる最終月とする。  
-* Month 2〜5は、従来のWorkflow順グルーピング（Grinder→Station→抽出Tool→Bean Storage→Glassという段階的配置）を廃し、月あたり予算をおおむね¥93,000〜117,000の範囲に均等化したグループへ再編成した。各グループの中身はドメインを横断する（例：Month 2はGrinder・Puck Screen Stand・水ボトル・コースターを混在）。  
-* この再編成により、月ごとの支出額のばらつきが小さくなる一方、Straight Espresso Workflowの機能的完成はMonth 5終了時点までかかる（旧計画ではMonth 5時点で完成していたため、完成時期自体は変わらない）。  
+* 固定端点は、9BaristaがMonth 1、グラス・水ボトルが最終月（Month 6）である。Month 1は本体¥126,500のため月次上限の例外とする。  
+* Weber WorkshopsをMonth 4、ミルクをMonth 5に置く。  
+* Straight Espresso Workflowの機能的完成はMonth 6である。  
+* Snow Peak ギガパワーストーブ レクタ（GS-150、Group I）は、BR-002 Ver.4.3 Heat Source Decisionに基づく確定購入品であり、Snow Peak公式の別注文でMonth 6に到着する。国内調達で送料が小さいため、前倒しが可能である。  
+* Month 6だけ10万円を下回る。  
+* FIKA12は限定流通のため、早めに確保できるようMonth 4に置く。  
+* KNODOSは、Chisel・Tamper・WDTと同じMonth 3に揃える。  
+* The Blocは、RDT・Blind Shakerの収納先である。RDTとBlind ShakerはMonth 4、BlocはMonth 5に到着するため、Month 4〜5の間は仮置き期間が生じる。  
 * YETI Yonder 1Lの必要性は、BR-002 Coffee System Water Bottle Configuration（Operation Scenario／Required Water Volume）に基づく必要水量2,340mLの試算に基づく。  
 * 9Barista Official Spare Parts (Preventive Stock)は、Group A（9Barista）注文に同梱可能な任意項目として、Month 1の小計とは別枠で記録する。  
 * 9Barista Handle - Walnutは、PX-004 Ver.3.7のHandle Material Decisionに基づく確定購入品として、Month 1の本体・Puck Screen注文へ統合する。  
-* Snow Peak ギガパワーストーブ レクタ（GS-150、Group I）は、BR-002 Ver.4.3 Heat Source Decisionに基づく確定購入品として、9Barista稼働の前提条件であるためMonth 1へ統合する（発注自体はSnow Peak公式ストアへの別注文）。  
-  
+
+
 ---  
   
 # Version Control  
@@ -1817,6 +1822,7 @@ Month 2〜5で、Grinder・Scale・Bean Storage・Blind Shaker・Station（The B
 | 4.1 | 2026-09-28 | S-07（重複削減、Ver.4.0のDesign Rationaleで予告されたBR-002との重複解消）に基づき、BR-002/BR-003間および文書内の重複を削減。Coffee System Water Configuration・Espresso Glass Transport Configuration・Latte Cup Configuration・Coffee Tool Station Configuration・Extraction Core Configuration・Espresso System ConfigurationをBR-002の該当節への参照へ置換（BR-003はProcurement Authorityであり、Workflow・構成決定の重複記述はPurposeの管理範囲外）。Current Acquisition PriorityおよびFinal Acquisition InventoryのEstimated Total Cost列を削除し、Product NN（Confirmed Equipment Acquisition Registry）への参照に一本化。金額の正本をProduct NNの1箇所のみに限定し、複数箇所の金額不一致リスクを解消。「PX-004 v2.7 Synchronization」節（旧ID時代の同期記録、現行Version Controlに内容が上書き済み）を削除しDocument Renumbering Noteへ1行吸収。Confirmed Equipment・Acquisition Status・現行価格そのものに変更はない。MARI様の承認（2026-09-28）に基づく。 |  
 | 4.2 | 2026-09-28 | S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い、Version Control のうち Version 1.0〜3.7を archive/BR-003_Version_History_Archive.md へ移設した。移設した履歴は原文のまま保持し、要約・削除は行っていない。本文側の調達データそのものに変更はない。MARI様のご決定に基づく。 |  
 | 4.3 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
+| 4.4 | 2026-10-04 | Monthly Acquisition Planの組み直し。9BaristaをMonth 1、グラス・水ボトルを最終月（Month 6）に固定し、Weber WorkshopsをMonth 4、ミルクをMonth 5へ配置。GS-150（Group I）の到着をMonth 6へ移し、Month 1統合の旧記述を削除。Plan Totalを¥633,570〜737,570へ更新（旧記載の¥736,570は、旧Month 6の上限¥126,500が品目合計¥127,500と1,000円ずれていた誤り）。Group Iの説明を新しい到着月に整合。価格・購入先・Registryの記載に変更はない。Minor Version。MARI様のご決定（2026-10-04）に基づく。 |
   
 ---  
 
