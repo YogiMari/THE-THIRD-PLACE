@@ -17,7 +17,7 @@
   "syncGitignoreAffectsPull": false,
   "syncIgnorePatterns": ".DS_Store\n*.conflict-*\n**/*.conflict-*\n.obsidian/workspace*.json\n.obsidian/page-preview.json\n.obsidian/plugins/gitsync-portal/local-sync-state.json\n.obsidian/plugins/gitsync-portal/*.conflict-*\n.obsidian/plugins/gitsync-port/\n.obsidian/plugins/obsidian-viewer/\n.obsidian/plugins/obsidian-git/obsidian_askpass.sh\n.obsidian/plugins/*/manifest.conflict-*\nnode_modules/",
   "syncMaxFileSizeMb": 50,
-  "syncOnStartup": false,
+  "syncOnStartup": true,
   "syncOnSave": false,
   "syncPeriodically": false,
   "syncIntervalMinutes": 30
