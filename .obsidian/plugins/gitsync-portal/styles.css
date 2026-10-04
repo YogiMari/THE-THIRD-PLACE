@@ -1,0 +1,903 @@
+.ov-reader-enabled .markdown-preview-view,
+.ov-reader-enabled .markdown-source-view.mod-cm6 .cm-scroller {
+  font-size: var(--ov-reader-font-size, 17px);
+  line-height: var(--ov-reader-line-height, 1.7);
+}
+
+.ov-reader-enabled .markdown-preview-sizer,
+.ov-reader-enabled .markdown-source-view.mod-cm6.is-readable-line-width .cm-sizer {
+  max-width: var(--ov-reader-width, 900px);
+}
+
+.ov-reader-enabled .markdown-preview-view p {
+  margin-block: var(--ov-reader-paragraph-spacing, 1em);
+}
+
+/* Let the multi-line ignore policy use the full settings-pane width. */
+.gitsync-portal-ignore-paths.setting-item {
+  display: block;
+}
+
+.gitsync-portal-ignore-paths .setting-item-info {
+  margin-bottom: 8px;
+}
+
+.gitsync-portal-ignore-paths .setting-item-control {
+  display: block;
+  width: 100%;
+}
+
+.gitsync-portal-ignore-paths textarea {
+  display: block;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: none;
+}
+
+.ov-focus-reading .workspace-ribbon.mod-left,
+.ov-focus-reading .workspace-split.mod-left-split,
+.ov-focus-reading .workspace-split.mod-right-split,
+.ov-focus-reading .status-bar {
+  display: none;
+}
+
+.ov-dashboard {
+  --ov-surface: color-mix(in srgb, var(--background-secondary) 78%, var(--background-primary));
+  --ov-surface-strong: color-mix(in srgb, var(--interactive-accent) 12%, var(--background-primary));
+  --ov-list-surface: color-mix(in srgb, var(--text-normal) 5.5%, var(--background-primary));
+  --ov-list-hover: color-mix(in srgb, var(--text-normal) 9%, var(--background-primary));
+  font-size: inherit;
+  box-sizing: border-box;
+  height: 100%;
+  min-height: 0;
+  padding: 10px 10px 28px;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  container-type: inline-size;
+}
+
+.ov-dashboard-header,
+.ov-dashboard-brand,
+.ov-section-heading,
+.ov-file-row,
+.ov-inline-actions,
+.ov-active-card,
+.ov-sync-primary,
+.ov-tonal-button,
+.ov-sync-direction-actions,
+.ov-quiz-nav,
+.ov-quiz-actions,
+.ov-quiz-order-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.ov-dashboard-header {
+  justify-content: space-between;
+  min-height: 42px;
+  margin-bottom: 8px;
+  padding-inline: 4px;
+}
+
+.ov-dashboard-brand {
+  min-width: 0;
+}
+
+.ov-brand-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  height: 34px;
+  border-radius: 12px;
+  color: var(--text-accent);
+  background: var(--ov-surface-strong);
+}
+
+.ov-brand-icon svg {
+  width: 19px;
+  height: 19px;
+}
+
+.ov-dashboard-header h2,
+.ov-dashboard-header small,
+.ov-active-card strong,
+.ov-active-note-labels small {
+  display: block;
+  margin: 0;
+}
+
+.ov-dashboard-header h2 {
+  overflow: hidden;
+  font-size: var(--font-ui-small);
+  font-weight: var(--font-semibold);
+  line-height: 1.25;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ov-dashboard-header small {
+  margin-top: 1px;
+  font-size: var(--font-ui-smaller);
+}
+
+.ov-muted,
+.ov-dashboard-header small,
+.ov-file-labels small,
+.ov-empty,
+.ov-search-status {
+  color: var(--text-muted);
+}
+
+.ov-path,
+.ov-file-labels small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ov-tabs {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 4px;
+  margin-bottom: 10px;
+  padding: 4px;
+  background: var(--ov-surface);
+  border-radius: 18px;
+}
+
+.ov-tab.ov-tab {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  min-width: 0;
+  min-height: 50px;
+  padding: 7px 3px 6px;
+  border: 0;
+  border-radius: 14px;
+  box-shadow: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+  line-height: 1.25;
+  box-sizing: border-box;
+  overflow: hidden;
+  transition: color 140ms ease, background-color 140ms ease, transform 140ms ease;
+}
+
+.ov-tab > span:last-child {
+  display: block;
+  min-height: 1.25em;
+  line-height: 1.25;
+}
+
+.ov-tab.is-active {
+  background: var(--ov-surface-strong);
+  color: var(--text-accent);
+  font-weight: var(--font-medium);
+}
+
+.ov-tab:hover:not(.is-active) {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.ov-tab:active {
+  transform: scale(.97);
+}
+
+.ov-tab-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 17px;
+  height: 17px;
+  min-width: 17px;
+  max-width: 17px;
+  min-height: 17px;
+  max-height: 17px;
+  overflow: hidden;
+  flex: 0 0 17px;
+}
+
+.ov-tab-icon.ov-tab-icon svg {
+  display: block;
+  width: 17px;
+  height: 17px;
+  min-width: 0;
+  max-width: 17px;
+  min-height: 0;
+  max-height: 17px;
+  flex: 0 0 17px;
+}
+
+.ov-dashboard.ov-dashboard .ov-icon-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  min-width: 32px;
+  max-width: 32px;
+  min-height: 32px;
+  max-height: 32px;
+  padding: 7px;
+  overflow: hidden;
+  box-sizing: border-box;
+  flex: 0 0 32px;
+  line-height: 0;
+  border: 0;
+  border-radius: 50%;
+  box-shadow: none;
+  background: transparent;
+  color: var(--text-muted);
+  transition: color 140ms ease, background-color 140ms ease;
+}
+
+.ov-dashboard .ov-icon-button:hover {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.ov-dashboard .ov-icon-button.is-active {
+  color: var(--text-accent);
+  background: var(--ov-surface-strong);
+}
+
+.ov-dashboard .ov-icon-button.ov-icon-button svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  min-width: 0;
+  max-width: 18px;
+  min-height: 0;
+  max-height: 18px;
+  flex: 0 0 18px;
+  pointer-events: none;
+}
+
+.ov-active-card,
+.ov-home-card,
+.ov-sync-card {
+  position: relative;
+  margin-bottom: 10px;
+  padding: 13px;
+  border: 0;
+  border-radius: 16px;
+  background: var(--ov-surface);
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--background-modifier-box-shadow) 28%, transparent);
+}
+
+.ov-active-card {
+  min-width: 0;
+  padding: 9px 8px 9px 11px;
+}
+
+.ov-active-note-icon {
+  display: inline-flex;
+  flex: 0 0 auto;
+  color: var(--text-accent);
+}
+
+.ov-active-note-labels {
+  flex: 1;
+  min-width: 0;
+}
+
+.ov-active-note-labels small,
+.ov-active-note-labels strong {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ov-active-note-labels small {
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+}
+
+.ov-active-card .ov-inline-actions {
+  flex: 0 0 auto;
+}
+
+.ov-home-card {
+  background: linear-gradient(145deg, color-mix(in srgb, var(--interactive-accent) 16%, var(--background-primary)), var(--ov-surface));
+}
+
+.ov-sync-card {
+  background: var(--ov-surface);
+}
+
+.ov-sync-card.is-error {
+  box-shadow: inset 3px 0 0 var(--color-red);
+}
+
+.ov-sync-card.is-complete {
+  box-shadow: inset 3px 0 0 var(--color-green);
+}
+
+.ov-sync-card-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.ov-sync-card-header > div:first-child {
+  min-width: 0;
+}
+
+.ov-sync-card-header strong,
+.ov-sync-card-header small,
+.ov-sync-card > small {
+  display: block;
+}
+
+.ov-sync-card-header small {
+  margin-top: 2px;
+  color: var(--text-muted);
+}
+
+.ov-sync-card-header small,
+.ov-sync-card > small {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.ov-sync-primary.ov-sync-primary,
+.ov-tonal-button.ov-tonal-button {
+  justify-content: center;
+  min-height: 36px;
+  border: 0;
+  border-radius: 18px;
+  box-shadow: none;
+  white-space: nowrap;
+  font-size: var(--font-ui-smaller);
+}
+
+.ov-sync-primary svg,
+.ov-tonal-button svg {
+  width: 16px;
+  height: 16px;
+}
+
+.ov-sync-direction-actions {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+  margin-top: 9px;
+}
+
+.ov-sync-direction-actions .ov-tonal-button.ov-tonal-button {
+  border: 1px solid color-mix(in srgb, var(--interactive-accent) 30%, var(--background-modifier-border));
+  background: color-mix(in srgb, var(--interactive-accent) 20%, var(--background-primary));
+  color: color-mix(in srgb, var(--text-accent) 88%, var(--text-normal));
+  font-weight: var(--font-medium);
+  box-shadow: 0 1px 2px color-mix(in srgb, var(--interactive-accent) 12%, transparent);
+}
+
+.ov-sync-direction-actions .ov-tonal-button:hover {
+  border-color: color-mix(in srgb, var(--interactive-accent) 46%, var(--background-modifier-border));
+  background: color-mix(in srgb, var(--interactive-accent) 27%, var(--background-primary));
+}
+
+.ov-sync-direction-actions .ov-tonal-button:focus-visible {
+  outline: 2px solid color-mix(in srgb, var(--interactive-accent) 55%, transparent);
+  outline-offset: 2px;
+}
+
+.ov-tonal-button {
+  width: 100%;
+  padding: 6px 12px;
+  color: var(--text-accent);
+  background: var(--ov-surface-strong);
+}
+
+.ov-tonal-button:hover {
+  background: color-mix(in srgb, var(--interactive-accent) 18%, var(--background-primary));
+}
+
+.ov-sync-message {
+  margin: 9px 0 5px;
+  color: var(--text-muted);
+  font-size: var(--font-ui-small);
+}
+
+.ov-sync-card progress {
+  width: 100%;
+  height: 7px;
+  margin-bottom: 6px;
+}
+
+.ov-setting-warning {
+  margin: 14px 0;
+  padding: 12px;
+  border-left: 4px solid var(--color-orange);
+  border-radius: var(--radius-s);
+  background: color-mix(in srgb, var(--color-orange) 10%, var(--background-primary));
+  color: var(--text-normal);
+}
+
+.ov-home-card h3 {
+  margin: 4px 0;
+}
+
+.ov-home-card p {
+  margin: 7px 0 10px;
+}
+
+.ov-home-card .mod-cta.mod-cta,
+.ov-sync-primary.ov-sync-primary {
+  min-height: 36px;
+  padding: 6px 14px;
+  border: 0;
+  border-radius: 18px;
+  box-shadow: none;
+  background: var(--interactive-accent);
+  color: var(--text-on-accent);
+}
+
+.ov-home-card .mod-cta:hover,
+.ov-sync-primary:hover {
+  filter: brightness(1.06);
+}
+
+.ov-eyebrow {
+  color: var(--text-accent);
+  font-size: var(--font-ui-smaller);
+  font-weight: var(--font-semibold);
+  text-transform: uppercase;
+  letter-spacing: .05em;
+}
+
+.ov-section-title,
+.ov-section-heading h3 {
+  margin: 16px 2px 7px;
+  font-size: var(--font-ui-small);
+}
+
+.ov-section-heading {
+  justify-content: space-between;
+}
+
+.ov-file-list {
+  display: grid;
+  gap: 4px;
+}
+
+.ov-file-row {
+  min-height: 50px;
+  overflow: hidden;
+  border-radius: 12px;
+  background: var(--ov-list-surface);
+  transition: background-color 140ms ease, transform 140ms ease;
+}
+
+.ov-file-row:hover {
+  background: var(--ov-list-hover);
+}
+
+.ov-file-row.is-selected {
+  background: var(--ov-surface-strong);
+  box-shadow: inset 2px 0 0 var(--interactive-accent);
+}
+
+.ov-file-row.is-selected .ov-file-open {
+  color: var(--text-normal);
+}
+
+.ov-file-row.is-selected .ov-file-labels strong {
+  color: var(--interactive-accent);
+  font-weight: var(--font-semibold);
+}
+
+.ov-file-row.is-selected .ov-file-icon {
+  color: var(--interactive-accent);
+}
+
+.ov-file-open.ov-file-open {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  flex: 1;
+  min-width: 0;
+  min-height: 50px;
+  padding: 7px 8px 7px 10px;
+  border: 0;
+  border-radius: 0;
+  box-shadow: none;
+  background: transparent;
+  text-align: left;
+}
+
+.ov-file-open.ov-file-open:hover,
+.ov-file-open.ov-file-open:focus {
+  background: transparent;
+}
+
+.ov-file-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  flex: 0 0 auto;
+  color: var(--text-muted);
+}
+
+.ov-file-icon.ov-file-icon svg {
+  display: block;
+  width: 18px;
+  height: 18px;
+  max-width: 18px;
+  max-height: 18px;
+}
+
+.ov-file-labels {
+  display: block;
+  flex: 1;
+  min-width: 0;
+}
+
+.ov-file-labels strong,
+.ov-file-labels small {
+  display: block;
+}
+
+.ov-file-labels strong,
+.ov-active-note-labels strong,
+.ov-sync-card-header strong,
+.ov-home-card h3 {
+  font-size: var(--font-ui-small);
+}
+
+.ov-dashboard button,
+.ov-dashboard input,
+.ov-dashboard select {
+  font-size: var(--font-ui-smaller);
+}
+
+.ov-file-row > .clickable-icon.clickable-icon {
+  margin-right: 5px;
+  background: transparent;
+}
+
+.ov-file-row > .ov-icon-button.ov-icon-button.is-active {
+  color: color-mix(in srgb, var(--text-accent) 72%, var(--text-muted));
+  background: transparent;
+}
+
+.ov-file-row > .ov-icon-button.is-active svg {
+  fill: currentColor;
+  fill-opacity: .14;
+}
+
+.ov-file-row > .ov-icon-button.ov-icon-button:hover {
+  color: var(--text-normal);
+  background: transparent;
+}
+
+.ov-empty,
+.ov-search-status {
+  margin: 0;
+  padding: 16px;
+  text-align: center;
+}
+
+.ov-search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 10px 0 9px;
+  min-height: 42px;
+  padding: 0 13px;
+  border: 1px solid transparent;
+  border-radius: 999px;
+  background: var(--ov-surface);
+  cursor: text;
+  transition: border-color 120ms ease, box-shadow 120ms ease, background-color 120ms ease;
+}
+
+.ov-search-box:focus-within,
+.ov-search-box:focus {
+  border-color: var(--interactive-accent);
+  box-shadow: 0 0 0 2px color-mix(in srgb, var(--interactive-accent) 24%, transparent);
+  background: var(--background-primary);
+}
+
+.ov-search-box.ov-search-box input {
+  flex: 1;
+  min-width: 0;
+  height: 40px;
+  padding-inline: 0;
+  border: 0;
+  border-radius: inherit;
+  outline: 0;
+  box-shadow: none;
+  background: transparent;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+.ov-directory-controls,
+.ov-breadcrumbs {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  min-width: 0;
+}
+
+.ov-directory-controls {
+  margin: 8px 0 5px;
+}
+
+.ov-directory-location {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  flex: 1;
+  min-width: 0;
+  min-height: 34px;
+  padding: 5px 10px;
+  border-radius: 12px;
+  background: var(--ov-surface);
+  color: var(--text-muted);
+}
+
+.ov-directory-location span:last-child {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.ov-breadcrumbs {
+  flex-wrap: wrap;
+  margin: 3px 2px 8px;
+  color: var(--text-muted);
+  font-size: var(--font-ui-smaller);
+}
+
+.ov-breadcrumbs button {
+  min-height: 28px;
+  padding: 3px 7px;
+  border: 0;
+  border-radius: 10px;
+  box-shadow: none;
+  background: transparent;
+  color: var(--text-muted);
+}
+
+.ov-breadcrumbs button:hover {
+  background: var(--background-modifier-hover);
+  color: var(--text-normal);
+}
+
+.ov-outline {
+  display: grid;
+  gap: 3px;
+  max-height: 240px;
+  padding: 0;
+  overflow-y: auto;
+  background: transparent;
+}
+
+.ov-outline-item {
+  display: block;
+  width: 100%;
+  padding: 7px 8px;
+  border: 0;
+  border-radius: 9px;
+  box-shadow: none;
+  background: var(--ov-list-surface);
+  color: var(--text-muted);
+  text-align: left;
+}
+
+.ov-text-button.ov-text-button {
+  min-height: 32px;
+  padding: 5px 10px;
+  border: 0;
+  border-radius: 16px;
+  box-shadow: none;
+  background: transparent;
+  color: var(--text-accent);
+}
+
+.ov-text-button.is-danger {
+  color: var(--text-error);
+}
+
+.ov-load-more {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.ov-outline-item:hover {
+  color: var(--text-normal);
+  background: var(--ov-list-hover);
+}
+
+.ov-quiz-definition {
+  display: none;
+}
+
+.ov-quiz-card {
+  margin: 1.2em 0;
+  padding: 16px;
+  border: 2px solid var(--interactive-accent);
+  border-radius: 14px;
+  background: color-mix(in srgb, var(--interactive-accent) 5%, var(--background-primary));
+}
+
+.ov-quiz-card h3 {
+  margin-top: 0;
+}
+
+.ov-quiz-description {
+  margin-bottom: 12px;
+  color: var(--text-muted);
+}
+
+.ov-quiz-question {
+  display: block;
+  padding: 14px 0;
+  border-top: 1px solid var(--background-modifier-border);
+}
+
+.ov-quiz-question > strong {
+  display: block;
+  margin-bottom: 8px;
+}
+
+.ov-quiz-option,
+.ov-quiz-match {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 7px 5px;
+}
+
+.ov-quiz-match {
+  justify-content: space-between;
+}
+
+.ov-quiz-text-input {
+  width: 100%;
+  margin-top: 8px;
+}
+
+.ov-quiz-order-row {
+  margin-top: 7px;
+}
+
+.ov-quiz-order-row span {
+  flex: 1;
+}
+
+.ov-quiz-nav,
+.ov-quiz-actions,
+.ov-quiz-question-actions {
+  flex-wrap: wrap;
+  margin-top: 12px;
+}
+
+.ov-quiz-result {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: var(--radius-m);
+  background: var(--background-secondary);
+  font-weight: var(--font-semibold);
+}
+
+.ov-quiz-feedback {
+  margin-top: 8px;
+  padding: 8px;
+  border-radius: var(--radius-m);
+}
+
+.ov-quiz-correct-answer {
+  margin-top: 6px;
+  color: var(--text-normal);
+  font-weight: var(--font-semibold);
+}
+
+.ov-quiz-explanation {
+  margin-top: 4px;
+  color: var(--text-muted);
+}
+
+.ov-quiz-feedback.is-correct {
+  color: var(--color-green);
+  background: color-mix(in srgb, var(--color-green) 12%, transparent);
+}
+
+.ov-quiz-feedback.is-wrong,
+.ov-quiz-error {
+  color: var(--color-red);
+  background: color-mix(in srgb, var(--color-red) 10%, transparent);
+}
+
+.ov-quiz-error {
+  margin: 1em 0;
+  padding: 12px;
+  border: 1px solid var(--color-red);
+  border-radius: var(--radius-m);
+}
+
+@container (max-width: 260px) {
+  .ov-tab {
+    min-height: 46px;
+    font-size: 10px;
+  }
+
+  .ov-sync-card-header {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .ov-sync-primary {
+    width: 100%;
+  }
+}
+
+/* Match the phone sidebar typography to Obsidian's configured interface font
+   size while retaining the compact 2.0.1 control density. */
+.is-mobile .ov-dashboard {
+  font-size: inherit;
+}
+
+.is-mobile .ov-dashboard-header h2,
+.is-mobile .ov-section-title,
+.is-mobile .ov-section-heading h3,
+.is-mobile .ov-file-labels strong,
+.is-mobile .ov-active-note-labels strong,
+.is-mobile .ov-sync-card-header strong,
+.is-mobile .ov-home-card h3 {
+  font-size: 1em;
+}
+
+.is-mobile .ov-dashboard-header small,
+.is-mobile .ov-active-note-labels small,
+.is-mobile .ov-file-labels small,
+.is-mobile .ov-sync-message,
+.is-mobile .ov-dashboard button,
+.is-mobile .ov-dashboard input,
+.is-mobile .ov-dashboard select {
+  font-size: .85em;
+}
+
+.is-mobile .ov-file-row,
+.is-mobile .ov-file-open {
+  min-height: 0;
+}
+
+.is-mobile .ov-file-open {
+  padding: 8px 9px;
+}
+
+.is-mobile .ov-search-box {
+  min-height: 38px;
+  padding-inline: 12px;
+}
+
+.is-mobile .ov-search-box input {
+  height: 36px;
+}
+
+.is-mobile .ov-sync-primary,
+.is-mobile .ov-tonal-button,
+.is-mobile .ov-home-card .mod-cta {
+  min-height: 32px;
+  padding: 4px 10px;
+}
+
+.is-mobile .ov-active-card,
+.is-mobile .ov-home-card,
+.is-mobile .ov-sync-card {
+  padding: 10px;
+}
