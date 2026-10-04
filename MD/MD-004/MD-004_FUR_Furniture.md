@@ -1332,7 +1332,7 @@ Essential
 
 ### Color  
 
-Charcoal Gray（MARI様確認。Snow Peak公式サイトのカラー表記は「その他」）  
+Charcoal Gray（Snow Peak公式サイトのカラー表記は「その他」）  
 
 ### Material  
 
