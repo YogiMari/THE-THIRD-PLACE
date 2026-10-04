@@ -82,7 +82,7 @@ Dutch Oven（Whole Chicken Capacity）
 
 ### Price
 
-¥34,100（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥34,100（購入価格）
 
 ---
 
@@ -118,7 +118,7 @@ Compact Dutch Oven Set
 
 ### Price
 
-¥31,350（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥31,350（購入価格）
 
 ---
 
@@ -154,7 +154,7 @@ Campfire Steak Griddle（Detachable Handle）
 
 ### Price
 
-¥23,760（Snow Peak公式EC現行価格、2026-10-02確認。福山限定Griddle 22の価格。実購入額は別途確認が必要）
+¥23,760（購入価格）
 
 ---
 
@@ -190,7 +190,7 @@ Multi Griddle
 
 ### Price
 
-¥9,300（JHQ公式サイト現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥9,300（購入価格）
 
 ---
 
@@ -226,7 +226,7 @@ Hot Sandwich Cooker（Dual-Sandwich, 880g）
 
 ### Price
 
-¥9,570（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥9,570（購入価格）
 
 ---
 
@@ -262,7 +262,7 @@ Wok（43.5cm Overall Length × 25cm Width, 790g, Requires Seasoning Before Use�
 
 ### Price
 
-¥7,980（Boottonation公式ショップ現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥7,980（購入価格）
 
 ---
 
@@ -298,7 +298,7 @@ Ladle（38cm Overall Length, 200g, asigrip-Compatible）
 
 ### Price
 
-¥3,980（Boottonation公式ショップ現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥3,980（購入価格）
 
 ---
 
@@ -334,7 +334,7 @@ Cartridge Gas Burner（IGT-Compatible, 270×410×110mm, 1.9kg）
 
 ### Price
 
-¥14,520（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥14,520（購入価格）
 
 ---
 
@@ -370,7 +370,7 @@ Alcohol Stove with Cooker Set（Max Φ23cm Pot Compatible, Bioethanol Fuel）
 
 ### Price
 
-¥4,290（Snow Peak公式EC現行価格、2026-10-02確認。クッカーセット（BS-010CS）の価格。実購入額は別途確認が必要）
+¥4,290（購入価格）
 
 ---
 
@@ -406,7 +406,7 @@ Alcohol Stove（Tabletop, 200ml Capacity, ~70min Burn Time, Bioethanol Fuel）
 
 ### Price
 
-¥10,890（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥10,890（購入価格）
 
 ---
 
@@ -442,7 +442,7 @@ Cartridge Gas Burner（Integrated Low-Center-of-Gravity Design, 2900kcal/h。ALM
 
 ### Price
 
-¥13,200（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥13,200（購入価格）
 
 ---
 
@@ -478,7 +478,7 @@ Cartridge Gas Burner（Integrated Windscreen, 2800kcal/h）
 
 ### Price
 
-¥17,160（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥17,160（購入価格）
 
 ---
 
@@ -514,7 +514,7 @@ Cast Iron Griddle Grill Burner（Yakiniku-Style, 1700kcal/h, 5.0kg）
 
 ### Price
 
-¥29,040（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥29,040（購入価格）
 
 ---
 
@@ -554,7 +554,7 @@ Plate / Cutting Board Dual-Use
 
 ### Price
 
-¥9,504（Snow Peak公式EC現行価格、2026-10-02確認。1個¥4,752×2個の合計。実購入額は別途確認が必要）
+¥9,504（2個合計。1個¥4,752）
 
 ---
 
@@ -810,7 +810,7 @@ Tong（U-shaped, spring/hinge-less structure, 235mm）
 
 ### Price
 
-¥7,700（FEDECA公式ストア現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥7,700（購入価格）
 
 ---
 
@@ -846,7 +846,7 @@ Tong（Standard, 240mm）
 
 ### Price
 
-¥6,600（FEDECA公式ストア現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥6,600（購入価格）
 
 ---
 
@@ -882,7 +882,7 @@ Tong（Mini, 150mm）
 
 ### Price
 
-¥6,050（FEDECA公式ストア現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥6,050（購入価格）
 
 ---
 
@@ -918,7 +918,7 @@ Tong（Mini, 150mm）
 
 ### Price
 
-¥6,050（FEDECA公式ストア現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥6,050（購入価格）
 
 ---
 
@@ -954,7 +954,7 @@ Ladle（Hangable, Not Fire-Safe due to Nylon Tip）
 
 ### Price
 
-¥8,470（DEVISE WORKS公式オンラインショップ現行価格、2026-10-02確認。送料込みの表示価格。実購入額は別途確認が必要）
+¥8,470（購入価格）
 
 ---
 
@@ -990,7 +990,7 @@ Turner（Hangable, BURABURA Series）
 
 ### Price
 
-¥8,470（DEVISE WORKS公式オンラインショップ現行価格、2026-10-02確認。送料込みの表示価格。実購入額は別途確認が必要）
+¥8,470（購入価格）
 
 ---
 
@@ -1026,7 +1026,7 @@ Cooking Chopsticks（Hangable, Also Usable as Skewer）
 
 ### Price
 
-¥6,600（DEVISE WORKS公式オンラインショップ現行価格、2026-10-02確認。送料込みの表示価格。実購入額は別途確認が必要）
+¥6,600（購入価格）
 
 ---
 
@@ -1084,7 +1084,7 @@ Spork（Spoon/Fork Combo）
 
 ### Price
 
-¥1,430（Snow Peak公式EC現行価格、2026-10-02確認。リサイクルチタン先割れスプーン¥1,430とONLINE¥1,320のうち高い方。実購入額は別途確認が必要）
+¥1,430（購入価格）
 
 ---
 
@@ -1120,7 +1120,7 @@ Spork（Spoon/Fork Combo）
 
 ### Price
 
-¥1,430（Snow Peak公式EC現行価格、2026-10-02確認。リサイクルチタン先割れスプーン¥1,430とONLINE¥1,320のうち高い方。実購入額は別途確認が必要）
+¥1,430（購入価格）
 
 ---
 
@@ -1156,7 +1156,7 @@ Spork（Spoon/Fork Combo）
 
 ### Price
 
-¥1,430（Snow Peak公式EC現行価格、2026-10-02確認。リサイクルチタン先割れスプーン¥1,430とONLINE¥1,320のうち高い方。実購入額は別途確認が必要）
+¥1,430（購入価格）
 
 ---
 
@@ -1192,7 +1192,7 @@ Chopsticks（Tapered Tip, Cold-Forged）
 
 ### Price
 
-¥5,016（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥5,016（購入価格）
 
 ---
 
@@ -1228,7 +1228,7 @@ Chopsticks（Tapered Tip, Cold-Forged）
 
 ### Price
 
-¥5,016（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥5,016（購入価格）
 
 ---
 
@@ -1264,7 +1264,7 @@ Chopsticks（Tapered Tip, Cold-Forged）
 
 ### Price
 
-¥5,016（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥5,016（購入価格）
 
 ---
 
@@ -1304,7 +1304,7 @@ Fire-Resistant Cooking Mitten（Lobster-Claw Shape, One Size, Made in Japan）
 
 ### Price
 
-¥3,696（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥3,696（購入価格）
 
 ---
 
@@ -1380,7 +1380,7 @@ Skewer Deep-Frying Plate & Thermometer Set（Donut-Shaped Plate φ155mm／Center
 
 ### Price
 
-¥4,890（CAMPOOPARTS公式ショップ現行価格、2026-10-02確認。シェラカップ無しのセットの価格。実購入額は別途確認が必要）
+¥4,890（購入価格）
 
 ---
 
@@ -1416,7 +1416,7 @@ Single-Wall Mug（Direct-Fire Safe, 220ml）
 
 ### Price
 
-¥2,970（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥2,970（購入価格）
 
 ---
 
@@ -1452,7 +1452,7 @@ Double-Wall Mug（300ml, stackable with MG-153）
 
 ### Price
 
-¥5,280（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥5,280（購入価格）
 
 ---
 
@@ -1520,7 +1520,7 @@ Double-Wall Mug（450ml, renewed model, stacks with MG-152）
 
 ### Price
 
-¥5,940（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥5,940（購入価格）
 
 ---
 
@@ -1578,7 +1578,7 @@ Vacuum-Insulated Tumbler（470ml, φ84×150mm, 215g）
 
 ### Price
 
-¥5,544（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥5,544（購入価格）
 
 ---
 
@@ -1644,7 +1644,7 @@ Vacuum-Insulated Tumbler（470ml, φ84×150mm, 215g）
 
 ### Price
 
-¥5,544（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥5,544（購入価格）
 
 ---
 
@@ -1710,7 +1710,7 @@ Stacking Cup（500cc, φ85×H125mm）
 
 ### Price
 
-¥2,420（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥2,420（購入価格）
 
 ---
 
@@ -1746,7 +1746,7 @@ Teapot Set（600ml Pot + 2× 150ml Cups, Furoshiki-Style Storage Case）
 
 ### Price
 
-¥15,400（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥15,400（購入価格）
 
 ---
 
@@ -2034,7 +2034,7 @@ Sierra Cup（Used as Plate, Handmade in Japan, Enamel Finish）
 
 ### Price
 
-¥4,950（nodel design公式ストア現行価格、2026-10-02確認。Online限定品の価格。実購入額は別途確認が必要）
+¥4,950（購入価格）
 
 ---
 
@@ -2070,7 +2070,7 @@ Sierra Cup（Used as Plate, Vintage-Inspired Design）
 
 ### Price
 
-¥3,850（OLD MOUNTAIN公式サイト現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥3,850（購入価格）
 
 ---
 
@@ -2142,7 +2142,7 @@ Sierra Cup（Used as Plate, Deep Type, 480ml, Rice/Water Line Markings for Rice 
 
 ### Price
 
-¥3,003（OLD MOUNTAIN公式サイト現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥3,003（購入価格）
 
 ---
 
@@ -2178,7 +2178,7 @@ Kamado-Style Rice Cooking Lid（For Use with Deep-Type Sierra Cups, φ10cm, Not 
 
 ### Price
 
-¥7,150（OLD MOUNTAIN公式サイト現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥7,150（購入価格）
 
 ---
 
@@ -2214,7 +2214,7 @@ Kamado-Style Rice Cooking Lid（For Use with Deep-Type Sierra Cups, φ10cm, Not 
 
 ### Price
 
-¥7,150（OLD MOUNTAIN公式サイト現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥7,150（購入価格）
 
 ---
 
@@ -2250,7 +2250,7 @@ Sierra Cup（Used as Plate, RAVEN Series, 480ml, W95mm(Bottom)/W120mm(Top)×H60m
 
 ### Price
 
-¥5,480（CALMA STORE公式サイト現行価格、2026-10-02確認。完売品の最終掲載価格。実購入額は別途確認が必要）
+¥5,480（購入価格）
 
 ---
 
@@ -2418,7 +2418,7 @@ Manual Coffee Mill（Foldable Handle/Lid Integrated, 225g）
 
 ### Price
 
-¥11,550（Snow Peak公式EC現行価格、2026-10-02確認。後継型CS-116Rの価格。実購入額は別途確認が必要）
+¥11,550（購入価格）
 
 ---
 
@@ -2454,7 +2454,7 @@ Pour-Over Kettle（Detachable Handle, 3-Hole Spout for Flow Control, 1.0L）
 
 ### Price
 
-¥18,700（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥18,700（購入価格）
 
 ---
 
@@ -2566,7 +2566,7 @@ Storage Box（0.5 Unit Size, for Cutlery/Cookware Organization）
 
 ### Price
 
-¥30,250（DEVISE WORKS公式オンラインショップ現行価格、2026-10-02確認。送料込みの表示価格。実購入額は別途確認が必要）
+¥30,250（購入価格）
 
 ---
 
@@ -2606,7 +2606,7 @@ Spice Bottle（3-Stage Adjustable Spout, φ49×H82.5mm, Not Waterproof）
 
 ### Price
 
-¥7,590（DEVISE WORKS公式オンラインショップ現行価格、2026-10-02確認。1本¥3,795×2本の合計。送料込みの表示価格。実購入額は別途確認が必要）
+¥7,590（2個合計。1個¥3,795）
 
 ---
 
@@ -2682,7 +2682,7 @@ Spice Bottle Rack（Holds 4 Spice Bottles, Used Size W140×D140×H65mm, 10mm Rod
 
 ### Price
 
-¥15,180（DEVISE WORKS公式オンラインショップ現行価格、2026-10-02確認。送料込みの表示価格。実購入額は別途確認が必要）
+¥15,180（購入価格）
 
 ---
 
@@ -2718,7 +2718,7 @@ Folding Wire Basket（IGT 1-Unit Compatible, approx. 24×35×25cm, Used as Dish-
 
 ### Price
 
-¥6,000（ANOBA公式サイト現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥6,000（購入価格）
 
 ---
 
@@ -2754,7 +2754,7 @@ Cutlery / Kitchen Tool Storage Pouch（Mesh, Breathable, S Size）
 
 ### Price
 
-¥2,970（Snow Peak公式EC現行価格、2026-10-02確認。実購入額は別途確認が必要）
+¥2,970（購入価格）
 
 ---
 
@@ -3668,7 +3668,7 @@ MARI様のご申告（2026-10-02）に基づき、KIT-084（アシナガプレ�
 
 ## Version 2.24
 
-MARI様のご申告（2026-10-04）に基づき、暫定価格だった次の3件のPriceを購入価格へ確定した。暫定の文言（公式価格の現行価格・実購入額は別途確認が必要）は外した。KIT-042（Snow Peak ステンレスシェラカップ）：¥1,584。金額は変わらない。KIT-051（OLD MOUNTAIN RICECOOKER 480深型 STAINLESS）：¥1,980から¥3,960へ変更。1個の購入価格。KIT-062（Snow Peak フォールディングコーヒードリッパー「焚火台型」）：2個所有のため、Quantity 2を追加し、¥4,620から¥9,240（2個合計。1個¥4,620）へ変更した。
+MARI様のご申告・ご確認（2026-10-04）に基づき、暫定価格だったKIT系列の52件のPriceを購入価格へ確定した。暫定の文言（公式…現行価格／実購入額は別途確認が必要）と、公式価格の対象を説明していた付記は外した。金額が変わったのは次の2件。KIT-051（OLD MOUNTAIN RICECOOKER 480深型 STAINLESS）：¥1,980から¥3,960へ変更（1個の購入価格）。KIT-062（Snow Peak フォールディングコーヒードリッパー「焚火台型」）：2個所有のため、Quantity 2を追加し、¥4,620から¥9,240（2個合計。1個¥4,620）へ変更した。残る50件は、金額はそのまま注記のみを「購入価格」へ改めた。数量2のKIT-014とKIT-065は「2個合計。1個¥X」の形とした。KIT-042を含め、MD-003のOwned記録に暫定価格は残っていない。
 
 ---
 
