@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 8.3  
+**Version**: 8.4  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -264,6 +264,18 @@ MARI様のご指示（2026-10-03）に基づき、LGT-021（DEVISE WORKS × WHAT
 ### Changes
 
 - LGT-021：Productを「DEVA DEVAの実」から「DEVA DEVA no MI」へ訂正。
+
+---
+
+## Version 8.4
+
+MARI様のご確認（2026-10-04）に基づき、公式サイト価格を仮置きしていた3件のPriceを購入価格へ確定した。金額は変わらず、注記のみを「購入価格」へ改めた。
+
+### Changes
+
+- STR-035：Priceの注記を「yeti.co.jp公式サイト現行価格、2026-09-28確認」から「購入価格」へ変更。¥25,630のまま。
+- STR-036：Priceの注記を「tokyocrafts.jp公式サイト価格、2026-09-28確認」から「購入価格」へ変更。¥3,960のまま。
+- SHL-006：Priceの注記を「3zo.online公式サイト価格、2026-09-28確認」から「購入価格」へ変更。¥16,500のまま。
 
 ---
 
