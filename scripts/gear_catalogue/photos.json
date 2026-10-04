@@ -193,10 +193,10 @@
  },
  "KIT-006": {
   "f": "img/KIT-006.jpg",
-  "pos": "50% 50%",
-  "credit": "Boottonation",
-  "url": "https://boottonation.base.shop/items/68268350",
-  "kind": "Official store image",
+  "pos": "55% 58%",
+  "credit": "Supplied by the owner",
+  "url": "",
+  "kind": "Image supplied by the owner (original source not stated)",
   "bg": null
  },
  "KIT-008": {
@@ -1009,10 +1009,10 @@
  },
  "KIT-007": {
   "f": "img/KIT-007.jpg",
-  "pos": "50% 50%",
-  "credit": "Boottonation",
-  "url": "https://boottonation.base.shop/items/68268501",
-  "kind": "Official store image",
+  "pos": "20% 100%",
+  "credit": "Supplied by the owner",
+  "url": "",
+  "kind": "Image supplied by the owner (original source not stated)",
   "bg": null
  },
  "KIT-028": {
