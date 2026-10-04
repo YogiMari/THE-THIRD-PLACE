@@ -3,7 +3,7 @@
 **Document ID**: MD-003  
 **Title**: Galley Fare  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.24  
+**Version**: 2.25  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -243,6 +243,10 @@ gk series 中華鍋25cm
 **Status**
 
 Owned
+
+### Child Components
+
+- KIT-087
 
 ### Color
 
@@ -3301,6 +3305,46 @@ Cartridge Gas Burner（2,500kcal/h、156×122×121mm〈収納時156×82×35mm〉
 ¥14,300
 
 ---
+
+## KIT-087
+
+**Brand**
+
+ヨコザワテッパン
+
+**Product**
+
+おやじキャンプ飯 中華鍋26cm用ケース インナー付
+
+**Status**
+
+Owned
+
+**Parent**
+
+KIT-006
+
+### Color
+
+Unconfirmed
+
+### Material
+
+Unconfirmed
+
+### Graphic Attribute
+
+Unconfirmed
+
+### Industrial Attribute
+
+Wok Case（Inner付き。26cm用ケースを、KIT-006〈25cm〉の収納に使用する）
+
+### Price
+
+¥4,160（購入価格。Yahoo!フリマ）
+
+---
 # Single Source of Truth
 
 MD-003 Galley Fareは、キッチン機材（調理器具・刃物・調理小物）に関する唯一のMaster Databaseである。
@@ -3669,6 +3713,16 @@ MARI様のご申告（2026-10-02）に基づき、KIT-084（アシナガプレ�
 ## Version 2.24
 
 MARI様のご申告・ご確認（2026-10-04）に基づき、暫定価格だったKIT系列の52件のPriceを購入価格へ確定した。暫定の文言（公式…現行価格／実購入額は別途確認が必要）と、公式価格の対象を説明していた付記は外した（「送料込み」は全て削除。限定品であることを示すKIT-003「福山限定品」・KIT-049「Online限定品」は残した）。金額が変わったのは次の2件。KIT-051（OLD MOUNTAIN RICECOOKER 480深型 STAINLESS）：¥1,980から¥3,960へ変更（1個の購入価格）。KIT-062（Snow Peak フォールディングコーヒードリッパー「焚火台型」）：2個所有のため、Quantity 2を追加し、¥4,620から¥9,240（2個合計。1個¥4,620）へ変更した。残る50件は、金額はそのまま注記のみを「購入価格」へ改めた。数量2のKIT-014とKIT-065は「2個合計。1個¥X」の形とした。KIT-042を含め、MD-003のOwned記録に暫定価格は残っていない。あわせて、MARI様のご指示（2026-10-04）に基づき、既存のPrice注記にあった「MARI様確認」「MARI様申告」の文言を外した（KIT-016・033・043〜048・056・066・084の11件。金額は変更なし）。さらにColor・Material・Graphic Attributeの各欄にあった「MARI様確認」の文言も外した（KIT-023・033・072・073・074・075・079・080・085の9件。内容は変更なし）。
+
+
+## Version 2.25
+
+MARI様のご指示・ご確認（2026-10-04）に基づき、KIT-087（ヨコザワテッパン おやじキャンプ飯 中華鍋26cm用ケース インナー付）を新規登録した（Status: Owned、Yahoo!フリマで購入、¥4,160）。Boottonation gk series 中華鍋25cm（KIT-006）の子部品として登録し、KIT-006のChild Componentsへ追記した。Color・Material・Graphic Attributeは出品情報に記載がなく、Unconfirmedとした。Minor Version。
+
+### Changes
+
+- KIT-087（新規）：ヨコザワテッパン おやじキャンプ飯 中華鍋26cm用ケース インナー付。Owned、Parent: KIT-006、¥4,160（購入価格）。
+- KIT-006：Child ComponentsにKIT-087を追記。他の内容に変更はない。
 
 ---
 
