@@ -593,7 +593,7 @@ Top Board（STR-013 Beck Container #1の蓋へ設置するサイドテーブル�
 
 ### Price  
 
-¥33,000（2組合計。1組¥16,500。MARI様確認）  
+¥33,000（2組合計。1組¥16,500）  
 
 ---  
 
@@ -706,7 +706,7 @@ Top Board（STR-016 Beck Container #2の蓋へ設置するサイドテーブル�
 
 ### Price  
 
-¥33,000（2組合計。1組¥16,500。MARI様確認）  
+¥33,000（2組合計。1組¥16,500）  
 
 ---  
 
@@ -784,7 +784,7 @@ Top Board（STR-019 Container Bridge Frameに載せるBridge Tableの天板。MD
 
 ### Price  
 
-¥49,500（3組合計。1組¥16,500。MARI様確認）  
+¥49,500（3組合計。1組¥16,500）  
 
 ---  
 
@@ -1142,7 +1142,7 @@ Black（デジタルカモフラージュ柄。本体側はスチールメッキ
 
 ### Material  
 
-Steel（メッキ加工、ワイヤー部）／Steel + Plastic（メッキ加工、脚部）／X-PAC（Dimension-Polyant社製。表地＋X-Ply補強層＋防水フィルムから成る3〜4層ラミネート。元来ヨット用セイルクロスの技術を応用したもので、アウトドア・バッグ業界で広く採用される汎用素材。KAZE_TO_MORI製COVER・FUTA部に使用。本製品のX-PACのグレードはVX21〈MARI様確認〉）  
+Steel（メッキ加工、ワイヤー部）／Steel + Plastic（メッキ加工、脚部）／X-PAC（Dimension-Polyant社製。表地＋X-Ply補強層＋防水フィルムから成る3〜4層ラミネート。元来ヨット用セイルクロスの技術を応用したもので、アウトドア・バッグ業界で広く採用される汎用素材。KAZE_TO_MORI製COVER・FUTA部に使用。本製品のX-PACのグレードはVX21）  
 
 ### Graphic Attribute  
 
@@ -1255,7 +1255,7 @@ Storage Container Base / Leg（汎用スタンド）
 
 ### Price  
 
-¥55,500（4個合計。MARI様確認）  
+¥55,500（4個合計）  
 
 ---  
 
@@ -1323,7 +1323,7 @@ Carryall Tote（容量35L、自立式・防水。食品の運搬用。Coffee Sys
 
 ### Price  
 
-¥25,630（yeti.co.jp公式サイト現行価格、2026-09-28確認）  
+¥25,630（購入価格）  
 
 ---  
 
@@ -1359,7 +1359,7 @@ Peg Case（約42×15×H13.5cm、約380g。メッシュ構造で洗って乾か�
 
 ### Price  
 
-¥3,960（tokyocrafts.jp公式サイト価格、2026-09-28確認）  
+¥3,960（購入価格）  
 
 ---  
 
@@ -1395,6 +1395,6 @@ Duffle Bag（L380×W230×H340mm。充電が必要な物だけを入れて運用�
 
 ### Price  
 
-¥19,800（購入価格。MARI様申告）  
+¥19,800（購入価格）  
 
 ---  
