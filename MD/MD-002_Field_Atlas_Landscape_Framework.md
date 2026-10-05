@@ -1,11 +1,11 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.4.13
+## Ver.4.14
 
 **Document ID**: MD-002  
 **Title**: Field Atlas Landscape Framework  
 **Series**: MD – Master Data (Record)  
-**Version**: 4.13  
+**Version**: 4.14  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -98,7 +98,7 @@ Field Atlas Evaluation Framework（10軸評価、OP-010 Qualification Charter Pa
 | **39／100｜Bonfirebase 富津キャンプビレッジ（千葉県富津市） 1.5h 🪨🌱** | **Terraced Forest Camp**<br>棚田を活かした段差区画の林間サイト。都内から1時間強とアクセスも良い。 |
 | **38／100｜神栖市営日川浜オートキャンプ場（茨城県神栖市） 1.5h 🌱** | **Standard Beach Camp**<br>特に良かった点も気になった点もなし。再訪予定はない。 |
 | **37／100｜サンビレッジ金谷キャンプ場（千葉県富津市） 1.5h 🟫** | **Owner's Handmade Camp**<br>オーナーが場内に常駐し、手作りの設備が随所にある。あまり綺麗ではない点が気になる。 |
-| **36／100｜九十九里浜シーサイドオートキャンプ場（千葉県匝瑳市） 1.5h 🟫** | **Forest Wind Break**<br>記憶に残る特徴が無い。鹿嶋神の道に隣接する森林サイト。 |
+| **36／100｜九十九里浜シーサイドオートキャンプ場（千葉県匝瑳市） 1.5h 🟫** | **Open Coast Camp**<br>九十九里浜まで徒歩3分ほどの、区画制のオートキャンプ場。高い木がなく日陰の少ない開けたサイトで、海沿いのため風が強くなりやすい。記憶に残る特徴は無い。 |
 
 ---
 
@@ -453,6 +453,7 @@ THE THIRD PLACE を実現するための
 | 4.11 | 2026-10-03 | MARI様のご訪問（2026-09-26〜27、林間サイトに宿泊、11:00のアーリーチェックインを予約）に基づき、KARUIZAWA CAMP GOLDを訪問済みへ更新した。MARI様の採点（Ground 8／Layout 7／Facility 6／Comfort 7／View 7／Place 10／Experience 8）とパートナー様のご感想（Partner 7）に、既存のOperation 8（アーリー「可」）・近さ 4を加え、Atlas Resonanceを68（暫定）から72へ更新した。Facilityは、トイレ（近場4・遠方8の平均6）と炊事場（水のみ4・お湯が出る所6の平均5）の平均5.5を繰り上げた6点とした（管理棟の清潔さを含む）。地面は砂利と芝を選べたため、アイコンを🌱🌲から🪨🌱🌲へ改めた（Field Atlas Database・§Site Record）。あわせて、MARI様のご指示により橘ふれあい公園キャンプ場を実感で採り直した（Ground 6→5／Layout 9→10／Facility 7→6／View 7→6／Place 8→6／Experience 6→5／Partner 9→8。Comfort 9・Operation 2・近さ 9は変更なし）。合計は72から66となった。この結果、KARUIZAWA CAMP GOLDをHillbilly Campingの下、CREST northKaruizawaの上へ移し、橘ふれあい公園キャンプ場は清里オーベルジュとの同点をPartner軸（清里9・橘8）で決めて、JUTE CAMP FIELDの下、CAMPGROUND BREEZE TATEYAMAの上へ並べ替えた。Field Atlas Database・Sub-Score Table・Early Check-in Record・§Site Recordを更新した。Minor Version。 |
 | 4.12 | 2026-10-05 | MARI様のご訪問に基づき、しおさいキャンプフィールド（55点）、イレブンオートキャンプパーク（56点）、SHELTER BASE（63点）を訪問済みとして新規追加した（全52件）。10軸はMARI様の実感採点、アーリーは3件とも『可』。掲載順はOP-010の同点規則（Partner→Place+Experience）で決定。Field Atlas Database・Sub-Score Table・Early Check-in Record・Site Recordを更新した。Minor Version。 |
 | 4.13 | 2026-10-05 | MARI様のご指示（GitHub Issue #121）に基づき、旧「キャンプ ざ カントリー（茨城県鹿嶋市）」を「九十九里浜シーサイドオートキャンプ場（千葉県匝瑳市）」へ差し替えた（名称と所在地のみ。評価は元々九十九里浜シーサイドオートキャンプ場についてのものである）。 |
+| 4.14 | 2026-10-05 | MARI様のご指示に基づき、九十九里浜シーサイドオートキャンプ場のIdentity欄（旧「キャンプ ざ カントリー」の説明が残っていた）を、同場の特徴に合わせて書き直した（Forest Wind Break → Open Coast Camp）。スコア・順位は変えていない。立地・サイト・風の記述は、なっぷの口コミ情報にもとづく。 |
 
 ---
 
