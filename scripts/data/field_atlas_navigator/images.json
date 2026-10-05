@@ -194,5 +194,17 @@
  "キャンプ ざ カントリー": {
   "page": "https://www.nap-camp.com/ibaraki/15786",
   "image": "https://mr59fqlw.user.webaccel.jp/api/cdn_images?fname=/campsite_image/15786/img_2_88716.jpg&ts=000000&rw=1200&wm=resize&rh=630&hm=resize"
+ },
+ "SHELTER BASE": {
+  "page": "https://www.shelterbase.jp/",
+  "image": "https://www.shelterbase.jp/wp-content/uploads/2022/10/top-camp02.jpg"
+ },
+ "イレブンオートキャンプパーク": {
+  "page": "https://www.nap-camp.com/chiba/11950",
+  "image": "https://mr59fqlw.user.webaccel.jp/api/cdn_images?fname=/campsite_image/11950/img_1_122567.jpg&ts=000000&rw=1200&wm=resize&rh=630&hm=resize"
+ },
+ "しおさいキャンプフィールド": {
+  "page": "https://shiosai-minamiboso.com/",
+  "image": "https://shiosai-minamiboso.com/files/images/img_auto01.jpg"
  }
 }
