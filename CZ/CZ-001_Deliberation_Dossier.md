@@ -10,7 +10,7 @@ Deliberation Dossier
 
 # Version
 
-3.26
+3.27
 
 # Status
 
@@ -116,7 +116,7 @@ CZ-001 Deliberation Dossier
 
 検討中製品：wildingout「LF1984」。Brown、Walnut。
 
-Airlightを使わない独立したLEDランタンのため、Airlightシェード用の空き枠LGT-043には充当しない。検討中は本文書（とCZ-002 Watch List）にのみ記載し、MD-004へは登録しない。購入した時点で、MD-004 Light DomainにLGT-04番台の新規IDを付番して登録する（2026-09-29、MARI様のご決定）。
+Airlightを使わない独立したLEDランタンのため、Airlightシェード用の空き枠LGT-046には充当しない。検討中は本文書（とCZ-002 Watch List）にのみ記載し、MD-004へは登録しない。購入した時点で、MD-004 Light DomainにLGT-04番台の新規IDを付番して登録する（2026-09-29、MARI様のご決定）。
 
 **Hold Reasons**（2026-09-29、MARI様のご説明）：LF1984はAirlightを使わない、独立したLEDランタンである。見た目はTHE THIRD PLACEに非常に合うが、次の2点が解決していないため決定を保留している。
 
@@ -194,9 +194,9 @@ MD-004でStatus = Essentialとなっている、Coffee Domainを除く全Equipme
 | ID | Product | Brand | Note |
 |---|---|---|---|
 | LGT-017 | BABEL | OTEBO CRAFTS | — |
-| LGT-040 | RT-01AC01 / ECHO LAMP | rove troupe | — |
-| LGT-041 | DOME LOOK | KURASHI MADE | — |
-| LGT-042 | Pivotshade | IFA | — |
+| LGT-043 | RT-01AC01 / ECHO LAMP | rove troupe | — |
+| LGT-044 | DOME LOOK | KURASHI MADE | — |
+| LGT-045 | Pivotshade | IFA | — |
 
 ## Aroma
 
@@ -440,6 +440,7 @@ Decision Logおよびその詳細記録は、**KN-001 Heritage Chronicle**発行
 | 3.24 | 2026-10-02 | MARI様のご指示に基づき、ShellCon25の収納検証（2026-09-27、Storage — Bedding Module収納検証）の記述から「箱」の表現をやめ、「シェルコン」「HEXA／TC」へ改めた。「①＋②の2箱体制」を「シェルコン2台体制（HEXA・TC）」、「箱①」「箱②」を「HEXA」「TC」、「箱1個あたり」「箱2個合計」を「シェルコン1台あたり」「シェルコン2台合計」へ変更した。検証内容・数値・結論に変更はない。Version History内の過去の記述は原文のまま保持した。Patch Version。 |
 | 3.25 | 2026-10-02 | MD-004 Ver.7.83（FIR-003のカスタムベロ4分解、旧FIR-004〜042の+3繰り下げ）と連動し、本文のFIR参照（FIR-025→028、FIR-036〜042→039〜045 ほか）を新番号へ更新した。MARI様のご決定に基づく。改訂履歴の過去の行は原文のまま。Patch Version。 |
 | 3.26 | 2026-10-03 | MD-004 Ver.7.86（LGT-021のProductを「DEVA DEVAの実」へ訂正）と連動し、ShellCon25 TCの現状構成を述べる本文中の略記「DEVADEVA」を「DEVA DEVA」へ改めた。検討内容・Decisionに変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。 |
+| 3.27 | 2026-10-05 | MD-004 Ver.8.6（38-kT THE RICH 3色をLGT-040〜042として新規登録し、旧LGT-040〜043をLGT-043〜046へ+3繰り下げ）と連動し、本文のLGT参照を新番号へ更新した。MARI様のご決定に基づく。改訂履歴の過去の行は原文のまま。Patch Version。 |
 
 ---
 

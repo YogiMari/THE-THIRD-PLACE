@@ -1807,6 +1807,114 @@ Stand（38-kT THE RICH classic100 ×2用）
 
 **Brand**  
 
+38Explore  
+
+**Product**  
+
+38-kT THE RICH Cape Jasmine  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black  
+
+### Material  
+
+Brass  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Premium Lantern  
+
+### Price  
+
+¥13,770  
+
+---  
+
+## LGT-041  
+
+**Brand**  
+
+38Explore  
+
+**Product**  
+
+38-kT THE RICH Sunflower  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black  
+
+### Material  
+
+Brass  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Premium Lantern  
+
+### Price  
+
+¥13,770  
+
+---  
+
+## LGT-042  
+
+**Brand**  
+
+38Explore  
+
+**Product**  
+
+38-kT THE RICH Cosmos  
+
+**Status**  
+
+Owned  
+
+### Color  
+
+Black  
+
+### Material  
+
+Brass  
+
+### Graphic Attribute  
+
+None  
+
+### Industrial Attribute  
+
+Premium Lantern  
+
+### Price  
+
+¥13,770  
+
+---  
+
+## LGT-043  
+
+**Brand**  
+
 rove troupe  
 
 **Product**  
@@ -1859,7 +1967,7 @@ Owned
 
 **Parent**  
 
-LGT-040  
+LGT-043  
 
 ### Color  
 
@@ -1879,7 +1987,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-041  
+## LGT-044  
 
 **Brand**  
 
@@ -1935,7 +2043,7 @@ Owned
 
 **Parent**  
 
-LGT-041  
+LGT-044  
 
 ### Color  
 
@@ -1955,7 +2063,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-042  
+## LGT-045  
 
 **Brand**  
 
@@ -2011,7 +2119,7 @@ Owned
 
 **Parent**  
 
-LGT-042  
+LGT-045  
 
 ### Color  
 
@@ -2031,7 +2139,7 @@ Airlight (Portable LED Light Body)
 
 ---  
 
-## LGT-043  
+## LGT-046  
 
 Vacant ID. Reserved for a fourth hanging-type Airlight shade, not yet identified.  
 
@@ -2057,7 +2165,7 @@ Owned
 
 **Parent**  
 
-LGT-043 (pending — parent shade not yet identified)  
+LGT-046 (pending — parent shade not yet identified)  
 
 ### Color  
 

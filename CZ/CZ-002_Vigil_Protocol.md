@@ -5,7 +5,7 @@
 **Document ID**: CZ-002  
 **Title**: Vigil Protocol  
 **Series**: CZ – Cross-Zone Ops  
-**Version**: 3.12  
+**Version**: 3.13  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE
@@ -30,6 +30,7 @@
 | 3.10 | 2026-09-30 | CZ-001 Ver.3.22と連動し、エントリ006（wildingout LF1984）のMD-004 Referenceを、Airlightシェード用の空き枠への充当検討から「なし（MD-004未登録。購入時にLight Domainの新規IDを付番）」へ改め、Current Watch List冒頭の「MD-004に該当IDなし」の例示へ006を追加した。MARI様のご決定に基づく。 |
 | 3.11 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |
 | 3.12 | 2026-10-02 | MD-004 Ver.7.83（FIR-003のカスタムベロ4分解、旧FIR-004〜042の+3繰り下げ）と連動し、本文のFIR参照（MD-004 Reference等）を新番号へ更新した。MARI様のご決定に基づく。改訂履歴の過去の行は原文のまま。Patch Version。 |
+| 3.13 | 2026-10-05 | MD-004 Ver.8.6（38-kT THE RICH 3色をLGT-040〜042として新規登録し、旧LGT-040〜043をLGT-043〜046へ+3繰り下げ）と連動し、本文のLGT参照を新番号へ更新した。MARI様のご決定に基づく。改訂履歴の過去の行は原文のまま。Patch Version。 |
 
 ---
 
@@ -237,7 +238,7 @@ RT-01 ECHO LAMP
 
 **MD-004 Reference**
 
-LGT-040
+LGT-043
 
 **Required Keywords**
 
@@ -263,7 +264,7 @@ DOME LOOK
 
 **MD-004 Reference**
 
-LGT-041
+LGT-044
 
 **Required Keywords**
 
@@ -366,7 +367,7 @@ Pivotshade
 
 **MD-004 Reference**
 
-LGT-042
+LGT-045
 
 **Required Keywords**
 

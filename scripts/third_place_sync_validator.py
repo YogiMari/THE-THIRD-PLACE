@@ -1235,7 +1235,7 @@ def check_md001_ownership_annotation(
     Owned), the same line should carry an explicit non-ownership
     annotation (e.g. "未所有", "Status = Essential"), matching the
     pattern already used elsewhere in MD-001 (e.g. "RT-01AC01 / ECHO
-    LAMP（未所有・MD-004 LGT-040 Status = Essential）").
+    LAMP（未所有・MD-004 LGT-043 Status = Essential）").
 
     This is a line-proximity heuristic and can misfire (e.g. if the
     annotation is on an adjacent line rather than the same one), so

@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.35
+## Ver.2.36
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.35  
+**Version**: 2.36  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -382,8 +382,8 @@ Internal Size
 - DEVA DEVA
 - VALO SHADE
 - TARP to TARP × Lampup Glass Shade
-- RT-01AC01 / ECHO LAMP（未所有・MD-004 LGT-040 Status = Essential）
-- KURASHI MADE DOME LOOK（未所有・MD-004 LGT-041 Status = Essential）
+- RT-01AC01 / ECHO LAMP（未所有・MD-004 LGT-043 Status = Essential）
+- KURASHI MADE DOME LOOK（未所有・MD-004 LGT-044 Status = Essential）
 - その他Light Accessories
 
 ### Stored Separately
@@ -864,11 +864,11 @@ Pitcher＋Sleeve
 
 # Light Sequence
 
-RT-01AC01 / ECHO LAMP（未所有・MD-004 LGT-040 Status = Essential）
+RT-01AC01 / ECHO LAMP（未所有・MD-004 LGT-043 Status = Essential）
 
 ↓
 
-KURASHI MADE DOME LOOK（未所有・MD-004 LGT-041 Status = Essential）
+KURASHI MADE DOME LOOK（未所有・MD-004 LGT-044 Status = Essential）
 
 ↓
 
@@ -1041,8 +1041,8 @@ Light & Aroma Module専用。
 - DEVA DEVA
 - VALO SHADE
 - TARP to TARP × Lampup Glass Shade
-- RT-01AC01 / ECHO LAMP（未所有・MD-004 LGT-040 Status = Essential）
-- KURASHI MADE DOME LOOK（未所有・MD-004 LGT-041 Status = Essential）
+- RT-01AC01 / ECHO LAMP（未所有・MD-004 LGT-043 Status = Essential）
+- KURASHI MADE DOME LOOK（未所有・MD-004 LGT-044 Status = Essential）
 
 ### Separate Storage
 
@@ -1269,6 +1269,7 @@ Permanent Storage
 | 2.33 | 2026-10-02 | 文書冒頭の見出し「Ver.」表記が本文のVersionと食い違っていたため（見出しのみVer.2.30のまま残存）、見出しを現行Versionへ揃えた。内容に変更はない。Patch Version。 |
 | 2.34 | 2026-10-02 | MD-004 Ver.7.85（SHL-001のProductを正式名称「幕男 4th.ver」へ変更）と連動し、Vehicle Loading MapのSHL-001の表記を「幕男 4th.ver」へ改めた。収納・積載の内容に変更はない。Patch Version。 |
 | 2.35 | 2026-10-03 | MD-004 Ver.7.86（LGT-021のProductを「DEVA DEVAの実」へ訂正）と連動し、本文中の略記「DEVADEVA」4箇所（ShellCon25 TCのFixed Contents・Verified Equipment、Light Sequenceほか）を「DEVA DEVA」へ改めた。収納・積載の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。 |
+| 2.36 | 2026-10-05 | MD-004 Ver.8.6（38-kT THE RICH 3色をLGT-040〜042として新規登録し、旧LGT-040〜043をLGT-043〜046へ+3繰り下げ）と連動し、本文のLGT参照を新番号へ更新した。MARI様のご決定に基づく。改訂履歴の過去の行は原文のまま。Patch Version。 |
 
 ---
 
