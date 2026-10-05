@@ -1,11 +1,11 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.4.14
+## Ver.4.15
 
 **Document ID**: MD-002  
 **Title**: Field Atlas Landscape Framework  
 **Series**: MD – Master Data (Record)  
-**Version**: 4.14  
+**Version**: 4.15  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -68,6 +68,7 @@ Field Atlas Evaluation Framework（10軸評価、OP-010 Qualification Charter Pa
 | **66／100｜橘ふれあい公園キャンプ場（千葉県香取市） 1.5h 🌱** | **Luxury Layout**<br>区画の広さと、区画毎の独立した水場が魅力。だがアーリーチェックイン不可（BBQ申込みで可）が明確な不満。THE THIRD PLACEは設営に時間を要するため必須条件であり、この一点が評価を大きく下げる。 |
 | 65(暫定)／100｜CAMPGROUND BREEZE TATEYAMA（千葉県館山市） 2.5h 🪨🌱 | **Beach Family Resort**<br>海辺ならではの開放感と設備が魅力。標準チェックイン11:00〜14:00、有料でアーリーチェックイン可能（前日連絡制、第三者バーベキュー予約サイトで確認）。区画面積の公表値は未確認。 |
 | 64(暫定)／100｜TACO GLAMP THE MEXICO（千葉県香取郡多古町） 2h 🪨🌱 | **Destination Resort**<br>メキシコをテーマにした独自の世界観を持つ滞在型フィールド。標準チェックイン12:30〜、アーリーチェックインはプラン内容による（公式FAQで確認、詳細不透明）。オートサイトは車の横付け不可・指定駐車場利用（公式FAQで確認）、THE THIRD PLACEの車横付け志向との相性に注意が必要。 |
+| **64／100｜CAMP さくらの丘（千葉県君津市） 1.5h 🟫** | **Kids' Event Camp**<br>子供向けのイベントが多く開かれることが特徴のキャンプ場。 |
 | 63(暫定)／100｜moss camp field（山梨県南都留郡山中湖村） 4h 🪨 | **Botanical Retreat**<br>植物をテーマにした静かなフィールド、富士山眺望。1区画120㎡（車込み）とTHE THIRD PLACE基準を満たす広さ。アーリーチェックインは12時から可能（訪問レビューで実際の12時アーリーチェックイン利用を確認）。 |
 | **63／100｜SHELTER BASE（千葉県鎌ケ谷市） 1.5h 🌱** | **Urban Residential Camp**<br>都心から近い住宅地にあるキャンプ場。芝は平坦で、施設はとても綺麗に整い、水回りの質が高い。全サイトにAC電源がある。車は区画に隣接する砂利の通路に停める。アーリーチェックインは11時から利用できた。 |
 | 62(暫定)／100｜大子広域公園オートキャンプ場グリンヴィラ（茨城県久慈郡大子町） 3.5h 🌱🟫 | **Public Premium Camp**<br>公園内に温泉・アスレチックを併設する高規格フィールド。区画サイト広さ10m×10m＝100㎡（車込み、いばらきキャンプ公式データで確認）とTHE THIRD PLACE基準ちょうど。アーリーチェックイン対応（9時〜、11時半〜、通常期2,100円／冬期1,600円、混雑時不可、第三者ガイドサイトで確認）。訪問記録は別施設との混同と判明したため未訪問へ差し戻し、再評価対象。 |
@@ -144,7 +145,7 @@ Ver.3.9までの旧スコア（Ver.2.1までのフレームワークによる統
 
 ## Sub-Score Table
 
-全52件、Field Atlas Database掲載順。
+全53件、Field Atlas Database掲載順。
 
 | Field | Ground | Layout | Facility | Operation | Comfort | View | Place | Experience | 近さ | Partner | Atlas Resonance（合計） | アーリー |
 |---|---|---|---|---|---|---|---|---|---|---|---|---|
@@ -169,6 +170,7 @@ Ver.3.9までの旧スコア（Ver.2.1までのフレームワークによる統
 | 橘ふれあい公園キャンプ場 | 5 | 10 | 6 | 2 | 9 | 6 | 6 | 5 | 9 | 8 | 66 | 不可 |
 | CAMPGROUND BREEZE TATEYAMA（未訪問・調査ベース暫定値） | 6 | 5 | 7 | 8 | 7 | 7 | 7 | 5 | 7 | 6 | 65 | 可 |
 | TACO GLAMP THE MEXICO（未訪問・調査ベース暫定値） | 6 | 3 | 6 | 6 | 5 | 6 | 9 | 8 | 8 | 7 | 64 | 条件付き |
+| CAMP さくらの丘 | 4 | 9 | 6 | 8 | 7 | 5 | 6 | 5 | 9 | 5 | 64 | 可 |
 | moss camp field（未訪問・調査ベース暫定値） | 8 | 8 | 5 | 8 | 6 | 7 | 6 | 5 | 4 | 6 | 63 | 可 |
 | SHELTER BASE | 7 | 8 | 8 | 8 | 8 | 5 | 1 | 5 | 9 | 4 | 63 | 可 |
 | 大子広域公園オートキャンプ場グリンヴィラ（未訪問・調査ベース暫定値） | 4 | 6 | 7 | 10 | 6 | 5 | 6 | 7 | 5 | 6 | 62 | 早い |
@@ -201,7 +203,7 @@ Ver.3.9までの旧スコア（Ver.2.1までのフレームワークによる統
 | サンビレッジ金谷キャンプ場 | 3 | 3 | 2 | 8 | 2 | 2 | 3 | 3 | 9 | 2 | 37 | 可 |
 | 九十九里浜シーサイドオートキャンプ場 | 4 | 4 | 4 | 8 | 3 | 1 | 1 | 1 | 9 | 1 | 36 | 可 |
 
-**総括：** 全52件の記録が完了した。Ver.4.0のAtlas Resonanceが最も高いのはRender Fika（88点）、次いでスノーピークヘッドクォーターズキャンプフィールド（85点）。最も低いのは九十九里浜シーサイドオートキャンプ場（36点）。掲載順はVer.3.9から変わっていない。
+**総括：** 全53件の記録が完了した。Ver.4.0のAtlas Resonanceが最も高いのはRender Fika（88点）、次いでスノーピークヘッドクォーターズキャンプフィールド（85点）。最も低いのは九十九里浜シーサイドオートキャンプ場（36点）。掲載順はVer.3.9から変わっていない。
 
 
 ## Early Check-in Record
@@ -231,6 +233,7 @@ OP-010 Part C §Early Check-in Scoringの区分（早い／可／条件付き／
 | 清里オーベルジュ コート・ドゥ・ヴェール（緑の丘） | 可 | 通常IN 14:00。アーリー12:00〜（¥1,000） | なっぷ |
 | CAMPGROUND BREEZE TATEYAMA | 可 | 通常IN 11:00〜。有料アーリー（前日連絡制） | MD-002 |
 | TACO GLAMP THE MEXICO | 条件付き | 通常IN 12:30〜。アーリーはプラン次第（不透明） | MD-002（公式FAQ） |
+| CAMP さくらの丘 | 可 | 通常IN 13:00。アーリーは可（イレブンオートキャンプパークと同じ区分） | ウォーカープラス（通常IN）・MARI様のご指示（2026-10-05） |
 | moss camp field | 可 | アーリー12:00〜 | MD-002 |
 | SHELTER BASE | 可 | 通常IN 13:00〜17:00。アーリー11:00〜13:00（¥2,000） | ハピキャン・MARI様の確認（2026-10-05） |
 | 大子広域公園オートキャンプ場グリンヴィラ | 早い | アーリー9:00〜（混雑時不可） | MD-002 |
@@ -294,6 +297,7 @@ OP-010 Part C §Site Requirements（区画面積：80㎡（車別）、車込み
 | 清里オーベルジュ コート・ドゥ・ヴェール（緑の丘） | 🌱 芝 | 8m×16m＝128㎡ | 車込（乗り入れ可） | なっぷ |
 | CAMPGROUND BREEZE TATEYAMA | 🪨🌱（MD-002既記録） | プレミアムサイト9m×10m（90㎡）、グリーンサイト5m×10m（50㎡） | — | 紹介記事 |
 | TACO GLAMP THE MEXICO | 🪨🌱（MD-002既記録）。芝・砂利を選択 | 100㎡／200㎡ | 車別（横付け不可、MD-002既記録） | 公式 |
+| CAMP さくらの丘 | 🟫 土（MARI様の確認、2026-10-05） | 100㎡ | — | MARI様の確認（2026-10-05） |
 | moss camp field | 🪨（MD-002既記録） | 120㎡ | 車込 | MD-002既記録 |
 | SHELTER BASE | 🌱 芝（MARI様の確認、2026-10-05。Eエリア） | 12m×9m＝108㎡（公式表記は駐車スペース含む） | 車別（芝上は乗り入れ禁止。区画に隣接する砂利の通路に駐車。MARI様の確認） | 公式（shelterbase.jp） |
 | 大子広域公園オートキャンプ場グリンヴィラ | 🌱🟫（MD-002既記録） | 10m×10m＝100㎡ | 車込 | いばらきキャンプ（MD-002既記録） |
@@ -435,7 +439,7 @@ THE THIRD PLACE を実現するための
 | 3.3 | 2026-09-26 | 見出し『Registry Standard Reference』が2026-09-24付の改題（OP-010→Qualification Charter）に同期していなかった箇所を修正し、『Qualification Charter Reference』へ改題。本文（Part C参照）に変更はない。 |
 | 3.4 | 2026-09-28 | OP-008 Rule DOC-06・Principle 003に基づき、§Relationship to Other Core Documentsの文書一覧（OP-008 §8と重複）を「文書一覧は OP-008 §8 Document Series を参照。」の1行へ置換した。箇条書き以外の固有の説明は変更していない。MARI様のご決定に基づく（S-08）。 |
 | 3.5 | 2026-09-28 | OP-010 Qualification Charter Ver.2.2（Partner Valueの正式スコア化）に伴い、Field Atlas Databaseのスコアを旧フレームワークの統合スコアからPartner Value（6軸合計、60点満点）へ置き換え、掲載順をPartner Valueの降順（同点は旧スコアの降順）へ並べ替えた。旧スコアは各行末尾に参考値として併記。Radar Sub-Scoresの表も同じ順序へ並べ替え、総括を更新。あわせて、スノーピークヘッドクォーターズのIdentityコメントにあった他フィールドとの相対順位表現（OP-010 Part C §Identityで禁止）を是正。各軸のスコア値・Identityの内容自体は変更していない。Claude推奨案をMARI様の包括指示に基づき採用（N-10）。 |
-| 3.6 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
+| 3.6 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。 |
 | 3.7 | 2026-09-28 | 移動時間が未記録だった訪問済み17件へ、MARI様の調査結果（起点：東京都江戸川区小岩、土曜7:00出発）に基づく移動時間を記載した。OP-010 Qualification Charter Part C §Travel Time（Googleマップ実勢時間を基準、30分単位で切り上げ）に従い、調査表の「標準走行」時間を30分単位で切り上げた値を採用した（立ち寄り込み・渋滞考慮の保守的所要時間は採用していない）。スコア・掲載順は変更していない。 |
 | 3.8 | 2026-09-29 | MARI様のご判断に基づき、Radar Sub-Scoresの全49件をClaudeが付け直した（§Methodology（Ver.3.8））。旧ランキング（Ver.1.9の旧スコア順）を品質5軸合計の順位の基準とし、近さは移動時間から算出、アーリーチェックインはOP-010 Version 2.5 §Early Check-in Scoringに従ってFacility軸で評価した。Sub-Score Tableへアーリー列を追加し、§Early Check-in Record（区分・内容・出典）と§Visualization（scripts/field_atlas_radar.pyによる生成と公開先）を新設。Field Atlas DatabaseのPartner Valueと掲載順を更新した。§Recording Rulesは改訂せず、今回に限る例外として§Methodology（Ver.3.8）に記録した。 |
 | 3.9 | 2026-09-30 | MARI様のご確認・ご指摘に基づき、(1) リバーサイドキャンプフィールド秩父のアーリーチェックインを不可から可へ訂正し、Facilityを元に戻した（Partner Value 25→29）。(2) 橘ふれあい公園キャンプ場・小田原フォレストキャンプ場は、旧ランキングに既にアーリー不可が織り込まれていたため、Ver.3.8で合計から−4を重ねたのは二重減点だった。Facilityの−4は維持し、その分を他の軸へ戻して旧ランキングに基づく合計（31・29）に戻した。§Methodology（Ver.3.8）のアーリーチェックインの記述を改め、Field Atlas DatabaseのPartner Valueと掲載順、Sub-Score Table、Early Check-in Recordを更新。 |
@@ -451,9 +455,10 @@ THE THIRD PLACE を実現するための
 | 4.9 | 2026-10-01 | MARI様のご依頼に基づき、§VisualizationのField Atlas Radarに、Field Atlas Navigator・Ivoryと同じ情報（地面・系統別小計と全件平均・アーリーチェックイン区分の点数・§Site Record・標高と気温差・日の出・日の入り・月齢・周辺環境・次のキャンプと訪問の記録・装備の正式名称・View軸の基準地点・フィールドへの直接リンク）と、近い順の並べ替え・訪問済み／未訪問・地面での絞り込みを加えた。生成は scripts/field_atlas_radar.py で、追加の情報は scripts/field_atlas_navigator.py の extras() を共用する。スコア・掲載順・アーリーチェックインに変更はない。Minor Version。 |
 | 4.10 | 2026-10-02 | MARI様のご依頼に基づき、§Visualizationの3ページ（Field Atlas Navigator・Ivory・Radar）に、次のキャンプのフィールド（moss camp field）の「寒さの目安」を加えた。気象庁アメダス「山中」（山梨県・標高992m）の10月上旬（月の前半の目安）の平年値（1991〜2020年）の日最低気温9.4℃と、キャンプ場（標高993m）との標高差による補正値（0.6℃/100mの目安）を示す。データは scripts/data/field_atlas_navigator/climate.json（出典は同README.mdのData files）で、scripts/field_atlas_check.py の対象とした。あわせて、NavigatorとIvoryで重複していたスクリプトを scripts/templates/field_atlas_shared.js に一本化した（表示と操作に変更はない）。スコア・掲載順・アーリーチェックインに変更はない。Minor Version。 |
 | 4.11 | 2026-10-03 | MARI様のご訪問（2026-09-26〜27、林間サイトに宿泊、11:00のアーリーチェックインを予約）に基づき、KARUIZAWA CAMP GOLDを訪問済みへ更新した。MARI様の採点（Ground 8／Layout 7／Facility 6／Comfort 7／View 7／Place 10／Experience 8）とパートナー様のご感想（Partner 7）に、既存のOperation 8（アーリー「可」）・近さ 4を加え、Atlas Resonanceを68（暫定）から72へ更新した。Facilityは、トイレ（近場4・遠方8の平均6）と炊事場（水のみ4・お湯が出る所6の平均5）の平均5.5を繰り上げた6点とした（管理棟の清潔さを含む）。地面は砂利と芝を選べたため、アイコンを🌱🌲から🪨🌱🌲へ改めた（Field Atlas Database・§Site Record）。あわせて、MARI様のご指示により橘ふれあい公園キャンプ場を実感で採り直した（Ground 6→5／Layout 9→10／Facility 7→6／View 7→6／Place 8→6／Experience 6→5／Partner 9→8。Comfort 9・Operation 2・近さ 9は変更なし）。合計は72から66となった。この結果、KARUIZAWA CAMP GOLDをHillbilly Campingの下、CREST northKaruizawaの上へ移し、橘ふれあい公園キャンプ場は清里オーベルジュとの同点をPartner軸（清里9・橘8）で決めて、JUTE CAMP FIELDの下、CAMPGROUND BREEZE TATEYAMAの上へ並べ替えた。Field Atlas Database・Sub-Score Table・Early Check-in Record・§Site Recordを更新した。Minor Version。 |
-| 4.12 | 2026-10-05 | MARI様のご訪問に基づき、しおさいキャンプフィールド（55点）、イレブンオートキャンプパーク（56点）、SHELTER BASE（63点）を訪問済みとして新規追加した（全52件）。10軸はMARI様の実感採点、アーリーは3件とも『可』。掲載順はOP-010の同点規則（Partner→Place+Experience）で決定。Field Atlas Database・Sub-Score Table・Early Check-in Record・Site Recordを更新した。Minor Version。 |
+| 4.12 | 2026-10-05 | MARI様のご訪問に基づき、しおさいキャンプフィールド（55点）、イレブンオートキャンプパーク（56点）、SHELTER BASE（63点）を訪問済みとして新規追加した（全52件）。10軸はMARI様の実感採点、アーリーは3件とも『可』。掲載順はOP-010の同点規則（Partner→Place＋Experience）で決定。Field Atlas Database・Sub-Score Table・Early Check-in Record・Site Recordを更新した。Minor Version。 |
 | 4.13 | 2026-10-05 | MARI様のご指示（GitHub Issue #121）に基づき、旧「キャンプ ざ カントリー（茨城県鹿嶋市）」を「九十九里浜シーサイドオートキャンプ場（千葉県匝瑳市）」へ差し替えた（名称と所在地のみ。評価は元々九十九里浜シーサイドオートキャンプ場についてのものである）。 |
 | 4.14 | 2026-10-05 | MARI様のご指示に基づき、九十九里浜シーサイドオートキャンプ場のIdentity欄（旧「キャンプ ざ カントリー」の説明が残っていた）を、同場の特徴に合わせて書き直した（Forest Wind Break → Open Coast Camp）。スコア・順位は変えていない。立地・サイト・風の記述は、なっぷの口コミ情報にもとづく。 |
+| 4.15 | 2026-10-05 | MARI様のご訪問に基づき、CAMP さくらの丘（千葉県君津市）を訪問済みとして新規追加した（全53件）。10軸はMARI様のご指示により、イレブンオートキャンプパークの採点をもとにOperationと近さを除く8軸を各+1とし、Operationはアーリーチェックイン『可』の8、近さは移動時間1.5時間の9（OP-010 Part Cの規定どおり）とした。合計64点。掲載順はOP-010の同点規則（Partner→Place＋Experience）により、同点のTACO GLAMP THE MEXICO（Partner 7）の下とした。Field Atlas Database・Sub-Score Table・Early Check-in Record・Site Recordを更新した。位置・道路経路・写真・標高などNavigator用の地理データは未追加。Minor Version。 |
 
 ---
 
