@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 8.5  
+**Version**: 8.6  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -288,6 +288,19 @@ MARI様のご指示（2026-10-04）に基づき、Snow Peak Recycled Cordura Tot
 ### Changes
 
 - STR-038（新規）：Snow Peak Recycled Cordura Tote Bag（BB-26SU002）。Owned、Black、¥15,840（購入価格）。
+
+---
+
+## Version 8.6
+
+MARI様のご指示（2026-10-05）に基づき、38Explore「38-kT THE RICH」シリーズの3色（登録漏れ）を、LGT-038（38-kT THE RICH classic100）とその子LGT-039の直後へ、LGT-040（38-kT THE RICH Cape Jasmine）／LGT-041（38-kT THE RICH Sunflower）／LGT-042（38-kT THE RICH Cosmos）として新規登録した（いずれもStatus: Owned、子なし）。Brand・Color・Material・Graphic Attribute・Industrial AttributeはLGT-038と同じ（38Explore／Black／Brass／None／Premium Lantern）。Priceは1個ずつ¥13,770。MARI様のご指示により、旧LGT-040〜LGT-043をLGT-043〜LGT-046へ+3繰り下げた（FIR-003分解〈Ver.7.83〉の前例と同じ形式。OP-010 S-01〈ID Freeze〉の例外として、プロジェクトオーナーの明示的な指示による）。連番グループ形式の子ID（LGT-04_3a〜d）は変更しない。CZ-001 Ver.3.27・CZ-002 Ver.3.13・MD-001 Ver.2.36が連動して本文のLGT参照を新番号へ更新した。Version History内の過去の記述は原文のまま保持している。Patch Version。
+
+### Changes
+
+- LGT-040（新規）：38Explore / 38-kT THE RICH Cape Jasmine。Owned、Black、Brass、¥13,770。
+- LGT-041（新規）：38Explore / 38-kT THE RICH Sunflower。Owned、Black、Brass、¥13,770。
+- LGT-042（新規）：38Explore / 38-kT THE RICH Cosmos。Owned、Black、Brass、¥13,770。
+- 旧LGT-040（RT-01AC01 / ECHO LAMP）→LGT-043、旧LGT-041（DOME LOOK）→LGT-044、旧LGT-042（Pivotshade）→LGT-045、旧LGT-043（Vacant）→LGT-046。Parent／Child Componentsの参照も更新（子のLGT-04_3a・LGT-04_3b・LGT-04_3c・LGT-04_3dのParentを新番号へ変更。ID自体は変更なし）。
 
 ---
 
