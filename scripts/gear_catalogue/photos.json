@@ -1822,5 +1822,29 @@
   "url": "",
   "kind": "Image supplied by the owner (original source not stated)",
   "bg": "white"
+ },
+ "LGT-040": {
+  "f": "img/LGT-040.jpg",
+  "pos": "50% 55%",
+  "credit": "Supplied by the owner",
+  "url": "",
+  "kind": "Image supplied by the owner (original source not stated)",
+  "bg": null
+ },
+ "LGT-041": {
+  "f": "img/LGT-041.jpg",
+  "pos": "50% 50%",
+  "credit": "Supplied by the owner",
+  "url": "",
+  "kind": "Image supplied by the owner (original source not stated)",
+  "bg": null
+ },
+ "LGT-042": {
+  "f": "img/LGT-042.jpg",
+  "pos": "50% 55%",
+  "credit": "Supplied by the owner",
+  "url": "",
+  "kind": "Image supplied by the owner (original source not stated)",
+  "bg": null
  }
 }
