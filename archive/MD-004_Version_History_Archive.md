@@ -1,10 +1,10 @@
 # MD-004 Version History Archive
 
-本ファイルは、MD-004 Equipment Registry Object Reference の Version History のうち、Version 7.0〜7.82（本文に残る直近の版〈Version 7.83〜〉より前の履歴）を保持する。
+本ファイルは、MD-004 Equipment Registry Object Reference の Version History のうち、Version 7.0〜8.6（本文に残る直近の版〈Version 8.7〉より前の履歴）を保持する。
 
-OP-008 §19 Rule DOC-09に基づき、S-10（改訂履歴の圧縮）により本文から移設した（Version 7.58〜7.82は、MD-004 Version 8.0のDomain別分割に伴い追加で移設した）。原文のまま保持し、要約・削除は行っていない。
+OP-008 §19 Rule DOC-09に基づき、S-10（改訂履歴の圧縮）により本文から移設した（Version 7.58〜7.82は、MD-004 Version 8.0のDomain別分割に伴い、Version 7.83〜8.6は、MD-004 Version 8.7に伴い、追加で移設した）。原文のまま保持し、要約・削除は行っていない。
 
-本文側（MD-004）は Version 7.83 以降を保持する。
+本文側（MD-004）は Version 8.7 のみを保持する。
 
 ---
 
@@ -1044,6 +1044,124 @@ MARI様のご指示（2026-10-02）に基づき、SOMA Chairの名称末尾の�
 ## Version 7.82
 
 MARI様のご指示(2026-10-02)に基づき、購入履歴と台帳のPriceを照合し、高い方の金額を採用した(STR-002・STR-008はMARI様の指定額)。Storage 8件(STR-001、002、007、008、014、015、017、018)とLight 5件(LGT-001、016、019、029、035)を更新。STR-015・STR-018は2組合計で統一。Furniture・Storage・Lightは、照合の結果、上記以外は現行記載で確定。Patch Version。
+
+---
+
+## Version 7.83
+
+MARI様のご決定（2026-10-02）に基づき、FIR-003「カスタムベロ（ナターシャ・マチルダ・アンナ・ジェーン）」（¥11,800）を、FIR-003 カスタムベロ（マチルダ）／FIR-004 カスタムベロ（ジェーン）／FIR-005 カスタムベロ（ナターシャ）／FIR-006 カスタムベロ（アンナ）の4件へ分解した。各件のPriceは4枚合計¥11,800の折半で¥2,950。4件ともGraphic Attributeに Bunny Girl Series（Cutout）を追加し、Industrial Attributeへ「半月スタイル時の前框〈カマチ〉押さえ部分に使用」を加えた。これに伴い、旧FIR-004〜FIR-042をFIR-007〜FIR-045へ+3繰り下げ、FIR-001のChild ComponentsをFIR-002〜FIR-008へ更新した（FUR-012の前例と同じ形式）。CZ-001 Ver.3.25・CZ-002 Ver.3.12・MD-001 Ver.2.32・OP-010 Ver.3.4が連動して本文のFIR参照を新番号へ更新した。Version History内の過去の記述は原文のまま保持している。Patch Version。
+
+---
+
+## Version 7.84
+
+MARI様のご指示（2026-10-02）に基づき、FUR-009（DEVISE WORKS × INAVANCE）のProductを、DEVISE WORKS公式オンラインショップの商品名に合わせて「KURO Bolt & Plate」から「NEW KURO金具」へ変更した。Brand・Color・Material・Price・Parent・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
+
+---
+
+## Version 7.85
+
+MARI様のご指示（2026-10-02）に基づき、SHL-001（The Arth）のProductを、The Arth_six公式ストアの正式名称に合わせて「幕男」から「幕男 4th.ver」へ変更した。MD-001 Ver.2.34と連動する。Brand・Color・Material・Price・Child Components・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
+
+---
+
+## Version 7.86
+
+MARI様のご指示（2026-10-03）に基づき、以下6件のレコードを訂正した。いずれもBrand・Price・Parent・Child Components・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
+
+### Changes
+
+- FIR-038（WHAT WE WANT WWW_HANGER）：Materialを「Walnut / Oak」から「Vegetable-Tanned Leather（Body） / Brass（S-Hook）」へ訂正（WHAT WE WANT公式ページの素材表記「本体：革（ヌメ革）／S字フック：真鍮」に基づく）。
+- FUR-005：Productを、natural mountain monkeys公式ストアの商品名に合わせて「NOVITA」から「NOVITA neo BRASS」へ変更。
+- FUR-010：Productを、DEVISE WORKS公式オンラインショップの商品名に合わせて「WARU NOVITA」から「NEW WARU NOVITA」へ変更。
+- LGT-012：「MIYABI RICH 0/f Copper Glove」から「MIYABI RICH 0/f Brass Glove」へ変更し、Colorを「Copper」から「Gold」、Materialを「Copper」から「Brass」へ訂正。
+- LGT-021：Productを「デバデバの実」から「DEVA DEVAの実」へ訂正。
+- STR-022：Colorを「Gray」から「Charcoal」へ訂正。
+
+---
+
+## Version 8.0
+
+MARI様のご決定（2026-10-03）に基づき、AIが必要なDomainのみを読めるよう、MD-004をDomain別のファイルへ分割した（OP-008 Ver.3.19 §11.2 Multi-file Documentに基づく。文書構造の変更のためMajor Version）。分割はVersion 7.86（PR #106：FIR-038・FUR-005・FUR-010・LGT-012・LGT-021・STR-022の6件の訂正）を取り込んだ上で行った。分割にあたり、登録内容（Equipment ID・Brand・Product・Status・Price・各属性）は一字も変更していない。
+
+### Changes
+
+- ファイル配置：単一ファイル `MD/MD-004_Equipment_Registry_Object_Reference.md` を、`MD/MD-004/` フォルダへ移した。入口ファイル（本書）の名称は従来のまま。
+- 本書（入口）：Document Information・Purpose・Registry Rules・Coffee・Parent / Child Rules・Graphic / Industrial Attribute・Color Rule・Material Rule・Single Source of Truth・Related Documents・Version Historyを保持する。Domain Files節を新設した。
+- Domain別ファイル6本：Furniture（FUR）・Light（LGT）・Aroma（ARM）・Storage（STR）・Fire（FIR）・Shelter（SHL）の各Domain節を、Version 7.86反映後の内容のまま `MD-004_{Prefix}_{Domain}.md` へ移した。各ファイルの先頭に、Document IDと入口ファイルを示す参照ヘッダー（3行）を追加した。これ以外の文言は追加していない。
+- Version History：Version 7.58〜7.82を `archive/MD-004_Version_History_Archive.md` へ原文のまま移設し（OP-008 §19 Rule DOC-09）、本文にはVersion 7.83以降（7.86を含む）を残した。archive冒頭の範囲記述を更新した。
+- 連動：OP-008 Ver.3.19（§8カタログのPath、§11.2新設）、CLAUDE.md（Master Databaseのパス）、third_place_sync_validator.py・field_atlas_navigator.py・codex_arbor.py・third-place-sync.yml（複数ファイルの読み込み）。
+
+---
+
+## Version 8.1
+
+MARI様のご決定（2026-10-03）に基づき、Quantityが2のFUR-032・FUR-034・FUR-035・FUR-036のPriceを、単価から合計額の記載へ改めた（数量が2以上の記録のPriceは合計額で記載し、合計である旨を注記する）。4件とも、改訂前のPriceは1個（1組）あたりの単価であることをMARI様が確認された。Brand・Product・Status・Color・Material・Parent・Quantity・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
+
+### Changes
+
+- FUR-032：Priceを「¥45,100」から「¥90,200（2組合計。1組¥45,100。MARI様確認）」へ変更。
+- FUR-034：Priceを「¥3,564（セール価格）」から「¥7,128（2個合計。1個¥3,564、セール価格。MARI様確認）」へ変更。
+- FUR-035：Priceを「¥9,980（公式サイト価格）」から「¥19,960（2個合計。1個¥9,980、公式サイト価格。MARI様確認）」へ変更。
+- FUR-036：Priceを「¥7,480」から「¥14,960（2個合計。1個¥7,480。MARI様確認）」へ変更。
+
+---
+
+## Version 8.2
+
+MARI様のご指示（2026-10-03）に基づき、Retired記録のFUR-033・LGT-017bの冒頭を、OP-010 Part A §Retirementの記録形式「Retired（Reason）. YYYY-MM-DD.」へ改めた。2件とも、Reasonは他の枠への統合（Merged）である。経緯の本文・Equipment ID・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
+
+### Changes
+
+- FUR-033：冒頭を「Retired.」から「Retired（Merged）. 2026-09-23.」へ変更。日付は、FUR-032への統合を記録したCZ-001 Deliberation Dossier Decision Log（2026-09-23付、プロジェクトオーナー決定）による。MD-004上の反映はVersion 7.54である。
+- LGT-017b：冒頭を「Retired.」から「Retired（Merged）. 2026-09-29.」へ変更。日付は、本文に記載済みのLGT-017aへの統合日（2026-09-29、MARI様のご決定）による。
+
+---
+
+## Version 8.3
+
+MARI様のご指示（2026-10-03）に基づき、LGT-021（DEVISE WORKS × WHAT WE WANT）のProductを、正式な製品名「DEVA DEVA no MI」へ訂正した（Version 7.86で「DEVA DEVAの実」としていた）。Brand・Color・Material・Price・Child Components・その他の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。
+
+### Changes
+
+- LGT-021：Productを「DEVA DEVAの実」から「DEVA DEVA no MI」へ訂正。
+
+---
+
+## Version 8.4
+
+MARI様のご確認・ご指示（2026-10-04）に基づき、公式サイト価格を仮置きしていた3件のPriceを購入価格へ確定し、あわせて既存のPrice注記にあった「MARI様確認」「MARI様申告」の文言を外した。いずれも金額は変わらず、注記のみの変更である。
+
+### Changes
+
+- STR-035：Priceの注記を「yeti.co.jp公式サイト現行価格、2026-09-28確認」から「購入価格」へ変更。¥25,630のまま。
+- STR-036：Priceの注記を「tokyocrafts.jp公式サイト価格、2026-09-28確認」から「購入価格」へ変更。¥3,960のまま。
+- SHL-006：Priceの注記を「3zo.online公式サイト価格、2026-09-28確認」から「購入価格」へ変更。¥16,500のまま。
+- FUR-036：Colorの注記から「MARI様確認」を削除。STR-030：Materialの注記から「MARI様確認」を削除。内容は変更なし。
+- Priceの注記から「MARI様確認」「MARI様申告」を削除（13件）：FIR-012、FIR-038、FUR-032、FUR-034、FUR-035、FUR-036、LGT-028、SHL-002、STR-015、STR-018、STR-020、STR-033、STR-037。
+
+---
+
+## Version 8.5
+
+MARI様のご指示（2026-10-04）に基づき、Snow Peak Recycled Cordura Tote Bag（BB-26SU002）をSTR-038として新規登録した（Status: Owned）。購入価格はSnow Peakオンラインストアの注文確認メール（注文日2026-10-04、数量1）による。Material・寸法・仕様はSnow Peak公式ページで確認した。親子関係・他IDへの変更はない。Minor Version。
+
+### Changes
+
+- STR-038（新規）：Snow Peak Recycled Cordura Tote Bag（BB-26SU002）。Owned、Black、¥15,840（購入価格）。
+
+---
+
+## Version 8.6
+
+MARI様のご指示（2026-10-05）に基づき、38Explore「38-kT THE RICH」シリーズの3色（登録漏れ）を、LGT-038（38-kT THE RICH classic100）とその子LGT-039の直後へ、LGT-040（38-kT THE RICH Cape Jasmine）／LGT-041（38-kT THE RICH Sunflower）／LGT-042（38-kT THE RICH Cosmos）として新規登録した（いずれもStatus: Owned、子なし）。Brand・Color・Material・Graphic Attribute・Industrial AttributeはLGT-038と同じ（38Explore／Black／Brass／None／Premium Lantern）。Priceは1個ずつ¥13,770。MARI様のご指示により、旧LGT-040〜LGT-043をLGT-043〜LGT-046へ+3繰り下げた（FIR-003分解〈Ver.7.83〉の前例と同じ形式。OP-010 S-01〈ID Freeze〉の例外として、プロジェクトオーナーの明示的な指示による）。連番グループ形式の子ID（LGT-04_3a〜d）は変更しない。CZ-001 Ver.3.27・CZ-002 Ver.3.13・MD-001 Ver.2.36が連動して本文のLGT参照を新番号へ更新した。Version History内の過去の記述は原文のまま保持している。Patch Version。
+
+### Changes
+
+- LGT-040（新規）：38Explore / 38-kT THE RICH Cape Jasmine。Owned、Black、Brass、¥13,770。
+- LGT-041（新規）：38Explore / 38-kT THE RICH Sunflower。Owned、Black、Brass、¥13,770。
+- LGT-042（新規）：38Explore / 38-kT THE RICH Cosmos。Owned、Black、Brass、¥13,770。
+- 旧LGT-040（RT-01AC01 / ECHO LAMP）→LGT-043、旧LGT-041（DOME LOOK）→LGT-044、旧LGT-042（Pivotshade）→LGT-045、旧LGT-043（Vacant）→LGT-046。Parent／Child Componentsの参照も更新（子のLGT-04_3a・LGT-04_3b・LGT-04_3c・LGT-04_3dのParentを新番号へ変更。ID自体は変更なし）。
 
 ---
 
