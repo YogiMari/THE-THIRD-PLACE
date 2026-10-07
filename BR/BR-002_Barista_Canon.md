@@ -10,7 +10,7 @@ Barista Canon
     
 # Version    
     
-4.14    
+4.15    
     
 # Status    
     
@@ -247,11 +247,11 @@ Module A単体、Module B単体ではなく、Master Kitによる完全構成が
     
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
-| Bean Storage | Weber Workshops | Bean Cellar Bulk | Confirmed |  
+| Bean Storage | Weber Workshops | Bean Cellar Glass（Stabilized Maple Onyx） | Confirmed |  
     
 ### Decision    
     
-Bean Cellar Bulkを正式採用する。    
+Bean Cellar Glass（Stabilized Maple Onyx）を正式採用する。    
     
 ### Selection Criteria    
     
@@ -1476,7 +1476,7 @@ Beck #2から展開するBridge Table（MD-001 Storage Blueprint §Deployment Se
   
 Roasted Coffee Bean Bag    
 ↓    
-Weber Workshops Bean Cellar Bulk    
+Weber Workshops Bean Cellar Glass    
 （Bean Cellar付属漏斗を使用）  
   
 Bean移送時にBean Spoonは使用しない。  
@@ -1736,6 +1736,7 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 4.12 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |  
 | 4.13 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。9Barista Puck Screenを採用しない（9Baristaの公式サイトに取扱いがなく、純正品として採用していたのは誤りだった）。Confirmed EquipmentのPuck Screen節、Puck Preparation Workflowの該当工程、および「正式採用品として使用する」の一文を削除。Magnetic Dosing Funnel（9Barista、53mm、Black）は付属品ではなく有料オプションであることを公式サイトで確認し、Included Components / Accessoriesから外してConfirmed Equipmentへ追加。Espresso Filter Paper（9Barista、51mm）をConfirmed Equipmentへ追加（Workflowへの組み込みは未決）。Rejected EquipmentのThird-party Dosing FunnelおよびThird-party Puck Screenの理由を書き換え。Weber Puck Screen Stand関連の記述は未決のため変更していない。Minor Version。 |  
 | 4.14 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Coffee WorkflowのPuck Screenの位置（The Force Tamper 53mmの後、9Barista Mk.2 Proの前）へ、Espresso Filter Paper（9Barista 51mm）を組み込み（Puck Preparation Workflow、Espresso Filter PaperのDecision）。Puck Screen StandのConfirmed EquipmentをEPF Dock（Weber Workshops、Onyx）へ入れ替え（Category：Filter Paper Dock）。9Barista 51mm Filter Paperとの適合はMARI様確認済み。Blind Shaker節Reasonの「Puck Screen Stand」を「EPF Dock」へ訂正。Minor Version。 |  
+| 4.15 | 2026-10-08 | MARI様のご指摘（2026-10-08）に基づき、Weber Workshopsの豆保存コンポーネントをBean Cellar BulkからBean Cellar Glass（Stabilized Maple Onyx）へ訂正した（Glassが元々の正しい採用品であり、Bulkは記載誤り）。Bean Storage節のModel・Decision、Workflow Configurationの名称を更新。Bean Cellar付属の漏斗・Bean Spoon不使用の記述は、Glassでの確認が取れていないため変更していない。Version History内の過去の行は歴史的記録として原文のまま保持した。Minor Version。 |  
   
 ---  
 
