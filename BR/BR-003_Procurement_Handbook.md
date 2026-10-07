@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-4.5  
+4.6  
   
 **Status**  
   
@@ -556,34 +556,38 @@ Procurement Handbook
   
 ## Product 14  
   
-### Weber Workshops Puck Screen Stand  
+### Weber Workshops EPF Dock  
   
 | Item | Details |  
 |---|---|  
 | Manufacturer | Weber Workshops |  
-| Model | Puck Screen Stand |  
-| Current Purchase Model | Puck Screen Stand |  
-| Category | Puck Screen Stand |  
+| BR-002 Model | EPF Dock（Onyx） |  
+| Current Purchase Model | EPF Dock |  
+| Color | Onyx（Black anodized、Teak base） |  
+| Category | Filter Paper Dock |  
 | Acquisition Status | Purchase Required |  
 | Quantity | 1 |  
 | Purchase Type | Overseas Import |  
 | Primary Purchase Source | Weber Workshops Official Store |  
-| Purchase URL | Official Store |  
+| Purchase URL | https://weberworkshops.com/products/epf-dock （variant=42161990795317、Color＝Onyx） |  
 | Japan Shipping | Available |  
 | Warranty | Manufacturer Policy |  
-| Current Product Price | ¥8,000〜12,000 equivalent |  
-| Estimated Shipping | ¥5,000〜8,000 |  
-| Estimated Import Tax / Charges | ¥2,000〜3,000 |  
-| Estimated Total Cost | ¥15,000〜22,000 |  
+| Current Product Price | USD 97 |  
+| Estimated Shipping | ¥5,000〜8,000（planning estimate） |  
+| Estimated Import Tax / Charges | ¥2,000〜4,000（planning estimate） |  
+| Estimated Total Cost | ¥21,500〜25,500（planning estimate） |  
 | Currency | USD / JPY |  
 | Purchase Priority | ★★★★☆ |  
   
 ### Notes  
   
-* BR-002 v2.7にてConfirmed Equipment。  
-* Puck Screenの収納・乾燥に使用。  
-* Weber Workshopsエコシステムとの互換性。  
-* 代替Puck Screen Standは不要。  
+* BR-002 Ver.4.14にてConfirmed Equipment。Puck Screen廃止に伴い、Puck Screen StandからEPF Dockへ入れ替える（MARI様のご決定、2026-10-08）。  
+* 9Barista 51mm Filter Paperとの適合はMARI様確認済み（2026-10-08）。公式の対応サイズ表記は55mm・58mm。  
+* 構成：陽極酸化アルミ（Black）の柱＋Teak無垢の台座。直径75mm×高さ75mm、150g。EPF約600枚収納。  
+* ColorはOnyx／Silverの2色。Onyxを選択（variant=42161990795317）。  
+* 磁気センタリングはEG-1専用であり、本プロジェクトでは使用しない。  
+* 在庫：公式は「Available now in limited quantities」。在庫は購入前に確認する。  
+* Estimated Total Costは、Product 11（USD 87→¥20,000〜24,000）と同じ送料・輸入税の前提に、価格差USD 10（約¥1,500）を加えた概算。  
   
 ---  
   
@@ -1002,7 +1006,7 @@ Procurement Handbook
 | Estimated Shipping | Included / calculated at official checkout（Product 01と同時注文） |  
 | Estimated Import Tax / Charges | Included at official Japan checkout |  
 | Estimated Total Cost | ¥4,000 |  
-| Currency | USD / JPY |  
+| Currency | JPY |  
 | Purchase Priority | ★★★★★ |  
   
 ### Notes  
@@ -1010,7 +1014,7 @@ Procurement Handbook
 * BR-002 Ver.3.7「Handle Material Decision」にて正式決定。MARI様の直接指示（2026-09-18）に基づく。  
 * 9Barista Mk.2 Pro標準構成のUpper / Lower Handle（Anodised Aluminium）を、Walnut仕様へ変更する。  
 * Design Bibleの核となる素材言語（Walnut・Brass・Black Steel）との整合を目的とする。  
-* 公式スペアパーツ「Handle for 9Barista Espresso Machine」はUpper・Lower共通の単品販売（1個 $15.00）であり、フルセットには2個必要。  
+* 公式スペアパーツ「Handle for 9Barista Espresso Machine」はUpper・Lower共通の単品販売であり、フルセットには2個必要。公式サイトのカート実額は1個¥2,000、2個で¥4,000（2026-10-08）。  
 * Mk.1・Mk.2共通対応品。  
 * 9Barista Mk.2 Pro本体と同時注文し、Group A（9Barista）へ統合する。  
 * サードパーティ製Handleは不採用。  
@@ -1079,7 +1083,7 @@ Procurement Handbook
   
 * MARI様のご決定（2026-10-08）に基づく。  
 * Product 01と同時注文し、Group A（9Barista）へ統合する。  
-* Workflowへの組み込みはBR-002で未決。  
+* Puck Screenの代替としてWorkflowに組み込む（2026-10-08）。  
   
 ---  
   
@@ -1312,7 +1316,7 @@ Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（
 以下は、本書（BR-003）が管理する、個別製品固有の同期チェック項目である。  
   
 13. （欠番）Puck Screenは採用取消（2026-10-08）。  
-14. Puck Screen StandがBR-002 v2.7と同期していること。  
+14. EPF DockおよびFilter Paper（9Barista 51mm）がBR-002 Ver.4.14と同期していること。  
 15. KNODOS Tamping Mat with Tool Organiser - Walnut 54mmが登録されていること。  
 16. Normcore Planetary WDT Toolが54mmとして同期していること。  
 17. Pullman Chiselが、現行の53.3mm Wood構成として同期していること。  
@@ -1348,7 +1352,7 @@ Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（
 11. Latte Workflow構成が同期していること。  
 12. 2人分の連続運用が同期していること。  
 13. WPM PitcherおよびSleeveの構成が同期していること。  
-14. Puck Screen Standの状態が同期していること。  
+14. EPF DockおよびFilter Paperの状態が同期していること。  
 15. BR-002が変更された際は、現行の後継対応関係を見直すこと。  
 16. Handle素材決定（Anodised Aluminium／Walnut）が同期していること。  
   
@@ -1395,7 +1399,7 @@ Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（
 | HILLS FIELD Glass Case | Single ×1 |  
 | AION 801-BL | ×1 package |  
 | Coffee System Water | 合計2,540mL |  
-| Puck Screen Stand | Weber Workshops |  
+| EPF Dock | Weber Workshops / Onyx |  
   
 ---  
   
@@ -1411,8 +1415,7 @@ Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（
 * WDT → Basket  
 * Chisel → Basket  
 * Force Tamper → Basket  
-* Puck Screen → confirmed 9Barista workflow  
-* Puck Screen → Puck Screen Stand  
+* Filter Paper（9Barista 51mm）→ EPF Dock（MARI様確認済み、2026-10-08）  
   
 ## Latte  
   
@@ -1478,7 +1481,7 @@ LAGOM mini 2 Ground Transfer Cupは、Weber Workshops Blind Shaker Onyxへの直
 | ★★★★★ | Saint Anthony Industries The Bloc | 1 | Product 05 | Purchase Required |  
 | ★★★★★ | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm | 1 | Product 10 | Purchase Required |  
 | ★★★★★ | Normcore RDT Spray Bottle | 1 | Product 09 | Purchase Required |  
-| ★★★★☆ | Weber Workshops Puck Screen Stand | 1 | Product 14 | Purchase Required |  
+| ★★★★☆ | Weber Workshops EPF Dock | 1 | Product 14 | Purchase Required |  
   
 ## Latte System  
   
@@ -1534,7 +1537,7 @@ Optional項目は「9Barista Official Spare Parts (Preventive Stock)」セクシ
   
 * Weber Workshops Bean Cellar Bulk  
 * Weber Workshops Blind Shaker Onyx  
-* Weber Workshops Puck Screen Stand  
+* Weber Workshops EPF Dock  
   
 ### Principle  
   
@@ -1700,7 +1703,7 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
 11. Coffee System専用水の容量が確保されていること。  
 12. Espressoグラスの運搬が物理的に確認済みであること。  
 13. Latteカップの運搬が物理的に確認済みであること。  
-14. Puck Screenの収納が物理的に確認済みであること。  
+14. Filter PaperのEPF Dockへの収納が物理的に確認済みであること。  
 15. BR-002のConfirmed Equipmentがすべて、BR-003に反映されていること。  
   
 ---  
@@ -1724,7 +1727,7 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
 | 11 | Weber Workshops Blind Shaker Onyx | 1 | Purchase Required |  
 | 12 | 9Barista Magnetic Dosing Funnel | 1 | Purchase Required |  
 | 13 | 9Barista Puck Screen | — | 採用取消（2026-10-08） |  
-| 14 | Weber Workshops Puck Screen Stand | 1 | Purchase Required |  
+| 14 | Weber Workshops EPF Dock | 1 | Purchase Required |  
 | 15 | ALM KOPi Z1 Mini Steamer | 1 | Purchase Required |  
 | 16 | WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout | 1 | Purchase Required |  
 | 17 | WPM Pitcher Sleeve | 1 | Purchase Required |  
@@ -1777,10 +1780,10 @@ MARI様のご決定（2026-10-04）に基づく、月次購入計画である。
   
 * Product 04：Weber Workshops Bean Cellar Bulk  
 * Product 11：Weber Workshops Blind Shaker Onyx  
-* Product 14：Weber Workshops Puck Screen Stand  
+* Product 14：Weber Workshops EPF Dock  
 * Product 22：DAMNGOOD × CATAPULT FACTORY FIKA12 ×2  
 * Product 09：Normcore RDT Spray Bottle  
-* 小計：¥100,000〜126,000  
+* 小計：¥106,500〜129,500  
   
 ## Month 5 — ミルク  
   
@@ -1806,7 +1809,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
   
 ## Plan Total  
   
-総額目安：¥635,770〜735,270（Estimated Acquisition Budgetの目安¥642,570〜759,570の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
+総額目安：¥642,270〜738,770（Estimated Acquisition Budgetの目安¥642,570〜759,570の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
   
 ### Design Rationale  
   
@@ -1836,6 +1839,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 | 4.3 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 | 4.4 | 2026-10-04 | Monthly Acquisition Planの組み直し。9BaristaをMonth 1、グラス・水ボトルを最終月（Month 6）に固定し、Weber WorkshopsをMonth 4、ミルクをMonth 5へ配置。GS-150（Group I）の到着をMonth 6へ移し、Month 1統合の旧記述を削除。Plan Totalを¥633,570〜737,570へ更新（旧記載の¥736,570は、旧Month 6の上限¥126,500が品目合計¥127,500と1,000円ずれていた誤り）。Group Iの説明を新しい到着月に整合。価格・購入先・Registryの記載に変更はない。Minor Version。MARI様のご決定（2026-10-04）に基づく。 |
 | 4.5 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。9Barista Puck Screen（Product 13）の採用取消（9Baristaの公式サイトに取扱いがなく、純正品として採用していたのが誤り）。Product 13を欠番とし、Final Acquisition Inventoryに採用取消の1行を残した。Magnetic Dosing Funnelは付属品ではなく有料オプションのため、Included 04を削除しProduct 12（Purchase Required、¥7,800）として新設。Product 31（9Barista 51mm Filter Paper、¥2,000）を新設。Product 01を公式サイトのカート実額¥123,400へ、Product 26を¥2,000 each（¥4,000 for ×2）へ更新。Group A・Current Acquisition Priority・Final Acquisition Inventory・Product Variant Integrity・Purchase Completeness Rule 13・Synchronization Rule 14・Monthly Acquisition PlanのMonth 1（小計¥137,200）・Plan Total（¥635,770〜735,270）を整合。Estimated Acquisition Budgetは、Core Espresso Systemの記載と各Product値の積み上げが一致しないため、未変更。Minor Version。 |
+| 4.6 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Puck Screen廃止に伴い、Product 14をWeber Workshops Puck Screen StandからWeber Workshops EPF Dock（Onyx、USD 97）へ入れ替え（番号14・Group B・Month 4は維持）。Product 14のEstimated Total Costは、Product 11と同じ送料・輸入税の前提に価格差USD 10（約¥1,500）を加えたplanning estimate（¥21,500〜25,500）。9Barista 51mm Filter Paper（Product 31）をPuck Screenの代替としてWorkflowに組み込み（Notes更新）。Product 26の取り残し（Notes内の「1個 $15.00」、Currencyの「USD / JPY」）を、公式サイトのカート実額（1個¥2,000、2個で¥4,000）とJPYへ訂正。Current Acquisition Priority・Group B・Final Acquisition Inventory・Product Variant Integrity・Compatibility Policy・Purchase Completeness Rule 14・Synchronization Rule 14・Acquisition Completeness Rule 14・Month 4小計（¥106,500〜129,500）・Plan Total（¥642,270〜738,770）を整合。Estimated Acquisition Budgetは、Core Espresso Systemの記載と各Product値の積み上げが一致しないため未変更。Minor Version。 |
   
 ---  
 
