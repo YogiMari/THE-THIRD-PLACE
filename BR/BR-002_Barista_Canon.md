@@ -10,7 +10,7 @@ Barista Canon
     
 # Version    
     
-4.13    
+4.14    
     
 # Status    
     
@@ -630,7 +630,7 @@ Weber Workshopsは今回設定したTier A以上というブランド条件を�
 THE THIRD PLACEでは既に、    
     
 * Bean Cellar    
-* Puck Screen Stand    
+* EPF Dock    
     
 をWeber Workshops製品として採用しており、Coffee System全体のブランド整合性も高い。    
     
@@ -702,28 +702,36 @@ Weber公式では底部の詳細な有効径・排出口径は公開されてい
     
 MARI様のご決定（2026-10-08）    
     
+Puck Screen廃止に伴い、Puck Screenの位置に組み込む（MARI様のご決定、2026-10-08）。    
+    
 ---    
     
-## Puck Screen Stand    
+## EPF Dock    
     
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
-| Puck Screen Stand | Weber Workshops | Puck Screen Stand | Confirmed |  
+| Filter Paper Dock | Weber Workshops | EPF Dock（Onyx） | Confirmed |  
     
 ### Decision    
     
-Weber Workshops Puck Screen Standを正式採用する。    
+Puck Screen廃止に伴い、Puck Screen StandをEPF Dockへ入れ替える（MARI様のご決定、2026-10-08）。    
     
-### Selection Criteria    
+### Specification    
     
-* Storage    
-* Workflow    
-* Design Bible    
-* Material Quality    
+Weber Workshops公式ページ（2026-10-08確認）に基づく。    
     
-### Reason    
+* Color：Onyx（ColorはOnyx／Silverの2色）    
+* 構成：陽極酸化アルミ（Black）の柱＋Teak無垢の台座    
+* 寸法・重量：直径75mm×高さ75mm、150g    
+* 収納量：EPF（Espresso Paper Filter）約600枚    
+* 公式の対応サイズ表記：Weber製EPFの55mm・58mm    
+* 磁気センタリングはEG-1専用であり、本プロジェクトでは使用しない    
     
-保管性、乾燥性、Workflow、デザインの統一性を評価した。    
+### Compatibility    
+    
+9Barista 51mm Filter Paperとの適合はMARI様確認済み（2026-10-08）。    
+    
+公式の対応サイズ表記（55mm・58mm）の外だが、適合として扱う。    
     
 ---    
     
@@ -1503,6 +1511,8 @@ Pullman Chisel Redistribution Tool Wood 53mm
 ↓    
 The Force Tamper 53mm    
 ↓    
+Espresso Filter Paper（9Barista 51mm）    
+↓    
 9Barista Mk.2 Pro  
   
 ---  
@@ -1725,6 +1735,7 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 4.11 | 2026-09-29 | 暫定採用項目の個別確認（N-06）。MARI様のご決定に基づき、Deferred §Storage & Organization・§Travel Carry SystemのStatus（In Progress）を削除して保留（Deferred）へ戻し、Claude推奨案で追記した説明文（Beck②収納設計の進行中の旨、運搬ケースの判断時期）を削除した。MARI様のご決定済み事項（Coffee ServicewareのBeck①収納、専用水ボトルのSTR-035収納）は維持した。§Coffee Station Furnitureは「Bridge Tableを天板として運用し、専用家具は持たない」を正式採用とした。Patch Version。 |
 | 4.12 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |  
 | 4.13 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。9Barista Puck Screenを採用しない（9Baristaの公式サイトに取扱いがなく、純正品として採用していたのは誤りだった）。Confirmed EquipmentのPuck Screen節、Puck Preparation Workflowの該当工程、および「正式採用品として使用する」の一文を削除。Magnetic Dosing Funnel（9Barista、53mm、Black）は付属品ではなく有料オプションであることを公式サイトで確認し、Included Components / Accessoriesから外してConfirmed Equipmentへ追加。Espresso Filter Paper（9Barista、51mm）をConfirmed Equipmentへ追加（Workflowへの組み込みは未決）。Rejected EquipmentのThird-party Dosing FunnelおよびThird-party Puck Screenの理由を書き換え。Weber Puck Screen Stand関連の記述は未決のため変更していない。Minor Version。 |  
+| 4.14 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Coffee WorkflowのPuck Screenの位置（The Force Tamper 53mmの後、9Barista Mk.2 Proの前）へ、Espresso Filter Paper（9Barista 51mm）を組み込み（Puck Preparation Workflow、Espresso Filter PaperのDecision）。Puck Screen StandのConfirmed EquipmentをEPF Dock（Weber Workshops、Onyx）へ入れ替え（Category：Filter Paper Dock）。9Barista 51mm Filter Paperとの適合はMARI様確認済み。Blind Shaker節Reasonの「Puck Screen Stand」を「EPF Dock」へ訂正。Minor Version。 |  
   
 ---  
 
