@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-4.7  
+4.8  
   
 **Status**  
   
@@ -236,35 +236,36 @@ Procurement Handbook
   
 ## Product 04  
   
-### Weber Workshops Bean Cellar Bulk  
+### Weber Workshops Bean Cellar Glass  
   
 | Item | Details |  
 |---|---|  
 | Manufacturer | Weber Workshops |  
-| Model | Bean Cellar Bulk |  
-| Current Purchase Model | Bean Cellar Bulk |  
+| BR-002 Model | Bean Cellar Glass（Stabilized Maple Onyx） |  
+| Current Purchase Model | Bean Cellar Glass |  
+| Color | Stabilized Maple Onyx |  
 | Category | Coffee Bean Storage |  
 | Acquisition Status | Purchase Required |  
 | Quantity | 1 |  
-| Purchase Type | Overseas Import |  
+| Purchase Type | Domestic（日本宛ては糸島拠点より発送） |  
 | Primary Purchase Source | Weber Workshops Official Store |  
 | Purchase URL | Official Store |  
 | Japan Shipping | Available |  
 | Warranty | Manufacturer Policy |  
-| Current Product Price | USD 180 |  
-| Estimated Shipping | ¥5,000〜8,000 |  
-| Estimated Import Tax / Charges | ¥3,000〜5,000 |  
-| Estimated Total Cost | ¥38,000〜42,000 |  
-| Currency | USD / JPY |  
+| Current Product Price | ¥63,300 |  
+| Estimated Shipping | ¥0（1万円以上のご注文は送料無料） |  
+| Estimated Import Tax / Charges | Not Applicable |  
+| Estimated Total Cost | ¥63,300 |  
+| Currency | JPY |  
 | Purchase Priority | ★★★★★ |  
   
 ### Notes  
   
-* Bulk Version。  
+* Glass Version（Stabilized Maple Onyx）。MARI様のご指摘（2026-10-08）により、旧記載のBulkから訂正。  
 * Single Dose Workflow。  
 * Bean Cellar付属の漏斗を使用。  
 * 別途Bean Spoonは不要。  
-* 製品価格の参照には現行の公式価格を使用。  
+* 価格は公式サイトのカート実額（2026-10-08）。  
   
 ---  
   
@@ -1467,7 +1468,7 @@ LAGOM mini 2 Ground Transfer Cupは、Weber Workshops Blind Shaker Onyxへの直
 | ★★★★★ | 9Barista Handle - Walnut | 2 | Product 26 | Purchase Required |  
 | ★★★★★ | Option-O LAGOM mini 2 | 1 | Product 02 | Purchase Required |  
 | ★★★★★ | MantaBrew WeighMaster Ultra | 1 | Product 03 | Purchase Required |  
-| ★★★★★ | Weber Workshops Bean Cellar Bulk | 1 | Product 04 | Purchase Required |  
+| ★★★★★ | Weber Workshops Bean Cellar Glass | 1 | Product 04 | Purchase Required |  
 | ★★★★★ | Weber Workshops Blind Shaker Onyx | 1 | Product 11 | Purchase Required |  
 | ★★★★★ | Normcore Planetary WDT Tool 54mm | 1 | Product 08 | Purchase Required |  
 | ★★★★★ | Pullman Chisel Redistribution Tool Wood 53.3mm | 1 | Product 07 | Purchase Required |  
@@ -1536,7 +1537,7 @@ Optional項目は「9Barista Official Spare Parts (Preventive Stock)」セクシ
   
 ## Group B — Weber Workshops  
   
-* Weber Workshops Bean Cellar Bulk  
+* Weber Workshops Bean Cellar Glass  
 * Weber Workshops Blind Shaker Onyx  
 * Weber Workshops EPF Dock  
   
@@ -1656,12 +1657,12 @@ Snow Peak公式ストアでの単独購入となるため、Group A（9Barista�
   
 | Group | Estimated Cost |  
 |---|---:|  
-| Core Espresso System | ¥423,300〜480,800 |  
-| Station / Workflow | ¥58,000〜78,000 |  
+| Core Espresso System | ¥436,000〜468,000 |  
+| Station / Workflow | ¥58,900〜71,900 |  
 | Latte System | ¥102,000〜127,500 |  
 | Espresso Glass / Transport | ¥25,480〜31,480 |  
 | Dedicated Water | ¥33,790〜41,790 |  
-| **Estimated Total** | **¥642,570〜759,570** |  
+| **Estimated Total** | **¥656,170〜740,670** |  
   
 ### Budget Policy  
   
@@ -1718,7 +1719,7 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
 | 01 | 9Barista Mk.2 Pro | 1 | Purchase Required |  
 | 02 | Option-O LAGOM mini 2 | 1 | Purchase Required |  
 | 03 | MantaBrew WeighMaster Ultra | 1 | Purchase Required |  
-| 04 | Weber Workshops Bean Cellar Bulk | 1 | Purchase Required |  
+| 04 | Weber Workshops Bean Cellar Glass | 1 | Purchase Required |  
 | 05 | Saint Anthony Industries The Bloc | 1 | Purchase Required |  
 | 06 | The Force Tamper 53mm | 1 | Purchase Required |  
 | 07 | Pullman Chisel Redistribution Tool Wood 53.3mm | 1 | Purchase Required |  
@@ -1779,12 +1780,12 @@ MARI様のご決定（2026-10-04）に基づく、月次購入計画である。
   
 ## Month 4 — Weber Workshops  
   
-* Product 04：Weber Workshops Bean Cellar Bulk  
+* Product 04：Weber Workshops Bean Cellar Glass  
 * Product 11：Weber Workshops Blind Shaker Onyx  
 * Product 14：Weber Workshops EPF Dock  
 * Product 22：DAMNGOOD × CATAPULT FACTORY FIKA12 ×2  
 * Product 09：Normcore RDT Spray Bottle  
-* 小計：¥95,100〜110,100  
+* 小計：¥120,400〜131,400  
   
 ## Month 5 — ミルク  
   
@@ -1810,7 +1811,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
   
 ## Plan Total  
   
-総額目安：¥630,870〜719,370（Estimated Acquisition Budgetの目安¥642,570〜759,570の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
+総額目安：¥656,170〜740,670（Estimated Acquisition Budgetと一致。9Barista Official Spare Parts (Preventive Stock)を除く）  
   
 ### Design Rationale  
   
@@ -1842,6 +1843,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 | 4.5 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。9Barista Puck Screen（Product 13）の採用取消（9Baristaの公式サイトに取扱いがなく、純正品として採用していたのが誤り）。Product 13を欠番とし、Final Acquisition Inventoryに採用取消の1行を残した。Magnetic Dosing Funnelは付属品ではなく有料オプションのため、Included 04を削除しProduct 12（Purchase Required、¥7,800）として新設。Product 31（9Barista 51mm Filter Paper、¥2,000）を新設。Product 01を公式サイトのカート実額¥123,400へ、Product 26を¥2,000 each（¥4,000 for ×2）へ更新。Group A・Current Acquisition Priority・Final Acquisition Inventory・Product Variant Integrity・Purchase Completeness Rule 13・Synchronization Rule 14・Monthly Acquisition PlanのMonth 1（小計¥137,200）・Plan Total（¥635,770〜735,270）を整合。Estimated Acquisition Budgetは、Core Espresso Systemの記載と各Product値の積み上げが一致しないため、未変更。Minor Version。 |
 | 4.6 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Puck Screen廃止に伴い、Product 14をWeber Workshops Puck Screen StandからWeber Workshops EPF Dock（Onyx、USD 97）へ入れ替え（番号14・Group B・Month 4は維持）。Product 14のEstimated Total Costは、Product 11と同じ送料・輸入税の前提に価格差USD 10（約¥1,500）を加えたplanning estimate（¥21,500〜25,500）。9Barista 51mm Filter Paper（Product 31）をPuck Screenの代替としてWorkflowに組み込み（Notes更新）。Product 26の取り残し（Notes内の「1個 $15.00」、Currencyの「USD / JPY」）を、公式サイトのカート実額（1個¥2,000、2個で¥4,000）とJPYへ訂正。Current Acquisition Priority・Group B・Final Acquisition Inventory・Product Variant Integrity・Compatibility Policy・Purchase Completeness Rule 14・Synchronization Rule 14・Acquisition Completeness Rule 14・Month 4小計（¥106,500〜129,500）・Plan Total（¥642,270〜738,770）を整合。Estimated Acquisition Budgetは、Core Espresso Systemの記載と各Product値の積み上げが一致しないため未変更。Minor Version。 |
 | 4.7 | 2026-10-08 | MARI様のご提示（Weber Workshops公式サイトのカート画面、2026-10-08）に基づく。Product 11（Blind Shaker Onyx）を¥14,200、Product 14（EPF Dock Onyx）を¥15,900の実額へ更新。公式の国内送料案内（1万円以上は送料無料、日本宛ては糸島拠点より発送）に基づき、両Productの送料を¥0、輸入税をNot Applicable、Purchase TypeをDomestic、CurrencyをJPYへ変更。Product 14のplanning estimateを廃止。Month 4小計（¥95,100〜110,100）とPlan Total（¥630,870〜719,370）を再計算。Estimated Acquisition Budgetは、積み上げと一致しない状態が継続しているため未変更。Minor Version。 |
+| 4.8 | 2026-10-08 | MARI様のご指摘（2026-10-08）に基づき、Product 04をWeber Workshops Bean Cellar BulkからBean Cellar Glass（Stabilized Maple Onyx）へ訂正（Glassが元々の正しい採用品）。公式サイトのカート実額¥63,300、送料¥0（1万円以上は送料無料）、輸入税Not Applicable、Purchase TypeをDomestic、CurrencyをJPYとした（BR-002 Ver.4.15と連動）。Estimated Acquisition Budgetを各Productの積み上げ（¥656,170〜740,670）へ修正し、従来から不一致だったCore Espresso Systemと、Product変更で不一致となっていたStation / Workflowを含め全グループを再計算。Month 4小計（¥120,400〜131,400）とPlan Totalを再計算し、Plan Totalの「範囲内」注記をBudgetとの一致に改めた。Minor Version。 |
   
 ---  
 
