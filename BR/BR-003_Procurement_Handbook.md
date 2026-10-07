@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-4.6  
+4.7  
   
 **Status**  
   
@@ -492,16 +492,16 @@ Procurement Handbook
 | Category | Blind Shaker |  
 | Acquisition Status | Purchase Required |  
 | Quantity | 1 |  
-| Purchase Type | Overseas Import |  
+| Purchase Type | Domestic（日本宛ては糸島拠点より発送） |  
 | Primary Purchase Source | Weber Workshops Official Store |  
 | Purchase URL | Official Store |  
 | Japan Shipping | Available |  
 | Warranty | Manufacturer Policy |  
-| Current Product Price | USD 87 |  
-| Estimated Shipping | ¥5,000〜8,000 |  
-| Estimated Import Tax / Charges | ¥2,000〜4,000 |  
-| Estimated Total Cost | ¥20,000〜24,000 |  
-| Currency | USD / JPY |  
+| Current Product Price | ¥14,200 |  
+| Estimated Shipping | ¥0（1万円以上のご注文は送料無料） |  
+| Estimated Import Tax / Charges | Not Applicable |  
+| Estimated Total Cost | ¥14,200 |  
+| Currency | JPY |  
 | Purchase Priority | ★★★★★ |  
   
 ### Notes  
@@ -516,6 +516,7 @@ Procurement Handbook
 * The BlocのTool cutoutを常設収納場所とする。  
 * 独立したGround Transfer Cupは購入しない。  
 * 独立したDosing Cupは購入しない。  
+* 公式サイトのカート実額（2026-10-08）に基づく。  
   
 ---  
   
@@ -567,16 +568,16 @@ Procurement Handbook
 | Category | Filter Paper Dock |  
 | Acquisition Status | Purchase Required |  
 | Quantity | 1 |  
-| Purchase Type | Overseas Import |  
+| Purchase Type | Domestic（日本宛ては糸島拠点より発送） |  
 | Primary Purchase Source | Weber Workshops Official Store |  
 | Purchase URL | https://weberworkshops.com/products/epf-dock （variant=42161990795317、Color＝Onyx） |  
 | Japan Shipping | Available |  
 | Warranty | Manufacturer Policy |  
-| Current Product Price | USD 97 |  
-| Estimated Shipping | ¥5,000〜8,000（planning estimate） |  
-| Estimated Import Tax / Charges | ¥2,000〜4,000（planning estimate） |  
-| Estimated Total Cost | ¥21,500〜25,500（planning estimate） |  
-| Currency | USD / JPY |  
+| Current Product Price | ¥15,900 |  
+| Estimated Shipping | ¥0（1万円以上のご注文は送料無料） |  
+| Estimated Import Tax / Charges | Not Applicable |  
+| Estimated Total Cost | ¥15,900 |  
+| Currency | JPY |  
 | Purchase Priority | ★★★★☆ |  
   
 ### Notes  
@@ -587,7 +588,7 @@ Procurement Handbook
 * ColorはOnyx／Silverの2色。Onyxを選択（variant=42161990795317）。  
 * 磁気センタリングはEG-1専用であり、本プロジェクトでは使用しない。  
 * 在庫：公式は「Available now in limited quantities」。在庫は購入前に確認する。  
-* Estimated Total Costは、Product 11（USD 87→¥20,000〜24,000）と同じ送料・輸入税の前提に、価格差USD 10（約¥1,500）を加えた概算。  
+* 価格は公式サイトのカート実額（2026-10-08、Color＝Onyx）。公式の国内送料案内に基づき、1万円以上のご注文は送料無料。  
   
 ---  
   
@@ -1783,7 +1784,7 @@ MARI様のご決定（2026-10-04）に基づく、月次購入計画である。
 * Product 14：Weber Workshops EPF Dock  
 * Product 22：DAMNGOOD × CATAPULT FACTORY FIKA12 ×2  
 * Product 09：Normcore RDT Spray Bottle  
-* 小計：¥106,500〜129,500  
+* 小計：¥95,100〜110,100  
   
 ## Month 5 — ミルク  
   
@@ -1809,7 +1810,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
   
 ## Plan Total  
   
-総額目安：¥642,270〜738,770（Estimated Acquisition Budgetの目安¥642,570〜759,570の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
+総額目安：¥630,870〜719,370（Estimated Acquisition Budgetの目安¥642,570〜759,570の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
   
 ### Design Rationale  
   
@@ -1840,6 +1841,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 | 4.4 | 2026-10-04 | Monthly Acquisition Planの組み直し。9BaristaをMonth 1、グラス・水ボトルを最終月（Month 6）に固定し、Weber WorkshopsをMonth 4、ミルクをMonth 5へ配置。GS-150（Group I）の到着をMonth 6へ移し、Month 1統合の旧記述を削除。Plan Totalを¥633,570〜737,570へ更新（旧記載の¥736,570は、旧Month 6の上限¥126,500が品目合計¥127,500と1,000円ずれていた誤り）。Group Iの説明を新しい到着月に整合。価格・購入先・Registryの記載に変更はない。Minor Version。MARI様のご決定（2026-10-04）に基づく。 |
 | 4.5 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。9Barista Puck Screen（Product 13）の採用取消（9Baristaの公式サイトに取扱いがなく、純正品として採用していたのが誤り）。Product 13を欠番とし、Final Acquisition Inventoryに採用取消の1行を残した。Magnetic Dosing Funnelは付属品ではなく有料オプションのため、Included 04を削除しProduct 12（Purchase Required、¥7,800）として新設。Product 31（9Barista 51mm Filter Paper、¥2,000）を新設。Product 01を公式サイトのカート実額¥123,400へ、Product 26を¥2,000 each（¥4,000 for ×2）へ更新。Group A・Current Acquisition Priority・Final Acquisition Inventory・Product Variant Integrity・Purchase Completeness Rule 13・Synchronization Rule 14・Monthly Acquisition PlanのMonth 1（小計¥137,200）・Plan Total（¥635,770〜735,270）を整合。Estimated Acquisition Budgetは、Core Espresso Systemの記載と各Product値の積み上げが一致しないため、未変更。Minor Version。 |
 | 4.6 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Puck Screen廃止に伴い、Product 14をWeber Workshops Puck Screen StandからWeber Workshops EPF Dock（Onyx、USD 97）へ入れ替え（番号14・Group B・Month 4は維持）。Product 14のEstimated Total Costは、Product 11と同じ送料・輸入税の前提に価格差USD 10（約¥1,500）を加えたplanning estimate（¥21,500〜25,500）。9Barista 51mm Filter Paper（Product 31）をPuck Screenの代替としてWorkflowに組み込み（Notes更新）。Product 26の取り残し（Notes内の「1個 $15.00」、Currencyの「USD / JPY」）を、公式サイトのカート実額（1個¥2,000、2個で¥4,000）とJPYへ訂正。Current Acquisition Priority・Group B・Final Acquisition Inventory・Product Variant Integrity・Compatibility Policy・Purchase Completeness Rule 14・Synchronization Rule 14・Acquisition Completeness Rule 14・Month 4小計（¥106,500〜129,500）・Plan Total（¥642,270〜738,770）を整合。Estimated Acquisition Budgetは、Core Espresso Systemの記載と各Product値の積み上げが一致しないため未変更。Minor Version。 |
+| 4.7 | 2026-10-08 | MARI様のご提示（Weber Workshops公式サイトのカート画面、2026-10-08）に基づく。Product 11（Blind Shaker Onyx）を¥14,200、Product 14（EPF Dock Onyx）を¥15,900の実額へ更新。公式の国内送料案内（1万円以上は送料無料、日本宛ては糸島拠点より発送）に基づき、両Productの送料を¥0、輸入税をNot Applicable、Purchase TypeをDomestic、CurrencyをJPYへ変更。Product 14のplanning estimateを廃止。Month 4小計（¥95,100〜110,100）とPlan Total（¥630,870〜719,370）を再計算。Estimated Acquisition Budgetは、積み上げと一致しない状態が継続しているため未変更。Minor Version。 |
   
 ---  
 
