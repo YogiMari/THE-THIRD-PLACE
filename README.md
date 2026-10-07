@@ -52,13 +52,13 @@ THE-THIRD-PLACE/
 │   ├── md004_integrity_check.py        # MD-004の記録そのものの点検（親子・ID・Status・変更時のVersion更新。CIで実行）
 │   ├── md004_records.py                # MD-004の全項目リーダー（上記が使用）
 │   ├── field_atlas_radar.py            # MD-002 → Field Atlas Radar（レーダーチャート）生成
-│   ├── field_atlas_navigator.py        # MD-002 → Field Atlas Navigator（3D地図・ダーク版）生成
-│   ├── field_atlas_ivory.py            # MD-002 → Field Atlas Ivory（3D地図・ライト版）生成
-│   ├── field_atlas_navigator_fetch.py  # 地図用データ（位置・道路ルート・写真・標高・周辺環境）の取得
+│   ├── field_atlas_nocturne.py        # MD-002 → Field Atlas Nocturne（3D地図・ダーク版）生成
+│   ├── field_atlas_aubade.py            # MD-002 → Field Atlas Aubade（3D地図・ライト版）生成
+│   ├── field_atlas_fetch.py  # 地図用データ（位置・道路ルート・写真・標高・周辺環境）の取得
 │   ├── field_atlas_check.py            # MD-002・DB-001・MD-004・地図用データ・両版の整合チェック（CIで実行）
 │   ├── doc_catalogue_check.py          # OP-008 §8 の文書一覧と各文書のヘッダー・ファイルの突き合わせ。MD-004のStatus別一覧（--status-list）。CIで実行
 │   ├── codex_arbor.py                  # 全文書 → Arbor of the Third Place（文書アトラス・全書検索・宝物庫）生成
-│   ├── data/field_atlas_navigator/     # 地図用データと、両版のデザイン・再生成の記録（README.md）
+│   ├── data/field_atlas/     # 地図用データと、両版のデザイン・再生成の記録（README.md）
 │   ├── templates/                      # 生成用HTMLテンプレート
 │   └── MirrorSync.gs                   # GitHub → Drive 一方向ミラー（OP-008 §27）
 │
@@ -264,12 +264,12 @@ THE-THIRD-PLACE/
 ├── scripts/
 │   ├── third_place_sync_validator.py   # SSOT sync validator
 │   ├── field_atlas_radar.py            # Generates the Field Atlas Radar page from MD-002
-│   ├── field_atlas_navigator.py        # Generates Field Atlas Navigator (3D map, dark edition) from MD-002
-│   ├── field_atlas_ivory.py            # Generates Field Atlas Ivory (3D map, light edition) from MD-002
-│   ├── field_atlas_navigator_fetch.py  # Fetches map data (positions, road routes, photos, elevation, surroundings)
+│   ├── field_atlas_nocturne.py        # Generates Field Atlas Nocturne (3D map, dark edition) from MD-002
+│   ├── field_atlas_aubade.py            # Generates Field Atlas Aubade (3D map, light edition) from MD-002
+│   ├── field_atlas_fetch.py  # Fetches map data (positions, road routes, photos, elevation, surroundings)
 │   ├── field_atlas_check.py            # Checks MD-002, DB-001, MD-004, map data and both pages agree (runs in CI)
 │   ├── codex_arbor.py                  # Generates Arbor of the Third Place (document atlas, full-text search, gallery) from all documents
-│   ├── data/field_atlas_navigator/     # Map data, plus design and rebuild notes for both editions (README.md)
+│   ├── data/field_atlas/     # Map data, plus design and rebuild notes for both editions (README.md)
 │   ├── templates/                      # HTML templates for generators
 │   └── MirrorSync.gs                   # One-way GitHub → Drive mirror (OP-008 §27)
 │

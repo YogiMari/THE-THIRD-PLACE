@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 """
-THE THIRD PLACE — Field Atlas Navigator generator
+THE THIRD PLACE — Field Atlas Nocturne generator
 
-Builds the Field Atlas Navigator page (a single self-contained HTML file):
+Builds the Field Atlas Nocturne page (a single self-contained HTML file):
 a 3D map of Kanto centred on Koiwa, with each field's road route, photo,
 10-axis analysis and early check-in record.
 
@@ -16,10 +16,10 @@ a 3D map of Kanto centred on Koiwa, with each field's road route, photo,
     DB-001 Project Ledger §Field Log         -> planned and done camps per field
     MD-004 Equipment Registry                -> brand and product of the gear IDs
                                                 named in the Field Log
-    scripts/templates/field_atlas_shared.js -> the script the Navigator and Ivory
+    scripts/templates/field_atlas_shared.js -> the script the Nocturne and Aubade
                                                 pages have in common (inserted at
                                                 the /*__SHARED_JS__*/ marker)
-    scripts/data/field_atlas_navigator/
+    scripts/data/field_atlas/
         japan_prefectures.json   -> prefecture outlines (lon/lat, simplified)
         locations.json           -> each field's position (lon/lat), and the
                                     benchmark site's ("benchmark": true)
@@ -32,12 +32,12 @@ a 3D map of Kanto centred on Koiwa, with each field's road route, photo,
         images/                  -> each field's photo (600 px JPEG, committed)
 
 Scores always come from MD-002 and camp records from DB-001. The data files
-only hold geography and photo sources, keyed by field name. Refresh them with field_atlas_navigator_fetch.py.
+only hold geography and photo sources, keyed by field name. Refresh them with field_atlas_fetch.py.
 
 Usage:
-    python3 scripts/field_atlas_navigator.py \
+    python3 scripts/field_atlas_nocturne.py \
         --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md \
-        --out field-atlas-navigator.html
+        --out field-atlas-nocturne.html
 """
 
 import argparse
@@ -54,9 +54,9 @@ sys.path.insert(0, str(Path(__file__).parent))
 import field_atlas_radar  # noqa: E402  (MD-002 parser shared with the radar)
 
 HERE = Path(__file__).parent
-TEMPLATE = HERE / "templates" / "field_atlas_navigator.html"
-SHARED_JS = HERE / "templates" / "field_atlas_shared.js"  # script common to the Navigator and Ivory templates
-DATA_DIR = HERE / "data" / "field_atlas_navigator"
+TEMPLATE = HERE / "templates" / "field_atlas_nocturne.html"
+SHARED_JS = HERE / "templates" / "field_atlas_shared.js"  # script common to the Nocturne and Aubade templates
+DATA_DIR = HERE / "data" / "field_atlas"
 DB001 = HERE.parent / "DB" / "DB-001_Project_Ledger.md"
 MD004 = HERE.parent / "MD" / "MD-004"  # folder: entry file + one file per domain
 GEAR_ID = re.compile(r"\b([A-Z]{3}-\d{3}[a-z]?)\b")
@@ -171,7 +171,7 @@ def parse_field_log(db001: Path, names: set[str], warnings: list[str]) -> dict[s
 def extras(md002: Path, data: list[dict], locations: dict, warnings: list[str],
            db001: Path = DB001, md004: Path = MD004) -> dict:
     """Field Log, benchmark, Site Record, elevation, surroundings, gear names and the
-    cold guide (JMA normal of the daily lowest temperature), keyed by rank. Shared by the Navigator, Ivory and Radar pages."""
+    cold guide (JMA normal of the daily lowest temperature), keyed by rank. Shared by the Nocturne, Aubade and Radar pages."""
     field_log = parse_field_log(db001, {d["name"] for d in data}, warnings)
     bench = []
     for b in parse_benchmark(md002):
@@ -304,7 +304,7 @@ def main() -> None:
     args.out.write_text(html, encoding="utf-8")
     for w in warnings:
         print("warning:", w, file=sys.stderr)
-    print(f"Field Atlas Navigator -> {args.out} ({len(html) // 1024} KB)")
+    print(f"Field Atlas Nocturne -> {args.out} ({len(html) // 1024} KB)")
 
 
 if __name__ == "__main__":

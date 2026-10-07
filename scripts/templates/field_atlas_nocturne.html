@@ -1,4 +1,4 @@
-<title>Field Atlas Navigator</title>
+<title>Field Atlas Nocturne</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Michroma&family=Saira+Condensed:wght@200;300;400;500&family=IBM+Plex+Mono:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
 <style>
   /* Layout: a cinematic tactical display. Full-bleed 3D map of Kanto; a telemetry strip across the top; field index (left), analysis (right), and target cards docked at the bottom, all as thin-line HUD instruments. Phones stack the instruments under the map. */
@@ -362,7 +362,7 @@
   <header class="strip">
     <div class="logo">
       <svg width="26" height="26" viewBox="0 0 26 26" aria-hidden="true"><circle cx="13" cy="13" r="11" fill="none" stroke="#3FF0FF" stroke-opacity=".5"/><circle cx="13" cy="13" r="3" fill="#D9FCFF"/><path d="M13 0v6M13 20v6M0 13h6M20 13h6" stroke="#3FF0FF"/></svg>
-      <div><h1>FIELD ATLAS <span>NAVIGATOR</span></h1><span class="k">THE THIRD PLACE · MD-002 VER.__MD002_VERSION__</span></div>
+      <div><h1>FIELD ATLAS <span>NOCTURNE</span></h1><span class="k">THE THIRD PLACE · MD-002 VER.__MD002_VERSION__</span></div>
     </div>
     <div class="views" role="group" aria-label="地図の視点">
       <button type="button" id="vObl" aria-pressed="true">OBLIQUE</button>
@@ -610,7 +610,7 @@ function drawRadar(now){
 
 /* ---------- 3D map ---------- */
 const canvas=$("#gl"),mapEl=$("#map"),labBox=$("#labels");
-let nextRing=null,benchM=[],GL=false,renderer,scene,camera,mapG,pinG,pins=[],hits=[],routes={},home,homeRings=[],scanBar,mapParts=[],bootT0=Infinity,bootDone=false,FR=null,FRt=0;
+let nextRing=null,benchM=[],GL=false,renderer,scene,camera,mapG,pinG,pins=[],routes={},home,homeRings=[],scanBar,mapParts=[],bootT0=Infinity,bootDone=false,FR=null,FRt=0;
 const DEPTH=.5,FLAT=.08,KM=10/111.2;
 const cam={tx:0,ty:0,tz:0,dist:60,phi:.82,theta:0};
 let OBL=null,tw=null,queue=[],flatT=1,userMoved=false;
@@ -629,19 +629,38 @@ function frameTop(){
 }
 function routeFrame(){const pts=[[0,0]];[state.a,state.b].forEach(r=>{if(r&&GEO[r])pts.push(GEO[r]);if(r&&ROUTES[r])ROUTES[r].p.forEach(q=>pts.push(q));});
   let x0=Infinity,x1=-Infinity,z0=Infinity,z1=-Infinity;pts.forEach(([x,z])=>{x0=Math.min(x0,x);x1=Math.max(x1,x);z0=Math.min(z0,z);z1=Math.max(z1,z);});return frameBox(x0,x1,z0,z1,.02,1.16);}
-// selecting a field: pull back, warp-dive onto the target, impact, then pull out along the road
-function dive(slot){
+// selecting a field: one of several flights, picked at random (never the same one twice in a row). Each flight is a
+// list of camera stages ending in the same pull-out that frames Koiwa and the whole road while it is drawn:
+//   warp    pull back, warp-dive onto the target, impact, glide past the pillar
+//   spiral  climb while turning, then corkscrew down onto the target
+//   road    the road is drawn first under a wide view, then the camera drops onto the target
+//   crane   start low over Koiwa looking down the road, rise and sweep across, then drop in
+//   jump    a quick hyperspace jump with a large field-of-view kick
+const FLIGHTS=["warp","spiral","road","crane","jump"];let lastFlight="";
+function pickFlight(){const pool=FLIGHTS.filter(f=>f!==lastFlight);return lastFlight=pool[Math.floor(Math.random()*pool.length)];}
+function dive(slot,force){
   const r=slot==="a"?state.a:state.b,g=GEO[r];state.view="top";viewBtns();userMoved=false;
   const startRoutes=()=>{const t=performance.now()+80;["a","b"].forEach(k=>{if(routes[k]&&routes[k].curve&&routes[k].t0===Infinity)routes[k].t0=t+(k===slot?0:250);});};
   if(RM||!g){flatT=FLAT;startRoutes();flyTo(routeFrame(),1);if(slot==="a")bubAt=performance.now();return;}
-  const d=get(r),c=slot==="a"?"var(--a)":"var(--b)";
+  const d=get(r),c=slot==="a"?"var(--a)":"var(--b)",kind=force||pickFlight(),len=Math.hypot(g[0],g[1])||1,heading=Math.atan2(-g[0],-g[1]);
   const close={tx:g[0],ty:0,tz:g[1],dist:5.2,phi:.42,theta:cam.theta+.7};
-  runSeq([
-    {to:{...cam,dist:cam.dist*1.2,phi:Math.min(1.05,cam.phi+.14)},dur:360,e:eOutQ},
-    {to:close,dur:1150,e:eInOutExpo,fov:28,start:()=>fxAt("warp",g,c)},
-    {to:{...close,dist:4.4,theta:close.theta+.16},dur:900,e:lin,start:()=>{fxAt("flash",g,c);acqfx(d,slot,c);shock(slot,g);canvas.classList.remove("shake");void canvas.offsetWidth;canvas.classList.add("shake");flatT=FLAT;}},
-    {to:()=>routeFrame(),dur:1900,e:ease,start:startRoutes,done:slot==="a"?()=>{bubAt=performance.now()+150;}:null}
-  ]);
+  const impact={to:{...close,dist:4.4,theta:close.theta+.16},dur:900,e:lin,start:()=>{fxAt("flash",g,c);acqfx(d,slot,c);shock(slot,g);canvas.classList.remove("shake");void canvas.offsetWidth;canvas.classList.add("shake");flatT=FLAT;}};
+  const finish=(start)=>({to:()=>routeFrame(),dur:1900,e:ease,start:start,done:slot==="a"?()=>{bubAt=performance.now()+150;}:null});
+  const warp=()=>fxAt("warp",g,c);
+  const plans={
+    warp:()=>[{to:{...cam,dist:cam.dist*1.2,phi:Math.min(1.05,cam.phi+.14)},dur:360,e:eOutQ},{to:close,dur:1150,e:eInOutExpo,fov:28,start:warp},impact,finish(startRoutes)],
+    spiral:()=>[{to:{...cam,tx:g[0]*.5,tz:g[1]*.5,dist:Math.max(34,cam.dist),phi:.5,theta:cam.theta+1.2},dur:650,e:eOutQ},
+      {to:{...close,theta:cam.theta+2.9},dur:1800,e:eInOutExpo,fov:18,start:warp},impact,finish(startRoutes)],
+    road:()=>[{to:()=>({...routeFrame(),theta:cam.theta+.2}),dur:1200,e:ease,start:startRoutes},
+      {to:()=>{const f=routeFrame();return{...f,dist:f.dist*.9,theta:f.theta+.25};},dur:1700,e:lin},
+      {to:close,dur:1000,e:eInOutExpo,fov:24,start:warp},impact,finish(null)],
+    crane:()=>[{to:{tx:g[0]*.12,ty:0,tz:g[1]*.12,dist:7,phi:1.12,theta:heading},dur:800,e:eOutQ},
+      {to:{tx:g[0]*.5,ty:0,tz:g[1]*.5,dist:Math.max(18,len*1.7),phi:.62,theta:heading+.35},dur:1700,e:ease,start:startRoutes},
+      {to:close,dur:1050,e:eInOutExpo,fov:22,start:warp},impact,finish(null)],
+    jump:()=>[{to:{...cam,dist:cam.dist*1.5,phi:Math.min(1.1,cam.phi+.18)},dur:220,e:eOutQ},
+      {to:close,dur:680,e:eInOutExpo,fov:58,start:warp},{...impact,dur:700},finish(startRoutes)]
+  };
+  runSeq(plans[kind]());
 }
 function fxAt(id,g,c){const el=$("#"+id),p=proj(V(g[0],pinG.position.y,g[1]));el.style.setProperty("--x",p.x+"px");el.style.setProperty("--y",p.y+"px");el.style.color=c;el.classList.remove("go");void el.offsetWidth;el.classList.add("go");}
 function acqfx(d,slot,c){const el=$("#acqfx");el.style.setProperty("--c",c);$("#acq1").textContent=slot==="a"?"TARGET ACQUIRED":"COMPARISON LOCKED";$("#acq2").textContent=d.name;
@@ -699,7 +718,7 @@ function initGL(){
   const hs=new THREE.Sprite(new THREE.SpriteMaterial({map:GLOW,color:0xd9fcff,transparent:true,opacity:.95,depthWrite:false,blending:THREE.AdditiveBlending}));hs.scale.set(3,3,1);hs.position.y=.35;pinG.add(hs);home.userData.s=hs;
   for(let i=0;i<3;i++){const ring=new THREE.Mesh(new THREE.RingGeometry(.94,1,64),new THREE.MeshBasicMaterial({color:0xd9fcff,transparent:true,opacity:.5,side:THREE.DoubleSide,depthWrite:false}));ring.rotation.x=-Math.PI/2;ring.position.y=.03;pinG.add(ring);homeRings.push(ring);}
   const beamG=new THREE.CylinderGeometry(.03,.03,1,6,1,true);beamG.translate(0,.5,0);
-  const headG=new THREE.OctahedronGeometry(.14),hitG=new THREE.CylinderGeometry(.6,.6,3.2,8);hitG.translate(0,1.2,0);
+  const headG=new THREE.OctahedronGeometry(.14);
   DATA.forEach(d=>{const g=GEO[d.rank];if(!g)return;const h=.4+pv(d)/100*2.2,col=d.visited?0xd9fcff:0x5d8796;
     const grp=new THREE.Group();grp.position.set(g[0],0,g[1]);
     const bm=new THREE.Mesh(beamG,new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:d.visited?.8:.45,blending:THREE.AdditiveBlending,depthWrite:false}));bm.scale.y=h;grp.add(bm);
@@ -707,7 +726,6 @@ function initGL(){
     const gl=new THREE.Sprite(new THREE.SpriteMaterial({map:GLOW,color:col,transparent:true,opacity:d.visited?.5:.18,depthWrite:false,blending:THREE.AdditiveBlending}));gl.position.y=h;grp.add(gl);
     const base=new THREE.Mesh(new THREE.RingGeometry(.16,.22,24),new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:.6,side:THREE.DoubleSide,depthWrite:false}));base.rotation.x=-Math.PI/2;base.position.y=.02;grp.add(base);
     const ring=new THREE.Mesh(new THREE.RingGeometry(.5,.56,48),new THREE.MeshBasicMaterial({color:0x3ff0ff,transparent:true,opacity:0,side:THREE.DoubleSide,depthWrite:false}));ring.rotation.x=-Math.PI/2;ring.position.y=.03;grp.add(ring);
-    const hit=new THREE.Mesh(hitG,new THREE.MeshBasicMaterial());hit.visible=false;hit.userData.rank=d.rank;grp.add(hit);hits.push(hit);
     grp.scale.setScalar(.001);pinG.add(grp);pins.push({d,rank:d.rank,grp,hd,gl,ring,h,visited:d.visited,delay:d.rank*18});});
   // the next planned camp (DB-001): an amber sonar ring under its pin
   if(NEXT&&GEO[NEXT.r]){const [x,z]=GEO[NEXT.r];nextRing=new THREE.Mesh(new THREE.RingGeometry(.92,1,64),new THREE.MeshBasicMaterial({color:0xffd166,transparent:true,opacity:0,side:THREE.DoubleSide,depthWrite:false,blending:THREE.AdditiveBlending}));
@@ -749,7 +767,7 @@ function initGL(){
     else if(mode==="pinch"&&ptr.size===2){const [a,b]=[...ptr.values()],d=Math.hypot(a.x-b.x,a.y-b.y),ang=Math.atan2(b.y-a.y,b.x-a.x);
       cam.dist=clamp(pinch.dist*pinch.d/Math.max(d,1),3,170);cam.theta=pinch.theta-(ang-pinch.ang);applyCam();}});
   const up=e=>{if(e.pointerType==="touch"||!ptr.has(e.pointerId))return;ptr.delete(e.pointerId);
-    if(ptr.size===0){canvas.classList.remove("drag");if(!moved&&e.type==="pointerup"&&mode!=="pinch"){const r=pick(e);if(r)setA(r);}mode=null;}
+    if(ptr.size===0){canvas.classList.remove("drag");if(!moved&&e.type==="pointerup"&&mode!=="pinch"){const r=pickTap(e);if(r)setA(r);}mode=null;}
     else if(ptr.size===1){const [q]=[...ptr.values()];mode="pan";g0=groundAt(q.x,q.y);}};
   canvas.addEventListener("pointerup",up);canvas.addEventListener("pointercancel",up);
   canvas.addEventListener("pointerleave",e=>{if(e.pointerType==="mouse"&&!ptr.size){hovered=null;L.h.hidden=true;canvas.classList.remove("hot");$("#tCur").textContent="—";}});
@@ -765,7 +783,7 @@ function initGL(){
     else if(tp.mode==="pan"&&t.length===1){const q=t[0];if(!tp.moved&&Math.hypot(q.clientX-tp.sx,q.clientY-tp.sy)>6){tp.moved=true;stopCam();userMoved=true;}
       if(tp.moved){const g=groundAt(q.clientX,q.clientY);if(tp.g0&&g){cam.tx+=tp.g0.x-g.x;cam.tz+=tp.g0.z-g.z;applyCam();}}}},{passive:false});
   const tend=e=>{e.preventDefault();if(!tp)return;
-    if(e.touches.length===0){if(tp.mode==="pan"&&!tp.moved&&e.type==="touchend"){const q=e.changedTouches[0],r=pick({clientX:q.clientX,clientY:q.clientY});if(r)setA(r);}tp=null;}
+    if(e.touches.length===0){if(tp.mode==="pan"&&!tp.moved&&e.type==="touchend"){const q=e.changedTouches[0],r=pickTap({clientX:q.clientX,clientY:q.clientY,t:1});if(r)setA(r);}tp=null;}
     else if(e.touches.length===1)startPan(e.touches[0]);else startPinch(e.touches);};
   canvas.addEventListener("touchend",tend,{passive:false});canvas.addEventListener("touchcancel",tend,{passive:false});
   ["gesturestart","gesturechange","gestureend"].forEach(n=>canvas.addEventListener(n,e=>e.preventDefault(),{passive:false}));
@@ -856,7 +874,7 @@ function overlay(S,r,lab,lift){
 }
 /* ---------- boot ---------- */
 const bootEl=$("#boot"),logEl=$("#bootLog");
-const LINES=[["FIELD ATLAS NAVIGATOR","BOOT"],["LINK MD-002 VER.__MD002_VERSION__",""],["FIELDS",DATA.length+" / "+DATA.filter(d=>d.visited).length+" VISITED"],["AXES","10 · OP-010 PART C"],["GEODATA","GSI ADDRESS SEARCH"],["IMAGERY",Object.keys(IMG).length+" / "+DATA.length],["FIELD LOG",NEXT?"NEXT "+NEXT.d:"DB-001"],["BENCHMARK",BENCH.length?"VIEW 10 · "+BENCH[0].name:"—"],["HOME","KOIWA 35.733N 139.883E"]];
+const LINES=[["FIELD ATLAS NOCTURNE","BOOT"],["LINK MD-002 VER.__MD002_VERSION__",""],["FIELDS",DATA.length+" / "+DATA.filter(d=>d.visited).length+" VISITED"],["AXES","10 · OP-010 PART C"],["GEODATA","GSI ADDRESS SEARCH"],["IMAGERY",Object.keys(IMG).length+" / "+DATA.length],["FIELD LOG",NEXT?"NEXT "+NEXT.d:"DB-001"],["BENCHMARK",BENCH.length?"VIEW 10 · "+BENCH[0].name:"—"],["HOME","KOIWA 35.733N 139.883E"]];
 function boot(){
   if(RM){bootEl.hidden=true;bootDone=true;return;}
   let i=0,t=null;const out=[];

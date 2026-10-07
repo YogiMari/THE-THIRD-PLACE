@@ -1,4 +1,4 @@
-<title>Field Atlas Ivory</title>
+<title>Field Atlas Aubade</title>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;0,6..72,500;1,6..72,300;1,6..72,400&family=Hanken+Grotesk:wght@400;500;600&family=Zen+Old+Mincho:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap">
 <style>
   /* Layout: a sunlit atlas on ivory paper. Full-bleed porcelain relief map of Kanto; a quiet header bar; field index (left), analysis (right) and destination cards floating as soft white sheets. Phones stack the sheets under the map. */
@@ -379,7 +379,7 @@
   <header class="strip">
     <div class="logo">
       <svg width="30" height="30" viewBox="-15 -15 30 30" aria-hidden="true"><g><line x1="0" y1="-13" x2="0" y2="-5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><line x1="0" y1="13" x2="0" y2="5" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><line x1="-13" y1="0" x2="-5" y2="0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><line x1="13" y1="0" x2="5" y2="0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><line x1="-9" y1="-9" x2="-3.6" y2="-3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="9" y1="9" x2="3.6" y2="3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="9" y1="-9" x2="3.6" y2="-3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><line x1="-9" y1="9" x2="-3.6" y2="3.6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></g></svg>
-      <div><h1>Field Atlas <em>Navigator</em></h1><span class="k">The Third Place · MD-002 Ver.__MD002_VERSION__</span></div>
+      <div><h1>Field Atlas <em>Aubade</em></h1><span class="k">The Third Place · MD-002 Ver.__MD002_VERSION__</span></div>
     </div>
     <div class="views" role="group" aria-label="地図の視点">
       <button type="button" id="vObl" aria-pressed="true">Oblique</button>
@@ -485,7 +485,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
 <script>
 (function(){
-// data injected by scripts/field_atlas_ivory.py (scores from MD-002; geography and photos from scripts/data/field_atlas_navigator/)
+// data injected by scripts/field_atlas_aubade.py (scores from MD-002; geography and photos from scripts/data/field_atlas/)
 const DATA=/*__DATA__*/[];
 const JP=/*__JAPAN__*/[];
 const GEO=/*__GEO__*/{};
@@ -618,7 +618,7 @@ function drawRadar(now){
 
 /* ---------- 3D map ---------- */
 const canvas=$("#gl"),mapEl=$("#map"),labBox=$("#labels");
-let nextRing=null,benchM=[],dust=[],dustPts=null,GL=false,renderer,scene,camera,mapG,pinG,pins=[],hits=[],routes={},home,homeRings=[],scanBar,mapParts=[],bootT0=Infinity,bootDone=false,FR=null,FRt=0;
+let nextRing=null,benchM=[],dust=[],dustPts=null,GL=false,renderer,scene,camera,mapG,pinG,pins=[],routes={},home,homeRings=[],scanBar,mapParts=[],bootT0=Infinity,bootDone=false,FR=null,FRt=0;
 const DEPTH=.5,FLAT=.08,KM=10/111.2;
 const cam={tx:0,ty:0,tz:0,dist:60,phi:.82,theta:0};
 let OBL=null,tw=null,flatT=1,chase=null,userCam=false;
@@ -652,17 +652,50 @@ function frameBoth(){
   let x0=Infinity,x1=-Infinity,z0=Infinity,z1=-Infinity;pts.forEach(([x,z])=>{x0=Math.min(x0,x);x1=Math.max(x1,x);z0=Math.min(z0,z);z1=Math.max(z1,z);});
   userCam=false;state.view="focus";viewBtns();flatT=1;flyTo(frameBox(x0,x1,z0,z1,.62,1.25),1900);
 }
-// selecting a field: rise over home, chase the road as it is drawn, then swoop down onto the field
-function focus(){
+// selecting a field: one of several flights, picked at random (never the same one twice in a row). In each, the road
+// is drawn from Koiwa while the camera moves, and the camera then settles on the field:
+//   chase     rise over home, ride the head of the road from high to low, swoop down and orbit onto the field
+//   overview  hold a wide, tilted view of the whole road, drifting in, then swing down onto the field
+//   rail      stay low behind the head of the road, looking where it points, then climb up and around the field
+//   orbit     circle the middle of the road while it is drawn, then spiral in onto the field
+const CHASES=["chase","overview","rail","orbit"];let lastChase="";
+function pickChase(){const pool=CHASES.filter(f=>f!==lastChase);return lastChase=pool[Math.floor(Math.random()*pool.length)];}
+function chaseStyle(fx,c){
+  const {x,z,th,D0,len}=c,mx=x/2,mz=z/2;
+  if(fx==="overview"){
+    const pts=[[0,0],[x,z]];if(ROUTES[c.r])ROUTES[c.r].p.forEach(q=>pts.push(q));
+    let x0=Infinity,x1=-Infinity,z0=Infinity,z1=-Infinity;pts.forEach(([a,b])=>{x0=Math.min(x0,a);x1=Math.max(x1,a);z0=Math.min(z0,b);z1=Math.max(z1,b);});
+    const box=frameBox(x0,x1,z0,z1,.5,1.3);
+    return{lead:1200,start:box,cam:p=>({...box,dist:box.dist*(1-.14*ease(p)),phi:box.phi+.12*ease(p),theta:.22*ease(p)}),
+      end:()=>aimExact(x,z,6,.8,th-.5),endDur:2700};
+  }
+  if(fx==="rail"){
+    c.hd=th;
+    return{lead:800,start:aim(0,0,8.5,1.08,th),
+      cam:(p,h,R)=>{const tg=R.curve.getTangentAt(clamp(p,.001,.999));c.hd+=(wrapNear(Math.atan2(-tg.x,-tg.z),c.hd)-c.hd)*.07;
+        return aim(h.x,h.z,7.5+1.5*Math.sin(p*Math.PI),1.08-.2*p,c.hd);},
+      end:()=>aimExact(x,z,13,.5,c.hd+.9),endDur:2900};
+  }
+  if(fx==="orbit"){
+    const D=clamp(len*1.35+6,14,42);
+    return{lead:1000,start:aim(mx,mz,D*1.25,.76,th-.9),
+      cam:p=>aim(mx,mz,D*(1.25-.3*ease(p)),.76-.14*ease(p),th-.9+2.4*ease(p)),
+      end:()=>aimExact(x,z,5.2,.9,th+2),endDur:2700};
+  }
+  return{lead:900,start:aim(0,0,D0,.58,th),
+    cam:(p,h)=>aim(h.x,h.z,D0+(9-D0)*ease(p),.58+.14*p,th+.12*Math.sin(p*Math.PI)),
+    end:()=>aimExact(x,z,5.4,.94,th+.6),endDur:2400};
+}
+function focus(force){
   const r=state.a,R=routes.a;if(!GEO[r]||!R||!R.curve){frameBoth();return;}
   const [x,z]=GEO[r],len=Math.hypot(x,z)||1;
   userCam=false;state.view="focus";viewBtns();flatT=1;
   const th=.55*Math.atan2(-x,-z),D0=clamp(len*1.05,13,34);
   if(RM||!bootDone){chase=null;const t=aimExact(x,z,6,.9,th);if(RM){Object.assign(cam,t);tw=null;}else flyTo(t,1600);lock("A");if(bootDone||RM)bubAt=performance.now()+(RM?0:1600);return;}
-  const now=performance.now(),lead=900,dur=clamp(1500+len*95,1900,3900);
-  flyTo(aim(0,0,D0,.58,th),lead);
-  R.t0=now+lead;R.dur=dur;if(routes.b.curve)routes.b.t0=now+lead+200;
-  chase={r,x,z,th,D0,t0:now+lead,phase:0};
+  const now=performance.now(),dur=clamp(1500+len*95,1900,3900),c={r,x,z,th,D0,len,phase:0},S=chaseStyle(force||pickChase(),c);
+  flyTo(S.start,S.lead);
+  R.t0=now+S.lead;R.dur=dur;if(routes.b.curve)routes.b.t0=now+S.lead+200;
+  c.t0=now+S.lead;c.S=S;chase=c;
 }
 $("#vObl").onclick=()=>{if(GL)oblique();};$("#vTop").onclick=()=>{if(GL)frameTop();};
 function zoomBy(f){if(!GL)return;stopAuto();flyTo({...cam,dist:clamp(cam.dist*f,3,160)},RM?1:420);}
@@ -727,7 +760,7 @@ function initGL(){
   const hs=new THREE.Sprite(new THREE.SpriteMaterial({map:GLOW,color:0xF0B08F,transparent:true,opacity:.8,depthWrite:false}));hs.scale.set(3,3,1);hs.position.y=.35;pinG.add(hs);home.userData.s=hs;
   for(let i=0;i<3;i++){const ring=new THREE.Mesh(new THREE.RingGeometry(.95,1,64),new THREE.MeshBasicMaterial({color:0xC8643F,transparent:true,opacity:.5,side:THREE.DoubleSide,depthWrite:false}));ring.rotation.x=-Math.PI/2;ring.position.y=.03;pinG.add(ring);homeRings.push(ring);}
   const beamG=new THREE.CylinderGeometry(.028,.028,1,6,1,true);beamG.translate(0,.5,0);
-  const headG=new THREE.SphereGeometry(.13,20,14),hitG=new THREE.CylinderGeometry(.6,.6,3.2,8);hitG.translate(0,1.2,0);
+  const headG=new THREE.SphereGeometry(.13,20,14);
   DATA.forEach(d=>{const g=GEO[d.rank];if(!g)return;const h=.4+pv(d)/100*2.2,col=d.visited?0xD97757:0x9A968A;
     const grp=new THREE.Group();grp.position.set(g[0],0,g[1]);
     const bm=new THREE.Mesh(beamG,new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:d.visited?.7:.45,depthWrite:false}));bm.scale.y=h;grp.add(bm);
@@ -735,7 +768,6 @@ function initGL(){
     const gl=new THREE.Sprite(new THREE.SpriteMaterial({map:GLOW,color:d.visited?0xF0A583:0xB8B4A8,transparent:true,opacity:d.visited?.5:.2,depthWrite:false}));gl.position.y=h;grp.add(gl);
     const base=new THREE.Mesh(new THREE.RingGeometry(.14,.21,28),new THREE.MeshBasicMaterial({color:col,transparent:true,opacity:.7,side:THREE.DoubleSide,depthWrite:false}));base.rotation.x=-Math.PI/2;base.position.y=.02;grp.add(base);
     const ring=new THREE.Mesh(new THREE.RingGeometry(.5,.56,48),new THREE.MeshBasicMaterial({color:0xD97757,transparent:true,opacity:0,side:THREE.DoubleSide,depthWrite:false}));ring.rotation.x=-Math.PI/2;ring.position.y=.03;grp.add(ring);
-    const hit=new THREE.Mesh(hitG,new THREE.MeshBasicMaterial());hit.visible=false;hit.userData.rank=d.rank;grp.add(hit);hits.push(hit);
     grp.scale.setScalar(.001);pinG.add(grp);pins.push({d,rank:d.rank,grp,hd,gl,ring,h,visited:d.visited,delay:d.rank*18});});
   // the next planned camp (DB-001): a slow clay ripple under its pin
   if(NEXT&&GEO[NEXT.r]){const [x,z]=GEO[NEXT.r];nextRing=new THREE.Mesh(new THREE.RingGeometry(.9,1,64),new THREE.MeshBasicMaterial({color:0xD97757,transparent:true,opacity:0,side:THREE.DoubleSide,depthWrite:false}));
@@ -779,7 +811,7 @@ function initGL(){
     if(g.mode==="rotate"){cam.theta-=(e.clientX-g.x)*.005;cam.phi=clamp(cam.phi-(e.clientY-g.y)*.004,.02,1.25);g.x=e.clientX;g.y=e.clientY;applyCam();return;}
     const h=groundAt(e.clientX,e.clientY);if(g.grab&&h){cam.tx+=g.grab.x-h.x;cam.tz+=g.grab.z-h.z;clampCam();applyCam();}});
   const end=e=>{if(!ptrs.has(e.pointerId))return;ptrs.delete(e.pointerId);
-    if(g&&g.mode!=="pinch"&&!g.moved&&e.type==="pointerup"){const r=pick(e);if(r)setA(r);}
+    if(g&&g.mode!=="pinch"&&!g.moved&&e.type==="pointerup"){const r=pickTap(e);if(r)setA(r);}
     if(ptrs.size===1){const [id,p]=[...ptrs.entries()][0];g={mode:"pan",sx:p.x,sy:p.y,x:p.x,y:p.y,moved:true,grab:groundAt(p.x,p.y)};}
     else if(ptrs.size===0)g=null;};
   canvas.addEventListener("pointerup",end);canvas.addEventListener("pointercancel",end);
@@ -832,8 +864,8 @@ function frame(now){
   else if(chase&&chase.phase===1){const R=routes.a;
     if(!R.curve){chase=null;mapEl.classList.remove("warping");}
     else{const p=Math.max(R.prog,0),h=R.curve.getPointAt(clamp(p,0,1));
-      Object.assign(cam,aim(h.x,h.z,chase.D0+(9-chase.D0)*ease(p),.58+.14*p,chase.th+.12*Math.sin(p*Math.PI)));
-      if(R.prog>=1){const c=chase;chase=null;arrive();flyTo(aimExact(c.x,c.z,5.4,.94,c.th+.6),2400);bubAt=now+2300;}}}
+      Object.assign(cam,chase.S.cam(p,h,R));
+      if(R.prog>=1){const c=chase;chase=null;arrive();flyTo(c.S.end(),c.S.endDur);bubAt=now+c.S.endDur-100;}}}
   else if(state.view==="oblique"&&!RM&&OBL&&!userCam)cam.theta=OBL.theta+Math.sin(now/7000)*.035;
   const sy=mapG.scale.y+(flatT-mapG.scale.y)*(RM?1:Math.min(1,dt*2.4));mapG.scale.y=sy;pinG.position.y=DEPTH*sy;
   applyCam();
@@ -888,7 +920,7 @@ function boot(){
   if(RM){bootEl.hidden=true;bootDone=true;return;}
   let t=null;const T="Field Atlas";
   $("#bootT").innerHTML=[...T].map((c,i)=>`<span style="animation-delay:${300+i*55}ms">${c===" "?"&nbsp;":esc(c)}</span>`).join("")+
-    ` <em>${[..."Navigator"].map((c,i)=>`<span style="animation-delay:${300+(T.length+i)*55}ms">${esc(c)}</span>`).join("")}</em>`;
+    ` <em>${[..."Aubade"].map((c,i)=>`<span style="animation-delay:${300+(T.length+i)*55}ms">${esc(c)}</span>`).join("")}</em>`;
   const finish=()=>{clearTimeout(t);if(bootEl.classList.contains("out"))return;bootEl.classList.add("out");bootT0=performance.now()+250;
     if(GL){OBL=kanto();Object.assign(cam,OBL);cam.dist*=1.5;cam.phi=Math.min(1.2,cam.phi+.2);cam.theta-=.3;flyTo(OBL,3200);}setTimeout(()=>{bootEl.hidden=true;},1150);};
   bootEl.addEventListener("click",finish);

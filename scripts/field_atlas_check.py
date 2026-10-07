@@ -16,8 +16,8 @@ notation drift between documents and data files:
              (surroundings gaps are reported but do not fail the check);
              climate.json names only MD-002 fields and defines every station
              it uses, with 12 values (first dekad of each month) and JMA sources
-    pages    the Navigator, Ivory and Radar generators build without warnings, the
-             Navigator and Ivory templates each take the shared script once, and
+    pages    the Nocturne, Aubade and Radar generators build without warnings, the
+             Nocturne and Aubade templates each take the shared script once, and
              no placeholder is left in any page
 
 Exits 1 and lists every problem when anything is out of step. Runs in CI.
@@ -34,12 +34,12 @@ from pathlib import Path
 
 HERE = Path(__file__).parent
 sys.path.insert(0, str(HERE))
-import field_atlas_navigator as nav  # noqa: E402
+import field_atlas_nocturne as nav  # noqa: E402
 import field_atlas_radar as radar  # noqa: E402
 
 ROOT = HERE.parent
 MD002 = ROOT / "MD" / "MD-002_Field_Atlas_Landscape_Framework.md"
-TEMPLATES = [nav.TEMPLATE, HERE / "templates" / "field_atlas_ivory.html"]
+TEMPLATES = [nav.TEMPLATE, HERE / "templates" / "field_atlas_aubade.html"]
 
 
 def main() -> None:
@@ -112,7 +112,7 @@ def main() -> None:
 
     # the pages themselves
     if not nav.SHARED_JS.exists():
-        problems.append(f"{nav.SHARED_JS.name}: missing (the script shared by the Navigator and Ivory templates)")
+        problems.append(f"{nav.SHARED_JS.name}: missing (the script shared by the Nocturne and Aubade templates)")
     for t in TEMPLATES:
         marks = t.read_text(encoding="utf-8").count("/*__SHARED_JS__*/")
         if marks != 1:
@@ -133,7 +133,7 @@ def main() -> None:
     notes = [p for p in problems if "surroundings" in p]
     problems = [p for p in problems if "surroundings" not in p]
     if notes:
-        print(f"note — {len(notes)} surroundings gap(s) (fetch with field_atlas_navigator_fetch.py surroundings):")
+        print(f"note — {len(notes)} surroundings gap(s) (fetch with field_atlas_fetch.py surroundings):")
         for n in notes:
             print("  -", n)
     if problems:

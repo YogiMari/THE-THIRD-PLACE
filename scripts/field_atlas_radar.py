@@ -13,11 +13,11 @@ from MD-002 Field Atlas Landscape Framework:
         Sub-Score Table          -> 10-axis scores
         Early Check-in Record    -> early check-in category, detail, source
 
-It also carries the same field information as Field Atlas Navigator and
-Ivory (ground, Site Record, Field Log with gear names, elevation,
+It also carries the same field information as Field Atlas Nocturne and
+Aubade (ground, Site Record, Field Log with gear names, elevation,
 surroundings, positions for sunrise and sunset), built by
-field_atlas_navigator.extras() from MD-002, DB-001, MD-004 and
-scripts/data/field_atlas_navigator/. No map or photos.
+field_atlas_nocturne.extras() from MD-002, DB-001, MD-004 and
+scripts/data/field_atlas/. No map or photos.
 
 Scores come only from MD-002. The page carries no data of its own, so
 any conversation can regenerate it after MD-002 changes and republish it
@@ -196,7 +196,7 @@ def build(md002: Path) -> tuple[list[dict], str]:
 
 def render(md002: Path) -> tuple[str, list[str], int, str]:
     """The Radar page, its warnings, the field count and the MD-002 version."""
-    import field_atlas_navigator as nav  # imported here: it imports this module
+    import field_atlas_nocturne as nav  # imported here: it imports this module
 
     data, version = build(md002)
     warnings: list[str] = []

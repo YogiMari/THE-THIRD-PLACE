@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 """
-THE THIRD PLACE — Field Atlas Navigator data fetcher
+THE THIRD PLACE — Field Atlas Nocturne data fetcher
 
-Refreshes the geography and photos that field_atlas_navigator.py embeds.
+Refreshes the geography and photos that field_atlas_nocturne.py embeds.
 Needs network access. Photos need Pillow (pip install pillow).
 
     images    download every field's photo from images.json into images/
@@ -26,11 +26,11 @@ Needs network access. Photos need Pillow (pip install pillow).
               (Overpass API), with the driving distance and time from OSRM
 
 Usage:
-    python3 scripts/field_atlas_navigator_fetch.py images
-    python3 scripts/field_atlas_navigator_fetch.py geocode --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md
-    python3 scripts/field_atlas_navigator_fetch.py routes [--all]
-    python3 scripts/field_atlas_navigator_fetch.py elevation
-    python3 scripts/field_atlas_navigator_fetch.py surroundings [--all]
+    python3 scripts/field_atlas_fetch.py images
+    python3 scripts/field_atlas_fetch.py geocode --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md
+    python3 scripts/field_atlas_fetch.py routes [--all]
+    python3 scripts/field_atlas_fetch.py elevation
+    python3 scripts/field_atlas_fetch.py surroundings [--all]
 """
 
 import argparse
@@ -41,10 +41,10 @@ import urllib.parse
 import urllib.request
 from pathlib import Path
 
-from field_atlas_navigator import DATA_DIR, LAT0, LON0, image_path, load
+from field_atlas_nocturne import DATA_DIR, LAT0, LON0, image_path, load
 import field_atlas_radar
 
-UA = "Mozilla/5.0 (THE THIRD PLACE Field Atlas Navigator)"
+UA = "Mozilla/5.0 (THE THIRD PLACE Field Atlas Nocturne)"
 
 
 def get(url: str, timeout: int = 40) -> bytes:

@@ -1,5 +1,5 @@
-// Field Atlas shared script — the part of the page script that Field Atlas Navigator and Field Atlas Ivory
-// have in common. scripts/field_atlas_navigator.py (build) inserts it into each template's <script> where
+// Field Atlas shared script — the part of the page script that Field Atlas Nocturne and Field Atlas Aubade
+// have in common. scripts/field_atlas_nocturne.py (build) inserts it into each template's <script> where
 // the template marks it. It runs in the page's own closure, after the data constants (DATA, GEO, LL, IMG,
 // ROUTES, EXTRA ...) and PAGE_URL are defined, and reaches the page's map objects (GL, V, proj, FR ...)
 // only when called. What differs between the two editions (CSS, staging, camera, selection flight) stays
@@ -180,8 +180,38 @@ function proj(v){tv.copy(v).project(camera);return{x:(tv.x*.5+.5)*mapEl.clientWi
 function place(e,v,anchor){const p=proj(v);if(!p.ok){e.style.visibility="hidden";return p;}e.style.visibility="";e.style.transform=`translate(${p.x.toFixed(1)}px,${p.y.toFixed(1)}px) ${anchor||""}`;return p;}
 function applyCam(){const sp=Math.sin(cam.phi);camera.position.set(cam.tx+cam.dist*sp*Math.sin(cam.theta),cam.ty+cam.dist*Math.cos(cam.phi),cam.tz+cam.dist*sp*Math.cos(cam.theta));camera.lookAt(cam.tx,cam.ty,cam.tz);camera.updateMatrixWorld();}
 function setRay(e){const r=canvas.getBoundingClientRect();mv.set((e.clientX-r.left)/r.width*2-1,-((e.clientY-r.top)/r.height)*2+1);ray.setFromCamera(mv,camera);}
-function pick(e){setRay(e);const h=ray.intersectObjects(hits.filter(o=>live(o.userData.rank)))[0];return h?h.object.userData.rank:null;}
-function hover(e){const r=pick(e),hp=new THREE.Vector3();
+// Picking is done in screen space, not by casting a ray at an invisible column: a column tall enough to grab a pin
+// also covers the pins behind it, so a neighbour in front kept winning. Each pin is scored by its distance on screen
+// from the pointer to its head (full weight) or to its stem (a little less); the nearest one within reach wins, and a
+// tie within 3 px goes to the pin nearer the camera. Fingers get a wider reach than a mouse.
+// Heads that sit within a few pixels of each other (the Kanto view stacks some) cannot be told apart by position, so
+// tapping the same spot again moves on to the next pin under it (pickTap).
+const _pa=new THREE.Vector3(),_pb=new THREE.Vector3();
+function pickAll(e){
+  const r=canvas.getBoundingClientRect(),px=e.clientX-r.left,py=e.clientY-r.top,reach=(e.pointerType==="touch"||e.t)?34:22,out=[];
+  for(const p of pins){
+    if(!live(p.rank))continue;
+    p.grp.updateWorldMatrix(true,false);
+    _pa.set(0,p.h,0).applyMatrix4(p.grp.matrixWorld).project(camera);_pb.set(0,0,0).applyMatrix4(p.grp.matrixWorld).project(camera);
+    if(_pa.z>=1||_pb.z>=1)continue;
+    const hx=(_pa.x*.5+.5)*r.width,hy=(-_pa.y*.5+.5)*r.height,bx=(_pb.x*.5+.5)*r.width,by=(-_pb.y*.5+.5)*r.height;
+    const dx=bx-hx,dy=by-hy,l2=dx*dx+dy*dy,t=l2>1e-6?Math.max(0,Math.min(1,((px-hx)*dx+(py-hy)*dy)/l2)):0;
+    const sc=Math.min(Math.hypot(px-hx,py-hy),Math.hypot(px-(hx+dx*t),py-(hy+dy*t))+6);
+    if(sc<=reach)out.push({rank:p.rank,sc,z:_pa.z});
+  }
+  out.sort((a,b)=>Math.abs(a.sc-b.sc)<3?a.z-b.z:a.sc-b.sc);
+  return out;
+}
+function pick(e){const l=pickAll(e);return l.length?l[0].rank:null;}
+let _tap=null;
+function pickTap(e){
+  const l=pickAll(e);if(!l.length){_tap=null;return null;}
+  const near=l.filter(c=>c.sc-l[0].sc<=8).map(c=>c.rank),now=performance.now();
+  if(_tap&&now-_tap.t<3000&&Math.hypot(e.clientX-_tap.x,e.clientY-_tap.y)<6&&near.length>1&&near.includes(_tap.rank)){
+    _tap={x:e.clientX,y:e.clientY,t:now,rank:near[(near.indexOf(_tap.rank)+1)%near.length]};return _tap.rank;}
+  _tap={x:e.clientX,y:e.clientY,t:now,rank:near[0]};return near[0];
+}
+function hover(e){const r=pick(e),hp=new THREE.Vector3();setRay(e);
   ground.constant=-pinG.position.y;if(ray.ray.intersectPlane(ground,hp))$("#tCur").textContent=fmtLL(LAT0-hp.z/KZ,LON0+hp.x/KX);
   canvas.classList.toggle("hot",!!r);hovered=r&&r!==state.a&&r!==state.b?r:null;L.h.hidden=!hovered;
   if(hovered){const d=get(hovered),n=nav(hovered);L.h.innerHTML=`<span class="n">${esc(d.name)}</span><span class="s">${pv(d)}/100 · ${d.hours.toFixed(1)}H${ROUTES[hovered]?" · ROAD "+ROUTES[hovered].km+"KM":""}</span>`;}}
