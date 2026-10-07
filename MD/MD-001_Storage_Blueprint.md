@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.36
+## Ver.2.37
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.36  
+**Version**: 2.37  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -192,7 +192,7 @@ Bridge Table完成後に展開
 - Blind Shaker Onyx
 - 9Barista Mk.2 Pro
 - The Bloc
-- Puck Screen＋Puck Screen Stand
+- EPF Dock
 - Z1 Mini Steamer
 - Handleless Pitcher 450cc＋Pitcher Sleeve
 
@@ -260,10 +260,9 @@ Coffee Equipment 13点を収納して余裕がある場合に、Beck #2最下層
 | 4 | WeighMaster Ultra | 128×100×23 | |
 | 5 | Blind Shaker Onyx | 80×80×76 | |
 | 6 | KNODOS Tamping Mat with Tool Organiser | 178×178×76 | 金具込みで約180×180 |
-| 7 | Puck Screen | 53×53×2 | |
 | 8 | The Bloc | 140×190×70 | |
 | 9 | 9Barista Mk.2 Pro | 160×190×180 | 実寸未確定。安全側（大きい方）の数値を採用（下記参照） |
-| 10 | Puck Screen Stand | 60×60×50 | |
+| 10 | EPF Dock | 75×75×75 | 公式値（直径75mm×高さ75mm） |
 | 11 | Handleless Pitcher 450cc | 85×110×110 | |
 | 12 | Pitcher Sleeve | 85×85×60 | #11へ装着 |
 | 13 | Z1 Mini Steamer | 140×140×370 | 非分解。突起込みで断面約160 |
@@ -290,7 +289,7 @@ Web調査結果が「80×80×180（突起込みで平面90〜100）」と「160�
 
 - 奥左：Z1 Mini Steamer（横置き、370×160）
 - 奥右：9Barista Mk.2 Pro（直立、160×190×180）
-- 手前左：Bean Cellar → KNODOS → WeighMaster（積層。積層高 約209mm。余白にPuck Screen Stand＋Puck Screen、RDT Spray Bottle）
+- 手前左：Bean Cellar → KNODOS → WeighMaster（積層。積層高 約209mm。余白にEPF Dock、RDT Spray Bottle）
 - 手前中：The Bloc → LAGOM（横渡し。両端各35mmはみ出し）
 - 手前右：Pitcher＋Sleeve、Blind Shaker（奥行方向に並べて165/170mm）
 
@@ -844,7 +843,7 @@ The Bloc
 
 ↓
 
-Puck Screen＋Stand
+EPF Dock
 
 ↓
 
@@ -1270,6 +1269,7 @@ Permanent Storage
 | 2.34 | 2026-10-02 | MD-004 Ver.7.85（SHL-001のProductを正式名称「幕男 4th.ver」へ変更）と連動し、Vehicle Loading MapのSHL-001の表記を「幕男 4th.ver」へ改めた。収納・積載の内容に変更はない。Patch Version。 |
 | 2.35 | 2026-10-03 | MD-004 Ver.7.86（LGT-021のProductを「DEVA DEVAの実」へ訂正）と連動し、本文中の略記「DEVADEVA」4箇所（ShellCon25 TCのFixed Contents・Verified Equipment、Light Sequenceほか）を「DEVA DEVA」へ改めた。収納・積載の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。 |
 | 2.36 | 2026-10-05 | MD-004 Ver.8.6（38-kT THE RICH 3色をLGT-040〜042として新規登録し、旧LGT-040〜043をLGT-043〜046へ+3繰り下げ）と連動し、本文のLGT参照を新番号へ更新した。MARI様のご決定に基づく。改訂履歴の過去の行は原文のまま。Patch Version。 |
+| 2.37 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Puck Screenの廃止と、Puck Screen StandからEPF Dock（Weber Workshops、Onyx）への入れ替え（BR-002 Ver.4.14・BR-003 Ver.4.6と連動）に伴い、Coffee Module一覧・寸法一覧・配置・Coffee Sequenceの該当記述を更新した。寸法一覧のPuck Screen（#7）の行は項番を詰めず削除し、Puck Screen Stand（#10）の行をEPF Dock（75×75×75mm、公式値）へ置き換えた。収納レイアウトの再設計は行っていない。
 
 ---
 
