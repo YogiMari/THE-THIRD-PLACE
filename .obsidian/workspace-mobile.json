@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "BR/BR-002_Barista_Canon.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "BR-002_Barista_Canon"
             }
           }
         ]
@@ -173,17 +173,27 @@
   },
   "active": "6c8c79224155be22",
   "lastOpenFiles": [
+    "scripts/data/field_atlas_navigator/images/ddb9983fafa2.jpg",
+    "scripts/data/field_atlas_navigator/images/d7ed0c8b9117.jpg",
+    "scripts/data/field_atlas_navigator/images/c992024f42ce.jpg",
+    "scripts/data/field_atlas_navigator/images/8bda26941aff.jpg",
+    "scripts/data/field_atlas_navigator/images/8746509f9f08.jpg",
+    "scripts/__pycache__/third_place_sync_validator.cpython-311.pyc",
+    "scripts/__pycache__/md004_records.cpython-311.pyc",
+    "scripts/__pycache__/field_atlas_radar.cpython-311.pyc",
+    "scripts/__pycache__/field_atlas_navigator.cpython-311.pyc",
+    "scripts/__pycache__",
+    "MD/MD-003_Galley_Fare.md",
+    "KN/KN-004_Atelier_Discovery.md",
+    "KN/KN-003_Beyond_Journey.md",
+    "BR/BR-003_Procurement_Handbook.md",
+    "BR/BR-002_Barista_Canon.md",
+    "README.md",
     "scripts/third_place_sync_validator.py",
     "scripts/templates/field_atlas_shared.js",
     "scripts/templates/field_atlas_radar.html",
     "scripts/templates/field_atlas_navigator.html",
     "scripts/templates/field_atlas_ivory.html",
-    "scripts/templates/codex_arbor.html",
-    "scripts/templates",
-    "scripts/md004_records.py",
-    "scripts/md004_integrity_check.py",
-    "scripts/gear_catalogue/template.html",
-    "scripts/gear_catalogue/photos.json",
     "scripts/gear_catalogue/README.md",
     "scripts/data/field_atlas_navigator/images/ff1ff946956c.jpg",
     "scripts/data/field_atlas_navigator/images/f8cadb58bb57.jpg",
@@ -191,17 +201,12 @@
     "scripts/data/field_atlas_navigator/images/f0bf3fef05dc.jpg",
     "scripts/data/field_atlas_navigator/images/ef609a8991cf.jpg",
     "scripts/data/field_atlas_navigator/images/dec7adc31648.jpg",
-    "scripts/data/field_atlas_navigator/images/de9fa7bb023e.jpg",
-    "scripts/data/field_atlas_navigator/images/dce7f0890dd3.jpg",
-    "scripts/data/field_atlas_navigator/images/d83afaa16232.jpg",
-    "scripts/data/field_atlas_navigator/images/d77059385103.jpg",
     "scripts/data/field_atlas_navigator/README.md",
     "archive/MD-004_Version_History_Archive.md",
     "archive/MD-003_Version_History_Archive.md",
     "archive/CZ-002_Version_History_Archive.md",
     "archive/CZ-001_Version_History_Archive.md",
     "archive/BR-003_Version_History_Archive.md",
-    "README.md",
     "OP/OP-010_Qualification_Charter.md",
     "OP/OP-009_Search_Doctrine.md",
     "OP/OP-008_Documentation_System.md",
@@ -213,11 +218,6 @@
     "OP/OP-002_Design_Bible.md",
     "OP/OP-001_Constitution.md",
     "MD/MD-004/MD-004_STR_Storage.md",
-    "MD/MD-004/MD-004_SHL_Shelter.md",
-    "MD/MD-004/MD-004_LGT_Light.md",
-    "MD/MD-004/MD-004_FUR_Furniture.md",
-    "MD/MD-004/MD-004_FIR_Fire.md",
-    "MD/MD-004/MD-004_Equipment_Registry_Object_Reference.md",
-    "MD/MD-004/MD-004_ARM_Aroma.md"
+    "MD/MD-004/MD-004_SHL_Shelter.md"
   ]
 }
