@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.38
+## Ver.2.39
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.38  
+**Version**: 2.39  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -254,7 +254,7 @@ Coffee Equipment 13点を収納して余裕がある場合に、Beck #2最下層
 
 | # | Item | Dimension | 備考 |
 |---|---|---|---|
-| 1 | Bean Cellar Glass | 252×190×110 | 寸法は旧記載（Bulk）の値。Glassの実寸は未確認 |
+| 1 | Bean Cellar Glass | 300×90×230 | Weber Workshops公式表記（2026-10-08）：幅30cm×奥行9cm×高さ4cm。ガラスのみで高さ15.5cm、真鍮ハンドル込みで23cm。1本あたり豆18〜22g |
 | 2 | RDT Spray Bottle | 25×25×115 | |
 | 3 | LAGOM mini 2 | 65×240×95 | 横置き、プラグ込みでD260 |
 | 4 | WeighMaster Ultra | 128×100×23 | |
@@ -1271,6 +1271,7 @@ Permanent Storage
 | 2.36 | 2026-10-05 | MD-004 Ver.8.6（38-kT THE RICH 3色をLGT-040〜042として新規登録し、旧LGT-040〜043をLGT-043〜046へ+3繰り下げ）と連動し、本文のLGT参照を新番号へ更新した。MARI様のご決定に基づく。改訂履歴の過去の行は原文のまま。Patch Version。 |
 | 2.37 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Puck Screenの廃止と、Puck Screen StandからEPF Dock（Weber Workshops、Onyx）への入れ替え（BR-002 Ver.4.14・BR-003 Ver.4.6と連動）に伴い、Coffee Module一覧・寸法一覧・配置・Coffee Sequenceの該当記述を更新した。寸法一覧のPuck Screen（#7）の行は項番を詰めず削除し、Puck Screen Stand（#10）の行をEPF Dock（75×75×75mm、公式値）へ置き換えた。収納レイアウトの再設計は行っていない。
 | 2.38 | 2026-10-08 | MARI様のご指摘に基づき、豆保存コンポーネントの名称をBean Cellar BulkからBean Cellar Glassへ訂正した（BR-002 Ver.4.15・BR-003 Ver.4.8と連動）。寸法一覧の値（252×190×110）は旧記載のままで、Glassの実寸は未確認のため備考に明記した。収納レイアウトの再設計は行っていない。
+| 2.39 | 2026-10-08 | MARI様ご提示のWeber Workshops公式表記（2026-10-08）に基づき、寸法一覧のBean Cellar Glassを旧記載（Bulk）の252×190×110から300×90×230（ハンドル込み）へ更新した。配置・積層高・最大高・内寸判定の記述は、この寸法を反映していない（再設計は行っていない）。
 
 ---
 
