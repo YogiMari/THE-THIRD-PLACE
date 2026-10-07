@@ -10,7 +10,7 @@ Brew Care
 
 ## Version  
 
-1.3  
+1.4  
 
 ## Status  
 
@@ -267,7 +267,6 @@ Coffee Systemは、使用と使用の間、約1ヶ月間車両内に保管され
 - Portafilter  
 - Stainless Steel Basket  
 - Stainless Steel Basket Cap Pro  
-- Puck Screen  
 
 ## Class C — Wash Care  
 
@@ -333,11 +332,10 @@ Routine Careは、不要な分解を伴ってはならない。
 4. Puckを取り除く。  
 5. 必要な場合はBasketを外す。  
 6. Basket Cap Proを外す。  
-7. Puck Screenを外す。  
-8. Coffee残渣を除去する。  
-9. Coffee接触部品をすすぐ。  
-10. 余分な水分を取り除く。  
-11. すべての部品を完全に乾かす。  
+7. Coffee残渣を除去する。  
+8. Coffee接触部品をすすぐ。  
+9. 余分な水分を取り除く。  
+10. すべての部品を完全に乾かす。  
 
 Routine Careは、9Baristaの完全分解を必要としない。  
 
@@ -362,7 +360,7 @@ Portafilter Removal（Portafilter取り外し）
 ↓  
 Puck Removal（Puck除去）  
 ↓  
-Basket / Basket Cap / Puck Screen  
+Basket / Basket Cap  
 ↓  
 Rinse（すすぎ）  
 ↓  
@@ -451,23 +449,7 @@ Basket Cap Proは引き続き9Baristaアクセサリー体系の一部であり�
 
 ---  
 
-# 16. Puck Screen  
-
-Puck Screenは、Coffee粉・Coffeeオイル・抽出残渣に直接接触する。  
-
-そのため、Routine Careは水を用いる。  
-
-```text  
-Remove（取り外し）  
-↓  
-Rinse（すすぎ）  
-↓  
-Residue Removal（残渣除去）  
-↓  
-Dry Completely（完全乾燥）  
-```  
-
-濡れたPuck Screenを、Long-Term Vehicle Storageに入れてはならない。  
+# 16. 欠番（2026-10-08廃止）  
 
 # 17. 9Barista Coffee Oil Care  
 
@@ -488,7 +470,6 @@ Coffeeオイルの蓄積が目立ってきた場合、Coffee接触面の追加�
 - Portafilter  
 - Basket  
 - Basket Cap  
-- Puck Screen  
 - Coffee接触面  
 
 抽出のたびに強力な脱脂を行うことを、既定の慣行としないこと。  
@@ -657,7 +638,7 @@ Blind Shakerに付随するCoffee Brushは、Shared Cleaning（共用清掃）�
 
 # 25. 9Barista Magnetic Dosing Funnel  
 
-Magnetic Dosing Funnelは9Baristaの付属アクセサリーであり、独立した購入品としては管理しない。  
+Magnetic Dosing Funnelは9Barista公式の有料オプションとして購入する（付属品ではない）。  
 
 Routine:  
 
@@ -1424,7 +1405,6 @@ Equipment固有のCareについては、以下の優先順位を用いる:
 | 9Barista | 多 | すすぎ |  
 | Portafilter | 多 | すすぎ |  
 | Basket | 多 | すすぎ |  
-| Puck Screen | 多 | すすぎ |  
 
 ---  
 
@@ -1507,7 +1487,6 @@ Careの目的は保全であり、最大限の介入ではない。
 [ ] 9Baristaをすすいだ  
 [ ] Basketをすすいだ  
 [ ] Basket Capをすすいだ  
-[ ] Puck Screenをすすいだ  
 [ ] Pitcherが完全に乾いている  
 [ ] FIKA12が完全に乾いている  
 [ ] ALM KOPiのMilk残渣を除去した  
@@ -1536,7 +1515,6 @@ Careの目的は保全であり、最大限の介入ではない。
 [ ] Portafilterが清潔  
 [ ] Basketが清潔  
 [ ] Basket Capが清潔  
-[ ] Puck Screenが清潔  
 [ ] LAGOM Miniの状態が正常  
 [ ] Milk Pitcherが清潔  
 [ ] FIKA12の状態が正常  
@@ -1671,6 +1649,7 @@ READY（準備完了）
 | 1.1 | 2026-09-26 | 冒頭の重複H1見出しを是正。Document Relationship図内の旧文書名（Barista Codex／Acquisition Handbook）を現行名（Barista Canon／Procurement Handbook）へ同期。 |
 | 1.2 | 2026-09-28 | ヘッダーStatus値『Official』をOP-008 §9.2準拠の『Active』へ統一。 |
 | 1.3 | 2026-09-28 | Document Relationship図のMD-004行に「（Confirmed後、実際に購入・Owned Statusとなった時点で登録）」という注記を追加し、流れがBR-002 → MD-004 → BR-003ではなくBR-002 → BR-003 → MD-004（購入後）→ BR-001であることを図で明示。BR-002・BR-003と同期。 |
+| 1.4 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Puck Screenの廃止に伴い、Class Bの対象、Espresso Closureの手順（旧7を削除し番号を詰めた）、Closureの流れ図、第16節（欠番として節番号のみ残置。参照維持のため）、Periodic Careの対象、Coffee Residue Matrix、Camp Closure Checklist、Pre-Use Checklistから該当記述を削除。第25節を、Magnetic Dosing Funnelは付属アクセサリーではなく9Barista公式の有料オプションとして購入する旨に訂正。Filter PaperおよびEPF Dockの手入れ項目は、決定がないため追加していない。Minor Version。 |
 
 ---
 
