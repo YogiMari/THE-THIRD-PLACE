@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.37
+## Ver.2.38
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.37  
+**Version**: 2.38  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -186,7 +186,7 @@ Bridge Table完成後に展開
 
 - KNODOS Tamping Mat with Tool Organiser
 - WeighMaster Ultra
-- Bean Cellar Bulk
+- Bean Cellar Glass
 - RDT Spray Bottle
 - LAGOM mini 2
 - Blind Shaker Onyx
@@ -254,7 +254,7 @@ Coffee Equipment 13点を収納して余裕がある場合に、Beck #2最下層
 
 | # | Item | Dimension | 備考 |
 |---|---|---|---|
-| 1 | Bean Cellar Bulk | 252×190×110 | |
+| 1 | Bean Cellar Glass | 252×190×110 | 寸法は旧記載（Bulk）の値。Glassの実寸は未確認 |
 | 2 | RDT Spray Bottle | 25×25×115 | |
 | 3 | LAGOM mini 2 | 65×240×95 | 横置き、プラグ込みでD260 |
 | 4 | WeighMaster Ultra | 128×100×23 | |
@@ -1270,6 +1270,7 @@ Permanent Storage
 | 2.35 | 2026-10-03 | MD-004 Ver.7.86（LGT-021のProductを「DEVA DEVAの実」へ訂正）と連動し、本文中の略記「DEVADEVA」4箇所（ShellCon25 TCのFixed Contents・Verified Equipment、Light Sequenceほか）を「DEVA DEVA」へ改めた。収納・積載の内容に変更はない。Version History内の過去の記述は歴史的記録として原文のまま保持した。Patch Version。 |
 | 2.36 | 2026-10-05 | MD-004 Ver.8.6（38-kT THE RICH 3色をLGT-040〜042として新規登録し、旧LGT-040〜043をLGT-043〜046へ+3繰り下げ）と連動し、本文のLGT参照を新番号へ更新した。MARI様のご決定に基づく。改訂履歴の過去の行は原文のまま。Patch Version。 |
 | 2.37 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Puck Screenの廃止と、Puck Screen StandからEPF Dock（Weber Workshops、Onyx）への入れ替え（BR-002 Ver.4.14・BR-003 Ver.4.6と連動）に伴い、Coffee Module一覧・寸法一覧・配置・Coffee Sequenceの該当記述を更新した。寸法一覧のPuck Screen（#7）の行は項番を詰めず削除し、Puck Screen Stand（#10）の行をEPF Dock（75×75×75mm、公式値）へ置き換えた。収納レイアウトの再設計は行っていない。
+| 2.38 | 2026-10-08 | MARI様のご指摘に基づき、豆保存コンポーネントの名称をBean Cellar BulkからBean Cellar Glassへ訂正した（BR-002 Ver.4.15・BR-003 Ver.4.8と連動）。寸法一覧の値（252×190×110）は旧記載のままで、Glassの実寸は未確認のため備考に明記した。収納レイアウトの再設計は行っていない。
 
 ---
 
