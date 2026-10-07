@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-4.4  
+4.5  
   
 **Status**  
   
@@ -135,10 +135,10 @@ Procurement Handbook
 | Purchase URL | Official Store |  
 | Japan Shipping | Available |  
 | Warranty | 5-Year Manufacturer Warranty |  
-| Current Product Price | ¥126,500 |  
+| Current Product Price | ¥123,400 |  
 | Estimated Shipping | Included / calculated at official checkout |  
 | Estimated Import Tax / Charges | Included at official Japan checkout |  
-| Estimated Total Cost | ¥126,500 |  
+| Estimated Total Cost | ¥123,400 |  
 | Currency | JPY |  
 | Purchase Priority | ★★★★★ |  
   
@@ -519,37 +519,38 @@ Procurement Handbook
   
 ---  
   
-## Product 13  
+## Product 12  
   
-### 9Barista Puck Screen  
+### 9Barista Magnetic Dosing Funnel  
   
 | Item | Details |  
 |---|---|  
 | Manufacturer | 9Barista |  
-| Model | Puck Screen |  
-| Current Purchase Model | Official 9Barista Puck Screen |  
-| Category | Puck Screen |  
+| BR-002 Model | Magnetic Dosing Funnel（53mm、Black） |  
+| Current Purchase Model | 53mm Magnetic Dosing Funnel（Black） |  
+| Category | Dosing Funnel |  
 | Acquisition Status | Purchase Required |  
 | Quantity | 1 |  
 | Purchase Type | Official Accessory |  
 | Primary Purchase Source | 9Barista Official Store |  
 | Purchase URL | Official Store |  
 | Japan Shipping | Available |  
-| Warranty | Manufacturer Policy |  
-| Current Product Price | ¥4,000〜5,000 planning estimate |  
-| Estimated Shipping | ¥0〜2,000 |  
-| Estimated Import Tax / Charges | Included / checkout |  
-| Estimated Total Cost | ¥4,000〜7,000 |  
-| Currency | JPY / GBP |  
-| Purchase Priority | ★★★★★ |  
+| Warranty | To Be Confirmed at checkout |  
+| Current Product Price | ¥7,800 |  
+| Estimated Shipping | 本体を含む注文は日本向け無料（公式サイト表示） |  
+| Estimated Import Tax / Charges | To Be Confirmed at checkout |  
+| Estimated Total Cost | ¥7,800 |  
+| Currency | JPY |  
+| Purchase Priority | — |  
   
 ### Notes  
   
-* BR-002 v2.7にてConfirmed Equipment。  
-* 9Barista純正アクセサリー。  
-* サードパーティ製Puck Screenは不採用。  
-* 代替Puck Screenとの重複購入は行わない。  
-* 正確な現行価格は、公式バンドル・在庫状況により変動する場合がある。  
+* MARI様のご決定（2026-10-08）に基づき、Included 04（標準付属）からPurchase Requiredへ変更。  
+* 付属品ではなく、9Baristaの有料オプションである（公式サイトで確認）。  
+* Black。  
+* ConfirmedなWorkflowコンポーネント：Blind Shaker → Magnetic Dosing Funnel → WDT。  
+* Product 01と同時注文し、Group A（9Barista）へ統合する。  
+* サードパーティ製Dosing Funnelは不採用。  
   
 ---  
   
@@ -997,10 +998,10 @@ Procurement Handbook
 | Purchase URL | Official Store |  
 | Japan Shipping | Available |  
 | Warranty | Manufacturer Policy |  
-| Current Product Price | $15.00 each（$30.00 for ×2） |  
+| Current Product Price | ¥2,000 each（¥4,000 for ×2） |  
 | Estimated Shipping | Included / calculated at official checkout（Product 01と同時注文） |  
 | Estimated Import Tax / Charges | Included at official Japan checkout |  
-| Estimated Total Cost | ¥4,500〜6,000 |  
+| Estimated Total Cost | ¥4,000 |  
 | Currency | USD / JPY |  
 | Purchase Priority | ★★★★★ |  
   
@@ -1011,7 +1012,7 @@ Procurement Handbook
 * Design Bibleの核となる素材言語（Walnut・Brass・Black Steel）との整合を目的とする。  
 * 公式スペアパーツ「Handle for 9Barista Espresso Machine」はUpper・Lower共通の単品販売（1個 $15.00）であり、フルセットには2個必要。  
 * Mk.1・Mk.2共通対応品。  
-* 9Barista Mk.2 Pro本体・9Barista Puck Screenと同時注文し、Group A（9Barista）へ統合する。  
+* 9Barista Mk.2 Pro本体と同時注文し、Group A（9Barista）へ統合する。  
 * サードパーティ製Handleは不採用。  
   
 ---  
@@ -1047,6 +1048,38 @@ Procurement Handbook
 * MD-003 KIT-086として登録（CLAUDE.md原則9：Kitchen Domain（KIT-series）はMD-004対象外のため、MD-003で完結管理する）。  
 * 9Barista Mk.2 Pro購入時に選択する「Heat Transfer PlateまたはInduction Adaptor Plate」は、本バーナーが非IH（ガスカートリッジ式）であるため、Heat Transfer Plateを選択する（Product 01参照）。  
 * ALM KOPi Z1 Mini Steamer用の熱源（既存所有のSnow Peak ヤエンストーブ レギ、MD-003 KIT-011）とは別個体であり、並行運用（エスプレッソ抽出とミルクスチームの同時進行）のために2台を同時使用する。  
+  
+---  
+  
+## Product 31  
+  
+### 9Barista 51mm Filter Paper  
+  
+| Item | Details |  
+|---|---|  
+| Manufacturer | 9Barista |  
+| BR-002 Model | Espresso Filter Paper（51mm） |  
+| Current Purchase Model | 51mm Filter Paper |  
+| Category | Filter Paper |  
+| Acquisition Status | Purchase Required |  
+| Quantity | 1 |  
+| Purchase Type | Official Accessory |  
+| Primary Purchase Source | 9Barista Official Store |  
+| Purchase URL | Official Store |  
+| Japan Shipping | Available |  
+| Warranty | To Be Confirmed at checkout |  
+| Current Product Price | ¥2,000 |  
+| Estimated Shipping | 本体を含む注文は日本向け無料（公式サイト表示） |  
+| Estimated Import Tax / Charges | To Be Confirmed at checkout |  
+| Estimated Total Cost | ¥2,000 |  
+| Currency | JPY |  
+| Purchase Priority | — |  
+  
+### Notes  
+  
+* MARI様のご決定（2026-10-08）に基づく。  
+* Product 01と同時注文し、Group A（9Barista）へ統合する。  
+* Workflowへの組み込みはBR-002で未決。  
   
 ---  
   
@@ -1123,29 +1156,6 @@ Procurement Handbook
   
 ---  
   
-## Included 04 — 9Barista Magnetic Dosing Funnel  
-  
-| Item | Details |  
-|---|---|  
-| Manufacturer | 9Barista |  
-| Model | 53mm Magnetic Dosing Funnel |  
-| Category | Dosing Funnel |  
-| Acquisition Status | Included |  
-| Quantity | 1 |  
-| Purchase Type | Included with selected 9Barista Mk.2 Pro configuration |  
-| Purchase Price | Included |  
-| Current Standalone Reference Price | ¥7,900 |  
-| Additional Purchase | Not Required |  
-  
-### Notes  
-  
-* BR-002（Ver.2.9以降）に基づき、9Barista Mk.2 Proの標準アクセサリーであり、独立したEquipment / Acquisition Itemとしては管理しない。  
-* ConfirmedなWorkflowコンポーネント：Blind Shaker → Magnetic Dosing Funnel → WDT。  
-* サードパーティ製Dosing Funnelは不採用。  
-* 別途購入しない。  
-  
----  
-  
 # Coffee Beans Procurement  
   
 Coffee Beansは消耗品として扱い、Equipment Acquisition Registryとは独立して管理する。  
@@ -1175,7 +1185,7 @@ Equipmentと異なり、Coffee BeansはBR-002による正式なDecisionを経な
   
 ## Purpose  
   
-本セクションは、9Barista Mk.2 Pro本体・9Barista Puck Screen・9Barista Handle - Walnut（Group A、Month 1）の注文と同時に、送料を効率化するために検討すべき、9Barista公式ストア取扱いの予備部品・メンテナンス用品を管理する。  
+本セクションは、9Barista Mk.2 Pro本体・9Barista Handle - Walnut（Group A、Month 1）の注文と同時に、送料を効率化するために検討すべき、9Barista公式ストア取扱いの予備部品・メンテナンス用品を管理する。  
   
 本セクションは、Equipment Acquisition Registryとは独立して管理する。BR-002のConfirmed Equipment決定の対象外であり、Coffee System本体のWorkflow・意思決定には影響しない。  
   
@@ -1201,7 +1211,7 @@ Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（
   
 ## Recommended Preventive Spare Parts（推奨・任意）  
   
-野外・キャンプ運用では、部品が破損しても近隣で即座に代替品を入手できず、9Barista（英国ケンブリッジ）からの取り寄せには相応の日数を要する。本体・Puck Screen・Handleの注文に同梱することで、送料を実質的に節約しながら予備を確保できる。  
+野外・キャンプ運用では、部品が破損しても近隣で即座に代替品を入手できず、9Barista（英国ケンブリッジ）からの取り寄せには相応の日数を要する。本体・Handleの注文に同梱することで、送料を実質的に節約しながら予備を確保できる。  
   
 | Item | 用途 | 参考価格（公式） | 推奨度 | 備考 |  
 |---|---|---:|---|---|  
@@ -1259,7 +1269,7 @@ Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（
   
 # Espresso System Configuration  
   
-構成・WorkflowはBR-002 Barista Canon「Workflow Configuration」節（Confirmed Coffee Preparation Workflow）を正本として参照する。現行調達価格はProduct 01〜11, 13, 18〜19（Included 04含む）を参照。  
+構成・WorkflowはBR-002 Barista Canon「Workflow Configuration」節（Confirmed Coffee Preparation Workflow）を正本として参照する。現行調達価格はProduct 01〜12, 18〜19を参照。  
   
 ---  
   
@@ -1301,7 +1311,7 @@ Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（
   
 以下は、本書（BR-003）が管理する、個別製品固有の同期チェック項目である。  
   
-13. Puck ScreenがBR-002 v2.7と同期していること。  
+13. （欠番）Puck Screenは採用取消（2026-10-08）。  
 14. Puck Screen StandがBR-002 v2.7と同期していること。  
 15. KNODOS Tamping Mat with Tool Organiser - Walnut 54mmが登録されていること。  
 16. Normcore Planetary WDT Toolが54mmとして同期していること。  
@@ -1338,7 +1348,7 @@ Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（
 11. Latte Workflow構成が同期していること。  
 12. 2人分の連続運用が同期していること。  
 13. WPM PitcherおよびSleeveの構成が同期していること。  
-14. Puck ScreenおよびPuck Screen Standの状態が同期していること。  
+14. Puck Screen Standの状態が同期していること。  
 15. BR-002が変更された際は、現行の後継対応関係を見直すこと。  
 16. Handle素材決定（Anodised Aluminium／Walnut）が同期していること。  
   
@@ -1385,7 +1395,6 @@ Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（
 | HILLS FIELD Glass Case | Single ×1 |  
 | AION 801-BL | ×1 package |  
 | Coffee System Water | 合計2,540mL |  
-| Puck Screen | 9Barista Official |  
 | Puck Screen Stand | Weber Workshops |  
   
 ---  
@@ -1459,7 +1468,8 @@ LAGOM mini 2 Ground Transfer Cupは、Weber Workshops Blind Shaker Onyxへの直
 | ★★★★★ | Normcore Planetary WDT Tool 54mm | 1 | Product 08 | Purchase Required |  
 | ★★★★★ | Pullman Chisel Redistribution Tool Wood 53.3mm | 1 | Product 07 | Purchase Required |  
 | ★★★★★ | The Force Tamper 53mm | 1 | Product 06 | Purchase Required |  
-| ★★★★★ | 9Barista Puck Screen | 1 | Product 13 | Purchase Required |  
+| — | 9Barista Magnetic Dosing Funnel | 1 | Product 12 | Purchase Required |  
+| — | 9Barista 51mm Filter Paper | 1 | Product 31 | Purchase Required |  
   
 ## Station / Workflow  
   
@@ -1503,11 +1513,11 @@ LAGOM mini 2 Ground Transfer Cupは、Weber Workshops Blind Shaker Onyxへの直
 ## Group A — 9Barista  
   
 * 9Barista Mk.2 Pro  
-* 9Barista Puck Screen  
 * 9Barista Handle - Walnut ×2  
+* 9Barista Magnetic Dosing Funnel  
+* 9Barista 51mm Filter Paper  
 * Included IMS Precision Basket  
 * Included Stainless Steel Basket Cap Pro  
-* Included 9Barista Magnetic Dosing Funnel  
 * Optional：Safety Ring and Seals（予備）  
 * Optional：Boiler O-ring Seal Mk.2（予備）  
 * Optional：Overheat Repair Kit Mk.2  
@@ -1712,8 +1722,8 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
 | 09 | Normcore RDT Spray Bottle | 1 | Purchase Required |  
 | 10 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm | 1 | Purchase Required |  
 | 11 | Weber Workshops Blind Shaker Onyx | 1 | Purchase Required |  
-| 12 | 9Barista Magnetic Dosing Funnel | 1 | Included |  
-| 13 | 9Barista Puck Screen | 1 | Purchase Required |  
+| 12 | 9Barista Magnetic Dosing Funnel | 1 | Purchase Required |  
+| 13 | 9Barista Puck Screen | — | 採用取消（2026-10-08） |  
 | 14 | Weber Workshops Puck Screen Stand | 1 | Purchase Required |  
 | 15 | ALM KOPi Z1 Mini Steamer | 1 | Purchase Required |  
 | 16 | WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout | 1 | Purchase Required |  
@@ -1731,6 +1741,7 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
 | 28 | 9Barista Stainless Steel Basket Cap Pro | 1 | Included |  
 | 29 | LAGOM mini 2 Ground Transfer Cup | 1 | Included / Secondary Route |  
 | 30 | Snow Peak ギガパワーストーブ レクタ（GS-150） | 1 | Purchase Required |  
+| 31 | 9Barista 51mm Filter Paper | 1 | Purchase Required |  
   
 ---  
   
@@ -1741,11 +1752,12 @@ MARI様のご決定（2026-10-04）に基づく、月次購入計画である。
 ## Month 1 — 9Barista  
   
 * Product 01：9Barista Mk.2 Pro  
-* Product 13：9Barista Puck Screen  
+* Product 12：9Barista Magnetic Dosing Funnel  
 * Product 26：9Barista Handle - Walnut ×2  
+* Product 31：9Barista 51mm Filter Paper  
 * （任意）Safety Ring and Seals／Boiler O-ring Seal Mk.2／Overheat Repair Kit Mk.2（9Barista Official Spare Parts (Preventive Stock)。小計とは別枠）  
-* 小計：¥135,000〜139,500（Optional Preventive Stockを除く）  
-* 上限なし（本体¥126,500のため、月次上限の例外とする）  
+* 小計：¥137,200（公式サイトのカート実額、Optional Preventive Stockを除く）  
+* 上限なし（本体¥123,400のため、月次上限の例外とする）  
   
 ## Month 2  
   
@@ -1794,11 +1806,11 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
   
 ## Plan Total  
   
-総額目安：¥633,570〜737,570（Estimated Acquisition Budgetの目安¥642,570〜759,570の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
+総額目安：¥635,770〜735,270（Estimated Acquisition Budgetの目安¥642,570〜759,570の範囲内。9Barista Official Spare Parts (Preventive Stock)を除く）  
   
 ### Design Rationale  
   
-* 固定端点は、9BaristaがMonth 1、グラス・水ボトルが最終月（Month 6）である。Month 1は本体¥126,500のため月次上限の例外とする。  
+* 固定端点は、9BaristaがMonth 1、グラス・水ボトルが最終月（Month 6）である。Month 1は本体¥123,400のため月次上限の例外とする。  
 * Weber WorkshopsをMonth 4、ミルクをMonth 5に置く。  
 * Straight Espresso Workflowの機能的完成はMonth 6である。  
 * Snow Peak ギガパワーストーブ レクタ（GS-150、Group I）は、BR-002 Ver.4.3 Heat Source Decisionに基づく確定購入品であり、Snow Peak公式の別注文でMonth 6に到着する。国内調達で送料が小さいため、前倒しが可能である。  
@@ -1808,7 +1820,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 * The Blocは、RDT・Blind Shakerの収納先である。RDTとBlind ShakerはMonth 4、BlocはMonth 5に到着するため、Month 4〜5の間は仮置き期間が生じる。  
 * YETI Yonder 1Lの必要性は、BR-002 Coffee System Water Bottle Configuration（Operation Scenario／Required Water Volume）に基づく必要水量2,340mLの試算に基づく。  
 * 9Barista Official Spare Parts (Preventive Stock)は、Group A（9Barista）注文に同梱可能な任意項目として、Month 1の小計とは別枠で記録する。  
-* 9Barista Handle - Walnutは、PX-004 Ver.3.7のHandle Material Decisionに基づく確定購入品として、Month 1の本体・Puck Screen注文へ統合する。  
+* 9Barista Handle - Walnutは、PX-004 Ver.3.7のHandle Material Decisionに基づく確定購入品として、Month 1の本体注文へ統合する。  
 
 
 ---  
@@ -1823,6 +1835,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 | 4.2 | 2026-09-28 | S-10（改訂履歴の圧縮）に基づき、OP-008 §19 Rule DOC-09に従い、Version Control のうち Version 1.0〜3.7を archive/BR-003_Version_History_Archive.md へ移設した。移設した履歴は原文のまま保持し、要約・削除は行っていない。本文側の調達データそのものに変更はない。MARI様のご決定に基づく。 |  
 | 4.3 | 2026-09-28 | S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。 |
 | 4.4 | 2026-10-04 | Monthly Acquisition Planの組み直し。9BaristaをMonth 1、グラス・水ボトルを最終月（Month 6）に固定し、Weber WorkshopsをMonth 4、ミルクをMonth 5へ配置。GS-150（Group I）の到着をMonth 6へ移し、Month 1統合の旧記述を削除。Plan Totalを¥633,570〜737,570へ更新（旧記載の¥736,570は、旧Month 6の上限¥126,500が品目合計¥127,500と1,000円ずれていた誤り）。Group Iの説明を新しい到着月に整合。価格・購入先・Registryの記載に変更はない。Minor Version。MARI様のご決定（2026-10-04）に基づく。 |
+| 4.5 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。9Barista Puck Screen（Product 13）の採用取消（9Baristaの公式サイトに取扱いがなく、純正品として採用していたのが誤り）。Product 13を欠番とし、Final Acquisition Inventoryに採用取消の1行を残した。Magnetic Dosing Funnelは付属品ではなく有料オプションのため、Included 04を削除しProduct 12（Purchase Required、¥7,800）として新設。Product 31（9Barista 51mm Filter Paper、¥2,000）を新設。Product 01を公式サイトのカート実額¥123,400へ、Product 26を¥2,000 each（¥4,000 for ×2）へ更新。Group A・Current Acquisition Priority・Final Acquisition Inventory・Product Variant Integrity・Purchase Completeness Rule 13・Synchronization Rule 14・Monthly Acquisition PlanのMonth 1（小計¥137,200）・Plan Total（¥635,770〜735,270）を整合。Estimated Acquisition Budgetは、Core Espresso Systemの記載と各Product値の積み上げが一致しないため、未変更。Minor Version。 |
   
 ---  
 
