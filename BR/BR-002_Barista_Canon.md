@@ -10,7 +10,7 @@ Barista Canon
     
 # Version    
     
-4.12    
+4.13    
     
 # Status    
     
@@ -101,12 +101,11 @@ Walnutは、THE THIRD PLACE全体のAesthetic Grammarの核となる素材言語
     
 9Barista Mk.2 Proの標準付属品として、以下を現行Workflowで使用する。    
     
-* 9Barista Magnetic Dosing Funnel    
 * 9Barista Stainless Steel Basket Cap Pro    
     
-これらは9Barista Mk.2 Proに包含される付属品であり、Coffee Systemの独立 Equipmentとして管理しない。    
+これは9Barista Mk.2 Proに包含される付属品であり、Coffee Systemの独立 Equipmentとして管理しない。    
     
-したがって、MD-004 Equipment RegistryおよびBR-003 Procurement Handbookでは、これらを独立したEquipment / Acquisition Itemとして登録しない。    
+したがって、MD-004 Equipment RegistryおよびBR-003 Procurement Handbookでは、これを独立したEquipment / Acquisition Itemとして登録しない。    
     
 単体で販売されている場合でも、現在のCoffee SystemではMk.2 Proの付属品を使用し、追加購入を必要としない。    
     
@@ -676,32 +675,32 @@ Weber公式では底部の詳細な有効径・排出口径は公開されてい
     
 ---    
     
-## Puck Screen    
+## Magnetic Dosing Funnel    
     
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
-| Puck Screen | 9Barista | Puck Screen | Confirmed |  
+| Dosing Funnel | 9Barista | Magnetic Dosing Funnel（53mm、Black） | Confirmed |  
     
 ### Decision    
     
-9Barista Puck Screenを正式採用する。    
-    
-### Selection Criteria    
-    
-* Official Accessory    
-* Extraction Quality    
-* Workflow    
-* Compatibility    
+9Barista Magnetic Dosing Funnel（53mm、Black）を購入して使用する。    
     
 ### Reason    
     
-純正品として、    
+* Workflow（Blind Shaker → ファンネル → WDT）の必須工程であること    
+* 付属品ではなく9Baristaの有料オプションであることを、公式サイトで確認した    
     
-* 抽出品質    
-* シャワースクリーン保護    
-* Workflow    
+---    
     
-を最適化する。    
+## Espresso Filter Paper    
+    
+| Category | Brand | Model | Status |  
+|---|---|---|---|  
+| Espresso Filter Paper | 9Barista | Espresso Filter Paper（51mm） | Confirmed |  
+    
+### Decision    
+    
+MARI様のご決定（2026-10-08）    
     
 ---    
     
@@ -1235,9 +1234,7 @@ Rejected
   
 ### Reason  
   
-9Barista Mk.2 Proに付属する純正Magnetic Dosing Funnelを使用する。  
-  
-この付属品は9Barista Mk.2 Proに包含されるため、独立したEquipment / Acquisition Itemとして管理しない。  
+純正を購入して使用する。  
   
 第三者製Dosing Funnelを追加しても、  
   
@@ -1256,7 +1253,7 @@ Rejected
   
 ### Reason  
   
-9Barista純正Puck Screenを正式採用する。  
+Puck Screen自体を採用しない（2026-10-08）。  
   
 第三者製Puck Screenを追加しても、  
   
@@ -1506,13 +1503,7 @@ Pullman Chisel Redistribution Tool Wood 53mm
 ↓    
 The Force Tamper 53mm    
 ↓    
-9Barista Puck Screen    
-↓    
 9Barista Mk.2 Pro  
-  
-9Barista Magnetic Dosing Funnelは9Barista Mk.2 Proの標準付属品であり、独立Equipmentとして管理しない。    
-  
-9Barista Puck Screenは正式採用品として使用する。  
   
 ---  
   
@@ -1733,6 +1724,7 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 4.10 | 2026-09-28 | Deferred §Storage & OrganizationへCoffee System専用水ボトルの収納先（STR-035 YETI Camino® 35）を反映（MD-001 Ver.2.24・MD-004 Version 7.70と連動）。MARI様のご決定に基づく。 |
 | 4.11 | 2026-09-29 | 暫定採用項目の個別確認（N-06）。MARI様のご決定に基づき、Deferred §Storage & Organization・§Travel Carry SystemのStatus（In Progress）を削除して保留（Deferred）へ戻し、Claude推奨案で追記した説明文（Beck②収納設計の進行中の旨、運搬ケースの判断時期）を削除した。MARI様のご決定済み事項（Coffee ServicewareのBeck①収納、専用水ボトルのSTR-035収納）は維持した。§Coffee Station Furnitureは「Bridge Tableを天板として運用し、専用家具は持たない」を正式採用とした。Patch Version。 |
 | 4.12 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |  
+| 4.13 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。9Barista Puck Screenを採用しない（9Baristaの公式サイトに取扱いがなく、純正品として採用していたのは誤りだった）。Confirmed EquipmentのPuck Screen節、Puck Preparation Workflowの該当工程、および「正式採用品として使用する」の一文を削除。Magnetic Dosing Funnel（9Barista、53mm、Black）は付属品ではなく有料オプションであることを公式サイトで確認し、Included Components / Accessoriesから外してConfirmed Equipmentへ追加。Espresso Filter Paper（9Barista、51mm）をConfirmed Equipmentへ追加（Workflowへの組み込みは未決）。Rejected EquipmentのThird-party Dosing FunnelおよびThird-party Puck Screenの理由を書き換え。Weber Puck Screen Stand関連の記述は未決のため変更していない。Minor Version。 |  
   
 ---  
 
