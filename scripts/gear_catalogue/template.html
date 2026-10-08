@@ -1,4 +1,4 @@
-<title>The Third Place Catalogue</title>
+<title>The Wunderkammer</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..700;1,6..96,400..600&family=Archivo:wdth,wght@62..125,300..700&family=IBM+Plex+Mono:wght@400;500&family=Shippori+Mincho:wght@400;600&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap">
@@ -37,6 +37,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--scrim);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);border-bottom:1px solid var(--rule)}
 .bar-in{display:flex;align-items:center;gap:24px;padding-inline:var(--gutter);height:52px}
 .wordmark{font-family:var(--f-display);font-style:italic;font-size:19px;letter-spacing:-.01em;white-space:nowrap}
+@media (max-width:520px){.wordmark{font-size:15px}}
 .tabs{display:flex;gap:22px;overflow-x:auto;overflow-y:hidden;overscroll-behavior:contain;touch-action:pan-x;scrollbar-width:none;flex:1;min-width:0;height:100%;align-items:stretch}
 .tabs::-webkit-scrollbar{display:none}
 .tab{position:relative;display:flex;align-items:center;gap:5px;white-space:nowrap;color:var(--ink-2);transition:color .2s}
@@ -59,7 +60,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 
 /* ── cover ─────────────────────────── */
 .cov-top{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:28px 0;color:var(--ink-2)}
-.mast{font-family:var(--f-display);font-weight:400;font-style:italic;font-size:clamp(58px,14.2vw,232px);line-height:.84;letter-spacing:-.035em;margin:clamp(28px,6vw,72px) 0 0;text-wrap:balance}
+.mast{font-family:var(--f-display);font-weight:400;font-style:italic;font-size:clamp(40px,11.2vw,200px);line-height:.84;letter-spacing:-.035em;margin:clamp(28px,6vw,72px) 0 0;text-wrap:balance}
 .mast .up{font-style:normal;font-weight:500;letter-spacing:-.045em}
 .deck{display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:24px;margin-top:clamp(24px,4vw,48px);align-items:end}
 .deck p{grid-column:1/span 5;margin:0;font-size:16px;max-width:44ch;color:var(--ink)}
@@ -255,7 +256,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 
 <header class="bar">
   <div class="bar-in">
-    <button class="wordmark" data-go="cover" aria-label="Cover">The Third Place</button>
+    <button class="wordmark" data-go="cover" aria-label="Cover">The Wunderkammer</button>
     <nav class="tabs label" id="tabs" aria-label="Zones"></nav>
     <span class="folio mono" id="folio"></span>
     <button class="find-btn label" id="find-open" aria-haspopup="dialog">Find</button>
@@ -438,8 +439,8 @@ function coverHTML(){
   const rows=ZONES.map((z,i)=>{ const pm=tally(z.items,d=>firstOf(d.material))[0];
     return `<button class="row" data-go="${z.key}"><span class="num">${ROMAN[i]}</span><span class="nm">${z.name}</span><span class="mono cd">${z.code} · ${z.src}</span><span class="mono ct">${String(z.items.length).padStart(2,"0")} objects<span class="px">${yen(sumP(z.items))}${nP(z.items)<z.items.length?"†":""}${pvOf(z.items).length?"‡":""}</span></span><span class="label pm">${esc(pm[0])} ×${pm[1]}</span><span class="ar">→</span></button>`; }).join("");
   return `
-  <div class="cov-top label rise"><span>Catalogue of Owned Objects</span><span>Registry as of ${META.date}</span></div>
-  <h1 class="mast rise d1"><span class="up">The</span> Third<br>Place</h1>
+  <div class="cov-top label rise"><span>The Third Place · Catalogue of Owned Objects</span><span>Registry as of ${META.date}</span></div>
+  <h1 class="mast rise d1"><span class="up">The</span><br>Wunderkammer</h1>
   <div class="deck rise d2">
     <p>Every object the project owns, one plate each, arranged by zone in registry order. Photographs are credited on each object's page; an object without one carries a material study drawn from its Material and Color fields.</p>
     <div class="fig"><div><b>${all}</b><span class="label">Objects</span></div><div><b>${ZONES.length}</b><span class="label">Zones</span></div><div><b>${houses(DATA)}</b><span class="label">Houses</span></div></div>
