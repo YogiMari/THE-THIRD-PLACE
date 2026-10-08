@@ -10,7 +10,7 @@ Barista Canon
     
 # Version    
     
-4.15    
+4.16    
     
 # Status    
     
@@ -38,6 +38,8 @@ BR-002 Barista Canonは、THE THIRD PLACEにおけるCoffee Systemの意思決�
 * Deferred Items    
     
 価格・購入先・輸送・関税・購入手順などの調達情報は管理対象外とし、BR-003 Procurement Handbookで管理する。    
+    
+本書の管理対象はCoffee Equipment（機材）のみとする。Coffee Beans（コーヒー豆）は本書の対象外とし、BR-004 Terroir Almanacで管理する。    
     
 ---    
     
@@ -1424,7 +1426,7 @@ LAGOM MiniからBlind Shakerへの直接受けが物理的に成立する場合�
   
 現時点では正式決定していない項目。  
   
-（現在、Pending項目なし。Coffee Beansは消耗品としてBR-003 Procurement Handbookの「Coffee Beans Procurement」セクションのみで管理し、本文書の対象外とする。）  
+（現在、Pending項目なし。Coffee Beans（コーヒー豆）はBR-004 Terroir Almanacで管理し、本文書の対象外とする。）  
   
 ---  
   
@@ -1736,7 +1738,8 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 4.12 | 2026-10-02 | MARI様のご指示（2026-10-02）に基づき、名称末尾の丸数字を改めた。Kermit Chair ①をChesterfield、②をSANDANBARA、Beck Container／Beck ①を#1、②を#2、ShellCon25 ①をHEXA、②をTCへ変更した（MD-004 Ver.7.80、MD-001 Ver.2.31、CZ-001 Ver.3.23、CZ-002 Ver.3.11、BR-002 Ver.4.12、DB-001 Ver.4.23と連動）。Version History内の過去の記述は歴史的記録として原文のまま保持した。ID・金額・その他の内容に変更はない。SOMA Chair ①・②など上記以外の丸数字は変更していない。Patch Version。 |  
 | 4.13 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。9Barista Puck Screenを採用しない（9Baristaの公式サイトに取扱いがなく、純正品として採用していたのは誤りだった）。Confirmed EquipmentのPuck Screen節、Puck Preparation Workflowの該当工程、および「正式採用品として使用する」の一文を削除。Magnetic Dosing Funnel（9Barista、53mm、Black）は付属品ではなく有料オプションであることを公式サイトで確認し、Included Components / Accessoriesから外してConfirmed Equipmentへ追加。Espresso Filter Paper（9Barista、51mm）をConfirmed Equipmentへ追加（Workflowへの組み込みは未決）。Rejected EquipmentのThird-party Dosing FunnelおよびThird-party Puck Screenの理由を書き換え。Weber Puck Screen Stand関連の記述は未決のため変更していない。Minor Version。 |  
 | 4.14 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Coffee WorkflowのPuck Screenの位置（The Force Tamper 53mmの後、9Barista Mk.2 Proの前）へ、Espresso Filter Paper（9Barista 51mm）を組み込み（Puck Preparation Workflow、Espresso Filter PaperのDecision）。Puck Screen StandのConfirmed EquipmentをEPF Dock（Weber Workshops、Onyx）へ入れ替え（Category：Filter Paper Dock）。9Barista 51mm Filter Paperとの適合はMARI様確認済み。Blind Shaker節Reasonの「Puck Screen Stand」を「EPF Dock」へ訂正。Minor Version。 |  
-| 4.15 | 2026-10-08 | MARI様のご指摘（2026-10-08）に基づき、Weber Workshopsの豆保存コンポーネントをBean Cellar BulkからBean Cellar Glass（Stabilized Maple Onyx）へ訂正した（Glassが元々の正しい採用品であり、Bulkは記載誤り）。Bean Storage節のModel・Decision、Workflow Configurationの名称を更新。Bean Cellar付属の漏斗・Bean Spoon不使用の記述は、Glassでの確認が取れていないため変更していない。Version History内の過去の行は歴史的記録として原文のまま保持した。Minor Version。 |  
+| 4.15 | 2026-10-08 | MARI様のご指摘（2026-10-08）に基づき、Weber Workshopsの豆保存コンポーネントをBean Cellar BulkからBean Cellar Glass（Stabilized Maple Onyx）へ訂正した（Glassが元々の正しい採用品であり、Bulkは記載誤り）。Bean Storage節のModel・Decision、Workflow Configurationの名称を更新。Bean Cellar付属の漏斗・Bean Spoon不使用の記述は、Glassでの確認が取れていないため変更していない。Version History内の過去の行は歴史的記録として原文のまま保持した。Minor Version。 |
+| 4.16 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づき、コーヒー豆に関する全ての記録を新設のBR-004 Terroir Almanacで管理し、本書はコーヒー機材のみを扱うこととした。Purposeへ「管理対象はCoffee Equipmentのみ。Coffee BeansはBR-004」の1文を追加し、Pendingの注記の参照先をBR-003からBR-004へ更新した。Version History内の過去の行（Ver.3.6の「PX-005 Acquisition Handbookの『Coffee Beans Procurement』セクション」を含む）は歴史的記録として原文のまま保持した。Confirmed Equipment・Decision・Reason・Workflowの内容に変更はない（Bean Storage／Bean Cellar Glassは機材として本書の管理対象のまま）。Minor Version。OP-008 Ver.3.20・BR-003 Ver.4.10・BR-004 Ver.1.0と連動。 |  
   
 ---  
 
