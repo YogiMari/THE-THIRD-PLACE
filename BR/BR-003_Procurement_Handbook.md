@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-4.11  
+4.12  
   
 **Status**  
   
@@ -531,8 +531,8 @@ Procurement Handbook
 | Item | Details |  
 |---|---|  
 | Manufacturer | 9Barista |  
-| BR-002 Model | Magnetic Dosing Funnel（53mm、Black） |  
-| Current Purchase Model | 53mm Magnetic Dosing Funnel（Black） |  
+| BR-002 Model | Magnetic Dosing Funnel（53mm、Onyx） |  
+| Current Purchase Model | 53mm Magnetic Dosing Funnel（Onyx） |  
 | Category | Dosing Funnel |  
 | Acquisition Status | Already Owned |  
 | Quantity | 1 |  
@@ -552,7 +552,7 @@ Procurement Handbook
   
 * MARI様のご決定（2026-10-08）に基づき、Included 04（標準付属）からPurchase Requiredへ変更。  
 * 付属品ではなく、9Baristaの有料オプションである（公式サイトで確認）。  
-* Black。  
+* Onyx（航空機グレードアルミニウム。MARI様のご指示、2026-10-08）。  
 * ConfirmedなWorkflowコンポーネント：Blind Shaker → Magnetic Dosing Funnel → WDT。  
 * Product 01と同時注文し、Group A（9Barista）へ統合する。  
 * サードパーティ製Dosing Funnelは不採用。  
@@ -1877,6 +1877,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 | 4.9 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく、Monthly Acquisition Planの組み直し。Month 1（9Barista、¥137,200）とMonth 6（グラス・カップ＋水ボトル）を固定端点とし、Month 2をグラインダー＋スケール＋Normcore（Product 02／03／08／09、¥124,000〜145,000）、Month 3をWeber Workshops＋The Bloc（Product 04／11／14／05、¥118,400〜123,400）、Month 4をツール（Product 07／06／10、¥101,000〜119,000）、Month 5をミルク（Product 15／16／17、¥77,000〜93,500）、Month 6をグラス・カップ＋水ボトル（Product 18〜25／30、¥98,570〜122,570）とした。優先度の低い順は水ボトル（最下位）→ミルク。FIKA12を最終月へ移し（在庫リスクを注記）、The BlocをBlind Shakerと同じMonth 3へ移した。Normcore 2点は予算次第でMonth 5へ移す。購入先のまとめ方を各月に明記。Plan Total（¥656,170〜740,670）は月別小計の合計で検算し、Estimated Acquisition Budgetと一致。Product記載・価格・購入先・Registryに変更はない。Minor Version。 |
 | 4.10 | 2026-10-08 | MARI様のご報告（2026-10-08）に基づく。初月の9Barista一式（Product 01／12／26／31）とKNODOS Tamping Mat（Product 10、4か月目の先行購入）を購入済みとし、Acquisition StatusをPurchase RequiredからAlready Ownedへ変更（各ProductのNotesに「2026-10-08購入」を追記、到着状況は記載しない）。Product 01／12／26／31のNotesに請求額＝カート実額（¥137,200）と一致する旨（MARI様確認）を追記。金額は変更していない。Monthly Acquisition PlanのMonth 1を購入済みと明記、Month 4にKNODOS先行購入済みを明記（小計は不変）、Plan Totalは計画全体¥656,170〜740,670のまま、残り（Purchase Requiredのみ）¥502,970〜581,470を併記。Estimated Acquisition BudgetをPurchase Requiredのみで再計算（Core Espresso System ¥298,800〜330,800、Station / Workflow ¥42,900〜49,900、合計¥502,970〜581,470）。Group A・Group E・Current Acquisition Priority・Final Acquisition Inventoryの表示を同期。Included 01／02は変更なし。Minor Version。 |  
 | 4.11 | 2026-10-08 | MARI様のご指示（2026-10-08）に基づき、Month 4からProduct 10（KNODOS）を削除した。KNODOSは2026-10-08に先行購入済みであり、Month 1に「先行購入（月次の計画外）」として明記した。Month 4の小計を¥85,000〜97,000へ再計算（Product 07＋06）。Plan Total（計画全体¥656,170〜740,670、残り¥502,970〜581,470）は変更なし（各月の合計に先行購入分を加えて検算）。Design RationaleのKNODOSの記述を改めた。MD-004 Ver.8.8でCOF-005／009／010／011／018を購入した時点で登録したことと連動（BR-003のStatus・金額には変更なし）。Minor Version。 |  
+| 4.12 | 2026-10-08 | MARI様のご指示（2026-10-08）に基づき、Product 12（Magnetic Dosing Funnel）の色表記をBlackからOnyx（航空機グレードアルミニウム）へ訂正した（BR-002 Ver.4.17と連動）。MD-004 Ver.8.9で消耗品（Filter Paper）をCOF-seriesの登録から除いたが、BR-003のProduct 31（Already Owned）の記載に変更はない。金額・Statusに変更なし。Patch Version。 |  
   
 ---  
 

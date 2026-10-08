@@ -10,7 +10,7 @@ Barista Canon
     
 # Version    
     
-4.16    
+4.17    
     
 # Status    
     
@@ -679,11 +679,11 @@ Weber公式では底部の詳細な有効径・排出口径は公開されてい
     
 | Category | Brand | Model | Status |  
 |---|---|---|---|  
-| Dosing Funnel | 9Barista | Magnetic Dosing Funnel（53mm、Black） | Confirmed |  
+| Dosing Funnel | 9Barista | Magnetic Dosing Funnel（53mm、Onyx） | Confirmed |  
     
 ### Decision    
     
-9Barista Magnetic Dosing Funnel（53mm、Black）を購入して使用する。    
+9Barista Magnetic Dosing Funnel（53mm、Onyx）を購入して使用する。    
     
 ### Reason    
     
@@ -1581,27 +1581,26 @@ MD-004 COF-seriesの番号は、購入順ではなく、下表の順序（Confir
 | 006 | Normcore Planetary WDT Tool 54mm | Puck Preparation |
 | 007 | Pullman Chisel Redistribution Tool Wood 53.3mm | Puck Preparation |
 | 008 | The Force Tamper 53mm | Puck Preparation |
-| 009 | Espresso Filter Paper（9Barista 51mm） | Puck Preparation |
-| 010 | 9Barista Mk.2 Pro | Puck Preparation / Extraction |
-| 011 | 9Barista Handle - Walnut（COF-010の子） | Extraction |
-| 012 | KRUVE PROPEL | Extraction |
-| 013 | ICOSA Brewhouse AERESSO | Extraction |
-| 014 | WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout | Latte |
-| 015 | ALM KOPi Z1 Mini Steamer | Latte |
-| 016 | DAMNGOOD × CATAPULT FACTORY FIKA12 | Latte |
-| 017 | Saint Anthony Industries The Bloc | ワークフロー外（末尾） |
-| 018 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm | ワークフロー外（末尾） |
-| 019 | Normcore RDT Spray Bottle | ワークフロー外（末尾） |
-| 020 | Weber Workshops EPF Dock | ワークフロー外（末尾） |
-| 021 | WPM Pitcher Sleeve | ワークフロー外（末尾） |
-| 022 | HILLS FIELD Glass Case Single | ワークフロー外（末尾） |
-| 023 | AION Seine Super Absorbent Coaster 801-BL | ワークフロー外（末尾） |
-| 024 | Snow Peak オーロラボトル 1L | ワークフロー外（末尾） |
-| 025 | YETI Yonder 1L | ワークフロー外（末尾） |
-| 026 | Snow Peak 酒筒 Titanium | ワークフロー外（末尾） |
+| 009 | 9Barista Mk.2 Pro | Puck Preparation / Extraction |
+| 010 | 9Barista Handle - Walnut（COF-009の子） | Extraction |
+| 011 | KRUVE PROPEL | Extraction |
+| 012 | ICOSA Brewhouse AERESSO | Extraction |
+| 013 | WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout | Latte |
+| 014 | ALM KOPi Z1 Mini Steamer | Latte |
+| 015 | DAMNGOOD × CATAPULT FACTORY FIKA12 | Latte |
+| 016 | Saint Anthony Industries The Bloc | ワークフロー外（末尾） |
+| 017 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm | ワークフロー外（末尾） |
+| 018 | Normcore RDT Spray Bottle | ワークフロー外（末尾） |
+| 019 | Weber Workshops EPF Dock（Filter Paper Dock） | ワークフロー外（末尾） |
+| 020 | WPM Pitcher Sleeve | ワークフロー外（末尾） |
+| 021 | HILLS FIELD Glass Case Single | ワークフロー外（末尾） |
+| 022 | AION Seine Super Absorbent Coaster 801-BL | ワークフロー外（末尾） |
+| 023 | Snow Peak オーロラボトル 1L | ワークフロー外（末尾） |
+| 024 | YETI Yonder 1L | ワークフロー外（末尾） |
+| 025 | Snow Peak 酒筒 Titanium | ワークフロー外（末尾） |
 
 * Snow Peak ギガパワーストーブ レクタ（GS-150）はMD-003 Galley Fare（KIT-086）で管理するため、COF-seriesの対象外である（Fire / Kitchenの境界は用途基準）。
-* Included（Stainless Steel Basket Cap Pro等）、Coffee Beans、9Barista Official Spare Parts（Preventive Stock）は登録しない（OP-010 Part A §Coffee Domain Scope）。
+* Included（Stainless Steel Basket Cap Pro等）、Coffee Beans、9Barista Official Spare Parts（Preventive Stock）、消耗品（Espresso Filter Paper等）は登録しない（OP-010 Part A §Coffee Domain Scope）。
 
 ---
 
@@ -1776,6 +1775,7 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 4.14 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Coffee WorkflowのPuck Screenの位置（The Force Tamper 53mmの後、9Barista Mk.2 Proの前）へ、Espresso Filter Paper（9Barista 51mm）を組み込み（Puck Preparation Workflow、Espresso Filter PaperのDecision）。Puck Screen StandのConfirmed EquipmentをEPF Dock（Weber Workshops、Onyx）へ入れ替え（Category：Filter Paper Dock）。9Barista 51mm Filter Paperとの適合はMARI様確認済み。Blind Shaker節Reasonの「Puck Screen Stand」を「EPF Dock」へ訂正。Minor Version。 |  
 | 4.15 | 2026-10-08 | MARI様のご指摘（2026-10-08）に基づき、Weber Workshopsの豆保存コンポーネントをBean Cellar BulkからBean Cellar Glass（Stabilized Maple Onyx）へ訂正した（Glassが元々の正しい採用品であり、Bulkは記載誤り）。Bean Storage節のModel・Decision、Workflow Configurationの名称を更新。Bean Cellar付属の漏斗・Bean Spoon不使用の記述は、Glassでの確認が取れていないため変更していない。Version History内の過去の行は歴史的記録として原文のまま保持した。Minor Version。 |  
 | 4.16 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Workflow Configurationへ§Coffee Registry Order（COF採番順）を新設し、MD-004 COF-seriesの番号をワークフロー順（購入順ではない）と定めた。Relationshipの登録時点を「購入した時点（到着を待たない）」へ改めた。Espresso Machine節のHandleに関する記述から「Purchase Required項目」というStatusの書き写しを除き、BR-003のProduct 26を参照する形へ改めた（記録文書は他文書のStatusを書き写さない）。MD-004 Ver.8.8、OP-010 Ver.3.6、BR-003 Ver.4.11と連動。Confirmed Equipmentの内容に変更はない。Minor Version。 |  
+| 4.17 | 2026-10-08 | MARI様のご指示（2026-10-08）に基づく。§Coffee Registry Orderから消耗品のEspresso Filter Paperを除き（消耗品はCOF-seriesに載せない。OP-010 Ver.3.7）、以降の番号を詰めた（EPF DockはFilter Paper Dockとして末尾に残す）。Magnetic Dosing Funnelの色表記をBlackからOnyx（航空機グレードアルミニウム）へ訂正した。MD-004 Ver.8.9、BR-003 Ver.4.12と連動。Minor Version。 |  
   
 ---  
 

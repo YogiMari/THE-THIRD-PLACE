@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 8.8  
+**Version**: 8.9  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -115,8 +115,8 @@ STR-026
 STR-028  
 └ STR-029  
 
-COF-010  
-└ COF-011  
+COF-009  
+└ COF-010  
 
 ---  
 
@@ -189,6 +189,12 @@ Planning、Pursuit Strategy、Design Philosophy、Aesthetics、Positioning、Eva
 # Version History  
 
 Version 8.6以前の履歴は archive/MD-004_Version_History_Archive.md を参照。
+
+## Version 8.9
+
+MARI様のご指示（2026-10-08）に基づく訂正。消耗品はCOF-seriesへ載せない規則とし（OP-010 Ver.3.7）、9Barista Espresso Filter Paper（旧COF-009）を登録から除いた。これに伴い、ワークフロー順の番号を詰めた（BR-002 Ver.4.17 §Coffee Registry Order。登録済みのIDはVersion 8.8の同日内の付番で、まだ統合前のため付け替えた）。現在の登録は次の4件（すべてStatus = Owned）：COF-005（9Barista Magnetic Dosing Funnel）、COF-009（9Barista Mk.2 Pro。旧COF-010）、COF-010（9Barista Handle - Walnut。COF-009の子。旧COF-011）、COF-017（KNODOS Tamping Mat with Tool Organiser - Walnut 54mm。旧COF-018）。あわせて、COF-009のColorをSilver・MaterialをNickel-plated Brass、COF-005のColorをOnyx・MaterialをAircraft-grade Aluminum（BR-002・BR-003の「Black」をOnyxへ訂正）、COF-017のPriceを¥22,000（実額）とした。Parent / Child RulesのExampleをCOF-009 └ COF-010へ改めた。Minor Version。
+
+---
 
 ## Version 8.8
 

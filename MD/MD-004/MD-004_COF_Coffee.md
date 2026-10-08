@@ -6,7 +6,7 @@
 
 # Coffee  
 
-COF-seriesは、購入した時点で登録する（OP-010 Part A §Coffee Domain Scope）。到着状況は記録しない。  
+COF-seriesは、購入した時点で登録する（OP-010 Part A §Coffee Domain Scope）。到着状況は記録しない。消耗品（Filter Paper等）は登録しない。  
 
 採番はBR-002 Barista Canon §Coffee Registry Orderの順であり、購入順ではない。未購入の機材の番号は空けたままとし、空枠（Vacant）は設置しない。  
 
@@ -28,7 +28,11 @@ Owned
 
 ### Color  
 
-Black  
+Onyx  
+
+### Material  
+
+Aircraft-grade Aluminum  
 
 ### Industrial Attribute  
 
@@ -48,30 +52,6 @@ Dosing Funnel（53mm。9Baristaの有料オプション。Workflow：Blind Shake
 
 **Product**  
 
-Espresso Filter Paper（51mm）  
-
-**Status**  
-
-Owned  
-
-### Industrial Attribute  
-
-Filter Paper（Puck Screenの位置に組み込む。BR-002 Espresso Filter Paper）  
-
-### Price  
-
-¥2,000  
-
----  
-
-## COF-010  
-
-**Brand**  
-
-9Barista  
-
-**Product**  
-
 Mk.2 Pro  
 
 **Status**  
@@ -80,7 +60,15 @@ Owned
 
 ### Child Components  
 
-- COF-011  
+- COF-010  
+
+### Color  
+
+Silver  
+
+### Material  
+
+Nickel-plated Brass  
 
 ### Industrial Attribute  
 
@@ -92,7 +80,7 @@ Espresso Machine（Flame Powered。Dual Boiler。Portable Espresso System）
 
 ---  
 
-## COF-011  
+## COF-010  
 
 **Brand**  
 
@@ -104,7 +92,7 @@ Handle - Walnut
 
 **Parent**  
 
-COF-010  
+COF-009  
 
 **Status**  
 
@@ -128,7 +116,7 @@ Handle Custom（標準のAnodised AluminiumからWalnut仕様へ変更。BR-002 
 
 ---  
 
-## COF-018  
+## COF-017  
 
 **Brand**  
 
@@ -152,6 +140,6 @@ Tool Station（Tamping MatとTool Organiserを統合。BR-002 KNODOS Tool Statio
 
 ### Price  
 
-¥16,000〜22,000（BR-003 Product 10のplanning estimate。実際の購入価格は未確認）  
+¥22,000（MARI様確認）  
 
 ---
