@@ -17,10 +17,13 @@
   --f-body:"Archivo","Zen Kaku Gothic New","Helvetica Neue",Arial,sans-serif;
   --f-mono:"IBM Plex Mono","Zen Kaku Gothic New",ui-monospace,Menlo,monospace;
   --gutter:clamp(16px,4vw,56px);
+  /* layouts 1-6: cabinet wood, drawer lining, label card, switcher pill */
+  --wood:#3A2A1C;--wood-2:#2B1E13;--lining:#E9E6DD;--card:#F0EDE4;--cardfg:#1B1A17;--cardfg2:#6A675E;--brass-hi:#C9A867;--brass-lo:#A9843F;
+  --pill-bg:rgba(18,18,17,.9);--pill-fg:#EFEDE6;--pill-on:#EFEDE6;--pill-on-fg:#121211;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
-  --paper:#10100F;--paper-2:#1B1B19;--ink:#E7E5DE;--ink-2:#96948C;--rule:#34332F;--brass:#C7A365;--scrim:rgba(16,16,15,.88);--mount:#D2D0C9;color-scheme:dark}}
-:root[data-theme="dark"]{--paper:#10100F;--paper-2:#1B1B19;--ink:#E7E5DE;--ink-2:#96948C;--rule:#34332F;--brass:#C7A365;--scrim:rgba(16,16,15,.88);--mount:#D2D0C9;color-scheme:dark}
+  --paper:#10100F;--paper-2:#1B1B19;--ink:#E7E5DE;--ink-2:#96948C;--rule:#34332F;--brass:#C7A365;--scrim:rgba(16,16,15,.88);--mount:#D2D0C9;--wood:#241912;--wood-2:#19110B;--lining:#1D1C19;--card:#D9D6CB;--cardfg:#1B1A17;--cardfg2:#5E5B52;--brass-hi:#C7A365;--brass-lo:#A9843F;--pill-bg:rgba(231,229,222,.92);--pill-fg:#121211;--pill-on:#121211;--pill-on-fg:#E7E5DE;color-scheme:dark}}
+:root[data-theme="dark"]{--paper:#10100F;--paper-2:#1B1B19;--ink:#E7E5DE;--ink-2:#96948C;--rule:#34332F;--brass:#C7A365;--scrim:rgba(16,16,15,.88);--mount:#D2D0C9;--wood:#241912;--wood-2:#19110B;--lining:#1D1C19;--card:#D9D6CB;--cardfg:#1B1A17;--cardfg2:#5E5B52;--brass-hi:#C7A365;--brass-lo:#A9843F;--pill-bg:rgba(231,229,222,.92);--pill-fg:#121211;--pill-on:#121211;--pill-on-fg:#E7E5DE;color-scheme:dark}
 
 *{box-sizing:border-box}
 [hidden]{display:none!important}
@@ -48,7 +51,7 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 .folio{white-space:nowrap;color:var(--ink-2)}
 
 /* ── views ─────────────────────────── */
-.view{padding-inline:var(--gutter);padding-block:0 96px}
+.view{padding-inline:var(--gutter);padding-block:0 150px}
 .view.enter .rise{animation:rise .9s cubic-bezier(.2,.7,.1,1) both}
 .view.enter .rise.d1{animation-delay:.06s}.view.enter .rise.d2{animation-delay:.14s}.view.enter .rise.d3{animation-delay:.22s}
 .view.enter .fade{animation:fade 1s ease both .25s}
@@ -252,6 +255,222 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 @keyframes swP{from{opacity:.0001;transform:translateX(-28px)}to{opacity:1;transform:none}}
 @media (prefers-reduced-motion:reduce){.swapN>*,.swapP>*{animation:none}}
 @media (max-width:560px){.cap .parts-h,.cap .parts{grid-column:1/-1}.parts button{grid-template-columns:14px 62px minmax(0,1fr);gap:8px}.parts li.l2 button,.parts li.l3 button{grid-template-columns:14px 62px minmax(0,1fr)}.parts li.l2 button{padding-left:16px}.parts li.l3 button{padding-left:32px}.parts .sub{display:block;margin-top:2px}.parts .pn small{display:inline;margin:0 12px 0 0}.fd-g>.label{width:100%}.fd-row{grid-template-columns:48px minmax(0,1fr) auto;gap:10px}.fd-row .th{width:48px;height:48px}.fd-row .nm{font-size:17px}.find-btn{padding:4px 9px}.bar-in{gap:14px}}
+
+
+/* ══ switchable layouts ═════════════════════════════════════════════
+   0 Monograph (the original, above) · 1 Card grid · 2 Ledger · 3 Shelves · 4 One by one · 5 Cabinet · 6 Materials
+   html[data-layout] picks one; layouts 1-6 render into #lay and use only the tokens above. */
+html[data-layout]:not([data-layout="0"]) .tabs,html[data-layout]:not([data-layout="0"]) .folio{display:none}
+html[data-layout]:not([data-layout="0"]) .wordmark{cursor:pointer}
+[data-cycle]{cursor:pointer}
+[data-cycle]:focus-visible{outline:1px solid var(--brass);outline-offset:6px}
+.mast[data-cycle]:hover{color:var(--brass)}
+
+/* switcher pill */
+.laybar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:25;display:flex;flex-direction:column;align-items:center;gap:5px;max-width:calc(100vw - 24px);padding:7px 10px 8px;border-radius:22px;background:var(--pill-bg);color:var(--pill-fg);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 28px rgba(0,0,0,.28),0 0 0 1px rgba(128,128,128,.25)}
+.lb-name{font:500 10.5px/1.2 var(--f-body);letter-spacing:.05em;white-space:nowrap;opacity:.88;max-width:100%;overflow:hidden;text-overflow:ellipsis}
+.lb-btns{display:flex;gap:2px}
+.laybar button{min-width:36px;height:34px;padding:0 8px;border-radius:999px;font:500 12px var(--f-mono);color:inherit}
+.laybar button[aria-pressed="true"]{background:var(--pill-on);color:var(--pill-on-fg)}
+.laybar button:focus-visible{outline:2px solid currentColor;outline-offset:1px}
+body.ov .laybar{display:none}
+
+/* shared pieces */
+.lay{padding-inline:var(--gutter);padding-block:0 150px;min-width:0}
+.lay-head{padding-top:clamp(18px,3vw,36px);display:grid;grid-template-columns:minmax(0,1fr);gap:8px}
+.lh-top{display:flex;justify-content:space-between;gap:8px 16px;flex-wrap:wrap;color:var(--ink-2)}
+.lay-title{font-family:var(--f-display);font-style:italic;font-weight:400;font-size:clamp(34px,5.6vw,80px);line-height:.9;letter-spacing:-.035em;margin:clamp(10px,2vw,22px) 0 0;text-wrap:balance;width:fit-content;max-width:100%}
+.lay-title .up{font-style:normal;font-weight:500;letter-spacing:-.045em}
+.lay-title:hover{color:var(--brass)}
+.lh-sub{display:flex;flex-wrap:wrap;gap:2px 14px;align-items:baseline;margin:4px 0 0;color:var(--ink-2)}
+.lh-sub b{font-family:var(--f-display);font-weight:400;font-size:clamp(22px,2.6vw,32px);color:var(--ink);letter-spacing:-.01em}
+.lh-sub em{font-style:normal;font-family:var(--f-mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase}
+.lh-note{margin:0;max-width:62ch;color:var(--ink-2);font-size:13.5px}
+.lh-stats{display:flex;gap:4px 24px;flex-wrap:wrap;color:var(--ink-2);margin-top:4px}
+.lh-stats b{color:var(--ink);font-weight:500}
+.lay-tools{display:grid;gap:8px;padding:12px 0;border-block:1px solid var(--rule);margin-top:16px}
+.tl-g{display:flex;gap:6px;flex-wrap:wrap;align-items:center}
+.tl-g>.label{color:var(--ink-2);width:128px;flex:none}
+.lay-foot{margin-top:clamp(36px,5vw,64px);padding-top:14px;border-top:1px solid var(--rule);color:var(--ink-2);font-size:12.5px;max-width:78ch}
+.im{position:relative;display:block;overflow:hidden;background:var(--t,var(--paper-2))}
+.im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.im img:not([src]){opacity:0}
+.im.cut{background:var(--mount)}
+.im.cut img{object-fit:contain;padding:8%;mix-blend-mode:multiply}
+.rf{position:absolute;left:4px;top:4px;z-index:2;font:500 8.5px/1 var(--f-mono);font-style:normal;letter-spacing:.08em;padding:3px 4px;background:var(--ink);color:var(--paper)}
+.rel{font-family:var(--f-mono);font-size:10.5px;letter-spacing:.03em;color:var(--brass);white-space:nowrap}
+.px.none{color:var(--ink-2)}
+.px small{display:block;color:var(--ink-2);font-size:10.5px;letter-spacing:.02em;font-family:var(--f-body)}
+
+/* 1 · card grid */
+.g-zone{margin-top:clamp(28px,4vw,56px)}
+.g-zh{display:flex;align-items:baseline;gap:6px 14px;flex-wrap:wrap;margin:0 0 16px;padding-bottom:8px;border-bottom:1px solid var(--ink);font-weight:400;color:var(--ink-2)}
+.g-zn{font-family:var(--f-display);font-size:20px;color:var(--ink)}
+.g-zt{font-family:var(--f-display);font-style:italic;font-size:clamp(30px,4vw,48px);line-height:1;letter-spacing:-.02em;color:var(--ink)}
+.g-zs{margin-left:auto;color:var(--ink)}
+.g-cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(168px,1fr));gap:20px 14px}
+.gc{display:flex;flex-direction:column;gap:4px;text-align:left;min-width:0;padding-bottom:10px;border-bottom:1px solid var(--rule);transition:transform .25s ease}
+.gc:hover{transform:translateY(-3px)}
+.gc-im{position:relative;aspect-ratio:1;display:block;overflow:hidden;background:var(--paper-2);margin-bottom:4px}
+.gc-im .im{position:absolute;inset:0}
+.gc-id{color:var(--ink-2);overflow-wrap:anywhere}
+.gc-nm{font-family:var(--f-display);font-size:16.5px;line-height:1.15;letter-spacing:-.005em;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.gc-br{font-size:11px;color:var(--ink-2);overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.gc-ft{display:flex;justify-content:space-between;gap:8px;align-items:baseline;margin-top:2px}
+.gc .px{font-family:var(--f-mono);font-size:12px}
+.gc.is-kid .gc-im{aspect-ratio:1}
+.gc.is-kid{border-bottom-style:dashed}
+
+/* 2 · ledger */
+.lg{width:100%;border-collapse:collapse;margin-top:6px;font-size:13px}
+.lg th{position:sticky;top:calc(52px + env(safe-area-inset-top,0px));z-index:5;background:var(--paper);text-align:left;font-weight:500;border-bottom:1px solid var(--ink);padding:0}
+.lg th button{display:flex;align-items:center;gap:5px;width:100%;padding:10px 8px;text-align:left;color:var(--ink-2);white-space:nowrap}
+.lg th button:hover,.lg th[aria-sort="ascending"] button,.lg th[aria-sort="descending"] button{color:var(--ink)}
+.lg th[aria-sort="ascending"] button::after{content:"↑";color:var(--brass)}
+.lg th[aria-sort="descending"] button::after{content:"↓";color:var(--brass)}
+.lg td{padding:5px 8px;border-bottom:1px solid var(--rule);vertical-align:middle;overflow-wrap:anywhere}
+.lg tbody tr[data-open]{cursor:pointer}
+.lg tbody tr[data-open]:hover td{background:var(--paper-2)}
+.lg .c-th{width:44px;padding-right:0}
+.lg .lg-th .im{width:30px;height:30px}
+.lg .c-px,.lg td.c-px{text-align:right;white-space:nowrap}
+.lg th.c-px button{justify-content:flex-end}
+.lg .lg-id{white-space:nowrap;color:var(--ink-2)}
+.lg .lg-b{text-align:left;font-family:var(--f-display);font-size:15.5px;line-height:1.2}
+.lg tr:hover .lg-b{text-decoration:underline;text-underline-offset:3px}
+.lg .lg-m{display:none;color:var(--ink-2);font-size:11.5px;margin-top:1px}
+.lg .c-ph.ref{color:var(--brass)}
+.lg .c-ph,.lg .c-pa,.lg .c-id{white-space:nowrap}
+.lg tr.lg-z td{padding:22px 8px 8px;border-bottom:1px solid var(--ink);background:none!important;cursor:default;color:var(--ink-2)}
+.lg tr.lg-z b{font-family:var(--f-display);font-style:italic;font-weight:400;font-size:26px;color:var(--ink);letter-spacing:-.01em;margin:0 10px 0 6px}
+.lg tfoot td{padding:12px 8px;border-top:1px solid var(--ink);border-bottom:0;color:var(--ink)}
+.lg td .px small{display:inline;margin-left:6px}
+@media (max-width:1100px){.lg .c-ty,.lg .c-co{display:none}}
+@media (max-width:760px){.lg .c-th,.lg .c-br,.lg .c-ph,.lg .c-pa,.lg .c-ma{display:none}.lg .lg-m{display:block}.lg td{padding:8px 6px}.lg tr.lg-z td{padding-top:20px}}
+
+/* 3 · shelves */
+.sh-zone{margin-top:clamp(30px,4.5vw,64px)}
+.sh-h{display:flex;align-items:baseline;gap:6px 14px;flex-wrap:wrap;margin-bottom:12px;color:var(--ink-2)}
+.sh-h .rn{font-family:var(--f-display);font-size:20px;color:var(--ink)}
+.sh-h .zn{font-family:var(--f-display);font-style:italic;font-size:clamp(30px,4vw,48px);line-height:1;letter-spacing:-.02em;color:var(--ink)}
+.sh-h .zs{margin-left:auto;color:var(--ink)}
+.sh-case{position:relative;margin-bottom:18px}
+.sh-wall{background:var(--paper-2);box-shadow:inset 0 10px 16px -12px rgba(0,0,0,.35),inset 8px 0 14px -12px rgba(0,0,0,.25),inset -8px 0 14px -12px rgba(0,0,0,.25)}
+.sh-row{display:flex;gap:26px;align-items:flex-end;overflow-x:auto;overflow-y:hidden;padding:20px 18px 0;scroll-snap-type:x proximity;scrollbar-width:thin;scrollbar-color:var(--rule) transparent;overscroll-behavior-x:contain}
+.sh-grp{flex:none;display:flex;flex-direction:column;gap:6px;scroll-snap-align:start}
+.sh-gl{color:var(--brass);white-space:nowrap;min-height:14px}
+.sh-gi{display:flex;gap:10px;align-items:flex-end;padding-bottom:0}
+.sh-grp.has-kids .sh-gi{padding:8px 10px 0;border:1px dashed var(--rule);border-bottom:0}
+.sh-it{display:flex;flex-direction:column;gap:3px;width:140px;text-align:left;min-width:0;padding-bottom:10px}
+.sh-it.kid{width:108px}
+.sh-im{position:relative;display:block;aspect-ratio:3/4;overflow:hidden;box-shadow:0 8px 10px -8px rgba(0,0,0,.45);transition:transform .3s ease}
+.sh-it:hover .sh-im{transform:translateY(-6px)}
+.sh-im .im{position:absolute;inset:0}
+.sh-id{color:var(--ink-2)}
+.sh-nm{font-family:var(--f-display);font-size:14.5px;line-height:1.15;overflow-wrap:anywhere;display:-webkit-box;-webkit-line-clamp:3;-webkit-box-orient:vertical;overflow:hidden}
+.sh-it .px{font-family:var(--f-mono);font-size:11.5px}
+.sh-plank{height:16px;background:linear-gradient(var(--wood),var(--wood-2));border-top:2px solid var(--brass-hi);box-shadow:0 14px 18px -12px rgba(0,0,0,.55)}
+.sh-nav{position:absolute;top:50%;z-index:4;width:36px;height:56px;margin-top:-28px;display:grid;place-items:center;background:var(--pill-bg);color:var(--pill-fg);font-size:20px;opacity:.9}
+.sh-nav.p{left:0}.sh-nav.n{right:0}
+.sh-nav:hover{opacity:1}
+@media (hover:none){.sh-nav{display:none}}
+@media (max-width:560px){.sh-row{padding-inline:12px;gap:18px}}
+
+/* 4 · one by one */
+html[data-layout="4"] .lh-stats,html[data-layout="4"] .lh-top{display:none}
+.sg{margin-top:14px;display:grid;gap:14px}
+.sg-main{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:clamp(18px,3vw,48px);align-items:start;touch-action:pan-y}
+.sg-figw{display:grid;gap:8px;min-width:0}
+.sg-imgb{display:block;width:100%;cursor:zoom-in;text-align:left}
+.sg-imgb .im{aspect-ratio:4/5;max-height:calc(100svh - 280px);min-height:260px;width:100%;margin-inline:auto}
+.sg-credit{color:var(--ink-2);overflow-wrap:anywhere}
+.sg-credit a{color:inherit}
+.sg-nav{display:flex;justify-content:space-between;gap:12px;color:var(--ink-2)}
+.sg-pr{font-family:var(--f-display);font-weight:400;font-size:clamp(30px,4vw,56px);line-height:1;letter-spacing:-.025em;margin:12px 0 0;text-wrap:balance}
+.sg-br{margin-top:12px}
+.sg-txt{min-width:0}
+.sg-txt .spec-t{margin-top:22px}
+.sg-act{margin-top:20px;display:flex;gap:10px;flex-wrap:wrap}
+.sg-act button{white-space:nowrap;color:var(--ink);border:1px solid var(--ink);padding:7px 14px}
+.sg-act button:hover{background:var(--ink);color:var(--paper)}
+.sg-ctl{display:flex;justify-content:center;align-items:center;gap:20px;color:var(--ink-2)}
+.sg-ctl button{width:44px;height:36px;border:1px solid var(--rule);font-size:18px;color:var(--ink)}
+.sg-ctl button:hover{border-color:var(--ink)}
+.sg-film{display:flex;gap:4px;overflow-x:auto;overflow-y:hidden;padding:8px 0 10px;scrollbar-width:thin;scrollbar-color:var(--rule) transparent;overscroll-behavior-x:contain;border-top:1px solid var(--rule)}
+.sg-film button{flex:none;width:52px;height:52px;position:relative;opacity:.55;outline-offset:-2px}
+.sg-film button:hover{opacity:.9}
+.sg-film button[aria-current="true"]{opacity:1;outline:2px solid var(--brass)}
+.sg-film .im{position:absolute;inset:0}
+.sg-film .zg{flex:none;width:10px}
+@media (max-width:860px){.sg-main{grid-template-columns:minmax(0,1fr)}.sg-imgb .im{max-height:52svh;aspect-ratio:1}}
+
+/* 5 · cabinet */
+.cb-case{margin-top:clamp(26px,4vw,52px);background:var(--wood);padding:clamp(10px,1.6vw,18px);box-shadow:0 18px 30px -18px rgba(0,0,0,.6),inset 0 0 0 1px rgba(255,255,255,.07)}
+.cb-plate{display:flex;align-items:baseline;gap:4px 14px;flex-wrap:wrap;margin:0 0 clamp(10px,1.4vw,16px);padding:8px 14px;background:linear-gradient(135deg,var(--brass-hi),var(--brass-lo));color:#1B1710;box-shadow:inset 0 0 0 1px rgba(0,0,0,.25)}
+.cb-plate .rn{font-family:var(--f-display);font-size:20px}
+.cb-plate .zn{font-family:var(--f-display);font-style:italic;font-size:clamp(26px,3.4vw,40px);line-height:1;letter-spacing:-.02em}
+.cb-plate .mono:last-child{margin-left:auto}
+.cb-drawers{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:clamp(8px,1.2vw,14px)}
+.cb-dr{background:var(--wood-2);padding:6px 6px 0;box-shadow:inset 0 0 0 1px rgba(255,255,255,.07),0 6px 10px -6px rgba(0,0,0,.6);transition:transform .25s ease;min-width:0;display:flex;flex-direction:column}
+.cb-dr:hover{transform:translateY(5px)}
+@media (min-width:760px){.cb-dr.wide{grid-column:span 2}}
+.cb-tray{background:var(--lining);box-shadow:inset 0 4px 10px rgba(0,0,0,.4);padding:12px;display:flex;flex-wrap:wrap;gap:10px;align-content:flex-start;min-height:150px}
+.cb-sp{position:relative;display:flex;flex-direction:column;gap:3px;text-align:left;width:64px}
+.cb-sp.main{width:128px}
+.cb-sp .ph{position:relative;display:block;aspect-ratio:1;box-shadow:0 5px 8px -4px rgba(0,0,0,.5);transition:transform .25s ease}
+.cb-sp:hover .ph{transform:translateY(-3px)}
+.cb-sp .im{position:absolute;inset:0}
+.cb-pin{position:absolute;left:-5px;top:-5px;z-index:3;width:17px;height:17px;border-radius:50%;display:grid;place-items:center;background:var(--wood);color:var(--brass-hi);font:500 9.5px/1 var(--f-mono);box-shadow:0 0 0 1px var(--brass-hi)}
+.cb-sp .cid{font-family:var(--f-mono);font-size:9px;letter-spacing:.02em;color:var(--cardfg2);overflow-wrap:anywhere;line-height:1.2}
+.cb-front{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:start;padding:10px 6px 10px 4px;flex:1}
+.cb-knob{width:16px;height:16px;border-radius:50%;margin-top:6px;background:radial-gradient(circle at 35% 30%,#F1DFA8,var(--brass-hi) 40%,#4C3A16);box-shadow:0 3px 4px rgba(0,0,0,.6)}
+.cb-lab{background:var(--card);color:var(--cardfg);padding:8px 10px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.2),0 0 0 3px var(--brass-hi);margin:3px;min-width:0}
+.cb-lab .lid{font-family:var(--f-mono);font-size:10.5px;color:var(--cardfg2);letter-spacing:.03em}
+.cb-lab h3{margin:2px 0 0;font-family:var(--f-display);font-weight:400;font-size:17px;line-height:1.15;overflow-wrap:anywhere}
+.cb-lab .lbr{font-size:11px;color:var(--cardfg2);margin-top:2px;overflow-wrap:anywhere}
+.cb-lab .lsum{display:flex;justify-content:space-between;gap:10px;margin-top:6px;font-family:var(--f-mono);font-size:11.5px}
+.cb-leg{list-style:none;margin:6px 0 0;padding:6px 0 0;border-top:1px solid rgba(0,0,0,.2);display:grid;gap:2px}
+.cb-leg button{display:grid;grid-template-columns:16px minmax(0,1fr) auto;gap:6px;width:100%;text-align:left;font-size:11.5px;line-height:1.25;padding:2px 0;color:var(--cardfg)}
+.cb-leg button:hover span:nth-child(2){text-decoration:underline;text-underline-offset:2px}
+.cb-leg i{font-style:normal;font-family:var(--f-mono);font-size:10px;color:var(--cardfg2)}
+.cb-leg .lp{font-family:var(--f-mono);font-size:10.5px;white-space:nowrap}
+.cb-lab :focus-visible,.cb-tray :focus-visible{outline-color:var(--cardfg)}
+.cb-hint{color:var(--ink-2);margin:16px 0 0;font-size:13px;max-width:70ch}
+
+/* 6 · materials */
+.mw-fam{margin-top:clamp(28px,4vw,52px)}
+.mw-h{display:grid;grid-template-columns:104px minmax(0,1fr) auto;gap:6px 18px;align-items:end;padding-bottom:10px;border-bottom:1px solid var(--ink);margin-bottom:14px}
+.mw-tex{grid-row:span 2;width:104px;height:70px;background-color:var(--t);background-size:cover;background-position:center;box-shadow:0 0 0 1px var(--rule)}
+.mw-h h2{margin:0;font-weight:400;display:flex;align-items:baseline;gap:10px;flex-wrap:wrap;min-width:0}
+.mw-h h2 .ja{font-family:var(--f-display);font-size:clamp(26px,3.4vw,42px);line-height:1;letter-spacing:-.01em}
+.mw-h h2 em{font-style:italic;font-family:var(--f-display);font-size:clamp(18px,2vw,24px);color:var(--ink-2)}
+.mw-h .mw-ct{text-align:right;color:var(--ink)}
+.mw-h .mw-mats{grid-column:2/-1;color:var(--ink-2);overflow-wrap:anywhere}
+.mw-wall{display:grid;grid-template-columns:repeat(auto-fill,minmax(112px,1fr));gap:12px 10px}
+.mw-t{display:flex;flex-direction:column;gap:2px;text-align:left;min-width:0}
+.mw-sw{position:relative;display:block;aspect-ratio:4/5;background-color:var(--t);background-size:cover;background-position:center;overflow:hidden;box-shadow:0 0 0 1px rgba(128,128,128,.25);transition:transform .25s ease}
+.mw-t:hover .mw-sw{transform:translateY(-3px)}
+.mw-ph{position:absolute;right:6px;bottom:6px;width:36px;height:36px;box-shadow:0 0 0 1px rgba(242,240,234,.7);transition:all .25s ease}
+.mw-ph .im{position:absolute;inset:0}
+.mw.photo .mw-ph{inset:0;right:0;bottom:0;width:auto;height:auto;box-shadow:none}
+.mw-t .tn{font-family:var(--f-mono);font-size:10px;letter-spacing:.03em;color:var(--ink-2)}
+.mw-t .mt{font-family:var(--f-display);font-size:14px;line-height:1.15;overflow-wrap:anywhere}
+.mw-t .cl{font-size:11px;color:var(--ink-2);overflow-wrap:anywhere}
+.mw-ribbon{display:flex;height:42px;gap:0;margin-top:16px}
+.mw-ribbon button{flex:1 1 0;min-width:0;background:var(--t)}
+.mw-ribbon button:hover{flex-grow:6}
+.mw-rl{display:flex;gap:0;margin-top:6px;color:var(--ink-2)}
+.mw-rl span{min-width:0;overflow:hidden;white-space:nowrap}
+@media (max-width:560px){
+  .tl-g>.label{width:100%}
+  .mw-h{grid-template-columns:72px minmax(0,1fr)}
+  .mw-tex{width:72px;height:56px;grid-row:span 3}
+  .mw-h .mw-ct{grid-column:2;text-align:left}
+  .mw-h .mw-mats{grid-column:2}
+  .g-cards{gap:18px 10px}
+  .cb-tray{padding:10px}
+}
+@media (prefers-reduced-motion:reduce){.gc,.sh-im,.cb-dr,.cb-sp .ph,.mw-sw,.mw-ph{transition:none}.gc:hover,.sh-it:hover .sh-im,.cb-dr:hover,.cb-sp:hover .ph,.mw-t:hover .mw-sw{transform:none}}
 </style>
 
 <header class="bar">
@@ -264,6 +483,8 @@ button{font:inherit;color:inherit;background:none;border:0;padding:0;cursor:poin
 </header>
 
 <main id="stage"></main>
+<div id="lay" hidden></div>
+<nav class="laybar" id="laybar" aria-label="Layout / レイアウト"></nav>
 <div class="finder" id="finder" hidden role="dialog" aria-modal="true" aria-label="Find objects"></div>
 <div class="spread" id="spread" hidden role="dialog" aria-modal="true" aria-labelledby="sp-pr"></div>
 
@@ -440,7 +661,7 @@ function coverHTML(){
     return `<button class="row" data-go="${z.key}"><span class="num">${ROMAN[i]}</span><span class="nm">${z.name}</span><span class="mono cd">${z.code} · ${z.src}</span><span class="mono ct">${String(z.items.length).padStart(2,"0")} objects<span class="px">${yen(sumP(z.items))}${nP(z.items)<z.items.length?"†":""}${pvOf(z.items).length?"‡":""}</span></span><span class="label pm">${esc(pm[0])} ×${pm[1]}</span><span class="ar">→</span></button>`; }).join("");
   return `
   <div class="cov-top label rise"><span>The Third Place · Catalogue of Owned Objects</span><span>Registry as of ${META.date}</span></div>
-  <h1 class="mast rise d1"><span class="up">The</span><br>Wunderkammer</h1>
+  <h1 class="mast rise d1" data-cycle role="button" tabindex="0" title="クリックでレイアウト切替 / Click to switch layout"><span class="up">The</span><br>Wunderkammer</h1>
   <div class="deck rise d2">
     <p>Every object the project owns, one plate each, arranged by zone in registry order. Photographs are credited on each object's page; an object without one carries a material study drawn from its Material and Color fields.</p>
     <div class="fig"><div><b>${all}</b><span class="label">Objects</span></div><div><b>${ZONES.length}</b><span class="label">Zones</span></div><div><b>${houses(DATA)}</b><span class="label">Houses</span></div></div>
@@ -527,6 +748,7 @@ function hydrate(v){
   v.querySelectorAll("img[data-plate]:not([src])").forEach(img=>want(BY[img.dataset.plate],u=>img.src=u,480,600));
   v.querySelectorAll("[data-chip]").forEach(el=>want(BY[el.dataset.chip],u=>el.style.backgroundImage=`url(${u})`,480,600));
   v.querySelectorAll(".dbar i[data-mat]").forEach(el=>{ if(el.dataset.mat) want(BY[el.dataset.mat],u=>el.style.backgroundImage=`url(${u})`,480,600); });
+  v.querySelectorAll("[data-tex]").forEach(el=>{ if(el.dataset.texd) return; el.dataset.texd="1"; want(BY[el.dataset.tex],u=>el.style.backgroundImage=`url(${u})`,160,200); });
   v.querySelectorAll(".sliver[data-open]").forEach(el=>want(BY[el.dataset.open],u=>el.style.backgroundImage=`url(${u})`,480,600));
 }
 function show(key,{push=true,instant=false}={}){
@@ -581,16 +803,16 @@ function openSpread(id,{fromHash=false}={}){
         ${row("Photo",ph?`<span class="credit">${ph.url?`<a class="linkish" href="${esc(ph.url)}" target="_blank" rel="noopener">${esc(ph.credit)}</a>`:esc(ph.credit)}</span>`:"",ph?esc(ph.kind||""):"")}
       </dl>
     </div>`;
-  if(sp.hidden){ sp.hidden=false; sp.classList.remove("enter"); void sp.offsetWidth; sp.classList.add("enter"); document.body.style.overflow="hidden"; }
+  if(sp.hidden){ sp.hidden=false; sp.classList.remove("enter"); void sp.offsetWidth; sp.classList.add("enter"); document.body.style.overflow="hidden"; syncOv(); }
   const img=$("#sp-img");
   if(ph){ img.src=ph.f; } else { img.src=paint(d,480,600); requestAnimationFrame(()=>{ const hi=paint(d,900,1125); if(spId===id) img.src=hi; }); }
   $("#sp-close").focus({preventScroll:true});
 }
-function hideSpread(){ if(sp.hidden) return; sp.hidden=true; spId=null; spPushed=false; document.body.style.overflow=fd.hidden?"":"hidden"; if(lastFocus&&lastFocus.focus) lastFocus.focus({preventScroll:true}); }
+function hideSpread(){ if(sp.hidden) return; sp.hidden=true; spId=null; spPushed=false; document.body.style.overflow=fd.hidden?"":"hidden"; syncOv(); if(lastFocus&&lastFocus.focus) lastFocus.focus({preventScroll:true}); }
 /* closing walks back through the entry openSpread pushed, so the browser's Back button and the Close buttons agree */
 function closeSpread(){ if(sp.hidden) return;
   if(spPushed){ spPushed=false; try{ history.back(); }catch(e){} setTimeout(()=>{ if(!sp.hidden) hideSpread(); },250); return; }
-  try{ const z=zoneKeyOf(BY[spId]); history.replaceState(null,"",current==="cover"?location.pathname+location.search:"#"+(current||z)); }catch(e){}
+  try{ const z=zoneKeyOf(BY[spId]); history.replaceState(null,"",LAY?baseHash():(current==="cover"?location.pathname+location.search:"#"+(current||z))); }catch(e){}
   hideSpread(); }
 function step(n){ const d=BY[spId]; const z=ZONES.find(z=>z.name===d.zone); const seq=flat(z).map(x=>x.d.id); const i=(seq.indexOf(spId)+n+seq.length)%seq.length; openSpread(seq[i]); sp.classList.add(n>0?"swapN":"swapP"); }
 let tx=null;
@@ -629,13 +851,211 @@ function runFinder(){
   $("#fd-list").innerHTML=l.length?l.map(d=>{ const ph=PHOTOS[d.id];
     return `<li><button class="fd-row" data-open="${d.id}"><span class="th${ph&&ph.bg?" cut":""}" style="--t:${d.tone}">${ph?`<img src="${ph.f}" alt="" loading="lazy" style="object-position:${ph.pos||"50% 50%"}">`:""}</span><span class="tx"><span class="nm">${esc(d.product)}</span><span class="sb mono">${d.id} · ${esc(d.brand)}</span><span class="sb">${esc(firstOf(d.material))} · ${esc(firstOf(d.color))}</span></span><span class="pc mono${d.price==null?" none":""}">${d.price!=null?yen(d.price)+pvMark(d):"—"}</span></button></li>`; }).join(""):`<li class="fd-empty">No object matches.</li>`;
 }
-function openFinder(){ if(!fdBuilt) buildFinder(); lastFocus=document.activeElement; fd.hidden=false; document.body.style.overflow="hidden"; runFinder(); $("#fd-q").focus({preventScroll:true}); }
-function closeFinder(){ if(fd.hidden) return; fd.hidden=true; if(sp.hidden) document.body.style.overflow=""; const f=$("#find-open"); if(f) f.focus({preventScroll:true}); }
+function openFinder(){ if(!fdBuilt) buildFinder(); lastFocus=document.activeElement; fd.hidden=false; document.body.style.overflow="hidden"; syncOv(); runFinder(); $("#fd-q").focus({preventScroll:true}); }
+function closeFinder(){ if(fd.hidden) return; fd.hidden=true; syncOv(); if(sp.hidden) document.body.style.overflow=""; const f=$("#find-open"); if(f) f.focus({preventScroll:true}); }
 fd.addEventListener("click",e=>{ const c=e.target.closest(".chip-b"); if(c){ const k=c.dataset.f,v=c.dataset.v; if(k==="graphic") F.graphic=!F.graphic; else F[k]=(k!=="sort"&&F[k]===v)?"":v; runFinder(); return; } if(e.target.closest("#fd-x")) closeFinder(); });
 $("#find-open").addEventListener("click",openFinder);
 
+/* ── switchable layouts ──────────────────
+   0 Monograph is the page above. 1-6 render the same DATA / PHOTOS into #lay, built on first use. Nothing here changes a record. */
+const LAYOUTS=[
+  {id:"monograph",ja:"図録",en:"Monograph"},
+  {id:"grid",ja:"カードグリッド",en:"Card Grid"},
+  {id:"ledger",ja:"台帳",en:"Ledger"},
+  {id:"shelves",ja:"棚",en:"Shelves"},
+  {id:"single",ja:"一点ずつ",en:"One by One"},
+  {id:"cabinet",ja:"抽斗",en:"Cabinet"},
+  {id:"materials",ja:"素材別",en:"Materials"}
+];
+const LAYNOTE=[
+  "",
+  "全点をカードにしました。ゾーンで絞り込めます。",
+  "一行一点の台帳です。列の見出しで並べ替えます。",
+  "ゾーンごとに棚へ並べました。横へ送ってください。",
+  "一点ずつ大きく見ます。矢印キーかスワイプで送れます。",
+  "驚異の部屋の抽斗です。親と部品は同じ区画に収まります。",
+  "素材の系統ごとの見本壁です。色の暗い順に並びます。"
+];
+const root=document.documentElement, lay=$("#lay"), laybar=$("#laybar");
+let LAY=0; const layEl=[], LAYS=[];
+const RANK=Object.fromEntries(ALL.map((d,i)=>[d.id,i]));
+const pl=n=>n+" part"+(n>1?"s":"");
+const nDesc=d=>treeOf(d).length-1;
+const kindShort=k=>/^Reference/i.test(k||"")?"Reference":/^Official/i.test(k||"")?"Official":/^Retailer/i.test(k||"")?"Retailer":/^Marketplace/i.test(k||"")?"Marketplace":/owner/i.test(k||"")?"Owner":(k||"—");
+const totalStr=l=>yen(sumP(l))+(nP(l)<l.length?"†":"")+(pvOf(l).length?"‡":"");
+const pxH=d=>d.price!=null?`<span class="px">${yen(d.price)}${pvMark(d)}${d.priceNote?`<small>${esc(d.priceNote)}</small>`:""}</span>`:`<span class="px none">—</span>`;
+function imgH(d,eager){ const p=PHOTOS[d.id];
+  return p?`<span class="im${p.bg?" cut":""}" style="--t:${d.tone}"><img src="${p.f}" alt="${esc(d.product)}" ${eager?'loading="eager"':'loading="lazy"'} decoding="async" style="object-position:${p.pos||"50% 50%"}"></span>`
+          :`<span class="im" style="--t:${d.tone}"><img alt="" data-plate="${d.id}"></span>`; }
+const refB=d=>photoState(d.id)==="ref"?`<i class="rf" title="Reference image: ${esc(PHOTOS[d.id].kind||"")}">REF</i>`:"";
+const chipB=(k,v,l,on)=>`<button class="chip-b" data-k="${k}" data-v="${esc(v)}" aria-pressed="${!!on}">${l}</button>`;
+const zoneChips=(sel)=>`<div class="tl-g"><span class="label">Zone · ゾーン</span>${chipB("z","","All 全て",!sel)}${ZONES.map(z=>chipB("z",z.key,`${z.name} ${z.items.length}`,sel===z.key)).join("")}</div>`;
+const FOOT=`<footer class="lay-foot">Each price is the record's Price field as written in the registry. † marks a total where some objects carry no price; ‡ marks an official list price that stands until the purchase price is recorded. Photographs are credited on each object's page. REF marks a reference image that shows a close relative of the object, not the object itself. Status = Owned only.</footer>`;
+function layHead(n,extra){ const L=LAYOUTS[n];
+  return `<header class="lay-head"><div class="lh-top label"><span>The Third Place · Catalogue of Owned Objects</span><span>Registry as of ${META.date}</span></div>
+  <h1 class="lay-title" data-cycle role="button" tabindex="0" title="クリックでレイアウト切替 / Click to switch layout"><span class="up">The</span> Wunderkammer</h1>
+  <p class="lh-sub"><b>${L.ja}</b><em>${L.en}</em></p><p class="lh-note">${LAYNOTE[n]}</p>
+  <div class="lh-stats mono"><span><b>${DATA.length}</b> objects</span><span><b>${ZONES.length}</b> zones</span><span><b>${houses(DATA)}</b> houses</span><span><b>${yen(sumP(DATA))}</b> recorded · ${nP(DATA)} priced</span></div>${extra||""}</header>`; }
+const dispatchChip=(el,fn)=>el.addEventListener("click",e=>{ const c=e.target.closest(".chip-b[data-k]"); if(c) fn(c.dataset.k,c.dataset.v); });
+
+/* 1 · card grid */
+LAYS[1]={build(el){
+  const S={z:"",parts:true};
+  el.innerHTML=layHead(1)+`<div class="lay-tools" id="g-tools"></div><div id="g-body"></div>`+FOOT;
+  const tools=$("#g-tools",el), body=$("#g-body",el);
+  const card=d=>`<button class="gc${d.parent?" is-kid":""}" data-open="${d.id}"><span class="gc-im">${imgH(d)}${refB(d)}</span><span class="gc-id mono">${d.id}${d.parent?` · <span class="rel">↳ ${d.parent}</span>`:""}</span><span class="gc-nm">${esc(d.product)}${d.qty?` <span class="mono">×${esc(d.qty)}</span>`:""}</span><span class="gc-br">${esc(d.brand)}</span><span class="gc-ft">${pxH(d)}${d.kids.length?`<span class="rel">◆ ${pl(nDesc(d))}</span>`:""}</span></button>`;
+  const draw=()=>{
+    tools.innerHTML=zoneChips(S.z)+`<div class="tl-g"><span class="label">Show · 表示</span>${chipB("p","1","Parts included 部品も",S.parts)}${chipB("p","0","Top-level only 親・単品のみ",!S.parts)}</div>`;
+    body.innerHTML=ZONES.filter(z=>!S.z||z.key===S.z).map(z=>{ const items=flat(z).map(x=>x.d).filter(d=>S.parts||!d.parent);
+      return `<section class="g-zone"><h2 class="g-zh"><span class="g-zn">${ROMAN[ZONES.indexOf(z)]}</span><span class="g-zt">${z.name}</span><span class="mono">${z.code} · ${items.length} objects</span><span class="mono g-zs">${totalStr(items)}</span></h2><div class="g-cards">${items.map(card).join("")}</div></section>`; }).join("");
+    hydrate(body);
+  };
+  dispatchChip(tools,(k,v)=>{ if(k==="z") S.z=v; else S.parts=v==="1"; draw(); });
+  draw();
+}};
+
+/* 2 · ledger */
+LAYS[2]={build(el){
+  const S={z:"",sort:"reg",dir:1};
+  const cols=[["th","",""],["id","ID","c-id"],["product","Product 品名","c-pr"],["brand","Brand","c-br"],["material","Material","c-ma"],["color","Color","c-co"],["type","Type","c-ty"],["price","Price","c-px"],["photo","Photo","c-ph"],["parent","Parent","c-pa"]];
+  const key={id:d=>d.id,product:d=>norm(d.product),brand:d=>norm(d.brand),material:d=>norm(firstOf(d.material)),color:d=>norm(firstOf(d.color)),type:d=>norm(d.type),price:d=>d.price,photo:d=>({photo:0,ref:1,none:2})[photoState(d.id)],parent:d=>d.parent||"~"};
+  el.innerHTML=layHead(2)+`<div class="lay-tools" id="l-tools"></div><table class="lg" id="l-tab"></table>`+FOOT;
+  const tools=$("#l-tools",el), tab=$("#l-tab",el);
+  const cmp=(a,b)=>typeof a==="string"?a.localeCompare(b,"en",{numeric:true}):(a<b?-1:a>b?1:0);
+  const draw=()=>{
+    tools.innerHTML=zoneChips(S.z)+`<div class="tl-g"><span class="label">Order · 並び</span>${chipB("o","reg","Registry order 登録順",S.sort==="reg")}</div>`;
+    const zf=d=>!S.z||zoneKeyOf(d)===S.z; let rows=[];
+    if(S.sort==="reg"){ ZONES.filter(z=>!S.z||z.key===S.z).forEach(z=>{ rows.push({z}); flat(z).forEach(x=>rows.push(x)); }); }
+    else { const f=key[S.sort]; rows=ALL.filter(zf).sort((a,b)=>{ const x=f(a),y=f(b); if(S.sort==="price"){ if(x==null&&y==null) return 0; if(x==null) return 1; if(y==null) return -1; } return S.dir*cmp(x,y)||RANK[a.id]-RANK[b.id]; }).map(d=>({d,depth:0})); }
+    const list=rows.filter(r=>r.d).map(r=>r.d);
+    const head=`<thead><tr>${cols.map(([k,l,c])=>k==="th"?`<th class="c-th" aria-hidden="true"></th>`:`<th class="${c}" aria-sort="${S.sort===k?(S.dir>0?"ascending":"descending"):"none"}"><button data-sort="${k}">${l}</button></th>`).join("")}</tr></thead>`;
+    const body=rows.map(r=>{ if(r.z){ const it=r.z.items; return `<tr class="lg-z"><td colspan="${cols.length}"><span class="mono">${ROMAN[ZONES.indexOf(r.z)]}</span><b>${r.z.name}</b><span class="mono">${r.z.code} · ${it.length} objects · ${totalStr(it)}</span></td></tr>`; }
+      const d=r.d, ph=photoState(d.id);
+      return `<tr data-open="${d.id}"><td class="c-th lg-th">${imgH(d)}</td><td class="c-id lg-id mono">${d.id}</td><td class="c-pr" style="padding-left:${6+r.depth*16}px"><button class="lg-b">${r.depth?"↳ ":""}${esc(d.product)}${d.qty?` <span class="mono">×${esc(d.qty)}</span>`:""}</button>${d.kids.length?` <span class="rel">◆ ${nDesc(d)}</span>`:""}<span class="lg-m">${esc(d.brand)}${d.parent?` · <span class="rel">↳ ${d.parent}</span>`:""}</span></td><td class="c-br">${esc(d.brand)}</td><td class="c-ma">${esc(firstOf(d.material))}</td><td class="c-co">${esc(firstOf(d.color))}</td><td class="c-ty">${esc(d.type)}</td><td class="c-px mono">${d.price!=null?yen(d.price)+pvMark(d):"—"}</td><td class="c-ph${ph==="ref"?" ref":""} mono" title="${esc(PHOTOS[d.id]?PHOTOS[d.id].kind||"":"")}">${PHOTOS[d.id]?kindShort(PHOTOS[d.id].kind):"—"}</td><td class="c-pa mono">${d.parent||""}</td></tr>`; }).join("");
+    tab.innerHTML=head+`<tbody>${body}</tbody><tfoot><tr><td colspan="${cols.length}" class="mono">Σ ${list.length} objects shown · ${totalStr(list)} recorded · ${nP(list)} priced</td></tr></tfoot>`;
+    hydrate(tab);
+  };
+  dispatchChip(tools,(k,v)=>{ if(k==="z") S.z=v; else { S.sort="reg"; S.dir=1; } draw(); });
+  tab.addEventListener("click",e=>{ const b=e.target.closest("[data-sort]"); if(!b) return; const k=b.dataset.sort; if(S.sort===k) S.dir=-S.dir; else { S.sort=k; S.dir=1; } e.stopPropagation(); draw(); },true);
+  draw();
+}};
+
+/* 3 · shelves */
+LAYS[3]={build(el){
+  el.innerHTML=layHead(3);
+  const item=(d,kid)=>`<button class="sh-it${kid?" kid":""}" data-open="${d.id}"><span class="sh-im">${imgH(d)}${refB(d)}</span><span class="sh-id mono">${d.id}</span><span class="sh-nm">${esc(d.product)}${d.qty?` ×${esc(d.qty)}`:""}</span>${pxH(d)}</button>`;
+  ZONES.forEach((z,zi)=>{
+    const tops=z.items.filter(d=>!d.parent), boards=[[]]; let n=0;
+    tops.forEach(t=>{ const g=treeOf(t); if(n>=14){ boards.push([]); n=0; } boards[boards.length-1].push(g); n+=g.length; });
+    const sec=document.createElement("section"); sec.className="sh-zone";
+    sec.innerHTML=`<div class="sh-h"><span class="rn">${ROMAN[zi]}</span><span class="zn">${z.name}</span><span class="mono">${z.code} · ${z.items.length} objects</span><span class="mono zs">${totalStr(z.items)}</span></div>`+
+      boards.map((b,bi)=>`<div class="sh-case"><div class="sh-wall"><div class="sh-row" tabindex="0" role="group" aria-label="${z.name} shelf ${bi+1} of ${boards.length}">${b.map(g=>`<div class="sh-grp${g.length>1?" has-kids":""}"><span class="sh-gl mono">${g.length>1?`◆ ${g[0].id} · ${pl(g.length-1)}`:""}</span><div class="sh-gi">${g.map((d,k)=>item(d,k>0)).join("")}</div></div>`).join("")}</div></div><div class="sh-plank"></div>${boards.length>1?`<span class="mono" style="display:block;margin-top:6px;color:var(--ink-2)">${z.name} · shelf ${bi+1} / ${boards.length}</span>`:""}<button class="sh-nav p" aria-label="Scroll left" data-sc="-1">‹</button><button class="sh-nav n" aria-label="Scroll right" data-sc="1">›</button></div>`).join("");
+    el.appendChild(sec);
+  });
+  el.insertAdjacentHTML("beforeend",FOOT);
+  el.addEventListener("click",e=>{ const b=e.target.closest("[data-sc]"); if(!b) return; const row=b.parentElement.querySelector(".sh-row"); row.scrollBy({left:+b.dataset.sc*row.clientWidth*.8,behavior:"smooth"}); });
+}};
+
+/* 4 · one by one */
+LAYS[4]={build(el){
+  let i=0;
+  const film=ALL.map((d,k)=>`${k&&ALL[k-1].zone!==d.zone?`<span class="zg"></span>`:""}<button data-pick="${d.id}" aria-label="${esc(d.id+" "+d.product)}" title="${esc(d.id+" · "+d.product)}">${imgH(d)}</button>`).join("");
+  el.innerHTML=layHead(4)+`<div class="sg"><div class="sg-main" id="sg-main"></div><div class="sg-ctl"><button data-sg="-1" aria-label="Previous object">←</button><span class="mono" id="sg-n"></span><button data-sg="1" aria-label="Next object">→</button></div><div class="sg-film" id="sg-film" aria-label="All objects">${film}</div></div>`+FOOT;
+  const main=$("#sg-main",el), filmEl=$("#sg-film",el);
+  const row=(k,v,sub)=>v?`<dt class="label">${k}</dt><dd>${v}${sub?`<span class="sub">${sub}</span>`:""}</dd>`:"";
+  function render(dir){
+    const d=ALL[i], z=ZONES.find(z=>z.name===d.zone), seq=flat(z).map(x=>x.d.id), pos=seq.indexOf(d.id), ph=PHOTOS[d.id], parent=d.parent?BY[d.parent]:null;
+    const kids=d.kids.map(k=>`<button class="linkish" data-pick="${k}">${k} ${esc(BY[k].product)}</button>${BY[k].price!=null?` <span class="mono kp">${yen(BY[k].price)}${pvMark(BY[k])}</span>`:""}`).join("<br>");
+    main.classList.remove("swapN","swapP"); void main.offsetWidth; if(dir) main.classList.add(dir>0?"swapN":"swapP");
+    main.innerHTML=`<div class="sg-figw"><button class="sg-imgb" data-open="${d.id}" aria-label="Open spread: ${esc(d.product)}">${imgH(d,true)}</button>
+      <p class="sg-credit mono">${ph?`Photo: ${ph.url?`<a class="linkish" href="${esc(ph.url)}" target="_blank" rel="noopener">${esc(ph.credit)}</a>`:esc(ph.credit)} · ${esc(ph.kind||"")}`:`Material study from the record's Material and Color`}</p></div>
+      <div class="sg-txt"><div class="sg-nav label"><span>${z.name} · ${String(pos+1).padStart(2,"0")} / ${String(seq.length).padStart(2,"0")}</span><span>${i+1} / ${ALL.length}</span></div>
+      <div class="sp-id mono" style="margin-top:18px">${d.id}${d.alias?` · ${esc(d.alias)}`:""}</div>
+      <h2 class="sg-pr">${esc(d.product)}</h2><div class="sg-br label">${esc(d.brand)}</div>
+      <dl class="spec-t">
+        ${row("Industrial",esc(d.type),d.note?esc(d.note):"")}${row("Material",esc(d.materialFull||d.material))}${row("Color",esc(d.colorFull||d.color))}
+        ${row("Graphic",d.graphic?`<span class="ga label">${esc(d.graphic)}</span>`:"")}${row("Quantity",d.qty?esc(d.qty):"")}
+        ${row("Price",d.price!=null?yen(d.price)+pvMark(d):"",d.priceNote?esc(d.priceNote):"")}
+        ${row("Parent",parent?`<button class="linkish" data-pick="${parent.id}">${parent.id} ${esc(parent.product)}</button>`:(d.parentRef?`${esc(d.parentRef)}<span class="sub">Parent record is not Owned</span>`:""))}
+        ${row("Components",kids)}${d.kids.length?row("Assembly total",asmText(d),`${asmTotal(d).n} objects including this one, as recorded`):""}
+      </dl><div class="sg-act"><button class="label" data-open="${d.id}">Open spread 詳細 →</button></div></div>`;
+    $("#sg-n",el).textContent=`${i+1} / ${ALL.length}`;
+    filmEl.querySelectorAll("button").forEach(b=>b.setAttribute("aria-current",String(b.dataset.pick===d.id)));
+    const cur=filmEl.querySelector(`button[data-pick="${d.id}"]`); if(cur) filmEl.scrollLeft=cur.offsetLeft-filmEl.clientWidth/2+cur.clientWidth/2;
+    hydrate(main);
+  }
+  const go=(n,dir)=>{ i=(n+ALL.length)%ALL.length; render(dir); };
+  LAYS[4].step=n=>go(i+n,n);
+  el.addEventListener("click",e=>{ const p=e.target.closest("[data-pick]"); if(p){ const n=RANK[p.dataset.pick]; if(n!=null&&n!==i) go(n,n>i?1:-1); return; } const s=e.target.closest("[data-sg]"); if(s) go(i+ +s.dataset.sg,+s.dataset.sg); });
+  let t0=null; main.addEventListener("touchstart",e=>{ t0=e.touches.length===1?{x:e.touches[0].clientX,y:e.touches[0].clientY,t:Date.now()}:null; },{passive:true});
+  main.addEventListener("touchend",e=>{ if(!t0) return; const t=e.changedTouches[0], dx=t.clientX-t0.x, dy=t.clientY-t0.y; const ok=Date.now()-t0.t<700&&Math.abs(dx)>56&&Math.abs(dx)>Math.abs(dy)*1.6; t0=null; if(ok) go(i+(dx<0?1:-1),dx<0?1:-1); },{passive:true});
+  render(0);
+  LAYS[4].show=()=>{ const cur=filmEl.querySelector('[aria-current="true"]'); if(cur) filmEl.scrollLeft=cur.offsetLeft-filmEl.clientWidth/2+cur.clientWidth/2; };
+}};
+
+/* 5 · cabinet */
+LAYS[5]={build(el){
+  el.innerHTML=layHead(5);
+  ZONES.forEach((z,zi)=>{
+    const tops=z.items.filter(d=>!d.parent);
+    const drawers=tops.map(d=>{ const g=treeOf(d);
+      const sp=g.map((x,k)=>`<button class="cb-sp${k?"":" main"}" data-open="${x.id}" title="${esc(x.id+" · "+x.product)}"><span class="cb-pin">${k+1}</span><span class="ph">${imgH(x)}${refB(x)}</span><span class="cid">${x.id}</span></button>`).join("");
+      const leg=g.map((x,k)=>`<li><button data-open="${x.id}"><i>${k+1}</i><span>${esc(x.product)}${x.qty?` ×${esc(x.qty)}`:""}</span><span class="lp">${x.price!=null?yen(x.price)+pvMark(x):"—"}</span></button></li>`).join("");
+      return `<article class="cb-dr${g.length>=6?" wide":""}"><div class="cb-tray">${sp}</div><div class="cb-front"><span class="cb-knob" aria-hidden="true"></span><div class="cb-lab"><div class="lid">${d.id}</div><h3>${esc(d.product)}</h3><div class="lbr">${esc(d.brand)}</div>${g.length>1?`<div class="lsum"><span>◆ ${pl(g.length-1)}</span><span>Σ ${asmText(d)}</span></div>`:""}<ul class="cb-leg">${leg}</ul></div></div></article>`; }).join("");
+    el.insertAdjacentHTML("beforeend",`<section class="cb-case"><div class="cb-plate"><span class="rn">${ROMAN[zi]}</span><span class="zn">${z.name}</span><span class="mono">${z.code}-series · ${z.src}</span><span class="mono">${z.items.length} objects · ${totalStr(z.items)}</span></div><div class="cb-drawers">${drawers}</div></section>`);
+  });
+  el.insertAdjacentHTML("beforeend",`<p class="cb-hint">Each drawer holds one assembly: the numbered specimen is the parent, the smaller ones are its parts. The brass label lists them in the same order. Tap any specimen or line to open its page.</p>`+FOOT);
+}};
+
+/* 6 · materials */
+const FAMS={wood:["木","Wood"],iron:["鉄","Iron"],blackmetal:["黒色金属","Black metal"],polymer:["樹脂","Polymer"],textile:["布","Textile"],brushed:["ヘアライン金属","Brushed metal"],titanium:["チタン","Titanium"],brass:["真鍮","Brass"],leather:["革","Leather"],glass:["ガラス","Glass"],pearl:["貝・パール","Pearl"],tortoise:["べっ甲調","Tortoise shell"],stained:["ステンドグラス","Stained glass"],camo:["迷彩","Camouflage"],ceramic:["陶磁","Ceramic"]};
+const lum=h=>{ const [r,g,b]=hex2(h); return .2126*r+.7152*g+.0722*b; };
+LAYS[6]={build(el){
+  const fams=tally(ALL,d=>d.fam); // [fam,count] by count desc
+  const S={f:"",photo:false};
+  const ribbon=fams.map(([f])=>ALL.filter(d=>d.fam===f).sort((a,b)=>lum(a.tone)-lum(b.tone))).flat();
+  el.innerHTML=layHead(6,`<div class="mw-ribbon" aria-label="All objects by material family, dark to light">${ribbon.map(d=>`<button style="--t:${d.tone}" data-open="${d.id}" aria-label="${esc(d.id+" "+d.product)}" title="${esc(d.id+" · "+d.product)}"></button>`).join("")}</div><div class="mw-rl mono">${fams.map(([f,c])=>`<span style="flex:${c} 1 0">${c>=8?(FAMS[f]?FAMS[f][1]:f):""}</span>`).join("")}</div>`)+`<div class="lay-tools" id="m-tools"></div><div id="m-body"></div>`+FOOT;
+  const tools=$("#m-tools",el), body=$("#m-body",el);
+  const draw=()=>{
+    tools.innerHTML=`<div class="tl-g"><span class="label">Family · 系統</span>${chipB("f","","All 全て",!S.f)}${fams.map(([f,c])=>chipB("f",f,`${FAMS[f]?FAMS[f][0]+" "+FAMS[f][1]:f} ${c}`,S.f===f)).join("")}</div><div class="tl-g"><span class="label">Tile · 表示</span>${chipB("v","m","Material study 素材面",!S.photo)}${chipB("v","p","Photograph 写真",S.photo)}</div>`;
+    body.className="mw"+(S.photo?" photo":"");
+    body.innerHTML=fams.filter(([f])=>!S.f||f===S.f).map(([f,c])=>{
+      const l=ALL.filter(d=>d.fam===f).sort((a,b)=>lum(a.tone)-lum(b.tone)||RANK[a.id]-RANK[b.id]);
+      const mats=tally(l,d=>firstOf(d.material)).slice(0,5).map(([n,k])=>`${esc(n)} ×${k}`).join(" · ");
+      const nm=FAMS[f]||[f,f], rep=l[Math.floor(l.length/2)];
+      return `<section class="mw-fam"><header class="mw-h"><div class="mw-tex" style="--t:${rep.tone}" data-tex="${rep.id}" aria-hidden="true"></div><h2><span class="ja">${nm[0]}</span><em>${nm[1]}</em></h2><span class="mono mw-ct">${l.length} objects · ${totalStr(l)}</span><span class="mono mw-mats">${mats}</span></header>
+      <div class="mw-wall">${l.map(d=>`<button class="mw-t" data-open="${d.id}"><span class="mw-sw" style="--t:${d.tone}" data-tex="${d.id}"><span class="mw-ph">${imgH(d)}${refB(d)}</span></span><span class="tn">${d.id} · ${d.tone}</span><span class="mt">${esc(firstOf(d.material))}</span><span class="cl">${esc(firstOf(d.color))}${d.price!=null?` · ${yen(d.price)}${pvMark(d)}`:""}</span></button>`).join("")}</div></section>`; }).join("");
+    hydrate(body);
+  };
+  dispatchChip(tools,(k,v)=>{ if(k==="f") S.f=v; else S.photo=v==="p"; draw(); });
+  draw();
+}};
+
+/* switching: pill, title click, number keys, #hash, remembered choice */
+laybar.innerHTML=`<div class="lb-name" id="lb-name" aria-live="polite"></div><div class="lb-btns">${LAYOUTS.map((l,i)=>`<button data-lb="${i}" aria-pressed="false" aria-label="${i}: ${l.ja} ${l.en}" title="${l.ja} · ${l.en}">${i}</button>`).join("")}</div>`;
+function baseHash(){ return LAY===0?(current==="cover"||!current?location.pathname+location.search:"#"+current):"#"+LAYOUTS[LAY].id; }
+function setLayout(n,{persist=true,hash=true}={}){
+  n=Math.max(0,Math.min(LAYOUTS.length-1,n|0)); const was=LAY; LAY=n;
+  root.setAttribute("data-layout",String(n));
+  laybar.querySelectorAll("[data-lb]").forEach(b=>b.setAttribute("aria-pressed",String(+b.dataset.lb===n)));
+  $("#lb-name").textContent=`${n} · ${LAYOUTS[n].ja} ${LAYOUTS[n].en}`;
+  stage.hidden=n!==0; lay.hidden=n===0;
+  layEl.forEach((e,i)=>{ if(e) e.hidden=i!==n; });
+  if(n===0){ if(!current) show("cover",{push:false,instant:true}); else queueMid(); }
+  else { if(!layEl[n]){ const s=document.createElement("section"); s.className="lay"; layEl[n]=s; lay.appendChild(s); LAYS[n].build(s); }
+    layEl[n].hidden=false; hydrate(layEl[n]); if(LAYS[n].show) LAYS[n].show(); }
+  if(was!==n) window.scrollTo(0,0);
+  if(persist){ try{ localStorage.setItem("wk-layout",LAYOUTS[n].id); }catch(e){} }
+  if(hash){ try{ history.replaceState(null,"",baseHash()); }catch(e){} }
+}
+const nextLayout=()=>setLayout((LAY+1)%LAYOUTS.length);
+function syncOv(){ document.body.classList.toggle("ov",!sp.hidden||!fd.hidden); }
+
 /* ── events ──────────────────────────── */
 document.addEventListener("click",e=>{
+  const lb=e.target.closest("[data-lb]"); if(lb){ setLayout(+lb.dataset.lb); return; }
+  if(e.target.closest("[data-cycle]")){ nextLayout(); return; }
+  if(LAY&&e.target.closest(".wordmark")){ nextLayout(); return; }
   const go=e.target.closest("[data-go]"); if(go){ hideSpread(); closeFinder(); show(go.dataset.go); return; }
   const op=e.target.closest("[data-open]"); if(op){ openSpread(op.dataset.open); return; }
   const st=e.target.closest("[data-step]"); if(st){ step(+st.dataset.step); return; }
@@ -647,18 +1067,33 @@ document.addEventListener("keydown",e=>{
   if(!fd.hidden){ if(e.key==="Escape") closeFinder(); return; }
   if(e.target.closest("input,textarea")) return;
   if(e.key==="/"){ e.preventDefault(); openFinder(); return; }
+  if((e.key==="Enter"||e.key===" ")&&e.target.closest&&e.target.closest("[data-cycle]")){ e.preventDefault(); nextLayout(); return; }
+  if(/^[0-6]$/.test(e.key)&&!e.metaKey&&!e.ctrlKey&&!e.altKey){ setLayout(+e.key); return; }
+  if(LAY===4){ if(e.key==="ArrowRight") LAYS[4].step(1); else if(e.key==="ArrowLeft") LAYS[4].step(-1); return; }
+  if(LAY) return;
   const keys=["cover",...ZONES.map(z=>z.key)]; const i=keys.indexOf(current);
   if(e.key==="ArrowRight"&&i<keys.length-1) show(keys[i+1]); else if(e.key==="ArrowLeft"&&i>0) show(keys[i-1]);
 });
 /* hash = zone key (#fire) or object id (#FUR-001, opens its spread over its zone) */
 function route(first){
   let h=""; try{ h=decodeURIComponent(location.hash.slice(1)); }catch(e){}
+  const li=LAYOUTS.findIndex(l=>l.id===h);
+  if(li>=0){ hideSpread(); if(li!==LAY) setLayout(li,{persist:!first,hash:false}); return; }
   const d=BY[h];
-  if(d){ if(first||current==="cover"||!current) show(zoneKeyOf(d),{push:false,instant:true}); if(spId!==h) openSpread(h,{fromHash:true}); return; }
-  hideSpread(); show(h||"cover",{push:false,instant:first});
+  if(d){ if(!LAY&&(first||current==="cover"||!current)) show(zoneKeyOf(d),{push:false,instant:true}); if(spId!==h) openSpread(h,{fromHash:true}); return; }
+  hideSpread();
+  if(LAY&&h&&ZONES.some(z=>z.key===h)) setLayout(0,{persist:false,hash:false});
+  if(!LAY) show(h||"cover",{push:false,instant:first});
 }
 window.addEventListener("hashchange",()=>route(false));
 
 mkTabs();
-route(true);
+/* starting layout: #layout in the link, else the viewer's last choice, else the monograph (zone and object links open over the monograph or the chosen layout) */
+{ let h0=""; try{ h0=decodeURIComponent(location.hash.slice(1)); }catch(e){}
+  let st=LAYOUTS.findIndex(l=>l.id===h0), keep=false;
+  if(st<0&&(!h0||BY[h0])){ try{ st=LAYOUTS.findIndex(l=>l.id===localStorage.getItem("wk-layout")); }catch(e){ st=-1; } keep=true; }
+  if(st<0) st=0;
+  setLayout(st,{persist:false,hash:st>0&&!h0});
+  route(true);
+}
 </script>
