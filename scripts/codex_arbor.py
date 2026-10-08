@@ -8,6 +8,22 @@ the illuminated codex of every official document, with the document
 tree, the catalogue, the mention matrix, a full-text search across all
 documents and a gallery of the MD-004 / MD-003 registries.
 
+The one page carries seven switchable designs over the same data
+(click the title, use the DESIGN bar at the bottom, press 0-6, or open
+the page with #s1 ... #s6; the choice is remembered in the browser):
+
+    orig  聖典   Codex            illuminated lights on a photographic night (the original)
+    s1    地形図 Topographic Map  summits, contours and trails; height = Information Hierarchy
+    s2    星図   Star Chart       polar chart; constellations of mentions, magnitude = lines
+    s3    建築   Architectural Set elevation drawing; one room per document, sheet frame
+    s4    植物図譜 Botanical Plates fruit / leaf / flower by how often a document changes
+    s5    年輪   Tree Rings       a wedge of the trunk; rings = tiers, rays = relations
+    s6    標本棚 Specimen Cabinet drawers per tier, pinned specimens, red threads
+
+Each design changes the drawing, the stylesheet and the page's own wording
+(headings, labels, empty states, placeholders). It never changes a document
+ID, title, version, count or any text read from the repository.
+
 Every figure on the page is read from the repository at build time:
 
     OP-008 §8 Document Series      -> catalogue (ID, Title, Path, Role,
@@ -43,7 +59,15 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
-TEMPLATE = Path(__file__).parent / "templates" / "codex_arbor.html"
+TEMPLATES = Path(__file__).parent / "templates"
+TEMPLATE = TEMPLATES / "codex_arbor.html"
+# Parts of the page that sit beside the template: the designs' stylesheet,
+# their wording, and the engine that draws the tree for each design.
+PARTS = {
+    "/*__SKINS_CSS__*/": TEMPLATES / "codex_arbor_skins.css",
+    "/*__SKINS_TEXT__*/": TEMPLATES / "codex_arbor_skins_text.js",
+    "/*__SKINS_JS__*/": TEMPLATES / "codex_arbor_skins.js",
+}
 
 ID = r"(?:DS|OP|DB|MD|BR|CZ|KN)-\d{3}"
 MENTION = re.compile(rf"(?<![A-Za-z0-9])({ID})(?![0-9])")
@@ -396,7 +420,12 @@ def main() -> None:
 
     data = build(args.root)
     payload = json.dumps(data, ensure_ascii=False).replace("</", "<\\/")
-    html = read(TEMPLATE).replace("/*__DATA__*/{}", payload)
+    html = read(TEMPLATE)
+    for marker, part in PARTS.items():
+        if marker not in html:
+            sys.exit(f"template: marker {marker} not found")
+        html = html.replace(marker, read(part))
+    html = html.replace("/*__DATA__*/{}", payload)
     args.out.write_text(html, encoding="utf-8")
     g = data["gallery"]
     print(

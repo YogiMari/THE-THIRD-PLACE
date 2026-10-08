@@ -25,6 +25,30 @@
   --f-book:"Cormorant Garamond","Garamond","Times New Roman",serif;
   --f-label:"Jost","Futura","Avenir Next","Helvetica Neue",sans-serif;
   --f-ja:"Shippori Mincho B1","Hiragino Mincho ProN","Yu Mincho",serif;
+  /* surfaces (the skins redefine these) */
+  --tint:rgba(214,167,78,.06);          /* hover wash */
+  --tint2:rgba(214,167,78,.14);         /* pressed chip */
+  --glass:rgba(9,9,13,.86);             /* floating controls */
+  --glass-2:rgba(9,9,13,.72);           /* thumb tabs */
+  --panel:linear-gradient(180deg,rgba(14,13,18,.84),rgba(9,9,13,.90));
+  --panel-solid:rgba(9,10,15,.95);
+  --overlay:rgba(5,5,8,.88);
+  --outline:rgba(214,167,78,.14);
+  --track:rgba(241,232,216,.07);
+  --card:linear-gradient(180deg,rgba(241,232,216,.035),rgba(241,232,216,0));
+  --input:rgba(241,232,216,.04);
+  --focus-ring:rgba(214,167,78,.15);
+  --tip:rgba(8,9,14,.92);
+  --ph-bg:#0b0b10;
+  --ph-vig:rgba(4,4,8,.62);
+  --ph-line:rgba(246,220,160,.22);
+  --mark:rgba(226,91,69,.28);
+  --diag:rgba(241,232,216,.05);
+  --on-grad:linear-gradient(180deg,#f6dca0,#b88a3e);
+  --on-ink:var(--night);
+  --gild:linear-gradient(180deg,#fff7e6 0%,#f0d9a6 40%,#b88a3e 76%,#6d4d22 100%);
+  --ramp:linear-gradient(90deg,#241d12,#6d4f22,#b98a3e,#e8c47c,#fff1cf);
+  --halo-flash:0 0 0 1px var(--gold),0 0 40px rgba(214,167,78,.25);
 }
 html{background:var(--night)}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
@@ -43,7 +67,7 @@ a{color:inherit}
 
 /* ---------- shared type ---------- */
 .lab{font-family:var(--f-label);font-size:10.5px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
-.gild{background:linear-gradient(180deg,#fff7e6 0%,#f0d9a6 40%,#b88a3e 76%,#6d4d22 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+.gild{background:var(--gild);-webkit-background-clip:text;background-clip:text;color:transparent}
 .rub{color:var(--rubric)}
 .en{font-family:var(--f-book);font-style:italic}
 .src{font-family:var(--f-label);font-size:9.5px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold)}
@@ -94,9 +118,9 @@ a{color:inherit}
 /* ---------- thumb index ---------- */
 .thumbs{position:fixed;right:8px;top:50%;transform:translateY(-50%);z-index:12;display:grid;gap:4px}
 .thumbs a{display:grid;place-items:center;width:32px;height:40px;text-decoration:none;font-family:var(--f-display);font-size:13px;color:var(--muted);
-  background:rgba(9,9,13,.72);border:1px solid var(--hair);border-right:0;transition:color .3s,background .3s,width .3s}
+  background:var(--glass-2);border:1px solid var(--hair);border-right:0;transition:color .3s,background .3s,width .3s}
 .thumbs a:hover,.thumbs a:focus-visible{color:var(--fg);outline:none;border-color:var(--gold)}
-.thumbs a.on{color:var(--night);background:linear-gradient(180deg,#f6dca0,#b88a3e);border-color:var(--gold);width:38px}
+.thumbs a.on{color:var(--on-ink);background:var(--on-grad);border-color:var(--gold);width:38px}
 
 /* ---------- liber head ---------- */
 .liber{margin-top:clamp(90px,12vw,170px);scroll-margin-top:24px}
@@ -209,8 +233,8 @@ table.codex .strike{color:var(--faint);text-decoration:line-through;text-decorat
 
 /* dossier */
 .dossier{position:sticky;top:calc(env(safe-area-inset-top,0px) + 20px);max-height:calc(100vh - 40px);overflow:auto;
-  background:linear-gradient(180deg,rgba(14,13,18,.84),rgba(9,9,13,.90));backdrop-filter:blur(14px) saturate(120%);-webkit-backdrop-filter:blur(14px) saturate(120%);
-  border:1px solid var(--hair-gold);outline:1px solid rgba(214,167,78,.12);outline-offset:-7px;padding:26px 26px 30px;scrollbar-width:thin}
+  background:var(--panel);backdrop-filter:blur(14px) saturate(120%);-webkit-backdrop-filter:blur(14px) saturate(120%);
+  border:1px solid var(--hair-gold);outline:1px solid var(--outline);outline-offset:-7px;padding:26px 26px 30px;scrollbar-width:thin}
 .dossier .close{display:none}
 .d-eyebrow{display:flex;justify-content:space-between;gap:12px;font-family:var(--f-label);font-size:10px;letter-spacing:.3em;text-transform:uppercase;color:var(--muted)}
 .d-eyebrow .sw{display:inline-block;width:8px;height:8px;border-radius:50%;margin-right:8px;vertical-align:1px;box-shadow:0 0 10px currentColor}
@@ -246,7 +270,7 @@ table.codex .strike{color:var(--faint);text-decoration:line-through;text-decorat
 .bar.static{cursor:default}
 .bar:hover .track b,.bar:focus-visible .track b{filter:brightness(1.35)}
 .bar:focus-visible{outline:1px solid var(--gold)}
-.track{height:4px;background:rgba(241,232,216,.07);position:relative}
+.track{height:4px;background:var(--track);position:relative}
 .track b{position:absolute;inset:0 auto 0 0;border-radius:0 2px 2px 0}
 .bar .n{text-align:right;color:var(--muted);font-variant-numeric:tabular-nums}
 .d-empty{color:var(--faint);font-size:12.5px;margin:0}
@@ -271,7 +295,7 @@ table.codex .strike{color:var(--faint);text-decoration:line-through;text-decorat
 .tier-h small{font-family:var(--f-ja);font-size:12.5px;color:var(--muted);margin-left:12px;letter-spacing:.15em}
 .crow{appearance:none;width:100%;background:none;border:0;border-bottom:1px solid var(--hair);color:var(--fg);text-align:left;cursor:pointer;
   display:grid;grid-template-columns:70px minmax(0,1fr) 90px 80px 54px 62px;gap:14px;align-items:baseline;padding:13px 0;font:inherit;transition:background .3s}
-.crow:hover,.crow:focus-visible{background:rgba(214,167,78,.06);outline:none}
+.crow:hover,.crow:focus-visible{background:var(--tint);outline:none}
 .crow:focus-visible{box-shadow:inset 2px 0 0 var(--gold)}
 .crow .cid{font-family:var(--f-label);font-size:11px;letter-spacing:.2em;text-align:right;font-weight:500}
 .crow .ct{min-width:0}
@@ -346,15 +370,15 @@ table.codex .strike{color:var(--faint);text-decoration:line-through;text-decorat
 #matrix text.on{fill:var(--fg)}
 #matrix .cell{stroke:var(--night);stroke-width:2;cursor:pointer}
 #matrix .cell:hover{stroke:var(--gold-hi);stroke-width:1}
-#matrix .diag{fill:rgba(241,232,216,.05)}
-.tip{position:fixed;z-index:20;pointer-events:none;padding:8px 12px;background:rgba(8,9,14,.92);border:1px solid var(--hair);font-family:var(--f-label);font-size:11px;letter-spacing:.1em;color:var(--fg);white-space:nowrap}
+#matrix .diag{fill:var(--diag)}
+.tip{position:fixed;z-index:20;pointer-events:none;padding:8px 12px;background:var(--tip);border:1px solid var(--hair);font-family:var(--f-label);font-size:11px;letter-spacing:.1em;color:var(--fg);white-space:nowrap}
 .tip b{font-family:var(--f-display);font-weight:400;font-size:18px;letter-spacing:0;margin-left:6px}
 .notes{display:grid;gap:22px}
 .tnote .big{font-family:var(--f-display);font-size:48px;line-height:1;font-variant-numeric:lining-nums}
 .tnote .lab{color:var(--gold);margin-top:6px;letter-spacing:.24em}
 .tnote p{margin:6px 0 0;font-size:13px;color:var(--muted);line-height:1.8}
 .scale{display:flex;align-items:center;gap:10px;font-family:var(--f-label);font-size:10px;letter-spacing:.14em;color:var(--muted)}
-.scale i{flex:1;height:6px;background:linear-gradient(90deg,#241d12,#6d4f22,#b98a3e,#e8c47c,#fff1cf)}
+.scale i{flex:1;height:6px;background:var(--ramp)}
 .source{margin-top:14px;font-size:12px;color:var(--faint);line-height:1.8}
 
 /* ---------- Liber VIII : Chronica ---------- */
@@ -394,18 +418,18 @@ table.codex .strike{color:var(--faint);text-decoration:line-through;text-decorat
 .g-tab[aria-selected="true"]{color:var(--fg);border-bottom-color:var(--gold)}
 .g-tab:focus-visible{outline:1px solid var(--gold);outline-offset:2px}
 .g-search{display:grid;gap:4px;min-width:0;flex:0 1 320px}
-input[type=search]{appearance:none;width:100%;background:rgba(241,232,216,.04);border:1px solid var(--hair-gold);color:var(--fg);font:inherit;font-size:14px;padding:9px 12px;border-radius:0}
+input[type=search]{appearance:none;width:100%;background:var(--input);border:1px solid var(--hair-gold);color:var(--fg);font:inherit;font-size:14px;padding:9px 12px;border-radius:0}
 input[type=search]::placeholder{color:var(--faint)}
-input[type=search]:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px rgba(214,167,78,.15)}
+input[type=search]:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 3px var(--focus-ring)}
 .g-filters{display:grid;gap:10px;margin-top:20px}
 .g-chips{display:flex;flex-wrap:wrap;gap:6px}
-.chip[aria-pressed="true"]{border-color:var(--gold);background:rgba(214,167,78,.14);color:var(--gold-hi)}
+.chip[aria-pressed="true"]{border-color:var(--gold);background:var(--tint2);color:var(--gold-hi)}
 .chip small{color:var(--muted);letter-spacing:.08em}
 .g-count{margin:18px 0 12px;font-family:var(--f-label);font-size:10.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--muted)}
 .g-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(min(100%,230px),1fr));gap:12px}
-.obj{position:relative;min-width:0;border:1px solid var(--hair);background:linear-gradient(180deg,rgba(241,232,216,.035),rgba(241,232,216,0));padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;transition:border-color .3s,box-shadow .6s;scroll-margin:90px}
+.obj{position:relative;min-width:0;border:1px solid var(--hair);background:var(--card);padding:14px 16px 16px;display:flex;flex-direction:column;gap:6px;transition:border-color .3s,box-shadow .6s;scroll-margin:90px}
 .obj:hover{border-color:var(--hair-gold)}
-.obj.flash{border-color:var(--gold);box-shadow:0 0 0 1px var(--gold),0 0 40px rgba(214,167,78,.25)}
+.obj.flash{border-color:var(--gold);box-shadow:var(--halo-flash)}
 .obj header{display:flex;justify-content:space-between;align-items:center;gap:8px}
 .oid{font-family:var(--f-label);font-size:11px;letter-spacing:.2em;font-weight:500;color:var(--s-MD)}
 .odom{font-family:var(--f-label);font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--faint)}
@@ -421,7 +445,7 @@ input[type=search]:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 
 .obj .onote{margin:6px 0 0;font-size:12px;line-height:1.8;color:var(--muted)}
 .obj.dim{opacity:.62}
 .pill{display:inline-block;font-style:normal;font-family:var(--f-label);font-size:9px;letter-spacing:.2em;text-transform:uppercase;padding:3px 8px;border:1px solid var(--hair);color:var(--muted);white-space:nowrap}
-.pill.st-Owned{background:linear-gradient(180deg,#f6dca0,#b88a3e);color:var(--night);border-color:var(--gold)}
+.pill.st-Owned{background:var(--on-grad);color:var(--on-ink);border-color:var(--gold)}
 .pill.st-Essential{border-color:var(--rubric);color:var(--rubric)}
 .pill.st-Candidate{border-style:dashed;border-color:var(--gold);color:var(--gold-hi)}
 .pill.st-Upgrade{border-color:var(--hair-gold);color:var(--fg)}
@@ -429,16 +453,16 @@ input[type=search]:focus{outline:none;border-color:var(--gold);box-shadow:0 0 0 
 .g-empty{grid-column:1/-1;color:var(--faint);font-size:13px;padding:24px 0;margin:0}
 
 /* ---------- Concordantia (full-text search) ---------- */
-.seek-fab{position:fixed;z-index:25;right:16px;bottom:calc(env(safe-area-inset-bottom,0px) + 16px);display:flex;align-items:center;gap:8px;appearance:none;cursor:pointer;
-  background:rgba(9,9,13,.86);border:1px solid var(--hair-gold);color:var(--fg);padding:9px 12px 9px 14px;font-family:var(--f-label);font-size:10px;letter-spacing:.26em;text-transform:uppercase;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.seek-fab{position:fixed;z-index:25;right:16px;bottom:calc(env(safe-area-inset-bottom,0px) + 74px);display:flex;align-items:center;gap:8px;appearance:none;cursor:pointer;
+  background:var(--glass);border:1px solid var(--hair-gold);color:var(--fg);padding:9px 12px 9px 14px;font-family:var(--f-label);font-size:10px;letter-spacing:.26em;text-transform:uppercase;backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
 .seek-fab small{font-family:var(--f-ja);letter-spacing:.1em;text-transform:none;color:var(--muted);font-size:11px}
 .seek-fab:hover,.seek-fab:focus-visible{border-color:var(--gold);outline:none}
 kbd{font-family:var(--f-label);font-size:10px;border:1px solid var(--hair);padding:1px 6px;color:var(--muted)}
 .seek-cta{appearance:none;cursor:pointer;margin:26px auto 0;display:flex;align-items:center;gap:14px;background:none;border:1px solid var(--hair-gold);color:var(--gold-hi);padding:12px 20px;font-family:var(--f-display);font-style:italic;font-size:19px}
-.seek-cta:hover,.seek-cta:focus-visible{border-color:var(--gold);background:rgba(214,167,78,.08);outline:none}
-.seek{position:fixed;inset:0;z-index:40;background:rgba(5,5,8,.88);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);overflow:auto;overscroll-behavior:contain;
+.seek-cta:hover,.seek-cta:focus-visible{border-color:var(--gold);background:var(--tint);outline:none}
+.seek{position:fixed;inset:0;z-index:40;background:var(--overlay);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);overflow:auto;overscroll-behavior:contain;
   padding:calc(env(safe-area-inset-top,0px) + clamp(16px,4vw,48px)) 16px calc(env(safe-area-inset-bottom,0px) + 40px)}
-.seek-inner{max-width:980px;margin:0 auto;background:var(--folio);border:1px solid var(--hair-gold);outline:1px solid rgba(214,167,78,.14);outline-offset:-8px;padding:clamp(20px,3.5vw,40px)}
+.seek-inner{max-width:980px;margin:0 auto;background:var(--folio);border:1px solid var(--hair-gold);outline:1px solid var(--outline);outline-offset:-8px;padding:clamp(20px,3.5vw,40px)}
 .seek-head{display:flex;justify-content:space-between;align-items:start;gap:16px;margin-bottom:18px}
 .seek-head h2{margin:0;font-family:var(--f-display);font-style:italic;font-weight:400;font-size:clamp(32px,4vw,48px);line-height:1}
 .seek-head h2 small{display:block;margin-top:6px;font-family:var(--f-ja);font-style:normal;font-size:14px;letter-spacing:.3em;color:var(--muted)}
@@ -450,12 +474,12 @@ kbd{font-family:var(--f-label);font-size:10px;border:1px solid var(--hair);paddi
 .seek-res > li{border-top:1px solid var(--hair)}
 .seek-res > li:last-child{border-bottom:1px solid var(--hair)}
 .s-hit{appearance:none;width:100%;background:none;border:0;color:var(--fg);text-align:left;cursor:pointer;display:grid;grid-template-columns:76px minmax(0,1fr);gap:2px 14px;padding:11px 4px 11px 0;font:inherit}
-.s-hit:hover,.s-hit:focus-visible{background:rgba(214,167,78,.05);outline:none}
+.s-hit:hover,.s-hit:focus-visible{background:var(--tint);outline:none}
 .s-hit:focus-visible{box-shadow:inset 2px 0 0 var(--gold)}
 .h-id{font-family:var(--f-label);font-size:10.5px;letter-spacing:.16em;font-weight:500;padding-top:3px;grid-row:span 2}
 .h-loc{font-family:var(--f-label);font-size:9.5px;letter-spacing:.14em;color:var(--faint);overflow-wrap:anywhere}
 .h-txt{font-size:14px;line-height:1.75;overflow-wrap:anywhere}
-mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:inset 0 -1px 0 var(--rubric)}
+mark{background:var(--mark);color:var(--fg);padding:0 1px;box-shadow:inset 0 -1px 0 var(--rubric)}
 .ctx{margin:0 0 14px 90px;border-left:1px solid var(--rubric);padding:6px 0 6px 14px}
 .ctx pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font-family:var(--f-ja);font-size:12.5px;line-height:1.75;color:var(--muted)}
 .ctx pre b{font-weight:400;color:var(--fg)}
@@ -466,12 +490,12 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 
 /* ---------- Tabulae (photographic plates from assets/banner.PNG) ---------- */
 [hidden]{display:none!important}
-.ph{position:relative;overflow:hidden;aspect-ratio:var(--ar,16/9);max-width:100%;background:#0b0b10;border:1px solid var(--hair-gold);box-shadow:0 50px 90px -30px rgba(0,0,0,.85)}
+.ph{position:relative;overflow:hidden;aspect-ratio:var(--ar,16/9);max-width:100%;background:var(--ph-bg);border:1px solid var(--hair-gold);box-shadow:0 50px 90px -30px rgba(0,0,0,.85)}
 .ph img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transform:translate3d(0,var(--py,0%),0) scale(1.1);filter:contrast(1.06) saturate(1.06)}
 .ph img.bloom{filter:blur(16px) brightness(1.25) saturate(1.3);mix-blend-mode:screen;opacity:.38}
 .ph::before{content:"";position:absolute;inset:0;z-index:2;pointer-events:none;
-  background:radial-gradient(120% 90% at 50% 45%,transparent 50%,rgba(4,4,8,.62) 100%),linear-gradient(180deg,rgba(255,170,90,.06),rgba(20,30,60,.10))}
-.ph::after{content:"";position:absolute;inset:8px;z-index:3;border:1px solid rgba(246,220,160,.22);pointer-events:none}
+  background:radial-gradient(120% 90% at 50% 45%,transparent 50%,var(--ph-vig) 100%),linear-gradient(180deg,rgba(255,170,90,.06),rgba(20,30,60,.10))}
+.ph::after{content:"";position:absolute;inset:8px;z-index:3;border:1px solid var(--ph-line);pointer-events:none}
 .cover{margin:0;position:relative}
 .ph-hero{--ar:1774/625}
 .ph-hero::before{background:radial-gradient(120% 90% at 50% 40%,transparent 48%,rgba(4,4,8,.6) 100%),linear-gradient(180deg,rgba(9,9,13,.25) 0%,transparent 30%,transparent 52%,rgba(9,9,13,.94) 100%)}
@@ -497,8 +521,8 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 @media (max-width:1180px){
   .thumbs{display:none}
   .arbor{grid-template-columns:minmax(0,1fr)}
-  .dossier{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:30;max-height:72vh;border-width:1px 0 0;outline:0;padding:22px 20px calc(26px + env(safe-area-inset-bottom,0px));
-    transform:translateY(105%);transition:transform .45s cubic-bezier(.2,.7,.2,1);background:rgba(9,10,15,.95)}
+  .dossier{position:fixed;left:0;right:0;bottom:0;top:auto;z-index:30;max-height:72vh;border-width:1px 0 0;outline:0;padding:22px 20px calc(80px + env(safe-area-inset-bottom,0px));
+    transform:translateY(105%);transition:transform .45s cubic-bezier(.2,.7,.2,1);background:var(--panel-solid)}
   .dossier.open{transform:none}
   .dossier .close{display:inline-flex;position:absolute;top:14px;right:16px}
   .legend{grid-template-columns:repeat(2,minmax(0,1fr))}
@@ -576,12 +600,14 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
   .grain,.edge .spark,.v-Periodic .halo,.v-Living .halo,.ph-hero img{animation:none}
   .dossier{transition:none}
 }
+/*__SKINS_CSS__*/
 </style>
 
 <canvas id="sky" aria-hidden="true"></canvas>
 <canvas id="motes" aria-hidden="true"></canvas>
 <div class="vignette" aria-hidden="true"></div>
 <div class="grain" aria-hidden="true"></div>
+<div id="skinbg" aria-hidden="true"></div>
 
 <nav class="thumbs" aria-label="書の索引">
   <a href="#liber-1" title="Liber I · Genesis 原典">I</a>
@@ -596,42 +622,42 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 </nav>
 
 <main class="page">
-  <div class="rail"><b>The Third Place</b><span>Codex Arboris</span><span class="m-date"></span><span>main · <span class="m-commit"></span></span></div>
+  <div class="rail"><b>The Third Place</b><span data-i="rail">Codex Arboris</span><span class="m-date"></span><span>main · <span class="m-commit"></span></span></div>
 
   <!-- ===================== FRONTISPIECE ===================== -->
   <header class="folio front">
     <figure class="cover">
       <div class="ph ph-hero"><img data-plate="hero" alt="夕暮れの山並みと湖を背に、ドームテント、灯したランタン、革張りのチェア、焚き火台、白い車が並ぶ THE THIRD PLACE の全景"><img class="bloom" data-plate="hero" alt="" aria-hidden="true"></div>
-      <figcaption class="cap"><span>Tabula Prima · Frontispiece</span><span>assets/banner.PNG</span></figcaption>
+      <figcaption class="cap"><span data-i="capL">Tabula Prima · Frontispiece</span><span>assets/banner.PNG</span></figcaption>
     </figure>
-    <h1><span class="black gild">Arbor</span><span class="sub">Codex of the Third Place</span></h1>
-    <div class="over">The Third Place · A Movable Outdoor Living Room</div>
-    <p class="ja">第三の場所　<span class="m-nk"></span>書の聖典</p>
+    <h1 id="masthead"><span class="black gild">Arbor</span><span class="sub" data-i="sub">Codex of the Third Place</span></h1>
+    <div class="over" data-i="over">The Third Place · A Movable Outdoor Living Room</div>
+    <p class="ja" data-i="ja">第三の場所　<span class="m-nk"></span>書の聖典</p>
     <div class="orn" aria-hidden="true"><i></i><i></i><i></i></div>
     <p class="epigraph">空間は最後に現れる。<br>最初に存在するのは、判断である。<cite class="src">DS-001 Original · Foreword</cite></p>
-    <p class="dek">THE THIRD PLACE を形づくる<span class="m-nk"></span>の文書を、原典から記録まで一冊の写本として綴じた。九つの書が、思想の源、文書の樹、書目、宝物庫、地層、文書律、外との契約、言及の織物、そして改訂の年代記を収める。記載はすべて、リポジトリ main の文書本文から生成している。</p>
+    <p class="dek" data-i="dek">THE THIRD PLACE を形づくる<span class="m-nk"></span>の文書を、原典から記録まで一冊の写本として綴じた。九つの書が、思想の源、文書の樹、書目、宝物庫、地層、文書律、外との契約、言及の織物、そして改訂の年代記を収める。記載はすべて、リポジトリ main の文書本文から生成している。</p>
     <div class="figures" id="figures"></div>
     <nav class="index" aria-labelledby="h-index">
-      <h2 id="h-index">Index Librorum · 書の目次</h2>
+      <h2 id="h-index" data-i="idxh">Index Librorum · 書の目次</h2>
       <ol>
-        <li><a href="#liber-1"><span class="rn">I</span><span class="nm">Genesis<small>原典</small></span><span class="pg">DS-001 · OP-001</span><span class="ct">Human Principles、原典十部、公理と原則、翻訳の連祷</span></a></li>
-        <li><a href="#liber-2"><span class="rn">II</span><span class="nm">Arbor<small>樹</small></span><span class="pg">OP-001 §12</span><span class="ct">情報階層に沿って二十五の光を配した樹と、各書の文書録</span></a></li>
-        <li><a href="#liber-3"><span class="rn">III</span><span class="nm">Canon<small>書目</small></span><span class="pg">OP-008 §8</span><span class="ct">全文書のカタログと、台帳に収められた項目の数</span></a></li>
-        <li><a href="#liber-4"><span class="rn">IV</span><span class="nm">Thesaurus<small>宝物庫</small></span><span class="pg">MD-004 · MD-003</span><span class="ct">台帳に登録されたオブジェクトを一点ずつ札にした目録</span></a></li>
-        <li><a href="#liber-5"><span class="rn">V</span><span class="nm">Strata<small>地層</small></span><span class="pg">OP-008 §4–6</span><span class="ct">設計・運用・記録の三層と、それぞれが負わない責任</span></a></li>
-        <li><a href="#liber-6"><span class="rn">VI</span><span class="nm">Lex<small>文書律</small></span><span class="pg">OP-008 §7–26</span><span class="ct">五原則、分類、ライフサイクル、命名、版、SSOT、DOC規則</span></a></li>
-        <li><a href="#liber-7"><span class="rn">VII</span><span class="nm">Foedus<small>契約</small></span><span class="pg">OP-001 · OP-008 §27–28</span><span class="ct">判断の手順、Canon、AI の務め、協力者、Drive、KN 発行</span></a></li>
-        <li><a href="#liber-8"><span class="rn">VIII</span><span class="nm">Textus<small>織物</small></span><span class="pg">main · <span class="m-commit"></span></span><span class="ct">本文中で交わされる文書ID の言及、25 × 25</span></a></li>
-        <li><a href="#liber-9"><span class="rn">IX</span><span class="nm">Chronica<small>年代記</small></span><span class="pg">OP-001 §26</span><span class="ct">番号再編、改名、履歴の移設、新旧ID 対照表</span></a></li>
+        <li><a href="#liber-1"><span class="rn">I</span><span class="nm"><span data-b="1.name">Genesis</span><small data-b="1.ja">原典</small></span><span class="pg">DS-001 · OP-001</span><span class="ct" data-b="1.ct">Human Principles、原典十部、公理と原則、翻訳の連祷</span></a></li>
+        <li><a href="#liber-2"><span class="rn">II</span><span class="nm"><span data-b="2.name">Arbor</span><small data-b="2.ja">樹</small></span><span class="pg">OP-001 §12</span><span class="ct" data-b="2.ct">情報階層に沿って二十五の光を配した樹と、各書の文書録</span></a></li>
+        <li><a href="#liber-3"><span class="rn">III</span><span class="nm"><span data-b="3.name">Canon</span><small data-b="3.ja">書目</small></span><span class="pg">OP-008 §8</span><span class="ct" data-b="3.ct">全文書のカタログと、台帳に収められた項目の数</span></a></li>
+        <li><a href="#liber-4"><span class="rn">IV</span><span class="nm"><span data-b="4.name">Thesaurus</span><small data-b="4.ja">宝物庫</small></span><span class="pg">MD-004 · MD-003</span><span class="ct" data-b="4.ct">台帳に登録されたオブジェクトを一点ずつ札にした目録</span></a></li>
+        <li><a href="#liber-5"><span class="rn">V</span><span class="nm"><span data-b="5.name">Strata</span><small data-b="5.ja">地層</small></span><span class="pg">OP-008 §4–6</span><span class="ct" data-b="5.ct">設計・運用・記録の三層と、それぞれが負わない責任</span></a></li>
+        <li><a href="#liber-6"><span class="rn">VI</span><span class="nm"><span data-b="6.name">Lex</span><small data-b="6.ja">文書律</small></span><span class="pg">OP-008 §7–26</span><span class="ct" data-b="6.ct">五原則、分類、ライフサイクル、命名、版、SSOT、DOC規則</span></a></li>
+        <li><a href="#liber-7"><span class="rn">VII</span><span class="nm"><span data-b="7.name">Foedus</span><small data-b="7.ja">契約</small></span><span class="pg">OP-001 · OP-008 §27–28</span><span class="ct" data-b="7.ct">判断の手順、Canon、AI の務め、協力者、Drive、KN 発行</span></a></li>
+        <li><a href="#liber-8"><span class="rn">VIII</span><span class="nm"><span data-b="8.name">Textus</span><small data-b="8.ja">織物</small></span><span class="pg">main · <span class="m-commit"></span></span><span class="ct" data-b="8.ct">本文中で交わされる文書ID の言及、25 × 25</span></a></li>
+        <li><a href="#liber-9"><span class="rn">IX</span><span class="nm"><span data-b="9.name">Chronica</span><small data-b="9.ja">年代記</small></span><span class="pg">OP-001 §26</span><span class="ct" data-b="9.ct">番号再編、改名、履歴の移設、新旧ID 対照表</span></a></li>
       </ol>
-      <button class="seek-cta" type="button" data-seek-open>Concordantia · 全書を検索する<kbd>/</kbd></button>
+      <button class="seek-cta" type="button" data-seek-open><span data-i="cta">Concordantia · 全書を検索する</span><kbd>/</kbd></button>
     </nav>
   </header>
 
   <figure class="tabula">
     <div class="ph" style="--ar:510/300"><img data-plate="fire" alt="透かし彫りの焚き火台に燃え立つ炎と、その奥の真鍮のケトルが並ぶテーブル"><img class="bloom" data-plate="fire" alt="" aria-hidden="true"></div>
     <figcaption>
-      <span class="tn gild">Tabula I</span>
+      <span class="tn gild" data-i="tab1">Tabula I</span>
       <p class="tq">家具も、光も、香りも、コーヒーも、焚き火も、<br>主役ではない。それらはすべて、<br>人生を味わうための環境である。</p>
       <span class="src">OP-001 §1 · Purpose</span>
       <span class="tc">assets/banner.PNG · detail</span>
@@ -640,10 +666,10 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 
   <!-- ===================== LIBER I : GENESIS ===================== -->
   <section class="liber" id="liber-1" aria-labelledby="h-l1">
-    <div class="runhead"><span>Liber I · Genesis</span><span>DS-001 Original · OP-001 Constitution</span></div>
+    <div class="runhead"><span data-b="1.run">Liber I · Genesis</span><span>DS-001 Original · OP-001 Constitution</span></div>
     <div class="lhead">
-      <div class="initial" aria-hidden="true"><span class="gild">G</span></div>
-      <div><span class="k">Liber I</span><h2 id="h-l1">Genesis<small>原典</small></h2></div>
+      <div class="initial" aria-hidden="true" data-n="1" data-r="I"><span class="gild" data-b="1.ini">G</span></div>
+      <div><span class="k" data-b="1.k">Liber I</span><h2 id="h-l1"><span data-b="1.name">Genesis</span><small data-b="1.ja2">原典</small></h2></div>
       <p>すべての文書は、一つの思想から生まれる（OP-001 §25）。その思想を記した不変の原典が DS-001 であり、それをプロジェクト運営の条文として再定義したものが OP-001 §3 の Human Principles である。DS-001 は情報階層の外側、最上流に置かれる（OP-001 §13.0）。</p>
     </div>
 
@@ -752,15 +778,15 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 
   <!-- ===================== LIBER II : ARBOR ===================== -->
   <section class="liber" id="liber-2" aria-labelledby="h-l2">
-    <div class="runhead"><span>Liber II · Arbor</span><span>OP-001 §12 Information Hierarchy</span></div>
+    <div class="runhead"><span data-b="2.run">Liber II · Arbor</span><span>OP-001 §12 Information Hierarchy</span></div>
     <div class="lhead">
-      <div class="initial" aria-hidden="true"><span class="gild">A</span></div>
-      <div><span class="k">Liber II</span><h2 id="h-l2">Arbor<small>文書の樹</small></h2></div>
-      <p>高さは OP-001 §12 の情報階層に従う。上位の文書ほど優先され、下位の文書は上位を変更できない。光の粒がひとつの文書、金の枝は文書が明記する責任の受け渡し。光に触れると、その書の文書録が開く。</p>
+      <div class="initial" aria-hidden="true" data-n="2" data-r="II"><span class="gild" data-b="2.ini">A</span></div>
+      <div><span class="k" data-b="2.k">Liber II</span><h2 id="h-l2"><span data-b="2.name">Arbor</span><small data-b="2.ja2">文書の樹</small></h2></div>
+      <p data-i="l2p">高さは OP-001 §12 の情報階層に従う。上位の文書ほど優先され、下位の文書は上位を変更できない。光の粒がひとつの文書、金の枝は文書が明記する責任の受け渡し。光に触れると、その書の文書録が開く。</p>
     </div>
     <div class="arbor">
       <div class="tree-wrap">
-        <div class="hint">光を選ぶと文書録 · Select a light</div>
+        <div class="hint" data-i="hint">光を選ぶと文書録 · Select a light</div>
         <svg id="tree" viewBox="0 0 1000 1790" role="group" aria-label="THE THIRD PLACE の文書の関係図"></svg>
       </div>
       <aside class="dossier" id="dossier" aria-live="polite"></aside>
@@ -768,27 +794,27 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 
     <div class="legend" aria-label="読み方">
       <div>
-        <span class="k">Colour · 光の色</span>
+        <span class="k" data-i="lg1k">Colour · 光の色</span>
         <h3>Series</h3>
-        <p>光の色は系列を表す。原典は月光、運用は真鍮、記録の五系列はそれぞれ固有の色を持つ。</p>
+        <p data-i="lg1p">光の色は系列を表す。原典は月光、運用は真鍮、記録の五系列はそれぞれ固有の色を持つ。</p>
         <ul id="lg-series"></ul>
       </div>
       <div>
-        <span class="k">Rings · 輪</span>
+        <span class="k" data-i="lg2k">Rings · 輪</span>
         <h3>Authority</h3>
-        <p>光を囲む輪は権限区分（OP-008 §9.1）。唯一の正本だけが二重の輪を持つ。</p>
+        <p data-i="lg2p">光を囲む輪は権限区分（OP-008 §9.1）。唯一の正本だけが二重の輪を持つ。</p>
         <ul id="lg-auth"></ul>
       </div>
       <div>
-        <span class="k">Breath · 明滅</span>
+        <span class="k" data-i="lg3k">Breath · 明滅</span>
         <h3>Volatility</h3>
-        <p>光のゆらぎは変動性（OP-008 §9.3）。台帳ほど炎のように揺らぎ、規則と原典は静止する。</p>
+        <p data-i="lg3p">光のゆらぎは変動性（OP-008 §9.3）。台帳ほど炎のように揺らぎ、規則と原典は静止する。</p>
         <ul id="lg-vol"></ul>
       </div>
       <div>
-        <span class="k">Branches · 枝</span>
+        <span class="k" data-i="lg4k">Branches · 枝</span>
         <h3>Paths</h3>
-        <p>金の枝は文書が明記する責任の受け渡し。選択時に現れる細い糸は、本文中で互いの文書IDに触れた回数。左右の柱の配置は、この写本による解釈である。</p>
+        <p data-i="lg4p">金の枝は文書が明記する責任の受け渡し。選択時に現れる細い糸は、本文中で互いの文書IDに触れた回数。左右の柱の配置は、この写本による解釈である。</p>
         <ul id="lg-paths"></ul>
       </div>
     </div>
@@ -796,10 +822,10 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 
   <!-- ===================== LIBER III : CANON ===================== -->
   <section class="liber" id="liber-3" aria-labelledby="h-l3">
-    <div class="runhead"><span>Liber III · Canon</span><span>OP-008 §8 Document Series · Appendix F</span></div>
+    <div class="runhead"><span data-b="3.run">Liber III · Canon</span><span>OP-008 §8 Document Series · Appendix F</span></div>
     <div class="lhead">
-      <div class="initial" aria-hidden="true"><span class="gild">C</span></div>
-      <div><span class="k">Liber III</span><h2 id="h-l3">Canon<small>書目</small></h2></div>
+      <div class="initial" aria-hidden="true" data-n="3" data-r="III"><span class="gild" data-b="3.ini">C</span></div>
+      <div><span class="k" data-b="3.k">Liber III</span><h2 id="h-l3"><span data-b="3.name">Canon</span><small data-b="3.ja2">書目</small></h2></div>
       <p>OP-008 §8 が唯一の正本とする文書カタログを、情報階層の段ごとに並べた。行を選ぶと、樹の上でその書の文書録が開く。版は各文書冒頭の Version、行数は main 上の本文の行数。</p>
     </div>
     <div class="folio">
@@ -807,7 +833,7 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
       <div class="canon" id="canon"></div>
 
       <div class="block">
-        <h3 class="sub-h">Census · 収蔵<span class="src">MD-004 · MD-003 · OP-003</span></h3>
+        <h3 class="sub-h"><span data-i="census">Census · 収蔵</span><span class="src">MD-004 · MD-003 · OP-003</span></h3>
         <div class="census" id="census"></div>
         <p class="note">数は各文書の見出し単位で数えた登録項目。枝番（例：LGT-028a）はそれぞれ一件として数える。</p>
       </div>
@@ -838,7 +864,7 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
   <figure class="tabula rev">
     <div class="ph" style="--ar:420/260"><img data-plate="chairs" alt="ランタンの光を受ける、黒い革張りの二脚のチェアとテーブル"><img class="bloom" data-plate="chairs" alt="" aria-hidden="true"></div>
     <figcaption>
-      <span class="tn gild">Tabula II</span>
+      <span class="tn gild" data-i="tab2">Tabula II</span>
       <p class="tq">すべての道具は、<br>空間のために存在する。</p>
       <span class="src">OP-001 §5.1 · Space before Objects</span>
       <span class="tc">assets/banner.PNG · detail</span>
@@ -847,16 +873,16 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 
   <!-- ===================== LIBER IV : THESAURUS ===================== -->
   <section class="liber" id="liber-4" aria-labelledby="h-l4">
-    <div class="runhead"><span>Liber IV · Thesaurus</span><span>MD-004 Equipment Registry · MD-003 Galley Fare</span></div>
+    <div class="runhead"><span data-b="4.run">Liber IV · Thesaurus</span><span>MD-004 Equipment Registry · MD-003 Galley Fare</span></div>
     <div class="lhead">
-      <div class="initial" aria-hidden="true"><span class="gild">T</span></div>
-      <div><span class="k">Liber IV</span><h2 id="h-l4">Thesaurus<small>宝物庫</small></h2></div>
+      <div class="initial" aria-hidden="true" data-n="4" data-r="IV"><span class="gild" data-b="4.ini">T</span></div>
+      <div><span class="k" data-b="4.k">Liber IV</span><h2 id="h-l4"><span data-b="4.name">Thesaurus</span><small data-b="4.ja2">宝物庫</small></h2></div>
       <p>THE THIRD PLACE を構成する物理的なオブジェクトを、台帳から一点ずつ札に起こした。MD-004 は Human Principles による美意識的整合を、MD-003 は機能優先の別基準を選定の条件とする。親子の札をたどると、構成部品の関係が見える。</p>
     </div>
     <div class="folio">
       <div class="g-bar">
         <div class="g-tabs" role="tablist" aria-label="台帳" id="g-tabs"></div>
-        <label class="g-search"><span class="lab">Filter</span><input id="g-q" type="search" placeholder="ブランド・製品・素材・色・ID" autocomplete="off"></label>
+        <label class="g-search"><span class="lab" data-i="gFilter">Filter</span><input id="g-q" type="search" data-ip="gPh" placeholder="ブランド・製品・素材・色・ID" autocomplete="off"></label>
       </div>
       <div class="g-filters">
         <div class="g-chips" id="g-dom" aria-label="Domain"></div>
@@ -880,10 +906,10 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 
   <!-- ===================== LIBER V : STRATA ===================== -->
   <section class="liber" id="liber-5" aria-labelledby="h-l5">
-    <div class="runhead"><span>Liber V · Strata</span><span>OP-008 §4–6 · OP-001 §12</span></div>
+    <div class="runhead"><span data-b="5.run">Liber V · Strata</span><span>OP-008 §4–6 · OP-001 §12</span></div>
     <div class="lhead">
-      <div class="initial" aria-hidden="true"><span class="gild">S</span></div>
-      <div><span class="k">Liber V</span><h2 id="h-l5">Strata<small>三つの地層</small></h2></div>
+      <div class="initial" aria-hidden="true" data-n="5" data-r="V"><span class="gild" data-b="5.ini">S</span></div>
+      <div><span class="k" data-b="5.k">Liber V</span><h2 id="h-l5"><span data-b="5.name">Strata</span><small data-b="5.ja2">三つの地層</small></h2></div>
       <p>文書は可変性の度合いで三つに分かれる（OP-008 §4）。樹の高さが示す「重み」とは別の軸であり、両者は並び立つ（OP-001 §12）。各系列は独立した責任範囲を持ち、互いの役割を侵害してはならない。</p>
     </div>
     <div class="folio">
@@ -919,10 +945,10 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 
   <!-- ===================== LIBER VI : LEX ===================== -->
   <section class="liber" id="liber-6" aria-labelledby="h-l6">
-    <div class="runhead"><span>Liber VI · Lex</span><span>OP-008 Documentation System · v<span id="m-op8v"></span></span></div>
+    <div class="runhead"><span data-b="6.run">Liber VI · Lex</span><span>OP-008 Documentation System · v<span id="m-op8v"></span></span></div>
     <div class="lhead">
-      <div class="initial" aria-hidden="true"><span class="gild">L</span></div>
-      <div><span class="k">Liber VI</span><h2 id="h-l6">Lex<small>文書律</small></h2></div>
+      <div class="initial" aria-hidden="true" data-n="6" data-r="VI"><span class="gild" data-b="6.ini">L</span></div>
+      <div><span class="k" data-b="6.k">Liber VI</span><h2 id="h-l6"><span data-b="6.name">Lex</span><small data-b="6.ja2">文書律</small></h2></div>
       <p>OP-008 Documentation System は、文書の役割・分類・管理方法・運用ルールを定める、文書体系そのものの基準文書である。本書と矛盾する運用がある場合は、Documentation System を優先する（§25）。</p>
     </div>
     <div class="folio">
@@ -1089,7 +1115,7 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
   <figure class="tabula">
     <div class="ph" style="--ar:614/400"><img data-plate="rover" alt="夕暮れの湖畔に停まる白い車。ナンバープレートの位置に THE THIRD PLACE の銘板"><img class="bloom" data-plate="rover" alt="" aria-hidden="true"></div>
     <figcaption>
-      <span class="tn gild">Tabula III</span>
+      <span class="tn gild" data-i="tab3">Tabula III</span>
       <p class="tq">移動するその居場所の中で、<br>風の香りや光の傾きとともに歳月を重ね、<br>思想そのものを住まわせること。</p>
       <span class="src">README · Overview</span>
       <span class="tc">assets/banner.PNG · detail</span>
@@ -1098,10 +1124,10 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 
   <!-- ===================== LIBER VII : FOEDUS ===================== -->
   <section class="liber" id="liber-7" aria-labelledby="h-l7">
-    <div class="runhead"><span>Liber VII · Foedus</span><span>OP-001 §9 · §17 · §19–21 · OP-008 §27–28</span></div>
+    <div class="runhead"><span data-b="7.run">Liber VII · Foedus</span><span>OP-001 §9 · §17 · §19–21 · OP-008 §27–28</span></div>
     <div class="lhead">
-      <div class="initial" aria-hidden="true"><span class="gild">F</span></div>
-      <div><span class="k">Liber VII</span><h2 id="h-l7">Foedus<small>契約</small></h2></div>
+      <div class="initial" aria-hidden="true" data-n="7" data-r="VII"><span class="gild" data-b="7.ini">F</span></div>
+      <div><span class="k" data-b="7.k">Liber VII</span><h2 id="h-l7"><span data-b="7.name">Foedus</span><small data-b="7.ja2">契約</small></h2></div>
       <p>判断の手順、正本の在処、AI と協力者の務め。文書の外側との約束を、OP-001 と OP-008、README が定めている。</p>
     </div>
     <div class="folio">
@@ -1214,11 +1240,11 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 
   <!-- ===================== LIBER VIII : TEXTUS ===================== -->
   <section class="liber" id="liber-8" aria-labelledby="h-l8">
-    <div class="runhead"><span>Liber VIII · Textus</span><span>Mentions across main · <span class="m-commit"></span></span></div>
+    <div class="runhead"><span data-b="8.run">Liber VIII · Textus</span><span>Mentions across main · <span class="m-commit"></span></span></div>
     <div class="lhead">
-      <div class="initial" aria-hidden="true"><span class="gild">T</span></div>
-      <div><span class="k">Liber VIII</span><h2 id="h-l8">Textus<small>言及の織物</small></h2></div>
-      <p>行の文書が、列の文書のIDを本文中で何回書いているか。枝が「定められた関係」なら、糸は「実際に交わされている言葉」である。セルを選ぶと、行の文書が樹の上で開く。</p>
+      <div class="initial" aria-hidden="true" data-n="8" data-r="VIII"><span class="gild" data-b="8.ini">T</span></div>
+      <div><span class="k" data-b="8.k">Liber VIII</span><h2 id="h-l8"><span data-b="8.name">Textus</span><small data-b="8.ja2">言及の織物</small></h2></div>
+      <p data-i="l8p">行の文書が、列の文書のIDを本文中で何回書いているか。枝が「定められた関係」なら、糸は「実際に交わされている言葉」である。セルを選ぶと、行の文書が樹の上で開く。</p>
     </div>
     <div class="matrix-grid">
       <div class="matrix-scroll"><svg id="matrix" role="img" aria-label="文書間の言及回数マトリクス"></svg></div>
@@ -1230,7 +1256,7 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
   <figure class="tabula rev">
     <div class="ph" style="--ar:680/340"><img data-plate="lanterns" alt="タープの下に灯るオイルランタンと、その奥で光を受けるテントの内部"><img class="bloom" data-plate="lanterns" alt="" aria-hidden="true"></div>
     <figcaption>
-      <span class="tn gild">Tabula IV</span>
+      <span class="tn gild" data-i="tab4">Tabula IV</span>
       <p class="tq">時間は、判断を成熟させる。</p>
       <span class="src">DS-001 Axiom V</span>
       <span class="tc">assets/banner.PNG · detail</span>
@@ -1239,10 +1265,10 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
 
   <!-- ===================== LIBER IX : CHRONICA ===================== -->
   <section class="liber" id="liber-9" aria-labelledby="h-l9">
-    <div class="runhead"><span>Liber IX · Chronica</span><span>OP-001 §26 · Appendix C · OP-008 Revision History</span></div>
+    <div class="runhead"><span data-b="9.run">Liber IX · Chronica</span><span>OP-001 §26 · Appendix C · OP-008 Revision History</span></div>
     <div class="lhead">
-      <div class="initial" aria-hidden="true"><span class="gild">C</span></div>
-      <div><span class="k">Liber IX</span><h2 id="h-l9">Chronica<small>年代記</small></h2></div>
+      <div class="initial" aria-hidden="true" data-n="9" data-r="IX"><span class="gild" data-b="9.ini">C</span></div>
+      <div><span class="k" data-b="9.k">Liber IX</span><h2 id="h-l9"><span data-b="9.name">Chronica</span><small data-b="9.ja2">年代記</small></h2></div>
       <p>文書体系の主な改訂を、文書に記された日付で辿る。価値観は書き換えず、積み重ねる（OP-001 §3.3）。改訂もまた、履歴として残される。</p>
     </div>
     <div class="folio">
@@ -1255,7 +1281,7 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
           <li><time>2026-09-27</time><div><b>The Hierarchy Recomposed</b><span>OP-001 §12 Information Hierarchy を現行系列へ全面再構成。OP-008・OP-010・BR・CZ を各段として加え、OP-009 を Master Documents 段へ移した。OP-001 Ver.5.4。</span></div></li>
           <li><time>2026-09-28</time><div><b>Mirror, Contribution, Publication</b><span>§27 Drive Mirror Operation（v3.7）と OP-001 §21.1 External Contribution Protocol、§28 KN Publication Policy（v3.13）を新設。</span></div></li>
           <li><time>2026-09-28</time><div><b>The Archive Opened</b><span>Rule DOC-09 を新設（v3.16）。一定規模を超えた Revision History を archive/ へ原文のまま移設できるようになった。</span></div></li>
-          <li><time id="m-gen"></time><div><b>This Codex</b><span>main（<span class="m-commit"></span>）の<span class="m-nk"></span>書から、この写本を生成した。</span></div></li>
+          <li><time id="m-gen"></time><div><b data-i="tlb">This Codex</b><span>main（<span class="m-commit"></span>）の<span class="m-nk"></span>書から、この写本を生成した。</span></div></li>
         </ol>
       </div>
 
@@ -1284,19 +1310,20 @@ mark{background:rgba(226,91,69,.28);color:var(--fg);padding:0 1px;box-shadow:ins
   <div class="colophon"><span>THE THIRD PLACE · A Movable Outdoor Living Room</span><span>SSOT · YogiMari/THE-THIRD-PLACE</span><span>Catalogue per OP-008 §8</span></div>
 </main>
 <div class="tip" id="tip" hidden></div>
-<button class="seek-fab" type="button" data-seek-open aria-haspopup="dialog"><span>Search</span><small>全書検索</small><kbd>/</kbd></button>
+<nav class="skinbar" id="skinbar" aria-label="デザインを切り替える"></nav>
+<button class="seek-fab" type="button" data-seek-open aria-haspopup="dialog"><span data-i="fabA">Search</span><small data-i="fabB">全書検索</small><kbd>/</kbd></button>
 <div class="seek" id="seek" role="dialog" aria-modal="true" aria-labelledby="seek-h" hidden>
   <div class="seek-inner">
     <div class="seek-head">
-      <h2 id="seek-h">Concordantia<small>全書検索</small></h2>
+      <h2 id="seek-h"><span data-i="seekH">Concordantia</span><small data-i="seekS">全書検索</small></h2>
       <button class="chip" type="button" data-seek-close>Close · Esc</button>
     </div>
-    <input id="seek-q" type="search" placeholder="語を入力。空白で区切ると、すべてを含む行を探す" autocomplete="off" spellcheck="false">
+    <input id="seek-q" type="search" data-ip="seekPh" placeholder="語を入力。空白で区切ると、すべてを含む行を探す" autocomplete="off" spellcheck="false">
     <div class="g-chips seek-scope" id="seek-scope" aria-label="範囲"></div>
     <p class="seek-sum" id="seek-sum" aria-live="polite"></p>
     <div class="seek-docs" id="seek-docs"></div>
     <ol class="seek-res" id="seek-res"></ol>
-    <div class="seek-more"><button class="chip" type="button" id="seek-more" hidden>さらに表示</button></div>
+    <div class="seek-more"><button class="chip" type="button" id="seek-more" hidden data-i="more">さらに表示</button></div>
   </div>
 </div>
 
@@ -1404,14 +1431,16 @@ const ORDER = HIER.filter(id=>DOCS[id]).concat(IDS.filter(id=>!HIER.includes(id)
 const tierOf = id => (L[id]&&L[id].t)||null;
 const INC = {}; IDS.forEach(i=>INC[i]={});
 DATA.docs.forEach(d=>Object.entries(d.refs).forEach(([k,v])=>{INC[k][d.id]=v}));
-const colorOf = id => DOCS[id].series==="root" ? "#e8dcc4" : COLOR[DOCS[id].series];
+const colorOf = id => DOCS[id].series==="root" ? ROOTC() : SC(DOCS[id].series);
 const NS="http://www.w3.org/2000/svg";
 const el=(tag,attrs={},parent)=>{const e=document.createElementNS(NS,tag);for(const k in attrs)e.setAttribute(k,attrs[k]);if(parent)parent.appendChild(e);return e};
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
 const $=id=>document.getElementById(id);
+/*__SKINS_TEXT__*/
+/*__SKINS_JS__*/
 
 /* ---------- meta (all from the build) ---------- */
-(function(){
+function fillMeta(){
   const M=DATA.meta, n=DATA.docs.length;
   const kanji=k=>{const d="〇一二三四五六七八九";if(k<10)return d[k];const t=Math.floor(k/10),o=k%10;return (t>1?d[t]:"")+"十"+(o?d[o]:"")};
   const fmt=s=>{if(!s)return "";const [y,m,dd]=s.split("-").map(Number);return `${dd} ${["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"][m-1]} ${y}`};
@@ -1423,15 +1452,16 @@ const $=id=>document.getElementById(id);
   if(op8)$("m-op8v").textContent=op8.version;
   $("m-arch-n").textContent=DATA.archive.length;
   $("m-gen").textContent=M.generated;
-})();
+}
 
 /* ---------- figures ---------- */
-(function(){
+function buildFigures(){
   const total = DATA.docs.reduce((s,d)=>s+Object.values(d.refs).reduce((a,b)=>a+b,0),0);
   const lines = DATA.docs.reduce((s,d)=>s+d.lines,0);
-  const f=[[DATA.docs.length,"Books · 文書"],[7,"Series · 系列"],[3,"Strata · 地層"],[9,"Tiers · 階層"],[total.toLocaleString("en"),"Mentions · 言及"],[lines.toLocaleString("en"),"Lines · 総行数"]];
+  const lab=V("figs",["Books · 文書","Series · 系列","Strata · 地層","Tiers · 階層","Mentions · 言及","Lines · 総行数"]);
+  const f=[[DATA.docs.length,lab[0]],[7,lab[1]],[3,lab[2]],[9,lab[3]],[total.toLocaleString("en"),lab[4]],[lines.toLocaleString("en"),lab[5]]];
   $("figures").innerHTML=f.map(([n,l])=>`<div><strong>${n}</strong><span>${l}</span></div>`).join("");
-})();
+}
 
 /* ---------- Liber I builders ---------- */
 (function(){
@@ -1446,99 +1476,17 @@ const $=id=>document.getElementById(id);
   $("litany").innerHTML=lit.map(([w,id,to],i)=>`<li><span class="who">${w}<small>${id}</small></span><span class="what">${i===6?`その思想の<em>歩み</em>を運用として翻訳する。`:i===7?`その思想を、<em>${to}</em>として保存する。`:`その思想を<em>${to}</em>へ翻訳する。`}</span></li>`).join("");
 })();
 
-/* ---------- tree ---------- */
-const svg=$("tree");
-const defs=el("defs",{},svg);
-defs.innerHTML=`
-  <filter id="soft" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="4"/></filter>
-  <filter id="halo" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="14"/></filter>
-  <filter id="spec" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="1.6"/></filter>
-  <linearGradient id="flare" x1="0" x2="1" y1="0" y2="0"><stop offset="0" stop-color="#ffe9c0" stop-opacity="0"/><stop offset=".5" stop-color="#fff6e2" stop-opacity=".85"/><stop offset="1" stop-color="#ffe9c0" stop-opacity="0"/></linearGradient>
-  <linearGradient id="pillar" x1="0" x2="0" y1="0" y2="1"><stop offset="0" stop-color="#f6dca0" stop-opacity="0"/><stop offset=".25" stop-color="#f6dca0" stop-opacity=".07"/><stop offset=".8" stop-color="#f6dca0" stop-opacity=".04"/><stop offset="1" stop-color="#f6dca0" stop-opacity="0"/></linearGradient>
-  <radialGradient id="crown" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="#fff6e0" stop-opacity=".35"/><stop offset=".4" stop-color="#f3e3b8" stop-opacity=".09"/><stop offset="1" stop-color="#f3e3b8" stop-opacity="0"/></radialGradient>`;
-Object.entries(COLOR).concat([["root","#e8dcc4"]]).forEach(([k,c])=>{
-  const g=el("radialGradient",{id:"orb-"+k,cx:".5",cy:".5",r:".5",fx:".36",fy:".32"},defs);
-  [["0","#fffdf6",1],[".16",c,1],[".58",c,.55],[".86","#0a0b10",.85],["1","#05060a",.95]].forEach(([o,sc,so])=>el("stop",{offset:o,"stop-color":sc,"stop-opacity":so},g));
-});
-
-const gBack=el("g",{},svg), gEdges=el("g",{},svg), gThreads=el("g",{},svg), gNodes=el("g",{},svg);
-
-/* crown glow, sacred rings + pillars */
-el("circle",{cx:500,cy:130,r:210,fill:"url(#crown)"},gBack);
-[150,178].forEach(r=>el("circle",{cx:500,cy:130,r,fill:"none",stroke:"#d6a74e","stroke-opacity":r===150?.18:.10,"stroke-width":.8,"stroke-dasharray":r===150?"":"2 6"},gBack));
-[[240,"PILLAR OF SENSE · 感性"],[500,"PILLAR OF ORIGIN · 原点"],[760,"PILLAR OF ORDER · 規律"]].forEach(([x,t])=>{
-  el("rect",{x:x-46,y:360,width:92,height:820,fill:"url(#pillar)"},gBack);
-  const tx=el("text",{x, y:x===500?1180:600,"text-anchor":"middle",class:"pillar-label"},gBack); tx.textContent=t;
-});
-/* tier markers */
-const tierMarks=[["I",130,"l"],["II",300,"l"],["III",420,"l"],["IV",470,"r"],["V",585,"l"],["VI",650,"l"],["VII",1235,"l"],["VIII",1250,"r"],["IX",1520,"l"]];
-tierMarks.forEach(([n,y,side])=>{
-  const x=side==="l"?18:982, anchor=side==="l"?"start":"end";
-  const t=el("text",{x,y,"text-anchor":anchor,class:"tier"},gBack);
-  const a=el("tspan",{class:"num"},t); a.textContent=n;
-  const b=el("tspan",{class:"lbl",dx:"8",dy:"-4"},t); b.textContent=TIERS[n].en.toUpperCase();
-  if(side==="r"){ t.textContent=""; const b2=el("tspan",{class:"lbl",dy:"-4"},t); b2.textContent=TIERS[n].en.toUpperCase(); const a2=el("tspan",{class:"num",dx:"8",dy:"4"},t); a2.textContent=n; }
-});
-
-/* edges */
-function curve(a,b){
-  const dx=b.x-a.x, dy=b.y-a.y, len=Math.hypot(dx,dy);
-  const ux=dx/len, uy=dy/len;
-  const s={x:a.x+ux*(a.r+6),y:a.y+uy*(a.r+6)}, e={x:b.x-ux*(b.r+6),y:b.y-uy*(b.r+6)};
-  const bend=Math.min(40,len*.12), nx=-uy*bend, ny=ux*bend;
-  return `M${s.x.toFixed(1)},${s.y.toFixed(1)} Q${((s.x+e.x)/2+nx).toFixed(1)},${((s.y+e.y)/2+ny).toFixed(1)} ${e.x.toFixed(1)},${e.y.toFixed(1)}`;
-}
-const edgeEls=EDGES.filter(([f,t])=>L[f]&&L[t]&&DOCS[f]&&DOCS[t]).map(([f,t,label,src,kind],i)=>{
-  const g=el("g",{class:"edge"+(kind?" "+kind:"")},gEdges);
-  const gradId="eg"+i;
-  const lg=el("linearGradient",{id:gradId,gradientUnits:"userSpaceOnUse",x1:L[f].x,y1:L[f].y,x2:L[t].x,y2:L[t].y},defs);
-  el("stop",{offset:"0","stop-color":colorOf(f)},lg); el("stop",{offset:"1","stop-color":colorOf(t)},lg);
-  const d=curve(L[f],L[t]);
-  el("path",{d,class:"glow",stroke:`url(#${gradId})`},g);
-  el("path",{d,class:"line",stroke:`url(#${gradId})`},g);
-  if(!kind){const sp=el("path",{d,class:"spark",stroke:"#fff3d6"},g); sp.style.animationDelay=(-(i*0.83)%7)+"s";}
-  return {g,f,t,label,src,kind};
-});
-
-/* nodes */
-const nodeEls={};
-Object.entries(L).forEach(([id,p])=>{
-  if(!DOCS[id])return;
-  const d=DOCS[id], c=colorOf(id), s=d.series;
-  const g=el("g",{class:`node v-${d.volatility||"Static"}`,transform:`translate(${p.x},${p.y})`,tabindex:"0",role:"button","aria-label":`${id} ${d.title}`,"data-id":id},gNodes);
-  el("circle",{class:"hit",r:p.r+18},g);
-  el("circle",{class:"halo",r:p.r*2.4,fill:c,filter:"url(#halo)"},g);
-  if(id==="DS-001"||id==="MD-004"){
-    const w=id==="DS-001"?300:170;
-    el("rect",{x:-w/2,y:-1.2,width:w,height:2.4,fill:"url(#flare)",opacity:id==="DS-001"?.8:.45,class:"spec"},g);
-  }
-  el("circle",{class:"orb",r:p.r,fill:`url(#orb-${s==="root"?"root":s})`},g);
-  el("ellipse",{class:"spec",cx:-p.r*.32,cy:-p.r*.42,rx:p.r*.34,ry:p.r*.18,fill:"#fff",opacity:.38,filter:"url(#spec)"},g);
-  const a=d.authority;
-  if(p.root){ el("rect",{class:"ring",x:-p.r-5,y:-p.r-5,width:2*p.r+10,height:2*p.r+10,transform:"rotate(45)"},g); }
-  else if(a==="SSOT"){ el("circle",{class:"ring",r:p.r+6},g); el("circle",{class:"ring",r:p.r+10},g); }
-  else if(a==="Standard"){ el("circle",{class:"ring",r:p.r+6},g); }
-  else if(a==="Reference"){ el("circle",{class:"ring",r:p.r+6,"stroke-dasharray":"6 5"},g); }
-  else if(a==="Archive"){ el("circle",{class:"ring",r:p.r+6,"stroke-dasharray":"1 4","stroke-linecap":"round","stroke-width":"1.6"},g); }
-  let y=p.r+(a==="SSOT"?30:26);
-  if(p.pre){const t=el("text",{y:-p.r-26,"text-anchor":"middle",class:"ttl pre"},g); t.textContent=p.pre;}
-  const idt=el("text",{y,"text-anchor":"middle",class:"id",fill:c},g); idt.textContent=p.root?"ROOT":id;
-  p.lines.forEach((ln,i)=>{const t=el("text",{y:y+20+i*19,"text-anchor":"middle",class:"ttl"},g); t.textContent=ln;});
-  g.addEventListener("click",()=>select(id,true));
-  g.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();select(id,true)}});
-  g.addEventListener("mouseenter",()=>{if(matchMedia("(hover:hover)").matches)highlight(id)});
-  g.addEventListener("mouseleave",()=>{if(matchMedia("(hover:hover)").matches)highlight(current)});
-  nodeEls[id]=g;
-});
+/* ---------- tree (drawn by the engine, once per design) ---------- */
+let svg=$("tree"), gThreads=null, POS=L, nodeEls={}, edgeEls=[];
 
 /* threads */
 function drawThreads(id){
   gThreads.innerHTML="";
-  if(!IDS.includes(id)||!L[id])return;
-  const a=L[id];
+  if(!IDS.includes(id)||!POS[id])return;
+  const a=POS[id];
   const peers=new Set([...Object.keys(DOCS[id].refs),...Object.keys(INC[id])]);
   peers.forEach(pid=>{
-    const b=L[pid]; if(!b)return; const n=(DOCS[id].refs[pid]||0)+(INC[id][pid]||0);
+    const b=POS[pid]; if(!b)return; const n=(DOCS[id].refs[pid]||0)+(INC[id][pid]||0);
     const mx=(a.x+b.x)/2, my=(a.y+b.y)/2, dx=b.x-a.x, dy=b.y-a.y, len=Math.hypot(dx,dy)||1;
     const side=(b.x>=a.x?1:-1), bow=Math.min(160,len*.35)*side;
     const p=el("path",{class:"thread",d:`M${a.x},${a.y} Q${mx-dy/len*bow},${my+dx/len*bow} ${b.x},${b.y}`,stroke:colorOf(pid),"stroke-width":(0.5+Math.sqrt(n)*0.42).toFixed(2)},gThreads);
@@ -1566,7 +1514,7 @@ const dossier=$("dossier");
 const chip=id=>`<button class="chip" data-go="${id}"><i style="background:${colorOf(id)}"></i>${id==="ARCHIVE"||id==="SCRIPTS"?DOCS[id].path:id}</button>`;
 function bars(obj,go=true,labels){
   const arr=Object.entries(obj).sort((a,b)=>b[1]-a[1]);
-  if(!arr.length)return `<p class="d-empty">なし</p>`;
+  if(!arr.length)return `<p class="d-empty">${V("none","なし")}</p>`;
   const max=Math.max(...arr.map(a=>a[1]));
   return `<div class="bars">${arr.map(([k,v])=>{
     const c=go?colorOf(k):labels.c, lab=go?k:(labels.map[k]||k);
@@ -1587,11 +1535,11 @@ function render(id){
     : `<div><dt>Authority</dt><dd>${d.authority}</dd></div><div><dt>Volatility</dt><dd>${d.volatility}</dd></div><div><dt>Version</dt><dd>${d.version}</dd></div>
        <div><dt>Former ID</dt><dd>${d.old||"—"}</dd></div><div><dt>Lines</dt><dd>${d.lines.toLocaleString("en")}</dd></div><div><dt>Last commit</dt><dd>${d.touched?d.touched.slice(5).replace("-","/"):"—"}</dd></div>`;
   const ch=d.chapters||[], LIM=14;
-  const toc = s==="root" ? "" : `<h4 class="d-h">Contents · 章立て（${ch.length}）</h4>${ch.length
+  const toc = s==="root" ? "" : `<h4 class="d-h">${V("dToc","Contents · 章立て")}（${ch.length}）</h4>${ch.length
       ? `<ol class="d-toc">${ch.slice(0,tocAll?ch.length:LIM).map(c=>`<li>${esc(c)}</li>`).join("")}</ol>${ch.length>LIM?`<button class="chip more" data-more>${tocAll?"一部だけ表示":`全 ${ch.length} 章を表示`}</button>`:""}`
       : `<p class="d-empty">リポジトリ上の本文は章立てを持たない。発行物は Artifact として発行される（OP-008 §28）。</p>`}`;
   const ents=d.entries&&Object.keys(d.entries).length
-    ? `<h4 class="d-h">Entries · 登録項目（${Object.values(d.entries).reduce((a,b)=>a+b,0)}）</h4>${bars(d.entries,false,{c:COLOR[s],map:DOMAINS})}` : "";
+    ? `<h4 class="d-h">${V("dEnt","Entries · 登録項目")}（${Object.values(d.entries).reduce((a,b)=>a+b,0)}）</h4>${bars(d.entries,false,{c:SC(s),map:DOMAINS})}` : "";
   dossier.innerHTML=`
     <button class="chip close" data-close aria-label="閉じる">Close</button>
     <div class="d-eyebrow"><span><i class="sw" style="background:${colorOf(id)};color:${colorOf(id)}"></i>${esc(serName)}</span><span>${esc(tier)}</span></div>
@@ -1601,16 +1549,16 @@ function render(id){
     <p class="d-sum">${esc(d.summary)}</p>
     <dl class="d-meta">${meta}</dl>
     <p class="d-path">${esc(d.path)}</p>
-    ${s!=="root"?`<div class="d-acts"><button class="chip" type="button" data-seek-doc="${id}">この書の中を検索</button>${DATA.gallery[id]?`<button class="chip" type="button" data-gallery="${id}">宝物庫で見る</button>`:""}</div>`:""}
-    <h4 class="d-h">Profile · どのような文書か</h4>
+    ${s!=="root"?`<div class="d-acts"><button class="chip" type="button" data-seek-doc="${id}">${V("dSeek","この書の中を検索")}</button>${DATA.gallery[id]?`<button class="chip" type="button" data-gallery="${id}">${V("dGal","宝物庫で見る")}</button>`:""}</div>`:""}
+    <h4 class="d-h">${V("dProf","Profile · どのような文書か")}</h4>
     <p class="d-prof">${esc(d.ja)}</p>
     <p class="d-prof en">${esc(d.en)}</p>
-    ${d.holds&&d.holds.length?`<h4 class="d-h">${s==="root"?"Contents · 収録":"Holds · 管理対象"}</h4><ul class="d-holds">${d.holds.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>`:""}
+    ${d.holds&&d.holds.length?`<h4 class="d-h">${s==="root"?"Contents · 収録":V("dHolds","Holds · 管理対象")}</h4><ul class="d-holds">${d.holds.map(h=>`<li>${esc(h)}</li>`).join("")}</ul>`:""}
     ${ents}
     ${toc}
     ${s==="KN"?`<h4 class="d-h">Publication · 発行</h4><p class="d-prof">KN 四系列の発行物は Claude Artifact としてのみ発行し、記録は DB-001 の KN Publication Log に残す（OP-008 §28）。</p>`:""}
-    ${rels?`<h4 class="d-h">Branches · 定められた関係</h4><ul class="d-rel">${rels}</ul>`:""}
-    ${s!=="root"?`<h4 class="d-h">Mentions out · この文書が触れる</h4>${bars(d.refs)}<h4 class="d-h">Mentions in · この文書に触れる</h4>${bars(INC[id])}`:""}`;
+    ${rels?`<h4 class="d-h">${V("dRel","Branches · 定められた関係")}</h4><ul class="d-rel">${rels}</ul>`:""}
+    ${s!=="root"?`<h4 class="d-h">${V("dOut","Mentions out · この文書が触れる")}</h4>${bars(d.refs)}<h4 class="d-h">${V("dIn","Mentions in · この文書に触れる")}</h4>${bars(INC[id])}`:""}`;
 }
 function select(id,user){
   if(current!==id)tocAll=false;
@@ -1618,7 +1566,7 @@ function select(id,user){
   if(user){
     if(matchMedia("(max-width:1180px)").matches) dossier.classList.add("open");
     dossier.scrollTop=0;
-    try{history.replaceState(null,"","#"+id)}catch(e){}
+    try{history.replaceState(null,"",hashFor(id))}catch(e){}
   }
 }
 document.addEventListener("click",e=>{
@@ -1636,28 +1584,8 @@ document.addEventListener("click",e=>{
 });
 document.addEventListener("keydown",e=>{if(e.key==="Escape")dossier.classList.remove("open")});
 
-/* ---------- legend ---------- */
+/* ---------- Lex class counts (the legend itself is drawn by the engine) ---------- */
 (function(){
-  const orb=(c,ring)=>`<svg width="30" height="30" viewBox="-15 -15 30 30"><circle r="7" fill="${c}" opacity=".95"/><circle r="12" fill="${c}" opacity=".16"/>${ring||""}</svg>`;
-  $("lg-series").innerHTML=Object.entries(SERIES).map(([k,v])=>`<li>${orb(COLOR[k])}<span>${k} · ${v.name}<small>${v.ja} · ${v.note}</small></span></li>`).join("");
-  const R=(extra)=>`<circle r="11" fill="none" stroke="#f6dca0" stroke-width="1" ${extra||""}/>`;
-  $("lg-auth").innerHTML=[
-    ["SSOT","唯一の正本",R()+`<circle r="14.5" fill="none" stroke="#f6dca0" stroke-width="1"/>`],
-    ["Standard","プロジェクト標準",R()],
-    ["Reference","補足・参考資料",R('stroke-dasharray="4 3"')],
-    ["Archive","履歴として保存",R('stroke-dasharray="1 3" stroke-linecap="round" stroke-width="1.6"')]
-  ].map(([a,j,r])=>`<li>${orb("#d6a74e",r)}<span>${a}<small>${j} · ${DATA.docs.filter(d=>d.authority===a).length} docs</small></span></li>`).join("");
-  $("lg-vol").innerHTML=[
-    ["Static","静止","原則更新されない（規則・原典・編集方針）"],
-    ["Periodic","ゆっくり呼吸する","決定の変化時に更新する"],
-    ["Living","炎のように揺らぐ","台帳・リスト。頻繁に更新される"]
-  ].map(([v,a,j])=>`<li><svg width="30" height="30" viewBox="-15 -15 30 30"><g class="v-${v}"><circle class="halo" r="13" fill="#f07a3a" opacity=".26" style="transform-box:fill-box;transform-origin:center"/></g><circle r="6" fill="#f7c79a"/></svg><span>${v} · ${a}<small>${j} · ${DATA.docs.filter(d=>d.volatility===v).length} docs</small></span></li>`).join("");
-  $("lg-paths").innerHTML=`
-    <li><svg width="30" height="12" viewBox="0 0 30 12"><path d="M1,9 Q15,1 29,9" fill="none" stroke="#d6a74e" stroke-width="1.2"/></svg><span>責任の受け渡し<small>文書に明記された関係 · ${EDGES.filter(e=>!e[4]).length} branches</small></span></li>
-    <li><svg width="30" height="12" viewBox="0 0 30 12"><path d="M1,9 Q15,1 29,9" fill="none" stroke="#d6a74e" stroke-width="1.2" stroke-dasharray="2 3"/></svg><span>情報階層の流れ<small>OP-001 §12</small></span></li>
-    <li><svg width="30" height="12" viewBox="0 0 30 12"><path d="M1,10 Q15,-4 29,10" fill="none" stroke="#a38ad6" stroke-width="2" opacity=".6"/></svg><span>言及の糸<small>太さは言及回数の平方根</small></span></li>
-    <li><svg width="30" height="30" viewBox="-15 -15 30 30"><rect x="-7" y="-7" width="14" height="14" transform="rotate(45)" fill="none" stroke="#f6dca0"/></svg><span>Roots · 支え<small>archive/ と scripts/</small></span></li>`;
-  /* Lex class counts */
   const cnt=(k,v)=>DATA.docs.filter(d=>d[k]===v).length;
   $("kv-auth").innerHTML=[["SSOT","唯一の正本。唯一の管理元となる文書"],["Standard","プロジェクト標準を定義する文書"],["Reference","補足資料・参考資料"],["Archive","過去の履歴として保存する文書"]]
     .map(([a,j])=>`<li><b>${a}</b><span>${j}</span><i>${cnt("authority",a)}</i></li>`).join("");
@@ -1666,31 +1594,32 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")dossier.classList.re
 })();
 
 /* ---------- Canon (catalogue) ---------- */
-(function(){
+function buildCanon(){
   let html="", lastTier=null;
   ORDER.forEach(id=>{
-    const d=DOCS[id], t=tierOf(id);
-    if(t!==lastTier){lastTier=t;const th=t?TIERS[t]:{en:"Unplaced",ja:"樹に未配置"};html+=`<div class="tier-h"><span class="rn">${t||"—"}</span><span><b>${th.en}</b><small>${th.ja}</small></span></div>`}
+    const d=DOCS[id], tr=tierOf(id);
+    if(tr!==lastTier){lastTier=tr;const th=tr?TIERS[tr]:{en:"Unplaced",ja:"樹に未配置"};html+=`<div class="tier-h"><span class="rn">${tr||"—"}</span><span><b>${th.en}</b><small>${th.ja}</small></span></div>`}
     html+=`<button class="crow" data-go="${id}" aria-label="${id} ${esc(d.title)} を樹で開く">
-      <span class="cid" style="color:${COLOR[d.series]}">${id}</span>
+      <span class="cid" style="color:${SC(d.series)}">${id}</span>
       <span class="ct"><b>${esc(d.title)}</b><span>${esc(d.summary)}</span></span>
       <span class="meta"><span>${d.authority}</span><span>${d.volatility}</span><span class="ver">v${d.version}</span><span class="ln">${d.lines.toLocaleString("en")}</span></span>
     </button>`;
   });
   $("canon").innerHTML=html;
-  /* census */
+}
+function buildCensus(){
   const e4=DOCS["MD-004"].entries, e3=DOCS["MD-003"].entries, lex=DATA.lexicon;
   const sum=o=>Object.values(o).reduce((a,b)=>a+b,0);
   const lexObj={}; lex.forEach(([k,v])=>lexObj[k]=v);
   $("census").innerHTML=`
-    <div><div class="big">${sum(e4)}</div><div class="lab cap">MD-004 · objects in six domains</div>${bars(e4,false,{c:COLOR.MD,map:DOMAINS})}</div>
-    <div><div class="big">${sum(e3)}</div><div class="lab cap">MD-003 · kitchen items (KIT)</div>${bars(e3,false,{c:COLOR.MD,map:DOMAINS})}
+    <div><div class="big">${sum(e4)}</div><div class="lab cap">MD-004 · objects in six domains</div>${bars(e4,false,{c:SC("MD"),map:DOMAINS})}</div>
+    <div><div class="big">${sum(e3)}</div><div class="lab cap">MD-003 · kitchen items (KIT)</div>${bars(e3,false,{c:SC("MD"),map:DOMAINS})}
       <p class="note">Kitchen Domain は MD-004 の対象外。実用性を優先した別基準で、MD-003 が完結管理する。</p></div>
-    <div><div class="big">${sum(lexObj)}</div><div class="lab cap">OP-003 · words in ${lex.length} vocabularies</div>${bars(lexObj,false,{c:COLOR.OP,map:{}})}</div>`;
-})();
+    <div><div class="big">${sum(lexObj)}</div><div class="lab cap">OP-003 · words in ${lex.length} vocabularies</div>${bars(lexObj,false,{c:SC("OP"),map:{}})}</div>`;
+}
 
 /* ---------- strata ---------- */
-(function(){
+function buildStrata(){
   const S=[
     ["D","設計","Design","DS","絶対不変。THE THIRD PLACE の不変の思想原典を保持する。通常の意思決定プロセスによる改訂を前提としない。",["DS"]],
     ["O","運用","Operation","OP","定義。不変だが改訂の可能性あり。Constitution・Design Philosophy・Design Rules・Vocabulary / Grammar・Documentation Governance・Research Methodology を定義し、個別データの入れ替えは伴わない。",["OP"]],
@@ -1699,7 +1628,7 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")dossier.classList.re
   $("strata").innerHTML=S.map(([g,ja,en,ser,p,list])=>{
     const docs=ORDER.map(i=>DOCS[i]).filter(d=>list.includes(d.series));
     return `<div class="stratum"><div class="glyph gild">${g}</div><h3>${ja}<small>${en} · ${ser}</small></h3><p>${p}</p><div class="chips">${docs.map(d=>chip(d.id)).join("")}</div></div>`}).join("");
-})();
+}
 
 /* ---------- DOC rules ---------- */
 (function(){
@@ -1731,41 +1660,51 @@ document.addEventListener("keydown",e=>{if(e.key==="Escape")dossier.classList.re
 })();
 
 /* ---------- matrix ---------- */
+const MX={cells:[],marks:[],max:1,N:0};
+function matrixRecolor(){
+  const ramp=MATRIX_RAMPS[SKIN]||MATRIX_RAMPS.orig;
+  const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
+  const mix=(tt)=>{const s=tt*(ramp.length-1), i=Math.min(ramp.length-2,Math.floor(s)), f=s-i, a=hex(ramp[i]), b=hex(ramp[i+1]);return `rgb(${a.map((v,k)=>Math.round(v+(b[k]-v)*f)).join(",")})`};
+  MX.cells.forEach(([r,v])=>r.setAttribute("fill",mix(Math.sqrt(v/MX.max))));
+  MX.marks.forEach(([r,id])=>r.setAttribute("fill",SC(id.slice(0,2))));
+}
 (function(){
   const m=$("matrix"), N=IDS.length, cs=24, off=64, top=64;
   const W=off+N*cs+8, H=top+N*cs+8;
   m.setAttribute("viewBox",`0 0 ${W} ${H}`);
   let max=0; DATA.docs.forEach(d=>Object.values(d.refs).forEach(v=>max=Math.max(max,v)));
-  const ramp=["#241d12","#6d4f22","#b98a3e","#e8c47c","#fff1cf"];
-  const hex=h=>[1,3,5].map(i=>parseInt(h.slice(i,i+2),16));
-  const mix=(t)=>{const s=t*(ramp.length-1), i=Math.min(ramp.length-2,Math.floor(s)), f=s-i, a=hex(ramp[i]), b=hex(ramp[i+1]);return `rgb(${a.map((v,k)=>Math.round(v+(b[k]-v)*f)).join(",")})`};
+  MX.max=max; MX.N=N;
   const rowLab=[], colLab=[];
   IDS.forEach((id,i)=>{
     const r=el("text",{x:off-8,y:top+i*cs+cs/2+3.5,"text-anchor":"end"},m); r.textContent=id; rowLab.push(r);
     const c=el("text",{transform:`translate(${off+i*cs+cs/2+3},${top-8}) rotate(-60)`},m); c.textContent=id; colLab.push(c);
-    el("rect",{x:off-4,y:top+i*cs+cs/2-3,width:3,height:6,fill:COLOR[id.slice(0,2)]},m);
-    el("rect",{x:off+i*cs+cs/2-3,y:top-4,width:6,height:3,fill:COLOR[id.slice(0,2)]},m);
+    MX.marks.push([el("rect",{x:off-4,y:top+i*cs+cs/2-3,width:3,height:6},m),id]);
+    MX.marks.push([el("rect",{x:off+i*cs+cs/2-3,y:top-4,width:6,height:3},m),id]);
   });
   const tip=$("tip");
   IDS.forEach((a,i)=>IDS.forEach((b,j)=>{
     if(i===j){el("rect",{x:off+j*cs,y:top+i*cs,width:cs,height:cs,class:"diag"},m);return}
     const v=DOCS[a].refs[b]||0; if(!v)return;
-    const r=el("rect",{x:off+j*cs,y:top+i*cs,width:cs,height:cs,rx:2,class:"cell",fill:mix(Math.sqrt(v/max))},m);
+    const r=el("rect",{x:off+j*cs,y:top+i*cs,width:cs,height:cs,rx:2,class:"cell"},m);MX.cells.push([r,v]);
     const show=e=>{tip.hidden=false;tip.innerHTML=`${a} → ${b}<b>${v}</b>`;tip.style.left=Math.min(innerWidth-190,e.clientX+14)+"px";tip.style.top=(e.clientY+14)+"px";rowLab[i].classList.add("on");colLab[j].classList.add("on")};
     r.addEventListener("mousemove",show);
     r.addEventListener("mouseleave",()=>{tip.hidden=true;rowLab[i].classList.remove("on");colLab[j].classList.remove("on")});
     r.addEventListener("click",()=>{tip.hidden=true;select(a,true);if(!matchMedia("(max-width:1180px)").matches)$("liber-2").scrollIntoView({behavior:reduce?"auto":"smooth",block:"start"})});
   }));
+})();
+function buildNotes(){
+  const N=IDS.length, max=MX.max;
   const inc={}; IDS.forEach(i=>inc[i]=Object.values(INC[i]).reduce((x,y)=>x+y,0));
   const most=Object.entries(inc).sort((x,y)=>y[1]-x[1])[0];
+  const mnL=V("mnL",["most mentioned","strongest thread","reach all"]), mnP=V("mnP",[null,null,null]);
   let pair=["","",0]; DATA.docs.forEach(d=>Object.entries(d.refs).forEach(([k,v])=>{if(v>pair[2])pair=[d.id,k,v]}));
   const reach=DATA.docs.filter(d=>Object.keys(d.refs).length===N-1).map(d=>d.id);
   $("notes").innerHTML=`
-    <div class="tnote"><div class="big">${most[1]}</div><div class="lab">${most[0]} · most mentioned</div><p>${DOCS[most[0]].title}。他の文書から最も多く名を呼ばれる書。</p></div>
-    <div class="tnote"><div class="big">${pair[2]}</div><div class="lab">${pair[0]} → ${pair[1]} · strongest thread</div><p>${DOCS[pair[0]].title} から ${DOCS[pair[1]].title} へ。最も太い一本の糸。</p></div>
-    <div class="tnote"><div class="big">${reach.length}</div><div class="lab">${reach.length?reach.join(" · "):"—"} · reach all</div><p>${reach.length?`他の ${N-1} 文書すべてに触れる書。`:`他のすべての文書に触れる書は、いまはない。`}</p></div>
+    <div class="tnote"><div class="big">${most[1]}</div><div class="lab">${most[0]} · ${mnL[0]}</div><p>${mnP[0]?mnP[0](DOCS[most[0]].title):`${DOCS[most[0]].title}。他の文書から最も多く名を呼ばれる書。`}</p></div>
+    <div class="tnote"><div class="big">${pair[2]}</div><div class="lab">${pair[0]} → ${pair[1]} · ${mnL[1]}</div><p>${mnP[1]?mnP[1](DOCS[pair[0]].title,DOCS[pair[1]].title):`${DOCS[pair[0]].title} から ${DOCS[pair[1]].title} へ。最も太い一本の糸。`}</p></div>
+    <div class="tnote"><div class="big">${reach.length}</div><div class="lab">${reach.length?reach.join(" · "):"—"} · ${mnL[2]}</div><p>${mnP[2]?mnP[2](reach.length,N):(reach.length?`他の ${N-1} 文書すべてに触れる書。`:`他のすべての文書に触れる書は、いまはない。`)}</p></div>
     <div class="scale"><span>1</span><i></i><span>${max}</span></div>`;
-})();
+}
 
 /* ---------- Thesaurus (gallery) ---------- */
 const G={reg:"MD-004",dom:"All",st:"All",q:""};
@@ -1786,8 +1725,8 @@ function gRender(){
   $("g-st").innerHTML=sts.map(s=>`<button class="chip" type="button" aria-pressed="${G.st===s}" data-gst="${s}">${s==="All"?"All statuses":s} <small>${s==="All"?inDom.length:count(inDom,e=>stKey(e.status)===s)}</small></button>`).join("");
   const q=normT(G.q).split(/\s+/).filter(Boolean);
   const list=inDom.filter(e=>(G.st==="All"||stKey(e.status)===G.st)&&(!q.length||q.every(w=>normT([e.id,e.brand,e.product,e.material,e.color,e.industrial,e.graphic,e.domain,e.status,e.note,e.alias].join(" ")).includes(w))));
-  $("g-count").textContent=`${list.length} / ${all.length} entries · ${G.reg}`;
-  $("g-grid").innerHTML=list.length?list.map(objCard).join(""):`<p class="g-empty">条件に合う札はない。絞り込みを緩めてください。</p>`;
+  $("g-count").textContent=`${list.length} / ${all.length} ${V("gEntries","entries")} · ${G.reg}`;
+  $("g-grid").innerHTML=list.length?list.map(objCard).join(""):`<p class="g-empty">${V("gEmpty","条件に合う札はない。絞り込みを緩めてください。")}</p>`;
 }
 function objCard(e){
   const k=stKey(e.status), arch=k==="Retired";
@@ -1841,10 +1780,10 @@ function snip(s,terms){
   const low=s.toLowerCase(); let i=Math.min(...terms.map(w=>{const k=low.indexOf(w);return k<0?Infinity:k})); if(!isFinite(i))i=0;
   const st=Math.max(0,i-60); return (st>0?"…":"")+s.slice(st,st+180)+(st+180<s.length?"…":"");
 }
-const hitColor=d=>d.id==="ARCHIVE"?"#e8dcc4":COLOR[d.series];
+const hitColor=d=>d.id==="ARCHIVE"?ROOTC():SC(d.series);
 function sScope(){
   $("seek-scope").innerHTML=(S.doc?[`<button class="chip" type="button" aria-pressed="true" data-sdoc="">${esc(S.doc)} のみ ×</button>`]:[])
-    .concat(SCOPES.map(s=>`<button class="chip" type="button" aria-pressed="${!S.doc&&S.scope===s}" data-sscope="${s}">${s==="All"?"All books":s==="ARCHIVE"?"archive/":s}</button>`)).join("");
+    .concat(SCOPES.map(s=>`<button class="chip" type="button" aria-pressed="${!S.doc&&S.scope===s}" data-sscope="${s}">${s==="All"?V("sAll","All books"):s==="ARCHIVE"?"archive/":s}</button>`)).join("");
 }
 function sRun(){
   const idx=sIndex();
@@ -1861,12 +1800,12 @@ function sRender(reset){
   const res=$("seek-res"), idx=S.index;
   if(reset){res.innerHTML="";S.shown=0}
   if(!S.terms.length){
-    $("seek-sum").innerHTML=`${DATA.corpus.length} files · ${idx.reduce((a,d)=>a+d.lines.length,0).toLocaleString("en")} lines を検索できる`;
-    $("seek-docs").innerHTML=`<span class="lab" style="align-self:center">例</span>`+EXAMPLES.map(w=>`<button class="chip" type="button" data-sq="${esc(w)}">${esc(w)}</button>`).join("");
+    $("seek-sum").innerHTML=`${DATA.corpus.length} files · ${idx.reduce((a,d)=>a+d.lines.length,0).toLocaleString("en")} lines ${V("sIntro","を検索できる")}`;
+    $("seek-docs").innerHTML=`<span class="lab" style="align-self:center">${V("sEx","例")}</span>`+EXAMPLES.map(w=>`<button class="chip" type="button" data-sq="${esc(w)}">${esc(w)}</button>`).join("");
     $("seek-more").hidden=true; return;
   }
   const books=Object.keys(S.per).length;
-  $("seek-sum").textContent=S.hits.length?`${S.hits.length.toLocaleString("en")} lines · ${books} ${books===1?"book":"books"}`:"見つからない。語を減らすか、範囲を広げてください。";
+  $("seek-sum").textContent=S.hits.length?`${S.hits.length.toLocaleString("en")} lines · ${books} ${books===1?"book":"books"}`:V("sNone","見つからない。語を減らすか、範囲を広げてください。");
   if(reset){
     const byKey={}; idx.forEach(d=>byKey[d.key]=d);
     $("seek-docs").innerHTML=Object.entries(S.per).sort((a,b)=>b[1]-a[1]).map(([k,n])=>`<button class="chip" type="button" data-sdoc="${esc(k)}" aria-pressed="${S.doc===k}"><i style="background:${hitColor(byKey[k])}"></i>${esc(byKey[k].id==="ARCHIVE"?k.replace("archive/","").replace("_Version_History_Archive.md"," archive"):k)} <small>${n}</small></button>`).join("");
@@ -1949,9 +1888,10 @@ document.addEventListener("keydown",e=>{
   document.querySelectorAll(".liber").forEach(s=>io.observe(s));
 })();
 
-/* initial selection */
+/* initial design and selection */
+initSkin();
 (function(){
-  let h=""; try{h=decodeURIComponent(location.hash.slice(1))}catch(e){}
+  const h=parseHash().doc;
   if(DOCS[h]) select(h,false); else { current=null; render("DS-001"); }
 })();
 
@@ -2021,6 +1961,7 @@ document.addEventListener("keydown",e=>{
   addEventListener("resize",()=>{size();prog()});addEventListener("scroll",prog,{passive:true});
   const t0=performance.now();
   const frame=now=>{
+    if(SKIN!=="orig"){if(!reduce)requestAnimationFrame(frame);return}
     sc+=(target-sc)*.06;
     gl.uniform2f(uR,c.width,c.height);gl.uniform1f(uT,(now-t0)/1000);gl.uniform1f(uS,sc);
     gl.drawArrays(gl.TRIANGLES,0,3);
@@ -2043,6 +1984,7 @@ document.addEventListener("keydown",e=>{
       vx:(Math.random()-.5)*.12,vy:-(.05+Math.random()*.22),c:hues[i%hues.length],ph:Math.random()*6.28});
   }
   const draw=t=>{
+    if(SKIN!=="orig"){if(!reduce)requestAnimationFrame(draw);return}
     x.clearRect(0,0,W,H);
     x.globalCompositeOperation="lighter";
     for(const p of P){
