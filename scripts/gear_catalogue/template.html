@@ -496,6 +496,7 @@ const ZONES = [
   {key:"light",name:"Light",code:"LGT",src:"MD-004"},
   {key:"aroma",name:"Aroma",code:"ARM",src:"MD-004"},
   {key:"storage",name:"Storage",code:"STR",src:"MD-004"},
+  {key:"coffee",name:"Coffee",code:"COF",src:"MD-004"},
   {key:"fire",name:"Fire",code:"FIR",src:"MD-004"},
   {key:"shelter",name:"Shelter",code:"SHL",src:"MD-004"},
   {key:"kitchen",name:"Kitchen",code:"KIT",src:"MD-003"}
@@ -676,7 +677,6 @@ function coverHTML(){
     <div class="toc-h label"><span>Contents</span><span>Zone · Series · Source · Count / Total · Principal material</span></div>
     ${rows}
     <div class="row tot"><span class="num">Σ</span><span class="nm">Recorded total</span><span class="mono ct">${yen(sumP(DATA))}<small>${nP(DATA)} of ${all} objects carry a price</small></span></div>
-    <div class="row muted"><span class="num">—</span><span class="nm">Coffee</span><span class="mono cd">COF · MD-004</span><span class="mono ct">00 objects</span><span class="label pm">Registered on purchase</span><span></span></div>
   </section>
   <footer class="colophon">
     <div><h4 class="label">Sources</h4>MD-004 Equipment Registry Object Reference, v${META.md004}. MD-003 Galley Fare, v${META.md003} (Kitchen).</div>
