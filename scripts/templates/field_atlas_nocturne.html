@@ -13,6 +13,8 @@
     --body:"Zen Kaku Gothic New","Hiragino Sans",sans-serif;
     color-scheme:dark;
   }
+  /* Atlas tools (field_atlas_shared.js): colours of the tools panel and the sections it adds */
+  :root{--fa-bg:rgba(2,10,16,.94);--fa-fg:var(--ink);--fa-soft:var(--ink-soft);--fa-line:var(--line2);--fa-acc:var(--a);--fa-acc2:var(--b);--fa-on:var(--void);--fa-font:var(--mono);--fa-head:var(--display);--fa-hw:400;--fa-hls:.3em;--fa-r:0;--fa-rs:0;--fa-shadow:0 0 28px rgba(63,240,255,.14);--fa-scheme:dark;--fa-night:#0a1018;--fa-twi:#a8602f;--fa-day:#3d7f93}
   *{box-sizing:border-box}
   [hidden]{display:none!important}
   html,body{height:100%}
@@ -472,6 +474,7 @@ const ROUTES=/*__ROUTES__*/{};
 const EXTRA=/*__EXTRA__*/{};
 const PAGE_URL="https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm";
 /*__SHARED_JS__*/
+Object.assign(FA.theme,{night:0x04070f,day:0x2c6e84,warm:0xff8a3a,nightAmt:.5,dayAmt:.5,warmAmt:.3,landAmt:.3,veil:.8,contour:0x3ff0ff,contourOp:.42,contourMajor:0x9ff8ff,shadow:0x000000,hi:0x3ff0ff,shadeA:.6,hiA:.22,trail:0xff5ec8,link:0xffa24a});
 
 /* ---------- index ---------- */
 const rows=$("#rows");
@@ -589,6 +592,7 @@ function startRadar(resetA,resetB){
       (dash(x.config)?`<div class="cf">${esc(x.config)}</div>`+gearHTML(x.config):"")+
       `<dl>${[["WEATHER",x.weather],["WENT WELL",x.well],["ISSUES",x.issues]].filter(([,v])=>dash(v)).map(([k2,v])=>`<dt>${k2}</dt><dd>${esc(v)}</dd>`).join("")}</dl></div>`;}).join("");
   [["#siteS",siteHTML],["#skyS",skyHTML],["#coldS",coldHTML],["#surrS",surrHTML]].forEach(([id,f])=>{const h=f(A);$(id).innerHTML=h;$(id).hidden=!h;});
+  faRefresh();
   if(RM){RA.cur=[...RA.to];RB.cur=[...RB.to];scrUntil=0;drawRadar(now);return;}
   cancelAnimationFrame(radRaf);radRaf=requestAnimationFrame(radarFrame);
 }
@@ -860,6 +864,7 @@ function frame(now){
   if(L.next){const g=GEO[NEXT.r];L.next.hidden=!bootDone&&!RM||!live(NEXT.r);if(!L.next.hidden)place(L.next,V(g[0],lift,g[1]),"translate(-50%,14px)");}
   benchM.forEach(b=>{b.el.hidden=!bootDone&&!RM;if(!b.el.hidden)place(b.el,V(b.v.x,lift+.7,b.v.z),"translate(-50%,calc(-100% - 4px))");});
   if(hovered&&GEO[hovered]){const ph=GEO[hovered];place(L.h,V(ph[0],lift+1.2,ph[1]),"translate(18px,-50%)");}
+  faFrame(now,lift);
 }
 function overlay(S,r,lab,lift){
   const ret=$("#ret"+S);
@@ -888,7 +893,7 @@ function boot(){
 
 /* ---------- start ---------- */
 resort();setHash();selB.value=state.b?String(state.b):"none";
-GL=initGL();$("#nogl").hidden=GL;
+GL=initGL();$("#nogl").hidden=GL;faStart();
 if(!GL){$("#vObl").disabled=true;$("#vTop").disabled=true;bootEl.hidden=true;}
 if(RM||!GL){bootT0=performance.now()-9000;bootDone=true;}
 boot();

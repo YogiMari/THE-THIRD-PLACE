@@ -54,11 +54,14 @@ THE-THIRD-PLACE/
 │   ├── field_atlas_radar.py            # MD-002 → Field Atlas Radar（レーダーチャート）生成
 │   ├── field_atlas_nocturne.py        # MD-002 → Field Atlas Nocturne（3D地図・ダーク版）生成
 │   ├── field_atlas_aubade.py            # MD-002 → Field Atlas Aubade（3D地図・ライト版）生成
-│   ├── field_atlas_fetch.py  # 地図用データ（位置・道路ルート・写真・標高・周辺環境）の取得
-│   ├── field_atlas_check.py            # MD-002・DB-001・MD-004・地図用データ・両版の整合チェック（CIで実行）
+│   ├── field_atlas_cartograph.py        # MD-002 → Field Atlas Cartograph（3D地図・古地図版）生成
+│   ├── field_atlas_contour.py           # MD-002 → Field Atlas Contour（3D地図・モノクロ等高線版）生成
+│   ├── field_atlas_gloaming.py          # MD-002 → Field Atlas Gloaming（3D地図・黄昏ネオン版）生成
+│   ├── field_atlas_fetch.py  # 地図用データ（位置・道路ルート・写真・標高・地形格子・周辺環境）の取得
+│   ├── field_atlas_check.py            # MD-002・DB-001・MD-004・地図用データ・全5版の整合チェック（CIで実行）
 │   ├── doc_catalogue_check.py          # OP-008 §8 の文書一覧と各文書のヘッダー・ファイルの突き合わせ。MD-004のStatus別一覧（--status-list）。CIで実行
 │   ├── codex_arbor.py                  # 全文書 → Arbor of the Third Place（文書アトラス・全書検索・宝物庫）生成
-│   ├── data/field_atlas/     # 地図用データと、両版のデザイン・再生成の記録（README.md）
+│   ├── data/field_atlas/     # 地図用データと、全5版のデザイン・再生成の記録（README.md）
 │   ├── templates/                      # 生成用HTMLテンプレート
 │   └── MirrorSync.gs                   # GitHub → Drive 一方向ミラー（OP-008 §27）
 │
@@ -173,6 +176,10 @@ python3 scripts/codex_arbor.py --out codex-arbor.html
 
 - 公開先：https://claude.ai/artifact/WbRbrmERdD1n6tfA92U2Eb
 - 生成スクリプト：`scripts/codex_arbor.py`／テンプレート：`scripts/templates/codex_arbor.html`
+- デザインは7種を1ページに収めている。タイトル（Arbor）をクリックすると順に切り替わり（最後は最初に戻る）、画面下の「DESIGN」バー、キー`0`〜`6`、URLの`#s1`〜`#s6`（文書指定は`#s3+OP-001`）でも選べる。選んだデザインはブラウザに記憶される。
+  `Original`＝聖典（Codex）／`1`＝地形図（標高＝情報階層、文書は山頂、登山道は責任の受け渡し）／`2`＝星図（極座標、系列ごとの星座と言及の星座線、等級＝行数）／`3`＝建築（立面図、1文書1室、図面枠）／`4`＝植物図譜（実・葉・花＝変動性）／`5`＝年輪（幹の扇形断面、輪＝階層、放射線＝関係）／`6`＝標本棚（段＝階層、ピン留めの標本、赤い糸）。
+  デザインが変えるのは、絵・配色・ページ自身の言い回し（見出し・ラベル・空状態・プレースホルダ）だけである。文書ID・タイトル・版・件数・リポジトリから読み取った本文は変えない。
+- デザイン関連の部品：`scripts/templates/codex_arbor_skins.css`（各デザインの見た目）／`codex_arbor_skins_text.js`（各デザインの言い回し）／`codex_arbor_skins.js`（樹の描き分けと切替）。生成スクリプトが一つのHTMLに合成する。
 - 写真図版（Tabula）は、生成時に`assets/banner.PNG`から切り出して埋め込む（Pillowが必要。無い環境では図版なしで生成される）。切り出し範囲はスクリプトの`PLATES`に記している。
 - 樹の配置と、文書が明記する関係（枝）は、出典とともにテンプレートに記している。§8に新しい文書が加わった場合、書目・全書検索・言及マトリクスには自動で現れる。樹への配置は、テンプレートに追記する。
 
@@ -266,10 +273,13 @@ THE-THIRD-PLACE/
 │   ├── field_atlas_radar.py            # Generates the Field Atlas Radar page from MD-002
 │   ├── field_atlas_nocturne.py        # Generates Field Atlas Nocturne (3D map, dark edition) from MD-002
 │   ├── field_atlas_aubade.py            # Generates Field Atlas Aubade (3D map, light edition) from MD-002
-│   ├── field_atlas_fetch.py  # Fetches map data (positions, road routes, photos, elevation, surroundings)
-│   ├── field_atlas_check.py            # Checks MD-002, DB-001, MD-004, map data and both pages agree (runs in CI)
+│   ├── field_atlas_cartograph.py        # Generates Field Atlas Cartograph (3D map, aged-paper old-map edition) from MD-002
+│   ├── field_atlas_contour.py           # Generates Field Atlas Contour (3D map, monochrome topographic edition) from MD-002
+│   ├── field_atlas_gloaming.py          # Generates Field Atlas Gloaming (3D map, dusk-gradient neon edition) from MD-002
+│   ├── field_atlas_fetch.py  # Fetches map data (positions, road routes, photos, elevation, terrain grid, surroundings)
+│   ├── field_atlas_check.py            # Checks MD-002, DB-001, MD-004, map data and all five map pages agree (runs in CI)
 │   ├── codex_arbor.py                  # Generates Arbor of the Third Place (document atlas, full-text search, gallery) from all documents
-│   ├── data/field_atlas/     # Map data, plus design and rebuild notes for both editions (README.md)
+│   ├── data/field_atlas/     # Map data, plus design and rebuild notes for all five editions (README.md)
 │   ├── templates/                      # HTML templates for generators
 │   └── MirrorSync.gs                   # One-way GitHub → Drive mirror (OP-008 §27)
 │
@@ -384,6 +394,10 @@ python3 scripts/codex_arbor.py --out codex-arbor.html
 
 - Published at: https://claude.ai/artifact/WbRbrmERdD1n6tfA92U2Eb
 - Generator: `scripts/codex_arbor.py` / Template: `scripts/templates/codex_arbor.html`
+- The one page carries seven designs. Click the title (Arbor) to cycle through them (the last returns to the first), or use the DESIGN bar at the bottom, keys `0`-`6`, or `#s1`-`#s6` in the URL (with a document: `#s3+OP-001`). The choice is remembered in the browser.
+  `Original` = Codex / `1` = Topographic Map (height = Information Hierarchy, documents are summits, trails are hand-overs of responsibility) / `2` = Star Chart (polar; one constellation per series with mention lines, magnitude = lines) / `3` = Architectural Set (elevation drawing, one room per document, sheet frame) / `4` = Botanical Plates (fruit, leaf, flower = how often a document changes) / `5` = Tree Rings (a wedge of the trunk; rings = tiers, rays = relations) / `6` = Specimen Cabinet (drawers per tier, pinned specimens, red thread).
+  A design changes only the drawing, the colours and the page's own wording (headings, labels, empty states, placeholders). It never changes a document ID, title, version, count or any text read from the repository.
+- Design parts: `scripts/templates/codex_arbor_skins.css` (looks), `codex_arbor_skins_text.js` (wording), `codex_arbor_skins.js` (tree drawings and the switcher); the generator merges them into the single HTML file.
 - The photographic plates (Tabulae) are cropped from `assets/banner.PNG` at build time and embedded (requires Pillow; without it the page builds with no plates). The crop boxes are listed in `PLATES` in the script.
 - The tree layout and the relations stated by the documents (branches) live in the template, each with its source. A document newly added to §8 appears in the catalogue, search and mention matrix automatically; its place in the tree is added to the template.
 

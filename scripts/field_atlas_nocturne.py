@@ -28,6 +28,7 @@ a 3D map of Kanto centred on Koiwa, with each field's road route, photo,
         surroundings.json        -> nearest IC, shops, bath, hospital (OSM, OSRM)
         climate.json             -> JMA AMeDAS normal of the daily lowest temperature
                                     for the field of the next camp (by hand)
+        terrain.json             -> ground-height grid for contour lines and shading (GSI DEM)
         images.json              -> each field's photo source (page, image URL)
         images/                  -> each field's photo (600 px JPEG, committed)
 
@@ -268,6 +269,11 @@ def build(md002: Path, template: Path = TEMPLATE, db001: Path = DB001, md004: Pa
             warnings.append(f"no photo (run the fetch script): {name}")
 
     extra = extras(md002, data, locations, warnings, db001, md004)
+    # contour lines and hill shading (GSI DEM grid); only the map pages carry it, the Radar page has no map
+    if (DATA_DIR / "terrain.json").exists():
+        extra["terrain"] = load("terrain.json")
+    else:
+        warnings.append("no terrain.json (run field_atlas_fetch.py terrain): contour lines and shading are off")
 
     jp = [
         {"n": p["name"], "r": [[v for lon, lat in ring for v in project(lon, lat)] for ring in p["rings"]]}

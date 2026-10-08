@@ -16,9 +16,9 @@ notation drift between documents and data files:
              (surroundings gaps are reported but do not fail the check);
              climate.json names only MD-002 fields and defines every station
              it uses, with 12 values (first dekad of each month) and JMA sources
-    pages    the Nocturne, Aubade and Radar generators build without warnings, the
-             Nocturne and Aubade templates each take the shared script once, and
-             no placeholder is left in any page
+    pages    the Nocturne, Aubade, Cartograph, Contour, Gloaming and Radar pages build
+             without warnings, the five map templates each take the shared script
+             once, terrain.json is a well-formed grid, and no placeholder is left
 
 Exits 1 and lists every problem when anything is out of step. Runs in CI.
 
@@ -39,7 +39,7 @@ import field_atlas_radar as radar  # noqa: E402
 
 ROOT = HERE.parent
 MD002 = ROOT / "MD" / "MD-002_Field_Atlas_Landscape_Framework.md"
-TEMPLATES = [nav.TEMPLATE, HERE / "templates" / "field_atlas_aubade.html"]
+TEMPLATES = [nav.TEMPLATE] + [HERE / "templates" / f"field_atlas_{n}.html" for n in ("aubade", "cartograph", "contour", "gloaming")]
 
 
 def main() -> None:
@@ -110,9 +110,21 @@ def main() -> None:
         if b["name"] not in bench:
             problems.append(f"locations.json: Reference Benchmark Site not marked benchmark: {b['name']}")
 
+    # terrain.json: the ground-height grid the pages draw contour lines and shading from
+    if (nav.DATA_DIR / "terrain.json").exists():
+        import base64
+        t = nav.load("terrain.json")
+        try:
+            if len(base64.b64decode(t["data"])) != t["nx"] * t["ny"]:
+                problems.append("terrain.json: data length is not nx * ny")
+        except Exception as e:  # noqa: BLE001
+            problems.append(f"terrain.json: unreadable ({e})")
+    else:
+        problems.append("terrain.json: missing (run field_atlas_fetch.py terrain)")
+
     # the pages themselves
     if not nav.SHARED_JS.exists():
-        problems.append(f"{nav.SHARED_JS.name}: missing (the script shared by the Nocturne and Aubade templates)")
+        problems.append(f"{nav.SHARED_JS.name}: missing (the script shared by the map templates)")
     for t in TEMPLATES:
         marks = t.read_text(encoding="utf-8").count("/*__SHARED_JS__*/")
         if marks != 1:

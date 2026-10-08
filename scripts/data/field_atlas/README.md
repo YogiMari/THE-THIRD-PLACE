@@ -1,6 +1,6 @@
 # Field Atlas Nocturne — design and rebuild notes
 
-Field Atlas Nocturne is a single-page viewer for MD-002 Field Atlas. It has two editions that share this data folder: the dark Nocturne (below) and the light Field Atlas Aubade (see [Field Atlas Aubade](#field-atlas-aubade) at the end). It shows a 3D map of Kanto centred on Koiwa. Selecting a field draws its road route from Koiwa, its photo, its 10-axis analysis and its early check-in record. This file records how the page is designed and built, so it can be regenerated or rebuilt later.
+Field Atlas Nocturne is a single-page viewer for MD-002 Field Atlas. It has five editions that share this data folder: the dark Nocturne (below), the light Field Atlas Aubade (see [Field Atlas Aubade](#field-atlas-aubade)), and the three later skins [Cartograph, Contour and Gloaming](#field-atlas-cartograph-contour-and-gloaming). All five carry the same [Atlas tools](#atlas-tools). It shows a 3D map of Kanto centred on Koiwa. Selecting a field draws its road route from Koiwa, its photo, its 10-axis analysis and its early check-in record. This file records how the page is designed and built, so it can be regenerated or rebuilt later.
 
 - Published at: https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm
 - Template: `scripts/templates/field_atlas_nocturne.html`
@@ -36,15 +36,15 @@ A field can be opened directly with `#f=<rank>` at the end of the page URL (rank
 
 Field Atlas Radar (`scripts/field_atlas_radar.py`, https://claude.ai/artifact/WjHqjyXoKLRxfTvxTsDaov) shows the same field information without the map and photos: it calls `field_atlas_nocturne.extras()`, which builds the Field Log, benchmark, Site Record, elevation, surroundings, gear names, cold guide and positions for all three pages (placeholder `/*__EXTRA__*/{}`).
 
-When DB-001 §Field Log, MD-002 or MD-004 changes, rebuild and republish all three pages (Nocturne, Aubade, Radar).
+When DB-001 §Field Log, MD-002 or MD-004 changes, rebuild and republish all six pages (Nocturne, Aubade, Cartograph, Contour, Gloaming, Radar).
 
-`python3 scripts/field_atlas_check.py` checks MD-002, DB-001, MD-004, the data files and both generators against each other, and runs in CI (`.github/workflows/third-place-sync.yml`). Run it after renaming a field or editing the Field Log.
+`python3 scripts/field_atlas_check.py` checks MD-002, DB-001, MD-004, the data files (including that `terrain.json` is a whole grid) and all the generators against each other, and runs in CI (`.github/workflows/third-place-sync.yml`). Run it after renaming a field or editing the Field Log.
 
 ## Shared script
 
-The Nocturne and Aubade templates repeated the same script. What is identical now lives in `scripts/templates/field_atlas_shared.js`, and `field_atlas_nocturne.build()` inserts it at the `/*__SHARED_JS__*/` marker inside each template's `<script>` (so it runs in the page's own closure). It holds the ground / lineage / average tables, Field Log and next-camp lookups, Site Record, elevation, sunrise / sunset / moon, surroundings, cold guide, gear names, the `#f=<rank>` deep link and link copy, the info bubble (`bubbleHTML` / `showBubble` / `placeBubble`), `tapTo`, and the function declarations the two editions have word for word (index rows, sort, cards' helpers, camera framing, projection, picking, crosshair).
+The Nocturne and Aubade templates repeated the same script (the three later skins take it too). What is identical now lives in `scripts/templates/field_atlas_shared.js`, and `field_atlas_nocturne.build()` inserts it at the `/*__SHARED_JS__*/` marker inside each template's `<script>` (so it runs in the page's own closure). It holds the ground / lineage / average tables, Field Log and next-camp lookups, Site Record, elevation, sunrise / sunset / moon, surroundings, cold guide, gear names, the `#f=<rank>` deep link and link copy, the info bubble (`bubbleHTML` / `showBubble` / `placeBubble`), `tapTo`, and the function declarations the two editions have word for word (index rows, sort, cards' helpers, camera framing, projection, picking, crosshair).
 
-What stays in each template: CSS, staging and motion (boot, camera flight, effects), the dive / focus code that differs, the data constants (`ROUTES` is the same name in both) and `PAGE_URL`. When a change applies to both editions, make it in the shared file; when only one edition needs it, keep it in that template. `field_atlas_check.py` fails if a template does not have exactly one marker. Field Atlas Radar is a separate light page and does not use the shared file.
+What stays in each template: CSS, staging and motion (boot, camera flight, effects), the dive / focus code that differs, the data constants (`ROUTES` is the same name in both) and `PAGE_URL`. When a change applies to both editions, make it in the shared file; when only one edition needs it, keep it in that template. `field_atlas_check.py` fails if a template does not have exactly one marker (it checks all five map templates). Field Atlas Radar is a separate light page and does not use the shared file.
 
 ## Rebuild
 
@@ -63,7 +63,7 @@ When MD-002 gains a field:
 3. Add its photo source to `images.json` (`page` = the page shown as credit, `image` = the image file URL), then run `images` and commit `images/`.
 4. `python3 scripts/field_atlas_fetch.py elevation` and `surroundings` add its elevation and surroundings.
 5. Add its row to MD-002 §Site Record.
-6. Run `python3 scripts/field_atlas_check.py`, then rebuild and republish both editions (Nocturne and Aubade).
+6. Run `python3 scripts/field_atlas_check.py`, then rebuild and republish all five map editions (Nocturne, Aubade, Cartograph, Contour, Gloaming).
 
 The generator prints a warning for every field that lacks a location, route or photo. The page still builds; that field shows no line or "NO IMAGE".
 
@@ -76,6 +76,7 @@ The generator prints a warning for every field that lacks a location, route or p
 | `routes.json` | Fastest driving route from Koiwa Station area: `path` (lon/lat), `km`, `via` (main roads in order of travel). | OSRM public server (router.project-osrm.org) on OpenStreetMap data © OpenStreetMap contributors, ODbL |
 | `elevation.json` | Ground height (m) at each point in `locations.json`, plus `小岩（起点）`. `src` is the DEM used. | 国土地理院 標高API (cyberjapandata2.gsi.go.jp/general/dem) |
 | `climate.json` | `stations`: per station, `prefecture`, `amedas_no`, `elev_m` (height of the station), `tmin_normal` (the normal of the daily lowest temperature in the first dekad 上旬, January to December, ℃), `period` and `sources` (page and checked date). `fields`: MD-002 field name → station, for the field of the next camp. Filled by hand (no fetch command). To add a field: open the JMA 過去の気象データ検索 → 平年値（旬ごとの値）of the nearest AMeDAS station, copy the 日最低気温 of 上旬 for 1月〜12月, take the station's 海面上の高さ from the 地域気象観測所一覧, and add the station and the field. A field without an entry shows no cold guide (the check prints a note when a planned camp has none). | 気象庁 過去の気象データ検索 [平年値（旬ごとの値）](https://www.data.jma.go.jp/stats/etrn/view/nml_amd_10d.php?prec_no=49&block_no=0438) and [地域気象観測所一覧](https://www.jma.go.jp/jma/kishou/know/amedas/ame_master.pdf) (令和8年3月24日現在). Now: 山中 (山梨県, 49256, 992 m) for moss camp field, checked 2026-10-02 |
+| `terrain.json` | Ground-height grid of the whole map area (lon 136.5-142.0, lat 34.0-38.5): `step` 0.02° per cell (about 1.8 km), `nx` x `ny` cells, north to south, one byte each, base64 in `data`: 0 = sea / no data, otherwise `1 + height / unit_m` (`unit_m` = 20). Each cell is the mean of 9 samples of the GSI DEM tile, so peaks are flattened (Fuji's cell reads 3,300 m, not 3,776 m). The pages draw hill shading and contour lines (every 200 m, heavier every 1,000 m) from it; it is a map aid, not a surveyed height. Made by `field_atlas_fetch.py terrain` (needs Pillow and network). | 国土地理院 標高タイル（DEM PNG, `cyberjapandata.gsi.go.jp/xyz/dem_png`, zoom 8） |
 | `surroundings.json` | Per field, for `ic`, `conv`, `super`, `bath`, `hosp`: `name`, driving `km` and `min`, `osm` id, `onsen` when tagged `bath:type=onsen`. Candidates are the three nearest by straight line within a small radius (widened once if none), and the one with the shortest drive is kept. Missing tags mean missing results, so treat it as a reference. | OpenStreetMap © OpenStreetMap contributors, ODbL, via Overpass API (maps.mail.ru mirror); OSRM table service |
 | `images.json` | Photo source per field: `page` (credit link) and `image` (the file). Mostly each site's og:image; logos and flyers were swapped for a photo from the same site by hand. | Official sites and booking sites (nap-camp.com, hinata, etc.) |
 | `images/` | Each field's photo, 600 px JPEG, named by a hash of the field name. Committed (MARI様のご判断, 2026-09-30) so the pages rebuild without network access. The photos belong to the sites credited in `images.json`. | Created by `fetch images` |
@@ -209,3 +210,42 @@ Same frame and content as the Nocturne: header bar (logo, Oblique / Top view, cu
 - Tapping or clicking the NEXT CAMP label on the map, or the legend's 次のキャンプ line, selects that field and replays the flight if it is already selected. The label reacts on pointer-up (iOS may not turn a tap on an overlay into a click) and has a hit area 12 px larger than it looks (both editions).
 - On phones the analysis panel, the index list and the card text move only up and down (`touch-action: pan-y`, no sideways overflow), in both editions.
 - The last selection, comparison, sort order and filters are kept in the viewer's browser (`localStorage` key `fa-nav1`).
+
+## Atlas tools
+
+The tools live in `scripts/templates/field_atlas_shared.js` (section "Atlas tools"), so every map edition has them. A template only supplies colours: CSS variables `--fa-*` (the tools panel and the sections it adds), `Object.assign(FA.theme, {...})` (3D overlays, and how far light and sky follow the time and season) and three one-line hooks (`faStart()` after `initGL()`, `faRefresh()` at the end of `startRadar()`, `faFrame(now, lift)` at the end of `frame()`). Nothing is typed in: each tool computes from data already on the page, and nothing is fetched at run time.
+
+| Tool | Where | What it does and where it comes from |
+|---|---|---|
+| Time of day and season | the ◐ button under the + / − / Kanto buttons opens the Atlas tools panel (on phones the panel sits under the map, always open) | Two sliders (time of day in 15-minute steps, month) and quick buttons. The sun's height and direction at Koiwa for the 15th of the chosen month come from the NOAA equations below; they set the colour of the sky, fog and sea, the light's direction, colour and strength, a screen tint at dawn and dusk, and the tint of the ground by month (snow-grey, young green, deep green, russet and so on; `SEAS_C`). It is purely visual. It is not weather and not the real colour of any place. "標準に戻す" returns to the edition's own look, which is the default; the choice is kept in this browser (`localStorage` key `fa-tools1`) |
+| 今日の一手 | top of the Analysis panel | One field by fixed rules, first match wins: (1) the DB-001 Field Log has a Planned camp within 14 days: that field; (2) among fields not visited in MD-002 and not on the viewer's trail, with a travel time of 2 hours or less (Distance axis 8 or more) and early check-in 早い or 可: the highest Resonance (ties: shorter travel, then rank); (3) the same without the travel and early check-in conditions; (4) the highest Resonance not on the trail. The one-line reason is built from those fields, plus today's sunset at the field (computed). It uses only MD-002 scores, early check-in, DB-001 and positions. Season fit and weather are not in the data, so they are not used. Unvisited scores are the provisional research values, and the reason says so |
+| Visited trail (足跡) | Analysis panel, "TRAIL" | The viewer presses "この場所を訪問済みにする" for the selected field. The marks are kept in this browser only (`localStorage` key `fa-trail1`, written inside try/catch; the page works without it), drawn on the map as a line through the marked fields in the order they were marked, with numbers, and listed with the straight-line length of each leg. It is a personal memo, separate from MD-002's visited status, and no visit is invented. "1つ戻す" and "全部消す" edit the list |
+| Terrain | Atlas tools panel: 等高線 (contour lines) and 陰影 (hill shading) | Drawn from `terrain.json` (above) on the map surface. Contour lines every 200 m (marching squares on the grid); shading is a standard hillshade (light from the north-west at 45°, relief exaggerated 5 times). Each skin sets the colours; Cartograph and Contour turn both on by default |
+| Sun band | Analysis panel, "SUN BAND" | Sunrise, sunset, solar noon and height, day length and civil twilight for the selected field (and the comparison field) on a chosen date (default: the planned camp's date, otherwise today in JST), drawn as a 24-hour bar. Computed from latitude, longitude and date with the NOAA Solar Calculator equations (J. Meeus, Astronomical Algorithms; NOAA GML, gml.noaa.gov/grad/solcalc/calcdetails.html; solar zenith 90.833° for sunrise and sunset, 96° for civil twilight). Checked against an independent implementation (the `astral` library) for five places and dates: within one minute. Sea-level horizon; mountains and weather are not considered |
+| Route comparison | Analysis panel, "ROUTE" | With a destination and a comparison field selected: the great-circle (haversine, R = 6,371 km) distance A to B, the initial bearing both ways, and Koiwa to each. Labelled STRAIGHT-LINE on the panel and on the dashed line drawn between the two fields. It never shows a road distance or a drive time between A and B (OSRM routes exist only from Koiwa, and the ROAD and TRAVEL figures on the cards are those) |
+
+Weather is not shown anywhere: a static page cannot fetch a forecast without faking one. The only climate figures are the existing JMA normals for the next camp (the COLD section).
+
+Rebuild the terrain grid with `python3 scripts/field_atlas_fetch.py terrain` (about 15 tiles).
+
+## Field Atlas Cartograph, Contour and Gloaming
+
+Three skins of the same page, each with its own template and generator (`field_atlas_cartograph.py`, `field_atlas_contour.py`, `field_atlas_gloaming.py`; each calls `field_atlas_nocturne.build()` like the Aubade). They share the Aubade's layout, content, interaction and camera engine, so a change to behaviour belongs in the shared script. What differs is the look. Each has all nine selection flights: the Aubade's four (`chase`, `overview`, `rail`, `orbit`) and five written for the same engine after the Nocturne's (`warp`, `spiral`, `road`, `crane`, `jump`; the Nocturne has its own five, the Aubade its four). Chosen at random, never the same twice in a row; `focus(kind)` forces one.
+
+Each template keeps its colours as CSS variables in `:root` (the Aubade's rules, with every hard-coded colour turned into a token) and as the `TH` constant in the script (3D colours); the rest of its look is the block of rules at the end of its `<style>`.
+
+| Edition | Published at | Look | Fonts (Google Fonts) | 3D ground and sky |
+|---|---|---|---|---|
+| Cartograph | https://claude.ai/artifact/AARvJwMoR9oPvzhDHcEMcE | Aged paper and sepia ink; a ruled neatline round the map, double-ruled cartouches, small-caps headings, compass-rose logo, sepia photos; brick-red accent `#9B3B22`, Prussian blue `#2F5D73` for the comparison | IM Fell English, IM Fell English SC, Shippori Mincho B1 | parchment sea, cream land, sepia outlines; hypsometric tint, contour lines and shading on by default |
+| Contour | https://claude.ai/artifact/8dDcGc8bXqHsxNYSPFvPFu | A monochrome survey sheet; graphite ground and white lines, square flat instruments, mono data, fine grid overlay, greyscale photos; white is the only accent | Barlow Condensed, JetBrains Mono, IBM Plex Sans JP | near-black sea, charcoal land, white contour lines and relief on by default |
+| Gloaming | https://claude.ai/artifact/MT32pmYNSv4DoAgKDf8LBG | Dusk over the Kanto plain; a violet-to-ember sky gradient, frosted violet glass, neon pink `#FF4FA3` (destination) and teal `#22E4D2` (comparison), additive glow | Syne, Outfit, M PLUS Rounded 1c | violet land and sea under a dusk-coloured fog, glowing pins and roads |
+
+The generated pages name the edition in the title bar as "Field Atlas Cartograph" (and likewise).
+
+```
+python3 scripts/field_atlas_cartograph.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-cartograph.html
+python3 scripts/field_atlas_contour.py    --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-contour.html
+python3 scripts/field_atlas_gloaming.py   --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-gloaming.html
+```
+
+Each template carries `const PAGE_URL` (used by "リンクをコピー") set to the edition's artifact URL.
