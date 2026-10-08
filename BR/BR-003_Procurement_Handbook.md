@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-4.13  
+4.14  
   
 **Status**  
   
@@ -1555,7 +1555,7 @@ Optional項目は「9Barista Official Spare Parts (Preventive Stock)」セクシ
   
 ### Principle  
   
-在庫状況・配送条件が許す場合はまとめて購入する。  
+Weber Workshopsの3点は、各1万円以上で送料無料（Product 04：¥63,300、Product 11：¥14,200、Product 14：¥15,900）のため、月をまたいで分けて購入しても送料は増えない。Monthly Acquisition Planでは、Blind ShakerをMonth 2（The Blocと同月）、Bean Cellar GlassをMonth 3、EPF DockをMonth 4に配置している。  
   
 ---  
   
@@ -1592,7 +1592,7 @@ Optional項目は「9Barista Official Spare Parts (Preventive Stock)」セクシ
   
 ## Group E — Station  
   
-**KNODOS Tamping Mat（Product 10）は購入済み（2026-10-08、Already Owned）**。The Bloc（Product 05）はPurchase Required。  
+**KNODOS Tamping Mat（Product 10）は購入済み（2026-10-08、Already Owned）**。The Bloc（Product 05）はPurchase Requiredで、Monthly Acquisition PlanではMonth 2に配置している（Blind Shakerと同月）。  
   
 * Saint Anthony Industries The Bloc  
 * KNODOS Tamping Mat with Tool Organiser - Walnut 54mm  
@@ -1614,7 +1614,7 @@ Optional項目は「9Barista Official Spare Parts (Preventive Stock)」セクシ
   
 ### Principle  
   
-Latte Systemは、完結したWorkflowとして購入する。  
+Latte Systemは、完結したWorkflowとして購入する。Monthly Acquisition Planでは、ALM KOPi Z1 MiniとFIKA12をMonth 5、WPM Handleless PitcherとPitcher SleeveをMonth 6に配置している（WPMはMonth 6になるため、Latte SystemのWorkflowはMonth 6で揃う）。  
   
 ALM KOPi Z1 Miniは、既存所有のSnow Peak ヤエンストーブ レギ（GS-370、MD-003 KIT-011）を熱源として流用する。追加購入は発生しない（BR-002 Ver.4.3 Heat Source Decisionに基づく）。  
   
@@ -1661,7 +1661,7 @@ ALM KOPi Z1 Miniは、既存所有のSnow Peak ヤエンストーブ レギ（GS
   
 Snow Peak公式ストアでの単独購入となるため、Group A（9Barista）とは別注文とする。  
   
-9Barista本体が稼働可能な状態になるためには、本Groupの到着が前提となる。Monthly Acquisition Planでは本GroupをMonth 6に配置している（Snow Peak公式の別注文）。国内調達で送料が小さいため、9Barista本体の稼働を早めたい場合は前倒しが可能である。  
+9Barista本体が稼働可能な状態になるためには、本Groupの到着が前提となる。Monthly Acquisition Planでは本GroupをMonth 6（最終月）に配置している（Snow Peak公式のため、同じSnow Peak公式の水ボトルとまとめ買いできる。Group Aとは別注文）。国内調達で送料が小さいため、9Barista本体の稼働を早めたい場合は前倒しが可能である。  
   
 ---  
   
@@ -1769,98 +1769,100 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
   
 # Monthly Acquisition Plan (Confirmed)  
   
-MARI様のご決定（2026-10-08）に基づく、月次購入計画である。**9BaristaをMonth 1、グラス・カップ（＋水ボトル）を最終月（Month 6）に配置**する。2か月目はグラインダー＋スケール＋同ブランドの小物とする。優先度の低い順は水ボトル（最下位）→ミルクである。同じ購入先はまとめ、月あたり目安10万円（少し超えるのは可）とする。ProductはConfirmed Equipment Acquisition Registryの番号に一致する。  
+MARI様のご決定（2026-10-08）に基づく、月次購入計画である。**Month 1は9Barista一式とKNODOS（購入済み）**、**グラス・カップ類と水ボトル・GS-150を最終月（Month 6）に配置**する。Month 2〜6は月あたり目安10万円（少し超えるのは可）に均した。同じ購入先はまとめる。ProductはConfirmed Equipment Acquisition Registryの番号に一致する。  
   
-## Month 1 — 9Barista（購入済み・2026-10-08）  
+## Month 1 — 9Barista一式＋KNODOS（購入済み・2026-10-08）  
   
-* **購入済み（2026-10-08）**：Product 01／12／26／31はAlready Owned。請求額はカート実額（¥137,200）と一致（MARI様確認）。  
+* **購入済み（2026-10-08）**：Product 01／12／26／31／10はAlready Owned。9Baristaの請求額はカート実額（¥137,200）と一致（MARI様確認）。KNODOSの購入総額は¥22,000（MARI様確認）。  
 * Product 01：9Barista Mk.2 Pro  
 * Product 12：9Barista Magnetic Dosing Funnel  
 * Product 26：9Barista Handle - Walnut ×2  
 * Product 31：9Barista 51mm Filter Paper  
-* 購入先：9Barista公式で1注文にまとめる  
+* Product 10：KNODOS Tamping Mat with Tool Organiser - Walnut 54mm  
+* 購入先：9Barista公式で1注文（Product 01／12／26／31）／KNODOS公式（Product 10）  
 * （任意）Safety Ring and Seals／Boiler O-ring Seal Mk.2／Overheat Repair Kit Mk.2（9Barista Official Spare Parts (Preventive Stock)。小計とは別枠）  
-* 小計：¥137,200（公式サイトのカート実額、Optional Preventive Stockを除く）  
+* 小計：¥159,200（9Barista一式¥137,200＋KNODOS¥22,000。Optional Preventive Stockを除く）  
 * 上限なし（本体¥123,400のため、月次上限の例外とする）  
-* 先行購入（月次の計画外）：Product 10 KNODOS Tamping Mat with Tool Organiser - Walnut 54mm（2026-10-08購入、Already Owned）。購入総額は¥22,000（MARI様確認）で、Month 1の小計には含めない。  
   
-## Month 2 — グラインダー＋スケール＋Normcore  
+## Month 2（11月）— LAGOM mini 2＋Blind Shaker＋The Bloc  
   
 * Product 02：Option-O LAGOM mini 2  
-* Product 03：MantaBrew WeighMaster Ultra  
-* Product 08：Normcore Planetary WDT Tool 54mm  
-* Product 09：Normcore RDT Spray Bottle  
-* 購入先：Option-O公式（単独）／MantaBrew公式（単独）／Normcore 2点（Product 08・09）は国内で同時注文（まとめ買い）  
-* 小計：¥124,000〜145,000  
-* 注記：予算が足りなければ、Normcore 2点（¥14,000〜22,000）をMonth 5へ移す。移した場合のMonth 2は¥110,000〜123,000。  
+* Product 11：Weber Workshops Blind Shaker Onyx  
+* Product 05：Saint Anthony Industries The Bloc  
+* 購入先：Option-O公式（海外）／Weber公式（¥14,200、1万円以上のため送料無料）／Saint Anthony Industries（海外）。いずれも別注文。  
+* 小計：¥109,200〜122,200  
+* 注記：Blind Shakerの収納先であるThe Blocと同月のため、仮置き期間は生じない。  
   
-## Month 3 — Weber Workshops＋The Bloc  
+## Month 3（12月）— Bean Cellar Glass＋WeighMaster Ultra  
   
 * Product 04：Weber Workshops Bean Cellar Glass  
-* Product 11：Weber Workshops Blind Shaker Onyx  
-* Product 14：Weber Workshops EPF Dock  
-* Product 05：Saint Anthony Industries The Bloc  
-* 購入先：Product 04／11／14はWeber公式でまとめ買い（3点¥93,400、1万円以上は送料無料）。Product 05（The Bloc）は海外・別注文。  
-* 小計：¥118,400〜123,400  
+* Product 03：MantaBrew WeighMaster Ultra  
+* 購入先：Weber公式（¥63,300、送料無料）／MantaBrew公式（海外）。いずれも別注文。  
+* 小計：¥103,300〜108,300  
+* 注記：FIKA12の入荷情報が出た場合は、Weberの月（Month 2・4）ではなく、このMonth 3のWeighMaster Ultraと入れ替えて前倒しできる。  
   
-## Month 4 — ツール  
+## Month 4（1月）— ツール＋EPF Dock  
   
 * Product 07：Pullman Chisel Redistribution Tool Wood 53.3mm  
 * Product 06：The Force Tamper 53mm  
-* 購入先：いずれも海外・別注文（同月到着）  
-* 小計：¥85,000〜97,000  
+* Product 14：Weber Workshops EPF Dock  
+* 購入先：Pullman正規取扱店（海外）／The Force Tamper（海外）／Weber公式（¥15,900、送料無料）。いずれも別注文。  
+* 小計：¥100,900〜112,900  
   
-## Month 5 — ミルク  
+## Month 5（2月）— ミルク＋FIKA12  
   
 * Product 15：ALM KOPi Z1 Mini Steamer  
-* Product 16：WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout  
-* Product 17：WPM Pitcher Sleeve  
-* 購入先：Product 15はALM KOPi公式。Product 16／17（WPM）は国内で同時注文（まとめ買い）。  
-* 小計：¥77,000〜93,500  
-* 注記：Month 2のNormcore 2点が移ってきた場合は¥91,000〜115,500。  
+* Product 22：DAMNGOOD × CATAPULT FACTORY FIKA12 ×2  
+* 購入先：ALM KOPi公式（海外）／CATAPULT FACTORY・正規取扱店（国内）。いずれも別注文。  
+* 小計：¥95,000〜116,000  
+* 注記：FIKA12は限定流通のため、最終月（Month 6）からMonth 5へ前倒しした。これ以上早めると月13万円を超える。  
   
-## Month 6 — グラス・カップ＋水ボトル（最終月）  
+## Month 6（3月・最終月）— グラス・ケース・水ボトル・GS-150・WPM・Normcore  
   
 * Product 18：KRUVE PROPEL  
 * Product 19：ICOSA Brewhouse AERESSO  
 * Product 20：HILLS FIELD Glass Case Single  
 * Product 21：AION Seine Super Absorbent Coaster 801-BL  
-* Product 22：DAMNGOOD × CATAPULT FACTORY FIKA12 ×2  
 * Product 23：Snow Peak オーロラボトル 1L  
 * Product 24：YETI Yonder 1L  
 * Product 25：Snow Peak 酒筒 Titanium  
 * Product 30：Snow Peak ギガパワーストーブ レクタ（GS-150）※Group I  
-* 購入先：Snow Peak公式でまとめ買い（Product 23／25／30、3点¥43,090〜50,090）。ほかは各社別注文（PROPEL・AERESSOは海外、HILLS FIELD・AION・FIKA12・YETIは国内）。  
-* 小計：¥98,570〜122,570  
-* 注記：GS-150（Group I）は最後でよいとのご決定のため、9Barista本体はMonth 6まで稼働できない。FIKA12は限定流通のため、最終月まで待つと在庫切れの可能性がある。  
+* Product 16：WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout  
+* Product 17：WPM Pitcher Sleeve  
+* Product 08：Normcore Planetary WDT Tool 54mm  
+* Product 09：Normcore RDT Spray Bottle  
+* 購入先：Snow Peak公式でまとめ買い（Product 23／25／30、3点¥43,090〜50,090）。WPM（Product 16／17）は国内で同時注文。Normcore（Product 08／09）は国内で同時注文。ほかは各社別注文（PROPEL・AERESSOは海外、HILLS FIELD・AION・YETIは国内）。  
+* 小計：¥94,570〜122,070  
+* 注記：GS-150（Group I）は最後でよいとのご決定のため、9Barista本体はMonth 6まで稼働できない。Normcore 2点（WDT・RDT）とWPMが揃うまでは、該当工程をキッチン用品等で代用する。  
   
-Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso Workflowが機能的に完成する。予算バランスを優先した結果、個々の機能グループ（Station一式、Glass一式等）が複数月にまたがって到着する構成になるため、Workflowの全パーツが揃うMonth 6終了時点までは、未到着パーツをキッチン用品等で代用する必要がある。  
+Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso Workflowが機能的に完成する。予算バランスを優先した結果、個々の機能グループ（Station一式、Glass一式、Latte System等）が複数月にまたがって到着する構成になるため、Workflowの全パーツが揃うMonth 6終了時点までは、未到着パーツをキッチン用品等で代用する必要がある。  
   
 ## Plan Total  
   
 総額目安：¥662,170〜740,670（計画全体。購入済み分を含む。9Barista Official Spare Parts (Preventive Stock)を除く）  
   
-残り（Purchase Requiredのみ）：¥502,970〜581,470（Estimated Acquisition Budgetと一致）  
+残り（Purchase Requiredのみ）：¥502,970〜581,470（Month 2〜6。Estimated Acquisition Budgetと一致）  
   
-* 内訳：計画全体¥662,170〜740,670 − 購入済みProduct 01／12／26／31（¥137,200）− 購入済みProduct 10（¥22,000）。  
-* 計画全体の検算：Month 1 ¥137,200＋Month 2 ¥124,000〜145,000＋Month 3 ¥118,400〜123,400＋Month 4 ¥85,000〜97,000＋Month 5 ¥77,000〜93,500＋Month 6 ¥98,570〜122,570＋先行購入Product 10 ¥22,000＝¥662,170〜740,670。  
+* 月別小計：Month 2 ¥109,200〜122,200／Month 3 ¥103,300〜108,300／Month 4 ¥100,900〜112,900／Month 5 ¥95,000〜116,000／Month 6 ¥94,570〜122,070。合計¥502,970〜581,470。  
+* 計画全体の検算：Month 1 ¥159,200＋残り¥502,970〜581,470＝¥662,170〜740,670。  
   
 ### Design Rationale  
   
-* 固定端点は、9BaristaがMonth 1、グラス・カップ（＋水ボトル）がMonth 6である。Month 1は本体¥123,400のため月次上限の例外とする。  
-* 優先度の低い順は水ボトル（最下位）→ミルクである。優先度の低いものほど後の月に置く。  
-* FIKA12は最終月（Month 6）へ移した。限定流通のため、最終月まで待つと在庫切れの可能性があることを注記している。  
-* The Blocを、Blind Shakerと同じMonth 3へ移した。Blind Shakerの収納先であるThe Blocが同月に揃うため、仮置き期間は生じない。  
-* Month 2が10万円を超えるのは、グラインダー＋スケールだけで¥110,000〜123,000のためである。  
-* Normcore 2点（Product 08・09）は、予算次第でMonth 5へ移す（移した場合のMonth 2は¥110,000〜123,000、Month 5は¥91,000〜115,500）。  
-* KNODOS（Product 10）は2026-10-08に先行購入済みのため、Month 4から除いた。Month 4はChisel・Tamperの2点（WDTはMonth 2で先行）。  
-* Snow Peak ギガパワーストーブ レクタ（GS-150、Group I）は、BR-002 Ver.4.3 Heat Source Decisionに基づく確定購入品であり、Month 6のままとする（Group Iの説明と整合）。9Barista本体はMonth 6まで稼働できない。  
+* 固定端点は、Month 1が購入済みの9Barista一式とKNODOS、Month 6が最終月である。Month 1は本体¥123,400のため月次上限の例外とする。  
+* 水ボトル（Product 23／24／25）とGS-150（Group I）は最終月に置く。カップ・グラス類（Product 18〜21）は優先度が低いため、最終月に置く。  
+* FIKA12は最終月からMonth 5へ前倒しした。これ以上早めると月13万円を超えるためである。入荷情報が出た場合は、Weberの月ではなく、Month 3のWeighMaster Ultraと入れ替えられる。  
+* Weber Workshopsの3点は、各1万円以上で送料無料のため、月をまたいで分けても送料は増えない。Blind ShakerはThe Blocと同月（Month 2）に置く。  
+* Normcore 2点（Product 08・09）とWPM（Product 16・17）は、最終月の水準を保つためMonth 6へ移した。  
+* 月あたり10万円程度（少し超えるのは可）に均した（Month 2〜6の小計が¥94,570〜122,200の範囲）。  
+* KNODOS（Product 10）は2026-10-08に購入済みのため、Month 1に含める。  
+* Snow Peak ギガパワーストーブ レクタ（GS-150、Group I）は、BR-002 Ver.4.3 Heat Source Decisionに基づく確定購入品であり、Month 6とする（Group Iの説明と整合）。9Barista本体はMonth 6まで稼働できない。  
 * Straight Espresso Workflowの機能的完成はMonth 6である。  
 * YETI Yonder 1Lの必要性は、BR-002 Coffee System Water Bottle Configuration（Operation Scenario／Required Water Volume）に基づく必要水量2,340mLの試算に基づく。  
 * 9Barista Official Spare Parts (Preventive Stock)は、Group A（9Barista）注文に同梱可能な任意項目として、Month 1の小計とは別枠で記録する。  
 * 9Barista Handle - Walnutは、PX-004 Ver.3.7のHandle Material Decisionに基づく確定購入品として、Month 1の本体注文へ統合する。  
   
-
+---  
+  
 # Version Control  
   
 | Version | Date | Summary |  
@@ -1880,6 +1882,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 | 4.11 | 2026-10-08 | MARI様のご指示（2026-10-08）に基づき、Month 4からProduct 10（KNODOS）を削除した。KNODOSは2026-10-08に先行購入済みであり、Month 1に「先行購入（月次の計画外）」として明記した。Month 4の小計を¥85,000〜97,000へ再計算（Product 07＋06）。Plan Total（計画全体¥656,170〜740,670、残り¥502,970〜581,470）は変更なし（各月の合計に先行購入分を加えて検算）。Design RationaleのKNODOSの記述を改めた。MD-004 Ver.8.8でCOF-005／009／010／011／018を購入した時点で登録したことと連動（BR-003のStatus・金額には変更なし）。Minor Version。 |  
 | 4.12 | 2026-10-08 | MARI様のご指示（2026-10-08）に基づき、Product 12（Magnetic Dosing Funnel）の色表記をBlackからOnyx（航空機グレードアルミニウム）へ訂正した（BR-002 Ver.4.17と連動）。MD-004 Ver.8.9で消耗品（Filter Paper）をCOF-seriesの登録から除いたが、BR-003のProduct 31（Already Owned）の記載に変更はない。金額・Statusに変更なし。Patch Version。 |  
 | 4.13 | 2026-10-08 | MARI様のご指示（2026-10-08）に基づき、Product 10（KNODOS）の購入総額を¥22,000の実額に揃えた（Estimated Total Costを¥16,000〜22,000から¥22,000へ。商品代・送料・輸入税の内訳は未確認のため、各欄は「内訳は未確認」とした）。Month 1の先行購入注記・Plan Total・内訳・検算を再計算し、計画全体を¥662,170〜740,670へ改めた（下限が¥6,000増）。残り（Purchase Requiredのみ）¥502,970〜581,470とEstimated Acquisition Budgetは変更なし（購入済み分を除くため）。MD-004 COF-017の購入価格¥22,000と一致。Minor Version。 |  
+| 4.14 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づき、Monthly Acquisition Planを置き換えた。Month 1を9Barista一式（Product 01／12／26／31）とKNODOS（Product 10）の購入済みとし（小計¥159,200）、Month 2（11月）をProduct 02／11／05（¥109,200〜122,200）、Month 3（12月）をProduct 04／03（¥103,300〜108,300）、Month 4（1月）をProduct 07／06／14（¥100,900〜112,900）、Month 5（2月）をProduct 15／22（¥95,000〜116,000）、Month 6（3月・最終）をProduct 18〜21／23〜25／30／16／17／08／09（¥94,570〜122,070）へ再配置した。Month 2〜6の合計は残り¥502,970〜581,470と一致し、計画全体¥662,170〜740,670は変更なし。Design Rationaleを書き直した（水ボトル・GS-150・カップ類は最終月、FIKA12はMonth 5へ前倒し、Weber 3点は各1万円以上で送料無料のため月を分けても送料は増えない、Normcore 2点とWPMはMonth 6、月10万円程度に均した）。Group B・E・F・Iの説明を月配置に合わせた。Estimated Acquisition Budgetは変更していない（Purchase Requiredのみ。Ver.4.10参照）。Minor Version。 |  
   
 ---  
 
