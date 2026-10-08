@@ -1,0 +1,69 @@
+/* ===== Journey s4 — エアメール / Airmail: cream stock, navy and red chevrons, stamps, postmarks, a boarding pass ===== */
+html:root[data-skin="s4"]{
+  --mist:#F3E9D0; --sheet:#FFFBF0; --ink:#16284C; --forest:#1F3F85; --mustard:#C8312B; --muted:#5F6784; --line:#C9BB96;
+  --night:#16284C; --night-ink:#FFFBF0; --lamp:#F5C453;
+  --serif:"Playfair Display","Zen Old Mincho",serif; --sans:"Zen Old Mincho","Noto Serif JP",serif; --mono:"Special Elite","Courier New",monospace;
+  color-scheme:light;
+  & body{background-color:var(--mist);background-image:var(--grain);font-weight:500;font-size:16px}
+  & .mono{letter-spacing:.1em;text-transform:none;font-size:12.5px}
+  & .it{font-family:var(--serif)}
+  & body::before,& body::after{content:"";position:fixed;left:0;right:0;height:14px;z-index:30;background:var(--chev);background-size:34px 14px;pointer-events:none}
+  & body::before{top:0} & body::after{bottom:0}
+  & .cover{height:clamp(520px,60vw,760px);border-bottom:6px double var(--ink)}
+  & .cover > .im{filter:sepia(.35) saturate(.85) contrast(1.05) brightness(.85)}
+  & .cover::after{background:linear-gradient(180deg,rgba(14,26,52,.6),rgba(14,26,52,.08) 40%,rgba(14,26,52,.82))}
+  & .mast{font-family:var(--serif);font-weight:700;font-style:italic;letter-spacing:-.02em;font-size:clamp(64px,14vw,220px);line-height:.85}
+  & .mast span{font-style:normal;font-weight:400;color:var(--lamp)}
+  & .cover .issue b{font-family:var(--serif);font-weight:400;font-style:italic} & .cover .issue .jp{font-family:var(--sans)}
+  & .itin{background:var(--sheet);border-bottom:6px solid transparent;border-image:var(--chev-img) 6;position:relative}
+  & .route .end{font-family:var(--serif);font-style:italic} & .route .end i{color:var(--mustard)}
+  & .route .path{background:repeating-linear-gradient(90deg,var(--mustard) 0 8px,transparent 8px 14px);height:2px}
+  & .stops{border-top:2px solid var(--ink)} & .stops h3{font-family:var(--serif);font-weight:700;font-size:clamp(18px,1.8vw,23px)} & .stops .k{color:var(--mustard)} & .stops a::before{border-color:var(--mustard)}
+  & .kick{border-top:3px double var(--ink)} & .kick .mono:first-child{color:var(--mustard)}
+  & .editorial h2,& .feat h2,& .board-head h2,& .rt-intro h2,& .desk .q{font-family:var(--serif);font-weight:700;letter-spacing:-.02em}
+  & .editorial h2 i,& .feat h2 i,& .board-head h2 i,& .rt-intro h2 i,& .desk .q i{color:var(--mustard);font-weight:400}
+  & .editorial h2{font-size:clamp(46px,6.4vw,96px)} & .feat h2{font-size:clamp(50px,8.6vw,132px)}
+  & .editorial .txt{background:var(--sheet);padding:34px 38px;border:1px solid var(--line);outline:6px solid var(--sheet);box-shadow:0 0 0 7px var(--line);margin:10px 8px}
+  & .editorial .txt::before{left:12px;top:-6px;color:var(--mustard)}
+  & .feat .deck{border-left:3px double var(--mustard);font-weight:700}
+  & .feat.beyond .deck{border-right:3px double var(--mustard)}
+  & .plate{background:var(--sheet);border:1px solid var(--ink);border-radius:0;outline:4px solid var(--sheet);box-shadow:0 0 0 5px var(--line)} & .plate.dark{background:var(--ink)}
+  & .split .photo .fr{border:1px solid var(--ink);outline:6px solid var(--sheet);box-shadow:0 0 0 7px var(--line);border-radius:0} & .split .photo .im,& .split .photo img{filter:sepia(.3)}
+  & .split .photo .fr::after{content:"AIR MAIL · PAR AVION";position:absolute;right:10px;top:10px;background:var(--sheet);color:var(--mustard);font:700 10px var(--mono);letter-spacing:.14em;padding:3px 8px;border:1px solid var(--mustard);transform:rotate(3deg)}
+  & .feat .body p:first-child::first-letter{font-family:var(--serif);color:var(--mustard);font-weight:700}
+  & .card{background:var(--sheet);border:1px solid var(--ink);border-top:6px solid transparent;border-image:var(--chev-img) 6;border-radius:0} & .card h4{font-family:var(--serif);font-weight:700;font-size:26px}
+  & .legend b{font-family:var(--serif);color:var(--mustard)} & .legend div{border-top:2px solid var(--ink)}
+  & .board-head{border-bottom:3px double var(--ink)}
+  & .ed{background:var(--sheet);border:1px solid var(--line) !important;margin:6px;padding:18px !important;position:relative}
+  & .ed::after{content:"";position:absolute;top:8px;right:8px;width:34px;height:42px;border:2px dotted var(--line);background:linear-gradient(135deg,transparent 60%,rgba(200,49,43,.2) 60%)}
+  & .ava{font-family:var(--serif);font-style:italic;border-radius:4px} & .ava::after{border-radius:6px;inset:-4px}
+  & .ed b{font-family:var(--serif);font-weight:700;font-size:28px}
+  & .rt-intro .theme{font-family:var(--serif);font-style:italic;font-weight:700}
+  & .talk{border-top:3px double var(--ink)}
+  & .say{border-bottom:1px dashed var(--line)} & .say .who{font-family:var(--serif);font-weight:700;font-size:22px}
+  & .say p{font-weight:500} & .say.short p{font-family:var(--serif);font-style:italic;font-weight:400;font-size:20px}
+  & .say.pull p{font-family:var(--serif);color:var(--mustard)}
+  & .stage{font-family:var(--serif);font-size:20px}
+  & .inline-ph .fr,& .notes-ph .fr{border:1px solid var(--ink);outline:6px solid var(--sheet);box-shadow:0 0 0 7px var(--line);border-radius:0}
+  & .pass{background:var(--sheet);border-radius:0;filter:none;border:2px solid var(--ink);position:relative}
+  & .pass::before{content:"";position:absolute;left:-2px;right:-2px;top:-12px;height:10px;background:var(--chev);background-size:34px 10px}
+  & .pass .stub{border-left:2px dashed var(--ink)} & .pass .stub::before,& .pass .stub::after{background:var(--mist);border:2px solid var(--ink)}
+  & .fromto b,& .stub .big{font-family:var(--serif);font-weight:700;font-style:italic} & .kv dd{font-weight:700}
+  & .desk{border-top:3px double var(--ink)}
+  & .gfx-hero{position:absolute;right:clamp(10px,5vw,70px);top:80px;width:clamp(80px,9vw,120px);height:clamp(80px,9vw,120px);color:var(--lamp);transform:rotate(-12deg);opacity:.9;z-index:2} & .cover.bleed{position:relative}
+  & .gfx-ridge{height:30px;color:var(--mustard);margin-top:6px} & .gfx-ridge > svg{width:100%;height:30px}
+  & .gfx-div{width:min(320px,70%);height:70px;color:var(--ink);margin:clamp(60px,8vw,100px) auto 0;opacity:.75} & .x-div{display:grid;place-items:center}
+  & .x-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,3vw,40px);margin-top:40px}
+  & .x-ph{margin:0;background:var(--sheet);padding:10px;border:1px solid var(--line);box-shadow:0 0 0 6px var(--sheet),0 0 0 7px var(--line);display:grid;gap:10px;min-width:0;position:relative}
+  & .x-ph::after{content:"";position:absolute;top:14px;right:14px;width:44px;height:54px;border:3px dotted rgba(255,255,255,.9);outline:1px solid var(--line);pointer-events:none}
+  & .x-ph .im{height:clamp(200px,24vw,320px);filter:sepia(.3) contrast(1.03)}
+  & .x-ph figcaption{font-family:var(--mono);font-size:12.5px;color:var(--muted)}
+  & .x-band .im{height:clamp(200px,28vw,380px);filter:sepia(.3)} & .x-bandwrap{margin:0 0 56px}
+  & .x-gallery{padding-top:clamp(90px,11vw,140px)} & .x-gh{text-align:center;margin-bottom:34px;display:grid;gap:8px;border-top:3px double var(--ink);padding-top:14px} & .x-gh h2{font-family:var(--serif);font-weight:700;font-size:clamp(34px,5.6vw,84px);letter-spacing:-.02em} & .x-gh h2 i{color:var(--mustard);font-weight:400}
+  & .x-gg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,3vw,40px)} & .x-gg .im{height:clamp(190px,22vw,300px);filter:sepia(.3)}
+  & .x-credits{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:4px;font-size:12px;color:var(--muted);line-height:1.7}
+  @media (max-width:920px){ & .x-strip,& .x-gg{grid-template-columns:1fr 1fr} & .gfx-hero{display:none} }
+  @media (max-width:560px){ & .x-strip,& .x-gg{grid-template-columns:1fr} }
+}
+
+html:root[data-skin="s4"]{--chev:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='14'%3E%3Cpath d='M0 0H17L7 14H-10Z' fill='#C8312B'/%3E%3Cpath d='M17 0H34L24 14H7Z' fill='#16284C'/%3E%3C/svg%3E");--chev-img:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='34' height='14'%3E%3Cpath d='M0 0H17L7 14H-10Z' fill='#C8312B'/%3E%3Cpath d='M17 0H34L24 14H7Z' fill='#16284C'/%3E%3C/svg%3E");--grain:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.4  0 0 0 0 0.3  0 0 0 0 0.15  0 0 0 0.24 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}
