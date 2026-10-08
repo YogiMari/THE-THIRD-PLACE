@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-4.9  
+4.10  
   
 **Status**  
   
@@ -128,7 +128,7 @@ Procurement Handbook
 | BR-002 Model | Mk.2 Pro |  
 | Current Purchase Model | Mk.2 Pro |  
 | Category | Espresso Machine |  
-| Acquisition Status | Purchase Required |  
+| Acquisition Status | Already Owned |  
 | Quantity | 1 |  
 | Purchase Type | Overseas Import / Official Japan Checkout |  
 | Primary Purchase Source | 9Barista Official Store |  
@@ -155,6 +155,8 @@ Procurement Handbook
 * 本体標準付属品：53mm Tamper（9Barista純正・汎用）、Heat Transfer PlateまたはInduction Adaptor Plate（選択したコンロ種別に応じて1点）、Spare Boiler O-ring ×1、Spare Safety Ring ×1、User Guide。THE THIRD PLACEではThe Force Tamper 53mmを主力Tamperとするため、付属の汎用Tamperは予備として保持する。  
 * Upper / Lower Handleは標準でAnodised Aluminium仕様。BR-002 Ver.3.7のHandle Material Decisionに基づき、Walnut仕様へ変更する（詳細はProduct 26を参照）。  
 * 本体標準付属品の「Heat Transfer PlateまたはInduction Adaptor Plate」は、Heat Transfer Plateを選択する。THE THIRD PLACEはBR-002 Ver.4.3 Heat Source Decisionに基づき、Snow Peak ギガパワーストーブ レクタ（GS-150、ガスカートリッジ式）を熱源とするため、非IHのHeat Transfer Plateが適合する（詳細はProduct 30を参照）。  
+* 2026-10-08購入。  
+* 請求額＝カート実額と一致（MARI様確認、2026-10-08）。  
   
 ---  
   
@@ -453,7 +455,7 @@ Procurement Handbook
 | Model | Tamping Mat with Tool Organiser - Walnut 54mm |  
 | Current Purchase Model | Tamping Mat with Tool Organiser - Walnut 54mm |  
 | Category | Coffee Tool Station |  
-| Acquisition Status | Purchase Required |  
+| Acquisition Status | Already Owned |  
 | Quantity | 1 |  
 | Purchase Type | Overseas Import |  
 | Primary Purchase Source | KNODOS Official Store |  
@@ -478,6 +480,7 @@ Procurement Handbook
 * 通常径Tool Organiser：Pullman Chisel。  
 * 通常径Tool Organiser：The Force Tamper。  
 * 追加のCoffee Tool Standは不要。  
+* 2026-10-08購入。  
   
 ---  
   
@@ -531,7 +534,7 @@ Procurement Handbook
 | BR-002 Model | Magnetic Dosing Funnel（53mm、Black） |  
 | Current Purchase Model | 53mm Magnetic Dosing Funnel（Black） |  
 | Category | Dosing Funnel |  
-| Acquisition Status | Purchase Required |  
+| Acquisition Status | Already Owned |  
 | Quantity | 1 |  
 | Purchase Type | Official Accessory |  
 | Primary Purchase Source | 9Barista Official Store |  
@@ -553,6 +556,8 @@ Procurement Handbook
 * ConfirmedなWorkflowコンポーネント：Blind Shaker → Magnetic Dosing Funnel → WDT。  
 * Product 01と同時注文し、Group A（9Barista）へ統合する。  
 * サードパーティ製Dosing Funnelは不採用。  
+* 2026-10-08購入。  
+* 請求額＝カート実額と一致（MARI様確認、2026-10-08）。  
   
 ---  
   
@@ -997,7 +1002,7 @@ Procurement Handbook
 | Model | Handle for 9Barista Espresso Machine（Walnutオプション） |  
 | Current Purchase Model | Handle - Walnut |  
 | Category | Handle (Upper / Lower) |  
-| Acquisition Status | Purchase Required |  
+| Acquisition Status | Already Owned |  
 | Quantity | 2（Upper ×1, Lower ×1） |  
 | Purchase Type | Official Accessory / Upgrade |  
 | Primary Purchase Source | 9Barista Official Store |  
@@ -1020,6 +1025,8 @@ Procurement Handbook
 * Mk.1・Mk.2共通対応品。  
 * 9Barista Mk.2 Pro本体と同時注文し、Group A（9Barista）へ統合する。  
 * サードパーティ製Handleは不採用。  
+* 2026-10-08購入。  
+* 請求額＝カート実額と一致（MARI様確認、2026-10-08）。  
   
 ---  
   
@@ -1067,7 +1074,7 @@ Procurement Handbook
 | BR-002 Model | Espresso Filter Paper（51mm） |  
 | Current Purchase Model | 51mm Filter Paper |  
 | Category | Filter Paper |  
-| Acquisition Status | Purchase Required |  
+| Acquisition Status | Already Owned |  
 | Quantity | 1 |  
 | Purchase Type | Official Accessory |  
 | Primary Purchase Source | 9Barista Official Store |  
@@ -1086,6 +1093,8 @@ Procurement Handbook
 * MARI様のご決定（2026-10-08）に基づく。  
 * Product 01と同時注文し、Group A（9Barista）へ統合する。  
 * Puck Screenの代替としてWorkflowに組み込む（2026-10-08）。  
+* 2026-10-08購入。  
+* 請求額＝カート実額と一致（MARI様確認、2026-10-08）。  
   
 ---  
   
@@ -1464,8 +1473,8 @@ LAGOM mini 2 Ground Transfer Cupは、Weber Workshops Blind Shaker Onyxへの直
   
 | Priority | Equipment | Quantity | Product | Acquisition Status |  
 |---|---|---:|---|---|  
-| ★★★★★ | 9Barista Mk.2 Pro | 1 | Product 01 | Purchase Required |  
-| ★★★★★ | 9Barista Handle - Walnut | 2 | Product 26 | Purchase Required |  
+| ★★★★★ | 9Barista Mk.2 Pro | 1 | Product 01 | Already Owned |  
+| ★★★★★ | 9Barista Handle - Walnut | 2 | Product 26 | Already Owned |  
 | ★★★★★ | Option-O LAGOM mini 2 | 1 | Product 02 | Purchase Required |  
 | ★★★★★ | MantaBrew WeighMaster Ultra | 1 | Product 03 | Purchase Required |  
 | ★★★★★ | Weber Workshops Bean Cellar Glass | 1 | Product 04 | Purchase Required |  
@@ -1473,15 +1482,15 @@ LAGOM mini 2 Ground Transfer Cupは、Weber Workshops Blind Shaker Onyxへの直
 | ★★★★★ | Normcore Planetary WDT Tool 54mm | 1 | Product 08 | Purchase Required |  
 | ★★★★★ | Pullman Chisel Redistribution Tool Wood 53.3mm | 1 | Product 07 | Purchase Required |  
 | ★★★★★ | The Force Tamper 53mm | 1 | Product 06 | Purchase Required |  
-| — | 9Barista Magnetic Dosing Funnel | 1 | Product 12 | Purchase Required |  
-| — | 9Barista 51mm Filter Paper | 1 | Product 31 | Purchase Required |  
+| — | 9Barista Magnetic Dosing Funnel | 1 | Product 12 | Already Owned |  
+| — | 9Barista 51mm Filter Paper | 1 | Product 31 | Already Owned |  
   
 ## Station / Workflow  
   
 | Priority | Equipment | Quantity | Product | Acquisition Status |  
 |---|---|---:|---|---|  
 | ★★★★★ | Saint Anthony Industries The Bloc | 1 | Product 05 | Purchase Required |  
-| ★★★★★ | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm | 1 | Product 10 | Purchase Required |  
+| ★★★★★ | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm | 1 | Product 10 | Already Owned |  
 | ★★★★★ | Normcore RDT Spray Bottle | 1 | Product 09 | Purchase Required |  
 | ★★★★☆ | Weber Workshops EPF Dock | 1 | Product 14 | Purchase Required |  
   
@@ -1516,6 +1525,8 @@ LAGOM mini 2 Ground Transfer Cupは、Weber Workshops Blind Shaker Onyxへの直
 # Purchase Grouping  
   
 ## Group A — 9Barista  
+  
+**購入済み（2026-10-08）**：Product 01／12／26／31（Already Owned）。Included 01／02は付属品のため変更なし。以下のOptional項目は未購入の任意項目である。  
   
 * 9Barista Mk.2 Pro  
 * 9Barista Handle - Walnut ×2  
@@ -1579,6 +1590,8 @@ Optional項目は「9Barista Official Spare Parts (Preventive Stock)」セクシ
 ---  
   
 ## Group E — Station  
+  
+**KNODOS Tamping Mat（Product 10）は購入済み（2026-10-08、Already Owned）**。The Bloc（Product 05）はPurchase Required。  
   
 * Saint Anthony Industries The Bloc  
 * KNODOS Tamping Mat with Tool Organiser - Walnut 54mm  
@@ -1653,16 +1666,19 @@ Snow Peak公式ストアでの単独購入となるため、Group A（9Barista�
   
 # Estimated Acquisition Budget  
   
-以下は、Purchase Required（購入対象）となっている全Equipmentを調達するための、保守的な計画目安である。  
+以下は、Purchase Required（購入対象）となっているEquipmentのみを調達するための、保守的な計画目安である。購入済み（Already Owned）の品目は含めない（Product 01／12／26／31／10は2026-10-08購入済みのため除外）。  
   
 | Group | Estimated Cost |  
 |---|---:|  
-| Core Espresso System | ¥436,000〜468,000 |  
-| Station / Workflow | ¥58,900〜71,900 |  
+| Core Espresso System | ¥298,800〜330,800 |  
+| Station / Workflow | ¥42,900〜49,900 |  
 | Latte System | ¥102,000〜127,500 |  
 | Espresso Glass / Transport | ¥25,480〜31,480 |  
 | Dedicated Water | ¥33,790〜41,790 |  
-| **Estimated Total** | **¥656,170〜740,670** |  
+| **Estimated Total（残り）** | **¥502,970〜581,470** |  
+
+購入済み分（Product 01／12／26／31：¥137,200、Product 10：¥16,000〜22,000）を加えた計画全体は¥656,170〜740,670（Monthly Acquisition Plan §Plan Total）。  
+
   
 ### Budget Policy  
   
@@ -1716,7 +1732,7 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
   
 | # | Equipment | Qty | Status |  
 |---:|---|---:|---|  
-| 01 | 9Barista Mk.2 Pro | 1 | Purchase Required |  
+| 01 | 9Barista Mk.2 Pro | 1 | Already Owned |  
 | 02 | Option-O LAGOM mini 2 | 1 | Purchase Required |  
 | 03 | MantaBrew WeighMaster Ultra | 1 | Purchase Required |  
 | 04 | Weber Workshops Bean Cellar Glass | 1 | Purchase Required |  
@@ -1725,9 +1741,9 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
 | 07 | Pullman Chisel Redistribution Tool Wood 53.3mm | 1 | Purchase Required |  
 | 08 | Normcore Planetary WDT Tool 54mm | 1 | Purchase Required |  
 | 09 | Normcore RDT Spray Bottle | 1 | Purchase Required |  
-| 10 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm | 1 | Purchase Required |  
+| 10 | KNODOS Tamping Mat with Tool Organiser - Walnut 54mm | 1 | Already Owned |  
 | 11 | Weber Workshops Blind Shaker Onyx | 1 | Purchase Required |  
-| 12 | 9Barista Magnetic Dosing Funnel | 1 | Purchase Required |  
+| 12 | 9Barista Magnetic Dosing Funnel | 1 | Already Owned |  
 | 13 | 9Barista Puck Screen | — | 採用取消（2026-10-08） |  
 | 14 | Weber Workshops EPF Dock | 1 | Purchase Required |  
 | 15 | ALM KOPi Z1 Mini Steamer | 1 | Purchase Required |  
@@ -1741,12 +1757,12 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
 | 23 | Snow Peak オーロラボトル 1L | 1 | Purchase Required |  
 | 24 | YETI Yonder 1L | 1 | Purchase Required |  
 | 25 | Snow Peak 酒筒 Titanium | 1 | Purchase Required |  
-| 26 | 9Barista Handle - Walnut | 2 | Purchase Required |  
+| 26 | 9Barista Handle - Walnut | 2 | Already Owned |  
 | 27 | IMS Precision Basket 53 mm | 1 | Included |  
 | 28 | 9Barista Stainless Steel Basket Cap Pro | 1 | Included |  
 | 29 | LAGOM mini 2 Ground Transfer Cup | 1 | Included / Secondary Route |  
 | 30 | Snow Peak ギガパワーストーブ レクタ（GS-150） | 1 | Purchase Required |  
-| 31 | 9Barista 51mm Filter Paper | 1 | Purchase Required |  
+| 31 | 9Barista 51mm Filter Paper | 1 | Already Owned |  
   
 ---  
   
@@ -1754,8 +1770,9 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
   
 MARI様のご決定（2026-10-08）に基づく、月次購入計画である。**9BaristaをMonth 1、グラス・カップ（＋水ボトル）を最終月（Month 6）に配置**する。2か月目はグラインダー＋スケール＋同ブランドの小物とする。優先度の低い順は水ボトル（最下位）→ミルクである。同じ購入先はまとめ、月あたり目安10万円（少し超えるのは可）とする。ProductはConfirmed Equipment Acquisition Registryの番号に一致する。  
   
-## Month 1 — 9Barista  
+## Month 1 — 9Barista（購入済み・2026-10-08）  
   
+* **購入済み（2026-10-08）**：Product 01／12／26／31はAlready Owned。請求額はカート実額（¥137,200）と一致（MARI様確認）。  
 * Product 01：9Barista Mk.2 Pro  
 * Product 12：9Barista Magnetic Dosing Funnel  
 * Product 26：9Barista Handle - Walnut ×2  
@@ -1790,6 +1807,7 @@ MARI様のご決定（2026-10-08）に基づく、月次購入計画である。
 * Product 06：The Force Tamper 53mm  
 * Product 10：KNODOS Tamping Mat with Tool Organiser - Walnut 54mm  
 * 購入先：いずれも海外・別注文（同月到着）  
+* Product 10（KNODOS）は先行購入済み（2026-10-08、Already Owned）。Month 4の小計は計画値のまま変更しない。  
 * 小計：¥101,000〜119,000  
   
 ## Month 5 — ミルク  
@@ -1820,7 +1838,11 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
   
 ## Plan Total  
   
-総額目安：¥656,170〜740,670（Estimated Acquisition Budgetと一致。9Barista Official Spare Parts (Preventive Stock)を除く）  
+総額目安：¥656,170〜740,670（計画全体。購入済み分を含む。9Barista Official Spare Parts (Preventive Stock)を除く）  
+  
+残り（Purchase Requiredのみ）：¥502,970〜581,470（Estimated Acquisition Budgetと一致）  
+  
+* 内訳：計画全体¥656,170〜740,670 − 購入済みProduct 01／12／26／31（¥137,200）− 購入済みProduct 10（¥16,000〜22,000）。  
   
 ### Design Rationale  
   
@@ -1853,6 +1875,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 | 4.7 | 2026-10-08 | MARI様のご提示（Weber Workshops公式サイトのカート画面、2026-10-08）に基づく。Product 11（Blind Shaker Onyx）を¥14,200、Product 14（EPF Dock Onyx）を¥15,900の実額へ更新。公式の国内送料案内（1万円以上は送料無料、日本宛ては糸島拠点より発送）に基づき、両Productの送料を¥0、輸入税をNot Applicable、Purchase TypeをDomestic、CurrencyをJPYへ変更。Product 14のplanning estimateを廃止。Month 4小計（¥95,100〜110,100）とPlan Total（¥630,870〜719,370）を再計算。Estimated Acquisition Budgetは、積み上げと一致しない状態が継続しているため未変更。Minor Version。 |
 | 4.8 | 2026-10-08 | MARI様のご指摘（2026-10-08）に基づき、Product 04をWeber Workshops Bean Cellar BulkからBean Cellar Glass（Stabilized Maple Onyx）へ訂正（Glassが元々の正しい採用品）。公式サイトのカート実額¥63,300、送料¥0（1万円以上は送料無料）、輸入税Not Applicable、Purchase TypeをDomestic、CurrencyをJPYとした（BR-002 Ver.4.15と連動）。Estimated Acquisition Budgetを各Productの積み上げ（¥656,170〜740,670）へ修正し、従来から不一致だったCore Espresso Systemと、Product変更で不一致となっていたStation / Workflowを含め全グループを再計算。Month 4小計（¥120,400〜131,400）とPlan Totalを再計算し、Plan Totalの「範囲内」注記をBudgetとの一致に改めた。Minor Version。 |
 | 4.9 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく、Monthly Acquisition Planの組み直し。Month 1（9Barista、¥137,200）とMonth 6（グラス・カップ＋水ボトル）を固定端点とし、Month 2をグラインダー＋スケール＋Normcore（Product 02／03／08／09、¥124,000〜145,000）、Month 3をWeber Workshops＋The Bloc（Product 04／11／14／05、¥118,400〜123,400）、Month 4をツール（Product 07／06／10、¥101,000〜119,000）、Month 5をミルク（Product 15／16／17、¥77,000〜93,500）、Month 6をグラス・カップ＋水ボトル（Product 18〜25／30、¥98,570〜122,570）とした。優先度の低い順は水ボトル（最下位）→ミルク。FIKA12を最終月へ移し（在庫リスクを注記）、The BlocをBlind Shakerと同じMonth 3へ移した。Normcore 2点は予算次第でMonth 5へ移す。購入先のまとめ方を各月に明記。Plan Total（¥656,170〜740,670）は月別小計の合計で検算し、Estimated Acquisition Budgetと一致。Product記載・価格・購入先・Registryに変更はない。Minor Version。 |
+| 4.10 | 2026-10-08 | MARI様のご報告（2026-10-08）に基づく。初月の9Barista一式（Product 01／12／26／31）とKNODOS Tamping Mat（Product 10、4か月目の先行購入）を購入済みとし、Acquisition StatusをPurchase RequiredからAlready Ownedへ変更（各ProductのNotesに「2026-10-08購入」を追記、到着状況は記載しない）。Product 01／12／26／31のNotesに請求額＝カート実額（¥137,200）と一致する旨（MARI様確認）を追記。金額は変更していない。Monthly Acquisition PlanのMonth 1を購入済みと明記、Month 4にKNODOS先行購入済みを明記（小計は不変）、Plan Totalは計画全体¥656,170〜740,670のまま、残り（Purchase Requiredのみ）¥502,970〜581,470を併記。Estimated Acquisition BudgetをPurchase Requiredのみで再計算（Core Espresso System ¥298,800〜330,800、Station / Workflow ¥42,900〜49,900、合計¥502,970〜581,470）。Group A・Group E・Current Acquisition Priority・Final Acquisition Inventoryの表示を同期。Included 01／02は変更なし。Minor Version。 |  
   
 ---  
 
