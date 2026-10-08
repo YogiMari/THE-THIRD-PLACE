@@ -1,11 +1,11 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.4.16
+## Ver.4.18
 
 **Document ID**: MD-002  
 **Title**: Field Atlas Landscape Framework  
 **Series**: MD – Master Data (Record)  
-**Version**: 4.16  
+**Version**: 4.18  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -334,7 +334,7 @@ OP-010 Part C §Site Requirements（区画面積：80㎡（車別）、車込み
 
 ### Field Atlas Radar
 
-レーダーチャートは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。Field Atlas Navigator・Ivoryと同じく、地面・§Site Record・次のキャンプと訪問の記録（DB-001 §Field Log、装備名はMD-004）・標高・周辺環境・日の出・日の入り・月齢・寒さの目安も示す（地図と写真は持たない）。本文書・DB-001 §Field Log・MD-004を更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
+レーダーチャートは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。Field Atlas Nocturne・Aubadeと同じく、地面・§Site Record・次のキャンプと訪問の記録（DB-001 §Field Log、装備名はMD-004）・標高・周辺環境・日の出・日の入り・月齢・寒さの目安も示す（地図と写真は持たない）。本文書・DB-001 §Field Log・MD-004を更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
 
 ```
 python3 scripts/field_atlas_radar.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-radar.html
@@ -343,29 +343,54 @@ python3 scripts/field_atlas_radar.py --md002 MD/MD-002_Field_Atlas_Landscape_Fra
 - 公開先：https://claude.ai/artifact/WjHqjyXoKLRxfTvxTsDaov
 - ページはデータを持たない。数値の正本は本文書である。
 
-### Field Atlas Navigator
+### Field Atlas Nocturne
 
-関東の3D地図で、各フィールドの小岩からの道路経路・写真・10軸の分析・アーリーチェックイン・地面・次のキャンプを表示するページである。点数・掲載順・アーリーチェックイン・地面のアイコンは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。View軸の基準地点（§Reference Benchmark Site）は、ランキングと区別した印として地図に示す。次のキャンプと訪問の記録は、DB-001 Project Ledger §Field Logから生成する（Fieldの表記は本文書に合わせる）。Field Logの構成に書かれた装備IDは、MD-004から正式名称を引いて示す。区画の広さ・駐車の扱いは本文書の§Site Record、標高・周辺環境（高速IC・コンビニ・スーパー・温泉・病院）は `scripts/data/field_atlas_navigator/` のデータ（国土地理院・OpenStreetMap）から示し、日の出・日の入り・月齢はページ内で計算する。次のキャンプのフィールドには、気象庁アメダス（moss camp fieldは「山中」）の平年値（1991〜2020年）のうちキャンプ月の上旬（1〜10日。月の前半の目安）の日最低気温と、観測所との標高差による補正値（0.6℃/100mの目安）を「寒さの目安」として示す（データは同フォルダのclimate.json。当日の気温や天気予報ではない）。位置・道路経路・写真（600pxのJPEG）とその出典は `scripts/data/field_atlas_navigator/` に置き、デザインと再現の手順は同フォルダのREADME.mdに記す。写真は各施設・予約サイトのものであり、出典は同フォルダのimages.jsonに記す。本文書・DB-001 §Field Log・MD-004を更新したら、`python3 scripts/field_atlas_check.py` で文書とデータの整合を確かめ（CIでも実行される）、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
+関東の3D地図で、各フィールドの小岩からの道路経路・写真・10軸の分析・アーリーチェックイン・地面・次のキャンプを表示するページである。点数・掲載順・アーリーチェックイン・地面のアイコンは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。View軸の基準地点（§Reference Benchmark Site）は、ランキングと区別した印として地図に示す。次のキャンプと訪問の記録は、DB-001 Project Ledger §Field Logから生成する（Fieldの表記は本文書に合わせる）。Field Logの構成に書かれた装備IDは、MD-004から正式名称を引いて示す。区画の広さ・駐車の扱いは本文書の§Site Record、標高・周辺環境（高速IC・コンビニ・スーパー・温泉・病院）は `scripts/data/field_atlas/` のデータ（国土地理院・OpenStreetMap）から示し、日の出・日の入り・月齢はページ内で計算する。次のキャンプのフィールドには、気象庁アメダス（moss camp fieldは「山中」）の平年値（1991〜2020年）のうちキャンプ月の上旬（1〜10日。月の前半の目安）の日最低気温と、観測所との標高差による補正値（0.6℃/100mの目安）を「寒さの目安」として示す（データは同フォルダのclimate.json。当日の気温や天気予報ではない）。位置・道路経路・写真（600pxのJPEG）とその出典は `scripts/data/field_atlas/` に置き、デザインと再現の手順は同フォルダのREADME.mdに記す。写真は各施設・予約サイトのものであり、出典は同フォルダのimages.jsonに記す。本文書・DB-001 §Field Log・MD-004を更新したら、`python3 scripts/field_atlas_check.py` で文書とデータの整合を確かめ（CIでも実行される）、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
 
 ```
-python3 scripts/field_atlas_navigator.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-navigator.html
+python3 scripts/field_atlas_nocturne.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-nocturne.html
 ```
 
 - 公開先：https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm
 - 点数の正本は本文書、キャンプの記録の正本はDB-001である。ページが持つのは地理情報（位置・道路経路）と写真のみである。
-- フィールドを追加したときは、同README.mdの手順で位置・道路経路・写真を追加し、Field Atlas Ivoryも再生成する。
-- NavigatorとIvoryで共通のスクリプトは `scripts/templates/field_atlas_shared.js` に置き、各テンプレートの `/*__SHARED_JS__*/` の位置へ生成時に差し込む（両版に及ぶ変更はここを直す。CSS・演出は各テンプレートに残す）。
+- フィールドを追加したときは、同README.mdの手順で位置・道路経路・写真を追加し、Field Atlas Aubadeも再生成する。
+- NocturneとAubadeで共通のスクリプトは `scripts/templates/field_atlas_shared.js` に置き、各テンプレートの `/*__SHARED_JS__*/` の位置へ生成時に差し込む（両版に及ぶ変更はここを直す。CSS・演出は各テンプレートに残す）。
 
-### Field Atlas Ivory
+### Field Atlas Aubade
 
-Field Atlas Navigatorのライト版である。表示する内容・地図・道路経路・操作はNavigatorと同じで、デザイン（アイボリーの紙と磁器のような地図、演出）だけが異なる。データ（`scripts/data/field_atlas_navigator/`）と共通のスクリプト（`scripts/templates/field_atlas_shared.js`）をNavigatorと共有し、テンプレートは `scripts/templates/field_atlas_ivory.html`、デザインの仕様と再現の手順は同README.mdの「Field Atlas Ivory」に記す。本文書またはDB-001 §Field Logを更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
+Field Atlas Nocturneのライト版である。表示する内容・地図・道路経路・操作はNocturneと同じで、デザイン（アイボリーの紙と磁器のような地図、演出）だけが異なる。データ（`scripts/data/field_atlas/`）と共通のスクリプト（`scripts/templates/field_atlas_shared.js`）をNocturneと共有し、テンプレートは `scripts/templates/field_atlas_aubade.html`、デザインの仕様と再現の手順は同README.mdの「Field Atlas Aubade」に記す。本文書またはDB-001 §Field Logを更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
 
 ```
-python3 scripts/field_atlas_ivory.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-ivory.html
+python3 scripts/field_atlas_aubade.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-aubade.html
 ```
 
 - 公開先：https://claude.ai/artifact/GmW1EhhdcDLNaG7GcuMAZH
 - 点数の正本は本文書、キャンプの記録の正本はDB-001である。ページが持つのは地理情報（位置・道路経路）と写真のみである。
+
+### Field Atlas Cartograph・Contour・Gloaming
+
+Field Atlas Nocturne・Aubadeと同じ内容・地図・道路経路・操作で、デザインだけが異なる3つの版である。表示する内容と操作はAubadeと同じで、デザインは古地図（セピアの紙・罫線の枠・等高線と陰影が初期表示）のCartograph、モノクロの測量図（グラファイトの地に白い等高線・等高線と陰影が初期表示）のContour、黄昏のネオン（紫から橙の空・ピンクとティールの発光）のGloamingである。選択時の演出は各版9種類（Aubadeの4種と、Nocturneの5種に倣った5種）で、選ぶたびにランダムに切り替わる。テンプレートは `scripts/templates/field_atlas_{cartograph,contour,gloaming}.html`、生成は `scripts/field_atlas_{cartograph,contour,gloaming}.py`、デザインの仕様は同README.mdに記す。再生成のコマンドは次のとおり（別のチャットから公開する場合は、下記URLを指定して更新する）。
+
+```
+python3 scripts/field_atlas_cartograph.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-cartograph.html
+python3 scripts/field_atlas_contour.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-contour.html
+python3 scripts/field_atlas_gloaming.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-gloaming.html
+```
+
+- 公開先（Cartograph）：https://claude.ai/artifact/AARvJwMoR9oPvzhDHcEMcE
+- 公開先（Contour）：https://claude.ai/artifact/8dDcGc8bXqHsxNYSPFvPFu
+- 公開先（Gloaming）：https://claude.ai/artifact/MT32pmYNSv4DoAgKDf8LBG
+
+### Field Atlasの共通ツール（5つの3D地図ページ）
+
+5つの3D地図ページ（Nocturne・Aubade・Cartograph・Contour・Gloaming）は、共通のスクリプト（`scripts/templates/field_atlas_shared.js`）で次のツールを備える。いずれもページ内で、すでにあるデータだけから計算し、実行時に外部から取得しない。
+
+- 時刻と季節：時刻（15分刻み）と月のスライダーで、同じ場所の空・光・ひと月ごとの地面の色を変える（色の変化のみ。天気ではない）。太陽の高さは小岩の緯度経度と、その月15日の日付からNOAAの式で計算する。初期表示は各版のデザインのまま。
+- 今日の一手：固定の規則で1件を選び、理由を1行で示す。①DB-001に14日以内のPlannedがあればそのフィールド、②なければ未訪問（本文書）・足跡未登録・移動2時間以内・アーリーが「早い」か「可」のうちResonance最高（同点は移動時間、順位の順）、③以下は条件を緩める。季節の向き不向きと天気はデータにないため使わない。
+- 足跡：閲覧者が「訪問済みにする」を押した順に地図上で結ぶ。保存先はそのブラウザのlocalStorageのみ（なくても動く）。本文書の訪問済みとは別のメモで、訪問を作り出さない。
+- 等高線・陰影：国土地理院の標高データを約2km格子にした `scripts/data/field_atlas/terrain.json` から描く（等高線は200mごと）。
+- 日照帯：選択中のフィールドの、指定日の日の出・日の入り・南中・日長・市民薄明を、緯度経度と日付からNOAA Solar Calculatorの式で計算する（独立実装との照合で1分以内）。天気・予報は、静的なページでは取得できないため載せない。
+- 2点の比較：目的地と比較先の直線距離（大圏・ハーヴァーサイン）と方位を示す。「STRAIGHT-LINE」と明記し、道路距離や所要時間は示さない。
 
 ---
 
@@ -460,6 +485,8 @@ THE THIRD PLACE を実現するための
 | 4.14 | 2026-10-05 | MARI様のご指示に基づき、九十九里浜シーサイドオートキャンプ場のIdentity欄（旧「キャンプ ざ カントリー」の説明が残っていた）を、同場の特徴に合わせて書き直した（Forest Wind Break → Open Coast Camp）。スコア・順位は変えていない。立地・サイト・風の記述は、なっぷの口コミ情報にもとづく。 |
 | 4.15 | 2026-10-05 | MARI様のご訪問に基づき、CAMP さくらの丘（千葉県君津市）を訪問済みとして新規追加した（全53件）。10軸はMARI様のご指示により、イレブンオートキャンプパークの採点をもとにOperationと近さを除く8軸を各+1とし、Operationはアーリーチェックイン『可』の8、近さは移動時間1.5時間の9（OP-010 Part Cの規定どおり）とした。合計64点。掲載順はOP-010の同点規則（Partner→Place＋Experience）により、同点のTACO GLAMP THE MEXICO（Partner 7）の下とした。Field Atlas Database・Sub-Score Table・Early Check-in Record・Site Recordを更新した。位置・道路経路・写真・標高などNavigator用の地理データは未追加。Minor Version。 |
 | 4.16 | 2026-10-05 | MARI様のご指示に基づき、九十九里浜シーサイドオートキャンプ場の§Early Check-in Recordと§Site Record、およびField Atlas Databaseの地面アイコンを、公式サイト・いこーよ・なっぷの記載で書き直した（旧「キャンプ ざ カントリー」の値が残っていたため。🟫 土・約140〜1,000㎡・車込2〜4台・アーリー¥1,000/人 → 🌱🌲 芝・林間・約50〜80㎡・車込1台・アーリーは第2キャンプ場で1区画1時間¥500）。スコア・順位は変えていない。 |
+| 4.17 | 2026-10-07 | MARI様のご指示に基づき、§Visualizationの二つの3D地図ページの名称を改めた（Field Atlas Navigator → Field Atlas Nocturne、Field Atlas Ivory → Field Atlas Aubade）。あわせて、生成スクリプト・テンプレート・データ置き場の名称も同じ語に揃えた（`scripts/field_atlas_nocturne.py`・`field_atlas_aubade.py`・`data/field_atlas/` ほか）。ページの操作も改めた（ピンの選択を画面上の距離で行うようにし、重なって見分けられないピンは同じ場所を続けてタップして順に選べる。フィールドを選んだときのルート描画とズームの演出を複数用意し、選ぶたびにランダムで切り替わる）。スコア・順位・掲載内容は変えていない。過去のRevision Historyの行は当時の名称（Navigator・Ivory）のまま保持した。Patch Version。 |
+| 4.18 | 2026-10-08 | MARI様のご指示に基づき、§Visualizationの3D地図ページを拡張した。新しい3つのデザイン版（Field Atlas Cartograph・Contour・Gloaming）を加え、全5版に共通のツール（時刻と季節、今日の一手、足跡、等高線・陰影、日照帯、2点の直線比較）を追加した。等高線・陰影の元データとして国土地理院の標高格子 `scripts/data/field_atlas/terrain.json` を加えた。スコア・順位・掲載内容は変えていない。Patch Version。 |
 
 ---
 

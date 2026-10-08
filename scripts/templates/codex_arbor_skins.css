@@ -1,0 +1,608 @@
+/* =====================================================================================================
+   Arbor of the Third Place — the designs.
+   The page below this line is the Original (聖典 / Codex). Every other design is a block that starts
+   with  html:root[data-skin="sN"]  and redefines the colour variables of the Original, then re-dresses
+   the parts that need more than a colour. Native CSS nesting is used.
+   ===================================================================================================== */
+
+/* ---- shared hooks (all designs) ---- */
+.legend .ring{fill:none;stroke:#f6dca0;stroke-width:1}
+.lg-a{fill:none;stroke:#d6a74e;stroke-width:1.2}
+.lg-b{fill:none;stroke:#a38ad6;stroke-width:2;opacity:.6}
+.selmark{fill:none;stroke:var(--gold-hi);stroke-width:2.2;opacity:0;pointer-events:none}
+.node.sel .selmark{opacity:1}
+.node:focus-visible .selmark{opacity:1;stroke:#fff}
+#masthead{cursor:pointer;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent}
+#masthead:focus-visible{outline:1px dashed var(--gold);outline-offset:8px}
+#skinbg{position:fixed;inset:0;z-index:0;pointer-events:none;display:none}
+#skinbg svg{display:block;width:100%;height:100%}
+html:not([data-skin="orig"]) #skinbg{display:block}
+html:not([data-skin="orig"]) :is(#sky,#motes,.grain,.vignette){display:none}
+.page{padding-bottom:120px}
+.gild{-webkit-text-fill-color:initial}
+
+/* ---- design switcher (neutral, identical in every design) ---- */
+.skinbar{position:fixed;left:50%;transform:translateX(-50%);bottom:calc(14px + env(safe-area-inset-bottom,0px));z-index:200;display:flex;align-items:center;gap:4px;max-width:calc(100vw - 24px);
+  padding:6px 8px;border-radius:999px;background:rgba(18,18,20,.88);color:#f3f1ea;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:0 8px 30px rgba(0,0,0,.35),0 0 0 1px rgba(255,255,255,.12) inset;font:500 11px/1 -apple-system,BlinkMacSystemFont,"Helvetica Neue",sans-serif}
+.skinbar-l{padding:0 8px 0 6px;letter-spacing:.18em;opacity:.6;font-size:9.5px}
+.skinbar button{appearance:none;border:0;background:transparent;color:inherit;font:inherit;padding:8px 11px;border-radius:999px;cursor:pointer;white-space:nowrap;min-width:34px}
+.skinbar button[aria-pressed="true"]{background:#f3f1ea;color:#121214}
+.skinbar button:focus-visible{outline:2px solid #fff;outline-offset:1px}
+.skinbar-name{padding:0 10px 0 8px;opacity:.85;white-space:nowrap;max-width:15em;overflow:hidden;text-overflow:ellipsis}
+@media (max-width:640px){.skinbar-l,.skinbar-name{display:none}.skinbar button{padding:9px 10px}}
+
+/* ---- keyframes used by the designs ---- */
+@keyframes flagwave{from{transform:skewY(-9deg) scaleX(1)}to{transform:skewY(9deg) scaleX(.82)}}
+@keyframes twinkle{0%,100%{opacity:.35;transform:scale(.86)}50%{opacity:1;transform:scale(1.08)}}
+@keyframes knotpulse{0%,100%{transform:scale(1)}50%{transform:scale(1.14)}}
+@keyframes sway{from{transform:rotate(-7deg)}to{transform:rotate(7deg)}}
+@keyframes petal{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+@media (prefers-reduced-motion:reduce){#tree *{animation:none!important}}
+
+/* =====================================================================================================
+   s1 地形図 — Topographic Map. Pale survey paper, brown contours, a blue grid; documents are summits.
+   ===================================================================================================== */
+html:root[data-skin="s1"]{
+  color-scheme:light;
+  --night:#eceedb; --fg:#2b2a1f; --muted:#68664d; --faint:#9a967a;
+  --gold:#a8532a; --gold-hi:#7d3a1a; --rubric:#b5412b; --oxblood:#3e6a45;
+  --hair:rgba(70,58,30,.16); --hair-gold:rgba(140,80,40,.36); --folio:rgba(251,250,238,.82);
+  --s-MD:#c0561f;
+  --f-black:"Cormorant Garamond","Shippori Mincho B1",serif; --f-display:"Cormorant Garamond","Shippori Mincho B1",serif;
+  --f-label:"IBM Plex Mono","Zen Kaku Gothic New",monospace; --f-ja:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;
+  --tint:rgba(168,83,42,.07); --tint2:rgba(62,106,69,.16); --glass:rgba(250,249,235,.92); --glass-2:rgba(246,246,228,.86);
+  --panel:linear-gradient(180deg,rgba(252,251,240,.93),rgba(244,244,224,.96)); --panel-solid:rgba(246,246,228,.98);
+  --overlay:rgba(226,229,205,.9); --outline:rgba(168,83,42,.18); --track:rgba(70,58,30,.1);
+  --card:linear-gradient(180deg,rgba(255,255,248,.7),rgba(255,255,248,.35)); --input:rgba(255,255,248,.8); --focus-ring:rgba(168,83,42,.18);
+  --tip:rgba(250,249,235,.96); --ph-bg:#d9dcc0; --ph-vig:rgba(60,50,20,.34); --ph-line:rgba(255,252,235,.6);
+  --mark:rgba(240,196,80,.55); --diag:rgba(70,58,30,.08);
+  --on-grad:linear-gradient(180deg,#5f8d56,#436d3d); --on-ink:#fff; --gild-c:#2f5a3a;
+  --gild:linear-gradient(#2f5a3a,#2f5a3a); --ramp:linear-gradient(90deg,#ece3c6,#d6bd82,#bb8644,#80502a,#3b2312);
+  --halo-flash:0 0 0 1px var(--gold),0 0 30px rgba(168,83,42,.3);
+  & body{background:var(--night);font-family:var(--f-ja);font-size:15px}
+  & .gild{background:none;color:var(--gild-c);-webkit-text-fill-color:var(--gild-c)}
+  & #skinbg{color:#a9733a}
+  & #skinbg .cx{stroke:#b07a43;stroke-width:.8;opacity:.42}
+  & #skinbg .ix{stroke:#9a6330;stroke-width:1.5;opacity:.66}
+  & .rail{border-bottom:2px solid var(--fg);font-family:var(--f-label);letter-spacing:.2em}
+  & .folio{background:var(--folio);border:1px solid var(--fg);outline:1px solid var(--fg);outline-offset:-5px;backdrop-filter:blur(2px)}
+  & .folio::before,& .folio::after{border-color:var(--fg);background:var(--night);border-radius:0;transform:none;width:11px;height:11px;top:-6px}
+  & .folio::before{left:-6px}& .folio::after{right:-6px}
+  & .front h1 .black{font-style:italic;font-weight:600;letter-spacing:-.01em;filter:none}
+  & .front h1 .sub{font-family:var(--f-label);font-style:normal;font-size:clamp(13px,1.8vw,19px);letter-spacing:.34em;text-transform:uppercase;color:var(--fg)}
+  & .front .over{color:var(--gold)}
+  & .front .ja{font-family:var(--f-ja);letter-spacing:.34em}
+  & .orn::before,& .orn::after{background:var(--fg);height:1px}
+  & .orn i{border:0;background:var(--fg);transform:none;width:11px;height:10px;clip-path:polygon(50% 0,100% 100%,0 100%)}
+  & .orn i:nth-child(2){width:17px;height:15px;background:var(--gold)}
+  & .cover{filter:none}
+  & .ph-hero::before{background:radial-gradient(120% 90% at 50% 40%,transparent 55%,rgba(60,50,20,.3) 100%),linear-gradient(180deg,transparent 0%,transparent 55%,var(--night) 100%)}
+  & .ph img{filter:sepia(.5) saturate(.9) contrast(1.04) brightness(1.04)}
+  & .ph img.bloom{display:none}
+  & .ph{box-shadow:0 18px 36px -18px rgba(60,50,20,.45);border-color:var(--fg)}
+  & .ph::after{border-color:rgba(255,252,235,.7)}
+  & .cover .cap{color:rgba(255,252,235,.92);text-shadow:0 1px 3px rgba(0,0,0,.5)}
+  & .figures strong{font-family:var(--f-display);font-style:italic;font-weight:600;color:var(--gild-c)}
+  & .index h2,& .lhead h2,& .sub-h,& .tier-h b,& .crow .ct b,& .d-title,& .g-tab b,& .obj h4,& .legend h3,& .concord h4,& .versions b,& .timeline b,& .seek-head h2,& .proc b,& .litany .who,& .code,& .qual{font-style:italic}
+  & .index .rn,& .tier-h .rn,& .verses .vn,& .proc .n,& .tier .num{font-family:var(--f-label)}
+  & .initial{width:clamp(74px,8.4vw,104px);border-radius:50%;border:2px solid var(--fg);outline:0;background:repeating-radial-gradient(circle at 50% 50%,#f4f4de 0 5px,rgba(176,122,67,.55) 5px 6px);box-shadow:none}
+  & .initial::before{border-radius:50%;inset:14px;border:1px solid var(--fg);background:#f4f4de}
+  & .initial span{font-family:var(--f-display);font-style:italic;font-weight:600;font-size:clamp(34px,4vw,52px)}
+  & .lhead .k{color:var(--rubric);font-family:var(--f-label)}
+  & .lhead h2{font-weight:600;color:var(--fg)}
+  & .runhead{color:var(--muted);border-bottom:1px solid var(--fg)}
+  & .thumbs a.on{background:var(--gold);color:#fff}
+  & .liber{margin-top:clamp(70px,9vw,130px)}
+  & .seek-cta{font-family:var(--f-display);font-style:italic;color:var(--fg);border-color:var(--fg)}
+  & .chip{font-family:var(--f-label)}
+  & .crow .cid{font-family:var(--f-label);font-weight:600}
+  & .tier-h{border-bottom:1.5px solid var(--fg)}
+  & .canon-head{color:var(--gold)}
+  & .pill.st-Owned{border-color:#436d3d}
+  & .obj{border-radius:2px;background:var(--card);box-shadow:0 1px 0 rgba(70,58,30,.12)}
+  & .obj::before{content:"";position:absolute;right:10px;top:-1px;width:14px;height:10px;background:var(--gold);clip-path:polygon(0 0,100% 0,50% 100%)}
+  & .oid{font-family:var(--f-label)}
+  & .finale .law{color:var(--fg);text-shadow:none}
+  & .finale .ph-bg{opacity:.35;mix-blend-mode:multiply}
+  & .dossier{box-shadow:0 20px 50px -24px rgba(60,50,20,.5)}
+  & .tip b{font-family:var(--f-display)}
+  & .d-eyebrow .sw{box-shadow:none}
+  & .seek-fab{color:var(--fg)}
+  & mark{color:var(--fg)}
+  /* the map */
+  & #tree .cx{fill:none;stroke:#b07a43;stroke-width:.8;opacity:.6}
+  & #tree .ix{fill:none;stroke:#9a6330;stroke-width:1.5;opacity:.85}
+  & #tree .tint{opacity:.85}
+  & #tree .grid{stroke:#5f86a6;stroke-width:.6;opacity:.3;fill:none}
+  & #tree .gridlab{fill:#5f86a6;font-family:var(--f-label);font-size:10px;letter-spacing:.12em}
+  & #tree .bench{stroke:var(--gold);stroke-width:.8;stroke-dasharray:2 5;opacity:.6;fill:none}
+  & #tree .tier{fill:var(--fg)}
+  & #tree .tier .num{fill:var(--rubric);font-family:var(--f-label);font-size:17px;font-weight:600}
+  & #tree .pillar-label{fill:#8a7440;font-family:var(--f-display);font-style:italic;font-size:15px;letter-spacing:.2em}
+  & #tree .edge .line{stroke:#b5412b;stroke-width:1.7;stroke-dasharray:7 5;opacity:.85}
+  & #tree .edge.hier .line{stroke-dasharray:2 6;opacity:.5}
+  & #tree .thread{filter:none}
+  & #tree .node :is(.id,.ttl){paint-order:stroke;stroke:var(--night);stroke-width:4px;stroke-linejoin:round}
+  & #tree .node .id{font-family:var(--f-label);font-size:11px;letter-spacing:.14em;font-weight:600}
+  & #tree .node .ttl{font-family:var(--f-display)!important;font-style:italic;font-size:17px;fill:var(--fg);font-weight:600}
+  & #tree .node .ttl.pre{font-family:var(--f-label)!important;font-style:normal;font-size:9px;letter-spacing:.3em;fill:var(--muted)}
+  & :is(#tree,.legend) .tri{stroke:#2b2a1f;stroke-width:1.2;stroke-linejoin:round}
+  & :is(#tree,.legend) .shade{fill:rgba(0,0,0,.2)}
+  & :is(#tree,.legend) .snow{fill:rgba(255,255,255,.8)}
+  & :is(#tree,.legend) .pole{stroke:#2b2a1f;stroke-width:1.5;fill:none}
+  & :is(#tree,.legend) .flag{fill:#c0392b;stroke:#7d2318;stroke-width:.8;transform-box:fill-box;transform-origin:left center}
+  & :is(#tree,.legend) .v-Periodic .flag{animation:flagwave 3.4s ease-in-out infinite alternate}
+  & :is(#tree,.legend) .v-Living .flag{animation:flagwave .8s ease-in-out infinite alternate}
+  & :is(#tree,.legend) .ring{stroke:#2b2a1f;stroke-opacity:.75;stroke-width:1.1}
+  & :is(#tree,.legend) .bm{stroke:#2b2a1f;stroke-width:1.2}
+  & :is(#tree,.legend) .bmx{stroke:#2b2a1f;stroke-width:1.1;fill:none}
+  & #tree .selmark{stroke:var(--gold);stroke-width:2.4;stroke-dasharray:5 4}
+  & #tree .v-Periodic .halo,& #tree .v-Living .halo{animation:none}
+  & #matrix text{fill:var(--muted)}
+  & #matrix text.on{fill:var(--fg)}
+  & .lg-a{stroke:#b5412b}
+  & .lg-b{stroke:#3f78a8;opacity:.8}
+}
+
+/* =====================================================================================================
+   s2 星図 — Star Chart. Midnight indigo, silver graticule; documents are stars, series are constellations.
+   ===================================================================================================== */
+html:root[data-skin="s2"]{
+  color-scheme:dark;
+  --night:#050919; --fg:#e8ecff; --muted:#9ba7d3; --faint:#6a77a6;
+  --gold:#ffd479; --gold-hi:#fff1c4; --rubric:#8fb4ff; --oxblood:#101c47;
+  --hair:rgba(190,205,255,.15); --hair-gold:rgba(255,212,121,.3); --folio:rgba(7,12,36,.7);
+  --s-MD:#ff9a5c;
+  --f-black:"Cinzel","Cormorant Garamond",serif; --f-display:"Cormorant Garamond","Shippori Mincho B1",serif;
+  --f-label:"Jost","Zen Kaku Gothic New",sans-serif; --f-ja:"Shippori Mincho B1","Hiragino Mincho ProN",serif;
+  --tint:rgba(143,180,255,.08); --tint2:rgba(255,212,121,.14); --glass:rgba(6,10,30,.88); --glass-2:rgba(6,10,30,.74);
+  --panel:linear-gradient(180deg,rgba(9,15,44,.86),rgba(5,9,28,.92)); --panel-solid:rgba(6,10,30,.97);
+  --overlay:rgba(2,4,14,.9); --outline:rgba(143,180,255,.16); --track:rgba(190,205,255,.1);
+  --card:linear-gradient(180deg,rgba(143,180,255,.06),rgba(143,180,255,0)); --input:rgba(143,180,255,.06); --focus-ring:rgba(255,212,121,.16);
+  --tip:rgba(5,9,25,.94); --ph-bg:#050919; --ph-vig:rgba(2,4,18,.7); --ph-line:rgba(190,205,255,.25);
+  --mark:rgba(255,212,121,.3); --diag:rgba(190,205,255,.06);
+  --on-grad:linear-gradient(180deg,#fff1c4,#e0b04e); --on-ink:#050919; --gild-c:#ffe9a8;
+  --gild:linear-gradient(180deg,#ffffff 0%,#dfe8ff 42%,#9fb5f0 100%); --ramp:linear-gradient(90deg,#101c3d,#28489a,#5f8ee0,#aed0ff,#fff);
+  --halo-flash:0 0 0 1px var(--gold),0 0 40px rgba(143,180,255,.35);
+  & body{background:radial-gradient(120% 70% at 50% 0,#12205a 0%,#0a1235 35%,#050919 75%) fixed,var(--night);font-family:var(--f-ja)}
+  & #skinbg{color:#dfe8ff}
+  & #skinbg .st circle{fill:#e6edff}
+  & #skinbg .sp{stroke:#fff;stroke-width:.7;opacity:.6;fill:none}
+  & .rail{font-family:var(--f-label)}
+  & .folio{border-color:rgba(190,205,255,.34);outline-color:rgba(190,205,255,.12);backdrop-filter:blur(3px)}
+  & .folio::before,& .folio::after{border-radius:50%;transform:none;border-color:var(--gold-hi);background:var(--gold)}
+  & .front h1 .black{font-weight:500;letter-spacing:.08em;text-transform:uppercase;filter:drop-shadow(0 0 26px rgba(160,190,255,.4))}
+  & .front h1 .sub{font-style:italic}
+  & .front .over{color:var(--rubric)}
+  & .orn::before,& .orn::after{background:linear-gradient(90deg,transparent,rgba(190,205,255,.7))}
+  & .orn::after{background:linear-gradient(90deg,rgba(190,205,255,.7),transparent)}
+  & .orn i{border:0;background:var(--gold-hi);transform:none;width:12px;height:12px;clip-path:polygon(50% 0,60% 40%,100% 50%,60% 60%,50% 100%,40% 60%,0 50%,40% 40%)}
+  & .orn i:nth-child(2){width:20px;height:20px;background:var(--gold)}
+  & .ph-hero::before{background:radial-gradient(120% 90% at 50% 40%,transparent 48%,rgba(2,4,18,.65) 100%),linear-gradient(180deg,rgba(5,9,25,.3) 0%,transparent 30%,transparent 52%,rgba(5,9,25,.96) 100%)}
+  & .ph img{filter:grayscale(.85) contrast(1.15) brightness(.82) sepia(.35) hue-rotate(185deg) saturate(2.2)}
+  & .ph img.bloom{filter:blur(16px) brightness(1.1) saturate(1.5) hue-rotate(185deg);opacity:.3}
+  & .figures strong{font-family:var(--f-black);font-weight:400;letter-spacing:.04em}
+  & .lhead h2,& .index h2{font-family:var(--f-black);font-style:normal;font-weight:400;letter-spacing:.07em;text-transform:uppercase}
+  & .lhead h2{font-size:clamp(30px,4.2vw,58px)}
+  & .initial{width:clamp(74px,8.4vw,104px);border-radius:50%;background:radial-gradient(circle at 50% 50%,#1d2f78,#0a1236 72%);border:1px solid rgba(190,205,255,.5);outline:1px dashed rgba(190,205,255,.35);outline-offset:4px;box-shadow:0 0 40px rgba(143,180,255,.25)}
+  & .initial::before{border-radius:50%;inset:8px;border:1px solid rgba(190,205,255,.2);background:none}
+  & .initial span{font-family:var(--f-black);font-weight:500;font-size:clamp(30px,3.6vw,46px)}
+  & .liber{margin-top:clamp(80px,10vw,150px)}
+  & .thumbs a{border-radius:50% 0 0 50%}
+  & .seek-cta{border-radius:999px}
+  & .chip{border-radius:999px}
+  & .pill{border-radius:999px}
+  & .obj{border-radius:10px}
+  & .obj header .oid{color:var(--gold)}
+  & .tn{font-family:var(--f-black);font-weight:400;letter-spacing:.08em}
+  & .finale .law{color:#fff3cf;text-shadow:0 0 28px rgba(160,190,255,.55)}
+  & .ph::after{border-radius:2px}
+  & .stratum .glyph{font-family:var(--f-black)}
+  & mark{color:#fff}
+  /* the chart */
+  & #tree .dust{fill:#e6edff}
+  & #tree .frame{fill:none;stroke:rgba(190,205,255,.55);stroke-width:1.4}
+  & #tree .frame.thin{stroke-width:.6;stroke:rgba(190,205,255,.3)}
+  & #tree .grat{fill:none;stroke:rgba(190,205,255,.2);stroke-width:.8;stroke-dasharray:2 5}
+  & #tree .grat.ray{stroke-dasharray:none;stroke:rgba(190,205,255,.12)}
+  & #tree .tick{stroke:rgba(190,205,255,.55);stroke-width:1}
+  & #tree .gridlab{fill:var(--faint);font-family:var(--f-label);font-size:11px;letter-spacing:.12em}
+  & #tree .tier .num{fill:var(--rubric);font-family:var(--f-black);font-size:15px}
+  & #tree .cline{stroke:#ffe9a8;opacity:.62;fill:none}
+  & #tree .edge .line{stroke:#7fa6ff;stroke-width:1.1;stroke-dasharray:3 6;opacity:.6}
+  & #tree .edge.hier .line{opacity:.3}
+  & #tree .node :is(.id,.ttl){paint-order:stroke;stroke:#050919;stroke-width:4px;stroke-linejoin:round}
+  & #tree .node .id{font-family:var(--f-label);font-size:11px;letter-spacing:.22em;font-weight:500}
+  & #tree .node .ttl{font-family:var(--f-display)!important;font-style:italic;font-size:16px;fill:var(--fg)}
+  & :is(#tree,.legend) .spk{opacity:.82;transform-box:fill-box;transform-origin:center}
+  & :is(#tree,.legend) .v-Periodic .spk{animation:twinkle 5.4s ease-in-out infinite}
+  & :is(#tree,.legend) .v-Living .spk{animation:twinkle 1.5s ease-in-out infinite}
+  & :is(#tree,.legend) .ring{stroke:#cfe0ff;stroke-width:.9;opacity:.65}
+  & #tree .selmark{stroke:var(--gold-hi);stroke-width:1.6;stroke-dasharray:3 4}
+  & .lg-a{stroke:#7fa6ff;stroke-dasharray:3 4}
+  & .lg-b{stroke:#ffe9a8;opacity:.8;stroke-width:1.6}
+  & #matrix .cell{rx:12px}
+}
+
+/* =====================================================================================================
+   s3 建築 — Architectural Set. Drafting paper, ink lines, a blue grid, red revision marks.
+   ===================================================================================================== */
+html:root[data-skin="s3"]{
+  color-scheme:light;
+  --night:#f2f2ed; --fg:#1d2733; --muted:#566271; --faint:#8a94a0;
+  --gold:#1e4f8a; --gold-hi:#0f3a6d; --rubric:#c0392b; --oxblood:#1d2733;
+  --hair:rgba(29,39,51,.16); --hair-gold:rgba(29,39,51,.42); --folio:rgba(252,252,249,.92);
+  --s-MD:#b8341f;
+  --f-black:"Josefin Sans","Zen Kaku Gothic New",sans-serif; --f-display:"Josefin Sans","Zen Kaku Gothic New",sans-serif; --f-book:"IBM Plex Mono",monospace;
+  --f-label:"IBM Plex Mono","Zen Kaku Gothic New",monospace; --f-ja:"Zen Kaku Gothic New","Hiragino Sans","Yu Gothic",sans-serif;
+  --tint:rgba(30,79,138,.07); --tint2:rgba(30,79,138,.14); --glass:rgba(252,252,249,.94); --glass-2:rgba(246,246,240,.9);
+  --panel:linear-gradient(180deg,rgba(253,253,250,.95),rgba(247,247,242,.97)); --panel-solid:rgba(249,249,245,.99);
+  --overlay:rgba(226,228,230,.92); --outline:rgba(29,39,51,.16); --track:rgba(29,39,51,.1);
+  --card:linear-gradient(180deg,#fff,#fff); --input:#fff; --focus-ring:rgba(30,79,138,.18);
+  --tip:rgba(252,252,249,.97); --ph-bg:#d8dadc; --ph-vig:rgba(29,39,51,.28); --ph-line:rgba(255,255,255,.6);
+  --mark:rgba(192,57,43,.2); --diag:rgba(29,39,51,.07);
+  --on-grad:linear-gradient(#1d2733,#1d2733); --on-ink:#fff; --gild-c:#1d2733;
+  --gild:linear-gradient(#1d2733,#1d2733); --ramp:linear-gradient(90deg,#e0e7ef,#a3b9d6,#6089b8,#285792,#0b2a55);
+  --halo-flash:0 0 0 2px var(--rubric);
+  & body{background-color:var(--night);background-image:linear-gradient(rgba(30,79,138,.07) 1px,transparent 1px),linear-gradient(90deg,rgba(30,79,138,.07) 1px,transparent 1px),linear-gradient(rgba(30,79,138,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(30,79,138,.05) 1px,transparent 1px);
+    background-size:120px 120px,120px 120px,24px 24px,24px 24px;background-attachment:fixed;font-family:var(--f-ja);font-size:14.5px}
+  & .gild{background:none;color:var(--gild-c);-webkit-text-fill-color:var(--gild-c)}
+  & .page{border-inline:1.5px solid var(--fg);background:rgba(252,252,249,.5)}
+  & .rail{font-family:var(--f-label);border-bottom:1.5px solid var(--fg);letter-spacing:.2em}
+  & .folio{background:var(--folio);border:1.5px solid var(--fg);outline:0;border-radius:0}
+  & .folio::before,& .folio::after{display:none}
+  & .front{text-align:left}
+  & .front h1 .black{font-weight:300;letter-spacing:.06em;text-transform:uppercase;filter:none;font-size:clamp(84px,17vw,230px)}
+  & .front h1 .sub{font-family:var(--f-label);font-style:normal;font-size:clamp(12px,1.7vw,18px);letter-spacing:.3em;text-transform:uppercase;color:var(--gold);border-top:1.5px solid var(--fg);padding-top:10px;margin-top:12px}
+  & .front .over{color:var(--fg);text-align:left;padding-left:0;font-family:var(--f-label)}
+  & .front .ja,& .front .epigraph,& .front .dek{margin-left:0;text-align:left}
+  & .front .ja{letter-spacing:.3em;padding-left:0}
+  & .orn{margin:20px 0;max-width:none;justify-content:flex-start}
+  & .orn::before{display:none}
+  & .orn::after{background:var(--fg);height:1px;flex:1}
+  & .orn i{border:1.5px solid var(--fg);transform:none;width:10px;height:10px;background:none}
+  & .orn i:nth-child(2){background:var(--rubric);border-color:var(--rubric);width:10px;height:10px}
+  & .ph{border:1.5px solid var(--fg);box-shadow:none}
+  & .ph-hero::before{background:linear-gradient(180deg,transparent 0%,transparent 60%,var(--night) 100%)}
+  & .ph img{filter:grayscale(1) contrast(1.12) brightness(1.05)}
+  & .ph img.bloom{display:none}
+  & .ph::after{border:1px dashed rgba(255,255,255,.7)}
+  & .cover .cap{color:#fff;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+  & .figures{border-block:1.5px solid var(--fg)}
+  & .figures strong{font-family:var(--f-label);font-weight:500;color:var(--gold)}
+  & .index h2,& .lhead h2,& .sub-h,& .tier-h b,& .crow .ct b,& .d-title,& .g-tab b,& .obj h4,& .legend h3,& .concord h4,& .versions b,& .timeline b,& .seek-head h2,& .proc b,& .litany .who,& .qual,& .index .nm,& .tq,& .quote{font-style:normal}
+  & .index h2,& .lhead h2{font-weight:300;letter-spacing:.06em;text-transform:uppercase}
+  & .index .nm{letter-spacing:.04em;font-weight:400}
+  & .lhead h2{font-size:clamp(30px,4.4vw,60px)}
+  & .initial{width:clamp(96px,10vw,128px);aspect-ratio:1.55;border:1.5px solid var(--fg);outline:0;background:#fff;box-shadow:none;display:block}
+  & .initial::before{content:"SHEET " attr(data-r);inset:0;border:0;background:none;position:absolute;top:6px;left:8px;bottom:auto;right:auto;font:500 9.5px/1 var(--f-label);letter-spacing:.22em;color:var(--muted)}
+  & .initial span{display:none}
+  & .initial::after{content:"A-10" attr(data-n);position:absolute;left:8px;bottom:6px;font:600 clamp(22px,2.6vw,32px)/1 var(--f-label);color:var(--rubric);letter-spacing:.02em}
+  & .lhead .k{color:var(--rubric);font-family:var(--f-label)}
+  & .runhead{color:var(--fg);border-bottom:1.5px solid var(--fg);font-family:var(--f-label)}
+  & .liber{margin-top:clamp(70px,9vw,130px)}
+  & .thumbs a{border-radius:0;font-family:var(--f-label);font-size:11px}
+  & .thumbs a.on{background:var(--fg);color:#fff}
+  & .seek-cta,& .chip,& .pill,& input[type=search],& .obj,& .dossier,& .seek-inner{border-radius:0}
+  & .seek-cta{font-family:var(--f-label);font-style:normal;font-size:14px;color:var(--fg);border:1.5px solid var(--fg)}
+  & .chip{font-family:var(--f-label)}
+  & .tier-h{border-bottom:1.5px solid var(--fg)}
+  & .crow .cid{font-family:var(--f-label);font-weight:600;color:var(--gold)!important}
+  & .crow .ct b{font-weight:600}
+  & .canon-head{color:var(--rubric)}
+  & .obj{border:1.5px solid var(--fg);border-left-width:6px}
+  & .obj h4{font-weight:600;font-size:17px}
+  & .tn{font-family:var(--f-label);font-weight:500;font-size:clamp(26px,3vw,40px)}
+  & .stratum .glyph{font-family:var(--f-label);font-weight:500}
+  & .finale .law{color:var(--fg);text-shadow:none;font-weight:400}
+  & .finale .ph-bg{opacity:.3;mix-blend-mode:multiply}
+  & .dossier{box-shadow:0 20px 50px -24px rgba(29,39,51,.5);border:1.5px solid var(--fg)}
+  & .d-title{font-weight:500;font-size:34px}
+  & .seek-fab{color:var(--fg);border-radius:0}
+  & .tip{border-radius:0;border:1px solid var(--fg)}
+  & mark{color:var(--fg)}
+  /* the elevation */
+  & #tree .sheet{fill:none;stroke:var(--fg);stroke-width:2}
+  & #tree .sheetlab{fill:var(--muted);font-family:var(--f-label);font-size:12px;letter-spacing:.16em}
+  & #tree .slab{stroke:var(--fg);stroke-width:2.4;fill:none}
+  & #tree .dim{stroke:var(--gold);stroke-width:1;fill:none}
+  & #tree .dimlab{fill:var(--gold);font-family:var(--f-label);font-size:11px}
+  & #tree .tier{fill:var(--fg)}
+  & #tree .tier .num{fill:var(--rubric);font-family:var(--f-label);font-size:20px;font-weight:600}
+  & :is(#tree,.legend) .room{fill:#fff;stroke:var(--fg);stroke-width:1.7}
+  & :is(#tree,.legend) .hatchln{stroke:var(--fg);stroke-width:.9;opacity:.5}
+  & :is(#tree,.legend) .ring{fill:none;stroke:var(--fg);stroke-width:1.1}
+  & #tree .edge .line{stroke:var(--fg);stroke-width:1.3;fill:none;opacity:.85}
+  & #tree .edge.hier .line{stroke-dasharray:6 4;opacity:.5}
+  & :is(#tree,.legend) .arrowhead{fill:var(--fg)}
+  & #tree .thread{stroke-linecap:butt;opacity:0}
+  & #tree .node .id{font-family:var(--f-label);font-size:13px;letter-spacing:.1em;font-weight:600}
+  & #tree .node .ttl{font-family:var(--f-display)!important;font-style:normal;font-size:13px;fill:var(--fg);letter-spacing:.02em}
+  & #tree .selmark{stroke:var(--rubric);stroke-width:2.4}
+  & :is(#tree,.legend) .room.dash{stroke-dasharray:6 4}
+  & .lg-a{stroke:#1d2733;stroke-width:1.4}
+  & .lg-b{stroke:#c0392b;opacity:.85}
+}
+
+/* =====================================================================================================
+   s4 植物図譜 — Botanical Plates. Ivory paper, sepia ink, watercolour; a plate with figure numbers.
+   ===================================================================================================== */
+html:root[data-skin="s4"]{
+  color-scheme:light;
+  --night:#f0e7cf; --fg:#3a2f1e; --muted:#6f6247; --faint:#9a8b6b;
+  --gold:#7a5a2b; --gold-hi:#4f3a17; --rubric:#a24a3a; --oxblood:#4c6b3c;
+  --hair:rgba(90,70,35,.2); --hair-gold:rgba(122,90,43,.42); --folio:rgba(250,244,225,.66);
+  --s-MD:#c8643a;
+  --f-black:"IM Fell English SC","IM Fell English",serif; --f-display:"IM Fell English","Cormorant Garamond",serif; --f-book:"IM Fell English",serif;
+  --f-label:"IM Fell English SC","IM Fell English",serif; --f-ja:"Shippori Mincho B1","Hiragino Mincho ProN",serif;
+  --tint:rgba(76,107,60,.08); --tint2:rgba(76,107,60,.16); --glass:rgba(247,240,220,.94); --glass-2:rgba(243,235,212,.9);
+  --panel:linear-gradient(180deg,rgba(250,244,226,.95),rgba(243,235,210,.97)); --panel-solid:rgba(244,237,214,.99);
+  --overlay:rgba(231,222,194,.92); --outline:rgba(122,90,43,.22); --track:rgba(90,70,35,.1);
+  --card:linear-gradient(180deg,rgba(255,252,240,.7),rgba(255,252,240,.3)); --input:rgba(255,252,240,.8); --focus-ring:rgba(76,107,60,.2);
+  --tip:rgba(247,240,220,.97); --ph-bg:#e2d6b4; --ph-vig:rgba(90,70,35,.3); --ph-line:rgba(255,250,230,.6);
+  --mark:rgba(214,170,70,.4); --diag:rgba(90,70,35,.08);
+  --on-grad:linear-gradient(180deg,#6f9a58,#4c6b3c); --on-ink:#fff; --gild-c:#3f5a2f;
+  --gild:linear-gradient(#3f5a2f,#3f5a2f); --ramp:linear-gradient(90deg,#ebe4c6,#c6d08f,#8cae64,#4d8152,#204c36);
+  --halo-flash:0 0 0 1px var(--oxblood),0 0 30px rgba(76,107,60,.3);
+  & body{background-color:var(--night);
+    background-image:radial-gradient(60% 40% at 15% 10%,rgba(120,160,90,.14),transparent 70%),radial-gradient(50% 40% at 90% 40%,rgba(200,100,58,.1),transparent 70%),radial-gradient(60% 40% at 20% 90%,rgba(93,134,168,.1),transparent 70%),url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='260' height='260'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.8' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .35  0 0 0 0 .27  0 0 0 0 .14  0 0 0 .5 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.35'/></svg>");
+    background-attachment:fixed;font-family:var(--f-ja);font-size:15px}
+  & .gild{background:none;color:var(--gild-c);-webkit-text-fill-color:var(--gild-c)}
+  & .rail{font-family:var(--f-label);letter-spacing:.24em;border-bottom:3px double var(--gold)}
+  & .folio{background:var(--folio);border:1px solid var(--gold);outline:1px solid var(--gold);outline-offset:-7px}
+  & .folio::before,& .folio::after{border-radius:50% 0;transform:rotate(45deg);background:var(--oxblood);border-color:var(--oxblood);width:11px;height:11px}
+  & .front h1 .black{font-family:var(--f-display);font-style:italic;font-weight:400;filter:none;letter-spacing:.01em}
+  & .front h1 .sub{font-family:var(--f-display);font-style:italic}
+  & .front .over{color:var(--rubric);font-family:var(--f-label)}
+  & .orn::before,& .orn::after{background:linear-gradient(90deg,transparent,var(--gold))}
+  & .orn::after{background:linear-gradient(90deg,var(--gold),transparent)}
+  & .orn i{border:1px solid var(--oxblood);background:#8cae64;transform:none;border-radius:0 100% 0 100%;width:13px;height:13px}
+  & .orn i:nth-child(2){background:var(--rubric);border-color:var(--rubric);border-radius:50%;width:12px;height:12px}
+  & .orn i:nth-child(3){border-radius:100% 0 100% 0}
+  & .ph{border:1px solid var(--gold);box-shadow:0 14px 28px -16px rgba(90,70,35,.5);background:var(--ph-bg)}
+  & .ph-hero::before{background:radial-gradient(120% 90% at 50% 40%,transparent 55%,rgba(90,70,35,.28) 100%),linear-gradient(180deg,transparent 0%,transparent 58%,var(--night) 100%)}
+  & .ph img{filter:sepia(.75) saturate(.8) contrast(.95) brightness(1.04)}
+  & .ph img.bloom{display:none}
+  & .ph::after{border:3px double rgba(255,250,230,.75);inset:7px}
+  & .cover .cap{color:#fff8e0;text-shadow:0 1px 3px rgba(0,0,0,.6)}
+  & .figures strong{font-family:var(--f-display);font-weight:400;font-style:italic;color:var(--oxblood)}
+  & .index h2,& .lhead h2{font-weight:400}
+  & .initial{width:clamp(80px,9vw,112px);aspect-ratio:1.18;border-radius:50%;background:radial-gradient(ellipse at 35% 30%,#6b8f55,#3f5a2f 75%);border:2px solid var(--gold);outline:1px solid var(--gold);outline-offset:3px;box-shadow:inset 0 0 18px rgba(0,0,0,.25)}
+  & .initial::before{border-radius:50%;inset:7px;border:1px dashed rgba(250,244,224,.65);background:none}
+  & .initial span{font-family:var(--f-display);font-style:italic;font-weight:400;--gild-c:#faf3dc;font-size:clamp(46px,5.6vw,72px)}
+  & .lhead .k{color:var(--rubric)}
+  & .runhead{color:var(--muted);border-bottom:3px double var(--gold)}
+  & .liber{margin-top:clamp(80px,10vw,140px)}
+  & .thumbs a.on{background:var(--oxblood);color:#faf3dc;border-color:var(--oxblood)}
+  & .seek-cta{color:var(--oxblood);border-color:var(--oxblood)}
+  & .chip{font-family:var(--f-label)}
+  & .tier-h{border-bottom:3px double var(--gold)}
+  & .crow .cid{font-family:var(--f-label)}
+  & .obj{border-color:var(--gold);outline:1px solid var(--outline);outline-offset:-5px;background:var(--card)}
+  & .obj h4{font-weight:400}
+  & .tn{font-family:var(--f-display);font-style:italic;font-weight:400}
+  & .stratum .glyph{font-family:var(--f-display);font-style:italic}
+  & .finale .law{color:var(--fg);text-shadow:none}
+  & .finale .ph-bg{opacity:.4;mix-blend-mode:multiply}
+  & .dossier{box-shadow:0 20px 50px -24px rgba(90,70,35,.55)}
+  & .seek-fab{color:var(--fg)}
+  & mark{color:var(--fg)}
+  /* the plate */
+  & #tree .plate{fill:none;stroke:var(--gold);stroke-width:1.6}
+  & #tree .plate.thin{stroke-width:.6}
+  & #tree .plate-cap{fill:var(--gold);font-family:var(--f-display);font-style:italic;font-size:24px;letter-spacing:.04em}
+  & #tree .plate-cap.sm{font-size:15px}
+  & #tree .pillar-label{fill:var(--faint);font-family:var(--f-display);font-style:italic;font-size:15px;letter-spacing:.2em}
+  & #tree .tier{fill:var(--muted)}
+  & #tree .tier .num{fill:var(--rubric);font-family:var(--f-display);font-style:italic;font-size:22px}
+  & #tree .edge .line{stroke:#6b5836;stroke-width:2.1;stroke-linecap:round;opacity:.8}
+  & #tree .edge.hier .line{stroke-dasharray:2 6;opacity:.45}
+  & #tree .node :is(.id,.ttl,.fig){paint-order:stroke;stroke:var(--night);stroke-width:4px;stroke-linejoin:round}
+  & #tree .node .id{font-family:var(--f-label);font-size:12px;letter-spacing:.16em;font-weight:400}
+  & #tree .node .ttl{font-family:var(--f-display)!important;font-style:italic;font-size:17px;fill:var(--fg)}
+  & #tree .node .ttl.pre{font-family:var(--f-label)!important;font-style:normal;font-size:10px;letter-spacing:.3em;fill:var(--muted)}
+  & #tree .fig{fill:var(--faint);font-family:var(--f-display);font-style:italic;font-size:13px}
+  & :is(#tree,.legend) :is(.fruit,.leaf,.petal,.tuber){stroke:#4a3a1e;stroke-width:1.1;fill-opacity:.9}
+  & :is(#tree,.legend) .stem{stroke:#5b4a2a;stroke-width:2.2;fill:none;stroke-linecap:round}
+  & :is(#tree,.legend) .vein{stroke:#4a3a1e;stroke-width:.9;opacity:.55;fill:none}
+  & :is(#tree,.legend) .heart{fill:#e9c46a;stroke:#4a3a1e;stroke-width:1}
+  & :is(#tree,.legend) .gloss{fill:#fff;opacity:.55}
+  & :is(#tree,.legend) .calyx{stroke:#3d5a2c;stroke-width:1.6;fill:none;stroke-linecap:round}
+  & :is(#tree,.legend) .rootlet{stroke:#4a3a1e;fill:none;opacity:.6;stroke-width:1.2}
+  & :is(#tree,.legend) .ring{stroke:#6b5836;fill:none;stroke-width:1}
+  & :is(#tree,.legend) .v-Living .petal{transform-box:fill-box;transform-origin:50% 100%;animation:petal 3.6s ease-in-out infinite}
+  & #tree .selmark{stroke:var(--rubric);stroke-width:2;stroke-dasharray:4 4}
+  & .lg-a{stroke:#6b5836;stroke-width:1.6}
+  & .lg-b{stroke:#a9577f;opacity:.7}
+}
+
+/* =====================================================================================================
+   s5 年輪 — Tree Rings. Walnut dark, warm rings; a wedge cut from a trunk, rays between the knots.
+   ===================================================================================================== */
+html:root[data-skin="s5"]{
+  color-scheme:dark;
+  --night:#150e08; --fg:#f2e4cb; --muted:#c3ad88; --faint:#8b765a;
+  --gold:#e0ab5c; --gold-hi:#fbe3ad; --rubric:#e8743b; --oxblood:#4a2a14;
+  --hair:rgba(240,215,170,.15); --hair-gold:rgba(224,171,92,.34); --folio:rgba(32,21,12,.74);
+  --s-MD:#e8743b;
+  --f-black:"Fraunces","Zen Old Mincho",serif; --f-display:"Fraunces","Zen Old Mincho",serif; --f-book:"Fraunces",serif;
+  --f-label:"Jost","Zen Kaku Gothic New",sans-serif; --f-ja:"Zen Old Mincho","Shippori Mincho B1",serif;
+  --tint:rgba(224,171,92,.08); --tint2:rgba(224,171,92,.16); --glass:rgba(24,15,9,.9); --glass-2:rgba(24,15,9,.76);
+  --panel:linear-gradient(180deg,rgba(35,23,13,.88),rgba(22,14,8,.93)); --panel-solid:rgba(24,15,9,.97);
+  --overlay:rgba(10,6,3,.9); --outline:rgba(224,171,92,.16); --track:rgba(240,215,170,.1);
+  --card:linear-gradient(180deg,rgba(240,215,170,.06),rgba(240,215,170,.01)); --input:rgba(240,215,170,.06); --focus-ring:rgba(224,171,92,.18);
+  --tip:rgba(18,11,6,.95); --ph-bg:#1b120a; --ph-vig:rgba(10,6,3,.62); --ph-line:rgba(251,227,173,.22);
+  --mark:rgba(232,116,59,.34); --diag:rgba(240,215,170,.06);
+  --on-grad:linear-gradient(180deg,#fbe3ad,#d29a45); --on-ink:#1a0f06; --gild-c:#fbe3ad;
+  --gild:linear-gradient(180deg,#fff3d6 0%,#f0cf90 45%,#c88a3c 100%); --ramp:linear-gradient(90deg,#2b1b10,#6f4521,#b2752f,#e0ab5c,#fbe3ad);
+  --halo-flash:0 0 0 1px var(--gold),0 0 40px rgba(224,171,92,.3);
+  & body{background:radial-gradient(90% 60% at 0 12%,#2c1a0d 0%,transparent 70%) fixed,var(--night);font-family:var(--f-ja)}
+  & #skinbg .cx{stroke:#e0ab5c;stroke-width:.9;opacity:.11}
+  & #skinbg .ix{stroke:#e0ab5c;stroke-width:1.8;opacity:.2}
+  & .rail{font-family:var(--f-label)}
+  & .folio{border-color:rgba(224,171,92,.3);outline-color:rgba(224,171,92,.12);border-radius:3px}
+  & .folio::before,& .folio::after{border-radius:50%;transform:none;background:var(--gold);border-color:var(--gold-hi)}
+  & .front h1 .black{font-family:var(--f-black);font-weight:600;font-style:italic;letter-spacing:-.01em;filter:drop-shadow(0 0 26px rgba(224,171,92,.3))}
+  & .front h1 .sub{font-style:italic}
+  & .front .over{color:var(--gold)}
+  & .orn::before,& .orn::after{background:linear-gradient(90deg,transparent,var(--gold))}
+  & .orn::after{background:linear-gradient(90deg,var(--gold),transparent)}
+  & .orn i{border:1.5px solid var(--gold);transform:none;border-radius:50%;width:9px;height:9px;background:none}
+  & .orn i:nth-child(2){width:15px;height:15px;background:none;box-shadow:0 0 0 4px var(--night),0 0 0 5px var(--gold)}
+  & .orn i:nth-child(3){width:21px;height:21px}
+  & .ph-hero::before{background:radial-gradient(120% 90% at 50% 40%,transparent 48%,rgba(10,6,3,.6) 100%),linear-gradient(180deg,rgba(21,14,8,.25) 0%,transparent 30%,transparent 52%,rgba(21,14,8,.96) 100%)}
+  & .ph img{filter:sepia(.5) saturate(1.05) contrast(1.08) brightness(.9)}
+  & .figures strong{font-family:var(--f-display);font-weight:500}
+  & .lhead h2,& .index h2{font-weight:500}
+  & .initial{width:clamp(74px,8.4vw,104px);border-radius:50%;border:2px solid #2a1809;outline:1px solid var(--gold);outline-offset:3px;background:repeating-radial-gradient(circle at 50% 50%,#7a4f26 0 3px,#4d2f16 3px 6px,#9a6830 6px 7px);box-shadow:inset 0 0 20px rgba(0,0,0,.45)}
+  & .initial::before{border-radius:50%;inset:30%;border:0;background:#2a1809}
+  & .initial span{font-family:var(--f-black);font-style:italic;font-weight:600;font-size:clamp(34px,4vw,50px);color:#fbe3ad;-webkit-text-fill-color:#fbe3ad;background:none;text-shadow:0 1px 2px rgba(0,0,0,.6)}
+  & .liber{margin-top:clamp(80px,10vw,150px)}
+  & .seek-cta{font-family:var(--f-display)}
+  & .crow .cid{font-weight:500}
+  & .obj{border-radius:4px}
+  & .tn{font-family:var(--f-display);font-style:italic;font-weight:600}
+  & .stratum .glyph{font-family:var(--f-display);font-style:italic}
+  & .finale .law{text-shadow:0 0 28px rgba(224,171,92,.4)}
+  & mark{color:#fff}
+  /* the wedge */
+  & #tree .band.b0{fill:#7a4f26}
+  & #tree .band.b1{fill:#5e3b1c}
+  & #tree .seam{fill:none;stroke:#241407;stroke-width:1.6}
+  & #tree .grain{fill:none;stroke:#d09a55;stroke-width:.6;opacity:.22}
+  & #tree .bark{fill:#2a1a0e;stroke:#120a04;stroke-width:1.5}
+  & #tree .rayline{stroke:#fbe3ad;stroke-width:.8;opacity:.1;fill:none}
+  & #tree .cut{stroke:#120a04;stroke-width:2.4;fill:none}
+  & #tree .pith{fill:#2a1809;stroke:var(--gold);stroke-width:1.6}
+  & #tree .tier{fill:var(--muted)}
+  & #tree .tier .num{fill:var(--gold-hi);font-family:var(--f-display);font-style:italic;font-size:22px;font-weight:600}
+  & #tree .edge .line{stroke:#ffe2a8;stroke-width:1.4;opacity:.6}
+  & #tree .edge.hier .line{stroke-dasharray:3 6;opacity:.35}
+  & #tree .node :is(.id,.ttl){paint-order:stroke;stroke:#1a0f06;stroke-width:4px;stroke-linejoin:round}
+  & #tree .node .id{font-family:var(--f-label);font-size:11px;letter-spacing:.22em;font-weight:500}
+  & #tree .node .ttl{font-family:var(--f-display)!important;font-style:italic;font-size:16px;fill:var(--fg)}
+  & :is(#tree,.legend) .knot{stroke:#1a0f06;stroke-width:1.5;transform-box:fill-box;transform-origin:center}
+  & :is(#tree,.legend) .kr{fill:none;stroke:#1a0f06;stroke-width:1.1;opacity:.55}
+  & :is(#tree,.legend) .crack{stroke:#1a0f06;stroke-width:1.6;fill:none;stroke-linecap:round}
+  & :is(#tree,.legend) .chip{fill-opacity:.9;stroke:#1a0f06;stroke-width:1.2}
+  & :is(#tree,.legend) .v-Periodic .knot{animation:knotpulse 6s ease-in-out infinite}
+  & :is(#tree,.legend) .v-Living .knot{animation:knotpulse 1.9s ease-in-out infinite}
+  & :is(#tree,.legend) .ring{stroke:#fbe3ad;stroke-width:1;fill:none;opacity:.8}
+  & #tree .selmark{stroke:#fff;stroke-width:1.8;stroke-dasharray:4 4}
+  & .lg-a{stroke:#ffe2a8}
+  & .lg-b{stroke:#e8743b;opacity:.8}
+}
+
+/* =====================================================================================================
+   s6 標本棚 — Specimen Cabinet. Bottle-green felt, oak drawers, brass plates, cream labels, red thread.
+   ===================================================================================================== */
+html:root[data-skin="s6"]{
+  color-scheme:dark;
+  --night:#0d1a14; --fg:#efe6cf; --muted:#b9b08f; --faint:#7f8268;
+  --gold:#c9a24a; --gold-hi:#f1d68b; --rubric:#e0634a; --oxblood:#3a1f14;
+  --hair:rgba(239,230,207,.14); --hair-gold:rgba(201,162,74,.38); --folio:rgba(15,33,26,.8);
+  --s-MD:#ff9a5c;
+  --f-black:"Playfair Display","Shippori Mincho B1",serif; --f-display:"Playfair Display","Shippori Mincho B1",serif; --f-book:"Playfair Display",serif;
+  --f-label:"Special Elite","IBM Plex Mono",monospace; --f-ja:"Shippori Mincho B1","Hiragino Mincho ProN",serif;
+  --tint:rgba(201,162,74,.08); --tint2:rgba(201,162,74,.18); --glass:rgba(10,22,17,.9); --glass-2:rgba(10,22,17,.78);
+  --panel:linear-gradient(180deg,rgba(18,40,31,.92),rgba(11,25,19,.95)); --panel-solid:rgba(12,26,20,.98);
+  --overlay:rgba(4,10,7,.9); --outline:rgba(201,162,74,.2); --track:rgba(239,230,207,.1);
+  --card:linear-gradient(180deg,#efe6cf,#e6dbbc); --input:rgba(239,230,207,.07); --focus-ring:rgba(201,162,74,.2);
+  --tip:rgba(8,18,13,.95); --ph-bg:#10211a; --ph-vig:rgba(4,10,7,.55); --ph-line:rgba(241,214,139,.28);
+  --mark:rgba(224,99,74,.35); --diag:rgba(239,230,207,.06);
+  --on-grad:linear-gradient(180deg,#f1d68b,#b08a35); --on-ink:#1d1409; --gild-c:#f1d68b;
+  --gild:linear-gradient(180deg,#fff0c4 0%,#e6c677 45%,#a67c2c 100%); --ramp:linear-gradient(90deg,#1d2d24,#415d41,#80a054,#cdb35c,#f6e6a6);
+  --halo-flash:0 0 0 2px var(--rubric),0 0 30px rgba(224,99,74,.35);
+  & body{background:radial-gradient(100% 60% at 50% 0,#173528 0%,transparent 70%) fixed,
+    url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.95' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .8  0 0 0 0 .9  0 0 0 0 .8  0 0 0 .55 0'/></filter><rect width='100%' height='100%' filter='url(%23n)' opacity='.22'/></svg>") fixed,var(--night);font-family:var(--f-ja)}
+  & .rail{font-family:var(--f-label);letter-spacing:.2em}
+  & .folio{border:6px solid #4b2f1b;outline:1px solid var(--gold);outline-offset:-10px;border-radius:3px;box-shadow:inset 0 0 40px rgba(0,0,0,.35),0 20px 40px -24px rgba(0,0,0,.8)}
+  & .folio::before,& .folio::after{border-radius:50%;transform:none;width:10px;height:10px;top:-4px;background:radial-gradient(circle at 35% 30%,#f1d68b,#8a6a22);border-color:#4b2f1b}
+  & .folio::before{left:-4px}& .folio::after{right:-4px}
+  & .front h1 .black{font-weight:600;font-style:italic;filter:drop-shadow(0 2px 14px rgba(0,0,0,.6));letter-spacing:-.01em}
+  & .front h1 .sub{font-style:italic}
+  & .front .over{color:var(--gold);font-family:var(--f-label)}
+  & .orn i{border:0;transform:none;border-radius:50%;width:11px;height:11px;background:radial-gradient(circle at 35% 30%,#ff9d8a,#b3392c 70%)}
+  & .orn i:nth-child(2){width:15px;height:15px;background:radial-gradient(circle at 35% 30%,#f1d68b,#8a6a22 70%)}
+  & .ph{border:7px solid #4b2f1b;outline:1px solid var(--gold);outline-offset:-10px;box-shadow:inset 0 0 30px rgba(0,0,0,.45),0 24px 40px -22px rgba(0,0,0,.8)}
+  & .ph-hero::before{background:radial-gradient(120% 90% at 50% 40%,transparent 50%,rgba(4,10,7,.55) 100%),linear-gradient(180deg,rgba(13,26,20,.2) 0%,transparent 30%,transparent 52%,rgba(13,26,20,.96) 100%)}
+  & .ph img{filter:sepia(.25) contrast(1.06) brightness(.95)}
+  & .ph::after{border:1px solid rgba(255,255,255,.18);inset:0}
+  & .figures strong{font-family:var(--f-display);font-weight:600}
+  & .lhead h2,& .index h2{font-weight:600}
+  & .initial{width:clamp(72px,8vw,100px);aspect-ratio:1.3;border-radius:4px;border:1px solid #6b4d16;outline:0;background:linear-gradient(135deg,#f3dc99,#c9a24a 45%,#a67c2c);box-shadow:0 3px 0 #6b4d16,0 8px 18px -6px rgba(0,0,0,.7),inset 0 0 0 4px rgba(255,255,255,.12)}
+  & .initial::before{border:1px solid rgba(70,45,10,.5);inset:6px;background:none;border-radius:2px}
+  & .initial span{font-family:var(--f-display);font-weight:700;font-size:clamp(34px,4vw,50px);--gild-c:#2a1a0a;background:none;color:#2a1a0a;-webkit-text-fill-color:#2a1a0a}
+  & .lhead .k{font-family:var(--f-label)}
+  & .runhead{font-family:var(--f-label)}
+  & .liber{margin-top:clamp(80px,10vw,150px)}
+  & .seek-cta{font-family:var(--f-display)}
+  & .chip{font-family:var(--f-label)}
+  & .crow .cid{font-family:var(--f-label)}
+  /* gallery cards are cream specimen labels */
+  & .obj{--fg:#2a1a0a;--muted:#5d4d2e;--faint:#8c7b57;--hair:rgba(70,50,20,.22);--hair-gold:rgba(70,50,20,.4);--gold:#8a6a1f;--s-MD:#9c3e22;--rubric:#9c3e22;
+    color:var(--fg);border:1px solid #b7a77f;border-radius:2px;box-shadow:0 2px 0 rgba(0,0,0,.35),0 10px 18px -12px rgba(0,0,0,.7);background:var(--card)}
+  & .obj::before{content:"";position:absolute;left:50%;top:-6px;width:12px;height:12px;margin-left:-6px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#ff9d8a,#b3392c 70%);box-shadow:0 2px 3px rgba(0,0,0,.5)}
+  & .obj .chip{color:#2a1a0a;border-color:rgba(70,50,20,.35)}
+  & .obj .chip:hover{border-color:#8a6a1f}
+  & .obj h4{font-weight:600}
+  & .obj .pill{color:#5d4d2e;border-color:rgba(70,50,20,.35)}
+  & .obj .pill.st-Candidate{color:#7a5a12;border-color:#8a6a1f}
+  & .obj .pill.st-Essential{color:#9c3e22;border-color:#9c3e22}
+  & .tn{font-family:var(--f-display);font-style:italic;font-weight:600}
+  & .stratum .glyph{font-family:var(--f-display);font-style:italic}
+  & .finale .law{text-shadow:0 0 28px rgba(241,214,139,.35)}
+  & .seek-inner{border:6px solid #4b2f1b;outline:1px solid var(--gold);outline-offset:-10px}
+  & mark{color:#fff}
+  /* the cabinet */
+  & #tree .drawer{fill:#4a2e1a;stroke:#1d1109;stroke-width:2}
+  & #tree .drawer.inner{fill:#35200f;stroke:#1d1109;stroke-width:1.2}
+  & #tree .brass{fill:#c9a24a;stroke:#6b4d16;stroke-width:1.6}
+  & #tree .brass.cont{fill:#a8873a}
+  & #tree .cell{fill:#133024;stroke:#0a1812;stroke-width:2.4}
+  & #tree .card{fill:#efe6cf;stroke:#b7a77f;stroke-width:1}
+  & #tree .tier{fill:#2a1a0a}
+  & #tree .tier .num{fill:#2a1a0a;font-family:var(--f-display);font-weight:700;font-size:32px}
+  & #tree .tier .lbl{font-family:var(--f-label);font-size:9px;letter-spacing:.1em}
+  & #tree .edge .line{stroke:#e0634a;stroke-width:1.7;opacity:.85}
+  & #tree .edge.hier .line{stroke-dasharray:3 5;opacity:.5}
+  & #tree .node .id{font-family:var(--f-label);font-size:14px;letter-spacing:.1em;font-weight:400;fill:#2a1a0a}
+  & #tree .node .ttl{font-family:var(--f-display)!important;font-style:italic;font-size:13px;fill:#4b3a22}
+  & :is(#tree,.legend) .disc{stroke:#150b05;stroke-width:1.3}
+  & :is(#tree,.legend) .shadow{fill:rgba(0,0,0,.5)}
+  & :is(#tree,.legend) .gloss{fill:#fff;opacity:.45}
+  & :is(#tree,.legend) .head{fill:#f1d68b;stroke:#6b4d16;stroke-width:1}
+  & :is(#tree,.legend) .vial{stroke:#150b05;stroke-width:1.3;fill-opacity:.7}
+  & :is(#tree,.legend) .cork{fill:#a67c2c;stroke:#150b05}
+  & #tree .pinned{transform-box:fill-box;transform-origin:center}
+  & #tree .v-Living .pinned{animation:sway 2.2s ease-in-out infinite alternate}
+  & #tree .v-Periodic .pinned{animation:sway 6s ease-in-out infinite alternate}
+  & :is(#tree,.legend) .ring{stroke:#f1d68b;stroke-width:1.1;fill:none}
+  & #tree .selmark{stroke:var(--gold-hi);stroke-width:2.4}
+  & .lg-a{stroke:#e0634a;stroke-width:1.6}
+  & .lg-b{stroke:#f1d68b;opacity:.8}
+}
+
+/* ---- the tree at small sizes: IDs grow, titles step aside (the Original does the same) ---- */
+@media (max-width:900px){
+  html:root[data-skin="s1"] #tree .node .id{font-size:25px;letter-spacing:.06em}
+  html:root[data-skin="s2"] #tree .node .id{font-size:25px;letter-spacing:.08em}
+  html:root[data-skin="s3"] #tree .node .id{font-size:27px;letter-spacing:.02em}
+  html:root[data-skin="s4"] #tree .node .id{font-size:25px;letter-spacing:.06em}
+  html:root[data-skin="s5"] #tree .node .id{font-size:24px;letter-spacing:.08em}
+  html:root[data-skin="s6"] #tree .node .id{font-size:27px;letter-spacing:.02em}
+  html:root:not([data-skin="orig"]) #tree .tier .num{font-size:34px}
+  html:root:not([data-skin="orig"]) #tree :is(.fig,.gridlab,.sheetlab,.plate-cap,.dimlab,.pillar-label){display:none}
+  html:root[data-skin="s3"] #tree .tier .num{font-size:30px}
+  html:root[data-skin="s6"] #tree .tier .num{font-size:44px}
+}
+@media (min-width:601px) and (max-width:900px){
+  html:root[data-skin="s2"] #tree .node .id{font-size:17px;letter-spacing:.04em}
+}
+@media (max-width:600px){
+  html:root:not([data-skin="orig"]) .front h1 .black{font-size:clamp(72px,24vw,130px)}
+  html:root[data-skin="s2"] .front h1 .black{font-size:clamp(54px,17vw,120px)}
+  html:root[data-skin="s3"] .front h1 .black{font-size:clamp(60px,20vw,120px)}
+  html:root[data-skin="s3"] .initial{width:96px}
+  html:root:not([data-skin="orig"]) .lhead h2{font-size:clamp(22px,6.2vw,60px);overflow-wrap:anywhere}
+}

@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 """
-THE THIRD PLACE — Field Atlas Navigator data fetcher
+THE THIRD PLACE — Field Atlas Nocturne data fetcher
 
-Refreshes the geography and photos that field_atlas_navigator.py embeds.
+Refreshes the geography and photos that field_atlas_nocturne.py embeds.
 Needs network access. Photos need Pillow (pip install pillow).
 
     images    download every field's photo from images.json into images/
@@ -19,6 +19,9 @@ Needs network access. Photos need Pillow (pip install pillow).
               Reference Benchmark Site ("benchmark": true) gets no route
     elevation for every location missing from elevation.json, the ground
               height at its point from the GSI elevation API (DEM)
+    terrain   a coarse ground-height grid (0.02 degrees, 20 m steps) of the
+              map area from the GSI DEM tiles (dem_png, zoom 8), written to
+              terrain.json; the pages draw shading and contour lines from it
     surroundings
               for every field missing from surroundings.json (--all: every
               field), the nearest expressway IC, convenience store,
@@ -26,25 +29,28 @@ Needs network access. Photos need Pillow (pip install pillow).
               (Overpass API), with the driving distance and time from OSRM
 
 Usage:
-    python3 scripts/field_atlas_navigator_fetch.py images
-    python3 scripts/field_atlas_navigator_fetch.py geocode --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md
-    python3 scripts/field_atlas_navigator_fetch.py routes [--all]
-    python3 scripts/field_atlas_navigator_fetch.py elevation
-    python3 scripts/field_atlas_navigator_fetch.py surroundings [--all]
+    python3 scripts/field_atlas_fetch.py images
+    python3 scripts/field_atlas_fetch.py geocode --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md
+    python3 scripts/field_atlas_fetch.py routes [--all]
+    python3 scripts/field_atlas_fetch.py elevation
+    python3 scripts/field_atlas_fetch.py terrain
+    python3 scripts/field_atlas_fetch.py surroundings [--all]
 """
 
 import argparse
+import base64
 import io
+import math
 import json
 import time
 import urllib.parse
 import urllib.request
 from pathlib import Path
 
-from field_atlas_navigator import DATA_DIR, LAT0, LON0, image_path, load
+from field_atlas_nocturne import DATA_DIR, LAT0, LON0, image_path, load
 import field_atlas_radar
 
-UA = "Mozilla/5.0 (THE THIRD PLACE Field Atlas Navigator)"
+UA = "Mozilla/5.0 (THE THIRD PLACE Field Atlas Nocturne)"
 
 
 def get(url: str, timeout: int = 40) -> bytes:
@@ -162,6 +168,62 @@ def cmd_elevation(_args) -> None:
     save("elevation.json", elev)
 
 
+# Terrain grid for the contour lines and shading: GSI DEM PNG tiles (RGB = (R*65536+G*256+B)*0.01 m;
+# 2^23 = no data, which is the sea). The area covers the whole map the pages draw.
+TERRAIN_BOX = (136.5, 34.0, 142.0, 38.5)  # lon min, lat min, lon max, lat max
+TERRAIN_STEP = 0.02  # degrees per cell (about 1.8 km)
+TERRAIN_UNIT = 20  # metres per step of the stored byte
+TERRAIN_Z = 8
+
+
+def cmd_terrain(_args) -> None:
+    from PIL import Image
+
+    z, n = TERRAIN_Z, 2 ** TERRAIN_Z
+    lon0, lat0, lon1, lat1 = TERRAIN_BOX
+    fx = lambda lon: (lon + 180) / 360 * n
+    fy = lambda lat: (1 - math.log(math.tan(math.radians(lat)) + 1 / math.cos(math.radians(lat))) / math.pi) / 2 * n
+    tiles = {}
+    for tx in range(int(fx(lon0)), int(fx(lon1)) + 1):
+        for ty in range(int(fy(lat1)), int(fy(lat0)) + 1):
+            try:
+                im = Image.open(io.BytesIO(get(f"https://cyberjapandata.gsi.go.jp/xyz/dem_png/{z}/{tx}/{ty}.png"))).convert("RGB")
+                tiles[(tx, ty)] = im.load()
+                print(f"ok tile {z}/{tx}/{ty}")
+            except Exception as e:
+                print(f"no tile {z}/{tx}/{ty}: {e}")
+    nx, ny = round((lon1 - lon0) / TERRAIN_STEP), round((lat1 - lat0) / TERRAIN_STEP)
+
+    def height(lon, lat):
+        px, py = fx(lon) * 256, fy(lat) * 256
+        t = tiles.get((int(px // 256), int(py // 256)))
+        if t is None:
+            return None
+        r, g, b = t[int(px) % 256, int(py) % 256]
+        v = r * 65536 + g * 256 + b
+        return None if v >= 2 ** 23 else v * 0.01
+
+    out = bytearray()
+    for j in range(ny):  # north to south
+        for i in range(nx):
+            hs = []
+            for dj in (0.2, 0.5, 0.8):
+                for di in (0.2, 0.5, 0.8):
+                    h = height(lon0 + (i + di) * TERRAIN_STEP, lat1 - (j + dj) * TERRAIN_STEP)
+                    if h is not None:
+                        hs.append(h)
+            # a cell is land when most of its samples are; 0 = sea / no data, else 1 + height / 20 m
+            out.append(0 if len(hs) < 5 else min(255, 1 + round(max(sum(hs) / len(hs), 0) / TERRAIN_UNIT)))
+    save("terrain.json", {
+        "lon0": lon0, "lat1": lat1, "step": TERRAIN_STEP, "nx": nx, "ny": ny, "unit_m": TERRAIN_UNIT,
+        "src": "国土地理院 標高タイル（DEM PNG）zoom 8 を0.02度のセルに平均",
+        "url": "https://maps.gsi.go.jp/development/ichiran.html",
+        "data": base64.b64encode(bytes(out)).decode(),
+    }, compact=True)
+    land = sum(1 for v in out if v)
+    print(f"terrain.json: {nx} x {ny} cells, {land} land, max {(max(out) - 1) * TERRAIN_UNIT} m")
+
+
 # OP-010 Part C §Place, Surrounding Value: expressway access, shops, onsen, hospital
 # selector and search radii (m): a small radius first, widened only when nothing is found
 POI = {
@@ -264,11 +326,12 @@ def main() -> None:
     r = sub.add_parser("routes")
     r.add_argument("--all", action="store_true")
     sub.add_parser("elevation")
+    sub.add_parser("terrain")
     su = sub.add_parser("surroundings")
     su.add_argument("--all", action="store_true")
     args = parser.parse_args()
     {"images": cmd_images, "geocode": cmd_geocode, "routes": cmd_routes,
-     "elevation": cmd_elevation, "surroundings": cmd_surroundings}[args.cmd](args)
+     "elevation": cmd_elevation, "terrain": cmd_terrain, "surroundings": cmd_surroundings}[args.cmd](args)
 
 
 if __name__ == "__main__":

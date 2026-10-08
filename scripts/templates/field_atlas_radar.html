@@ -232,7 +232,7 @@ const BASIS=["事実（地面の種類・状態）","事実（区画面積・車
 const TIERS=[["A","早い",10],["B","可",8],["C","条件付き",6],["D","不可",2]];
 const AVG=AX.map((_,i)=>DATA.reduce((s,d)=>s+d.axes[i],0)/Math.max(DATA.length,1));
 const avgSum=(a,b)=>AVG.slice(a,b).reduce((x,y)=>x+y,0);
-// DB-001 Field Log, MD-002 Site Record, elevation, surroundings, gear names (shared with Navigator / Ivory)
+// DB-001 Field Log, MD-002 Site Record, elevation, surroundings, gear names (shared with Nocturne / Aubade)
 const LOG=EXTRA.log||{},BENCH=EXTRA.bench||[],SITE=EXTRA.site||{},ELEV=EXTRA.elev||{},SURR=EXTRA.surr||{},GEAR=EXTRA.gear||{},LL=EXTRA.ll||{},CLIM=EXTRA.climate||{},HOME_ELEV=EXTRA.home_elev;
 const today=()=>new Date(Date.now()+9*3600e3).toISOString().slice(0,10);
 const day0=s=>(String(s).match(/\d{4}-\d{2}-\d{2}/)||[])[0];
