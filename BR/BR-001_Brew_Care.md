@@ -10,7 +10,7 @@ Brew Care
 
 ## Version  
 
-1.5  
+1.6  
 
 ## Status  
 
@@ -97,7 +97,7 @@ Barista Canon
 MD-004  
 Equipment Registry Object Reference  
     ↓  
-何を所有しているか（Confirmed後、実際に購入・Owned Statusとなった時点で登録）  
+何を所有しているか（Confirmed後、購入した時点で登録。到着を待たない）  
 
 BR-003  
 Procurement Handbook  
@@ -1651,6 +1651,7 @@ READY（準備完了）
 | 1.3 | 2026-09-28 | Document Relationship図のMD-004行に「（Confirmed後、実際に購入・Owned Statusとなった時点で登録）」という注記を追加し、流れがBR-002 → MD-004 → BR-003ではなくBR-002 → BR-003 → MD-004（購入後）→ BR-001であることを図で明示。BR-002・BR-003と同期。 |
 | 1.4 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Puck Screenの廃止に伴い、Class Bの対象、Espresso Closureの手順（旧7を削除し番号を詰めた）、Closureの流れ図、第16節（欠番として節番号のみ残置。参照維持のため）、Periodic Careの対象、Coffee Residue Matrix、Camp Closure Checklist、Pre-Use Checklistから該当記述を削除。第25節を、Magnetic Dosing Funnelは付属アクセサリーではなく9Barista公式の有料オプションとして購入する旨に訂正。Filter PaperおよびEPF Dockの手入れ項目は、決定がないため追加していない。Minor Version。 |
 | 1.5 | 2026-10-08 | MARI様のご指摘に基づき、Weber Workshopsの豆保存コンポーネントの名称をBean Cellar BulkからBean Cellar Glassへ訂正（BR-002 Ver.4.15・BR-003 Ver.4.8と連動）。第21節の手入れ手順の内容は変更していない（Glass固有の手入れは未確認）。Patch Version。 |
+| 1.6 | 2026-10-08 | MD-004 Ver.8.8・OP-010 Ver.3.6と連動し、Document Relationship図のMD-004行の登録時点を「購入した時点で登録。到着を待たない」へ改めた（従来は「実際に購入・Owned Statusとなった時点」で、購入時点とも到着時点とも読めた）。手入れ手順の内容に変更はない。Patch Version。 |  
 
 ---
 

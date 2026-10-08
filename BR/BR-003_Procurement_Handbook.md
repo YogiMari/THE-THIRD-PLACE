@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-4.10  
+4.11  
   
 **Status**  
   
@@ -62,7 +62,7 @@ Barista Canon
 ▼  
 MD-004  
 Equipment Registry  
-（Confirmed後、実際に購入・Owned Statusとなった時点で登録）  
+（Confirmed後、購入した時点で登録。到着を待たない）  
 │  
 ▼  
 BR-003  
@@ -1781,6 +1781,7 @@ MARI様のご決定（2026-10-08）に基づく、月次購入計画である。
 * （任意）Safety Ring and Seals／Boiler O-ring Seal Mk.2／Overheat Repair Kit Mk.2（9Barista Official Spare Parts (Preventive Stock)。小計とは別枠）  
 * 小計：¥137,200（公式サイトのカート実額、Optional Preventive Stockを除く）  
 * 上限なし（本体¥123,400のため、月次上限の例外とする）  
+* 先行購入（月次の計画外）：Product 10 KNODOS Tamping Mat with Tool Organiser - Walnut 54mm（2026-10-08購入、Already Owned）。金額は¥16,000〜22,000で、Month 1の小計には含めない。  
   
 ## Month 2 — グラインダー＋スケール＋Normcore  
   
@@ -1805,10 +1806,8 @@ MARI様のご決定（2026-10-08）に基づく、月次購入計画である。
   
 * Product 07：Pullman Chisel Redistribution Tool Wood 53.3mm  
 * Product 06：The Force Tamper 53mm  
-* Product 10：KNODOS Tamping Mat with Tool Organiser - Walnut 54mm  
 * 購入先：いずれも海外・別注文（同月到着）  
-* Product 10（KNODOS）は先行購入済み（2026-10-08、Already Owned）。Month 4の小計は計画値のまま変更しない。  
-* 小計：¥101,000〜119,000  
+* 小計：¥85,000〜97,000  
   
 ## Month 5 — ミルク  
   
@@ -1843,6 +1842,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 残り（Purchase Requiredのみ）：¥502,970〜581,470（Estimated Acquisition Budgetと一致）  
   
 * 内訳：計画全体¥656,170〜740,670 − 購入済みProduct 01／12／26／31（¥137,200）− 購入済みProduct 10（¥16,000〜22,000）。  
+* 計画全体の検算：Month 1 ¥137,200＋Month 2 ¥124,000〜145,000＋Month 3 ¥118,400〜123,400＋Month 4 ¥85,000〜97,000＋Month 5 ¥77,000〜93,500＋Month 6 ¥98,570〜122,570＋先行購入Product 10 ¥16,000〜22,000＝¥656,170〜740,670。  
   
 ### Design Rationale  
   
@@ -1852,7 +1852,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 * The Blocを、Blind Shakerと同じMonth 3へ移した。Blind Shakerの収納先であるThe Blocが同月に揃うため、仮置き期間は生じない。  
 * Month 2が10万円を超えるのは、グラインダー＋スケールだけで¥110,000〜123,000のためである。  
 * Normcore 2点（Product 08・09）は、予算次第でMonth 5へ移す（移した場合のMonth 2は¥110,000〜123,000、Month 5は¥91,000〜115,500）。  
-* KNODOSは、Chisel・TamperとMonth 4で揃える（WDTはMonth 2で先行）。  
+* KNODOS（Product 10）は2026-10-08に先行購入済みのため、Month 4から除いた。Month 4はChisel・Tamperの2点（WDTはMonth 2で先行）。  
 * Snow Peak ギガパワーストーブ レクタ（GS-150、Group I）は、BR-002 Ver.4.3 Heat Source Decisionに基づく確定購入品であり、Month 6のままとする（Group Iの説明と整合）。9Barista本体はMonth 6まで稼働できない。  
 * Straight Espresso Workflowの機能的完成はMonth 6である。  
 * YETI Yonder 1Lの必要性は、BR-002 Coffee System Water Bottle Configuration（Operation Scenario／Required Water Volume）に基づく必要水量2,340mLの試算に基づく。  
@@ -1876,6 +1876,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 | 4.8 | 2026-10-08 | MARI様のご指摘（2026-10-08）に基づき、Product 04をWeber Workshops Bean Cellar BulkからBean Cellar Glass（Stabilized Maple Onyx）へ訂正（Glassが元々の正しい採用品）。公式サイトのカート実額¥63,300、送料¥0（1万円以上は送料無料）、輸入税Not Applicable、Purchase TypeをDomestic、CurrencyをJPYとした（BR-002 Ver.4.15と連動）。Estimated Acquisition Budgetを各Productの積み上げ（¥656,170〜740,670）へ修正し、従来から不一致だったCore Espresso Systemと、Product変更で不一致となっていたStation / Workflowを含め全グループを再計算。Month 4小計（¥120,400〜131,400）とPlan Totalを再計算し、Plan Totalの「範囲内」注記をBudgetとの一致に改めた。Minor Version。 |
 | 4.9 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく、Monthly Acquisition Planの組み直し。Month 1（9Barista、¥137,200）とMonth 6（グラス・カップ＋水ボトル）を固定端点とし、Month 2をグラインダー＋スケール＋Normcore（Product 02／03／08／09、¥124,000〜145,000）、Month 3をWeber Workshops＋The Bloc（Product 04／11／14／05、¥118,400〜123,400）、Month 4をツール（Product 07／06／10、¥101,000〜119,000）、Month 5をミルク（Product 15／16／17、¥77,000〜93,500）、Month 6をグラス・カップ＋水ボトル（Product 18〜25／30、¥98,570〜122,570）とした。優先度の低い順は水ボトル（最下位）→ミルク。FIKA12を最終月へ移し（在庫リスクを注記）、The BlocをBlind Shakerと同じMonth 3へ移した。Normcore 2点は予算次第でMonth 5へ移す。購入先のまとめ方を各月に明記。Plan Total（¥656,170〜740,670）は月別小計の合計で検算し、Estimated Acquisition Budgetと一致。Product記載・価格・購入先・Registryに変更はない。Minor Version。 |
 | 4.10 | 2026-10-08 | MARI様のご報告（2026-10-08）に基づく。初月の9Barista一式（Product 01／12／26／31）とKNODOS Tamping Mat（Product 10、4か月目の先行購入）を購入済みとし、Acquisition StatusをPurchase RequiredからAlready Ownedへ変更（各ProductのNotesに「2026-10-08購入」を追記、到着状況は記載しない）。Product 01／12／26／31のNotesに請求額＝カート実額（¥137,200）と一致する旨（MARI様確認）を追記。金額は変更していない。Monthly Acquisition PlanのMonth 1を購入済みと明記、Month 4にKNODOS先行購入済みを明記（小計は不変）、Plan Totalは計画全体¥656,170〜740,670のまま、残り（Purchase Requiredのみ）¥502,970〜581,470を併記。Estimated Acquisition BudgetをPurchase Requiredのみで再計算（Core Espresso System ¥298,800〜330,800、Station / Workflow ¥42,900〜49,900、合計¥502,970〜581,470）。Group A・Group E・Current Acquisition Priority・Final Acquisition Inventoryの表示を同期。Included 01／02は変更なし。Minor Version。 |  
+| 4.11 | 2026-10-08 | MARI様のご指示（2026-10-08）に基づき、Month 4からProduct 10（KNODOS）を削除した。KNODOSは2026-10-08に先行購入済みであり、Month 1に「先行購入（月次の計画外）」として明記した。Month 4の小計を¥85,000〜97,000へ再計算（Product 07＋06）。Plan Total（計画全体¥656,170〜740,670、残り¥502,970〜581,470）は変更なし（各月の合計に先行購入分を加えて検算）。Design RationaleのKNODOSの記述を改めた。MD-004 Ver.8.8でCOF-005／009／010／011／018を購入した時点で登録したことと連動（BR-003のStatus・金額には変更なし）。Minor Version。 |  
   
 ---  
 

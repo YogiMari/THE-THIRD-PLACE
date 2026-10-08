@@ -5,7 +5,7 @@ description: MD-004のギア記録（Equipment ID）を新規登録・変更す�
 
 規則の正本は OP-010 Part A（登録規則）と OP-008 §18.2・§12。ここには手順だけを書く。CLAUDE.md の作業原則（推測しない・最新SHA取得・再取得確認・commit後に報告）に従う。
 
-対象外：Coffee（購入前は BR-002 / BR-003 のみ。購入後に COF-series へ登録）、Kitchen（MD-003）。
+対象外：Kitchen（MD-003）。Coffee は購入前は BR-002 / BR-003 のみで追跡し、**購入した時点（到着を待たない）で** `MD-004_COF_Coffee.md` へ Owned で登録する。番号は購入順ではなく BR-002 §Coffee Registry Order の順（OP-010 Part A §Coffee Domain Scope）。BR-003 の Acquisition Status（Already Owned）と同じ作業で更新する。
 
 1. **最新を取る**：`origin/main` を取得し、`MD/MD-004/MD-004_{PFX}_*.md` の該当IDを読む。変更前の内容を控える。
 2. **記録を直す**（登録内容は MARI様の指示・確認済みの情報のみ。無い情報は推測せず聞く）：

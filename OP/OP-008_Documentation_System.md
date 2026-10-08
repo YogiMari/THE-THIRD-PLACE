@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.19
+**Version**: 3.20
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -38,6 +38,7 @@
 | 3.17 | 2026-09-28 | 整備バックログ（N-01・N-04・N-05）で新設された内容に合わせ、§8カタログのOP-006 Role（Safety・Material Care）とDB-001 Role（Field Log）、Appendix FのOP-006・DB-001紹介文（日英）を同期。DB-001紹介文に残っていたProject Overview（S-08で削除済み）の記述をProject Inbox・Field Logへ置き換えた。MARI様の包括指示に基づく。Patch Version。 |
 | 3.18 | 2026-10-01 | Document Renumbering Noteの旧IDを「TP-001」から「PX-001」へ訂正した。新旧ID対応の正式な参照先であるOP-001 Constitution Appendix C Ver.5.0（OP-001 §26）は「PX-001→OP-008」「TP-001→OP-001」と定めており、OP-001 §26本文も「PX-001（新ID：OP-008）」と記している。本書Version 1.0の「Documentation SystemをPXシリーズへ移行」とも整合する。Revision History内のVersion 2.0・3.3の行にある「TP-001」の記述は、歴史的記録として原文のまま保持する。プロジェクトオーナーのご指示に基づく。Patch Version。 |
 | 3.19 | 2026-10-03 | MD-004 Equipment Registry Object ReferenceのDomain別分割（AIが必要なDomainのみを読めるようにするためのファイル再構成）に伴い、§11.2 Multi-file Documentを新設した（Minor Version：節追加）。あわせて§8カタログのMD-004のPathを、分割後の入口ファイル `MD/MD-004/MD-004_Equipment_Registry_Object_Reference.md` へ更新した。Document ID・Title・Authority・Volatilityは変更しない。MARI様のご決定に基づく。 |
+| 3.20 | 2026-10-08 | MD-004 Ver.8.8でCoffee Domain用の部品ファイル `MD-004_COF_Coffee.md` を新設し、Domain別ファイルが7つ（FUR／LGT／ARM／STR／FIR／SHL／COF）になったことを確認した。部品ファイルは§11.2に従い入口ファイル（MD-004）の一部であり、§8カタログへの新規登録は不要（Document ID・Title・Authority・Volatility・Pathは変更なし）。あわせてAppendix F（日英）のMD-004紹介文を、OP-010 Ver.3.6のCoffee登録時点（購入した時点。到着を待たない）に合わせた。Patch Version。MARI様のご決定（2026-10-08）に基づく。 |
 
 ---
 
@@ -941,7 +942,7 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 | MD-001 | Storage Blueprint | 収納の配置、パッキング手順、設営・撤収の手順など、Storageを一つの運用システムとして定義する文書。 |
 | MD-002 | Field Atlas Landscape Framework | フィールド・ロケーションなど、プロジェクトが展開される「舞台」そのものの選定基準を定義する。 |
 | MD-003 | Galley Fare | キッチン機材（調理器具・刃物・調理小物）を、MD-004とは独立した実用性優先の基準で管理するMaster Document。 |
-| MD-004 | Equipment Registry Object Reference | 所有物（Equipment）に関する唯一のマスターデータベース。Design Bibleとの美意識的整合を選定条件とし、7つのDomain（Furniture／Light／Aroma／Storage／Coffee／Fire／Shelter）のEquipment・Components・親子関係・Material・Color・Attribute・Ownership Statusを管理する。Coffee機材は購入されOwnedになった時点で初めて登録する。 |
+| MD-004 | Equipment Registry Object Reference | 所有物（Equipment）に関する唯一のマスターデータベース。Design Bibleとの美意識的整合を選定条件とし、7つのDomain（Furniture／Light／Aroma／Storage／Coffee／Fire／Shelter）のEquipment・Components・親子関係・Material・Color・Attribute・Ownership Statusを管理する。Coffee機材は購入した時点（到着を待たない）で初めて登録する。 |
 
 ---
 
@@ -1032,7 +1033,7 @@ The series managing the ledger of owned equipment and places.
 | MD-001 | Storage Blueprint | Defines storage layout, packing sequence, and setup/teardown procedures, treating Storage as a complete operational system rather than mere packing. |
 | MD-002 | Field Atlas Landscape Framework | Defines the selection criteria for the "stage" itself — campsites, locations, and terrain — on which the project is deployed. |
 | MD-003 | Galley Fare | An independent Master Document for kitchen equipment (cookware, blades, cooking tools), governed by a function-first standard separate from MD-004. |
-| MD-004 | Equipment Registry Object Reference | The single master database of owned Equipment. Aesthetic alignment with the Design Bible is a condition for inclusion. It manages Equipment, Components, Parent / Child relationships, Material, Color, Attributes, and Ownership Status across seven Domains (Furniture / Light / Aroma / Storage / Coffee / Fire / Shelter). Coffee equipment is registered only once purchased and Owned. |
+| MD-004 | Equipment Registry Object Reference | The single master database of owned Equipment. Aesthetic alignment with the Design Bible is a condition for inclusion. It manages Equipment, Components, Parent / Child relationships, Material, Color, Attributes, and Ownership Status across seven Domains (Furniture / Light / Aroma / Storage / Coffee / Fire / Shelter). Coffee equipment is registered only once purchased (not on arrival). |
 
 ---
 

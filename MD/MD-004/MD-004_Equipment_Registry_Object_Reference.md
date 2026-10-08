@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 8.7  
+**Version**: 8.8  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -31,7 +31,7 @@ Planning情報（計画段階の情報）は、意図的に除外している。
 
 MD-004はキッチン調理器具を管理しない。キッチン機材は、別途function-first（機能優先）の選定基準を持つMD-003 Galley Fareが管理する。詳細はMD-003を参照。  
 
-Coffee機材は、他のすべてのDomainと異なる登録ルールに従う。比較検討中・意思決定中のアイテムは、MD-004ではなくBR-002 Barista Canonのみで追跡する。Coffeeアイテムは、購入されOwnedになった時点で初めてMD-004（COF-series）へ登録される。それまでの間、Coffee Domain（COF-series）は意図的に未入力のままとする — これはデータの欠落ではなく、設計上の仕様である。
+Coffee機材は、他のすべてのDomainと異なる登録ルールに従う。比較検討中・意思決定中のアイテムは、MD-004ではなくBR-002 Barista Canonのみで追跡する。Coffeeアイテムは、購入した時点（到着を待たない）でOwnedとして、初めてMD-004（COF-series）へ登録される。それまでの間、未購入のCoffee機材に対応するCOF-seriesの番号は意図的に未入力（空き番）のままとする — これはデータの欠落ではなく、設計上の仕様である。
 
 このルールは、CoffeeとKitchenのみに適用される。他のすべてのDomain（Furniture、Light、Aroma、Storage、Fire、Shelter）には影響しない: 検討中・保留中・決定済みだが未購入のアイテムは、これまで通り既存のStatusシステム（Essential / Candidate / Upgrade）を用いてMD-004へ登録され続ける。
 
@@ -47,7 +47,7 @@ Coffee機材は、他のすべてのDomainと異なる登録ルールに従う�
 
 # Domain Files（領域別ファイル）  
 
-MD-004の登録（Equipment ID単位のレコード）は、Domainごとにファイルを分けて保持する（OP-008 §11.2 Multi-file Document）。本ファイルは入口であり、Version・Purpose・Registry Rules・Coffee・共通ルール・Version Historyを保持する。  
+MD-004の登録（Equipment ID単位のレコード）は、Domainごとにファイルを分けて保持する（OP-008 §11.2 Multi-file Document）。本ファイルは入口であり、Version・Purpose・Registry Rules・Coffee（採番の方針）・共通ルール・Version Historyを保持する。  
 
 | Domain | Prefix | File |
 |---|---|---|
@@ -56,9 +56,10 @@ MD-004の登録（Equipment ID単位のレコード）は、Domainごとにフ�
 | Aroma | ARM | `MD-004_ARM_Aroma.md` |
 | Storage | STR | `MD-004_STR_Storage.md` |
 | Fire | FIR | `MD-004_FIR_Fire.md` |
-| Shelter | SHL | `MD-004_SHL_Shelter.md` |
+| Shelter | SHL | `MD-004_SHL_Shelter.md` |  
+| Coffee | COF | `MD-004_COF_Coffee.md` |
 
-Coffee Domainは未採番のため、ファイルを設けない（上記Coffee節を参照）。  
+Coffee Domainは、購入した機材のみを保持する（上記Coffee節を参照）。  
 
 ---  
 
@@ -70,7 +71,7 @@ Coffee Domainは、抽出に関する一連のワークフロー全体を管理�
 
 MD-004は、装備（Equipment）のみを管理する。  
 
-採番は購入時にCOF-001から開始する。事前の空枠は設置しない（C-16）。  
+採番はBR-002 Barista Canon §Coffee Registry Orderの順（Confirmed Coffee Preparation Workflowの順。ワークフローに現れない機材は末尾）で行う。購入順ではない。購入した機材は、その順序の番号で登録する。未購入の機材の番号は空けたままとし、事前の空枠（Vacant）は設置しない（C-16）。登録は購入した時点で行い、到着を待たない（OP-010 Part A §Coffee Domain Scope）。  
 
 ---  
 
@@ -113,6 +114,9 @@ STR-026
 
 STR-028  
 └ STR-029  
+
+COF-010  
+└ COF-011  
 
 ---  
 
@@ -185,6 +189,12 @@ Planning、Pursuit Strategy、Design Philosophy、Aesthetics、Positioning、Eva
 # Version History  
 
 Version 8.6以前の履歴は archive/MD-004_Version_History_Archive.md を参照。
+
+## Version 8.8
+
+MARI様のご決定（2026-10-08）に基づく。Coffee Domain（COF-series）の登録時点を「購入した時点（到着を待たない）」と明確にし、採番をBR-002 §Coffee Registry Orderのワークフロー順（購入順ではない）と定めた。これに伴い、Coffee用の部品ファイル `MD-004_COF_Coffee.md` を新設し（OP-008 §11.2。Domain別ファイルは7つ）、Domain Filesの表とCoffee節を改めた。2026-10-08に購入した次の5件を新規登録した（すべてStatus = Owned）：COF-005（9Barista Magnetic Dosing Funnel）、COF-009（9Barista Espresso Filter Paper 51mm）、COF-010（9Barista Mk.2 Pro）、COF-011（9Barista Handle - Walnut、COF-010の子）、COF-018（KNODOS Tamping Mat with Tool Organiser - Walnut 54mm）。COF-001〜004ほか未購入の番号は空けたまま。Parent / Child RulesのExampleへCOF-010 └ COF-011を追加。Color・Materialは確認済みの情報のみ記載し、不明な項目は空欄とした。COF-018のPriceはBR-003 Product 10のplanning estimate（実額は未確認）。OP-010 Ver.3.6、OP-008 Ver.3.20、BR-002 Ver.4.16、BR-003 Ver.4.11と連動。Minor Version。
+
+---
 
 ## Version 8.7
 
