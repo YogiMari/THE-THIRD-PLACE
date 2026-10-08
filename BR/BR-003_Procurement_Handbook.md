@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-4.12  
+4.13  
   
 **Status**  
   
@@ -462,10 +462,10 @@ Procurement Handbook
 | Purchase URL | Official Store |  
 | Japan Shipping | Available / checkout confirmation required |  
 | Warranty | Manufacturer Policy |  
-| Current Product Price | ¥10,000〜14,000 equivalent |  
-| Estimated Shipping | ¥3,000〜5,000 |  
-| Estimated Import Tax / Charges | ¥2,000〜3,000 |  
-| Estimated Total Cost | ¥16,000〜22,000 |  
+| Current Product Price | 内訳は未確認（購入総額のみ確認） |  
+| Estimated Shipping | 内訳は未確認（購入総額に含む） |  
+| Estimated Import Tax / Charges | 内訳は未確認（購入総額に含む） |  
+| Estimated Total Cost | ¥22,000 |  
 | Currency | GBP / JPY |  
 | Purchase Priority | ★★★★★ |  
   
@@ -481,6 +481,7 @@ Procurement Handbook
 * 通常径Tool Organiser：The Force Tamper。  
 * 追加のCoffee Tool Standは不要。  
 * 2026-10-08購入。  
+* 購入総額¥22,000（MARI様確認、2026-10-08）。商品代・送料・輸入税の内訳は未確認。  
   
 ---  
   
@@ -1677,7 +1678,7 @@ Snow Peak公式ストアでの単独購入となるため、Group A（9Barista�
 | Dedicated Water | ¥33,790〜41,790 |  
 | **Estimated Total（残り）** | **¥502,970〜581,470** |  
 
-購入済み分（Product 01／12／26／31：¥137,200、Product 10：¥16,000〜22,000）を加えた計画全体は¥656,170〜740,670（Monthly Acquisition Plan §Plan Total）。  
+購入済み分（Product 01／12／26／31：¥137,200、Product 10：¥22,000）を加えた計画全体は¥662,170〜740,670（Monthly Acquisition Plan §Plan Total）。  
 
   
 ### Budget Policy  
@@ -1781,7 +1782,7 @@ MARI様のご決定（2026-10-08）に基づく、月次購入計画である。
 * （任意）Safety Ring and Seals／Boiler O-ring Seal Mk.2／Overheat Repair Kit Mk.2（9Barista Official Spare Parts (Preventive Stock)。小計とは別枠）  
 * 小計：¥137,200（公式サイトのカート実額、Optional Preventive Stockを除く）  
 * 上限なし（本体¥123,400のため、月次上限の例外とする）  
-* 先行購入（月次の計画外）：Product 10 KNODOS Tamping Mat with Tool Organiser - Walnut 54mm（2026-10-08購入、Already Owned）。金額は¥16,000〜22,000で、Month 1の小計には含めない。  
+* 先行購入（月次の計画外）：Product 10 KNODOS Tamping Mat with Tool Organiser - Walnut 54mm（2026-10-08購入、Already Owned）。購入総額は¥22,000（MARI様確認）で、Month 1の小計には含めない。  
   
 ## Month 2 — グラインダー＋スケール＋Normcore  
   
@@ -1837,12 +1838,12 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
   
 ## Plan Total  
   
-総額目安：¥656,170〜740,670（計画全体。購入済み分を含む。9Barista Official Spare Parts (Preventive Stock)を除く）  
+総額目安：¥662,170〜740,670（計画全体。購入済み分を含む。9Barista Official Spare Parts (Preventive Stock)を除く）  
   
 残り（Purchase Requiredのみ）：¥502,970〜581,470（Estimated Acquisition Budgetと一致）  
   
-* 内訳：計画全体¥656,170〜740,670 − 購入済みProduct 01／12／26／31（¥137,200）− 購入済みProduct 10（¥16,000〜22,000）。  
-* 計画全体の検算：Month 1 ¥137,200＋Month 2 ¥124,000〜145,000＋Month 3 ¥118,400〜123,400＋Month 4 ¥85,000〜97,000＋Month 5 ¥77,000〜93,500＋Month 6 ¥98,570〜122,570＋先行購入Product 10 ¥16,000〜22,000＝¥656,170〜740,670。  
+* 内訳：計画全体¥662,170〜740,670 − 購入済みProduct 01／12／26／31（¥137,200）− 購入済みProduct 10（¥22,000）。  
+* 計画全体の検算：Month 1 ¥137,200＋Month 2 ¥124,000〜145,000＋Month 3 ¥118,400〜123,400＋Month 4 ¥85,000〜97,000＋Month 5 ¥77,000〜93,500＋Month 6 ¥98,570〜122,570＋先行購入Product 10 ¥22,000＝¥662,170〜740,670。  
   
 ### Design Rationale  
   
@@ -1878,6 +1879,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 | 4.10 | 2026-10-08 | MARI様のご報告（2026-10-08）に基づく。初月の9Barista一式（Product 01／12／26／31）とKNODOS Tamping Mat（Product 10、4か月目の先行購入）を購入済みとし、Acquisition StatusをPurchase RequiredからAlready Ownedへ変更（各ProductのNotesに「2026-10-08購入」を追記、到着状況は記載しない）。Product 01／12／26／31のNotesに請求額＝カート実額（¥137,200）と一致する旨（MARI様確認）を追記。金額は変更していない。Monthly Acquisition PlanのMonth 1を購入済みと明記、Month 4にKNODOS先行購入済みを明記（小計は不変）、Plan Totalは計画全体¥656,170〜740,670のまま、残り（Purchase Requiredのみ）¥502,970〜581,470を併記。Estimated Acquisition BudgetをPurchase Requiredのみで再計算（Core Espresso System ¥298,800〜330,800、Station / Workflow ¥42,900〜49,900、合計¥502,970〜581,470）。Group A・Group E・Current Acquisition Priority・Final Acquisition Inventoryの表示を同期。Included 01／02は変更なし。Minor Version。 |  
 | 4.11 | 2026-10-08 | MARI様のご指示（2026-10-08）に基づき、Month 4からProduct 10（KNODOS）を削除した。KNODOSは2026-10-08に先行購入済みであり、Month 1に「先行購入（月次の計画外）」として明記した。Month 4の小計を¥85,000〜97,000へ再計算（Product 07＋06）。Plan Total（計画全体¥656,170〜740,670、残り¥502,970〜581,470）は変更なし（各月の合計に先行購入分を加えて検算）。Design RationaleのKNODOSの記述を改めた。MD-004 Ver.8.8でCOF-005／009／010／011／018を購入した時点で登録したことと連動（BR-003のStatus・金額には変更なし）。Minor Version。 |  
 | 4.12 | 2026-10-08 | MARI様のご指示（2026-10-08）に基づき、Product 12（Magnetic Dosing Funnel）の色表記をBlackからOnyx（航空機グレードアルミニウム）へ訂正した（BR-002 Ver.4.17と連動）。MD-004 Ver.8.9で消耗品（Filter Paper）をCOF-seriesの登録から除いたが、BR-003のProduct 31（Already Owned）の記載に変更はない。金額・Statusに変更なし。Patch Version。 |  
+| 4.13 | 2026-10-08 | MARI様のご指示（2026-10-08）に基づき、Product 10（KNODOS）の購入総額を¥22,000の実額に揃えた（Estimated Total Costを¥16,000〜22,000から¥22,000へ。商品代・送料・輸入税の内訳は未確認のため、各欄は「内訳は未確認」とした）。Month 1の先行購入注記・Plan Total・内訳・検算を再計算し、計画全体を¥662,170〜740,670へ改めた（下限が¥6,000増）。残り（Purchase Requiredのみ）¥502,970〜581,470とEstimated Acquisition Budgetは変更なし（購入済み分を除くため）。MD-004 COF-017の購入価格¥22,000と一致。Minor Version。 |  
   
 ---  
 
