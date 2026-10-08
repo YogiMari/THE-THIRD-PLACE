@@ -1,0 +1,72 @@
+/* ===== Journey s1 — スクラップブック / Scrapbook: kraft pages, taped polaroids, handwriting, stamps ===== */
+html:root[data-skin="s1"]{
+  --mist:#D9C4A0; --sheet:#FBF4E3; --ink:#2C2218; --forest:#3F6B4F; --mustard:#C0561F; --muted:#6C5A43; --line:#BFA67C;
+  --night:#2B2118; --night-ink:#FBF4E3; --lamp:#F4C65B;
+  --serif:"Yomogi","Zen Maru Gothic",cursive; --sans:"Zen Maru Gothic","Noto Sans JP",sans-serif; --mono:"Courier Prime",ui-monospace,monospace;
+  color-scheme:light;
+  & body{background-color:var(--mist);background-image:var(--grain),radial-gradient(120% 60% at 50% 0,rgba(255,244,214,.55),transparent 70%);font-weight:500}
+  & .mono{letter-spacing:.06em;text-transform:none;font-size:12px}
+  & .it{font-family:var(--serif)}
+  /* the cover is a big taped print */
+  & .cover{margin:26px auto 0;max-width:1180px;border:14px solid #fff;border-bottom-width:56px;box-shadow:0 14px 40px rgba(50,30,10,.4);transform:rotate(-.5deg);height:clamp(520px,60vw,760px);margin-inline:auto;position:relative;overflow:visible}
+  & .cover.bleed{margin-inline:auto}
+  & .cover::before{content:"";position:absolute;top:-26px;left:50%;width:150px;height:38px;transform:translateX(-50%) rotate(2deg);background:rgba(224,200,130,.8);z-index:5}
+  & .cover > .im,& .cover > canvas{border-radius:0}
+  & .cover::after{background:linear-gradient(180deg,rgba(20,14,8,.45),rgba(20,14,8,.0) 40%,rgba(20,14,8,.7))}
+  & .mast{font-family:var(--serif);font-size:clamp(60px,13vw,200px);letter-spacing:0;line-height:.9;text-shadow:0 3px 30px rgba(0,0,0,.5);transform:rotate(-1.5deg)}
+  & .mast span{font-style:normal;color:var(--lamp)}
+  & .cover .issue b{font-family:var(--serif);font-size:clamp(28px,4vw,54px)} & .cover .issue .jp{font-family:var(--sans)}
+  & .itin{background:#FBF4E3;border:0;margin:42px auto 0;max-width:1160px;margin-inline:auto;transform:rotate(.3deg);box-shadow:0 8px 24px rgba(50,30,10,.28);position:relative}
+  & .itin.bleed{margin-inline:auto}
+  & .route .end{font-family:var(--serif)} & .route .path{background:repeating-linear-gradient(90deg,var(--mustard) 0 8px,transparent 8px 14px);height:2px}
+  & .stops{border-top:2px dashed var(--ink)} & .stops h3{font-family:var(--serif);font-size:clamp(20px,2vw,26px)} & .stops .k{color:var(--mustard)} & .stops a::before{border-color:var(--mustard)}
+  & .kick{border-top:3px dashed var(--ink)}
+  & .editorial h2,& .feat h2,& .board-head h2,& .rt-intro h2,& .desk .q{font-family:var(--serif);letter-spacing:0;font-weight:400}
+  & .editorial h2 i,& .feat h2 i,& .board-head h2 i,& .rt-intro h2 i,& .desk .q i{color:var(--mustard);font-style:normal}
+  & .editorial .txt{background:#FBF4E3;padding:30px 34px;box-shadow:0 8px 22px rgba(50,30,10,.25);transform:rotate(.4deg);position:relative}
+  & .editorial .txt::before{left:14px;top:-18px;color:var(--mustard)}
+  & .feat .deck{border-left:0;background:var(--sheet);padding:16px 20px;box-shadow:0 6px 16px rgba(50,30,10,.22);transform:rotate(-.8deg);font-weight:700}
+  & .feat.beyond .deck{border-right:0;text-align:left;transform:rotate(.8deg)}
+  & .plate{background:#FBF4E3;box-shadow:0 8px 22px rgba(50,30,10,.25);border-radius:0;transform:rotate(-.4deg)}
+  & .plate.dark{background:#2B2118}
+  & .split .photo .fr{border:12px solid #fff;border-bottom-width:44px;box-shadow:0 8px 22px rgba(50,30,10,.3);transform:rotate(1.2deg);border-radius:0;background:#fff}
+  & .split .photo .fr::before{content:"";position:absolute;top:-18px;left:50%;width:110px;height:30px;transform:translateX(-50%) rotate(-3deg);background:rgba(224,200,130,.85);z-index:3}
+  & .feat .body p:first-child::first-letter{font-family:var(--serif);color:var(--mustard)}
+  & .card{background:#FBF4E3;border-top:0;box-shadow:0 6px 16px rgba(50,30,10,.22);transform:rotate(.7deg);position:relative} & .card:nth-child(2){transform:rotate(-.9deg)}
+  & .card::before{content:"";position:absolute;top:-12px;left:30px;width:70px;height:22px;background:rgba(224,200,130,.85);transform:rotate(-4deg)}
+  & .card h4{font-family:var(--serif)}
+  & .legend b{font-family:var(--serif);font-style:normal;color:var(--mustard)} & .legend div{border-top:2px dashed var(--ink)}
+  & .board-head{border-bottom:3px dashed var(--ink)}
+  & .ed{background:#FBF4E3;border:0 !important;padding:18px 18px 20px !important;margin:10px;box-shadow:0 6px 16px rgba(50,30,10,.22);transform:rotate(-.6deg);position:relative}
+  & .ed:nth-child(even){transform:rotate(.7deg)} & .ed:nth-child(3n){transform:rotate(-1deg)}
+  & .ed::before{content:"";position:absolute;top:-10px;left:50%;width:70px;height:20px;background:rgba(224,200,130,.85);transform:translateX(-50%) rotate(3deg)}
+  & .ed b{font-family:var(--serif)} & .ava{font-family:var(--serif);font-style:normal}
+  & .rt-intro .theme{font-family:var(--serif);font-weight:400;color:var(--mustard)}
+  & .talk{border-top:3px dashed var(--ink)}
+  & .say{border-bottom:1px dashed var(--line)} & .say .who{font-family:var(--serif)}
+  & .say p{background:#FBF4E3;padding:14px 18px;box-shadow:0 4px 12px rgba(50,30,10,.16);border-radius:3px 14px 14px 14px;transform:rotate(-.15deg)}
+  & .say.pull p{background:none;box-shadow:none;font-family:var(--serif);font-style:normal;color:var(--mustard)}
+  & .say.short p{font-family:var(--serif);font-size:19px}
+  & .stage{font-family:var(--serif);font-style:normal}
+  & .inline-ph .fr,& .notes-ph .fr{border:12px solid #fff;border-bottom-width:44px;box-shadow:0 8px 22px rgba(50,30,10,.3);transform:rotate(-.6deg);border-radius:0}
+  & .pass{background:#FBF4E3;border-radius:6px;filter:drop-shadow(0 8px 16px rgba(50,30,10,.3));transform:rotate(-.4deg)} & .pass .stub::before,& .pass .stub::after{background:var(--mist)}
+  & .fromto b,& .stub .big{font-family:var(--serif)}
+  & .desk{border-top:3px dashed var(--ink)}
+  & .gfx-hero{position:absolute;right:clamp(10px,4vw,60px);top:90px;width:84px;height:84px;color:var(--mustard);transform:rotate(12deg);opacity:.8;z-index:6}
+  & .itin{position:relative} & .x-ridge,& .gfx-ridge{display:none}
+  & .gfx-div{width:54px;height:54px;color:var(--forest);margin:clamp(60px,8vw,100px) auto 0} & .x-div{display:grid;place-items:center}
+  & .x-strip{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,3vw,40px);margin:46px auto 0;max-width:1180px}
+  & .x-ph{margin:0;background:#fff;padding:12px 12px 14px;box-shadow:0 8px 20px rgba(50,30,10,.32);display:grid;gap:10px;min-width:0;position:relative}
+  & .x-ph::before{content:"";position:absolute;top:-14px;left:50%;width:90px;height:26px;transform:translateX(-50%) rotate(-3deg);background:rgba(224,200,130,.85);z-index:2}
+  & .x-strip .x-ph:nth-child(1){transform:rotate(-2deg)} & .x-strip .x-ph:nth-child(2){transform:rotate(1.4deg)} & .x-strip .x-ph:nth-child(3){transform:rotate(-1deg)}
+  & .x-ph .im{height:clamp(190px,24vw,320px)} & .x-ph figcaption{font-family:var(--serif);font-size:18px;color:var(--ink)}
+  & .x-bandwrap{margin:0 auto 48px;max-width:1100px} & .x-band{transform:rotate(.5deg)} & .x-band .im{height:clamp(200px,28vw,380px)}
+  & .x-gallery{padding-top:clamp(90px,11vw,140px);max-width:1200px;margin-inline:auto} & .x-gh{text-align:center;margin-bottom:34px;display:grid;gap:8px} & .x-gh h2{font-family:var(--serif);font-weight:400;font-size:clamp(34px,5.6vw,84px)} & .x-gh h2 i{font-style:normal;color:var(--mustard)}
+  & .x-gg{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(16px,2.6vw,36px)} & .x-gg .im{height:clamp(190px,22vw,300px)}
+  & .x-gg .x-ph:nth-child(odd){transform:rotate(-1.4deg)} & .x-gg .x-ph:nth-child(even){transform:rotate(1.2deg)}
+  & .x-credits{list-style:none;margin:30px 0 0;padding:0;display:grid;gap:4px;font-size:12px;color:var(--muted);line-height:1.7}
+  @media (max-width:920px){ & .x-strip,& .x-gg{grid-template-columns:1fr 1fr} & .gfx-hero{display:none} & .cover{border-width:8px;border-bottom-width:34px} }
+  @media (max-width:560px){ & .x-strip,& .x-gg{grid-template-columns:1fr} }
+}
+
+html:root[data-skin="s1"]{--grain:url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' width='200' height='200'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='3' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 0.35  0 0 0 0 0.25  0 0 0 0 0.12  0 0 0 0.44 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>")}

@@ -3,7 +3,7 @@
 **Document ID**: DB-001  
 **Title**: Project Ledger  
 **Series**: DB – Dashboard (Record)  
-**Version**: 4.26
+**Version**: 4.27
 **Authority**: Standard  
 **Status**: Active (Living Document)
 
@@ -160,6 +160,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 2026-09-30 | KN-002 | Cultural Pantheon Issue No. 1 — Before Need | — |
 | 2026-09-30 | KN-003 | Beyond Journey No. 01 — Beauty before Need | — |
 | 2026-09-30 | KN-004 | Atelier Discovery Bulletin No. 01 — Horizon / Price Anatomy | — |
+| 2026-10-08 | KN-001〜004 | 四誌それぞれに5つの別デザインを追加（原版＋5デザインの6種を同じArtifact内で切替。タイトルのクリックで巡回）。参考図版の写真を追加（CC BY／CC BY-SA／CC0／パブリックドメイン、クレジットは新デザイン側の巻末）。制作材料は`scripts/kn_pages/` | — |
 
 運用ルール：
 
@@ -221,6 +222,7 @@ KN作品（Heritage Chronicle／Cultural Pantheon／Beyond Journey／Atelier Dis
 | 4.24 | 2026-10-03 | MARI様のご報告（KARUIZAWA CAMP GOLD、2026-09-26〜27）に基づき、§Field LogへStatus = Doneの行を追加した（天候・気温と、使った構成〈Season Kit・Shelter等〉は報告がないため記入していない）。Conversation Ledgerへ本会話を追加。MD-002 Ver.4.11（訪問済みへの更新と橘ふれあい公園の採り直し）と連動。Field Logの運用は引き続き暫定であり、継続の可否は初回キャンプ（moss camp field）の後に決定する。Patch Version。 |
 | 4.25 | 2026-10-04 | MARI様のご依頼（GitHub Issue #121）に基づき、§Field Logへ過去キャンプ42件（2024-05〜2026-09、Status = Done）を追加した。Date昇順に並べ、既存のKARUIZAWA CAMP GOLD行を日付順の位置へ移動した（既存2行の内容は変更なし）。Weather / Tempは「MARI様が調べて提供された値（出典未確認）」である旨を運用ルールへ1行追記した。Conversation Ledgerへ本会話を追加。Patch Version。 |
 | 4.26 | 2026-10-05 | MARI様のご依頼（GitHub Issue #125）に基づき、過去キャンプ42件をField Logへ追加した（Familyカレンダー由来・重複分を除外）。4.25で追加した53件のうち11件（Date：2024-05-25〜26、2024-06-08〜09、2024-07-06〜07、2024-08-03〜04、2024-10-26〜27、2024-11-16〜17、2025-03-22〜23、2025-05-03〜05、2025-08-09〜10、2025-10-18〜19、2026-03-20〜21）を行ごと削除し、他の行は変更していない。Conversation Ledgerの当該行を更新した。Patch Version。 |
+| 4.27 | 2026-10-08 | MARI様のご依頼に基づき、KN四誌の6デザイン切替版の発行を§KN Publication Logへ追加した。あわせて、その制作材料（本文を含まないもの）を`scripts/kn_pages/`へ置き、公開済みArtifactから原版の骨格を復元して作り直す手順を同README・リポジトリREADMEに記録した。本文・埋め込み写真はOP-008 §28によりGitHubに置かない（`.gitignore`）。Patch Version。 |
 
 ---
 

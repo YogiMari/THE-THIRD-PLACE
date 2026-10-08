@@ -1,0 +1,6 @@
+# Working folders restored by restore_old.py / written by build.py and the test tools.
+# They hold KN page text and photographs, which OP-008 §28 keeps out of the repository.
+old/
+photos/
+out/
+__pycache__/

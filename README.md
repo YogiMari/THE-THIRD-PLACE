@@ -62,6 +62,7 @@ THE-THIRD-PLACE/
 │   ├── doc_catalogue_check.py          # OP-008 §8 の文書一覧と各文書のヘッダー・ファイルの突き合わせ。MD-004のStatus別一覧（--status-list）。CIで実行
 │   ├── codex_arbor.py                  # 全文書 → Arbor of the Third Place（文書アトラス・全書検索・宝物庫）生成
 │   ├── data/field_atlas/     # 地図用データと、全5版のデザイン・再生成の記録（README.md）
+│   ├── kn_pages/             # KN四誌のデザイン切替版の制作材料（本文は含まない。README.md／OP-008 §28）
 │   ├── templates/                      # 生成用HTMLテンプレート
 │   └── MirrorSync.gs                   # GitHub → Drive 一方向ミラー（OP-008 §27）
 │
@@ -280,6 +281,7 @@ THE-THIRD-PLACE/
 │   ├── field_atlas_check.py            # Checks MD-002, DB-001, MD-004, map data and all five map pages agree (runs in CI)
 │   ├── codex_arbor.py                  # Generates Arbor of the Third Place (document atlas, full-text search, gallery) from all documents
 │   ├── data/field_atlas/     # Map data, plus design and rebuild notes for all five editions (README.md)
+│   ├── kn_pages/             # Build materials for the switchable designs of the four KN pages (no page text; README.md / OP-008 §28)
 │   ├── templates/                      # HTML templates for generators
 │   └── MirrorSync.gs                   # One-way GitHub → Drive mirror (OP-008 §27)
 │
