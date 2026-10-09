@@ -1,11 +1,11 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.4.20
+## Ver.4.21
 
 **Document ID**: MD-002  
 **Title**: Field Atlas Landscape Framework  
 **Series**: MD – Master Data (Record)  
-**Version**: 4.20  
+**Version**: 4.21  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -332,6 +332,18 @@ OP-010 Part C §Site Requirements（区画面積：80㎡（車別）、車込み
 
 ## Visualization
 
+### Field Atlas（Nocturne・Aubadeの統合ページ）
+
+Field Atlas NocturneとField Atlas Aubadeを一つのページにまとめたものである。表示中の版のタイトル（「FIELD ATLAS NOCTURNE」「Field Atlas Aubade」）を押すと、もう一方の版にデザインだけが切り替わる。選択中のフィールドと比較先は切り替えても変わらない。ページのデータ（点数・地図・道路経路・写真・Field Logなど）は一つだけ持ち、各版はそれぞれのテンプレート（下記の二つ）から描く。最後に見ていた版はそのブラウザに保存し、初期はNocturneである。本文書・DB-001 §Field Log・MD-004を更新したら、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
+
+```
+python3 scripts/field_atlas_duo.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas.html
+```
+
+- 公開先：https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm（旧Field Atlas NocturneのArtifactを、統合ページで置き換えた）
+- 下記の二つの生成コマンドは、それぞれの版を単独のページとして作る場合に使う。
+- 3Dレーダーは、Nocturneでは発光する計器（光る床・目盛りの環・レーダーの掃引・光の柱とひし形の頂点・番号付きの軸名）、Aubadeでは陽光の中の磁器の皿（やわらかな影・二重の縁と玉の環・釉薬のような板・磁器の玉の頂点）として描く。値・軸・操作は他の版と同じである。
+
 ### Field Atlas Nocturne
 
 関東の3D地図で、各フィールドの小岩からの道路経路・写真・10軸の分析・アーリーチェックイン・地面・次のキャンプを表示するページである。点数・掲載順・アーリーチェックイン・地面のアイコンは、本文書のField Atlas Database・Sub-Score Table・Early Check-in Recordから生成する（10軸）。View軸の基準地点（§Reference Benchmark Site）は、ランキングと区別した印として地図に示す。次のキャンプと訪問の記録は、DB-001 Project Ledger §Field Logから生成する（Fieldの表記は本文書に合わせる）。Field Logの構成に書かれた装備IDは、MD-004から正式名称を引いて示す。区画の広さ・駐車の扱いは本文書の§Site Record、標高・周辺環境（高速IC・コンビニ・スーパー・温泉・病院）は `scripts/data/field_atlas/` のデータ（国土地理院・OpenStreetMap）から示し、日の出・日の入り・月齢はページ内で計算する。次のキャンプのフィールドには、気象庁アメダス（moss camp fieldは「山中」）の平年値（1991〜2020年）のうちキャンプ月の上旬（1〜10日。月の前半の目安）の日最低気温と、観測所との標高差による補正値（0.6℃/100mの目安）を「寒さの目安」として示す（データは同フォルダのclimate.json。当日の気温や天気予報ではない）。位置・道路経路・写真（600pxのJPEG）とその出典は `scripts/data/field_atlas/` に置き、デザインと再現の手順は同フォルダのREADME.mdに記す。写真は各施設・予約サイトのものであり、出典は同フォルダのimages.jsonに記す。本文書・DB-001 §Field Log・MD-004を更新したら、`python3 scripts/field_atlas_check.py` で文書とデータの整合を確かめ（CIでも実行される）、次のコマンドで再生成し、同じArtifactへ再公開する（別のチャットから公開する場合は、下記URLを指定して更新する）。
@@ -340,7 +352,7 @@ OP-010 Part C §Site Requirements（区画面積：80㎡（車別）、車込み
 python3 scripts/field_atlas_nocturne.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-nocturne.html
 ```
 
-- 公開先：https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm
+- 公開先：Field Atlas（統合ページ）の一方の版として公開する（上記）。
 - 点数の正本は本文書、キャンプの記録の正本はDB-001である。ページが持つのは地理情報（位置・道路経路）と写真のみである。
 - フィールドを追加したときは、同README.mdの手順で位置・道路経路・写真を追加し、Field Atlas Aubadeも再生成する。
 - 2つの地図ページで共通のスクリプトは `scripts/templates/field_atlas_shared.js` に置き、各テンプレートの `/*__SHARED_JS__*/` の位置へ生成時に差し込む（両版に及ぶ変更はここを直す。CSS・演出は各テンプレートに残す）。地図を使わない共通の部分は `field_atlas_core.js`（ヘルパーと、今日の一手・日照帯・2点の直線・足跡）と `field_atlas_radar3d.js`（3Dレーダーの描画）に置き、同じSHARED_JSの位置へ差し込む。MD-002を読む共通の処理は `scripts/field_atlas_md002.py` に置く（ページは生成しない）。
@@ -353,7 +365,7 @@ Field Atlas Nocturneのライト版である。表示する内容・地図・道
 python3 scripts/field_atlas_aubade.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-aubade.html
 ```
 
-- 公開先：https://claude.ai/artifact/GmW1EhhdcDLNaG7GcuMAZH
+- 公開先：Field Atlas（統合ページ）の一方の版として公開する（上記）。単独版のArtifact https://claude.ai/artifact/GmW1EhhdcDLNaG7GcuMAZH は、統合ページとは別に残してあり、再生成のたびに同じURLを更新する。
 - 点数の正本は本文書、キャンプの記録の正本はDB-001である。ページが持つのは地理情報（位置・道路経路）と写真のみである。
 
 ### Field Atlasの共通ツール（2つの3D地図ページ）
@@ -466,7 +478,8 @@ THE THIRD PLACE を実現するための
 | 4.17 | 2026-10-07 | MARI様のご指示に基づき、§Visualizationの二つの3D地図ページの名称を改めた（Field Atlas Navigator → Field Atlas Nocturne、Field Atlas Ivory → Field Atlas Aubade）。あわせて、生成スクリプト・テンプレート・データ置き場の名称も同じ語に揃えた（`scripts/field_atlas_nocturne.py`・`field_atlas_aubade.py`・`data/field_atlas/` ほか）。ページの操作も改めた（ピンの選択を画面上の距離で行うようにし、重なって見分けられないピンは同じ場所を続けてタップして順に選べる。フィールドを選んだときのルート描画とズームの演出を複数用意し、選ぶたびにランダムで切り替わる）。スコア・順位・掲載内容は変えていない。過去のRevision Historyの行は当時の名称（Navigator・Ivory）のまま保持した。Patch Version。 |
 | 4.18 | 2026-10-08 | MARI様のご指示に基づき、§Visualizationの3D地図ページを拡張した。新しい3つのデザイン版（Field Atlas Cartograph・Contour・Gloaming）を加え、全5版に共通のツール（時刻と季節、今日の一手、足跡、等高線・陰影、日照帯、2点の直線比較）を追加した。等高線・陰影の元データとして国土地理院の標高格子 `scripts/data/field_atlas/terrain.json` を加えた。スコア・順位・掲載内容は変えていない。Patch Version。 |
 | 4.19 | 2026-10-09 | MARI様のご指示に基づき、§Visualizationの6ページを拡張した。10軸のレーダーを、ドラッグで回せる3D（傾いた円盤・厚みのある半透明の板・軸の先の柱と数字）に変え、6ページで同じ描画を使う。Field Atlas Radarに、今日の一手・日照帯・2点の直線・足跡を加えた。重なったピンは一覧から選ぶようにし、地図だけを表示するボタン（Hキー）を加えた。スコア・順位・掲載内容は変えていない。Patch Version。 |
-| 4.20 | 2026-10-09 | MARI様のご決定に基づき、Field Atlasのページを Nocturne と Aubade の2つだけに絞った。Field Atlas Cartograph・Contour・Gloaming と、単独のField Atlas Radarページを廃止した（生成スクリプト・テンプレート・公開ページを削除。10軸の3Dレーダーそのものは両ページの中に残る）。§Visualizationの該当節と共通ツールの対象を改め、MD-002を読む共通の処理は `scripts/field_atlas_md002.py` へ移した。スコア・順位・掲載内容は変えていない。Patch Version。 |
+| 4.20 | 2026-10-09 | MARI様のご指示に基づき、§VisualizationのField Atlas NocturneとField Atlas Aubadeを一つのページ（Field Atlas）にまとめ、タイトルを押すとデザインだけが切り替わるようにした（選択中のフィールドと比較先は保つ）。両版の3Dレーダーを、各版のデザインに合わせた描画（Nocturneは発光する計器、Aubadeは磁器の皿）に改めた。スコア・順位・掲載内容は変えていない。Patch Version。 |
+| 4.21 | 2026-10-09 | MARI様のご決定に基づき、Field Atlasのページを Nocturne と Aubade の2つだけに絞った。Field Atlas Cartograph・Contour・Gloaming と、単独のField Atlas Radarページを廃止した（生成スクリプト・テンプレート・公開ページを削除。10軸の3Dレーダーそのものは両ページの中に残る）。§Visualizationの該当節と共通ツールの対象を改め、MD-002を読む共通の処理は `scripts/field_atlas_md002.py` へ移した。スコア・順位・掲載内容は変えていない。Patch Version。 |
 
 ---
 

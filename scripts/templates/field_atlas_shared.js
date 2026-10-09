@@ -34,9 +34,18 @@ function coldHTML(A){const o=coldOf(A.rank);if(!o)return "";const c=o.c;
   return `<span class="k">COLD · ${esc(o.ds)} · NEXT CAMP</span><dl class="kv">${rows}</dl><span class="srcl">${esc(c.period)}年の平年値（${o.mo}月上旬＝1〜10日の日最低気温の平均）。補正は標高差×0.6℃/100mの目安で、当日の気温や天気予報ではありません。出典：<a href="${esc(c.url)}" target="_blank" rel="noopener">気象庁 平年値（${esc(c.station)}）</a></span>`;}
 function gearHTML(cfg){const ids=gearIds(cfg).filter(g=>GEAR[g]);
   return ids.length?`<dl class="gear">${ids.map(g=>`<dt>${g}</dt><dd>${esc(GEAR[g].brand||"")} ${esc(GEAR[g].product||"")}<small>${esc(GEAR[g].status||"")}</small></dd>`).join("")}</dl><span class="srcl">装備名：MD-004 Equipment Registry</span>`:"";}
-// deep link: #f=<rank> opens that field
-try{const m=location.hash.match(/f=(\d+)/);if(m&&get(+m[1])){state.a=+m[1];if(state.b===state.a)state.b=null;}}catch(e){}
-function setHash(){try{history.replaceState(null,"","#f="+state.a);}catch(e){}}
+// deep link: #f=<rank> opens that field. Inside Field Atlas (both editions in one page, field_atlas_duo.py) the host page
+// passes the selection in FA_INIT (its own #f=, or the fields open in the other edition) and keeps #f= on its own URL.
+try{const I=window.FA_INIT,m=location.hash.match(/f=(\d+)/),a=I&&get(I.a)?I.a:m&&get(+m[1])?+m[1]:0;
+  if(a){state.a=a;if(I&&I.b!==undefined)state.b=I.b&&get(I.b)?I.b:null;if(state.b===state.a)state.b=null;}}catch(e){}
+function setHash(){try{if(window.FA_DUO)parent.postMessage({fa:"hash",f:state.a},"*");else history.replaceState(null,"","#f="+state.a);}catch(e){}}
+// Field Atlas: the title switches to the other edition (the host page swaps the frame and keeps the selection)
+(function(){const D=window.FA_DUO,h=D&&document.querySelector(".logo h1");if(!h)return;
+  h.classList.add("fa-swap");h.dataset.other=D.other;h.tabIndex=0;h.setAttribute("role","button");h.title=D.other+" に切り替え";
+  h.setAttribute("aria-label",h.textContent.trim()+"。押すと "+D.other+" に切り替え");
+  const go=e=>{const r=h.getBoundingClientRect(),x=e&&e.clientX?e.clientX:r.left+r.width/2,y=e&&e.clientY?e.clientY:r.top+r.height/2;
+    try{parent.postMessage({fa:"skin",a:state.a,b:state.b,x,y},"*");}catch(_){}};
+  h.addEventListener("click",go);h.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go(null);}});})();
 async function copyLink(btn){const u=PAGE_URL+"#f="+state.a,lab=btn.textContent;
   try{await navigator.clipboard.writeText(u);btn.textContent="コピーしました";}catch(e){try{window.prompt("このリンクをコピーしてください",u);}catch(_){}}
   setTimeout(()=>{btn.textContent=lab;},1800);}

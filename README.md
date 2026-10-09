@@ -54,6 +54,7 @@ THE-THIRD-PLACE/
 │   ├── field_atlas_md002.py            # MD-002の共通リーダー（Field Atlasの2ページと各ツールが使用。ページは作らない）
 │   ├── field_atlas_nocturne.py        # MD-002 → Field Atlas Nocturne（3D地図・ダーク版）生成
 │   ├── field_atlas_aubade.py            # MD-002 → Field Atlas Aubade（3D地図・ライト版）生成
+│   ├── field_atlas_duo.py               # MD-002 → Field Atlas（NocturneとAubadeを一つに。タイトルで切り替え）生成
 │   ├── field_atlas_fetch.py  # 地図用データ（位置・道路ルート・写真・標高・地形格子・周辺環境）の取得
 │   ├── field_atlas_check.py            # MD-002・DB-001・MD-004・地図用データ・2ページの整合チェック（CIで実行）
 │   ├── doc_catalogue_check.py          # OP-008 §8 の文書一覧と各文書のヘッダー・ファイルの突き合わせ。MD-004のStatus別一覧（--status-list）。CIで実行
@@ -271,6 +272,7 @@ THE-THIRD-PLACE/
 │   ├── field_atlas_md002.py            # Shared MD-002 reader for the two Field Atlas pages and their tools (builds no page)
 │   ├── field_atlas_nocturne.py        # Generates Field Atlas Nocturne (3D map, dark edition) from MD-002
 │   ├── field_atlas_aubade.py            # Generates Field Atlas Aubade (3D map, light edition) from MD-002
+│   ├── field_atlas_duo.py               # Generates Field Atlas (Nocturne and Aubade in one page; the title switches) from MD-002
 │   ├── field_atlas_fetch.py  # Fetches map data (positions, road routes, photos, elevation, terrain grid, surroundings)
 │   ├── field_atlas_check.py            # Checks MD-002, DB-001, MD-004, map data and both map pages agree (runs in CI)
 │   ├── codex_arbor.py                  # Generates Arbor of the Third Place (document atlas, full-text search, gallery) from all documents

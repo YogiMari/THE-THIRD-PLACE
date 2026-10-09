@@ -2,7 +2,7 @@
 
 Field Atlas Nocturne is a single-page viewer for MD-002 Field Atlas. It has two editions that share this data folder: the dark Nocturne (below) and the light Field Atlas Aubade (see [Field Atlas Aubade](#field-atlas-aubade)). Both carry the same [Atlas tools](#atlas-tools). It shows a 3D map of Kanto centred on Koiwa. Selecting a field draws its road route from Koiwa, its photo, its 10-axis analysis and its early check-in record. This file records how the page is designed and built, so it can be regenerated or rebuilt later.
 
-- Published at: https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm
+- Published at: as one of the two editions of [Field Atlas](#field-atlas-nocturne-and-aubade-in-one-page), https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm
 - Template: `scripts/templates/field_atlas_nocturne.html`
 - Generator: `scripts/field_atlas_nocturne.py` (standard library only)
 - Shared scripts: `scripts/templates/field_atlas_shared.js` (the part of the page script the two map editions have in common), `field_atlas_core.js` (helpers and the map-free tools) and `field_atlas_radar3d.js` (the 3D radar, one renderer for both pages); `scripts/field_atlas_md002.py` is the MD-002 parser the generators and checks share and joins the core and radar scripts (`core_script()`); see [Shared script](#shared-script)
@@ -39,6 +39,31 @@ Both pages carry the same field information: `field_atlas_nocturne.extras()` bui
 When DB-001 §Field Log, MD-002 or MD-004 changes, rebuild and republish both pages (Nocturne, Aubade).
 
 `python3 scripts/field_atlas_check.py` checks MD-002, DB-001, MD-004, the data files (including that `terrain.json` is a whole grid) and all the generators against each other, and runs in CI (`.github/workflows/third-place-sync.yml`). Run it after renaming a field or editing the Field Log.
+
+## Field Atlas (Nocturne and Aubade in one page)
+
+One page carries both editions. Clicking or pressing Enter on the title of the edition in view ("FIELD ATLAS NOCTURNE", "Field Atlas Aubade") switches to the other; only the design changes, and the selected and compared fields stay.
+
+- Published at: https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm (replaces the single Nocturne page at the same URL)
+- Host template: `scripts/templates/field_atlas_duo.html`; generator: `scripts/field_atlas_duo.py`
+
+```
+python3 scripts/field_atlas_duo.py \
+    --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md \
+    --out field-atlas.html
+```
+
+How it is built:
+
+- `field_atlas_nocturne.assemble()` builds the page data once (the pieces behind the placeholders `DATA`, `JAPAN`, `GEO`, `LL`, `IMG`, `IMGSRC`, `ROUTES`, `EXTRA`). The host page holds it once, as JSON in `<script type="application/json" id="fa-data">`.
+- Each edition is its own template with the shared scripts in (`page_script()`), its data placeholders turned into `FA_D.<piece>`. The host keeps both as strings and runs the edition in view in a full-window frame (`srcdoc`): a doctype, `window.FA_D` (the data), `FA_DUO` (edition, the other edition's name, `PAGE_URL`), `FA_INIT` (the fields to open) and `FA_SWITCH`, then the template. Every `<` in the embedded JSON is written as `\u003c`, so nothing closes a script early.
+- The title (`.logo h1`, made a button by `field_atlas_shared.js` only when `FA_DUO` is set) posts `{fa:"skin", a, b, x, y}` to the host. The host builds the other edition in a second frame; when it has loaded, a circle opens from the point of the click (1.05 s) and the old frame is removed (its WebGL context goes with it). A small ring in the next edition's accent pulses at the click point while it loads. With `prefers-reduced-motion` the swap is immediate.
+- With `FA_SWITCH` the edition skips its intro (Nocturne's boot log, Aubade's veil) and goes straight to the map print.
+- Deep link: the host reads `#f=<rank>` from its own URL and passes it in `FA_INIT`; the edition reports every selection back (`{fa:"hash"}`), and the host writes it to its own URL. "リンクをコピー" copies the host's URL.
+- The edition last shown is kept in the browser (`localStorage` key `fa-skin1`, in try/catch); the default is Nocturne. The other keys (`fa-nav1`, `fa-tools1`, `fa-trail1`, `fa-maponly1`) are shared by both editions.
+- `field_atlas_check.py` builds this page too and checks that it carries the renderer once per edition and no unfilled placeholder.
+
+The single-edition generators (`field_atlas_nocturne.py`, `field_atlas_aubade.py`) still build each edition as a page of its own (the title is then plain text).
 
 ## Shared script
 
@@ -153,7 +178,7 @@ Fonts: Michroma (wide display labels), Saira Condensed 200–500 (large numbers)
 
 Field Atlas Aubade is the light edition. It shows the same data with the same map, routes, analysis and interaction, restyled after the light theme of the Claude app: ivory paper, ink-black type, a clay accent, and a porcelain relief map in afternoon light. Its effects are as showy as the Nocturne's, but softer.
 
-- Published at: https://claude.ai/artifact/GmW1EhhdcDLNaG7GcuMAZH
+- Published at: as one of the two editions of [Field Atlas](#field-atlas-nocturne-and-aubade-in-one-page), https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm (the earlier single-edition artifact https://claude.ai/artifact/GmW1EhhdcDLNaG7GcuMAZH still holds the page as it was before the merge)
 - Template: `scripts/templates/field_atlas_aubade.html`
 - Generator: `scripts/field_atlas_aubade.py` (calls `field_atlas_nocturne.build()` with the Aubade template, so the data files and placeholders are shared)
 
@@ -233,6 +258,7 @@ The only climate figures are the existing JMA normals for the next camp (the COL
 The 10-axis radar is one SVG scene drawn by `Radar3D()` in `scripts/templates/field_atlas_radar3d.js` (own projection, painter's algorithm, no WebGL, so no second context next to Three.js). Both pages call it; axis order, names and values come from the same data as before (MD-002 Sub-Score Table), and nothing is typed in the renderer.
 
 - Scene: a floating ground disc with a soft shadow, a bezel with 60 ticks, decagon rings at 2 / 4 / 6 / 8 / 10, 10 spokes and a faint cage of rim posts; field A and field B as translucent prisms (thickness 9, sides back-face culled and depth sorted across both fields); a pillar with a cap and its value at every axis tip (height 4.4 per point); axis names as billboards scaled by depth and faded on the far side; a slow sweep wedge on the ground (still when motion is reduced). Unvisited fields keep the dashed outline. The Radar page also draws the all-field average and the 5 / 10 ring marks.
+- Looks: `Radar3D(svg, {look})` draws the same geometry, values and depth order in a page's own idiom. Nocturne passes `look:"hud"`: a glowing floor, a double bezel of 120 ticks with two arcs turning one way and a dotted arc the other, dotted rings, a centre reticle, a radar sweep with a glowing leading edge, glass prisms over a dashed footprint with glowing top edges (SVG blur filter), light beams that fade toward the floor with diamond caps, and axis names numbered 01-10 above them. Aubade passes `look:"porcelain"`: a warm blurred shadow under an ivory plate with a double rim and a ring of 60 beads (clay at the axes), dotted rings, a soft band of light turning slowly, glazed prisms (white-to-clay gradient top with a white inner rim, warm blurred shadow), hairline stems with porcelain beads. The ▲ ▼ ↺ buttons and the tooltip follow the look (square HUD keys; round white chips). Value labels carry the class `r3v` with no inline font, and each page sets their typeface (Nocturne: Saira Condensed; Aubade: Newsreader italic). Without `look` the scene above is drawn as before (Cartograph, Contour, Gloaming, Radar).
 - Colours: read once from the page's own classes `.rg .rtk .rax .rpa .rpb .rda .rdb` (computed style), so each edition keeps its look.
 - Controls: drag = yaw (a mouse also tilts); on touch the svg is `touch-action: pan-y`, so a horizontal swipe rotates and a vertical swipe scrolls the page, and the ▲ ▼ buttons tilt; arrow keys rotate when the chart has focus (Home or Esc resets); double click, double tap or ↺ resets. Inertia after a drag; a slow sway runs until the first interaction and pauses on hover or focus; with `prefers-reduced-motion` there is no sway, no sweep and no inertia, and reset is instant. The loop draws only while the chart is on screen and the tab is visible.
 - Readouts: hovering (or tapping, on touch) a pillar shows the field, axis, value and all-field average; the svg has `role="img"`, an `aria-label` and a `<desc>` listing the 10 values (`Radar3D.alt()`), and the segmented bars / axes table stay beside it as the text alternative.

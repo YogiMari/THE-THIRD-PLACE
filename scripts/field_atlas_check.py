@@ -35,6 +35,7 @@ from pathlib import Path
 HERE = Path(__file__).parent
 sys.path.insert(0, str(HERE))
 import field_atlas_nocturne as nav  # noqa: E402
+import field_atlas_duo as duo  # noqa: E402
 import field_atlas_md002 as md002  # noqa: E402
 
 ROOT = HERE.parent
@@ -145,6 +146,17 @@ def main() -> None:
         left = re.findall(r"/\*__[A-Z_]+__\*/|__MD002_VERSION__|__GENERATED__", html)
         if left:
             problems.append(f"{t.name}: placeholders left: {sorted(set(left))}")
+    # Field Atlas (Nocturne and Aubade in one page): each edition once, the data once, nothing left unfilled
+    page, warnings = duo.build(MD002)
+    problems += [f"field_atlas_duo.html: {w}" for w in warnings]
+    for key, (template, _, _) in duo.SKINS.items():
+        if template not in TEMPLATES:
+            problems.append(f"field_atlas_duo.py: {template.name} is not a checked map template")
+    if page.count("function Radar3D(") != len(duo.SKINS):
+        problems.append(f"field_atlas_duo.html: expected Radar3D once per edition ({len(duo.SKINS)})")
+    left = re.findall(r"/\*__[A-Z_]+__\*/|__MD002_VERSION__|__GENERATED__|__PAGE_URL__", page)
+    if left:
+        problems.append(f"field_atlas_duo.html: placeholders left: {sorted(set(left))}")
 
     # surroundings come from OpenStreetMap and are best-effort reference data: report, do not fail
     notes = [p for p in problems if "surroundings" in p]
