@@ -339,6 +339,74 @@
 
   /* touch: these boxes scroll only up and down (iOS lets a box drift sideways when it can scroll on both axes) */
   .analysis,.rows,.tc-d{overflow-x:hidden;overscroll-behavior-x:none;touch-action:pan-y}
+  /* ---------- SF refinements: notched instruments, numbered panels, micro rulers, edge type, live render telemetry ---------- */
+  ::selection{background:rgba(63,240,255,.32);color:#fff}
+  ::-webkit-scrollbar{width:5px;height:5px} ::-webkit-scrollbar-thumb{background:var(--line2)} ::-webkit-scrollbar-thumb:hover{background:var(--line3)} ::-webkit-scrollbar-track{background:transparent}
+  .app{counter-reset:sf}
+  /* instruments: top-right and bottom-left corners cut at 45° with a hairline along the cut, brackets on the other two */
+  .hud,.zoom{clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,16px 100%,0 calc(100% - 16px))}
+  .zoom{clip-path:polygon(0 0,calc(100% - 9px) 0,100% 9px,100% 100%,9px 100%,0 calc(100% - 9px))}
+  .hud::before{background:
+    linear-gradient(var(--line3),var(--line3)) top left/14px 1px no-repeat,linear-gradient(var(--line3),var(--line3)) top left/1px 14px no-repeat,
+    linear-gradient(var(--line3),var(--line3)) bottom right/14px 1px no-repeat,linear-gradient(var(--line3),var(--line3)) bottom right/1px 14px no-repeat,
+    linear-gradient(45deg,transparent calc(50% - 1px),var(--line3) 50%,transparent calc(50% + 1px)) top right/18px 18px no-repeat,
+    linear-gradient(45deg,transparent calc(50% - 1px),var(--line3) 50%,transparent calc(50% + 1px)) bottom left/18px 18px no-repeat}
+  .hud{background-image:linear-gradient(180deg,rgba(63,240,255,.045),transparent 90px),repeating-linear-gradient(0deg,rgba(63,240,255,.018) 0 1px,transparent 1px 3px)}
+  /* panel numbers and a breathing status square */
+  .hh,.tc-top{counter-increment:sf}
+  .hh h2::after{content:"/" counter(sf,decimal-leading-zero);margin-left:6px;font-family:var(--mono);font-size:7.5px;letter-spacing:.08em;color:var(--ink-faint);text-shadow:none;vertical-align:1px}
+  .hh h2::before{animation:sfPulse 2.6s ease-in-out infinite}
+  .tc-top>span:first-child::before{content:counter(sf,decimal-leading-zero) " // ";color:var(--ink-faint);letter-spacing:.2em}
+  @keyframes sfPulse{50%{opacity:.35;box-shadow:0 0 2px var(--a)}}
+  /* top strip: a light runs along the ruler; telemetry in ruled cells */
+  .strip::before{content:"";position:absolute;left:0;bottom:-4px;width:140px;height:3px;pointer-events:none;background:linear-gradient(90deg,transparent,var(--a),transparent);filter:drop-shadow(0 0 4px var(--a));animation:sfRun 7s linear infinite}
+  @keyframes sfRun{from{transform:translateX(-160px)}to{transform:translateX(100vw)}}
+  .tele>span{padding-left:12px;border-left:1px solid var(--line)}
+  .tele span b::before{content:"";display:inline-block;width:3px;height:3px;background:var(--a);margin-right:5px;vertical-align:2px;opacity:.7}
+  .tele .fps{color:var(--ok)}
+  .logo svg{animation:spin 24s linear infinite;filter:drop-shadow(0 0 4px rgba(63,240,255,.6))}
+  .views button[aria-pressed="true"]{box-shadow:inset 0 0 12px rgba(255,255,255,.35);text-shadow:0 0 1px rgba(1,4,9,.6)}
+  /* field index: chevron on the selected row, a scan wash on hover, hairlines between rows */
+  .row+.row{box-shadow:inset 0 1px 0 rgba(63,240,255,.05)}
+  .row:hover:not(.on):not(.vs){background:linear-gradient(90deg,rgba(63,240,255,.07),transparent 75%)}
+  .pick .i{position:relative}
+  .row.on .pick .i{color:var(--a);text-shadow:0 0 8px rgba(63,240,255,.6)}
+  .row.on .pick .i::before{content:"▸";position:absolute;left:-10px;top:-1px;color:var(--a);animation:blink3 1.8s steps(1) infinite}
+  .row.on .pick .sc{color:var(--a);text-shadow:0 0 12px rgba(63,240,255,.5)}
+  .row.vs .pick .sc{color:var(--b)}
+  /* analysis: tick rulers under the metrics, LED keys, a caption and corner marks on the radar, section cues */
+  .mt{background:repeating-linear-gradient(90deg,var(--line2) 0 1px,transparent 1px 5px) 12px calc(100% - 3px)/calc(100% - 24px) 3px no-repeat}
+  .mt .k::before{content:"";display:inline-block;width:4px;height:4px;background:var(--a);margin-right:6px;vertical-align:1px;box-shadow:0 0 6px var(--a)}
+  .radarw{padding-top:14px;background:
+    linear-gradient(var(--line2),var(--line2)) top left/10px 1px no-repeat,linear-gradient(var(--line2),var(--line2)) top left/1px 10px no-repeat,
+    linear-gradient(var(--line2),var(--line2)) top right/10px 1px no-repeat,linear-gradient(var(--line2),var(--line2)) top right/1px 10px no-repeat,
+    linear-gradient(var(--line2),var(--line2)) bottom left/10px 1px no-repeat,linear-gradient(var(--line2),var(--line2)) bottom left/1px 10px no-repeat,
+    linear-gradient(var(--line2),var(--line2)) bottom right/10px 1px no-repeat,linear-gradient(var(--line2),var(--line2)) bottom right/1px 10px no-repeat}
+  .radarw::before{content:"10-AXIS · RESONANCE PROFILE";position:absolute;left:14px;top:4px;font-family:var(--mono);font-size:7.5px;letter-spacing:.26em;color:var(--ink-faint)}
+  .radarw::after{content:"3D · DRAG";position:absolute;right:14px;top:4px;font-family:var(--mono);font-size:7.5px;letter-spacing:.26em;color:var(--ink-faint)}
+  .sec>.k:first-child::before,.sec>label.k::before{content:"› ";color:var(--a)}
+  .lg .ln::before{content:"";display:inline-block;width:12px;height:1px;background:var(--a);box-shadow:0 0 4px var(--a);vertical-align:3px;margin-right:7px}
+  select{clip-path:polygon(0 0,calc(100% - 8px) 0,100% 8px,100% 100%,0 100%)}
+  details summary::marker{color:var(--a)}
+  /* target cards: thirds grid and a centre reticle over the photo */
+  .ph-hud::before{content:"";position:absolute;left:50%;top:50%;width:26px;height:26px;margin:-13px 0 0 -13px;border:1px dashed color-mix(in srgb,var(--c) 60%,transparent);border-radius:50%;opacity:.75;
+    background:linear-gradient(var(--c),var(--c)) center/1px 9px no-repeat,linear-gradient(var(--c),var(--c)) center/9px 1px no-repeat;animation:spin 16s linear infinite}
+  .ph-hud::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.5;
+    background:linear-gradient(90deg,transparent calc(33.33% - .5px),color-mix(in srgb,var(--c) 30%,transparent) 33.33%,transparent calc(33.33% + .5px),transparent calc(66.67% - .5px),color-mix(in srgb,var(--c) 30%,transparent) 66.67%,transparent calc(66.67% + .5px)),
+      linear-gradient(0deg,transparent calc(33.33% - .5px),color-mix(in srgb,var(--c) 30%,transparent) 33.33%,transparent calc(33.33% + .5px),transparent calc(66.67% - .5px),color-mix(in srgb,var(--c) 30%,transparent) 66.67%,transparent calc(66.67% + .5px))}
+  .tc-x{right:18px}
+  .tc-n{text-shadow:-.5px 0 rgba(255,77,94,.35),.5px 0 rgba(63,240,255,.35)}
+  /* map: a dot matrix that thickens toward the edges; legend corner brackets */
+  .map::after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.7;background-image:radial-gradient(rgba(63,240,255,.2) 1px,transparent 1.3px);background-size:22px 22px;
+    -webkit-mask:radial-gradient(ellipse 62% 58% at 50% 50%,transparent 45%,#000 100%);mask:radial-gradient(ellipse 62% 58% at 50% 50%,transparent 45%,#000 100%)}
+  .legend{background-image:linear-gradient(var(--line3),var(--line3)),linear-gradient(var(--line3),var(--line3)),linear-gradient(var(--line3),var(--line3)),linear-gradient(var(--line3),var(--line3));
+    background-size:8px 1px,1px 8px,8px 1px,1px 8px;background-position:top left,top left,bottom right,bottom right;background-repeat:no-repeat}
+  /* edge type along both sides of the screen */
+  .app::before,.app::after{position:absolute;top:50%;z-index:6;pointer-events:none;writing-mode:vertical-rl;font-family:var(--mono);font-size:7.5px;letter-spacing:.5em;color:var(--ink-faint);opacity:.75;white-space:nowrap}
+  .app::before{content:"THE THIRD PLACE  ◇  FIELD ATLAS  ◇  NOCTURNE";left:4px;transform:translateY(-50%) rotate(180deg)}
+  .app::after{content:"HOME · KOIWA 35.733N 139.883E  ◇  KANTO";right:4px;transform:translateY(-50%)}
+  @media (max-width:900px){ .app::before,.app::after,.strip::before,.radarw::after{display:none} }
+  @media (prefers-reduced-motion:reduce){ .hh h2::before,.strip::before,.row.on .pick .i::before,.ph-hud::before,.logo svg{animation:none} }
   @media (max-width:1240px){
     .index{width:250px} .analysis{width:308px}
     .dock{left:286px;right:344px;flex-direction:column;align-items:stretch}
@@ -889,6 +957,11 @@ function boot(){
     logEl.innerHTML=out.join("<br>")+'<br><span style="animation:blink3 .6s steps(1) infinite">_</span>';t=setTimeout(next,120);};
   next();
 }
+
+/* ---------- SF refinements: render telemetry (frames per second measured in this browser) ---------- */
+(function(){const t=document.querySelector(".tele");if(!t)return;const s=document.createElement("span");s.className="opt";s.innerHTML='<b>RENDER</b><span class="fps">—</span>';
+  t.insertBefore(s,t.lastElementChild);const el=s.lastChild;let n=0,t0=performance.now();
+  const f=now=>{n++;if(now-t0>=1000){el.textContent=Math.round(n*1000/(now-t0))+" FPS";n=0;t0=now;}requestAnimationFrame(f);};requestAnimationFrame(f);})();
 
 /* ---------- start ---------- */
 resort();setHash();selB.value=state.b?String(state.b):"none";

@@ -562,9 +562,10 @@ def parse_br002_confirmed_configuration(
 
     Confirmed configuration currently handled:
         - DAMNGOOD × CATAPULT FACTORY FIKA12 ×2
-        - Snow Peak オーロラボトル 1L
-        - YETI Yonder 1L
-        - Snow Peak 酒筒 Titanium
+        - Snow Peak オーロラボトル800 オーシャン（TW-800RE-OC）
+        - Snow Peak 酒筒 Titanium（TW-540）
+        - SMEG × 24Bottles Urban Bottle 1000mL（WBF02WH）
+        - SilverAnt 結晶化ブラックチタンボトル 600mL
         - 9Barista Handle for 9Barista Espresso Machine（Walnutオプション）
           (Handle Material Decision: a Confirmed accessory-level
           decision on an already-Confirmed equipment, documented
@@ -620,9 +621,10 @@ def parse_br002_confirmed_configuration(
     # --------------------------------------------------------
 
     water_items = (
-        ("Snow Peak", "オーロラボトル 1L"),
-        ("YETI", "Yonder 1L"),
-        ("Snow Peak", "酒筒 Titanium"),
+        ("Snow Peak", "オーロラボトル800 オーシャン（TW-800RE-OC）"),
+        ("Snow Peak", "酒筒 Titanium（TW-540）"),
+        ("SMEG × 24Bottles", "Urban Bottle 1000mL（WBF02WH）"),
+        ("SilverAnt", "結晶化ブラックチタンボトル 600mL"),
     )
 
     water_section = re.search(

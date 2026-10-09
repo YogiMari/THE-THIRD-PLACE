@@ -351,6 +351,67 @@
 
   /* touch: these boxes scroll only up and down (iOS lets a box drift sideways when it can scroll on both axes) */
   .analysis,.rows,.tc-d{overflow-x:hidden;overscroll-behavior-x:none;touch-action:pan-y}
+  /* ---------- SF refinements: daylight instruments — pearl edge light, double-ruled sheets with registration marks, numbered panels, rulers, edge type ---------- */
+  ::selection{background:rgba(217,119,87,.22);color:var(--ink)}
+  ::-webkit-scrollbar{width:6px;height:6px} ::-webkit-scrollbar-thumb{background:rgba(20,20,19,.13);border-radius:6px} ::-webkit-scrollbar-thumb:hover{background:rgba(181,83,47,.4)} ::-webkit-scrollbar-track{background:transparent}
+  .app{counter-reset:sf}
+  /* sheets: a pearl light along the top edge, an inner hairline frame with a registration mark in each corner */
+  .hud::before{content:"";position:absolute;left:22px;right:22px;top:0;height:1px;pointer-events:none;z-index:1;
+    background:linear-gradient(90deg,transparent,#fff 16%,rgba(239,181,151,.95) 44%,rgba(150,182,222,.85) 62%,#fff 84%,transparent)}
+  .hud:not(.analysis)::after{content:"";position:absolute;inset:5px;pointer-events:none;border-radius:14px;border:1px solid rgba(20,20,19,.045);
+    --m:rgba(20,20,19,.22);
+    background:linear-gradient(var(--m),var(--m)) left 6px top 9px/7px 1px no-repeat,linear-gradient(var(--m),var(--m)) left 9px top 6px/1px 7px no-repeat,
+      linear-gradient(var(--m),var(--m)) right 6px top 9px/7px 1px no-repeat,linear-gradient(var(--m),var(--m)) right 9px top 6px/1px 7px no-repeat,
+      linear-gradient(var(--m),var(--m)) left 6px bottom 9px/7px 1px no-repeat,linear-gradient(var(--m),var(--m)) left 9px bottom 6px/1px 7px no-repeat,
+      linear-gradient(var(--m),var(--m)) right 6px bottom 9px/7px 1px no-repeat,linear-gradient(var(--m),var(--m)) right 9px bottom 6px/1px 7px no-repeat}
+  .hud{box-shadow:var(--shadow),inset 0 1px 0 rgba(255,255,255,.9)}
+  /* panel numbers in clay italics */
+  .hh,.tc-top{counter-increment:sf}
+  .hh::before{content:counter(sf,decimal-leading-zero);font-family:var(--display);font-style:italic;font-size:12px;color:var(--a-deep);margin-right:-3px}
+  .tc-top::before{content:counter(sf,decimal-leading-zero);font-size:11px;color:var(--ink-faint);margin-right:-3px}
+  /* header: a ruler along the bottom edge and a clay hairline that fills with each minute of the JST clock */
+  .strip::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:5px;pointer-events:none;opacity:.55;
+    background:repeating-linear-gradient(90deg,rgba(20,20,19,.16) 0 1px,transparent 1px 8px) left bottom/100% 3px no-repeat,repeating-linear-gradient(90deg,rgba(20,20,19,.3) 0 1px,transparent 1px 64px) left bottom/100% 5px no-repeat}
+  .strip::before{content:"";position:absolute;left:0;right:0;bottom:-1px;height:1px;pointer-events:none;background:linear-gradient(90deg,rgba(217,119,87,0),var(--a));transform-origin:left;animation:sfMin 60s linear infinite;animation-delay:var(--sfmin,0s)}
+  @keyframes sfMin{from{transform:scaleX(0)}to{transform:scaleX(1)}}
+  .tele>span+span{padding-left:14px;border-left:1px solid var(--line)}
+  .tele .fps{color:var(--ok)}
+  .views button,.seg button{position:relative}
+  .views button[aria-pressed="true"]::after,.seg button[aria-pressed="true"]::after{content:"";position:absolute;left:50%;bottom:2px;width:3px;height:3px;margin-left:-1.5px;border-radius:50%;background:var(--a)}
+  /* field index: a clay tab on the selected row, a hairline drawn under the row in view */
+  .row::before{content:"";position:absolute;left:0;top:50%;width:3px;height:0;border-radius:3px;background:var(--a);transform:translateY(-50%);transition:height .4s cubic-bezier(.2,.8,.2,1)}
+  .row.on::before{height:58%} .row.vs::before{height:58%;background:var(--b)}
+  .row::after{content:"";position:absolute;left:10px;right:10px;bottom:0;height:1px;background:linear-gradient(90deg,var(--a),transparent);transform:scaleX(0);transform-origin:left;transition:transform .5s cubic-bezier(.2,.8,.2,1);opacity:.45;pointer-events:none}
+  .row:hover::after{transform:scaleX(1)}
+  .row.on .pick .i{color:var(--a-deep)}
+  /* analysis: rulers under the metrics, ring keys, a caption on the radar, clay leaders on sections, porcelain caps on the bars */
+  .mt{background:repeating-linear-gradient(90deg,rgba(20,20,19,.14) 0 1px,transparent 1px 5px) left 0 bottom 3px/calc(100% - 8px) 3px no-repeat}
+  .mt+.mt{background-position:left 12px bottom 3px;background-size:calc(100% - 20px) 3px}
+  .mt .k::before{content:"";display:inline-block;width:5px;height:5px;border-radius:50%;border:1px solid var(--a);margin-right:6px;vertical-align:1px}
+  .radarw{padding-top:16px}
+  .radarw::before{content:"10-axis resonance profile";position:absolute;left:2px;top:0;font-family:var(--display);font-style:italic;font-size:12.5px;color:var(--ink-faint)}
+  .radarw::after{content:"";position:absolute;left:0;right:0;top:9px;margin-left:150px;height:1px;background:var(--line)}
+  .sec>.k:first-child::before,.sec>label.k::before{content:"";display:inline-block;width:12px;height:1px;background:var(--a);vertical-align:3px;margin-right:7px}
+  .br .t i::after{content:"";position:absolute;right:-3px;top:50%;width:8px;height:8px;margin-top:-4px;border-radius:50%;background:#fff;box-shadow:0 0 0 1.5px var(--a),0 2px 6px rgba(181,83,47,.3)}
+  .flog .ent{box-shadow:inset 3px 0 0 var(--a)}
+  /* cards: crop marks and a fine cross over the photo */
+  .ph-img::before{content:"";position:absolute;inset:9px;z-index:3;pointer-events:none;--w:rgba(255,255,255,.88);
+    background:linear-gradient(var(--w),var(--w)) top left/12px 1px no-repeat,linear-gradient(var(--w),var(--w)) top left/1px 12px no-repeat,
+      linear-gradient(var(--w),var(--w)) top right/12px 1px no-repeat,linear-gradient(var(--w),var(--w)) top right/1px 12px no-repeat,
+      linear-gradient(var(--w),var(--w)) bottom left/12px 1px no-repeat,linear-gradient(var(--w),var(--w)) bottom left/1px 12px no-repeat,
+      linear-gradient(var(--w),var(--w)) bottom right/12px 1px no-repeat,linear-gradient(var(--w),var(--w)) bottom right/1px 12px no-repeat,
+      linear-gradient(var(--w),var(--w)) center/1px 14px no-repeat,linear-gradient(var(--w),var(--w)) center/14px 1px no-repeat;opacity:.85}
+  /* map: a fine survey grid that shows toward the edges */
+  .map::after{content:"";position:absolute;inset:0;pointer-events:none;
+    background-image:linear-gradient(rgba(20,20,19,.05) 1px,transparent 1px),linear-gradient(90deg,rgba(20,20,19,.05) 1px,transparent 1px);background-size:48px 48px;
+    -webkit-mask:radial-gradient(ellipse 70% 64% at 50% 50%,transparent 42%,#000 100%);mask:radial-gradient(ellipse 70% 64% at 50% 50%,transparent 42%,#000 100%)}
+  .legend::before{content:"";position:absolute;left:0;top:10px;bottom:10px;width:2px;border-radius:2px;background:linear-gradient(var(--a),rgba(217,119,87,0))}
+  /* edge type along both sides of the screen */
+  .app::before,.app::after{position:absolute;top:50%;z-index:6;pointer-events:none;writing-mode:vertical-rl;font-family:var(--ui);font-size:7.5px;font-weight:600;letter-spacing:.46em;text-transform:uppercase;color:var(--ink-faint);opacity:.8;white-space:nowrap}
+  .app::before{content:"The Third Place  —  Field Atlas  —  Aubade";left:5px;transform:translateY(-50%) rotate(180deg)}
+  .app::after{content:"Home · Koiwa 35.733N 139.883E  —  Kanto";right:5px;transform:translateY(-50%)}
+  @media (max-width:900px){ .app::before,.app::after,.radarw::after{display:none} }
+  @media (prefers-reduced-motion:reduce){ .strip::before{animation:none;transform:none;opacity:.4} .row::before,.row::after{transition:none} }
   @media (max-width:1240px){
     .index{width:256px} .analysis{width:312px}
     .dock{left:292px;right:348px;flex-direction:column;align-items:stretch}
@@ -933,6 +994,12 @@ function boot(){
 }
 // a warm spotlight follows the pointer across the map
 mapEl.addEventListener("pointermove",e=>{const r=mapEl.getBoundingClientRect();mapEl.style.setProperty("--mx",(e.clientX-r.left)+"px");mapEl.style.setProperty("--my",(e.clientY-r.top)+"px");});
+
+/* ---------- SF refinements: render telemetry (frames per second measured in this browser); the header hairline keeps time with the clock's minute ---------- */
+(function(){try{document.documentElement.style.setProperty("--sfmin",-(Date.now()/1000%60).toFixed(2)+"s");}catch(e){}
+  const t=document.querySelector(".tele");if(!t)return;const s=document.createElement("span");s.className="opt";s.innerHTML='<b>RENDER</b><span class="fps">—</span>';
+  t.insertBefore(s,t.lastElementChild);const el=s.lastChild;let n=0,t0=performance.now();
+  const f=now=>{n++;if(now-t0>=1000){el.textContent=Math.round(n*1000/(now-t0))+" fps";n=0;t0=now;}requestAnimationFrame(f);};requestAnimationFrame(f);})();
 
 /* ---------- start ---------- */
 resort();setHash();selB.value=state.b?String(state.b):"none";
