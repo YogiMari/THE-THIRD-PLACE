@@ -1,44 +1,29 @@
 #!/usr/bin/env python3
 
 """
-THE THIRD PLACE — Field Atlas Radar generator
+THE THIRD PLACE — Field Atlas MD-002 parser
 
-Builds the Field Atlas Radar page (a single self-contained HTML file)
-from MD-002 Field Atlas Landscape Framework:
+The shared reader of MD-002 Field Atlas Landscape Framework for the Field
+Atlas pages (Nocturne and Aubade) and their tools
+(field_atlas_nocturne.py, field_atlas_aubade.py, field_atlas_fetch.py,
+field_atlas_check.py). It builds no page itself.
 
     Field Atlas Database         -> rank (document order), name,
                                     prefecture, travel time, ground icons,
                                     visited status, Atlas Resonance, Identity
-    Sub-Scores
-        Sub-Score Table          -> 10-axis scores
-        Early Check-in Record    -> early check-in category, detail, source
+    Sub-Score Table              -> 10-axis scores
+    Early Check-in Record        -> early check-in category, detail, source
 
-It also carries the same field information as Field Atlas Nocturne and
-Aubade (ground, Site Record, Field Log with gear names, elevation,
-surroundings, positions for sunrise and sunset), built by
-field_atlas_nocturne.extras() from MD-002, DB-001, MD-004 and
-scripts/data/field_atlas/. No map or photos.
-
-Scores come only from MD-002. The page carries no data of its own, so
-any conversation can regenerate it after MD-002 changes and republish it
-to the same Artifact URL (recorded in MD-002 §Visualization).
-
-Usage:
-    python3 scripts/field_atlas_radar.py \
-        --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md \
-        --out field-atlas-radar.html
+Scores come only from MD-002. It also names the two script files every page
+inserts (CORE_JS, RADAR3D_JS) and joins them in core_script().
 """
 
-import argparse
-import datetime
-import json
 import re
 import sys
 from pathlib import Path
 
-TEMPLATE = Path(__file__).parent / "templates" / "field_atlas_radar.html"
-CORE_JS = Path(__file__).parent / "templates" / "field_atlas_core.js"  # helpers and map-free tools shared by all six pages
-RADAR3D_JS = Path(__file__).parent / "templates" / "field_atlas_radar3d.js"  # the 3D radar renderer, one source for all six pages
+CORE_JS = Path(__file__).parent / "templates" / "field_atlas_core.js"  # helpers and map-free tools shared by both pages
+RADAR3D_JS = Path(__file__).parent / "templates" / "field_atlas_radar3d.js"  # the 3D radar renderer, one source for both pages
 
 
 def core_script() -> str:
@@ -199,38 +184,3 @@ def build(md002: Path) -> tuple[list[dict], str]:
             }
         )
     return data, version
-
-
-def render(md002: Path) -> tuple[str, list[str], int, str]:
-    """The Radar page, its warnings, the field count and the MD-002 version."""
-    import field_atlas_nocturne as nav  # imported here: it imports this module
-
-    data, version = build(md002)
-    warnings: list[str] = []
-    extra = nav.extras(md002, data, nav.load("locations.json"), warnings)
-    html = (
-        TEMPLATE.read_text(encoding="utf-8")
-        .replace("/*__CORE_JS__*/", core_script())
-        .replace("/*__DATA__*/[]", json.dumps(data, ensure_ascii=False))
-        .replace("/*__EXTRA__*/{}", json.dumps(extra, ensure_ascii=False, separators=(",", ":")))
-        .replace("__MD002_VERSION__", version)
-        .replace("__GENERATED__", datetime.date.today().isoformat())
-    )
-    return html, warnings, len(data), version
-
-
-def main() -> None:
-    parser = argparse.ArgumentParser(description=__doc__.split("\n\n")[1])
-    parser.add_argument("--md002", required=True, type=Path)
-    parser.add_argument("--out", required=True, type=Path)
-    args = parser.parse_args()
-
-    html, warnings, n, version = render(args.md002)
-    args.out.write_text(html, encoding="utf-8")
-    for w in warnings:
-        print("warning:", w, file=sys.stderr)
-    print(f"Field Atlas Radar: {n} fields from MD-002 Ver.{version} -> {args.out}")
-
-
-if __name__ == "__main__":
-    main()

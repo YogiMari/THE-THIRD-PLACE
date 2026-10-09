@@ -1,5 +1,5 @@
-// Field Atlas shared script — the part of the page script the five map editions (Nocturne, Aubade, Cartograph, Contour,
-// Gloaming) have in common. scripts/field_atlas_nocturne.py (build) inserts field_atlas_core.js, field_atlas_radar3d.js and
+// Field Atlas shared script — the part of the page script the two map editions (Nocturne and Aubade)
+// have in common. scripts/field_atlas_nocturne.py (build) inserts field_atlas_core.js, field_atlas_radar3d.js and
 // this file, in that order, where each template has its SHARED_JS marker. It runs in the page's own closure, after the data
 // constants (DATA, GEO, LL, IMG, ROUTES, EXTRA ...) and PAGE_URL are defined, and reaches the page's map objects (GL, V, proj,
 // FR ...) only when called. What differs between the editions (CSS, staging, camera, selection flight) stays in the

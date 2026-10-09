@@ -9,7 +9,7 @@ a 3D map of Kanto centred on Koiwa, with each field's road route, photo,
 
     MD-002 Field Atlas Landscape Framework   -> fields, scores, early check-in,
                                                 ground surface (parsed by
-                                                field_atlas_radar.py) and the
+                                                field_atlas_md002.py) and the
                                                 Reference Benchmark Site
                                                 and §Site Record (ground, site
                                                 area, parking, source)
@@ -52,13 +52,13 @@ import sys
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).parent))
-import field_atlas_radar  # noqa: E402  (MD-002 parser shared with the radar)
+import field_atlas_md002  # noqa: E402  (shared MD-002 parser)
 
 HERE = Path(__file__).parent
 TEMPLATE = HERE / "templates" / "field_atlas_nocturne.html"
-SHARED_JS = HERE / "templates" / "field_atlas_shared.js"  # script common to the five map templates
-CORE_JS = field_atlas_radar.CORE_JS  # shared by the map pages and the Radar page
-RADAR3D_JS = field_atlas_radar.RADAR3D_JS  # the 3D radar renderer, one source for all six pages
+SHARED_JS = HERE / "templates" / "field_atlas_shared.js"  # script common to the two map templates
+CORE_JS = field_atlas_md002.CORE_JS  # shared by both pages
+RADAR3D_JS = field_atlas_md002.RADAR3D_JS  # the 3D radar renderer, one source for both pages
 DATA_DIR = HERE / "data" / "field_atlas"
 DB001 = HERE.parent / "DB" / "DB-001_Project_Ledger.md"
 MD004 = HERE.parent / "MD" / "MD-004"  # folder: entry file + one file per domain
@@ -96,9 +96,9 @@ def load(name: str):
 def parse_benchmark(md002: Path) -> list[dict]:
     """MD-002 §Reference Benchmark Site: name, note in brackets, tag, text."""
     text = md002.read_text(encoding="utf-8")
-    block = field_atlas_radar.section(text, "# Reference Benchmark Site", "#")
+    block = field_atlas_md002.section(text, "# Reference Benchmark Site", "#")
     out = []
-    for cells in field_atlas_radar.table_rows(block)[1:]:
+    for cells in field_atlas_md002.table_rows(block)[1:]:
         m = re.match(r"^(.*?)（(.+)）$", cells[0].strip())
         tag, _, note = " | ".join(cells[1:]).replace("**", "").partition("<br>")
         out.append({"name": (m.group(1) if m else cells[0]).strip(), "info": m.group(2) if m else "",
@@ -111,7 +111,7 @@ def parse_site_record(md002: Path) -> dict[str, dict]:
     text = md002.read_text(encoding="utf-8")
     if "## Site Record" not in text:
         return {}
-    rows = field_atlas_radar.table_rows(field_atlas_radar.section(text, "## Site Record", "##"))
+    rows = field_atlas_md002.table_rows(field_atlas_md002.section(text, "## Site Record", "##"))
     return {c[0]: {"ground": c[1], "area": c[2], "parking": c[3], "source": c[4]} for c in rows[1:] if len(c) >= 5}
 
 
@@ -152,8 +152,8 @@ def parse_field_log(db001: Path, names: set[str], warnings: list[str]) -> dict[s
     if not db001.exists():
         warnings.append(f"no DB-001 (Field Log skipped): {db001}")
         return {}
-    block = field_atlas_radar.section(db001.read_text(encoding="utf-8"), "# Field Log", "#")
-    rows = field_atlas_radar.table_rows(block)
+    block = field_atlas_md002.section(db001.read_text(encoding="utf-8"), "# Field Log", "#")
+    rows = field_atlas_md002.table_rows(block)
     head, log = rows[0], {}
     for cells in rows[1:]:
         row = dict(zip(head, cells))
@@ -174,7 +174,7 @@ def parse_field_log(db001: Path, names: set[str], warnings: list[str]) -> dict[s
 def extras(md002: Path, data: list[dict], locations: dict, warnings: list[str],
            db001: Path = DB001, md004: Path = MD004) -> dict:
     """Field Log, benchmark, Site Record, elevation, surroundings, gear names and the
-    cold guide (JMA normal of the daily lowest temperature), keyed by rank. Shared by the Nocturne, Aubade and Radar pages."""
+    cold guide (JMA normal of the daily lowest temperature), keyed by rank. Shared by the Nocturne and Aubade pages."""
     field_log = parse_field_log(db001, {d["name"] for d in data}, warnings)
     bench = []
     for b in parse_benchmark(md002):
@@ -241,7 +241,7 @@ def page_script(template: Path, version: str) -> str:
     """A map template with the shared scripts and the version and date filled in, its data placeholders left."""
     return (
         template.read_text(encoding="utf-8")
-        .replace("/*__SHARED_JS__*/", field_atlas_radar.core_script() + "\n" + SHARED_JS.read_text(encoding="utf-8"))
+        .replace("/*__SHARED_JS__*/", field_atlas_md002.core_script() + "\n" + SHARED_JS.read_text(encoding="utf-8"))
         .replace("__MD002_VERSION__", version)
         .replace("__GENERATED__", datetime.date.today().isoformat())
     )
@@ -257,7 +257,7 @@ def build(md002: Path, template: Path = TEMPLATE, db001: Path = DB001, md004: Pa
 
 def assemble(md002: Path, db001: Path = DB001, md004: Path = MD004) -> tuple[dict, str, list[str]]:
     """The page data of the map editions, keyed as in PLACEHOLDERS, with the MD-002 version and the warnings."""
-    data, version = field_atlas_radar.build(md002)
+    data, version = field_atlas_md002.build(md002)
     locations = load("locations.json")
     routes = load("routes.json")
     images = load("images.json")
@@ -301,7 +301,7 @@ def assemble(md002: Path, db001: Path = DB001, md004: Path = MD004) -> tuple[dic
             warnings.append(f"no photo (run the fetch script): {name}")
 
     extra = extras(md002, data, locations, warnings, db001, md004)
-    # contour lines and hill shading (GSI DEM grid); only the map pages carry it, the Radar page has no map
+    # contour lines and hill shading (GSI DEM grid)
     if (DATA_DIR / "terrain.json").exists():
         extra["terrain"] = load("terrain.json")
     else:

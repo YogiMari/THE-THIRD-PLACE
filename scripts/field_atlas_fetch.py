@@ -48,7 +48,7 @@ import urllib.request
 from pathlib import Path
 
 from field_atlas_nocturne import DATA_DIR, LAT0, LON0, image_path, load
-import field_atlas_radar
+import field_atlas_md002
 
 UA = "Mozilla/5.0 (THE THIRD PLACE Field Atlas Nocturne)"
 
@@ -93,7 +93,7 @@ def geocode(query: str):
 
 
 def cmd_geocode(args) -> None:
-    data, _ = field_atlas_radar.build(args.md002)
+    data, _ = field_atlas_md002.build(args.md002)
     locations = load("locations.json")
     for d in data:
         loc = locations.get(d["name"], {"source": "municipality", "query": d["pref"].split("・")[0]})

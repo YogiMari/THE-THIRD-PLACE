@@ -1,8 +1,7 @@
-// Field Atlas core — what every Field Atlas page shares, map or not: the field helpers (get, pv, nav ...), OP-010 tables,
+// Field Atlas core — what both Field Atlas pages share: the field helpers (get, pv, nav ...), OP-010 tables,
 // DB-001 Field Log / Site Record / elevation / cold-guide lookups, sunrise-sunset-moon (NOAA equations), great-circle
 // distance, and the tools that need no map: 今日の一手, sun band, route comparison (straight line) and the visited trail.
-// scripts/field_atlas_nocturne.py (map pages, inside the SHARED_JS marker) and scripts/field_atlas_radar.py (Radar page,
-// at the CORE_JS marker) insert it. It runs in the page's own closure after the data constants (DATA, EXTRA, LL ...) and
+// scripts/field_atlas_nocturne.py (build, inside the SHARED_JS marker) inserts it. It runs in the page's own closure after the data constants (DATA, EXTRA, LL ...) and
 // reaches `state` (state.a = selected rank, state.b = compared rank or null) only when called. Not page-specific code.
 const D2R=Math.PI/180;
 const LON0=139.8827,LAT0=35.7331,KX=Math.cos(LAT0*Math.PI/180)*10,KZ=10;
@@ -60,7 +59,7 @@ function moonAt(ds){const age=(((Date.parse(ds+"T12:00:00Z")-Date.UTC(2000,0,6,1
   const lit=(1-Math.cos(2*Math.PI*age/29.530588853))/2;
   const nm=age<1.85||age>=27.68?"新月":age<5.54?"三日月":age<9.23?"上弦":age<12.92?"十日夜":age<16.61?"満月":age<20.3?"寝待月":age<23.99?"下弦":"有明月";
   return{age,lit,nm};}
-const FA={mapOnly:false,noMap:false,ready:false,gl:null,terr:null,trail:[],contour:false,relief:false,showTrail:true,sunDate:null,open:false,B:null,
+const FA={mapOnly:false,ready:false,gl:null,terr:null,trail:[],contour:false,relief:false,showTrail:true,sunDate:null,open:false,B:null,
   env:{on:false,h:+new Date(Date.now()+9*3600e3).toISOString().slice(11,13),mo:+new Date(Date.now()+9*3600e3).toISOString().slice(5,7)},
   // a template overrides these (Object.assign(FA.theme,{...})): night / day / warm = sky colours the light moves toward;
   // nightAmt / dayAmt / warmAmt = how far (0-1); landAmt = how much the season tints the ground; veil = strength of the screen tint;
@@ -165,7 +164,7 @@ function routeSecHTML(){
 function trailSecHTML(){
   const A=state.a,on=FA.trail.some(x=>x.r===A),list=FA.trail.filter(x=>get(x.r)&&LL[x.r]);let tot=0;
   const li=list.map((x,i)=>{const leg=i?gc(LL[list[i-1].r],LL[x.r]).km:0;tot+=leg;return `<li><button type="button" class="fa-lk" data-fa="pick" data-r="${x.r}"><b>${i+1}</b>${esc(get(x.r).name)}</button><em>${i?"+"+fmtKm(leg)+" km":x.t||"START"}</em></li>`;}).join("");
-  return `<span class="k">TRAIL · 足跡</span><div class="fa-row"><button type="button" class="fa-btn${on?" on":""}" data-fa="mark" aria-pressed="${on}">${on?"この場所の足跡を外す":"この場所を訪問済みにする"}</button>${FA.noMap?"":`<button type="button" class="fa-btn" data-fa="trail" aria-pressed="${FA.showTrail}">${FA.showTrail?"地図に表示中":"地図で非表示"}</button>`}</div>`+
+  return `<span class="k">TRAIL · 足跡</span><div class="fa-row"><button type="button" class="fa-btn${on?" on":""}" data-fa="mark" aria-pressed="${on}">${on?"この場所の足跡を外す":"この場所を訪問済みにする"}</button><button type="button" class="fa-btn" data-fa="trail" aria-pressed="${FA.showTrail}">${FA.showTrail?"地図に表示中":"地図で非表示"}</button></div>`+
     (list.length?`<ol class="fa-tl">${li}</ol><div class="fa-row"><span class="fa-dim">${list.length}か所 · 直線の合計 <b>${fmtKm(tot)}</b> km</span><button type="button" class="fa-btn" data-fa="undo">1つ戻す</button><button type="button" class="fa-btn" data-fa="clear">全部消す</button></div>`:`<span class="fa-dim">まだありません。行った場所を「訪問済みにする」順に並べ、区間の直線距離を示します。${FA.noMap?"":"地図には順に結んだ線を引きます。"}</span>`)+
     `<span class="srcl">このブラウザの中だけのメモです（MD-002の「訪問済み」とは別物で、他の端末には移りません）。区間は直線距離で、道のりや所要時間ではありません。</span>`;
 }

@@ -1,11 +1,11 @@
 # Field Atlas Nocturne — design and rebuild notes
 
-Field Atlas Nocturne is a single-page viewer for MD-002 Field Atlas. It has five editions that share this data folder: the dark Nocturne (below), the light Field Atlas Aubade (see [Field Atlas Aubade](#field-atlas-aubade)), and the three later skins [Cartograph, Contour and Gloaming](#field-atlas-cartograph-contour-and-gloaming). All five carry the same [Atlas tools](#atlas-tools). It shows a 3D map of Kanto centred on Koiwa. Selecting a field draws its road route from Koiwa, its photo, its 10-axis analysis and its early check-in record. This file records how the page is designed and built, so it can be regenerated or rebuilt later.
+Field Atlas Nocturne is a single-page viewer for MD-002 Field Atlas. It has two editions that share this data folder: the dark Nocturne (below) and the light Field Atlas Aubade (see [Field Atlas Aubade](#field-atlas-aubade)). Both carry the same [Atlas tools](#atlas-tools). It shows a 3D map of Kanto centred on Koiwa. Selecting a field draws its road route from Koiwa, its photo, its 10-axis analysis and its early check-in record. This file records how the page is designed and built, so it can be regenerated or rebuilt later.
 
 - Published at: as one of the two editions of [Field Atlas](#field-atlas-nocturne-and-aubade-in-one-page), https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm
 - Template: `scripts/templates/field_atlas_nocturne.html`
 - Generator: `scripts/field_atlas_nocturne.py` (standard library only)
-- Shared scripts: `scripts/templates/field_atlas_shared.js` (the part of the page script the five map editions have in common), `field_atlas_core.js` (helpers and the map-free tools, shared with the Radar page) and `field_atlas_radar3d.js` (the 3D radar, one renderer for all six pages); see [Shared script](#shared-script)
+- Shared scripts: `scripts/templates/field_atlas_shared.js` (the part of the page script the two map editions have in common), `field_atlas_core.js` (helpers and the map-free tools) and `field_atlas_radar3d.js` (the 3D radar, one renderer for both pages); `scripts/field_atlas_md002.py` is the MD-002 parser the generators and checks share and joins the core and radar scripts (`core_script()`); see [Shared script](#shared-script)
 - Data fetcher: `scripts/field_atlas_fetch.py` (network; Pillow for photos)
 - Scores: always read from MD-002. These data files hold only geography and photos.
 
@@ -34,9 +34,9 @@ The index can be sorted by Resonance, Field 8 or travel time, and filtered by vi
 
 A field can be opened directly with `#f=<rank>` at the end of the page URL (rank = MD-002 Database order); the page updates the hash on every selection, and "リンクをコピー" on the Destination / TARGET card copies the published URL with it. Whether claude.ai passes the hash through to the page has not been checked.
 
-Field Atlas Radar (`scripts/field_atlas_radar.py`, https://claude.ai/artifact/WjHqjyXoKLRxfTvxTsDaov) shows the same field information without the map and photos: it calls `field_atlas_nocturne.extras()`, which builds the Field Log, benchmark, Site Record, elevation, surroundings, gear names, cold guide and positions for all three pages (placeholder `/*__EXTRA__*/{}`).
+Both pages carry the same field information: `field_atlas_nocturne.extras()` builds the Field Log, benchmark, Site Record, elevation, surroundings, gear names, cold guide and positions for both pages (placeholder `/*__EXTRA__*/{}`).
 
-When DB-001 §Field Log, MD-002 or MD-004 changes, rebuild and republish all six pages (Nocturne, Aubade, Cartograph, Contour, Gloaming, Radar).
+When DB-001 §Field Log, MD-002 or MD-004 changes, rebuild and republish both pages (Nocturne, Aubade).
 
 `python3 scripts/field_atlas_check.py` checks MD-002, DB-001, MD-004, the data files (including that `terrain.json` is a whole grid) and all the generators against each other, and runs in CI (`.github/workflows/third-place-sync.yml`). Run it after renaming a field or editing the Field Log.
 
@@ -82,9 +82,9 @@ The single-edition generators (`field_atlas_nocturne.py`, `field_atlas_aubade.py
 
 ## Shared script
 
-The Nocturne and Aubade templates repeated the same script (the three later skins take it too). What is identical now lives in `scripts/templates/field_atlas_shared.js`, and `field_atlas_nocturne.build()` inserts it at the `/*__SHARED_JS__*/` marker inside each template's `<script>` (so it runs in the page's own closure). It holds the ground / lineage / average tables, Field Log and next-camp lookups, Site Record, elevation, sunrise / sunset / moon, surroundings, cold guide, gear names, the `#f=<rank>` deep link and link copy, the info bubble (`bubbleHTML` / `showBubble` / `placeBubble`), `tapTo`, and the function declarations the two editions have word for word (index rows, sort, cards' helpers, camera framing, projection, picking, crosshair).
+The Nocturne and Aubade templates repeated the same script. What is identical now lives in `scripts/templates/field_atlas_shared.js`, and `field_atlas_nocturne.build()` inserts it at the `/*__SHARED_JS__*/` marker inside each template's `<script>` (so it runs in the page's own closure). It holds the ground / lineage / average tables, Field Log and next-camp lookups, Site Record, elevation, sunrise / sunset / moon, surroundings, cold guide, gear names, the `#f=<rank>` deep link and link copy, the info bubble (`bubbleHTML` / `showBubble` / `placeBubble`), `tapTo`, and the function declarations the two editions have word for word (index rows, sort, cards' helpers, camera framing, projection, picking, crosshair).
 
-What stays in each template: CSS, staging and motion (boot, camera flight, effects), the dive / focus code that differs, the data constants (`ROUTES` is the same name in both) and `PAGE_URL`. When a change applies to both editions, make it in the shared file; when only one edition needs it, keep it in that template. `field_atlas_check.py` fails if a template does not have exactly one marker (it checks all five map templates). Field Atlas Radar is a separate light page: it does not use the shared file, but takes `field_atlas_core.js` and `field_atlas_radar3d.js`, which `field_atlas_nocturne.build()` puts in front of the shared file on the map pages (`field_atlas_radar.core_script()`). The core file holds the field helpers, OP-010 tables, Field Log / Site Record / elevation / cold-guide lookups, the NOAA sun and moon functions, the great-circle function and the map-free tools; the shared file keeps everything that needs a map.
+What stays in each template: CSS, staging and motion (boot, camera flight, effects), the dive / focus code that differs, the data constants (`ROUTES` is the same name in both) and `PAGE_URL`. When a change applies to both editions, make it in the shared file; when only one edition needs it, keep it in that template. `field_atlas_check.py` fails if a template does not have exactly one marker (it checks both map templates). The shared file is preceded by `field_atlas_core.js` and `field_atlas_radar3d.js`, which `field_atlas_nocturne.build()` puts in front of it (`field_atlas_md002.core_script()`). The core file holds the field helpers, OP-010 tables, Field Log / Site Record / elevation / cold-guide lookups, the NOAA sun and moon functions, the great-circle function and the map-free tools; the shared file keeps everything that needs a map.
 
 ## Rebuild
 
@@ -103,7 +103,7 @@ When MD-002 gains a field:
 3. Add its photo source to `images.json` (`page` = the page shown as credit, `image` = the image file URL), then run `images` and commit `images/`.
 4. `python3 scripts/field_atlas_fetch.py elevation` and `surroundings` add its elevation and surroundings.
 5. Add its row to MD-002 §Site Record.
-6. Run `python3 scripts/field_atlas_check.py`, then rebuild and republish all five map editions (Nocturne, Aubade, Cartograph, Contour, Gloaming).
+6. Run `python3 scripts/field_atlas_check.py`, then rebuild and republish both pages (Nocturne, Aubade).
 
 The generator prints a warning for every field that lacks a location, route or photo. The page still builds; that field shows no line or "NO IMAGE".
 
@@ -253,7 +253,7 @@ Same frame and content as the Nocturne: header bar (logo, Oblique / Top view, cu
 
 ## Atlas tools
 
-The tools live in `scripts/templates/field_atlas_shared.js` and `field_atlas_core.js` (section "Atlas tools"), so every map edition has them (the map-free ones, 今日の一手, trail, sun band and route comparison, are in the core file and also run on the Radar page). A template only supplies colours: CSS variables `--fa-*` (the tools panel and the sections it adds), `Object.assign(FA.theme, {...})` (3D overlays, and how far light and sky follow the time and season) and three one-line hooks (`faStart()` after `initGL()`, `faRefresh()` at the end of `startRadar()`, `faFrame(now, lift)` at the end of `frame()`). Nothing is typed in: each tool computes from data already on the page, and nothing is fetched at run time.
+The tools live in `scripts/templates/field_atlas_shared.js` and `field_atlas_core.js` (section "Atlas tools"), so both editions have them (the map-free ones, 今日の一手, trail, sun band and route comparison, are in the core file). A template only supplies colours: CSS variables `--fa-*` (the tools panel and the sections it adds), `Object.assign(FA.theme, {...})` (3D overlays, and how far light and sky follow the time and season) and three one-line hooks (`faStart()` after `initGL()`, `faRefresh()` at the end of `startRadar()`, `faFrame(now, lift)` at the end of `frame()`). Nothing is typed in: each tool computes from data already on the page, and nothing is fetched at run time.
 
 | Tool | Where | What it does and where it comes from |
 |---|---|---|
@@ -270,39 +270,17 @@ The only climate figures are the existing JMA normals for the next camp (the COL
 
 ### 3D radar
 
-The 10-axis radar is one SVG scene drawn by `Radar3D()` in `scripts/templates/field_atlas_radar3d.js` (own projection, painter's algorithm, no WebGL, so no second context next to Three.js). All six pages call it; axis order, names and values come from the same data as before (MD-002 Sub-Score Table), and nothing is typed in the renderer.
+The 10-axis radar is one SVG scene drawn by `Radar3D()` in `scripts/templates/field_atlas_radar3d.js` (own projection, painter's algorithm, no WebGL, so no second context next to Three.js). Both pages call it; axis order, names and values come from the same data as before (MD-002 Sub-Score Table), and nothing is typed in the renderer.
 
 - Scene: a floating ground disc with a soft shadow, a bezel with 60 ticks, decagon rings at 2 / 4 / 6 / 8 / 10, 10 spokes and a faint cage of rim posts; field A and field B as translucent prisms (thickness 9, sides back-face culled and depth sorted across both fields); a pillar with a cap and its value at every axis tip (height 4.4 per point); axis names as billboards scaled by depth and faded on the far side; a slow sweep wedge on the ground (still when motion is reduced). Unvisited fields keep the dashed outline. The Radar page also draws the all-field average and the 5 / 10 ring marks.
 - Looks: `Radar3D(svg, {look})` draws the same geometry, values and depth order in a page's own idiom. Nocturne passes `look:"hud"`: a glowing floor, a double bezel of 120 ticks with two arcs turning one way and a dotted arc the other, dotted rings, a centre reticle, a radar sweep with a glowing leading edge, glass prisms over a dashed footprint with glowing top edges (SVG blur filter), light beams that fade toward the floor with diamond caps, and axis names numbered 01-10 above them. Aubade passes `look:"porcelain"`: a warm blurred shadow under an ivory plate with a double rim and a ring of 60 beads (clay at the axes), dotted rings, a soft band of light turning slowly, glazed prisms (white-to-clay gradient top with a white inner rim, warm blurred shadow), hairline stems with porcelain beads. The ▲ ▼ ↺ buttons and the tooltip follow the look (square HUD keys; round white chips). Value labels carry the class `r3v` with no inline font, and each page sets their typeface (Nocturne: Saira Condensed; Aubade: Newsreader italic). Without `look` the scene above is drawn as before (Cartograph, Contour, Gloaming, Radar).
-- Colours: read once from the page's own classes `.rg .rtk .rax .rpa .rpb .rda .rdb` (computed style), so each skin keeps its look; the Radar page defines the same class names.
+- Colours: read once from the page's own classes `.rg .rtk .rax .rpa .rpb .rda .rdb` (computed style), so each edition keeps its look.
 - Controls: drag = yaw (a mouse also tilts); on touch the svg is `touch-action: pan-y`, so a horizontal swipe rotates and a vertical swipe scrolls the page, and the ▲ ▼ buttons tilt; arrow keys rotate when the chart has focus (Home or Esc resets); double click, double tap or ↺ resets. Inertia after a drag; a slow sway runs until the first interaction and pauses on hover or focus; with `prefers-reduced-motion` there is no sway, no sweep and no inertia, and reset is instant. The loop draws only while the chart is on screen and the tab is visible.
 - Readouts: hovering (or tapping, on touch) a pillar shows the field, axis, value and all-field average; the svg has `role="img"`, an `aria-label` and a `<desc>` listing the 10 values (`Radar3D.alt()`), and the segmented bars / axes table stay beside it as the text alternative.
 - A / B: the page's existing tween (`RA` / `RB`) feeds `set()` every frame, so the transitions between selections are unchanged.
 
-### Radar page tools
+### Map-free tools
 
-`field_atlas_core.js` holds the logic of the tools that need no map, and the Radar page (`field_atlas_radar.html`) takes it at its `CORE_JS` marker, so there is one source: 今日の一手 (same rules and explanation), SUN BAND (NOAA computation), ROUTE (A and B straight-line distance and bearing, labelled STRAIGHT-LINE) and TRAIL (a visited memo in `localStorage` key `fa-trail1`, separate from MD-002's visited status). The sun, moon and cold-guide helpers of the Radar page are the same functions as the map pages'.
+`field_atlas_core.js` holds the logic of the tools that need no map, so there is one source: 今日の一手 (same rules and explanation), SUN BAND (NOAA computation), ROUTE (A and B straight-line distance and bearing, labelled STRAIGHT-LINE) and TRAIL (a visited memo in `localStorage` key `fa-trail1`, separate from MD-002's visited status).
 
 Rebuild the terrain grid with `python3 scripts/field_atlas_fetch.py terrain` (about 15 tiles).
-
-## Field Atlas Cartograph, Contour and Gloaming
-
-Three skins of the same page, each with its own template and generator (`field_atlas_cartograph.py`, `field_atlas_contour.py`, `field_atlas_gloaming.py`; each calls `field_atlas_nocturne.build()` like the Aubade). They share the Aubade's layout, content, interaction and camera engine, so a change to behaviour belongs in the shared script. What differs is the look. Each has all nine selection flights: the Aubade's four (`chase`, `overview`, `rail`, `orbit`) and five written for the same engine after the Nocturne's (`warp`, `spiral`, `road`, `crane`, `jump`; the Nocturne has its own five, the Aubade its four). Chosen at random, never the same twice in a row; `focus(kind)` forces one.
-
-Each template keeps its colours as CSS variables in `:root` (the Aubade's rules, with every hard-coded colour turned into a token) and as the `TH` constant in the script (3D colours); the rest of its look is the block of rules at the end of its `<style>`.
-
-| Edition | Published at | Look | Fonts (Google Fonts) | 3D ground and sky |
-|---|---|---|---|---|
-| Cartograph | https://claude.ai/artifact/AARvJwMoR9oPvzhDHcEMcE | Aged paper and sepia ink; a ruled neatline round the map, double-ruled cartouches, small-caps headings, compass-rose logo, sepia photos; brick-red accent `#9B3B22`, Prussian blue `#2F5D73` for the comparison | IM Fell English, IM Fell English SC, Shippori Mincho B1 | parchment sea, cream land, sepia outlines; hypsometric tint, contour lines and shading on by default |
-| Contour | https://claude.ai/artifact/8dDcGc8bXqHsxNYSPFvPFu | A monochrome survey sheet; graphite ground and white lines, square flat instruments, mono data, fine grid overlay, greyscale photos; white is the only accent | Barlow Condensed, JetBrains Mono, IBM Plex Sans JP | near-black sea, charcoal land, white contour lines and relief on by default |
-| Gloaming | https://claude.ai/artifact/MT32pmYNSv4DoAgKDf8LBG | Dusk over the Kanto plain; a violet-to-ember sky gradient, frosted violet glass, neon pink `#FF4FA3` (destination) and teal `#22E4D2` (comparison), additive glow | Syne, Outfit, M PLUS Rounded 1c | violet land and sea under a dusk-coloured fog, glowing pins and roads |
-
-The generated pages name the edition in the title bar as "Field Atlas Cartograph" (and likewise).
-
-```
-python3 scripts/field_atlas_cartograph.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-cartograph.html
-python3 scripts/field_atlas_contour.py    --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-contour.html
-python3 scripts/field_atlas_gloaming.py   --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-gloaming.html
-```
-
-Each template carries `const PAGE_URL` (used by "リンクをコピー") set to the edition's artifact URL.
