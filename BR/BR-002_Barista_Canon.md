@@ -1454,7 +1454,7 @@ LAGOM MiniからBlind Shakerへの直接受けが物理的に成立する場合�
   
 Coffee Station全体のレイアウト確定後に検討する。  
   
-Coffee Serviceware（HILLS FIELD Glass Case Single・FIKA12 ×2）は、食器としてBeck #1（Kitchen Module）へ収納することが決定済み（2026-09-28、MARI様のご決定）。Coffee System専用水ボトルのうち、オーロラボトルと酒筒は、食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ）へ収納する（2026-09-28、MARI様のご決定。当時の3本構成が対象）。SMEG × 24BottlesとSilverAntの収納先は未決定（2026-10-09の4本構成への変更で追加）。  
+Coffee Serviceware（HILLS FIELD Glass Case Single・FIKA12 ×2）は、食器としてBeck #1（Kitchen Module）へ収納することが決定済み（2026-09-28、MARI様のご決定）。Coffee System専用水ボトル4本（計2,940mL）は、食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ）へ収納する（2026-09-28に3本構成で決定、2026-10-09に4本構成でも全本STR-035と再決定。いずれもMARI様のご決定）。  
   
 ただし、BR-002で正式採用したKNODOS Tamping Mat with Tool Organiser - Walnut 54mmは、Coffee Tool Workflowを成立させるためのEquipmentとしてConfirmedとする。  
   
@@ -1787,7 +1787,7 @@ BR-002は、価格・購入先・輸送・関税・購入手順などの調達�
 | 4.16 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づき、コーヒー豆に関する全ての記録を新設のBR-004 Terroir Almanacで管理し、本書はコーヒー機材のみを扱うこととした。Purposeへ「管理対象はCoffee Equipmentのみ。Coffee BeansはBR-004」の1文を追加し、Pendingの注記の参照先をBR-003からBR-004へ更新した。Version History内の過去の行（Ver.3.6の「PX-005 Acquisition Handbookの『Coffee Beans Procurement』セクション」を含む）は歴史的記録として原文のまま保持した。Confirmed Equipment・Decision・Reason・Workflowの内容に変更はない（Bean Storage／Bean Cellar Glassは機材として本書の管理対象のまま）。Minor Version。OP-008 Ver.3.20・BR-003 Ver.4.10・BR-004 Ver.1.0と連動。 |  
 | 4.17 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Workflow Configurationへ§Coffee Registry Order（COF採番順）を新設し、MD-004 COF-seriesの番号をワークフロー順（購入順ではない）と定めた。Relationshipの登録時点を「購入した時点（到着を待たない）」へ改めた。Espresso Machine節のHandleに関する記述から「Purchase Required項目」というStatusの書き写しを除き、BR-003のProduct 26を参照する形へ改めた（記録文書は他文書のStatusを書き写さない）。MD-004 Ver.8.8、OP-010 Ver.3.6、BR-003 Ver.4.12と連動。Confirmed Equipmentの内容に変更はない。Minor Version。 |  
 | 4.18 | 2026-10-08 | MARI様のご指示（2026-10-08）に基づく。§Coffee Registry Orderから消耗品のEspresso Filter Paperを除き（消耗品はCOF-seriesに載せない。OP-010 Ver.3.7）、以降の番号を詰めた（EPF DockはFilter Paper Dockとして末尾に残す）。Magnetic Dosing Funnelの色表記をBlackからOnyx（航空機グレードアルミニウム）へ訂正した。MD-004 Ver.8.9、BR-003 Ver.4.13と連動。Minor Version。 |  
-| 4.19 | 2026-10-09 | MARI様のご決定（2026-10-09）に基づく。Water Bottle Configurationを3本から4本へ組み直した（合計2,540mL→2,940mL、必要水量2,340mLに対する余裕約200mL→約600mL）。YETI Yonder 1Lを外し、オーロラボトル1Lを800 オーシャン（TW-800RE-OC）へ、酒筒 Titanium（TW-540）を型番付きへ更新し、SMEG × 24Bottles Urban Bottle 1000mL（WBF02WH）とSilverAnt 結晶化ブラックチタンボトル 600mLを加えた。§Coffee Registry Orderの023〜027を同期（024は欠番。いずれも未購入のためMD-004へは未登録）。Storage & Organizationの水ボトル収納先の記述を、STR-035決定の対象（オーロラボトル・酒筒）と未決定（新規2本）に分けた。購入時期は最終月、優先度は最下位のまま。BR-003 Ver.4.17・BR-001 Ver.1.7・MD-001 Ver.2.40・MD-004 Ver.8.10と連動。Minor Version。 |  
+| 4.19 | 2026-10-09 | MARI様のご決定（2026-10-09）に基づく。Water Bottle Configurationを3本から4本へ組み直した（合計2,540mL→2,940mL、必要水量2,340mLに対する余裕約200mL→約600mL）。YETI Yonder 1Lを外し、オーロラボトル1Lを800 オーシャン（TW-800RE-OC）へ、酒筒 Titanium（TW-540）を型番付きへ更新し、SMEG × 24Bottles Urban Bottle 1000mL（WBF02WH）とSilverAnt 結晶化ブラックチタンボトル 600mLを加えた。§Coffee Registry Orderの023〜027を同期（024は欠番。いずれも未購入のためMD-004へは未登録）。Storage & Organizationの水ボトル収納先を、4本すべてSTR-035（YETI Camino® 35）とした（MARI様のご決定、2026-10-09）。購入時期は最終月、優先度は最下位のまま。BR-003 Ver.4.17・BR-001 Ver.1.7・MD-001 Ver.2.40・MD-004 Ver.8.10と連動。Minor Version。 |  
   
 ---  
 
