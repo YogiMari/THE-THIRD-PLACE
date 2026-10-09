@@ -2,12 +2,12 @@ OP-001 THE THIRD PLACE Constitution
   
   
 # THE THIRD PLACE Constitution  
-## Ver.5.7  
+## Ver.5.8  
 
 **Document ID**: OP-001  
 **Title**: Constitution  
 **Series**: OP – Operation (Definition)  
-**Version**: 5.7  
+**Version**: 5.8  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -720,6 +720,7 @@ Barista Documents
 　・BR-001 Brew Care  
 　・BR-002 Barista Canon  
 　・BR-003 Procurement Handbook  
+　・BR-004 Terroir Almanac  
   
 　　　　↓  
   
@@ -1388,6 +1389,7 @@ BR/
     BR-001 Brew Care  
     BR-002 Barista Canon  
     BR-003 Procurement Handbook  
+    BR-004 Terroir Almanac  
   
 CZ/  
     CZ-001 Deliberation Dossier  
@@ -1610,6 +1612,10 @@ MARI様のご指摘に基づき、§25 Closing Statementの「Project Ledgerは�
 ### Ver.5.7
 
 S-11（ヘッダー形式の統一）に基づき、OP-008 §9（全文書はAuthorityおよびStatusを保持する）に従って、文書冒頭のDocument Information（Document ID／Title／Series／Version／Authority／Status／Owner）を整えた。値はOP-008 §8 Document Seriesのカタログに一致させた。本文の内容に変更はない。Patch Version。MARI様の包括指示（2026-09-28）に基づく。
+
+### Ver.5.8
+
+BR-004 Terroir Almanac（コーヒー豆に関する全ての記録を管理する文書）の新設（OP-008 Ver.3.20）に伴い、§12 Information Hierarchyの Barista Documents 一覧とAppendix B Repository ArchitectureのBR/一覧へBR-004を追加した。Ver.5.0の記述（「Barista（BR-001〜BR-003）」）は歴史的記録として原文のまま保持した。MARI様のご決定（2026-10-08）に基づく（Patch Version：一覧の同期）。
 
 ---
 

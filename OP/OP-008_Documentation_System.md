@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.20
+**Version**: 3.22
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -38,7 +38,9 @@
 | 3.17 | 2026-09-28 | 整備バックログ（N-01・N-04・N-05）で新設された内容に合わせ、§8カタログのOP-006 Role（Safety・Material Care）とDB-001 Role（Field Log）、Appendix FのOP-006・DB-001紹介文（日英）を同期。DB-001紹介文に残っていたProject Overview（S-08で削除済み）の記述をProject Inbox・Field Logへ置き換えた。MARI様の包括指示に基づく。Patch Version。 |
 | 3.18 | 2026-10-01 | Document Renumbering Noteの旧IDを「TP-001」から「PX-001」へ訂正した。新旧ID対応の正式な参照先であるOP-001 Constitution Appendix C Ver.5.0（OP-001 §26）は「PX-001→OP-008」「TP-001→OP-001」と定めており、OP-001 §26本文も「PX-001（新ID：OP-008）」と記している。本書Version 1.0の「Documentation SystemをPXシリーズへ移行」とも整合する。Revision History内のVersion 2.0・3.3の行にある「TP-001」の記述は、歴史的記録として原文のまま保持する。プロジェクトオーナーのご指示に基づく。Patch Version。 |
 | 3.19 | 2026-10-03 | MD-004 Equipment Registry Object ReferenceのDomain別分割（AIが必要なDomainのみを読めるようにするためのファイル再構成）に伴い、§11.2 Multi-file Documentを新設した（Minor Version：節追加）。あわせて§8カタログのMD-004のPathを、分割後の入口ファイル `MD/MD-004/MD-004_Equipment_Registry_Object_Reference.md` へ更新した。Document ID・Title・Authority・Volatilityは変更しない。MARI様のご決定に基づく。 |
-| 3.20 | 2026-10-08 | MD-004 Ver.8.8でCoffee Domain用の部品ファイル `MD-004_COF_Coffee.md` を新設し、Domain別ファイルが7つ（FUR／LGT／ARM／STR／FIR／SHL／COF）になったことを確認した。部品ファイルは§11.2に従い入口ファイル（MD-004）の一部であり、§8カタログへの新規登録は不要（Document ID・Title・Authority・Volatility・Pathは変更なし）。あわせてAppendix F（日英）のMD-004紹介文を、OP-010 Ver.3.6のCoffee登録時点（購入した時点。到着を待たない）に合わせた。Patch Version。MARI様のご決定（2026-10-08）に基づく。 |
+| 3.20 | 2026-10-08 | BR-004 Terroir Almanacを新設（Minor Version：文書追加）。コーヒー豆に関する全ての記録を本書で管理し、BR-002 Barista Canonはコーヒー機材のみ、BR-003 Procurement HandbookもCoffee Equipmentの調達のみとする方針（MARI様のご決定、2026-10-08）に基づく。§8カタログへBR-004（Authority：SSOT、Volatility：Living）を登録し、§5 Series ResponsibilitiesのBR系列の説明、Appendix F（日英）のBR系列の紹介文を同期した。タイトルは、既存の全文書タイトルと語の重複がないこと（§11.1）を確認のうえ、MARI様が選定した。OP-008 §23に従い本書を先に更新し、BR-002 Ver.4.16・BR-003 Ver.4.10・BR-004 Ver.1.0を同時に反映した。 |
+| 3.21 | 2026-10-09 | BR-004 Terroir Almanac Ver.1.1（豆選びの暫定基準の採用、§6新設）に伴い、§8カタログのBR-004行のRole、およびAppendix F（日英）のBR-004紹介文を同期した。Roleの「豆選びの基準・購入した豆の記録項目は、決定後に本書へ追加する」を、暫定基準は本書が管理し、購入した豆の記録項目は決定後に追加する旨へ改めた。Authority（SSOT）・Volatility（Living）は変更しない。暫定基準は見直し前提であり恒久ルールではないため、§9.3との矛盾は生じない（恒久化する場合は置き場所を改めて決める。BR-004 §7参照）。MARI様のご決定（2026-10-09）に基づく。Patch Version。 |
+| 3.22 | 2026-10-08 | MD-004 Ver.8.8でCoffee Domain用の部品ファイル `MD-004_COF_Coffee.md` を新設し、Domain別ファイルが7つ（FUR／LGT／ARM／STR／FIR／SHL／COF）になったことを確認した。部品ファイルは§11.2に従い入口ファイル（MD-004）の一部であり、§8カタログへの新規登録は不要（Document ID・Title・Authority・Volatility・Pathは変更なし）。あわせてAppendix F（日英）のMD-004紹介文を、OP-010 Ver.3.6のCoffee登録時点（購入した時点。到着を待たない）に合わせた。Patch Version。MARI様のご決定（2026-10-08）に基づく。 |
 
 ---
 
@@ -155,7 +157,7 @@ OPシリーズは、Versionは改訂されるが、個別データの入れ替�
 
 - Dashboard（運用管理そのもの）
 - Master Data（所有物・場所の台帳）
-- Barista（コーヒー機材の意思決定・調達・手入れ）
+- Barista（コーヒー機材の意思決定・調達・手入れ、およびコーヒー豆の記録）
 - Cross-Zone Ops（コーヒー以外のゾーンの検討・市場監視）
 - Knowledge（知の蓄積・文化アーカイブ）
 
@@ -252,6 +254,7 @@ Authority 列は本 Version（3.0）で新設された分類である。BR-001�
 | BR-001 | Brew Care | `BR/BR-001_Brew_Care.md` | See Appendix F | Standard | Static | コーヒー機材のお手入れ・洗浄・保管ルール |
 | BR-002 | Barista Canon | `BR/BR-002_Barista_Canon.md` | See Appendix F | SSOT | Periodic | コーヒー機材の意思決定文書 |
 | BR-003 | Procurement Handbook | `BR/BR-003_Procurement_Handbook.md` | See Appendix F | SSOT | Living | コーヒー機材の調達先・価格・購入計画 |
+| BR-004 | Terroir Almanac | `BR/BR-004_Terroir_Almanac.md` | 管理対象<br>・コーヒー豆に関する全ての記録<br>・Current Rotation<br>・調査記録<br>・豆選びの暫定基準（見直し前提）<br>コーヒー機材は、<br>BR-002／BR-003が管理する。<br>購入した豆の記録項目は、<br>決定後に本書へ追加する。 | SSOT | Living | コーヒー豆の記録（ローテーション・調査・購入） |
 | CZ-001 | Deliberation Dossier | `CZ/CZ-001_Deliberation_Dossier.md` | See Appendix F | SSOT | Living | コーヒー以外のゾーンで検討中のギアの比較・検討記録 |
 | CZ-002 | Vigil Protocol | `CZ/CZ-002_Vigil_Protocol.md` | See Appendix F | SSOT | Living | 欲しいギアの市場監視Watch List（監視対象・調査キーワード） |
 | KN-001 | Heritage Chronicle | `KN/KN-001_Heritage_Chronicle.md` | 管理対象<br>・活動記録<br>・月次記録<br>・完成までの歩み<br>Chronicleは、<br>歴史を保存する文書である。<br>設計判断は記載しない。 | Archive | Static | プロジェクトの歴史・決定理由のアーカイブ |
@@ -948,13 +951,14 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 
 ### ☕ BR — Barista
 
-コーヒー機材の意思決定・調達・お手入れを管理するシリーズ。
+コーヒー機材の意思決定・調達・お手入れと、コーヒー豆の記録を管理するシリーズ。
 
 | ID | Document | どのような文書か |
 | --- | --- | --- |
 | BR-001 | Brew Care | コーヒー器具のお手入れ・メンテナンスに関する基準を定める文書。 |
 | BR-002 | Barista Canon | Coffee System（コーヒー機材）に関する正式な意思決定・選定基準・ブランド判断を管理する仕様書。 |
 | BR-003 | Procurement Handbook | BR-002で正式採用されたCoffee Equipmentについて、価格・購入先・輸送・関税など実際の調達情報を管理するハンドブック。 |
+| BR-004 | Terroir Almanac | コーヒー豆に関する全ての記録を管理する文書。現在のローテーションと、豆の選定調査の記録、見直し前提の豆選びの暫定基準を収める。コーヒー機材は対象外（BR-002・BR-003が管理）。 |
 
 ---
 
@@ -1039,13 +1043,14 @@ The series managing the ledger of owned equipment and places.
 
 ### ☕ BR — Barista
 
-The series managing decisions, procurement, and care for coffee equipment.
+The series managing decisions, procurement, and care for coffee equipment, as well as records of coffee beans.
 
 | ID | Document | What this document is |
 | --- | --- | --- |
 | BR-001 | Brew Care | Defines the standards for cleaning and maintaining coffee equipment. |
 | BR-002 | Barista Canon | The official specification governing decisions, selection criteria, and brand judgments for the Coffee System. |
 | BR-003 | Procurement Handbook | Manages the actual procurement information — price, purchase source, shipping, import duties — for Coffee Equipment officially adopted in BR-002. |
+| BR-004 | Terroir Almanac | Manages all records of coffee beans: the current rotation, the selection research record, and the provisional bean-selection criteria (subject to revision). Coffee equipment is out of scope (managed by BR-002 and BR-003). |
 
 ---
 

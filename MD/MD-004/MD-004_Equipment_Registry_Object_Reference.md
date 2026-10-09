@@ -192,13 +192,13 @@ Version 8.6以前の履歴は archive/MD-004_Version_History_Archive.md を参�
 
 ## Version 8.9
 
-MARI様のご指示（2026-10-08）に基づく訂正。消耗品はCOF-seriesへ載せない規則とし（OP-010 Ver.3.7）、9Barista Espresso Filter Paper（旧COF-009）を登録から除いた。これに伴い、ワークフロー順の番号を詰めた（BR-002 Ver.4.17 §Coffee Registry Order。登録済みのIDはVersion 8.8の同日内の付番で、まだ統合前のため付け替えた）。現在の登録は次の4件（すべてStatus = Owned）：COF-005（9Barista Magnetic Dosing Funnel）、COF-009（9Barista Mk.2 Pro。旧COF-010）、COF-010（9Barista Handle - Walnut。COF-009の子。旧COF-011）、COF-017（KNODOS Tamping Mat with Tool Organiser - Walnut 54mm。旧COF-018）。あわせて、COF-009のColorをSilver・MaterialをNickel-plated Brass、COF-005のColorをOnyx・MaterialをAircraft-grade Aluminum（BR-002・BR-003の「Black」をOnyxへ訂正）、COF-017のPriceを¥22,000（実額）とした。Parent / Child RulesのExampleをCOF-009 └ COF-010へ改めた。Minor Version。
+MARI様のご指示（2026-10-08）に基づく訂正。消耗品はCOF-seriesへ載せない規則とし（OP-010 Ver.3.7）、9Barista Espresso Filter Paper（旧COF-009）を登録から除いた。これに伴い、ワークフロー順の番号を詰めた（BR-002 Ver.4.18 §Coffee Registry Order。登録済みのIDはVersion 8.8の同日内の付番で、まだ統合前のため付け替えた）。現在の登録は次の4件（すべてStatus = Owned）：COF-005（9Barista Magnetic Dosing Funnel）、COF-009（9Barista Mk.2 Pro。旧COF-010）、COF-010（9Barista Handle - Walnut。COF-009の子。旧COF-011）、COF-017（KNODOS Tamping Mat with Tool Organiser - Walnut 54mm。旧COF-018）。あわせて、COF-009のColorをSilver・MaterialをNickel-plated Brass、COF-005のColorをOnyx・MaterialをAircraft-grade Aluminum（BR-002・BR-003の「Black」をOnyxへ訂正）、COF-017のPriceを¥22,000（実額）とした。Parent / Child RulesのExampleをCOF-009 └ COF-010へ改めた。Minor Version。
 
 ---
 
 ## Version 8.8
 
-MARI様のご決定（2026-10-08）に基づく。Coffee Domain（COF-series）の登録時点を「購入した時点（到着を待たない）」と明確にし、採番をBR-002 §Coffee Registry Orderのワークフロー順（購入順ではない）と定めた。これに伴い、Coffee用の部品ファイル `MD-004_COF_Coffee.md` を新設し（OP-008 §11.2。Domain別ファイルは7つ）、Domain Filesの表とCoffee節を改めた。2026-10-08に購入した次の5件を新規登録した（すべてStatus = Owned）：COF-005（9Barista Magnetic Dosing Funnel）、COF-009（9Barista Espresso Filter Paper 51mm）、COF-010（9Barista Mk.2 Pro）、COF-011（9Barista Handle - Walnut、COF-010の子）、COF-018（KNODOS Tamping Mat with Tool Organiser - Walnut 54mm）。COF-001〜004ほか未購入の番号は空けたまま。Parent / Child RulesのExampleへCOF-010 └ COF-011を追加。Color・Materialは確認済みの情報のみ記載し、不明な項目は空欄とした。COF-018のPriceはBR-003 Product 10のplanning estimate（実額は未確認）。OP-010 Ver.3.6、OP-008 Ver.3.20、BR-002 Ver.4.16、BR-003 Ver.4.11と連動。Minor Version。
+MARI様のご決定（2026-10-08）に基づく。Coffee Domain（COF-series）の登録時点を「購入した時点（到着を待たない）」と明確にし、採番をBR-002 §Coffee Registry Orderのワークフロー順（購入順ではない）と定めた。これに伴い、Coffee用の部品ファイル `MD-004_COF_Coffee.md` を新設し（OP-008 §11.2。Domain別ファイルは7つ）、Domain Filesの表とCoffee節を改めた。2026-10-08に購入した次の5件を新規登録した（すべてStatus = Owned）：COF-005（9Barista Magnetic Dosing Funnel）、COF-009（9Barista Espresso Filter Paper 51mm）、COF-010（9Barista Mk.2 Pro）、COF-011（9Barista Handle - Walnut、COF-010の子）、COF-018（KNODOS Tamping Mat with Tool Organiser - Walnut 54mm）。COF-001〜004ほか未購入の番号は空けたまま。Parent / Child RulesのExampleへCOF-010 └ COF-011を追加。Color・Materialは確認済みの情報のみ記載し、不明な項目は空欄とした。COF-018のPriceはBR-003 Product 10のplanning estimate（実額は未確認）。OP-010 Ver.3.6、OP-008 Ver.3.22、BR-002 Ver.4.17、BR-003 Ver.4.12と連動。Minor Version。
 
 ---
 
