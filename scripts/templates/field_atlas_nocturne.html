@@ -176,6 +176,11 @@
   .rpa{fill:rgba(63,240,255,.14);stroke:var(--a);stroke-width:1.5;stroke-linejoin:round;filter:drop-shadow(0 0 4px rgba(63,240,255,.8))}
   .rpb{fill:rgba(255,162,74,.08);stroke:var(--b);stroke-width:1.3;stroke-linejoin:round;filter:drop-shadow(0 0 3px rgba(255,162,74,.7))}
   .dash{stroke-dasharray:5 4}
+  .radarw .r3v{font-family:var(--cond);font-weight:400;letter-spacing:.02em}
+  .logo h1.fa-swap{cursor:pointer;transition:text-shadow .3s,color .3s}
+  .logo h1.fa-swap::after{content:"⇄ " attr(data-other);margin-left:12px;font-family:var(--mono);font-size:8.5px;letter-spacing:.24em;color:var(--ink-faint);text-shadow:none;transition:color .3s}
+  .logo h1.fa-swap:hover,.logo h1.fa-swap:focus-visible{color:#fff;text-shadow:0 0 14px rgba(63,240,255,.7),-1px 0 rgba(255,77,94,.5),1px 0 rgba(63,240,255,.5)}
+  .logo h1.fa-swap:hover::after,.logo h1.fa-swap:focus-visible::after{color:var(--a)}
   .rda{fill:var(--ice)} .rdb{fill:var(--b)}
   .bars{padding:6px 14px 12px;display:grid;gap:5px}
   .br{display:grid;grid-template-columns:7.4em minmax(0,1fr) 1.8em 1.8em;gap:8px;align-items:center}
@@ -356,7 +361,7 @@
     .zoom{right:10px;top:10px}
     .legend{left:10px;top:10px;font-size:8.5px;padding:6px 9px}
   }
-  @media (max-width:540px){ .tc-frame{grid-template-columns:1fr} .ph-img{aspect-ratio:16/9;border-right:0;border-bottom:1px solid var(--line)} .logo h1{font-size:11px;letter-spacing:.3em} }
+  @media (max-width:540px){ .logo h1.fa-swap::after{content:"⇄"}  .tc-frame{grid-template-columns:1fr} .ph-img{aspect-ratio:16/9;border-right:0;border-bottom:1px solid var(--line)} .logo h1{font-size:11px;letter-spacing:.3em} }
   @media (prefers-reduced-motion:reduce){ .warp.go,.flash.go,.acqfx.go,#gl.shake{animation:none} .ret .spin,.sweep{animation:none} .ret.lock .br,.ret.lock .tag,.ph-img.acq .scan,.ph-img.glitch img{animation:none} .nextc::after,.lb-next::before{animation:none} }
 </style>
 
@@ -473,7 +478,7 @@ const IMG=/*__IMG__*/{};
 const IMGSRC=/*__IMGSRC__*/{};
 const ROUTES=/*__ROUTES__*/{};
 const EXTRA=/*__EXTRA__*/{};
-const PAGE_URL="https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm";
+const PAGE_URL=(window.FA_DUO&&FA_DUO.url)||"https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm";
 /*__SHARED_JS__*/
 Object.assign(FA.theme,{night:0x04070f,day:0x2c6e84,warm:0xff8a3a,nightAmt:.5,dayAmt:.5,warmAmt:.3,landAmt:.3,veil:.8,contour:0x3ff0ff,contourOp:.42,contourMajor:0x9ff8ff,shadow:0x000000,hi:0x3ff0ff,shadeA:.6,hiA:.22,trail:0xff5ec8,link:0xffa24a});
 
@@ -561,7 +566,7 @@ function showCard(S){
 /* ---------- analysis ---------- */
 const svg=$("#radar"),NS="http://www.w3.org/2000/svg";
 // the 3D radar (scripts/templates/field_atlas_radar3d.js): drag to rotate, ▲▼ tilt, ↺ or double click resets; colours come from this page's .rg .rax .rpa .rpb .rda .rdb rules
-const R3=Radar3D(svg,{labels:AXE,cx:150,cy:172,rad:104,tip:(s,i,v)=>{const d=get(s?state.b:state.a);return `${d?d.name:""} · ${AXE[i]} ${Math.round(v)}（平均 ${AVG[i].toFixed(1)}）`;}});
+const R3=Radar3D(svg,{look:"hud",labels:AXE,cx:150,cy:172,rad:104,tip:(s,i,v)=>{const d=get(s?state.b:state.a);return `${d?d.name:""} · ${AXE[i]} ${Math.round(v)}（平均 ${AVG[i].toFixed(1)}）`;}});
 const bars=$("#bars");
 // bars grouped by lineage (two axes each, subtotal /20); the thin tick is the all-field average
 const barHTML=i=>`<div class="br${i===9?" prov":""}"><span class="l" title="${esc(BASIS[i])} · 全${DATA.length}件の平均 ${AVG[i].toFixed(1)}">${AXE[i]}${i===9?"<small>暫定</small>":""}</span><span class="t"><i></i><b style="left:${AVG[i]*10}%"></b><em></em></span><span class="va"></span><span class="vb"></span></div>`;
@@ -877,6 +882,7 @@ function boot(){
   if(RM){bootEl.hidden=true;bootDone=true;return;}
   let i=0,t=null;const out=[];
   const finish=()=>{clearTimeout(t);bootEl.classList.add("out");bootT0=performance.now();if(GL){OBL=kanto();Object.assign(cam,OBL);cam.dist*=1.45;cam.theta-=.25;flyTo(OBL,3000);}setTimeout(()=>{bootEl.hidden=true;},650);};
+  if(window.FA_SWITCH){finish();return;}
   bootEl.addEventListener("click",()=>{if(!bootEl.classList.contains("out")){finish();}});
   const next=()=>{if(i>=LINES.length){t=setTimeout(finish,260);return;}const [a,b]=LINES[i++];
     out.push(`${esc(a.padEnd(26))}<b>${esc(b)}</b>${i>1?"  ··· OK":""}`);

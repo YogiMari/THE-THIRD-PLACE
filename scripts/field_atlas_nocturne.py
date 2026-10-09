@@ -226,7 +226,37 @@ def extras(md002: Path, data: list[dict], locations: dict, warnings: list[str],
 
 
 
+# placeholder in a map template -> name of the piece of page data it takes
+PLACEHOLDERS = {
+    "/*__DATA__*/[]": "DATA", "/*__JAPAN__*/[]": "JAPAN", "/*__GEO__*/{}": "GEO", "/*__LL__*/{}": "LL",
+    "/*__IMG__*/{}": "IMG", "/*__IMGSRC__*/{}": "IMGSRC", "/*__ROUTES__*/{}": "ROUTES", "/*__EXTRA__*/{}": "EXTRA",
+}
+
+
+def js(o) -> str:
+    return json.dumps(o, ensure_ascii=False, separators=(",", ":"))
+
+
+def page_script(template: Path, version: str) -> str:
+    """A map template with the shared scripts and the version and date filled in, its data placeholders left."""
+    return (
+        template.read_text(encoding="utf-8")
+        .replace("/*__SHARED_JS__*/", field_atlas_radar.core_script() + "\n" + SHARED_JS.read_text(encoding="utf-8"))
+        .replace("__MD002_VERSION__", version)
+        .replace("__GENERATED__", datetime.date.today().isoformat())
+    )
+
+
 def build(md002: Path, template: Path = TEMPLATE, db001: Path = DB001, md004: Path = MD004) -> tuple[str, list[str]]:
+    pieces, version, warnings = assemble(md002, db001, md004)
+    html = page_script(template, version)
+    for ph, key in PLACEHOLDERS.items():
+        html = html.replace(ph, js(pieces[key]))
+    return html, warnings
+
+
+def assemble(md002: Path, db001: Path = DB001, md004: Path = MD004) -> tuple[dict, str, list[str]]:
+    """The page data of the map editions, keyed as in PLACEHOLDERS, with the MD-002 version and the warnings."""
     data, version = field_atlas_radar.build(md002)
     locations = load("locations.json")
     routes = load("routes.json")
@@ -282,24 +312,9 @@ def build(md002: Path, template: Path = TEMPLATE, db001: Path = DB001, md004: Pa
         for p in japan
     ]
 
-    def js(o):
-        return json.dumps(o, ensure_ascii=False, separators=(",", ":"))
-
-    html = (
-        template.read_text(encoding="utf-8")
-        .replace("/*__SHARED_JS__*/", field_atlas_radar.core_script() + "\n" + SHARED_JS.read_text(encoding="utf-8"))
-        .replace("/*__DATA__*/[]", js(data))
-        .replace("/*__JAPAN__*/[]", js(jp))
-        .replace("/*__GEO__*/{}", js(geo))
-        .replace("/*__LL__*/{}", js(lonlat))
-        .replace("/*__IMG__*/{}", js(img))
-        .replace("/*__IMGSRC__*/{}", js(img_src))
-        .replace("/*__ROUTES__*/{}", js(route_out))
-        .replace("/*__EXTRA__*/{}", js(extra))
-        .replace("__MD002_VERSION__", version)
-        .replace("__GENERATED__", datetime.date.today().isoformat())
-    )
-    return html, warnings
+    pieces = {"DATA": data, "JAPAN": jp, "GEO": geo, "LL": lonlat, "IMG": img, "IMGSRC": img_src,
+              "ROUTES": route_out, "EXTRA": extra}
+    return pieces, version, warnings
 
 
 def main() -> None:

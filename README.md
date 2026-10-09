@@ -54,6 +54,7 @@ THE-THIRD-PLACE/
 │   ├── field_atlas_radar.py            # MD-002 → Field Atlas Radar（回せる3Dレーダー・今日の一手・日照帯・足跡）生成
 │   ├── field_atlas_nocturne.py        # MD-002 → Field Atlas Nocturne（3D地図・ダーク版）生成
 │   ├── field_atlas_aubade.py            # MD-002 → Field Atlas Aubade（3D地図・ライト版）生成
+│   ├── field_atlas_duo.py               # MD-002 → Field Atlas（NocturneとAubadeを一つに。タイトルで切り替え）生成
 │   ├── field_atlas_cartograph.py        # MD-002 → Field Atlas Cartograph（3D地図・古地図版）生成
 │   ├── field_atlas_contour.py           # MD-002 → Field Atlas Contour（3D地図・モノクロ等高線版）生成
 │   ├── field_atlas_gloaming.py          # MD-002 → Field Atlas Gloaming（3D地図・黄昏ネオン版）生成
@@ -274,6 +275,7 @@ THE-THIRD-PLACE/
 │   ├── field_atlas_radar.py            # Generates the Field Atlas Radar page (rotatable 3D radar, today's move, sun band, trail) from MD-002
 │   ├── field_atlas_nocturne.py        # Generates Field Atlas Nocturne (3D map, dark edition) from MD-002
 │   ├── field_atlas_aubade.py            # Generates Field Atlas Aubade (3D map, light edition) from MD-002
+│   ├── field_atlas_duo.py               # Generates Field Atlas (Nocturne and Aubade in one page; the title switches) from MD-002
 │   ├── field_atlas_cartograph.py        # Generates Field Atlas Cartograph (3D map, aged-paper old-map edition) from MD-002
 │   ├── field_atlas_contour.py           # Generates Field Atlas Contour (3D map, monochrome topographic edition) from MD-002
 │   ├── field_atlas_gloaming.py          # Generates Field Atlas Gloaming (3D map, dusk-gradient neon edition) from MD-002
