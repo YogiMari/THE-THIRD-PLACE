@@ -5,14 +5,15 @@
   :root{
     --bg:#EDEEE6; --card:#F5F5EE; --surface:#E3E4D9; --ink:#22251E; --ink-soft:#54574B; --ink-faint:#8B8C7E;
     --line:#CBCCBE; --grid:#D6D7CA; --a:#A85A28; --b:#1668A0; --focus:#1668A0; --ok:#4F7A3A; --warn:#A87A16;
+    --fa-fg:var(--ink); --fa-soft:var(--ink-soft); --fa-line:var(--line); --fa-acc:var(--a); --fa-on:var(--bg); --fa-rs:2px; --fa-night:#2b2f44; --fa-twi:#e0a070; --fa-day:#f3d27a; --fa-scheme:light;
     --display:"Fraunces",Georgia,serif; --body:"IBM Plex Sans JP","Hiragino Sans",sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
   }
   @media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
     --bg:#1B1D17; --card:#22241C; --surface:#2A2C23; --ink:#ECEBE1; --ink-soft:#B7B6A8; --ink-faint:#82816F;
-    --line:#3A3C30; --grid:#34362B; --a:#C98048; --b:#3E94D8; --focus:#3E94D8; --ok:#8DBB6E; --warn:#D9AE4A; color-scheme:dark; } }
+    --line:#3A3C30; --grid:#34362B; --a:#C98048; --b:#3E94D8; --focus:#3E94D8; --ok:#8DBB6E; --warn:#D9AE4A; --fa-scheme:dark; color-scheme:dark; } }
   :root[data-theme="dark"]{
     --bg:#1B1D17; --card:#22241C; --surface:#2A2C23; --ink:#ECEBE1; --ink-soft:#B7B6A8; --ink-faint:#82816F;
-    --line:#3A3C30; --grid:#34362B; --a:#C98048; --b:#3E94D8; --focus:#3E94D8; --ok:#8DBB6E; --warn:#D9AE4A; color-scheme:dark; }
+    --line:#3A3C30; --grid:#34362B; --a:#C98048; --b:#3E94D8; --focus:#3E94D8; --ok:#8DBB6E; --warn:#D9AE4A; --fa-scheme:dark; color-scheme:dark; }
   *{box-sizing:border-box}
   [hidden]{display:none!important}
   body{background:var(--bg);color:var(--ink);font-family:var(--body);line-height:1.6;margin:0;overflow-x:hidden}
@@ -37,7 +38,14 @@
   select:focus-visible,button:focus-visible,tr:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
   .stage{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,1fr);gap:20px;margin-top:18px;align-items:start}
   .chart{background:var(--card);border:1px solid var(--line);border-radius:2px;padding:8px;position:relative}
-  .chart svg{display:block;width:100%;height:auto}
+  .chart svg{display:block;width:100%;height:auto;overflow:visible}
+  /* the classes field_atlas_radar3d.js draws with (the map pages define the same names) */
+  .rg{fill:none;stroke:var(--grid);stroke-width:1}
+  .rg.o{stroke:var(--ink-faint);stroke-opacity:.55;stroke-width:1.25}
+  .rtk{stroke:var(--ink-faint);stroke-opacity:.5;stroke-width:1}
+  .rax{font-family:var(--body);font-size:12px;fill:var(--ink-soft)}
+  .rpa{fill:var(--a);stroke:var(--a)} .rpb{fill:var(--b);stroke:var(--b)}
+  .rda{fill:var(--card);stroke:var(--a);stroke-width:1.6} .rdb{fill:var(--card);stroke:var(--b);stroke-width:1.6}
   .tip{position:absolute;pointer-events:none;background:var(--ink);color:var(--bg);font-size:12px;padding:6px 8px;border-radius:2px;white-space:nowrap;font-family:var(--mono)}
   .panel{display:flex;flex-direction:column;gap:14px;min-width:0}
   .site-name{font-family:var(--display);font-size:20px;font-weight:600;line-height:1.3}
@@ -118,6 +126,16 @@
   .method{margin-top:14px;font-size:13px;color:var(--ink-soft);display:grid;gap:8px;max-width:66ch}
   .method b{color:var(--ink);font-weight:600}
   .method code{font-family:var(--mono);font-size:12px}
+  .fa-sec{display:grid;gap:8px;align-content:start}
+  .fa-sec>.k{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-faint);font-weight:600}
+  .fa-sec .srcl{font-family:var(--mono);font-size:11px;line-height:1.6;color:var(--ink-faint)}
+  .fa-sec .kv dt{white-space:nowrap}
+  .fa-sec .fa-mn{font-family:var(--display);font-size:17px;font-weight:600}
+  .fa-btn:focus-visible,.fa-lk:focus-visible{outline:2px solid var(--focus);outline-offset:2px}
+  .fa-move{align-items:center}
+  #faMove{margin-top:18px}
+  .mk{font-family:var(--mono);font-size:10px;color:var(--bg);background:var(--b);border-radius:2px;padding:0 5px;margin-left:6px}
+  .chart{touch-action:pan-y}
   footer{margin-top:40px;padding-top:12px;border-top:1px solid var(--line);font-family:var(--mono);font-size:11px;color:var(--ink-faint)}
   @media (max-width:640px){ .stage{grid-template-columns:1fr} .controls{grid-template-columns:1fr} .info{grid-template-columns:1fr} }
 </style>
@@ -130,6 +148,8 @@
 </header>
 
 <button type="button" class="nextc" id="nextc" hidden></button>
+
+<div class="box fa-sec" id="faMove" hidden></div>
 
 <div class="controls">
   <div class="ctl">
@@ -144,7 +164,7 @@
 
 <div class="stage">
   <div class="chart" id="chart">
-    <svg id="radar" viewBox="0 0 400 380" role="img" aria-labelledby="radarTitle"><title id="radarTitle">10軸レーダーチャート</title></svg>
+    <svg id="radar" viewBox="0 0 400 380" role="img" aria-label="10軸レーダーチャート（3D。ドラッグか矢印キーで回転、ダブルクリックでリセット）"></svg>
     <div class="tip" id="tip" hidden></div>
   </div>
   <div class="panel">
@@ -169,6 +189,9 @@
   <div class="box" id="bSite"></div>
   <div class="box" id="bSky"></div>
   <div class="box wide" id="bCold" hidden></div>
+  <div class="box fa-sec" id="faSun"></div>
+  <div class="box fa-sec" id="faRoute"></div>
+  <div class="box wide fa-sec" id="faTrail"></div>
   <div class="box wide" id="bSurr"></div>
   <div class="box wide" id="bLog" hidden></div>
 </div>
@@ -203,6 +226,8 @@
     <p><b>区画・標高・空・周辺。</b>区画の広さと駐車の扱いはMD-002 §Site Record、標高は国土地理院の標高データ（気温差は標高差×0.6℃/100mの目安）、日の出・日の入り・月齢はページ内の計算値、周辺環境はOpenStreetMapの登録とOSRMの道のりです。周辺環境は登録のない施設が出ない参考値です。</p>
     <p><b>次のキャンプ。</b>DB-001 Project Ledger §Field Logの予定（Planned）と記録（Done）です。装備IDはMD-004の正式名称で示します。</p>
     <p><b>基準地点。</b><span id="benchTxt">MD-002 §Reference Benchmark Siteの地点は、View軸10点の基準としてのみ用い、ランキングの対象ではありません。</span></p>
+    <p><b>3Dレーダー。</b>レーダーは立体です。マウスはドラッグで回転・傾き、スマホは横になぞると回ります（縦のなぞりはページのスクロールです）。▲▼で傾け、ダブルクリック／ダブルタップか ↺ で元の向きに戻り、矢印キーでも回せます。操作するまではゆっくり揺れ、動きを減らす設定では止まります。板の面が各軸の点数の位置、柱の高さと数字が点数です。</p>
+    <p><b>今日の一手・日照帯・2点の直線・足跡。</b>地図のページと同じ規則と計算です。今日の一手は、DB-001の予定が14日以内ならその場所、なければ未訪問（MD-002）で足跡に未登録・移動2時間以内・アーリーが「早い」か「可」の中でResonance最高です。日照帯は緯度経度と日付からの計算値（NOAA Solar Calculatorの式、海面の水平線）。2点の直線は大圏距離（STRAIGHT-LINE）で、道のりや所要時間ではありません。足跡はこのブラウザだけのメモで、MD-002の「訪問済み」とは別物です。</p>
     <p><b>リンク。</b>ページのURLの末尾に「#f=順位」を付けると、そのフィールドを開きます。</p>
     <p><b>採点の経緯。</b>MD-002の§Sub-Scores §Calibration Recordを参照してください。</p>
   </div>
@@ -216,105 +241,49 @@ const EXTRA=/*__EXTRA__*/{};
 const PAGE_URL="https://claude.ai/artifact/WjHqjyXoKLRxfTvxTsDaov";
 const AX=["Ground","Layout","Facility","Operation","Comfort","View","Place","Experience","近さ","Partner"];
 const AXJ=["地面","区画","設備","運営","居心地","景観","場所","体験","近さ","パートナー"];
-const $=s=>document.querySelector(s);
-const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
-const pad=(n,k=2)=>String(n).padStart(k,"0");
+// positions of the fields; this page has no map, so GEO only says which fields have one
+const LL=EXTRA.ll||{},GEO=LL;
+// state.a / state.b are ranks (numbers, b = null for none); the shared tools read them
+let state={a:1,b:null,sort:"pv",vis:"all",gr:null};
+/*__CORE_JS__*/
+{const st=document.createElement("style");st.textContent=FA_SEC_CSS;document.head.appendChild(st);}
+FA.noMap=true;faLoadTrail();
 const byRank=[...DATA];
-const get=r=>byRank.find(d=>d.rank==r);
-const q=d=>d.axes.slice(0,8).reduce((a,b)=>a+b,0);
-const pv=d=>d.axes.reduce((a,b)=>a+b,0);
-// OP-010 Part C: ground icons, the five lineages, what each axis is scored from, early check-in tiers
-const GROUND={"🪨":"Gravel","⛰":"Rock","🌱":"Grass","🌲":"Forest","🟫":"Soil","🧱":"Brick Chips"};
-const EMO=g=>g==="⛰"?"⛰️":g;
-const gtxt=d=>(d.ground||[]).map(g=>EMO(g)+" "+GROUND[g]).join(" · ");
-const LINE=[["Site",0],["Infrastructure",2],["Stay",4],["Identity",6],["Relation",8]];
-const BASIS=["事実（地面の種類・状態）","事実（区画面積・車の横付け等）","事実と品質の判断（設備・清潔さ・温水）","事実（アーリーチェックインの区分から決まる）","判断（場内動線・区画間隔・静けさ）","判断（景観）","判断（土地の個性・周辺環境）","判断（その場所でしかできない体験）","計算（移動時間）","パートナーの感想"];
-const TIERS=[["A","早い",10],["B","可",8],["C","条件付き",6],["D","不可",2]];
-const AVG=AX.map((_,i)=>DATA.reduce((s,d)=>s+d.axes[i],0)/Math.max(DATA.length,1));
-const avgSum=(a,b)=>AVG.slice(a,b).reduce((x,y)=>x+y,0);
-// DB-001 Field Log, MD-002 Site Record, elevation, surroundings, gear names (shared with Nocturne / Aubade)
-const LOG=EXTRA.log||{},BENCH=EXTRA.bench||[],SITE=EXTRA.site||{},ELEV=EXTRA.elev||{},SURR=EXTRA.surr||{},GEAR=EXTRA.gear||{},LL=EXTRA.ll||{},CLIM=EXTRA.climate||{},HOME_ELEV=EXTRA.home_elev;
-const today=()=>new Date(Date.now()+9*3600e3).toISOString().slice(0,10);
-const day0=s=>(String(s).match(/\d{4}-\d{2}-\d{2}/)||[])[0];
-const daysTo=s=>Math.round((Date.parse(s+"T00:00:00Z")-Date.parse(today()+"T00:00:00Z"))/864e5);
-const dLabel=n=>n>0?"D-"+n:n===0?"TODAY":"D+"+(-n);
-const NEXT=(()=>{let best=null;for(const r in LOG)LOG[r].forEach(e=>{const d=day0(e.date);if(e.status==="Planned"&&d&&get(+r)&&(!best||d<best.d))best={r:+r,d,e};});return best;})();
-const tempDiff=m=>HOME_ELEV==null||m==null?null:-(m-HOME_ELEV)*.6/100;
-const fmtT=t=>`${t>=0?"+":"−"}${Math.abs(t).toFixed(1)}℃`;
-// cold guide: JMA normal (1991-2020) of the daily lowest temperature in the month of the planned camp, and the same moved by the height difference (0.6 ℃ per 100 m, a rough guide)
-const fmtC=v=>`${v<0?"−":""}${Math.abs(v).toFixed(1)}℃`;
-function coldOf(r){const c=CLIM[r],ds=(LOG[r]||[]).map(e=>e.status==="Planned"?day0(e.date):null).find(Boolean);if(!c||!ds)return null;const mo=+ds.slice(5,7),t=c.tmin[mo-1];if(t==null)return null;
-  const el=ELEV[r],dh=el==null?null:el-c.elev;return{c,ds,mo,t,el,dh,adj:dh==null?null:t-dh*.6/100};}
-const gearIds=t=>[...new Set(String(t).match(/\b[A-Z]{3}-\d{3}[a-z]?\b/g)||[])];
-const SURR_L=[["ic","高速IC"],["conv","コンビニ"],["super","スーパー"],["bath","温泉・入浴"],["hosp","病院"]];
-function sunTimes(ds,lat,lon){
-  const [Y,M,D]=ds.split("-").map(Number),N=Math.round((Date.UTC(Y,M-1,D)-Date.UTC(Y,0,0))/864e5),g=2*Math.PI/365*(N-1+(3-12)/24);
-  const eq=229.18*(.000075+.001868*Math.cos(g)-.032077*Math.sin(g)-.014615*Math.cos(2*g)-.040849*Math.sin(2*g));
-  const dec=.006918-.399912*Math.cos(g)+.070257*Math.sin(g)-.006758*Math.cos(2*g)+.000907*Math.sin(2*g)-.002697*Math.cos(3*g)+.00148*Math.sin(3*g);
-  const r=Math.PI/180,c=Math.cos(90.833*r)/(Math.cos(lat*r)*Math.cos(dec))-Math.tan(lat*r)*Math.tan(dec);
-  if(c<-1||c>1)return null;const ha=Math.acos(c)/r;
-  return{rise:720-4*(lon+ha)-eq+540,set:720-4*(lon-ha)-eq+540};
-}
-const hm=m=>{const t=Math.round(m);return `${Math.floor(t/60)}:${pad(t%60)}`;};
-function moonAt(ds){const age=(((Date.parse(ds+"T12:00:00Z")-Date.UTC(2000,0,6,18,14))/864e5)%29.530588853+29.530588853)%29.530588853;
-  const lit=(1-Math.cos(2*Math.PI*age/29.530588853))/2;
-  const nm=age<1.85||age>=27.68?"新月":age<5.54?"三日月":age<9.23?"上弦":age<12.92?"十日夜":age<16.61?"満月":age<20.3?"寝待月":age<23.99?"下弦":"有明月";
-  return{age,lit,nm};}
 
 const selA=$("#selA"), selB=$("#selB");
 function opt(v,t){const o=document.createElement("option");o.value=v;o.textContent=t;return o;}
 byRank.forEach(d=>selA.appendChild(opt(d.rank,`${d.rank}. ${d.name}${d.visited?"":"（未訪問）"}`)));
 selB.appendChild(opt("none","比べない"));
 byRank.forEach(d=>selB.appendChild(opt(d.rank,`${d.rank}. ${d.name}`)));
-let state={a:1,b:"none",sort:"pv",vis:"all",gr:null};
-try{const s=JSON.parse(localStorage.getItem("fa-radar3")||"null");if(s&&s.a&&get(s.a)&&(s.b==="none"||get(s.b)))state=Object.assign(state,s);if(!["pv","q","t"].includes(state.sort))state.sort="pv";if(!["all","v","u"].includes(state.vis))state.vis="all";if(!GROUND[state.gr])state.gr=null;}catch(e){}
+try{const s=JSON.parse(localStorage.getItem("fa-radar3")||"null");if(s){if(get(+s.a))state.a=+s.a;const b=s.b==null||s.b==="none"?null:+s.b;if(b===null||get(b))state.b=b;if(["pv","q","t"].includes(s.sort))state.sort=s.sort;if(["all","v","u"].includes(s.vis))state.vis=s.vis;if(GROUND[s.gr])state.gr=s.gr;}}catch(e){}
 // deep link: #f=<rank> opens that field
 try{const m=location.hash.match(/f=(\d+)/);if(m&&get(+m[1]))state.a=+m[1];}catch(e){}
+if(state.b===state.a)state.b=null;
 function save(){try{localStorage.setItem("fa-radar3",JSON.stringify(state));}catch(e){}try{history.replaceState(null,"","#f="+state.a);}catch(e){}}
 const shown=d=>(state.vis==="all"||(state.vis==="v")===d.visited)&&(!state.gr||(d.ground||[]).includes(state.gr));
-const SORTS={pv:(x,y)=>pv(y)-pv(x)||x.rank-y.rank,q:(x,y)=>q(y)-q(x)||x.rank-y.rank,t:(x,y)=>x.hours-y.hours||x.rank-y.rank};
+const SORTS={pv:(x,y)=>pv(y)-pv(x)||x.rank-y.rank,q:(x,y)=>q8(y)-q8(x)||x.rank-y.rank,t:(x,y)=>x.hours-y.hours||x.rank-y.rank};
 
-const NS="http://www.w3.org/2000/svg", svg=$("#radar");
-const CX=200,CY=192,R=140;
-function pt(i,v){const ang=-Math.PI/2+i*2*Math.PI/AX.length;return[CX+Math.cos(ang)*R*v/10,CY+Math.sin(ang)*R*v/10];}
-function el(n,a,p){const e=document.createElementNS(NS,n);for(const k in a)e.setAttribute(k,a[k]);(p||svg).appendChild(e);return e;}
+const svg=$("#radar"),tipEl=$("#tip");
+// the 3D radar (scripts/templates/field_atlas_radar3d.js, the same renderer as the map pages): drag to rotate, ▲▼ tilt, ↺ or double click resets
+const R3=Radar3D(svg,{labels:AXJ,cx:200,cy:206,rad:132,avg:AVG,ringLabels:[5,10],tipEl,tip:(s,i,v)=>{const d=get(s?state.b:state.a);return `${d?d.name:""}｜${AXJ[i]} ${Math.round(v)}（平均 ${AVG[i].toFixed(1)}）`;}});
+// the two series ease to their new values (0.45 s); with reduced motion they jump
+const cur={a:new Array(10).fill(0),b:null};let tw=0;
 function draw(){
-  [...svg.querySelectorAll(":scope > :not(title)")].forEach(n=>n.remove());
-  const g=el("g",{});
-  [2,4,6,8,10].forEach(v=>el("polygon",{points:AX.map((_,i)=>pt(i,v).join(",")).join(" "),fill:"none",stroke:"var(--grid)","stroke-width":v===10?1.25:1},g));
-  AX.forEach((a,i)=>{const[x,y]=pt(i,10);el("line",{x1:CX,y1:CY,x2:x,y2:y,stroke:"var(--grid)","stroke-width":1},g);
-    const[lx,ly]=pt(i,11.9);const t=el("text",{x:lx,y:ly+4,"text-anchor":Math.abs(lx-CX)<4?"middle":(lx>CX?"start":"end"),fill:"var(--ink-soft)","font-size":12,"font-family":"var(--body)"},g);t.textContent=AXJ[i];});
-  [5,10].forEach(v=>{const[x,y]=pt(0,v);const t=el("text",{x:x+5,y:y+4,fill:"var(--ink-faint)","font-size":10,"font-family":"var(--mono)"},g);t.textContent=v;});
-  // all-field average as a faint outline
-  el("polygon",{points:AVG.map((v,i)=>pt(i,v).join(",")).join(" "),fill:"none",stroke:"var(--ink-faint)","stroke-width":1,"stroke-dasharray":"2 3"},g);
-  const A=get(state.a);let B=null,bLabel="";
-  if(state.b!=="none"&&get(state.b)){B=get(state.b);bLabel=B.name;}
-  if(B)series(B,"var(--b)",bLabel,0.10);
-  series(A,"var(--a)",A.name,0.18);
+  const A=get(state.a),B=state.b?get(state.b):null,from={a:[...cur.a],b:B?(cur.b||new Array(10).fill(0)):null},t0=performance.now(),dash={aDash:!A.visited,bDash:!!B&&!B.visited};
+  cancelAnimationFrame(tw);
+  const step=now=>{const t=matchMedia("(prefers-reduced-motion: reduce)").matches?1:Math.min(1,(now-t0)/450),e=1-Math.pow(1-t,3);
+    cur.a=A.axes.map((v,i)=>from.a[i]+(v-from.a[i])*e);cur.b=B?B.axes.map((v,i)=>from.b[i]+(v-from.b[i])*e):null;R3.set(cur.a,cur.b,dash);if(t<1)tw=requestAnimationFrame(step);};
+  step(t0);
+  R3.alt(`${A.name}の10軸：`+AXJ.map((a,i)=>`${a} ${A.axes[i]}`).join("、")+(B?`。比べる相手 ${B.name}：`+AXJ.map((a,i)=>`${a} ${B.axes[i]}`).join("、"):""));
   panel(A,B);details(A);
 }
-function series(d,color,label,fillOp){
-  const pts=d.axes.map((v,i)=>pt(i,v));
-  el("polygon",{points:pts.map(p=>p.join(",")).join(" "),fill:color,"fill-opacity":fillOp,stroke:color,"stroke-width":2,"stroke-linejoin":"round","stroke-dasharray":d.visited?"none":"5 4"});
-  pts.forEach((p,i)=>{
-    el("circle",{cx:p[0],cy:p[1],r:4.5,fill:color,stroke:"var(--card)","stroke-width":2});
-    const hit=el("circle",{cx:p[0],cy:p[1],r:13,fill:"transparent",tabindex:0,"aria-label":`${label} ${AXJ[i]} ${d.axes[i]}`});
-    const show=()=>tip(p,`${label}｜${AXJ[i]} ${d.axes[i]}（平均 ${AVG[i].toFixed(1)}）`);
-    hit.addEventListener("mouseenter",show);hit.addEventListener("focus",show);
-    hit.addEventListener("mouseleave",hideTip);hit.addEventListener("blur",hideTip);
-  });
-}
-const tipEl=$("#tip");
-function tip(p,txt){const box=svg.getBoundingClientRect(),s=box.width/400;tipEl.textContent=txt;tipEl.hidden=false;
-  let x=8+p[0]*s+12,y=8+p[1]*s-30;const w=tipEl.offsetWidth;if(x+w>box.width)x=x-w-24;tipEl.style.left=x+"px";tipEl.style.top=y+"px";}
-function hideTip(){tipEl.hidden=true;}
 function panel(A,B){
   $("#pName").textContent=A.name;
   $("#pMeta").textContent=`${A.rank}位 · ${A.pref} · 小岩から${A.hours}h · ${A.visited?"訪問済み":"未訪問（調査ベース）"}`;
   const lg=(LOG[A.rank]||[]).find(e=>e.status==="Planned"),k=lg&&day0(lg.date);
   $("#pTags").innerHTML=(A.ground&&A.ground.length?`<span class="chip">${esc(gtxt(A))}</span>`:"")+`<span class="chip">${esc(A.tag)}</span>`+(lg?`<span class="chip nx2">NEXT CAMP ${esc(lg.date)}${k?" · "+dLabel(daysTo(k)):""}</span>`:"");
-  $("#nQ").textContent=q(A);$("#nD").textContent=A.axes[8];$("#nPV").textContent=pv(A);
-  $("#sQ").textContent=B?"相手 "+q(B):"平均 "+avgSum(0,8).toFixed(1);
+  $("#nQ").textContent=q8(A);$("#nD").textContent=A.axes[8];$("#nPV").textContent=pv(A);
+  $("#sQ").textContent=B?"相手 "+q8(B):"平均 "+avgSum(0,8).toFixed(1);
   $("#sD").textContent=B?"相手 "+B.axes[8]:`12−2×${A.hours.toFixed(1)}h`;
   $("#sPV").textContent=B?"相手 "+pv(B):"平均 "+avgSum(0,10).toFixed(1);
   // axes grouped by lineage, with subtotals and the all-field average
@@ -356,21 +325,21 @@ function table(){
   const rows=byRank.filter(shown).sort(SORTS[state.sort]);
   $("#cnt").textContent=rows.length===byRank.length?`${byRank.length}件`:`${rows.length} / ${byRank.length}件`;
   let h=`<thead><tr><th>#</th><th class="l">フィールド</th><th class="l">地面</th>${AXJ.map((a,i)=>`<th title="${esc(BASIS[i])}">${a}</th>`).join("")}<th>8軸</th><th>計</th><th>時間</th><th class="l">アーリー</th></tr></thead><tbody>`;
-  rows.forEach((d,i)=>{h+=`<tr data-r="${d.rank}" tabindex="0" class="${d.rank==state.a?"sel":""}"><td>${i+1}</td><td class="l">${esc(d.name)}${d.visited?"":'<span class="un">未訪問</span>'}${NEXT&&NEXT.r===d.rank?'<span class="nx">NEXT</span>':""}</td><td class="g" title="${esc(gtxt(d))}">${(d.ground||[]).map(EMO).join("")}</td>${d.axes.map(v=>`<td>${v}</td>`).join("")}<td>${q(d)}</td><td>${pv(d)}</td><td>${d.hours.toFixed(1)}h</td><td class="l"><span class="chip ${d.early.tier}">${esc(d.early.label)}</span></td></tr>`;});
+  rows.forEach((d,i)=>{h+=`<tr data-r="${d.rank}" tabindex="0" class="${d.rank==state.a?"sel":""}"><td>${i+1}</td><td class="l">${esc(d.name)}${d.visited?"":'<span class="un">未訪問</span>'}${NEXT&&NEXT.r===d.rank?'<span class="nx">NEXT</span>':""}${FA.trail.some(x=>x.r===d.rank)?'<span class="mk" title="足跡（このブラウザのメモ）">足跡</span>':""}</td><td class="g" title="${esc(gtxt(d))}">${(d.ground||[]).map(EMO).join("")}</td>${d.axes.map(v=>`<td>${v}</td>`).join("")}<td>${q8(d)}</td><td>${pv(d)}</td><td>${d.hours.toFixed(1)}h</td><td class="l"><span class="chip ${d.early.tier}">${esc(d.early.label)}</span></td></tr>`;});
   if(!rows.length)h+=`<tr><td colspan="17" class="l">条件に合うフィールドがありません。</td></tr>`;
   t.innerHTML=h+"</tbody>";
-  t.querySelectorAll("tbody tr[data-r]").forEach(tr=>{const go=()=>{state.a=+tr.dataset.r;if(state.b==state.a)state.b="none";sync();window.scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});};
+  t.querySelectorAll("tbody tr[data-r]").forEach(tr=>{const go=()=>{state.a=+tr.dataset.r;if(state.b===state.a)state.b=null;sync();window.scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});};
     tr.addEventListener("click",go);tr.addEventListener("keydown",e=>{if(e.key==="Enter"||e.key===" "){e.preventDefault();go();}});});
 }
 const filt=$("#filt");
 filt.insertAdjacentHTML("beforeend",Object.keys(GROUND).map(g=>`<button type="button" class="gb" data-g="${g}" aria-pressed="false" title="${GROUND[g]}" aria-label="地面：${GROUND[g]}">${EMO(g)}</button>`).join(""));
 filt.addEventListener("click",e=>{const b=e.target.closest("button");if(!b)return;if(b.dataset.v)state.vis=b.dataset.v;else state.gr=state.gr===b.dataset.g?null:b.dataset.g;sync();});
-function sync(){selA.value=state.a;selB.value=state.b;
+function sync(){selA.value=state.a;selB.value=state.b==null?"none":state.b;
   [["#sortPV","pv"],["#sortQ","q"],["#sortT","t"]].forEach(([s,k])=>$(s).setAttribute("aria-pressed",String(state.sort===k)));
   filt.querySelectorAll("button").forEach(b=>b.setAttribute("aria-pressed",String(b.dataset.v?b.dataset.v===state.vis:b.dataset.g===state.gr)));
-  draw();table();save();}
-selA.addEventListener("change",()=>{state.a=+selA.value;if(state.b==state.a)state.b="none";sync();});
-selB.addEventListener("change",()=>{state.b=selB.value;sync();});
+  draw();table();faSections();save();}
+selA.addEventListener("change",()=>{state.a=+selA.value;if(state.b===state.a)state.b=null;sync();});
+selB.addEventListener("change",()=>{state.b=selB.value==="none"?null:+selB.value;sync();});
 $("#sortQ").addEventListener("click",()=>{state.sort="q";sync();});
 $("#sortPV").addEventListener("click",()=>{state.sort="pv";sync();});
 $("#sortT").addEventListener("click",()=>{state.sort="t";sync();});
@@ -381,7 +350,13 @@ $("#cpy").addEventListener("click",async e=>{const btn=e.currentTarget,lab=btn.t
 if(NEXT){const d=get(NEXT.r),n=daysTo(NEXT.d),nc=$("#nextc");nc.hidden=false;
   nc.innerHTML=`<span class="k">Next camp · DB-001</span><span class="nn">${esc(d.name)}</span><span class="dt">${esc(NEXT.e.date)} · ${esc(NEXT.e.status)}</span><span class="dd">${n>0?n:n===0?"0":"+"+(-n)}<small>${n>0?"日後":n===0?"今日":"日前"}</small></span>`;
   nc.setAttribute("aria-label",`次のキャンプ：${d.name}、${NEXT.e.date}`);
-  nc.addEventListener("click",()=>{state.a=NEXT.r;if(state.b==state.a)state.b="none";sync();});}
+  nc.addEventListener("click",()=>{state.a=NEXT.r;if(state.b===state.a)state.b=null;sync();});}
 if(BENCH.length){const b=BENCH[0];$("#benchTxt").textContent=`${b.name}（${b.info}${b.elev!=null?`・標高 ${b.elev} m`:""}）は、MD-002 §Reference Benchmark Siteに記録したView軸10点の基準地点です（${b.tag}）。ランキングの対象ではありません。`;}
+// the shared tools (今日の一手, 日照帯, 2点の直線, 足跡): their buttons carry data-fa
+document.addEventListener("click",e=>{const b=e.target.closest("[data-fa]");if(!b)return;const k=b.dataset.fa;
+  if(k==="pick"){state.a=+b.dataset.r;if(state.b===state.a)state.b=null;sync();window.scrollTo({top:0,behavior:matchMedia("(prefers-reduced-motion: reduce)").matches?"auto":"smooth"});}
+  else if(faTrailAction(k)){table();faSections();}
+  else if(k==="sunauto"){FA.sunDate=null;faSections();}});
+document.addEventListener("change",e=>{if(e.target.classList.contains("fa-date")&&e.target.value){FA.sunDate=e.target.value;faSections();}});
 sync();
 </script>

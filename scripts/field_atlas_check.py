@@ -18,7 +18,7 @@ notation drift between documents and data files:
              it uses, with 12 values (first dekad of each month) and JMA sources
     pages    the Nocturne, Aubade, Cartograph, Contour, Gloaming and Radar pages build
              without warnings, the five map templates each take the shared script
-             once, terrain.json is a well-formed grid, and no placeholder is left
+             once, all six pages carry the 3D radar renderer and the shared tools once, terrain.json is a well-formed grid, and no placeholder is left
 
 Exits 1 and lists every problem when anything is out of step. Runs in CI.
 
@@ -129,13 +129,27 @@ def main() -> None:
         marks = t.read_text(encoding="utf-8").count("/*__SHARED_JS__*/")
         if marks != 1:
             problems.append(f"{t.name}: expected one /*__SHARED_JS__*/ marker, found {marks}")
+    for f in (radar.CORE_JS, radar.RADAR3D_JS):
+        if not f.exists():
+            problems.append(f"{f.name}: missing (shared by all six pages)")
+    marks = radar.TEMPLATE.read_text(encoding="utf-8").count("/*__CORE_JS__*/")
+    if marks != 1:
+        problems.append(f"{radar.TEMPLATE.name}: expected one /*__CORE_JS__*/ marker, found {marks}")
+    # every page carries the one 3D radar renderer and the shared tools exactly once
+    def once(name, html):
+        for sig in ("function Radar3D(", "function faMove(", "function faTrailAction("):
+            n = html.count(sig)
+            if n != 1:
+                problems.append(f"{name}: {sig} appears {n} times (expected once)")
     for t in TEMPLATES:
         html, warnings = nav.build(MD002, t)
         problems += [f"{t.name}: {w}" for w in warnings]
+        once(t.name, html)
         left = re.findall(r"/\*__[A-Z_]+__\*/|__MD002_VERSION__|__GENERATED__", html)
         if left:
             problems.append(f"{t.name}: placeholders left: {sorted(set(left))}")
     html, warnings, _, _ = radar.render(MD002)
+    once("field_atlas_radar.html", html)
     problems += [f"field_atlas_radar.html: {w}" for w in warnings]
     left = re.findall(r"/\*__[A-Z_]+__\*/|__MD002_VERSION__|__GENERATED__", html)
     if left:

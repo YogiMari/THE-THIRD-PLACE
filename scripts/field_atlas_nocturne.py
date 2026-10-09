@@ -56,7 +56,9 @@ import field_atlas_radar  # noqa: E402  (MD-002 parser shared with the radar)
 
 HERE = Path(__file__).parent
 TEMPLATE = HERE / "templates" / "field_atlas_nocturne.html"
-SHARED_JS = HERE / "templates" / "field_atlas_shared.js"  # script common to the Nocturne and Aubade templates
+SHARED_JS = HERE / "templates" / "field_atlas_shared.js"  # script common to the five map templates
+CORE_JS = field_atlas_radar.CORE_JS  # shared by the map pages and the Radar page
+RADAR3D_JS = field_atlas_radar.RADAR3D_JS  # the 3D radar renderer, one source for all six pages
 DATA_DIR = HERE / "data" / "field_atlas"
 DB001 = HERE.parent / "DB" / "DB-001_Project_Ledger.md"
 MD004 = HERE.parent / "MD" / "MD-004"  # folder: entry file + one file per domain
@@ -285,7 +287,7 @@ def build(md002: Path, template: Path = TEMPLATE, db001: Path = DB001, md004: Pa
 
     html = (
         template.read_text(encoding="utf-8")
-        .replace("/*__SHARED_JS__*/", SHARED_JS.read_text(encoding="utf-8"))
+        .replace("/*__SHARED_JS__*/", field_atlas_radar.core_script() + "\n" + SHARED_JS.read_text(encoding="utf-8"))
         .replace("/*__DATA__*/[]", js(data))
         .replace("/*__JAPAN__*/[]", js(jp))
         .replace("/*__GEO__*/{}", js(geo))
