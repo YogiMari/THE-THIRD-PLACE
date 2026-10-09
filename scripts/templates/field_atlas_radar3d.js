@@ -23,7 +23,11 @@
 //               glowing edges, light beams with diamond caps, numbered axis names.
 //   "porcelain" (Aubade) a glazed plate in daylight: a blurred warm shadow, an ivory plate with a double rim and a ring
 //               of beads, dotted rings, a soft slow band of light, glazed prisms with a lit gradient and a warm blurred
-//               shadow, hairline stems with porcelain beads.
+//               shadow, hairline stems with porcelain beads. Over it an astrolabe: a warm glow under the prisms, a
+//               graduated halo ring floating above the pillars with two beads in orbit and their trails, a tilted
+//               armillary ring turning slowly, a pearl (iridescent) inner rim on the glaze, light columns on the stems
+//               with a ring that ripples from each cap in turn, a sunbeam with a sharp edge and a sun bead, and a
+//               turning compass star at the centre. Every moving part stops when motion is reduced.
 // Value labels carry the class r3v without an inline font, so a page with a look sets their typeface.
 function Radar3D(svg,o){
   const NS="http://www.w3.org/2000/svg",N=o.labels.length,DEG=Math.PI/180,TAU=Math.PI*2;
@@ -38,7 +42,7 @@ function Radar3D(svg,o){
   const L=o.look||"",pad2=n=>String(n).padStart(2,"0");
   // static markup: defs, one dynamic group, a text alternative
   svg.classList.add("r3");svg.setAttribute("tabindex","0");svg.setAttribute("aria-keyshortcuts","ArrowLeft ArrowRight ArrowUp ArrowDown Home");
-  svg.innerHTML=`<desc id="r3desc"></desc><defs><radialGradient id="r3gd" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="currentColor" stop-opacity=".13"/><stop offset=".72" stop-color="currentColor" stop-opacity=".05"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></radialGradient><radialGradient id="r3gs" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#000" stop-opacity=".26"/><stop offset=".6" stop-color="#000" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>${L==="hud"?`<filter id="r3glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>`:""}${L==="porcelain"?`<filter id="r3blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="4"/></filter><radialGradient id="r3pl" cx="42%" cy="38%" r="70%"><stop offset="0" stop-color="#fff"/><stop offset=".7" stop-color="#FBF8F1"/><stop offset="1" stop-color="#EFE9DC"/></radialGradient><radialGradient id="r3bd" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#F7F3EA"/><stop offset="1" stop-color="#D9D1C1"/></radialGradient>`:""}${["a","b"].map(k=>`<linearGradient id="r3b${k}" x1="0" y1="1" x2="0" y2="0"><stop offset="0" class="r3s0"/><stop offset="1" class="r3s1"/></linearGradient><linearGradient id="r3t${k}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" class="r3s2"/><stop offset=".6" class="r3s3"/><stop offset="1" class="r3s4"/></linearGradient>`).join("")}</defs><g id="r3g"></g>`;
+  svg.innerHTML=`<desc id="r3desc"></desc><defs><radialGradient id="r3gd" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="currentColor" stop-opacity=".13"/><stop offset=".72" stop-color="currentColor" stop-opacity=".05"/><stop offset="1" stop-color="currentColor" stop-opacity="0"/></radialGradient><radialGradient id="r3gs" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#000" stop-opacity=".26"/><stop offset=".6" stop-color="#000" stop-opacity=".12"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>${L==="hud"?`<filter id="r3glow" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="2.2" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>`:""}${L==="porcelain"?`<filter id="r3blur" x="-30%" y="-30%" width="160%" height="160%"><feGaussianBlur stdDeviation="4"/></filter><radialGradient id="r3pl" cx="42%" cy="38%" r="70%"><stop offset="0" stop-color="#fff"/><stop offset=".7" stop-color="#FBF8F1"/><stop offset="1" stop-color="#EFE9DC"/></radialGradient><radialGradient id="r3bd" cx="35%" cy="30%" r="75%"><stop offset="0" stop-color="#fff"/><stop offset=".55" stop-color="#F7F3EA"/><stop offset="1" stop-color="#D9D1C1"/></radialGradient><linearGradient id="r3ir" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset=".3" stop-color="#F4C9A8"/><stop offset=".55" stop-color="#E9DDF2"/><stop offset=".78" stop-color="#A9C4E6"/><stop offset="1" stop-color="#fff"/></linearGradient>`:""}${["a","b"].map(k=>`<linearGradient id="r3b${k}" x1="0" y1="1" x2="0" y2="0"><stop offset="0" class="r3s0"/><stop offset="1" class="r3s1"/></linearGradient><linearGradient id="r3t${k}" x1="0" y1="0" x2="1" y2="1"><stop offset="0" class="r3s2"/><stop offset=".6" class="r3s3"/><stop offset="1" class="r3s4"/></linearGradient>`).join("")}</defs><g id="r3g"></g>`;
   svg.setAttribute("aria-describedby","r3desc");
   const g=svg.querySelector("#r3g"),descEl=svg.querySelector("#r3desc");
   const st=document.createElement("style");st.textContent=`svg.r3{touch-action:pan-y;cursor:grab;-webkit-user-select:none;user-select:none;-webkit-tap-highlight-color:transparent;outline:none}
@@ -168,6 +172,7 @@ svg.r3 text{pointer-events:none;-webkit-user-select:none;user-select:none}
       out+=`<polygon points="${pxy(polyAt(new Array(N).fill(10),0,0))}" fill="${C.a}" fill-opacity=".035" stroke="currentColor" stroke-opacity=".34" stroke-width=".9"/>`;
       [2,4,6,8].forEach(v=>{out+=`<polygon points="${pxy(polyAt(new Array(N).fill(v),0,0))}" fill="none" stroke="currentColor" stroke-opacity=".34" stroke-width="1.15" stroke-dasharray="0 3.2" stroke-linecap="round"/>`;});
       for(let i=0;i<N;i++)out+=ln(c0,at(ang(i),R),'stroke="currentColor" stroke-opacity=".13" stroke-width=".7"');
+      out+=`<g color="${C.a}" opacity=".85"><polygon points="${pxy(ringPts(R*.95,0,64))}" fill="url(#r3gd)"/></g>`;
     }
     if(o.avg)out+=`<polygon points="${pxy(polyAt(o.avg,0,0))}" fill="none" stroke="currentColor" stroke-opacity=".5" stroke-width="1" stroke-dasharray="2 3"/>`;
     if(hit!=null)out+=ln(c0,at(ang(hit),R),`stroke="${C.a}" stroke-opacity=".8" stroke-width="1.3"`);
@@ -175,9 +180,23 @@ svg.r3 text{pointer-events:none;-webkit-user-select:none;user-select:none}
     if(!RM()){
       if(H){const f=now/6000*TAU;for(let k=0;k<12;k++){const a0=f-(k+1)*6*DEG,a1=f-k*6*DEG;out+=`<polygon points="${pxy([c0,at(a0,R),at((a0+a1)/2,R),at(a1,R)])}" fill="${C.a}" fill-opacity="${(.17*Math.pow(1-k/12,1.6)).toFixed(3)}"/>`;}
         out+=ln(c0,at(f,R*1.07),`stroke="${C.a}" stroke-opacity=".9" stroke-width="1.1" filter="url(#r3glow)"`);}
-      else{const f=now/11000*TAU;for(let k=0;k<14;k++){const a0=f+(k-7)*5*DEG,a1=a0+5*DEG;out+=`<polygon points="${pxy([c0,at(a0,R),at((a0+a1)/2,R),at(a1,R)])}" fill="${C.a}" fill-opacity="${(.085*Math.pow(Math.sin(Math.PI*(k+.5)/14),2)).toFixed(3)}"/>`;}}
+      else{const f=now/11000*TAU;for(let k=0;k<14;k++){const a0=f+(k-7)*5*DEG,a1=a0+5*DEG;out+=`<polygon points="${pxy([c0,at(a0,R),at((a0+a1)/2,R),at(a1,R)])}" fill="${C.a}" fill-opacity="${(.085*Math.pow(Math.sin(Math.PI*(k+.5)/14),2)).toFixed(3)}"/>`;}
+        const e=f+35*DEG,sp=at(e,R*1.135);out+=ln(c0,at(e,R*1.085),`stroke="${C.a}" stroke-opacity=".55" stroke-width=".9"`)+`<circle cx="${f1(sp.X)}" cy="${f1(sp.Y)}" r="${(4.6*sp.s).toFixed(2)}" fill="${C.a}" fill-opacity=".18"/><circle cx="${f1(sp.X)}" cy="${f1(sp.Y)}" r="${(2*sp.s).toFixed(2)}" fill="#fff" stroke="${C.a}" stroke-width="1"/>`;}
     }
-    if(!H)out+=`<circle cx="${f1(c0.X)}" cy="${f1(c0.Y)}" r="${(2*c0.s).toFixed(2)}" fill="${C.a}"/>`;
+    if(!H){const q=t*.25,st=[];for(let k=0;k<8;k++){const a=q+k*Math.PI/4,r=k%2?2.2:7;st.push(at(a,r));}
+      out+=`<polygon points="${pxy(st)}" fill="${C.a}" fill-opacity=".85" stroke="#fff" stroke-width=".6"/><circle cx="${f1(c0.X)}" cy="${f1(c0.Y)}" r="${(1.3*c0.s).toFixed(2)}" fill="#fff"/>`;}
+    // astrolabe (porcelain): a graduated halo floating above the pillars and a tilted armillary ring; their far halves sit behind the prisms
+    const astro=[[],[]];
+    if(!H){const HY=T+10*HS+7,hr=R*1.02,rot=t*.06;
+      const seg=(pts,x)=>{for(let j=0;j<pts.length-1;j++){const p=pts[j],q=pts[j+1];astro[(p.z1+q.z1)/2<0?0:1].push(`<line x1="${f1(p.X)}" y1="${f1(p.Y)}" x2="${f1(q.X)}" y2="${f1(q.Y)}" ${x}/>`);}};
+      const halo=[];for(let k=0;k<=96;k++)halo.push(at(k/96*TAU,hr,HY));seg(halo,`stroke="${C.a}" stroke-opacity=".5" stroke-width=".8"`);
+      for(let k=0;k<36;k++){const a=rot+k/36*TAU,p=at(a,hr,HY),q=at(a,hr*(k%9===0?.92:.96),HY);astro[p.z1<0?0:1].push(ln(p,q,`stroke="${C.a}" stroke-opacity="${k%9===0?.8:.4}" stroke-width="${k%9===0?1:.7}"`));}
+      if(!RM())[0,Math.PI].forEach((o0,n)=>{const a0=t*(n?.32:.45)+o0;for(let j=0;j<10;j++){const p=at(a0-j*3.2*DEG,hr,HY),q=at(a0-(j+1)*3.2*DEG,hr,HY);astro[p.z1<0?0:1].push(ln(p,q,`stroke="${C.a}" stroke-opacity="${(.8*(1-j/10)).toFixed(2)}" stroke-width="${(1.8*(1-j/12)).toFixed(2)}" stroke-linecap="round"`));}
+        const b=at(a0,hr,HY);astro[b.z1<0?0:1].push(`<circle cx="${f1(b.X)}" cy="${f1(b.Y)}" r="${(2.4*b.s).toFixed(2)}" fill="url(#r3bd)" stroke="${C.a}" stroke-width="1"/>`);});
+      const tl=62*DEG,ph=t*.12,ar=[];for(let k=0;k<=96;k++){const a=k/96*TAU,x0=Math.cos(a)*R*1.08,y0=Math.sin(a)*R*1.08*Math.sin(tl),z0=Math.sin(a)*R*1.08*Math.cos(tl);
+        ar.push(P(x0*Math.cos(ph)-z0*Math.sin(ph),HY*.5+y0*.55,x0*Math.sin(ph)+z0*Math.cos(ph)));}
+      seg(ar,`stroke="url(#r3ir)" stroke-opacity=".9" stroke-width="1.1" stroke-dasharray="1 2.6" stroke-linecap="round"`);
+      out+=astro[0].join("");}
     const series=[];if(dataB)series.push({v:dataB,col:C.b,dash:dashB,idx:1});series.push({v:dataA,col:C.a,dash:dashA,idx:0});
     // footprints: a dashed outline on the floor (hud) or a warm blurred shadow (porcelain)
     series.forEach(s=>{out+=H?`<polygon points="${pxy(polyAt(s.v,0,.05))}" fill="${s.col}" fill-opacity=".05" stroke="${s.col}" stroke-opacity=".55" stroke-width=".8" stroke-dasharray="2 3"/>`
@@ -202,12 +221,14 @@ svg.r3 text{pointer-events:none;-webkit-user-select:none;user-select:none}
         sides.push({c,html:`<polygon points="${pxy(quad)}" fill="${s.col}" fill-opacity="${fo.toFixed(3)}" stroke="${s.col}" stroke-opacity="${H?.4:.45}" stroke-width=".6" stroke-linejoin="round"/>`});}
       const tp=polyAt(s.v,T,.05),dash=s.dash?' stroke-dasharray="5 4"':"";
       tops.push(H?`<polygon points="${pxy(tp)}" fill="${s.col}" fill-opacity="${s.idx?.06:.11}" stroke="${s.col}" stroke-width="1.3" stroke-linejoin="round"${dash}/>`
-        :`<polygon points="${pxy(tp)}" fill="url(#r3t${s.idx?"b":"a"})" stroke="${s.col}" stroke-width="1.4" stroke-linejoin="round"${dash}/><polygon points="${pxy(polyAt(s.v.map(v=>v*.93),T+.02,.05))}" fill="none" stroke="#fff" stroke-opacity=".75" stroke-width=".8" stroke-linejoin="round"/>`);
+        :`<polygon points="${pxy(tp)}" fill="url(#r3t${s.idx?"b":"a"})" stroke="${s.col}" stroke-width="1.4" stroke-linejoin="round"${dash}/><polygon points="${pxy(polyAt(s.v.map(v=>v*.93),T+.02,.05))}" fill="none" stroke="url(#r3ir)" stroke-width="1.1" stroke-linejoin="round"/>`);
       s.v.forEach((v,i)=>{const r=R*Math.max(v,.05)/10,a=ang(i),x=Math.cos(a)*r,z=Math.sin(a)*r,b=P(x,T,z),tt=P(x,T+v*HS,z),sc=b.s;
         tips.push({X:tt.X,Y:tt.Y,ser:s.idx,i,v});tips.push({X:b.X,Y:b.Y,ser:s.idx,i,v});
         if(v>=.2){if(H){const dx=tt.X-b.X,dy=tt.Y-b.Y,l=Math.hypot(dx,dy)||1,nx=-dy/l,ny=dx/l,w0=1.7*sc,w1=.45*sc;
             verts.push({c:(b.c+tt.c)/2,html:`<polygon points="${f1(b.X+nx*w0)},${f1(b.Y+ny*w0)} ${f1(b.X-nx*w0)},${f1(b.Y-ny*w0)} ${f1(tt.X-nx*w1)},${f1(tt.Y-ny*w1)} ${f1(tt.X+nx*w1)},${f1(tt.Y+ny*w1)}" fill="url(#r3b${s.idx?"b":"a"})"/>`});}
-          else verts.push({c:(b.c+tt.c)/2,html:ln(b,tt,`stroke="${s.col}" stroke-width="${(1.05*sc).toFixed(2)}" stroke-linecap="round" stroke-opacity=".75"`)});}
+          else{const dx=tt.X-b.X,dy=tt.Y-b.Y,l=Math.hypot(dx,dy)||1,nx=-dy/l,ny=dx/l,w0=2.6*sc,w1=.6*sc;
+            verts.push({c:(b.c+tt.c)/2,html:`<polygon points="${f1(b.X+nx*w0)},${f1(b.Y+ny*w0)} ${f1(b.X-nx*w0)},${f1(b.Y-ny*w0)} ${f1(tt.X-nx*w1)},${f1(tt.Y-ny*w1)} ${f1(tt.X+nx*w1)},${f1(tt.Y+ny*w1)}" fill="url(#r3b${s.idx?"b":"a"})" opacity=".32"/>`+ln(b,tt,`stroke="${s.col}" stroke-width="${(1.05*sc).toFixed(2)}" stroke-linecap="round" stroke-opacity=".75"`)});}}
+        if(!H&&!s.idx&&!RM()){const u=((t/2.8+i/N)%1);verts.push({c:tt.c,html:`<circle cx="${f1(tt.X)}" cy="${f1(tt.Y)}" r="${((3.2+9*u)*sc).toFixed(2)}" fill="none" stroke="${s.col}" stroke-width=".8" stroke-opacity="${(.6*(1-u)).toFixed(2)}"/>`});}
         const d=(s.idx?2.8:3.5)*sc;
         verts.push({c:tt.c+.01,html:H?`<polygon points="${f1(tt.X)},${f1(tt.Y-d)} ${f1(tt.X+d)},${f1(tt.Y)} ${f1(tt.X)},${f1(tt.Y+d)} ${f1(tt.X-d)},${f1(tt.Y)}" fill="#01060c" fill-opacity=".55" stroke="${s.col}" stroke-width=".9"/><circle cx="${f1(tt.X)}" cy="${f1(tt.Y)}" r="${(1.25*sc).toFixed(2)}" fill="${s.idx?s.col:C.da}"/>`
           :`<circle cx="${f1(tt.X)}" cy="${f1(tt.Y)}" r="${((s.idx?2.6:3.2)*sc).toFixed(2)}" fill="url(#r3bd)" stroke="${s.col}" stroke-width="${(1.1*sc).toFixed(2)}"/>`});
@@ -216,6 +237,7 @@ svg.r3 text{pointer-events:none;-webkit-user-select:none;user-select:none}
     sides.sort((p,q)=>p.c-q.c).forEach(s=>{out+=s.html;});
     out+=H?`<g filter="url(#r3glow)">${tops.join("")}</g>`:tops.join("");
     verts.sort((p,q)=>p.c-q.c).forEach(v=>{out+=v.html;});
+    if(astro[1].length)out+=`<g opacity=".42">${astro[1].join("")}</g>`;  // the near half of the astrolabe, light enough to read the prisms through
     labs.filter(l=>l.z>=0).forEach(l=>{out+=l.html;});
     labsV.forEach(l=>{if(l.idx===1){const a=labsV.find(x=>x.idx===0&&x.i===l.i);if(a&&Math.hypot(a.X-l.X,a.Y-l.Y)<11)return;}
       out+=`<text class="rax r3v" x="${f1(l.X)}" y="${f1(l.Y-(H?6:6.5)*l.s-1)}" text-anchor="middle" style="font-size:${(fs*(H?1.25:1.3)*clamp(l.s,.85,1.2)).toFixed(2)}px;fill:${l.col}">${Math.round(l.v)}</text>`;});

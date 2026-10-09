@@ -1,11 +1,11 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.4.24
+## Ver.4.25
 
 **Document ID**: MD-002  
 **Title**: Field Atlas Landscape Framework  
 **Series**: MD – Master Data (Record)  
-**Version**: 4.24  
+**Version**: 4.25  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -342,7 +342,7 @@ python3 scripts/field_atlas_duo.py --md002 MD/MD-002_Field_Atlas_Landscape_Frame
 
 - 公開先：https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm（旧Field Atlas NocturneのArtifactを、統合ページで置き換えた）
 - 下記の二つの生成コマンドは、それぞれの版を単独のページとして作る場合に使う。
-- 3Dレーダーは、Nocturneでは発光する計器（光る床・目盛りの環・レーダーの掃引・光の柱とひし形の頂点・番号付きの軸名）、Aubadeでは陽光の中の磁器の皿（やわらかな影・二重の縁と玉の環・釉薬のような板・磁器の玉の頂点）として描く。値・軸・操作は他の版と同じである。
+- 3Dレーダーは、Nocturneでは発光する計器（光る床・目盛りの環・レーダーの掃引・光の柱とひし形の頂点・番号付きの軸名）、Aubadeでは陽光の中の磁器の皿（やわらかな影・二重の縁と玉の環・真珠色の縁取りの釉薬のような板・磁器の玉の頂点）に、アストロラーベ（柱の上に浮かぶ目盛りの輪と、その上を巡る2つの玉・傾いて回る真珠色の輪・頂点から順に広がる波紋・縁の太陽の玉を伴う光の帯・中心で回る羅針の星）を重ねて描く。値・軸・操作は他の版と同じである。
 - 両版とも、デザインの方向を保ったまま細部を作り込んでいる（パネルの番号・目盛り・画面の縁の文字・写真の照準など）。ヘッダーのRENDERは、そのブラウザで実測した描画の速さ（毎秒のフレーム数）である。
 
 ### Field Atlas Nocturne
@@ -484,6 +484,7 @@ THE THIRD PLACE を実現するための
 | 4.22 | 2026-10-09 | MARI様のご決定に基づき、Field Atlasのページを Nocturne と Aubade の2つだけに絞った。Field Atlas Cartograph・Contour・Gloaming と、単独のField Atlas Radarページを廃止した（生成スクリプト・テンプレート・公開ページを削除。10軸の3Dレーダーそのものは両ページの中に残る）。§Visualizationの該当節と共通ツールの対象を改め、MD-002を読む共通の処理は `scripts/field_atlas_md002.py` へ移した。スコア・順位・掲載内容は変えていない。Patch Version。 |
 | 4.23 | 2026-10-09 | MARI様のご指摘に基づき、§VisualizationのField Atlasで、アプリの画面上部のバーにヘッダー（タイトル）が隠れていた不具合を直した（ページの枠を画面の安全領域の内側に置く）。スコア・順位・掲載内容は変えていない。Patch Version。 |
 | 4.24 | 2026-10-09 | MARI様のご指示に基づき、§VisualizationのField Atlas Aubadeの単独版Artifactを削除した（Aubadeは統合ページField Atlasの一方の版としてのみ公開する）。スコア・順位・掲載内容は変えていない。Patch Version。 |
+| 4.25 | 2026-10-09 | MARI様のご指示に基づき、§VisualizationのField Atlas Aubadeの3Dレーダーに、品を保ったままSF風の要素（アストロラーベの輪・巡る玉・波紋・真珠色の縁取りなど）を加えた。スコア・順位・掲載内容は変えていない。Patch Version。 |
 
 ---
 
