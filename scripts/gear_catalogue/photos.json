@@ -1846,5 +1846,13 @@
   "url": "",
   "kind": "Image supplied by the owner (original source not stated)",
   "bg": null
+ },
+ "COF-009": {
+  "f": "img/COF-009.jpg",
+  "pos": "50% 50%",
+  "credit": "Supplied by the owner (original source not stated)",
+  "url": "",
+  "kind": "Reference image supplied by the owner (original source not stated): shows black handles, the registry lists Walnut handles",
+  "bg": null
  }
 }
