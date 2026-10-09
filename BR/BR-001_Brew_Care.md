@@ -9,8 +9,8 @@ BR-001
 Brew Care  
 
 ## Version  
-
-1.6  
+  
+1.7  
 
 ## Status  
 
@@ -278,9 +278,10 @@ MilkまたはBeverageと直接接触するEquipment。
 - DAMNGOOD × CATAPULT FACTORY FIKA12 ×2  
 - KRUVE PROPEL  
 - ICOSA Brewhouse AERESSO  
-- Snow Peak オーロラボトル 1L  
-- YETI Yonder 1L  
+- Snow Peak オーロラボトル800 オーシャン  
 - Snow Peak 酒筒 Titanium 540mL  
+- SMEG × 24Bottles Urban Bottle 1000mL  
+- SilverAnt 結晶化ブラックチタンボトル 600mL  
 
 ## Class D — Material-Specific Care  
 
@@ -986,7 +987,7 @@ Routine:
 
 ---  
 
-# 40. Snow Peak オーロラボトル 1L  
+# 40. Snow Peak オーロラボトル800 オーシャン  
 
 Aurora Bottleは、Beverage Container（飲料容器）である。  
 
@@ -1010,20 +1011,9 @@ Long-Term Vehicle Storageのために、内部に液体や不要な水を残さ�
 
 ---  
 
-# 41. YETI Yonder 1L  
-
-Yonderは、Water Container（水容器）である。  
-
-Routine:  
-
-- 空にする  
-- 洗う  
-- すすぐ  
-- 完全に乾かす  
-
-水を溜めたまま収納しないこと。  
-
-約1ヶ月間、内部が濡れたまま閉じないこと。  
+# 41. 欠番（2026-10-09廃止）  
+  
+YETI Yonder 1Lの採用取消に伴い、節番号のみ残置する（参照維持のため）。  
 
 ---  
 
@@ -1430,8 +1420,9 @@ Long-Term Vehicle Storage中にMilk残渣を残してはならない。
 
 - RDT Spray Bottle  
 - Snow Peak Aurora Bottle  
-- YETI Yonder  
 - Snow Peak 酒筒 Titanium  
+- SMEG × 24Bottles Urban Bottle  
+- SilverAnt 結晶化ブラックチタンボトル  
 - ALM KOPiの水側部品  
 
 使用と使用の間、約1ヶ月間不必要に水を保持しないこと。  
@@ -1652,6 +1643,7 @@ READY（準備完了）
 | 1.4 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Puck Screenの廃止に伴い、Class Bの対象、Espresso Closureの手順（旧7を削除し番号を詰めた）、Closureの流れ図、第16節（欠番として節番号のみ残置。参照維持のため）、Periodic Careの対象、Coffee Residue Matrix、Camp Closure Checklist、Pre-Use Checklistから該当記述を削除。第25節を、Magnetic Dosing Funnelは付属アクセサリーではなく9Barista公式の有料オプションとして購入する旨に訂正。Filter PaperおよびEPF Dockの手入れ項目は、決定がないため追加していない。Minor Version。 |
 | 1.5 | 2026-10-08 | MARI様のご指摘に基づき、Weber Workshopsの豆保存コンポーネントの名称をBean Cellar BulkからBean Cellar Glassへ訂正（BR-002 Ver.4.15・BR-003 Ver.4.8と連動）。第21節の手入れ手順の内容は変更していない（Glass固有の手入れは未確認）。Patch Version。 |
 | 1.6 | 2026-10-08 | MD-004 Ver.8.8・OP-010 Ver.3.6と連動し、Document Relationship図のMD-004行の登録時点を「購入した時点で登録。到着を待たない」へ改めた（従来は「実際に購入・Owned Statusとなった時点」で、購入時点とも到着時点とも読めた）。手入れ手順の内容に変更はない。Patch Version。 |  
+| 1.7 | 2026-10-09 | MARI様のご決定（2026-10-09）に基づく、Coffee System専用水ボトルの4本構成（BR-002 Ver.4.19）への追随。YETI Yonder 1Lの採用取消に伴い第41節を欠番（節番号のみ残置）とし、第40節をオーロラボトル800 オーシャンへ改め、Class Cの対象とWater Residue Matrixの例を4本に改めた。SMEG × 24BottlesとSilverAntの個別の手入れ節は、メーカー指示が未確認のため追加していない（購入後に別途）。Patch Version。 |  
 
 ---
 

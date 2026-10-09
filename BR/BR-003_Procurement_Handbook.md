@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-4.16  
+4.17  
   
 **Status**  
   
@@ -886,86 +886,52 @@ Procurement Handbook
   
 ## Product 23  
   
-### Snow Peak オーロラボトル 1L  
+### Snow Peak オーロラボトル800 オーシャン（TW-800RE-OC）  
   
 | Item | Details |  
 |---|---|  
 | Manufacturer | Snow Peak |  
-| Model | オーロラボトル 1L |  
-| Current Purchase Model | オーロラボトル 1L |  
+| Model | オーロラボトル800 オーシャン（TW-800RE-OC） |  
+| Current Purchase Model | オーロラボトル800 オーシャン（TW-800RE-OC） |  
 | Category | Water Bottle |  
 | Acquisition Status | Purchase Required |  
 | Quantity | 1 |  
-| Purchase Type | Domestic |  
-| Primary Purchase Source | Snow Peak Official Store / Authorized Retailer |  
-| Purchase URL | Official / Authorized Retailer |  
-| Japan Shipping | Available |  
+| Purchase Type | 未確認 |  
+| Primary Purchase Source | 未確認（日本での取扱い・販売先を確認する） |  
+| Purchase URL | https://www.snowpeak.com/products/recycled-aurora-bottle（仕様の出典。日本の販売ページではない） |  
+| Japan Shipping | 未確認 |  
 | Warranty | Manufacturer Policy |  
-| Current Product Price | ¥8,000〜12,000 planning estimate |  
-| Estimated Shipping | ¥0〜1,000 |  
-| Estimated Total Cost | ¥8,000〜13,000 |  
+| Current Product Price | 未確認（日本価格） |  
+| Estimated Shipping | 未確認 |  
+| Estimated Total Cost | 未確認 |  
 | Currency | JPY |  
 | Purchase Priority | ★★★★☆ |  
   
 ### Notes  
   
-* Confirmed Coffee System Water Equipment。  
-* 容量：1,000mL。  
-* Coffee System専用水。  
-* 9BaristaおよびALM KOPi Z1 Miniに使用。  
+* Confirmed Coffee System Water Equipment。MARI様のご決定（2026-10-09）により、従前のオーロラボトル 1L（容量1,000mL）から本モデルへ変更。  
+* 容量：800mL。  
+* 寸法・重量：Φ80×H230mm／150g。  
+* 素材：本体チタン、キャップ バイオマスプラスチック、パッキン シリコーン。  
+* 構造：単板（保温なし）。  
+* 出典：https://www.snowpeak.com/products/recycled-aurora-bottle  
+* 日本価格は未確認（2026-10-09時点で公式サイトに到達できなかった）。従前の1L用planning estimate（¥8,000〜12,000）は本モデルの価格ではないため引き継がない。  
+* Coffee System専用水。9BaristaおよびALM KOPi Z1 Miniに使用。  
 * 飲料水ではない。  
 * 調理用水ではない。  
-* BR-002記載の製品同一性を維持。  
 * 断りなく別のSnow Peakボトルへ代替しない。  
-  
----  
-  
-## Product 24  
-  
-### YETI Yonder 1L  
-  
-| Item | Details |  
-|---|---|  
-| Manufacturer | YETI |  
-| Model | Yonder 1L |  
-| Current Purchase Model | Yonder 1L / 34 oz |  
-| Category | Water Bottle |  
-| Acquisition Status | Purchase Required |  
-| Quantity | 1 |  
-| Purchase Type | Domestic / Overseas |  
-| Primary Purchase Source | YETI Official Store / Authorized Retailer |  
-| Purchase URL | Official / Authorized Retailer |  
-| Japan Shipping | Available through authorized channels |  
-| Warranty | Manufacturer Policy |  
-| Current Product Price | USD 28 equivalent / approximately ¥4,500 |  
-| Estimated Shipping | ¥0〜2,000 |  
-| Estimated Import Tax / Charges | ¥0〜1,000 |  
-| Estimated Total Cost | ¥5,000〜7,000 |  
-| Currency | USD / JPY |  
-| Purchase Priority | ★★★★☆ |  
-  
-### Notes  
-  
-* Confirmed Coffee System Water Equipment。  
-* 容量：1,000mL。  
-* 軽量。  
-* 透明・残量確認可能。  
-* Coffee System専用水。  
-* 飲料水ではない。  
-* 調理用水ではない。  
-* 購入前に、国内向けの正確なカラー・在庫を確認すること。  
   
 ---  
   
 ## Product 25  
   
-### Snow Peak 酒筒 Titanium  
+### Snow Peak 酒筒 Titanium（TW-540）  
   
 | Item | Details |  
 |---|---|  
 | Manufacturer | Snow Peak |  
-| Model | 酒筒 Titanium |  
-| Current Purchase Model | 酒筒 Titanium |  
+| Model | 酒筒 Titanium（TW-540） |  
+| Current Purchase Model | 酒筒 Titanium（TW-540） |  
 | Category | Water Bottle / Titanium Container |  
 | Acquisition Status | Purchase Required |  
 | Quantity | 1 |  
@@ -974,10 +940,10 @@ Procurement Handbook
 | Purchase URL | Official Store |  
 | Japan Shipping | Available |  
 | Warranty | Manufacturer Policy |  
-| Current Product Price | ¥20,790 |  
-| Estimated Shipping | ¥0〜1,000 |  
+| Current Product Price | 未確認（日本価格） |  
+| Estimated Shipping | 未確認 |  
 | Estimated Import Tax / Charges | Not Applicable |  
-| Estimated Total Cost | ¥20,790〜21,790 |  
+| Estimated Total Cost | 未確認 |  
 | Currency | JPY |  
 | Purchase Priority | ★★★★☆ |  
   
@@ -985,11 +951,15 @@ Procurement Handbook
   
 * Confirmed Coffee System Water Equipment。  
 * 容量：540mL。  
+* 寸法・重量：φ76×225mm／口元内径φ26.8mm／135g（米国表記136g）。  
+* 素材：本体チタン。  
+* 構造：単板（保温なし）。  
+* 出典：https://furunavi.jp/product_detail.aspx?pid=573996  
+* 日本価格は未確認（2026-10-09時点で公式サイトに到達できなかった）。従前記載の¥20,790は再確認できていないため、金額欄には使わない。出典ページの寄附金額（ふるさと納税）は販売価格ではない。  
 * Coffee System専用水。  
 * 追加容量を担う。  
 * 飲料水ではない。  
 * 調理用水ではない。  
-* 参照価格には現行の公式価格を使用。  
   
 ---  
   
@@ -1096,6 +1066,81 @@ Procurement Handbook
 * Puck Screenの代替としてWorkflowに組み込む（2026-10-08）。  
 * 2026-10-08購入。  
 * 請求額＝カート実額と一致（MARI様確認、2026-10-08）。  
+  
+---  
+  
+## Product 32  
+  
+### SMEG × 24Bottles Urban Bottle 1000mL（WBF02WH）  
+  
+| Item | Details |  
+|---|---|  
+| Manufacturer | SMEG × 24Bottles |  
+| Model | Urban Bottle 1000mL（WBF02WH） |  
+| Current Purchase Model | Urban Bottle 1000mL（WBF02WH） |  
+| Category | Water Bottle |  
+| Acquisition Status | Purchase Required |  
+| Quantity | 1 |  
+| Purchase Type | 未確認 |  
+| Primary Purchase Source | 未確認 |  
+| Purchase URL | https://www.smeg.com/ie/products/WBF02WH（仕様の出典。日本の販売ページではない） |  
+| Japan Shipping | 未確認 |  
+| Warranty | Manufacturer Policy |  
+| Current Product Price | 未確認（日本価格） |  
+| Estimated Shipping | 未確認 |  
+| Estimated Import Tax / Charges | 未確認 |  
+| Estimated Total Cost | 未確認 |  
+| Currency | JPY |  
+| Purchase Priority | ★★★★☆ |  
+  
+### Notes  
+  
+* Confirmed Coffee System Water Equipment。MARI様のご決定（2026-10-09）により追加。YETI Yonder 1L（旧Product 24）の置き換えにあたる。  
+* 容量：1,000mL。  
+* 素材：18/8ステンレス。  
+* 構造：保温なし。  
+* 色：ホワイト。  
+* 出典：https://www.smeg.com/ie/products/WBF02WH  
+* 参考：ポルトガル公式は49€（日本価格ではない）。日本価格・寸法・重量は未確認。  
+* Coffee System専用水。飲料水ではない。調理用水ではない。  
+  
+---  
+  
+## Product 33  
+  
+### SilverAnt 結晶化ブラックチタンボトル 600mL  
+  
+| Item | Details |  
+|---|---|  
+| Manufacturer | SilverAnt |  
+| Model | 結晶化ブラックチタンボトル 600mL |  
+| Current Purchase Model | 結晶化ブラックチタンボトル 600mL |  
+| Category | Water Bottle / Titanium Container |  
+| Acquisition Status | Purchase Required |  
+| Quantity | 1 |  
+| Purchase Type | 未確認（一般販売は2026年11月開始） |  
+| Primary Purchase Source | 未確認 |  
+| Purchase URL | https://silverantoutdoors.jp/black_bottle_600/ |  
+| Japan Shipping | 未確認 |  
+| Warranty | 未確認 |  
+| Current Product Price | ¥15,800（一般販売予定価格。ケース付。Makuake記載。変動の可能性あり） |  
+| Estimated Shipping | 未確認 |  
+| Estimated Import Tax / Charges | 未確認 |  
+| Estimated Total Cost | ¥15,800（送料未確認。確認済み分のみ） |  
+| Currency | JPY |  
+| Purchase Priority | ★★★★☆ |  
+  
+### Notes  
+  
+* Confirmed Coffee System Water Equipment。MARI様のご決定（2026-10-09）により追加。  
+* 容量：600mL。  
+* 重量・寸法：139g／高さ194mm×幅70mm。  
+* 素材：純チタン99.7%以上、PVDブラック。  
+* 構造：シングルウォール。  
+* 口径：未確認。  
+* 一般販売：2026年11月開始。  
+* 出典：https://silverantoutdoors.jp/black_bottle_600/ ／ 価格の出典 https://www.makuake.com/project/silverant_09/  
+* Coffee System専用水。飲料水ではない。調理用水ではない。  
   
 ---  
   
@@ -1230,7 +1275,7 @@ Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（
   
 # Coffee System Water Configuration  
   
-構成・容量・用途はBR-002 Barista Canon「Water Bottle Configuration」節を正本として参照する。現行調達価格はProduct 23〜25を参照。  
+構成・容量・用途はBR-002 Barista Canon「Water Bottle Configuration」節を正本として参照する。現行調達価格はProduct 23／25／32／33を参照（Product 24は欠番）。  
   
 ---  
   
@@ -1320,7 +1365,7 @@ Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（
 28. 2人分のLatte運用が、2回の連続サイクルとして同期していること。  
 29. WPM Pitcherは1個で十分であること。  
 30. ALM KOPi Z1 Miniは1台で十分であること。  
-31. Coffee System水構成の合計が2,540mLであること。  
+31. Coffee System水構成の合計が2,940mLであること。  
 32. Espressoグラスの運搬構成が同期していること。  
 33. FIKA12の数量が×2として同期していること。  
 34. 現行の後継製品が明示的に識別されていること。  
@@ -1385,7 +1430,7 @@ Descalerの取り扱いは、引き続きBR-001 Brew Care 第18.3項の指定（
 | AERESSO | ×1 |  
 | HILLS FIELD Glass Case | Single ×1 |  
 | AION 801-BL | ×1 package |  
-| Coffee System Water | 合計2,540mL |  
+| Coffee System Water | 合計2,940mL |  
 | EPF Dock | Weber Workshops / Onyx |  
   
 ---  
@@ -1492,9 +1537,10 @@ LAGOM mini 2 Ground Transfer Cupは、Weber Workshops Blind Shaker Onyxへの直
   
 | Priority | Equipment | Quantity | Product | Acquisition Status |  
 |---|---|---:|---|---|  
-| ★★★★☆ | Snow Peak オーロラボトル 1L | 1 | Product 23 | Purchase Required |  
-| ★★★★☆ | YETI Yonder 1L | 1 | Product 24 | Purchase Required |  
-| ★★★★☆ | Snow Peak 酒筒 Titanium | 1 | Product 25 | Purchase Required |  
+| ★★★★☆ | Snow Peak オーロラボトル800 オーシャン（TW-800RE-OC） | 1 | Product 23 | Purchase Required |  
+| ★★★★☆ | Snow Peak 酒筒 Titanium（TW-540） | 1 | Product 25 | Purchase Required |  
+| ★★★★☆ | SMEG × 24Bottles Urban Bottle 1000mL（WBF02WH） | 1 | Product 32 | Purchase Required |  
+| ★★★★☆ | SilverAnt 結晶化ブラックチタンボトル 600mL | 1 | Product 33 | Purchase Required |  
   
 ---  
   
@@ -1614,13 +1660,14 @@ ALM KOPi Z1 Miniは、既存所有のSnow Peak ヤエンストーブ レギ（GS
   
 ## Group H — Dedicated Water  
   
-* Snow Peak オーロラボトル 1L  
-* YETI Yonder 1L  
-* Snow Peak 酒筒 Titanium  
+* Snow Peak オーロラボトル800 オーシャン（TW-800RE-OC）  
+* Snow Peak 酒筒 Titanium（TW-540）  
+* SMEG × 24Bottles Urban Bottle 1000mL（WBF02WH）  
+* SilverAnt 結晶化ブラックチタンボトル 600mL  
   
 ### Principle  
   
-この3本のボトルが、Coffee System専用水の容量2,540mLを構成する。  
+この4本のボトルが、Coffee System専用水の容量2,940mLを構成する。  
   
 飲料水・調理用水の機材とは互換性がない。  
   
@@ -1650,10 +1697,10 @@ Snow Peak公式ストアでの単独購入となるため、Group A（9Barista�
 | Station / Workflow | ¥42,900〜49,900 |  
 | Latte System | ¥102,000〜127,500 |  
 | Espresso Glass / Transport | ¥25,480〜31,480 |  
-| Dedicated Water | ¥33,790〜41,790 |  
-| **Estimated Total（残り）** | **¥502,970〜581,470** |  
+| Dedicated Water | ¥15,800（確認済み分のみ。Product 23／25／32は価格未確認のため含まない） |  
+| **Estimated Total（残り）** | **¥484,980〜555,480** |  
 
-購入済み分（Product 01／12／26／31：¥137,200、Product 10：¥22,000）を加えた計画全体は¥662,170〜740,670（Monthly Acquisition Plan §Plan Total）。  
+購入済み分（Product 01／12／26／31：¥137,200、Product 10：¥22,000）を加えた計画全体は¥644,180〜714,680（Monthly Acquisition Plan §Plan Total）。  
 
   
 ### Budget Policy  
@@ -1730,15 +1777,17 @@ Coffee Systemの調達は、以下すべてを満たした場合にのみ完了�
 | 20 | HILLS FIELD Glass Case Single | 1 | Purchase Required |  
 | 21 | AION Seine Super Absorbent Coaster 801-BL | 1 package | Purchase Required |  
 | 22 | DAMNGOOD × CATAPULT FACTORY FIKA12 | 2 | Purchase Required |  
-| 23 | Snow Peak オーロラボトル 1L | 1 | Purchase Required |  
-| 24 | YETI Yonder 1L | 1 | Purchase Required |  
-| 25 | Snow Peak 酒筒 Titanium | 1 | Purchase Required |  
+| 23 | Snow Peak オーロラボトル800 オーシャン（TW-800RE-OC） | 1 | Purchase Required |  
+| 24 | YETI Yonder 1L | — | 採用取消（2026-10-09） |  
+| 25 | Snow Peak 酒筒 Titanium（TW-540） | 1 | Purchase Required |  
 | 26 | 9Barista Handle - Walnut | 2 | Already Owned |  
 | 27 | IMS Precision Basket 53 mm | 1 | Included |  
 | 28 | 9Barista Stainless Steel Basket Cap Pro | 1 | Included |  
 | 29 | LAGOM mini 2 Ground Transfer Cup | 1 | Included / Secondary Route |  
 | 30 | Snow Peak ギガパワーストーブ レクタ（GS-150） | 1 | Purchase Required |  
 | 31 | 9Barista 51mm Filter Paper | 1 | Already Owned |  
+| 32 | SMEG × 24Bottles Urban Bottle 1000mL（WBF02WH） | 1 | Purchase Required |  
+| 33 | SilverAnt 結晶化ブラックチタンボトル 600mL | 1 | Purchase Required |  
   
 ---  
   
@@ -1798,43 +1847,44 @@ MARI様のご決定（2026-10-09）に基づく、月次購入計画である。
 * Product 19：ICOSA Brewhouse AERESSO  
 * Product 20：HILLS FIELD Glass Case Single  
 * Product 21：AION Seine Super Absorbent Coaster 801-BL  
-* Product 23：Snow Peak オーロラボトル 1L  
-* Product 24：YETI Yonder 1L  
-* Product 25：Snow Peak 酒筒 Titanium  
+* Product 23：Snow Peak オーロラボトル800 オーシャン（TW-800RE-OC）  
+* Product 25：Snow Peak 酒筒 Titanium（TW-540）  
+* Product 32：SMEG × 24Bottles Urban Bottle 1000mL（WBF02WH）  
+* Product 33：SilverAnt 結晶化ブラックチタンボトル 600mL  
 * Product 30：Snow Peak ギガパワーストーブ レクタ（GS-150）※Group I  
 * Product 16：WPM Handleless Pitcher Standard 450cc / #07 Sharp Spout  
 * Product 17：WPM Pitcher Sleeve  
 * Product 08：Normcore Planetary WDT Tool 54mm  
 * Product 09：Normcore RDT Spray Bottle  
-* 購入先：Snow Peak公式でまとめ買い（Product 23／25／30、3点¥43,090〜50,090）。WPM（Product 16／17）は国内で同時注文。Normcore（Product 08／09）は国内で同時注文。ほかは各社別注文（PROPEL・AERESSOは海外、HILLS FIELD・AION・YETIは国内）。  
-* 小計：¥94,570〜122,070  
+* 購入先：Snow Peak公式でまとめ買い予定（Product 23／25／30。Product 23／25は日本価格が未確認で、確認済みの金額はProduct 30の¥14,300〜15,300のみ）。Product 32は購入先・日本価格とも未確認。Product 33はSilverAnt（一般販売は2026年11月開始。¥15,800）。WPM（Product 16／17）は国内で同時注文。Normcore（Product 08／09）は国内で同時注文。ほかは各社別注文（PROPEL・AERESSOは海外、HILLS FIELD・AIONは国内）。  
+* 小計：¥76,580〜96,080（確認済み分のみ。Product 23／25／32の金額は未確認のため含まない）  
 * 注記：GS-150（Group I）は最後でよいとのご決定のため、9Barista本体はMonth 6まで稼働できない。Normcore 2点（WDT・RDT）とWPMが揃うまでは、該当工程をキッチン用品等で代用する。  
   
 Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso Workflowが機能的に完成する。予算バランスを優先した結果、個々の機能グループ（Station一式、Glass一式、Latte System等）が複数月にまたがって到着する構成になるため、Workflowの全パーツが揃うMonth 6終了時点までは、未到着パーツをキッチン用品等で代用する必要がある。  
   
 ## Plan Total  
   
-総額目安：¥662,170〜740,670（計画全体。購入済み分を含む。9Barista Official Spare Parts (Preventive Stock)を除く）  
+総額目安：¥644,180〜714,680（計画全体。購入済み分を含む。9Barista Official Spare Parts (Preventive Stock)を除く）  
   
-残り（Purchase Requiredのみ）：¥502,970〜581,470（Month 2〜6。Estimated Acquisition Budgetと一致）  
+残り（Purchase Requiredのみ）：¥484,980〜555,480（Month 2〜6。Estimated Acquisition Budgetと一致。Product 23／25／32の金額が未確認のため、確認済み分のみの下限・上限）  
   
-* 月別小計：Month 2 ¥110,000〜123,000／Month 3 ¥99,200〜111,200／Month 4 ¥95,000〜112,000／Month 5 ¥104,200〜113,200／Month 6 ¥94,570〜122,070。合計¥502,970〜581,470。  
-* 計画全体の検算：Month 1 ¥159,200＋残り¥502,970〜581,470＝¥662,170〜740,670。  
+* 月別小計：Month 2 ¥110,000〜123,000／Month 3 ¥99,200〜111,200／Month 4 ¥95,000〜112,000／Month 5 ¥104,200〜113,200／Month 6 ¥76,580〜96,080。合計¥484,980〜555,480。  
+* 計画全体の検算：Month 1 ¥159,200＋残り¥484,980〜555,480＝¥644,180〜714,680。  
   
 ### Design Rationale  
   
 * 固定端点は、Month 1が購入済みの9Barista一式とKNODOS、Month 6が最終月である。Month 1は本体¥123,400のため月次上限の例外とする。  
 * Month 2はMantaBrew（Product 03）を必須とし、グラインダー（Product 02）と組み合わせる（MARI様のご指定）。  
 * 優先度の低い順は、グラス関連（Product 18〜21、最下位、Month 6）→豆のキャニスター（Bean Cellar Glass、Month 5）→ミルク（Product 15、Month 4）とする。  
-* 水ボトル（Product 23／24／25）とGS-150（Group I）は最終月（Month 6）に置く。  
+* 水ボトル（Product 23／25／32／33）とGS-150（Group I）は最終月（Month 6）に置く。  
 * FIKA12（Product 22）はグラスではなくカップ扱いである。限定流通のため、Month 5を維持する。  
 * Weber Workshopsの3点は、各1万円以上で送料無料のため、月をまたいで分けても送料は増えない。Blind ShakerはMonth 3、Bean Cellar GlassとEPF DockはMonth 5に置く。The BlocはMonth 4に置き、Blind Shakerとは別月とする（Blind ShakerはThe Blocが届くまで仮置き）。  
 * Normcore 2点（Product 08・09）とWPM（Product 16・17）は、最終月の水準を保つためMonth 6へ移した。  
-* 月あたり10万円前後に均した（Month 2〜6の小計が¥94,570〜123,000の範囲。Month 2と6の上限が12万円台になるのは可）。  
+* 月あたり10万円前後に均した（Month 2〜5の小計が¥95,000〜123,000の範囲。Month 6は水ボトル3点の金額が未確認のため、確認済み分のみで¥76,580〜96,080。未確認分が確定すれば増える）。  
 * KNODOS（Product 10）は2026-10-08に購入済みのため、Month 1に含める。  
 * Snow Peak ギガパワーストーブ レクタ（GS-150、Group I）は、BR-002 Ver.4.3 Heat Source Decisionに基づく確定購入品であり、Month 6とする（Group Iの説明と整合）。9Barista本体はMonth 6まで稼働できない。  
 * Straight Espresso Workflowの機能的完成はMonth 6である。  
-* YETI Yonder 1Lの必要性は、BR-002 Coffee System Water Bottle Configuration（Operation Scenario／Required Water Volume）に基づく必要水量2,340mLの試算に基づく。  
+* 水ボトル4本（Product 23／25／32／33、合計2,940mL）の必要性は、BR-002 Coffee System Water Bottle Configuration（Operation Scenario／Required Water Volume）に基づく必要水量2,340mLの試算に基づく。YETI Yonder 1L（Product 24）は2026-10-09に採用取消（MARI様のご決定）。水ボトルは最終月に置き、優先度は最下位のままとする。  
 * 9Barista Official Spare Parts (Preventive Stock)は、Group A（9Barista）注文に同梱可能な任意項目として、Month 1の小計とは別枠で記録する。  
 * 9Barista Handle - Walnutは、PX-004 Ver.3.7のHandle Material Decisionに基づく確定購入品として、Month 1の本体注文へ統合する。  
   
@@ -1862,6 +1912,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 | 4.14 | 2026-10-08 | MARI様のご指示（2026-10-08）に基づき、Product 10（KNODOS）の購入総額を¥22,000の実額に揃えた（Estimated Total Costを¥16,000〜22,000から¥22,000へ。商品代・送料・輸入税の内訳は未確認のため、各欄は「内訳は未確認」とした）。Month 1の先行購入注記・Plan Total・内訳・検算を再計算し、計画全体を¥662,170〜740,670へ改めた（下限が¥6,000増）。残り（Purchase Requiredのみ）¥502,970〜581,470とEstimated Acquisition Budgetは変更なし（購入済み分を除くため）。MD-004 COF-017の購入価格¥22,000と一致。Minor Version。 |  
 | 4.15 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づき、Monthly Acquisition Planを置き換えた。Month 1を9Barista一式（Product 01／12／26／31）とKNODOS（Product 10）の購入済みとし（小計¥159,200）、Month 2（11月）をProduct 02／11／05（¥109,200〜122,200）、Month 3（12月）をProduct 04／03（¥103,300〜108,300）、Month 4（1月）をProduct 07／06／14（¥100,900〜112,900）、Month 5（2月）をProduct 15／22（¥95,000〜116,000）、Month 6（3月・最終）をProduct 18〜21／23〜25／30／16／17／08／09（¥94,570〜122,070）へ再配置した。Month 2〜6の合計は残り¥502,970〜581,470と一致し、計画全体¥662,170〜740,670は変更なし。Design Rationaleを書き直した（水ボトル・GS-150・カップ類は最終月、FIKA12はMonth 5へ前倒し、Weber 3点は各1万円以上で送料無料のため月を分けても送料は増えない、Normcore 2点とWPMはMonth 6、月10万円程度に均した）。Group B・E・F・Iの説明を月配置に合わせた。Estimated Acquisition Budgetは変更していない（Purchase Requiredのみ。Ver.4.11参照）。Minor Version。 |  
 | 4.16 | 2026-10-09 | MARI様のご決定（2026-10-09）に基づく、Monthly Acquisition Planの組み直し。Month 2（11月）をProduct 03／02（¥110,000〜123,000。MantaBrewはMARI様のご指定により来月必ず購入）、Month 3（12月）をProduct 07／06／11（¥99,200〜111,200。Blind ShakerはThe Bloc到着まで仮置き）、Month 4（1月）をProduct 15／05（¥95,000〜112,000）、Month 5（2月）をProduct 04／22／14（¥104,200〜113,200。Weber公式2点は各1万円以上で送料無料）へ再配置した。Month 1（購入済み）とMonth 6（¥94,570〜122,070）は変更なし。残り¥502,970〜581,470と計画全体¥662,170〜740,670も変更なし。優先度の低い順はグラス関連（Month 6）→豆のキャニスター（Bean Cellar Glass、Month 5）→ミルク（Month 4）、水ボトルとGS-150は最終月、FIKA12はカップ扱いで限定流通のためMonth 5を維持、月10万円前後に均した。Group B・E・FとDesign Rationaleを同期し、旧Month 3の「FIKA12入荷時の入れ替え」注記とThe Blocの同月注記を削除した。Product記載・価格・購入先・Registryに変更はない。Minor Version。 |  
+| 4.17 | 2026-10-09 | MARI様のご決定（2026-10-09）に基づく、Coffee System専用水ボトルの組み直し（3本→4本、合計2,540mL→2,940mL）。YETI Yonder 1L（Product 24）の採用取消（欠番）。Product 23をSnow Peak オーロラボトル1Lからオーロラボトル800 オーシャン（TW-800RE-OC）へ、Product 25を酒筒 Titanium（TW-540）の型番付きへ更新し、SMEG × 24Bottles Urban Bottle 1000mL（WBF02WH、Product 32）とSilverAnt 結晶化ブラックチタンボトル 600mL（Product 33）を新設した。日本価格が未確認のProduct 23／25／32は金額を「未確認」とし（従前のProduct 23の¥8,000〜12,000はモデル変更のため引き継がず、Product 25の¥20,790は再確認できないため金額欄から外した）、Product 33のみ一般販売予定価格¥15,800（ケース付・Makuake記載）を記載した。Dedicated Waterを¥15,800（確認済み分のみ）、Month 6小計を¥76,580〜96,080、残りを¥484,980〜555,480、計画全体を¥644,180〜714,680へ再計算した（未確認分を除く。確定すれば増える）。水ボトルの購入時期は最終月（Month 6）、優先度は最下位のまま。BR-002 Ver.4.19・BR-001 Ver.1.7・MD-001 Ver.2.40・MD-004 Ver.8.10と連動。Minor Version。 |
   
 ---  
 
