@@ -1,10 +1,10 @@
 # MD-001 Storage Blueprint
-## Ver.2.39
+## Ver.2.40
 
 **Document ID**: MD-001  
 **Title**: Storage Blueprint  
 **Series**: MD – Master Data (Record)  
-**Version**: 2.39  
+**Version**: 2.40  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -308,7 +308,7 @@ Wood Board 3セット（6枚）は最上層へ平置きする（フェルトケ�
 
 - Layer 3「Vapalux M320」の格納先が未確定（13点＋Wood Board 3セットで底面を使い切る計算のため）。試し詰めでBeck #2に余裕があればBeck #2最下層へ収納する（2026-09-29、MARI様のご希望）。Layer 2「Wood Board ×4 Sets」はFUR-024 EXTENSIONTABLE CASEへの収納に決定した（2026-09-29、MARI様のご決定。§Layer 2参照）。
 - Coffee Sequence（使用順）は暫定であり、実際の手順に合わせた見直しが必要。
-- Coffee Serviceware（グラスケース・FIKA12）は食器としてBeck #1（Kitchen Module）へ、Coffee System専用水ボトル3本（計2,540mL）は食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ）へ収納する（いずれも2026-09-28、MARI様のご決定）。
+- Coffee Serviceware（グラスケース・FIKA12）は食器としてBeck #1（Kitchen Module）へ、Coffee System専用水ボトルのうち、オーロラボトル800 オーシャンと酒筒 Titanium（2本、計1,340mL）は食品用バッグSTR-035（YETI Camino® 35キャリーオール トートバッグ）へ収納する（いずれも2026-09-28、MARI様のご決定。当時の3本構成が対象）。SMEG × 24Bottles Urban Bottle 1000mLとSilverAnt 結晶化ブラックチタンボトル 600mLの収納先は未決定（2026-10-09の4本構成への変更で追加）。
 
 ### 必要な実測（試し詰め前に要確認）
 
@@ -1272,6 +1272,7 @@ Permanent Storage
 | 2.37 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づく。Puck Screenの廃止と、Puck Screen StandからEPF Dock（Weber Workshops、Onyx）への入れ替え（BR-002 Ver.4.14・BR-003 Ver.4.6と連動）に伴い、Coffee Module一覧・寸法一覧・配置・Coffee Sequenceの該当記述を更新した。寸法一覧のPuck Screen（#7）の行は項番を詰めず削除し、Puck Screen Stand（#10）の行をEPF Dock（75×75×75mm、公式値）へ置き換えた。収納レイアウトの再設計は行っていない。
 | 2.38 | 2026-10-08 | MARI様のご指摘に基づき、豆保存コンポーネントの名称をBean Cellar BulkからBean Cellar Glassへ訂正した（BR-002 Ver.4.15・BR-003 Ver.4.8と連動）。寸法一覧の値（252×190×110）は旧記載のままで、Glassの実寸は未確認のため備考に明記した。収納レイアウトの再設計は行っていない。
 | 2.39 | 2026-10-08 | MARI様ご提示のWeber Workshops公式表記（2026-10-08）に基づき、寸法一覧のBean Cellar Glassを旧記載（Bulk）の252×190×110から300×90×230（ハンドル込み）へ更新した。配置・積層高・最大高・内寸判定の記述は、この寸法を反映していない（再設計は行っていない）。
+| 2.40 | 2026-10-09 | MARI様のご決定（2026-10-09）によるCoffee System専用水ボトルの4本構成（BR-002 Ver.4.19）への変更に追随。§Beck #2 未決事項の水ボトル収納先の記述を、STR-035への収納が決定済みのオーロラボトル800 オーシャン・酒筒（2本）と、収納先が未決定のSMEG × 24Bottles・SilverAnt（2本）に分けた。YETI Yonder 1Lは外れた。収納の配置・寸法に変更はない。Patch Version。 |
 
 ---
 

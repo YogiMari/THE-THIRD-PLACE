@@ -3,7 +3,7 @@
 **Document ID**: MD-004  
 **Title**: Equipment Registry Object Reference  
 **Series**: MD – Master Data (Record)  
-**Version**: 8.9  
+**Version**: 8.10  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project  
@@ -189,6 +189,12 @@ Planning、Pursuit Strategy、Design Philosophy、Aesthetics、Positioning、Eva
 # Version History  
 
 Version 8.6以前の履歴は archive/MD-004_Version_History_Archive.md を参照。
+
+## Version 8.10
+
+MARI様のご決定（2026-10-09）によるCoffee System専用水ボトルの4本構成（BR-002 Ver.4.19）への変更に追随した訂正。STR-035（YETI Camino® 35）のIndustrial Attributeの水ボトル記述を、収納先が決定済みのオーロラボトル800 オーシャン・酒筒（2本）と、未決定のSMEG × 24Bottles・SilverAnt（2本）に分けた。水ボトル4本はいずれも未購入のため、OP-010 Part A §Coffee Domain Scopeに従いCOF-seriesへは登録していない（購入した時点で登録する）。YETI Yonderは台帳に登録がなく、削除対象はない。登録内容（Equipment ID・Brand・Product・Status・Price）に変更はない。Patch Version。
+
+---
 
 ## Version 8.9
 

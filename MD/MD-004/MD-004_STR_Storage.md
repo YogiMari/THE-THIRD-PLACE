@@ -1319,7 +1319,7 @@ None
 
 ### Industrial Attribute  
 
-Carryall Tote（容量35L、自立式・防水。食品の運搬用。Coffee System専用水ボトル3本もここへ収納する。詳細はMD-001 Storage Blueprint参照）  
+Carryall Tote（容量35L、自立式・防水。食品の運搬用。Coffee System専用水ボトルのうちオーロラボトル800 オーシャンと酒筒 Titanium（2本）もここへ収納する。SMEG × 24BottlesとSilverAntの収納先は未決定。詳細はMD-001 Storage Blueprint参照）  
 
 ### Price  
 
