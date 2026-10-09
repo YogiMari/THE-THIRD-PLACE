@@ -481,7 +481,7 @@
       <div class="mt"><span class="k">Field 8</span><div class="v"><span id="mQ">0</span><small>/80</small></div><div class="vb" id="mQb"></div></div>
       <div class="mt"><span class="k">Distance</span><div class="v"><span id="mD">0</span><small>/10</small></div><div class="vb" id="mDb"></div></div>
     </div>
-    <div class="radarw"><div class="sweepw"><div class="sweep"></div></div><svg id="radar" viewBox="-40 -24 380 368" role="img" aria-label="10軸レーダーチャート"></svg></div>
+    <div class="radarw"><svg id="radar" viewBox="-40 -24 380 368" role="img" aria-label="10軸レーダーチャート（3D。ドラッグか矢印キーで回転、ダブルクリックでリセット）"></svg></div>
     <div class="bars" id="bars"></div>
     <div class="sec" id="early"></div>
     <div class="sec flog" id="flog" hidden></div>
@@ -504,6 +504,7 @@
       <p><b>地面。</b>🪨 Gravel・⛰️ Rock（岩場）・🌱 Grass・🌲 Forest（林間）・🟫 Soil・🧱 Brick Chips（OP-010の表示規則。🌲は林間を示し、地面のアイコンと併記されます）。MD-002に記録のあるフィールドだけに付いています。一覧のアイコンで絞り込めます。</p>
       <p><b>次のキャンプ。</b>DB-001 Project Ledger §Field Logの予定（Planned）と記録（Done）です。装備IDはMD-004の正式名称で示します。</p>
       <p><b>区画・標高・空・周辺。</b>区画の広さと駐車の扱いはMD-002 §Site Record、標高は国土地理院の標高データ（気温差は標高差×0.6℃/100mの目安）、日の出・日の入り・月齢はページ内の計算値、周辺環境はOpenStreetMapの登録とOSRMの道のりです。周辺環境は登録のない施設が出ない参考値です。</p>
+      <p><b>3Dレーダー。</b>レーダーは立体です。マウスはドラッグで回転・傾き、スマホは横になぞると回ります（縦のなぞりはページのスクロールです）。▲▼で傾け、ダブルクリック／ダブルタップか ↺ で元の向きに戻り、矢印キーでも回せます。操作するまではゆっくり揺れ、動きを減らす設定では止まります。板の面が各軸の点数の位置、柱の高さと数字が点数です。</p>
       <p><b>リンク。</b>ページのURLの末尾に「#f=順位」を付けると、そのフィールドを開きます。カードの「リンクをコピー」で取得できます。</p>
       <p><b>基準地点。</b>小さな「◇ View 10」の印は浩庵キャンプ場（MD-002 §Reference Benchmark Site）で、View軸10点の基準としてのみ用いる地点です。ランキングの対象ではありません。位置は所在地（身延町中ノ倉2926）のYahoo!地図の地点です。</p>
       <p><b>地図と線。</b>位置は各フィールドの住所を国土地理院の住所検索で求めたものです（住所が大字までしか当たらない2件は、Yahoo!地図の施設の地点）。同じ地点を共有するフィールドは少しずらして置いています。色の線は、小岩駅付近からの車での最短時間ルートです。OSRM（OpenStreetMapの道路データ）で計算しました。渋滞や通行規制は反映していません。ROADはこのルートの道のり、DIRECT（KM）は直線距離、BRGは方位で、点線が直線を表します。移動時間（H）はMD-002の値です。道路データ © OpenStreetMap contributors。</p>
@@ -608,15 +609,9 @@ function showCard(S){
 }
 
 /* ---------- analysis ---------- */
-const svg=$("#radar"),NS="http://www.w3.org/2000/svg",CX=150,CY=160,RR=112;
-const pt=(i,v)=>{const a=-Math.PI/2+i*2*Math.PI/10;return[CX+Math.cos(a)*RR*v/10,CY+Math.sin(a)*RR*v/10];};
-[2,4,6,8,10].forEach(v=>el("polygon",{class:"rg"+(v===10?" o":""),points:AXE.map((_,i)=>pt(i,v).join(",")).join(" ")}));
-el("circle",{class:"rg",cx:CX,cy:CY,r:RR+8});
-for(let i=0;i<60;i++){const a=i/60*Math.PI*2,r1=RR+8,r2=RR+(i%6===0?14:11);el("line",{class:"rtk",x1:CX+Math.cos(a)*r1,y1:CY+Math.sin(a)*r1,x2:CX+Math.cos(a)*r2,y2:CY+Math.sin(a)*r2});}
-AXE.forEach((a,i)=>{const p=pt(i,10);el("line",{class:"rg",x1:CX,y1:CY,x2:p[0],y2:p[1]});
-  const l=pt(i,12.4),t=el("text",{class:"rax",x:l[0],y:l[1]+3,"text-anchor":Math.abs(l[0]-CX)<4?"middle":(l[0]>CX?"start":"end")});t.textContent=a;});
-const polyB=el("polygon",{class:"rpb"}),polyA=el("polygon",{class:"rpa"});
-const dotsA=AXE.map(()=>el("circle",{class:"rda",r:2.4})),dotsB=AXE.map(()=>el("circle",{class:"rdb",r:2}));
+const svg=$("#radar"),NS="http://www.w3.org/2000/svg";
+// the 3D radar (scripts/templates/field_atlas_radar3d.js): drag to rotate, ▲▼ tilt, ↺ or double click resets; colours come from this page's .rg .rax .rpa .rpb .rda .rdb rules
+const R3=Radar3D(svg,{labels:AXE,cx:150,cy:172,rad:104,tip:(s,i,v)=>{const d=get(s?state.b:state.a);return `${d?d.name:""} · ${AXE[i]} ${Math.round(v)}（平均 ${AVG[i].toFixed(1)}）`;}});
 const bars=$("#bars");
 // bars grouped by lineage (two axes each, subtotal /20); the thin tick is the all-field average
 const barHTML=i=>`<div class="br${i===9?" prov":""}"><span class="l" title="${esc(BASIS[i])} · 全${DATA.length}件の平均 ${AVG[i].toFixed(1)}">${AXE[i]}${i===9?"<small>暫定</small>":""}</span><span class="t"><i></i><b style="left:${AVG[i]*10}%"></b><em></em></span><span class="va"></span><span class="vb"></span></div>`;
@@ -631,7 +626,7 @@ function startRadar(resetA,resetB){
   if(resetA){RA.from=new Array(10).fill(0);RA.to=[...A.axes];RA.t0=now+380;}
   if(resetB||!B){RB.from=new Array(10).fill(0);RB.to=B?[...B.axes]:new Array(10).fill(0);RB.t0=now+380;}
   scrUntil=now+380;
-  polyA.classList.toggle("dash",!A.visited);polyB.classList.toggle("dash",!!B&&!B.visited);polyB.style.display=B?"":"none";dotsB.forEach(d=>d.style.display=B?"":"none");
+  R3.alt(`${A.name}の10軸：`+AXE.map((a,i)=>`${a} ${A.axes[i]}`).join("、")+(B?`。比べる相手 ${B.name}：`+AXE.map((a,i)=>`${a} ${B.axes[i]}`).join("、"):""));
   $("#aRank").textContent=`RANK ${pad(A.rank)} / ${DATA.length}`;
   const e=A.early;$("#early").innerHTML=`<span class="k">EARLY CHECK-IN · OPERATION</span><div><span class="led t-${e.tier}">${esc(e.label)}</span></div><div>${esc(e.detail)}</div><span class="srcl">出典：${esc(e.source)}</span>`+
     `<div class="tiers" aria-label="区分とOperation軸の点数">${TIERS.map(([t,l,p])=>`<span class="tier t-${t}${e.tier===t?" on":""}"><b>${l}</b>${p}</span>`).join("")}</div>`+
@@ -650,9 +645,7 @@ function startRadar(resetA,resetB){
 const rd=()=>0;
 function drawRadar(now){
   const B=state.b?get(state.b):null,scr=false;
-  polyA.setAttribute("points",RA.cur.map((v,i)=>pt(i,Math.max(v,.05)).join(",")).join(" "));
-  RA.cur.forEach((v,i)=>{const p=pt(i,v);dotsA[i].setAttribute("cx",p[0]);dotsA[i].setAttribute("cy",p[1]);});
-  if(B){polyB.setAttribute("points",RB.cur.map((v,i)=>pt(i,Math.max(v,.05)).join(",")).join(" "));RB.cur.forEach((v,i)=>{const p=pt(i,v);dotsB[i].setAttribute("cx",p[0]);dotsB[i].setAttribute("cy",p[1]);});}
+  R3.set(RA.cur,B?RB.cur:null,{aDash:!get(state.a).visited,bDash:!!B&&!B.visited});
   barRows.forEach((r,i)=>{const w=RA.cur[i]*10,ib=r.querySelector("i");ib.style.width=w+"%";ib.style.setProperty("--seg",w>0?(100/RA.cur[i])+"%":"10%");
     r.querySelector(".va").textContent=scr?rd():Math.round(RA.cur[i]);
     const em=r.querySelector("em");if(B){em.style.display="";em.style.left=`calc(${RB.cur[i]*10}% - 1px)`;r.querySelector(".vb").textContent=scr?rd():Math.round(RB.cur[i]);}else{em.style.display="none";r.querySelector(".vb").textContent="";}});

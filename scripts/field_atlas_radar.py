@@ -37,6 +37,13 @@ import sys
 from pathlib import Path
 
 TEMPLATE = Path(__file__).parent / "templates" / "field_atlas_radar.html"
+CORE_JS = Path(__file__).parent / "templates" / "field_atlas_core.js"  # helpers and map-free tools shared by all six pages
+RADAR3D_JS = Path(__file__).parent / "templates" / "field_atlas_radar3d.js"  # the 3D radar renderer, one source for all six pages
+
+
+def core_script() -> str:
+    """The script every page shares: core helpers and tools, then the 3D radar renderer."""
+    return CORE_JS.read_text(encoding="utf-8") + "\n" + RADAR3D_JS.read_text(encoding="utf-8")
 
 AXES = [
     "Ground", "Layout", "Facility", "Operation", "Comfort",
@@ -203,6 +210,7 @@ def render(md002: Path) -> tuple[str, list[str], int, str]:
     extra = nav.extras(md002, data, nav.load("locations.json"), warnings)
     html = (
         TEMPLATE.read_text(encoding="utf-8")
+        .replace("/*__CORE_JS__*/", core_script())
         .replace("/*__DATA__*/[]", json.dumps(data, ensure_ascii=False))
         .replace("/*__EXTRA__*/{}", json.dumps(extra, ensure_ascii=False, separators=(",", ":")))
         .replace("__MD002_VERSION__", version)
