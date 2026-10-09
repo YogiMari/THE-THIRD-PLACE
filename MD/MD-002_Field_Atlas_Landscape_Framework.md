@@ -1,11 +1,11 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.4.22
+## Ver.4.23
 
 **Document ID**: MD-002  
 **Title**: Field Atlas Landscape Framework  
 **Series**: MD – Master Data (Record)  
-**Version**: 4.22  
+**Version**: 4.23  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -482,6 +482,7 @@ THE THIRD PLACE を実現するための
 | 4.20 | 2026-10-09 | MARI様のご指示に基づき、§VisualizationのField Atlas NocturneとField Atlas Aubadeを一つのページ（Field Atlas）にまとめ、タイトルを押すとデザインだけが切り替わるようにした（選択中のフィールドと比較先は保つ）。両版の3Dレーダーを、各版のデザインに合わせた描画（Nocturneは発光する計器、Aubadeは磁器の皿）に改めた。スコア・順位・掲載内容は変えていない。Patch Version。 |
 | 4.21 | 2026-10-09 | MARI様のご指示に基づき、§VisualizationのField Atlas（Nocturne・Aubade）の細部を、各版のデザインの方向を保ったまま作り込んだ（パネルの番号・目盛り・画面の縁の文字・写真の照準・切り替え時の光の輪など）。ヘッダーに描画の速さ（実測）を加えた。スコア・順位・掲載内容は変えていない。Patch Version。 |
 | 4.22 | 2026-10-09 | MARI様のご決定に基づき、Field Atlasのページを Nocturne と Aubade の2つだけに絞った。Field Atlas Cartograph・Contour・Gloaming と、単独のField Atlas Radarページを廃止した（生成スクリプト・テンプレート・公開ページを削除。10軸の3Dレーダーそのものは両ページの中に残る）。§Visualizationの該当節と共通ツールの対象を改め、MD-002を読む共通の処理は `scripts/field_atlas_md002.py` へ移した。スコア・順位・掲載内容は変えていない。Patch Version。 |
+| 4.23 | 2026-10-09 | MARI様のご指摘に基づき、§VisualizationのField Atlasで、アプリの画面上部のバーにヘッダー（タイトル）が隠れていた不具合を直した（ページの枠を画面の安全領域の内側に置く）。スコア・順位・掲載内容は変えていない。Patch Version。 |
 
 ---
 

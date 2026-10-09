@@ -6,7 +6,9 @@
   :root{--night:#010409;--day:#FAF9F5}
   html,body{margin:0;height:100%;overflow:hidden;background:var(--night)}
   body.aubade{background:var(--day)}
-  .fa-f{position:fixed;inset:0;width:100%;height:100%;border:0;display:block;background:transparent}
+  /* the frame sits inside the safe area: in the Claude app the artifact header overlaps the top of the page, and the
+     page's root padding (env(safe-area-inset-*)) keeps content clear of it; a fixed frame would ignore that padding */
+  .fa-f{position:fixed;left:0;top:env(safe-area-inset-top,0px);width:100%;height:calc(100% - env(safe-area-inset-top,0px) - env(safe-area-inset-bottom,0px));border:0;display:block;background:transparent}
   .fa-f.next{clip-path:circle(0px at var(--x) var(--y));pointer-events:none}
   .fa-f.next.go{clip-path:circle(var(--r) at var(--x) var(--y));transition:clip-path 1.05s cubic-bezier(.76,0,.24,1)}
   .fa-wait{position:fixed;left:0;top:0;width:34px;height:34px;margin:-17px 0 0 -17px;border-radius:50%;pointer-events:none;z-index:5;
@@ -52,11 +54,13 @@ function swap(m){
   const done=()=>{if(frame===f)return;clearTimeout(guard);if(wait)wait.remove();if(old)old.remove();f.classList.remove("next","go");frame=f;settle(k);busy=false;try{f.focus();}catch(e){}};
   let wait=null,guard=0;
   if(RM){f.style.visibility="hidden";document.body.appendChild(f);f.addEventListener("load",()=>{f.style.visibility="";done();},{once:true});guard=setTimeout(()=>{f.style.visibility="";done();},8000);return;}
-  const x=+m.x||innerWidth/2,y=+m.y||40,r=Math.hypot(Math.max(x,innerWidth-x),Math.max(y,innerHeight-y))+40;
-  wait=document.createElement("div");wait.className="fa-wait";wait.style.cssText=`left:${x}px;top:${y}px;--c:${SKINS[k].accent}`;document.body.appendChild(wait);
+  // x, y: the click inside the frame (the circle is drawn in frame coordinates); fx, fy: the same point on this page
+  const fr=(old||f).getBoundingClientRect(),W=fr.width||innerWidth,Hh=fr.height||innerHeight;
+  const x=+m.x||W/2,y=+m.y||40,r=Math.hypot(Math.max(x,W-x),Math.max(y,Hh-y))+40,fx=x+fr.left,fy=y+fr.top;
+  wait=document.createElement("div");wait.className="fa-wait";wait.style.cssText=`left:${fx}px;top:${fy}px;--c:${SKINS[k].accent}`;document.body.appendChild(wait);
   f.classList.add("next");f.style.setProperty("--x",x+"px");f.style.setProperty("--y",y+"px");f.style.setProperty("--r",r+"px");
   document.body.appendChild(f);
-  const ring=document.createElement("div");ring.className="fa-ring";ring.style.cssText=`left:${x}px;top:${y}px;width:${2*r}px;height:${2*r}px;--c:${SKINS[k].accent}`;
+  const ring=document.createElement("div");ring.className="fa-ring";ring.style.cssText=`left:${fx}px;top:${fy}px;width:${2*r}px;height:${2*r}px;--c:${SKINS[k].accent}`;
   f.addEventListener("load",()=>{setTimeout(()=>{if(wait)wait.style.opacity="0";document.body.appendChild(ring);ring.getBoundingClientRect();
     requestAnimationFrame(()=>{f.classList.add("go");ring.classList.add("go");});setTimeout(()=>ring.remove(),1400);},140);},{once:true});
   f.addEventListener("transitionend",e=>{if(e.propertyName==="clip-path")done();});
