@@ -3,7 +3,7 @@
 **Document ID**: OP-010  
 **Title**: Qualification Charter  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.5  
+**Version**: 3.7  
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -29,6 +29,8 @@
 | 3.3 | 2026-10-01 | MARI様のご決定に基づき、Part C §Display Rules（Ground Surface）へ⛰️ Rock（岩場）を加え、砂利（🪨）と岩場を区別できるようにした（MD-002 ウェルキャンプ西丹沢）。§1. Groundの採点の目安に変更はない。Minor Version。 |
 | 3.4 | 2026-10-02 | MD-004 Ver.7.83（FIR-003のカスタムベロ4分解、旧FIR-004〜042の+3繰り下げ）と連動し、本文のFIR参照（例示）を新番号へ更新した。評価基準・特筆性の基準に変更はない。MARI様のご決定に基づく。 |
 | 3.5 | 2026-10-03 | MARI様のご決定に基づき、Part A §Attribute Policyへ、Quantityが2以上のアイテムのPriceは合計額で記載し、合計である旨を注記する規定を追加した（Minor Version：規則の追加）。従来は合計か単価かを定める規定がなく、MD-004にも単価のまま記載された記録（FUR-032・034・035・036）があったが、同日MD-004 Ver.8.1で合計額へ改めた。MD-004の既存記録の書式（「（2個合計。1個¥X）」）を追認するもので、評価基準に変更はない。 |
+| 3.6 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づき、Part A §Coffee Domain Scopeへ、COF-seriesの登録時点（購入した時点。到着を待たない）と採番（購入順ではなくBR-002 §Coffee Registry Orderのワークフロー順。未購入の番号は空け、Vacant枠は設けない）を明記した（Minor Version：規則の追加）。従来の「購入されOwnedになった時点」は購入時点とも到着時点とも読めたため。MD-004 Ver.8.8（COF-005／009／010／011／018の新規登録と部品ファイルMD-004_COF_Coffee.mdの新設）と連動。 |
+| 3.7 | 2026-10-08 | MARI様のご指示（2026-10-08）に基づき、Part A §Coffee Domain Scopeへ、消耗品（Filter Paper等）をCOF-seriesへ登録しない旨を明記した（Minor Version：規則の追加）。MD-004 Ver.8.9（旧COF-009 Filter Paperを登録から除き、番号を詰めた）と連動。 |
 
 ---
 
@@ -141,7 +143,11 @@ Vacant枠は、具体的な検討対象がCZ-001 Deliberation Dossier等で特�
 
 Coffee Domain（COF-series）は、BR-002 Barista Canonが意思決定を管轄するCoffee System（エスプレッソ抽出とミルクスチーム、そのためのServiceware〈グラス・カップ・運搬ケース〉と専用水ボトル）を対象とする。ハンドドリップ等、キッチンでの調理行為としてのコーヒー器具は、Part B §Domain Scope Noteに従いMD-003で管理する（2026-09-28新設、2026-09-29 MARI様のご決定により正式採用。N-11）。
 
-COF-seriesへ登録するのは、BR-003 Procurement HandbookでAcquisition Status = Purchase Requiredとなっている品目のうち、購入してOwnedになったものとする。Included（他の機材の付属品）、Coffee Beans、9Barista Official Spare Parts（Preventive Stock）は登録しない。
+COF-seriesへ登録するのは、BR-003 Procurement HandbookでAcquisition Status = Purchase Requiredとなっていた品目のうち、購入したもの（BR-003でAlready Ownedへ変わったもの）とする。Included（他の機材の付属品）、Coffee Beans、9Barista Official Spare Parts（Preventive Stock）、消耗品（Filter Paper等）は登録しない（消耗品は台帳に載せない。Version 3.7以降）。
+
+**登録時点（Version 3.6以降）**：購入した時点で登録する。到着を待たず、到着状況は記録しない。登録はStatus = Ownedで行い、BR-003のAcquisition Status変更と同じ作業で行う。購入前の機材はMD-004へ登録しない（BR-002・BR-003のみで追跡する）。
+
+**採番（Version 3.6以降）**：COF-IDは購入順ではなく、BR-002 Barista Canon §Coffee Registry Orderの順で付番する（Confirmed Coffee Preparation Workflowの順。ワークフローに現れない機材は末尾）。未購入の機材の番号は空けたままとし、事前の空枠（Vacant）は設置しない。したがって、COF-IDは飛び番になり得る（これは欠落ではない）。付番済みのIDは変更・再利用しない。構成部品（例：Mk.2 ProのHandle）は、親の次の番号を持つ子IDとして登録する（2026-10-08、MARI様のご決定）。
 
 ---
 

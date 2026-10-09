@@ -5,7 +5,7 @@ description: ギアの購入（Essential→Owned）を台帳へ反映し、CZ-00
 
 記録の書き方は `register-gear`、規則の正本は OP-010 Part A。購入反映は連動先が多いので、ここでは同期の漏れを防ぐ手順だけを書く。
 
-対象外：Coffee（BR-002 / BR-003 で購入を管理し、購入後に MD-004 COF-series へ新規登録 → `register-gear`）、Kitchen（MD-003）。
+対象外：Coffee（BR-002 / BR-003 で購入を管理し、購入した時点で MD-004 COF-series へ新規登録。番号はBR-002 §Coffee Registry Orderの順 → `register-gear`）、Kitchen（MD-003）。
 
 1. **購入内容を確認する**：どのID・数量・実際の購入価格か。価格は**購入価格を優先**し、不明なら聞く（公式価格で埋めない）。数量2以上は合計額で書く。
 2. **MD-004**：Status を Owned に、Price を購入価格に更新する。Version と Version History も更新する（`register-gear` の 3）。

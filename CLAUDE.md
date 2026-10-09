@@ -34,7 +34,7 @@ OP-008 §9.3で定義される3区分（Static／Periodic／Living）を各文�
 
 ## Master Database
 
-`MD/MD-004/` フォルダ（入口 `MD-004_Equipment_Registry_Object_Reference.md`＋Domain別6ファイル。OP-008 §11.2）を唯一のMaster Databaseとして扱う。
+`MD/MD-004/` フォルダ（入口 `MD-004_Equipment_Registry_Object_Reference.md`＋Domain別7ファイル。OP-008 §11.2）を唯一のMaster Databaseとして扱う。
 
 ## 作業原則（絶対厳守）
 

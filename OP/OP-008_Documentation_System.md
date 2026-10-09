@@ -3,7 +3,7 @@
 **Document ID**: OP-008  
 **Title**: Documentation System  
 **Series**: OP – Operation (Definition)  
-**Version**: 3.21
+**Version**: 3.22
 **Authority**: Standard  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -40,6 +40,7 @@
 | 3.19 | 2026-10-03 | MD-004 Equipment Registry Object ReferenceのDomain別分割（AIが必要なDomainのみを読めるようにするためのファイル再構成）に伴い、§11.2 Multi-file Documentを新設した（Minor Version：節追加）。あわせて§8カタログのMD-004のPathを、分割後の入口ファイル `MD/MD-004/MD-004_Equipment_Registry_Object_Reference.md` へ更新した。Document ID・Title・Authority・Volatilityは変更しない。MARI様のご決定に基づく。 |
 | 3.20 | 2026-10-08 | BR-004 Terroir Almanacを新設（Minor Version：文書追加）。コーヒー豆に関する全ての記録を本書で管理し、BR-002 Barista Canonはコーヒー機材のみ、BR-003 Procurement HandbookもCoffee Equipmentの調達のみとする方針（MARI様のご決定、2026-10-08）に基づく。§8カタログへBR-004（Authority：SSOT、Volatility：Living）を登録し、§5 Series ResponsibilitiesのBR系列の説明、Appendix F（日英）のBR系列の紹介文を同期した。タイトルは、既存の全文書タイトルと語の重複がないこと（§11.1）を確認のうえ、MARI様が選定した。OP-008 §23に従い本書を先に更新し、BR-002 Ver.4.16・BR-003 Ver.4.10・BR-004 Ver.1.0を同時に反映した。 |
 | 3.21 | 2026-10-09 | BR-004 Terroir Almanac Ver.1.1（豆選びの暫定基準の採用、§6新設）に伴い、§8カタログのBR-004行のRole、およびAppendix F（日英）のBR-004紹介文を同期した。Roleの「豆選びの基準・購入した豆の記録項目は、決定後に本書へ追加する」を、暫定基準は本書が管理し、購入した豆の記録項目は決定後に追加する旨へ改めた。Authority（SSOT）・Volatility（Living）は変更しない。暫定基準は見直し前提であり恒久ルールではないため、§9.3との矛盾は生じない（恒久化する場合は置き場所を改めて決める。BR-004 §7参照）。MARI様のご決定（2026-10-09）に基づく。Patch Version。 |
+| 3.22 | 2026-10-08 | MD-004 Ver.8.8でCoffee Domain用の部品ファイル `MD-004_COF_Coffee.md` を新設し、Domain別ファイルが7つ（FUR／LGT／ARM／STR／FIR／SHL／COF）になったことを確認した。部品ファイルは§11.2に従い入口ファイル（MD-004）の一部であり、§8カタログへの新規登録は不要（Document ID・Title・Authority・Volatility・Pathは変更なし）。あわせてAppendix F（日英）のMD-004紹介文を、OP-010 Ver.3.6のCoffee登録時点（購入した時点。到着を待たない）に合わせた。Patch Version。MARI様のご決定（2026-10-08）に基づく。 |
 
 ---
 
@@ -944,7 +945,7 @@ THE THIRD PLACEの不変の思想的原典を保持するシリーズ。
 | MD-001 | Storage Blueprint | 収納の配置、パッキング手順、設営・撤収の手順など、Storageを一つの運用システムとして定義する文書。 |
 | MD-002 | Field Atlas Landscape Framework | フィールド・ロケーションなど、プロジェクトが展開される「舞台」そのものの選定基準を定義する。 |
 | MD-003 | Galley Fare | キッチン機材（調理器具・刃物・調理小物）を、MD-004とは独立した実用性優先の基準で管理するMaster Document。 |
-| MD-004 | Equipment Registry Object Reference | 所有物（Equipment）に関する唯一のマスターデータベース。Design Bibleとの美意識的整合を選定条件とし、7つのDomain（Furniture／Light／Aroma／Storage／Coffee／Fire／Shelter）のEquipment・Components・親子関係・Material・Color・Attribute・Ownership Statusを管理する。Coffee機材は購入されOwnedになった時点で初めて登録する。 |
+| MD-004 | Equipment Registry Object Reference | 所有物（Equipment）に関する唯一のマスターデータベース。Design Bibleとの美意識的整合を選定条件とし、7つのDomain（Furniture／Light／Aroma／Storage／Coffee／Fire／Shelter）のEquipment・Components・親子関係・Material・Color・Attribute・Ownership Statusを管理する。Coffee機材は購入した時点（到着を待たない）で初めて登録する。 |
 
 ---
 
@@ -1036,7 +1037,7 @@ The series managing the ledger of owned equipment and places.
 | MD-001 | Storage Blueprint | Defines storage layout, packing sequence, and setup/teardown procedures, treating Storage as a complete operational system rather than mere packing. |
 | MD-002 | Field Atlas Landscape Framework | Defines the selection criteria for the "stage" itself — campsites, locations, and terrain — on which the project is deployed. |
 | MD-003 | Galley Fare | An independent Master Document for kitchen equipment (cookware, blades, cooking tools), governed by a function-first standard separate from MD-004. |
-| MD-004 | Equipment Registry Object Reference | The single master database of owned Equipment. Aesthetic alignment with the Design Bible is a condition for inclusion. It manages Equipment, Components, Parent / Child relationships, Material, Color, Attributes, and Ownership Status across seven Domains (Furniture / Light / Aroma / Storage / Coffee / Fire / Shelter). Coffee equipment is registered only once purchased and Owned. |
+| MD-004 | Equipment Registry Object Reference | The single master database of owned Equipment. Aesthetic alignment with the Design Bible is a condition for inclusion. It manages Equipment, Components, Parent / Child relationships, Material, Color, Attributes, and Ownership Status across seven Domains (Furniture / Light / Aroma / Storage / Coffee / Fire / Shelter). Coffee equipment is registered only once purchased (not on arrival). |
 
 ---
 
