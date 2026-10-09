@@ -194,7 +194,7 @@ Fonts: Michroma (wide display labels), Saira Condensed 200–500 (large numbers)
 
 Field Atlas Aubade is the light edition. It shows the same data with the same map, routes, analysis and interaction, restyled after the light theme of the Claude app: ivory paper, ink-black type, a clay accent, and a porcelain relief map in afternoon light. Its effects are as showy as the Nocturne's, but softer.
 
-- Published at: as one of the two editions of [Field Atlas](#field-atlas-nocturne-and-aubade-in-one-page), https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm (the earlier single-edition artifact https://claude.ai/artifact/GmW1EhhdcDLNaG7GcuMAZH still holds the page as it was before the merge)
+- Published at: as one of the two editions of [Field Atlas](#field-atlas-nocturne-and-aubade-in-one-page), https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm (the earlier single-edition artifact, https://claude.ai/artifact/GmW1EhhdcDLNaG7GcuMAZH, was deleted on 2026-10-09)
 - Template: `scripts/templates/field_atlas_aubade.html`
 - Generator: `scripts/field_atlas_aubade.py` (calls `field_atlas_nocturne.build()` with the Aubade template, so the data files and placeholders are shared)
 

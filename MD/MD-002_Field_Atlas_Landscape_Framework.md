@@ -1,11 +1,11 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.4.23
+## Ver.4.24
 
 **Document ID**: MD-002  
 **Title**: Field Atlas Landscape Framework  
 **Series**: MD – Master Data (Record)  
-**Version**: 4.23  
+**Version**: 4.24  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -366,7 +366,7 @@ Field Atlas Nocturneのライト版である。表示する内容・地図・道
 python3 scripts/field_atlas_aubade.py --md002 MD/MD-002_Field_Atlas_Landscape_Framework.md --out field-atlas-aubade.html
 ```
 
-- 公開先：Field Atlas（統合ページ）の一方の版として公開する（上記）。単独版のArtifact https://claude.ai/artifact/GmW1EhhdcDLNaG7GcuMAZH は、統合ページとは別に残してあり、再生成のたびに同じURLを更新する。
+- 公開先：Field Atlas（統合ページ）の一方の版として公開する（上記）。単独版のArtifact（旧 https://claude.ai/artifact/GmW1EhhdcDLNaG7GcuMAZH ）は、MARI様のご指示により2026-10-09に削除した。単独版の生成コマンドで作ったページは公開しない。
 - 点数の正本は本文書、キャンプの記録の正本はDB-001である。ページが持つのは地理情報（位置・道路経路）と写真のみである。
 
 ### Field Atlasの共通ツール（2つの3D地図ページ）
@@ -483,6 +483,7 @@ THE THIRD PLACE を実現するための
 | 4.21 | 2026-10-09 | MARI様のご指示に基づき、§VisualizationのField Atlas（Nocturne・Aubade）の細部を、各版のデザインの方向を保ったまま作り込んだ（パネルの番号・目盛り・画面の縁の文字・写真の照準・切り替え時の光の輪など）。ヘッダーに描画の速さ（実測）を加えた。スコア・順位・掲載内容は変えていない。Patch Version。 |
 | 4.22 | 2026-10-09 | MARI様のご決定に基づき、Field Atlasのページを Nocturne と Aubade の2つだけに絞った。Field Atlas Cartograph・Contour・Gloaming と、単独のField Atlas Radarページを廃止した（生成スクリプト・テンプレート・公開ページを削除。10軸の3Dレーダーそのものは両ページの中に残る）。§Visualizationの該当節と共通ツールの対象を改め、MD-002を読む共通の処理は `scripts/field_atlas_md002.py` へ移した。スコア・順位・掲載内容は変えていない。Patch Version。 |
 | 4.23 | 2026-10-09 | MARI様のご指摘に基づき、§VisualizationのField Atlasで、アプリの画面上部のバーにヘッダー（タイトル）が隠れていた不具合を直した（ページの枠を画面の安全領域の内側に置く）。スコア・順位・掲載内容は変えていない。Patch Version。 |
+| 4.24 | 2026-10-09 | MARI様のご指示に基づき、§VisualizationのField Atlas Aubadeの単独版Artifactを削除した（Aubadeは統合ページField Atlasの一方の版としてのみ公開する）。スコア・順位・掲載内容は変えていない。Patch Version。 |
 
 ---
 
