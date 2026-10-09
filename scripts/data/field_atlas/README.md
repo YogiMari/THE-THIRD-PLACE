@@ -63,6 +63,21 @@ How it is built:
 - The edition last shown is kept in the browser (`localStorage` key `fa-skin1`, in try/catch); the default is Nocturne. The other keys (`fa-nav1`, `fa-tools1`, `fa-trail1`, `fa-maponly1`) are shared by both editions.
 - `field_atlas_check.py` builds this page too and checks that it carries the renderer once per edition and no unfilled placeholder.
 
+Detail layer ("SF refinements", a block of rules before the media queries in each template, plus a few lines of script before "start"). It deepens each edition's own idiom and changes no content:
+
+| | Nocturne | Aubade |
+|---|---|---|
+| Panels | top-right and bottom-left corners cut at 45° with a hairline along the cut, brackets on the other two, faint scanlines; a breathing status square | a pearl light along the top edge, an inner hairline frame with a registration mark (+) in each corner (not on the scrolling Analysis panel) |
+| Numbers | panels and cards numbered by a CSS counter (`/01`, `03 //`) | the same counter in clay italics (`01 Field Index`) |
+| Header | a light running along the ruler; telemetry in ruled cells | a ruler along the bottom edge; a clay hairline that fills with each minute of the JST clock |
+| Index | a blinking chevron and glow on the selected row, a scan wash on hover | a clay tab on the selected row, a hairline drawn under the row on hover |
+| Analysis | tick rulers under the metrics, LED keys, corner marks and a caption on the radar, `›` cues on sections | rulers under the metrics, ring keys, an italic caption on the radar, clay leaders on sections, porcelain caps on the bars |
+| Cards | thirds grid and a turning reticle over the photo; a slight chromatic edge on the name | crop marks and a fine cross over the photo |
+| Map | a dot matrix that thickens toward the edges | a fine survey grid that shows toward the edges |
+| Screen edges | vertical type: "THE THIRD PLACE ◇ FIELD ATLAS ◇ NOCTURNE" and Koiwa's coordinates | the same in small caps |
+
+RENDER in the header is the frame rate measured in the viewer's browser (frames counted per second with `requestAnimationFrame`). The switch adds a ring in the next edition's accent that grows with the reveal and fades. Below 900 px the edge type and some captions are hidden; with reduced motion the loops stop.
+
 The single-edition generators (`field_atlas_nocturne.py`, `field_atlas_aubade.py`) still build each edition as a page of its own (the title is then plain text).
 
 ## Shared script

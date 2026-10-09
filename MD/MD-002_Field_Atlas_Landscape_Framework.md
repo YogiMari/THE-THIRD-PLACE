@@ -1,11 +1,11 @@
 # MD-002
 # Field Atlas Landscape Framework
-## Ver.4.20
+## Ver.4.21
 
 **Document ID**: MD-002  
 **Title**: Field Atlas Landscape Framework  
 **Series**: MD – Master Data (Record)  
-**Version**: 4.20  
+**Version**: 4.21  
 **Authority**: SSOT  
 **Status**: Active  
 **Owner**: THE THIRD PLACE Project
@@ -354,6 +354,7 @@ python3 scripts/field_atlas_duo.py --md002 MD/MD-002_Field_Atlas_Landscape_Frame
 - 公開先：https://claude.ai/artifact/HtkBNByrze3ttmUzEEEvDm（旧Field Atlas NocturneのArtifactを、統合ページで置き換えた）
 - 下記の二つの生成コマンドは、それぞれの版を単独のページとして作る場合に使う。
 - 3Dレーダーは、Nocturneでは発光する計器（光る床・目盛りの環・レーダーの掃引・光の柱とひし形の頂点・番号付きの軸名）、Aubadeでは陽光の中の磁器の皿（やわらかな影・二重の縁と玉の環・釉薬のような板・磁器の玉の頂点）として描く。値・軸・操作は他の版と同じである。
+- 両版とも、デザインの方向を保ったまま細部を作り込んでいる（パネルの番号・目盛り・画面の縁の文字・写真の照準など）。ヘッダーのRENDERは、そのブラウザで実測した描画の速さ（毎秒のフレーム数）である。
 
 ### Field Atlas Nocturne
 
@@ -506,6 +507,7 @@ THE THIRD PLACE を実現するための
 | 4.18 | 2026-10-08 | MARI様のご指示に基づき、§Visualizationの3D地図ページを拡張した。新しい3つのデザイン版（Field Atlas Cartograph・Contour・Gloaming）を加え、全5版に共通のツール（時刻と季節、今日の一手、足跡、等高線・陰影、日照帯、2点の直線比較）を追加した。等高線・陰影の元データとして国土地理院の標高格子 `scripts/data/field_atlas/terrain.json` を加えた。スコア・順位・掲載内容は変えていない。Patch Version。 |
 | 4.19 | 2026-10-09 | MARI様のご指示に基づき、§Visualizationの6ページを拡張した。10軸のレーダーを、ドラッグで回せる3D（傾いた円盤・厚みのある半透明の板・軸の先の柱と数字）に変え、6ページで同じ描画を使う。Field Atlas Radarに、今日の一手・日照帯・2点の直線・足跡を加えた。重なったピンは一覧から選ぶようにし、地図だけを表示するボタン（Hキー）を加えた。スコア・順位・掲載内容は変えていない。Patch Version。 |
 | 4.20 | 2026-10-09 | MARI様のご指示に基づき、§VisualizationのField Atlas NocturneとField Atlas Aubadeを一つのページ（Field Atlas）にまとめ、タイトルを押すとデザインだけが切り替わるようにした（選択中のフィールドと比較先は保つ）。両版の3Dレーダーを、各版のデザインに合わせた描画（Nocturneは発光する計器、Aubadeは磁器の皿）に改めた。スコア・順位・掲載内容は変えていない。Patch Version。 |
+| 4.21 | 2026-10-09 | MARI様のご指示に基づき、§VisualizationのField Atlas（Nocturne・Aubade）の細部を、各版のデザインの方向を保ったまま作り込んだ（パネルの番号・目盛り・画面の縁の文字・写真の照準・切り替え時の光の輪など）。ヘッダーに描画の速さ（実測）を加えた。スコア・順位・掲載内容は変えていない。Patch Version。 |
 
 ---
 
