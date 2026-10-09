@@ -51,17 +51,14 @@ THE-THIRD-PLACE/
 │   ├── third_place_sync_validator.py   # SSOT同期バリデータ
 │   ├── md004_integrity_check.py        # MD-004の記録そのものの点検（親子・ID・Status・変更時のVersion更新。CIで実行）
 │   ├── md004_records.py                # MD-004の全項目リーダー（上記が使用）
-│   ├── field_atlas_radar.py            # MD-002 → Field Atlas Radar（回せる3Dレーダー・今日の一手・日照帯・足跡）生成
+│   ├── field_atlas_md002.py            # MD-002の共通リーダー（Field Atlasの2ページと各ツールが使用。ページは作らない）
 │   ├── field_atlas_nocturne.py        # MD-002 → Field Atlas Nocturne（3D地図・ダーク版）生成
 │   ├── field_atlas_aubade.py            # MD-002 → Field Atlas Aubade（3D地図・ライト版）生成
-│   ├── field_atlas_cartograph.py        # MD-002 → Field Atlas Cartograph（3D地図・古地図版）生成
-│   ├── field_atlas_contour.py           # MD-002 → Field Atlas Contour（3D地図・モノクロ等高線版）生成
-│   ├── field_atlas_gloaming.py          # MD-002 → Field Atlas Gloaming（3D地図・黄昏ネオン版）生成
 │   ├── field_atlas_fetch.py  # 地図用データ（位置・道路ルート・写真・標高・地形格子・周辺環境）の取得
-│   ├── field_atlas_check.py            # MD-002・DB-001・MD-004・地図用データ・全5版の整合チェック（CIで実行）
+│   ├── field_atlas_check.py            # MD-002・DB-001・MD-004・地図用データ・2ページの整合チェック（CIで実行）
 │   ├── doc_catalogue_check.py          # OP-008 §8 の文書一覧と各文書のヘッダー・ファイルの突き合わせ。MD-004のStatus別一覧（--status-list）。CIで実行
 │   ├── codex_arbor.py                  # 全文書 → Arbor of the Third Place（文書アトラス・全書検索・宝物庫）生成
-│   ├── data/field_atlas/     # 地図用データと、全5版のデザイン・再生成の記録（README.md）。6ページ共通の3Dレーダー（ドラッグで回転）、重なったピンの選択一覧、地図だけ表示（Hキー）もここに記す
+│   ├── data/field_atlas/     # 地図用データと、Nocturne・Aubadeのデザイン・再生成の記録（README.md）。2ページ共通の3Dレーダー（ドラッグで回転）、重なったピンの選択一覧、地図だけ表示（Hキー）もここに記す
 │   ├── kn_pages/             # KN四誌のデザイン切替版の制作材料（本文は含まない。README.md／OP-008 §28）
 │   ├── templates/                      # 生成用HTMLテンプレート
 │   └── MirrorSync.gs                   # GitHub → Drive 一方向ミラー（OP-008 §27）
@@ -271,16 +268,13 @@ THE-THIRD-PLACE/
 │
 ├── scripts/
 │   ├── third_place_sync_validator.py   # SSOT sync validator
-│   ├── field_atlas_radar.py            # Generates the Field Atlas Radar page (rotatable 3D radar, today's move, sun band, trail) from MD-002
+│   ├── field_atlas_md002.py            # Shared MD-002 reader for the two Field Atlas pages and their tools (builds no page)
 │   ├── field_atlas_nocturne.py        # Generates Field Atlas Nocturne (3D map, dark edition) from MD-002
 │   ├── field_atlas_aubade.py            # Generates Field Atlas Aubade (3D map, light edition) from MD-002
-│   ├── field_atlas_cartograph.py        # Generates Field Atlas Cartograph (3D map, aged-paper old-map edition) from MD-002
-│   ├── field_atlas_contour.py           # Generates Field Atlas Contour (3D map, monochrome topographic edition) from MD-002
-│   ├── field_atlas_gloaming.py          # Generates Field Atlas Gloaming (3D map, dusk-gradient neon edition) from MD-002
 │   ├── field_atlas_fetch.py  # Fetches map data (positions, road routes, photos, elevation, terrain grid, surroundings)
-│   ├── field_atlas_check.py            # Checks MD-002, DB-001, MD-004, map data and all five map pages agree (runs in CI)
+│   ├── field_atlas_check.py            # Checks MD-002, DB-001, MD-004, map data and both map pages agree (runs in CI)
 │   ├── codex_arbor.py                  # Generates Arbor of the Third Place (document atlas, full-text search, gallery) from all documents
-│   ├── data/field_atlas/     # Map data, plus design and rebuild notes for all five editions (README.md); also the rotatable 3D radar shared by all six pages, the overlapping-pin chooser and the map-only view (H key)
+│   ├── data/field_atlas/     # Map data, plus design and rebuild notes for Nocturne and Aubade (README.md); also the rotatable 3D radar shared by both pages, the overlapping-pin chooser and the map-only view (H key)
 │   ├── kn_pages/             # Build materials for the switchable designs of the four KN pages (no page text; README.md / OP-008 §28)
 │   ├── templates/                      # HTML templates for generators
 │   └── MirrorSync.gs                   # One-way GitHub → Drive mirror (OP-008 §27)

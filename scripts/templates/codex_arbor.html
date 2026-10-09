@@ -1228,7 +1228,7 @@ mark{background:var(--mark);color:var(--fg);padding:0 1px;box-shadow:inset 0 -1p
             <li><code>archive/</code><span>移設済み Version History（Rule DOC-09）· <span id="m-arch-n"></span> files</span></li>
             <li><code>scripts/third_place_sync_validator.py</code><span>SSOT 同期バリデータ</span></li>
             <li><code>.github/workflows/third-place-sync.yml</code><span>MD-004 / BR-002 / BR-003 の整合性を CI で自動検証</span></li>
-            <li><code>scripts/field_atlas_radar.py</code><span>MD-002 から Field Atlas Radar を生成</span></li>
+            <li><code>scripts/field_atlas_nocturne.py</code><span>MD-002 から Field Atlas Nocturne・Aubade（3D地図・3Dレーダー）を生成</span></li>
             <li><code>scripts/MirrorSync.gs</code><span>GitHub → Drive 一方向ミラー（OP-008 §27）</span></li>
             <li><code>assets/banner.PNG</code><span>README のバナー</span></li>
             <li><code>CLAUDE.md</code><span>Claude Code 運用指示書（自動読込）</span></li>
@@ -1386,10 +1386,10 @@ const ROOTS = {
     en:"Where older Revision History rows are relocated under OP-008 Rule DOC-09, kept verbatim, never summarised or deleted.",
     holds:DATA.archive.map(f=>f.replace(".md",""))},
   "SCRIPTS":{id:"SCRIPTS",title:"Scripts & Automation",series:"root",path:"scripts/",
-    summary:"文書を支える道具。SSOTの同期検証、Field Atlas のレーダー生成、Google Drive への一方向ミラー。",
-    ja:"third_place_sync_validator.py が MD-004・BR-002・BR-003 の整合性を CI で検証し、field_atlas_radar.py が MD-002 から Field Atlas Radar を生成し、MirrorSync.gs が GitHub から Drive へ一方向に複製する（OP-008 §27）。",
-    en:"Tools that serve the documents: a CI sync validator for MD-004 / BR-002 / BR-003, a Field Atlas radar generator for MD-002, and a one-way GitHub → Drive mirror (OP-008 §27).",
-    holds:["third_place_sync_validator.py","field_atlas_radar.py","MirrorSync.gs","templates/field_atlas_radar.html"]}
+    summary:"文書を支える道具。SSOTの同期検証、Field Atlas の3D地図生成、Google Drive への一方向ミラー。",
+    ja:"third_place_sync_validator.py が MD-004・BR-002・BR-003 の整合性を CI で検証し、field_atlas_nocturne.py・field_atlas_aubade.py が MD-002 から Field Atlas Nocturne・Aubade を生成し、MirrorSync.gs が GitHub から Drive へ一方向に複製する（OP-008 §27）。",
+    en:"Tools that serve the documents: a CI sync validator for MD-004 / BR-002 / BR-003, Field Atlas Nocturne / Aubade map generators for MD-002, and a one-way GitHub → Drive mirror (OP-008 §27).",
+    holds:["third_place_sync_validator.py","field_atlas_nocturne.py","field_atlas_aubade.py","MirrorSync.gs","templates/field_atlas_nocturne.html","templates/field_atlas_aubade.html"]}
 };
 
 /* Relations stated in the documents themselves */

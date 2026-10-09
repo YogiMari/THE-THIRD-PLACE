@@ -16,9 +16,9 @@ notation drift between documents and data files:
              (surroundings gaps are reported but do not fail the check);
              climate.json names only MD-002 fields and defines every station
              it uses, with 12 values (first dekad of each month) and JMA sources
-    pages    the Nocturne, Aubade, Cartograph, Contour, Gloaming and Radar pages build
-             without warnings, the five map templates each take the shared script
-             once, all six pages carry the 3D radar renderer and the shared tools once, terrain.json is a well-formed grid, and no placeholder is left
+    pages    the Nocturne and Aubade pages build
+             without warnings, both templates each take the shared script
+             once, both pages carry the 3D radar renderer and the shared tools once, terrain.json is a well-formed grid, and no placeholder is left
 
 Exits 1 and lists every problem when anything is out of step. Runs in CI.
 
@@ -35,28 +35,28 @@ from pathlib import Path
 HERE = Path(__file__).parent
 sys.path.insert(0, str(HERE))
 import field_atlas_nocturne as nav  # noqa: E402
-import field_atlas_radar as radar  # noqa: E402
+import field_atlas_md002 as md002  # noqa: E402
 
 ROOT = HERE.parent
 MD002 = ROOT / "MD" / "MD-002_Field_Atlas_Landscape_Framework.md"
-TEMPLATES = [nav.TEMPLATE] + [HERE / "templates" / f"field_atlas_{n}.html" for n in ("aubade", "cartograph", "contour", "gloaming")]
+TEMPLATES = [nav.TEMPLATE] + [HERE / "templates" / f"field_atlas_{n}.html" for n in ("aubade",)]
 
 
 def main() -> None:
     problems = []
 
-    # MD-002 (field_atlas_radar.build stops on a missing row or a wrong sum)
+    # MD-002 (field_atlas_md002.build stops on a missing row or a wrong sum)
     try:
         with redirect_stdout(io.StringIO()):
-            data, _ = radar.build(MD002)
+            data, _ = md002.build(MD002)
     except SystemExit as e:
         print(f"FAIL MD-002: {e}")
         sys.exit(1)
     names = {d["name"] for d in data}
     text = MD002.read_text(encoding="utf-8")
-    sub = {c[0].replace(radar.UNVISITED_SUFFIX, "").strip()
-           for c in radar.table_rows(radar.section(text, "## Sub-Score Table", "##"))[1:]}
-    early = {c[0] for c in radar.table_rows(radar.section(text, "## Early Check-in Record", "##"))[1:]}
+    sub = {c[0].replace(md002.UNVISITED_SUFFIX, "").strip()
+           for c in md002.table_rows(md002.section(text, "## Sub-Score Table", "##"))[1:]}
+    early = {c[0] for c in md002.table_rows(md002.section(text, "## Early Check-in Record", "##"))[1:]}
     site = nav.parse_site_record(MD002)
     for label, keys in (("Sub-Score Table", sub), ("Early Check-in Record", early), ("Site Record", set(site))):
         for n in sorted(keys - names):
@@ -129,12 +129,9 @@ def main() -> None:
         marks = t.read_text(encoding="utf-8").count("/*__SHARED_JS__*/")
         if marks != 1:
             problems.append(f"{t.name}: expected one /*__SHARED_JS__*/ marker, found {marks}")
-    for f in (radar.CORE_JS, radar.RADAR3D_JS):
+    for f in (md002.CORE_JS, md002.RADAR3D_JS):
         if not f.exists():
-            problems.append(f"{f.name}: missing (shared by all six pages)")
-    marks = radar.TEMPLATE.read_text(encoding="utf-8").count("/*__CORE_JS__*/")
-    if marks != 1:
-        problems.append(f"{radar.TEMPLATE.name}: expected one /*__CORE_JS__*/ marker, found {marks}")
+            problems.append(f"{f.name}: missing (shared by both pages)")
     # every page carries the one 3D radar renderer and the shared tools exactly once
     def once(name, html):
         for sig in ("function Radar3D(", "function faMove(", "function faTrailAction("):
@@ -148,12 +145,6 @@ def main() -> None:
         left = re.findall(r"/\*__[A-Z_]+__\*/|__MD002_VERSION__|__GENERATED__", html)
         if left:
             problems.append(f"{t.name}: placeholders left: {sorted(set(left))}")
-    html, warnings, _, _ = radar.render(MD002)
-    once("field_atlas_radar.html", html)
-    problems += [f"field_atlas_radar.html: {w}" for w in warnings]
-    left = re.findall(r"/\*__[A-Z_]+__\*/|__MD002_VERSION__|__GENERATED__", html)
-    if left:
-        problems.append(f"field_atlas_radar.html: placeholders left: {sorted(set(left))}")
 
     # surroundings come from OpenStreetMap and are best-effort reference data: report, do not fail
     notes = [p for p in problems if "surroundings" in p]

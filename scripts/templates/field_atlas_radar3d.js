@@ -1,8 +1,7 @@
 // Field Atlas Radar3D — the 10-axis Atlas Resonance radar as a small 3D scene (SVG, own projection, no WebGL).
-// One source for every Field Atlas page: scripts/field_atlas_nocturne.py (build) and scripts/field_atlas_radar.py
-// insert it where a template marks it (the map pages at their SHARED_JS marker, the Radar page at its CORE_JS marker).
-// It reads nothing from the page except what is passed in, so Nocturne, Aubade, Cartograph, Contour, Gloaming and
-// Radar all use it unchanged. Colours are not typed here: the page's own radar classes (.rg .rtk .rax .rpa .rpb
+// One source for every Field Atlas page: scripts/field_atlas_nocturne.py (build)
+// inserts it where a template marks it (the SHARED_JS marker).
+// It reads nothing from the page except what is passed in, so Nocturne and Aubade both use it unchanged. Colours are not typed here: the page's own radar classes (.rg .rtk .rax .rpa .rpb
 // .rda .rdb) are read once from the computed style, so each skin looks native.
 //
 //   const R3 = Radar3D(svgElement, {labels:[...10 axis names], cx, cy, rad, tip:(series,i,v)=>text, avg:[...], ringLabels:[5,10]});
