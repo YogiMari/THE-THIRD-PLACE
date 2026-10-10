@@ -11,7 +11,7 @@ Procurement Handbook
   
 **Version**  
   
-4.17  
+4.18  
   
 **Status**  
   
@@ -896,14 +896,14 @@ Procurement Handbook
 | Category | Water Bottle |  
 | Acquisition Status | Purchase Required |  
 | Quantity | 1 |  
-| Purchase Type | 未確認 |  
-| Primary Purchase Source | 未確認（日本での取扱い・販売先を確認する） |  
-| Purchase URL | https://www.snowpeak.com/products/recycled-aurora-bottle（仕様の出典。日本の販売ページではない） |  
+| Purchase Type | Domestic |  
+| Primary Purchase Source | Snow Peak Official Store（公式ECサイト ec.snowpeak.co.jp） |  
+| Purchase URL | https://ec.snowpeak.co.jp/（Snow Peak公式ECサイト。型番TW-800RE-OCの商品ページ。商品ページの個別URLは未確認。仕様の出典は https://www.snowpeak.com/products/recycled-aurora-bottle） |  
 | Japan Shipping | 未確認 |  
 | Warranty | Manufacturer Policy |  
-| Current Product Price | 未確認（日本価格） |  
+| Current Product Price | ¥21,120（Snow Peak公式ECサイトの表示。MARI様ご提示、2026-10-10） |  
 | Estimated Shipping | 未確認 |  
-| Estimated Total Cost | 未確認 |  
+| Estimated Total Cost | ¥21,120（送料未確認。確認済み分のみ） |  
 | Currency | JPY |  
 | Purchase Priority | ★★★★☆ |  
   
@@ -915,7 +915,8 @@ Procurement Handbook
 * 素材：本体チタン、キャップ バイオマスプラスチック、パッキン シリコーン。  
 * 構造：単板（保温なし）。  
 * 出典：https://www.snowpeak.com/products/recycled-aurora-bottle  
-* 日本価格は未確認（2026-10-09時点で公式サイトに到達できなかった）。従前の1L用planning estimate（¥8,000〜12,000）は本モデルの価格ではないため引き継がない。  
+* 日本価格：¥21,120（Snow Peak公式ECサイト、MARI様ご提示、2026-10-10）。従前の1L用planning estimate（¥8,000〜12,000）は本モデルの価格ではないため引き継がない。  
+* 特徴：リサイクルチタンを採用（MARI様ご提示の公式情報、2026-10-10）。青緑から黄緑へのグラデーションカラー、ホワイトの持ち手付きキャップ（MARI様ご提示の公式サイト画面で確認、2026-10-10）。  
 * Coffee System専用水。9BaristaおよびALM KOPi Z1 Miniに使用。  
 * 飲料水ではない。  
 * 調理用水ではない。  
@@ -940,10 +941,10 @@ Procurement Handbook
 | Purchase URL | Official Store |  
 | Japan Shipping | Available |  
 | Warranty | Manufacturer Policy |  
-| Current Product Price | 未確認（日本価格） |  
+| Current Product Price | ¥20,790（MARI様ご提示の公式情報、2026-10-10） |  
 | Estimated Shipping | 未確認 |  
 | Estimated Import Tax / Charges | Not Applicable |  
-| Estimated Total Cost | 未確認 |  
+| Estimated Total Cost | ¥20,790（送料未確認。確認済み分のみ） |  
 | Currency | JPY |  
 | Purchase Priority | ★★★★☆ |  
   
@@ -955,7 +956,8 @@ Procurement Handbook
 * 素材：本体チタン。  
 * 構造：単板（保温なし）。  
 * 出典：https://furunavi.jp/product_detail.aspx?pid=573996  
-* 日本価格は未確認（2026-10-09時点で公式サイトに到達できなかった）。従前記載の¥20,790は再確認できていないため、金額欄には使わない。出典ページの寄附金額（ふるさと納税）は販売価格ではない。  
+* 日本価格：¥20,790（MARI様ご提示の公式情報、2026-10-10。2026-10-09時点で再確認できていなかった従前記載値と一致）。出典ページ（furunavi）の寄附金額（ふるさと納税）は販売価格ではない。  
+* 特徴：日本酒の風味を損なわずに持ち運ぶために作られたチタン製ボトル（酒筒）。チタン素地の自然なメタル感（MARI様ご提示の公式情報、2026-10-10）。本プロジェクトではCoffee System専用水として使用する。  
 * Coffee System専用水。  
 * 追加容量を担う。  
 * 飲料水ではない。  
@@ -1086,10 +1088,10 @@ Procurement Handbook
 | Purchase URL | https://www.smeg.com/ie/products/WBF02WH（仕様の出典。日本の販売ページではない） |  
 | Japan Shipping | 未確認 |  
 | Warranty | Manufacturer Policy |  
-| Current Product Price | 未確認（日本価格） |  
+| Current Product Price | ¥9,000（MARI様ご指定、2026-10-10。国内参考価格の幅¥7,500〜9,000の上限値。購入先・販売ページは未確認） |  
 | Estimated Shipping | 未確認 |  
 | Estimated Import Tax / Charges | 未確認 |  
-| Estimated Total Cost | 未確認 |  
+| Estimated Total Cost | ¥9,000（ご指定の参考価格。送料・購入先未確認） |  
 | Currency | JPY |  
 | Purchase Priority | ★★★★☆ |  
   
@@ -1101,7 +1103,8 @@ Procurement Handbook
 * 構造：保温なし。  
 * 色：ホワイト。  
 * 出典：https://www.smeg.com/ie/products/WBF02WH  
-* 参考：ポルトガル公式は49€（日本価格ではない）。日本価格・寸法・重量は未確認。  
+* 参考：ポルトガル公式は49€、USD 49.95の表記もある（いずれも日本価格ではない）。寸法・重量は未確認。  
+* 特徴：50年代風のレトロ家電デザインで知られるSMEGと、イタリアの軽量ボトルブランド24Bottlesのコラボレーション。ツヤのあるレトロホワイト（Glossy）、18/8ステンレス（MARI様ご提示の公式情報、2026-10-10）。  
 * Coffee System専用水。飲料水ではない。調理用水ではない。  
   
 ---  
@@ -1697,10 +1700,10 @@ Snow Peak公式ストアでの単独購入となるため、Group A（9Barista�
 | Station / Workflow | ¥42,900〜49,900 |  
 | Latte System | ¥102,000〜127,500 |  
 | Espresso Glass / Transport | ¥25,480〜31,480 |  
-| Dedicated Water | ¥15,800（確認済み分のみ。Product 23／25／32は価格未確認のため含まない） |  
-| **Estimated Total（残り）** | **¥484,980〜555,480** |  
+| Dedicated Water | ¥66,710（Product 23 ¥21,120＋25 ¥20,790＋32 ¥9,000＋33 ¥15,800。送料未確認分は含まない。Product 32はご指定の参考価格） |  
+| **Estimated Total（残り）** | **¥535,890〜606,390** |  
 
-購入済み分（Product 01／12／26／31：¥137,200、Product 10：¥22,000）を加えた計画全体は¥644,180〜714,680（Monthly Acquisition Plan §Plan Total）。  
+購入済み分（Product 01／12／26／31：¥137,200、Product 10：¥22,000）を加えた計画全体は¥695,090〜765,590（Monthly Acquisition Plan §Plan Total）。  
 
   
 ### Budget Policy  
@@ -1856,20 +1859,20 @@ MARI様のご決定（2026-10-09）に基づく、月次購入計画である。
 * Product 17：WPM Pitcher Sleeve  
 * Product 08：Normcore Planetary WDT Tool 54mm  
 * Product 09：Normcore RDT Spray Bottle  
-* 購入先：Snow Peak公式でまとめ買い予定（Product 23／25／30。Product 23／25は日本価格が未確認で、確認済みの金額はProduct 30の¥14,300〜15,300のみ）。Product 32は購入先・日本価格とも未確認。Product 33はSilverAnt（一般販売は2026年11月開始。¥15,800）。WPM（Product 16／17）は国内で同時注文。Normcore（Product 08／09）は国内で同時注文。ほかは各社別注文（PROPEL・AERESSOは海外、HILLS FIELD・AIONは国内）。  
-* 小計：¥76,580〜96,080（確認済み分のみ。Product 23／25／32の金額は未確認のため含まない）  
+* 購入先：Snow Peak公式でまとめ買い予定（Product 23／25／30。Product 23は公式ECサイト¥21,120、Product 25は¥20,790、Product 30は¥14,300〜15,300。送料は未確認）。Product 32は購入先未確認で、¥9,000はご指定の参考価格。Product 33はSilverAnt（一般販売は2026年11月開始。¥15,800）。WPM（Product 16／17）は国内で同時注文。Normcore（Product 08／09）は国内で同時注文。ほかは各社別注文（PROPEL・AERESSOは海外、HILLS FIELD・AIONは国内）。  
+* 小計：¥127,490〜146,990（水ボトル4本の確認済み価格を含む。送料未確認分とProduct 32の購入先は含まない）  
 * 注記：GS-150（Group I）は最後でよいとのご決定のため、9Barista本体はMonth 6まで稼働できない。Normcore 2点（WDT・RDT）とWPMが揃うまでは、該当工程をキッチン用品等で代用する。  
   
 Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso Workflowが機能的に完成する。予算バランスを優先した結果、個々の機能グループ（Station一式、Glass一式、Latte System等）が複数月にまたがって到着する構成になるため、Workflowの全パーツが揃うMonth 6終了時点までは、未到着パーツをキッチン用品等で代用する必要がある。  
   
 ## Plan Total  
   
-総額目安：¥644,180〜714,680（計画全体。購入済み分を含む。9Barista Official Spare Parts (Preventive Stock)を除く）  
+総額目安：¥695,090〜765,590（計画全体。購入済み分を含む。9Barista Official Spare Parts (Preventive Stock)を除く）  
   
-残り（Purchase Requiredのみ）：¥484,980〜555,480（Month 2〜6。Estimated Acquisition Budgetと一致。Product 23／25／32の金額が未確認のため、確認済み分のみの下限・上限）  
+残り（Purchase Requiredのみ）：¥535,890〜606,390（Month 2〜6。Estimated Acquisition Budgetと一致。水ボトル4本の送料は未確認のため含まない）  
   
-* 月別小計：Month 2 ¥110,000〜123,000／Month 3 ¥99,200〜111,200／Month 4 ¥95,000〜112,000／Month 5 ¥104,200〜113,200／Month 6 ¥76,580〜96,080。合計¥484,980〜555,480。  
-* 計画全体の検算：Month 1 ¥159,200＋残り¥484,980〜555,480＝¥644,180〜714,680。  
+* 月別小計：Month 2 ¥110,000〜123,000／Month 3 ¥99,200〜111,200／Month 4 ¥95,000〜112,000／Month 5 ¥104,200〜113,200／Month 6 ¥127,490〜146,990。合計¥535,890〜606,390。  
+* 計画全体の検算：Month 1 ¥159,200＋残り¥535,890〜606,390＝¥695,090〜765,590。  
   
 ### Design Rationale  
   
@@ -1880,7 +1883,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 * FIKA12（Product 22）はグラスではなくカップ扱いである。限定流通のため、Month 5を維持する。  
 * Weber Workshopsの3点は、各1万円以上で送料無料のため、月をまたいで分けても送料は増えない。Blind ShakerはMonth 3、Bean Cellar GlassとEPF DockはMonth 5に置く。The BlocはMonth 4に置き、Blind Shakerとは別月とする（Blind ShakerはThe Blocが届くまで仮置き）。  
 * Normcore 2点（Product 08・09）とWPM（Product 16・17）は、最終月の水準を保つためMonth 6へ移した。  
-* 月あたり10万円前後に均した（Month 2〜5の小計が¥95,000〜123,000の範囲。Month 6は水ボトル3点の金額が未確認のため、確認済み分のみで¥76,580〜96,080。未確認分が確定すれば増える）。  
+* 月あたり10万円前後に均した（Month 2〜5の小計が¥95,000〜123,000の範囲）。Month 6は水ボトル4本の価格が確認済みとなった結果、¥127,490〜146,990となり、月次の目安を上回る（Version 4.18時点。配分の見直しはMARI様のご決定待ち）。  
 * KNODOS（Product 10）は2026-10-08に購入済みのため、Month 1に含める。  
 * Snow Peak ギガパワーストーブ レクタ（GS-150、Group I）は、BR-002 Ver.4.3 Heat Source Decisionに基づく確定購入品であり、Month 6とする（Group Iの説明と整合）。9Barista本体はMonth 6まで稼働できない。  
 * Straight Espresso Workflowの機能的完成はMonth 6である。  
@@ -1913,6 +1916,7 @@ Month 6までにすべてのPurchase Required品目が揃い、Straight Espresso
 | 4.15 | 2026-10-08 | MARI様のご決定（2026-10-08）に基づき、Monthly Acquisition Planを置き換えた。Month 1を9Barista一式（Product 01／12／26／31）とKNODOS（Product 10）の購入済みとし（小計¥159,200）、Month 2（11月）をProduct 02／11／05（¥109,200〜122,200）、Month 3（12月）をProduct 04／03（¥103,300〜108,300）、Month 4（1月）をProduct 07／06／14（¥100,900〜112,900）、Month 5（2月）をProduct 15／22（¥95,000〜116,000）、Month 6（3月・最終）をProduct 18〜21／23〜25／30／16／17／08／09（¥94,570〜122,070）へ再配置した。Month 2〜6の合計は残り¥502,970〜581,470と一致し、計画全体¥662,170〜740,670は変更なし。Design Rationaleを書き直した（水ボトル・GS-150・カップ類は最終月、FIKA12はMonth 5へ前倒し、Weber 3点は各1万円以上で送料無料のため月を分けても送料は増えない、Normcore 2点とWPMはMonth 6、月10万円程度に均した）。Group B・E・F・Iの説明を月配置に合わせた。Estimated Acquisition Budgetは変更していない（Purchase Requiredのみ。Ver.4.11参照）。Minor Version。 |  
 | 4.16 | 2026-10-09 | MARI様のご決定（2026-10-09）に基づく、Monthly Acquisition Planの組み直し。Month 2（11月）をProduct 03／02（¥110,000〜123,000。MantaBrewはMARI様のご指定により来月必ず購入）、Month 3（12月）をProduct 07／06／11（¥99,200〜111,200。Blind ShakerはThe Bloc到着まで仮置き）、Month 4（1月）をProduct 15／05（¥95,000〜112,000）、Month 5（2月）をProduct 04／22／14（¥104,200〜113,200。Weber公式2点は各1万円以上で送料無料）へ再配置した。Month 1（購入済み）とMonth 6（¥94,570〜122,070）は変更なし。残り¥502,970〜581,470と計画全体¥662,170〜740,670も変更なし。優先度の低い順はグラス関連（Month 6）→豆のキャニスター（Bean Cellar Glass、Month 5）→ミルク（Month 4）、水ボトルとGS-150は最終月、FIKA12はカップ扱いで限定流通のためMonth 5を維持、月10万円前後に均した。Group B・E・FとDesign Rationaleを同期し、旧Month 3の「FIKA12入荷時の入れ替え」注記とThe Blocの同月注記を削除した。Product記載・価格・購入先・Registryに変更はない。Minor Version。 |  
 | 4.17 | 2026-10-09 | MARI様のご決定（2026-10-09）に基づく、Coffee System専用水ボトルの組み直し（3本→4本、合計2,540mL→2,940mL）。YETI Yonder 1L（Product 24）の採用取消（欠番）。Product 23をSnow Peak オーロラボトル1Lからオーロラボトル800 オーシャン（TW-800RE-OC）へ、Product 25を酒筒 Titanium（TW-540）の型番付きへ更新し、SMEG × 24Bottles Urban Bottle 1000mL（WBF02WH、Product 32）とSilverAnt 結晶化ブラックチタンボトル 600mL（Product 33）を新設した。日本価格が未確認のProduct 23／25／32は金額を「未確認」とし（従前のProduct 23の¥8,000〜12,000はモデル変更のため引き継がず、Product 25の¥20,790は再確認できないため金額欄から外した）、Product 33のみ一般販売予定価格¥15,800（ケース付・Makuake記載）を記載した。Dedicated Waterを¥15,800（確認済み分のみ）、Month 6小計を¥76,580〜96,080、残りを¥484,980〜555,480、計画全体を¥644,180〜714,680へ再計算した（未確認分を除く。確定すれば増える）。水ボトルの購入時期は最終月（Month 6）、優先度は最下位のまま。BR-002 Ver.4.19・BR-001 Ver.1.7・MD-001 Ver.2.40・MD-004 Ver.8.10と連動。Minor Version。 |
+| 4.18 | 2026-10-10 | MARI様のご提示（公式情報、2026-10-10）とご決定に基づき、Coffee System専用水ボトル4本（Product 23／25／32／33）の日本価格・特徴を反映した。Product 23：¥21,120（Snow Peak公式ECサイト表示）、購入先をSnow Peak公式ECサイト、Purchase TypeをDomesticへ更新。Product 25：¥20,790（従前記載値が公式情報で確認できた）。Product 32：¥9,000（MARI様ご指定の参考価格。国内参考価格の幅¥7,500〜9,000の上限値。購入先は未確認のまま）。各Productのnotesへ特徴（リサイクルチタン・グラデーションカラー・酒筒の成り立ち・SMEG × 24Bottlesのコラボ・レトロホワイト等）を追記した。Dedicated Waterを¥66,710、残りを¥535,890〜606,390、Month 6小計を¥127,490〜146,990、計画全体を¥695,090〜765,590へ再計算した（送料未確認分を除く）。Month 6は月次の目安（10万円前後）を上回るが、配分は変更していない。水ボトル4本の構成・容量（合計2,940mL）に変更はない。Minor Version。 |
   
 ---  
 
